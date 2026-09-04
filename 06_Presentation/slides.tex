@@ -1,0 +1,82 @@
+%======================================================================
+%  PRESENTATION  (proposal talk / colloquium / final defence)
+%  COMPILE: pdflatex -> biber -> pdflatex
+%======================================================================
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{whale}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+\usepackage[backend=biber,style=numeric-comp]{biblatex}
+\addbibresource{../_shared/references.bib}
+
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+\title[Privacy Harm Communication]{Understanding Privacy Harm Communication in\\Fitness and Health Tracking Apps}
+\subtitle{Bachelor's Thesis --- \todo{proposal talk / final defence}}
+\author{Hamza}
+\institute[RUB]{Ruhr-Universität Bochum \\ \small Advisor: Kavous Salehzadeh Niksirat (MPI-SP)}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Motivation}
+\begin{frame}{Motivation}
+  \todo{One striking fact or example. No bullet dumps.}
+\end{frame}
+
+\section{Problem}
+\begin{frame}{The Gap}
+  \todo{Policies talk about downstream sharing --- not inference, breaches, incidents.}
+\end{frame}
+
+\begin{frame}{Research Questions}
+  \begin{enumerate}
+    \item \todo{RQ1}
+    \item \todo{RQ2}
+    \item \todo{RQ3}
+  \end{enumerate}
+\end{frame}
+
+\section{Method}
+\begin{frame}{Study Design}
+  \todo{One diagram of the pipeline beats five bullets.}
+\end{frame}
+
+\section{Results}
+\begin{frame}{Results}
+  \todo{}
+\end{frame}
+
+\section{Discussion}
+\begin{frame}{Takeaways}
+  \todo{Three sentences the audience should remember.}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography
+\end{frame}
+
+\appendix
+\begin{frame}{Backup}
+  \todo{Slides for anticipated questions.}
+\end{frame}
+
+\end{document}

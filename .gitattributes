@@ -1,2 +1,19 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Source files are text
+*.tex   text
+*.bib   text
+*.md    text
+*.cls   text
+*.sty   text
+
+# Never touch these
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.xlsx  binary
+*.docx  binary
+*.zip   binary
+*.mp4   binary

@@ -1,0 +1,69 @@
+%======================================================================
+%  BACHELOR'S THESIS
+%  Ruhr-Universität Bochum — IT-Sicherheit / Informationstechnik
+%
+%  COMPILE:  pdflatex -> biber -> pdflatex -> pdflatex
+%            (TeXstudio: F5, default pdflatex + biber tool chain)
+%
+%  EDIT config/metadata.tex first. Then write in chapters/.
+%======================================================================
+\documentclass[
+  11pt,
+  a4paper,
+  twoside,          % remove for one-sided printing
+  openright,
+  chapterprefix=true
+]{scrreprt}
+
+\input{config/metadata}
+\input{config/preamble}
+
+%======================================================================
+\begin{document}
+
+%---------------------------- Front matter ----------------------------
+\pagenumbering{roman}
+\input{config/titlepage}
+
+\cleardoublepage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{chapters/00_abstract}
+
+\cleardoublepage
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\todo{Optional. Remove this chapter if you do not want it.}
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+
+%---------------------------- Main matter -----------------------------
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_related_work}
+\input{chapters/04_methodology}
+\input{chapters/05_results}
+\input{chapters/06_discussion}
+\input{chapters/07_conclusion}
+
+%---------------------------- Back matter -----------------------------
+\cleardoublepage
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+\appendix
+\input{appendix/A_codebook}
+\input{appendix/B_prompts}
+\input{appendix/C_app_sample}
+
+\cleardoublepage
+\input{config/declaration}
+
+\end{document}

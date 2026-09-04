@@ -1,0 +1,50 @@
+# ---------- LaTeX build output ----------
+build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.idx
+*.ilg
+*.ind
+
+# Keep the compiled PDFs of the actual documents
+!02_Proposal/proposal.pdf
+!03_Thesis/thesis.pdf
+!06_Presentation/slides.pdf
+
+# ---------- TeXstudio ----------
+*.txss2
+.texstudio/
+
+# ---------- Office / OS temp ----------
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Python (scraping / analysis) ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------- Study data ----------
+# Raw participant / scraped data is never committed.
+05_Data/raw/*
+!05_Data/raw/.gitkeep
+!05_Data/raw/README.md
