@@ -1,0 +1,73 @@
+Bitte lest euch im Vorfeld auch die Informationen zu den möglichen Prüferkonstellationen hier durch. 
+
+Alle Professor*innen der Fakultät für Informatik können Abschlussarbeiten betreuen. Manche Lehrstühle haben Webseiten, auf denen ihr euch informieren könnt, was es für offene Themen gibt und wen ihr bei Interesse kontaktieren müsst. Wenn keine Webseite angegeben ist, empfehlen wir die*den Professor*in direkt per Mail zu kontaktieren. 
+
+Professor*in / Professor	Lehrstuhl / Chair	Infos zu Abschlussarbeiten / Information on theses
+Prof. Thorsten Berger	Software Engineering	https://se.rub.de/thesis-topics/
+Prof. Steffen Bondorf	Distributed and Networked Systems	https://dnet.rub.de/teaching/theses/
+Prof. Kevin Borgolte	Software Security	https://softsec.eu/teaching/theses/
+Prof. Maike Buchin	Algorithmics	https://informatik.rub.de/algo/lehre/abschlussarbeiten/
+Apl. Prof. Meeyoung Cha	Data Science for Humanity (MPI)	 
+Prof. Sen Cheng	Computational Neuroscience	https://www.ini.rub.de/research/groups/computational_neuroscience/#available_theses_a_projects
+Prof. Asja Fischer	Machine Learning	https://informatik.rub.de/ml/theses/
+Jun. Prof. Nils Fleischhacker	Theoretical Cryptography	 
+Prof. Tobias Glasmachers	Theory of Machine Learning	https://www.ini.rub.de/PEOPLE/glasmtbl/theses.html
+Prof. Tim Güneysu	Security Engineering	https://informatik.rub.de/seceng/lehre/abschlussarbeiten/
+Prof. Ivan Habernal	Fairness and Transparency	https://informatik.rub.de/trusthlt/trusthlt-master-thesis/
+Prof. Timo Hönig	Operating Systems and System Software	https://informatik.rub.de/boss/teaching/theses/
+Apl. Prof. Cătălin Hrițcu	Formally Verified Security (MPI)	 
+Apl. Prof. Dirk Jancke	Visual Neuroscience	https://www.ini.rub.de/research/groups/optical_imaging_group/#available_theses_a_projects
+Prof. Nils Jansen	Artificial Intelligence and Formal Methods	https://informatik.rub.de/en/research/chairs/aifm/theses/
+Prof. Ghassan Karame	Information Security	https://informatik.rub.de/infsec/teaching/theses/
+Prof. Eike Kiltz	Cryptography	https://informatik.rub.de/crypto/abschlussarbeiten/
+Prof. Katharina Kohls	System Security	https://informatik.rub.de/en/syssec/teaching/
+Prof. Gregor Leander	Symmetric Cryptography	https://informatik.rub.de/symcrypt/lehre/abschlussarbeiten/
+Prof. Julian Loss	Distributed Cryptography	https://www.julianloss.com/
+Prof. Tim Majchrzak	Computing, Technology and Society	 
+Prof. Karola Marky	Digital Sovereignty Lab	https://moodle.ruhr-uni-bochum.de/enrol/index.php?id=62511
+Prof. Alexander May	Cryptanalysis	 
+Prof. Veelasha Moonsamy	Security and Privacy of Ubiquitous Systems	https://informatik.rub.de/ubisys/teaching/theses/
+Prof. Yannic Noller	Software Quality	https://informatik.rub.de/en/sq/thesis-topics/
+Prof. Rebekah Overdorf	Security and Trustworthiness of Online Information	https://informatik.rub.de/stoi/
+Prof. Christof Paar	Embedded Security	https://informatik.rub.de/emsec/teaching/theses/
+Prof. Martina Angela Sasse	Human-Centred Security	https://informatik.rub.de/hcs/lehre/abschlussarbeiten/
+Prof. Robert Schmidt	Neural Data Science	https://www.ini.rub.de/research/groups/neural_data_science/#available_theses_a_projects
+Prof. Gregor Schöner	Theory Of Coginitive Systems	 
+Apl. Prof. Peter Schwabe	Cryptographic Engineering (MPI)	 
+Prof. Jörg Schwenk	Network and Data Security	https://informatik.rub.de/nds/teaching/theses/
+Prof. Flavio Toffalini	Automated Security Analysis	https://flaviotoffalini.info/
+Prof. Laurenz Wiskott	Theory of Neural Systems	https://www.ini.rub.de/research/groups/theory_of_neural_systems/#available_theses_a_projects
+Prof. Yuval Yarom	Computer Security	 
+Prof. Bilal Zafar	AI and Society	https://informatik.rub.de/aisoc/theses/
+Prof. Thomas Zeume	Logic and formal verification	 
+Prof. Dr. Manisha Luthra Agnihotri	
+Databases and Information Systems
+
+ 
+Neben den Professorinnen und Professoren der Fakultät für Informatik, könnt ihr euch auch an die kooptierten Professor*innen wenden (eine aktuelle Übersicht findet ihr immer ganz unten auf der Seite https://informatik.rub.de/fakultaet/professuren/), wenn ihr ein Thema für eine Abschlussarbeit sucht. Beachtet dabei aber, dass das Thema einen klaren Bezug zu eurem Studiengang aufweisen muss. Hier mögliche Betreuer*innen aus dem Kreis der kooptierten Professor*innen: 
+
+Kooptierte*r Professor*in / co-opted Professor	Lehrstuhl (Fakultät) / Chair (Faculty)	Infos zu Abschlussarbeiten / Information on theses
+Prof. Gilles Barthe	Principles of Security and Privacy (MPI)	 
+Jun. Prof. Xenia Kobeleva	Computational Neurology (Medical Faculty)	 
+Prof. Markus König	Computing in Engineering (Faculty of Civil and Environmental Engineering)	https://www.inf.bi.ruhr-uni-bochum.de/iib/lehre/themen.html.de
+Prof. Bernd Kuhlenkötter	Produktionssysteme (Faculty of Mechanical Engineering)	https://moodle.ruhr-uni-bochum.de/course/view.php?id=16372
+Prof. Christian Meske	Socio-technical System Design and AI (Institute for Applied Work Science)	https://moodle.ruhr-uni-bochum.de/enrol/index.php?id=43851
+Prof. Setareh Maghsudi	Learning technical systems (Faculty for Electrical Engineering and Information Technology)	 
+Prof. Axel Mosig	Bioinformatics (Faculty of Biology and Biotechnology)	 
+Prof. Nikol Rummel	Pädagogische Psychologie und Bildungstechnologie (Faculty of Philosophy and Educational Research)	https://www.pe.ruhr-uni-bochum.de/erziehungswissenschaft/pp/teaching/abschlussarbeiten.html.de
+Jun. Prof. Tatjana Scheffler	Digital forensic linguistics (Faculty of Philology, Institute of German Studies)	https://staff.germanistik.rub.de/digitale-forensische-linguistik/lehre/
+Jun. Prof. Markus Stricker	Materials Informatics and Data Science (Interdisciplinary Centre for Advanced Materials Simulation)	 
+Jun.Prof. Julian Uszkoreit	Medical Bioinformatics (Medical Faculty)	https://www.medbioinf.ruhr-uni-bochum.de/mbi/index.html.en
+Eine weitere Gruppe, die eure Abschlussarbeit betreuen kann, sind Dozierende im Studiengang (also Lehrende, die in eurem Studiengang eine Vorlesung anbieten), die nicht der Fakultät für Informatik angehören und nicht kooptiert sind. Hier mögliche relevante Betreuer*innen unter den externen Dozierenden:  
+
+Lehrende*r / teacher	Lehrstuhl (Fakultät) / Chair (Faculty)	Infos zu Abschlussarbeiten / Information on theses	Abschlussarbeiten für Studiengang / Theses for Study program
+Prof. Andreas Vogel	High Performance Computing (Faculty of Civil and Environmental Engineering)	https://www.hpc.bi.ruhr-uni-bochum.de/hpc/lehre/abschlussarbeiten.html.en	Applied Computer Science; Computer Science
+Prof. Aydin Sezgin	Di­gi­ta­l Communication Systems (Faculty of Electrical Engineering and Informationtechnology)	https://www.dks.ruhr-uni-bochum.de/de/join-us/theses/	Computer Science
+Jun.Prof. Christian Zenger	Secure Mobile Networking (Faculty of Electrical Engineering and Informationtechnology)	https://www.christianzenger.de/theses	IT-Security
+Prof. Daniel Balzani	Continuum Mechanics (Civil- and Environmental Engineering)	https://www.lkm.ruhr-uni-bochum.de/lkm/index.html.en	Applied Computer Science
+Prof. Detlef Gerhard	Digital Engineering (Faculty of Mechanical Engineering)	https://moodle.ruhr-uni-bochum.de/course/view.php?id=21134	Applied Computer Science
+Dr. Alfred Hypki	Produktionssysteme (Faculty of Mechanical Engineering)	https://moodle.ruhr-uni-bochum.de/course/view.php?id=16372	Applied Computer Science
+Prof. Jens Pöppelbuß	Industrial Sales and Service Engineering (Faculty of Mechanical Engineering)	https://www.isse.ruhr-uni-bochum.de/lehre/abschlussarbeiten/	Applied Computer Science
+Prof. Martin Eisenacher	Medizinisches Proteom-Center (Medical Faculty)	 	Applied Computer Science
+Prof. Stefanie Dipper	Sprachwissenschaftliches Institut (Faculty of Philology, Institute of German Studies)	 	Applied Computer Science
+Dr. Ronja Laarmann-Quante	Sprachwissenschaftliches Institut (Faculty of Philology, Institute of German Studies)	 	Applied Computer Science
