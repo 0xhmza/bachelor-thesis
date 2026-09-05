@@ -30,6 +30,10 @@ build/
 *.txss2
 .texstudio/
 
+# ---------- Obsidian ----------
+# The vault opens fine without these; workspace.json churns on every pane move.
+.obsidian/
+
 # ---------- Office / OS temp ----------
 ~$*
 .DS_Store

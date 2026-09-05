@@ -9,7 +9,7 @@
 
 | Folder | What lives here |
 |---|---|
-| `00_Admin/` | Meeting notes, timeline, the official thesis offer. Start here. |
+| `00_Admin/` | Meeting notes, supervisor input, timeline, the official thesis offer. Start here. |
 | `01_Literature/` | Papers (`PDFs/`), reading notes (`Notes/`), reading-list tracker. |
 | `02_Proposal/` | **LaTeX proposal.** Open `proposal.tex` in TeXstudio. |
 | `03_Thesis/` | **LaTeX thesis.** Open `thesis.tex` in TeXstudio. |
@@ -18,6 +18,8 @@
 | `06_Presentation/` | Beamer slides for the proposal talk and the defence. |
 | `_shared/` | `references.bib` — **the single bibliography** for all three documents. |
 | `99_Archive/` | Application-phase material. Not part of the thesis. |
+
+Every folder above carries its own `README.md` with the rules that apply inside it.
 
 ---
 
@@ -95,10 +97,18 @@ into `03_Thesis/figures/`. Never hand-edit a figure you will need to regenerate.
 
 ## Next actions
 
-See `00_Admin/Timeline.md`. The immediate ones from the 2026-09-04 meeting:
+See `00_Admin/Timeline.md`. From the 2026-09-04 meeting and the advisor's written
+input of 2026-09-05 (`00_Admin/Supervisor-Input/`):
 
-1. Read Citron & Solove (2021), *Privacy Harms*.
-2. Set up the shared Google Doc for the advisor.
-3. Resolve the open scope question — document analysis, survey, or both
+1. Read the three harm papers now in `01_Literature/PDFs/` — Citron & Solove
+   (taxonomy), Knabenhans et al. (harm model), Martin et al. (PET framing).
+2. Run your own literature search on privacy harms, health-tracker security and
+   privacy, and methods (privacy-policy analysis, cognitive walkthrough). The
+   advisor asked for this explicitly — the sent papers are examples, not the review.
+3. Set up the shared Google Doc for the advisor.
+4. Confirm the scope question — the 2026-09-05 input points at document and
+   interface analysis, but say so out loud at the next meeting
    (`00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md`, §8).
-4. Draft the proposal: background → research problem → why it matters → methodology.
+5. Fix the keyword list and inclusion criteria for the German app sample
+   (→ `04_Study/App-Sample/sampling_protocol.md`).
+6. Draft the proposal: background → research problem → why it matters → methodology.

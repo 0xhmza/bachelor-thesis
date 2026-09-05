@@ -6,7 +6,7 @@ not rerun the study from this folder alone, something is missing.
 | Folder | Contents |
 |---|---|
 | `App-Sample/` | Search keywords, inclusion/exclusion criteria, the resulting app list, and the date each app was captured. |
-| `Instrument/` | Survey / questionnaire drafts, if the scenario-based survey stays in scope. |
+| `Instrument/` | The data-collection instruments. Currently `walkthrough_protocol.md`; survey drafts go here too if the scenario-based survey is added back to scope. |
 | `Ethics/` | Ethics application, approval, consent and information sheets. |
 | `Codebook/` | The coding scheme: every category with definition, examples, and counter-examples. Version it. |
 | `Prompts/` | Every LLM prompt, versioned. See `Prompts/README.md`. |

@@ -67,6 +67,14 @@ For each app in the sample, collect and analyse:
   (See `01_Literature/` — Citron & Solove 2021 "Privacy Harms", plus the
   Salehzadeh Niksirat et al. 2024 wearable trackers survey already in the folder.)
 
+> **Clarification added 2026-09-05** — these are two different papers. The
+> advisor's written input of 2026-09-05 names the EPFL paper as Knabenhans et al.,
+> *On the (Privacy) Harms of the European Digital Identity Framework*
+> (`knabenhans2026harms`), which is the one to read for the **harm model**.
+> Citron & Solove (`citron2021harms`) is the separate US law-review article that
+> supplies the **seven-category taxonomy**. Both are now in `01_Literature/PDFs/`.
+> See [`../Supervisor-Input/2026-09-05_Supervisor-Input.md`](../Supervisor-Input/2026-09-05_Supervisor-Input.md).
+
 ## 6. Proposal — required structure
 
 The proposal must cover, in this order:
