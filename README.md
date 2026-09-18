@@ -11,7 +11,7 @@
 |---|---|
 | `00_Admin/` | Meeting notes, supervisor input, timeline, the official thesis offer. Start here. |
 | `01_Literature/` | Papers (`PDFs/`), reading notes (`Notes/`), reading-list tracker. |
-| `02_Proposal/` | **LaTeX proposal.** Open `proposal.tex` in TeXstudio. |
+| `02_Proposal/` | **LaTeX proposal**, in two versions — see below. Open `proposal_short.tex` or `proposal.tex` in TeXstudio. |
 | `03_Thesis/` | **LaTeX thesis.** Open `thesis.tex` in TeXstudio. |
 | `04_Study/` | App sample, codebook, LLM prompts, ethics, survey instrument. |
 | `05_Data/` | `raw/` (untouched, gitignored), `processed/`, `analysis/`. |
@@ -65,6 +65,25 @@ When editing a file in `sections/` or `chapters/`, tell TeXstudio which file is 
 master: `Options → Root Document → Set Current Document As Explicit Root`
 (do this with `proposal.tex` / `thesis.tex` open). Otherwise F5 tries to compile
 the fragment you are editing and fails.
+
+---
+
+## Two versions of the proposal
+
+| File | Pages | What it is |
+|---|---|---|
+| `02_Proposal/proposal_short.pdf` | **4** | **The hand-in.** The supervisor asked for four pages. |
+| `02_Proposal/proposal.pdf` | 25 | The full record. Every decision in the short version is argued here at length, with ten points listed for the supervisor's confirmation. The thesis methodology chapter is written from this one, not from the short version. |
+
+They are separate `.tex` files and share `_shared/references.bib`. **When a
+decision changes, change it in both.** The short version carries a hard
+four-page constraint: after editing it, recompile and check the page count. If
+it spills onto a fifth page, cut content — do not shrink the margins or the
+font.
+
+```bash
+.uild.ps1 proposal-short
+```
 
 ---
 

@@ -11,7 +11,7 @@
     check that everything still compiles before committing.
 #>
 param(
-    [ValidateSet('all', 'proposal', 'thesis', 'slides')]
+    [ValidateSet('all', 'proposal', 'proposal-short', 'thesis', 'slides')]
     [string]$Target = 'all'
 )
 
@@ -22,31 +22,34 @@ $texbin = 'C:\texlive\2025\bin\windows'
 if (Test-Path $texbin) { $env:PATH = "$texbin;$env:PATH" }
 
 $base = $PSScriptRoot
-$docs = @{
-    proposal = '02_Proposal'
-    thesis   = '03_Thesis'
-    slides   = '06_Presentation'
+# name -> @{ dir = <folder>; file = <tex basename> }
+$docs = [ordered]@{
+    'proposal'       = @{ dir = '02_Proposal';     file = 'proposal' }
+    'proposal-short' = @{ dir = '02_Proposal';     file = 'proposal_short' }
+    'thesis'         = @{ dir = '03_Thesis';       file = 'thesis' }
+    'slides'         = @{ dir = '06_Presentation'; file = 'slides' }
 }
 
-$targets = if ($Target -eq 'all') { $docs.Keys } else { @($Target) }
+$targets = if ($Target -eq 'all') { @($docs.Keys) } else { @($Target) }
 
 foreach ($name in $targets) {
-    $dir = Join-Path $base $docs[$name]
+    $dir  = Join-Path $base $docs[$name].dir
+    $file = $docs[$name].file
     Push-Location $dir
     Write-Host "=== $name ===" -ForegroundColor Cyan
-    & pdflatex -interaction=nonstopmode "$name.tex" | Out-Null
-    & biber $name | Out-Null
-    & pdflatex -interaction=nonstopmode "$name.tex" | Out-Null
-    & pdflatex -interaction=nonstopmode "$name.tex" | Out-Null
+    & pdflatex -interaction=nonstopmode "$file.tex" | Out-Null
+    & biber $file | Out-Null
+    & pdflatex -interaction=nonstopmode "$file.tex" | Out-Null
+    & pdflatex -interaction=nonstopmode "$file.tex" | Out-Null
 
-    if (Test-Path "$name.pdf") {
-        Write-Host "  built $name.pdf" -ForegroundColor Green
+    if (Test-Path "$file.pdf") {
+        Write-Host "  built $file.pdf" -ForegroundColor Green
     } else {
-        Write-Host "  FAILED - see $dir\$name.log" -ForegroundColor Red
+        Write-Host "  FAILED - see $dir\$file.log" -ForegroundColor Red
     }
 
     # Surface any hard errors from the last pass.
-    Select-String -Path "$name.log" -Pattern '^!' | Select-Object -First 10 |
+    Select-String -Path "$file.log" -Pattern '^!' | Select-Object -First 10 |
         ForEach-Object { Write-Host "  $($_.Line)" -ForegroundColor Yellow }
 
     Pop-Location

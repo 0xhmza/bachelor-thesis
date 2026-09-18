@@ -21,7 +21,7 @@ is the plan.
 | 2 | Google Doc set up and shared with advisor | | ☐ |
 | 3 | Scope question resolved (document analysis vs. survey — see meeting notes §8) | 2026-09-18 | ◐ decided in the proposal (§2.3, §7 item 1); awaiting advisor's confirmation |
 | 3b | Own literature search: privacy harms · tracker S&P · methods (advisor's explicit ask) | 2026-09-18 | ☑ first pass — 17 new entries in `_shared/references.bib`, all verified against the publisher record |
-| 4 | Proposal draft v1 sent to advisor | 2026-09-30 | ◐ written and compiling; title-page metadata still to fill, then send |
+| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `proposal_short.pdf` (4 pages)** — the length the supervisor asked for in the shared Google Doc. `proposal.pdf` (25 pp.) is the full record, not the submission. Title-page metadata still to fill, then send |
 | 5 | Proposal approved | | ☐ |
 | 6 | Thesis registered with the Prüfungsamt | | ☐ |
 | 7 | Keyword list + inclusion/exclusion criteria fixed | 2026-09-18 | ☑ drafted in `04_Study/App-Sample/sampling_protocol.md`; confirm thresholds with advisor |
