@@ -166,13 +166,30 @@ Exactly **one** stance per harm code applied.
 
 ## Validation
 
+The calibration is **asymmetric on purpose**. This study's headline claims are
+claims of *absence*, and a false negative manufactures exactly the silence the
+thesis sets out to observe. Recall therefore gets more effort than precision.
+
 - Stratified 20 % subsample double-coded by hand, blind to model output.
 - Cohen's κ **per code**, not pooled. Target κ ≥ 0.70.
-- Below target → diagnose as codebook problem or prompt problem, revise, bump
-  the version, redraw the subsample. Two failed revisions → the code is reported
-  as unreliable and excluded from quantitative claims.
-- Precision audit: every code entering the results is checked against its
+- **Report prevalence, raw percentage agreement and positive specific agreement
+  next to every κ.** κ is unstable when a code is rare — and the harm codes are
+  expected to be rare — so a low κ on a rare code is diagnosed, not just
+  reported.
+- Below target → diagnose as codebook problem, prompt problem, or prevalence
+  artefact; revise, bump the version, redraw the subsample. Two failed revisions
+  with no prevalence explanation → the code is reported as unreliable and
+  excluded from quantitative claims.
+- **Precision audit:** every code entering the results is checked against its
   verbatim span; unsupported codes are discarded and counted.
+- **Recall audit:** (a) every code the human applied and the model missed is
+  counted, giving recall per code; (b) a lexical sweep of the *whole* corpus for
+  harm-adjacent vocabulary in both languages — `infer, derive, predict,
+  estimate, profile, ableiten, Rückschluss` · `breach, leak, unauthorised,
+  Datenpanne, Sicherheitsvorfall` · `incident, notify, melden, benachrichtigen`
+  · `discriminate, insurance, employer, prosecute, Versicherung, Arbeitgeber`.
+  Every hit the model did not code is read by hand.
+- **No absence claim is made for a code whose recall was not measured.**
 
 ## Version history
 

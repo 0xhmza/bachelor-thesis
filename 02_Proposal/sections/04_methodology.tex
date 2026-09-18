@@ -12,11 +12,15 @@ interface says in use; then code the resulting corpus against a harm-oriented
 framework, with LLM assistance for volume and manual double-coding for
 validation. Figure~\ref{fig:method} shows the pipeline.
 
-Two design commitments run through all four steps. First, \textbf{every code
+Three design commitments run through all four steps. First, \textbf{every code
 must be anchored to a verbatim quote} with its source, location, and capture
 date; a code without a quote does not enter the results. Second, \textbf{every
 instrument is versioned} --- the sampling protocol, the codebook, and each LLM
 prompt --- so that the analysis is reproducible from the repository alone.
+Third, because the headline findings are findings of \emph{absence},
+\textbf{recall is measured, not assumed}: an instrument that quietly misses a
+mention would manufacture the very silence the thesis claims to observe
+(Section~\ref{sec:validation}).
 
 \begin{figure}[htbp]
 \centering
@@ -45,10 +49,12 @@ prompt --- so that the analysis is reproducible from the repository alone.
     {\textbf{Step 4a}\\LLM-assisted coding,\\versioned prompts,
      JSON $+$ verbatim span};
   \node[proc] (man) at ( 3.0,-2.2)
-    {\textbf{Step 4b}\\Manual coding of a\\stratified 20\,\% subsample};
+    {\textbf{Step 4b}\\Manual coding of a stratified 20\,\% subsample,
+     \emph{plus} a lexical sweep of the whole corpus};
 
   \node[wide] (adj) at (0,-4.3)
-    {\textbf{Adjudicated codings} $+$ per-category agreement ($\kappa$)};
+    {\textbf{Adjudicated codings} $+$ per-category $\kappa$ (with prevalence),
+     precision \emph{and} recall};
   \node[wide] (ana) at (0,-5.8)
     {\textbf{Analysis:} harm coverage (RQ1) $\cdot$ stance (RQ2) $\cdot$
      PET framing (RQ3) $\cdot$ cross-surface consistency (RQ4)};
@@ -63,7 +69,9 @@ prompt --- so that the analysis is reproducible from the repository alone.
   \draw[arr] (adj) -- (ana);
 \end{tikzpicture}
 \caption{Overview of the study design. Step~1 (sampling) determines which apps
-enter the three collection streams at the top.}
+enter the three collection streams at the top. The lexical sweep in Step~4b runs
+over the whole corpus, independently of the model, so that the claims of absence
+rest on measured recall rather than on the model's silence.}
 \label{fig:method}
 \end{figure}
 
@@ -262,7 +270,32 @@ the corpus demands but the framework does not anticipate are added through
 thematic analysis~\parencite{braun2006using}, each one triggering a new codebook
 version with its rationale recorded.
 
+\subsection{Codebook and Coding Procedure}
+
+The codebook lives in \pathname{04_Study/Codebook/} and is versioned. Every
+category carries a definition, a positive example, and an explicit
+counter-example; the counter-example is mandatory because without it neither a
+human coder nor a model has a boundary, and both drift. The standing rules are:
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item Code the text as written, never what the provider is assumed to mean.
+  \item A unit may carry several codes; codes are not mutually exclusive across
+        axes.
+  \item Every code records source, verbatim quote, and location.
+  \item When unsure, code it and flag it --- never silently drop it.
+  \item Any change to a category produces a new codebook version with date,
+        change, and reason in the version history.
+\end{enumerate}
+
+The same codebook binds both coders --- the model in
+Section~\ref{sec:llmcoding} and the human in Section~\ref{sec:validation}. Where
+the two disagree, the author adjudicates against the verbatim span and the
+codebook; each adjudication is logged with the rule that resolved it, and a
+pattern of adjudications against the same category is treated as evidence that
+the category needs revision rather than that one coder was careless.
+
 \subsection{Step 4a: LLM-Assisted Coding}
+\label{sec:llmcoding}
 
 The corpus is too large to code entirely by hand --- 50 apps across four or five
 source types, with individual policies commonly running to several thousand
@@ -302,7 +335,12 @@ The pipeline is constrained as follows:
 \label{sec:validation}
 
 LLM output is treated as a measurement instrument that must be calibrated, not
-as ground truth.
+as ground truth. The calibration has to be asymmetric, because the study's
+central claims are claims of \emph{absence}. A false positive inflates a count
+that is reported with its quote attached and can be checked by any reader. A
+false negative does something worse: it manufactures silence, which is exactly
+the finding this thesis sets out to establish. The design below therefore spends
+more effort on recall than on precision.
 
 \begin{enumerate}[leftmargin=*,itemsep=3pt]
   \item \textbf{Agreement.} A stratified 20\,\% subsample of coding units ---
@@ -311,17 +349,51 @@ as ground truth.
         computed per code with Cohen's $\kappa$~\parencite{cohen1960coefficient}
         and reported per category, not as a single pooled figure, because the
         rare categories are the interesting ones and a pooled figure hides them.
+  \item \textbf{Prevalence reported with every $\kappa$.} Cohen's $\kappa$
+        becomes unstable when one category is rare: with a skewed marginal
+        distribution, coders can agree on almost every unit and still produce a
+        low $\kappa$. This study expects precisely that situation, since the
+        harm codes are hypothesised to be rare. Every $\kappa$ is therefore
+        reported alongside the prevalence of the code, the raw percentage
+        agreement, and the positive specific agreement (the proportion of
+        agreement on the units where either coder applied the code). Where the
+        three disagree, the interpretation is argued in the text rather than
+        settled by the single number.
   \item \textbf{Threshold and remedy.} The target is $\kappa \geq 0.70$ per
         code. Where a code falls below it, the failure is diagnosed as either a
-        codebook problem (ambiguous definition, missing counter-example) or a
-        prompt problem; the relevant instrument is revised, its version
-        incremented, and a fresh subsample drawn. Codes that cannot be brought
-        above the threshold after two revisions are reported as unreliable and
-        excluded from quantitative claims, with the reason stated.
-  \item \textbf{Precision audit.} Independently of agreement, every code that
-        enters the results is checked against its verbatim span; a span that
-        does not support the code is discarded and counted. The resulting false
-        positive rate is reported.
+        codebook problem (ambiguous definition, missing counter-example), a
+        prompt problem, or a prevalence artefact of the kind just described; the
+        relevant instrument is revised, its version incremented, and a fresh
+        subsample drawn. Codes that cannot be brought above the threshold after
+        two revisions, and whose low $\kappa$ is not explained by prevalence,
+        are reported as unreliable and excluded from quantitative claims, with
+        the reason stated.
+  \item \textbf{Precision audit.} Every code that enters the results is checked
+        against its verbatim span; a span that does not support the code is
+        discarded and counted. The resulting false positive rate is reported per
+        code.
+  \item \textbf{Recall audit.} This is the one that licenses the absence claims,
+        and it has two parts.
+        \begin{itemize}[leftmargin=1.2em,topsep=3pt,itemsep=2pt]
+          \item \emph{On the subsample:} every code the human coder applied and
+                the model did not is a measured miss. Recall per code is
+                reported next to precision, and no absence claim is made for a
+                code whose recall was not measured.
+          \item \emph{Across the whole corpus:} a lexical sweep independent of
+                the model searches every unit for harm-adjacent vocabulary in
+                both languages --- \emph{infer, derive, predict, estimate,
+                profile, ableiten, Rückschluss}; \emph{breach, leak,
+                unauthorised, Datenpanne, Sicherheitsvorfall}; \emph{incident,
+                notify, melden, benachrichtigen}; \emph{discriminate, insurance,
+                employer, prosecute, Versicherung, Arbeitgeber}. Every hit that
+                the model did not code is read by hand. The sweep has poor
+                precision by design; its job is to catch what the model missed,
+                not to code.
+        \end{itemize}
+        An absence is consequently never reported as \enquote{the provider does
+        not mention X}. It is reported as \enquote{no mention of X was found by
+        an instrument whose measured recall for X is $r$, and which was
+        additionally swept lexically}, with $r$ given.
   \item \textbf{Second coder.} A second coder on a portion of the subsample
         would strengthen the design considerably; whether one can be arranged
         through the supervisor is one of the open points in
@@ -332,27 +404,37 @@ as ground truth.
         claimed~\parencite{mcdonald2019reliability}.
 \end{enumerate}
 
-\subsection{Codebook and Coding Procedure}
+\subsection{From Codes to Answers}
+\label{sec:analysis}
 
-The codebook lives in \pathname{04_Study/Codebook/} and is versioned. Every
-category carries a definition, a positive example, and an explicit
-counter-example; the counter-example is mandatory because without it neither a
-human coder nor a model has a boundary, and both drift. The standing rules are:
+Coding produces a dataset; the following turns it into answers. With 50 apps and
+codes expected to be rare, the analysis is \textbf{descriptive}. No inferential
+claim is made from this sample.
 
-\begin{enumerate}[leftmargin=*,itemsep=1pt]
-  \item Code the text as written, never what the provider is assumed to mean.
-  \item A unit may carry several codes; codes are not mutually exclusive across
-        axes.
-  \item Every code records source, verbatim quote, and location.
-  \item When unsure, code it and flag it --- never silently drop it.
-  \item Any change to a category produces a new codebook version with date,
-        change, and reason in the version history.
-\end{enumerate}
+\begin{description}[leftmargin=1.5cm,style=nextline,itemsep=3pt]
+  \item[\textbf{RQ1}] Prevalence of each harm code and each probe code, reported
+    at two levels: the proportion of the 50 apps whose corpus contains at least
+    one unit carrying the code, and the share of units carrying it. Broken down
+    by domain. The four probe codes --- \textsc{inference},
+    \textsc{breach-consequence}, \textsc{incident-handling},
+    \textsc{concrete-consequence} --- are the headline figures.
+  \item[\textbf{RQ2}] The distribution of stances within each harm code,
+    reported as counts rather than percentages wherever the denominator is small
+    enough that a percentage would mislead.
+  \item[\textbf{RQ3}] A cross-tabulation of PET principle against framing
+    (secrecy versus harm prevention), plus the rate of
+    \textsc{reassurance-without-substance} per app and per surface.
+  \item[\textbf{RQ4}] Per app, the code set of each surface, compared pairwise.
+    The headline is the policy-to-interface direction: how often a code present
+    in the privacy policy is absent from the store listing and from the screens
+    a user actually passes through. Where a difference looks systematic, an
+    exact paired test is reported as \emph{exploratory only}, with the number of
+    comparisons made stated so the reader can discount accordingly.
+\end{description}
 
-Disagreements between the manual and model codings are adjudicated by the author
-against the verbatim span and the codebook; each adjudication is logged with the
-rule that resolved it, and a pattern of adjudications against the same category
-is treated as evidence that the category needs revision.
+Every quantitative claim is accompanied by at least one illustrative verbatim
+quote with its app identifier, source, and location, so that a reader can judge
+the coding rather than take it on trust.
 
 \subsection{Ethics and Data Handling}
 \label{sec:ethics}
@@ -396,12 +478,20 @@ shapes the text, and findings should not be read as global without
 qualification. Where a policy exists in both German and English, the pair is
 recorded, and any divergence between them is itself reportable.
 
-\paragraph{Measurement error in the instrument.}
+\paragraph{Measurement error in the instrument, and why it is asymmetric.}
 LLM coding is sensitive to prompt wording and is not perfectly reproducible even
 at temperature 0. The mitigations are in Section~\ref{sec:validation}: pinned
 model version, repeated runs with a reported disagreement rate, per-category
-$\kappa$ against manual coding, mandatory verbatim spans, and a precision audit.
-The agreement figures are reported whatever they turn out to be.
+$\kappa$ reported with prevalence, mandatory verbatim spans, and precision and
+recall audits. The agreement figures are reported whatever they turn out to be.
+
+The asymmetry is worth stating plainly as a limitation and not only as a design
+feature. A study whose headline is \enquote{providers do not say X} is a study
+that can be wrong in one particularly damaging way: by using an instrument that
+failed to see X. The recall audit and the lexical sweep bound that risk; they do
+not eliminate it. Any harm vocabulary that neither the codebook anticipated nor
+the sweep's term list contains could still pass unseen, and the absence claims
+should be read with that residual in mind.
 
 \paragraph{Single analyst.}
 One person builds the sample, runs the walkthroughs, and does the manual coding.
