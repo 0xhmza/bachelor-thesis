@@ -1,8 +1,79 @@
 \section{Significance of the Problem}
-% Why this matters, and to whom.
-%   - Users: what they believe is protected vs. what actually is.
-%   - Providers / designers: where communication fails.
-%   - Regulators (GDPR, DSA): what transparency obligations do not cover.
-%   - Research: what this adds to usable privacy and HCI.
+\label{sec:significance}
 
-\todo{Argue why the problem is important.}
+\subsection{For users: a vocabulary they are never given}
+
+To decide whether to install a cycle tracker, a person has to weigh a benefit
+they can feel against a risk they have to imagine. Privacy communication is the
+main material they have for the second half of that judgement, and it is
+material about mechanisms: categories of data, categories of recipient,
+retention periods. If it never names a consequence, the user must supply the
+consequence themselves.
+
+The evidence suggests they cannot. Fitness tracker users are confident about
+what is collected and unsure how it is used, and they rate harmful scenarios as
+plausible but unlikely~\parencite{gabriele2020understanding}. Period tracker
+users report high concern coupled with a sense of being uninformed and powerless
+about what to do~\parencite{cao2024deleted}. That pattern --- concern without
+actionable understanding --- is what one would predict from communication that
+is complete about data flows and silent about stakes. Establishing whether the
+silence is real, and where exactly it falls, turns a plausible explanation into
+a measured one.
+
+The risk is sharpest where inference is sharpest. A user who reads that an app
+does not share raw data may reasonably conclude they are protected. If the
+provider derives and acts on an inference instead, the conclusion is wrong, and
+nothing in the text told them so~\parencite{martin2025cookies}.
+
+\subsection{For providers and designers: a map of where communication fails}
+
+Providers are not, in the main, choosing between honesty and deception; the
+measurement literature already covers deception. They are choosing what to put
+in a finite amount of text and screen space, and the conventions they inherit ---
+from legal templates, from store label schemas --- have no slot for harm. A
+systematic map of which harms are named, on which surface, and in what terms
+gives design and policy teams something they currently lack: an account of what
+their communication omits, expressed in categories a non-lawyer can act on.
+
+There is already evidence that the design space exists. Hudig and Singh
+co-designed ten concrete transparency and control mechanisms with fertility
+tracker users~\parencite{hudig2025intimate}, and Malki et al.\ derive concrete
+recommendations from the inconsistencies they
+found~\parencite{malki2024exploring}. Both stop short of asking what the
+communication should \emph{say about harm}; this thesis supplies that input.
+
+\subsection{For regulators: evidence about a gap the law leaves open}
+
+Section~\ref{sec:law} set out the structural point: the GDPR's
+transparency articles enumerate practices, and require a statement of
+consequences only in the narrow automated-decision-making case of Article
+13(2)(f); breach communication under Article 34 is
+reactive~\parencite{gdpr2016}. Platform disclosure schemas inherit the same
+frame, and are in any case unreliable~\parencite{arkalakis2024abandon,li2022ios}.
+
+Whether harm-facing disclosure would add anything is currently an untested
+assumption in that debate. If providers turn out to name harms voluntarily and
+in useful terms, the case for mandating it weakens. If, as expected, the four
+elements identified in Section~\ref{sec:problem} are near-absent across an
+entire market segment handling Article~9 special-category data, that is a
+concrete, citable finding about the limits of a transparency regime built on
+data-practice disclosure --- and it arrives at a moment when the design of
+structured disclosures is actively being revised on both major platforms.
+
+\subsection{For research: extending harm analysis to provider discourse}
+
+The harm literature has been developed in two places: in legal scholarship,
+where the object is what a court will
+recognise~\parencite{citron2021harms,calo2011boundaries,solove2006taxonomy}, and
+in systems analysis, where the object is what a system's functionality makes
+possible~\parencite{knabenhans2026harms}. Neither has been turned on the text
+that providers actually put in front of users.
+
+Doing so makes three contributions to method as well as to findings. It tests
+whether a typology built for adjudication can be operationalised as a coding
+scheme for corporate prose --- a question with an answer either way. It extends
+usable-privacy document analysis, whose annotation schemes are schemes of data
+practices~\parencite{wilson2016creation,harkous2018polisis}, with a harm
+dimension. And it joins document analysis to interface inspection in one design,
+so that what a provider writes can be compared with what the same provider
+shows~\parencite{wharton1994cognitive}, which is where RQ4 lives.

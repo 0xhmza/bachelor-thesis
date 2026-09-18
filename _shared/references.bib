@@ -3,12 +3,22 @@
 %  Add every new source HERE only. Never keep a second .bib file.
 %
 %  Key convention:  lastnameYEARfirstword   e.g. citron2021harms
+%
+%  House rule for `note`: it is PRINTED in the reference list, so it may
+%  only carry information a reader needs (an open-access pointer, the
+%  method behind a non-academic statistic). Everything else — provenance,
+%  verification records, why a key is spelled the way it is — goes in a
+%  % comment above the entry.
 % =====================================================================
 
 % ---------------------------------------------------------------------
 %  Core literature from the thesis offer
 % ---------------------------------------------------------------------
 
+% Key kept as citron2021harms after the SSRN posting year (2021); the
+% entry itself carries the 2022 Boston University Law Review details.
+% Also circulated as GWU Legal Studies Research Paper No. 2021-11.
+% The seven-category typology is at pp. 830–861.
 @article{citron2021harms,
   author  = {Citron, Danielle Keats and Solove, Daniel J.},
   title   = {Privacy Harms},
@@ -16,11 +26,12 @@
   volume  = {102},
   pages   = {793--863},
   year    = {2022},
-  note    = {Also GWU Legal Studies Research Paper No. 2021-11;
-             SSRN abstract 3782222. Key kept as 	exttt{citron2021harms}
-             for the SSRN posting year.}
+  addendum = {SSRN abstract 3782222.}
 }
 
+% The camera-ready PDF footer prints 10.1145/3313831.3376346. The ACM DL
+% record and DBLP both give 3376651, which is the DOI used here.
+% Checked 2026-09-18.
 @inproceedings{gabriele2020understanding,
   author    = {Gabriele, Sandra and Chiasson, Sonia},
   title     = {Understanding Fitness Tracker Users' Security and Privacy
@@ -34,31 +45,29 @@
 }
 
 @article{niksirat2024wearable,
-  author  = {Salehzadeh Niksirat, Kavous and Velykoivanenko, Lev and
-             Zufferey, No{\'e} and Cherubini, Mauro and Huguenin, K{\'e}vin
-             and Humbert, Mathias},
-  title   = {Wearable Activity Trackers: A Survey on Utility, Privacy,
-             and Security},
-  journal = {ACM Computing Surveys},
-  volume  = {56},
-  number  = {7},
-  pages   = {1--40},
-  year    = {2024},
-  doi     = {10.1145/3645091}
+  author    = {Salehzadeh Niksirat, Kavous and Velykoivanenko, Lev and
+               Zufferey, No{\'e} and Cherubini, Mauro and Huguenin, K{\'e}vin
+               and Humbert, Mathias},
+  title     = {Wearable Activity Trackers: A Survey on Utility, Privacy,
+               and Security},
+  journal   = {ACM Computing Surveys},
+  volume    = {56},
+  number    = {7},
+  articleno = {183},
+  numpages  = {40},
+  year      = {2024},
+  doi       = {10.1145/3645091}
 }
 
-@incollection{nissenbaum2009privacy,
+@book{nissenbaum2009privacy,
   author    = {Nissenbaum, Helen},
   title     = {Privacy in Context: Technology, Policy, and the Integrity
                of Social Life},
-  booktitle = {Privacy in Context},
   publisher = {Stanford University Press},
-  year      = {2009}
+  address   = {Stanford, CA},
+  year      = {2009},
+  isbn      = {978-0-8047-5237-4}
 }
-
-% ---------------------------------------------------------------------
-%  Add your own sources below
-% ---------------------------------------------------------------------
 
 % ---------------------------------------------------------------------
 %  Supervisor's reading list, 2026-09-05
@@ -76,6 +85,8 @@
   url          = {https://eprint.iacr.org/2026/867}
 }
 
+% Page range verified against the published issue PDF on 2026-09-18:
+% the article runs to printed page 64.
 @article{martin2025cookies,
   author  = {Martin, Kirsten and Nissenbaum, Helen and Shmatikov, Vitaly},
   title   = {No Cookies For You!: Evaluating the Promises of Big Tech's
@@ -83,10 +94,9 @@
   journal = {Georgetown Law Technology Review},
   volume  = {9},
   number  = {1},
-  pages   = {1--61},
+  pages   = {1--64},
   year    = {2025},
-  note    = {SSRN abstract 4655228. Page range to be confirmed
-             against the printed issue.}
+  addendum = {SSRN abstract 4655228.}
 }
 
 @inproceedings{hudig2025intimate,
@@ -131,6 +141,9 @@
   doi       = {10.1145/3613904.3642042}
 }
 
+% No DOI; the work predates DOI registration. The four walkthrough
+% questions are in Table 5.1, p. 106. PDF of the full volume is in
+% 01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf.
 @incollection{wharton1994cognitive,
   author    = {Wharton, Cathleen and Rieman, John and Lewis, Clayton and
                Polson, Peter},
@@ -141,6 +154,261 @@
   publisher = {John Wiley \& Sons},
   address   = {New York},
   year      = {1994},
-  isbn      = {0-471-01877-5},
-  note      = {No DOI; the work predates DOI registration.}
+  isbn      = {0-471-01877-5}
+}
+
+% ---------------------------------------------------------------------
+%  Own literature search, 2026-09-18
+%  Covers the three areas the supervisor asked for in the 2026-09-05
+%  input, §8: privacy harms · health-tracker security and privacy ·
+%  methodology (privacy-policy analysis, cognitive walkthrough).
+%  Every entry below was checked against the publisher record or the
+%  paper itself on 2026-09-18.
+% ---------------------------------------------------------------------
+
+% --- Privacy harms: conceptual groundwork -----------------------------
+
+% SSRN abstract 667622.
+@article{solove2006taxonomy,
+  author  = {Solove, Daniel J.},
+  title   = {A Taxonomy of Privacy},
+  journal = {University of Pennsylvania Law Review},
+  volume  = {154},
+  number  = {3},
+  pages   = {477--564},
+  year    = {2006}
+}
+
+% Article 8 of the issue. Distinguishes subjective privacy harm (the
+% perception of unwanted observation) from objective privacy harm (the
+% unanticipated or coerced use of information against a person).
+@article{calo2011boundaries,
+  author  = {Calo, M. Ryan},
+  title   = {The Boundaries of Privacy Harm},
+  journal = {Indiana Law Journal},
+  volume  = {86},
+  number  = {3},
+  pages   = {1131--1162},
+  year    = {2011}
+}
+
+% --- Health trackers: security and privacy ----------------------------
+
+% 30 Android menstrual apps analysed.
+@article{shipp2020period,
+  author  = {Shipp, Laura and Blasco, Jorge},
+  title   = {How Private Is Your Period?: A Systematic Analysis of
+             Menstrual App Privacy Policies},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  volume  = {2020},
+  number  = {4},
+  pages   = {491--510},
+  year    = {2020},
+  doi     = {10.2478/popets-2020-0083}
+}
+
+% 36 apps; 29 transmitted data to Google or Facebook services, 12
+% disclosed this in a privacy policy.
+@article{huckvale2019assessment,
+  author  = {Huckvale, Kit and Torous, John and Larsen, Mark E.},
+  title   = {Assessment of the Data Sharing and Privacy Practices of
+             Smartphone Apps for Depression and Smoking Cessation},
+  journal = {JAMA Network Open},
+  volume  = {2},
+  number  = {4},
+  pages   = {e192542},
+  year    = {2019},
+  doi     = {10.1001/jamanetworkopen.2019.2542}
+}
+
+% --- Stated practice vs. actual practice ------------------------------
+
+% Almost 5,000 Android apps; 81% misrepresent data collection or sharing
+% in the Data Safety section.
+@inproceedings{arkalakis2024abandon,
+  author    = {Arkalakis, Ioannis and Diamantaris, Michalis and
+               Moustakas, Serafeim and Ioannidis, Sotiris and
+               Polakis, Jason and Ilia, Panagiotis},
+  title     = {Abandon All Hope Ye Who Enter Here: A Dynamic,
+               Longitudinal Investigation of {Android}'s Data Safety
+               Section},
+  booktitle = {Proceedings of the 33rd USENIX Security Symposium
+               (USENIX Security 24)},
+  pages     = {5645--5662},
+  year      = {2024},
+  publisher = {USENIX Association},
+  address   = {Philadelphia, PA, USA}
+}
+
+% 36 weekly snapshots of 1.6 million apps, July 2021 – March 2022.
+@inproceedings{li2022ios,
+  author    = {Li, Yucheng and Chen, Deyuan and Li, Tianshi and
+               Agarwal, Yuvraj and Cranor, Lorrie Faith and
+               Hong, Jason I.},
+  title     = {Understanding {iOS} Privacy Nutrition Labels: An
+               Exploratory Large-Scale Analysis of App Store Data},
+  booktitle = {Extended Abstracts of the 2022 CHI Conference on Human
+               Factors in Computing Systems},
+  pages     = {1--7},
+  year      = {2022},
+  address   = {New Orleans, LA, USA},
+  publisher = {ACM},
+  doi       = {10.1145/3491101.3519739}
+}
+
+% --- Methodology: analysing privacy policies --------------------------
+
+@article{mcdonald2008cost,
+  author  = {McDonald, Aleecia M. and Cranor, Lorrie Faith},
+  title   = {The Cost of Reading Privacy Policies},
+  journal = {I/S: A Journal of Law and Policy for the Information
+             Society},
+  volume  = {4},
+  number  = {3},
+  pages   = {543--568},
+  year    = {2008}
+}
+
+% Introduces the OPP-115 corpus and its annotation scheme for data
+% practices. Corpus at https://usableprivacy.org/data
+@inproceedings{wilson2016creation,
+  author    = {Wilson, Shomir and Schaub, Florian and
+               Dara, Aswarth Abhilash and Liu, Frederick and
+               Cherivirala, Sushain and Leon, Pedro Giovanni and
+               Andersen, Mads Schaarup and Zimmeck, Sebastian and
+               Sathyendra, Kanthashree Mysore and Russell, N. Cameron and
+               Norton, Thomas B. and Hovy, Eduard and
+               Reidenberg, Joel and Sadeh, Norman},
+  title     = {The Creation and Analysis of a Website Privacy Policy
+               Corpus},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association
+               for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {1330--1340},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/P16-1126}
+}
+
+@inproceedings{harkous2018polisis,
+  author    = {Harkous, Hamza and Fawaz, Kassem and Lebret, R{\'e}mi and
+               Schaub, Florian and Shin, Kang G. and Aberer, Karl},
+  title     = {Polisis: Automated Analysis and Presentation of Privacy
+               Policies Using Deep Learning},
+  booktitle = {Proceedings of the 27th USENIX Security Symposium
+               (USENIX Security 18)},
+  pages     = {531--548},
+  year      = {2018},
+  publisher = {USENIX Association},
+  address   = {Baltimore, MD, USA}
+}
+
+@article{zimmeck2019maps,
+  author  = {Zimmeck, Sebastian and Story, Peter and Smullen, Daniel and
+             Ravichander, Abhilasha and Wang, Ziqi and
+             Reidenberg, Joel R. and Russell, N. Cameron and
+             Sadeh, Norman},
+  title   = {{MAPS}: Scaling Privacy Compliance Analysis to a Million
+             Apps},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  volume  = {2019},
+  number  = {3},
+  pages   = {66--86},
+  year    = {2019},
+  doi     = {10.2478/popets-2019-0037}
+}
+
+@article{rodriguez2024llm,
+  author  = {Rodriguez, David and Yang, Ian and
+             Del Alamo, Jose M. and Sadeh, Norman},
+  title   = {Large Language Models: A New Approach for Privacy Policy
+             Analysis at Scale},
+  journal = {Computing},
+  volume  = {106},
+  number  = {12},
+  pages   = {3879--3903},
+  year    = {2024},
+  doi     = {10.1007/s00607-024-01331-9},
+  addendum = {Preprint: arXiv:2405.20900.}
+}
+
+% --- Methodology: inspection and qualitative coding --------------------
+
+% Chapter 2 of the same volume as wharton1994cognitive.
+@incollection{nielsen1994heuristic,
+  author    = {Nielsen, Jakob},
+  title     = {Heuristic Evaluation},
+  booktitle = {Usability Inspection Methods},
+  editor    = {Nielsen, Jakob and Mack, Robert L.},
+  pages     = {25--62},
+  publisher = {John Wiley \& Sons},
+  address   = {New York},
+  year      = {1994},
+  isbn      = {0-471-01877-5}
+}
+
+@article{braun2006using,
+  author  = {Braun, Virginia and Clarke, Victoria},
+  title   = {Using Thematic Analysis in Psychology},
+  journal = {Qualitative Research in Psychology},
+  volume  = {3},
+  number  = {2},
+  pages   = {77--101},
+  year    = {2006},
+  doi     = {10.1191/1478088706qp063oa}
+}
+
+@article{cohen1960coefficient,
+  author  = {Cohen, Jacob},
+  title   = {A Coefficient of Agreement for Nominal Scales},
+  journal = {Educational and Psychological Measurement},
+  volume  = {20},
+  number  = {1},
+  pages   = {37--46},
+  year    = {1960},
+  doi     = {10.1177/001316446002000104}
+}
+
+@article{mcdonald2019reliability,
+  author  = {McDonald, Nora and Schoenebeck, Sarita and Forte, Andrea},
+  title   = {Reliability and Inter-Rater Reliability in Qualitative
+             Research: Norms and Guidelines for {CSCW} and {HCI}
+             Practice},
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  volume  = {3},
+  number  = {CSCW},
+  pages   = {1--23},
+  year    = {2019},
+  doi     = {10.1145/3359174}
+}
+
+% --- Legal and market context -----------------------------------------
+
+% Articles used in the proposal: 9(1) special categories, 13–14
+% transparency, 13(2)(f) consequences of automated decision-making,
+% 33–34 breach notification and communication.
+@misc{gdpr2016,
+  author       = {{European Parliament and Council of the European Union}},
+  title        = {Regulation (EU) 2016/679 of 27 April 2016 on the
+                  Protection of Natural Persons with Regard to the
+                  Processing of Personal Data and on the Free Movement
+                  of Such Data (General Data Protection Regulation)},
+  year         = {2016},
+  howpublished = {Official Journal of the European Union, L 119,
+                  4 May 2016, pp. 1--88},
+  url          = {https://eur-lex.europa.eu/eli/reg/2016/679/oj}
+}
+
+% Non-academic source, so the method stays in the printed note.
+@online{bitkom2025health,
+  author       = {{Bitkom Research}},
+  title        = {Digital Health 2025},
+  year         = {2025},
+  month        = {11},
+  organization = {Bitkom Research GmbH, Berlin},
+  url          = {https://bitkom-research.de/news/digital-health-2025},
+  urldate      = {2026-09-18},
+  addendum     = {Representative telephone survey of 1{,}145 people in
+                  Germany aged 16 and over, calendar weeks 38--43 of
+                  2025.}
 }

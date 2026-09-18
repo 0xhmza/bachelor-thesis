@@ -44,6 +44,11 @@
 \usepackage{enumitem}
 \usepackage{csquotes}
 
+% The methodology overview figure is drawn in TikZ rather than included as an
+% image, so there is no binary asset to keep in sync with the text.
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+
 \usepackage{xcolor}
 \definecolor{linkblue}{HTML}{16537E}
 \usepackage[hidelinks]{hyperref}
@@ -61,13 +66,19 @@
 %  Switch style to  style=apa  or  style=alphabetic  if your supervisor
 %  prefers it (apa additionally needs the biblatex-apa package).
 %----------------------------------------------------------------------
-\usepackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99]{biblatex}
+\usepackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
 \addbibresource{../_shared/references.bib}
 
 %----------------------------------------------------------------------
 %  Helper for TODOs — remove \todo lines before submitting
 %----------------------------------------------------------------------
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+%----------------------------------------------------------------------
+%  Repository paths. \nolinkurl lets long paths break across lines and
+%  needs no escaping of _ inside the argument.
+%----------------------------------------------------------------------
+\newcommand{\pathname}[1]{\nolinkurl{#1}}
 
 %======================================================================
 \begin{document}
@@ -105,17 +116,20 @@ Date              & \today \\
 \input{sections/00_abstract}
 \end{abstract}
 
+\newpage
 \tableofcontents
 \newpage
 
 %---------------------------- Body ------------------------------------
-%  The four sections your supervisor asked for, in order.
+%  The four sections the supervisor asked for come first, in order:
+%  background -> research problem -> why it matters -> methodology.
 \input{sections/01_background}
 \input{sections/02_research_problem}
 \input{sections/03_significance}
 \input{sections/04_methodology}
 \input{sections/05_timeline}
 \input{sections/06_expected_contributions}
+\input{sections/07_open_points}
 
 %---------------------------- References ------------------------------
 \newpage

@@ -97,18 +97,30 @@ into `03_Thesis/figures/`. Never hand-edit a figure you will need to regenerate.
 
 ## Next actions
 
-See `00_Admin/Timeline.md`. From the 2026-09-04 meeting and the advisor's written
-input of 2026-09-05 (`00_Admin/Supervisor-Input/`):
+See `00_Admin/Timeline.md`. The proposal is written and compiles
+(`02_Proposal/proposal.pdf`, 23 pages). What is left before it goes to the
+advisor:
 
-1. Read the three harm papers now in `01_Literature/PDFs/` — Citron & Solove
-   (taxonomy), Knabenhans et al. (harm model), Martin et al. (PET framing).
-2. Run your own literature search on privacy harms, health-tracker security and
-   privacy, and methods (privacy-policy analysis, cognitive walkthrough). The
-   advisor asked for this explicitly — the sent papers are examples, not the review.
-3. Set up the shared Google Doc for the advisor.
-4. Confirm the scope question — the 2026-09-05 input points at document and
-   interface analysis, but say so out loud at the next meeting
-   (`00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md`, §8).
-5. Fix the keyword list and inclusion criteria for the German app sample
-   (→ `04_Study/App-Sample/sampling_protocol.md`).
-6. Draft the proposal: background → research problem → why it matters → methodology.
+1. **Fill the two title-page placeholders** in `02_Proposal/proposal.tex`:
+   `\matriculation` and `\supervisorone` (the RUB examiner). They print as
+   `TODO: ...` on the title page until you do. The same two are also in
+   `03_Thesis/config/metadata.tex`, along with place of birth, second examiner,
+   chair and submission date.
+2. **Read §7 of the proposal, *Open Points for Confirmation*.** It lists ten
+   decisions the proposal makes on your behalf so that work could proceed —
+   scope, harm taxonomy, "highest rated", sample size, walkthrough subsample,
+   ads, language, second coder, model choice, ethics. Take that list to the next
+   meeting and close them.
+3. **Set up the shared Google Doc** for the advisor (still open from 2026-09-04).
+4. **Read the three harm papers** in `01_Literature/PDFs/` end to end — Citron &
+   Solove (taxonomy), Knabenhans et al. (harm model), Martin et al. (PET
+   framing). The proposal uses all three; you need to be able to defend that use.
+5. **Get the ethics answer in writing** before any collection starts, and file it
+   in `04_Study/Ethics/`.
+6. After approval and registration: sampling per
+   `04_Study/App-Sample/sampling_protocol.md`, then the pilot.
+
+The literature search the advisor asked for has had its first pass: 17 verified
+entries were added to `_shared/references.bib` on 2026-09-18, covering privacy
+harms, health-tracker security and privacy, and methods. Keep adding to it — the
+thesis needs a related-work chapter, not just a proposal's worth of citations.

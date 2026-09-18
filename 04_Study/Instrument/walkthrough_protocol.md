@@ -1,8 +1,17 @@
-# App Walkthrough Protocol
+# Privacy-Focused Cognitive Walkthrough Protocol
+
+**Version:** 1 · **Date:** 2026-09-18 · Operational version of §4.4 of the
+proposal. Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
+Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
+*Usability Inspection Methods*, pp. 105–140. The four questions below are from
+Table 5.1, p. 106.
 
 Walkthroughs are done **manually** — this is the part of the study that is not
 automated. The point is to make every walkthrough identical, so differences you
 find are differences between apps and not between sessions.
+
+**Subsample:** 12 apps, balanced 6 fitness / 6 fertility, each domain split
+3 Android / 3 iOS, drawn from the top of the ranked sample.
 
 ## Setup
 
@@ -12,7 +21,35 @@ find are differences between apps and not between sessions.
 - Region set to Germany, system language: TODO
 - Screen recording on for the whole session
 
-## Fixed sequence
+## The adaptation: the tasks are privacy tasks
+
+A standard cognitive walkthrough asks whether a user can complete the app's own
+tasks. Here the tasks are the user's **privacy** goals. For each task, walk the
+action sequence and ask Wharton et al.'s four questions at every step:
+
+1. Will the user try to achieve the right effect?
+2. Will the user notice that the correct action is available?
+3. Will the user associate the correct action with the effect they are trying to
+   achieve?
+4. If the correct action is performed, will the user see that progress is being
+   made toward solution of the task?
+
+### Task list — run in this order, every time
+
+| # | Task | Why it is here |
+|---|---|---|
+| T1 | Find out what data the app collects | baseline: this is what communication normally covers |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 probe `P-INF` — expected to fail |
+| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 probes `P-BRC`, `P-INC` — expected to fail |
+| T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
+| T5 | Turn off sharing with third parties | control, and how it is framed |
+| T6 | Export the data | control |
+| T7 | Delete the account and the data | control |
+
+**T2 and T3 are the ones that matter.** They are expected to fail. Record
+*where* in the action sequence they fail and against which of the four questions.
+
+## Fixed session sequence
 
 Do these steps in this order, every time:
 
@@ -26,30 +63,54 @@ Do these steps in this order, every time:
    personal data.
 5. **Permission prompts** — record each one verbatim, and what the app says the
    permission is for.
-6. **Privacy settings** — find them. Record how many taps from the home screen.
-   Record the defaults before changing anything.
-7. **Privacy policy from inside the app** — is it reachable? How many taps?
-8. **Data export / deletion** — is it offered? Where?
-9. **Ads** — note any ad shown during the session and whether it says anything
+6. **Run T1–T7** in order, recording each step against the four questions.
+7. **Privacy settings** — record how many taps from the home screen, and the
+   defaults *before* changing anything.
+8. **Ads** — note any ad shown during the session and whether it says anything
    privacy-related.
 
 ## Recorded per app
 
 | Field | Value |
 |---|---|
+| App ID (from sampling protocol) | |
 | App | |
 | Version | |
 | Platform | |
+| Domain stratum | fitness / fertility |
 | Date of walkthrough | |
+| T1 outcome | reached / not reached, where it failed |
+| T2 outcome | reached / not reached, where it failed |
+| T3 outcome | reached / not reached, where it failed |
+| T4 taps to privacy policy | |
+| T5 outcome + default state before change | |
+| T6 outcome | |
+| T7 outcome | |
 | Taps to privacy settings | |
-| Taps to privacy policy | |
 | Permissions requested | |
 | Consent screens shown | |
-| Anything about inference / breaches / incidents shown in the UI? | |
+| Anything about inference / breaches / incidents shown in the UI? | verbatim quote if yes |
+| Ads seen, privacy-related content in them | |
 | Screen recording file | |
 
 ## Notes discipline
 
-Write observations in the moment, not from memory afterwards. Distinguish clearly
-between **what the screen said** (quote it) and **what you concluded** (mark it as
-interpretation). Only the first goes into the results chapter as data.
+Write observations in the moment, not from memory afterwards. Distinguish
+clearly between **what the screen said** (quote it) and **what you concluded**
+(mark it as interpretation). Only the first goes into the results chapter as
+data.
+
+Any privacy-relevant text captured here enters the corpus as source
+`in_app_ui` and is coded with the same codebook as the documents.
+
+## Ethics rules that bind every session
+
+Throwaway accounts and synthetic data only. No real name, address, health data,
+or payment details. No app that requires identity verification — those are
+excluded at sampling. See [`../Ethics/README.md`](../Ethics/README.md).
+
+## Version history
+
+| Version | Date | Change | Reason |
+|---|---|---|---|
+| 1 | 2026-09-18 | Added the seven privacy tasks, the four Wharton et al. questions, and the per-task record fields | Aligns the instrument with §4.4 of the proposal |

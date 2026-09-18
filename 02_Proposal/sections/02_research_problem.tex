@@ -1,17 +1,121 @@
 \section{Research Problem}
-% State the gap in one paragraph, then make it precise.
-%   Observation: privacy communication covers downstream data practices but is
-%   largely silent on inference, breaches and incident handling.
+\label{sec:problem}
 
-\todo{State the gap.}
+\subsection{The gap}
 
-\subsection{Research Questions}
-\begin{description}[leftmargin=2.2cm, style=nextline]
-  \item[\textbf{RQ1}] \todo{...}
-  \item[\textbf{RQ2}] \todo{...}
-  \item[\textbf{RQ3}] \todo{...}
+We have a well-developed vocabulary for privacy harms and a well-developed
+literature on whether health trackers tell the truth about their data
+practices. We do not have a systematic account of \emph{which harms providers
+communicate at all}. Prior studies examine the security and privacy of health
+trackers, fitness and fertility trackers included, but none maps which harm
+types are acknowledged, which are minimised, and which are never mentioned, nor
+how PETs are framed --- as secrecy (nobody else sees your data) or as harm
+prevention (nothing bad can happen to you).
+
+The gap has a specific shape, and it follows from Section~\ref{sec:background}.
+Privacy communication is organised around downstream data practices: who
+receives data, for which purposes, on which legal basis, for how long. That is
+what the law asks for, and that is what the measurement literature checks. Three
+things sit outside this frame:
+
+\begin{description}[leftmargin=2.4cm,style=nextline,itemsep=3pt]
+  \item[\textbf{Inference}] what can be \emph{derived} from the collected data
+    beyond what the user explicitly provided --- pregnancy, illness, mood,
+    routine, personality~\parencite{martin2025cookies,niksirat2024wearable}.
+  \item[\textbf{Breach}] what would happen to the user if the data were exposed
+    to parties who were never intended to see it.
+  \item[\textbf{Incident handling}] how the provider detects, responds to, and
+    notifies users about security and privacy incidents.
 \end{description}
 
+A fourth element cuts across all three: whether any \emph{concrete consequence}
+for the user is ever named --- being denied insurance, being outed, being
+stalked, being prosecuted --- or whether the text remains at the level of data
+flows. Where a provider is silent on all four, the user is left with material
+that describes a mechanism and never describes a stake. Users who believe they
+are protected may be protected against exactly the harms that the communication
+never addressed, and no others. Gabriele and Chiasson's finding that users rate
+harmful scenarios as plausible but unlikely, and Cao et al.'s finding that users
+feel uninformed and powerless, are both consistent with a communication
+environment that supplies no harm vocabulary at
+all~\parencite{gabriele2020understanding,cao2024deleted}.
+
+Whether this is in fact what providers do is an empirical question. This thesis
+answers it.
+
+\subsection{Research Questions}
+
+The overarching question, as agreed with the supervisor, is:
+
+\begin{quote}
+\textbf{RQ.} What types of downstream privacy harms do health tracker service
+providers explicitly acknowledge or downplay when describing their privacy
+practices or PETs, and how do they frame the protection these technologies
+offer?
+\end{quote}
+
+\noindent It decomposes into four answerable sub-questions:
+
+\begin{description}[leftmargin=1.9cm, style=nextline, itemsep=4pt]
+  \item[\textbf{RQ1}] \textbf{Coverage.} Which types of privacy harm appear in
+    the privacy communication of fitness and fertility tracking apps, and which
+    are absent? Specifically, how often is inference, breach, incident handling,
+    or a concrete consequence for the user named at all?
+  \item[\textbf{RQ2}] \textbf{Stance.} Where a harm is mentioned, how is it
+    treated --- explicitly acknowledged, hedged, minimised, or shifted onto the
+    user as their responsibility?
+  \item[\textbf{RQ3}] \textbf{PET framing.} How is protection framed? Which of
+    the three industry principles identified by Martin et al.\ (limiting
+    third-party access, preferring inferences over raw data, keeping data on the
+    device) do providers invoke, and is the protection presented as secrecy or
+    as harm prevention?
+  \item[\textbf{RQ4}] \textbf{Consistency across surfaces.} Does the answer to
+    RQ1--RQ3 change between the privacy policy, the store listing, the provider
+    website and advertisements, and the app interface itself?
+\end{description}
+
+RQ1--RQ3 correspond to the three components of the agreed RQ. RQ4 is an
+extension that the multi-source corpus makes possible at no additional
+collection cost, and it is the sub-question most likely to yield a finding with
+direct design implications: a harm named in a policy nobody reads and absent
+from the screen where the decision is actually made is, in practice, not
+communicated.
+
 \subsection{Scope and Delimitations}
-\todo{What is in scope (which app categories, which market, which sources) and
-what is explicitly out of scope.}
+
+\paragraph{In scope.}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item \textbf{Domains:} fitness and activity tracking (including sleep, heart
+        rate, and nutrition tracking) and fertility\,/\,period tracking.
+  \item \textbf{Market:} the German storefronts of Google Play and the Apple App
+        Store. Apps may be internationally operated; the storefront defines the
+        sample and the version of the communication that a user in Germany
+        actually sees.
+  \item \textbf{Material:} privacy policies, store listing descriptions and
+        structured privacy disclosures, provider websites and privacy blog
+        posts, advertisements encountered during use, and privacy-relevant
+        content shown inside the app.
+  \item \textbf{Devices:} smartphones and smartphone-paired wearables, analysed
+        through the app.
+\end{itemize}
+
+\paragraph{Out of scope, deliberately.}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item \textbf{A user study.} The thesis analyses documents and interfaces. The
+        scenario-based survey described in the original thesis offer is a natural
+        second phase and is not part of this work (see
+        Section~\ref{sec:openpoints}).
+  \item \textbf{Verifying whether claims are true.} Traffic analysis and static
+        or dynamic app analysis answer a different question, already well served
+        by existing
+        work~\parencite{huckvale2019assessment,hudig2025intimate,arkalakis2024abandon}.
+        This thesis analyses the communication as text and interface.
+  \item \textbf{Legal compliance assessment.} Whether a given policy satisfies
+        Articles 13--14 GDPR is a legal judgement. The GDPR enters this work as
+        context for what providers are obliged to say, not as a yardstick to
+        grade them against.
+  \item \textbf{Prescription digital health applications} (\emph{Digitale
+        Gesundheitsanwendungen}, DiGA) and apps regulated as medical devices.
+        Their communication is governed by a separate regime and is not
+        comparable to consumer self-tracking apps.
+\end{itemize}

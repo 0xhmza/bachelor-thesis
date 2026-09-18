@@ -118,22 +118,25 @@ sources listed, not a user survey.
 |---|--------|-------|--------|
 | 1 | ~~Retrieve P1–P3, F1–F3, T1 and resolve their bibliographic details~~ — done 2026-09-05; PDFs in `01_Literature/PDFs/`, entries in `_shared/references.bib` | Hamza | done |
 | 2 | ~~Add Wharton et al. (1994) to `_shared/references.bib`~~ — done; **PDF still needed** via RUB library | Hamza | partly done |
-| 3 | Run own literature search on **privacy harms** beyond the three sent | Hamza | open |
-| 4 | Run own literature search on **health tracker security and privacy** | Hamza | open |
-| 5 | Run own literature search on **methodologies**: privacy-policy analysis, cognitive walkthrough | Hamza | open |
-| 6 | Survey existing **LLM tools for privacy-policy analysis** | Hamza | open |
-| 7 | Define the keyword search and inclusion criteria for the German app sample (Play Store + App Store) → `04_Study/` | Hamza | open |
-| 8 | Fold the RQ and scope above into the proposal (`02_Proposal/proposal.tex`) | Hamza | open |
-| 9 | Confirm the scope question in the 2026-09-04 notes (§8) can be closed as "document/interface analysis" | Hamza | open |
+| 3 | Run own literature search on **privacy harms** beyond the three sent | Hamza | done 2026-09-18 — Solove 2006 taxonomy, Calo 2011 subjective/objective harm added |
+| 4 | Run own literature search on **health tracker security and privacy** | Hamza | done 2026-09-18 — Shipp & Blasco 2020, Huckvale et al. 2019, Arkalakis et al. 2024, Li et al. 2022 added |
+| 5 | Run own literature search on **methodologies**: privacy-policy analysis, cognitive walkthrough | Hamza | done 2026-09-18 — OPP-115, Polisis, MAPS, McDonald & Cranor, Nielsen 1994, Braun & Clarke, Cohen, McDonald et al. 2019 added |
+| 6 | Survey existing **LLM tools for privacy-policy analysis** | Hamza | partly done — Polisis and Rodriguez et al. 2024 reviewed in proposal §4.6; their schemes code *data practices*, not harms, so a purpose-built prompt pipeline is used |
+| 7 | Define the keyword search and inclusion criteria for the German app sample (Play Store + App Store) → `04_Study/` | Hamza | done 2026-09-18 — `04_Study/App-Sample/sampling_protocol.md` |
+| 8 | Fold the RQ and scope above into the proposal (`02_Proposal/proposal.tex`) | Hamza | done 2026-09-18 — RQ verbatim in §2.2, split into RQ1–RQ4; scope in §2.3 |
+| 9 | Confirm the scope question in the 2026-09-04 notes (§8) can be closed as "document/interface analysis" | Hamza | pending advisor — proposal §7 item 1 |
 
 ## 10. Open questions
 
-- Which harm taxonomy is the coding backbone — Citron & Solove's seven
-  categories (P3), the harm model from P1, or a merge of both?
-- "Highest rated" — by rating value, review count, or store ranking? What cutoff,
-  and how many apps in the sample?
-- Are advertisements and privacy blogs in the core corpus or a secondary pass?
-- Does the cognitive walkthrough cover every sampled app or a subset?
+All four are answered provisionally in the proposal and listed for the advisor to
+confirm or overturn in its §7, *Open Points for Confirmation*.
+
+| Question | Proposal's answer | Where |
+|---|---|---|
+| Which harm taxonomy is the coding backbone — Citron & Solove's seven categories (P3), the harm model from P1, or a merge? | Citron & Solove as the backbone; the P1 harm-tree stages as a *pathway annotation* on top. Used together, not merged. | §4.5, §7 item 2 |
+| "Highest rated" — by rating value, review count, or store ranking? What cutoff, how many apps? | Top 20 per keyword, filtered to ≥ 1,000 ratings, ranked by average rating, rating count as tie-break. 50 apps, 30 fitness / 20 fertility. | §4.2, §7 items 3–4 |
+| Are advertisements and privacy blogs in the core corpus or a secondary pass? | Secondary. Coded where found; absence is not a finding, because ad delivery cannot be reproduced. | §4.3, §7 item 6 |
+| Does the cognitive walkthrough cover every sampled app or a subset? | A balanced subset of 12: 6 fitness / 6 fertility, 3 Android / 3 iOS per domain. | §4.4, §7 item 5 |
 
 ## 11. Obtained outside open access
 
