@@ -1,5 +1,5 @@
 % =====================================================================
-%  Shared bibliography — used by 02_Proposal, 03_Thesis and 06_Presentation
+%  Shared bibliography — used by 03_Thesis (incl. proposal/) and 06_Presentation
 %  Add every new source HERE only. Never keep a second .bib file.
 %
 %  Key convention:  lastnameYEARfirstword   e.g. citron2021harms
@@ -40,6 +40,7 @@
                Computing Systems},
   pages     = {1--12},
   year      = {2020},
+  address   = {Honolulu, HI, USA},
   publisher = {ACM},
   doi       = {10.1145/3313831.3376651}
 }
@@ -55,6 +56,7 @@
   number    = {7},
   articleno = {183},
   numpages  = {40},
+  pages     = {1--40},
   year      = {2024},
   doi       = {10.1145/3645091}
 }
@@ -126,10 +128,13 @@
   doi       = {10.1145/3613904.3642521}
 }
 
+% Survey of US women from states with differing abortion policies.
+% The quoted phrase in the title uses \mkbibquote so that biblatex nests
+% it as inner (single) quotes inside the title's own quotation marks.
 @inproceedings{cao2024deleted,
   author    = {Cao, Jiaxun and Laabadli, Hiba and Mathis, Chase H. and
                Stern, Rebecca D. and Emami-Naeini, Pardis},
-  title     = {``I Deleted It After the Overturn of Roe v. Wade'':
+  title     = {\mkbibquote{I Deleted It After the Overturn of Roe v. Wade}:
                Understanding Women's Privacy Concerns Toward Period-Tracking
                Apps in the Post Roe v. Wade Era},
   booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in
@@ -256,6 +261,25 @@
   doi       = {10.1145/3491101.3519739}
 }
 
+% 161 US breach notification letters; hedging language ("might") in
+% what companies tell affected people after a breach. The closest
+% precedent for coding stance in provider communication. Checked
+% against the ACM DL record on 2026-09-29; page numbers not verified,
+% so none are given.
+@inproceedings{zou2019might,
+  author    = {Zou, Yixin and Danino, Shawn and Sun, Kaiwen and
+               Schaub, Florian},
+  title     = {You `Might' Be Affected: An Empirical Analysis of
+               Readability and Usability Issues in Data Breach
+               Notifications},
+  booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in
+               Computing Systems},
+  year      = {2019},
+  address   = {Glasgow, Scotland, UK},
+  publisher = {ACM},
+  doi       = {10.1145/3290605.3300424}
+}
+
 % --- Methodology: analysing privacy policies --------------------------
 
 @article{mcdonald2008cost,
@@ -358,6 +382,34 @@
   doi     = {10.1191/1478088706qp063oa}
 }
 
+% Standard reference for (quantitative) content analysis and for
+% reliability of predefined codes. Checked against the SAGE record
+% on 2026-09-29.
+@book{krippendorff2019content,
+  author    = {Krippendorff, Klaus},
+  title     = {Content Analysis: An Introduction to Its Methodology},
+  edition   = {4},
+  publisher = {SAGE},
+  address   = {Thousand Oaks, CA},
+  year      = {2019},
+  isbn      = {978-1-5063-9566-1}
+}
+
+% The kappa paradox: high observed agreement but low kappa when the
+% marginals are unbalanced, i.e. when a code is rare. Checked against
+% PubMed 2348207 on 2026-09-29.
+@article{feinstein1990high,
+  author  = {Feinstein, Alvan R. and Cicchetti, Domenic V.},
+  title   = {High Agreement but Low Kappa: {I}. The Problems of Two
+             Paradoxes},
+  journal = {Journal of Clinical Epidemiology},
+  volume  = {43},
+  number  = {6},
+  pages   = {543--549},
+  year    = {1990},
+  doi     = {10.1016/0895-4356(90)90158-L}
+}
+
 @article{cohen1960coefficient,
   author  = {Cohen, Jacob},
   title   = {A Coefficient of Agreement for Nominal Scales},
@@ -384,9 +436,11 @@
 
 % --- Legal and market context -----------------------------------------
 
-% Articles used in the proposal: 9(1) special categories, 13–14
-% transparency, 13(2)(f) consequences of automated decision-making,
-% 33–34 breach notification and communication.
+% Articles used in the proposal: 4(15) and Recital 35 health data,
+% 9(1) special categories, 13–14 transparency, 13(2)(e) consequences of
+% not providing data, 13(2)(f)/14(2)(g) consequences of automated
+% decision-making, 33(3)(c)/34(2) likely consequences of a breach,
+% Recital 39 awareness of risks.
 @misc{gdpr2016,
   author       = {{European Parliament and Council of the European Union}},
   title        = {Regulation (EU) 2016/679 of 27 April 2016 on the
@@ -397,6 +451,32 @@
   howpublished = {Official Journal of the European Union, L 119,
                   4 May 2016, pp. 1--88},
   url          = {https://eur-lex.europa.eu/eli/reg/2016/679/oj}
+}
+
+% WP29 guidelines, endorsed by the EDPB on 25 May 2018. Recommends that
+% controllers spell out "the most important consequences of the
+% processing". Guidance, not an operative obligation. Checked against
+% the EDPB PDF on 2026-09-29.
+@misc{wp292018transparency,
+  author       = {{Article 29 Data Protection Working Party}},
+  title        = {Guidelines on Transparency under Regulation 2016/679},
+  year         = {2018},
+  howpublished = {WP260 rev.01, adopted 29 November 2017, as last revised
+                  and adopted 11 April 2018; endorsed by the EDPB},
+  url          = {https://www.edpb.europa.eu/system/files/2023-09/wp260rev01_en.pdf}
+}
+
+% Unfair Commercial Practices Directive; governs misleading claims in
+% store listings and advertising, including privacy claims.
+@misc{ucpd2005,
+  author       = {{European Parliament and Council of the European Union}},
+  title        = {Directive 2005/29/EC of 11 May 2005 Concerning Unfair
+                  Business-to-Consumer Commercial Practices in the
+                  Internal Market (Unfair Commercial Practices Directive)},
+  year         = {2005},
+  howpublished = {Official Journal of the European Union, L 149,
+                  11 June 2005, pp. 22--39},
+  url          = {https://eur-lex.europa.eu/eli/dir/2005/29/oj}
 }
 
 % Non-academic source, so the method stays in the printed note.

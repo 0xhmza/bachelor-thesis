@@ -21,8 +21,13 @@ build/
 *.ilg
 *.ind
 
+# latexindent (LaTeX Workshop's formatter) writes this next to the document
+indent.log
+indent.log.*
+
 # Keep the compiled PDFs of the actual documents
-!02_Proposal/proposal.pdf
+!03_Thesis/proposal/proposal.pdf
+!99_Archive/_junk/02_Proposal/*.pdf
 !03_Thesis/thesis.pdf
 !06_Presentation/slides.pdf
 

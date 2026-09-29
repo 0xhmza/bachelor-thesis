@@ -2,9 +2,9 @@
 
 **Version:** 1 (draft) · **Date:** 2026-09-18 · **Status:** awaiting supervisor
 confirmation of the points marked ⚠ in
-[`02_Proposal/sections/07_open_points.tex`](../../02_Proposal/sections/07_open_points.tex)
+[`00_Admin/Open-Points.md`](../../00_Admin/Open-Points.md)
 
-This file is the operational version of §4.2 of the proposal. Fill in the empty
+This file is the operational version of the Sampling paragraph of the proposal (`03_Thesis/proposal/`; argued in full in `99_Archive/_junk/02_Proposal/sections/04_methodology.tex` §4.2). Fill in the empty
 cells **before** collecting anything, and do not change the protocol afterwards
 without an entry in the change log at the bottom. The methodology chapter is
 written from this document.
@@ -84,7 +84,10 @@ An app is excluded if **any** of the following hold:
 
 1. No privacy policy is reachable, or the link is dead at capture time.
    → Record it as a finding first, then exclude from text coding.
-2. It is a prescription DiGA or is marketed as a regulated medical device.
+2. It is a DiGA (listed in the BfArM DiGA directory). Apps certified as
+   medical devices but freely installable are **not** excluded; they are
+   flagged in the `Medical device` field, since users meet them in the same
+   search results.
 3. It is a pure device companion with no tracking function of its own.
 4. Account creation requires identity verification or payment
    (forbidden by the ethics rules — see [`../Ethics/README.md`](../Ethics/README.md)).
@@ -102,9 +105,15 @@ An app is excluded if **any** of the following hold:
 - **Target sample size:** **50 apps**, stratified **30 fitness / 20 fertility**.
 - **Pilot:** 5 apps (3 fitness, 2 fertility) collected and coded first to test
   the instruments. Pilot apps are re-coded with the final instruments and stay
-  in the sample.
+  in the sample, but are **kept out of the validation set**, because they
+  shaped the codebook and prompts.
+- **Unit:** the app, not the listing. An app on both stores is one sample
+  member with two listings, ranked by the rating-count-weighted mean of its two
+  average ratings.
 - **Walkthrough subsample:** 12 apps, **balanced** 6 fitness / 6 fertility, each
-  domain split 3 Android / 3 iOS, drawn from the top of the ranking.
+  domain split 3 Android / 3 iOS: the highest-ranked eligible app for each slot,
+  no app twice. Apps that cannot be set up without a paired device are not
+  eligible for the walkthrough.
 
 ## What is recorded per app
 
@@ -124,6 +133,7 @@ An app is excluded if **any** of the following hold:
 | Capture date | **mandatory** |
 | SHA-256 of each archived file | **mandatory** |
 | Domain stratum | fitness / fertility |
+| Medical device | certified as a medical device? yes/no, with class if stated |
 | Walkthrough done? | yes/no, date |
 
 ## Freeze
@@ -139,3 +149,6 @@ An app is excluded if **any** of the following hold:
 | Date | Change | Reason |
 |---|---|---|
 | 2026-09-18 | Initial version written from §4.2 of the proposal | Closes action item 7 of the 2026-09-05 supervisor input |
+| 2026-09-29 | Medical-device apps no longer excluded, only DiGA; `Medical device` field added | Excluding them would drop certified contraceptive apps that users meet in the same fertility results |
+| 2026-09-29 | Pilot apps kept out of the validation set | They shaped the instruments, so validating on them would overstate accuracy |
+| 2026-09-29 | Unit of analysis and walkthrough selection rule stated | Both were implicit; the proposal now states them |
