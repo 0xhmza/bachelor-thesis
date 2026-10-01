@@ -2,12 +2,12 @@
 version: 1
 date: 2026-09-18
 status: draft — definitions written, examples to be filled from the pilot
-source: 02_Proposal/sections/04_methodology.tex §4.5
+source: 99_Archive/_junk/02_Proposal/sections/04_methodology.tex §4.5 (summary in 03_Thesis/proposal/proposal.tex, Coding)
 ---
 
 # Codebook v1
 
-Operational version of the three-axis coding framework in §4.5 of the proposal.
+Operational version of the three-axis coding framework in §4.5 of the archived long proposal.
 
 **Every category needs a definition, a positive example, and a
 counter-example.** Without the counter-example the category is not codable:

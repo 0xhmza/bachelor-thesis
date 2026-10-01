@@ -1,0 +1,15 @@
+# ----------------------------------------------------------------------
+#  latexmkrc — build settings for the Beamer slides.
+# ----------------------------------------------------------------------
+#  Same chain as the other documents: pdflatex -> biber -> pdflatex x2,
+#  built in place.
+# ----------------------------------------------------------------------
+
+$pdf_mode              = 1;                # 1 = pdflatex
+$synctex               = 1;
+$interaction           = 'nonstopmode';
+$file_line_error_style = 1;
+
+@default_files = ('slides.tex');
+
+$clean_ext = '%R.bcf %R.run.xml';

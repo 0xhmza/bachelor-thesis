@@ -1,0 +1,27 @@
+# ----------------------------------------------------------------------
+#  latexmkrc — the single definition of the thesis build chain.
+# ----------------------------------------------------------------------
+#  latexmk reads this file automatically when it runs in this directory,
+#  which means the LaTeX Workshop recipe, a bare `latexmk` in a terminal
+#  and ../build.ps1 all compile the thesis the same way:
+#
+#      pdflatex -> biber -> pdflatex -> pdflatex
+#
+#  biber is not listed anywhere: latexmk sees thesis.bcf in the log and
+#  inserts the bibliography pass by itself.
+#
+#  Everything is built in place, so thesis.pdf stays here next to
+#  thesis.tex (this repository tracks that PDF).
+# ----------------------------------------------------------------------
+
+$pdf_mode              = 1;                # 1 = pdflatex
+$synctex               = 1;                # editor <-> PDF jumping
+$interaction           = 'nonstopmode';
+$file_line_error_style = 1;                # parseable "file:line: message"
+
+# A bare `latexmk` builds the thesis, not every *.tex in the folder.
+@default_files = ('thesis.tex');
+
+# biblatex leaves .bcf / .run.xml behind; let `latexmk -c` remove those as
+# well. The PDF and the sources are never touched by -c.
+$clean_ext = '%R.bcf %R.run.xml';

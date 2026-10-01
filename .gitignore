@@ -39,6 +39,10 @@ indent.log.*
 # The vault opens fine without these; workspace.json churns on every pane move.
 .obsidian/
 
+# ---------- Syncthing ----------
+*.sync-conflict-*
+.stversions/
+
 # ---------- Office / OS temp ----------
 ~$*
 .DS_Store

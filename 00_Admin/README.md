@@ -3,6 +3,7 @@
 | File / folder | What it is |
 |---|---|
 | `Timeline.md` | Milestones and the administrative checklist. Keep it current. |
+| `Open-Points.md` | Decisions the proposal makes on your behalf, to confirm or overturn with the supervisor. |
 | `Meeting-Notes/` | One file per supervisor meeting, `YYYY-MM-DD_Topic.md`. Use `TEMPLATE.md`. |
 | `Supervisor-Input/` | Material sent by the advisor between meetings: the original attachment plus a `.md` transcription. |
 | `Thesis-Offer/` | The official thesis offer as published by the chair, with the date it was captured. |
