@@ -26,7 +26,7 @@
   volume  = {102},
   pages   = {793--863},
   year    = {2022},
-  addendum = {SSRN abstract 3782222.}
+  url     = {https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf}
 }
 
 % The camera-ready PDF footer prints 10.1145/3313831.3376346. The ACM DL
@@ -55,6 +55,7 @@
   volume    = {56},
   number    = {7},
   articleno = {183},
+  eid       = {183},
   numpages  = {40},
   pages     = {1--40},
   year      = {2024},
@@ -84,6 +85,7 @@
                   Framework},
   year         = {2026},
   howpublished = {Cryptology ePrint Archive, Paper 2026/867},
+  note         = {Preprint, version of 4 May 2026},
   url          = {https://eprint.iacr.org/2026/867}
 }
 
@@ -180,8 +182,9 @@
   journal = {University of Pennsylvania Law Review},
   volume  = {154},
   number  = {3},
-  pages   = {477--564},
-  year    = {2006}
+  pages   = {477--560},
+  year    = {2006},
+  doi     = {10.2307/40041279}
 }
 
 % Article 8 of the issue. Distinguishes subjective privacy harm (the
@@ -194,7 +197,8 @@
   volume  = {86},
   number  = {3},
   pages   = {1131--1162},
-  year    = {2011}
+  year    = {2011},
+  url     = {https://www.repository.law.indiana.edu/ilj/vol86/iss3/8/}
 }
 
 % --- Health trackers: security and privacy ----------------------------
@@ -212,8 +216,8 @@
   doi     = {10.2478/popets-2020-0083}
 }
 
-% 36 apps; 29 transmitted data to Google or Facebook services, 12
-% disclosed this in a privacy policy.
+% 29/36 apps transmitted to Google or Facebook. Specific company naming:
+% 12/28 for Google and 6/12 for Facebook (not 12 of the combined 29).
 @article{huckvale2019assessment,
   author  = {Huckvale, Kit and Torous, John and Larsen, Mark E.},
   title   = {Assessment of the Data Sharing and Privacy Practices of
@@ -242,7 +246,8 @@
   pages     = {5645--5662},
   year      = {2024},
   publisher = {USENIX Association},
-  address   = {Philadelphia, PA, USA}
+  address   = {Philadelphia, PA, USA},
+  url       = {https://www.usenix.org/conference/usenixsecurity24/presentation/arkalakis}
 }
 
 % 36 weekly snapshots of 1.6 million apps, July 2021 – March 2022.
@@ -264,8 +269,8 @@
 % 161 US breach notification letters; hedging language ("might") in
 % what companies tell affected people after a breach. The closest
 % precedent for coding stance in provider communication. Checked
-% against the ACM DL record on 2026-09-29; page numbers not verified,
-% so none are given.
+% against the ACM DL record on 2026-09-29. Pages verified through
+% Crossref on 2026-10-05.
 @inproceedings{zou2019might,
   author    = {Zou, Yixin and Danino, Shawn and Sun, Kaiwen and
                Schaub, Florian},
@@ -277,7 +282,21 @@
   year      = {2019},
   address   = {Glasgow, Scotland, UK},
   publisher = {ACM},
-  doi       = {10.1145/3290605.3300424}
+  doi       = {10.1145/3290605.3300424},
+  pages     = {1--14}
+}
+
+% Adjacent risk-communication study. Publisher DOI metadata verified
+% through Crossref on 2026-10-05, with the author manuscript on ORBilu.
+@incollection{doan2024transparency,
+  author    = {Doan, Xengie and Do{\u g}an, Fatma S{\"u}meyra and Rossi, Arianna},
+  title     = {Analysis of Transparency and User-Relevancy of {DTC} Company Policies},
+  booktitle = {Privacy Symposium 2024},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  year      = {2024},
+  pages     = {191--215},
+  doi       = {10.1007/978-3-031-76265-9_9}
 }
 
 % --- Methodology: analysing privacy policies --------------------------
@@ -463,7 +482,8 @@
   year         = {2018},
   howpublished = {WP260 rev.01, adopted 29 November 2017, as last revised
                   and adopted 11 April 2018; endorsed by the EDPB},
-  url          = {https://www.edpb.europa.eu/system/files/2023-09/wp260rev01_en.pdf}
+  url          = {https://www.edpb.europa.eu/documents/guideline/transparency_en},
+  urldate      = {2026-10-05}
 }
 
 % Unfair Commercial Practices Directive; governs misleading claims in
@@ -482,12 +502,11 @@
 % Non-academic source, so the method stays in the printed note.
 @online{bitkom2025health,
   author       = {{Bitkom Research}},
-  title        = {Digital Health 2025},
-  year         = {2025},
-  month        = {11},
+  title        = {Dr. {KI}: Wenn der Chatbot zum medizinischen Ratgeber wird},
+  date         = {2025-11-20},
   organization = {Bitkom Research GmbH, Berlin},
   url          = {https://bitkom-research.de/news/digital-health-2025},
-  urldate      = {2026-09-18},
+  urldate      = {2026-10-05},
   addendum     = {Representative telephone survey of 1{,}145 people in
                   Germany aged 16 and over, calendar weeks 38--43 of
                   2025.}

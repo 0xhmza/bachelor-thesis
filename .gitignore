@@ -61,3 +61,4 @@ venv/
 05_Data/raw/*
 !05_Data/raw/.gitkeep
 !05_Data/raw/README.md
+/tmp
