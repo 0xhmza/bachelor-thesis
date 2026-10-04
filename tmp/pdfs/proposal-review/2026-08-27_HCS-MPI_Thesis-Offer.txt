@@ -1,0 +1,68 @@
+=== PDF PAGE 1 ===
+8/27/26, 3:15 PM                                           HCS Theses
+
+
+          Published using Google Docs                                                                                                                                      Report abuse       Learn more
+
+
+   HCS Theses                                                                                                                                                                 Updated automatically every 5 minutes
+
+
+                 HCS Theses
+
+
+                                              Thesis offer
+
+
+
+                                                                      Title:
+                                                       Understanding Privacy Harm Communication in Fitness Trackers
+
+
+                                                         Description:
+                                                            Fitness trackers collect continuous behavioral and physiological data, such as steps, heart
+                                                                     rate, sleep, and location. Although these devices are often presented as wellness tools, their
+                                                         data can enable sensitive inferences and downstream privacy harms. This thesis
+                                                               investigates how users understand such harms and how platform privacy messages shape
+                                                    what users believe is protected. The student will design and conduct an online scenario-
+                                                   based survey in which fitness-tracker users evaluate possible privacy-harm scenarios before
+                                                  and after reading realistic platform communication. The project is suitable for students
+                                                               interested in usable privacy, HCI, empirical research methods, and privacy-enhancing
+                                                             technologies.
+
+
+                                                   Reference literature:
+
+
+                                                ●  Citron, D. K., & Solove, D. J. (2021). Privacy harms. GWU Legal Studies Research
+                                                               Paper, (2021-11).
+
+
+                                                ●  Gabriele, S., & Chiasson, S. (2020, April). Understanding fitness tracker users'
+                                                                        security and privacy knowledge, attitudes and behaviours. In Proceedings of the
+                                                       2020 CHI Conference on Human Factors in Computing Systems (pp. 1-12).
+
+
+                                                ●  Salehzadeh Niksirat, K., Velykoivanenko, L., Zufferey, N., Cherubini, M., Huguenin,
+                                                                            K., & Humbert, M. (2024). Wearable activity trackers: A survey on utility, privacy, and
+                                                                            security. ACM Computing Surveys, 56(7), 1-40.
+
+
+                                                ●  Nissenbaum, H. (2009). Privacy in context: Technology, policy, and the integrity of
+                                                                        social life. In Privacy in context. Stanford University Press.
+
+                                                      Contact:
+                                                      Please contact Kavous Salehzadeh Niksirat directly via kavous.salehzadeh-niksirat@mpi-
+                                                            sp.org
+
+                                                  Kavous Salehzadeh Niksirat (https://kavousniksirat.com/) supervises theses on human-
+                                                         centered privacy, with a focus on privacy risks in everyday digital systems such as
+                                                         wearables, social platforms, and ubiquitous technologies. Potential topics include users'
+                                                           perceptions of privacy harms and participatory approaches to designing more usable privacy
+                                                                protections.
+
+
+
+
+
+https://docs.google.com/document/d/e/2PACX-1vQ4i1YULYhjdQjJIx4JMw9BC_sL_17SIR6lZFV_h232wJDfRoznNXDNHHf2H57D7fipoH_nE6f01CMY/…    1/1

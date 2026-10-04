@@ -1,0 +1,1359 @@
+[
+  {
+    "key": "shipp2020period",
+    "doi": "10.2478/popets-2020-0083",
+    "title": [
+      "How private is your period?: A systematic analysis of menstrual app privacy policies"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          17
+        ]
+      ]
+    },
+    "pages": "491-510",
+    "article": null,
+    "container": [
+      "Proceedings on Privacy Enhancing Technologies"
+    ],
+    "authors": [
+      {
+        "given": "Laura",
+        "family": "Shipp",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Information Security Group, Royal Holloway , University of London"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Blasco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Information Security Group, Royal Holloway , University of London"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "hudig2025intimate",
+    "doi": "10.1145/3706598.3714089",
+    "title": [
+      "Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          25
+        ]
+      ]
+    },
+    "pages": "1-24",
+    "article": null,
+    "container": [
+      "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0008-2634-6428",
+        "authenticated-orcid": false,
+        "given": "Anna Ida",
+        "family": "Hudig",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Technology, University of Cambridge, Cambridge, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5102-6564",
+        "authenticated-orcid": false,
+        "given": "Jatinder",
+        "family": "Singh",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science &amp; Technology, University of Cambridge, Cambridge, United Kingdom and Research Center Trustworthy Data Science and Security of the University Alliance Ruhr, University Duisburg-Essen, Duisburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "li2022ios",
+    "doi": "10.1145/3491101.3519739",
+    "title": [
+      "Understanding iOS Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          27
+        ]
+      ]
+    },
+    "pages": "1-7",
+    "article": null,
+    "container": [
+      "CHI Conference on Human Factors in Computing Systems Extended Abstracts"
+    ],
+    "authors": [
+      {
+        "given": "Yucheng",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Deyuan",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tianshi",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Human-Computer Interaction Institute, Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuvraj",
+        "family": "Agarwal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lorrie Faith",
+        "family": "Cranor",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason I.",
+        "family": "Hong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Human-Computer Interaction Institute, Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "feinstein1990high",
+    "doi": "10.1016/0895-4356(90)90158-L",
+    "title": [
+      "High agreement but low Kappa: I. the problems of two paradoxes"
+    ],
+    "pages": "543-549",
+    "year": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "authors": [
+      {
+        "given": "Alvan R.",
+        "family": "Feinstein",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Domenic V.",
+        "family": "Cicchetti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "mcdonald2019reliability",
+    "doi": "10.1145/3359174",
+    "title": [
+      "Reliability and Inter-rater Reliability in Qualitative Research"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "pages": "1-23",
+    "article": null,
+    "container": [
+      "Proceedings of the ACM on Human-Computer Interaction"
+    ],
+    "authors": [
+      {
+        "given": "Nora",
+        "family": "McDonald",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Drexel University, Philadelphia, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarita",
+        "family": "Schoenebeck",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Forte",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Drexel University, Philadelphia, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "cohen1960coefficient",
+    "doi": "10.1177/001316446002000104",
+    "title": [
+      "A Coefficient of Agreement for Nominal Scales"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          1960,
+          4
+        ]
+      ]
+    },
+    "pages": "37-46",
+    "article": null,
+    "container": [
+      "Educational and Psychological Measurement"
+    ],
+    "authors": [
+      {
+        "given": "Jacob",
+        "family": "Cohen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "New York University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "zimmeck2019maps",
+    "doi": "10.2478/popets-2019-0037",
+    "title": [
+      "MAPS: Scaling Privacy Compliance Analysis to a Million Apps"
+    ],
+    "pages": "66-86",
+    "year": {
+      "date-parts": [
+        [
+          2019,
+          7,
+          1
+        ]
+      ]
+    },
+    "authors": [
+      {
+        "given": "Sebastian",
+        "family": "Zimmeck",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Mathematics and Computer Science , Wesleyan University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Story",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science , Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel",
+        "family": "Smullen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science , Carnegie Mellon University ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Abhilasha",
+        "family": "Ravichander",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science , Carnegie Mellon University ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ziqi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science , Carnegie Mellon University ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joel",
+        "family": "Reidenberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Law , Fordham University ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "N.",
+        "family": "Cameron Russell",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Law , Fordham University ."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Norman",
+        "family": "Sadeh",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science , Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "niksirat2024wearable",
+    "doi": "10.1145/3645091",
+    "title": [
+      "Wearable Activity Trackers: A Survey on Utility, Privacy, and Security"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          9
+        ]
+      ]
+    },
+    "pages": "1-40",
+    "article": null,
+    "container": [
+      "ACM Computing Surveys"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4438-3544",
+        "authenticated-orcid": false,
+        "given": "Kavous",
+        "family": "Salehzadeh Niksirat",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Lausanne &amp; EPFL, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7343-2731",
+        "authenticated-orcid": false,
+        "given": "Lev",
+        "family": "Velykoivanenko",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3886-0877",
+        "authenticated-orcid": false,
+        "given": "Noé",
+        "family": "Zufferey",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1860-6110",
+        "authenticated-orcid": false,
+        "given": "Mauro",
+        "family": "Cherubini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7147-1828",
+        "authenticated-orcid": false,
+        "given": "Kévin",
+        "family": "Huguenin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5046-1727",
+        "authenticated-orcid": false,
+        "given": "Mathias",
+        "family": "Humbert",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "gabriele2020understanding",
+    "doi": "10.1145/3313831.3376651",
+    "title": [
+      "Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          21
+        ]
+      ]
+    },
+    "pages": "1-12",
+    "article": null,
+    "container": [
+      "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems"
+    ],
+    "authors": [
+      {
+        "given": "Sandra",
+        "family": "Gabriele",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "York University, Toronto, ON, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sonia",
+        "family": "Chiasson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carleton University, Ottawa, ON, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "zou2019might",
+    "doi": "10.1145/3290605.3300424",
+    "title": [
+      "You `Might' Be Affected"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          2
+        ]
+      ]
+    },
+    "pages": "1-14",
+    "article": null,
+    "container": [
+      "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems"
+    ],
+    "authors": [
+      {
+        "given": "Yixin",
+        "family": "Zou",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shawn",
+        "family": "Danino",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kaiwen",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Schaub",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "rodriguez2024llm",
+    "doi": "10.1007/s00607-024-01331-9",
+    "title": [
+      "Large language models: a new approach for privacy policy analysis at scale"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          22
+        ]
+      ]
+    },
+    "pages": "3879-3903",
+    "article": null,
+    "container": [
+      "Computing"
+    ],
+    "authors": [
+      {
+        "given": "David",
+        "family": "Rodriguez",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ian",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jose M.",
+        "family": "Del Alamo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Norman",
+        "family": "Sadeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "cao2024deleted",
+    "doi": "10.1145/3613904.3642042",
+    "title": [
+      "\"I Deleted It After the Overturn of Roe v. Wade\": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era"
+    ],
+    "pages": "1-22",
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1167-2801",
+        "authenticated-orcid": false,
+        "given": "Jiaxun",
+        "family": "Cao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Duke Kunshan University, China and Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-0247-3960",
+        "authenticated-orcid": false,
+        "given": "Hiba",
+        "family": "Laabadli",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Duke University, United States and Duke Kunshan University, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-1765-2912",
+        "authenticated-orcid": false,
+        "given": "Chase H",
+        "family": "Mathis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "InSPIRe Lab, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-1640-7676",
+        "authenticated-orcid": false,
+        "given": "Rebecca D",
+        "family": "Stern",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "InSPIRe Lab, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9797-2495",
+        "authenticated-orcid": false,
+        "given": "Pardis",
+        "family": "Emami-Naeini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science Department, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "huckvale2019assessment",
+    "doi": "10.1001/jamanetworkopen.2019.2542",
+    "title": [
+      "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ]
+    },
+    "pages": "e192542",
+    "article": null,
+    "container": [
+      "JAMA Network Open"
+    ],
+    "authors": [
+      {
+        "given": "Kit",
+        "family": "Huckvale",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Black Dog Institute, UNSW Sydney, Randwick, New South Wales, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Torous",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Psychiatry, Beth Israel Deaconess Medical Center, Boston, Massachusetts"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark E.",
+        "family": "Larsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Black Dog Institute, UNSW Sydney, Randwick, New South Wales, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wilson2016creation",
+    "doi": "10.18653/v1/P16-1126",
+    "title": [
+      "The Creation and Analysis of a Website Privacy Policy Corpus"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "pages": "1330-1340",
+    "article": null,
+    "container": [
+      "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+    ],
+    "authors": [
+      {
+        "given": "Shomir",
+        "family": "Wilson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Schaub",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aswarth Abhilash",
+        "family": "Dara",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frederick",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sushain",
+        "family": "Cherivirala",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pedro",
+        "family": "Giovanni Leon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mads",
+        "family": "Schaarup Andersen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Zimmeck",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kanthashree Mysore",
+        "family": "Sathyendra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "N. Cameron",
+        "family": "Russell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "B. Norton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eduard",
+        "family": "Hovy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joel",
+        "family": "Reidenberg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Norman",
+        "family": "Sadeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "malki2024exploring",
+    "doi": "10.1145/3613904.3642521",
+    "title": [
+      "Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "pages": "1-24",
+    "article": null,
+    "container": [
+      "Proceedings of the CHI Conference on Human Factors in Computing Systems"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0004-7282-3767",
+        "authenticated-orcid": false,
+        "given": "Lisa Mekioussa",
+        "family": "Malki",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4303-924X",
+        "authenticated-orcid": false,
+        "given": "Ina",
+        "family": "Kaleva",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3746-8171",
+        "authenticated-orcid": false,
+        "given": "Dilisha",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Global Disability Innovation Hub, University College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7494-6275",
+        "authenticated-orcid": false,
+        "given": "Mark",
+        "family": "Warner",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5316-9956",
+        "authenticated-orcid": false,
+        "given": "Ruba",
+        "family": "Abu-Salma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  }
+]

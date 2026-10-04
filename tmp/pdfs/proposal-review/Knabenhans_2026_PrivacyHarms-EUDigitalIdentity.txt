@@ -1,0 +1,1542 @@
+=== PDF PAGE 1 ===
+             On the (Privacy) Harms
+          of the European Digital Identity Framework
+       Christian Knabenhans∗           Shannon Veitch∗                Mathilde Raynal
+      christian.knabenhans@epfl.ch          shannon.veitch@inf.ethz.ch             mathilde.raynal@epfl.ch
+               EPFL                     ETH Zurich                         EPFL
+
+         Theresa Stadler                  Sylvain Chatel                Wouter Lueks
+          theresa.stadler@epfl.ch                sylvain.chatel@cispa.de                   lueks@cispa.de
+        Swiss Data Science Center          CISPA Helmholtz Center for         CISPA Helmholtz Center for
+                                               Information Security                  Information Security
+
+                                    Carmela Troncoso
+                                          carmela.troncoso@mpi-sp.org
+                                         EPFL, Max Planck Institute for
+                                                  Security and Privacy
+
+Abstract                                                      While the broad deployment of DIFs is anticipated to bring many
+As digital identity systems gain traction around the world, many see       benefits, civil society has raised concerns about its potential neg-
+privacy-enhancing technologies (PETs) as the key to ensuring safe       ative impact on certain user groups, such as the exacerbation of
+deployment. We critically examine whether this is the case using       structural exclusion or the risk of discrimination [18, 50, 61]. The
+the European Digital Identity Framework (EUDIF) as an example.     main response put forward by its proponents to these concerns has
+We leverage techniques from cryptographic modeling to formally     been to strictly follow “privacy-by-design” principles and the use
+capture the necessary leakage of the functionality of the EUDIF      of privacy-enhancing technologies (PETs) in the EUDIF’s design
+and its proposed applications. Then, we develop a harm analysis     and development [12, 29, 31]. For example, following feedback from
+methodology that illustrates, using harm trees, how this leakage      cryptographers [9], the EUDIF implementation recommendations
+— and other constraints stemming from design decisions or the      include the use of anonymous credentials. These and other privacy
+context of deployment — lead to harms. Moreover, our harm mod-      safeguards are often portrayed as a sufficient step to mitigate harms
+eling enables us to distinguish between which pathways to harm      that might arise from the EUDIF’s deployment. In this paper, we
+are inherent to the core functionality, and which pathways can      take a step back and ask whether privacy and PETs are indeed an
+be prevented with PETs. Our analysis shows that, while PETs can      appropriate answer to concerns about the EUDIF’s negative societal
+reduce information flows, they fall short in mitigating the harms      impacts. We identify harms that are inherent to the EUDIF and its
+that deploying digital identity can bring to individuals and society.     proposed applications (and any DIF with similar characteristics),
+                                                          and demonstrate that PETs cannot fully protect users from these
+                                                                harms. We make the following contributions.Keywords
+digital identity, privacy harms                                    Formal model of EUDIF-like systems. We derive a formal model of
+                                                                   the core functionality of the EUDIF from current regulations and
+                                                                          specifications (Section 3). The model represents the best-possible
+1  Introduction
+                                                                    privacy-by-design implementation of the EUDIF that reveals onlyDigital identity frameworks (DIFs) that enable users to prove at-
+                                                                          the minimal information needed to fulfil its intended purpose. It cap-tributes about themselves to online and offline service providers
+                                                                         tures all use cases suggested in documentation provided by the EU
+are becoming prevalent across many jurisdictions [3, 51, 52, 57].
+                                                          Commission [24]. We demonstrate its flexibility by formally mod-
+One example is the European Digital Identity Framework (EUDIF)                                                                             elling two commonly discussed applications: age verification and
+that was introduced by the European Union in April 2024. The
+                                                               mobile driving licenses. These use case-specific models are based
+EUDIF is promised to provide its users with a “self-determined per-
+                                                          on international standards [38] and capture systems in jurisdictions
+sonal digital wallet” [19, Art.5] that will streamline access to public
+                                                           beyond the EU, such as US-based mobile driving licenses.
+and private services and increase trustworthiness in online interac-
+tions for 450 million Europeans [12]. In the EUDIF, issuers provide      Analysis of harms. We derive a broad range of harms to individuals
+users with digital credentials that authenticate users’ attributes,     and society that might arise from the EUDIF’s deployment (Sec-
+such as their name, date of birth, gender, or education information.      tion 4). We introduce a new approach to analyse harms based on
+Users store these credentials in a digital wallet and can use them     harm trees [16, 17] that can identify pathways to, and root causes
+to gain access to services (e.g., prove that they are older than 18)        of, harm in any system. Using credential-based age verification and
+or demonstrate authenticity of documents (e.g., prove they have a       identity authentication with mobile driving licenses as examples,
+valid driving license).                                   we pinpoint components of the EUDIF that may lead to harms. We
+                                                                 use our formal model of the EUDIF to identify which pathways to
+∗These authors contributed equally to this work.
+
+=== PDF PAGE 2 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+harms stem from (i) the core EUDIF functionality (e.g., revealing             Issuers                  request       User                         Relying Parties
+age information), (ii) deploying the core functionality in a digital                                   𝖺𝗍𝗍𝗋_𝗍𝗒𝗉𝖾                request f,
+                                                                                                                                                                                       1                                                                                                                                                                                           (𝖺𝗍𝗍𝗋_𝗍𝗒𝗉𝖾i)i∈[n],context (e.g., requiring access to a device that can run a wallet),                                                                                                                                                                                                                                                                                                                  law                                                                                                                                                                                                                                        age-gated                                                                                                                                                                                                                                                                                                           social 
+                                                                                                                                                                                                                                enforcement                                                                                                                                                                                                                                          provider media                                                                                                                           governments  institutionseducation       2                     𝗂𝗇𝗍𝖾𝗇𝖽𝖾𝖽_𝗎𝗌𝖾        content
+                                                                                                                                                                                                                        3or (iii) a concrete implementation (e.g., requiring to reveal plain-                                     issue 𝖺𝗍𝗍𝗋,
+                                                                                                                                                                                                              4text attributes), where only the pathways arising from (iii) could           set𝗉𝗈𝗅𝗂𝖼𝗒
+potentially be addressed through the use of PETs.                                                                                             refuse /                                                                                                                                                                                                                                                                                                                           travel     hospitality                                                                                                                                                                                        financial                                        present              pharmacies    operator                                                                                                                                                                       institutions                                                                                                                                                                                                      f(𝖺𝗍𝗍𝗋1, …, 𝖺𝗍𝗍𝗋n)
+The limits of PETs. Our analysis demonstrates that, for every harm
+that we consider, there is always a pathway to this harm rooted in
+the core EUDIF functionality or in its digital nature (Section 4.5).                  Figure 1: Overview of the EUDIF
+That is, even a perfectly privacy-preserving implementation of
+the EUDIF — one that leaks the minimal information to achieve                                                      Use cases. The European Commission documents use cases of the
+the use case functionality — cannot prevent the harms that we                                                       EUDIF [24] to illustrate the range of intended uses. We summarize
+identify. PETs can only limit additional harms that arise in concrete                                                                     the use cases in Appendix C, Table 1. Several use cases are generic
+implementations of the EUDIF (from additional information flows                                                                      applications of the framework that enable identification (i.e., full
+and parties not present in the abstract EUDIF functionality).                                                            name, date of birth, nationality, and other details) of an individual
+Fundamental harm-enabling capabilities. Through a novel applica-      in online or offline scenarios. These applications include digital re-
+tion of cryptographic games, we show that the core functionality of      placements for physical IDs, loyalty cards, and employment badges.
+general-purpose DIFs such as the EUDIF enables three adversarial     The remaining use cases aim to provide users with access to ser-
+capabilities — distinguishing between users, tracking users, and       vices, physical spaces, or financial advantages. These mainly belong
+inference of attributes — that lead to harms (Section 5). Because       to two extremes: those that require users to reveal their full identity
+these capabilities are inherent to the DIF functionality, they, and         (e.g., mobile driving license, digital travel credential, ePrescription);
+the harms that they enable, cannot be eliminated through techni-     and those where the user provides only one bit of information indi-
+cal means. Thus, only constraints on the functionality, enforced by      cating whether they should be authorized to the request they are
+regulations, can prevent adversaries from gaining these capabilities.     making (e.g., age verification, European parking/disability card).
+                                                                     In this work, we consider two use cases that are representative
+                                                                        of these extremes, mobile driving license and age verification (see
+2  The European Digital Identity Framework          Section 3.2) that are also considered for deployment in jurisdictions
+                                                           and contexts beyond the EU [1, 2, 6, 55].The first eIDAS regulation enabled EU member states to recognize
+each other’s national electronic ID systems. The eIDAS 2.0 regu-
+lation [37] extends this framework to create a European Digital    3  Formal model of the EUDIF
+Identity Framework (EUDIF). The EUDIF mandates that member    We formally model the EUDIF as described in the regulations and
+states have their own electronic ID systems, makes these systems      implementation documents. Our model enables us to rigorously
+interoperable, and opens the door to private sector actors to issue     model systems components that could lead to harms. The model is
+and verify attributes within this ID system. We give an overview      modular, not tied to specific concrete implementations, and agnos-
+of the EUDIF in Fig. 1: Users have a digital wallet (e.g., a mobile        tic to potential use cases. Our model captures a class of systems that
+application) that stores certified attributes provided by issuers. The       satisfy the proposed functionality of the EUDIF, as described in the
+wallet enables users to use these attributes to interact with service     eIDAS 2.0 regulation (consolidated version) [37], the implement-
+providers (called relying parties, or RPs) in a trustworthy manner.      ing regulation 2025/848 [20], and the Architecture and Reference
+                                                        Framework (v2.8.0) [31]. Specifically, our model captures issuers
+Issuance. Users can request attributes to be issued to them ( 1 ) by      that provide users with authenticated attributes and RPs that re-
+various issuers like government agencies and public and private or-                                                                  quest users’ authenticated attributes. Like the EUDIF, our model
+ganizations. These attributes can be, e.g., about users’ identity, their                                                                  allows for many issuers and RPs, and does not restrict which at-
+membership in an organization, or their education. Issuers issue                                                                            tributes can be issued and requested. Our model captures both pre-
+authenticated attributes to the user’s wallet ( 2 ). The issuer may                                                                    vious and current versions of the EUDIF, and is expressive enough
+perform checks to ensure that the user is entitled to the attribute                                                                        to capture all currently proposed use cases [24] and to reason for-
+(e.g., by verifying their identity), and may specify a disclosure policy                                                               mally about privacy properties thereof. Additionally, our model
+for the issued attribute. This policy establishes the conditions under                                                                      captures any DIF with a similar interface, such as mobile driving li-
+which the attribute may be disclosed to RPs.                                                                    censes in the United States, which are based on the same underlying
+Presentation. RPs can request users to present (functions of) cer-      standard [6, 38].
+tified attributes stored in their wallet ( 3 ). This may be to authenti-
+cate the user (e.g., when requesting an official document), to make     3.1  Formally Modelling the EUDIF
+access control decisions (e.g., to perform age verification), or to ver-    We formalize the EUDIF as a functionality FEUDIF (Fig. 2), which cap-
+ify information (e.g., law enforcement asking for the user’s driver       tures privacy- and security-relevant behaviour of EUDIF-compliant
+license at a traffic stop). The user can then approve or deny the      systems. This functionality abstracts concrete cryptographic mech-
+RP’s request. If approved, the wallet sends the requested (function      anisms and specifies parties, their interfaces, information flows, and
+of) attributes to the RP ( 4 ).                                         enforced constraints. We use the syntax of (ideal) functionalities as
+                                                            2
+
+=== PDF PAGE 3 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+   Parties. Issuers Iiid, Users Uuid, Relying Parties Rrid.
+   State. The functionality maintains the following global state:
+    • Wallet : uid, attr_descr ↦→(iid, attr) mapping a user ID and an attribute description to an issuer ID and an issued attribute.
+    • Policies : uid, iid ↦→policy mapping uid and iid to a disclosure policy for the attributes issued by Iiid to Uuid.
+    • RPInfo : rid ↦→rp_info mapping an RP ID rid to registered RP information rp_info (name, address, etc.) for Rrid;
+    • RPReg : rid ↦→[(intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛])] mapping rid to a list of registered intended uses, function over attributes,
+      and attribute descriptions for a relying party Rrid.
+  RP registration. On input (RegisterRPInfo, rp_info) from Rrid: set RPInfo[rid] ≔rp_info.
+  RP usage registration. On input (RegisterRP, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) from Rrid: require RPInfo[rid] to be set; append
+   (intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) to RPReg[rid].
+  RP usage deregistration. On input (DeregisterRP, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) from Rrid: require RPInfo[rid] to be set;
+   remove (intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) from RPReg[rid]. RPs can update their registration by deregistering and re-registering.
+  RP deregistration. On input DeregisterRPInfo from Rrid: require RPInfo[rid] to be set; set RPInfo[rid] ≔⊥.
+   Issuance. On input (Issue, iid, (attr_descr𝑖)𝑖∈[𝑚]) from a user Uuid:
+     (1) Get the output of the issuance oracle 𝑜←OIssue(iid, uid, (attr_descr𝑖)𝑖∈[𝑚]). If 𝑜= ⊥, output ⊥to issuer and user. Otherwise,
+       parse 𝑜as attributes (attr)𝑖∈[𝑚] and a disclosure policy policy.
+     (2) Set Policies[uid][iid] ≔policy. For 𝑖∈[𝑚] : Set Wallet[uid][attr_descr𝑖] ≔(iid, attr𝑖). Send ((attr_descr𝑖)𝑖∈[𝑚], policy) to the
+       user Uuid and issuer Iiid.
+   Presentation. On input (Request, rid, service) from Uuid: Require RPInfo[rid] to be set.
+     (1) Send (Request, service) to Rrid, and receive (aux, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) from Rrid.
+     (2)  If aux =  (rp_info, intended_use), store these values; Otherwise, if aux =  𝑖intended_use, set rp_info ≔RPInfo[rid] and
+       intended_use ≔RPReg[rid][𝑖intended_use]; Otherwise, abort. Send (rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛])) to Uuid.
+     (3) Receive 𝑏check ∈{0, 1} from Uuid that indicates if the user optionally wants to check the RP’s registration. If 𝑏check = 1:
+              Set 𝑏registration ≔1 if (intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) is stored in RPReg[rid], and 𝑏registered ≔0 otherwise.
+            Send 𝑏registration to Uuid, and receive consent1 ∈{0, 1} from Uuid. If consent1 = 0, output ⊥to rid. Otherwise, continue.
+     (4) For 𝑖∈[𝑛]: retrieve (iid𝑖, attr𝑖) ≔Wallet[uid][attr_descr𝑖] and policy𝑖≔Policies[uid][iid𝑖].
+      Send 𝑏policy ≔Ó 𝑗∈[𝑛] policy𝑗(rid, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) to Uuid and receive consent2 ∈{0, 1} from Uuid. If
+       consent2 = 0, output ⊥to Rrid. Otherwise, compute the output 𝑣≔𝑓(attr1, . . . , attr𝑛) and send 𝑣to Rrid.
+
+
+                                            Figure 2: Functionality FEUDIF.
+
+
+a precise and modular way to specify the system and its properties      system possible. We assume secure and authenticated communica-
+(rather than for the usual purpose of proving security).                 tion channels between parties to remove leakage to third parties
+   FEUDIF interacts with issuers Iiid, users Uuid, and RPs Rrid. It     beyond outputs required by the functionality.
+maintains a global state of issued attributes per user, disclosure       The regulation foresees the authentication of attributes [37, Art.
+policies associated with these attributes, and the registered infor-     3 (44)]. We interpret this requirement as one of unforgeability and
+mation and intended uses for each RP. The functionality provides       untransferability of credentials, which we model by managing all
+interfaces for RP registration and deregistration, attribute issuance,      issued attributes through the global state Wallet.
+and attribute presentation.                                      The EUDIF shall “not allow [issuers] or any other party, after the
+                                                                    issuance of the attestation of attributes, to obtain data that allows
+General considerations. An attribute attr𝑖is a “characteristic,                                                                       transactions or user behaviour to be tracked, linked or correlated,
+quality, right or permission of a natural or legal person or of an
+                                                                  or knowledge of transactions or user behaviour to be otherwise
+object” [37, Art. 3 (43)]. We assume a global list of attribute descrip-
+                                                                     obtained, unless explicitly authorised by the user [and] enable
+tions, where the attribute description attr_descr𝑖uniquely identifies                                                                   privacy preserving techniques which ensure unlinkability, where
+a type of attribute (e.g., “date of birth”); this is compatible with the
+                                                                     the attestation of attributes does not require the identification of the
+EUDIF interoperability requirements.
+                                                                       user” [37, Art. 5a 16(a),(b)]. We model unlinkability by not notifying
+  The EUDIF shall ensure security by design [37, Ch. II, Sec. 1,                                                                           issuers of presentation events, and by only revealing the requested
+Art. 5a 12], and that “[The interoperability framework] shall facil-
+                                                                           attributes during a presentation.
+itate the implementation of privacy and security by design.” [37,
+Art. 12 3(c)]. To capture this requirement, we model a minimal     Relying party registration phase. RPs should register with a
+functionality that reveals only information explicitly needed to en-      national register “the intended use of European Digital Identity
+able the intended operation of the EUDIF and does not permit any      Wallets, including an indication of the data to be requested by the
+additional leakage. This functionality captures an ideal privacy-by-    RP from users.” [37, Art. 5a (2)], or more precisely, the type of
+design approach, i.e., the most privacy-preserving version of the       services it provides, the attributes it will request, and the intended
+
+
+                                                            3
+
+=== PDF PAGE 4 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+use of these attributes [20, Ann. I, Recitals 8–10]. We model this       functionality to abort, the functionality computes the output of the
+with RP (de)registration and usage (de)registration routines.            function 𝑓on the user’s attributes and sends it to the RP.
+                                                          Our model does not specify how the user selects the decision bits
+Issuance phase. Issuers certify attributes for a user. The regu-
+lation establishes degrees of confidence in the authenticity of a       𝑏check, consent1, and consent2. For example, an application may
+                                                                not allow the user to decide on of these decision bits, and instead
+user’s attributes an issuer can provide (levels of assurance), without
+                                                               hardcode them to be specific values.
+specifying how the issuer should verify the attributes it issues [37,
+Art. 8]. We abstract this verification process as an issuance oracle     Out-of-scope features. To keep our model tractable, we exclude
+OIssue (Step 1, Issuance, Fig. 2) to verify, e.g., the identity of a user,     some aspects appearing in the EUDIF documentation that cover
+or the value of their attributes. When issuing attributes (Step 2), the     deployment considerations (such as device binding or revocation)
+issuer may specify a disclosure policy, which informs users about      or increase functionality (such as pseudonyms). These aspects are
+the conditions under which they should disclose the attribute to      not necessary to obtain the core functionality of the EUDIF. We
+RPs (according to the issuer’s preferences). The Architecture and       discuss in Section 4.4 how they can only increase leakage, and thus
+Reference Framework (ARF) [31] does not precisely define the scope       potential for harm, relative to what is modelled in FEUDIF.
+of disclosure policies, and it is not clear if disclosure policies may
+receive as input any information beyond the identity of the RP and
+the requested attributes. The only given example of such a disclo-
+                                                         3.2  Formally Modeling EUDIF Use Cases
+sure policy advises the user to refuse disclosure if the RP is not from
+                                                 Many uses cases leveraging the EUDIF have been proposed [24]
+a specified set of trusted RPs [31, 6.6.2.7.2]; policies of this kind
+                                                                  (opening bank accounts, age verification, accessing ePrescriptions,
+must be supported as per [20, Ann. III]. To broaden our model’s
+                                                               mobile driving licenses, etc.); see Appendix C for a discussion of
+coverage, we allow disclosure policies to depend on the claimed
+                                                                 use cases. All of these use cases can be modeled as a functionality
+intended use and the attribute descriptions (see below, Presentation,
+                                                                         in the FEUDIF-hybrid model: the use case functionality makes callsStep 4). The functionality stores the policy and attributes (Step 2).
+                                                                        to the operations provided by FEUDIF.
+Presentation phase. The EUDIF mandates support for selective      We select two use cases commonly used as flagship examples of
+disclosure of attributes, i.e., the ability for an RP to query a subset of     DIF applications: age verification and mobile driving licenses. These
+the user’s attributes [37, Art. 5a 4(a)]. We model selective disclosure      use cases also represent extremes in terms of information that must
+by (i) considering attributes separately during the issuance and pre-     be revealed to RPs (one bit about age vs. identity). For each use case,
+sentation phases, thereby allowing fine-grained attribute disclosure    we define a functionality based on existing official documentation
+(e.g., disclose only a first name); and (ii) allowing the RP to specify      of use cases [24] and standards [38].
+a function 𝑓to be applied on the user’s attributes. The function 𝑓
+can model simple conditions (e.g., “age above 18”), direct disclosure
+of attributes, or a combination thereof. When an RP requests data        3.2.1  Age Verification for Online Services. Age verification requires
+from a user, the functionality and the user interact over several      users to prove their age is above or below a certain threshold to
+rounds, during which the user learns more about the request and      a service provider using verified information issued by a trusted
+the RP, and decides whether it approves the request. This models      party such as a national government. For instance, users may need
+that users should be able to verify the registration data of RPs [20,      to perform such verification to access services for which regulation
+Recital 9] and are given the possibility to check whether the RP is       requires users to be of age (e.g., adult content or gambling websites),
+registered for this request [20, Recital 10, Art. 8(c)]. In Step 1, the      or to access children-only spaces. This is one of the main use cases
+RP sends the requested data (𝑓, (attr_descr𝑖)𝑖∈[𝑛]) [31, 6.6.3.5.4]       for the EUDIF [21–23]. Below, we describe how we capture the
+along with the auxiliary data aux. In Step 2, if the auxiliary data      envisioned implementation of age verification via the EUDIF [23]
+contains the claimed intended_use and RP information rp_info [31,      in the functionality FAV (see Fig. 3).
+6.6.3.5.3], then these values are stored. Otherwise, if the auxiliary           First, a central entity determines which content requires age
+data is the index 𝑖intended_use of a registered intended use, then both       verification, for example, through regulation. In our abstraction,
+rp_info and intended_use are retrieved from the registry. The func-    we model this as the content authority CA, who mandates that an
+tionality sends all the information required for a presentation (RP     RP Rrid should register with a registration authority (Fig. 3, De-
+information, intended use, requested data) to the user. In Step 3,      termine content requiring age verification). RPs are not necessarily
+the user may decide (𝑏check = 1) to check whether the requested      trusted (e.g., a gambling site). Our functionality describes RPs as
+data have been registered by the RP [31, 6.6.3.3]. If the user decides      separate entities from the issuer, although there may be age verifi-
+to do so, the functionality checks (Step 3) whether the requested      cation scenarios where an RP is the same entity as the issuer. We
+data (intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) are registered for this RP,     model the RP’s decision on whether to register with the authority
+and sends the result 𝑏registration to the user. The user can then abort      as an oracle Oreg, capturing that an RP may opt not to implement
+the presentation (using consent1 = 0). In Step 4, the functionality      age verification. The registration process itself is defined in FEUDIF.
+checks the RP’s request against the issuer(s)’s policy and informs      We parametrize FAV with a function 𝑓that captures the mandate
+the user of the outcome 𝑏policy. The user may decide to abort the      of content authorities to verify that users are older or younger
+presentation with consent2 = 0. If the user has not instructed the      than a threshold age (modelled as an integer (age) value 𝑛). For
+                                                                  ease of exposition, FAV assumes that all RPs have the same legal
+                                                                   requirement, i.e., share the same function 𝑓.
+                                                            4
+
+=== PDF PAGE 5 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+   Parties. Issuer Iav is a trusted authority (e.g., as a national government) that issues age credentials to users (we set iid ≔av). Users
+   Uuid are individuals accessing online services. Relying Parties Rrid are online service providers/operators. A content authority CA
+    (e.g., EU Commmission, national government) determines which content requires verification.
+   Parameters. 𝑓>𝑛is a function that computes age >  𝑛(resp. 𝑓<𝑛for age <  𝑛), e.g., 𝑓>16, 𝑓<18, or 𝑓>21. Oreg  is an ora-
+   cle that on input rid outputs a bit determining whether Rrid registers as a relying party. Ocheck is an oracle that on input
+    (rid, intended_use, 𝑓, (attr_descri)𝑖∈[𝑛], uid), outputs a bit determining whether Uuid checks Rrid’s registered information. Oeng
+    is an oracle that on input (𝑏registration, uid) or (𝑏policy, uid) outputs a (consent) bit consent1 or consent2 determining whether Uuid
+   consents to engage with the system. Over is an oracle that on input (𝑣, rid), outputs a bit determining whether Rrid grants access to
+   the service based on the presentation output 𝑣.
+  Determine content requiring age verification. On input (RequireAge, rid) from CA, send Register from Rrid.
+  RP registration. On input Register from Rrid, receive 𝑏←Oreg(rid). If 𝑏= 1, send (RegisterRP, age-verif, 𝑓, age) from Rrid to
+   FEUDIF.
+   Request issuance. On input (RequestIssuance, uid) from a user Uuid: Send (Issue, av, age) from Uuid to FEUDIF.
+   Access service. On input (AccessService, rid) from Uuid:
+     (1) Send (Request, rid, OnlineAccess) from Uuid to FEUDIF. Upon receipt of (Request, OnlineAccess), Rrid returns (𝑓, age, 1).
+     (2) Send (rid, age-verif, 𝑓, age, uid) to Ocheck (upon receipt from FEUDIF) and return the result as 𝑏check to FEUDIF.
+     (3) Upon receipt of 𝑏registration or 𝑏policy, Uuid forwards the input to Oeng and returns the result as consent1 or consent2 to FEUDIF.
+     (4) Upon receipt of the result 𝑣≔𝑓(age), Rrid gets a bit 𝑏←Over(𝑣, rid). Return GrantAccess to Uuid if 𝑏= 1; else DenyAccess.
+
+
+                       Figure 3: Functionality FAV[FEUDIF] for age verification for an online service
+
+
+  A user may request issuance of a proof of age attestation from an         In this section, we consider the setting where car rental compa-
+issuer (Fig. 3, Request issuance), calling Issuance from FEUDIF. The       nies need to check their customers’ legal right to drive. Concretely,
+issuer Iav is a trusted authority, such as a government.                the scenario involves a customer visiting a car rental service (in
+  To access a service, the user must prove that their age is above      person) to pick up a car and a clerk requesting identification and
+(or below) a pre-defined threshold, i.e., provide a proof of a binary      driving license of the user. The user reviews the request to present
+function of a single attribute. A failure in this proof results in a de-       their data, and if they consent to engage with the system, confirms
+nial of access to the service. The RP requests an age credential from      disclosure of their identity and mDL. For simplicity, we assume
+the user, captured by a subroutine call to Presentation in FEUDIF.      that both the identity and driving rights information are verified
+We abstract the user’s decision of whether to check the RP’s regis-      information provided by the user’s EUDI wallet.
+tration status (resp., whether to engage with the age verification       The clerk’s verifier device validates the proof of the user’s driving
+system based on the information they are provided from the RP)       rights, and displays to the clerk the photo corresponding to the
+as an oracle Ocheck, (resp., Oeng). If the user consents, the RP is       user’s credential. The clerk performs out-of-band verification of
+provided with the output of the verification function 𝑓.                the user’s identity and proceeds with check in if they determine
+  The oracle Over captures the RP’s decision to grant access to       that the user should be granted access.
+the user given the output of 𝑓. We do this rather than hard-coding      We formalize the use case according to the ISO standard on
+granting access iff age verification succeeds, as in practice, it is    mDLs [38]. We defer the details to Appendix D, Fig. 9.
+impossible to force RPs to provide access if verification passes.
+  We do not model fallback mechanisms for when the initial verifi-       3.2.3  Additional Use Cases. We briefly discuss how the remaining
+cation does not succeed, e.g. asking for more information such as the     EUDIF use cases (Table 1 in the Appendix can be formally captured.
+user’s date of birth, age in years, or to show their complete identity     Use cases that result in access to services or spaces are captured sim-
+information as suggested in the ISO standard [38]. Implementing        ilarly to the functionalities for age verification and mDLs. Generic
+such fallbacks would only increase the information leakage of the       identity cases (PID-based identification for online services and iden-
+system, and therefore potentially result in more harms.                   tification in proximity scenarios) are directly captured by FEUDIF
+                                                   when the issuer is an entity with the authority to issue identity
+3.2.2  Mobile Driving License for Car Rentals. A mobile driving      information, the RP is the server provider, and the output returned
+license (mDL), in its basic form, is a digital document that proves       to the RP is the user’s identity information.
+an individual’s right to drive a certain kind of vehicle. In certain       Some use cases involve a third-party entity that performs creden-
+jurisdictions, such as the United States, an mDL can include verified        tial verification and forwards this information to a service provider.
+information such as a user’s full name, photo, date of birth, and      In our modelling, this third-party acts as the RP. For example, the
+nationality, and can also be used as a means of digital identification.      e-signature use case [25] describes a generic application of the EU-
+mDLs are proposed as a use case for the EUDIF for the purposes     DIF where a third-party “secure trust provider” signs documents
+of: (i) verification of a driver’s right to drive when renting cars, (ii)     on behalf of an individual, whose identity they must verify. Here,
+identification upon police roadside checks, and (iii) as a means of      the RP in our model is the “secure trust provider.” The signed doc-
+electronic identification more generally.                         ument can then be sent to the entity who generated the contract.
+                                                            5
+
+=== PDF PAGE 6 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+The “payment service provider” of the payment authentication use                              Harm
+case [27] similarly acts as RP: it verifies a user’s proof of payment                                    · · ·
+authentication and identity, and then executes the transaction. The                                           Capabilities
+merchant then receives a confirmation from the payment service                         · · ·                  · · ·
+provider. We note that our modelling, where we define the RP to                                    System Components
+be the entity performing verification of attributes, differs from the
+use cases’ documentation which refers to merchants as the RP.
+                                                            Figure 4: Harm tree. Components in black originate in the
+                                                EUDIF functionality, components in blue originate in the
+4  Harms from Use Cases                                    digital context of a use case, and components in red appear
+In this section, we study the role of PETs in preventing harms     due to implementation choices.
+that stem from the introduction of the EUDIF. In order to do so,
+we first develop a methodology for understanding the numerous
+pathways to harm that are introduced by the system. Harms stem      System components. We identify system components that might lead
+                                                                         to harms. These comprise information leakage due to the use of thefrom elements of the system design (e.g., information leaked by
+                                                            EUDIF, the results of an entity’s interaction with the system, andthe functionality, requirements imposed on users) that are used
+                                                                 requirements imposed on the entities by the EUDIF. For example,against the interests of users. However, it is challenging to reason
+                                                             system components in the age verification use case include theabout harms by analysing these elements in isolation. For instance,
+                                                                    leakage of information about a user’s age to the RP, the decision ofwithout context determining how information is (intended to be)
+                                                                  a user to engage with the age verification system, or the requirementused and by whom, it is not possible to identify harms that might
+                                                                        to have an EUDIF-enabled device to interact with the system.result from information leakage. As an example, the Presentation
+subroutine of the functionality FEUDIF outputs 𝑣to the RP Rrid,       Capabilities. A set of system components can combine to enable
+where 𝑣is the output of an arbitrary function 𝑓evaluated over a set      certain capabilities or lack thereof on the system or its entities.
+of attributes. This modelling enables us to capture the vast range of      Examples include the capability to track users, the incapability of a
+applications that could be implemented by the EUDIF (Appendix C).      provider to provide a service in a region, or the incapability of a
+However, without knowing the semantics of 𝑣= 𝑓((attr𝑖)𝑖∈[𝑛])      user to access a service.
+and the entity that receives 𝑣, one cannot assess whether and how                                                            Harms. Capabilities (or combinations thereof) can lead to harms.
+revealing 𝑣to Rrid might lead to harms.                     We apply the definition of harm as “an impairment or disruption of
+  To analyse what harms might be caused by the introduction     an entity’s capacity or ability to function and exist as it otherwise
+of the EUDIF, it is necessary to consider concrete use cases that     would have in its usual context” [14]. For each use case we analyse,
+allow us to clearly define system components that determine the    we assume the current state of practices in the EU as our baseline
+value of attributes issued and revealed, the entities receiving these      “usual context.” As impairments, following the the taxonomy of
+attributes, and the capabilities of these entities. In this section, we      privacy harms of Citron and Solove [11] and the CyberPeace Insti-
+focus on the potential harms of the age verification (Section 4.2) and       tute’s harms methodology [14], we consider any negative impact on
+mDL (Section 4.3) use cases. After enumerating the harms that arise       individuals, groups of individuals, or the society as a whole, from
+from these use cases, we consider the impact of deployment require-      the standpoint of physical, mental, or financial well-being or repu-
+ments that are introduced when considering the implementation of       tation, dignity, freedom, acceptance in society, self-actualization,
+a real-world digital identity system (Section 4.4). Finally, we discuss      domestic life, freedom of expression, or any other fundamental
+the role of PETs and their (in)ability to eliminate the harms that       right. We provide details and examples in Appendix A.
+stem from the EUDIF (Section 4.5). In the following sections, PETs
+refers to PETs that can be implemented within the EUDIF (e.g.,     Constructing trees. When system components enable capabilities
+anonymous credentials, data federation), such that they do not de-      that in turn result in harms, we say that we have found a pathway
+pend on broader infrastructural changes or individual choices of the      to harm. We combine these pathways into a harm tree [16] that
+user. PETs outside the implementation of the EUDIF (e.g., accessing      captures pathways through which a harm may be caused. A harm
+online services through Tor, alternative Internet architectures) are       tree consists of three levels. At the top of the tree is the harm. On
+out of scope.                                                         the second level, we have the capabilities that enable this harm. At
+                                                                     the leaves, we have system components that (combine in some way
+                                                                              to) enable each capability. When representing trees, we use AND
+4.1  Understanding Pathways to Harm                and OR operators to indicate how system components combine to
+To better understand potential harms and their origins, we develop      create capabilities. Whenever more than one system component
+a methodology based on harm trees [16, 17]. This methodology     might be needed for the capability, we write OR+.
+enables us to identify harms that arise from each use case. Addition-
+                                             Harm origins. Given a harm tree, we identify the root cause of eachally, it allows us to distinguish whether a harm is inherent to the
+                                                           pathway to harm, according to the origin of its system components.
+functionality, is rooted in the functionality being used in a digital
+                                                                     In black, we identify components inherent to the functionality.context, or stems from concrete implementation choices.
+                                                            These correspond to leakage, requirements, or interactions in the
+Tree elements. We build trees from three kinds of elements: system      core functionality (FEUDIF, FAV, or FmDL). Their presence in the core
+components, capabilities, and harms, illustrated in Fig. 4.               functionality implies that these components cannot be eliminated
+                                                            6
+
+=== PDF PAGE 7 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+                                    Service provider stops service                     to not implement age verification and either stop providing a ser-
+                                OR                               vice altogether or pull out of specific regions. Legal requirements
+                 AND                                                to implement age verification are inherent to the core functionality:
+                                                                 a service provider receives a mandate from the Content Authority
+  Requirement for provider Service provider chooses  Functioning                                                         Economic                                                                                  costs      and must register to provide a service (Requirement for provider    Rrid to implement age   whether to implement  implementation                                                                        of compliance
+         verification        age verification (Oreg)      required                         Rrid to implement age verification, in Fig. 3, see black components).
+                                                               Implementing age verification in a digital context might necessitate
+    (a) Service provider stops service or pulls out from territory
+                                                                        expertise to develop a functional implementation, which might be
+                                          Tracking/profiling                         unavailable to some service provider or incur high costs (see blue
+                                                                components).
+                                   OR+
+                                                                   Tracking and Profiling (Fig. 5b). Information leakage to the RP can
+   Reveal age information     Repeated    Reveal other   Persistent      Online        enable service providers to track and/or profile users. In this use
+    (Rrid learns 𝑣= 𝑓(age))    observations    attributes     identifier      metadata
+                                                                           case, the only information leakage to the RP Rrid that is inherent
+                          (b) Tracking/profiling                            to the use case functionality is the result of the function 𝑓(age)
+                                                                   the user computes on their age. The RP might learn additional
+Figure 5: Age verification – Common sub-trees of capabilities      information (e.g., online metadata or personal information) from
+                                                                   the digital context of deployment (e.g., a browser or application).
+                                                                 This online metadata cannot be eliminated with modifications to
+without preventing the system from operating as intended. In blue,      the implementation of the EUDIF itself (i.e., use of PETs), because
+we identify components that are inherent to the EUDIF being used      such modifications do not affect the digital context in which it is
+in a digital context. These components cannot be eliminated because      used (e.g., over the Internet). In the naive, concrete implementation
+they cannot be eliminated from a digital system. In red, we identify     where users’ identity is revealed, the presence of a persistent identi-
+components that arise in a concrete implementation of the EUDIF.       fier trivially enables tracking and profiling. Many combinations of
+While the formal model is designed to only reveal the information      these components suffice to grant the RP tracking and profiling ca-
+necessary to realize the functionality, in reality, an implementation        pabilities. In fact, even if privacy technologies are used to minimize
+might leak more information. In this section, we consider a naive      the information revealed and eliminate persistent identifiers, the
+implementation for each use case, where users send their com-      functionality inherently reveals age information that can be used
+plete attributes (e.g., a copy of their identity documents) to the RP       for profiling (see Section 5.2).
+upon each presentation. We discuss non-trivial implementations,                                                             Discrimination (Fig. 6a). Discrimination harms involve entrench-
+including those using PETs to minimize disclosure, in Section 4.5.                                                                    ing inequality and disadvantaging people based on their attributes
+  We do not claim completeness of the harms, capabilities, or sys-        (e.g., gender, race, nationality, age) [11]. The possibility of discrim-
+tem components we identify in our analysis. Yet our methodology      ination based on age information is inherent to the functionality.
+and our conclusions remain valid: additional harms, or additional     While in some cases acting on age information might be legitimate
+pathways to identified harms, only provide further evidence of the        (e.g., managing access to adult-only content), this information can
+surface of harms from an EUDIF deployment.                           also be used to provide discriminatory service (e.g., discriminatory
+                                                                               pricing). Combined with online metadata due to the EUDIF’s digital
+4.2  Age Verification for Online Services                context (e.g., cookies, fingerprinting, advertising IDs), or persis-
+                                                                         tent identifiers created in a naive implementation, age verification
+We construct harm trees for the harms that arise from the use of
+                                                             improves profiling and increases discrimination harms, e.g., due
+the EUDIF for online age verification. We extract potential harms
+                                                                        to targeted advertising [4]. Finally, the digital nature of EUDIF re-
+from existing literature [34, 46, 47] and expand this set with harms
+                                                                     quires that users have access to a device and that this device has
+discussed in [11, 14]. The harms we consider are relative to a base-
+                                                                             sufficient power/battery when the user is required to present a
+line scenario where age verification is not widely deployed, as is
+                                                                           credential. This device must have adequate resources to run the
+current practice in the EU. We find seven harms: discrimination,
+                                                                     concrete EUDIF implementation, which may exacerbate the risk of
+exacerbation of structural exclusion, targeted advertising harms,
+                                                                        discrimination; we discuss this in more detail in Section 4.4.
+reduced availability of resources, censorship, diminished Internet
+                                                                               Profiling due to leakage of persistent identifiers can be mitigated
+safety, and increased cybersecurity risk. We discuss the first three
+                                                         by privacy-preserving solutions that provide unlinkability. How-
+here and defer the discussion of the rest to Appendix E. For system
+                                                                            ever, even privacy-preserving solutions cannot prevent profiling
+components that are inherent to the minimal functionality of the
+                                                                 based on age information and information from the digital context.
+use case (i.e., illustrated in black), we specify the corresponding                                            We show in Section 5.1 that the discrimination harm is actually
+element of the ideal functionality FAV.                                                                    inherent to the EUDIF functionality independent of the use case.
+Common sub-trees. In our analysis, we discover two capabilities
+that are common to several harms: ceasing service and tracking      Exacerbate structural exclusion or restrict access to resources
+                                                                                     (Fig. 6b). Structural exclusion restricts individuals’ choices and free-
+(see Fig. 5). For ease of exposition, we explain these sub-trees first.
+                                                  dom of information, and can be considered an autonomy harm [11].
+Service provider stops service (Fig. 5a). Due to implementation chal-      In the context of age verification, exclusion can happen due to two
+lenges or fear of legal consequences, service providers might decide
+                                                            7
+
+=== PDF PAGE 8 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+                                Discrimination                                                                            Tracking/Profiling
+
+                         OR                                                                OR+
+
+                     Profiling                       Service provider restricts access               Repeated observations                Reveal identity (Rrid learns identity)
+                                           OR
+                OR+
+                          AND             AND                                      (a) Tracking/profiling sub-tree
+
+                                                                                                                                    Increased cybersecurity risks
+  Online    Persistent       Reveal age      Service provider chooses Require access
+ metadata   identifier    information (Rrid    whether to implement     to device                                           OR
+                          learns 𝑣= 𝑓(age))    age verification (Oreg)
+                                                                                                         Normalization of data disclosure          Increased data retention
+                             (a) Discrimination
+                                                                            AND                   AND
+
+                            Exacerbated structural exclusion
+                                                                                       Repeated requests (Uuid may call       Reveal identity         Digitization of
+                             OR                                             RequestPresentation multiple times)   (Rrid learns identity)       data records
+
+    Service prover stops service (Fig. 5a)           User cannot access service
+                                                                                                        (b) Increased cybersecurity risks
+                             OR
+
+          Issuance by government entity          Require digital literacy                 Figure 7: Mobile driving license (mDL) harm trees
+                  (Iav is a government)
+
+                         (b) Structural exclusion
+                                                                             their physical identity information in person. We find that several of
+                                 Targeted advertising                            the harms discussed for age verification apply verbatim to this use
+                             OR                                      case, and some pathways to harm are simplified. We now describe
+                                                                    the most interesting differences.
+             Tracking/Profiling (Fig. 5b)      Data brokerage
+                                                                       Targeting and profiling of users is easier in the mDL case than
+                                                 Digitization of                      with age verification. Users must reveal their identity to the provider.
+                                               data records                       Thus, attributes that, for age verification, could be protected using
+                                                           PETs (those in red) cannot be hidden in the mDL use case because                            (c) Targeted advertising
+                                                                     the functionality requires that users reveal their identity (Rrid learns
+           Figure 6: Age verification harm trees                     identity). Fig. 7a illustrates the simplified pathways to the tracking
+                                                          and profiling capability. This simplified sub-tree of tracking and
+                                                                           profiling applies to all identity-based use cases in Table 1.
+capabilities. First, users may not be able to access to the service.        Second, the discrimination harm tree (Fig. 6a) applies verbatim to
+This affects individuals who do not fulfil age requirements, but      the mDL scenario: the car rental service can choose to discriminate
+also those who cannot verify their age for other reasons (e.g., those      based on the presented identity, which includes attributes such as
+with low digital literacy, or with no access to identity documents).     age or nationality. Despite being primarily an offline interaction,
+Second, if service providers pull out of territories, all users from      a digitalized mDL presents the same harm tree for exacerbated
+those territories lose access to the service, e.g., [15, 45, 59].              structural exclusion (Fig. 6b). The mDL use case still requires the
+                                                                   user to have access to a device and digital literacy skills and to
+Targeted advertising harms (Fig. 6c). Targeted advertising has      access official identity documents.
+been shown to lead to psychological harm [41, 49], result in discrim-          Lastly, digitization of identity documents leads to greater reten-
+inatory practices [4], and restrict users’ opportunities for choice       tion of data which increases the risk of sensitive data being shared
+and control over their actions [56, 63]. Using the EUDIF for online      or leaked in data breaches or voluntarily by the data holder. Regular
+age verification is set to further deepen these harms. Minors can      use of digital identities and mDLs may normalize requests for veri-
+be targeted for advertisements based on verified age information       fied identity information online and in proximity cases. This leads
+that must be revealed to achieve the desired functionality. Adults      to broader sharing of personal information that heightens users’
+can be targeted based on their verified age and information leaked       vulnerability to phishing, identity fraud, and data breaches. Thus,
+through the digital context (directly, or via data brokerage). A naive    mDLs introduce the harm of increased cybersecurity risk which
+implementation increases the risks of targeting, by enabling better     downstream might lead to further harms such as economic and
+tracking and profiling (see Fig. 5b). Even if PETs are used to limit      psychological harms (Fig. 7b).
+profiling, the risk of targeted advertising harms persists due to the        For all trees that change with respect to the age verification case,
+age-related leakage.                                    we note that there are no pathways depending on concrete design
+                                                                       decisions (in red). Thus, privacy technologies cannot mitigate any
+4.3  Mobile Driving License for Car Rentals           pathways to harm. While this might seem trivial given the depen-
+We extract potential harms from existing literature [61] and expand      dency on identity, the mDL is just one of many identity-driven use
+them with our own analysis. We then create harm trees based on the      cases with this dependence [24] for which privacy is not possible.
+mDL use case described in Section 3.2.2. The baseline usual context      Thus, we consider it important to highlight the harms that can arise
+against which we compare the EUDIF solution is a user presenting     from their deployment.
+                                                            8
+
+=== PDF PAGE 9 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+                                                           Device binding increases exclusion risk. In many applications,
+       Policy                         User          Revocation
+     Manager     disclosurefetch and checkpolicy                     Manager        check revocation           such as age verification, security hinges on users not being able
+                               4                                                       to share credentials. The ideal functionality does not cover this
+                                                                                                           6                  aspect. To prevent sharing of credentials, the EUDIF relies on device                     🔒
+      Issuers                                    Device       request f,              Relying Parties            binding to link a wallet to a device [31, Sec. 6.6.3.8]. Having access
+                                                               (𝖺𝗍𝗍𝗋_𝗍𝗒𝗉𝖾i)i∈[n],                           to the device, e.g., phone or laptop, serves as a proof of ownership
+                 request 𝖺𝗍𝗍𝗋_𝗍𝗒𝗉𝖾                   𝗂𝗇𝗍𝖾𝗇𝖽𝖾𝖽_𝗎𝗌𝖾                                                                       of the wallet stored on it. Wallets cannot be transferred to other
+     governments             1                                                3            contentage-gated provider mediasocial 
+                       2                                              5                                  devices without changing the binding to that device.
+                          𝖺𝗍𝗍𝗋,                  issuesetdisclosure                               𝗉𝗈𝗅𝗂𝖼𝗒             refusepresent/ f(𝖺𝗍𝗍𝗋1, …, 𝖺𝗍𝗍𝗋n)                          This one-person-one-device ownership model does not corre-
+       education                                       4
+       institutions                                                                                                                     law      pharmacies         spond to many realistic scenarios in which users have multiple                                          check RP identity and           enforcement
+                                                      request                                 devices (e.g., smartphones and laptops, or corporate and personal   ⋮                             ⋮                devices) or share devices with other users (e.g., family computer-
+                         Registries                                              s/smartphones). In these scenarios, device binding might prevent
+                                                                    users                                                                from                                                                           using their                                                                                            wallet                                                                                                     in certain                                                                                                                       situations.                                                                                                              For                                                                                                                  example,                                                                                                                                                                        travel                                                                                 0       f,            operator        financial 
+                                                                                                                                                               hospitality      institutions        ⋯                                                               register(𝖺𝗍𝗍𝗋_𝗍𝗒𝗉𝖾i)i∈[n],identity,                                                                   binding                                                                             the wallet                                                                                            to a laptop                                                                                       impedes                                                                                                                                             its use                                                                                                                        in offline                                                                                                                                  interactions                                                   𝗂𝗇𝗍𝖾𝗇𝖽𝖾𝖽_𝗎𝗌𝖾
+                                                             such as age verification to buy certain products; and binding the
+                                                                        wallet to a (shared) phone impedes its use in online interactions on
+Figure 8: Additional information flows stemming from de-
+                                                               a laptop if the user does not have the phone at that point. These
+ployment requirements (in dark red).
+                                                              can exacerbate structural exclusion when the users choices depend
+                                                         on their demographics (e.g., elderly users that are not comfortable
+                                                               with mobile technology) or socioeconomic status (shared devices).
+4.4  Harm-enabling Components from                 Even if devices are not shared, the single-device policy means
+                                                                        that users need to use their bound device (e.g., a phone) when ac-    Deployment Requirements
+                                                                       cessing services on another device (e.g., a laptop). Doing so implies
+Thus far, we have considered paths to harm that arise in a naive
+                                                                       that they are joining sessions happening in both devices (e.g., by
+implementation that shares all attributes, and that has minimal
+                                                                 scanning a QR code) which creates new red pathways for profilingfunctionality. In practice, however, deployment requirements for a
+                                                           and tracking.system introduce constraints that increase the complexity of the im-
+plementation, and implementations can use privacy protections to     Relying Parties’ certificate. Users must be able to trust RPs. To
+minimize the data shared. We now demonstrate how these changes      enable this, the ARF [31] introduces trusted member state registrars
+lead to new pathways to harm.                                         that can attest to the validity of registered RPs’ certificates. RPs
+  We extract plausible deployment details and additional features     can embed these certificates in the presentation request, and the
+from available discussions of the framework [30], the reference      user contacts the registrar to check the validity. This check (step
+implementation of the EUDI wallet [33], and reports from pilot       4  in Fig. 8), inexistent in the core functionality, leaks information
+projects [32]. We illustrate new flows and parties that appear from      about the user’s interactions with the RP to the registrar, creating
+these requirements in dark red in Fig. 8. First, a device hosts the      a new red component, Registrar learns Rrid, in harm trees, and a
+wallet to bind it to the user. Three new third parties appear: reg-    new pathway to profiling and tracking.
+istries that hold registered RPs and their policies, a disclosure policy
+manager to assist users in their decision about the policy of an RP,     Disclosure Policy. The ARF specifies that users must be made
+                                                             aware of the RP’s privacy policy before providing informed consentand a revocation list manager that assists RPs in identifying invalid
+                                                                         to share credential [31, Ann. 2.02 , EDP_05]. This policy is provided
+credentials. New flows also materialize: steps 0  , 4  , and 6  . We
+                                                                    as part of the presentation request or encoded as an URL hosted
+illustrate the impact of these deployment requirements on harm
+                                                          by a party different than the RP, e.g., the registrar or the issuer. If
+trees using the example of the discrimination harm tree (Fig. 6a)
+                                                                   the users chooses to visit the URL, in step 4  it will reveal to thewith its modified version shown in Fig. 19. We note that our set of
+                                                                     party storing the policies the service accessed during and when it isdeployment requirements is not complete. Other requirements may
+                                                                     accessed (even if later the user decides not to consent). This createsresult in more flows and pathways to harm.
+                                                                a new red component Policy manager learns Rrid that contributes
+Device requirements increase discrimination risk. The digital      contribute to tracking.
+nature of the EUDIF requires a physical device to store and operate
+the wallet. As shown in Fig. 6a, requiring access to a device, by itself,     Revocation. Credentials can refer to facts that change over time
+                                                                                            (e.g., address, age), have an expiration time, or be compromised.can lead to discrimination. When implementing the EUDIF, func-
+                                                                Thus, issuers must have the ability to revoke credentials, and RPstionalities or implementation choices may introduce requirements
+                                                           must be able to verify that credentials are valid [31, Ann. 2.02, Topicon the device, such as a specific operating system (e.g., requiring
+                                                                                    7]. The ARF suggests that users have at most one wallet and thatparticular attestation methods [42]) or the presence of a secure
+                                                                         wallets are bound to a single device. In that case, revocation wouldelement (e.g., to enable device binding [39]). The need for specific
+                                                                          also be necessary to transfer a wallet between devices and support
+device characteristics adds a new red component (i.e., stemming                                                                    device binding. For instance, a user changing device could revoke
+from a concrete implementation) to the discrimination harm trees                                                                          their credential on the original device and re-register it on thein addition to access to the device, and exacerbates this harm.
+                                                            9
+
+=== PDF PAGE 10 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+new one. Implementing revocation requires to introduce a Revoca-        Other PETs, such as pseudonyms, similarly modify components
+tion Manager to hold revocation information (e.g., lists of revoked       of the trees without fully removing the resulting pathway to harm(s).
+credentials).The ARF requires that credentials are validated upon     Pseudonyms enable users to access service in a linkable manner
+presentation. Depending on the implementation, this check might      without revealing their identity, while guaranteeing to an RP that
+introduce an interaction of the relaying party with the Revocation      they have a real EUDI wallet [48]. Pseudonyms aim to reduce link-
+Manager (step 6  in Fig. 8). This would introduce a new red com-       ability across RPs by removing the use of persistent identifiers.
+ponent Revocation Manager learns the Rrid which contributes to     However, the linkability within visits to an RP persists with the
+tracking and profiling.                                         pseudonym, and potentially across RPs if the (set of) revealed at-
+                                                                          tributes can act as persistent identifiers. Thus, pseudonyms do
+                                                                not eliminate profiling capabilities (even if a user uses multiple
+4.5  The Role of PETs in Eliminating Harms          pseudonyms), nor do they reduce the likelihood of discrimination
+The EUDIF documentation emphasizes a privacy-by-design ap-      as the RP still receives attributes on which it can discriminate.
+proach [31], in part to address feedback concerning its potential
+negative impact on users [9, 18]. Given the broad range of path-     PETs can introduce or exacerbate pathways to harm. Modern
+                                                           PETs are complex and can be opaque to users [10, 13, 43, 44, 60, 62].
+ways to harm that we have identified, we study whether PETs can
+                                                                   This opacity may actually lead to new system components in harm
+prevent such harms.
+                                                                            trees stemming from users’ actions. For example, users might refuse
+PETs can only eliminate a limited subset of pathway to harms.      to use a system that they do not understand, adding a new red com-
+Integrating PETs does hinder adversarial capabilities, making cer-     ponent leaf to the structural exclusion harm tree (Fig. 6b); or users
+tain harms that stem from digital identity systems more difficult to     might misunderstand the protection and reveal more information
+bring about. Implementing PETs is therefore recommended; how-     than intended, which could result in the component Reveal other
+ever, the impact of PETs is limited. Integrating PETs in an implemen-      attributes persisting in the Tracking/Profiling sub-tree (Fig. 5b) or
+tation of the EUDIF functionality to minimize information revealed      the component appearing in the Discrimination tree (Fig. 6a), even
+to RPs cannot eliminate the presence of components present in the         if PETs are implemented.
+core functionality (black components in the trees). These compo-        Furthermore, PETs increase the reliance on device resources:
+nents can be as leaky as revealing the full identity of the user (e.g.,      they increase computational power requirements on the user’s
+in the mDL use case). Integrating PETs can neither eliminate harms      device (e.g., zero-knowledge proofs underlying zkSNARKs may
+that arise from the digital context (in blue), such as the need for     be too resource intensive to run efficiently on low-end or older
+a device to access services or the need of digital literacy to use a      smartphones [40, 54]), or tend to require a trusted execution envi-
+wallet. Thus, integrating PETs in EUDIF implementations can at     ronment (which not all devices have) which amplifies the harm of
+most remove components arising from implementation decisions       structural exclusion. Finally, to make them deployable, PETs might
+(in red). Removing these components brings the leakage of the     need specialized, ad-hoc optimizations to meet the limitations of
+implementation closer to that of the (ideal) EUDIF functionality      users’ devices (e.g., storage, hardware) and usability constraints
+in a digital context (e.g., anonymous credentials with selective dis-        (e.g., processing time cannot be above a certain threshold). How-
+closure eliminate the Reveal other attributes component in the tree       ever, only a few research actors have the expertise and means to
+in Fig. 5b). However, in each harm tree, there exists at least one      design, implement, and maintain such specialized PETs (e.g., Big
+pathway to the harm that does not require red components; PETs     Tech players). Such concentration of power gives these actors con-
+thus cannot, by themselves, eliminate the potential of the EUDIF       trol of, e.g., the libraries’ output formats or APIs, reducing freedom
+and other digital identity systems to induce harms.                     of choice (e.g., the system has to be compatible with the imposed
+   Further, PETs that exist in theory may not be deployable in      implementation), undermining autonomy.
+practice due to performance costs or complexity (e.g., private in-
+formation retrieval on dynamic databases to retrieve policies or     PETs cannot eliminate harms in identity use cases. Identity-
+                                                               based use cases, such as mDLs and many others in Appendix C,
+certificates, or the use of dummy traffic to hide timing patterns).
+                                                       make up a significant proportion of intended use cases of the EUDIF.
+Thus, pathways to harms introduced by deployment requirements
+                                                                For these use cases, PETs such as anonymous credentials, are not
+might not be removable by PETs in practice.
+                                                                         applicable: there is no privacy benefit to selective disclosure or
+Not all PETs reduce harm in the same way. Care should be       ability to achieve unlinkability when one’s identity must be shared.
+taken when selecting PETs to minimize adversarial capabilities      For these use cases, privacy claims become vacuous and the use of
+as much as possible. Some PETs modify system components in      the EUDIF will exacerbate the capabilities of tracking and profiling,
+ways that increase the difficulty of exploiting leakage, but do not       relative to a scenario where a physical ID is used.
+remove the possibility of exploitation. For example, batch issuance
+of credentials – as proposed in the Swiss electronic ID [8] whose
+architecture is close to the EUDIF – does not guarantee unlinkability
+to the credential issuer. Thus, even though it does not create a    5  Fundamental Harm-enabling Capabilities of
+global ‘persistent identifier’ (see Fig. 5b), it does enable issuers (in       EUDIF-like Systems
+collusion with an RP) to track users. This means that the pathway     Our analysis thus far reveals that different combinations of EUDIF
+to harm would still exist, though the capabilities are arguably more     and use-case components result in harm-enabling capabilities. In
+challenging to attain than in the naive implementation.                  this section, we provide a deeper analysis of three capabilities that
+                                                            10
+
+=== PDF PAGE 11 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+lead to most of the harms we identified: distinguishing, trackabil-        Second, adversaries can exploit that different users have different
+ity, and inference. We employ security games to (i) precisely define       attribute values. This captures the case where the evaluations of
+which system component can be exploited by an adversary, (ii) iden-      the function 𝑓on the attributes differ between the two challenge
+tify winning strategies, and (iii) gain a fine-grained understanding       users. In the cryptography literature this condition is often excluded
+of the root causes of these harm-enabling capabilities.                 as a trivial win. Here, we argue it must not be discarded because
+                                                                              real adversarial RPs can indeed ask for (functions on) such kind of
+                                                                             attributes. For example, an RP might ask for a users’ nationality,
+5.1  Distinguishing Capability                                                           and thus distinguish users based on this.
+                                                                           Third, adversaries can exploit that users behave differently with
+Definition. Informally, distinguishability is the ability of a relying
+                                                                        respect to consent and registration checking. By asking for invasive
+party to distinguish between classes of users, and thus categorize
+                                                                                attributes, the adversary can cause some users to not consent, lead-them based on a single presentation of their wallet to this RP. We
+                                                                  ing to a mechanism to distinguish users. For example, even if weformally model the adversary’s capability to distinguish users using
+                                                            assume that revealing gender does not result in discrimination, non-
+a security game against the FEUDIF functionality (Appendix F.1,                                                                 binary users might be less willing to reveal their gender [53, 58],Fig. 15). The adversary’s goal is to distinguish between two fresh
+                                                          which enables distinguishing them from others.challenge users. Freshness enables us to model the adversary’s
+advantage in distinguishing between users it has not seen before.     Takeaway. While there could be legitimate and fair reasons to
+Our trackability game in the next section models an adversary’s      enable distinguishing capabilities, we argue that the existence of
+ability to track (or link) a user between different events.                  this capability is inherently a source of harms such as discrimina-
+  The game proceeds in two phases. First, the adversary specifies      tion (Fig. 6a), exacerbated structural exclusion (Fig. 6b), reduced
+which attributes and values should be issued and the disclosure       availability of resources (Fig. 11), and censorship (Fig. 12).
+policies for each of the two fresh users. We model issuance as hon-       Our analysis demonstrates that even an ideal EUDIF implemen-
+est but let the adversary determine the policies for the fresh users.      tation would lead to this capability, and that the causes are system-
+These adversarial policies capture leakage that occurs when issuers       level decisions by participating (adversarial) parties. Thus, any
+use different policies for different users, e.g., stricter policies for     deployment aiming to thwart distinguishing harms must impose
+underage users. Second, the adversary, acting as a malicious RP, can       restrictions on the system-level specification. In particular, limiting
+request a presentation from one of the two fresh challenge users.      distinguishing requires placing limits on the policies that issuers
+The adversary can choose the function 𝑓to determine which (func-      apply, and which (functions of) attributes RPs are allowed to ask for.
+tion of the) attributes the user must disclose. To model the diversity     To avoid policies becoming a mechanism to distinguish between
+of users’ decisions, the adversary can specify the behaviour of both      groups 𝐴and 𝐵, the policies of users in group 𝐴must evaluate
+challenge users with respect to whether they require registration      presentation requests from an RP in the same way as the policies
+of the RP and whether they consent.                                    of users of group 𝐵. The easiest way to accomplish this is to forbid
+   This distinguishing game gives the adversary freedom to model      the use of per-user policies. To reduce the impact of information
+users that are, somehow, different: the adversary can control for      revealed by attributes and consent evaluation, a necessary condi-
+the challenge users (a) the policies, (b) the attributes and/or dis-      tion is to limit which functions 𝑓and attributes RPs are allowed to
+closed values, (c) the behaviour with respect to registration checks      ask for: (1) the function 𝑓must not have different outputs on two
+and consent. The distinguishing game has three variants (policies,     groups of users; and (2) the attribute sets and function 𝑓must be
+attributes, behaviour) where the adversary is permitted to induce      such that they do not trigger refusals of consent that differ between
+differences in only one of these three controls. These three variants      groups of users.
+might not be the only ways that an adversarial RP might distin-
+guish users (e.g., adversaries might combine controls). Yet, they let     5.2  Trackability Capability
+us reason about how different features of the FEUDIF functionality
+contribute to the ability of the RP to distinguish users.                 Definition. Informally, trackability is the ability of the issuer and
+                                                   RP to recognize a user they have seen before. Trackability may
+Results. Our formal analysis in Appendix F.1 shows that adver-      lead to harms to users, such as discrimination (see Figs. 5b and 7a).
+saries can exploit each of these three controls through FEUDIF to dis-      Trackability is closely related to, but distinct from, distinguishing.
+tinguish between users. In traditional cryptographic games, much     To formally define trackability, we take inspiration from the cryp-
+of this freedom is ruled illegal (or as trivial wins), precisely because      tographic definition of unlinkability in anonymous credentials. In
+the differences it induces cannot be prevented. We deliberately in-       this parallel to anonymous credentials, distinguishing is to tracka-
+clude them here because these differences between users can occur        bility as zero-knowledge is to unlinkability: the former captures the
+in a deployment of the EUDIF. We summarize here our three formal       ability to learn some information about the user, while the latter
+results from Appendix F.1. They show that the adversary’s ability      captures the ability to link different interactions of the same user.
+to distinguish users is inherent to FEUDIF itself.                    To model trackability, we extend the distinguishing game either (i)
+   First, adversaries can exploit that different users have been given      with additional adversarial queries over time (multi-show tracka-
+different policies by issuers. The outcome of this policy feeds into        bility), where an adversary seeing two presentations for the same
+the user’s consent decision-making process. For example, if children      value 𝑣aims to guess if they come from the same user, or (ii) by
+are given a policy not to disclose their first name, an RP that asks for      allowing the adversary to also corrupt issuers (issuer trackability),
+a user’s first name can distinguish children (they do not consent).     where an adversary seeing a presentation tries to learn the issuing
+                                                            11
+
+=== PDF PAGE 12 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+event for the disclosed attributes. We show our trackability games    we show that even in this restricted setting, there exists an adver-
+in Appendix F.2 (Figs. 16 and 17).                                    sary that infers sensitive attributes and 𝑔-leakage, by asking for
+                                                                     presentations through multiple corrupted RPs, and by requesting
+Results. Our analysis shows that in the context of EUDIFs, an adver-
+                                                                       presentations adaptively. The current vision of the EUDIF and manysary achieving the distinguishing capability (leveraging differences
+                                                                          of the advertised benefits includes a very flexible “any-RP-may-ask-in either policies, attributes, or user behaviour) also achieves the
+                                                                      for-anything” policy. We show that this entails unlimited inference(issuer or multi-show) trackability capability (for the same game
+                                                                              capabilities (in particular for intermediaries which act on behalf offlavour). There might exist adversaries that achieve trackability
+                                                                      multiple RPs). Conversely, any measure that restricts the inferencewithout distinguishing. In Appendix F.2, we show that whenever an
+                                                                        capability would heavily restrict the functionality of the EUDIF,
+RP is allowed to (or must to achieve its purpose) ask for a sufficiently
+                                                          and thus its anticipated benefits. We make this tension between
+identifying set of attributes it can track users across presentations
+                                                                    privacy and flexibility/generality more precise in Appendix F.3.(multi-show trackability), or collude with issuers to track that users
+presentations with their issuing event (issuer trackability).                                                         Takeaway. To obtain a meaningful bound on the maximum privacy
+Takeaway. Our analysis reveals that trackability also stems from      leakage of users’ information, it is imperative to restrict the adver-
+system-level decisions. Similarly to distinguishing, to prevent track-      sary’s ability to request arbitrary (functions of) user’s attributes. A
+ability it is necessary to add restrictions on policies, attributes, and       radical solution to prevent inference harms would be to disallow
+user behaviour as outlined in Section 5.1. Further, these restrictions      the issuance of credentials. This obviously negates the utility and
+must hold even when multiple RPs and issuer collude and share      the goal of the EUDIF, but a more nuanced credential issuance re-
+knowledge about users. We further note that ensuring that the set of       striction may help towards harm reduction (e.g., disallowing the
+attribute requested are not sufficiently identifying set of attributes      issuance of credentials for medical records). Enforcing that pre-
+is a similar problem to enforcing 𝑘-anonymity and ℓ-diversity (for      sentation requests be limited to those registered would also help
+large values of 𝑘and ℓ) over all possible user attributes, which is      reduce harms, as long as the set of registered queries is restricted
+not a solved problem and might not be possible in practice.           such that any combination of queries may only lead to a bounded
+                                                                     inference advantage (e.g., forbid revealing “sensitive” attributes
+                                                                        in conjunction with pseudo-identifiers). Yet, this restriction faces
+5.3  Inference Capability                                                                     operational challenges: it requires RPs to have up to date registra-
+Definition. Inference is the adversary’s capability to infer user       tions, and it requires continuous audits to check that query sets
+attributes. This includes attributes that the user willingly discloses      are indeed harmless – a hard non-solved problem in itself. More-
+to a corrupted RP, as well as other attributes that are correlated to       over, such a measure would not help against an adversary that
+the disclosed attributes. In our inference game (Fig. 18 in Appen-    may corrupt multiple RPs, such as advertising entities embedded in
+dix F.3), the adversary chooses a probability distribution of attribute     many web pages, or third parties that run verification credentials
+tuples. This probability must be sufficiently unpredictable (i.e., have       for many RPs. Such “intermediaries” are explicitly envisioned in
+min-entropy at least 𝜅, where 𝜅is a parameter of the game). The      the EUDIF [31, Sec. 3.11.3]. In summary, to restrict adversaries from
+challenger samples an attribute tuple at random from this set, and      achieving the inference capability, the EUDIF would need to (i)
+issues corresponding credentials to a user. The adversary, corrupt-      strongly enforce issuer disclosure policies and limit presentations
+ing a set of RPs, can (adaptively) request up to 𝑞presentations of       to registered attributes, (ii) limit which attributes may be issued and
+the challenge user’s attributes. The adversary wins if it can infer      queried, and (iii) enforce non-sharing of information between RPs.
+information about the user’s attributes. To more precisely articu-     These constraints need to be enforced with regulations, require a
+late what inference means, we borrow ideas from the quantified      strong authority oversight, reduce scalability and interoperability
+information flow (QIF) literature [5], and define three flavours for       of the EUDIF, and cannot completely prevent inference. We stress
+the winning condition:1 (i) full recovery, requiring that the adver-      that the inference capability is inherent to the EUDIF functionality,
+sary recovers the full tuple of attributes, (ii) recovery of sensitive     and can not be mitigated by PETs.
+attributes only, where sensitivity of attributes is hard-coded into
+the game, and (iii) 𝑔-leakage, which specifies an arbitrary predicate
+                                               6  Takeaways
+(partial advantage for approximate guesses, different weights for
+                                                                Privacy-enhancing technologies (PETs) are often portrayed as a
+different attributes, etc.). Full recovery implies recovery of sensitive
+                                                                        solution to mitigate the potential harms of the deployment of digital
+attributes, and both are a special case of 𝑔-leakage.
+                                                                         identity systems such as the EUDIF. In this paper, we introduce a
+Results. An adversary controlling RPs can trivially recover all of a      novel methodology and analysis to critically examine this claim.
+user’s attributes with a single presentation query which requests all    We formally model a system’s inherent (ideal) functionality and
+attributes in full; this attack also immediately reveals all sensitive      use it to identify pathways to harms from system components.
+attributes and any 𝑔-leakage function. One could consider a restric-       Our analysis shows that PETs can reduce the leakage of infor-
+tion of the EUDIF where an RP is not allowed to query all of a user’s      mation that is not essential to the core functionality of the EUDIF.
+attributes but only a limited subset, and further, that the queries     However, the remaining leakage, that is inherent to the system’s
+an RP makes must be fully specified at setup. In Appendix F.3,      intended use, is enough to realize a wide range of harms. We demon-
+                                                                            strate that this is a substantial concern for the EUDIF’s planned
+1These are not exhaustive, and the QIF literature contains more definitions of leakage,      deployment: for a large fraction of envisioned use cases, the funda-
+which translated to our setting capture different pathways to harms.                mental leakage, that cannot be mitigated by PETs, includes users’
+                                                            12
+
+=== PDF PAGE 13 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+identities which enables many of the most concerning harms. As a        [17] Sourya Joyee De and Daniel Le Métayer. 2017. A Refinement Approach for the
+result, the only way to reduce the harm surface in many cases is to            Reuse of Privacy Risk Analysis Results. In Annual Privacy Forum, APF. Springer,
+                                                                                            52–83.
+constrain actors’ actions in the system via policy requirements and        [18]  epicenter.works. 2022. Analysis of 5th eIDAS compromise from Czech Council
+procedural controls. Applying such restrictions might substantially              Presidency. https://epicenter.works/fileadmin/import/analysis_of_5th_eidas_co
+restrict the intended use of the EUDIF, and in general any digital             mpromise_from_czech_council_presidency_0.pdf.
+                                                                                            [19] European Commission. 2021. Commission recommendation (EU) 2021/946 of 3
+identity solution, and its anticipated benefits.                                   June 2021 on a common Union Toolbox for a coordinated approach towards a
+   Since PETs alone cannot prevent harms that stem from the de-           European Digital Identity Framework. https://eur-lex.europa.eu/eli/reco/2021/
+                                                                                                    946. Official Journal of the European Union L 2021/946, 16 June 2021.
+ployment of digital identity systems, promoting PETs as a suitable        [20] European Commission. 2025.  Commission Implementing Regulation (EU)
+solution to mitigate harms might result in a false sense of safety and             2025/848 of 6 May 2025 laying down rules for the application of Regulation
+prevent a broader discussion about the desirability of digital iden-            (EU) No 910/2014 of the European Parliament and of the Council as regards the
+                                                                                                       registration of wallet-relying parties. https://eur-lex.europa.eu/eli/reg_impl/202
+tity systems and their uses. We thus hope that our work serves as a              5/848/oj/eng. Official Journal of the European Union L 2025/848, 7 May 2025.
+catalyst for such a discussion about the role and benefits of PETs in        [21] European Commission. 2025. Commission releases enhanced second version of
+digital identity systems, and facilitates a conversation with policy             the age-verification blueprint.  https://digital-strategy.ec.europa.eu/en/policies/
+                                                                                                 eu-age-verification
+makers and society towards creating a safer and more inclusive        [22] European Commission. 2025. EU Age Verification Solution. https://ageverificat
+digital space.                                                                                     ion.dev/.
+                                                                                            [23] European Commission. 2026. Age Verification Use Case Manual. https://ec.eur
+                                                                                     opa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/
+                                                                                        pages/930450954/The+Age+Verification+Manual.
+References                                                                         [24] European Commission. 2026. EU Digital Identity Use Case Manuals.  https:
+ [1]  119th United States Congress. 2025. S.1748 - Kids Online Safety Act . https:            //ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYW
+      //www.congress.gov/bill/119th-congress/senate-bill/1748. https://www.congre            ALLET/pages/896827987/Use+case+manuals
+      ss.gov/bill/119th-congress/senate-bill/1748                                            [25] European Commission. 2026. The e-signature Manual.  https://ec.europa.eu/dig
+ [2]  119th United States Congress. 2026. H.R.8250 - Parents Decide Act .  https:            ital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/9304
+     //www.congress.gov/bill/119th-congress/house-bill/8250. https://www.congre             52287/eSignature Accessed 20-03-2026.
+      ss.gov/bill/119th-congress/house-bill/8250                                            [26] European Commission. 2026. The identification in proximity scenarios Manual.
+ [3]  Transportation Security Administration. 2025. Participating States and Eligible             https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTIT
+      Digital IDs. https://www.tsa.gov/digital-id/participating-states.                          YWALLET/pages/930451396/Identification+in+proximity+scenarios Accessed
+ [4] Muhammad Ali, Piotr Sapiezynski, Miranda Bogen, Aleksandra Korolova, Alan              20-03-2026.
+     Mislove, and Aaron Rieke. 2019. Discrimination through Optimization: How        [27] European Commission. 2026. The Payment Authentication Manual.  https:
+     Facebook’s Ad Delivery Can Lead to Biased Outcomes. Proceedings of the ACM             //ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYW
+     on Human-Computer Interaction 3, CSCW, Article 199 (Nov. 2019), 30 pages.            ALLET/pages/935397429/Payment+Authentication Accessed 24-03-2026.
+      doi:10.1145/3359301                                                                   [28] European Commission. 2026. The PID-based identification for online services
+ [5] Mário S. Alvim, Konstantinos Chatzikokolakis, Catuscia Palamidessi, and Geof-            Manual. https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITA
+      frey Smith. 2012. Measuring Information Leakage Using Generalized Gain Func-           LIDENTITYWALLET/pages/930451131/PID+Identification+Manual Accessed
+      tions. In CSF 2012 Computer Security Foundations Symposium, Steve Zdancewic              20-03-2026.
+     and Véronique Cortier (Eds.). IEEE Computer Society Press, 265–279. doi:10.110        [29] European Digital Identity Cooperation Group and European Commission. 2023.
+     9/CSF.2012.26                                                                   European Digital Identity Wallet Architecture and Reference Framework; v2.7.3.
+ [6] American Association of Motor Vehicle Administrators (AAMV). 2025. Mobile              https://eudi.dev/2.7.3/architecture-and-reference-framework-main/.
+      Driver’s License (mDL) Implementation Guidelines. https://www.aamva.org/ge        [30] European Digital Identity Cooperation Group and European Commission. 2026.
+     tmedia/bb4fee66-592d-4d39-813a-8fdfd910268a/MobileDLGuidelines1-5.pdf.             European Digital Identity Wallet Architecture and Reference Framework — Dis-
+ [7] Myrto Arapinis, Véronique Cortier, Hubert de Groote, Charlie Jacomme, and             cussion Topics; v2.8.0. https://eudi.dev/2.8.0/discussion-topics/.
+     Steve Kremer. 2025. Are ideal functionalities really ideal? Cryptology ePrint        [31] European Digital Identity Cooperation Group and European Commission. 2026.
+     Archive, Report 2025/2125.  https://eprint.iacr.org/2025/2125                           European Digital Identity Wallet Architecture and Reference Framework; v2.8.0.
+ [8]  Swiss Federal Authorities. 2025. Swiss’ Electronic Identity (e-ID). https://www.             https://eudi.dev/2.8.0/architecture-and-reference-framework-main/.
+      eid.admin.ch/en/e-id-e                                                                [32] European Digital Identity Cooperation Group and European Commission. 2026.
+ [9]  Carsten Baum, Olivier Blazy, Jan Camenisch, Jaap-Henk Hoepman, Eysa            European Digital Identity Wallet Pilot Projects. https://ec.europa.eu/digital-
+      Lee, Anja Lehmann, Anna Lysyanskaya, René Mayrhofer, Hart Montgomery,            building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/69448780
+    Ngoc Khanh Nguyen, Bart Preneel, abhi shelat, Daniel Slamanig, Stefano Tessaro,             8/What+are+the+Large+Scale+Pilot+Projects.
+     Søren Eller Thomsen, and Carmela Troncoso. 2024. Cryptographers’ feedback on        [33] European Digital Identity Cooperation Group and European Commission. 2026.
+      the EU digital identity’s ARF. Technical Report.                                       European Digital Identity Wallet Reference Implementation. https://github.com
+[10]  Zinaida Benenson, Anna Girard, Ioannis Krontiris, Vassia Liagkou, Kai Rannen-             /eu-digital-identity-wallet/.github/blob/main/profile/reference-implementati
+      berg, and Yannis C. Stamatiou. 2014. User Acceptance of Privacy-ABCs: An            on.md.
+     Exploratory Study. In Human Aspects of Information Security, Privacy, and Trust        [34] European Digital Rights (EDRi). 2023. Online age verification and children’s
+      (Lecture Notes in Computer Science, Vol. 8533). Springer, Cham, 375–386.                       rights. https://edri.org/wp-content/uploads/2023/10/Online-age-verification-
+[11]  Danielle Keats Citron and Daniel J Solove. 2022. Privacy harms. Boston University              and-childrens-rights-EDRi-position-paper.pdf.
+    Law Review 102 (2022), 793.                                                           [35] European Parliament and Council of the European Union. 2014. Regulation
+[12] EU Commission. 2026.  European Digital Identity — commission.europa.eu.             (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014
+     https://commission.europa.eu/topics/digital-economy-and-society/european-           on electronic identification and trust services for electronic transactions in the
+      digital-identity_en. [Accessed 24-04-2026] Archived at https://web.archive.org/              internal market and repealing Directive 1999/93/EC. https://eur-lex.europa.e
+     web/20260419112417/https://commission.europa.eu/topics/digital-economy-              u/eli/reg/2014/910/oj/eng.  https://eur-lex.europa.eu/eli/reg/2014/910/oj/eng
+      and-society/european-digital-identity_en.                                                        Official Journal of the European Union L 257, 28.8.2014, pp. 73–114.
+[13]  Rachel Crowder, George Price, and Thomas Groß. 2023. Simply tell me how –        [36] European Parliament and Council of the European Union. 2024. Regulation
+    On Trustworthiness and Technology Acceptance of Attribute-Based Credentials.            (EU) 2024/1183 of the European Parliament and of the Council of 11 April 2024
+     arXiv:2308.06555 [cs.HC] https://arxiv.org/abs/2308.06555                           amending Regulation (EU) No 910/2014 as regards establishing the European
+[14]  CyberPeace Institute. 2024. Report of Second Expert Meeting on Harms Method-              Digital Identity Framework. https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng.
+      ology.  https://cyberpeaceinstitute.org/wp-content/uploads/2024/10/Second-               Official Journal of the European Union L 2024/1183, 30 April 2024; in force..
+     Expert-Meeting-Harms-Methodology-2024.docx.pdf                                  [37] European Parliament and Council of the European Union. 2024. Regulation
+[15] Liam Dawe. 2024. The GamingOnLinux Forum is shutting. https://web.archive.            (EU) No 910/2014 of the European Parliament and of the Council of 23 July
+     org/web/20250102185206/https://www.gamingonlinux.com/forum/topic/6463/.            2014 on electronic identification and trust services for electronic transactions in
+     GamingOnLinux (Dec. 2024).                                                            the internal market and repealing Directive 1999/93/EC (Consolidated version:
+[16] Sourya Joyee De and Daniel Le Métayer. 2016. Privacy harm analysis: A case            18 October 2024). https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18.
+     study on smart grids. In 2016 IEEE Security and Privacy Workshops (SPW). IEEE,             Consolidated text incorporating amendments up to 18 October 2024; original OJ
+     58–65.                                                                   L 257, 28.8.2014, pp. 73–114.
+                                                           13
+
+=== PDF PAGE 14 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+
+[38]  International Organization for Standardization. 2021. Personal identification —        [62]  Erik Wästlund, Julio Angulo, and Simone Fischer-Hübner. 2011. Evoking Com-
+     ISO-compliant driving licence. Part 5: Mobile driving licence (mDL) application.             prehensive Mental Models of Anonymous Credentials. In Proceedings of the 2011
+     ISO/IEC 18013–5:2021.                                                                          IFIP WG 11.4 International Conference on Open Problems in Network Security.
+[39]  Karla Friedrichs, Franklin Harding, Anja Lehmann, and Anna Lysyanskaya. 2025.              Springer-Verlag, Berlin, Heidelberg, 1–14.
+     Device-Bound Anonymous Credentials With(out) Trusted Hardware. Cryptology        [63]  Yuxi Wu, Sydney Bice, W. Keith Edwards, and Sauvik Das. 2023. The Slow
+      ePrint Archive, Paper 2025/1995.  https://eprint.iacr.org/2025/1995                         Violence of Surveillance Capitalism: How Online Behavioral Advertising Harms
+[40]  Matteo Frigo and abhi shelat. 2024. Anonymous credentials from ECDSA. Cryp-             People. In Proceedings of the 2023 ACM Conference on Fairness, Accountability,
+     tology ePrint Archive, Paper 2024/2010.  https://eprint.iacr.org/2024/2010                and Transparency (Chicago, IL, USA) (FAccT ’23). Association for Computing
+[41]  Liza Gak, Seyi Olojo, and Niloufar Salehi. 2022. The Distressing Ads That Persist:            Machinery, New York, NY, USA, 1826–1837. doi:10.1145/3593013.3594119
+     Uncovering The Harms of Targeted Weight-Loss Ads Among Users with Histories
+      of Disordered Eating. Proceedings of the ACM on Human-Computer Interaction 6,
+    CSCW2, Article 377 (Nov. 2022), 23 pages. doi:10.1145/3555102
+[42]  Francesco Gazzetta. 2025. Discussion comment on Feedback #577 on EUDIF.   A A Taxonomy of Harms for DIFs
+     https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-
+     reference-framework/issues/577#issuecomment-3140483427.               Economic Harms involve financial losses or loss in the value of
+[43] Seda Gürses, Carmela Troncoso, and Claudia Diaz. 2011. Engineering Privacy      something. Use of the EUDIF for instant payments, account-to-
+     by Design. In Computers, Privacy & Data Protection (CPDP). 25 pages.            account transfers, and other cross-border digital transactions is
+[44] Marian Harbach, Sascha Fahl, Matthias Rieger, and Matthew Smith. 2013. On
+     the Acceptance of Privacy-Preserving Authentication Technology: The Curious      recognized as one of its primary use cases. The EUDIF thus brings
+     Case of National Identity Cards. In PETS 2013 (LNCS, Vol. 7981), Emiliano De      with it a large potential to cause economic harms due to unintended
+      Cristofaro and Matthew K. Wright (Eds.). Springer, Berlin, Heidelberg, 245–264.
+     doi:10.1007/978-3-642-39077-7_13                                        inference / leakage of private information. The potential economic
+[45] Connor Jones. 2025. Signal will withdraw from Sweden if encryption-busting     harms of the EUDIF include:
+     laws take effect. https://www.theregister.com/2025/02/26/signal_will_withdra       • Financial loss through impersonation,
+     w_from_sweden/. The Register (Feb. 2025).
+[46]  Jason Kelley and Adam Schwartz. 2023. Age Verification Mandates Would       • Financial loss because blocked from access to own bank ac-
+     Undermine Anonymity Online. Electronic Frontier Foundation.  https://ww           count,
+     w.eff.org/deeplinks/2023/03/age-verification-mandates-would-undermine-
+     anonymity-online.                                             • Burglary at one’s place of residence.
+[47]  Merel Koning, Paulan Korenhof, Gergely Alpár, and Jaap-Henk Hoepman. 2014.     Physical Harms are those that result in any form of injury or
+    The ABCs of ABCs: an analysis of attribute-based credentials in the light of      death. Albeit a “digital system”, misuse or improper protection of
+     data protection, privacy and identity. In Internet, Law & Politics : A decade of                                                                    the DIF might lead to physical harms such as:
+      transformations, Joan Balcells Padullés, Agustí Cerrillo i Martínez, Miquel Peguera
+     Poch, Ismael Peña López, María José Pifarré de Moner, and Mònica Vilasau Solana       • Physical violence through individual aggressor (stalker learns
+       (Eds.), Vol. 10. Huygens Editorial, Barcelona, 357–374.                              place of residence),
+[48] René Mayrhofer, Anja Lehmann, and abhi shelat. 2025. A Brief Note on Cryp-
+     tographic Pseudonyms for Anonymous Credentials. arXiv:2510.05419 [cs.CR]       • Decrease in personal health due to insufficient access to health
+      https://arxiv.org/abs/2510.05419                                                   care,
+[49]     Zahra Moti,             Asuman Senol,                         Hamid                                         Bostani,                                                Frederik                                                                                        J. Zuiderveen                                                                      Borgesius,
+     Veelasha            Moonsamy,                      Arunesh                                 Mathur,                                     and                                       Gunes Acar.                                                              2024. Targeted                                                                and       • Loss of access to critical commodities like energy/heating at
+     Troublesome: Tracking and Advertising on Children’s Websites. In 2024 IEEE        home because suddenly requires online verification/registra-
+     Symposium on Security and Privacy. IEEE Computer Society Press, 1517–1535.            tion.
+      doi:10.1109/SP54263.2024.00118
+[50] No Phone Home. 2025. No Phone Home. https://nophonehome.com/.            Psychological Harms are any kind of negative mental response
+[51]  Republic of Estonia. 2020. Identity Documents Act–Riigi Teataja. https://www.ri      such as emotional distress or disturbance. This includes a wide
+      igiteataja.ee/en/eli/504022020003/consolide.                               array of feelings that can be triggered by privacy violations such
+[52] Unique Identification Authority of India. 2026.  Vision & Mission - Unique
+      Identification Authority of India. https://uidai.gov.in/en/about-uidai/unique-      as anxiety, anguish, concern, or irritation. In the context of DIFs,
+      identification-authority-of-india/vision-mission.html.                 we can identify the following psychological harms:
+[53]  Office            of              the                 United                       Nations                            High Commissioner                                                         for Human Rights. 2026. The
+                                                             • Fear of being watched in everyday activities,      struggle               of                 trans                  and                         gender-diverse                                         persons. https://www.ohchr.org/en/special-
+     procedures/ie-sexual-orientation-and-gender-identity/struggle-trans-and-       • Emotional distress due to identity theft,
+     gender-diverse-persons April 2026.                                   • Fear of traveling/crossing borders because might be surveiled.
+[54]  Christian Paquin, Guru-Vamsi Policharla, and Greg Zaverucha. 2024. Crescent:
+     Stronger Privacy for Existing Credentials. Cryptology ePrint Archive, Paper     Autonomy/Deprivation Harms consider harms resulting from
+      2024/2013.  https://eprint.iacr.org/2024/2013                                     restricting, undermining, inhibiting, or unduly influencing individ-
+[55]  Parliament of Australia. 2024. Online Safety Amendment (Social Media Minimum       uals’ choices, such as
+     Age) Bill 2024. https://www.aph.gov.au/Parliamentary_Business/Bills_Legislat
+      ion/Bills_Search_Results/Result?bId=r7284.                              • Coercion,
+[56]  Jeannie Marie Paterson, Shanton Chang, Marc Cheong, Chris Culnane, Suelette       • Manipulation,
+      Dreyfus, and               Dana                    McKay. 2021.                              The                                    Hidden Harms                                                           of Targeted                                                                   Advertising                                                                    by
+                                                             • Restriction or deprivation of individual freedom of speech,     Algorithm              and                    Interventions                             from                                      the Consumer                                                    Protection                                                                    Toolkit.                                                                           International
+     Journal on Consumer Law and Practice 9, Article 1 (2021), 17 pages.               • Restriction or deprivation of individual freedom of informa-
+[57]  Singapore Government Developer Portal. 2025. Verify. https://www.developer.            tion,
+      tech.gov.sg/products/categories/digital-identity/verify/overview.
+[58]      Jae A Puckett, Nina C Brown, Terra Dunn, Brian Mustanski, and Michael E       • Restriction or deprivation of freedom of movement.
+    Newcomb. 2020. Perspectives from transgender and gender diverse people on     Discrimination Harms based on demographic attributes:
+    how to ask about gender. LGBT health 7, 6 (2020), 305–311.                    • Profile-based discrimination[59] Imran Rahman-Jones. 2025. Pornhub leaves France over age verification law.
+     https://www.bbc.com/news/articles/c5yelvlnzveo. BBC (June 2025).              • Dynamic pricing (airlines, ski pass, hotels, etc.).
+[60] Ahmad Sabouri. 2016. On the User Acceptance of Privacy-Preserving Attribute-     Reputational Harms are harms to reputation or dignity. They
+     Based Credentials - A Qualitative Study. In DPM/QASAESORICS (Lecture Notes      are particularly relevant in the context of DIFs, as DIFs generate
+      in Computer Science, Vol. 9963). Springer, Cham, 130–145.
+[61]  Jay Stanley. 2021. Identity Crisis: What Digital Driver’s Licenses Could Mean      information about what users do and which services they use.
+      for Privacy, Equity, and Freedom. ACLU. https://www.aclu.org/publications/id      Societal Harms include chilling effect or loss of creativity affect-
+     entity-crisis-what-digital-drivers-licenses-could-mean-privacy-equity-and-
+     freedom.                                                        ing the society due to constant monitoring by government or law
+                                                               enforcement bodies. DIFs may lead to severe societal harms:
+                                                           14
+
+=== PDF PAGE 15 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+  • Impairments on freedom of speech,                                       is similarly for the purpose of identifying the user, but in proxim-
+  • Impairments on free elections and other democratic processes.       ity scenarios, i.e., for face-to-face interactions. The e-signature use
+                                                                      case [25] describes a scenario where an individual wishes to sign a
+                                                                        contract (e.g., employment contract, rental contract). In this use case,
+B  Body of Law                                              a third party verifies the individual’s identity and signs documents
+The body of law and specifications for the European Digital Identity     on their behalf. The payment authentication use case [27] functions
+Framework and Wallet consist of the following:                          similarly: a third-party payment service provider verifies that an
+• Consolidated EU regulation [37] of the base regulation (EU) No       individual wishes to make a payment (and their identity), and exe-
+  910/2014 [35] (eIDAS) amended by Regulation (EU) 2024/1183 [36];      cutes the transaction for the user. The remaining use cases are either
+• Implementing acts:                                                     identity use cases that result in access to services or freedoms (e.g.,
+    – Implementing Regulation (EU) 2024/2977: personal identifi-     Mobile Driving License, Digital Travel Credential, ePrescription,
+       cation data and electronic attestations of attributes;           and European Health Insurance Card), or non-identity use cases
+    – Implementing Regulation (EU) 2024/2979: integrity and core       that result in access to services or freedoms (e.g., Age Verification,
+        functionalities of European Digital Identity Wallets;           European Parking Card, European Disability Card).
+    – Implementing Regulation (EU) 2024/2980: trust framework;
+    – Implementing Regulation (EU) 2024/2981: certification of
+      European Digital Identity Wallets;              D  Functionality for Mobile Driving License
+    – Implementing Regulation (EU) 2024/2982: protocols and in-      In this use case, RPs are car rental services, who register with a
+        terfaces to be supported;                                         registration authority by calling the RP registration subroutine of
+    – Implementing Regulation (EU) 2025/846: cross-border iden-      FEUDIF. Users are individuals accessing car rental services, and can
+        tity matching for natural persons;                              request the issuance of an identity credential and an mDL credential
+    – Implementing Regulation (EU) 2025/847: reactions to secu-     from a government (or similar) entity Iiid, by calling the Issuance
+        rity breaches of wallets;                                      subroutine of FEUDIF.
+    – Implementing Regulation (EU) 2025/848: registration of wallet-      To access the service via the EUDIF functionality, we require
+       relying parties [20];                                             that the car rental service is registered with an authority as a RP
+    – Implementing Regulation (EU) 2025/849: submitting infor-      (RegRP[rid].status = registered) and that the user has been issued
+      mation to the Commission for the list of certified wallets;      an mDL and identity credentials.
+    – Implementing Regulation (EU) 2025/1566: verification of      When visiting a car rental service (in person), the clerk requests
+        identity and attributes when issuing qualified certificates or       identification of the user. For example, a user may open their EUDI
+        qualified electronic attestations.                                wallet application to engage with the verifier by scanning a QR
+    – Implementing Regulation (EU) 2025/1567: management of      code that requests verified information from them, including their
+      remote qualified electronic signature/seal creation devices;      identity and mDL credentials. This is captured in the underlying
+    – Implementing Regulation (EU) 2025/1568: procedural ar-      FEUDIF functionality, in Presentation (4) where the user Uuid obtains
+      rangements for peer reviews of eID schemes;                  information about the RP, a list of desired attributes, the intended
+    – Implementing Regulation (EU) 2025/1569: electronic attesta-      use, and the function to be computed over the attributes 𝑓.
+       tions of attributes (EAA/QEAA specifications);                The user reviews the request to present their data, and deter-
+    – Implementing Regulation (EU) 2025/1570: notifications of      mines (i) whether they first check the registration status of the RP
+        certified qualified signature/seal creation devices;               (captured by Ocheck); and (ii) whether they consent to engaging
+    – Implementing Regulation (EU) 2025/1572: initiation of qual-     with the system and providing this information (captured by Oeng).
+        ified trust services (notification of intention);               Upon confirmation of disclosure, the verifier receives the informa-
+    – Implementing Regulation (EU) 2025/1571: annual reports       tion and validates the proof locally. Here, the function 𝑓determines
+      from supervisory bodies;                                                         if the user has the right to drive the desired vehicle class. Addition-
+• Supporting governance/technical documentation (EUDI Archi-        ally, the function 𝑓returns to the verifier the identity information.
+   tecture and Reference Framework (ARF) [29]);                     For example, a verifier device will show the identity credential’s
+• Adjacent EU laws (e.g., GDPR, accreditation, cybersecurity).          associated photo to the clerk, who can verify the user’s identity.
+                                                                  This out-of-band verification is captured by the oracle Over.
+                                                                Then, the verifier device validates the proof locally and shows
+C  EUDIF Use Cases                                         the document’s picture to the clerk who verifies the user identity.
+We review the EUDIF use cases for which there exists documen-     This out-of-band verification, and the clerk’s subsequent decision
+tation of their intended use [24], and summarize the use cases in       to grant access to the user based on the output of 𝑓, is captured by
+Table 1.                                                              the oracle Over. If access is granted, the clerk continues with check
+  The scenarios describing generic applications of the framework      in of the user for their car rental.
+for identification purposes are the PID-based identification for on-
+line services [28] and identification in proximity scenarios [26] use
+cases. The former is intended for online service providers to verify    E  Additional Harm Trees
+the personal identification data (PID, i.e., full name, date of birth,      Here, we present additional harm trees related to the age verification
+nationality, and other details) of the user via the EUDIF. The latter      use case.
+                                                            15
+
+=== PDF PAGE 16 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+Use Case              Relevant Attributes  Identity  (Off/On)line  Issuer       Relying Party        Result
+
+                                                            Generic Use Cases
+PID-based identification   Identity           ✓        Online     Government   Various               Various
+for online services                                                                 (or similar)
+Identification in proxim-  Identity           ✓          Offline     Government   Various               Various
+ity scenarios                                                                       (or similar)
+
+                                                                     Specific Use Cases
+eSignature                 Identity           ✓         Both      Government   Secure Trust Provider  Document signed and
+                                                                                    (or similar)                         forwarded
+Mobile Driving License    Driving rights,       ✓         Both      Government   Car  Rental  Service;  Access  to  car  rental;
+                            identity                                           Law Enforcement      Roadside checks passed
+Payment Authentication  Payment amount,      ✓         Both      Payment Ser-  Payment     Service  Executes   transaction
+                             recipient,                                          vice Provider   Provider             and merchant receives
+                              identity,                                                                              confirmation
+                         other  (e.g.,  age, ad-
+                            dress)
+Age Verification        Age                 ✗         Both      Government   Various   (e.g.,  adult  Access to services
+                                                                                    (or similar)    content  sites,  gam-
+                                                                                              bling platforms)
+Digital Travel Credential   Travel document (e.g.,   ✓          Offline     Government   Border Authority      Border checks passed
+                            passport),
+                             travel info (e.g., flight
+                       number)
+European Parking Card    Parking access rights     ✗          Offline      Various       Parking Authority     Parking    inspection
+                                                                                                           checks passed
+European Disability Card   Disability status         ✗         Both      Government   Various (e.g., museum  Access to services and
+                                                                                         or transit services)     discounts
+ePrescription              Identity (Health ID)    ✓          Offline     Government   Pharmacies           Access to medication
+European Health Insur-  Insurance status,      ✓          Offline     Government   Healthcare providers   Access to healthcare
+ance Card                  identity
+
+Table 1: EUDIF Use Cases. “Identity” refers to whether or not it is an identity use case (i.e., identity is revealed to the relying
+party). “Relying Party” and “Issuer” columns correspond to how these entities are modeled in FEUDIF, i.e., the RP is the entity
+that receives the output of some function evaluated on the relevant attributes. “(Off/On)line” indicates whether the use case is
+targeted primarily towards offline or online scenarios or both.
+
+
+
+  We first describe a sub-tree of a capability that is common to     Censorship. The EUDIF system, when used for age verification,
+several of the following harms. Requiring users to prove their age     can lead to censorship in multiple ways. A central entity (in our
+to a service provider (to access the service) or requiring them to      modeling, CA) is given the power to decide which services require
+access a device may result in users choosing not to engage with the      age verification. This central entity can restrict what children can
+service (Fig. 10). The requirement for access to a device arises due      see online and which platforms and services they can use. Thus
+to digitalization and the requirement for users to prove their age is      ultimately impairs children’s self-development (due to biased ed-
+inherent to any EUDIF system. Users may opt not to engage for fear      ucational content) and restricts their freedom of expression (by
+of tracking and surveillance, due to distrust in the service provider,      blocking access to private messengers or social media). Further-
+or because they do not want to reveal their age information. This      more, function creep/re-purposing of the system is enabled by the
+decision of the user is captured by the oracle Oeng.                      central entity deciding which content requires age verification or
+                                                                        low-integrity operators/service providers choosing whether or not
+Reduced availability of resources. The introduction of the EU-                                                                         to implement age verification. In our modeling, the operator can opt
+DIF might lead to a chilling effect on legitimate activities. Less
+                                                                         to register (by sending Register, and based on the decision of Oreg)information might be published because of the additional burden
+                                                                         regardless of whether the CA requires that they do so. This captureson operators to implement age verification. Individuals may refrain
+                                                                       that once the infrastructure for widespread age verification is in
+from publishing content online if they must first prove their age.
+                                                                              place, any service provider may choose to integrate into the system.
+Service providers might pull out of territories due to the additional
+                                                         The EUDIF system also leads to some forms of self-censorship. Indi-
+burden of compliance; this results in fewer services being available.
+                                                                       viduals might refrain from publishing content online if it requires
+The paths to this harm are inherent to any system implementing
+age verification for online services, illustrated in Fig. 11.
+                                                            16
+
+=== PDF PAGE 17 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+   Parties. Issuer IDL is a national government (or similar) entity that issues driving license and identity credentials to users. Users
+   Uuid are individuals accessing car rental services. Relying Parties Rrid are car rental services.
+   Parameters. Let 𝑓be a function that takes as input, a user’s mDL attribute mDL and their identity attribute identity, and a vehicle
+   class vc. It returns (i) a boolean whether the user has the right to drive vehicle class vc in the current jurisdiction and their mDL
+   credential is currently valid, and (ii) additional identity information: the user’s photo, name, date of birth, and nationality. Let Oreg be
+   an oracle that upon input rid outputs a bit 𝑏∈{0, 1} determining whether Rrid registers as a relying party. Let Ocheck be an oracle that
+  upon input (rid, intended_use, 𝑓, (attr_descri)𝑖∈[𝑛], uid), outputs a bit 𝑏∈{0, 1} determining whether Uuid checks Rrid’s registered
+   information. Let Oeng be an oracle that upon input (𝑏registration, uid) or (𝑏policy, uid) outputs a (consent) bit consent1, consent2 ∈{0, 1}
+   determining whether Uuid consents to engage with the system. Let Over be an oracle that upon input (𝑣, rid), outputs a bit 𝑏∈{0, 1}
+   that determines whether the RP Rrid grants access to the user, based on the output 𝑣of 𝑓.
+  RP Registration. Send (RegisterRP, driving-rights, 𝑓, (mDL, identity)) from Rrid to FEUDIF.
+  Request mDL issuance. On input (RequestIssuance, uid) from Uuid:
+    (1) Send (Issue, DL, identity = (name, nationality, photo, dob)) from Uuid to FEUDIF.
+    (2) Send (Issue, DL, mDL = (driving-rights)) from Uuid to FEUDIF and obtain 𝑜in response.
+   Access car rental. On input (AccessCarRental, rid) from Uuid:
+    (1) Send (RequestPresentation, rid, CarRental) from uid to FEUDIF.
+    (2) Upon receipt of (Request, CarRental), Rrid returns (𝑓, (identity, mDL), 1).
+    (3) Send (driver-data, 𝑓, mDL, (identity, mDL)) to Ocheck (upon receipt from FEUDIF) and return the result as 𝑏check.
+    (4) Upon receipt of 𝑏registration (resp., 𝑏policy), Uuid forwards the input to Oeng and returns the result as consent1 (resp., consent2).
+    (5) Upon receipt of the result 𝑣(output by 𝑓) Rrid gets 𝑏←Over(𝑣, rid). If 𝑏= 1, return GrantAccess to Uuid; else return DenyAccess.
+
+
+                        Figure 9: Mobile driving license for car rentals functionality FmDL[FEUDIF].
+
+
+                           Users choose not to engage                                                               Censorship
+
+                                                                                    OR
+                           OR
+                  AND          AND                                       Users choose
+                                                                                                                                            Concentration of power
+                                                                                           not to engage            Function creep
+                                                                                                                                           with one entity
+     Requirement for user to                                                                                       (Fig. 10)
+                                Users can choose          Require access                                   OR
+      prove age to service
+                              whether or not to              to device
+          (Uuid must be           engage (Oeng)                                                            AND
+            registered)                                                                                                     Central entity determines     Requirement for
+                                                                                              Operators choose
+                                                                                                          which content requires    provider to implement
+                                                                                      whether to implement
+                                                                                                                      age verification          age verification
+Figure 10: Age verification – Sub-tree for the capability of                age verification
+                                                                                                         (CA sends                 (Rrid must be
+users choosing not to engage                                                                        (Oreg)                 (RequireAge, rid))             registered)
+
+
+                      Reduced availability of resources                                Figure 12: Age verification – Censorship
+
+
+                           OR                                 unpopular opinions if they need to fear de-anonymisation. This is
+              Users choose                             Service prover                harmful because it erodes democratic freedoms such as freedom of
+             not to engage                             stops service                 expression and opinion.
+                     (Fig. 10)                                         (Fig. 5a)
+
+
+                                                                                                        Diminished Internet safety
+     Figure 11: Age verification – Reduced availability
+                                                                                    OR
+
+                                                                                               Users choose
+                                                                                                                   Tracking     Concentration of power
+using the system to prove their age, undermining freedom of ex-               not to engage             (Fig. 5b)         with one entity
+                                                                                                                            (Fig. 10)
+pression. The resulting censorship harm (either via self-censorship,
+or imposed by the operators or central entity) is inherent to the                                      AND
+functionality of the use case.
+                                                                                                                         Central entity determines     Issuing party
+Diminished Internet safety. The EUDIF bears potential for track-                                  which content requires   provides credential
+ing and de-anonymising online users and relies on an authority to                                        age verification              (Iav is a
+                                                                                                    (CA is a government)      government)issue a proof of age to access certain services. As a result, it prevents
+anyone who needs independence from the issuing authority from
+safely using the Internet. Users are discouraged from expressing       Figure 13: Age verification – Diminished Internet safety
+                                                           17
+
+=== PDF PAGE 18 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+Increased cybersecurity risks For similar reasons that an opera-     then harms may materialize for any user with this consent strat-
+tor may opt to stop providing its service, it may opt to simply be-      egy; for DIFs with many millions of envisioned users, this is a
+come non-compliant. That is, we can replace the capability in Fig. 5a      non-negligible number of users for which harms may materialize.
+with “Service provider becomes unregulated.” Additionally, users
+may opt not to engage with the age verification system (Fig. 10).     F.1  Distinguishing Game
+This suggests that users might be pushed to unsafe/unregulated      In the distinguishing game presented in Fig. 15, the adversary’s goal
+spaces and the amount of such unregulated services will increase.        is to distinguish between two fresh challenge users. The game pro-
+A naive implementation exacerbates this harm even further, by      ceeds in two phases. In the challenge issuance phase, the adversary
+normalizing requests for and increasing retention of, identity infor-      specifies which attributes and policies are set for these users. The
+mation. Altogether, this increases users’ exposure to risks such as      challenger internally calls the FEUDIF functionality to issue two cre-
+fraud or theft.                                                               dentials. Then, during the challenge presentation phase, the adver-
+                                                                               sary, acting as a malicious RP, can interact with one of the two fresh
+                           Increased cybersecurity risks                           challenge users. The adversary can specify both users’ behavior
+                                                               with respect to registration checking and consent. It does so by by
+                          OR
+                                                                 Service                                                                       provider         specifying functions 𝐵(𝑖)                                                                                                                                                                           : {0, 1} →{0, 1} and 𝐵(𝑖)                                                                                                                                                                                                                       : {0, 1} →{0, 1}. Users choose not to    Normalization of   Increased data                                                                                                                         reg                                                                                                                                                           pol                                                     becomes                                                                    unregulated
+  engage (Fig. 10)       data disclosure       retention                                                                                   (Fig. 5a)          These specify how the user respectively responds to 𝑏registered and
+                  AND        AND                                      𝑏policy bits. Again, the challenger uses FEUDIF to create presenta-
+                                                                               tions.
+      Repeated                requests                                                         The                                                          game                                                                       models                                                                                         three                                                                                                       variants,                                                                                                                   policy,                                                                                                                              attributes,                                                                                                                         consent,                       call                                                                Digitization of        (Uuid may                                 Reveal identity                                                           where                                                                            the                                                                             adversary                                                                                                                     is                                                                                       only allowed                                                                                                              to                                                                                                      induce differences                                                                                                                                    in                                                                                                              one of
+     RequestPresentation                                   data records
+        multiple times)                                                    these three controls. We formalize our results.
+                                              We first look at distinguishing based on policy.
+ Figure 14: Age verification – Increased cybersecurity risks       Lemma F.1 (Distinguishing based on policy is inherent to
+                                                                               FEUDIF.). There exists an adversary Adist,policy that wins the discrim-
+                                                                         ination game Gdist,policy against FEUDIF with advantage 1.
+F  Security Games                                                          Proof sketch. We proceed by demonstrating an explicit win
+Security games capture the capabilities of an adversary – captured                                                                           scenario. During the challenge issuance step, the adversary specifies
+via oracles (auxiliary data, adaptive behaviour, number of queries,                                                          one attribute, ‘gender’, and sets the values of users U0 and U1 to
+etc.) – and define the adversary’s winning condition (i.e., a bad
+                                                                                        ‘X’. However, for U0 it sets policy0 to always return 0, while policy1
+event that should not happen). An adversary’s advantage is defined                                                                always returns 1. At the challenge presentation step, the adversary
+as the probability of winning the game minus a baseline winning                                                                       requests disclosure of the ‘gender’ attribute. The adversary requests
+probability (e.g., random guessing). An adversary is said to win the       𝐵(0) = 𝐵(1) to be the identity function. Clearly, then user U0 abortsgame if its advantage is non-negligible, i.e., they can trigger the bad           pol.      pol.
+                                                                   (due to policy check) and U1 proceeds.event more often than the baseline suggests.
+                                                              Note that the conditions for win = policy are satisfied, and that  To test whether a functionality F satisfies a given property, we
+                                                                    the the adversary can perfectly distinguish between the two users.
+use universally-composable-compatible security games [7].2                                                                                                It thus wins Gdist,policy with advantage 1.               □   Let F be a functionality, let Π be a protocol realizing F , let Z
+be the environment, let S be the simulator (against F ), and let      We now look at distinguishing based on attributes. We state
+A be the adversary (against Π). In the ideal world, the challenger      the lemma without a proof. The adversary simply issues different
+interacts with the ideal-world adversary ( i.e., the simulator) S. In       attribute values to the two challenge users, and requests to see
+the real world, the challenger interacts with the real-world adver-      this values during presentation. This approach leads to a perfect
+sary A. We write GS,F for the ideal-world game, and GA,Π for the      distinguishing advantage.
+real-world game. A game GA,Π is defined by a challenger C with
+black-box access to the parties (i.e., it interacts with them through       Lemma F.2 (Distinguishing based on attributes is inherent
+their environment-facing interfaces). C interacts with A as the     to FEUDIF.). There exists an adversary Adist,attribute that wins the
+environment, and outputs a bit 𝑏indicating whether the adversary       distinguishing game Gdist,attribute against FEUDIF with advantage 1.
+wins the game.                                                                                   Finally, we look at the effect of user consent.
+  We consider that an adversary wins if it can trigger a bad event
+for any one of all possible consent strategies. This mirrors both      Lemma F.3 (Distinguishing based on consent is inherent
+standard definitions of security games in cryptography, where one     to FEUDIF.). There exists an adversary Adist,consent that wins the
+considers security against worst-case inputs. This choice of defi-      distinguishing game Gdist,consent against FEUDIF with advantage 1.
+nition also captures the harms-based focus of our analysis: if the
+                                                          Proof sketch. We proceed by demonstrating an explicit win
+adversary can trigger a bad event for a specific consent strategy,
+                                                                          scenario. At the challenge issuance step, the adversary specify one
+2Note that we do not use universal composability (UC) in this work, but merely the       attribute, ‘age’, and sets the values of users U0 and U1 to ‘22’, and
+notion of games defined against ideal-world functionalities.                           sets policy0 = policy1 to always return 1. However, for U0, it sets
+                                                            18
+
+=== PDF PAGE 19 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+                                                                      win ∈{policy, attributes, consent} is defined by  The game Gdist,winA,FEUDIF,𝑏for an adversary A, a challenge bit 𝑏, and a winning condition
+   a challenger C interacting with A as follows.
+
+   Setup.
+     (1) A selects a corrupted relying party ˜R.
+     (2) C creates an issuer I and users U0, U1, and initializes an instance of FEUDIF with issuers {I}, users {U0, U1} and RPs { ˜R}.
+   Challenge issuance. A  instructs challenger C  to issue a credential to challenge users U0 and U1. A sends inputs
+   (ChalIss, iid, (attr_descr𝑖)𝑖∈[𝑛], (attr(0)𝑖   )𝑖∈[𝑛], (attr(1)𝑖   )𝑖∈[𝑛], policy0, policy1) to C. The challenger sends two issuance requests to
+   FEUDIF on behalf of users U0 and U1 for the issuer iid and the attribute types (attr_descr𝑖)𝑖∈[𝑛]. For user U𝑗, 𝑗∈{0, 1}, C programs
+   the issuance oracle to return the attributes (attr(𝑗)𝑖  )𝑖∈[𝑛] and the disclosure policy policy𝑗.
+   Challenge presentation. A may instruct C to request – for one of the two challenge users – access for an adversary-
+   specified service for the adversary-controlled relying party ˜R, with an adversary-specified consent strategy. A sends the message
+                                                            C then interacts with FEUDIF as follows.   (ChalPres, rid, service, rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛], 𝐵(0)reg, 𝐵(1)reg, 𝐵(0)pol, 𝐵(1)pol) to C.
+    It sends a presentation request (Request, rid, service) to FEUDIF on behalf of U𝑏. In response to the (Request, service) message for
+    ˜R, it responds with (aux = (rp_info, intended_use), 𝑓, (attr_descr𝑖)𝑖∈[𝑛]). On input (rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) it
+   sends 𝑏check = 1 (w.l.o.g, we assume users always check). On input 𝑏registration, the challenger returns 𝐵(𝑏)reg (𝑏registration). On input 𝑏policy,
+   the challenger returns 𝐵(𝑏)                                    pol (𝑏policy). Finally, the challenger returns the response 𝑣(which may equal ⊥) to the adversary.
+  Modeling strategies. We capture three winning strategies:
+                                                = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]), otherwise the game returns 0.    • win = policy: enforce 𝐵(0)reg = 𝐵(1)reg, 𝐵(0)pol                              = 𝐵(1)pol, and 𝑓((attr(0)𝑖  )𝑖∈[𝑛])
+    • win = attributes: enforce policy0 = policy1, 𝐵(0)reg = 𝐵(1)reg, and 𝐵(0)pol                                               = 𝐵(1)pol, otherwise the game returns 0.
+    • win = consent: enforce policy0 = policy1 and 𝑓((attr(0)𝑖  )𝑖∈[𝑛]) = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]), otherwise the game returns 0.
+  Winning. A outputs a bit 𝑏′. The game outputs 1 iff𝑏= 𝑏′.
+   A’s advantage in the game is Advdist,win ≔2 · Pr  Gdist,win      −12 ∈[0, 1].                                        A,FEUDIF           A,FEUDIF,𝑏→1]
+
+
+                                       Figure 15: Distinguishing game Gdist,win                                                                                               A,FEUDIF,𝑏.
+
+
+the user to be privacy conscious and only consent if the RP has       distinguishing, we consider three variants of the game, where the
+been registered (i.e., set 𝐵(0)                             to be the identity function). For U1,      adversary can only induce differences in one of the three controls                                  reg
+                                                                               (policy, attributes, consent).it sets the user to be more lax and always consent (i.e., 𝐵(1)                                                                           reg = 1).
+Clearly, for an unregistered RP, U0 aborts and U1 proceeds. We
+note that the conditions for win = consent are satisfied, and that        F.2.3  Attack strategies. Multi-show and issuer trackability extend                                                                     the distinguishing game by granting the adversary additional pow-
+the the adversary can perfectly distinguish between the two users.
+                                                                                    ers. Thus, any attacker successful in the distinguishing game is also
+It thus wins Gdist,consent with advantage 1.              □                                                                       successful in the trackability games (in particular, the adversaries
+                                                                   described in Appendix F.1), which we can more formally state as
+F.2  Trackability Game                                         follows.
+We describe two flavours of trackability: multi-show trackability
+                                                    Lemma F.4 (Tracking based on policy, attributes, or con-
+and issuer trackability.
+                                                          sent is inherent to FEUDIF.). There exist adversaries Atrack,policy,
+F.2.1  Multi-show trackability. In the multi-show trackability game        Atrack,attribute, and Atrack,consent that win the multi-show trackability
+(Fig. 16), the adversary’s goal is to link two presentation of the same     game Gtrack,multi−show and the issuer trackability game Gtrack,issuer
+user to each other. The game is an extension of the distinguishing      against FEUDIF with advantage 1.
+game (Fig. 15), where the adversary may additionally corrupt mul-
+tiple relying parties, and observe multiple presentations of both
+                                                         F.3  Inference Game
+challenge users. As for distinguishing, we consider three variants
+                                                                        In the inference game (Fig. 18), the adversary’s goal is to infer some
+of the game, where the adversary can only induce differences in
+                                                                 information about a user’s attributes. The game proceeds in two
+one of the three controls (policy, attributes, consent).
+                                                                    phases. In the challenge issuance phase, the adversary specifies
+F.2.2   Issuer trackability. In the issuer trackability game (Fig. 17),     which attributes and policies are set for a fresh challenge user.
+the adversary’s goal is to link a presentation of a user to the issuing     The challenger internally calls the FEUDIF functionality to issue
+event for attributes of this user. Compared to the distinguishing      a credential. Then, during the challenge presentation phase, the
+game, the adversary may additionally corrupt an issuer, and ob-      adversary, acting as a malicious RP, can interact with the fresh
+serve the issuing event for one of the two challenge users. As for      challenge user.
+                                                            19
+
+=== PDF PAGE 20 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+                                                                        win ∈{policy, attributes, consent} is defined  The game Gms-track,winA,FEUDIF,𝑏for an adversary A, a challenge bit 𝑏, and a winning condition
+   by a challenger C interacting with A as follows.
+
+   Setup.
+    (1) A selects a set of corrupted relying parties ˜𝑅.
+    (2) C creates an issuer I and users U0, U1, and initializes an instance of FEUDIF with issuers {I}, users {U0, U1} and RPs { ˜𝑅}.
+  Challenge issuance. A may instruct the challenge user U∗to request issuance of credentials, in a left-or-right fashion: A sends the
+   message (ChalIss, iid, (attr_descr𝑖)𝑖∈[𝑛], (attr(0)𝑖   )𝑖∈[𝑛], (attr(1)𝑖   )𝑖∈[𝑛], policy) to C, with the restriction that ((attr(0)𝑖   )𝑖∈[𝑛], policy0) ≠
+    ((attr(1)𝑖   )𝑖∈[𝑛], policy1). C then sends an issuance request to FEUDIF on behalf of U∗for the issuer iid and the attribute types
+   (attr_descr𝑖)𝑖∈[𝑛], and programs the issuance oracle to return the attributes (attr(𝑏)𝑖   )𝑖∈[𝑛] and the disclosure policy policy.
+  Challenge presentation. A may instruct the challenge user U∗to request access for an adversary-specified service for an adversary-
+   controlled relying party ˜R, with an adversary-specified consent strategy. A sends the message (ChalPres, rid, service, 𝐵reg, 𝐵pol.) to
+   C. C then sends a presentation request to FEUDIF on behalf of U∗for the relying party rid and the service service, using the functions
+   𝐵reg and 𝐵pol to select the bits 𝑏registration and 𝑏policy that U∗sends to FEUDIF as part of the presentation interaction.
+  Challenge issuance. A  instructs challenger C  to issue a credential to challenge users U0 and U1. A sends inputs
+   (ChalIss, iid, (attr_descr𝑖)𝑖∈[𝑛], (attr(0)𝑖   )𝑖∈[𝑛], (attr(1)𝑖   )𝑖∈[𝑛], policy0, policy1) to C. The challenger sends two issuance requests to
+   FEUDIF on behalf of users U0 and U1 for the issuer iid and the attribute types (attr_descr𝑖)𝑖∈[𝑛]. For user U𝑗, 𝑗∈{0, 1}, C programs
+   the issuance oracle to return the attributes (attr(𝑗)𝑖  )𝑖∈[𝑛] and the disclosure policy policy𝑗.
+   Presentations. A may instruct C to request – for either of the two challenge users – access for an adversary-specified
+   service for the adversary-controlled relying party ˜R, with an adversary-specified consent strategy. A sends the message
+   (ChalPres, rid, service, rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛], 𝐵reg, 𝐵pol, 𝑗) to C. C then interacts with FEUDIF as follows. It sends
+   a presentation request (Request, rid, service) to FEUDIF on behalf of U𝑗. In response to the (Request, service) message for ˜R, it
+   responds with (aux = (rp_info, intended_use), 𝑓, (attr_descr𝑖)𝑖∈[𝑛]). On input (rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) it sends
+   𝑏check = 1 (w.l.o.g, we assume users always check). On input 𝑏registration, the challenger returns 𝐵reg(𝑏registration). On input 𝑏policy, the
+   challenger returns 𝐵pol(𝑏policy). Finally, the challenger returns the response 𝑣(which may equal ⊥) to the adversary.
+  Challenge presentation. A may instruct C to request – for one of the two challenge users – access for an adversary-
+   specified service for the adversary-controlled relying party ˜R, with an adversary-specified consent strategy. A sends the message
+                                                            C then interacts with FEUDIF as follows.   (ChalPres, rid, service, rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛], 𝐵(0)reg, 𝐵(1)reg, 𝐵(0)pol, 𝐵(1)pol) to C.
+    It sends a presentation request (Request, rid, service) to FEUDIF on behalf of U𝑏. In response to the (Request, service) message for
+    ˜R, it responds with (aux = (rp_info, intended_use), 𝑓, (attr_descr𝑖)𝑖∈[𝑛]). On input (rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) it
+   sends 𝑏check = 1 (w.l.o.g, we assume users always check). On input 𝑏registration, the challenger returns 𝐵(𝑏)reg (𝑏registration). On input 𝑏policy,
+   the challenger returns 𝐵(𝑏)                                   pol (𝑏policy). Finally, the challenger returns the response 𝑣(which may equal ⊥) to the adversary.
+  Modeling strategies. We capture three winning strategies:
+                                                = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]); otherwise the game returns 0.    • win = policy; Enforce 𝐵(0)reg = 𝐵(1)reg, 𝐵(0)pol                              = 𝐵(1)pol, and 𝑓((attr(0)𝑖  )𝑖∈[𝑛])
+    • win = attributes; Enforce policy0 = policy1, 𝐵(0)reg = 𝐵(1)reg, and 𝐵(0)pol                                               = 𝐵(1)pol; otherwise the game returns 0.
+    • win = consent; Enforce policy0 = policy1 and 𝑓((attr(0)𝑖  )𝑖∈[𝑛]) = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]); otherwise the game returns 0.
+   Guess. A outputs a bit 𝑏′. The game outputs 1 iff𝑏= 𝑏′.
+  A’s advantage in the game is Advms-track,win ≔2 · Pr  Gms-track,win    −12 ∈[0, 1].                                        A,FEUDIF            A,FEUDIF,𝑏→1]
+
+
+  Figure 16: Multi-show trackability game Gms-track,win Differences with the distinguishability game are shown in dark red.                                                    A,FEUDIF,𝑏.
+
+Quantifying inference. To quantify the inference capabilities               sensitive), and the advantage is the min-entropy loss on
+of an adversary, we borrow ideas from the quantified information               this subset of attributes.
+flows (QIF) literature [5].                                           • learn = 𝑔-leak corresponds to the adversary learning some
+    • learn = full corresponds to the adversary learning the full             function 𝑔of the attributes, and the advantage is the in-
+        attribute vector, and the advantage is the min-entropy loss              crease in the adversary’s expected value of 𝑔over the base-
+        (or equivalently, the increase in the adversary’s guessing                line where it knows only the distribution of attributes. Here,
+        probability over the baseline where it knows only the dis-          𝑔can be any function, e.g., 𝑔may specify a subset of at-
+        tribution of attributes).                                                     tributes, a predicate over attributes, an interval or cluster,
+    • learn = sensitive((attr_descri)𝑖∈[ℓ]) corresponds to the ad-             or give the adversary partial credit for approximate guesses.
+       versary learning only a subset of the attributes (considered
+
+                                                           20
+
+=== PDF PAGE 21 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+                    A and a challenge bit 𝑏is defined by a challenger C interacting with A as follows.  The game Gi-track,winA,FEUDIF,𝑏for an adversary
+   Setup.
+     (1) A selects a corrupted relying party ˜R and a corrupted issuer ˜I.
+     (2) C creates an issuer I and users U0, U1, and initializes an instance of FEUDIF with issuers { ˜I}, users {U0, U1} and RPs { ˜R}.
+   Challenge issuance. A  instructs C  to  issue  a  credential  to  challenge  users  U0  and  U1. A  sends  inputs
+   (ChalIss, iid, (attr_descr𝑖)𝑖∈[𝑛], (attr(0)𝑖   )𝑖∈[𝑛], (attr(1)𝑖   )𝑖∈[𝑛], policy0, policy1) to C. The challenger sends two issuance requests to
+   FEUDIF on behalf of users U0 and U1 for the issuer ˜I and the attribute types (attr_descr𝑖)𝑖∈[𝑛]. For user U𝑗, 𝑗∈{0, 1}, C programs
+   the issuance oracle to return the attributes (attr(𝑗)𝑖  )𝑖∈[𝑛] and the disclosure policy policy𝑗.
+   Challenge presentation. A may instruct C to request – for one of the two challenge users – access for an adversary-
+   specified service for an adversary-controlled relying party  ˜R, with an adversary-specified consent strategy. A sends the
+                                                                           C then inter-   message (ChalPres, rid, service, rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛], 𝐵(0)reg, 𝐵(1)reg, 𝐵(0)pol, 𝐵(1)pol) to C. Challenger
+   acts with FEUDIF as follows. It sends a presentation request (Request, rid, service) to FEUDIF on behalf of U𝑏. In response to
+   the (Request, service) message for the RP,  it responds with (aux =  (rp_info, intended_use), 𝑓, (attr_descr𝑖)𝑖∈[𝑛]). On input
+   (rp_info, intended_use, 𝑓, (attr_descr𝑖)𝑖∈[𝑛]) it sends 𝑏check = 1 (w.l.o.g, we assume users always check). On input 𝑏registration, the
+   challenger returns 𝐵(𝑏)                              reg (𝑏registration). On input 𝑏policy, the challenger returns 𝐵(𝑏)pol (𝑏policy). Finally, the challenger returns the response
+   𝑣(which may equal ⊥) to the adversary.
+  Modeling strategies. We capture three winning strategies:
+                                                = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]), otherwise the game returns 0.    • win = policy: enforce 𝐵(0)reg = 𝐵(1)reg, 𝐵(0)pol                              = 𝐵(1)pol, and 𝑓((attr(0)𝑖  )𝑖∈[𝑛])
+    • win = attributes: enforce policy0 = policy1, 𝐵(0)reg = 𝐵(1)reg, and 𝐵(0)pol                                               = 𝐵(1)pol, otherwise the game returns 0.
+    • win = consent: enforce policy0 = policy1 and 𝑓((attr(0)𝑖  )𝑖∈[𝑛]) = 𝑓((attr(1)𝑖  )𝑖∈[𝑛]), otherwise the game returns 0.
+  Winning. A outputs a bit 𝑏′. The game outputs 1 iff𝑏= 𝑏′.
+   Guess. A outputs a bit 𝑏′. The game outputs 1 iff𝑏= 𝑏′.
+  A’s advantage in the game is Advi-track,win ≔2 · Pr  Gi-track,win     −12 ∈[0, 1].                                        A,FEUDIF           A,FEUDIF,𝑏→1]
+
+
+    Figure 17: Issuer trackability game Gi-track,win  Differences with the distinguishing game are highlighted in dark red.                                                     A,FEUDIF,𝑏.
+
+
+       This corresponds to the notion of 𝑔-leakage in the QIF lit-     any query of this type. In this case, an adversary very similar to
+        erature [5].                                                 the one above can still win the inference game with advantage 1
+                                                           and a single query: this adversary registers a non-trivial function,
+  Lemma F.5 (Unbounded reqests lead to unbounded infer-
+                                                          and then still requests a presentation for the full attribute vector.
+ences). For any parameter 𝜅, there exists an adversary Ainf,full mak-      Since nothing enforces that the user only discloses the output of the
+ing 𝑞= 1 queries that wins the inference game Ginf,full for full infer-      registered function, nor that the issuer policy must be respected,
+ence with advantage 1.                                                                    it is valid for the user to disclose the full attribute vector to the
+  Proof sketch.  Ainf,full picks a distribution over attribute vec-      adversary, and the adversary wins with advantage 1. Beyond this
+tors with min-entropy at least 𝜅. During the challenge issuance      obvious flaw, it is also not clear how to even define which functions
+step, it specifies that the challenge user is issued a credential with      are “too revealing” in general (and should be forbidden).
+attributes drawn from this distribution. During the challenge pre-                                                                    Enforcing “not too revealing” presentations. Suppose that the EU-
+sentation step, Ainf,full requests all attributes, and sets 𝐵reg and 𝐵pol      DIF functionality additionally disallows users to disclose attributes
+to be the identity function. Thus, the user proceeds and discloses       for presentation requests that were not registered by the RP. In
+all attributes to the adversary. The adversary thus learns the full       this case, a slight tweak to the adversary from above still wins the
+attribute vector, and wins the game with advantage 1.       □      inference game with advantage 1, albeit with more queries: the ad-
+                                                                     versary picks a distribution over attribute vectors with min-entropy
+Adaptivity. The above attack strategy is fully valid in the model       at least 𝜅(for simplicity, assume that this distribution is a uniform
+of the functionality, where the adversary can adaptively query any       distribution over 𝜅bits). Then, the adversary picks 𝑞presentation
+attributes. We show that even in more constrained models (where       functions/attributes such that any tuple of 𝑞presentations can be
+the EUDIF functionality is restricted), similar attack strategies can      used to reconstruct the full attribute vector (e.g., the adversary picks
+be successful, albeit with a reduced advantage.              𝑞= 𝜅functions, each revealing a bit attribute). The adversary then
+Mandating “not too revealing” presentations. Suppose that the EU-      registers these 𝑞functions, and requests 𝑞presentations for these
+DIF functionality requires that RPs must register only non-trivial      functions. Since the user is allowed to disclose the output of the
+functions of attributes (e.g., not of the form “disclose all attributes”).      registered functions, it discloses these 𝑞outputs to the adversary.
+Further, suppose that issuers also specify policies that output 0 for     The adversary can then reconstruct the full attribute vector from
+                                                            21
+
+=== PDF PAGE 22 ===
+                                              Christian Knabenhans, Shannon Veitch, Mathilde Raynal, Theresa Stadler, Sylvain Chatel, Wouter Lueks, and Carmela Troncoso
+
+
+  The game Ginf,win   for an adversary A is defined by a challenger C interacting with A as follows. The game is parametrized by a
+                 A,FEUDIF
+   security parameter 𝜅and a query bound 𝑞.
+
+   Setup.
+    (1) A selects a set of corrupted relying parties ˜𝑅, a tuple of attributes (attr_descr𝑖)𝑖∈[𝑛], and a distribution D over attribute vectors
+        for these attribute types, with the restriction that 𝐻∞(D) ≥𝜅.
+    (2) C creates a “challenge” user U∗and an issuer I, samples a tuple of attributes (attr∗𝑖)𝑖∈[𝑛] ←D, and initializes an instance of
+       FEUDIF with users {U∗}, relying parties ˜𝑅and issuers {I}.
+   Issuances. A may instruct the challenge user U∗to request issuance of credentials from the issuer I: A sends the message
+   (ChalIss, (attr_descr𝑖)𝑖∈[𝑘], policy) to C. C then sends an issuance request to FEUDIF on behalf of U∗for the issuer I and the
+   attribute types (attr_descr𝑖)𝑖∈[𝑘], and programs the issuance oracle to return (attr∗𝑖)𝑖∈[𝑘] and policy.
+   Presentations. A may instruct the challenge user U∗to request access for an adversary-specified service for an adversary-controlled
+   relying party ˜R, with an adversary-specified consent strategy. A sends the message (ChalPres, rid, service, 𝐵reg, 𝐵pol.) to C. C then
+   sends a presentation request to FEUDIF on behalf of U∗for the relying party rid and the service service, using the functions 𝐵reg and
+   𝐵pol to select the bits 𝑏registration and 𝑏policy that U∗sends to FEUDIF as part of the presentation interaction. A can adaptively repeat
+   this step up to 𝑞times.
+   Guess. A outputs a tuple of attributes ( attr𝑖)𝑖∈[𝑛].            d
+  A’s advantage Advinf,win   (𝜅,𝑞) in the game is defined as follows:                        A,FEUDIF
+       •  If win = full: Pr[( attr𝑖)𝑖∈[𝑛] = (attr∗𝑖)𝑖∈[𝑛]] −max(attr𝑖)𝑖∈[𝑛] Pr[(attr𝑖)𝑖∈[𝑛] = (attr∗𝑖)𝑖∈[𝑛]]        d
+       •  If win = sensitive((attr_descri)𝑖∈[ℓ]): Pr[( attr𝑖)𝑖∈[𝑛] = (attr∗𝑖)𝑖∈𝑆] −max(attr𝑖)𝑖∈𝑆Pr[(attr𝑖)𝑖∈𝑆= (attr∗𝑖)𝑖∈𝑆], where 𝑆is the set               d
+           of indices corresponding to the attribute descriptions (attr_descri)𝑖∈[ℓ] classified as sensitive;
+       •  If win = 𝑔-leak: E[𝑔(( attr𝑖)𝑖∈[𝑛], (attr∗𝑖)𝑖∈[𝑛])] −max(attr𝑖)𝑖∈[𝑛] E[𝑔((attr𝑖)𝑖∈[𝑛], (attr∗𝑖)𝑖∈[𝑛])].         d
+
+                                          Figure 18: Inference game Ginf,win                                                                                        A,FEUDIF.
+
+
+these 𝑞outputs, and wins with advantage 1. This attack strategy
+can be made even more powerful by exploiting the fact that (i) the
+adversary can make its queries adaptively (i.e., it can use the output
+of one query to decide which function to query next), (ii) the adver-
+sary can corrupt multiple RPs, and thus register different functions
+at different RPs, (iii) the adversary can register new presentation
+requests at any time (e.g., also adaptively while making its queries).
+
+
+
+
+
+                                                           22
+
+=== PDF PAGE 23 ===
+On the (Privacy) Harms of the European Digital Identity Framework
+
+
+G  Updated Harm Tree
+
+
+                                Discrimination
+
+                         OR
+
+                              Profiling               Service provider restricts access
+
+                                           OR
+                      OR+
+                          AND             AND
+
+  Online  Persistent        Reveal age      Service provider chooses Require access
+ metadata  identifier     information (Rrid    whether to implement   to technology
+                          learns 𝑣= 𝑓(age))    age verification (Oreg)
+
+                  Revocation
+ Policy Manager                    Registar                             Require
+                 Manager
+    learns Rrid      learns Rrid      learns Rrid                            resources
+
+
+Figure 19: Age verification – Discrimination – Changes with
+respect to Fig. 6a after deployment, incl. the integration of
+PETs (see Section 4). The red component persistent identifier
+can be removed by the use of a PET that provides unlinka-
+bility (e.g., pseudonyms). There are four new dark red com-
+ponents. Three of them consist in new leakage: the policy
+manager, the revocation manager, and a registrar can learn
+the service the user wants to access because of new features
+introduced by deployment requirements. These features are:
+first a feature which allows the user to access the service’s dis-
+closure policy, secondly, the ability to revoke credentials, and
+thirdly the ability for the user to verify that the attributes
+requested by the service aligns with its registered intended
+use. These components and their leakage can lead to profil-
+ing and discrimination. The fourth new dark red leaf require
+resources comes from deployment requirements on the user’s
+device, i.e., certain characteristics are now necessary to oper-
+ate a wallet (e.g., secure element for device binding, compute
+power for advanced PETs, ...) and potentially restrict access
+of some users, leading to discrimination.
+
+
+
+
+
+                                                           23

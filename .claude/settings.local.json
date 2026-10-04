@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.usenix.org)",
+      "WebFetch(domain:eprint.iacr.org)",
+      "WebFetch(domain:dl.acm.org)",
+      "WebSearch"
+    ]
+  }
+}

@@ -1,0 +1,1614 @@
+=== PDF PAGE 1 ===
+    Exploring Privacy Practices of Female mHealth Apps in a
+                      Post-Roe World
+       Lisa Mekioussa Malki                 Ina Kaleva                      Dilisha Patel
+           lisa.malki@kcl.ac.uk                   ina.kaleva@kcl.ac.uk                  dilisha.patel@ucl.ac.uk
+          King’s College London                King’s College London               University College London
+             UK                       UK                       UK
+
+                     Mark Warner               Ruba Abu-Salma
+                          mark.warner@ucl.ac.uk              ruba.abu-salma@kcl.ac.uk
+                           University College London               King’s College London
+                         UK                       UK
+
+ABSTRACT                                     1  INTRODUCTION
+Mobile apps which support women’s health have developed rapidly     Female mobile health (mHealth) apps provide innovative opportu-
+alongside the increasing de-stigmatisation of female reproductive       nities for the management of women’s health by offering period,
+wellbeing. However, the ubiquity of these apps has advanced the        fertility, and sexual activity tracking and predictive services [24].
+practice of intimate surveillance and the commodification of sensi-     They are a subgroup of a broader Female Technology (FemTech) in-
+tive user data. While the overturning of Roe v. Wade has prompted      dustry that uses technology to support health issues in women and
+reflection on the privacy and safety implications of female mobile      those who have female reproductive capabilities.1 Female mHealth
+health (mHealth) apps, the privacy practices of these apps have yet      apps have unlocked novel opportunities for de-stigmatisation of
+to be thoroughly examined in a post-Roe world. We investigated the      the reproductive body, and improved healthcare access and afford-
+privacy practices of 20 popular female mHealth apps, combining a       ability [26, 55, 95]. Existing research has explored how the design
+thematic analysis of Data safety sections and privacy policies with       of these apps could be improved by addressing menstrual literacy
+a privacy-focused usability inspection. Our findings revealed prob-       [59, 95] and gender inclusivity [89, 93].
+lematic practices, including inconsistencies across privacy policy        Privacy has recently emerged as another crucial dimension of
+content and privacy-related app features, flawed consent and data       analysis, predicated by widespread concerns about the misuse and
+deletion mechanisms, and covert gathering of sensitive data. We      misappropriation of user data by app developers [3, 64]. Female
+present recommendations for improving privacy practices, and call     mHealth apps collect sensitive data about users’ menstrual cycles,
+for a dedicated focus not only on user privacy, but also safety.          sex lives, and physiological wellbeing, as well as personally identi-
+                                                                              fiable information (PII) such as names and email addresses [2]. A
+CCS CONCEPTS                                                lack of adequate management of personal data has advanced the
+                                                                       practice of intimate surveillance, in which sensitive data is com-
+• Security and privacy →Human and societal aspects of se-
+                                                                      mercialised at the expense of user privacy [56]. These discussions
+curity and privacy.
+                                                              have grown in urgency following the overturning of Roe v. Wade in
+                                                                        2022, which ended the federal right to abortion in the United States
+KEYWORDS                                                  (US) [18]. The event has catalysed widespread fears of increased
+Digital health, mobile health, FemTech, women’s health, privacy,     governmental surveillance and criminalisation of women seeking
+safety                                                              abortions [22] both in the US and in the United Kingdom (UK),
+                                                         where abortion remains a criminal offence unless authorised by
+ACM Reference Format:                                     two physicians and performed within a legal time limit [13, 94].
+Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba       Illustrating this, a recent poll by the Information Comissioner’s
+Abu-Salma. 2024. Exploring Privacy Practices of Female mHealth Apps in       Office (ICO) found that over half of women in the UK are concerned
+a Post-Roe World. In Proceedings of the CHI Conference on Human Factors                                                                 about the privacy and security of period-tracking apps in the wake
+in Computing Systems (CHI ’24), May 11–16, 2024, Honolulu, HI, USA. ACM,
+                                                                         of Roe v. Wade [46].
+New York, NY, USA, 24 pages. https://doi.org/10.1145/3613904.3642521
+                                                           The overturning of Roe v. Wade has resounded on a global level,
+                                                             marking a shift in how female mHealth app users navigate sharing
+                                                                      reproductive health data [22]. While the response of some users has
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed     been to delete these apps [32], they continue to play a crucial role
+for profit or commercial advantage and that copies bear this notice and the full citation      in health management for many [95]. Furthermore, it is unclear
+on the first page. Copyrights for components of this work owned by others than the      as to whether uninstalling female mHealth apps actually protects
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.                      1We use the terms FemTech and female mHealth apps to remain consistent with how
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                these technologies are described in industry [3]. We refer to FemTech users as women
+© 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.          to remain consistent with how participants have been described in previous works.
+ACM ISBN 979-8-4007-0330-0/24/05                                                 However, we acknowledge that some users of FemTech may not identify as women or
+https://doi.org/10.1145/3613904.3642521                                                   as female but are included in our work as users of FemTech.
+
+=== PDF PAGE 2 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+users from criminalisation, since historical data may still be retained           mHealth apps, and stimulate critical discussions around the
+by developers [41]. While there is evidence that developers have           need to consider user safety in the privacy practices of mo-
+altered their apps to address this changing legal landscape [40,              bile apps more broadly. Together, this constitutes an inter-
+88], the privacy practices of female mHealth apps in a post-Roe             disciplinary blueprint for future work spanning HCI, user
+world remain largely unexamined. The overarching aim of our            experience (UX) design, app development, and policy.
+study, therefore, was to conduct an exploratory investigation of the           (3) Finally, we provide a codebook (see Table C.1 in Appendix C)
+privacy practices of popular female mHealth apps (as communicated            developed through a combination of deductive and inductive
+through Data safety sections,2 privacy policies, and app interfaces),            thematic analysis of privacy policies. This codebook can be
+and to explore implications of these practices for users in a post-Roe             readily adapted to both manual and automated evaluations
+world. We address the following research questions:                           of female mHealth app privacy policies in future work.
+RQ1. What are the privacy practices of female mHealth apps with
+      respect to data collection, storage, sharing, deletion, and    2  RELATED WORK
+      safeguarding as declared in Data safety sections and privacy     2.1  FemTech and Intimate Surveillance
+       policies?
+                                                       FemTech is a category of software, apps, and diagnostics that
+RQ2. What in-app privacy features and mechanisms are available
+                                                                        cater to female health needs [80], including aspects of reproduc-
+       to female mHealth app users (e.g., data deletion, data porta-
+                                                                            tive health [3]. Fertility- and menstrual-tracking apps continue
+        bility, and consent/opting out), and how usable and useful
+                                                                       to dominate the FemTech market, and are used by women world-
+       are these features and mechanisms?
+                                                           wide for tracking periods [55], communicating with healthcare
+RQ3. Do inconsistencies exist between the privacy practices de-
+                                                                      providers [17], and understanding their bodies [26, 34]. While many
+       clared in Data safety sections and privacy policies, and ac-
+                                                 women use female mHealth apps to combat menstrual stigma and
+       tual in-app privacy features and mechanisms? If so, what
+                                                                 maintain dignity [55, 95], severe vulnerabilities and data breaches
+       are these inconsistencies, and could they negatively impact
+                                                            have been associated with FemTech companies [29, 83]. Conse-
+      user safety following the overturning of Roe v. Wade?
+                                                               quences of FemTech data breaches could include workplace moni-
+To address our research questions, we conducted a thematic analysis                                                                     toring [14, 64], health insurance discrimination [19, 81], intimate
+of the Data safety sections and privacy policies of 20 popular female                                                                   partner violence [80], and criminal blackmail [3]; all of which
+mHealth apps on the US and UK Google Play Stores, followed by                                                                     are risks which intersect with gendered forms of oppression [64].
+a rigorous privacy-focused usability inspection. We triangulated                                                                              Shifts in the legal landscape surrounding abortion have exacerbated
+findings from the two procedures, to identify areas of disconnect                                                                    these concerns, both in the US following the overturning of Roe
+between what is declared in Data safety sections and privacy poli-                                                                                        v. Wade [63] and in the UK, where abortion remains a criminal
+cies, and app features. Our work is the first in the FemTech space                                                                     offence under the 1861 Offences Against the Person Act [13, 18].
+to combine an analysis of Data safety sections and privacy policies                                                                    Therefore, the possibility that female mHealth app data may be
+with a usability inspection, and builds on prior work by uncovering                                                               used to criminalise at-risk individuals is a real threat that is felt by
+a diverse set of practices related to data collection, sharing, and safe-                                                                     users internationally [22, 46, 55, 59].
+guarding, and identifying their privacy and safety implications in a                                                        Owing to the sensitivity and longitudinality of the data tracked
+post-Roe world. We also draw attention to data retention practices,                                                           by female mHealth apps, this can be considered a form of intimate
+as well as the privacy rights afforded to users, such as data deletion                                                                             surveillance [56], in which the personal lives of users are quantified
+and portability; a currently overlooked aspect of FemTech privacy,                                                                   over time and fashioned into a commercialisable resource; a practice
+but one with concrete implications for users attempting to protect                                                          which paradoxically, benefits male-dominated corporate interests
+themselves against criminalisation. While our findings address the                                                                            at the expense of women’s privacy [30]. Menstrual-tracking apps
+unique privacy and safety implications of female mHealth apps in                                                              have been found to share excessive amounts of user data with third-
+a post-Roe world, many of our recommendations are generalisable                                                                    party vendors, libraries, and Software Development Kits (SDKs) in
+to other types of mHealth apps. By reflecting on how the most                                                                       past work [85], and while these acts are ostensibly performed with
+intimate types of data (e.g., fertility data [3, 64]) can be protected                                                                   the consent of users, it is unlikely that they fully understand the
+to better safeguard users in challenging legal environments, we                                                               ecosystems through which their information flows [56]—in con-
+carve a pathway for improving the privacy practices of mobile apps                                                                               trast to the Theory of Contextual Integrity (CI), which emphasises
+more widely, and champion universal design [31]. We make the                                                              adherence to expected social (including privacy) and contextual
+following three key contributions:                                                          norms in the gathering and transmission of data [71]. This creates a
+    (1) We present findings from an in-depth, mixed-methods anal-      climate in which users become increasingly habituated or resigned
+       ysis of female mHealth app privacy practices. We explore      to privacy practices which are invasive or excessive, and feel un-
+      a breadth of practices related to data collection, storage,      able to meaningfully control their digital footprints in the face of
+       sharing, deletion, and safeguarding, as well as consent and      reproductive threats [62, 68].
+      opt-out mechanisms.
+    (2) We provide actionable design recommendations to improve     2.2  EU, UK, and US Data Privacy Laws
+     upon the shortcomings identified in our analysis of female                                                                        In the European Union (EU) and the UK, the use of data is regulated
+2As per Google’s developer guide [16], we capitalise the ’d’ in Data when referring to     by the General Data Protection Regulation (GDPR), which places
+Data safety sections and/or forms.                                              limitations on how personal data can be used by organisations,
+
+=== PDF PAGE 3 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+and affords users rights over what data is collected, and how it        Transparency in how organisations collect and manage personal
+is processed [36]. In a clear and intelligible fashion [28], those      data is a requirement under GDPR and CCPA [33]. Privacy policies—
+controlling personal data must provide information related to data       textual documents which outline the purposes, legal basis, and uses
+retention policies, purposes and methods for data processing, and       of data collected by an app or a service—are the most common way
+how data rights can be exercised. Rights under GDPR include the      that developers inform users of how their data is processed, and
+rights to access, rectification, and erasure of personal data, and       their rights with respect to this data [97]. However, user engage-
+the right to receive data in a structured and machine-readable     ment with privacy policies is typically low, with studies reporting
+format (data portability) [33]. Mechanisms for data deletion and       that users spend only a minute or so skimming the document [73],
+portability have emerged as vitally important to users in a post-Roe     and that low readership is often linked to complexity in language
+world, since they allow users to sanitise their digital footprints     and excessive length [45, 61, 79]. Existing work has used privacy
+in the case of sharing sensitive or criminalising data [95], and       policy analysis to understand the privacy practices of apps and web-
+discontinue app use without losing access to historical data [30],       sites, measure compliance with applicable laws and frameworks,
+respectively. However, data deletion mechanisms can be obscure     and evaluate the quality and accuracy of privacy policies as a trans-
+and poorly designed, contributing to incorrect mental models of      parency mechanism [12, 65, 87, 98]. A small number of studies
+deletion operations among users of social media [82], the cloud [78],     have reviewed the privacy policies of female mHealth apps specifi-
+and popular operating systems [37]. Lastly, data subjects also have        cally, finding that these apps either lack privacy policies altogether
+the right to restrict and object to the processing of their personal        [2, 22, 64, 85], overuse technical terminology and jargon [3, 29, 85],
+data under GDPR [99]—though mechanisms for opting out of web      or are generic and do not adequately address the unique privacy
+practices have been found to suffer from poor readability, poor      implications of fertility data [85].
+usability, and ambiguity in outcomes [38, 39].                 A more recently introduced transparency practice is privacy
+   In the US, female mHealth apps are regulated by a “patchwork of       labelling, which addresses the problem of lengthy and complex
+federal and state laws” that cover different aspects of mHealth [81].      privacy policies by summarising the privacy practices of apps and
+At a state level, laws have been enacted to cover different areas of      websites in a short, ‘nutrition label’ format to aid visual compre-
+digital privacy. The most significant is the California Consumer Pri-     hension [49]. The approach has since been adopted by the Apple
+vacy Act (CCPA), which offers protections and rights to Californian     App [5] and Google Play [16] Stores, which now require developers
+citizens [74]. The protections share many similarities with GDPR,      to submit high-level information about their app’s privacy prac-
+including how personal data is defined, and subject rights to data ac-       tices alongside a full privacy policy. While there is evidence that
+cess, portability, and deletion [100]. It also provides consumers with     app users find privacy labels valuable and exhibit some intent to
+the rights to opt out of the sale of personal information [74], rectify      read them, prior work has also identified that users possess mis-
+data, and limit disclosure of sensitive personal information—a newly      understandings surrounding the authorship of privacy labels, and
+defined personal data type encapsulating sensitive characteristics      often overlook them when navigating app stores [102]. There are
+such as precise geo-location and genetic data [53].                       also concerns about the accuracy of privacy labels: a recent review
+                                                                       of the Google Play Store’s privacy labelling system (“Data safety
+                                                                            sections”) conducted by Mozilla [92] found that approximately 85%
+                                                                        of apps exhibited discrepancies between the practices declared in
+2.3  Privacy Practices of mHealth Apps                  the Data safety sections and the privacy policies of apps. Therefore,
+Designing strong and transparent privacy protections in mHealth      evaluating the accuracy of privacy labels is crucial to the FemTech
+apps correlates with better UX, trust, and more sustained uptake     app genre, since users may use the Data safety section to decide
+over time [23, 25]. However, existing studies have revealed alarming     which apps pose less of a privacy and safety risk.
+vulnerabilities associated with health apps across several domains,
+including fitness [66, 96], mental health [76], and COVID-19 track-
+ing [6, 7, 42, 44, 47, 91]. For example, mental health apps are among     2.4  Summary
+the most widely researched in terms of privacy risks [72], and have      Overall, a body of work has explored the unique risks associated
+been found to mine users’ private chat transcripts for marketing      with FemTech [56, 80, 81], and evaluated the privacy practices of
+purposes [69]. In the sphere of female sexual and reproductive      female mHealth apps using methods such as network analysis [20,
+health, studies have found that apps often harvest more data than       22, 27], checklist-based evaluations [2, 54], and reviewing privacy
+needed for service provision [3, 85], and that this data often pertains       policies [3, 30, 85]. Most of these studies were conducted prior
+to individuals other than the user, such as their family members or      to the overturning of Roe v. Wade, though the event has led to
+physicians [2]. While sensitive data is anonymised or aggregated       shifts in how users, policymakers, and developers perceive the
+by app developers, these safeguarding measures can be circum-      privacy of female mHealth apps worldwide [22], making our study
+navigated and users re-identified [72]. Female mHealth apps have      timely and consequential. Furthermore, no studies to date have
+also been found to contain ‘socio-technical data traps’ that make      conducted an in-depth user interface (UI) inspection of female
+it deliberately difficult to limit data sharing during app use [64].     mHealth apps, with existing evaluations being limited to checking
+These data traps include not providing users with meaningful ways       for pre-defined behaviours or privacy features such as consent
+to opt out of privacy practices [30], lacking in-app data deletion       notices [2, 54, 85]. We build on existing work in the usable privacy
+operations [2], or making the privacy policy available only after the     domain [39, 78, 82] by conducting a mixed-methods analysis of
+user has downloaded the app and entered sensitive data [2, 29, 64].     female mHealth app privacy practices that involved combining
+
+=== PDF PAGE 4 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+a thematic analysis of privacy policies and Data safety sections       rising in popularity were included [64], and selected the top 20 apps
+with a rigorous UI inspection. We triangulated findings across our      according to this criterion. We list the apps included in our analysis
+procedures, to identify inconsistencies and disconnects between the       in Table A.1 (Appendix A).
+declared privacy practices and actual in-app privacy features offered
+to users. Thus, we contribute novel insights into how consent,     3.2  Data Safety Section Analysis
+data entry, data deletion, and data portability are implemented
+                                                                  Developers who have an app published on Google Play are required
+within these apps and offer actionable recommendations that can
+                                                          by Google to complete a “Data safety form” and provide a link to
+be applied to the FemTech app genre as well as the wider mHealth
+                                                                          their app’s privacy policy. This information is presented to users
+app ecosystem.
+                                                                       in a “Data safety section” which provides a concise summary of
+                                                                   the types of data collected and/or shared by developers, the pur-
+3 METHODS                                                poses for processing, whether user data is encrypted, and whether
+Using a mixed-methods approach, we investigated the privacy prac-      the developers give users an option to delete their data [16]. We
+tices of popular female mHealth apps available in the Google Play     manually extracted this information from the Data safety section
+Store, since Android devices comprise over 70% of the world’s mo-      of each app (see Table 1). Where available, the same information
+bile devices [90]. We thematically analysed the Data safety sections     was extracted from the privacy policy text via a keyword search,
+and privacy policies of 20 apps, and evaluated the app interfaces       facilitating comparison with the privacy policy.
+with a hybrid approach of two actively-used usability inspection
+methods in HCI research [43]: cognitive walkthrough [11] and     3.3  Privacy Policy Analysis
+heuristic evaluation [70]. We then triangulated our findings to iden-
+                                             We used a combination of deductive and inductive thematic analy-
+tify areas of disconnect across the information declared by app
+                                                                                      sis to analyse the app privacy policies, coding the policy text using
+developers in Data safety sections, the data practices described in
+                                               MAXQDA. We began by drafting an initial codebook based on prior
+privacy policies, and the app interfaces. After filling out a minimal
+                                                         work examining privacy issues in FemTech [27, 85] and GDPR prin-
+risk registration form, our research was assessed by the Research
+                                                                                 ciples, particularly those related to user data rights (see §2.2) [33].
+Ethics Office at King’s College London as not requiring a formal
+                                             We selected GDPR as our initial guiding framework as it is a com-
+ethics review. In this section, we describe how we screened and se-
+                                                                 prehensive and widely-used standard for evaluating the privacy
+lected apps, analysed their Data safety sections and privacy policies,
+                                                                        practices of mobile apps [50], and has been discussed extensively
+and conducted our UI inspection.
+                                                                         in relation to FemTech products [64, 85].
+                                                       Due to the technical complexity of privacy policy language and
+3.1  App Screening and Selection                      well-known challenges of accurately coding policy texts [65], our
+To select our sample, we performed keyword searches across the     codebook underwent multiple rounds of iteration. The first au-
+Google Play Store, the largest and most popular market for Android      thor tested the initial codebook draft (developed deductively as
+apps [2]. We included apps which were available in both the US and      described above) on a sample of five randomly selected policies
+the UK Google Play Stores. We developed an initial set of search     and improved its coverage and structure, before sharing the revised
+terms from a review of prior work [2, 17, 27, 85] and iteratively      version with the research team. Then, each author in the team (n=5)
+improved our terms by testing each with the Play Store search func-     independently coded a different privacy policy and documented
+tion and selecting terms that returned a wide variety of relevant      areas where existing codes failed to adequately capture the text. The
+apps. We used the following finalised set of terms for our search:     team met to discuss revisions to the codebook, which included more
+female health, women’s health, reproductive health, fertility, ovula-      coverage of concepts relating to the purposes of data collection,
+tion, menstrual, menstruation, period, contraception, birth control,     and sharing of data with third parties. Once these improvements
+pregnancy, pregnant. In March 2023, we developed and ran a Python     were finalised, three authors conducted iterations of independently
+script to automate the collection of all apps available in both the      coding a set of 3-5 policies and meeting to discuss disagreements
+US and UK Google Play Stores that were returned by each search     around coding and language interpretation [65], before refining
+term. This returned a total of 184 unique apps.                        the codebook. This process continued until code saturation was
+  We excluded apps which had zero user ratings (n=54), were not in      reached, and all authors were confident that the codebook was
+English (n=3), had not been updated for over a year (n=35), and did      comprehensive and grounded in the data.
+not directly provide a service related to female reproductive health        Then, all app policies were re-coded line-by-line by the first
+(n=29). We screened the remaining 63 apps based on their features,      author in batches of five policies each, with all authors meeting
+by inspecting screenshots provided on their Google Play pages and       at the end of each batch for discussions. Once all policies were
+scanning the top 10-20 user reviews. As a result, we excluded apps      coded, the data extracts assigned to each code were re-read and
+that did not provide at least one tracking or predictive feature (n=7).      synthesised by the first author, yielding rich patterns and themes.
+We also excluded non-consumer-oriented apps, such as those aimed    We did not calculate inter-rater reliability (IRR).
+at healthcare professionals (n=4). This left a total of 52 eligible apps,       Our codebook included the following key categories: (1) Pol-
+including 40 period- and fertility-tracking apps and 12 pregnancy      icy Scope; (2) Policy Version; (3) User Data Types; (4) Data Col-
+or baby apps. We ranked these apps based on the number of reviews       lection Methods; (5) Purposes for Data Processing; (6) Data Stor-
+they had received in the preceding 12 months, to ensure that apps      age/Retention; (7) Data Transfers; (8) Data Safeguarding Measures;
+that had been on Google Play for a shorter period of time but were        (9) Regional Privacy Legislation; (10) User Privacy Rights; and (11)
+
+=== PDF PAGE 5 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+Language and Readability. The codebook can be found in Table C.1    4  RESULTS
+(Appendix C).3                                           Our study investigated the privacy practices of female mHealth
+                                                               apps based on an in-depth analysis of the Data safety sections (see
+3.4  Usability Inspection                                           §4.1), privacy policies (see §4.2), and UIs (see §4.3) of 20 popular
+To evaluate the usability of privacy-related app features, we con-     apps available in the US and UK Google Play Stores. The apps in
+ducted a rigorous UI inspection, combining cognitive walkthrough      our sample included period, fertility, and pregnancy trackers, and
+and heuristic evaluation. Cognitive walkthrough is a framework for    we identified a total of 18 unique app developers in our sample,
+evaluating how well a system supports the completion of specific      with two developers creating more than one app: Amila devel-
+tasks, and has been previously used to evaluate the usability of     oped apps #1 and #2, and Wachanga developed apps #19 and #20—
+privacy features in popular mobile apps [1, 10]. Heuristic evalu-     corresponding app names and metadata can be located in Table
+ation involves judging an interface against an established set of      A.1 in Appendix A. Half of the developers in our sample (9/18) ex-
+usability principles to identify design flaws [70]. We conducted a       clusively developed FemTech-related products or services, such as
+heuristic walkthrough [84]—a hybrid of the heuristic evaluation and       period-, fertility-, and pregnancy-tracking apps. Seven developers
+cognitive walkthrough methods. Although there are advantages of     made other health-related apps in addition to their female mHealth
+involving users, evaluating interfaces without users is an effective      apps, such as weight loss and fitness apps and mental health track-
+method for identifying design issues, particularly when conducted       ers. The remaining two developers created generic categories of
+by experienced evaluators [48]. Our protocol included a preparation      apps including games and file utilities.
+stage, where we identified the target user and the tasks they would
+attempt with the app, followed by an analysis stage, in which we     4.1  Data Safety Section Analysis
+simulated using each app from the user’s perspective and uncov-    We analysed the Data safety section of each app (see Table 1), and
+ered usability and privacy problems, guided by Nielsen’s usability       identified several inconsistencies between the information declared
+heuristics [70] and privacy-by-design principles [8, 15].              by developers in the Data safety sections and privacy policies across
+                                                                     the apps in our sample.4 Though broadly consistent in their descrip-
+3.4.1  Preparation Stage. We began by defining the target user                                                                          tions of the types of data collected and purposes for data collection,
+as a first-time or novice user of a female mHealth app, whose
+                                                                   the Data safety sections and privacy policies often differed with
+goal was to track aspects of their own sexual and reproductive
+                                                                   regards to data sharing, data encryption, and data deletion prac-
+health on an Android mobile device. Then, we identified relevant
+                                                                                    tices. All 8/20 apps which claimed in their Data safety sections
+tasks around which to centre our evaluation. We installed all 20
+                                                                       to not share users’ personal data described some level of third-
+apps on an Android mobile device, and systematically inspected all
+                                                                   party sharing in their privacy policies. This included sharing user
+screens, buttons, and features. The key use cases and features of
+                                                             demographics with advertisers, transmitting health data to third-
+each app were documented, and condensed into a set of tasks and
+                                                                  party processors, and potentially disclosing personal data to law
+functionalities common to each app type, which included period,
+                                                              enforcement (see §4.2.5), which could lead to dire physical safety
+fertility, and pregnancy trackers. Tasks which involved accessing,
+                                                                consequences for women in contexts where abortion care is crimi-
+inputting, or managing personal data were selected as the focal
+                                                                         nalised [22]. Furthermore, out of the 19 apps that indicated that user
+point of our analysis, as these tasks carried the clearest privacy
+                                                                   data was encrypted in transit in their Data safety sections, eight
+implications for users.
+                                                      made no mention of encryption in their privacy policies, and only
+3.4.2  Analysis Stage. Each app was independently analysed by the      four detailed the specific encryption method; e.g., Secure Socket
+first and last authors. After wiping and re-installing the 20 apps      Layer (SSL). Lastly, while 18/20 app Data safety sections stated that
+to simulate first-time use, we walked through each task workflow      data could be deleted, two of these apps did not detail a procedure
+step-by-step from the perspective of the user, reflecting on the       for deleting data in their privacy policies, or implement an in-app
+language and visual layout of the UI. In particular, we considered      data deletion mechanism.
+whether the user would know how to proceed with each task, iden-
+tify the correct actions, and correctly interpret system feedback     4.2  Privacy Policy Analysis
+regarding the outcome of these actions [84]. For each task, we also    We identified a total of 19 unique privacy policies across the 20
+evaluated the interface against Nielsen’s ten usability heuristics      apps, as two apps were created by the same developer and shared a
+[70] and a set of privacy-by-design principles [8, 15] (see Tables B.1      generic privacy policy. A total of 18/20 apps had a privacy policy
+and B.2 located in Appendix B). We documented any clear design       available in Google Play, and two had their policies located on
+problems alongside potential fixes or improvements. The indepen-      their developer’s website. By analysing all 19 privacy policies, we
+dent findings of each author were collated and discussed within the      uncovered a breadth of practices related to data collection, use,
+research team using Miro, an online interactive collaboration tool       storage, sharing, and safeguarding. We summarise these practices
+[67]. Common design problems were identified through constant       in Table 2.
+comparison, and aggregated into a set of privacy-related design
+                                                                                  4.2.1  Policy Length. The policies were on average 4,453.4 wordspractices and features.
+                                                                        long, though there was substantial variation in policy length (SD
+
+3The MAXQDA file of the codebook can be shared upon request, so it can be used in        4In Tables 1 and 2, and all screenshot captions, we refer to apps using their numerical
+future comparative research.                                                                 IDs. The corresponding app names can be located in Table A.1 in Appendix A.
+
+=== PDF PAGE 6 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+                       Table 1: App data practices declared in Google Play’s Data safety sections.
+                                                                                                                                                                                                        information                                                                                                                                     information
+                                                                                 data                                                data
+                                                 IDs                                    IDs                                                                                                                                                                            interactions                                                                                                                                                 interactions                                                                                                                                                    data                                                                                               data              and                                                 and                                                                                                                                                                                                                                                                                                                                                                                       identifiable       fitness                                                                                                                                                                                                                          identifiable       fitness                                           and                           data          data  and                           data          data                                                                 data         and                                 data         and                                                         logs                                                logs                                                                                                 Deletion           Encryption                                           App      Device        Personally      Health      Location         Multi-media       Financial  App      Device        Personally      Health      Location         Multi-media       Financial   Data    Data
+                         ID         Data Collected                Data Shared           Security
+                        1   x   x    -     -   x    -    -   x   x    -     -   x    -    -   x    x
+                        2   x   x    -     -   x    -    -   x   x    -     -   x    -    -   x    x
+                        3   x   x   x   x    -    -    -     -     -     -     -    -    -    -   x    x
+                        4   x   x   x   x   x   x    -   x   x   x   x   x   x    -   x    x
+                        5   x   x   x   x   x    -    -     -     -     -     -    -    -    -   x    x
+                        6   x   x   x   x    -    -    -     -     -     -     -    -    -    -   x    x
+                        7   x   x   x   x    -   x    -     -   x    -     -    -    -    -   x    x
+                        8   x   x   x   x   x    -    -   x   x   x    -   x    -    -   x    x
+                        9   x   x   x   x    -    -    -     -     -     -     -    -    -    -   x    x
+                        10   x   x   x   x    -   x   x     -     -   x    -    -    -    -   x     -
+                        11    -     -     -     -    -    -    -   x   x   x    -   x    -   x   x    x
+                        12   x   x   x   x   x   x    -     -   x    -     -   x    -    -   x    x
+                        13   x   x   x   x   x   x   x   x   x   x    -    -    -   x   x    x
+                        14    -     -     -     -    -    -    -     -   x    -     -   x    -    -    -    x
+                        15   x   x   x    -   x    -    -     -     -     -     -    -    -    -   x    x
+                        16   x   x   x   x    -    -    -     -     -     -     -    -    -    -   x    x
+                        17    -   x    -     -    -    -    -     -     -     -     -    -    -    -    -    x
+                        18    -     -     -     -    -    -    -     -     -     -     -    -    -    -   x    x
+                        19   x   x   x   x   x    -    -   x   x   x   x   x    -    -   x    x
+                        20   x   x   x   x    -   x    -   x   x   x   x   x    -    -   x    x
+
+
+
+
+= 2,636.3). The shortest app policy was just 300 words and only     made it difficult to decipher app-specific data practices; for exam-
+covered the cookie practices of the app developer’s website. By       ple, one privacy policy covered two different period trackers and
+contrast, the policies which gave the clearest descriptions of data      a weight management app, however, it did not describe how data
+handling practices were all at least 6,000 words long. However, long       collection, processing, and management practices differed across
+policies were not always more comprehensive and accurate. The      the three apps.
+longest app policy in our sample was over 10,000 words long, and
+contained several repeated sections and generic descriptions of
+data practices which applied to the website of the company that                                                                                   4.2.3  Policy Updates. It is important that privacy policies are fre-
+developed the app rather than the app itself.                                                                   quently updated, to stay relevant to the current data handling prac-
+                                                                              tices of the app and reflect changes in legal frameworks [12]. We
+                                                              found that 12/19 privacy policies had been updated within the last
+4.2.2  Policy Scope. We analysed language relating to the scope      12 months, 3/19 had not been updated since 2020, and four had no
+of the privacy policies, and while some exclusively addressed the      published date of last revision. Most policies (13/19) stated that the
+specific apps in our sample, other policies referred to all apps cre-      terms of the policy could change in the future, to reflect changes in
+ated by the app developer and other services, which included web       services, legal obligations, or data management practices. While five
+portals, consultancy services, and advice networks. For instance,      indicated that the user would be notified of any material changes
+one privacy policy covered the mobile app, the developer’s website,      via email or in-app notifications, the rest placed the onus of deter-
+and “any other services related to it.” Policies which covered multiple     mining whether the policy had changed on the user, instructing
+apps often did not refer to the functionalities of each app, which     them to periodically check the developer’s website or the privacy
+
+=== PDF PAGE 7 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+Table 2: Key data practices declared in the privacy policy. An ‘x’ mark indicates the mention of a practice in the privacy policy,
+and ‘-’ indicates that it was not mentioned.
+
+
+                                                                                                                                      app                                                                                                                                                                        (June’22)                                                  or                                                                                                                                                                                                                                                                                                          request
+                                                                           Wade         IDs                                                                                                                                                                                                                     email      device                                     v.         and   data                                                                  policy
+                                                                                                                                via   via
+                                                        Roe                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       mechanism(s)                                                                                             after                            resources                                                                                                                                                                                                            disclosure/subpoena         retention            safeguarding                                                                                                                                                                                                                                                                                                                                                     deletion        deletion           portability                                                                                                       input                                                                                                                                                                                                                                                                                                                                                       development*                                  advertising*                             &                        legal    data    data       opt-out    data    data    data                                                                                   user      device             cookies/tracking          provision*                                                                                                                                   updated                 ID      Policy Scope         Policy        Collects        Collects      Collects       Service        Research                 Personalisation*         Third-party        Mentions        Mentions        Mentions        Provides        Provides        Provides        Provides
+                 1       Single app        -   x   x   x   x   x   x   x     -   x   x   x     -     -     -
+                 2       Single app        -   x   x   x   x   x   x   x     -   x   x   x     -     -     -
+                 3       Single app        -   x   x   x   x   x   x   x   x   x   x   x     -   x   x
+                 4       Single app     x   x   x   x   x   x   x   x   x   x   x   x   x     -   x
+                 5       Single app     x   x   x   x   x   x   x   x   x   x   x   x   x     -   x
+                 6       Single app     x   x   x   x   x   x   x   x   x   x   x   x   x     -   x
+                 7       Single app        -   x   x   x   x     -     -   x     -   x   x   x     -   x   x
+                 8       Multiple apps    -   x   x   x   x   x   x   x     -     -   x     -   x     -     -
+                 9       Multiple apps    -   x   x   x   x   x   x   x   x   x   x   x     -   x   x
+                 10      Multiple apps   x   x   x   x   x   x   x   x   x   x   x     -   x     -   x
+                 11      Single app        -   x   x   x   x   x   x   x   x   x   x     -   x     -     -
+                 12      Multiple apps   x   x   x   x   x   x   x   x   x   x   x     -   x     -     -
+                 13      Single app     x   x   x   x   x   x   x   x   x   x   x     -     -   x   x
+                 14    No relation       -   x    -   x   x     -     -   x     -     -     -     -     -     -     -
+                 15      Multiple apps    -   x   x   x   x   x   x   x   x   x   x   x     -   x   x
+                 16      Single app     x   x   x   x   x   x   x   x     -     -   x     -   x     -   x
+                 17      Single app     x   x   x   x   x   x   x   x   x   x   x     -     -   x   x
+                 18      Single app     x   x   x   x   x   x   x   x   x   x   x   x     -     -     -
+                  19/20   Multiple apps    -   x   x   x   x   x   x   x   x     -   x   x   x     -   x
+
+                                           * Stated purpose for processing personal data.
+
+
+policy’s date of last revision. Continued use of the app was inter-      operating system, device make, and resources such as camera, mi-
+preted as consent to the revised policy, but no policy contained a      crophone, and GPS trackers. A total of 12/19 policies stated that
+summary of recent changes, and only one developer made previous      apps automatically imported the user’s name and profile data, ac-
+versions available for viewing.                                                   tivities, and contact lists from Google or Facebook when the user
+                                                                  logged into the apps through these platforms. In 9/19 policies, data
+       “Please check the revision date to determine if this Pri-            could also be imported from Apple HealthKit or Google Fit, includ-
+      vacy Policy has been modified since you last reviewed            ing information about the user’s sporting activities, weight, and
+          it. Your continued use of any portion of the apps will             heart rate. The data collected from fitness trackers can identify the
+       constitute your acceptance of all such changes.”                    user’s exact location and their walking/exercise routes [96].
+                                                                          In addition to collecting app interaction logs, persistent cookies
+                                                          and third-party libraries were used to extensively profile users
+4.2.4  Data Collection Methods. Methods by which apps collected
+                                                               based on their demographics and web activities. These practices
+user data included user input (e.g., a user entering the date of their
+                                                                allowed data points from multiple platforms and websites to be
+last period), accessing device data and resources, importing data
+                                                                          linked, and sensitive inferences to be created about users, such as
+from third-party apps, and using cookies, data-logging, or other
+                                                                        linking their sexual and reproductive data to their Google searches
+tracking technologies. Information accessed automatically from the
+                                                                         to “optimise” app content. Three policies explicitly stated that apps
+user’s device ranged from unique identifiers such as advertising
+IDs and IP/MAC addresses, to more general data relating to the
+
+=== PDF PAGE 8 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+did not respond to Do Not Track (DNT) signals, which allowed users     whether this only applied to health data explicitly entered into
+to opt out of cross-browser tracking activities [101].                   the app by the user, or to app usage data from which sensitive
+                                                                         insights could be inferred. Typically, app interaction data was not      “Certain tracking technologies enable us to assign a
+                                                                      subject to the same level of safeguarding as health data, which      unique identifier to you [...] we may combine your ac-
+                                                                  could still reveal sensitive information about users if, for instance,      count data, Device data, cookies, location data, data
+                                                                 they used features relating to miscarriage or abortion.       collected during your interactions such as social media,
+       websites, communications you click on or tap, location               “We may sell or transfer data to advertisers, who will
+       details and websites you visit [...].”                                      use this data to serve ads relevant to your interests.”
+
+4.2.5  Purposes for Data Collection and Processing. We identified                                                                  Legal Compliance. Finally, all 19 policies mentioned that apps
+four overarching purposes for collecting and processing user data:                                                                    processed, retained, or shared data to comply with legal require-
+service provision and personalisation; research and development;                                                            ments and contracts. Specific use-cases included investigating vio-
+advertising; and legal requirements.                                                                           lations of the developer’s terms of service, clinical monitoring, or
+   Service Provision and Personalisation. All 19 policies stated       special scenarios where data must be legally shared with a third
+that user data was processed to provide core app functionalities.      party to address emergencies and threats. Many policies (13/19)
+Some simply stated that data was collected to “provide a service”       stated that user data might need to be accessed by law enforcement,
+or “support and maintain the product” without elaborating further       security authorities, or regulatory agencies in the case of a request
+(7/19), but most described specific use-cases (12/19) such as au-      or subpoena, but little was explained about the circumstances under
+thentication, registration, and provision of tracking and predictive     which this could happen, or users’ rights if it did. In the case of one
+features. Third-party providers (e.g., Amazon Web Services) were       policy, this contradicted the in-app privacy FAQs, which assured
+often used to deliver specific parts of the service or provide techni-      users that their data would never be shared with the government or
+cal functions. Essential app personalisation was cited as a purpose     law enforcement. Only one app explicitly assured users that they
+for processing data in 17/19 policies, and involved tailoring the     would be protected through anonymisation:
+app to the needs of individual users; e.g., customising articles, re-          “We cannot prevent the government from issuing a sub-
+minders, and suggestions for the user’s current pregnancy trimester.            poena, however, we will not be able to produce your
+As mentioned previously, apps combined interaction data (e.g., click             period data because we cannot connect it to your login
+paths, in-app searches), health and demographics, and location or             information. We do not know which data set belongs to
+device identifiers to create bespoke insights about users, and tailor           which person.”
+apps accordingly.
+                                                                                  4.2.6  Data Storage and Retention. Apps stored personal data lo-
+     “We rely on third-party infrastructure for the collection,
+                                                                           cally on the user’s device (7/19), on company servers (15/19), on
+        transfer, storage, processing and fulfillment of our Ser-
+                                                               commercial third-party servers (17/19), and/or at external research
+       vices such as Amazon Web Services and Google Cloud
+                                                                                     facilities (3/19) in various locations, such as the US, EU, and Asia.
+       Platform.”
+                                          A total of 15/19 policies addressed the developer’s data retention
+  Research and Development. All but two policies stated that       policies. While nine policies provided a specific time frame for
+user data was processed for research and app development activities,      data expiration (e.g., 180 days for data relating to interest-based
+which included internal A/B testing, development of new features,      advertisements), the remaining six described broad conditions for
+detection of app crashes, and bug fixes (17/19). Some developers      determining retention periods relating to legal obligations, the
+processed user data for clinical and scientific research, through      length of service use, and whether the user had requested deletion.
+sharing aggregated data with research institutions (3/19) or using      Importantly, two policies addressed the impact of app deletion or
+data to recruit participants for clinical studies (1/19). Clinical re-       inactivity on user data, stating that data would be erased after three
+search was distinct from the company’s own marketing analytics,      years. Only four policies provided a description of how data stor-
+though the type of research was sometimes left ambiguous:           age and retention varied for registered versus unregistered users,
+                                                                      despite several apps providing different back-up options for each     “We may share such data with our partners or research
+                                                                 type of users (see §4.3.1).       institutions for purposes that is within our legal basis
+       of legitimate interest.”                                             “The criteria we use to determine our retention periods
+                                                                                   include: (i) the length of time you use the Application;
+   Advertising. All apps shared data with third-party advertis-                                                                                                             (ii) whether there is a legal obligation; or (iii) whether
+ers, ranging from anonymous device and interaction data to in-
+                                                                                  retention is advisable in light of our legal position.”
+sights about the user’s pregnancy stage. Almost half of the poli-
+cies (9/19) explicitly stated that personally identifiable information       4.2.7  Data Safeguarding Measures. All but one policy described
+was shared with third-party advertisers, including demographic      measures for safeguarding user data against privacy and security
+data, phone numbers, and, in one case, the user’s home address.      threats. Technical safeguarding measures included encryption of
+Three pregnancy-tracking apps shared the user’s current pregnancy      data during transit, implementing network security protocols, and
+trimester and IP address with third-party ad networks. While ten       de-identification of personal data through means of aggregation,
+policies provided explicit assurance that the user’s health data      or storing PII separately from app usage data on the developer
+would not be shared with advertisers, it was ambiguous as to       servers. Organisational security and privacy measures included
+
+=== PDF PAGE 9 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+adherence to the principle of data minimisation, due diligence and           “Me” - “Settings” - “Privacy Settings” and decide to en-
+vetting of third parties, as well as adhering to region-specific pri-             able or disable the “Allow Access to Device Identifier
+vacy laws (e.g., GDPR and the CCPA). Despite these assurances, all            (IDFA)” permissions at any time.”
+policies contained liability statements and acknowledgements that          Finally, while 11/19 policies stated that users could opt out of
+the risk of data breaches would be impossible to eliminate. We found      non-essential processing such as marketing analytics in the app
+that 9/19 policies claimed a lack of responsibility for the practices       settings, these mechanisms were either described vaguely or not
+of any third parties, and shifted the responsibility for reviewing      implemented within the app. As we discuss in the following section
+their privacy policies to the user, despite previously claiming to        (§4.3), only seven apps actually contained granular opt-out settings.
+vet third-party vendors and SDKs who accessed user data. Where     Two privacy policies instructed the user to uninstall the app if they
+third-party recipients of user data were named, responsibility for      wished to opt out of data collection; however, this would not prevent
+reviewing their policies and terms was typically shifted to the user.      developers from processing historical data as per their retention
+     “We do not bear responsibility for how third parties use              policies (see §4.2.6).
+      any information that they have obtained from you, and
+                                                                                   4.2.9  Data Deletion and Portability. The majority of privacy poli-
+     we do not have any control over this.”                                                                           cies (14/19) addressed users’ right to delete their data. However,
+4.2.8  User Consent and Opting Out. Consent to the full privacy      the language around data deletion was often unclear, with policies
+policy was typically inferred by installation and operation of the      using the terms “deletion”, “erasure”, “deactivation”, and “removal”
+app or the creation of an account. Through this, the user consented      interchangeably, and bundling account and data deletion. Mecha-
+to sharing their data with third parties; agreeing with third parties’     nisms for deleting data included contacting the developer via email
+privacy policies; transferring their data outside of their country of       (9/19), or directly via the app settings (6/19)—though eight apps
+residence where different data protection laws might apply; and     which implemented deletion buttons made no mention of this fea-
+using data for app promotions. Refusing to accept often meant that      ture in the privacy policy. Twelve policies gave details about the
+the user was unable to access the service altogether.                    developer’s compliance process, including how long the data would
+                                                                   take to be deleted from the app’s servers, and conditions under
+      “By creating a profile or registering to use our apps, you                                                            which the request could not be carried out due to technical or legal
+       expressly agree that we may process the health data                                                                      reasons. However, this information was often vague. One policy
+      you provide [...] this information may be transferred to                                                                         stated that following the termination of an account, the user’s per-
+   — and maintained on — computers located outside of
+                                                                      sonal data would be “deleted or anonymised,” despite, deletion and
+      Your state, province, or country.”                                                              anonymisation having different privacy implications should data
+  User consent to the app’s privacy policy facilitated automatic       later be re-accessed.
+consent to the policies of all third parties, despite the high overhead                                                                     “You can delete your data at any time. To erase your
+associated with reading and fully understanding these policies. For                                                                               data, simply hit the delete button within your profile.
+instance, one app policy listed more than ten different entities that                                                                     Within minutes your data will be gone permanently.
+processed user data, and another listed six companies involved in
+                                                                              Lastly, 12/19 policies mentioned the right to data portability. This
+the provision of customer support alone. In both cases, the user
+                                                                    involved giving the user a copy of their data in a “commonly used”,was instructed to contact each third-party entity individually if
+                                                             “machine readable”, “structured”, or “portable” electronic format.they wished to opt out of their data being processed. Furthermore,
+                                                            However, policies were often ambiguous as to which data could
+some policies described the freedom of third parties to share user
+                                                             be exported or transferred, or stated that the right only applied
+data even further with their own advertising networks and beyond.
+                                                                        to “automated data” without defining what this meant in practice.
+It would be unreasonable to expect that a single checkbox at the
+                                                         Only four policies made specific reference to in-app settings or
+time of app installation translated into informed consent to this
+                                                                       features for exporting data. However, in all cases, these features
+extensive range of third-party data practices, and yet, 9/19 policies
+                                                                    did not facilitate a full data download, and only allowed subsets
+cited user consent as a legal basis for processing data.
+                                                                                               (e.g., free-text notes) to be exported (see §4.3.4). In one app, export
+  We identified different approaches to withdrawing consent to
+                                                                        features were available for Premium iOS users only.
+data processing activities. These included directly contacting devel-
+opers or third parties via email (9/19), tailoring app settings (11/19),
+                                                         4.3  UI Inspectionand/or using device-level controls (10/19); though these instruc-
+tions were often vague, not platform-specific, or out-of-date. A      In this section, we report on the key findings of our usability in-
+common practice for opting out of targeted advertising was chang-      spection. We describe app mechanisms for onboarding and account
+ing or disabling the advertising ID on the user’s device, causing all       creation, user privacy controls, and practices for data collection.
+ad preferences to be reset device-wide—a potentially undesirable    We also report on the notification management, data deletion, and
+outcome for some users. Some policies phrased instructions in such      export mechanisms offered to users.
+a way that the user might confuse device settings with their in-app                                                                                  4.3.1  Onboarding and Account Creation. Out of the 20 apps, 16
+settings, by referring to both in the same sentence, or not clearly                                                                    included a visible privacy notice and consent mechanism such as a
+distinguishing the two:                                                                 check-box when the app was first opened. However, only five apps
+      “You can check the status of your “Allow Access to De-           provided granular consent options for advertising and analytics,
+       vice Identifier (IDFA)” permissions in the App under           with the remaining apps forcing the user to accept or reject the
+
+=== PDF PAGE 10 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+full privacy policy as a pre-condition for service use (see Fig. 1a).      the explanation did not address the difference between the two
+We identified different conventions with respect to registration      provided options.
+and authentication across the apps in our sample. Some apps had
+no option to sign up (7/20), others had optional account creation        4.3.3  App Data Collection. All apps performed extensive tracking
+(10/20), and a few required users to create an account in order to use       of users’ periods, cycles, pregnancies, and other aspects of their lives.
+the service (3/20). One app implemented a special anonymous mode      This included their sex life, mental health, physiological health, and
+in which only essential tracking data (e.g., cycle dates, symptoms)      doctor’s appointments, with one app allowing the user to enter
+was backed up on developer servers without any corresponding      the name and speciality of their physician (see Fig. 3a, Fig. 3b, and
+identifiers such as names or emails. Account creation was described       Fig. 3c). Some fertility-tracking apps allowed the user to track the
+in several UIs as a measure to “protect”, “save”, or “recover” the user’s      use of any drugs or intoxicants, and required camera access to
+data in case their device was lost or damaged, since the developers      photographs of pregnancy and ovulation tests, with no option to
+could only externally store the data of registered users (see Fig.      record the results manually. Though entering symptom and sex-
+1b). However, in two apps, the optional call for registration was       related data was optional, it was often not clear how it factored into
+presented as mandatory, and could only be dismissed with a small      the predictions or charting features of the apps. For instance, six
+transparent cross or through tapping the back button.                apps provided advanced symptom analysis features but required
+   Often, the registration and onboarding procedure collected more      users to upgrade to premium to access them—one such app allowed
+data than was necessary for app function, and failed to clearly indi-      intimate sex tracking but provided no visible summary of elements
+cate when data was optional. For instance, in two apps, users could      tracked daily.
+omit the surname field and sign up with just their first name, but         In addition, we found that 6/20 apps contained community fea-
+this was not indicated with an optional marker. Thus, the interface      tures such as comment threads under articles or in-app forums. If
+was misleading and could cause users to relinquish more data than      users logged into the app with Google or Facebook, their full names
+required. Moreover, one popular period-tracking app onboarded the     were automatically imported and appeared on forum contributions
+user with questionnaires that requested highly sensitive data such      unless the screen name was changed in their account settings. In
+as how long they had been trying to conceive and whether they       several apps with forums, we observed users discussing highly sen-
+had ever lost or terminated a pregnancy. For most questions, there       sitive topics, including past abortions and intimate details about
+was an option to skip and not disclose—however, it used gray text,      their families. Despite this, only 3/20 apps proactively presented
+which is a typical indication that an option is disabled (see Fig. 1c).     any in-app community guidelines or privacy notices to users before
+Lastly, most apps (13/20) had at least one type of push notification      they could start using these forums. We also observed that in 2/20
+enabled by default, and only three apps proactively encouraged the      apps, forum contributions were either available on the web plat-
+user to review their notification settings during onboarding. Half      form, or could be accessed by third-party search engines and APIs.
+of the apps facilitated customisation of the timing, frequency, and      This was not communicated clearly through the interface, meaning
+message of notifications, allowing the user to configure discreet      that users could assume that their posts would only be visible to
+and manageable push notifications.                                   other app users.
+
+                                                                                  4.3.4  Data Deletion. We found that 14/20 apps contained an ac-
+                                                                count or data deletion mechanism, typically available in the user’s
+4.3.2  Privacy Controls. Only 7/20 apps implemented granular pri-
+                                                                            settings or profile screen. However, the option was not always intu-
+vacy controls that allowed the tailoring of specific privacy prefer-
+                                                                                  itively located: in two apps, the data deletion and export operations
+ences (see Fig. 2a). These controls were either proactively presented
+                                                           were collapsed under a section titled “Legal”. Apps typically com-to users during the initial onboarding process (5/20), or were avail-
+                                                               municated the effects of deletion operations in terms of permanence
+able in the user’s privacy settings (2/20). However, many of these
+                                                            and reversibility through a warning pop-up, and the outcome of us-
+privacy controls had low usability, making it difficult for users to
+                                                                     ing the operations was typically consistent with what was commu-
+meaningfully engage with their own privacy settings. For instance,
+                                                                          nicated. However, in apps with forums, there was no indication of
+controls for opting out of third-party vendors were often presented
+                                                              whether users’ forum contributions would be deleted, anonymised,
+as lists that were long and complex to read and understand (see Fig.
+                                                                     or aggregated, and in one app, the user’s forum account (which was
+2b). Non-essential data processing was often enabled by default,
+                                                            powered by a third-party provider) was not deleted even when their
+with unclear or complex opt-out mechanisms, and privacy control
+                                                            app account was deleted. By inspecting the deletion practices of the
+screens were often only accessible through unintuitive interactions.
+                                                               apps in our sample, we identified three overarching techniques for
+For example, related privacy options could be set in multiple lo-
+                                                                  account and data deletion, which differed in terms of data retention
+cations within the same app, allowing users to set contradictory
+                                                           and recoverability:
+preferences—e.g., a user could consent to data sharing with a per-
+sonalised ad vendor but opt out of personalised advertising on a      — Account only. Four apps only contained a delete account
+different screen. Furthermore, in two apps, each consent clause              function, only available for registered users. This mechanism
+had a single toggle slider labelled Consent, which was disabled by             cleared the app of profile data but could retain some period
+default. However, other clauses had an additional slider labelled             or pregnancy tracking data, and allowed the user to continue
+Legitimate Interest—in all cases, this toggle was enabled by default            using the app in unregistered mode (see Fig. 4a).
+(see Fig. 2c). While the legal definition of a Legitimate Interest was      — Separate options for account and data deletion. Four
+made available to the user if they tapped the question mark icon,           apps implemented a delete data button available to all users
+
+=== PDF PAGE 11 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+
+                         Figure 1: Examples of app onboarding screens and consent mechanisms.
+                                                                                                                                                                                                                            .
+
+
+
+
+
+(a) Bundled consent mechanism forcing             (b) Call to account registration and data              (c) Onboarding questionnaire with a
+the user to accept (App #13).                   back-up (App #11).                             grayed-out skip link (App #6).
+
+
+                                Figure 2: Examples of app privacy controls and settings.
+
+
+
+
+
+(a) Screen for opting out of targeted ad-            (b) List of third-party vendors with              (c) Consent mechanism with double tog-
+vertising and analytics (App #5).                 search and filter options (App #4).                 gle sliders (App #1).
+
+=== PDF PAGE 12 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+
+      Figure 3: Examples of in-app data collection: symptom tracking, physician’s details, and pregnancy cancellation.
+
+
+
+
+
+(a) Example screen for tracking symp-             (b) Example screen for entering doctor’s              (c) Pregnancy cancellation screen: the
+toms, menstrual flow, and sexual activ-         appointments and physician name and          user is required to enter the date of ter-
+ity (App #19).                                      speciality (App #11).                          mination to proceed (App #10).
+
+
+       as well as a delete account button that was only available to      data (e.g., recent menstrual cycle dates). Moreover, three apps made
+       registered users. The delete data button removed all data from      the PDF “health report” feature available for premium users only,
+      the device and logged the user out if they were registered.     and implemented no free mechanism for data portability. Lastly,
+      However, when the user re-opened the app, they could log      incompatible data export formats made it challenging to transfer
+      back in with all data re-imported into the device. To delete      data across different apps. Only two apps provided an option to
+         all data from the device and the cloud, users needed to select      import data; this feature was often difficult to use due to poor in-
+      an additional delete account button (see Fig. 4b).                  teroperability across apps. For example, one app allowed users to
+  — Full deletion. Six apps contained a single delete data option      import data as a .AMC file, but no other apps allowed data to be
+      which triggered full and irreversible deletion of account and      exported in this format.
+      tracking data (see Fig. 4c).
+   In addition to account and/or data deletion buttons, pregnancy-    5  DISCUSSION
+tracking apps contained an option which allowed users to stop     Our work is the first in the FemTech space to combine a thematic
+tracking their pregnancy. The workflow of this option sometimes       analysis of Data safety sections and privacy policies with a privacy-
+mirrored that of the data deletion operation. For instance, two      focused usability inspection of female mHealth apps. Our work
+apps had identical post-action pop-up messages for the ‘data delete’      constitutes the most detailed analysis to date, and raises design
+and ‘stop pregnancy-tracking’ options. We found that 8/20 apps     and policy considerations for future work in the FemTech privacy
+encouraged or required the user to input a reason for stopping       space. We now summarise how our findings compare to and extend
+their pregnancy tracking, which included the termination or loss      previous work, before discussing some of the key implications of
+of the pregnancy. Concerningly, three apps required users to input      our study post-Roe.
+the date on which they miscarried or terminated their pregnancy
+before they could reset the app without providing a reason as to     5.1  Comparison with Prior Work
+why this declaration was necessary (see Fig. 3c).
+                                                                         Overall, the privacy policies in our sample were not well-tailored
+4.3.5  Data Portability. Only 8/20 apps provided an in-app mecha-      to the FemTech genre, and they did not address the unique privacy
+nism for exporting data into a human or machine-readable format.      landscape of this domain. Consistent with past work [2, 29, 85],
+However, even when data could be exported, it was usually in-     app privacy policies were often excessively long, and used complex,
+complete, and only contained a small selection of the user’s health      ambiguous, and technical language which limited comprehension
+
+=== PDF PAGE 13 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+
+         Figure 4: Examples of data deletion mechanisms with different conventions for data vs. account deletion.
+
+
+
+
+
+(a) Account only: deleting the user’s             (b) Separate options: deleting tracked              (c) Full deletion: single option triggers
+profile—tracked data remains in the app          data—user must select another option            full and irreversible account and data
+(App #11).                                        to delete their account (App #15).                 deletion (App #4).
+
+
+of the developers’ data practices. Many privacy policies covered      advertisers and being subject to deletion and access requests. We
+multiple apps, websites, or services by the same developer, many of       also identified a lack of meaningful consent options offered to users,
+which were unrelated to female health (e.g., games, fitness), framing    who must accept invasive privacy practices as a pre-condition for
+reproductive health data as a routine piece of data as opposed to data      using the app—an issue which has persisted over time across the
+with the potential to stigmatise or criminalise users [85]. Indeed,     app ecosystem [2, 60, 72].
+many of the practices we identified, such as using personal data for        Amidst the very real risk of user data being turned over to author-
+cross-platform behavioural analytics and advertising [9], sharing         ities, recent work suggests that users feel more at ease with period-
+data with law enforcement if necessary [22, 98], non-responses      tracking apps that are based in the EU and subject to GDPR [22].
+to Do Not Track (DNT) signals [101], and issues related to poor     However, this may be a misconception, as our analysis revealed
+readability and historical privacy policy versions being difficult to       that EU-based apps could still transfer user data to third-party pro-
+find [65] are common among privacy policies outside of mHealth       cessors based in the US, or to countries where fewer data protection
+apps, and among other systems such as websites and IoT devices.      regulations apply. With respect to this work, despite conducting
+With the exception of few apps that implemented anonymity and      a similar study on female mHealth app privacy post-Roe, Dong et
+privacy-enhancing features, we found limited evidence that female         al. [22] focused on a more constrained set of data collection and legal
+mHealth apps implemented better privacy protections than other       practices, without addressing data safeguarding and privacy rights
+types of apps, despite the recent overturning of Roe v. Wade.          such as data deletion, data portability, and user consent. Therefore,
+   In line with prior work in the FemTech space, we found that      while our analysis would agree with their finding that privacy poli-
+female mHealth apps collected (and sometimes required) very inti-      cies provide an overwhelmingly comprehensive overview of the
+mate health data to be entered in combination with uniquely identi-      types of data collected by apps, we identified a wide spectrum of
+fying information [2, 3, 30, 85], raising the risk of de-anonymisation      privacy issues, and demonstrated the safety implications of these is-
+and criminalisation [22]. Though prior work has highlighted that      sues post-Roe. In particular, we identify more disconnects between
+period-tracking apps collect behavioural data such as clickpaths     what is stated in privacy policies and implemented in the app UI
+and searches [2, 30], we additionally demonstrated that this data      with respect to data retention, deletion, portability and opt-out
+could be used to infer pregnancy or intent to have an abortion, and      mechanisms. We discuss these issues in the coming sections.
+is not yet afforded the same protections as sensitive data entered
+directly into the app, such as not being shared with third-party
+
+=== PDF PAGE 14 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+5.2  Disconnects and Inconsistencies Between         As per our privacy policy analysis, we identified widespread
+     Privacy Policies and Data Safety Sections        and covert behavioural tracking, which allowed developers to cre-
+                                                                         ate sensitive information about users as well as collect it directly,A key finding of our analysis was the presence of inconsistent and
+                                                                through combination and inferential analysis. While prior research
+conflicting information across privacy policies, Data safety sections,
+                                                         shows how tracking for advertising purposes is persistent across
+and app interfaces. In particular, we identified disconnects surround-
+                                                                 mobile app ecosystems [9], the risk these practices present is more
+ing stated mechanisms for data deletion that were not implemented
+                                                            pronounced here due to the potential misuse of this data to harm
+in the app, and found undisclosed instances of sharing user data
+                                                                                           its users. Third parties combining multiple data points invite com-
+with third parties (see §4.1). However, rather than assuming delib-
+                                                                               plexities with regards to data ownership as it becomes increasingly
+erate intent to mislead users, these disconnects could be linked to
+                                                                        abstracted, aggregated, and interpreted by networks of third par-
+the conventions of the Data safety section. For example, there exist
+                                                                                        ties. Indeed, we found no clear mechanisms for users to discover
+several exceptions which allow app developers to omit certain data
+                                                            which inferences an app had made about them, and privacy policies
+practices when filling out a Data safety form, including practices
+                                                                  implied that GDPR data access, deletion, and portability requests
+related to data which is anonymised, shared with the explicit con-
+                                                                    applied only to data collected directly from users. Therefore, we
+sent of users, or shared for legal purposes [35]. These exemptions
+                                                      recommend greater transparency and customisability surround-
+might have resulted in key data practices not being disclosed in
+                                                                    ing the inferences made about users. Users’ privacy settings could
+the Data safety section, such as the sharing of user data with law
+                                                                    contain options to remove inferences, control what data is used to
+enforcement. While discrepancies in the Data safety section are not
+                                                                       create inferences, or opt out of the practice altogether. Sensitive
+unique to female mHealth apps [92], misleading declarations are
+                                                          app interactions, defined as those with the potential to uncover
+particularly consequential around these apps due to the sensitive
+                                                                         high-risk activities in isolation or combined with other data points,
+nature of the data they are processing. Inaccurate or ambiguous
+                                                                 should either not be stored or be afforded the same protections as
+information surrounding data practices makes it difficult for users
+                                                                    data collected directly from the user.
+to properly evaluate their risk level.
+   Previous studies have identified that app developers view the im-
+plementation and documentation of privacy practices as a challeng-     5.4  Cascading Consent and Changing Privacy
+ing legal requirement [57, 58], and that limited resources and small          Policies
+development teams can contribute to the use of boiler-plate tem-
+                                                      Our analysis revealed several problematic practices surrounding
+plates for privacy policies [85]. We observed this practice through-
+                                                                  user consent. As we discussed, data collection, processing, and
+out our study, since many developers in our sample appeared to be
+                                                                  sharing practices of female mHealth apps were extensive, and in-
+small businesses which did not specialise in female health. There-
+                                                                 cluded the transfer of user data to organisations and third parties
+fore, we identify a need for future work which explores how female
+                                                         which were at liberty to share the data even further as per their
+mHealth app developers perceive, document, and implement pri-
+                                                                   privacy policies; a phenomenon to which we refer to as cascadingvacy practices. At a minimum, future work should explore how
+                                                                            consent. As the number of third-party recipients of user data grows,simplifying the expectations and regulations surrounding Data
+                                                                                                   it becomes necessary for the user’s consent to “cascade” to more
+safety forms may support developers in more accurately reporting
+                                                           and more unfamiliar data transmission contexts, making it impos-
+their privacy practices on the Google Play Store, to avoid misleading
+                                                                                sible for users to imagine the ecosystems through which their data
+users about activities with safety implications.
+                                                                   flows [71]. While not unique to female mHealth apps [77], these
+                                                                        practices make it difficult for users to evaluate the risks posed by
+                                                                apps within the context of reproductive rights. Hence, granular and
+5.3  FemTech as a Vehicle for Intimate                                                                       better-designed consent workflows are required in female mHealth
+     Surveillance                                              apps, as existing mechanisms either offered too few options, or
+Consistent with prior work, we found that the data collection     were too complex. As an initial step, we recommend prioritisation
+practices of female mHealth apps were extensive, capturing users’      in privacy controls, with designs placing greater emphasis on data
+health, lifestyles and sexual activities [3, 64, 85]. Even when enter-      practices which could implicate the user’s personal safety (e.g.,
+ing intimate data was optional, many apps placed features which      disclosing reproductive health data to third parties). This could
+meaningfully tracked or analysed these data points behind a pay-     be achieved through implementing a preview of privacy options
+wall. This introduced an asymmetry, in that users disclosed sensitive     deemed the most important, with an option to expand and tailor
+data that apps could freely re-use for commercial purposes, but       less essential ones.
+were artificially restricted from features allowing them to bene-        Furthermore, updates to privacy policies over time can weaken
+fit materially from their own data. However, we observed many      consent if users are not made aware of changes in a timely fashion
+cases where users had no choice but to relinquish data. Dark pat-       [72]. Most policies stated that the terms could change unilaterally
+terns such as not indicating that form fields were optional—were       in the future, and implied that users were responsible for regularly
+simple yet consequential design manipulations increasing data dis-      checking for updates; a significant burden, since no policy contained
+closure. Alarmingly, some pregnancy-tracking apps required users      a summary of changes, and past versions of the policy were rarely
+to indicate whether they had miscarried or had an abortion before       available. We underscore the importance of proactively informing
+disabling pregnancy mode, a practice with dire safety implications      users of changes to the privacy policy, and providing an accessible
+should a data breach occur.                                    and prominent summary of the changes in every version to aid
+
+=== PDF PAGE 15 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+user’s decision-making processes. However, users’ dependency on     5.6  Beyond Privacy: User Safety in a Post-Roe
+a period-tracking app can be expected to grow over time as they in-        World
+creasingly rely on the technology to track their reproductive health
+                                                        As discussed extensively in prior work [64, 80, 81], female mHealth
+[17, 85], and generate historical data which is necessary for accu-
+                                                             apps collect and process highly sensitive data which could impli-
+rate predictions [21]. In such scenarios, users may feel coerced into
+                                                                      cate not only users, but also their medical providers in contexts
+accepting an updated privacy policy containing concerning privacy
+                                                          where abortion is criminalised. This data not only has privacy im-
+practices as an alternative to losing their past data if mechanisms
+                                                                         plications but also physical safety risks, in contrast to other app
+for data portability are poor, as we discuss in the following section.
+                                                                        genres. Discrimination, stigmatisation, blackmail, and physical vio-
+                                                                     lence are among some of the worst consequences of mismanaged
+                                                                   female mHealth app data (e.g., data breaches or incorrect inferences)
+                                                                       that women may face in precarious political and social contexts
+                                                                                     [3, 19, 22, 64, 81]. Our analysis suggests that the privacy practices
+5.5  Data Retention, Deletion, and Portability Go       of female mHealth apps are not tailored to or commensurate with
+    Hand-in-Hand                                            the unique safety risks posed by these technologies in a post-Roe v.
+                                                   Wade world.
+The right to be forgotten is vital for users to maintain control over
+                                                                    Despite these flaws, we identified some good practices among
+their digital footprint. However, in many apps, this was under-
+                                                                     the apps in our sample, such as explicitly addressing the sensitivity
+mined by design flaws, ambiguous language, and conflating key
+                                                                          of menstrual data in light of the overturning of Roe v. Wade, and/or
+terms such as ‘erase’ and ‘delete’ despite technical and legal differ-
+                                                           making efforts to safeguard users against legal threats. For example,
+ences between these two operations [37]. Data erasure typically
+                                                            one app (Flo) implemented a dedicated Anonymous Mode following
+refers to removing all copies of data such that it is no longer re-
+                                                                   the overturning of Roe v. Wade, which provided users with the
+coverable, whereas deletion only removes a copy; conflating these
+                                                                 option to use the app without any identifiable information being
+two terminologies could contribute to users developing inaccurate
+                                                                       stored [40], and another (Stardust) explicitly anonymised any stored
+mental models of deletion operations [37]. Furthermore, app inter-
+                                                                    health data so it could not be linked to individuals [88]. However,
+faces and privacy policies lacked transparency around the retention
+                                                         on balance, we found that these measures have not been expanded
+policies which applied to data deletion mechanisms, making it un-
+                                                                         to the wider female mHealth app ecosystem, which largely frames
+clear as to whether data would be immediately erased, or kept in
+                                                                    data as a physical asset to be secured, as opposed to meaningfully
+a recoverable form for a set time period after users deleted their
+                                                                   safeguarding the individuals from whom data was collected. Simi-
+data and/or account. Notably, two policies stated that data could be
+                                                                                         larly, all of the apps that implemented protective measures after the
+kept for an additional three years after the app was deleted from a                                                                    overturning of Roe v. Wade were period- and fertility-tracking apps,
+user’s device (see §4.2.6)—highlighting flaws in the assumption that
+                                                                        despite pregnancy-tracking apps collecting pregnancy termination
+deleting a period-tracking app immediately protects users from
+                                                                     history and dates, suggesting that this category of app requires
+criminalisation or other related risks [32, 41].
+                                                                       greater scrutiny.
+   Furthermore, we observed complexities in how data deletion was
+                                                                Female mHealth apps currently sit at the intersection of health,
+implemented within apps: six apps offered no in-app mechanism
+                                                                       gender, and policy, and support women who experience barriers to
+for deletion altogether (with contacting the developer being the
+                                                                    accessing reproductive healthcare [3]. Yet, users find themselves
+only way to request deletion), and others implemented a patchwork
+                                                               caught in a patchwork of opaque and invasive privacy practices,
+of account and data deletion operations with different behaviours
+                                                               with app discontinuation the only viable mechanism for meaning-
+and privacy implications (see §4.3.4). While a single mechanism
+                                                                             fully withdrawing consent. The dependence of many women on
+for account deletion that automatically triggers full data deletion is
+                                                                    these apps, paired with the increasingly risky political climates
+simpler, some users may wish to delete their health data while re-
+                                                                        in which they now live, warrants a greater degree of stewardship
+taining their accounts or profiles, or may wish to recover their data
+                                                                   over the safety of users, and innovation around how we may over-
+in the future. This trade-off between simplicity and recoverability
+                                                       come the dominant model of “notice and consent”, which currently
+must be considered by designers who wish to engineer usable data
+                                                                       places a disproportionate privacy burden on users [72, 75]. Future
+deletion in their apps.
+                                                              development efforts should include greater involvement of at-risk
+   Lastly, we identified limited options for data portability within
+                                                                     users through participatory threat modelling, to unveil population-
+the apps in our sample. Options to export data were often hidden be-
+                                                                            specific privacy concerns that may otherwise be overlooked by
+hind paywalls, or only supported partial exportation. As discussed
+                                                                   designers [62, 86]. Keeping with principles of universal design,
+in §5.4, data portability is important for app users who require
+                                                                      these shifts could precipitate improvements across wider categories
+historical data to support period and ovulation predictions, should
+                                                                         of apps which process sensitive data, including fitness and mental
+they wish to discontinue or switch apps due to privacy concerns
+                                                                     health apps [72].
+[32]. As a result, female mHealth apps should provide an in-app
+mechanism for exporting all data free-of-charge, and better support
+interoperability across the app ecosystem. Users should also be
+presented with an option to download a copy of their data before
+proceeding with account or data deletion (e.g., in a confirmation
+pop-up), should they wish to resume period tracking in the future.
+
+=== PDF PAGE 16 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+6  LIMITATIONS & FUTURE WORK          ACKNOWLEDGMENTS
+We acknowledge limitations in our study. Firstly, we only included      This research was supported in part by an unrestricted gift from
+apps available in Google Play in our analysis, to reflect more wide-      Google.
+spread use of Android devices worldwide. However, there are pri-
+vacy and security differences across the iOS and Android operating
+                                      REFERENCESsystems [51, 52], making future work which includes popular iOS
+                                                                                                   [1] Ruba Abu-Salma, Kat Krol, Simon Parkin, Victoria Koh, Kevin Kwan, Jazib
+apps on the Apple App Store valuable. Similarly, while manually            Mahboob, Zahra Traboulsi, and M. Angela Sasse. 2017. The Security Blanket
+analysing privacy policies allowed us to conduct a more grounded               of the Chat World: An Analytic Evaluation and a User Study of Telegram. In
+and in-depth investigation into app privacy practices, future work               Proceedings 2nd European Workshop on Usable Security (EuroUSEC’17) (April 29,
+                                                                                                 2017, Paris, France). Internet Society.  https://doi.org/10.14722/eurousec.2017.
+could upscale our approach, using our codebook to automate the             23006
+analysis of a larger set of privacy policies, and conduct quantita-           [2] Najd Alfawzan, Markus Christen, Giovanni Spitale, and Nikola Biller-Andorno.
+tive linguistic analysis to produce metrics for policy readability              2022. Privacy, Data Sharing, and Data Security Policies of Women’s mHealth
+                                                                                      Apps: Scoping Review and Content Analysis. JMIR mHealth and uHealth 10, 5
+and complexity [85]. This could also support longitudinal analysis            (May 2022), e33735.  https://doi.org/10.2196/33735
+that tracks changes in privacy policies over time, and comparisons           [3] Teresa Almeida, Laura Shipp, Maryam Mehrnezhad, and Ehsan Toreini. 2022.
+                                                                                            Bodies Like Yours: Enquiring Data Privacy in FemTech. In Adjunct Proceedings of
+across different categories of female mHealth apps, as our analysis                                                                                                     the 2022 Nordic Human-Computer Interaction Conference (NordiCHI ’22) (October
+revealed invasive practices in pregnancy apps, such as requesting             8 - 12, 2022, Aarhus, Denmark). ACM, New York, NY, USA, 1–5.  https://doi.
+the date of a termination.                                                               org/10.1145/3547522.3547674
+                                                                                                   [4] Noura Alomar and Serge Egelman. 2022. Developers Say the Darnedest Things:
+   Furthermore, our usability inspection was conducted by the re-              Privacy Compliance Processes Followed by Developers of Child-Directed Apps.
+search team and did not involve the direct input of users. Therefore,              Proceedings on Privacy Enhancing Technologies (PoPETs) 2022, 4 (2022), 250–273.
+our analysis did not perfectly mirror typical daily usage, which              https://petsymposium.org/popets/2022/popets-2022-0108.php
+                                                                                                   [5] Apple. 2023. Privacy Labels - Apple. https://www.apple.com/uk/privacy/labels/
+may have uncovered design flaws that could emerge from regular           [6] Oshrat Ayalon, Sophie Li, Bart Preneel, and Elissa M. Redmiles. 2023. Not
+long-term app use. In future work, we plan to conduct a user study,            Only for Contact Tracing: Use of Belgium’s Contact Tracing App among Young
+                                                                                                  Adults. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+to understand the privacy perceptions and mental models of female                                                                                                   Technologies (IMWUT) 6, 4, Article 202 (Jan. 2023), 26 pages.  https://doi.org/10.
+mHealth app users. We also plan to conduct a follow-up interview             1145/3570348
+study with female mHealth app developers to understand the im-           [7] Oshrat Ayalon, Dana Turjeman, and Elissa M. Redmiles. 2023. Exploring Privacy
+                                                                                   and Incentives Considerations in Adoption of COVID-19 Contact Tracing Apps.
+pact of the overturning of Roe v. Wade on operational practices, as              In 32nd USENIX Security Symposium (USENIX Security 23) (August 9–11, 2023,
+well as challenges associated with navigating privacy legislation            Anaheim, CA, USA). USENIX Association, USA, 517–534.  https://www.usenix.
+when considering the sensitive nature of female health data [93].              org/conference/usenixsecurity23/presentation/ayalon
+                                                                                                   [8] Susanne Barth, Dan Ionita, and Pieter Hartel. 2022. Understanding Online
+We will also further investigate whether developers write their own            Privacy—A Systematic Review of Privacy Visualizations and Privacy by Design
+app privacy policies and, if not, to whom they delegate this task [4],              Guidelines. ACM Comput. Surv. 55, 3, Article 63 (Feb. 2022), 37 pages.  https:
+                                                                                                 //doi.org/10.1145/3502288
+given the inconsistencies we identified between the information de-           [9] Reuben Binns, Ulrik Lyngs, Max Van Kleek, Jun Zhao, Timothy Libert, and Nigel
+clared in the Data safety sections (see Table 1) and privacy policies.              Shadbolt. 2018. Third Party Tracking in the Mobile Ecosystem. In Proceedings
+Lastly, legal specialists were not formally involved in the research.               of the 10th ACM Conference on Web Science (WebSci ’18’) (May 27–30, 2018,
+                                                                                        Amsterdan, Netherlands,). ACM, New York, NY, USA, 23–31.  https://doi.org/10.
+Given many legal nuances in our findings, future work should con-             1145/3201064.3201089
+sult legal specialists to consider how different geographic locations         [10] Claudia Bischoff, Eva Gerlitz, and Matthew Smith. 2020. Vision: I Don’t Want to
+of app developers or servers and their corresponding jurisdictions            Use My Phone! A Cognitive Walkthrough for YubiKeys. In 2020 IEEE European
+                                                                               Symposium on Security and Privacy Workshops (EuroS&PW) (September 7 - 11,
+could implicate users.                                                                        2020, Genoa, Italy). IEEE, New York, NY, USA, 160–165.  https://doi.org/10.1109/
+                                                                                      EuroSPW51379.2020.00029
+                                                                                              [11] Marilyn Hughes Blackmon, Peter G. Polson, Muneo Kitajima, and Clayton
+7  CONCLUSION                                                                 Lewis. 2002. Cognitive Walkthrough for the Web. In Proceedings of the SIGCHI
+                                                                                               Conference on Human Factors in Computing Systems (CHI’02) (April 20 - 25, 2002,
+In this work, we explored the privacy practices of female mHealth              Minneapolis, Minnesota, USA). ACM, New York, NY, USA, 463–470.  https:
+apps, with an emphasis on how intimate user data is collected,              //doi.org/10.1145/503376.503459
+                                                                                              [12] Jasmine Bowers, Bradley Reaves, Imani N. Sherman, Patrick Traynor, and
+shared, stored, and safeguarded by developers and third-parties in             Kevin Butler. 2017.  Regulators, Mount Up! Analysis of Privacy Policies for
+a post-Roe world, and the data rights offered to users. Through an             Mobile Money Services. In Thirteenth Symposium on Usable Privacy and Se-
+in-depth, comparative analysis of the Data safety sections, privacy               curity (SOUPS 2017). (July 12–14, 2017, Santa Clara, CA). USENIX Associa-
+                                                                                                             tion, USA, 97–114.  https://www.usenix.org/conference/soups2017/technical-
+policies, and interfaces of 20 popular apps, we uncovered several              sessions/presentation/bowers
+inconsistencies, as well as problematic privacy practices which saw         [13] British Pregnancy Advisory Service (BPAS). 2012. Britain’s Abortion Law. https:
+                                                                                             //www.bpas.org/get-involved/campaigns/briefings/abortion-law/
+data transmitted through complex chains of third-parties. We also         [14] Elizabeth Brown. 2021. The Femtech Paradox: How Workplace Monitoring
+identified substantial shortcomings in the design of female mHealth              Threatens Women’s Equity. Jurimetrics 61, 3 (2021), 289–329. https://heinonline.
+app interfaces, including a lack of granular consent, inconsistent             org/HOL/LandingPage?handle=hein.journals/juraba61&div=18&id=&page=
+                                                                                              [15] Ann Cavoukian. 2012. Privacy by Design [Leading Edge]. IEEE Technology and
+mechanisms for data deletion and portability, and dark patterns               Society Magazine 31, 4 (Dec. 2012), 18–19.  https://doi.org/10.1109/mts.2012.
+which coerced users into entering sensitive data. Our work demon-             2225459
+strates how intersections of gender, technology, and policy can         [16] Google Help Center. [n. d.]. Provide Information for Google Play’s Data safety
+                                                                                                             section.  https://support.google.com/googleplay/android-developer/answer/
+configure unique risks to female mHealth app users in a post-Roe             10787469?hl=en
+world, and we provide recommendations and avenues for future         [17] Mayara Costa Figueiredo, Thu Huynh, Anna Takei, Daniel A Epstein, and
+                                                                            Yunan Chen. 2021. Goals, Life Events, and Transitions: Examining Fertility
+inquiry that promote a humanistic and safety-conscious approach           Apps for Holistic Health Tracking. JAMIA Open 4, 1 (Mar. 2021), ooab013.
+to developing health technologies.                                                     https://doi.org/10.1093/jamiaopen/ooab013
+
+=== PDF PAGE 17 ===
+Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World                                          CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+
+ [18] David Cox. 2022. How Overturning Roe v Wade has Eroded Privacy of Personal         [37] Andreas Gutmann and Mark Warner. 2019. Fight to be Forgotten: Exploring the
+      Data. BMJ (Aug. 2022), 378:o2075.  https://doi.org/10.1136/bmj.o2075                        Efficacy of Data Erasure in Popular Operating Systems. In 7th Annual Privacy
+ [19] Mary Crossley. 2005. Discrimination Against the Unhealthy in Health Insurance.            Forum (APF ’19) (June 13–14, 2019, Rome, Italy). Springer, New York, NY, USA,
+      Kansas Law Review 54 (Jul. 2005), 73. https://papers.ssrn.com/sol3/papers.cfm?              45–58.
+      abstract_id=1167043                                                                   [38] Hana Habib, Sarah Pearman, Jiamin Wang, Yixin Zou, Alessandro Acquisti,
+ [20] No Body’s Business But Mine: How Menstruation Apps Are Sharing Your Data.               Lorrie Faith Cranor, Norman Sadeh, and Florian Schaub. 2020. "It’s a Scavenger
+       2020. Privacy International. https://privacyinternational.org/long-read/3196/no-              Hunt": Usability of Websites’ Opt-Out and Data Deletion Choices. In Proceedings
+      bodys-business-mine-how-menstruations-apps-are-sharing-your-data                       of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20)
+ [21] Anne A. H. de Hond, Artuur M. Leeuwenberg, Lotty Hooft, Ilse M. J. Kant, Steven               (April 25 - 30, 2020, Honolulu, HI, USA). ACM, New York, NY, USA, 1–12.
+     W. J. Nijman, Hendrikus J. A. van Os, Jiska J. Aardoom, Thomas P. A. Debray,              https://doi.org/10.1145/3313831.3376511
+     Ewoud Schuit, Maarten van Smeden, Johannes B. Reitsma, Ewout W. Steyerberg,         [39] Hana Habib, Yixin Zou, Aditi Jannu, Neha Sridhar, Chelse Swoopes, Alessandro
+      Niels H. Chavannes, and Karel G. M. Moons. 2022. Guidelines and Quality               Acquisti, Lorrie Faith Cranor, Norman Sadeh, and Florian Schaub. 2019. An
+       Criteria for Artificial Intelligence-based Prediction Models in Healthcare: A              Empirical Analysis of Data Deletion and Opt-out Choices on 150 Websites. In
+      Scoping Review. NPJ Digital Medicine 5, 1 (Jan. 2022), 2.  https://doi.org/10.              Proceedings of the Fifteenth USENIX Conference on Usable Privacy and Security
+      1038/s41746-021-00549-7                                                             (SOUPS’19) (August 12 - 13, 2019, Santa Clara, CA, USA). USENIX Association,
+ [22] Zikan Dong, Liu Wang, Hao Xie, Guoai Xu, and Haoyu Wang. 2022. Privacy            USA, 387–406.
+      Analysis of Period Tracking Mobile Apps in the Post-Roe v. Wade Era. In 37th         [40] Flo Health. [n. d.]. Anonymous Mode FAQ.  https://flo.health/privacy-portal/
+     IEEE/ACM International Conference on Automated Software Engineering (ASE            anonymous-mode-faq
+       ’22) (October 10 - 14, 2022, Rochester, MI, USA). ACM, New York, NY, USA, 1–6.         [41] Kashmir Hill. 2023. Deleting Your Period Tracker Won’t Protect You. https://www.
+      https://doi.org/10.1145/3551349.3561343                                                  nytimes.com/2022/06/30/technology/period-tracker-privacy-abortion.html
+ [23] Samuel Dooley, Dana Turjeman, John P Dickerson, and Elissa M. Redmiles.         [42] Kevin K.W. Ho, Dickson K. W. Chiu, and Kristina C. L. Sayama. 2023. When
+      2022.  Field Evidence of the Effects of Privacy, Data Transparency, and Pro-              Privacy, Distrust, and Misinformation Cause Worry About Using COVID-19
+       Social Appeals on COVID-19 App Attractiveness. In Proceedings of the 2022 CHI             Contact-Tracing Apps. IEEE Internet Computing (Jan. 2023), 1–7.  https://doi.
+      Conference on Human Factors in Computing Systems (CHI’22) (April 29 - May 5              org/10.1109/mic.2022.3225568
+      2022, New Orleans, LA, USA). ACM, New York, NY, USA, Article 622, 21 pages.         [43] Tasha Hollingsed and David G. Novick. 2007. Usability Inspection Methods
+      https://doi.org/10.1145/3491102.3501869                                                         after 15 Years of Research and Practice. In Proceedings of the 25th Annual ACM
+ [24] Sarah Earle, Hannah R Marston, Robin Hadley, and Duncan Banks. 2021. Use of               International Conference on Design of Communication (SIGDOC’07) (October 22
+      Menstruation and Fertility App Trackers: A Scoping Review of the Evidence.                 - 24, 2007, El Paso, Texas, USA). ACM, New York, NY, USA, 249–255.  https:
+     BMJ Sexual & Reproductive Health 47, 2 (Apr. 2021), 90–101.  https://doi.org/10.              //doi.org/10.1145/1297144.1297200
+      1136/bmjsrh-2019-200488                                                             [44] Yue Huang, Borke Obada-Obieh, Elissa M. Redmiles, Satya Lokam, and Kon-
+ [25] Fahimeh Ebrahimi and Anas Mahmoud. 2022. Unsupervised Summarization of               stantin Beznosov. 2022. COVID-19 Information-Tracking Solutions: A Qual-
+      Privacy Concerns in Mobile Application Reviews. In 37th IEEE/ACM International                itative Investigation of the Factors Influencing People’s Adoption Intention.
+      Conference on Automated Software Engineering (ASE ’22) (October 10 - 14, 2022,              In Proceedings of the 2022 Conference on Human Information Interaction and
+      Rochester, MI, USA). ACM, New York, NY, USA, 1–12.  https://doi.org/10.1145/               Retrieval (CHIIR ’22) (March 14 - 18, 2022, Regensburg, Germany). ACM, New
+      3551349.3561155                                                                          York, NY, USA, 12–24.  https://doi.org/10.1145/3498366.3505756
+ [26] Daniel A. Epstein, Nicole B. Lee, Jennifer H. Kang, Elena Agapie, Jessica         [45] Duha Ibdah, Nada Lachtar, Satya Meenakshi Raparthi, and Anys Bacha. 2021.
+      Schroeder, Laura R. Pina, James Fogarty, Julie A. Kientz, and Sean Munson.          “Why Should I Read the Privacy Policy, I Just Need the Service”: A Study on
+      2017. Examining Menstrual Tracking to Inform the Design of Personal Infor-              Attitudes and Perceptions Toward Privacy Policies. IEEE Access 9 (Nov. 2021),
+      matics Tools. In Proceedings of the 2017 CHI Conference on Human Factors in             166465–166487. https://doi.org/10.1109/access.2021.3130086
+     Computing Systems (CHI ’17) (May 6 - 11, 2017, Denver, Colorado, USA). ACM,         [46] Information Commissioner’s Office (ICO). 2023. ICO to Review Period and
+    New York, NY, USA, 6876–6888.  https://doi.org/10.1145/3025453.3025635                      Fertility Tracking Apps as Poll Shows more than Half of Women are Concerned
+ [27] Jacob Erickson, Jewel Y. Yuzon, and Tamara Bonaci. 2022. What You Do Not               over Data Security. https://ico.org.uk/about-the-ico/media-centre/news-and-
+      Expect When You Are Expecting: Privacy Analysis of Femtech. IEEE Transactions               blogs/2023/09/ico-to-review-period-and-fertility-tracking-apps/
+      on Technology and Society 3, 2 (Jun. 2022), 121–131.  https://doi.org/10.1109/tts.         [47] Gabriel Kaptchuk, Daniel G. Goldstein, Eszter Hargittai, Jake M. Hofman, and
+      2022.3160928                                                                                     Elissa M. Redmiles. 2022. How Good is Good Enough? Quantifying the Impact
+ [28] Carlos Bermejo Fernandez, Tristan Braud, and Pan Hui. 2022. Implementing               of Benefits, Accuracy, and Privacy on Willingness to Adopt COVID-19 Decision
+    GDPR for Mobile and Ubiquitous Computing. In Proceedings of the 23rd Annual              Aids. Digital Threats 3, 3, Article 27 (Mar. 2022), 18 pages.  https://doi.org/10.
+       International Workshop on Mobile Computing Systems and Applications (HotMo-             1145/3488307
+        bile ’22) (March 9 - 10, 2022, Tempe, Arizona). ACM, New York, NY, USA, 88–94.         [48] Claire-Marie Karat, Robert Campbell, and Tarra Fiegel. 1992. Comparison of
+      https://doi.org/10.1145/3508396.3512880                                                 Empirical Testing and Walkthrough Methods in User Interface Evaluation. In
+ [29] Leah R. Fowler, Charlotte Gillard, and Stephanie R. Morain. 2020. Readability              Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+     and Accessibility of Terms of Service and Privacy Policies for Menstruation-              (CHI’92) (May 3 - 7, 1992, Monterey, California, USA). ACM, New York, NY, USA,
+      Tracking Smartphone Applications. Health Promotion Practice 21, 5 (Sept. 2020),             397–404.  https://doi.org/10.1145/142750.142873
+      679–683.  https://doi.org/10.1177/1524839919899924                                   [49] Patrick Gage Kelley, Joanna Bresee, Lorrie Faith Cranor, and Robert W. Reeder.
+ [30] Sarah Fox, Noura Howell, Richmond Wong, and Franchesca Spektor. 2019.              2009. A "Nutrition Label" for Privacy. In Proceedings of the 5th Symposium
+      Vivewell: Speculating Near-Future Menstrual Tracking through Current Data             on Usable Privacy and Security (SOUPS’09) (July 15 - 17, 2009, Mountain View,
+       Practices. In Proceedings of the 2019 on Designing Interactive Systems Conference               California, USA). ACM, New York, NY, USA, Article 4, 12 pages.  https://doi.
+      (DIS ’19) (June 23 - 28, 2019, San Diego, CA, USA). ACM, New York, NY, USA,              org/10.1145/1572532.1572538
+      541–552.  https://doi.org/10.1145/3322276.3323695                                     [50] Konrad Kollnig, Reuben Binns, Max Van Kleek, Ulrik Lyngs, Jun Zhao, Claudine
+ [31] Christian Fuchs and Marianna Obrist. 2010. HCI and Society: Towards a Typol-             Tinsman, and Nigel Shadbolt. 2021. Before and After GDPR: Tracking in Mobile
+     ogy of Universal Design Principles. International Journal of Human–Computer In-            Apps. Internet Policy Review 10, 4 (2021), arXiv:2112.11117. https://doi.org/10.
+       teraction 26, 6 (May 2010), 638–656. https://doi.org/10.1080/10447311003781334              48550/arxiv.2112.11117
+      arXiv:https://doi.org/10.1080/10447311003781334                                      [51] Konrad Kollnig, Anastasia Shuba, Reuben Binns, Max Van Kleek, and Nigel
+ [32] Flora Garamvolgyi. 2022. Why US Women are Deleting their Period Tracking               Shadbolt. 2021. Are iPhones Really Better for Privacy? Comparative Study of iOS
+      Apps. https://www.theguardian.com/world/2022/jun/28/why-us-woman-are-            and Android Apps. In Proceedings on Privacy Enhancing Technologies (PoPETs)
+      deleting-their-period-tracking-apps                                                            (2021), arXiv:2109.13722. https://doi.org/10.48550/arxiv.2109.13722
+ [33] Gdpr.eu. [n. d.]. General Data Protection Regulation (GDPR).  https://gdpr.eu/         [52] Sophia Kununka, Nikolay Mehandjiev, and Pedro Sampaio. 2018. A Comparative
+      tag/gdpr/                                                                         Study of Android and iOS Mobile Applications’ Data Handling Practices Versus
+ [34]  Julia Gomula, Mark Warner, and Ann Blandford. 2024. Women’s Use of Online             Compliance to Privacy Policy. Springer International Publishing, Cham, 301–313.
+      Health and Social Media Resources to Make Sense of Their Polycystic Ovary              https://doi.org/10.1007/978-3-319-92925-5_20
+     Syndrome (PCOS) Diagnosis: A Qualitative Study. BMC Women’s Health (2024),         [53] Bloomberg Law. [n. d.].  California Consumer Privacy Laws.    https://pro.
+      1–13.                                                                                 bloomberglaw.com/brief/california-consumer-privacy-laws-ccpa-cpra/
+ [35] Google. [n. d.]. Provide information for Google Play’s Data safety section.  https:         [54] Natasa Lazarevic, Marie Lecoq, Céline Bœhm, and Corinne Caillaud. 2023. Preg-
+      //support.google.com/googleplay/android-developer/answer/10787469?hl=en-            nancy Apps for Self-Monitoring: Scoping Review of the Most Popular Global
+      GB#zippy=%2Cdata-types%2Cpurposes%2Cdata-collection%2Cdata-sharing             Apps Available in Australia. International Journal of Environmental Research
+ [36] Gov.uk. [n. d.]. Data Protection: The Data Protection Act. https://www.gov.uk/            and Public Health 20, 2 (Jan. 2023), 1012.  https://doi.org/10.3390/ijerph20021012
+      data-protection
+
+=== PDF PAGE 18 ===
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                              Lisa Mekioussa Malki, Ina Kaleva, Dilisha Patel, Mark Warner, and Ruba Abu-Salma
+
+
+
+ [55] Johanna Levy and Nuria Romo-Avilés. 2019. A Good Little Tool to Get to         [76] Lisa Parker, Vanessa Halter, Tanya Karliychuk, and Quinn Grundy. 2019. How
+    Know Yourself a Bit Better”: a Qualitative Study on Users’ Experiences of App-               Private is Your Mental Health App Data? An Empirical Study of Mental Health
+      supported Menstrual Tracking in Europe. BMC Public Health 19, 1 (Dec. 2019),          App Privacy Policies and Practices. International Journal of Law and Psychiatry
+      1213.  https://doi.org/10.1186/s12889-019-7549-8                                       64 (May 2019), 198–204.  https://doi.org/10.1016/j.ijlp.2019.04.002
+ [56] Karen Levy. 2015. Intimate Surveillance. Idaho Law Review 51, 3 (Sep. 2015).         [77] Jennifer Pybus and Mark Coté. 2022. Did You Give Permission? Datafication
+      https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2834354                                in the Mobile Ecosystem. Information, Communication & Society 25, 11 (2022),
+ [57] Tianshi Li, Elizabeth Louie, Laura Dabbish, and Jason I. Hong. 2021. How             1650–1668.
+      Developers Talk About Personal Data and What It Means for User Privacy:         [78] Kopo Marvin Ramokapane, Awais Rashid, and Jose Miguel Such. 2017.  “I
+    A Case Study of a Developer Forum on Reddit.  Proceedings of the ACM on                feel stupid I can’t delete...”: A Study of Users’ Cloud Deletion Practices and
+     Human-Computer Interaction 4, CSCW, Article 220, 28 pages.  https://doi.org/10.            Coping Strategies. In Proceedings of the Thirteenth Symposium on Usable Privacy
+      1145/3432919                                                                and Security (SOUPS 2017) (July 12–14, 2017, Santa Clara, CA, USA). USENIX
+ [58] Tianshi Li, Kayla Reiman, Yuvraj Agarwal, Lorrie Faith Cranor, and Jason I.              Association, USA, 241–256.  https://www.usenix.org/conference/soups2017/
+     Hong. 2022.  Understanding Challenges for Developers to Create Accurate              technical-sessions/presentation/ramokapane
+      Privacy Nutrition Labels. In Proceedings of the 2022 CHI Conference on Human         [79] Joel R. Reidenberg, Travis Breaux, Lorrie Faith Cranor, Brian French, Amanda
+       Factors in Computing Systems (CHI’22) (April 29 - May 5, 2022, New Orleans,              Grannis, James Graves, Fei Liu, Aleecia McDonald, Thomas Norton, Rohan
+      LA, USA). ACM, New York, NY, USA, Article 588, 24 pages.  https://doi.org/10.            Ramanath, N. Cameron Russell, Norman Sadeh, and Florian Schaub. 2014. Dis-
+      1145/3491102.3502012                                                                  agreeable Privacy Policies: Mismatches between Meaning and Userss Under-
+ [59] Georgianna E Lin, Elizabeth D Mynatt, and Neha Kumar. 2022. Investigating               standing. Berkeley Technology Law Journal 30 (Mar. 2014).  https://doi.org/10.
+      Culturally Responsive Design for Menstrual Tracking and Sharing Practices              2139/ssrn.2418297
+    Among Individuals with Minimal Sexual Education. In CHI Conference on Human         [80] Celia  Rosas.  2019.    The  Future  is  Femtech:  Privacy and  Data  Se-
+       Factors in Computing Systems (April 29 - May 5, 2022, New Orleans, LA, USA).               curity  Issues  Surrounding  Femtech  Applications.      Technical  Report.
+    ACM, New York, NY, USA, 1–15.  https://doi.org/10.1145/3491102.3501824                  https://repository.uchastings.edu/cgi/viewcontent.cgi?article=1193&context=
+ [60] Yue Liu. 2014. User Control of Personal Information Concerning Mobile-App:              hastings_business_law_journal
+      Notice and Consent? Computer Law & Security Review 30, 5 (Oct. 2014), 521–529.         [81] Allysan Scatterday. 2022. This is No Ovary-Action: Femtech Apps Need Stronger
+       https://doi.org/10.1016/j.clsr.2014.07.008                                                 Regulations to Protect Data and Advance Public Health Goals. North Carolina
+ [61] Aleecia M. McDonald and Lorrie Faith Cranor. 2009. The Cost of Reading              Journal of Law & Technology 23, 3 (2022), 636.  https://scholarship.law.unc.edu/
+      Privacy Policies. https://api.semanticscholar.org/CorpusID:197633124                        ncjolt/vol23/iss3/6
+ [62] Nora Mcdonald and Nazanin Andalibi. 2023. “I Did Watch ‘The Handmaid’s         [82] Brennan Schaffner, Neha A. Lingareddy, and Marshini Chetty. 2022. Under-
+       Tale’”: Threat Modeling Privacy Post-Roe in the United States. ACM Transactions              standing Account Deletion and Relevant Dark Patterns on Social Media. Pro-
+      on Computer-Human Interaction 30, 4, Article 63 (Mar. 2023).  https://doi.org/10.              ceedings of the ACM on Human-Computer Interaction 6, CSCW2 (Nov. 2022),
+      1145/3589960                                                                           1–43.  https://doi.org/10.1145/3555142
+ [63] Terry McGovern. 2022. Overturning Roe v Wade Has Had an Immediate Chilling         [83] Sam Schechner and Mark Secada. 2019.  You Give Apps Sensitive Per-
+       Effect on Reproductive Healthcare. BMJ (Jun. 2022), 377:o1622.  https://doi.org/              sonal Information. Then They Tell Facebook.   The Wall Street Journal
+      10.1136/bmj.o1622                                                                              (Feb. 2019). https://www.wsj.com/articles/you-give-apps-sensitive-personal-
+ [64] Maryam Mehrnezhad and Teresa Almeida. 2021. Caring for Intimate Data in              information-then-they-tell-facebook-11550851636
+       Fertility Technologies. In Proceedings of the 2021 CHI Conference on Human         [84] Andrew Sears. 1997. Heuristic Walkthroughs: Finding the Problems Without
+       Factors in Computing Systems (May 8 - 13, 2021, Yokohama, Japan). ACM, New              the Noise. International Journal of Human-Computer Interaction 9, 3 (Sept. 1997),
+      York, NY, USA, 1–11.  https://doi.org/10.1145/3411764.3445132                            213–234.  https://doi.org/10.1207/s15327590ijhc0903_2
+ [65] Abraham Mhaidli, Selin Fidan, An Doan, Gina Herakovic, Mukund Srinath, Lee         [85] Laura Shipp and Jorge Blasco. 2020. How Private is your Period?: A Systematic
+      Matheson, Shomir Wilson, and Florian Schaub. 2023. Researchers’ Experiences              Analysis of Menstrual App Privacy Policies. Proceedings on Privacy Enhancing
+      in Analyzing Privacy Policies: Challenges and Opportunities. Proceedings on              Technologies (PoPETs) 2020, 4 (Oct. 2020), 491–510.  https://doi.org/10.2478/
+      Privacy Enhancing Technologies (PoPETs) 2023, 4 (Oct. 2023), 287–305.  https:             popets-2020-0083
+      //doi.org/10.56553/popets-2023-0111                                                   [86]  Julia Slupska, Selina Cho, Marissa Begonia, Ruba Abu-Salma, Nayanatara
+ [66] Jaron Mink, Amanda Rose Yuile, Uma Pal, Adam J Aviv, and Adam Bates. 2022.              Prakash, and Mallika Balakrishnan. 2022. "They Look at Vulnerability and Use
+      Users Can Deduce Sensitive Locations Protected by Privacy Zones on Fitness            That to Abuse You’’: Participatory Threat Modelling with Migrant Domestic
+      Tracking Apps. In Proceedings of the 2022 CHI Conference on Human Factors in             Workers. In 31st USENIX Security Symposium (USENIX Security 22) (August 10–12,
+     Computing Systems (CHI ’22) (April 29 - May 5, 2022, New Orleans, LA, USA).              2022, Boston, MA, USA). USENIX Association, USA, 323–340.  https://www.
+    ACM, New York, NY, USA, 1–21.  https://doi.org/10.1145/3491102.3502136                  usenix.org/conference/usenixsecurity22/presentation/slupska-vulnerability
+ [67] Miro. [n. d.]. Miro. https://miro.com/                                                  [87] Mukund Srinath, Lee Matheson, Pranav Narayanan Venkit, Gabriela Zanfir-
+ [68] Diana P. Moniz, Maryam Mehrnezhad, and Teresa Almeida. 2023. Intimate Data:              Fortuna, Florian Schaub, C. Lee Giles, and Shomir Wilson. 2023. Privacy Now
+      Exploring Perceptions of Privacy and Privacy-Seeking Behaviors Through the              or Never: Large-Scale Extraction and Analysis of Dates in Privacy Policy Text.
+      Story Completion Method. In Human-Computer Interaction – INTERACT 2023              In Proceedings of the ACM Symposium on Document Engineering 2023 (DocEng
+      (August 28 – September 1, 2023, York, UK). Springer Nature, Cham, Switzerland,                ’23) (August 22 - 25, 2023, Limerick, Ireland). ACM, New York, NY, USA, Article
+      533–543.                                                                                          24, 4 pages.  https://doi.org/10.1145/3573128.3609342
+ [69] Mozilla. 2022. Talkspace Privacy and Security. https://foundation.mozilla.org/         [88] Stardust. [n. d.]. Privacy Policy. https://stardust.app/privacy-policy.html
+      en/privacynotincluded/talkspace/                                                      [89]  Statista. [n. d.].  Software developer gender distribution worldwide as of 2022.
+ [70] Jakob Nielsen and Rolf Molich. 1990. Heuristic Evaluation of User Interfaces. In              https://www.statista.com/statistics/1126823/worldwide-developer-gender/
+      Proceedings of the SIGCHI Conference on Human Factors in Computing Systems         [90]  Statista. 2023. Global Market Share Held by Mobile Operating Systems from 1st
+      (CHI ’90) (April 1 - 5, 1990, Seattle, Washington, USA). ACM, New York, NY,             Quarter 2009 to 2nd Quarter 2023. https://www.statista.com/statistics/272698/
+     USA, 249–256.  https://doi.org/10.1145/97243.97281                                      global-market-share-held-by-mobile-operating-systems-since-2009/
+ [71] Helen Nissenbaum. 2004. Privacy as Contextual Integrity. Washington Law         [91] Borce Stojkovski, Ruba Abu-Salma, Karen Triquet, and Gabriele Lenzini. 2022.
+      Review 79, 1 (2004).                                                                      “Unless One Does the Research, It May Seem as Just a Useless Battery-consuming
+ [72] Leysan Nurgalieva, David O’Callaghan, and Gavin Doherty. 2020. Security and             App”–Field Notes on COVID-19 Contact Tracing Applications. Digital Threats:
+      Privacy of mHealth Applications: A Scoping Review. IEEE Access 8 (Jun. 2020),              Research and Practice (DTRAP) 3, 3 (Sep. 2022), 1–17.
+      104247–104268.  https://doi.org/10.1109/access.2020.2999934                           [92] Anne Stopper and Jen Caltrider. [n. d.].  See No Evil: Loopholes in Google’s
+ [73] Jonathan A. Obar and Anne Oeldorf-Hirsch. 2020. The Biggest Lie on the            Data Safety Labels Keep Companies in the Clear and Consumers in the Dark.
+       Internet: Ignoring the Privacy Policies and Terms of Service Policies of Social               https://foundation.mozilla.org/en/campaigns/googles-data-safety-labels/
+      Networking Services. Information, Communication and Society 23, 1 (Jun. 2020),         [93] Mohammed Tahaei, Ruba Abu-Salma, and Awais Rashid. 2023. Stuck in the
+      128–147.  https://doi.org/10.1080/1369118X.2018.1486870                                 Permissions With You: Developer & End-User Perspectives on App Permissions
+ [74] State of California Department of Justice. [n. d.]. California Consumer Privacy        & Their Privacy Ramifications. In Proceedings of the 2023 CHI Conference on
+      Act (CCPA). https://oag.ca.gov/privacy/ccpa                                Human Factors in Computing Systems (CHI ’23) (April 23–28, 2023, Hamburg,
+ [75] Ehimare Okoyomon, Nikita Samarin, Primal Wijesekera, Amit Elazari Bar On,             Germany). ACM, New York, NY, USA, 24 pages. https://arxiv.org/abs/2301.06534
+      Narseo Vallina-Rodriguez, Irwin Reyes, Álvaro Feal, and Serge Egelman. 2019.         [94] Tobi Thomas. 2023. Outrage at Jail Sentence for Woman Who Took Abortion Pills
+    On The Ridiculousness of Notice and Consent: Contradictions in App Privacy               Later than UK Limit. https://www.theguardian.com/world/2023/jun/12/woman-
+       Policies. In The Workshop on Technology and Consumer Protection (ConPro ’19), in               in-uk-jailed-for-28-months-over-taking-abortion-pills-after-legal-time-limit
+       conjunction with the 39th IEEE Symposium on Security and Privacy. (May 23, 2019,         [95] Anupriya Tuli, Surbhi Singh, Rikita Narula, Neha Kumar, and Pushpendra Singh.
+     San Francisco, CA, USA). https://api.semanticscholar.org/CorpusID:150370978              2022. Rethinking Menstrual Trackers Towards Period-Positive Ecologies. In
+                                                                                                  Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems
+
+=== PDF PAGE 19 ===
+      (CHI ’22) (April 29 - May 5 2022, New Orleans, LA, USA). ACM, New York, NY,
+     USA, 1–20.  https://doi.org/10.1145/3491102.3517662
+ [96] Lev Velykoivanenko, Kavous Salehzadeh Niksirat, Noé Zufferey, Mathias Hum-
+       bert, Kévin Huguenin, and Mauro Cherubini. 2021. Are Those Steps Worth Your
+       Privacy?: Fitness-Tracker Users’ Perceptions of Privacy and Utility. Proceedings
+       of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 5, 4
+      (Dec. 2021), 1–41.  https://doi.org/10.1145/3494960
+ [97] Maximiliane Windl, Niels Henze, Albrecht Schmidt, and Sebastian S. Feger.
+      2022. Automating Contextual Privacy Policies: Design and Evaluation of a
+      Production Tool for Digital Consumer Privacy Awareness. In Proceedings of the
+      2022 CHI Conference on Human Factors in Computing Systems (CHI ’22) (April
+      29 - May 5 2022, New Orleans, LA, USA). ACM, New York, NY, USA, 1–18.
+      https://doi.org/10.1145/3491102.3517688
+ [98] Stephanie Winkler and Sherali Zeadally. 2016. Privacy Policy Analysis of Popular
+    Web Platforms. IEEE Technology and Society Magazine 35, 2 (Jun. 2016), 75–85.
+      https://doi.org/10.1109/mts.2016.2554419
+ [99] Pieter Wolters. 2018. The Control by and Rights of the Data Subject Under the
+     GDPR. Journal of Internet Law 22, 1 (2018), 7–18.
+[100] Richmond Y. Wong, Andrew Chong, and R. Cooper Aspegren. 2023.  Pri-
+     vacy Legislation as Business Risks: How GDPR and CCPA are Represented
+      in Technology Companies’ Investment Risk Disclosures. Proceedings of the
+    ACM on Human-Computer Interaction 7, CSCW (Apr. 2023), 1–26.   https:
+      //doi.org/10.1145/3579515
+[101] Your Privacy Policy Must Include a ¨Do Not Track¨(DNT) Clause. 2022.     .
+      https://www.privacypolicies.com/blog/privacy-policy-dnt-do-not-track/ Last
+      Accessed 12/06/2023.
+[102] Shikun Zhang, Yuanyuan Feng, Yaxing Yao, Lorrie Faith Cranor, and Norman
+      Sadeh. 2022. How Usable Are iOS App Privacy Labels? Proceedings on Privacy
+      Enhancing Technologies (PoPETs) 2022, 4 (Oct. 2022), 204–228.  https://doi.org/
+      10.56553/popets-2022-0106
+
+
+
+
+
+                                                                                          19
+
+=== PDF PAGE 20 ===
+                                           Version        1.2.32 1.3.7 1.036 1.1.18 117.0 9.30.2  12.0.11 2.21.1 1.093 3.6.0  3.25.1.5 5.21 1.32.0 1.5.27  1.746.284 8.5.6 2.14.0 3.90.0 4.9.1 1.1.18
+                             statistics.                                       Reviews (2023)  121 784 161 1432 1532 3372 143 150 559 1176 115 731 129 114 2054 582 240 412 179 221
+                           popularity
+        and                                           Ratings        211053 353457 43787  1372090  1172284  2972261 359880 20719 415931 85724 332042  2177118 10308 11127  5875562 416860 2122 58475 154043 140653
+                             developers,                                                        Downloads         4815692  6959308  4560286  29843944  46252271  104312618  23021300  1485015  25253206  21611005  13958191  38210623  1602247  1902002  173401566  18789400 65878  1652328  4354982  5807151
+                   genres,                                                                                                                                                                                                                                            Medical.
+                                 =
+                                 M             their                                                  Released             06-07-2015  04-05-2016  16-08-2018  11-03-2011  09-10-2014  12-04-2016  07-10-2011  03-11-2020  29-09-2017  21-02-2022  25-05-2015  28-01-2013  29-09-2017  05-03-2021  16-03-2012  16-08-2015  27-06-2022  07-08-2019  27-08-2018  16-08-2016
+                                                                                                                                                                                                                                                                                                                                           Parenting.                        including          Type                          =                         Dev.         mHealth  mHealth  mHealth  FemTech  FemTech  FemTech  mHealth  FemTech  mHealth  Unknown  FemTech  mHealth  FemTech  FemTech  Generic  Generic  FemTech  FemTech  mHealth  mHealth P                     analysis                                                                                                                                                                                                                                                                         Fitness.
+                                            UK        for                                                                                                  Inc.                                                                                                   and                                                          Inc.                                                      GmbH                                         App                                                                                                                                                          Digital                Design                                            Ltd.                               Health                         Name                                                                                                                                Fitness                    Tech                                               Health                     selected                                                                                        Health   International                         Dev.      Amila Amila Arbor  BabyCenter  Biowink Flo GP Grace Leap  MeetYou Amma  Philips Premom Sadi Simple    SimpleInnovation  Stardust  Timskiy  Wachanga  Wachanga =           apps                                                                                        H+F
+                               Genre    H+F P P P H+F H+F H+F H+F H+F H+F P P H+F H+F H+F M H+F P H+F P                   mHealth
+                female                                                                                                                                                 Tracker                                                                      Tracker     of                                                                                     Tracker  Calendar  Tracker                                                                                                  Fertility                                                                  App                                                                                                                                                                                                                                                    Calculator
+           &             &                   Tracker  Tracker      Baby                                                                                                                                                                  Tracker                        &  Tracker                                                 Baby                     &                   Details        &         Period          &          Tracker           DateDueMETADATA                                                                                                                                                                                                                     Tracker               &         Period                                                                                                                                                          Tracker                                                                                                              Period                                                                                               and           A.1:                                          Tracker  Calendar App  Tracker                  &                      +          Tracker                           Tracker                                                                                                                                                                                                                Ovulation                       PeriodAPP                                                           Tracker                                            Tracker Health          Tracker  Pregnancy                               Calendar                       PeriodA:       Table          Name                                     Period  Ovulation                                                                                          Calendar                   App        Period  Pregnancy  Ovulation  Pregnancy Clue Flo Period Grace  Ovulation Period amma  Pregnancy Premom  Ovulation Period My  Stardust:  Pregnancy Clover  Pregnancy
+
+            ID 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20APPENDIX
+
+                                                                                         20
+
+=== PDF PAGE 21 ===
+APPENDIX B: USABILITY INSPECTION HEURISTICS
+
+
+                           Table B.1: Summary of Privacy-by-Design guidelines [8, 15].
+
+
+     Guideline                   Description
+
+     Data Minimisation             Data collection should be limited to only what is needed for provision of the service.
+
+                             Where possible, the user should not be required to submit data that could directly
+     Anonymisation
+                                         identify them, such as their real name, email address, or photograph.
+
+                                The user should be able to give active and informed consent to collection and processing
+      User Control
+                                        of their data, and should be able to opt out later.
+
+                                    Privacy settings should be available within the app, and should be flexible and user-
+      Privacy Settings
+                                           friendly. Default settings should be privacy-preserving.
+
+                                 Data subjects should be able to request that all personal data be removed from the
+      Right to be Forgotten
+                                        provider’s systems.
+
+      Access and Correctness         There should be mechanisms for accessing past data and fixing it if incorrect.
+
+                               The application should not artificially restrict the service unless personal data is pro-
+      Functionality                     vided; e.g., app does not run without accepting all permissions, only real names allowed,
+                                 and so on.
+
+                              The user should be provided with information about how their personal data is pro-
+      Transparency
+                                        cessed, and the reasons for processing before they enter sensitive data into the app.
+
+
+
+
+                                 Table B.2: Nielsen’s ten usability heuristics [70].
+
+
+      Heuristic                    Description
+
+                                   Users should be kept informed about what is happening, through clear and timely
+       Visibility of System Status
+                                      feedback.
+
+     Match between System and  The design should use words, phrases, and concepts familiar to the user rather than
+      Real World                       jargon.
+
+      User Control and Freedom      Users should have clear options for undoing behaviours and errors.
+
+                                   Users should not have to wonder whether different words, situations, or standards
+      Consistency and Standards
+                             mean the same thing.
+
+      Error Prevention                Errors should be prevented from occurring wherever possible.
+
+                                    Options should be visible, and designs should avoid making users memorise or remem-
+      Recognition over Recall
+                                     ber information.
+
+                                    Designs should implement shortcuts for expert users, which can be hidden from novice
+       Flexibility and Efficiency of Use
+                                          users.
+
+      Aesthetic and Minimalist De-
+                                         Interfaces should not contain irrelevant or excessive information.
+      sign
+
+      Recognise, Diagnose, and Re-  Error messages should be expressed in plain language, precisely indicate a problem,
+      cover from Errors             and constructively suggest a solution.
+
+                             Where necessary, users should be provided with documentation to help them under-
+     Help and Documentation
+                                     stand how to complete their tasks.
+
+
+
+
+
+                                                                                      21
+
+=== PDF PAGE 22 ===
+APPENDIX C: PRIVACY POLICY ANALYSIS CODEBOOK
+
+                  Table C.1: Full codebook used in our analysis of female mHealth app privacy policies.
+
+
+              Code Name               Code Description                                Example Data
+
+                                                                                                                    This policy applies only to information we collect in our App or
+                         Single app                  Policy only addresses the app being analysed.
+                                                                                                           through communications in relation to our App.
+  Policy Scope
+                                                     Policy addresses the app being analysed in addition to other   This Privacy Notice applies to personal data processed by the
+                        Multiple apps
+                                               apps or services by the developer.                              apps, which are controlled by Philips and its affiliates.
+
+                 No relation                 Policy bears no relation to the app being analysed.           The terms of our “Privacy Policy” apply to our website.
+
+                         Last Updated            The date on which the privacy policy was last updated.        This Privacy Policy was last updated on December 4th, 2019.
+  Policy Version
+                                                                                                                    This Policy may amended to reflect changes in our practices with
+                                                                                                                               respect to Processing your information, or changes in applicable
+                       Future Updates            Disclaimer that the privacy policy may change in the future.
+                                                                                                                      law. We encourage you to regularly check this page to review
+                                                                                               any changes we might make.
+
+                                               Data relating to a user’s activities or interactions while using  We collect the information of your interactive behaviours, such
+                  App interaction data
+                                                   the app, such as in-app search histories and clickpaths.        as browsing, clicking and interacting with content.
+
+                                              Data relating to a user’s device or network, including the IP   Automatically Collected Data may include device ID, advertiser
+                      Device and network data
+                                                      address, device make and ID, cookies, etc.                        ID, and device specifications such as display, model, OS.
+
+                                                                                  When you sign up to use the Services, we may collect Personal
+ User Data Types     Personal data             Data which directly relates to an individual, and can be used   Data about you such as your name, email address, and place of
+                                                      to identify them.
+                                                                                                                               residence.
+
+                                               Data relating to a user’s general health and wellbeing exclud-  When you sign up to use the Services, you may choose to provide
+                       General health data
+                                                  ing their sexual and reproductive health.                       Personal Data about your health such as your weight and height.
+
+                       Sexual and reproductive                                             We collect health data such as menstrual cycle, symptoms, and
+                                              Data relating to a user’s sexual and reproductive health.
+                        health data                                                                                 other information (including sexual activities).
+
+                               A user’s geographical location, either precise (<1km) or ap-   The app uses Cookies to collect information about your IP ad-
+                       Location
+                                                proximate (city, wider region).                                   dress and location.
+
+                                                                                                                                                                     If you add a picture to your profile, the apps require permission
+                        Audio-visual data          Photo, video, and audio data.
+                                                                                                                               to access your mobile device’s camera or photo gallery.
+
+                                                                                                                                                              If you pay for our Services, we may receive information and
+                                             Data associated with the user’s bank account or financial
+                         Financial data                                                                             confirmations, such as payment receipts, including from app
+                                                       transactions.
+                                                                                                                                  stores or other third parties processing your payment.
+
+                                                                                When you use our Service or perform certain actions, such as
+                                               Data is collected from the user via direct input; e.g., they enter
+                      User input                                                                                  requesting services or information or contacting us directly, we
+                                                   the date of their last period.
+                                                                                 may ask you to provide user information.
+ Data Collection
+ Methods            Device data               Data is automatically extracted from the user’s device and/or   When you use Premom, we will automatically collect attributes
+                                                                    its resources (e.g., camera, sensors, GPS, etc.).                 such as the operating system and MAC address.
+
+                                                                            We collect Information through the use of cookies, eTags,
+                      Cookies and interaction   Data is collected from cookies or other tracking technologies    Javascript, pixel tags, device ID tracking, anonymous identifiers
+                         logs                     such as web beacons and app interaction logs.              and other technologies about (i) your visits to, and interaction
+                                                                                                and engagement with, the Services [...].
+
+                                                                                                     You can import Data from services such as Apple HealthKit and
+                                             Data is imported or collected from third-party apps or plat-
+                        Third-party apps                                                                  Google Fit such as sports activities, calories burnt, heartbeat,
+                                                   forms, such as Facebook, Google, or Instagram.
+                                                                                              number of steps and other information about your health.
+
+                                             Data is processed to provide and support core app function-  We use data to deliver the services and products that you have
+                         Service provision             ality; e.g., IT and technical operations, in-app features, and    requested, including storing information and files you provided
+                                                      security functions.                                                 to us for storage for the purpose of the Services.
+
+                                                                                                     To advance scientific research on menstrual and reproductive
+                                             Data is processed for research in partnership with clinical,
+ Purposes for Data    Scientific research         academic, or scientific entities.                                  health, we share data with carefully vetted researchers to ad-
+                                                                                                          vance female health studies.
+  Processing
+                                                                                                  The other reason why we process this data is to help us under-
+                        Analytics for app devel-   Data is processed for developer product research, to support,
+                                                                                                                  stand your needs and your use of our products, to analyze bugs
+                    opment                   improve, or develop the app’s features.
+                                                                                                and fix issues, and to bring you more useful features.
+
+                                                                                                     You can personalize your experience by adding health data into
+                         Analytics for personalisa-   Data is processed for the purposes of tailoring app content
+                                                                                                           your profile. We will use this data to personalize Services, track
+                         tion                        to individual users.
+                                                                                                         your symptoms, and display articles of interest to you.
+
+                                              Data is processed for the purposes of advertising, marketing,  We provide advertising based on your interests and interactions
+                        Advertising
+                                                   or commerce, in the app or across other websites and services.   with the Services and Channels.
+
+                                                                            We share information with law enforcement agencies, public
+                                              Data is processed in order to comply with a legal obligation,
+                        Legal compliance                                                                                authorities, or other organizations if we’re required by law to
+                                                       contract, or lawful request for access/subpoeana.
+                                                                                                      do so or if such use is reasonably necessary.
+
+                      Other                Any other reason for processing data.                 We may contact you to obtain customer feedback.
+
+
+
+
+
+                                                                                      22
+
+=== PDF PAGE 23 ===
+             Code Name               Code Description                                Example Data
+
+                                                  Description of where user data is stored; e.g., local device stor-
+                                                                                                          Clue uses servers located in the European Union to process and
+                    Data storage location       age, company server, third-party server and its geographical
+Data Stor-                                         location if applicable.                                              store your personal data.
+age/Retention
+                                                                          We will retain Automatically Collected information for up to
+                      Retention period         The period of time for which user data is retained.
+                                                                                                          24 months before storing it in aggregate.
+
+                                                                                                                                                                  If you choose to delete the App from your device or your account
+                                     Any other policies governing the storage and/or retention of
+                    Other retention period                                                              becomes inactive, we will retain your Personal Data for a period
+                                                 user data, such as exceptions and special cases.
+                                                                                                                            of 3 years in case you decide to re-install the App.
+
+                                                                          We share your app usage information, such as analytics and
+                    Data transfer to a third-   Mention of user data being transferred to a third-party entity
+                                                                                                      unique identifiers, with our Advertising Partners who help us
+Data Transfers       party                         (to be cross-coded where necessary).                      show you content and advertising in the app.
+
+                     Cross-border data trans-   Mention of user data being transferred across international    Flo transfers Personal Data from the EU, EEA and UK to the
+                          fer                        or state borders.                                                   U.S. and other third countries.
+
+                                             Measures which are carried out within organisations, such as   Our security and privacy policies are periodically reviewed and
+                      Organisational            due diligence, vetting of third-party vendors, and conducting   enhanced as necessary, and only authorized individuals have
+                                                       risk assessments.                                                access to the information provided by our users.
+Data Safeguarding
+Measures                                   Measures which are technical and security-focused, such as    In certain instances we may use Secure Sockets Layer encryp-
+                      Technical                 encryption of data in transit and at rest, network firewalls,    tion and/or transfer certain User Information in a non-human
+                                          and anonymisation of data.                                   readable format to provide protection.
+
+                                                                                                     Although we take great efforts to protect your information, no
+                                             Mentions of any limitations of the developers’ data safeguard-
+                                                                                                                          security system can prevent all potential security breaches. We
+                       Limitations                ing mechanisms, or transferring of responsibility for security
+                                                                                                   have no control over, and are not responsible for, the privacy
+                                          and privacy to the user.
+                                                                                                                           practices of third parties.
+
+                                                  Policy references GDPR and other EU-based privacy frame-   For EU residents’ Personal Data we make reasonable efforts to
+                    European Union (EU)
+                                               works, including the UK Data Protection Act (DPA).           ensure that such third parties are GDPR compliant.
+Regional Privacy                                                                                                 The California Consumer Privacy Act (CCPA) provides certain
+Legislation           California                  Policy references CCPA, COPPA, and other Californian pri-    rights for California consumers. If you are a consumer residing
+                                             vacy laws.
+                                                                                                                       in California, the following additional terms apply to you.
+
+                                                  Policy references laws that regulate the transfer of personal
+                                                                                                     Everyday Health, Inc. participates in and has certified its com-
+                      Cross-border laws          data across international boundaries; e.g., Privacy Shield, stan-
+                                                                                                                     pliance with the E.U.-U.S. Privacy Shield Framework.
+                                              dard contractual clauses.
+
+                                                                                                You have a right to access your Personal Data you insert into
+                                        The right of a data subject to know what data is held about
+                      Right to access and notice                                                                   the App and ask us about what kind of Personal Data we have
+                                              them, and to access this data.
+                                                                                                         about you.
+
+                                        The right of a data subject to correct or rectify inaccurate     If you believe that your Personal Data is inaccurate, you have
+                      Right to data rectification
+                                                 data that is held about them.                             a right to contact us and ask us to correct such Personal Data.
+
+                                         The right of a data subject to request that personal data held    In some circumstances, you may have the right to request that
+                      Right to data deletion
+User Privacy                                  about them is deleted.                                we delete any Personal Data which we have collected from you.
+Rights                                                                                                           Receive the personal data concerning you which you have pro-
+                                         The right of a data subject to receive their data in a common
+                      Right to data portability                                                                vided to us, in a structured, commonly used and machine-
+                                               machine-readable format.
+                                                                                                                readable format.
+
+                                                                                               The right to not be subject to a decision based solely on auto-
+                                                                                                 mated decision making, including profiling, where the decision
+                    Other rights           Any other privacy rights afforded to users.
+                                                                                                   would have a legal effect on you or produce a similarly signifi-
+                                                                                                               cant effect.
+
+                                                                                                You may contact us at help@pregnancytracker.app. For your
+                                                                                                                          protection, we may only implement requests with respect to
+                  Mechanisms for exercis-   The channels by which a user can exercise their privacy rights,   the personal data associated with your account, and we may
+                      ing rights               and the developer’s process for complying with a request.     need to verify your identity before implementing your request.
+                                                                            We will try to comply with your request as soon as reasonably
+                                                                                                                             practicable.
+
+                                     Any unavoidable outcomes or consequences of the user exer-   Please note that if you make use of (some of) your choices and
+                    Consequences of exercis-
+                                                      cising their rights; e.g., not being able to use certain features    rights, you may not be able to use, in whole or in part, our
+                      ing rights
+                                                 or services.                                                       Services anymore.
+
+                                                                                         By accepting this Privacy Policy you give PT your express con-
+                                            Mentions of user consent; e.g., mechanisms for gaining con-    sent, in your own power and for your own benefit, to the pro-
+                     User consent
+                                                        sent, use of consent as a legal basis for processing.              cessing of your personal data in accordance with the conditions
+                                                                                                                                     set forth in this Privacy Policy.
+
+                                                                                                           Also we send some information to our third parties. So your
+                                          Language that is unclear or vague; e.g., vague use of condi-   data may leave your country as our third parties may have
+                  Ambiguous language
+Language and                                    tionals/temporal adverbs without giving details.                 their servers in different regions like Northern America, EU or
+                                                                                                                      Asia.
+Readability
+                                                 Information that is conflicting or contradictory, either within
+                                                                              We do not request and we ask you not to provide, including not
+                      Contradictory language    the policy or when contrasted with Data safety sections and
+                                                                                                                             to send us or disclose, any sensitive personal data.
+                                           app features.
+
+
+
+
+
+                                                                                    23
+
+=== PDF PAGE 24 ===
+Code Name               Code Description                                Example Data
+
+                                                               We use your personal data to fulfill the contract with you to
+                             Overly complex or technical statements, and jargon that is
+    Complex language                                                                        provide you our Services per your request and consent prior to
+                                 unlikely to be understood by a lay user.
+                                                                                                  entering in the contract when signing up for our Services.
+
+
+
+
+
+                                                                 24
