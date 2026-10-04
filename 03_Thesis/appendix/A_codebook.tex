@@ -1,3 +1,194 @@
 \chapter{Codebook}
 \label{app:codebook}
 \todo{Full coding scheme with definitions and examples.}
+
+%----------------------------------------------------------------------
+\section{Worked Example}
+\label{app:worked-example}
+
+This section applies the codebook (version~2) to one privacy policy, from the
+reference harm tree to the app-level result. The app, \enquote{CycleMate}, and
+its policy are constructed: the text is written so that most codes occur. Real
+policies are expected to stay mostly at the component level.
+
+\subsection*{Step 0: Reference harm tree}
+
+The tree is built once per domain, before any policy is read, following
+Knabenhans et al.~\parencite{knabenhans2026harms}. It states what a complete
+account of harm \emph{could} contain. \Cref{tab:we-tree} shows an excerpt of
+the fertility tree. Origin is assigned to components only; capabilities and
+harms inherit the origins of the components beneath them.
+
+\begin{table}[H]
+\centering
+\caption{Excerpt of the reference harm tree for fertility trackers.}
+\label{tab:we-tree}
+\small
+\begin{tabularx}{\textwidth}{@{}lXl@{}}
+\toprule
+\textbf{Level} & \textbf{Node} & \textbf{Origin} \\
+\midrule
+Harm       & \texttt{H-AUT} prosecution, restricted reproductive choices & --- \\
+Harm       & \texttt{H-DSC} discrimination by insurers or employers      & --- \\
+Harm       & \texttt{H-PSY} distress, unwanted contact                    & --- \\
+Harm       & \texttt{H-REP} being outed (pregnancy, pregnancy loss)       & --- \\
+Capability & \texttt{K-INF} inferring pregnancy or fertility              & --- \\
+Capability & \texttt{K-TRK} profiling by advertising and analytics partners & --- \\
+Capability & \texttt{K-DIS} singling out users who are trying to conceive & --- \\
+Component  & logged cycles, symptoms, sexual activity                     & core \\
+Component  & predicted fertile window                                     & core \\
+Component  & device identifiers                                           & context \\
+Component  & analytics SDK, cloud backup                                  & implementation \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The tree is read bottom-up. Logged cycles (core) enable inference of a
+pregnancy (capability), which can lead to prosecution (harm). This pathway
+contains no implementation component, so no PET can close it.
+
+\subsection*{Step 1: Coding units}
+
+The policy is split at paragraph boundaries into seven units.
+
+\begin{description}[leftmargin=2.2em,style=sameline]
+  \item[U1] \enquote{We collect the information you enter, such as period
+    dates, symptoms, sexual activity and mood, to predict your cycle and
+    fertile window.}
+  \item[U2] \enquote{We share device identifiers and usage data with analytics
+    partners to improve our services. We never sell your health data.}
+  \item[U3] \enquote{Your health data stays on your device unless you turn on
+    backup. This keeps your reproductive health private and protects you from
+    anyone using it against you.}
+  \item[U4] \enquote{In the unlikely event of a security incident, we will
+    notify affected users as required by law.}
+  \item[U5] \enquote{If your data were disclosed, it could reveal sensitive
+    information such as a pregnancy, which in some jurisdictions could expose
+    you to legal risk.}
+  \item[U6] \enquote{In the unlikely event that an unauthorised party accessed
+    your data, you might experience unwanted contact.}
+  \item[U7] \enquote{Your data is safe with us. We use industry-standard
+    security.}
+\end{description}
+
+\subsection*{Step 2: Unit-level coding}
+
+Each unit is coded on the three axes: how far up the tree the text reaches
+(A), how a named harm is treated (B), and what a claimed protection can close
+(C). \Cref{tab:we-units} gives the result.
+
+\begin{table}[H]
+\centering
+\caption{Unit-level codes for the CycleMate policy.}
+\label{tab:we-units}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
+                                   >{\raggedright\arraybackslash}p{1.6cm}
+                                   >{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Unit} & \textbf{A: Pathway} & \textbf{B: Stance} & \textbf{C: Protection} \\
+\midrule
+U1 & \texttt{L-CAP}, \texttt{K-INF} & --- & --- \\
+U2 & \texttt{L-CMP} & --- & \texttt{T-3RD}; implementation; \texttt{F-FLW} \\
+U3 & \texttt{L-CMP} & --- & \texttt{T-DEV}; implementation; \texttt{F-HRM};
+     \texttt{C-OVR} \\
+U4 & none & --- & --- \\
+U5 & \texttt{L-HRM}, \texttt{K-INF}, \texttt{H-AUT}, \texttt{P-BRC}
+   & \texttt{S-ACK} & --- \\
+U6 & \texttt{L-HRM}, \texttt{H-PSY}, \texttt{P-BRC} & \texttt{S-HDG} & --- \\
+U7 & --- & --- & \texttt{C-REA} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The decisions that are not obvious:
+
+\begin{description}[leftmargin=0pt]
+  \item[U1.] The fertile window is derived, not entered, so the unit reaches
+    the capability \texttt{K-INF}. It presents inference as a feature, not as
+    a risk, and names no harm; it therefore receives no stance.
+  \item[U2.] Sharing device identifiers with analytics partners is a component
+    on the path to \texttt{K-TRK}, but the text never says that anyone could
+    profile the user. It stays at \texttt{L-CMP}. \enquote{We never sell}
+    limits third-party access (\texttt{T-3RD}) and is framed as a data flow.
+  \item[U3.] \enquote{Using it against you} names no concrete outcome, so the
+    unit does not reach \texttt{L-HRM}. On-device storage removes an
+    implementation component (the server copy), but the text claims it
+    \emph{protects} the user (\texttt{F-HRM}). The tree keeps a pathway made
+    only of core components: the logged data and the prediction remain on the
+    phone, within reach of a partner or of anyone who seizes the device. The
+    claim therefore promises more than the measure can deliver and is coded
+    \texttt{C-OVR}.
+  \item[U4.] This is the codebook's counter-example for \texttt{P-INC}: it
+    restates the legal duty without saying what the provider does. No code
+    applies. \enquote{Unlikely} does not make it hedged, because no harm is
+    named.
+  \item[U5.] A concrete outcome (legal risk) is named, so the unit reaches
+    \texttt{L-HRM}. \enquote{In some jurisdictions} narrows the scope but does
+    not make the harm improbable: the stance is \texttt{S-ACK}.
+  \item[U6.] A concrete outcome (unwanted contact) is named, but qualified into
+    improbability by \enquote{in the unlikely event}: \texttt{S-HDG}.
+  \item[U7.] \enquote{Industry-standard} names no mechanism that could be
+    checked: \texttt{C-REA}.
+\end{description}
+
+\subsection*{Step 3: App-level result}
+
+The unit codes are aggregated per app and compared with the reference tree.
+
+\begin{table}[H]
+\centering
+\caption{CycleMate's policy against the reference tree.}
+\label{tab:we-app}
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Node} & \textbf{Result} \\
+\midrule
+\texttt{K-INF} & reached (U1 as a feature, U5 as a risk) \\
+\texttt{K-TRK} & not reached: data flows to analytics partners (U2), but the
+  capability is never named \\
+\texttt{K-DIS} & not reached \\
+\texttt{H-AUT}, \texttt{H-PSY} & reached \\
+\texttt{H-DSC}, \texttt{H-REP} & not reached: \texttt{S-ABS} at app level \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+For the research questions, this policy contributes:
+\begin{itemize}
+  \item \textbf{RQ1 (coverage):} one of the three capabilities is named
+    (\texttt{K-INF}); two of the four listed harms are named.
+  \item \textbf{RQ2 (stance):} one harm acknowledged, one hedged.
+  \item \textbf{RQ3 (protection):} two measures claimed, both removing only
+    implementation components; one overclaim; one reassurance without
+    substance.
+  \item \textbf{RQ4 (consistency):} the same procedure is repeated for the
+    store listing, the website, and the in-app screens, and the code sets are
+    compared --- for example, whether the warning in U5 also appears on the
+    screen where the user signs up.
+\end{itemize}
+
+\subsection*{Step 4: The model's part}
+
+The language model performs Step~2, one unit at a time. It gives a reason
+before each code and must quote the span that supports it; a code without a
+span is discarded. For U3 the output takes this form:
+
+\begin{lstlisting}[basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible]
+{"unit": "U3",
+ "codes": [
+  {"code": "T-DEV",
+   "span": "stays on your device unless you turn on backup",
+   "reason": "on-device storage is claimed"},
+  {"code": "F-HRM",
+   "span": "protects you from anyone using it against you",
+   "reason": "framed as preventing an outcome, not as less data flow"}]}
+\end{lstlisting}
+
+The model does not assign origins or \texttt{C-OVR}. Origins come from the
+reference tree, and \texttt{C-OVR} follows by rule: a unit coded
+\texttt{F-HRM} in a domain whose tree keeps a pathway made only of core or
+context components. The author codes a validation sample by hand, blind to the
+model's output, to measure per code how often the model is right and what it
+misses.

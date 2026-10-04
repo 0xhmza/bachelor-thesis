@@ -8,9 +8,11 @@
 %      Background · Research Problem · Why It Matters · Methodology
 %  plus the RQ and scope from his written input of 2026-09-05.
 %
-%  HARD CONSTRAINT: three full pages of content; the reference list
-%  starts on page 4 and is not counted. After any edit, recompile and
-%  check. If the text spills, cut content — never shrink font or margins.
+%  HARD CONSTRAINT: four full pages of content (the fourth added on
+%  2026-10-05 for a plain-language explanation of the coding); the
+%  reference list starts on page 5 and is not counted, and Appendix A
+%  (worked example) follows it. After any edit, recompile and check. If
+%  the text spills, cut content — never shrink font or margins.
 %
 %  The long, argued version (schedule, ten open points, full method)
 %  lives in ../../99_Archive/_junk/02_Proposal/. Chapter 4 of the thesis
@@ -321,47 +323,141 @@ advertising SDKs, cloud sync, and retention periods are \emph{implementation}.
 The trees fix in advance what a complete account of harm could contain, so an
 absence is measured against a stated, versioned baseline.
 
-\textbf{Coding.} Each unit is mapped onto the tree on three axes
-(Table~\ref{tab:axes}); stance is coded only where a harm is named. Every category gets a definition, a positive example, and a
-mandatory counter-example; without the counter-example a category has no
-boundary, and human and model alike drift. Text is coded as written, never as
-what the provider is assumed to mean; a unit may carry several codes; when
-unsure, a unit is coded and flagged, never dropped; any change to a category
-produces a new codebook version with date and reason. The same codebook binds
-the model and the human coder; disagreements are adjudicated against the
-verbatim span and logged.
+\textbf{Coding: what it means.} To \emph{code} a text is to read it in small
+pieces and attach short labels, called \emph{codes}, that record what each
+piece says. Here a piece (a \emph{unit}) is one paragraph of a policy or
+listing, or the text on one app screen. The codes are defined in advance in a
+\emph{codebook}, so that the language model and the author label the same
+text in the same way. Every unit is asked the same three questions;
+Table~\ref{tab:axes} lists every possible answer with an example.
 
-\begin{table}[h]
-\caption{The three coding axes.}
+\emph{Question A: How far does the text go?} This question uses the harm tree.
+A text can stop at the bottom, saying only what data is collected or where it
+goes (\emph{component}: \enquote{we share your location with partners}). It
+can go one level up and say what someone could \emph{do} with the data
+(\emph{capability}: \enquote{partners could build a profile of your
+movements}). Or it can reach the top and say what could \emph{happen to the
+user} (\emph{harm}: \enquote{this could reveal your home address to a
+stalker}). The coder records the highest level reached, and which capability
+and which type of harm are named. Two further checks follow from the legal gap
+described in the background: does the text say what a data leak would mean for
+the user (\emph{breach consequence}), and does it say what the provider
+actually does after an incident, beyond repeating the law (\emph{incident
+handling})?
+
+\emph{Question B: If a harm is named, how is it treated?} A harm can be stated
+plainly (\emph{acknowledged}), made to sound improbable (\emph{hedged}),
+named and then defused without evidence (\emph{minimised}), or turned into the
+user's own responsibility (\emph{deflected}). This question is asked only of
+units that name a harm. After all texts of an app are coded, every type of harm
+the app never names is recorded as \emph{absent} for that app. These
+categories are not part of the harm-tree model; they are adapted from a study
+of how companies hedge in breach notifications~\parencite{zou2019might}.
+
+\emph{Question C: If the text promises protection, can the protection
+deliver?} This is answered in three steps. First, \emph{which measure} is
+claimed: for example on-device processing, encryption, or not selling data
+(Martin et al.'s three principles are among them). Second, \emph{which part of
+the tree} the measure removes. The harm tree already labels every component
+by origin: what the app needs in order to work (\emph{core}), what any app on a
+phone exposes (\emph{context}), and what the provider chose and could have
+chosen differently (\emph{implementation}). A protection measure can only
+remove implementation parts. Third, \emph{how the promise is phrased}: as less
+data flowing (\enquote{nobody else sees your data}) or as preventing a harm
+(\enquote{this keeps you safe}). If a measure is presented as preventing a harm,
+but the tree shows a path to that harm made only of core or context parts, the
+promise cannot be kept. This is coded \textsc{overclaim}: the false sense of
+safety Knabenhans et al.\ warn about. A promise with no checkable measure at
+all (\enquote{your data is safe with us}) is coded \textsc{reassurance}.
+
+\begin{table*}[t]
+\caption{The codebook in brief: every answer to the three questions, with
+example wording. The examples are constructed.}
 \label{tab:axes}
 \small
-\begin{tabular}{@{}L{1.55cm}L{6.3cm}@{}}
+\begin{tabular}{@{}L{1.7cm}L{3.0cm}L{5.6cm}L{6.4cm}@{}}
 \toprule
-\textbf{Axis} & \textbf{Values} \\
+\textbf{Question} & \textbf{Code} & \textbf{Meaning} & \textbf{Example wording} \\
 \midrule
-A\enspace Pathway &
-  highest tree level reached (component, capability, harm); capability
-  (distinguishing, tracking/profiling, inference); harm type (seven);
-  probes \textsc{breach-consequence}, \textsc{incident-handling} \\
-B\enspace Stance &
-  acknowledged, hedged, minimised, deflected; at app level also absent \\
-C\enspace Protection &
-  measure claimed (incl.\ Martin et al.'s principles); origin of the
-  component it removes; data-flow vs.\ harm-prevention framing;
-  \textsc{overclaim}; reassurance with no verifiable commitment \\
+A\enspace How far & component & only what data is collected, shared, or stored
+  & \enquote{We collect the dates of your period.} \\
+\quad does it go? & capability & what someone could do with the data
+  & \enquote{Partners may build a profile of your interests.} \\
+ & harm & what could happen to the user
+  & \enquote{This could expose you to legal risk.} \\
+\cmidrule(l){2-4}
+ & \quad distinguishing & sorting users into groups
+  & \enquote{We identify users who are trying to conceive.} \\
+ & \quad tracking/profiling & recognising the same user again; building a
+  profile & \enquote{We link your activity across our apps.} \\
+ & \quad inference & deriving something the user never entered
+  & \enquote{We estimate whether you may be pregnant.} \\
+\cmidrule(l){2-4}
+ & \quad harm type & one of seven: physical, economic, psychological,
+  autonomy, discrimination, reputational, societal
+  & stalking; higher premiums; distress; pressure on choices; unequal
+  treatment; being outed; chilling effects \\
+\cmidrule(l){2-4}
+ & breach consequence & what a leak would mean for the user
+  & \enquote{A leak could reveal a pregnancy to others.} \\
+ & incident handling & what the provider does after an incident, beyond the
+  law & \enquote{We email you within 24 hours and reset your login.} \\
+\midrule
+B\enspace How is & acknowledged & stated plainly as possible
+  & \enquote{Your data could be used against you.} \\
+\quad the harm & hedged & made to sound improbable
+  & \enquote{In the unlikely event that\ldots} \\
+\quad treated? & minimised & named, then defused without evidence
+  & \enquote{\ldots but this is no concern, as we take security seriously.} \\
+ & deflected & made the user's responsibility
+  & \enquote{You are responsible for securing your phone.} \\
+ & absent & \emph{per app}: this harm type is named nowhere & --- \\
+\midrule
+C\enspace Can the & measure & which protection is claimed
+  & \enquote{All analysis happens on your device.} \\
+\quad protection & origin & which part of the tree it removes: core, context,
+  or implementation (taken from the tree, not the text) & --- \\
+\quad deliver? & data-flow framing & promise phrased as less data flowing
+  & \enquote{Nobody else sees your data.} \\
+ & harm-prevention framing & promise phrased as preventing an outcome
+  & \enquote{This keeps you safe from misuse.} \\
+ & \textsc{overclaim} & harm prevention promised, but the tree keeps a path
+  to that harm made only of core or context parts
+  & \enquote{On-device processing protects your reproductive privacy.} \\
+ & \textsc{reassurance} & no checkable measure at all
+  & \enquote{Your data is safe with us.} \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
-\textsc{overclaim} marks a measure presented as preventing a harm whose
-reference tree keeps a core or context pathway --- the false sense of safety
-Knabenhans et al.\ warn about. Stance is not part of their model; it is adapted
-from the hedging found in breach notices~\parencite{zou2019might}.
-Table~\ref{tab:example} codes a constructed sentence: a text can be accurate
-and still silent on harm.
+\textbf{Coding rules.} The same rules bind the model and the author:
+\begin{itemize}[leftmargin=1.2em,itemsep=1pt]
+  \item Every code has a definition, an example that fits, and a
+    \emph{counter-example}: a text that looks similar but does not fit. For
+    instance, \enquote{we will notify you as required by law} is \emph{not}
+    incident handling, because it says nothing about what the provider does.
+    Without counter-examples, the boundary of a code is unclear, and both
+    coders drift.
+  \item Code what the text says, not what the provider probably means.
+  \item A unit may receive several codes.
+  \item Every code quotes the exact words it rests on.
+  \item When unsure, code the unit and flag it; never drop it.
+  \item Any change to a code produces a new, dated codebook version with the
+    reason.
+  \item When the model and the author disagree, the quoted words decide, and
+    the disagreement is logged.
+\end{itemize}
+The model answers questions A and B and the first and third steps of C. The
+origin of a component, and therefore \textsc{overclaim}, comes from the tree by
+a fixed rule, so no judgement is left to the model there.
+
+\textbf{One sentence, coded.} Table~\ref{tab:example} applies the three
+questions to a single sentence. It shows the central point of the study: a
+text can be accurate and still say nothing about harm. Appendix~\ref{app:example}
+codes a whole policy.
 
 \begin{table}[h]
-\caption{A constructed example of a coded unit.}
+\caption{A constructed sentence, coded step by step.}
 \label{tab:example}
 \small
 \begin{tabular}{@{}L{0.9cm}L{6.9cm}@{}}
@@ -369,12 +465,15 @@ and still silent on harm.
 \textbf{Unit} & \enquote{We never share your raw data with third parties;
   all analysis happens on your device.} \\
 \midrule
-A & component level only; no capability or harm named \\
-B & not coded, since no harm is named \\
-C & third-party limitation and on-device processing; both remove
-  implementation components; framed as data flow. In a cycle tracker the
-  inference pathway is core, so a claim that this \emph{prevents} harm
-  would be coded \textsc{overclaim} \\
+A & \emph{Component} only. It says where data goes and where it is processed,
+  but not what anyone could do with it, nor what could happen to the user. \\
+B & Not asked, because no harm is named. \\
+C & Two measures: limiting third parties, and on-device processing. Both
+  remove \emph{implementation} parts of the tree, and both are phrased as
+  less data flowing, so the sentence is accurate. But in a cycle tracker the
+  app itself predicts the fertile window on the phone: the inference is
+  \emph{core}. Had the sentence added \enquote{so your reproductive health is
+  protected}, it would be coded \textsc{overclaim}. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -445,5 +544,224 @@ recall for implicit mentions the sweep did not anticipate.
 % reference page.
 \balance
 \printbibliography[title={References}]
+
+%---------------------------- Appendix --------------------------------
+% Not part of the page limit: a worked example for the reader, set in one
+% column so the tables can be read at full width.
+\onecolumn
+\appendix
+\section{Worked Example: Coding One Privacy Policy}
+\label{app:example}
+
+This appendix walks through the whole method once, on one small example. The
+app, \emph{CycleMate}, is made up: a period and fertility tracker in which
+users log the dates of their period, their symptoms, and their mood, and the
+app predicts their fertile days. Its privacy policy is also made up and is only
+five sentences long; real policies are much longer, but are coded in exactly
+the same way.
+
+\smallskip
+\noindent\fbox{\parbox{0.97\textwidth}{\textbf{The idea in one sentence.} First
+we write down everything a provider \emph{could} tell users about harm (the
+\emph{harm tree}). Then we record what the provider \emph{actually} tells them
+(the \emph{coding}). The difference between the two is the finding.}}
+
+\subsection{Step 1: Draw the harm tree, before reading any policy}
+
+Before looking at CycleMate's text, we write down, for this kind of app, how
+its data could end up hurting a user. We take these routes from published
+research on fertility trackers, not from the provider. Each route has three
+levels:
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{2.4cm}L{6.6cm}L{7.0cm}@{}}
+\toprule
+\textbf{Level} & \textbf{The question it answers} & \textbf{CycleMate example} \\
+\midrule
+Harm (top) & What could happen to the user? & She is prosecuted for an
+  abortion. \\
+Capability (middle) & What could someone \emph{do} with the data? & Infer
+  from the logged dates that she was pregnant. \\
+Component (bottom) & Which data or design choice makes that possible? & The
+  period dates she logs in the app. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Read from the bottom up, this is one \emph{path to harm}:
+
+\begin{center}
+\begin{tikzpicture}[
+  font=\small,
+  bx/.style={draw, rounded corners=2pt, align=center, text width=44mm,
+             minimum height=12mm, inner sep=3pt},
+  arr/.style={-{Stealth[length=1.8mm]}, semithick}]
+  \node[bx] (s) at (0,0)   {\textbf{Component}\\the period dates she logs};
+  \node[bx] (c) at (5.6,0) {\textbf{Capability}\\someone infers a pregnancy};
+  \node[bx] (h) at (11.2,0){\textbf{Harm}\\she is prosecuted};
+  \draw[arr] (s) -- node[above,font=\scriptsize]{makes possible} (c);
+  \draw[arr] (c) -- node[above,font=\scriptsize]{leads to} (h);
+\end{tikzpicture}
+\end{center}
+
+\noindent Next, every part at the bottom gets a label that says whether the
+provider could remove it. There are three possibilities:
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{2.4cm}L{6.6cm}L{7.0cm}@{}}
+\toprule
+\textbf{Label} & \textbf{Meaning} & \textbf{CycleMate example} \\
+\midrule
+Core & The app cannot work without it. & The period dates; the predicted
+  fertile days. \\
+Context & Every app on a phone has it. & The phone's device identifier. \\
+Implementation & The provider chose it and could choose otherwise. & Sending
+  data to an analytics company; storing a copy on a server. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Privacy technologies (encryption, processing on the phone, and so on)
+can only remove \emph{implementation} parts. The path above is built only on a
+\emph{core} part: the app exists to store period dates. So no privacy
+technology can close this path. A provider may still describe its protections
+honestly; what it cannot honestly do is promise that they prevent this harm.
+
+\subsection{Step 2: Split the policy into units}
+
+We split the policy into short pieces, called \emph{units}, usually one
+paragraph each. CycleMate's policy has five:
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.8cm}L{15.2cm}@{}}
+\toprule
+P1 & \enquote{We use the dates you enter to predict your fertile window.} \\
+P2 & \enquote{We share device identifiers with analytics partners.} \\
+P3 & \enquote{Your data stays on your phone, which protects you from anyone
+  using it against you.} \\
+P4 & \enquote{In the unlikely event of a data leak, you might receive unwanted
+  contact.} \\
+P5 & \enquote{Your data is safe with us.} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Step 3: Ask the same three questions of every unit}
+
+\begin{description}[leftmargin=1.5em,itemsep=2pt]
+  \item[A. How far up the tree does the text go?] Does it only mention data
+    (\emph{component}), what someone could do with the data
+    (\emph{capability}), or what could happen to the user (\emph{harm})?
+  \item[B. If it names a harm, how does it treat it?] Plainly
+    (\emph{acknowledged}), as something improbable (\emph{hedged}), as nothing
+    to worry about (\emph{minimised}), or as the user's own problem
+    (\emph{deflected})?
+  \item[C. If it promises protection, can the protection deliver?] Which
+    measure is claimed, which part of the tree does it remove, and does the
+    text promise more than that?
+\end{description}
+
+\noindent The table below gives the answers for CycleMate. The last column
+explains each decision in plain words.
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{0.6cm}L{2.5cm}L{2.0cm}L{3.3cm}L{7.4cm}@{}}
+\toprule
+ & \textbf{A. How far?} & \textbf{B. Harm treated?} & \textbf{C. Protection
+   delivers?} & \textbf{In plain words} \\
+\midrule
+P1 & capability (inference) & --- & --- & Predicting fertile days from logged
+  dates \emph{is} an inference: the app works out something the user never
+  typed in. But the text presents it as a feature, not as a risk, and names
+  no harm. \\
+\addlinespace
+P2 & component & --- & --- & The text says where data goes, but never what the
+  partners could do with it (for example, build a profile of the user). So it
+  stays at the bottom of the tree. \\
+\addlinespace
+P3 & component & --- & \textsc{overclaim} & Keeping data on the phone is a real
+  measure: it removes the server copy, an implementation part. But the text
+  says it \enquote{protects you}. The path in Step~1 rests on the period
+  dates, which stay on the phone, where a partner or anyone who takes the phone
+  can still read them. The promise is bigger than the measure. \\
+\addlinespace
+P4 & harm (unwanted contact) & hedged & --- & A harm is named, which is rare.
+  But \enquote{in the unlikely event} makes it sound improbable. \\
+\addlinespace
+P5 & --- & --- & \textsc{reassurance} & A promise of safety with nothing a
+  reader could check: no measure, no scope. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Step 4: Compare what was said with the tree}
+
+Now we put the tree and the coded units side by side.
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{5.0cm}L{3.0cm}L{8.0cm}@{}}
+\toprule
+\textbf{In the harm tree} & \textbf{Named?} & \textbf{Where, and how} \\
+\midrule
+Inference (capability) & yes, partly & P1, but only as a feature, never as a
+  risk \\
+Profiling by partners (capability) & no & P2 mentions the data flow, never the
+  profiling \\
+Unwanted contact (harm) & yes & P4, but hedged \\
+Prosecution (harm) & no & --- \\
+Discrimination by insurers or employers (harm) & no & --- \\
+Being outed, e.g.\ about a pregnancy (harm) & no & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{What we learn about CycleMate.} Its policy talks about data and
+features. It names one harm and plays it down. It never mentions the most
+serious harms for fertility data (prosecution, discrimination, being outed).
+It makes one promise of protection that its measure cannot keep, and one
+promise that cannot be checked at all.
+
+\subsection{Step 5: Repeat for every app, then count}
+
+The same steps are applied to all 50 apps, and for each app to all four places
+where it talks about privacy: the privacy policy, the store listing, the
+website, and the app's own screens. The counts answer the research questions:
+
+\begin{center}
+\small
+\begin{tabular}{@{}L{1.0cm}L{6.6cm}L{8.4cm}@{}}
+\toprule
+\textbf{RQ} & \textbf{What is counted} & \textbf{CycleMate's contribution} \\
+\midrule
+RQ1 & which parts of the tree each app names, and which it never names & 2 of
+  6 tree entries named; the most serious harms missing \\
+RQ2 & how named harms are treated & 1 harm named, hedged \\
+RQ3 & which protections are claimed, and how often they are oversold & 1
+  measure (on-device storage), 1 \textsc{overclaim}, 1 \textsc{reassurance} \\
+RQ4 & whether the answers differ between policy, store listing, website, and
+  app screens & e.g.\ does the warning in P4 also appear on the sign-up screen?
+  \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Who does what}
+
+With 50 apps and four places each, there are too many units to code by hand,
+so a language model does most of Step~3. For every unit it must answer
+questions A and B and say which measure is claimed and how it is phrased, and
+it must \emph{quote the exact words} each answer rests on. For P3, it would
+return the measure \enquote{on the phone}, the phrasing \enquote{protects you},
+and those two quotes. The model does \emph{not} decide whether a promise is an
+overclaim: that follows from the tree by a fixed rule (harm prevention
+promised + a path to the harm with only core or context parts =
+\textsc{overclaim}). Finally, the author codes a sample of units by hand,
+without looking at the model's answers, to measure how often the model is
+right and, above all, what it misses.
 
 \end{document}

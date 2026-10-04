@@ -122,8 +122,9 @@ finds units that no code above captures.
 
 ## Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019]
 
-Exactly **one** stance per harm-level (`L-HRM`) or capability-level (`L-CAP`)
-code.
+Exactly **one** stance per harm-level (`L-HRM`) unit. Units that stop at a
+capability or component get no stance (proposal: "stance is coded only where a
+harm is named").
 
 | Code | Stance | Definition |
 |---|---|---|
