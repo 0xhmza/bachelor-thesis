@@ -39,7 +39,7 @@ action sequence and ask Wharton et al.'s four questions at every step:
 | # | Task | Why it is here |
 |---|---|---|
 | T1 | Find out what data the app collects | baseline: this is what communication normally covers |
-| T2 | Find out what the app or provider **derives** from that data | RQ1 probe `P-INF` — expected to fail |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v2) — expected to fail |
 | T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 probes `P-BRC`, `P-INC` — expected to fail |
 | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
 | T5 | Turn off sharing with third parties | control, and how it is framed |

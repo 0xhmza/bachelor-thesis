@@ -83,8 +83,8 @@ users believe; to our knowledge, it does not ask which privacy \emph{harms}
 providers name, minimise, or leave out. We propose a content analysis of the
 privacy communication of 50 highly rated fitness and fertility apps on the
 German Google Play and Apple App Store --- privacy policies, store listings,
-provider marketing, and the app interface itself --- coded against a harm
-taxonomy with LLM assistance that is validated for what it \emph{misses} as
+provider marketing, and the app interface itself --- coded against harm trees
+that trace data flows to harms, with LLM assistance that is validated for what it \emph{misses} as
 well as what it finds.
 \end{abstract}
 
@@ -106,48 +106,57 @@ concern health and often sex life as well; activity data such as step counts
 qualifies once it reveals information about health status (Article~4(15),
 Recital~35)~\parencite{gdpr2016}.
 
-A privacy \emph{violation} is not the same as a privacy \emph{harm}. Citron and
-Solove classify privacy injuries into seven types --- physical, economic,
-reputational, psychological, autonomy, discrimination, and relationship
-harm~\parencite[830--861]{citron2021harms}. Knabenhans et al.\ add what a
-typology lacks: the route from a system property to an injury. Analysing the
-European Digital Identity Framework in a preprint, they build \emph{harm trees} that lead
-from information leakage, design decisions, and deployment context through
-adversarial capabilities --- singling users out, tracking them, inferring
-attributes --- to harms, and show that privacy-enhancing technologies (PETs)
-can close pathways that stem from implementation choices but not those inherent
-to the core functionality~\parencite{knabenhans2026harms}. Inference is not
-hypothetical for trackers: a survey of 236 studies reports that tracker data
-can be mined for private attributes, personality traits among
-them~\parencite{niksirat2024wearable}.
+A privacy \emph{violation} is not the same as a privacy \emph{harm}. This
+thesis takes its harm model from Knabenhans et al., who analyse the European
+Digital Identity Framework with \emph{harm trees}~\parencite{knabenhans2026harms}.
+A tree has three levels. At the bottom are \emph{system components}: information
+the system leaks, and requirements it imposes on users. Components combine into
+adversarial \emph{capabilities}: distinguishing users, tracking or profiling
+them, and inferring their attributes. Capabilities lead to \emph{harms}, sorted
+into seven types --- physical, economic, psychological, autonomy,
+discrimination, reputational, and societal --- that extend Citron and Solove's
+typology~\parencite{citron2021harms}. Each component is traced to its origin:
+the core functionality, the digital context, or an implementation choice.
+Privacy-enhancing technologies (PETs) can remove only the last kind. For every
+harm Knabenhans et al.\ study, a pathway remains that no PET can close, and
+presenting PETs as the answer risks a false sense of safety.
 
-For trackers, then, the risk lies as much in what can be inferred as in what is
-collected. Martin et al.\ examine three principles behind big-tech PET
-deployments --- limiting third-party access, using inferences instead of raw
-data, keeping data on the device --- and argue that each can be satisfied while
-the privacy-violating behaviour continues~\parencite{martin2025cookies}. Their
-cases are not health apps; whether tracker providers invoke the same principles
-is what RQ3 asks.
+The model transfers directly to trackers. Inference there is not hypothetical:
+a survey of 236 studies reports that tracker data can be mined for private
+attributes, personality traits among them~\parencite{niksirat2024wearable}. In
+a cycle tracker, inference is the core functionality itself: predicting the
+fertile window is what the app is for, so no PET can remove that capability.
+Martin et al.\ examine three principles behind big-tech PET deployments ---
+limiting third-party access, using inferences instead of raw data, keeping data
+on the device --- and argue that each can be satisfied while the
+privacy-violating behaviour continues~\parencite{martin2025cookies}. Whether
+tracker providers invoke the same principles is what RQ3 asks.
 
-We distinguish four surfaces of privacy communication: the privacy policy, the store
-listing, the provider's marketing (website, blog, advertising), and the app
-interface. Each is subject to some law --- misleading claims in listings and
-advertising fall under unfair-commercial-practices
-law~\parencite{ucpd2005} --- but only the notice required by Articles 13--14
-GDPR, conventionally the privacy policy, has prescribed content: controller,
-purposes, legal basis, recipients, transfers, retention, and rights.
-Consequences for the user appear in three narrow places: the consequences of
-not providing data (Article~13(2)(e)), \enquote{the significance and the
-envisaged consequences} of solely automated decisions (Articles 13(2)(f),
-14(2)(g), 15(1)(h)), and, after a high-risk breach, its \enquote{likely
-consequences} (Article~34(2) with 33(3)(c))~\parencite{gdpr2016}. Recital~39
-asks that people be made aware of \enquote{risks}, and for complex or
-unexpected processing the EDPB-endorsed transparency guidelines recommend
-spelling out \enquote{the most important consequences of the
-processing}~\parencite{wp292018transparency}, but neither is an operative
-duty. \textbf{Outside automated decisions, no provision requires a provider to
-state in advance what can be inferred from the data it collects, or what would
-follow for the user if the data were exposed.}
+Providers communicate about privacy on four surfaces: the privacy policy, the
+store listing, their marketing (website, blog, advertising), and the app
+interface. All four are regulated --- misleading claims in listings and
+advertising, for instance, fall under unfair-commercial-practices
+law~\parencite{ucpd2005} --- but only one has prescribed content: the notice
+required by Articles 13--14 GDPR, conventionally the privacy policy. It must
+name the controller, purposes, legal basis, recipients, transfers, retention
+period, and the user's rights. It describes \emph{data flows}, not
+\emph{consequences}.
+
+Inference and exposure are covered only in part. Inference is processing, so a
+provider that profiles its users must name profiling as a purpose. It need not
+say what it infers: \enquote{to personalise your experience} is enough, even if
+it estimates pregnancy or illness. Users learn what was inferred only on
+request (Article~15). For exposure, the provider must assess the risks
+(Articles~32 and~35) but need not share the assessment. It must state the
+\enquote{likely consequences} of a breach only after a high-risk breach
+(Article~34(2)). Beyond that, consequences must be stated only for refusing to
+provide data and for solely automated decisions (Articles 13(2)(e),
+13(2)(f))~\parencite{gdpr2016}. Recitals~39 and~60 and the EDPB-endorsed
+guidelines ask for more~\parencite{wp292018transparency}, but neither is
+binding. \textbf{Outside solely automated decisions, no binding provision
+requires a provider to tell users in advance what could be inferred from their
+data, or what would follow if it were exposed.} What providers say about harm
+is voluntary; this thesis examines what they say.
 
 %---------------------------- 2. Research Problem ---------------------
 \section{Research Problem}
@@ -173,11 +182,11 @@ To our knowledge, none maps which \emph{harms} providers name
 \emph{before} anything has gone wrong. That is the gap: \textbf{we lack a
 systematic account of what harms service providers communicate} --- which
 types are acknowledged, minimised, or ignored, and how PETs are framed (secrecy
-versus harm prevention). Three things fall largely outside both the GDPR's
-information duties and the store disclosure schemas --- \textbf{inference},
-\textbf{breach consequences}, and \textbf{incident handling} --- and a fourth
-cuts across them: whether any \textbf{concrete consequence} is ever named, or
-whether the text stays at the level of data flows.
+versus harm prevention). In harm-tree terms, the GDPR's information duties and
+the store disclosure schemas ask only for the bottom level: data flows. We ask
+whether provider text ever climbs higher --- to a \textbf{capability} such as
+inference, or to a \textbf{harm} --- and what it says about two things outside
+those duties: \textbf{breach consequences} and \textbf{incident handling}.
 
 \noindent\textbf{RQ.} \emph{What types of downstream privacy harms do
 health tracker service providers explicitly acknowledge or downplay when
@@ -186,13 +195,14 @@ protection these technologies offer?}
 
 \begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=2pt,labelindent=0pt,
                     font=\normalfont\bfseries]
-  \item[RQ1] \textit{Coverage.} Which harm types appear, which are absent, and
-    how often are inference, breach, incident handling, or a concrete
-    consequence named at all?
+  \item[RQ1] \textit{Coverage.} Which harms, capabilities, and components of
+    the domain's harm tree are named, which are absent, and how often does a
+    text reach the harm level at all?
   \item[RQ2] \textit{Stance.} Is a mentioned harm acknowledged, hedged,
     minimised, or deflected onto the user?
-  \item[RQ3] \textit{PET framing.} Which of Martin et al.'s three principles are
-    invoked, and is protection framed as secrecy or as harm prevention?
+  \item[RQ3] \textit{PET framing.} Which protections are claimed, which
+    pathways can they close given their origin, and are they presented as
+    preventing harms whose pathways they cannot close?
   \item[RQ4] \textit{Consistency.} Does the answer change between policy, store
     listing, marketing, and interface?
 \end{description}
@@ -220,7 +230,7 @@ may conclude they are protected; if the provider derives and acts on an
 inference instead, that conclusion is wrong and nothing in the text said so.
 \textbf{Providers and designers.} A map of which harms are named, where, and
 in what terms shows what their communication omits.
-\textbf{Regulators.} If the four elements above are near-absent across a
+\textbf{Regulators.} If text rarely climbs above data flows across a
 segment handling Article~9 data, that is a concrete finding about what a
 transparency regime built on data-practice disclosure leaves out.
 \textbf{Research.} Harm typologies were built for courts and for system
@@ -237,14 +247,11 @@ date; every instrument --- sampling protocol, codebook, each LLM prompt --- is
 versioned, and every model run is logged with prompt version, model identifier,
 date, and raw output, so any figure can be traced to a dated source.
 
-\textbf{Literature review.} Part of the thesis is a literature review that tests
-the gap claimed above rather than assuming it, with logged search terms, in
-three areas: \emph{privacy harms} (also Solove's
-taxonomy~\parencite{solove2006taxonomy} and Calo's subjective/objective
-distinction~\parencite{calo2011boundaries}), \emph{health tracker security and
-privacy}, and \emph{methods} --- policy annotation and
-classification~\parencite{wilson2016creation,zimmeck2019maps}, LLM-based policy
-analysis, the cognitive walkthrough, and content
+\textbf{Literature review.} A logged-search review tests the claimed gap rather
+than assuming it, in three areas: \emph{privacy harms}
+\parencite{solove2006taxonomy,calo2011boundaries}, \emph{health tracker
+privacy}, and \emph{methods}, from policy
+annotation~\parencite{wilson2016creation,zimmeck2019maps} to content
 analysis~\parencite{krippendorff2019content}.
 
 \begin{figure*}[t]
@@ -258,7 +265,7 @@ analysis~\parencite{krippendorff2019content}.
   \hyphenpenalty=10000 \exhyphenpenalty=10000
   \node[bx] (a) at (-7.2,0) {\textbf{Sample}\\50 apps, German stores,\\stratified 30/20};
   \node[bx] (b) at (-3.6,0) {\textbf{Corpus}\\policies, listings, marketing,\\12 walkthroughs};
-  \node[bx] (c) at ( 0.0,0) {\textbf{Coding}\\harm type, stance,\\PET framing};
+  \node[bx] (c) at ( 0.0,0) {\textbf{Coding}\\against per-domain\\harm trees};
   \node[bx] (d) at ( 3.6,0) {\textbf{Validation}\\precision, $\kappa$ with prevalence,\\recall with interval};
   \node[bx] (e) at ( 7.2,0) {\textbf{Answers}\\RQ1--RQ4, each code\\backed by a quote};
   \draw[arr] (a) -- (b); \draw[arr] (b) -- (c);
@@ -277,49 +284,45 @@ Eisprung, period tracker}).
 \enquote{Highest rated} is fixed in advance: the first 20 results per keyword
 are recorded, the pooled set filtered to apps with $\geq 1{,}000$ ratings (a
 heuristic floor, so that averages rest on enough votes), then ranked by average
-rating, rating count as tie-break. The unit is the app, not the listing: an app
-on both stores is one sample member, ranked by the count-weighted mean of its
-two ratings.
-Target: \textbf{50 apps}, stratified 30 fitness / 20 fertility. The strata are
-fixed, not proportional, so figures are reported per stratum. A five-app pilot
-tests the instruments first; its apps stay in the sample but, having shaped the
-codebook and prompts, are kept out of the validation set. An app is included if
-it is available on the German storefront, collects health or body data, is
-free to install, has a policy reachable from its listing, and offers a German
-or English interface. DiGA, device companions with no tracking function of
-their own, apps requiring identity verification or payment, and duplicates of
-one provider's app under another name are excluded; apps certified as medical
-devices but freely installable stay in and are flagged, since users meet them
-in the same results. An app with no reachable policy is recorded as a finding
-before it is dropped from text coding. The ranked lists are stored with the
-capture date, so the sample can be reconstructed after the rankings move.
+rating, rating count as tie-break; an app on both stores counts once.
+Target: \textbf{50 apps}, stratified 30 fitness / 20 fertility, reported per
+stratum. A five-app pilot tests the instruments; its apps stay in the sample
+but are kept out of the validation set. Included apps collect health or body
+data, are free to install, and have a reachable policy; DiGA, device companions
+with no tracking of their own, and duplicates are excluded. An app with no
+reachable policy is recorded as a finding. The ranked lists are stored with the
+capture date, so the sample can be reconstructed.
 
 \textbf{Material.} Per app: privacy policy, store description and structured
 disclosure, and the provider's marketing --- website, privacy blog posts, and
-advertising. Where a policy exists in German and English, the German version is
-coded and the English one checked against it; a divergence is reportable. Each document is archived with
-source, language, URL, capture date, SHA-256 hash, and app version, then split
-into coding units at heading and paragraph boundaries. Prevalence is reported
-chiefly per app, so that a 40-page policy does not outweigh a three-line blurb
-by length alone. Units are coded and quoted in the source language, translated
-only when reported. Advertising is coded where found, but its absence is not a
-finding, since ad delivery cannot be reproduced.
+advertising. German versions are coded, English ones checked against them.
+Each document is archived with URL, capture date, hash, and app version, then
+split into coding units at paragraph boundaries. Prevalence is reported per
+app, so that a 40-page policy does not outweigh a three-line blurb. Absent
+advertising is not a finding, since ad delivery cannot be reproduced.
 
 \textbf{Walkthrough.} Twelve apps --- per domain, the three highest-ranked
 eligible apps on Android and on iOS, excluding apps that cannot be set up
 without a paired device --- are inspected manually with the cognitive
 walkthrough~\parencite{wharton1994cognitive}, adapted so that the tasks are
-\emph{privacy} tasks. Every session starts from a fresh install with region set
-to Germany, is screen-recorded, and follows one fixed sequence. The tasks: find
+\emph{privacy} tasks, from a fresh install and screen-recorded. The tasks: find
 what is collected; find what is \emph{derived}; find what happens after a
-breach; reach the policy from inside the app; stop third-party sharing; export;
-delete. At each step the method's four questions are asked. Each step's screen
-is captured and its outcome recorded as success or failure with the reason, so
-that a failure is data rather than a missing value; the privacy text on those
-screens is coded with the same codebook as the documents.
+breach; reach the policy; stop third-party sharing; export; delete. Each step
+is recorded as success or failure with the reason, and the privacy text on its
+screens is coded with the same codebook.
 
-\textbf{Coding.} Three axes (Table~\ref{tab:axes}); stance is coded only where a
-harm is named. Every category gets a definition, a positive example, and a
+\textbf{Reference harm trees.} Before coding, one harm tree is built per
+domain, following Knabenhans et al.'s procedure: harms are taken from the
+tracker literature~\parencite{niksirat2024wearable,shipp2020period,cao2024deleted}
+and the seven types, and each pathway's components are labelled by origin. In a
+cycle tracker, for instance, logged cycles and the predicted fertile window are
+\emph{core}; device identifiers and platform metadata are \emph{context};
+advertising SDKs, cloud sync, and retention periods are \emph{implementation}.
+The trees fix in advance what a complete account of harm could contain, so an
+absence is measured against a stated, versioned baseline.
+
+\textbf{Coding.} Each unit is mapped onto the tree on three axes
+(Table~\ref{tab:axes}); stance is coded only where a harm is named. Every category gets a definition, a positive example, and a
 mandatory counter-example; without the counter-example a category has no
 boundary, and human and model alike drift. Text is coded as written, never as
 what the provider is assumed to mean; a unit may carry several codes; when
@@ -336,21 +339,26 @@ verbatim span and logged.
 \toprule
 \textbf{Axis} & \textbf{Values} \\
 \midrule
-A\enspace Harm type &
-  seven Citron--Solove types; four probes (\textsc{inference},
-  \textsc{breach-consequence}, \textsc{incident-handling},
-  \textsc{concrete-consequence}); Knabenhans et al.\ pathway stage \\
+A\enspace Pathway &
+  highest tree level reached (component, capability, harm); capability
+  (distinguishing, tracking/profiling, inference); harm type (seven);
+  probes \textsc{breach-consequence}, \textsc{incident-handling} \\
 B\enspace Stance &
   acknowledged, hedged, minimised, deflected; at app level also absent \\
-C\enspace PET framing &
-  principle invoked; secrecy vs.\ harm prevention; reassurance with no
-  verifiable commitment \\
+C\enspace Protection &
+  measure claimed (incl.\ Martin et al.'s principles); origin of the
+  component it removes; data-flow vs.\ harm-prevention framing;
+  \textsc{overclaim}; reassurance with no verifiable commitment \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:example} codes a constructed sentence: read against Martin et
-al., a text can be accurate and still silent on harm.
+\textsc{overclaim} marks a measure presented as preventing a harm whose
+reference tree keeps a core or context pathway --- the false sense of safety
+Knabenhans et al.\ warn about. Stance is not part of their model; it is adapted
+from the hedging found in breach notices~\parencite{zou2019might}.
+Table~\ref{tab:example} codes a constructed sentence: a text can be accurate
+and still silent on harm.
 
 \begin{table}[h]
 \caption{A constructed example of a coded unit.}
@@ -361,10 +369,12 @@ al., a text can be accurate and still silent on harm.
 \textbf{Unit} & \enquote{We never share your raw data with third parties;
   all analysis happens on your device.} \\
 \midrule
-A & no harm type named; none of the four probes addressed \\
+A & component level only; no capability or harm named \\
 B & not coded, since no harm is named \\
-C & third-party limitation and on-device processing invoked; framed as secrecy,
-  not as harm prevention \\
+C & third-party limitation and on-device processing; both remove
+  implementation components; framed as data flow. In a cycle tracker the
+  inference pathway is core, so a claim that this \emph{prevents} harm
+  would be coded \textsc{overclaim} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -375,10 +385,8 @@ hand, so coding is LLM-assisted: one versioned prompt per axis, a pinned model
 0, and structured output in which every code carries a verbatim span --- a code
 without one is discarded. Temperature 0 does not guarantee identical output from
 a hosted model, so each unit is run three times and a code is kept when at
-least two runs return it. Existing automated tools for policy analysis, from deep-learning
-classifiers~\parencite{harkous2018polisis} to LLM
-pipelines~\parencite{rodriguez2024llm}, code \emph{data practices}, not harms,
-so a purpose-built pipeline is used.
+least two runs return it. Existing tools~\parencite{harkous2018polisis,rodriguez2024llm}
+code \emph{data practices}, not harms, so the pipeline is purpose-built.
 \textbf{Calibration is deliberately asymmetric.} The headline claims are claims of
 \emph{absence}, and the two error types are not equally dangerous: a false
 positive inflates a count that ships with its quote and can be checked, whereas
@@ -396,14 +404,9 @@ thus never reported as \enquote{the provider does not mention X} but as
 \enquote{no mention was found by an instrument whose measured recall for X is
 $r$}, with a 95\,\% interval, or as unestimable where too few instances exist.
 
-\textbf{Analysis.} Descriptive --- with 50 apps and rare codes no inferential
-claim is made about the population; only the validation estimates carry
-intervals. Counts
-are reported per domain, so that the contrast between fitness and fertility
-trackers stays visible. Table~\ref{tab:rq} shows how each question is answered;
-the headline for RQ4, on the twelve walkthrough apps, is how often a code
-present in the policy is absent from the screen where the user actually
-decides.
+\textbf{Analysis.} Descriptive and per domain; only the validation estimates
+carry intervals (Table~\ref{tab:rq}). The headline for RQ4 is how often a code
+present in the policy is absent from the screen where the user decides.
 
 \begin{table}[h]
 \caption{From research question to result.}
@@ -413,29 +416,27 @@ decides.
 \toprule
 \textbf{RQ} & \textbf{Evidence} & \textbf{Result} \\
 \midrule
-RQ1 & all units, all surfaces & prevalence per code, per app and unit \\
+RQ1 & all units, all surfaces & tree nodes reached, per app \\
 RQ2 & units that name a harm & stance distribution, as counts \\
-RQ3 & all surfaces & principle crossed with framing \\
+RQ3 & all surfaces & measures by origin; overclaims \\
 RQ4 & all; interface for 12 apps & pairwise comparison of code sets \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Ethics.} No human subjects are involved. Walkthroughs use synthetic
-data and accounts made for the study; store terms are checked before any
-automated retrieval; written ethics confirmation precedes collection.
+\textbf{Ethics.} No human subjects; walkthroughs use synthetic data and study
+accounts; store terms are checked before any automated retrieval.
 
 \textbf{Limitations.} \emph{Absence is not intent:} the study establishes that a
 harm is not mentioned, never \emph{why}, and attributes no motive.
-\emph{Snapshot:} the corpus is frozen on a stated date and every claim is
-indexed to it. \emph{Market and language:} the
-German storefront determines the sample. \emph{Selection:} the rating floor and
-search ranking favour large providers, so the findings describe what users are
-most likely to meet, not the whole market. \emph{One coder:} $\kappa$ compares
-model and author, not two humans, so no inter-coder reliability figure is
-claimed~\parencite{mcdonald2019reliability}. \emph{Recall:} measured partly on
-sweep-flagged units, $r$ may overstate recall for implicit mentions that
-neither codebook nor sweep anticipated.
+\emph{Snapshot:} every claim is indexed to the capture date.
+\emph{Selection:} the German storefront, rating floor, and search ranking
+favour large providers; the findings describe what users most likely meet.
+\emph{Trees:} the reference trees are the author's construction, so coverage is
+measured against them, not against all possible harms. \emph{One coder:} $\kappa$ compares
+model and author, so no inter-coder reliability is
+claimed~\parencite{mcdonald2019reliability}. \emph{Recall:} $r$ may overstate
+recall for implicit mentions the sweep did not anticipate.
 
 %---------------------------- References ------------------------------
 \clearpage
