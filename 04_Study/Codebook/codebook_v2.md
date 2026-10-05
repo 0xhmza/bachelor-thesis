@@ -1,7 +1,7 @@
 ---
 version: 2
 date: 2026-10-04
-status: draft — definitions written, examples to be filled from the pilot
+status: superseded by codebook_v3.md (2026-10-05) — kept for the version history
 source: 03_Thesis/proposal/proposal.tex (Reference harm trees, Coding); harm model from Knabenhans et al. (2026), ePrint 2026/867
 supersedes: codebook_v1.md
 ---

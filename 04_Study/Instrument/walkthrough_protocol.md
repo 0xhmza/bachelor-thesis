@@ -1,7 +1,7 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 1 · **Date:** 2026-09-18 · Operational version of §4.4 of the
-proposal. Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
+**Version:** 2 · **Date:** 2026-10-05 · Operational version of the
+Walkthroughs paragraph of the proposal. Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
 *Usability Inspection Methods*, pp. 105–140. The four questions below are from
 Table 5.1, p. 106.
@@ -11,7 +11,10 @@ automated. The point is to make every walkthrough identical, so differences you
 find are differences between apps and not between sessions.
 
 **Subsample:** 12 apps, balanced 6 fitness / 6 fertility, each domain split
-3 Android / 3 iOS, drawn from the top of the ranked sample.
+3 Android / 3 iOS. Fill the slots in rank order, **alternating** Android and
+iOS, without reusing an app. The balance serves coverage, not platform
+comparison. Apps that need an unavailable paired device, payment, or identity
+verification are skipped with a recorded reason; unfilled slots are reported.
 
 ## Setup
 
@@ -39,15 +42,18 @@ action sequence and ask Wharton et al.'s four questions at every step:
 | # | Task | Why it is here |
 |---|---|---|
 | T1 | Find out what data the app collects | baseline: this is what communication normally covers |
-| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v2) — expected to fail |
-| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 probes `P-BRC`, `P-INC` — expected to fail |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v3) |
+| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v3) |
 | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
 | T5 | Turn off sharing with third parties | control, and how it is framed |
 | T6 | Export the data | control |
 | T7 | Delete the account and the data | control |
 
-**T2 and T3 are the ones that matter.** They are expected to fail. Record
-*where* in the action sequence they fail and against which of the four questions.
+**Do not anticipate outcomes.** Record every task in one of four neutral
+categories — **completed**, **information not found**, **task unsupported**,
+**access barrier** — together with *where* in the action sequence it stopped
+and against which of the four questions. The pilot fixes each task's starting
+point and time limit; "not found" means not found within that limit.
 
 ## Fixed session sequence
 
@@ -79,9 +85,9 @@ Do these steps in this order, every time:
 | Platform | |
 | Domain stratum | fitness / fertility |
 | Date of walkthrough | |
-| T1 outcome | reached / not reached, where it failed |
-| T2 outcome | reached / not reached, where it failed |
-| T3 outcome | reached / not reached, where it failed |
+| T1 outcome | completed / not found / unsupported / access barrier; where it stopped |
+| T2 outcome | completed / not found / unsupported / access barrier; where it stopped |
+| T3 outcome | completed / not found / unsupported / access barrier; where it stopped |
 | T4 taps to privacy policy | |
 | T5 outcome + default state before change | |
 | T6 outcome | |
@@ -106,11 +112,13 @@ Any privacy-relevant text captured here enters the corpus as source
 ## Ethics rules that bind every session
 
 Throwaway accounts and synthetic data only. No real name, address, health data,
-or payment details. No app that requires identity verification — those are
-excluded at sampling. See [`../Ethics/README.md`](../Ethics/README.md).
+or payment details. Apps that require identity verification or payment stay in
+the document sample but are skipped here. See
+[`../Ethics/README.md`](../Ethics/README.md).
 
 ## Version history
 
 | Version | Date | Change | Reason |
 |---|---|---|---|
 | 1 | 2026-09-18 | Added the seven privacy tasks, the four Wharton et al. questions, and the per-task record fields | Aligns the instrument with §4.4 of the proposal |
+| 2 | 2026-10-05 | "Expected to fail" removed; four neutral outcome categories; alternating Android/iOS slot filling; payment/ID-verification apps skipped here, not excluded from the sample; codebook v3 codes | Anticipated outcomes risk steering an analyst-based inspection; alignment with the current proposal |

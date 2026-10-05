@@ -115,9 +115,38 @@ An app is excluded if **any** of the following hold:
   member with two listings, ranked by the rating-count-weighted mean of its two
   average ratings.
 - **Walkthrough subsample:** 12 apps, **balanced** 6 fitness / 6 fertility, each
-  domain split 3 Android / 3 iOS: the highest-ranked eligible app for each slot,
-  no app twice. Apps that cannot be set up without a paired device are not
-  eligible for the walkthrough.
+  domain split 3 Android / 3 iOS, filled in rank order **alternating** Android
+  and iOS slots, no app twice. The balance serves coverage, not platform
+  comparison. Apps that cannot be set up without a paired device, or that need
+  payment or identity verification, are skipped with a recorded reason.
+- **Validation set:** 10 apps, 5 per domain, drawn at random with a recorded
+  seed from providers and documents **not used in the pilot**, stratified by
+  the language of the coded policy where both languages occur.
+
+## Search and matching rules
+
+⚠ Proposed defaults — confirm or change them in the pilot, before collection.
+
+- **Collection window:** all keyword searches for one store run within the same
+  7-day window; record the dates, device and account state (logged out where
+  the store allows).
+- **Sponsored results:** results marked as ads ("Anzeige", "Ad") are recorded
+  but do not count towards the first 20 and are not eligible.
+- **Exact ties** (same average rating and rating count): ordered by app ID,
+  which is assigned at random with a recorded seed.
+- **Cross-store matching:** an Android and an iOS listing are the same app if
+  developer, product name, and privacy-policy URL match; borderline cases are
+  logged with the reason.
+- **Duplicate vs. different product:** a duplicate is the same provider's app
+  with the same core tracking function and the same policy under another name;
+  an app with a different core function (e.g. a cycle tracker and a step
+  counter from one provider) is a different product. Repeated providers are
+  flagged so they are not read as independent.
+- **Language:** recorded per source, not per app. German is primary; English is
+  used when German is unavailable.
+- **Source completeness:** record for each core source whether it was captured,
+  is **not offered** by the provider, or **exists but could not be
+  retrieved**. Only the last reduces an analysis denominator.
 
 ## What is recorded per app
 
@@ -156,3 +185,4 @@ An app is excluded if **any** of the following hold:
 | 2026-09-29 | Medical-device apps no longer excluded, only DiGA; `Medical device` field added | Excluding them would drop certified contraceptive apps that users meet in the same fertility results |
 | 2026-09-29 | Pilot apps kept out of the validation set | They shaped the instruments, so validating on them would overstate accuracy |
 | 2026-09-29 | Unit of analysis and walkthrough selection rule stated | Both were implicit; the proposal now states them |
+| 2026-10-05 | Walkthrough slots alternate Android/iOS; validation set excludes pilot providers and documents; search and matching rules added as proposed defaults | Android-first filling favoured Android; shared policies could leak pilot material into validation; ties, sponsored results, matching, duplicates and source completeness were undefined |

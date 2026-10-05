@@ -11,7 +11,7 @@
 |---|---|
 | `00_Admin/` | Meeting notes, supervisor input, timeline, the official thesis offer. Start here. |
 | `01_Literature/` | Papers (`PDFs/`), reading notes (`Notes/`), reading-list tracker. |
-| `03_Thesis/` | **LaTeX thesis** — open `thesis.tex` in TeXstudio. Its subfolder `proposal/` holds **the proposal**, the first kernel of the thesis: a three-page paper for the supervisor (`proposal/proposal.tex`). |
+| `03_Thesis/` | **LaTeX thesis** — open `thesis.tex` in TeXstudio. Its subfolder `proposal/` holds **the proposal**, the first kernel of the thesis: a four-page paper for the supervisor (`proposal/proposal.tex`). |
 | `04_Study/` | App sample, codebook, LLM prompts, ethics, survey instrument. |
 | `05_Data/` | `raw/` (untouched, gitignored), `processed/`, `analysis/`. |
 | `06_Presentation/` | Beamer slides for the proposal talk and the defence. |
@@ -115,9 +115,9 @@ boilerplate) and holding only what the supervisor asked for — Background,
 Research Problem, Why the Problem Is Important, Methodology — plus the RQ and
 scope from his written input of 2026-09-05.
 
-The supervisor asked for **three pages**. The layout is three full pages of
-content; the reference list starts on page 4 and is not counted. After any edit,
-recompile and check. If the text spills, cut content — do not shrink the font or
+The supervisor originally asked for three pages; the approved length is now
+**four pages of content**, then the reference list (page 5, not counted) and
+one appendix page with a worked example. After any edit, recompile and check. If the text spills, cut content — do not shrink the font or
 the margins.
 
 ```powershell
@@ -166,7 +166,8 @@ editor does. `05_Data/raw/` is ignored.
 ## Next actions
 
 See `00_Admin/Timeline.md`. The proposal is written and compiles
-(`03_Thesis/proposal/proposal.pdf`, three pages of content plus references).
+(`03_Thesis/proposal/proposal.pdf`, four pages of content plus references and
+a one-page appendix).
 What is left before it goes to the advisor:
 
 1. **Read it once more, on paper**, and check the author block in

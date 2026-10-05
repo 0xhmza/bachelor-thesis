@@ -22,7 +22,7 @@ tracker. The long argued version, with where each phase can slip, is archived in
 | 2 | Google Doc set up and shared with advisor | | ☐ |
 | 3 | Scope question resolved (document analysis vs. survey — see meeting notes §8) | 2026-09-18 | ◐ decided in the proposal (Scope; `Open-Points.md` item 1); awaiting advisor's confirmation |
 | 3b | Own literature search: privacy harms · tracker S&P · methods (advisor's explicit ask) | 2026-09-18 | ☑ first pass — 17 new entries in `_shared/references.bib`, all verified against the publisher record |
-| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, three full pages of content plus references, the length the supervisor asked for. The old 4-page and 25-page versions are archived in `99_Archive/_junk/02_Proposal/`. Read once more, then send |
+| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, four pages of content plus references and a one-page appendix (the approved length). The old 4-page and 25-page versions are archived in `99_Archive/_junk/02_Proposal/`. Read once more, then send |
 | 5 | Proposal approved | | ☐ |
 | 6 | Thesis registered with the Prüfungsamt | | ☐ |
 | 7 | Keyword list + inclusion/exclusion criteria fixed | 2026-09-18 | ☑ drafted in `04_Study/App-Sample/sampling_protocol.md`; confirm thresholds with advisor |
@@ -56,7 +56,7 @@ drafted alongside collection, so week 11 assembles rather than writes.
 | Weeks 1–4 | 2026-11-02 – 11-29 | Sample frozen (n = 50); corpus collected, hashed, segmented |
 | Weeks 5–6 | 2026-11-30 – 12-13 | Twelve privacy walkthroughs |
 | Weeks 7–8 | 2026-12-14 – 12-27 | LLM coding runs; manual validation subsample |
-| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Agreement, precision and recall reports; results |
+| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Re-code two validation apps (≥ 2 weeks after first coding); agreement, precision and recall reports; results |
 | Weeks 11–12 | 2027-01-11 – 01-24 | Full draft to supervisor; revisions |
 | Buffer | to 2027-02-02 | Final checks and submission |
 
