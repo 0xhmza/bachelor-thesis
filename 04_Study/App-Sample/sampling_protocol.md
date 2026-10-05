@@ -89,8 +89,11 @@ An app is excluded if **any** of the following hold:
    flagged in the `Medical device` field, since users meet them in the same
    search results.
 3. It is a pure device companion with no tracking function of its own.
-4. Account creation requires identity verification or payment
-   (forbidden by the ethics rules — see [`../Ethics/README.md`](../Ethics/README.md)).
+4. *(Walkthrough eligibility only.)* Account creation requires identity
+   verification or payment (forbidden by the ethics rules — see
+   [`../Ethics/README.md`](../Ethics/README.md)). Such apps stay in the
+   document sample, which needs no account; they are skipped in walkthroughs
+   with a recorded reason.
 5. It duplicates an app already in the sample from the same provider under a
    different name.
 
@@ -99,7 +102,8 @@ An app is excluded if **any** of the following hold:
 - **Per keyword:** record the first **20** results in the store's default
   ordering, together with average rating and rating count.
 - **Filter:** keep only apps with **≥ 1,000 ratings** on the platform in
-  question. Below that, the average rating is noise.
+  question — a practical threshold to limit reliance on very small rating
+  counts, not a statistical cut-off.
 - **Ranked by:** average store rating, descending.
 - **Ties broken by:** rating count, descending.
 - **Target sample size:** **50 apps**, stratified **30 fitness / 20 fertility**.
