@@ -475,88 +475,118 @@ The study cannot establish provider intent, actual harms or effects on users.
 \section{Worked Example: From a Pathway to Text Codes}
 \label{app:example}
 
-\emph{CycleMate} is a fictional period tracker. The statements and assumptions
-below are constructed to explain the method. They are not findings about a
-real app. Three questions guide coding: \textbf{A}~What is mentioned?
-\textbf{B}~How is a named harm presented? \textbf{C}~What protection is promised?
+This example applies the method to a constructed privacy notice of a
+fictional period tracker, \emph{App~F}. The statements and assumptions are
+invented to illustrate the rules; they are not findings about any real app.
 
-\textbf{1. Define a conditional pathway.} Suppose a partner can open the
-unlocked app and read dated cycle records. The partner might infer a possible
-pregnancy and disclose it to family members against the user's wishes,
-causing distress. The inference may be wrong. This pathway requires readable
-access and unwanted disclosure as well as stored dates.
+\textbf{Step 1: Model a pathway.} Pathway F1 of the fertility reference tree
+(Figure~\ref{fig:example-path}) joins two components by AND, so both must
+hold. The cycle records are \emph{core} (the app cannot work without them); a
+partner's access to the unlocked phone is \emph{digital context} (it comes
+from using a phone that others may handle). The prediction made \emph{for the
+user} gives no one else access; the access condition creates the route to
+harm. A measure blocks F1 only by removing a necessary condition: an app lock
+removes the access condition, but keeping data on the phone does not.
 
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}[
   font=\small,
-  bx/.style={draw,rounded corners=2pt,align=center,text width=44mm,
-             minimum height=15mm,inner sep=3pt},
+  bx/.style={draw,rounded corners=2pt,align=center,text width=50mm,
+             minimum height=12mm,inner sep=2.5pt},
   arr/.style={-{Stealth[length=1.8mm]},semithick}]
-  \node[bx] (s) at (0,0) {\textbf{Components}\\Cycle records AND a partner's\\readable access to the app};
-  \node[bx] (c) at (5.6,0) {\textbf{Capability}\\The partner can infer\\a possible pregnancy};
-  \node[bx] (h) at (11.2,0) {\textbf{Harm}\\Unwanted disclosure\\causes distress};
+  \node[bx] (s) at (0,0) {\textbf{Components}\\Cycle records (core) AND a partner\\can open the unlocked phone (context)};
+  \node[bx] (c) at (6.0,0) {\textbf{Capability}\\The partner infers a possible\\pregnancy (inference)};
+  \node[bx] (h) at (12.0,0) {\textbf{Harm}\\Unwanted disclosure to family:\\distress (psychological),\\relationship tag};
   \draw[arr] (s)--(c);
   \draw[arr] (c)--(h);
 \end{tikzpicture}
-\caption{One possible branch of a reference tree, read left to right.
-The arrows express conditional possibilities, not inevitable outcomes.}
-\Description{Cycle records combined with readable partner access may enable
-pregnancy inference. Sharing that inference against the user's wishes may cause distress.}
+\caption{Pathway F1. An arrow means \enquote{can lead to}, not \enquote{will
+lead to}; the inference may also be wrong.}
+\Description{Cycle records, which are core, combined with a partner's access
+to the unlocked phone, which is digital context, let the partner infer a
+possible pregnancy. Disclosing it to family against the user's wishes causes
+distress, a psychological harm with a relationship tag.}
 \label{fig:example-path}
 \end{figure}
 
-Cycle records support the core function. Whether a partner can read them
-depends on access conditions and safeguards. On-device storage can avoid a
-server copy, but does not by itself block access to an unlocked screen.
-An app lock might address that access route. No conclusion about all PETs
-follows from this single pathway.
+\textbf{Step 2: Decide whether the pathway applies.} The applicability record
+notes the required feature (cycle records stored on the phone), the evidence
+(S1, S2 below), the assumption (another person sometimes uses the unlocked
+phone) and the decision: \emph{applicable}. Psychological harm and the
+relationship tag therefore apply to App~F. Every mention is coded regardless
+of applicability; applicability only decides which \emph{missing} harms count
+as gaps (RQ1).
 
-\textbf{2. Code the statements.} In Table~\ref{tab:worked}, each row is a
-unit. The quoted words provide the evidence. A dash means that the axis does
-not apply, not that a source was missing.
+\textbf{Step 3: Code the statements.} Each statement in
+Table~\ref{tab:worked} is one unit. A lists every mentioned element with its
+status (asserted, possible or denied); B gives a stance only for a named harm;
+C gives the measure's framing, strength and scope. A dash: axis not applicable.
 
 \begin{table}[h]
-\caption{Constructed statements and their codes. Stance is attached to a
-concrete harm, and protection claims retain their stated scope.}
+\caption{Constructed statements and their codes.}
 \label{tab:worked}
 \small
-\begin{tabular}{@{}L{0.5cm}L{5.7cm}L{3.0cm}L{2.1cm}L{4.8cm}@{}}
+\begin{tabular}{@{}L{0.5cm}L{4.7cm}L{4.1cm}L{2.5cm}L{4.3cm}@{}}
 \toprule
- & \textbf{Statement} & \textbf{A: Coverage} & \textbf{B: Stance} & \textbf{C: Protection} \\
+ & \textbf{Statement} & \textbf{A: What is mentioned} & \textbf{B: Stance}
+ & \textbf{C: Protection} \\
 \midrule
-P1 & \enquote{We use your cycle dates to predict your fertile window.}
- & Component and capability (inference) & -- & -- \\
+S1 & \enquote{We use your cycle dates to predict your fertile window.}
+   & Dates: component, asserted. Prediction: inference capability, asserted
+     (as a feature) & -- & -- \\
 \addlinespace
-P2 & \enquote{Cycle data stays on your phone. This reduces exposure through our servers.}
- & Component & -- & On-device storage, scoped risk reduction \\
+S2 & \enquote{Your cycle data is stored only on your phone. This reduces
+     exposure through our servers.}
+   & Storage on the phone: component, asserted & --
+   & On-device storage; data-flow framing; partial; scope: server exposure \\
 \addlinespace
-P3 & \enquote{Keeping cycle data on your phone prevents anyone, including someone using your phone, from inferring a pregnancy.}
- & Component asserted, capability denied & -- & Absolute prevention within the named actor scope. Potential mismatch for the modelled access route. \\
+S3 & \enquote{Because your data stays on your phone, no one, not even someone
+     using your phone, can find out that you are pregnant.}
+   & Storage: component, asserted. Inference by others: capability, denied
+   & -- (no harm named)
+   & On-device storage; harm framing; absolute; scope: anyone, incl.\ a person
+     using the phone \\
 \addlinespace
-P4 & \enquote{A leak is unlikely, but unwanted disclosure could cause distress.}
- & Concrete psychological harm and breach consequence & Acknowledged and qualified & -- \\
+S4 & \enquote{A data leak is unlikely, but if it happened, others learning of
+     a pregnancy could cause you distress.}
+   & Breach consequence. Distress: psychological harm, possible
+   & Acknowledged and qualified (target: likelihood of the leak) & -- \\
 \addlinespace
-P5 & \enquote{Your data is safe with us.}
- & No relevant A content & -- & Reassurance without a named measure \\
+S5 & \enquote{Some users worry that a partner could read their entries and
+     feel hurt. There is no reason for such concern.}
+   & Partner access: component, possible. Feeling hurt: psychological harm,
+     possible; relationship tag
+   & Minimised & -- \\
+\addlinespace
+S6 & \enquote{Your data is safe with us.} & -- & --
+   & Reassurance: no specific measure \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{3. Interpret within the model.} P1 describes a feature rather than an
-adversarial use. P2 does not claim to prevent partner access, so the pathway
-does not contradict its scope. P3 explicitly includes that actor. The author
-would flag a potential mismatch because local storage alone does not address
-the assumed readable access. This does not verify CycleMate's actual security.
-P4 names distress. Its likelihood qualification concerns the leak, not the
-severity of distress. P5 gives no measure to assess.
+\noindent\textbf{Why these codes.} S1: inference shown as a feature and no
+harm named, so no stance. S3: a capability is denied, not a harm, so no
+stance; the claim is coded under~C. S4: \enquote{unlikely} qualifies the leak,
+not the distress, so one harm carries two stances. S5: a named harm is
+dismissed with no reason in or next to the unit, judged from the wording, not
+from guessed intent; without a named harm (\enquote{nothing to worry about})
+it would be reassurance under~C. S6: no measure is named.
 
-\textbf{4. Aggregate within the captured material.} This excerpt contains one
-concrete harm type, psychological harm. It does not demonstrate that other
-harms are missing from a whole provider's communication. The main study will
-apply the same rules to documents for 50 apps and interfaces for 12. Only
-captured, applicable material will support coverage counts. The author will
-check model suggestions and use the separate blind validation set to assess
-what the model finds and misses.
+\textbf{Step 4: Review the protection claims.} The author compares each claim
+with the pathways inside its scope. S2 promises less server exposure; F1 does
+not involve the servers, so it is outside the claim's scope: no mismatch.
+S3's scope includes \enquote{someone using your phone}, so F1 is inside it,
+and on-device storage does not remove F1's access condition: the author
+records a \emph{potential mismatch} with this reasoning. S6 names no measure.
+A mismatch concerns what the text promises, not whether App~F is safe.
+
+\textbf{Step 5: Summarise.} Both categories that apply through F1 are
+mentioned: psychological harm (S4, S5) and the relationship tag (S5). RQ2: the
+harm is acknowledged and qualified once and minimised once. RQ3: one partial
+data-flow claim, one absolute harm-framed claim with a potential mismatch, and
+one reassurance. Missing harms can only be judged from all captured sources and
+applicability records; the model suggests codes, and the author decides
+applicability and mismatches.
 
 \end{document}
