@@ -119,10 +119,12 @@ breach notifications and found language that downplayed or obscured risks
 six genetic-testing companies' privacy and research-consent policies
 \parencite{doan2024transparency}.
 
-This thesis will compare \emph{fitness and fertility apps}
-across several communication surfaces, combining harm coverage, stance and
-the framing of PETs. The initial review has not identified a study combining
-these elements in this setting. A documented literature search will test
+The closest precedent, Malki et al., found inconsistencies between female
+health apps' policies and their privacy-related features
+\parencite{malki2024exploring}. This thesis instead asks how \emph{fitness and
+fertility apps} communicate harms across several surfaces, combining harm
+coverage, stance and the framing of PETs. The initial review has not
+identified a study combining these elements in this setting. A documented literature search will test
 and refine this proposed gap.
 
 \noindent\textbf{RQ.} \emph{What types of downstream privacy harms do health
@@ -139,7 +141,7 @@ technologies offer?}
     minimised, denied or presented as the user's responsibility?
   \item[RQ3] \textit{Protection.} What measures and benefits are claimed,
     and how do the scope and strength of these claims relate to the
-    reference threat model?
+    reference model?
   \item[RQ4] \textit{Surfaces.} How do coverage, stance and protection claims
     differ between policies, listings, marketing and inspected interfaces?
 \end{description}
@@ -163,9 +165,10 @@ post-Roe findings motivate attention to fertility data, but do not establish
 the same legal risks for German users.
 \textbf{Providers and designers.} Comparing surfaces can reveal opportunities
 to explain relevant risks and the limits of protections at decision points.
-\textbf{Research and policy.} The study will provide a traceable corpus and
-coding scheme for examining harm communication alongside data-practice
-disclosure, and it can inform later user research.
+\textbf{Research and policy.} The codebook, prompts, labels and quotations
+will be released with the thesis, and source documents where terms permit.
+This traceable scheme for examining harm communication alongside
+data-practice disclosure can inform later user research.
 
 \section{Methodology}
 
@@ -173,19 +176,20 @@ The study will use structured content analysis~\parencite{krippendorff2019conten
 with an adapted cognitive walkthrough. Figure~\ref{fig:pipeline} summarises
 the workflow. Each positive code will link to a verbatim quotation, source
 location and capture date. Sampling rules, reference trees, the codebook and
-prompts will be versioned. Model identifiers, settings and raw outputs will
-be retained so that reported counts can be traced to evidence.
+prompts will be versioned and frozen as a dated release before the main study.
+Model identifiers, settings and raw outputs will be retained so that reported
+counts can be traced to evidence.
 
 \textbf{Literature review and pilot.} Searches will cover privacy harms
-\parencite{solove2006taxonomy,calo2011boundaries}, tracker privacy and methods
-for policy analysis~\parencite{wilson2016creation,zimmeck2019maps}. The log
-will record databases, queries, dates and inclusion decisions. A comparison
-matrix will distinguish each study's domain, sources and treatment of harms.
-A five-app pilot, with three fitness and two fertility apps, will test collection,
-coding boundaries and workload. Pilot apps will be recoded with the final
-instrument and remain in the sample, but will not enter the validation set.
-The pilot will estimate capture time, coding units, manual effort and model
-cost before the main study begins.
+\parencite{solove2006taxonomy,calo2011boundaries}, tracker privacy, and
+methods for policy analysis~\parencite{wilson2016creation,zimmeck2019maps}
+and LLM-assisted annotation. The log will record databases, queries, dates and
+inclusion decisions. A comparison matrix will distinguish each study's domain,
+sources and treatment of harms. A five-app pilot (three fitness, two
+fertility) will test collection and coding boundaries and estimate capture
+time, coding units, manual effort and model cost. Pilot apps will be recoded
+with the final instrument and remain in the sample, but will not enter the
+validation set.
 
 \begin{figure*}[t]
 \centering
@@ -248,7 +252,7 @@ once and linked to all relevant apps.
 with three Android and three iOS apps in each. Selection will follow the
 ranking, filling Android then iOS slots without reusing an app. Apps requiring
 an unavailable paired device, payment or identity verification will be skipped
-with a recorded reason. Any unfilled slots will be reported. Each session
+with a recorded reason, and unfilled slots reported. Each session
 will use a fresh install, synthetic data and a study account where required.
 Device, operating system, app version and locale will be recorded.
 
@@ -320,7 +324,7 @@ Several labels may apply to one unit.}
 \midrule
 A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
   & \enquote{We store your cycle dates.} \\
- & Capability & Distinguishing users, tracking/profiling or inferring an attribute
+ & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
   & \enquote{We estimate your fertile window.} \\
  & Concrete harm & A named negative consequence and its category
   & \enquote{Disclosure could cause distress.} \\
@@ -412,9 +416,9 @@ coder will be sought for stance and protection labels. The comparison will
 report per-code precision
 (how many model labels are supported), recall (how many manually identified
 mentions were found), and model--human Cohen's $\kappa$
-\parencite{cohen1960coefficient}. Counts and prevalence will accompany
-$\kappa$, since rare codes can produce low values despite high agreement
-\parencite{feinstein1990high}. App-level detection will also be reported.
+\parencite{cohen1960coefficient}. Counts, prevalence and Gwet's AC1 will
+accompany $\kappa$, since rare codes can depress $\kappa$ despite high agreement
+\parencite{feinstein1990high,gwet2008computing}. App-level detection will also be reported.
 Results will be separated by domain and, where counts allow, by source and
 language. Exploratory 95\,\% intervals for precision and recall will resample
 providers, keeping each provider's apps and text units together to account
@@ -459,8 +463,8 @@ be agreed with the supervisor and documented before the main study.
 \textbf{Limitations.} The sample favours free, highly rated apps with reachable
 policies and does not represent all German users' exposure. The corpus is a
 dated snapshot, walkthroughs cover selected paths, and reference trees depend
-on the chosen literature. One human coder provides the reference labels, so
-model agreement is not independent human-coder
+on the chosen literature. Unless a second coder joins, one person provides the
+reference labels, so model agreement is not independent human-coder
 reliability~\parencite{mcdonald2019reliability}. Missed mentions may remain.
 The study cannot establish provider intent, actual harms or effects on users.
 
