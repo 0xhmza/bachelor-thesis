@@ -5,11 +5,14 @@
 \documentclass[sigconf,nonacm,natbib=false]{acmart}
 \usepackage{csquotes}
 \usepackage{booktabs}
+\usepackage{colortbl}
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \setlist{nosep,leftmargin=*}
+% Thin grey rule between label rows of Table 1, columns 2-4 only.
+\newcommand{\rowrule}{\arrayrulecolor{black!25}\cmidrule[0.3pt]{2-4}\arrayrulecolor{black}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \DisableLigatures[q]{encoding=T1,shape=sc}
 \usepackage[backend=biber,style=numeric-comp,sorting=none,
@@ -151,12 +154,7 @@ technologies offer?}
 \noindent\textbf{Scope.} The two domains are fitness/activity tracking,
 including sleep, heart rate and nutrition, and fertility/period tracking.
 The sample covers German storefronts of Google Play and the Apple App Store.
-Wearables are considered through their companion apps. This proposal adopts
-document and interface analysis as the study design, subject to supervisor
-agreement on the change from the original survey-based offer. A user study,
-technical verification of provider practices and a legal-compliance assessment
-are outside scope. DiGA, Germany's reimbursable digital health applications,
-are excluded.
+Wearables are considered through their companion apps.
 
 \section{Why the Problem Is Important}
 
@@ -182,16 +180,17 @@ prompts will be versioned and frozen as a dated release before the main study.
 Model identifiers, settings and raw outputs will be retained so that reported
 counts can be traced to evidence.
 
-\textbf{Literature review and pilot.} Searches will cover privacy harms
+\textbf{Literature review.} Searches will cover privacy harms
 \parencite{solove2006taxonomy,calo2011boundaries}, tracker privacy, and
 methods for policy analysis~\parencite{wilson2016creation,zimmeck2019maps}
 and LLM-assisted annotation. The log will record databases, queries, dates and
 inclusion decisions. A comparison matrix will distinguish each study's domain,
-sources and treatment of harms. A five-app pilot (three fitness, two
-fertility) will test collection and coding boundaries and estimate capture
-time, coding units, manual effort and model cost. Pilot apps will be recoded
-with the final instrument and remain in the sample, but will not enter the
-validation set.
+sources and treatment of harms.
+
+\textbf{Pilot.} A five-app pilot (three fitness, two fertility) will test
+collection and coding boundaries and estimate capture time, coding units,
+manual effort and model cost. Pilot apps will be recoded with the final
+instrument and remain in the sample, but will not enter the validation set.
 
 \begin{figure*}[t]
 \centering
@@ -229,8 +228,8 @@ search results, not the most popular apps in Germany.
 The target is \textbf{50 apps}, with 30 fitness and 20 fertility apps. Apps
 must collect health or body-related tracking data, be free to install, offer
 German or English text and have a reachable policy. Device companions remain
-eligible if they record or display tracking data. Duplicates and DiGA will be
-excluded. Apps serving both domains will enter the fertility stratum if cycle
+eligible if they record or display tracking data. Duplicates and DiGA
+(Germany's reimbursable digital health applications) will be excluded. Apps serving both domains will enter the fertility stratum if cycle
 tracking is a main function, with the overlap flagged. Unreachable policies
 will be logged in the screening results before exclusion from text analysis.
 If a stratum is too small, all eligible candidates will be retained and the
@@ -317,40 +316,53 @@ Appendix~\ref{app:example} shows the procedure on a constructed example.
 Several labels may apply to one unit.}
 \label{tab:axes}
 \small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
 \begin{tabular}{@{}L{1.9cm}L{3.3cm}L{6.0cm}L{5.5cm}@{}}
 \toprule
 \textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
 \midrule
 A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
   & \enquote{We store your cycle dates.} \\
+\rowrule
  & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
   & \enquote{We estimate your fertile window.} \\
+\rowrule
  & Concrete harm & A named negative consequence and its category
   & \enquote{Disclosure could cause distress.} \\
+\rowrule
  & Generic risk & Possible misuse without a concrete consequence
   & \enquote{Your data could be used against you.} \\
+\rowrule
  & No relevant content & None of the coverage labels applies
   & A contact address alone \\
+\rowrule
  & Additional details & Breach consequences, incident response and relationship impacts
   & Code concrete response steps separately from a general legal-notice promise \\
 \midrule
 B: Stance & Acknowledged & A named harm presented as possible
   & \enquote{A disclosure could cause distress.} \\
+\rowrule
  & Qualified & Uncertainty or likelihood language, with its target recorded
   & \enquote{A leak is unlikely, but could cause distress.} \\
+\rowrule
  & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
   & \enquote{Such distress is no cause for concern.} \\
+\rowrule
  & Responsibility shifted & Responsibility for a named harm placed on the user
   & \enquote{You alone must prevent harassment caused by sharing your location.} \\
+\rowrule
  & Denied/prevented & A named harm presented as impossible or prevented
   & \enquote{This makes harassment impossible.} \\
 \midrule
 C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
   & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
+\rowrule
  & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
   & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
+\rowrule
  & Reassurance & Broad safety language without a specific measure
   & \enquote{Your data is safe with us.} \\
+\rowrule
  & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
   & A residual risk outside the claim's scope is not sufficient \\
 \bottomrule
@@ -476,52 +488,70 @@ The study cannot establish provider intent, actual harms or effects on users.
 \label{app:example}
 
 This example applies the method to a constructed privacy notice of a
-fictional period tracker, \emph{App~F}. The statements and assumptions are
-invented to illustrate the rules; they are not findings about any real app.
+fictional period tracker, \emph{App~F}; it describes no real app.
 
-\textbf{Step 1: Model a pathway.} Pathway F1 of the fertility reference tree
-(Figure~\ref{fig:example-path}) joins two components by AND, so both must
-hold. The cycle records are \emph{core} (the app cannot work without them); a
-partner's access to the unlocked phone is \emph{digital context} (it comes
-from using a phone that others may handle). The prediction made \emph{for the
-user} gives no one else access; the access condition creates the route to
-harm. A measure blocks F1 only by removing a necessary condition: an app lock
-removes the access condition, but keeping data on the phone does not.
+\textbf{Step 1: Model the tree.} Figure~\ref{fig:example-path} adapts
+Knabenhans et al.'s targeted-advertising tree (their Fig.~6c, with the
+tracking sub-tree of Fig.~5b) to App~F~\parencite[\S4.2]{knabenhans2026harms}.
+The components keep the paper's roles: C1 is their \emph{reveal other
+attributes}, C2 a \emph{persistent identifier}, C3 \emph{online metadata},
+which the paper says includes advertising IDs, C4 \emph{repeated
+observations}, and C5 the \emph{digitization of data records} that enables
+data brokerage. OR means one branch suffices; OR+ means several components
+combine. App~F's core function, predicting the cycle, can run on the phone and
+reveals nothing to an ad partner, so both branches need implementation
+choices that the provider controls and can describe. Dropping the ad SDK
+blocks tracking, and not keeping or not selling server records blocks
+brokerage; sending interest categories instead of entries does not, because a
+category such as \enquote{family planning} still carries the
+pregnancy~\parencite{martin2025cookies}.
 
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}[
-  font=\small,
-  bx/.style={draw,rounded corners=2pt,align=center,text width=50mm,
-             minimum height=12mm,inner sep=2.5pt},
-  arr/.style={-{Stealth[length=1.8mm]},semithick}]
-  \node[bx] (s) at (0,0) {\textbf{Components}\\Cycle records (core) AND a partner\\can open the unlocked phone (context)};
-  \node[bx] (c) at (6.0,0) {\textbf{Capability}\\The partner infers a possible\\pregnancy (inference)};
-  \node[bx] (h) at (12.0,0) {\textbf{Harm}\\Unwanted disclosure to family:\\distress (psychological),\\relationship tag};
-  \draw[arr] (s)--(c);
-  \draw[arr] (c)--(h);
+  font=\footnotesize,
+  bx/.style={draw,rounded corners=2pt,align=center,text width=30mm,
+             minimum height=10mm,inner sep=2pt},
+  lb/.style={font=\scriptsize\itshape,fill=white,inner sep=1pt}]
+  \node[bx,text width=118mm,minimum height=6mm] (h) at (8.4,2.15)
+    {\textbf{Harm:} targeted advertising, e.g.\ pregnancy ads after a
+     pregnancy loss (psychological)};
+  \node[bx,text width=48mm,minimum height=6mm] (t) at (5.0,1.1) {\textbf{Capability:} tracking/profiling};
+  \node[bx,text width=34mm,minimum height=6mm] (d) at (13.6,1.1) {\textbf{Capability:} data brokerage};
+  \node[bx] (c1) at (0.0,0) {C1: Pregnancy Mode events\\sent to an ad SDK\\(implementation)};
+  \node[bx] (c2) at (3.35,0) {C2: user ID shared\\with ad partners\\(implementation)};
+  \node[bx] (c3) at (6.7,0) {C3: advertising ID,\\IP address\\(digital context)};
+  \node[bx] (c4) at (10.05,0) {C4: daily use\\of the app\\(core)};
+  \node[bx] (c5) at (13.6,0) {C5: cycle records on\\the provider's servers\\(implementation)};
+  \foreach \c in {c1,c2,c3,c4} \draw (\c.north) -- (t.south);
+  \draw (c5.north) -- (d.south);
+  \draw (t.north) -- (h.south);
+  \draw (d.north) -- (h.south);
+  \node[lb] at (5.0,0.62) {OR+};
+  \node[lb] at (9.3,1.62) {OR};
 \end{tikzpicture}
-\caption{Pathway F1. An arrow means \enquote{can lead to}, not \enquote{will
-lead to}; the inference may also be wrong.}
-\Description{Cycle records, which are core, combined with a partner's access
-to the unlocked phone, which is digital context, let the partner infer a
-possible pregnancy. Disclosing it to family against the user's wishes causes
-distress, a psychological harm with a relationship tag.}
+\caption{App~F's version of Knabenhans et al.'s targeted-advertising tree,
+read from the bottom up.}
+\Description{A three-level tree. Four components, Pregnancy Mode events sent
+to an ad SDK, a user ID shared with ad partners, the advertising ID and IP
+address, and daily use of the app, combine (OR+) into tracking and profiling.
+Cycle records on the provider's servers enable data brokerage. Either
+capability (OR) can lead to targeted advertising, such as pregnancy ads after
+a pregnancy loss, a psychological harm.}
 \label{fig:example-path}
 \end{figure}
 
-\textbf{Step 2: Decide whether the pathway applies.} The applicability record
-notes the required feature (cycle records stored on the phone), the evidence
-(S1, S2 below), the assumption (another person sometimes uses the unlocked
-phone) and the decision: \emph{applicable}. Psychological harm and the
-relationship tag therefore apply to App~F. Every mention is coded regardless
-of applicability; applicability only decides which \emph{missing} harms count
-as gaps (RQ1).
+\textbf{Step 2: Decide whether the tree applies.} The applicability record
+notes the required features (C1 and C3 reach ad partners; C5 exists), the
+evidence (S2, S3 below), the assumption (the shared events include Pregnancy
+Mode, which the text does not state) and the decision: \emph{applicable}, so
+psychological harm applies to App~F. Mentions are coded regardless;
+applicability only decides which \emph{missing} harms count as gaps (RQ1).
 
-\textbf{Step 3: Code the statements.} Each statement in
-Table~\ref{tab:worked} is one unit. A lists every mentioned element with its
-status (asserted, possible or denied); B gives a stance only for a named harm;
-C gives the measure's framing, strength and scope. A dash: axis not applicable.
+\textbf{Step 3: Code the statements.} Each statement in Table~\ref{tab:worked}
+is one unit. A: every mentioned element with its status (asserted, possible,
+denied); B: a stance, only for a named harm; C: the measure's framing,
+strength and scope. A dash: not applicable.
 
 \begin{table}[h]
 \caption{Constructed statements and their codes.}
@@ -532,61 +562,55 @@ C gives the measure's framing, strength and scope. A dash: axis not applicable.
  & \textbf{Statement} & \textbf{A: What is mentioned} & \textbf{B: Stance}
  & \textbf{C: Protection} \\
 \midrule
-S1 & \enquote{We use your cycle dates to predict your fertile window.}
-   & Dates: component, asserted. Prediction: inference capability, asserted
-     (as a feature) & -- & -- \\
+S1 & \enquote{We use your cycle entries to predict your fertile window.}
+   & Entries: component, asserted. Prediction: inference, asserted (a
+     feature) & -- & -- \\
 \addlinespace
-S2 & \enquote{Your cycle data is stored only on your phone. This reduces
-     exposure through our servers.}
-   & Storage on the phone: component, asserted & --
-   & On-device storage; data-flow framing; partial; scope: server exposure \\
+S2 & \enquote{Our advertising partners receive app usage events and your
+     advertising ID.}
+   & C1 and C3 to partners: components, asserted & -- & -- \\
 \addlinespace
-S3 & \enquote{Because your data stays on your phone, no one, not even someone
-     using your phone, can find out that you are pregnant.}
-   & Storage: component, asserted. Inference by others: capability, denied
-   & -- (no harm named)
-   & On-device storage; harm framing; absolute; scope: anyone, incl.\ a person
-     using the phone \\
+S3 & \enquote{We store your entries on our servers and never sell them.
+     Partners only receive interest categories, not your entries.}
+   & C5: component, asserted. Sale: denied. Entries to partners: denied.
+     Categories to partners: asserted
+   & -- & No-sale pledge (practice commitment); inferences instead of raw
+     data; data-flow framing; absolute \\
 \addlinespace
-S4 & \enquote{A data leak is unlikely, but if it happened, others learning of
-     a pregnancy could cause you distress.}
-   & Breach consequence. Distress: psychological harm, possible
-   & Acknowledged and qualified (target: likelihood of the leak) & -- \\
+S4 & \enquote{Partners never see your entries, so you will never get
+     pregnancy-based ads.}
+   & Entries to partners: denied. Pregnancy-based ads (profiling):
+     denied & -- (no harm named)
+   & Inferences instead of raw data; harm framing; absolute; scope:
+     pregnancy-based ads \\
 \addlinespace
-S5 & \enquote{Some users worry that a partner could read their entries and
-     feel hurt. There is no reason for such concern.}
-   & Partner access: component, possible. Feeling hurt: psychological harm,
-     possible; relationship tag
-   & Minimised & -- \\
-\addlinespace
-S6 & \enquote{Your data is safe with us.} & -- & --
-   & Reassurance: no specific measure \\
+S5 & \enquote{Pregnancy ads can upset users, e.g.\ after a loss, but this
+     rarely happens.}
+   & Distress from such ads: psychological harm, possible
+   & Acknowledged and qualified (how often) & -- \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\noindent\textbf{Why these codes.} S1: inference shown as a feature and no
-harm named, so no stance. S3: a capability is denied, not a harm, so no
-stance; the claim is coded under~C. S4: \enquote{unlikely} qualifies the leak,
-not the distress, so one harm carries two stances. S5: a named harm is
-dismissed with no reason in or next to the unit, judged from the wording, not
-from guessed intent; without a named harm (\enquote{nothing to worry about})
-it would be reassurance under~C. S6: no measure is named.
+\noindent\textbf{Why these codes.} S1: a prediction made for the user gives
+no one else access; no harm is named, so no stance. S2: the data flow is named
+but not what partners can do with it, so tracking is not coded. S4: a
+capability is denied, not a harm, so no stance. S5: \enquote{rarely}
+qualifies how often the harm occurs, so it carries two stances. Dismissing a
+capability without naming a harm would be reassurance, not minimisation.
 
-\textbf{Step 4: Review the protection claims.} The author compares each claim
-with the pathways inside its scope. S2 promises less server exposure; F1 does
-not involve the servers, so it is outside the claim's scope: no mismatch.
-S3's scope includes \enquote{someone using your phone}, so F1 is inside it,
-and on-device storage does not remove F1's access condition: the author
-records a \emph{potential mismatch} with this reasoning. S6 names no measure.
-A mismatch concerns what the text promises, not whether App~F is safe.
+\textbf{Step 4: Review the protection claims.} S3's no-sale pledge covers the
+brokerage branch and, taken at its word, closes it: no mismatch. Tracking lies
+outside its scope, since C1 and C3 still flow (S2); S3 leaves it open without
+contradicting it, which RQ3 records as data-flow framing. S4 promises no
+pregnancy-based ads, placing tracking inside its scope; withholding entries
+removes neither C1 nor C3, and categories still carry the pregnancy: the
+author records a \emph{potential mismatch} with this reasoning. A mismatch
+concerns what the text promises, not whether App~F is safe.
 
-\textbf{Step 5: Summarise.} Both categories that apply through F1 are
-mentioned: psychological harm (S4, S5) and the relationship tag (S5). RQ2: the
-harm is acknowledged and qualified once and minimised once. RQ3: one partial
-data-flow claim, one absolute harm-framed claim with a potential mismatch, and
-one reassurance. Missing harms can only be judged from all captured sources and
-applicability records; the model suggests codes, and the author decides
-applicability and mismatches.
+\textbf{Step 5: Summarise.} Psychological harm applies and is mentioned once
+(S5); tracking is never named, although S2 describes its components. RQ3: one
+scoped data-flow claim without mismatch (S3), one absolute harm-framed claim
+with a potential mismatch (S4).
 
 \end{document}
