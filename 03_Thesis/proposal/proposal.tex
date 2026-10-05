@@ -158,16 +158,14 @@ are excluded.
 
 \textbf{Users.} A statement about where data is stored may leave the possible
 consequences unclear. Identifying what providers explain can show which
-questions a reader would still need to answer. This study will not measure
-whether readers understand a notice or change their behaviour. The US
+questions a reader would still need to answer. The US
 post-Roe findings motivate attention to fertility data, but do not establish
 the same legal risks for German users.
 \textbf{Providers and designers.} Comparing surfaces can reveal opportunities
 to explain relevant risks and the limits of protections at decision points.
 \textbf{Research and policy.} The study will provide a traceable corpus and
 coding scheme for examining harm communication alongside data-practice
-disclosure. It can inform later user research without treating a missing
-statement as proof of harm, intent or a legal violation.
+disclosure, and it can inform later user research.
 
 \section{Methodology}
 
@@ -241,12 +239,10 @@ opportunistic supplement. The absence of ads or blog posts will not count as
 absence of a harm in the core corpus.
 
 German text will be primary, with English used when German is unavailable.
-If both versions are available, differences will be logged separately and
-English content will not be silently added to German coverage. Original
-wording will be coded. Each source will be archived with URL, date, language,
+If both exist, differences will be logged and English content will not count
+towards German coverage. Original wording will be coded. Each source will be archived with URL, date, language,
 file hash and app version where applicable. Shared policies will be coded
-once and linked to all relevant apps. The report will identify repeated
-providers so these do not appear to be independent texts.
+once and linked to all relevant apps.
 
 \textbf{Walkthroughs.} Twelve distinct apps will be inspected, six per domain
 with three Android and three iOS apps in each. Selection will follow the
@@ -280,6 +276,8 @@ AND/OR approach. A prediction made for the user will not itself establish
 third-party access. For example, a pathway involving a partner reading cycle
 data must include readable access to the device or account. A measure may
 address that condition even though cycle data remains essential to the app.
+As in Knabenhans et al., capabilities include incapabilities, such as a user
+being unable to use a feature without agreeing to data sharing.
 
 The component origins will distinguish core functionality, digital context
 and implementation choices within the stated model. An identifier will not
@@ -293,10 +291,13 @@ of the apps' actual systems. Uncertain cases will not enter absence counts.
 physical, economic, psychological, autonomy/deprivation, discrimination,
 reputational and societal harms~\parencite[App.~A]{knabenhans2026harms}.
 They draw on Citron and Solove's typology and the CyberPeace Institute's
-harms methodology~\parencite[\S4.1]{knabenhans2026harms}. Citron and Solove's
+harms methodology, and define a harm as an impairment of the ability to
+function as one otherwise would in one's usual
+context~\parencite[\S4.1]{knabenhans2026harms}. Here, that baseline is the
+user's situation without the modelled pathway. Citron and Solove's
 original seven also include relationship harms~\parencite{citron2021harms}.
 A separate relationship tag will retain damage to trust or intimate
-relationships, alongside any applicable harm category. The report will state this mapping explicitly.
+relationships, alongside any applicable harm category.
 New harms found during the pilot will be documented rather than forced into
 an unsuitable category.
 
@@ -359,7 +360,6 @@ The highest level reached will be a separate summary, so a harm
 mention does not erase accompanying data-flow information. Generic misuse
 will remain separate from a concrete harm even when a sentence denies it.
 Feature descriptions can mention inference without presenting it as a risk.
-Breach consequences and incident-response details will also be coded.
 A promise to notify users as required by law will be retained as a general
 notification commitment, but not counted as a concrete response procedure.
 
@@ -378,31 +378,38 @@ separate. The author will then compare the claim with relevant pathways.
 Partial protection will not be rejected merely because other risks remain.
 A \emph{potential mismatch} requires a pathway within the claim's scope and
 an explanation of why the stated measure does not address its necessary
-conditions. Vague scope will be recorded as unclear. The analysis will not
-label a provider's deployed system safe or unsafe, or verify that a claimed
-measure is implemented.
+conditions. Vague scope will be recorded as unclear. No deployed system will
+be judged safe or unsafe.
 
 \textbf{LLM assistance.} Existing systems such as Polisis and recent LLM
 approaches provide precedents for data-practice analysis
 \parencite{harkous2018polisis,rodriguez2024llm}. The proposed harm-focused
 scheme will use prompts and a model selected on the pilot, then frozen for
-the main run. The model will suggest coverage, stance and claim descriptions.
-Tree applicability and potential mismatches will be decided by the author,
-with the quoted evidence and reasoning logged. Uncertain model outputs or
-missing evidence spans will enter manual review, not become negative codes.
-Every retained positive label must have a verified source quotation.
+the main run~\parencite{tornberg2024best}. An open-weight model will be
+preferred if it performs close to a hosted one, so the run stays repeatable.
+Prompts will work in stages: relevant spans, then stance for detected harms,
+then protection details. All retained harm mentions and potential mismatches
+will be reviewed manually, so the model acts as a screener and its prompts will
+favour recall over precision. The author will decide tree applicability and
+mismatches, logging evidence and reasoning. Uncertain outputs or missing
+evidence spans will enter manual review, not become negative codes.
 
-Each unit will be run three times with the same settings. Agreement will be
-reported as a stability check, not as independent validation. Labels returned
-in only one run will be reviewed manually rather than discarded by a majority
-rule. All retained harm mentions and potential mismatches will receive manual
-review. The uncorrected model output will be preserved separately from final
-adjudicated labels so that performance is not measured after correcting errors.
+Each unit will run three times with the same settings; agreement is a
+stability check, not validation, and labels returned only once will be
+reviewed rather than discarded. Raw model output will be kept apart from
+adjudicated labels, so performance is not measured after correction.
 
 \textbf{Validation and missed mentions.} Ten non-pilot apps, five per domain,
-will be selected at random with a recorded seed. Their captured material will
-be coded fully by the author before viewing model output. These apps will
-not be used to tune prompts. The comparison will report per-code precision
+will be selected at random with a recorded seed, stratified by main source
+language where both languages occur. Their captured material will be coded
+fully by the author before viewing model output. These apps will not be used
+to tune prompts. Because prompt wording alone can change
+conclusions~\parencite{baumann2025llm}, two paraphrased prompts will also be
+run on them and the headline counts compared. Disagreements will be
+adjudicated with each label's source hidden. Two apps will be recoded by the
+author after four weeks to estimate intra-coder consistency, and a second
+coder will be sought for stance and protection labels. The comparison will
+report per-code precision
 (how many model labels are supported), recall (how many manually identified
 mentions were found), and model--human Cohen's $\kappa$
 \parencite{cohen1960coefficient}. Counts and prevalence will accompany
@@ -413,17 +420,15 @@ language. Exploratory 95\,\% intervals for precision and recall will resample
 providers, keeping each provider's apps and text units together to account
 for shared sources. With only ten apps, these intervals will be wide.
 
-A separate missed-mention audit will search the remaining corpus for
-harm-related vocabulary in both languages. Every keyword hit with no harm
-label will be checked manually. A random sample of 100 units outside those
-hits, or all such units if fewer, will also be read, with allocation across
-domains, languages and sources fixed before inspection. This audit will test
-the search vocabulary's blind spots. Its findings will be reported separately
-from the random validation results. If a code has no or very few manual
-positives, its recall will be reported as unestimable or uncertain. For any
-code with fewer than 20 validation positives or recall below 0.90, all relevant
-material will be checked manually or corpus-wide absence claims for that code
-will be withheld. These are practical review triggers, not proof of accuracy.
+A separate missed-mention audit, reported apart from validation, will search
+the remaining corpus for harm-related vocabulary in both languages and check
+every unlabelled hit manually. To expose the vocabulary's blind spots, 100
+units outside the hits (or all, if fewer), allocated across domains, languages
+and sources in advance, will also be read. Recall will be reported as
+unestimable where manual positives are too few. For any code with fewer than
+20 validation positives or recall below 0.90, all relevant material will be
+checked manually or corpus-wide absence claims withheld; these are review
+triggers, not proof of accuracy.
 
 \textbf{Analysis and reporting.} Results will be descriptive and reported
 separately for fitness and fertility apps. For RQ1, each harm's denominator
@@ -439,30 +444,25 @@ For RQ4, document comparisons will cover the full sample and interface
 comparisons only the 12 inspected apps. Onboarding before consent and the
 privacy-settings screen will be fixed decision points. Text shown directly,
 text available through a visible link and text not found within the task limit
-will be distinguished. A difference in detail between a policy and a short
-screen will not automatically count as a contradiction. Reports will separate
-inconsistent claims from differences in detail and visibility. Absence will
-mean \enquote{no mention was identified in the captured material}, with the
+will be distinguished. Reports will separate inconsistent claims from mere
+differences in detail and visibility between a policy and a short screen.
+Absence will mean \enquote{no mention was identified in the captured material}, with the
 instrument's measured limitations stated.
 
-\textbf{Ethics and feasibility.} No human participants are planned. The
-researcher will use synthetic data, avoid real personal disclosures and obtain
-institutional confirmation of any review requirements before collection.
-Store terms will be checked before automated retrieval. The pilot will test
-whether collection and validation fit the available thesis period. If they
-do not, supplementary marketing collection will be reduced first. Any change
-to the core sample or validation plan will be agreed with the supervisor,
-documented before the main study and reflected in the scope of the findings.
+\textbf{Ethics and feasibility.} No human participants are planned.
+Walkthroughs use synthetic data, store terms will be checked before automated
+retrieval, and any institutional review requirements will be confirmed before
+collection. If the pilot shows the plan exceeds the thesis period,
+supplementary marketing collection will be reduced first; other changes will
+be agreed with the supervisor and documented before the main study.
 
 \textbf{Limitations.} The sample favours free, highly rated apps with reachable
-policies and is not representative of all German users' exposure. The corpus
-is a dated snapshot, and walkthroughs cover only selected paths. Reference
-trees depend on the chosen literature and assumptions. A single human coder
-provides the reference labels, so model agreement does not establish
-independent human-coder reliability~\parencite{mcdonald2019reliability}.
-Missed mentions may remain after auditing. The study can describe communication
-and its gaps within these bounds, but cannot establish provider intent, actual
-harms or effects on user understanding.
+policies and does not represent all German users' exposure. The corpus is a
+dated snapshot, walkthroughs cover selected paths, and reference trees depend
+on the chosen literature. One human coder provides the reference labels, so
+model agreement is not independent human-coder
+reliability~\parencite{mcdonald2019reliability}. Missed mentions may remain.
+The study cannot establish provider intent, actual harms or effects on users.
 
 \clearpage
 \balance
