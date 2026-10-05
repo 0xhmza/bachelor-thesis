@@ -1,57 +1,158 @@
 \chapter{Codebook}
 \label{app:codebook}
-\todo{Full coding scheme with definitions and examples.}
+\todo{Full coding scheme with definitions and examples, from codebook v3.}
 
 %----------------------------------------------------------------------
 \section{Worked Example}
 \label{app:worked-example}
 
-This section applies the codebook (version~2) to one privacy policy, from the
-reference harm tree to the app-level result. The app, \enquote{CycleMate}, and
-its policy are constructed: the text is written so that most codes occur. Real
-policies are expected to stay mostly at the component level.
+This section walks through the whole procedure once, on one privacy policy,
+using codebook version~3. The app, \enquote{CycleMate}, and its policy are
+constructed: the text is written so that every important coding decision
+occurs at least once. Real policies are expected to stay mostly at the level
+of data practices and to name few harms.
 
-\subsection*{Step 0: Reference harm tree}
+\subsection*{How to read this example}
 
-The tree is built once per domain, before any policy is read, following
-Knabenhans et al.~\parencite{knabenhans2026harms}. It states what a complete
-account of harm \emph{could} contain. \Cref{tab:we-tree} shows an excerpt of
-the fertility tree. Origin is assigned to components only; capabilities and
-harms inherit the origins of the components beneath them.
+A few terms are used throughout. They are explained here in plain words.
+
+\begin{description}[leftmargin=0pt,itemsep=2pt]
+  \item[Unit.] One paragraph of the policy. Coding happens unit by unit.
+  \item[Code.] A short label that records what a unit \emph{says}, never what
+    the provider might mean. Every code needs a quotation from the unit
+    (its \emph{evidence span}).
+  \item[Three questions (axes).] \textbf{A}: What is mentioned? \textbf{B}: If
+    a harm is named, how is it presented? \textbf{C}: What protection is
+    promised?
+  \item[Reference tree.] A list of the ways harm \emph{could} happen with a
+    fertility tracker, written down before any policy is read. Each way is a
+    \emph{pathway}: data and access conditions, then something an actor
+    can do with them (a \emph{capability}), then the harm.
+  \item[Applicable.] A pathway is applicable to an app if the app has the
+    features the pathway needs. Only applicable harms can be missing from the
+    app's communication.
+  \item[Potential mismatch.] A protection claim that, read literally, covers
+    a pathway which the named measure does not actually block. Only the author
+    decides this, never the language model.
+\end{description}
+
+\subsection*{Step 0: The reference tree}
+
+The tree is built once for the fertility domain, from the tracker
+literature, following the harm-tree method of Knabenhans et
+al.~\parencite{knabenhans2026harms}. \Cref{tab:we-tree} shows five of its
+pathways. In the \emph{Conditions} column, AND means that every condition is
+needed; OR means that any one of them is enough. Each condition carries its
+origin: \emph{core} (the app cannot work without it), \emph{context} (it comes
+from running on a phone and network), or \emph{implementation} (the provider
+chose it and could choose otherwise).
 
 \begin{table}[H]
 \centering
-\caption{Excerpt of the reference harm tree for fertility trackers.}
+\caption{Excerpt of the reference tree for fertility trackers.}
 \label{tab:we-tree}
 \small
-\begin{tabularx}{\textwidth}{@{}lXl@{}}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
+                                   >{\raggedright\arraybackslash}p{3.1cm}
+                                   >{\raggedright\arraybackslash}p{3.3cm}@{}}
 \toprule
-\textbf{Level} & \textbf{Node} & \textbf{Origin} \\
+\textbf{ID} & \textbf{Conditions (origin)} & \textbf{Capability} & \textbf{Harm} \\
 \midrule
-Harm       & \texttt{H-AUT} prosecution, restricted reproductive choices & --- \\
-Harm       & \texttt{H-DSC} discrimination by insurers or employers      & --- \\
-Harm       & \texttt{H-PSY} distress, unwanted contact                    & --- \\
-Harm       & \texttt{H-REP} being outed (pregnancy, pregnancy loss)       & --- \\
-Capability & \texttt{K-INF} inferring pregnancy or fertility              & --- \\
-Capability & \texttt{K-TRK} profiling by advertising and analytics partners & --- \\
-Capability & \texttt{K-DIS} singling out users who are trying to conceive & --- \\
-Component  & logged cycles, symptoms, sexual activity                     & core \\
-Component  & predicted fertile window                                     & core \\
-Component  & device identifiers                                           & context \\
-Component  & analytics SDK, cloud backup                                  & implementation \\
+F1 & Logged cycles (core) AND another person can open the unlocked phone
+     (context)
+   & Partner infers a possible pregnancy (\texttt{K-INF})
+   & Unwanted disclosure causes distress (\texttt{H-PSY}); relationship tag
+     \texttt{T-REL} \\
+\addlinespace
+F2 & Logged cycles (core) AND [cloud backup copy (implementation) OR seized
+     phone (context)]
+   & Authorities infer a pregnancy or pregnancy loss (\texttt{K-INF})
+   & Legal pressure, restricted reproductive choices (\texttt{H-AUT}) \\
+\addlinespace
+F3 & Device identifier (context) AND analytics or advertising SDK
+     (implementation)
+   & Profiling across apps (\texttt{K-TRK}); user sorted as
+     \enquote{trying to conceive} (\texttt{K-DIS})
+   & Different prices or offers (\texttt{H-DSC}) \\
+\addlinespace
+F4 & Predictions offered only if the user agrees to data sharing
+     (implementation)
+   & User cannot use the core feature without sharing (\texttt{K-INC})
+   & Restricted choice (\texttt{H-AUT}) \\
+\addlinespace
+F5 & Cloud backup copy (implementation) AND an attacker gains access
+   & Attacker reads the cycle history
+   & Exposure damages reputation (\texttt{H-REP}) or causes distress
+     (\texttt{H-PSY}) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The tree is read bottom-up. Logged cycles (core) enable inference of a
-pregnancy (capability), which can lead to prosecution (harm). This pathway
-contains no implementation component, so no PET can close it.
+\noindent\textbf{In plain words.} Read each row from left to right: if all
+conditions hold, someone gains a capability, and that capability can lead to
+the harm. A protection measure blocks a pathway only if it removes one of the
+pathway's \emph{necessary} conditions. Three examples:
+\begin{itemize}
+  \item An app lock removes the access condition of F1, so it can block F1
+    even though the cycle data itself is core and stays on the phone.
+  \item Turning off backup removes one branch of F2 (the server copy), but
+    not the other (a seized phone). F2 stays open.
+  \item No measure can remove the logged cycles without stopping the app from
+    working. Pathways can only be blocked through their other conditions.
+\end{itemize}
+The origins are argued from the literature, not proven. The tree describes
+\emph{possible} harms; it says nothing about what CycleMate actually does.
 
-\subsection*{Step 1: Coding units}
+\subsection*{Step 1: Which pathways apply to CycleMate?}
 
-The policy is split at paragraph boundaries into seven units.
+Before coding, the author fills in an \emph{applicability record} for each
+pathway (\Cref{tab:we-applicability}). It notes the feature the pathway needs,
+where that feature is documented, the assumptions made, and a decision:
+applicable, not applicable, or uncertain.
 
-\begin{description}[leftmargin=2.2em,style=sameline]
+\begin{table}[H]
+\centering
+\caption{Applicability records for CycleMate (U1--U10 are the policy units
+in Step~2).}
+\label{tab:we-applicability}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.2cm}
+                                   >{\raggedright\arraybackslash}p{2.0cm}
+                                   >{\raggedright\arraybackslash}X
+                                   >{\raggedright\arraybackslash}p{1.7cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Required feature} & \textbf{Evidence} &
+  \textbf{Assumptions} & \textbf{Decision} \\
+\midrule
+F1 & Cycle records stored on the phone & U1, U3
+   & Another person can sometimes use the unlocked phone & applicable \\
+F2 & Stored records, plus backup or the phone itself & U1, U3
+   & A legal setting where reproductive decisions are prosecuted. This is not
+     the German baseline, so it remains an assumption & uncertain \\
+F3 & Identifiers shared with an analytics partner & U2
+   & The partner can link the identifier across apps & applicable \\
+F4 & Predictions conditional on data sharing & store listing (\enquote{premium
+     predictions})
+   & Not confirmed: the walkthrough has not yet been done & uncertain \\
+F5 & A server copy of the cycle history & U3 (optional backup)
+   & An attacker could reach the server & applicable \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent\textbf{In plain words.} A harm category applies to the app if at
+least one of its pathways does. Psychological harm applies (F1, F5),
+discrimination applies (F3), reputational harm applies (F5), and so does the
+relationship tag (F1). Autonomy harm depends only on F2 and F4, which are both
+uncertain, so it is \emph{uncertain}. Uncertain cases are counted and
+reported separately; they are never silently dropped.
+
+\subsection*{Step 2: Splitting the policy into units}
+
+The policy is split at paragraph boundaries. A list stays with the sentence
+that introduces it. CycleMate's policy gives ten units:
+
+\begin{description}[leftmargin=2.4em,style=sameline,itemsep=2pt]
   \item[U1] \enquote{We collect the information you enter, such as period
     dates, symptoms, sexual activity and mood, to predict your cycle and
     fertile window.}
@@ -66,129 +167,254 @@ The policy is split at paragraph boundaries into seven units.
     information such as a pregnancy, which in some jurisdictions could expose
     you to legal risk.}
   \item[U6] \enquote{In the unlikely event that an unauthorised party accessed
-    your data, you might experience unwanted contact.}
-  \item[U7] \enquote{Your data is safe with us. We use industry-standard
+    your backup, you might experience unwanted contact.}
+  \item[U7] \enquote{Some users worry that a partner could read their entries
+    and feel hurt. There is no reason for such concern.}
+  \item[U8] \enquote{If you share your cycle calendar with someone, you alone
+    are responsible for any embarrassment this causes.}
+  \item[U9] \enquote{Because all predictions are calculated with encryption,
+    no one can ever use your data to discriminate against you.}
+  \item[U10] \enquote{Your data is safe with us. We use industry-standard
     security.}
 \end{description}
 
-\subsection*{Step 2: Unit-level coding}
+\subsection*{Step 3: Coding each unit}
 
-Each unit is coded on the three axes: how far up the tree the text reaches
-(A), how a named harm is treated (B), and what a claimed protection can close
-(C). \Cref{tab:we-units} gives the result.
+\Cref{tab:we-units} gives the codes. In column~A, every mentioned element is
+recorded with its status: \emph{asserted} (stated as fact), \emph{possible},
+or \emph{denied}. Column~B is filled only when a harm is named, and the stance
+is attached to that harm. Column~C records the measure, its scope and how it
+is framed.
 
 \begin{table}[H]
 \centering
-\caption{Unit-level codes for the CycleMate policy.}
+\caption{Unit-level codes for the CycleMate policy (codebook v3).}
 \label{tab:we-units}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
-                                   >{\raggedright\arraybackslash}p{1.6cm}
+                                   >{\raggedright\arraybackslash}p{2.9cm}
                                    >{\raggedright\arraybackslash}X@{}}
 \toprule
-\textbf{Unit} & \textbf{A: Pathway} & \textbf{B: Stance} & \textbf{C: Protection} \\
+\textbf{Unit} & \textbf{A: What is mentioned} & \textbf{B: Stance} &
+  \textbf{C: Protection} \\
 \midrule
-U1 & \texttt{L-CAP}, \texttt{K-INF} & --- & --- \\
-U2 & \texttt{L-CMP} & --- & \texttt{T-3RD}; implementation; \texttt{F-FLW} \\
-U3 & \texttt{L-CMP} & --- & \texttt{T-DEV}; implementation; \texttt{F-HRM};
-     \texttt{C-OVR} \\
-U4 & none & --- & --- \\
-U5 & \texttt{L-HRM}, \texttt{K-INF}, \texttt{H-AUT}, \texttt{P-BRC}
-   & \texttt{S-ACK} & --- \\
-U6 & \texttt{L-HRM}, \texttt{H-PSY}, \texttt{P-BRC} & \texttt{S-HDG} & --- \\
-U7 & --- & --- & \texttt{C-REA} \\
+U1 & entered data (\texttt{L-CMP}, asserted); fertile-window prediction
+     (\texttt{K-INF}, asserted, as a feature) & --- & --- \\
+U2 & identifiers and usage data to analytics partners (\texttt{L-CMP},
+     asserted) & --- & no-sale pledge (\texttt{N-COM}); scope: health data;
+     data-flow framing (\texttt{F-FLW}) \\
+U3 & data on the device, optional backup (\texttt{L-CMP}); \enquote{anyone
+     using it against you} (\texttt{L-GEN}, possible) & ---
+   & on-device storage (\texttt{T-DEV}); scope: \enquote{anyone}, unless
+     backup is on; harm framing (\texttt{F-HRM}), absolute \\
+U4 & notice \enquote{as required by law} (\texttt{P-NOT}) & --- & --- \\
+U5 & pregnancy inferred from disclosed data (\texttt{K-INF}, possible); legal
+     risk (\texttt{H-AUT}, possible); breach consequence (\texttt{P-BRC})
+   & \texttt{H-AUT}: \texttt{S-ACK} & --- \\
+U6 & backup (\texttt{L-CMP}); unwanted contact (\texttt{H-PSY}, possible);
+     breach consequence (\texttt{P-BRC})
+   & \texttt{H-PSY}: \texttt{S-ACK} + \texttt{S-QUA} (target: likelihood of
+     the breach) & --- \\
+U7 & partner reads entries, user feels hurt (\texttt{H-PSY}, possible;
+     \texttt{T-REL}) & \texttt{H-PSY}: \texttt{S-MIN} & --- \\
+U8 & embarrassment after sharing (\texttt{H-PSY}, possible)
+   & \texttt{H-PSY}: \texttt{S-RSP} & --- \\
+U9 & discrimination (\texttt{H-DSC}, denied) & \texttt{H-DSC}: \texttt{S-DEN}
+   & encryption (\texttt{T-ENC}); scope: \enquote{no one}, \enquote{your
+     data}; harm framing (\texttt{F-HRM}), absolute \\
+U10 & --- & --- & reassurance without a specific measure (\texttt{C-REA}) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The decisions that are not obvious:
+\noindent The reasoning behind each row, in plain words:
 
-\begin{description}[leftmargin=0pt]
-  \item[U1.] The fertile window is derived, not entered, so the unit reaches
-    the capability \texttt{K-INF}. It presents inference as a feature, not as
-    a risk, and names no harm; it therefore receives no stance.
-  \item[U2.] Sharing device identifiers with analytics partners is a component
-    on the path to \texttt{K-TRK}, but the text never says that anyone could
-    profile the user. It stays at \texttt{L-CMP}. \enquote{We never sell}
-    limits third-party access (\texttt{T-3RD}) and is framed as a data flow.
-  \item[U3.] \enquote{Using it against you} names no concrete outcome, so the
-    unit does not reach \texttt{L-HRM}. On-device storage removes an
-    implementation component (the server copy), but the text claims it
-    \emph{protects} the user (\texttt{F-HRM}). The tree keeps a pathway made
-    only of core components: the logged data and the prediction remain on the
-    phone, within reach of a partner or of anyone who seizes the device. The
-    claim therefore promises more than the measure can deliver and is coded
-    \texttt{C-OVR}.
-  \item[U4.] This is the codebook's counter-example for \texttt{P-INC}: it
-    restates the legal duty without saying what the provider does. No code
-    applies. \enquote{Unlikely} does not make it hedged, because no harm is
-    named.
-  \item[U5.] A concrete outcome (legal risk) is named, so the unit reaches
-    \texttt{L-HRM}. \enquote{In some jurisdictions} narrows the scope but does
-    not make the harm improbable: the stance is \texttt{S-ACK}.
-  \item[U6.] A concrete outcome (unwanted contact) is named, but qualified into
-    improbability by \enquote{in the unlikely event}: \texttt{S-HDG}.
-  \item[U7.] \enquote{Industry-standard} names no mechanism that could be
-    checked: \texttt{C-REA}.
+\begin{description}[leftmargin=0pt,itemsep=3pt]
+  \item[U1.] The user enters dates; the app \emph{derives} the fertile window.
+    Deriving something the user did not enter is inference (\texttt{K-INF}).
+    But the text presents it as a useful feature, not as a risk, and names no
+    harm. So there is no stance.
+  \item[U2.] The first sentence states a data flow (\texttt{L-CMP}); it never
+    says that an analytics partner could build a profile, so \texttt{K-TRK} is
+    not coded.
+    \enquote{We never sell} is a promise about business practice, not a
+    technical measure, so it is coded \texttt{N-COM}, kept separate from
+    technical measures.
+  \item[U3.] \enquote{Anyone using it against you} is vague: no concrete
+    consequence is named, so it is a \emph{generic risk} (\texttt{L-GEN}), not
+    a harm, and it gets no stance. The protection claim is on-device storage,
+    presented as protecting the user from \enquote{anyone}: harm framing,
+    absolute strength. Whether this is a mismatch is decided in Step~4.
+  \item[U4.] Promising to notify users \enquote{as required by law} only
+    restates a legal duty. It is coded as a general notification commitment
+    (\texttt{P-NOT}), not as a concrete incident procedure (\texttt{P-INC}).
+    \enquote{Unlikely} creates no stance here, because no harm is named.
+  \item[U5.] A concrete consequence is named: legal risk (\texttt{H-AUT}).
+    \enquote{In some jurisdictions} narrows \emph{where} the harm applies but
+    does not call it unlikely, so the stance is acknowledged (\texttt{S-ACK}).
+    Because the harm follows a disclosure, the unit also describes a breach
+    consequence (\texttt{P-BRC}).
+  \item[U6.] Unwanted contact is named and presented as possible
+    (\texttt{S-ACK}). \enquote{In the unlikely event} adds likelihood language,
+    so it is also qualified (\texttt{S-QUA}). The qualification targets the
+    \emph{breach} (how likely it is), not the \emph{harm} (how bad it would
+    be). One harm can carry two stances.
+  \item[U7.] The harm (feeling hurt when a partner reads one's entries) is
+    named, so it is coded \texttt{H-PSY} with the relationship tag
+    (\texttt{T-REL}). It is then dismissed: \enquote{There is no reason for
+    such concern} gives no reason in this unit or next to it. That makes it
+    minimised (\texttt{S-MIN}). The decision rests on the wording alone, not
+    on a guess about the provider's intent.
+  \item[U8.] A harm is named (embarrassment), and responsibility for it is
+    placed on the user (\enquote{you alone are responsible}): \texttt{S-RSP}.
+  \item[U9.] Discrimination is named only to be ruled out (\enquote{no one can
+    ever}): its status is \emph{denied}, and the stance is \texttt{S-DEN}. A
+    measure is claimed too, so it is also coded under~C.
+  \item[U10.] \enquote{Safe with us} and \enquote{industry-standard} name no
+    mechanism that could be checked: reassurance without substance
+    (\texttt{C-REA}). There is no measure to assess further.
 \end{description}
 
-\subsection*{Step 3: App-level result}
+\subsection*{Step 4: The author checks the protection claims}
 
-The unit codes are aggregated per app and compared with the reference tree.
+Each protection claim is compared with the pathways that fall within its
+scope (\Cref{tab:we-mismatch}). A \emph{potential mismatch} needs two things:
+a pathway that the claim itself covers, and a written reason why the measure
+does not remove one of that pathway's necessary conditions. A risk that lies
+outside what the claim promises is not enough.
 
 \begin{table}[H]
 \centering
-\caption{CycleMate's policy against the reference tree.}
-\label{tab:we-app}
+\caption{The author's review of CycleMate's protection claims.}
+\label{tab:we-mismatch}
 \small
-\begin{tabularx}{\textwidth}{@{}lX@{}}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.4cm}
+                                   >{\raggedright\arraybackslash}X
+                                   >{\raggedright\arraybackslash}p{2.3cm}@{}}
 \toprule
-\textbf{Node} & \textbf{Result} \\
+\textbf{Unit} & \textbf{What the claim covers} & \textbf{Reasoning} &
+  \textbf{Decision} \\
 \midrule
-\texttt{K-INF} & reached (U1 as a feature, U5 as a risk) \\
-\texttt{K-TRK} & not reached: data flows to analytics partners (U2), but the
-  capability is never named \\
-\texttt{K-DIS} & not reached \\
-\texttt{H-AUT}, \texttt{H-PSY} & reached \\
-\texttt{H-DSC}, \texttt{H-REP} & not reached: \texttt{S-ABS} at app level \\
+U2 & Sale of health data
+   & F3 runs through shared identifiers and usage data, not through selling
+     health data. The residual risk lies outside the claim's scope.
+   & no mismatch \\
+\addlinespace
+U3 & Protection from \enquote{anyone}, while backup is off
+   & F1 is within scope: a person using the unlocked phone is
+     \enquote{anyone}. Keeping data on the phone does not remove that access
+     condition. F2's seized-phone branch is also within scope, but F2 is
+     uncertain (Step~1), so it is noted, not counted. F5 is outside scope,
+     because the claim excludes backup.
+   & potential mismatch (\texttt{C-MIS}) for F1 \\
+\addlinespace
+U9 & No one can use \enquote{your data} to discriminate
+   & F3 is within scope: it leads to discrimination using the identifiers and
+     usage data that U2 says are shared. Encrypting the predictions does not
+     remove that condition.
+   & potential mismatch (\texttt{C-MIS}) for F3 \\
+\addlinespace
+U10 & Nothing specific & No measure is named, so there is nothing to compare.
+   & not assessable \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-For the research questions, this policy contributes:
+\noindent A potential mismatch is a statement about the \emph{text}: what it
+promises compared with what the named measure can do. It is not a finding
+that CycleMate's actual system is unsafe. The study does not test any app's
+security.
+
+\subsection*{Step 5: The result for this policy}
+
+The unit codes are now combined per app and set against the applicability
+records from Step~1 (\Cref{tab:we-app}).
+
+\begin{table}[H]
+\centering
+\caption{CycleMate's privacy policy against the reference tree.}
+\label{tab:we-app}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}
+                                 >{\raggedright\arraybackslash}p{2.6cm}
+                                 >{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Element} & \textbf{Applicable?} & \textbf{Mentioned in the policy?} \\
+\midrule
+Psychological (\texttt{H-PSY}) & yes (F1, F5)
+  & yes: U6 (acknowledged and qualified), U7 (minimised), U8 (responsibility
+    shifted) \\
+Relationship tag (\texttt{T-REL}) & yes (F1) & yes: U7 (minimised) \\
+Discrimination (\texttt{H-DSC}) & yes (F3) & only as denied: U9 \\
+Reputational (\texttt{H-REP}) & yes (F5)
+  & no mention identified in the captured policy \\
+Autonomy (\texttt{H-AUT}) & uncertain (F2, F4)
+  & yes: U5 (acknowledged); reported separately \\
+\addlinespace
+Inference (\texttt{K-INF}) & yes (F1) & yes: U1 (as a feature), U5 (as a risk) \\
+Tracking (\texttt{K-TRK}) & yes (F3) & no: U2 names the data flow only \\
+Breach consequence (\texttt{P-BRC}) & yes (F5) & yes: U5, U6 \\
+Incident procedure (\texttt{P-INC}) & yes (F5)
+  & no concrete procedure; only the legal-notice promise (U4) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent What this one policy contributes to the research questions:
 \begin{itemize}
-  \item \textbf{RQ1 (coverage):} one of the three capabilities is named
-    (\texttt{K-INF}); two of the four listed harms are named.
-  \item \textbf{RQ2 (stance):} one harm acknowledged, one hedged.
-  \item \textbf{RQ3 (protection):} two measures claimed, both removing only
-    implementation components; one overclaim; one reassurance without
-    substance.
-  \item \textbf{RQ4 (consistency):} the same procedure is repeated for the
-    store listing, the website, and the in-app screens, and the code sets are
-    compared --- for example, whether the warning in U5 also appears on the
-    screen where the user signs up.
+  \item \textbf{RQ1 (coverage).} Four harm categories, including the
+    relationship tag, apply to CycleMate. Two are named as possible harms.
+    Discrimination is named only in order to be denied. Reputational harm has
+    no mention in the captured policy. Autonomy harm is named, but because its
+    applicability is uncertain, it is reported separately and neither counted
+    as covered nor as missing.
+  \item \textbf{RQ2 (stance).} Five named harms carry stances: one
+    acknowledged, one acknowledged and qualified, one minimised, one with
+    responsibility shifted to the user, and one denied.
+  \item \textbf{RQ3 (protection).} Three protection claims are made: a
+    no-sale pledge (a practice commitment), on-device storage and encryption.
+    The two technical measures are framed as harm prevention with absolute
+    strength, and the author flags both as potential mismatches. The no-sale
+    pledge is narrowly scoped, and no reference pathway falls within its
+    scope. One unit offers reassurance without substance. None of this
+    verifies whether the claims are true.
+  \item \textbf{RQ4 (surfaces).} The same steps are repeated for the store
+    listing, the website and, for the twelve walkthrough apps, the in-app
+    screens. The code sets are then compared. For example: does the legal-risk
+    warning in U5 also appear on the onboarding screen where the user decides
+    whether to sign up?
 \end{itemize}
+\enquote{No mention identified} always refers to the captured material and to
+an instrument with measured limits; it is never a claim that the provider
+says nothing anywhere.
 
-\subsection*{Step 4: The model's part}
+\subsection*{Step 6: What the language model does}
 
-The language model performs Step~2, one unit at a time. It gives a reason
-before each code and must quote the span that supports it; a code without a
-span is discarded. For U3 the output takes this form:
+The language model helps with Step~3 only, in three stages: it first finds
+the relevant spans, then assigns a stance to each named harm, then describes
+any protection claim. For every code it must quote the supporting span and
+give a short reason; a code without a span is discarded. For U6, the stance
+stage returns:
 
 \begin{lstlisting}[basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible]
-{"unit": "U3",
- "codes": [
-  {"code": "T-DEV",
-   "span": "stays on your device unless you turn on backup",
-   "reason": "on-device storage is claimed"},
-  {"code": "F-HRM",
-   "span": "protects you from anyone using it against you",
-   "reason": "framed as preventing an outcome, not as less data flow"}]}
+{"unit": "U6",
+ "harm": {"code": "H-PSY",
+          "span": "you might experience unwanted contact"},
+ "stances": [
+  {"code": "S-ACK",
+   "span": "you might experience unwanted contact",
+   "reason": "the harm is presented as possible"},
+  {"code": "S-QUA",
+   "span": "In the unlikely event that an unauthorised party accessed your backup",
+   "target": "likelihood of the breach",
+   "reason": "likelihood language about the event, not about the harm"}]}
 \end{lstlisting}
 
-The model does not assign origins or \texttt{C-OVR}. Origins come from the
-reference tree, and \texttt{C-OVR} follows by rule: a unit coded
-\texttt{F-HRM} in a domain whose tree keeps a pathway made only of core or
-context components. The author codes a validation sample by hand, blind to the
-model's output, to measure per code how often the model is right and what it
-misses.
+The model never decides applicability (Step~1) or potential mismatches
+(Step~4); those are the author's decisions, with the reasoning logged. Every
+harm mention the model returns is checked by hand, so the model works as a
+screener and is tuned to miss as little as possible. To measure how good it
+is, the author codes ten validation apps completely by hand before looking at
+the model's output. A detection counts as correct only if the label, the unit
+and the evidence span all match. If the first stage misses a span, the codes
+that depend on it count as missed as well.
