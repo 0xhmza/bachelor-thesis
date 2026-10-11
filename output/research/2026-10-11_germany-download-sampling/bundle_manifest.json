@@ -1,0 +1,376 @@
+{
+  "created_utc": "2026-10-11T16:31:19.485446+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "35740b6d3be41e8085fa77e0f4f2cfebd19344518e9cc9bfa8ad9cbdf1412fb7",
+      "bytes": 18
+    },
+    {
+      "path": "build_document.py",
+      "sha256": "4f52af9a2339072bed184b689aff072568b9eb61fb60a5faf0117e3797180e89",
+      "bytes": 23975
+    },
+    {
+      "path": "evidence/access_observations.json",
+      "sha256": "ee38d671abf52456701444981ea365bed504caf20e13e22aff2778348fafb253",
+      "bytes": 1488
+    },
+    {
+      "path": "evidence/verification.json",
+      "sha256": "d8662a1dd3477a984c6c7c9ddb95d70dd79cd9390017ade427f6b23c65833243",
+      "bytes": 273
+    },
+    {
+      "path": "processed/20261011T161853545650Z/appearances.json",
+      "sha256": "6886d78611d6c43d9907837746a71ba522a1b6b5ddbc0526f75abf607f2c402a",
+      "bytes": 41911
+    },
+    {
+      "path": "processed/20261011T161853545650Z/download_input_template.csv",
+      "sha256": "afd0fd61f3e37af561b411db5fab0d2adf58ccaceac748a1fb85ec20a72fe30a",
+      "bytes": 8935
+    },
+    {
+      "path": "processed/20261011T161853545650Z/listings.csv",
+      "sha256": "e7ad22c12e23e68bdb7538f981f88425a3b09de27f647b6125d6ded8988d3530",
+      "bytes": 38267
+    },
+    {
+      "path": "processed/20261011T161853545650Z/listings.json",
+      "sha256": "1210fac8952f41b7b1d33acba83dece013d94cbedd17bdda8b5a886021e63c3f",
+      "bytes": 90508
+    },
+    {
+      "path": "processed/20261011T161853545650Z/sessions.json",
+      "sha256": "056572106251eaab1fd3242ab0008a411a81a94b7e6021f337378ed49afe8db6",
+      "bytes": 2642
+    },
+    {
+      "path": "processed/20261011T161853545650Z/summary.json",
+      "sha256": "38641b3b16fd5ca00357682acdcc4afbc90b0e0daabd1a598f0db292a60c8a86",
+      "bytes": 200
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_api_docs.html",
+      "sha256": "c2bfbc969a80a130facc50775797bddcd60d342e1483ff6116b78cf1d7cac8a6",
+      "bytes": 82791
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_api_docs.html.meta.json",
+      "sha256": "573f4cb5f5ea465665095507b4e30a559619fdd0be60304daf2a7ec13f925216",
+      "bytes": 445
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F1.json",
+      "sha256": "8615662851b16d7fee568fd420397ecd2597aaf35ff17e2194bb3b0ee60c2b59",
+      "bytes": 198333
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F1.json.meta.json",
+      "sha256": "3342d2b17c57af32911a51fd02b296f2823ab94946d686eef5a07a01b469ffa2",
+      "bytes": 635
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F2.json",
+      "sha256": "542166e8a4b6557d1f2fe2cc6287a93e4246f60be942a34b3d05ec640493a951",
+      "bytes": 214622
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F2.json.meta.json",
+      "sha256": "4b188692f9fe7c74bade18061a49f2319260ebd2b44ee3259ec8a2553f03cb6d",
+      "bytes": 659
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F3.json",
+      "sha256": "94df1b9c85031f2fefb9b68c889397ab7791909059b1b975fb4b7b6ae9e6ca15",
+      "bytes": 162572
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F3.json.meta.json",
+      "sha256": "2cb5438eb18a5c209c2c7e128897179c79a0ca0c1e0e0aa600f05643deaeea28",
+      "bytes": 664
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F4.json",
+      "sha256": "df9c3dcc8fed80c5dc1001c5bad7838420ef6b0b7379137f1dfdbbd461ba2a6e",
+      "bytes": 130103
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F4.json.meta.json",
+      "sha256": "42df609d5d8072ae81dc45c20c6a1ad0fece4f21a1a0351165360bfe50e5011b",
+      "bytes": 676
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F5.json",
+      "sha256": "791538b2adcd411ba0dfbf1175834c6140c24f414050b649ef13836407761b2b",
+      "bytes": 193572
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F5.json.meta.json",
+      "sha256": "f4a7d6f657445243c07a073210948bb67f162bd73343898fc97531033a132068",
+      "bytes": 656
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F6.json",
+      "sha256": "26bfcaa62a14eef492dec874e67ab35dd850f570d38c8619b42ad4c662262048",
+      "bytes": 178587
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F6.json.meta.json",
+      "sha256": "2722f56cace986daaf175bd61fe22c57ed006527f70d69c175281817486cacf9",
+      "bytes": 650
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F7.json",
+      "sha256": "3e3596021cc106a29c76c24aed757ba5db22b44a10453c23d1c13adece4011af",
+      "bytes": 204594
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F7.json.meta.json",
+      "sha256": "4061b1c30bb6e5f1499b4d2c09e2886157b74a274d18c968994bea89143b10bf",
+      "bytes": 667
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F8.json",
+      "sha256": "6ee923220c49a57681c302aa791fa471a60db1d9d1650e1654b4ec17c43b2fd4",
+      "bytes": 221146
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F8.json.meta.json",
+      "sha256": "10e04492cd6089bfce0a30c38c67f4cd82bfb86d766c9b507631cf7699812bee",
+      "bytes": 679
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F9.json",
+      "sha256": "88d11570c79cc11b6cb188775cf5999838d7ab932494fed82cbe7e2af89628be",
+      "bytes": 194967
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_F9.json.meta.json",
+      "sha256": "f59c88de6b9a0f15f032b40277d4b352ae2fff5b69ccc065fa58bd7c21d9fdc3",
+      "bytes": 635
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P1.json",
+      "sha256": "b76c4b54408e1246e93fcf59a20433c2d5f42e17d8e643c8fd35c496f6d9c2b2",
+      "bytes": 191796
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P1.json.meta.json",
+      "sha256": "63d93abb14d0dfbe33c25022ce1a639b5de14c741a09ae9bfc1ad4ebe1388ef0",
+      "bytes": 637
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P10.json",
+      "sha256": "77e92ce5c7e8bb1302e1409854c9c1c3f0f4a62d4ac4071d1a01f4773bfc728b",
+      "bytes": 185934
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P10.json.meta.json",
+      "sha256": "78e4a6ce721993ee7bd65bf31dbb3cd50f2dad7c739b0a8e0f0b43682d9f7299",
+      "bytes": 645
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P2.json",
+      "sha256": "dedfe88ff0cc487e51bb056983bfa3c48571c0202bee9de3e425445af2493632",
+      "bytes": 171212
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P2.json.meta.json",
+      "sha256": "89634fcdad104079adcea6185cbcd72c823c7b1c9ae7240b09a4947a8e5be64a",
+      "bytes": 634
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P3.json",
+      "sha256": "3e75509af9eca8bc824234ebc14bca50d5e4b34ab88fbe19c0bb72cfb05aaf49",
+      "bytes": 194931
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P3.json.meta.json",
+      "sha256": "ba392a3c5047197e6628b39934e9d8fa4b1fbe46dbec970ab3d8e2a709ed0850",
+      "bytes": 655
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P4.json",
+      "sha256": "d94cfcc4201fc65f7d1a621e6cf7fb84c6647e234032f7442fade23cd5f76024",
+      "bytes": 179169
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P4.json.meta.json",
+      "sha256": "b4d29c93e8012c842fc9247552615e5a25d442891a2115fb6f834cff680278e5",
+      "bytes": 652
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P5.json",
+      "sha256": "4b19cc9e62aae32d66750302912dad35c2cdf3a18adba022b42cf4e412b1e359",
+      "bytes": 182519
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P5.json.meta.json",
+      "sha256": "3d467c1016b561e60125e9d522aa4355b91241bc5f90b2d940a579bd7ea7c8d1",
+      "bytes": 640
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P6.json",
+      "sha256": "650c934828cd583600176d54037294cea4b85d0020c4569c74604d536b3c73d5",
+      "bytes": 182395
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P6.json.meta.json",
+      "sha256": "4362c3874cb640a49767b19759a4e37bac1ce1f0efcabb82352e5e98c444959b",
+      "bytes": 655
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P7.json",
+      "sha256": "f14de70ea6f8b5abee8ddb3442d9ce633e8ac36c5808edb207d5d7e233445a85",
+      "bytes": 196247
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P7.json.meta.json",
+      "sha256": "c3be597dcf262192b7dd7a0159f9dcc120ae806ae7f5a98c6c4950d2f6169fa8",
+      "bytes": 652
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P8.json",
+      "sha256": "03a6f206aaef0140717462d0dd3fff478ac5bdd53551bb56299ec7920ead1773",
+      "bytes": 188482
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P8.json.meta.json",
+      "sha256": "0cc76c4fe8d48648ebe262f2d873930ea25e4f9aba0418499d02230754c332c4",
+      "bytes": 658
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P9.json",
+      "sha256": "8203410ec085b7028e4b6a03d416925e5491228fe7bcd9dd37051310338769d8",
+      "bytes": 202169
+    },
+    {
+      "path": "raw/20261011T161853545650Z/apple_P9.json.meta.json",
+      "sha256": "78341185133b4514ea0520734da9348fa791893d42ca84f556ff4fe39d3fdbc1",
+      "bytes": 643
+    },
+    {
+      "path": "raw/20261011T161853545650Z/completion.json",
+      "sha256": "d9f190d7c3e4dcff43296cbe846c0947f5f4ee648618a6d03b7f77e388864f72",
+      "bytes": 200
+    },
+    {
+      "path": "raw/20261011T161853545650Z/estimates_docs.html",
+      "sha256": "d959d7ddfb5cc48ef59bccf7538644565781a5a44d0bdd39e15f0f3dc92ff082",
+      "bytes": 5594
+    },
+    {
+      "path": "raw/20261011T161853545650Z/estimates_docs.html.meta.json",
+      "sha256": "4a9d7e0c9690b9df6213b23f494b95d4756ff5533a865f6b916bc045ed23c20a",
+      "bytes": 339
+    },
+    {
+      "path": "raw/20261011T161853545650Z/final_derivation_snapshot/build_document.py",
+      "sha256": "4f52af9a2339072bed184b689aff072568b9eb61fb60a5faf0117e3797180e89",
+      "bytes": 23975
+    },
+    {
+      "path": "raw/20261011T161853545650Z/final_derivation_snapshot/sampling.py",
+      "sha256": "4c4840e9d00036f35dcae118623d30bc87a78a9e9503a3e033da2a57157bf077",
+      "bytes": 14584
+    },
+    {
+      "path": "raw/20261011T161853545650Z/final_derivation_snapshot/verify.py",
+      "sha256": "c7f9e4d19eb6c3c6a7ff7ee4cb17ffd26d7ccfb217b9e603c78807447981d6bb",
+      "bytes": 5058
+    },
+    {
+      "path": "raw/20261011T161853545650Z/google_terms.html",
+      "sha256": "a50e6eb7ad41e06fac77b108df508c242742cab95cf83b473d1b671e47b4b3f1",
+      "bytes": 609260
+    },
+    {
+      "path": "raw/20261011T161853545650Z/google_terms.html.meta.json",
+      "sha256": "fee1f4605d94a304474f179c366dea744f3b620e3972f7701ab0d2f949342a6c",
+      "bytes": 436
+    },
+    {
+      "path": "raw/20261011T161853545650Z/keyword_inspector_docs.html",
+      "sha256": "40ebab5499870b477b62f89a700191380d9acda19baa21bef64f0a59a73103ee",
+      "bytes": 33130
+    },
+    {
+      "path": "raw/20261011T161853545650Z/keyword_inspector_docs.html.meta.json",
+      "sha256": "7bc9a4ab7dcc17bd5f80a2eaa498865c62608dba6d136dcb853b30ef39336fd2",
+      "bytes": 485
+    },
+    {
+      "path": "raw/20261011T161853545650Z/play_robots.txt",
+      "sha256": "cad8995e4d35174309d6d04c1f6765afeb7643e88cf2155af27cbdabb92ef552",
+      "bytes": 3199
+    },
+    {
+      "path": "raw/20261011T161853545650Z/play_robots.txt.meta.json",
+      "sha256": "2875a058bdc7a9ded0a23706411a685372aa58ad4ea33f0599721afb0f56b368",
+      "bytes": 404
+    },
+    {
+      "path": "raw/20261011T161853545650Z/protocol.json",
+      "sha256": "3e30d62881c14d77e26768d815fe41ca53866dfd7ccf53464d3602d1000e1ae2",
+      "bytes": 1819
+    },
+    {
+      "path": "raw/20261011T161853545650Z/requests.json",
+      "sha256": "87b1ab173fa9d812dfb7be68de1ceca23d21995ba45e6d323b9736a9a55e764c",
+      "bytes": 16307
+    },
+    {
+      "path": "raw/20261011T161853545650Z/sampling.py",
+      "sha256": "749add4887e1eab1311668961770681ec5c5819aee5696e04b9f1b97cceff3e3",
+      "bytes": 13413
+    },
+    {
+      "path": "raw/20261011T161853545650Z/samsung_apple_lookup.json",
+      "sha256": "77bfa46e16bb9df26472b55ba1719edd6048f78480c6939d2169122ee3cb88e4",
+      "bytes": 5416
+    },
+    {
+      "path": "raw/20261011T161853545650Z/samsung_apple_lookup.json.meta.json",
+      "sha256": "0ea560bb1c38e3eaa70e683d3ff05f74660a01e3136c5741ee1a90275aebce80",
+      "bytes": 472
+    },
+    {
+      "path": "raw/20261011T161853545650Z/samsung_play.html",
+      "sha256": "2c6205a4beae25a5ce2d68dea67305a45d31954b5af8a2c1a6bf0d3798976a1c",
+      "bytes": 1332602
+    },
+    {
+      "path": "raw/20261011T161853545650Z/samsung_play.html.meta.json",
+      "sha256": "c78ed3657bb59ff53b098d168fa960b19d58cc2b259bdbff3bd0ef5001d0b288",
+      "bytes": 519
+    },
+    {
+      "path": "README.md",
+      "sha256": "f1528eddb84e0620ecbfa720b9afb264f91c57f82dd4c62ff30a228ae8559015",
+      "bytes": 2048
+    },
+    {
+      "path": "sampling.py",
+      "sha256": "4c4840e9d00036f35dcae118623d30bc87a78a9e9503a3e033da2a57157bf077",
+      "bytes": 14584
+    },
+    {
+      "path": "sampling_report.pdf",
+      "sha256": "1831831622a9448b9f37cf36b091ab86ab43bbab3aaee84548155157aec6d495",
+      "bytes": 400597
+    },
+    {
+      "path": "sampling_report.tex",
+      "sha256": "4aaf64fe7a673a742289104fa9d5275598030cb9ed3256541c7e739118605e62",
+      "bytes": 40913
+    },
+    {
+      "path": "verify.py",
+      "sha256": "c7f9e4d19eb6c3c6a7ff7ee4cb17ffd26d7ccfb217b9e603c78807447981d6bb",
+      "bytes": 5058
+    }
+  ],
+  "status": "final sampling incomplete; German download evidence unavailable"
+}

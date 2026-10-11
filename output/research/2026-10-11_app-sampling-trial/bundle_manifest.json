@@ -1,0 +1,1253 @@
+{
+  "created_utc": "2026-10-11T14:08:39.657806+00:00",
+  "run": "20261011T135045038162Z",
+  "derivation_snapshot": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z",
+  "scope": "Raw evidence, processing inputs, scripts, tables and delivered report; QA previews excluded",
+  "files": [
+    {
+      "path": "config/app_review.json",
+      "bytes": 6421,
+      "sha256": "86514c6a0964029330d11c14f5b3b38a810b43c600e955dfd49bbcbfaaa3c759"
+    },
+    {
+      "path": "config/discovery_log.json",
+      "bytes": 748,
+      "sha256": "623046e145917c75761cc9d74356fea9a838a65c482ae15af99278d432cfa14f"
+    },
+    {
+      "path": "config/play_seeds.json",
+      "bytes": 7875,
+      "sha256": "41a2e20bdf8c39779ee2e7ff4cb2b7feb59e40984f4b2e6a31cf4423ff93c81c"
+    },
+    {
+      "path": "config/proposal_snapshot.tex",
+      "bytes": 35731,
+      "sha256": "ce8f86f72b97db34303ec5115ae21b0d346845948fe692607701cc20cebab9c5"
+    },
+    {
+      "path": "config/protocol.json",
+      "bytes": 3676,
+      "sha256": "94fdc4e691ee3c3fbfa9eef78a0e3627aaf45905239b3f7551d7980288c65704"
+    },
+    {
+      "path": "scripts/archive_derivation.py",
+      "bytes": 2103,
+      "sha256": "ddf1fe543708e2340253880d18e390901f6ce09dafdb51ad244013d1f57d8ffd"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 25155,
+      "sha256": "c9edec44771ec92a1e49294f079bc46921223c40c67db4d7f98424d41065b0ae"
+    },
+    {
+      "path": "scripts/check_policies.py",
+      "bytes": 2039,
+      "sha256": "ce4775f1a5ad4386f9df1819fe4adb52cbb34dbc3ac116fe9ab2068dc1f9c7fb"
+    },
+    {
+      "path": "scripts/collect.py",
+      "bytes": 6510,
+      "sha256": "a02983c29b7e22c475daead3be7381a75d24fe797878378c6aae1e443cbe5416"
+    },
+    {
+      "path": "scripts/initialize.py",
+      "bytes": 5285,
+      "sha256": "991aa5820de665380323d20a9088cd079eadfce7a321e2fd433325327913a31e"
+    },
+    {
+      "path": "scripts/prepare_review.py",
+      "bytes": 5113,
+      "sha256": "10557e8a760f6ca15dd7e2e53db4817a805ed52351224a6dc4a9d53f46bf7f94"
+    },
+    {
+      "path": "scripts/process.py",
+      "bytes": 13043,
+      "sha256": "aff33554b63fdcdca4326fc271c3c8f1cd3ba437a11f9e0e763f8c45239bac6c"
+    },
+    {
+      "path": "scripts/qa_report.py",
+      "bytes": 1962,
+      "sha256": "456686746d77a68a097bfdb80af1c6c713526ddf04d8f48e6ae85052fff6b6f3"
+    },
+    {
+      "path": "scripts/sample_set.py",
+      "bytes": 5053,
+      "sha256": "d7da77d87eedffe03c2d378b33fb6418e034273c8a776b37b733d2906a90427d"
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 3794,
+      "sha256": "e6a7b232737ac3e9f1886ece26b7eeed5117f4b45db9aeaf9988540f78b6f03f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F1.json",
+      "bytes": 198333,
+      "sha256": "8615662851b16d7fee568fd420397ecd2597aaf35ff17e2194bb3b0ee60c2b59"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F1.json.meta.json",
+      "bytes": 838,
+      "sha256": "334903e275a6c03a55a71b7ca0f2afbbcb4f5d65417c269f1d47e8a0b8fbbae2"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F2.json",
+      "bytes": 214622,
+      "sha256": "542166e8a4b6557d1f2fe2cc6287a93e4246f60be942a34b3d05ec640493a951"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F2.json.meta.json",
+      "bytes": 854,
+      "sha256": "7c0053961416b121541890557719249ee6d79b194fa0d66439739c147c81ad36"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F3.json",
+      "bytes": 162572,
+      "sha256": "94df1b9c85031f2fefb9b68c889397ab7791909059b1b975fb4b7b6ae9e6ca15"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F3.json.meta.json",
+      "bytes": 860,
+      "sha256": "2ffb75871653cd6723709d2d50913eb4cc8110a9565e530ff5f5050f18f73e3e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F4.json",
+      "bytes": 130103,
+      "sha256": "df9c3dcc8fed80c5dc1001c5bad7838420ef6b0b7379137f1dfdbbd461ba2a6e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F4.json.meta.json",
+      "bytes": 868,
+      "sha256": "677ab6f6cea056ef6a8c9806d9f321ce6f7846210269a3168c4ed372764a1a84"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F5.json",
+      "bytes": 193572,
+      "sha256": "791538b2adcd411ba0dfbf1175834c6140c24f414050b649ef13836407761b2b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F5.json.meta.json",
+      "bytes": 852,
+      "sha256": "838f42ca5c4f80cd3db32d082732bbc775284112d746f4fbc8bec7ae0ab0746b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F6.json",
+      "bytes": 178587,
+      "sha256": "26bfcaa62a14eef492dec874e67ab35dd850f570d38c8619b42ad4c662262048"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F6.json.meta.json",
+      "bytes": 848,
+      "sha256": "7db6ad55db6f484869a0feacafd4b85b3dd4744dd7ed56b923b6e4150aea9116"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F7.json",
+      "bytes": 204594,
+      "sha256": "3e3596021cc106a29c76c24aed757ba5db22b44a10453c23d1c13adece4011af"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F7.json.meta.json",
+      "bytes": 862,
+      "sha256": "3a0cf5b1b6ab32694c4685a37fc07dcd5925f3361906da5ae5dcfd485d25482f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F8.json",
+      "bytes": 221146,
+      "sha256": "6ee923220c49a57681c302aa791fa471a60db1d9d1650e1654b4ec17c43b2fd4"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F8.json.meta.json",
+      "bytes": 870,
+      "sha256": "5e9d3cabcdb2306aba2abee3cec77be83d8fc7858460274edf5e812388f5d924"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F9.json",
+      "bytes": 194967,
+      "sha256": "88d11570c79cc11b6cb188775cf5999838d7ab932494fed82cbe7e2af89628be"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_F9.json.meta.json",
+      "bytes": 838,
+      "sha256": "f58a77dc65264c70d47ab249fbecef6336980ec4a3de2a87b7339baf1a7f4812"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P1.json",
+      "bytes": 191796,
+      "sha256": "b76c4b54408e1246e93fcf59a20433c2d5f42e17d8e643c8fd35c496f6d9c2b2"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P1.json.meta.json",
+      "bytes": 838,
+      "sha256": "2ae32b41b9ff5d8d7bccca1dcaeb7d4413eac96543e141d168a3eceeeb7ae174"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P10.json",
+      "bytes": 185934,
+      "sha256": "77e92ce5c7e8bb1302e1409854c9c1c3f0f4a62d4ac4071d1a01f4773bfc728b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P10.json.meta.json",
+      "bytes": 843,
+      "sha256": "d46337b83dea470972df6354e05a4708d1053d9310b878688e53cb0d8b814f48"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P2.json",
+      "bytes": 171212,
+      "sha256": "dedfe88ff0cc487e51bb056983bfa3c48571c0202bee9de3e425445af2493632"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P2.json.meta.json",
+      "bytes": 836,
+      "sha256": "f9d21c14fa348370f9f038303a8a66523e8410f075f90c6aabdaf1f0408edabf"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P3.json",
+      "bytes": 194931,
+      "sha256": "3e75509af9eca8bc824234ebc14bca50d5e4b34ab88fbe19c0bb72cfb05aaf49"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P3.json.meta.json",
+      "bytes": 850,
+      "sha256": "da38b99e5f1c66ea9c842a84dcfeee1d1a6e5ef75902cd74570ab6064ac3cf9c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P4.json",
+      "bytes": 179169,
+      "sha256": "d94cfcc4201fc65f7d1a621e6cf7fb84c6647e234032f7442fade23cd5f76024"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P4.json.meta.json",
+      "bytes": 848,
+      "sha256": "02f2e22b52f2d93d8e513d7f8c0cb3755aafb72b79f7b4bcde656d2aa24e2b22"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P5.json",
+      "bytes": 182519,
+      "sha256": "4b19cc9e62aae32d66750302912dad35c2cdf3a18adba022b42cf4e412b1e359"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P5.json.meta.json",
+      "bytes": 840,
+      "sha256": "4489e882eed6a46ba7f470db7f445abb37e01d00625a9c857c58ee4e5d88705f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P6.json",
+      "bytes": 182395,
+      "sha256": "650c934828cd583600176d54037294cea4b85d0020c4569c74604d536b3c73d5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P6.json.meta.json",
+      "bytes": 850,
+      "sha256": "e631bc6391cb6229c65814f98ea2c846f714627e4e001f0f37b57f7abffea8c6"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P7.json",
+      "bytes": 196247,
+      "sha256": "f14de70ea6f8b5abee8ddb3442d9ce633e8ac36c5808edb207d5d7e233445a85"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P7.json.meta.json",
+      "bytes": 848,
+      "sha256": "e11351eb6bbc5b6f80faa92ecfe018bec1d0c0c86a82ea229a6c5b21f15b2d56"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P8.json",
+      "bytes": 188482,
+      "sha256": "03a6f206aaef0140717462d0dd3fff478ac5bdd53551bb56299ec7920ead1773"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P8.json.meta.json",
+      "bytes": 852,
+      "sha256": "43665bf05a12b3839764e0bc2d350d3c3f2dc7cfabd506ca6c8e6902742c8963"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P9.json",
+      "bytes": 202169,
+      "sha256": "8203410ec085b7028e4b6a03d416925e5491228fe7bcd9dd37051310338769d8"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/apple_P9.json.meta.json",
+      "bytes": 842,
+      "sha256": "4a27f0ee9c6b734aa0e8278fcf28e5d0ef83c4556cb6900b67c2f040c2243168"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/completion.json",
+      "bytes": 149,
+      "sha256": "a0f05aa155fa3b4c6fd7d0d5e753f7b71908f8cdaaf19ebe11ca1bd37d66f057"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/config/app_review.json",
+      "bytes": 6421,
+      "sha256": "86514c6a0964029330d11c14f5b3b38a810b43c600e955dfd49bbcbfaaa3c759"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/config/discovery_log.json",
+      "bytes": 748,
+      "sha256": "623046e145917c75761cc9d74356fea9a838a65c482ae15af99278d432cfa14f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/config/play_seeds.json",
+      "bytes": 7875,
+      "sha256": "41a2e20bdf8c39779ee2e7ff4cb2b7feb59e40984f4b2e6a31cf4423ff93c81c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/config/proposal_snapshot.tex",
+      "bytes": 35731,
+      "sha256": "ce8f86f72b97db34303ec5115ae21b0d346845948fe692607701cc20cebab9c5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/config/protocol.json",
+      "bytes": 3676,
+      "sha256": "94fdc4e691ee3c3fbfa9eef78a0e3627aaf45905239b3f7551d7980288c65704"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/archive_derivation.py",
+      "bytes": 2103,
+      "sha256": "ddf1fe543708e2340253880d18e390901f6ce09dafdb51ad244013d1f57d8ffd"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/build_report.py",
+      "bytes": 25155,
+      "sha256": "c9edec44771ec92a1e49294f079bc46921223c40c67db4d7f98424d41065b0ae"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/check_policies.py",
+      "bytes": 2039,
+      "sha256": "ce4775f1a5ad4386f9df1819fe4adb52cbb34dbc3ac116fe9ab2068dc1f9c7fb"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/collect.py",
+      "bytes": 6510,
+      "sha256": "a02983c29b7e22c475daead3be7381a75d24fe797878378c6aae1e443cbe5416"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/initialize.py",
+      "bytes": 5285,
+      "sha256": "991aa5820de665380323d20a9088cd079eadfce7a321e2fd433325327913a31e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/prepare_review.py",
+      "bytes": 5113,
+      "sha256": "10557e8a760f6ca15dd7e2e53db4817a805ed52351224a6dc4a9d53f46bf7f94"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/process.py",
+      "bytes": 13043,
+      "sha256": "aff33554b63fdcdca4326fc271c3c8f1cd3ba437a11f9e0e763f8c45239bac6c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/qa_report.py",
+      "bytes": 1962,
+      "sha256": "456686746d77a68a097bfdb80af1c6c713526ddf04d8f48e6ae85052fff6b6f3"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/sample_set.py",
+      "bytes": 5053,
+      "sha256": "d7da77d87eedffe03c2d378b33fb6418e034273c8a776b37b733d2906a90427d"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/derivation_20261011T140839475609Z/scripts/verify.py",
+      "bytes": 3794,
+      "sha256": "e6a7b232737ac3e9f1886ece26b7eeed5117f4b45db9aeaf9988540f78b6f03f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/collect.py",
+      "bytes": 6483,
+      "sha256": "3417cd8e32842e558ac3ac407ec48f5ed7c00b107ccaee2a5ff954c248104023"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/discovery_log.json",
+      "bytes": 748,
+      "sha256": "623046e145917c75761cc9d74356fea9a838a65c482ae15af99278d432cfa14f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/initialize.py",
+      "bytes": 5285,
+      "sha256": "991aa5820de665380323d20a9088cd079eadfce7a321e2fd433325327913a31e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/play_seeds.json",
+      "bytes": 7875,
+      "sha256": "41a2e20bdf8c39779ee2e7ff4cb2b7feb59e40984f4b2e6a31cf4423ff93c81c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/process.py",
+      "bytes": 13043,
+      "sha256": "aff33554b63fdcdca4326fc271c3c8f1cd3ba437a11f9e0e763f8c45239bac6c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/proposal_snapshot.tex",
+      "bytes": 35731,
+      "sha256": "ce8f86f72b97db34303ec5115ae21b0d346845948fe692607701cc20cebab9c5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/inputs/protocol.json",
+      "bytes": 3676,
+      "sha256": "94fdc4e691ee3c3fbfa9eef78a0e3627aaf45905239b3f7551d7980288c65704"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_caculator.period.tracker.html",
+      "bytes": 1331680,
+      "sha256": "023474bb09d87719294a7982c48349f303d269d103c76cf33b1053a1abdf2d21"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_caculator.period.tracker.html.meta.json",
+      "bytes": 806,
+      "sha256": "68e8d32b7ac9bc25e1589ea806641ca300e626c2d9880383a24ec65031e0d03c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_co.pacetech.dietx.html",
+      "bytes": 1263486,
+      "sha256": "c8375ade2052d2de97d7efe9c5562e608263e4cf8f6d1a07cda8ca00b293a05d"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_co.pacetech.dietx.html.meta.json",
+      "bytes": 785,
+      "sha256": "4e982935e79c351bc7d69e3a881e21a3e25741a99cd2ff51a7ec5ce19140215f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.clue.android.html",
+      "bytes": 1298143,
+      "sha256": "b9b191db230c7bb942abb2abf3ae06074252ca90aa34a9892de9978112a35186"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.clue.android.html.meta.json",
+      "bytes": 782,
+      "sha256": "67185a78accbe0b955b8064d29ca4109368e972d84d35b9b24b0e99ff1003660"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.gen.workoutme.html",
+      "bytes": 1330124,
+      "sha256": "ac72b9bd2217e8f2a6522079a8cd857faba8532a159c5a8736419d2ebc578e60"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.gen.workoutme.html.meta.json",
+      "bytes": 785,
+      "sha256": "a93494a1aa4bea4e71146014f5aaa6827453b51c86e110ac6922fb1b4c101c83"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.google.android.apps.fitness.html",
+      "bytes": 1332365,
+      "sha256": "8e04142ce8477b153899efbd9cc4196cc084d0116f5cf368f589d33a179fd446"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.google.android.apps.fitness.html.meta.json",
+      "bytes": 827,
+      "sha256": "a0bcb029f71a9cfbc34e92e7a2a61b7e380483d1ad1c146596f050f563ed0f99"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.granitedigital.velle.html",
+      "bytes": 1263925,
+      "sha256": "6eeed9dfe7237198ca2bbdc034ff468225ab7d754469441273481d6287ec9276"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.granitedigital.velle.html.meta.json",
+      "bytes": 806,
+      "sha256": "d09c7f4354b87d05b8499bf85f4100c2981eed433ddeddc43bae13a0550ef75e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.kunpitech.bloomperiodtracker.html",
+      "bytes": 1275769,
+      "sha256": "4c852201c8352efc0f9b175e99c58f51159d59dd7436fcbef8ca751547967605"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.kunpitech.bloomperiodtracker.html.meta.json",
+      "bytes": 830,
+      "sha256": "4b22a70cc41fbfa39a9febb0e3e6bbbbc584b5983027ef565a1121a9485a2fb9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.lbrc.PeriodCalendar.html",
+      "bytes": 1362627,
+      "sha256": "a3bbe16d75a5ff035c045ee365267f9a1209162ea7f774be8b274bdc9bb2dcbd"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.lbrc.PeriodCalendar.html.meta.json",
+      "bytes": 803,
+      "sha256": "ad0626cc462fac11c864a94e842b84f59e6982d5432082e2428464c8a160ab3f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.maxxnation.workout_for_men.html",
+      "bytes": 1327900,
+      "sha256": "71ae49565fce1cb1bb16fc410daf7bc430a1382b45361c92e0a01ca37450b2b9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.maxxnation.workout_for_men.html.meta.json",
+      "bytes": 824,
+      "sha256": "dea88e7a7572ec86dc1035584ffecbd10695930c1e150608c2f96fd604028033"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.ovulation.Period.tracker.html",
+      "bytes": 1224037,
+      "sha256": "a973bdc0a16460e6934b5f32d19c3948e3dda4c7e8a5797eac9f4ae13e550252"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.ovulation.Period.tracker.html.meta.json",
+      "bytes": 818,
+      "sha256": "670756181994b74aaa2a57a80037e07902e4adb968214658a0dc8e273c222d56"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.peakd.app.html",
+      "bytes": 1180309,
+      "sha256": "35e32d348aeed51f51ab77aaff8181466eb09e6c84f6e3869ddc24aec5cd8e93"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.peakd.app.html.meta.json",
+      "bytes": 773,
+      "sha256": "725a95e4d6d229cc5eae9547bb3b6bf4749e44bce80e3d44bf4e8e62bd3d6420"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.period.tracker.lite.html",
+      "bytes": 1277326,
+      "sha256": "7659caa37d04b4c5c314a07af18ade96bb8772c9aab4df2099495c859c0f2f40"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.period.tracker.lite.html.meta.json",
+      "bytes": 803,
+      "sha256": "4d508a55952ab59f5cc185b02ab134ae6189cfa51757328f1c006184d23d5e1b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.periodtracker.ovulation.periodcycle.html",
+      "bytes": 1352092,
+      "sha256": "8e55926686809189a141d87a3601566e972612d2970e0a634bc03a138f35c4a4"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.periodtracker.ovulation.periodcycle.html.meta.json",
+      "bytes": 851,
+      "sha256": "69c12bed7f7e63f92c1420f3123ec00c8506e64cd6441b55e401853a8b616d4f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.periodtracker.periodcalendar.ovulation.periodcycle.html",
+      "bytes": 1336904,
+      "sha256": "73b7de0491fb688b76b1a4903c66aa4ff7f31e4e7eb7b4d8cb76936a3612fba9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.periodtracker.periodcalendar.ovulation.periodcycle.html.meta.json",
+      "bytes": 896,
+      "sha256": "a6f91857d0fa6011c2457d5de34b623f8e505a01d21fd4188b10864114d5f076"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.sirvendor.lensnutra.html",
+      "bytes": 1314230,
+      "sha256": "3525edfd831c7a59dc7d0b3a4841b3a6fe4027c0028297c503c2185caf7b03a3"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.sirvendor.lensnutra.html.meta.json",
+      "bytes": 803,
+      "sha256": "94272d30a8bdb1fd9889e64364bfc4f3714ced01816019c5aa53f5717ad577ac"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.stepsappgmbh.stepsapp.html",
+      "bytes": 1302455,
+      "sha256": "557b3d7b05c7166b31a9e07edc4f0e4af19e188a47fe9677181628748571356f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.stepsappgmbh.stepsapp.html.meta.json",
+      "bytes": 809,
+      "sha256": "db066199ca5a4b0abf6ac048298e0353e7b84521382356e048783c707cce1444"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.tayu.tau.pedometer.html",
+      "bytes": 1302468,
+      "sha256": "22f2a0149543d139594f3fb5dcb42837a419dcbc9a2e9805028bb20c2432a987"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.tayu.tau.pedometer.html.meta.json",
+      "bytes": 800,
+      "sha256": "d0f41153035e3470c42c93f3c2a8478efec82dc367d02ab247af2593a014f7c3"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.ty.stepfit.html",
+      "bytes": 1678,
+      "sha256": "3073360cfcf4f8bf5c13b37a89488865db5f7333642f2af6cfca411708244f5b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.ty.stepfit.html.meta.json",
+      "bytes": 638,
+      "sha256": "a4272d6e47f8faad0661e0d568cb07373b94917262bdfc83f68f482f5a1d190d"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.wachanga.womancalendar.html",
+      "bytes": 1340966,
+      "sha256": "0ef228a644fce1387716a6dcebbe2d23f58ab3189b1f9aedc84c1a2cff13f6cf"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.wachanga.womancalendar.html.meta.json",
+      "bytes": 812,
+      "sha256": "0302d68e7561ac42c0bcd58821a8fc9bcf5ee5b0ce6599de09b3e573549362e9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.zumba.consumerapp.html",
+      "bytes": 1340624,
+      "sha256": "b40b7813a4702bb4790efca623d6cebadf37a5bb377e84c15761f853a77fd907"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_com.zumba.consumerapp.html.meta.json",
+      "bytes": 797,
+      "sha256": "71a9cdb876fda02b8ef422542425e842df7dcb411c4c3dc2a9d1db7d17bf83ed"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_de.cyclotest.mysense.html",
+      "bytes": 1289516,
+      "sha256": "e44afcf746a44ee361862eaba8549476b05fc5bfa78d289505a931348a0b5b77"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_de.cyclotest.mysense.html.meta.json",
+      "bytes": 794,
+      "sha256": "e80e2db4bb168bb4b046538e9b58f39db32918e0bf7e4297171b5e993a93f1e8"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_io.schritte.moveup.html",
+      "bytes": 1201402,
+      "sha256": "06ba5fd969cf2ed3e49ae9afe2dfc5e581424530862bec913314b004ead0058d"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_io.schritte.moveup.html.meta.json",
+      "bytes": 788,
+      "sha256": "a8ee1a3e3e933b310f30b17c2e9ff14eb642c4ce2f4af2136581bcc70595df0e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_org.iggymedia.periodtracker.html",
+      "bytes": 1308795,
+      "sha256": "391fe50a381918c08e1ec215e41df356b76b626a75f41b936e3c8e1a310e6f6e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_org.iggymedia.periodtracker.html.meta.json",
+      "bytes": 815,
+      "sha256": "cfbe42181c9a1318b7f276c6ac87dc99640ba70b02ae83d3c54a488d9980b38b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_requests.json",
+      "bytes": 28636,
+      "sha256": "5d4586205d15fd901067929068adb6910fdf4c947762b3e168e32a8d27c66032"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_step.pedometer.stepcounter.walking.html",
+      "bytes": 1297257,
+      "sha256": "fc7d1281172f4da6471d1ce6361f28f8018f3b4ed3362009b2555116589ed6ef"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/play_step.pedometer.stepcounter.walking.html.meta.json",
+      "bytes": 836,
+      "sha256": "2aea883f0350a07c1da49cb6db3d1318a79cfafb912d2bf6d82900a63ccb4a95"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_caculator.period.tracker.html",
+      "bytes": 88926,
+      "sha256": "7acdbded495a818bbb0f017728b4923a4f9fabaf0facad54881ef4edc64fe6cf"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_caculator.period.tracker.html.meta.json",
+      "bytes": 752,
+      "sha256": "6bca7e5a62fc7da6e1e8362cf6cdb4dcaec354b885b5d3345963d202a77a5216"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_co.pacetech.dietx.html",
+      "bytes": 71327,
+      "sha256": "763ac6762edbf3fc61d7c4505c6f2941dabe63e3114512442e387d0116f913ee"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_co.pacetech.dietx.html.meta.json",
+      "bytes": 794,
+      "sha256": "2cfac03824f6b767cf941872b924649484d09546a7d3524194f0ca532a70ef84"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.clue.android.html",
+      "bytes": 251137,
+      "sha256": "c604c14d431a8ea97f049b6cd1c8218946297d3ae5bc8f4cef4fc22ed0f91af9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.clue.android.html.meta.json",
+      "bytes": 730,
+      "sha256": "bef864538dd2843fa11dff24acb48314beb9bc7bbf77630193f92a0fbbc387a9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.gen.workoutme.html",
+      "bytes": 389470,
+      "sha256": "3bdd50ba6f8a1be73cc3601fd4ae5c624a06cd3b49d64b16a21fd922d86e05d0"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.gen.workoutme.html.meta.json",
+      "bytes": 713,
+      "sha256": "11e80ae81ec36969e28b257351fe65aa7c95b0c34bdcbb158c476a74704979ac"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.granitedigital.velle.html",
+      "bytes": 46985,
+      "sha256": "c028c5b311036421c083030af0310060024bbaf37a5fd9b5e67ceeb59ef50603"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.granitedigital.velle.html.meta.json",
+      "bytes": 734,
+      "sha256": "20a33e4f97902b8d841d2089123c673a351e0cb74745531a616aebbd43623c09"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.kunpitech.bloomperiodtracker.html",
+      "bytes": 266423,
+      "sha256": "ba15d56715c43c8a71c5102f9ea73867521175d82a0a6fb5d0bbbbd9d984b907"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.kunpitech.bloomperiodtracker.html.meta.json",
+      "bytes": 843,
+      "sha256": "27663ccb9d84bf85d7169c2e7daad1809d35855ada6f36eac23f501c42b9fdb6"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.lbrc.PeriodCalendar.html",
+      "bytes": 333849,
+      "sha256": "0032b722545a614f389c72ada31f2e5fa38c64f8ba5f69a03892889eefea111c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.lbrc.PeriodCalendar.html.meta.json",
+      "bytes": 789,
+      "sha256": "556bb7f4513447ea26cb85caaeb8cc3ff2e4e589defd6aaa1db64682e8254fc5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.maxxnation.workout_for_men.html",
+      "bytes": 765,
+      "sha256": "4fd3ecbcd990624afda42bbfb0c48ddb0fc4e0f4b5fa06e721041e02d9166da5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.maxxnation.workout_for_men.html.meta.json",
+      "bytes": 789,
+      "sha256": "ceca08c335fb95e60bfc644950f584e9a527ed46a433f5197e7c24bd6e339610"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.ovulation.Period.tracker.html",
+      "bytes": 109044,
+      "sha256": "fcc76af01ad9a8fa6fd4d3448bb4d50d4a2340a12491b2bd6887d94bdca33b7e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.ovulation.Period.tracker.html.meta.json",
+      "bytes": 753,
+      "sha256": "06564d21991a54cd833dee35bbf6e58fb5f86c5ee5e0c39ad1f5d8ae2b4f2fd6"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.peakd.app.html",
+      "bytes": 9053,
+      "sha256": "cd2b42ed1d3fe9302c1a6d9fb4c5350ba33b8f0ada0b981adfcbbcf949cc098c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.peakd.app.html.meta.json",
+      "bytes": 785,
+      "sha256": "90a479fb92a1d91195bf6ce136f9d1e35559ffdfa5de83f346177707db95823b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.periodtracker.ovulation.periodcycle.html",
+      "bytes": 179234,
+      "sha256": "d625b28862340a808275ba858d2214b424f58cbfc06b3c82622c52b4824cd157"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.periodtracker.ovulation.periodcycle.html.meta.json",
+      "bytes": 772,
+      "sha256": "3a9dc768e1094fb009b9abc4be235c8e65de29d2e070128e0271292f15b6537a"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.periodtracker.periodcalendar.ovulation.periodcycle.html",
+      "bytes": 18191,
+      "sha256": "3d12ebc8992507461500d674b3d2220469164956790affeffad7de11aa538b82"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.periodtracker.periodcalendar.ovulation.periodcycle.html.meta.json",
+      "bytes": 804,
+      "sha256": "7584dcce919d8d04217ec3451442ef7b02b680c1a761517ef02b5df3759c1e8e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.sirvendor.lensnutra.html",
+      "bytes": 96120,
+      "sha256": "b86364aab3372d8ff6fd8a731971c6ea2f142bc21742bbef9e21bd7e5652ffa5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.sirvendor.lensnutra.html.meta.json",
+      "bytes": 701,
+      "sha256": "2180afac5af835b43d74ddcdbe5785caf72b5229141df5b70be71ccf345137c5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.stepsappgmbh.stepsapp.html",
+      "bytes": 73988,
+      "sha256": "d917507a429248cae38326e1e39432e17391750149cbb3157f5e443aea19ea94"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.stepsappgmbh.stepsapp.html.meta.json",
+      "bytes": 716,
+      "sha256": "7587dfb9b7fead416de6c608b3412c023b15d86d62c9769a9feb8e3e83227fc8"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.tayu.tau.pedometer.html",
+      "bytes": 52451,
+      "sha256": "00e2ad0c6489682906b943a92c4dc78c9b19ea244e1b49f437605f710dff2d36"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.tayu.tau.pedometer.html.meta.json",
+      "bytes": 753,
+      "sha256": "c21f952f2085b970a5d2d38659e20cac7d637cc627f84b43b2922845cfd58a47"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.wachanga.womancalendar.html",
+      "bytes": 132129,
+      "sha256": "5ae8c9b1c8881644eb984f22e57d28b10aa694662456608713d040a5bdbc33c3"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_com.wachanga.womancalendar.html.meta.json",
+      "bytes": 754,
+      "sha256": "11400fe5a639d8ad54772eb5082af81fc3e7a7f963fef72a44cafb7b42d34348"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_de.cyclotest.mysense.html",
+      "bytes": 152404,
+      "sha256": "e5de702277e3940910516f63a6cea31091bb45e526d0ba93e68ff0ab4d7ef82f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_de.cyclotest.mysense.html.meta.json",
+      "bytes": 776,
+      "sha256": "551e9da18815b203a15eb534108265599a91437d4bae415e4bae96f073c1cf8b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_io.schritte.moveup.html",
+      "bytes": 157420,
+      "sha256": "32080c75b6133f68079efd495ab2e9d8acc92cbe4987b8ccba0a930841c644f0"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_io.schritte.moveup.html.meta.json",
+      "bytes": 737,
+      "sha256": "18d8c6740e82dca2a77d19b6011b39aa185ea1415a94330a97f2707f0d038d9c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_org.iggymedia.periodtracker.html",
+      "bytes": 1340006,
+      "sha256": "258ceb8b4abfaade149b7d4760387e43d03ca4e4bd06892b29cc4beb5a08c929"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_org.iggymedia.periodtracker.html.meta.json",
+      "bytes": 740,
+      "sha256": "01aa5530c6651bfd667e9782fb0aabed298ce72456eaf2ba5fd6567baab4c3da"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_step.pedometer.stepcounter.walking.html",
+      "bytes": 5139,
+      "sha256": "33986c05634166af92c5d8b967d340a96bae734104d2d75b2281c6965f22b2d1"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/policy_step.pedometer.stepcounter.walking.html.meta.json",
+      "bytes": 825,
+      "sha256": "00aba78cecb61cb31fc7050091e870db5fbcf0ea7ed1ebfe408afc403d69abbf"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/results.json",
+      "bytes": 12049,
+      "sha256": "e4c6c2d0e384c9451a75279d4a692c6fb1043313df5eea89c52e1715de4a5792"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_09249cfd0e7f.txt",
+      "bytes": 21376,
+      "sha256": "a5209717d04e1213c517d38211b545d82963a4880c6524eb29713b8c4972df36"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_09249cfd0e7f.txt.meta.json",
+      "bytes": 562,
+      "sha256": "d40c30f5574299d01fb6580372b6de0e31ebfa1fff09d8349778e7e401590979"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_1bb9347626d3.txt",
+      "bytes": 84,
+      "sha256": "016f9c8e0405a1a663e4698d00ab69a6b9192f1bec1b57ac894fe09135d60160"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_1bb9347626d3.txt.meta.json",
+      "bytes": 697,
+      "sha256": "b6219d265f8be1239042d8005159a11ee2727cbc539757539d5be0766233fe38"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_253d14270304.txt",
+      "bytes": 6624,
+      "sha256": "1aba570a1b32deb66941e0c29d4f37be71ee58aa1a624aa20754b3639538cf2c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_253d14270304.txt.meta.json",
+      "bytes": 706,
+      "sha256": "0c6385205da3e57843438596d7eb421ba2e714fd1c346138bdfcc3edbb434ddc"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_3206be9ed335.txt",
+      "bytes": 7355,
+      "sha256": "b4b94e6496f82953c3c9d3d25bb482409d0204bf741e0db198b944bfe1409172"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_3206be9ed335.txt.meta.json",
+      "bytes": 551,
+      "sha256": "622565d06bd0538087d0531e2d1e9c24f785896e5ed7bc83e518774f02fdd39b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_3b76abc975ac.txt",
+      "bytes": 67,
+      "sha256": "9311bab30d8b5d05f5fa5563a251b8c96b8470873bb77c62d3d17c146d7acab7"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_3b76abc975ac.txt.meta.json",
+      "bytes": 697,
+      "sha256": "2b850826786b262509c1012ffce3171b230eec94a05979e0f54a76cda2983011"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_46d62e596641.txt",
+      "bytes": 442,
+      "sha256": "b53273d3fb78fc72f8d2b60af41c6f7c8a36f5198cc766d84171905fe8c3d882"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_46d62e596641.txt.meta.json",
+      "bytes": 757,
+      "sha256": "cfd8acdf46a6eaf7974b3c83bd5bc430035cf552fc7b242f03664f19cd6f6996"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_517a9cef24cd.txt",
+      "bytes": 1248,
+      "sha256": "8fa3036c68bfcbd32365f6225d24333264093b7cd38d306e106b4dbdc934fd5b"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_517a9cef24cd.txt.meta.json",
+      "bytes": 723,
+      "sha256": "20e2c24be7ea27a5ca5d2458c571538c94c51decb56d94eebe3c4c2726dc0bb1"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_5a233ae1e49f.txt",
+      "bytes": 1203,
+      "sha256": "924da8ef7e0d2193472b3f70a5c3c0870d9b45e834d77bac3eecbbe04c07e5f7"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_5a233ae1e49f.txt.meta.json",
+      "bytes": 741,
+      "sha256": "02d47febfa68989b21cbf2bc10481aa8fc10c79bf7ba26d823a6587fb1c671a9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_6499922ec3fe.txt",
+      "bytes": 1465,
+      "sha256": "17459c26a1cc35b05bc5788f0aa25a75930f42a8f711c3f3f8043fd39be8ab5c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_6499922ec3fe.txt.meta.json",
+      "bytes": 727,
+      "sha256": "a3caa33502944a2433109d0ce69c898fd182f9ec89b0e73052725a21abf576ff"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_6b58f3974130.txt",
+      "bytes": 5476,
+      "sha256": "7138e2ebc6cd7d13c3eeebdc87dc24958dbf8106a49a93b5680a3ed25029ce2f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_6b58f3974130.txt.meta.json",
+      "bytes": 557,
+      "sha256": "f25396063b50e9433c4eba05c0c95ccf7b1727d2a49ad434b63e0d9c375c6a84"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_73511be4218a.txt",
+      "bytes": 1754,
+      "sha256": "ba7581c15ad3dd0a52ac7005fed66fff9b1f9457086b129c0a7183d8c29cf667"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_73511be4218a.txt.meta.json",
+      "bytes": 746,
+      "sha256": "753f47c388e0ff07501935ba3d1668a8bd4e24c8d0e94068ba0700daf99fa5de"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_86232612adbd.txt",
+      "bytes": 597,
+      "sha256": "c961ee90a56ffca2483087a7896bc4fc819a29ac0e7f0f8bba17df8a5da47a37"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_86232612adbd.txt.meta.json",
+      "bytes": 696,
+      "sha256": "0e669617d06c7e20a32c85d584859c66e42dece4e5c6468938daa0d1c39b61af"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_9747e3ae6ee9.txt",
+      "bytes": 153,
+      "sha256": "8351c0267c2cd7866ff04c04261f06cd75af9a7130aac848ca43fd047404e229"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_9747e3ae6ee9.txt.meta.json",
+      "bytes": 569,
+      "sha256": "c2822b3b896ead8db91ff6e31de55b6cc4169c28b368b7af983b344586017226"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_9e754995bd7d.txt",
+      "bytes": 118,
+      "sha256": "d7cd6bbf64a68c489c40a38e07ff7c955e8f35622711e33b28179f7dec0111de"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_9e754995bd7d.txt.meta.json",
+      "bytes": 723,
+      "sha256": "dad2247b8693b44513e26b7ff648b2408b06c453a5d4933ebea5458ae40ef2af"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_a13ced359760.txt",
+      "bytes": 2814,
+      "sha256": "47737d49f136ca1daf9db6c48d4591576dd05b1f467946ed6633d9347a3f5014"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_a13ced359760.txt.meta.json",
+      "bytes": 579,
+      "sha256": "f1f24271bbe7c9f61af192f0accaccd2e6f2f2ddf29d2771209b9d2e8d0336bb"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_add18f752428.txt",
+      "bytes": 9115,
+      "sha256": "70d613e3acfba24fd2876fcbacaf639e1e111ef4d54baf70761c47673f37d6a3"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_add18f752428.txt.meta.json",
+      "bytes": 575,
+      "sha256": "bd90c84034c3af8ea2f430779d465a19ae582f30a255542d668385259adbdacd"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_ca5085d4d315.txt",
+      "bytes": 100,
+      "sha256": "1f5fb5570bfa8f8d850ca73f1b4c365ce66a711d65420cf08248095354df23dd"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_ca5085d4d315.txt.meta.json",
+      "bytes": 721,
+      "sha256": "1ab50ccac1632b0fb2743438894bc912f25cf178dc4b72a02669fc9df2f1303a"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_cc81d64cb551.txt",
+      "bytes": 44,
+      "sha256": "1e8e09f603d10d6d60052a43eb4e553f319adc787ad22f5e92f2ea5e4ec4bc1e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_cc81d64cb551.txt.meta.json",
+      "bytes": 762,
+      "sha256": "febd8a53dea1efd21aa9baf78485ee4603829b78807855e7523e181abeab0344"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_cfd0e9610fac.txt",
+      "bytes": 61,
+      "sha256": "a016a0b98b7667d7d3f662001775c2d8fc086cebd4565649694fd68a0c39fb26"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_cfd0e9610fac.txt.meta.json",
+      "bytes": 710,
+      "sha256": "c590858d6dbf2b2bcf58f653148de470e7c1f0b554da5f66c5d04212df8433b5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_d1f1a9a318f0.txt",
+      "bytes": 252,
+      "sha256": "046cc4fcd4e6b1eed974a977fc41eb5954fec661cc116b17beaa7f798e30d76e"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_d1f1a9a318f0.txt.meta.json",
+      "bytes": 730,
+      "sha256": "7774da5443d360e498803672578b31ca2de05596bad28ded34f5bcede1f9734f"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_f29acc020ca8.txt",
+      "bytes": 1097,
+      "sha256": "21d3c54c9095e29b26755919f6e15b2ef76971204a599c3c07c6b24828d1b0fc"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_f29acc020ca8.txt.meta.json",
+      "bytes": 713,
+      "sha256": "76ab3789c1f42decfd28f107c84741bc2dddd69024a01eee0ac381141c322f11"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_f2cc8fcf396a.txt",
+      "bytes": 1510,
+      "sha256": "a59fb1bee1c62f46060c2ed05e0a730e7d55ae81b771dcfb075c1d82fee006a6"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/policy_check_20261011T135628307395Z/robots_f2cc8fcf396a.txt.meta.json",
+      "bytes": 712,
+      "sha256": "daf6e575f83ab478c50da448f4c65a8c12aa0f25d7e50b953241986280820349"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/robots_11e9de90eccd.txt",
+      "bytes": 3199,
+      "sha256": "cad8995e4d35174309d6d04c1f6765afeb7643e88cf2155af27cbdabb92ef552"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/robots_11e9de90eccd.txt.meta.json",
+      "bytes": 697,
+      "sha256": "40654f123bcaf93d387a59ae004f60c41301a804767e884bf9a0d4536a851f86"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/run.json",
+      "bytes": 5311,
+      "sha256": "53692223c187ce44a099fd2c1cbc5a15f3c7ad6ad9433bdbc3361ee3aa585587"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/searches.json",
+      "bytes": 19672,
+      "sha256": "360e58051802b9366d96b8b5b507d1f041a99f2657ae6785071b033a521c47ae"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_apple_api.html",
+      "bytes": 82791,
+      "sha256": "4cdcb908cadff040ea3818c914133120f50cd988bdabd4f9d7a93679963db2d5"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_apple_api.html.meta.json",
+      "bytes": 760,
+      "sha256": "1848d6c60879fd4a8e8b5c17c33c5a77cb0c7c43702cad10a75204500b100f14"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_google.html",
+      "bytes": 609249,
+      "sha256": "24b303efb18f6730609108a16844dbc04f456316a32392530f561756cff2b05c"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_google.html.meta.json",
+      "bytes": 714,
+      "sha256": "544799808bc6187aca059b2a6eb3774c62f6a9637f023af2d1080b47190a678a"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_play.html",
+      "bytes": 65304,
+      "sha256": "81e629d7d688f49e57691b6f24cd3ef57152090b015bf438e28540b40032acb9"
+    },
+    {
+      "path": "raw/20261011T135045038162Z/terms_play.html.meta.json",
+      "bytes": 757,
+      "sha256": "bf455a4f38e611a1103df9db50a7d565ee2d7984a72bda9b3c06c68c80008691"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/all_app_rankings.csv",
+      "bytes": 48783,
+      "sha256": "e09d8225d80dcff5e7017afae5dc3f95d063ebbb9a29d389612a7209946d2bca"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/all_app_rankings.json",
+      "bytes": 91057,
+      "sha256": "4c5b3506de3ca055e45ff4b77b073b6623504f733f0a65db4627e835b58e4936"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/derivation.json",
+      "bytes": 303,
+      "sha256": "46ffb1a1297339e0a221c7f090abc328b2d0d3f9fe4a323c390b2d8712e33d73"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/errors.json",
+      "bytes": 100,
+      "sha256": "1170220d588722e13c8a97bfb3bca52d56efd34cb7d69480d91b2ed9bd74851d"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/final_sample.csv",
+      "bytes": 192,
+      "sha256": "527e780286866b4fb6b0ba855653a5a43b04482fc3e9519480c67e8f4b19ec39"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/final_sample.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/listings.csv",
+      "bytes": 102160,
+      "sha256": "c09c209d9f0ff0dedbcb93c2f951ae95bdfb2c59efa67576e8d9bbd8151850b2"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/listings.json",
+      "bytes": 813790,
+      "sha256": "bb9a056950be1d84f8f34bc7dc9380a60c5450222542d0b7dafe5453774fee16"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/manual_review_register.csv",
+      "bytes": 28515,
+      "sha256": "6716a7cf890313dc8e45a8b3c7a5c02b1f15ca9c74760030eee87fc340b2ece1"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/play_install_comparison.csv",
+      "bytes": 8673,
+      "sha256": "684bed15b8d1c8aa12c7b015024f8fcc667b2f194c5f742d57c58f48359284a1"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/policy_check_reference.json",
+      "bytes": 93,
+      "sha256": "852f7b1329ceb2b05f45e2412a01fde032b298e6e67fb7d6c47e2bb88e762317"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/policy_reachability.csv",
+      "bytes": 7306,
+      "sha256": "7d458bfc007a3e912eb26ba8355b05890c7385598e316eae8dbc9f22c9715463"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/reproduction_check.json",
+      "bytes": 449,
+      "sha256": "6a3701deb1779aa468d712e2ac5bebcb15f31eb35e8bcd2e6b063bd093ba7cc5"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/required_store_UI_sessions.csv",
+      "bytes": 1844,
+      "sha256": "4842d8cb3feb231f2bfca4d5d4773fcae6f6c722aa04fbb01b4ae699a1e28d51"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/review_queue.csv",
+      "bytes": 57250,
+      "sha256": "ec298b531e680c9f1715d64633f6d2ae8fde5e84299672c89d91429fea1388fa"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/screening.csv",
+      "bytes": 46754,
+      "sha256": "a634afb12bc975d3bdffd89c855d03d3c64643fb9479283bd79e215b8dddc3e3"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/screening.json",
+      "bytes": 115710,
+      "sha256": "95d753e54d5afaa195aaadcdff036b5c1704f03eecd346dc2d0f4113b91cad73"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/search_appearances.csv",
+      "bytes": 46828,
+      "sha256": "57b99c5931c0ac00edfeeb50a9c531ac5c4a312533a9279d937e71df8128e2eb"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/search_sessions.csv",
+      "bytes": 2032,
+      "sha256": "a52c399058c7345582c29a76c60b4a9425766315e0db857802716960a69c88dc"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/selection_provenance.json",
+      "bytes": 271,
+      "sha256": "32058a00d10f027829577c198c27c74e90fec6bec36111f690ac578b611daf85"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/selection_summary.json",
+      "bytes": 273,
+      "sha256": "61ecd1e247bbea9635501a68933e9fae64180565b1de280b0f062254e7153ebb"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/summary.json",
+      "bytes": 720,
+      "sha256": "ee4f5bf0f99021706bc10985dea78ff5cd84e7ae9255a447e8b611b371c36919"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/trial_working_set.csv",
+      "bytes": 24867,
+      "sha256": "f5af04e6f9c779e75c1c0c1f10c2fb1ee639034a78fad877bea15e4576c7dfdd"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/trial_working_set.json",
+      "bytes": 46649,
+      "sha256": "ddefd7a1161cf296a835d625f8bc7935613e9bd76158a21f74b298b35fbe3f1e"
+    },
+    {
+      "path": "processed/20261011T135045038162Z/verification.json",
+      "bytes": 207,
+      "sha256": "d426aa0b284521f6d2a62e7e2d681165158900eeb565bbfdff688941933afaf2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4847,
+      "sha256": "384126644a56b98368864dba49f2a94f0206c3cbfc8d8d6087cd1ac4b0390c01"
+    },
+    {
+      "path": "data_dictionary.md",
+      "bytes": 4847,
+      "sha256": "0e59fa32854966bb6445df5cbfe3840bc9e7f24337a154fcd095c2da8183ea53"
+    },
+    {
+      "path": "report.md",
+      "bytes": 21188,
+      "sha256": "df43eecd601e44f6550a0c07e9a07b86dee0a980c92b733918b21ad0cb7c92d4"
+    },
+    {
+      "path": "report.pdf",
+      "bytes": 95893,
+      "sha256": "362dd31bb5232bf836dc5de21708eaabb2ce8b705d63ace21a263b4405f3dbf0"
+    }
+  ]
+}

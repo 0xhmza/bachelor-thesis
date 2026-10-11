@@ -1,0 +1,20 @@
+﻿keyword_id,keyword,platform,source,status,returned,captured_utc,raw_file
+F1,Fitness,apple,official_search_api_trial,200,17,2026-10-11T13:50:57.023286+00:00,apple_F1.json
+F2,Fitness Tracker,apple,official_search_api_trial,200,18,2026-10-11T13:51:01.713826+00:00,apple_F2.json
+F3,Schrittzähler,apple,official_search_api_trial,200,16,2026-10-11T13:51:05.123321+00:00,apple_F3.json
+F4,Aktivitätstracker,apple,official_search_api_trial,200,14,2026-10-11T13:51:08.023750+00:00,apple_F4.json
+F5,Schlaf-Tracker,apple,official_search_api_trial,200,18,2026-10-11T13:51:11.656824+00:00,apple_F5.json
+F6,Herzfrequenz,apple,official_search_api_trial,200,18,2026-10-11T13:51:15.618567+00:00,apple_F6.json
+F7,Kalorienzähler,apple,official_search_api_trial,200,18,2026-10-11T13:51:19.531992+00:00,apple_F7.json
+F8,Ernährungstagebuch,apple,official_search_api_trial,200,20,2026-10-11T13:51:49.098228+00:00,apple_F8.json
+F9,Workout,apple,official_search_api_trial,200,17,2026-10-11T13:52:03.168352+00:00,apple_F9.json
+P1,Periode,apple,official_search_api_trial,200,17,2026-10-11T13:52:04.502395+00:00,apple_P1.json
+P2,Zyklus,apple,official_search_api_trial,200,15,2026-10-11T13:52:07.905322+00:00,apple_P2.json
+P3,Zyklustracker,apple,official_search_api_trial,200,17,2026-10-11T13:52:11.170587+00:00,apple_P3.json
+P4,Menstruation,apple,official_search_api_trial,200,16,2026-10-11T13:52:14.767719+00:00,apple_P4.json
+P5,Eisprung,apple,official_search_api_trial,200,16,2026-10-11T13:52:18.761755+00:00,apple_P5.json
+P6,Fruchtbarkeit,apple,official_search_api_trial,200,17,2026-10-11T13:52:21.858071+00:00,apple_P6.json
+P7,Kinderwunsch,apple,official_search_api_trial,200,18,2026-10-11T13:52:25.010042+00:00,apple_P7.json
+P8,period tracker,apple,official_search_api_trial,200,17,2026-10-11T13:52:28.664683+00:00,apple_P8.json
+P9,ovulation,apple,official_search_api_trial,200,17,2026-10-11T13:52:32.079117+00:00,apple_P9.json
+P10,fertility,apple,official_search_api_trial,200,16,2026-10-11T13:52:35.714640+00:00,apple_P10.json

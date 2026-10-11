@@ -1,0 +1,3866 @@
+[
+  {
+    "listing_id": "apple:1006420410",
+    "name": "Heart Analyzer: Pulse Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1011796416",
+    "name": "Gymondo: Fitness Workout Plans",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1025709556",
+    "name": "urbia online",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1027151285",
+    "name": "Pedometer α - Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1032267351",
+    "name": "My Calendar - Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1037595083",
+    "name": "StepsApp Pedometer",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1038369065",
+    "name": "Flo: Period & Cycle Health",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1041517543",
+    "name": "Fitbod Workout & Gym Planner",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1043837948",
+    "name": "Oura",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1048919906",
+    "name": "Heart Blood Pulse Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1061544495",
+    "name": "Heart Rate Plus: Pulse Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1062745479",
+    "name": "HeartWatch: Heart Rate Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E02_paid_installation"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1064020872",
+    "name": "Foodvisor - AI Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1064910141",
+    "name": "Sleepzy - Sleep Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1064911742",
+    "name": "Cycle Tracker: Period Calendar",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1074367771",
+    "name": "Welltory: Heart Health Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1081899534",
+    "name": "Foody - Food & Symptom Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1099771240",
+    "name": "30 Day Fitness - Home Workout",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1105332761",
+    "name": "Fddb AI Calorie Counter & Diet",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1114387800",
+    "name": "Gym Workout App & Fitness Plan",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1136617388",
+    "name": "Running Walking Jogging Goals",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1145935738",
+    "name": "Cronometer: Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1147759844",
+    "name": "Just a Baby: Become a parent",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1164801111",
+    "name": "AutoSleep: Watch Sleep Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E02_paid_installation"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1167377348",
+    "name": "30 Day Fitness at Home",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1170920787",
+    "name": "GAINSFIRE Workout Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1179236591",
+    "name": "SleepMatic: Sleep Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings",
+      "E02_paid_installation"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1182834064",
+    "name": "MaybeBaby fertility& pregnancy monthly calendar",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1189269681",
+    "name": "iEatBetter: Food Diary",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1208224953",
+    "name": "Apple Fitness",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1230124761",
+    "name": "Ovy – Contraception Pregnancy",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1242545199",
+    "name": "Apple Health",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1262697756",
+    "name": "MySteps - Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1266612768",
+    "name": "Lose Weight at Home in 30 Days",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1275040830",
+    "name": "HiMommy: Pregnancy & Period",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1279295922",
+    "name": "Ovulation Tracker By Premom",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1286965867",
+    "name": "Pedometer & Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1299762670",
+    "name": "FoodSQCare",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1313192037",
+    "name": "Home Workout - No Equipments",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1338655056",
+    "name": "Six Pack in 30 Days: Core, Abs",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1357527742",
+    "name": "Workout for Women: Fit at Home",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1373747509",
+    "name": "femSense fertility",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1386182432",
+    "name": "MySwissFoodPyramid",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1423628793",
+    "name": "Clover: Period & Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1438388363",
+    "name": "Habit Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1451304370",
+    "name": "24baby.nl - Zwanger & Baby",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1453356724",
+    "name": "Running App - Run Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1454213029",
+    "name": "WeWard - The Walking App",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1458862350",
+    "name": "Hevy - Gym Tracker Workout Log",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1459096552",
+    "name": "Period Tracker My Cycle",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1460863487",
+    "name": "Calorie Counter - EasyFit",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1462277793",
+    "name": "Alpha Progression Gym Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1484612659",
+    "name": "MyFitCoach - Workout Planner",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1485208453",
+    "name": "Period calendar Pinkllama",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1485687674",
+    "name": "Ovulation Tracker: Period App",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1489944782",
+    "name": "InPulse - Heart Rate Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1490078804",
+    "name": "ShutEye: Sleep Tracker, Sounds",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1490743162",
+    "name": "Hearty : Heart Rate,Stress, BP",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1491340863",
+    "name": "Napper: Baby Sleep Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1495829322",
+    "name": "Stardust Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1497144942",
+    "name": "Calorie counter - ScanFood",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1511275528",
+    "name": "Ovulation & Fertility Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1529565125",
+    "name": "Femometer - Fertility Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1531983371",
+    "name": "Activity Tracker・FitnessView",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1533248642",
+    "name": "BabyJa - Mein Kinderwunsch",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1533961149",
+    "name": "Vital Signs: Watch Health",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1544461026",
+    "name": "HitMeal－Calorie & Food Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1546156891",
+    "name": "Heartify: Heart Health Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1551928101",
+    "name": "Sleep Tracker – Sounds & Alarm",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1558902485",
+    "name": "iYoni: Track Fertility & Cycle",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1561397656",
+    "name": "Trekka: GPS Activity Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1569865429",
+    "name": "Trying to conceive tracker",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1579369864",
+    "name": "Period Tracker ⋆",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1599308944",
+    "name": "Hope Fertility",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1603182312",
+    "name": "Period Journal & Calculator",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1609021075",
+    "name": "Heart Rate Monitor · Pulse App",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1609065043",
+    "name": "Fertility Diet & Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1615949241",
+    "name": "Femia - Fertility & Pregnancy",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1617282212",
+    "name": "Fodmap diet | Healthy eating",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1629426238",
+    "name": "sleep² sleeptracker & analysis",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1632947950",
+    "name": "SLEEP RECORDER - SNORING APP",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1633296501",
+    "name": "Macadam: Step Counter, Rewards",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:1639862680",
+    "name": "Pepe’s Kalorienzähler",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:286906691",
+    "name": "Lifesum: AI Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:297368629",
+    "name": "Lose It! – Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:301521403",
+    "name": "Nike Training Club",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:320606217",
+    "name": "Sleep Cycle - Tracker & Sounds",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:330376830",
+    "name": "Period Tracker by GP Apps",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:341232718",
+    "name": "MyFitnessPal: Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:347184248",
+    "name": "Calorie Counter by fatsecret",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:406762826",
+    "name": "LADYTIMER Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:409625068",
+    "name": "Instant Heart Rate: HR Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:421360650",
+    "name": "WomanLog Calendar",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:426826309",
+    "name": "Strava: Run, Bike, Walk",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:443919067",
+    "name": "Fertility Friend FF Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:464254577",
+    "name": "Strong Workout Tracker Gym Log",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:469068059",
+    "name": "Daily Workouts - Home Fitness",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:478563632",
+    "name": "Ernährung Pro",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings",
+      "E02_paid_installation"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:489196207",
+    "name": "Menstrual Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:492534636",
+    "name": "Maya - Period & Health",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:522674372",
+    "name": "Kindara: Fertility Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:542891434",
+    "name": "Cardiio: Heart Rate Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:549217094",
+    "name": "Calorie, Protein Tracker Arise",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:570886923",
+    "name": "Accupedo Pedometer",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:577187307",
+    "name": "Cycles: Period & Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:594982044",
+    "name": "RepCount - Gym Workout Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:600446812",
+    "name": "Pacer Pedometer: Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:608066898",
+    "name": "Period & Fertility Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:638021335",
+    "name": "Glow Ovulation & Period App",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6446677275",
+    "name": "Sleep Tracker: Nap & Watch",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6447674634",
+    "name": "Lively - Period Tracker, Cycle",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6450744756",
+    "name": "Happy Baby - Sleep & Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6456176249",
+    "name": "Bevel: AI Health Coach",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6467549950",
+    "name": "Move Metrics: Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6472042997",
+    "name": "Healthier: Weight Loss Coach",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6474119886",
+    "name": "HRV Tracker & Stress Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6474290049",
+    "name": "Calorie Counter by Numify",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6475624331",
+    "name": "Eatrack: Food Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6478464391",
+    "name": "Just Run - Track Your Runs App",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6478495290",
+    "name": "Blood Pressure・Heart Rate ECG",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6479529917",
+    "name": "BitePal: AI Calorie Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6480586681",
+    "name": "Period - Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6498938838",
+    "name": "Livity: Sleep & Health Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:650113307",
+    "name": "GymBook ・ Strength Training",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:650276551",
+    "name": "Seven: 7 Minute Workout",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6504586102",
+    "name": "Musa: Period & Pregnancy",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6504753148",
+    "name": "Food Diary - Food Log",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6514310473",
+    "name": "Sleep Tracker & Sound by Remly",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:654810212",
+    "name": "Freeletics: HIIT Home Workouts",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:657189652",
+    "name": "Clue Period & Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6630364787",
+    "name": "Mia: Fertility & Baby Sleep",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:665791537",
+    "name": "urbia Eisprungkalender",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6664071101",
+    "name": "viatolea bei Unverträglichkeit",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6670159048",
+    "name": "Kira-App",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6740623258",
+    "name": "Sleep Tracker Snore Recorder",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6741115602",
+    "name": "Simple Stepper: Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6741707862",
+    "name": "Welmi - Calorie Counter & Diet",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6742561282",
+    "name": "Fertia",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6746128946",
+    "name": "Heart Rate Monitor: Cardia",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6746171538",
+    "name": "Nutrevo: Food & Eating Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6746279648",
+    "name": "Heartbeat Monitor: Pulse",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6746747182",
+    "name": "WeightBuddy: Calorie Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6748905882",
+    "name": "Heart Rate BP, Pulse Monitor",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6751759381",
+    "name": "Snore Timeline: Sleep Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6753686954",
+    "name": "StepStar: Better everyday",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6756148994",
+    "name": "Juno: Male Fertility Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6756895001",
+    "name": "NutriSpy: Food & Symptom Diary",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6758976187",
+    "name": "intilog - Sex Life Tracker",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6759694103",
+    "name": "Sleep Tracker App WellSleep",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6761184715",
+    "name": "GetMyMood: Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6761519926",
+    "name": "opove",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6763333140",
+    "name": "Luna Cycle to Menopause",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6774412872",
+    "name": "AllergyFoodDiary",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6782378233",
+    "name": "Food Diary & Journal: Logfd",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6787255950",
+    "name": "Vea - Period Tracker, Cycle",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6793425906",
+    "name": "Frolia",
+    "platform": "apple",
+    "domain_provisional": "unresolved",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:6794021927",
+    "name": "WaSeen - Wp Activity Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:703547387",
+    "name": "Life - Period Tracker Calendar",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:707429992",
+    "name": "Menstrual Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:707430013",
+    "name": "Best Menstrual Period Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:708359518",
+    "name": "Steps - Pedometer & Workouts",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:712286167",
+    "name": "Pedometer++",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:720629415",
+    "name": "Daily Steps: Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:765535549",
+    "name": "Natural Cycles: Fertility App",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:808395252",
+    "name": "FLO EV Charging",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:839285684",
+    "name": "Workout for Women: Fitness App",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:839671656",
+    "name": "Stepz - Step & Calorie Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:878691772",
+    "name": "Pillow: Sleep Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:896501514",
+    "name": "Period & Cycle Tracker",
+    "platform": "apple",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:927372140",
+    "name": "Virtuafood: AI Calorie Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:929581952",
+    "name": "Health Diary by MedM",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:937936853",
+    "name": "FitBark GPS for Dogs & Cats",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:940579920",
+    "name": "Food Diary See How You Eat Log",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:942494517",
+    "name": "FITIV Pulse - Workout Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:946099227",
+    "name": "AI Calorie Counter by Yazio",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:968720724",
+    "name": "Noxogy : Sleep & Snore Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:971023427",
+    "name": "Sweatcoin Walking Step Tracker",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:979101825",
+    "name": "StepUp Pedometer Step Counter",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "apple:993667592",
+    "name": "ActivityTracker Pedometer",
+    "platform": "apple",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership"
+    ],
+    "language_declared_DE_EN": true,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:caculator.period.tracker",
+    "name": "Periodentracker und -rechner",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:co.pacetech.dietx",
+    "name": "Kalorienzähler AI: DietX",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.clue.android",
+    "name": "Clue Perioden Kalender",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.gen.workoutme",
+    "name": "BetterMe Well-Being Coach",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.google.android.apps.fitness",
+    "name": "Google Fit: Aktivitätstracker",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.granitedigital.velle",
+    "name": "Velle: Eisprungrechner Zyklus",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.kunpitech.bloomperiodtracker",
+    "name": "Ovoria Period Tracker",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.lbrc.PeriodCalendar",
+    "name": "Periodenkalender - Zyklus",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.maxxnation.workout_for_men",
+    "name": "MAXX Strength Training Plans",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.ovulation.Period.tracker",
+    "name": "Zyklus-Tracker: Ovulations-App",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.peakd.app",
+    "name": "Peakd - Looksmax AI Glow Up",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.period.tracker.lite",
+    "name": "Period Tracker",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.periodtracker.ovulation.periodcycle",
+    "name": "Perioden-Tracker & Eisprung",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.periodtracker.periodcalendar.ovulation.periodcycle",
+    "name": "Eisprungkalender und Zyklus",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.sirvendor.lensnutra",
+    "name": "LensNutra - Kalorienzähler",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "pending_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "rating_data_missing",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.stepsappgmbh.stepsapp",
+    "name": "StepsApp Schrittzähler",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.tayu.tau.pedometer",
+    "name": "Schrittzähler & Pedometer",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.wachanga.womancalendar",
+    "name": "Clover - Periodenkalender",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:com.zumba.consumerapp",
+    "name": "Zumba - Tanzen zu abnehmen",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:de.cyclotest.mysense",
+    "name": "cyclotest Periodenkalender App",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:io.schritte.moveup",
+    "name": "SchritteApp",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "exclude_listing",
+    "exclusion_codes": [
+      "E01_fewer_than_1000_ratings"
+    ],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:org.iggymedia.periodtracker",
+    "name": "Flo Zyklus- & Periodenkalender",
+    "platform": "play",
+    "domain_provisional": "fertility",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  },
+  {
+    "listing_id": "play:step.pedometer.stepcounter.walking",
+    "name": "Schrittzähler - Pedometer",
+    "platform": "play",
+    "domain_provisional": "fitness",
+    "domain_basis": "title heuristic and discovery hints; review required",
+    "numeric_status": "passes_numeric",
+    "exclusion_codes": [],
+    "pending_checks": [
+      "tracking_function",
+      "reachable_policy",
+      "DiGA_status",
+      "duplicate_product",
+      "store_UI_search_membership",
+      "interface_language",
+      "German_installability"
+    ],
+    "language_declared_DE_EN": null,
+    "final_eligible": false
+  }
+]
