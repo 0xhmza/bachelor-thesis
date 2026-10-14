@@ -1,0 +1,714 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2026-09-14T09:55:23Z",
+      "timestamp": 1789379723993,
+      "version": "build-2803163510"
+    },
+    "reference-count": 96,
+    "publisher": "JMIR Publications Inc.",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR mHealth uHealth"
+    ],
+    "DOI": "10.2196/mhealth.3672",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2015-01-19T11:07:26Z",
+      "timestamp": 1421665646000
+    },
+    "page": "e8",
+    "source": "Crossref",
+    "is-referenced-by-count": 225,
+    "title": [
+      "Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android"
+    ],
+    "prefix": "10.2196",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Tobias",
+        "family": "Dehling",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fangjian",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephan",
+        "family": "Schneider",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ali",
+        "family": "Sunyaev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          19
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "unstructured": "CollinsFSci Am201207102014-12-29The real promise of mobile health appshttp://www.scientificamerican.com/article/real-promise-mobile-health-apps/6VBe0HmL4"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2013.281078"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2012.392"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/itgg.2009.4.1.103"
+      },
+      {
+        "issue": "4",
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "405",
+        "DOI": "10.1109/TITB.2004.840019",
+        "volume": "8",
+        "author": "Istepanian, R",
+        "year": "2004",
+        "journal-title": "IEEE Trans Inf Technol Biomed"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2979/eservicej.9.2.1"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2209249.2209256"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2396756.2396759"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1463"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1874"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.2600"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.2152"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1164"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1370/afm.1396"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MS.2014.50"
+      },
+      {
+        "key": "ref16",
+        "unstructured": "BélangerFCrosslerREMIS Q20112015-01-12Privacy in the digital age: A review of information privacy research in information systemshttp://misq.org/cat-articles/privacy-in-the-digital-age-a-review-of-information-privacy-research-in-information-systems.html6VbJ8Iq6s"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/isre.1100.0335"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2379776.2379779"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2010.5560598"
+      },
+      {
+        "key": "ref20",
+        "unstructured": "WeissGMLockhartJWThe impact of personalization on smartphone-based activity recognition2012Proc Act Context Represent WorkshopJuly 22-23, 2012Toronto, Canada98104"
+      },
+      {
+        "key": "ref21",
+        "unstructured": "Apple20142014-12-29Apple iTunes App Storehttps://itunes.apple.com/us/genre/ios/id36?mt=86VBeRBI0n"
+      },
+      {
+        "key": "ref22",
+        "unstructured": "Google20142014-12-29Google Play App Storehttps://play.google.com/store/apps6VBeUxkIm"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12160-009-9130-7"
+      },
+      {
+        "key": "ref24",
+        "unstructured": "EnckWOcteauDMcDanielPChaudhuriSA study of Android application security20112015-01-12USAUSENIX AssociationA study of Android application securityhttp://static.usenix.org/legacy/events/sec11/tech/full_papers/Enck.pdf6VbJsumQl"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2184319.2184324"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1999995.2000018"
+      },
+      {
+        "key": "ref27",
+        "unstructured": "EgeleMKruegelCKirdaEVignaGPiOS: Detecting privacy leaks in iOS applications2011Netw Distrib Syst Secur SympFebruary 6-9, 2011San Dieg0, CA, USAUSAThe Internet Society"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2240236.2240255"
+      },
+      {
+        "key": "ref29",
+        "unstructured": "LiccardiIPatoJWeitznerDJJ Priv Confidentiality20132015-01-12Improving mobile app selection through transparency and better permission analysishttp://repository.cmu.edu/cgi/viewcontent.cgi?article=1102&context=jpc6VbKZXQeN"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1196187"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2480362.2480464"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MS.2013.142"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1000376"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1994"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2168836.2168841"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2068816.2068847"
+      },
+      {
+        "key": "ref37",
+        "unstructured": "XuHGuptaSRossonMBCarrollJMMeasuring mobile users' concerns for information privacy2012Int Conf Inf SystDecember 16-19, 2012Orlando, FL, USA"
+      },
+      {
+        "key": "ref38",
+        "unstructured": "Food and Drug AdministrationMobile medical applications - guidance for industry and food and drug administration staff20132015-01-01USAFood and Drug Administrationhttp://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/UCM263366.pdf6VGNj7A6h"
+      },
+      {
+        "key": "ref39",
+        "unstructured": "European CommisionProposal for a regulation of the European Parliament and of the council on the protection of individuals with regard to the processing of personal data and on the free movement of such data (general data protection regulation)20122015-01-01Brussels, BelgiumEuropean Commissionhttp://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52012PC0011&from=en6VGO0XR8G"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1977"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.2733"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.2737"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.3062"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.2661"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.2791"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.2301"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6947-12-67"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.2779"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1741-7015-10-144"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamadermatol.2013.2382"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13142-011-0076-5"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1258/jtt.2011.101102"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.amepre.2010.10.032"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jss.2011.06.049"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.3133"
+      },
+      {
+        "key": "ref56",
+        "unstructured": "android-market-api20142014-02-14An open-source API for the Android markethttp://code.google.com/p/android-market-api/6NNh225JS"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2591971.2592003"
+      },
+      {
+        "key": "ref58",
+        "unstructured": "SIL International Linguistics DepartmentEnglish wordlists20142014-02-17http://www-01.sil.org/linguistics/wordlists/english/6NS0EItXU"
+      },
+      {
+        "key": "ref59",
+        "unstructured": "FaroSLecroqTFestschr Bořivoj Melichar Prague, Czech Republic20122015-01-07Prague, Czech RepublicPrague Stringology ClubTwenty years of bit-parallelism in string matchinghttp://www.stringology.org/papers/Festschrift_BM70.pdf6VPW34gIe"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patrec.2009.09.011"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/S003614450342480"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-5468/2008/10/P10008"
+      },
+      {
+        "issue": "2 Pt 2",
+        "key": "ref63",
+        "doi-asserted-by": "crossref",
+        "first-page": "026113",
+        "DOI": "10.1103/PhysRevE.69.026113",
+        "volume": "69",
+        "author": "Newman, ME",
+        "year": "2004",
+        "journal-title": "Phys Rev E Stat Nonlin Soft Matter Phys"
+      },
+      {
+        "issue": "5 Pt 2",
+        "key": "ref64",
+        "doi-asserted-by": "crossref",
+        "first-page": "056117",
+        "DOI": "10.1103/PhysRevE.80.056117",
+        "volume": "80",
+        "author": "Lancichinetti, A",
+        "year": "2009",
+        "journal-title": "Phys Rev E Stat Nonlin Soft Matter Phys"
+      },
+      {
+        "issue": "5 Pt 2",
+        "key": "ref65",
+        "doi-asserted-by": "crossref",
+        "first-page": "056125",
+        "DOI": "10.1103/PhysRevE.83.056125",
+        "volume": "83",
+        "author": "Tibély, G",
+        "year": "2011",
+        "journal-title": "Phys Rev E Stat Nonlin Soft Matter Phys"
+      },
+      {
+        "key": "ref66",
+        "unstructured": "Naveh B20032014-02-21JGraphThttp://jgrapht.org/6NYMn4Z4V"
+      },
+      {
+        "key": "ref67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4236/jis.2012.32020"
+      },
+      {
+        "key": "ref68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMSNETS.2011.5716518"
+      },
+      {
+        "key": "ref69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MIC.2012.54"
+      },
+      {
+        "key": "ref70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12525-013-0150-6"
+      },
+      {
+        "key": "ref71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/257874.257896"
+      },
+      {
+        "key": "ref72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0148-2963(02)00345-4"
+      },
+      {
+        "key": "ref73",
+        "author": "Johnson, ME",
+        "year": "2009",
+        "journal-title": "Financial Cryptography and Data Security: 13th International Conference, FC 2009, Accra Beach, Barbados, February 23-26, 2009. Revised Selected Papers ... Computer Science / Security and Cryptology)"
+      },
+      {
+        "key": "ref74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJIEM.2010.035624"
+      },
+      {
+        "issue": "11",
+        "key": "ref75",
+        "doi-asserted-by": "crossref",
+        "first-page": "1809",
+        "DOI": "10.1176/appi.ajp.159.11.1809",
+        "volume": "159",
+        "author": "Appelbaum, PS",
+        "year": "2002",
+        "journal-title": "Am J Psychiatry"
+      },
+      {
+        "issue": "4",
+        "key": "ref76",
+        "doi-asserted-by": "crossref",
+        "first-page": "309",
+        "DOI": "10.3109/14639239809025367",
+        "volume": "23",
+        "author": "Gritzalis, DA",
+        "year": "1998",
+        "journal-title": "Med Inform (Lond)"
+      },
+      {
+        "issue": "4",
+        "key": "ref77",
+        "doi-asserted-by": "crossref",
+        "first-page": "314",
+        "DOI": "10.1136/jamia.1994.95236163",
+        "volume": "1",
+        "author": "Shea, S",
+        "year": "1994",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "issue": "2",
+        "key": "ref78",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1136/jamia.1996.96236282",
+        "volume": "3",
+        "author": "Barrows, RC",
+        "year": "1996",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "ref79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/15265160601171887"
+      },
+      {
+        "key": "ref80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/00131640121971239"
+      },
+      {
+        "issue": "1",
+        "key": "ref81",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.2307/2529310",
+        "volume": "33",
+        "author": "Landis, JR",
+        "year": "1977",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "ref82",
+        "unstructured": "Merriam-Webster20142014-06-26Archetype - definitionhttp://www.merriam-webster.com/dictionary/archetype6QdwYwRgI"
+      },
+      {
+        "issue": "5 Pt 2",
+        "key": "ref83",
+        "doi-asserted-by": "crossref",
+        "first-page": "056131",
+        "DOI": "10.1103/PhysRevE.70.056131",
+        "volume": "70",
+        "author": "Newman, ME",
+        "year": "2004",
+        "journal-title": "Phys Rev E Stat Nonlin Soft Matter Phys"
+      },
+      {
+        "key": "ref84",
+        "unstructured": "GirardelloAMichahellesFExplicit and implicit ratings for mobile applications2010Informatik 2010September 29 - October 1, 2010Leipzig, GermanyGermanyGI606612"
+      },
+      {
+        "key": "ref85",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/RE.2013.6636712"
+      },
+      {
+        "key": "ref86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.soncn.2011.04.007"
+      },
+      {
+        "key": "ref87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1197/jamia.M2255"
+      },
+      {
+        "key": "ref88",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12553-013-0049-4"
+      },
+      {
+        "key": "ref89",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2184442.2184443"
+      },
+      {
+        "issue": "5 Suppl",
+        "key": "ref90",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.7205/MILMED-D-03-9808",
+        "volume": "174",
+        "author": "Hufnagel, SP",
+        "year": "2009",
+        "journal-title": "Mil Med"
+      },
+      {
+        "key": "ref91",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2209249.2209263"
+      },
+      {
+        "key": "ref92",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-01516-8_13"
+      },
+      {
+        "key": "ref93",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2636242.2636244"
+      },
+      {
+        "key": "ref94",
+        "unstructured": "WilsonDWValacichJSUnpacking the privacy paradox: Irrational decision-making within the privacy calculus2012Int Conf Inf SysDecember 16-19, 2012Orlando, FL, USAIrrational Decision-Making within the Privacy Calculus. Proc Thirty Third Int Conf Inf Syst ICIS 2012 Orlando, FL, U. S"
+      },
+      {
+        "key": "ref95",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/amiajnl-2013-002605"
+      },
+      {
+        "key": "ref96",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2408776.2408789"
+      }
+    ],
+    "container-title": [
+      "JMIR mHealth and uHealth"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://mhealth.jmir.org/2015/1/e8",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T17:52:14Z",
+      "timestamp": 1782841934000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://mhealth.jmir.org/2015/1/e8/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          19
+        ]
+      ]
+    },
+    "references-count": 96,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2196/mhealth.3672",
+    "relation": {},
+    "ISSN": [
+      "2291-5222"
+    ],
+    "issn-type": [
+      {
+        "value": "2291-5222",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          19
+        ]
+      ]
+    }
+  }
+}

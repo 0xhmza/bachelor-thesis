@@ -1,0 +1,539 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2026-09-28T21:15:46Z",
+      "timestamp": 1790630146684,
+      "version": "4.1.0"
+    },
+    "reference-count": 63,
+    "publisher": "SAGE Publications",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Social Media + Society"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p> The walkthrough method was developed as a way to trace an app or platform’s technological mechanisms and cultural references to understand how it guides users. This article explores the method’s enduring strengths and emergent weaknesses regarding technological advances and developments in app studies. It engages with adjacent methods for understanding apps’ intensifying structural and economic complexity, datafication, algorithmic logic, and personalization as well as approaches fostering a feminist ethics of care toward users. Considering these perspectives, the article discusses challenges encountered in teaching the method and applying it to algorithmically driven apps. With TikTok as a central example, examining the walkthrough process demonstrates the method’s incongruence for investigating several aspects of the app, especially its automated personalization. These challenges highlight the need to combine, supplement, or exchange the method with other approaches as part of an expanding and flexible toolkit of methods in app studies. </jats:p>",
+    "DOI": "10.1177/20563051231158822",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2023-03-09T12:05:00Z",
+      "timestamp": 1678363500000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 43,
+    "title": [
+      "Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps"
+    ],
+    "prefix": "10.1177",
+    "volume": "9",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9796-0619",
+        "authenticated-orcid": false,
+        "given": "Stefanie",
+        "family": "Duguay",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Concordia University, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hannah",
+        "family": "Gold-Apel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Concordia University, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-20563051231158822",
+        "unstructured": "Albrecht C., Aversa E., Bassett K., Bounegru L., Chun W., Dhavan N. (2019). Research persona as digital method. https://wiki.digitalmethods.net/Dmi/SummerSchool2019ResearchPersonaAsDigitalMethod"
+      },
+      {
+        "key": "bibr2-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2053951717720950"
+      },
+      {
+        "key": "bibr3-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/20563051221086241"
+      },
+      {
+        "key": "bibr4-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2056305116672486"
+      },
+      {
+        "key": "bibr5-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/ct/qtac005"
+      },
+      {
+        "key": "bibr6-20563051231158822",
+        "unstructured": "Boseley M. (2021, June 3). TikTok accidentally detected my ADHD. For 23 years everyone missed the warning signs. The Guardian. https://www.theguardian.com/commentisfree/2021/jun/04/tiktok-accidentally-detected-my-adhd-for-23-years-everyone-missed-the-warning-signs"
+      },
+      {
+        "key": "bibr7-20563051231158822",
+        "first-page": "233",
+        "volume-title": "The SAGE handbook of social media",
+        "author": "Bucher T.",
+        "year": "2017"
+      },
+      {
+        "key": "bibr8-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10304310600641737"
+      },
+      {
+        "key": "bibr9-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1367877913513684"
+      },
+      {
+        "key": "bibr10-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18574/nyu/9781479841806.001.0001"
+      },
+      {
+        "key": "bibr11-20563051231158822",
+        "volume-title": "International Communication Association Annual Conference, San Juan, Puerto Rico",
+        "author": "Burgess J.",
+        "year": "2015"
+      },
+      {
+        "key": "bibr12-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18574/nyu/9781479888702.001.0001"
+      },
+      {
+        "key": "bibr13-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1527476418796632"
+      },
+      {
+        "key": "bibr14-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7821/naer.2021.1.650"
+      },
+      {
+        "key": "bibr15-20563051231158822",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Diakopoulos N. (2014). Algorithmic accountability reporting: On the investigation of black boxes. Tow Center for Digital Journalism. https://doi.org/10.7916/D8ZK5TW2",
+        "DOI": "10.1080/21670811.2014.976411"
+      },
+      {
+        "key": "bibr16-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2056305119846486"
+      },
+      {
+        "key": "bibr17-20563051231158822",
+        "unstructured": "Evans P. (2022, July 30). Here’s why all of your social media is trying to be TikTok now. CBC News. https://www.cbc.ca/news/business/tiktok-instagram-1.6534633"
+      },
+      {
+        "key": "bibr18-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/466240"
+      },
+      {
+        "key": "bibr19-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3178066"
+      },
+      {
+        "key": "bibr20-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18146/tmg.434"
+      },
+      {
+        "key": "bibr21-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7146/mediekultur.v32i60.22429"
+      },
+      {
+        "key": "bibr22-20563051231158822",
+        "unstructured": "Joho J. (2022, September 18). TikTok’s algorithms knew I was bi before I did. I’m not the only one. Mashable. https://mashable.com/article/bisexuality-queer-tiktok"
+      },
+      {
+        "key": "bibr23-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5749/j.ctv65sz27"
+      },
+      {
+        "key": "bibr24-20563051231158822",
+        "volume-title": "TikTok",
+        "author": "Kaye D. B.",
+        "year": "2022"
+      },
+      {
+        "key": "bibr25-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781529605983"
+      },
+      {
+        "key": "bibr26-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1057/s41305-017-0043-1"
+      },
+      {
+        "key": "bibr27-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1057/palgrave.ejis.3000709"
+      },
+      {
+        "key": "bibr28-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9781315636801-14"
+      },
+      {
+        "key": "bibr29-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1461444816675438"
+      },
+      {
+        "key": "bibr30-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1461444814544002"
+      },
+      {
+        "key": "bibr31-20563051231158822",
+        "unstructured": "Lin A. (2022, June 28). If your TikTok Discover Page suddenly vanished—Here’s what to know. Elite Daily. https://www.elitedaily.com/news/tiktok-discover-page-gone"
+      },
+      {
+        "key": "bibr32-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2056305118768297"
+      },
+      {
+        "key": "bibr33-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/nor-2019-0016"
+      },
+      {
+        "key": "bibr34-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-10898-4_13"
+      },
+      {
+        "key": "bibr35-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1527476419837739"
+      },
+      {
+        "key": "bibr36-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5210/fm.v21i10.6950"
+      },
+      {
+        "key": "bibr37-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1369118X.2021.1986103"
+      },
+      {
+        "key": "bibr38-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781452229560.n11"
+      },
+      {
+        "key": "bibr39-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2056305120943273"
+      },
+      {
+        "key": "bibr40-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1461444818769694"
+      },
+      {
+        "key": "bibr41-20563051231158822",
+        "author": "Orlowski-Yang J.",
+        "year": "2020",
+        "journal-title": "The Social Dilemma"
+      },
+      {
+        "key": "bibr42-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1461444816661553"
+      },
+      {
+        "key": "bibr43-20563051231158822",
+        "volume-title": "Software engineering: A practitioner’s approach",
+        "author": "Pressman R.",
+        "year": "2005"
+      },
+      {
+        "key": "bibr44-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1468794117700707"
+      },
+      {
+        "key": "bibr45-20563051231158822",
+        "volume-title": "Doing digital methods",
+        "author": "Rogers R.",
+        "year": "2019"
+      },
+      {
+        "key": "bibr46-20563051231158822",
+        "first-page": "6",
+        "volume-title": "Data and discrimination: Collected essays",
+        "author": "Sandvig C.",
+        "year": "2014"
+      },
+      {
+        "key": "bibr47-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2053951717738104"
+      },
+      {
+        "key": "bibr48-20563051231158822",
+        "author": "Srnicek N.",
+        "year": "2017",
+        "journal-title": "Platform capitalism"
+      },
+      {
+        "key": "bibr49-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/00027649921955326"
+      },
+      {
+        "key": "bibr50-20563051231158822",
+        "unstructured": "TikTok. (2020, December 24). What is the “For You” feed? TikTok Creator Portal. https://www.tiktok.com/creators/creator-portal/en-us/how-tiktok-works/whats-the-for-you-page-and-how-do-i-get-there/"
+      },
+      {
+        "key": "bibr51-20563051231158822",
+        "unstructured": "TikTok. (2021). Terms of service. https://www.tiktok.com/legal/terms-of-service?lang=en#terms-row"
+      },
+      {
+        "key": "bibr52-20563051231158822",
+        "unstructured": "TikTok. (2022). Privacy policy. https://www.tiktok.com/legal/page/row/privacy-policy/en"
+      },
+      {
+        "key": "bibr53-20563051231158822",
+        "unstructured": "TikTokComms. [@TikTokComms]. (2022, May 5). As we continue to celebrate community and creativity, we’re bringing a Friends Tab to more people over the coming weeks [Tweet]. Twitter. https://twitter.com/TikTokComms/status/1522262352044900352"
+      },
+      {
+        "key": "bibr54-20563051231158822",
+        "unstructured": "TikTok for Business. (n.d.). Behaviour targeting. TikTok: Business Help Center. https://ads.tiktok.com/help/article?aid=14011"
+      },
+      {
+        "key": "bibr55-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.33540/1284"
+      },
+      {
+        "key": "bibr56-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/oso/9780190889760.001.0001"
+      },
+      {
+        "key": "bibr57-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1369118X.2022.2027498"
+      },
+      {
+        "key": "bibr58-20563051231158822",
+        "unstructured": "Vogels E. A., Gelles-Watnick R., Massarat N. (2022). Teens, social media and technology 2022. Pew Research Centre. https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/"
+      },
+      {
+        "key": "bibr59-20563051231158822",
+        "first-page": "1",
+        "volume": "7",
+        "author": "Weltevrede E.",
+        "year": "2019",
+        "journal-title": "Computational Culture"
+      },
+      {
+        "key": "bibr60-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1329878X221088052"
+      },
+      {
+        "key": "bibr61-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1051/e3sconf/202123503029"
+      },
+      {
+        "key": "bibr62-20563051231158822",
+        "volume-title": "The age of surveillance capitalism",
+        "author": "Zuboff S.",
+        "year": "2019"
+      },
+      {
+        "key": "bibr63-20563051231158822",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1461444820983603"
+      }
+    ],
+    "container-title": [
+      "Social Media + Society"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231158822",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/20563051231158822",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231158822",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          1
+        ]
+      ],
+      "date-time": "2025-03-01T15:51:50Z",
+      "timestamp": 1740844310000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/20563051231158822"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "references-count": 63,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/20563051231158822"
+    ],
+    "URL": "https://doi.org/10.1177/20563051231158822",
+    "relation": {},
+    "ISSN": [
+      "2056-3051",
+      "2056-3051"
+    ],
+    "issn-type": [
+      {
+        "value": "2056-3051",
+        "type": "print"
+      },
+      {
+        "value": "2056-3051",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "article-number": "20563051231158822"
+  }
+}

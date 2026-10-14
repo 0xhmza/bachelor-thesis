@@ -1,5 +1,23 @@
 # Literature
 
+## Methodology reading guide — 13 October meeting
+
+Start with [Methods-Reading-List.md](Methods-Reading-List.md): 83 verified DOI
+records ranked by their usefulness for app reviews, sampling, walkthroughs,
+coding, two-coder comparison, LLM validation and harm modelling. Every entry
+identifies the work point it helps with and its adaptation limits.
+
+- [Searchable reading view](Methods-Reading-List.html) — filter by priority,
+  category or keyword.
+- [Ranked DOI list](ranked-dois.txt) — one DOI per line for reference-manager import.
+- [Structured catalogue](methodology-literature.json) — titles, provenance,
+  rank, methodological use and version notes.
+
+These are **reading candidates and method resources**, not newly added thesis
+citations. The shared bibliography and existing reading-status records are
+unchanged. Apply the PDF/note/bibliography rule below when a candidate is
+actually used as a thesis reference.
+
 **One rule:** every paper you cite must have (a) a PDF in `PDFs/`, (b) a row in the
 table below, and (c) an entry in `../_shared/references.bib`. No exceptions —
 that is what stops the bibliography from rotting.

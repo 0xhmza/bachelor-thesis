@@ -1,0 +1,206 @@
+{
+  "data": {
+    "id": "10.17169/fqs-26.1.4252",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.17169/fqs-26.1.4252",
+      "prefix": "10.17169",
+      "suffix": "fqs-26.1.4252",
+      "identifiers": [
+        {
+          "identifier": "1-82-4252",
+          "identifierType": "publisherId"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "publisherId",
+          "alternateIdentifier": "1-82-4252"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Mayring, Philipp",
+          "nameType": "Personal",
+          "givenName": "Philipp",
+          "familyName": "Mayring",
+          "affiliation": [
+            "Alpen-Adria Universität Klagenfurt"
+          ],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Qualitative Inhaltsanalyse mit ChatGPT: Fallstricke, grobe Annäherungen und grobe Fehler. Ein Erfahrungsbericht"
+        },
+        {
+          "title": "Qualitative Content Analysis With ChatGPT: Pitfalls, Rough Approximations and Gross Errors. A Field Report",
+          "titleType": "TranslatedTitle"
+        }
+      ],
+      "publisher": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research",
+      "container": {
+        "type": "Series",
+        "identifier": "1438-5627",
+        "identifierType": "EISSN",
+        "title": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research",
+        "volume": "26",
+        "issue": "1"
+      },
+      "publicationYear": 2025,
+      "subjects": [
+        {
+          "subject": "ChatGPT"
+        },
+        {
+          "subject": "künstliche Intelligenz"
+        },
+        {
+          "subject": "qualitative Inhaltsanalyse"
+        },
+        {
+          "subject": "Themenanalyse"
+        },
+        {
+          "subject": "qualitative Textanalyse"
+        },
+        {
+          "subject": "Grounded-Theory-Methodologie"
+        },
+        {
+          "subject": "psychoanalytische Textinterpretation"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2024-07-04",
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2024-10-12",
+          "dateType": "Accepted"
+        },
+        {
+          "date": "2025-01-29",
+          "dateType": "Updated"
+        },
+        {
+          "date": "2025-01-29",
+          "dateType": "Issued"
+        }
+      ],
+      "language": "de",
+      "types": {
+        "ris": "JOUR",
+        "bibtex": "article",
+        "citeproc": "article-journal",
+        "schemaOrg": "ScholarlyArticle",
+        "resourceTypeGeneral": "JournalArticle"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [
+        {
+          "issue": "1",
+          "titles": [
+            {
+              "title": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research"
+            }
+          ],
+          "volume": "26",
+          "creators": [],
+          "contributors": [],
+          "relationType": "IsPublishedIn",
+          "relatedItemType": "Journal",
+          "relatedItemIdentifier": {
+            "relatedItemIdentifier": "1438-5627",
+            "relatedItemIdentifierType": "EISSN"
+          }
+        }
+      ],
+      "sizes": [],
+      "formats": [],
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "In diesem Beitrag wird durch eine Reihe von Testläufen untersucht, welchen Beitrag das KI-basierte Programm ChatGPT in den beiden Versionen 3.5. und 4 zu einer qualitativen Inhaltsanalyse von Interviewtexten leisten kann. Dazu wird ein kurzer Mustertext mit meiner Musterlösung präsentiert. Grobe Eingaben bei einer eher naiven Nutzung (\"Führe eine qualitative Inhaltsanalyse durch!\") als auch differenzierte Vorgaben mit Fragestellung und genaueren Kodieranweisungen führten in beiden Versionen höchstens zu groben Annäherungen an die Musterlösung bei einer Vielzahl von groben Fehlern. Das Programm hatte auf unterschiedliche inhaltsanalytische Konzepte (BRAUN &amp; CLARKE 2006; KUCKARTZ 2014; MAYRING 2022a; SCHREIER 2012) nicht bzw. falsch reagiert, erkannte verborgenere Textinhalte nicht und versagte bei Überprüfungen der Kodierübereinstimmung. Die Ergebnisse der Software wiesen, egal welche Vorgaben gemacht wurden, meistens in Richtung einer groben, oberflächlichen Zusammenfassung im Sinne einer Themenauflistung. Für die von mir entwickelten qualitativ-inhaltsanalytischen Verfahren (MAYRING 2022a, 2022b) erscheinen sie wenig geeignet.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTcxNjkvRlFTLTI2LjEuNDI1MjwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPk1heXJpbmcsIFBoaWxpcHA8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+QWxwZW4tQWRyaWEgVW5pdmVyc2l0w6R0IEtsYWdlbmZ1cnQ8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5RdWFsaXRhdGl2ZSBJbmhhbHRzYW5hbHlzZSBtaXQgQ2hhdEdQVDogRmFsbHN0cmlja2UsIGdyb2JlIEFubsOkaGVydW5nZW4gdW5kIGdyb2JlIEZlaGxlci4gRWluIEVyZmFocnVuZ3NiZXJpY2h0PC90aXRsZT4KICAgIDx0aXRsZSB0aXRsZVR5cGU9IlRyYW5zbGF0ZWRUaXRsZSI+UXVhbGl0YXRpdmUgQ29udGVudCBBbmFseXNpcyBXaXRoIENoYXRHUFQ6IFBpdGZhbGxzLCBSb3VnaCBBcHByb3hpbWF0aW9ucyBhbmQgR3Jvc3MgRXJyb3JzLiBBIEZpZWxkIFJlcG9ydDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5Gb3J1bSBRdWFsaXRhdGl2ZSBTb3ppYWxmb3JzY2h1bmcgLyBGb3J1bTogUXVhbGl0YXRpdmUgU29jaWFsIFJlc2VhcmNoPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI1PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+Q2hhdEdQVDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmvDvG5zdGxpY2hlIEludGVsbGlnZW56PC9zdWJqZWN0PgogICAgPHN1YmplY3Q+cXVhbGl0YXRpdmUgSW5oYWx0c2FuYWx5c2U8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5UaGVtZW5hbmFseXNlPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+cXVhbGl0YXRpdmUgVGV4dGFuYWx5c2U8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5Hcm91bmRlZC1UaGVvcnktTWV0aG9kb2xvZ2llPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+cHN5Y2hvYW5hbHl0aXNjaGUgVGV4dGludGVycHJldGF0aW9uPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCI+MjAyNC0wNy0wNDwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBY2NlcHRlZCI+MjAyNC0xMC0xMjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDI1LTAxLTI5PC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyNS0wMS0yOTwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5kZTwvbGFuZ3VhZ2U+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJKb3VybmFsQXJ0aWNsZSIvPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJwdWJsaXNoZXJJZCI+MS04Mi00MjUyPC9hbHRlcm5hdGVJZGVudGlmaWVyPgogIDwvYWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wIj5UaGlzIHdvcmsgaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsIExpY2Vuc2UuPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+SW4gZGllc2VtIEJlaXRyYWcgd2lyZCBkdXJjaCBlaW5lIFJlaWhlIHZvbiBUZXN0bMOkdWZlbiB1bnRlcnN1Y2h0LCB3ZWxjaGVuIEJlaXRyYWcgZGFzIEtJLWJhc2llcnRlIFByb2dyYW1tIENoYXRHUFQgaW4gZGVuIGJlaWRlbiBWZXJzaW9uZW4gMy41LiB1bmQgNCB6dSBlaW5lciBxdWFsaXRhdGl2ZW4gSW5oYWx0c2FuYWx5c2Ugdm9uIEludGVydmlld3RleHRlbiBsZWlzdGVuIGthbm4uIERhenUgd2lyZCBlaW4ga3VyemVyIE11c3RlcnRleHQgbWl0IG1laW5lciBNdXN0ZXJsw7ZzdW5nIHByw6RzZW50aWVydC4gR3JvYmUgRWluZ2FiZW4gYmVpIGVpbmVyIGVoZXIgbmFpdmVuIE51dHp1bmcgKCJGw7xocmUgZWluZSBxdWFsaXRhdGl2ZSBJbmhhbHRzYW5hbHlzZSBkdXJjaCEiKSBhbHMgYXVjaCBkaWZmZXJlbnppZXJ0ZSBWb3JnYWJlbiBtaXQgRnJhZ2VzdGVsbHVuZyB1bmQgZ2VuYXVlcmVuIEtvZGllcmFud2Vpc3VuZ2VuIGbDvGhydGVuIGluIGJlaWRlbiBWZXJzaW9uZW4gaMO2Y2hzdGVucyB6dSBncm9iZW4gQW5uw6RoZXJ1bmdlbiBhbiBkaWUgTXVzdGVybMO2c3VuZyBiZWkgZWluZXIgVmllbHphaGwgdm9uIGdyb2JlbiBGZWhsZXJuLiBEYXMgUHJvZ3JhbW0gaGF0dGUgYXVmIHVudGVyc2NoaWVkbGljaGUgaW5oYWx0c2FuYWx5dGlzY2hlIEtvbnplcHRlIChCUkFVTiAmYW1wOyBDTEFSS0UgMjAwNjsgS1VDS0FSVFogMjAxNDsgTUFZUklORyAyMDIyYTsgU0NIUkVJRVIgMjAxMikgbmljaHQgYnp3LiBmYWxzY2ggcmVhZ2llcnQsIGVya2FubnRlIHZlcmJvcmdlbmVyZSBUZXh0aW5oYWx0ZSBuaWNodCB1bmQgdmVyc2FndGUgYmVpIMOcYmVycHLDvGZ1bmdlbiBkZXIgS29kaWVyw7xiZXJlaW5zdGltbXVuZy4gRGllIEVyZ2Vibmlzc2UgZGVyIFNvZnR3YXJlIHdpZXNlbiwgZWdhbCB3ZWxjaGUgVm9yZ2FiZW4gZ2VtYWNodCB3dXJkZW4sIG1laXN0ZW5zIGluIFJpY2h0dW5nIGVpbmVyIGdyb2Jlbiwgb2JlcmZsw6RjaGxpY2hlbiBadXNhbW1lbmZhc3N1bmcgaW0gU2lubmUgZWluZXIgVGhlbWVuYXVmbGlzdHVuZy4gRsO8ciBkaWUgdm9uIG1pciBlbnR3aWNrZWx0ZW4gcXVhbGl0YXRpdi1pbmhhbHRzYW5hbHl0aXNjaGVuIFZlcmZhaHJlbiAoTUFZUklORyAyMDIyYSwgMjAyMmIpIGVyc2NoZWluZW4gc2llIHdlbmlnIGdlZWlnbmV0Lgo8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxyZWxhdGVkSXRlbXM+CiAgICA8cmVsYXRlZEl0ZW0gcmVsYXRpb25UeXBlPSJJc1B1Ymxpc2hlZEluIiByZWxhdGVkSXRlbVR5cGU9IkpvdXJuYWwiPgogICAgICA8cmVsYXRlZEl0ZW1JZGVudGlmaWVyIHJlbGF0ZWRJdGVtSWRlbnRpZmllclR5cGU9IkVJU1NOIj4xNDM4LTU2Mjc8L3JlbGF0ZWRJdGVtSWRlbnRpZmllcj4KICAgICAgPHRpdGxlcz4KICAgICAgICA8dGl0bGU+Rm9ydW0gUXVhbGl0YXRpdmUgU296aWFsZm9yc2NodW5nIC8gRm9ydW06IFF1YWxpdGF0aXZlIFNvY2lhbCBSZXNlYXJjaDwvdGl0bGU+CiAgICAgIDwvdGl0bGVzPgogICAgICA8dm9sdW1lPjI2PC92b2x1bWU+CiAgICAgIDxpc3N1ZT4xPC9pc3N1ZT4KICAgIDwvcmVsYXRlZEl0ZW0+CiAgPC9yZWxhdGVkSXRlbXM+CjwvcmVzb3VyY2U+",
+      "url": "https://www.qualitative-research.net/index.php/fqs/article/view/4252",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2025-01-29T08:39:03.000Z",
+      "registered": "2025-01-29T08:39:03.000Z",
+      "published": "2025",
+      "updated": "2025-01-29T08:39:03.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "tib.fuub",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "vsdn",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.17169/fqs-26.1.4252",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

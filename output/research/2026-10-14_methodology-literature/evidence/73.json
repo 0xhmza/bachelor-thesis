@@ -1,0 +1,567 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2026-07-22T11:01:54Z",
+      "timestamp": 1784718114252,
+      "version": "3.55.0"
+    },
+    "reference-count": 43,
+    "publisher": "Informa UK Limited",
+    "issue": "15",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              11
+            ]
+          ],
+          "date-time": "2025-12-11T00:00:00Z",
+          "timestamp": 1765411200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.1080/policies-text-data-mining"
+      }
+    ],
+    "funder": [
+      {
+        "name": "European Union’s Horizon 2020 research and innovation programme",
+        "award": [
+          "952226"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "952226"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ITI/LARSyS",
+        "award": [
+          "10.54499/LA/P/0083/2020"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "10.54499/LA/P/0083/2020"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ITI/LARSyS",
+        "award": [
+          "10.54499/UIDP/50009/2020"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "10.54499/UIDP/50009/2020"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ITI/LARSyS",
+        "award": [
+          "10.54499/UIDB/50009/2020"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "10.54499/UIDB/50009/2020"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001871",
+        "name": "Fundação para a Ciência e a Tecnologia",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001871",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Human–Computer Interaction"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1080/10447318.2025.2597502",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          11
+        ]
+      ],
+      "date-time": "2025-12-11T15:59:36Z",
+      "timestamp": 1765468776000
+    },
+    "page": "12466-12486",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Toward Risk Communication in Intimate Health Technologies"
+    ],
+    "prefix": "10.1080",
+    "volume": "42",
+    "author": [
+      {
+        "given": "Diana P.",
+        "family": "Moniz",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "ITI/LARSyS and Instituto Superior Técnico, University of Lisbon",
+            "place": [
+              "Lisbon, Portugal"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7393-3379",
+        "authenticated-orcid": false,
+        "given": "Teresa",
+        "family": "Almeida",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "ITI/LARSyS and Instituto Superior Técnico, University of Lisbon",
+            "place": [
+              "Lisbon, Portugal"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/33735"
+      },
+      {
+        "key": "e_1_3_3_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3406091"
+      },
+      {
+        "key": "e_1_3_3_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858119"
+      },
+      {
+        "key": "e_1_3_3_5_1",
+        "volume-title": "17th Annual UK Fertility Conference",
+        "author": "Almeida T.",
+        "year": "2024",
+        "unstructured": "Almeida, T., Mehrnezhad, M., & Cook, S. (2024, January 10–13). The importance of collective privacy in digital sexual and reproductive health [Paper presentation]. 17th Annual UK Fertility Conference, Edinburgh, UK."
+      },
+      {
+        "key": "e_1_3_3_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3547522.3547674"
+      },
+      {
+        "key": "e_1_3_3_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300345"
+      },
+      {
+        "key": "e_1_3_3_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1240624.1240789"
+      },
+      {
+        "key": "e_1_3_3_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/13620-004"
+      },
+      {
+        "key": "e_1_3_3_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3351995.3352036"
+      },
+      {
+        "key": "e_1_3_3_11_1",
+        "unstructured": "Cifor M. Garcia P. Cowan T. L. Rault J. Sutherland T. Chan A. Rode J. Hoffmann A. L. Salehi N. Nakamura L. (n.d). Feminist data manifest-no. https://www.manifestno.com/"
+      },
+      {
+        "key": "e_1_3_3_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3501970"
+      },
+      {
+        "key": "e_1_3_3_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10207-024-00883-3"
+      },
+      {
+        "key": "e_1_3_3_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3359184"
+      },
+      {
+        "key": "e_1_3_3_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1471-0528.15684"
+      },
+      {
+        "key": "e_1_3_3_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TTS.2022.3160928"
+      },
+      {
+        "key": "e_1_3_3_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3322276.3323695"
+      },
+      {
+        "key": "e_1_3_3_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/291224.291235"
+      },
+      {
+        "key": "e_1_3_3_19_1",
+        "volume-title": "ACM International Conference Proceeding Series Part F128634",
+        "author": "Gibbs A. S. J.",
+        "year": "2017",
+        "unstructured": "Gibbs, A. S. J., Estcourt, C., Sonnenberg, P., & Blandford, A. (2017). Are HIV smartphone apps and online interventions fit for purpose? ACM International Conference Proceeding Series Part F128634."
+      },
+      {
+        "key": "e_1_3_3_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14236/ewic/HCI2013.36"
+      },
+      {
+        "key": "e_1_3_3_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411497.3420221"
+      },
+      {
+        "key": "e_1_3_3_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3313831.3376669"
+      },
+      {
+        "key": "e_1_3_3_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24251/HICSS.2018.467"
+      },
+      {
+        "key": "e_1_3_3_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3613904.3642521"
+      },
+      {
+        "key": "e_1_3_3_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445132"
+      },
+      {
+        "key": "e_1_3_3_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3617072.3617100"
+      },
+      {
+        "key": "e_1_3_3_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3549015.3554204"
+      },
+      {
+        "key": "e_1_3_3_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-42286-7_30"
+      },
+      {
+        "key": "e_1_3_3_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445605"
+      },
+      {
+        "key": "e_1_3_3_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300652"
+      },
+      {
+        "key": "e_1_3_3_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2999934"
+      },
+      {
+        "key": "e_1_3_3_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2139/ssrn.4819736"
+      },
+      {
+        "key": "e_1_3_3_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10488-013-0528-y"
+      },
+      {
+        "key": "e_1_3_3_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445465"
+      },
+      {
+        "key": "e_1_3_3_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2053951718820549"
+      },
+      {
+        "key": "e_1_3_3_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPC.2024.3361328"
+      },
+      {
+        "key": "e_1_3_3_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/popets-2020-0083"
+      },
+      {
+        "key": "e_1_3_3_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3517662"
+      },
+      {
+        "key": "e_1_3_3_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-57959-7"
+      },
+      {
+        "key": "e_1_3_3_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2470654.2466473"
+      },
+      {
+        "key": "e_1_3_3_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/13607804221084343"
+      },
+      {
+        "key": "e_1_3_3_42_1",
+        "unstructured": "Wolford B. (2020). What are the GDPR consent requirements? GDPR.eu—gdpr.eu. Retrieved May 30 2024 from https://gdpr.eu/gdpr-consent-requirements/"
+      },
+      {
+        "key": "e_1_3_3_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3134746"
+      },
+      {
+        "key": "e_1_3_3_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3544548.3581252"
+      }
+    ],
+    "container-title": [
+      "International Journal of Human–Computer Interaction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10447318.2025.2597502",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.tandfonline.com/doi/full-xml/10.1080/10447318.2025.2597502",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10447318.2025.2597502",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2026-07-22T10:14:55Z",
+      "timestamp": 1784715295000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2597502"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          11
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "15",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10447318.2025.2597502"
+    ],
+    "URL": "https://doi.org/10.1080/10447318.2025.2597502",
+    "relation": {},
+    "ISSN": [
+      "1044-7318",
+      "1532-7590"
+    ],
+    "issn-type": [
+      {
+        "value": "1044-7318",
+        "type": "print"
+      },
+      {
+        "value": "1532-7590",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hihc20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hihc20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2025-05-29",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-10-23",
+        "order": 1,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-11-20",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-12-11",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

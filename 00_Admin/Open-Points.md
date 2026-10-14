@@ -19,7 +19,7 @@ methodology named in the last column.
 
 Three further points (advertisements and blogs as a secondary corpus, language of
 the material, choice of LLM) are argued in the archived long version:
-`99_Archive/_junk/02_Proposal/sections/07_open_points.tex`. Their answers are in
+`99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/07_open_points.tex`). Their answers are in
 the proposal's Methodology: advertising is coded where found but its absence is
 not a finding; coding is done in the source language; the model is chosen on the
 pilot and its identifier frozen before the main run.

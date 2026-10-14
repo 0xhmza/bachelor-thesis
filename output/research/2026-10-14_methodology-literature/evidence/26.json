@@ -1,0 +1,423 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T15:28:19Z",
+      "timestamp": 1791646099648,
+      "version": "4.3.4"
+    },
+    "reference-count": 25,
+    "publisher": "The Quantitative Methods for Psychology",
+    "issue": "1",
+    "content-domain": {
+      "domain": [
+        "tqmp.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "TQMP"
+    ],
+    "DOI": "10.20982/tqmp.08.1.p023",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          11
+        ]
+      ],
+      "date-time": "2016-09-11T19:39:03Z",
+      "timestamp": 1473622743000
+    },
+    "page": "23-34",
+    "update-policy": "https://doi.org/10.20982/tqmp.policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3252,
+    "title": [
+      "Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial"
+    ],
+    "prefix": "10.20982",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Kevin A.",
+        "family": "Hallgren",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "8547",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bbc93",
+        "doi-asserted-by": "crossref",
+        "first-page": "423",
+        "DOI": "10.1016/0895-4356(93)90018-V",
+        "article-title": "Bias, prevalence and Kappa",
+        "volume": "46",
+        "author": "Byrt, T.",
+        "year": "1993",
+        "journal-title": "Journal of Clinical Epidemiology"
+      },
+      {
+        "key": "c60",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1177/001316446002000104",
+        "article-title": "A coefficient of agreement for nominal scales",
+        "volume": "20",
+        "author": "Cohen, J.",
+        "year": "1960",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "key": "c68",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1037/h0026256",
+        "article-title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit",
+        "volume": "70",
+        "author": "Cohen, J.",
+        "year": "1968",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "c94",
+        "doi-asserted-by": "crossref",
+        "first-page": "284",
+        "DOI": "10.1037/1040-3590.6.4.284",
+        "article-title": "Guidelines, criteria, and rules of thumb for evaluating normed and standardized assessment instruments in psychology",
+        "volume": "6",
+        "author": "Cicchetti, D. V.",
+        "year": "1994",
+        "journal-title": "Psychological Assessment"
+      },
+      {
+        "key": "df82",
+        "doi-asserted-by": "crossref",
+        "first-page": "1047",
+        "DOI": "10.2307/2529886",
+        "article-title": "Measuring agreement for multinomial data",
+        "volume": "38",
+        "author": "Davies, M.",
+        "year": "1982",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "e",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1162/089120104773633402",
+        "article-title": "The kappa statistic: A second look",
+        "volume": "30",
+        "author": "Di Eugenio, B.",
+        "year": "2004",
+        "journal-title": "Computational linguistics"
+      },
+      {
+        "key": "f71",
+        "doi-asserted-by": "crossref",
+        "first-page": "378",
+        "DOI": "10.1037/h0031619",
+        "article-title": "Measuring nominal scale agreement among many raters",
+        "volume": "76",
+        "author": "Fleiss, J. L.",
+        "year": "1971",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "g02",
+        "first-page": "1",
+        "article-title": "Kappa statistic is not satisfactory for assessing the extent of agreement between raters",
+        "volume": "1",
+        "author": "Gwet, K.",
+        "year": "2002",
+        "journal-title": "Statistical Methods for Inter-rater Reliability Assessment"
+      },
+      {
+        "key": "g86",
+        "doi-asserted-by": "crossref",
+        "first-page": "883",
+        "DOI": "10.2307/2530702",
+        "article-title": "The kappa coefficient of agreement for multiple observers when the number of subjects is small",
+        "volume": "42",
+        "author": "Gross, S. T.",
+        "year": "1986",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "glfs10",
+        "volume-title": "irr: Various coefficients of interrater reliability and agreement (Version 0.83) [software]",
+        "author": "Gamer, M. and Lemon, J. and Fellows, I. and Sing, P.",
+        "year": "2010"
+      },
+      {
+        "key": "hk07",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1080/19312450709336664",
+        "article-title": "Answering the call for a standard reliability measure for coding data",
+        "volume": "1",
+        "author": "Hayes, A. F.",
+        "year": "2007",
+        "journal-title": "Communication Methods and Measures"
+      },
+      {
+        "key": "k80",
+        "volume-title": "Content analysis: An introduction to its methodology",
+        "author": "Krippendorff, K.",
+        "year": "1980"
+      },
+      {
+        "key": "l59",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1007/BF02289759",
+        "article-title": "Statistical inferences about true scores",
+        "volume": "24",
+        "author": "Lord, F. M.",
+        "year": "1959",
+        "journal-title": "Psychometrika"
+      },
+      {
+        "key": "l71",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1037/h0031643",
+        "article-title": "Measures of response agreement for qualitative data: Some generalizations and alternatives",
+        "volume": "76",
+        "author": "Light, R. J.",
+        "year": "1971",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "lf07",
+        "volume-title": "concord: Concordance and reliability (Version 1.4-9) [software]",
+        "author": "Lemon, J. and Fellows, I.",
+        "year": "2007"
+      },
+      {
+        "key": "lg06",
+        "doi-asserted-by": "crossref",
+        "first-page": "20",
+        "DOI": "10.20982/tqmp.02.1.p020",
+        "article-title": "Formatting data files for repeated-measures analyses in SPSS: using the Aggregate and Restructure procedures",
+        "volume": "2",
+        "author": "Lacroix, G. L.",
+        "year": "2006",
+        "journal-title": "Tutorials in Quantitative Methods for Psychology"
+      },
+      {
+        "key": "lk77",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.2307/2529310",
+        "article-title": "The measurement of observer agreement for categorical data",
+        "volume": "33",
+        "author": "Landis, J. R.",
+        "year": "1977",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "mw96",
+        "doi-asserted-by": "crossref",
+        "first-page": "30",
+        "DOI": "10.1037/1082-989X.1.1.30",
+        "article-title": "Forming inferences about some intraclass correlation coefficients",
+        "volume": "1",
+        "author": "McGraw, K. O.",
+        "year": "1996",
+        "journal-title": "Psychological Methods"
+      },
+      {
+        "key": "n66",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/0022-2496(66)90002-2",
+        "article-title": "The axioms and principle results of classical test theory",
+        "volume": "3",
+        "author": "Novick, M. R.",
+        "year": "1966",
+        "journal-title": "Journal of Mathematical Psychology"
+      },
+      {
+        "key": "ns08",
+        "volume-title": "Biostatistics: The bare essentials",
+        "author": "Norman, G. R. and Streiner, D. L.",
+        "year": "2008"
+      },
+      {
+        "key": "plmd08",
+        "doi-asserted-by": "crossref",
+        "first-page": "959",
+        "DOI": "10.1037/0021-9010.93.5.959",
+        "article-title": "Ill-structured measurement designs in organizational research: Implications for estimating interrater reliability",
+        "volume": "93",
+        "author": "Putka, D. J.",
+        "year": "2008",
+        "journal-title": "Journal of Applied Psychology"
+      },
+      {
+        "key": "s55",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1086/266577",
+        "article-title": "Reliability of content analysis: The case of nominal scale coding",
+        "volume": "19",
+        "author": "Scott, W. A.",
+        "year": "1955",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "key": "sc88",
+        "volume-title": "Nonparametric statistics for the behavioral sciences (2nd ed.)",
+        "author": "Siegel, S. and Castellan, N. J.",
+        "year": "1988"
+      },
+      {
+        "key": "sf79",
+        "doi-asserted-by": "crossref",
+        "first-page": "420",
+        "DOI": "10.1037/0033-2909.86.2.420",
+        "article-title": "Intraclass correlations: Uses in assessing rater reliability",
+        "volume": "86",
+        "author": "Shrout, P. E.",
+        "year": "1979",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "y03",
+        "first-page": "2011",
+        "article-title": "Common correlation and reliability analysis with SPSS for Windows",
+        "volume": "21",
+        "author": "Yaffee, R. A.",
+        "year": "2003",
+        "journal-title": "Retrieved July"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.20982/tqmp.09.2.p095",
+        "type": "corrigendum",
+        "label": "Corrigendum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2013,
+              10,
+              12
+            ]
+          ],
+          "date-time": "2013-10-12T00:00:00Z",
+          "timestamp": 1381536000000
+        }
+      }
+    ],
+    "container-title": [
+      "Tutorials in Quantitative Methods for Psychology"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          7
+        ]
+      ],
+      "date-time": "2019-04-07T12:23:19Z",
+      "timestamp": 1554639799000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.tqmp.org/RegularArticles/vol08-1/p023"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          1
+        ]
+      ]
+    },
+    "references-count": 25,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.20982/tqmp.08.1.p023",
+    "relation": {
+      "is-referenced-by": [
+        {
+          "id-type": "doi",
+          "id": "10.1186/s12909-025-07512-0",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1007/s00261-026-05605-y",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1913-4126"
+    ],
+    "issn-type": [
+      {
+        "value": "1913-4126",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          1
+        ]
+      ]
+    }
+  }
+}

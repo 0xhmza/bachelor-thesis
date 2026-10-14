@@ -1,0 +1,84 @@
+id	category	priority	doi	expected_title
+1	App reviews	A	10.1145/3613904.3642521	Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World
+2	App reviews	A	10.2196/mhealth.9217	Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach
+3	App reviews	A	10.2478/popets-2020-0083	How Private Is Your Period? A Systematic Analysis of Menstrual App Privacy Policies
+4	Coding	A	10.1177/1609406919899220	Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines
+5	Walkthrough	A	10.1080/10447311003781409	State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions
+6	Coding	A	10.1145/3359174	Reliability and Inter-rater Reliability in Qualitative Research: Norms and Guidelines for CSCW and HCI Practice
+7	Coding	A	10.1177/1049732305276687	Three Approaches to Qualitative Content Analysis
+8	Walkthrough	A	10.1016/0020-7373(92)90039-N	Cognitive walkthroughs: a method for theory-based evaluation of user interfaces
+9	App reviews	A	10.1136/amiajnl-2013-002605	Availability and quality of mobile health app privacy policies
+10	Policy annotation	A	10.18653/v1/P16-1126	The Creation and Analysis of a Website Privacy Policy Corpus
+11	App reviews	A	10.2196/33735	Privacy, Data Sharing, and Data Security Policies of Women's mHealth Apps: Scoping Review and Content Analysis
+12	App reviews	A	10.1016/j.invent.2019.100243	Availability, readability, and content of privacy policies and terms of agreements of mental health apps
+13	App reviews	A	10.2196/26317	Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines
+14	App reviews	A	10.1007/s12529-020-09944-y	Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores
+15	App appraisal	A	10.2196/14479	The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study
+16	Coding	A	10.1177/0049124113500475	Coding In-depth Semistructured Interviews: Problems of Unitization and Intercoder Reliability and Agreement
+17	Agreement	A	10.1080/19312450709336664	Answering the Call for a Standard Reliability Measure for Coding Data
+18	App reviews	A	10.2196/18868	Privacy Assessment in Mobile Health Apps: Scoping Review
+19	App reviews	A	10.1136/bmj.n1248	Mobile health and privacy: cross sectional study
+20	Walkthrough	A	10.1177/1461444816675438	The walkthrough method: An approach to the study of apps
+21	App reviews	B	10.1186/s12916-015-0444-y	Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment
+22	App reviews	B	10.1001/jamanetworkopen.2019.2542	Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation
+23	App reviews	B	10.1136/bmj.l920	Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis
+24	App reviews	B	10.1007/s10664-022-10236-0	On the privacy of mental health apps: An empirical investigation and its implications for app development
+25	Walkthrough	B	10.1145/332040.332456	The streamlined cognitive walkthrough method, working around social constraints encountered in a software development company
+26	Agreement	B	10.20982/tqmp.08.1.p023	Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial
+27	Agreement	B	10.1177/001316446002000104	A Coefficient of Agreement for Nominal Scales
+28	Agreement	B	10.1111/j.1468-2958.2004.tb00738.x	Reliability in Content Analysis: Some Common Misconceptions and Recommendations
+29	Agreement	B	10.1348/000711006X126600	Computing inter-rater reliability and its variance in the presence of high agreement
+30	Agreement	B	10.1016/0895-4356(90)90158-L	High agreement but low kappa: I. The problems of two paradoxes
+31	App reviews	B	10.1145/3706598.3714089	Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking
+32	App appraisal	B	10.2196/mhealth.3422	Mobile App Rating Scale: A New Tool for Assessing the Quality of Health Mobile Apps
+33	App reviews	B	10.1111/jsr.13642	Help for insomnia from the app store? A standardized rating of mobile health applications claiming to target insomnia
+34	App reviews	B	10.2196/66762	Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study
+35	App reviews	B	10.2196/67944	The Quality and Characteristics of Digital Mental Health Apps: Mixed Methods Study
+36	App reviews	B	10.2196/mhealth.3672	Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android
+37	App reviews	B	10.1016/j.ijlp.2019.04.002	How private is your mental health app data? An empirical study of mental health app privacy policies and practices
+38	Policy annotation	B	10.3390/info17040343	Mobile App Privacy Disclosures on Google Play in the Post-GDPR Context: A Large-Scale Analysis of Data Safety Section and Permissions
+39	Privacy interfaces	B	10.1145/3313831.3376511	It's a scavenger hunt: Usability of Websites' Opt-Out and Data Deletion Choices
+40	Walkthrough	B	10.1177/20563051231158822	Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps
+41	Walkthrough	B	10.1145/97243.97281	Heuristic evaluation of user interfaces
+42	Walkthrough	B	10.1145/142750.142864	Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations
+43	Coding	B	10.1177/1525822X980100020301	Codebook Development for Team-Based Qualitative Analysis
+44	Coding	B	10.1177/1525822X04266540	Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research
+45	Coding	B	10.1177/160940690600500107	Demonstrating Rigor Using Thematic Analysis: A Hybrid Approach of Inductive and Deductive Coding and Theme Development
+46	Coding	B	10.17169/fqs-1.2.1089	Qualitative Content Analysis
+47	Agreement	B	10.1111/j.1468-2958.2002.tb00826.x	Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability
+48	Coding	B	10.1177/1609406917733847	Thematic Analysis: Striving to Meet the Trustworthiness Criteria
+49	Agreement	B	10.1162/coli.07-034-R2	Inter-Coder Agreement for Computational Linguistics
+50	Agreement	B	10.11613/BM.2012.031	Interrater reliability: the kappa statistic
+51	Coding	C	10.1191/1478088706qp063oa	Using thematic analysis in psychology
+52	Coding	B	10.1080/14780887.2020.1769238	One size fits all? What counts as quality practice in (reflexive) thematic analysis?
+53	Review/reporting	B	10.1136/bmj.n71	The PRISMA 2020 statement: an updated guideline for reporting systematic reviews
+54	Review/reporting	B	10.1186/s13643-020-01542-z	PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews
+55	Review/reporting	B	10.7326/M18-0850	PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation
+56	Review/reporting	C	10.1080/1364557032000119616	Scoping studies: towards a methodological framework
+57	Review/reporting	B	10.1097/ACM.0000000000000388	Standards for Reporting Qualitative Research: A Synthesis of Recommendations
+58	Review/reporting	C	10.1371/journal.pmed.0040296	The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies
+59	Privacy interfaces	B	10.1145/1572532.1572538	A nutrition label for privacy
+60	Policy annotation	B	10.1145/3491101.3519739	Understanding iOS Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data
+61	Privacy interfaces	B	10.1145/3290605.3300424	You Might Be Affected: An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications
+62	Privacy interfaces	C	10.1145/3313831.3376321	Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence
+63	Privacy interfaces	C	10.1145/3359183	Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites
+64	Privacy interfaces	C	10.1145/3173574.3174108	The Dark (Patterns) Side of UX Design
+65	LLM annotation	B	10.1007/s00607-024-01331-9	Large language models: a new approach for privacy policy analysis at scale
+66	LLM annotation	B	10.6092/issn.1971-8853/19461	Best Practices for Text Annotation with Large Language Models
+67	LLM annotation	B	10.1073/pnas.2305016120	ChatGPT outperforms crowd workers for text-annotation tasks
+68	LLM annotation	B	10.48550/arXiv.2509.08825	Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation
+69	LLM annotation	B	10.48550/arXiv.2306.00176	Automated Annotation with Generative AI Requires Validation
+70	Context/harm	C	10.1145/3313831.3376651	Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours
+71	Context/harm	C	10.1145/3613904.3642042	I Deleted It After the Overturn of Roe v. Wade: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era
+72	Context/harm	C	10.1145/3645091	Wearable Activity Trackers: A Survey on Utility, Privacy, and Security
+73	Context/harm	B	10.1080/10447318.2025.2597502	Toward Risk Communication in Intimate Health Technologies
+74	Policy annotation	C	10.1007/978-3-031-76265-9_9	Analysis of Transparency and User-Relevancy of DTC Company Policies
+75	Context/harm	B	10.2307/40041279	A Taxonomy of Privacy
+76	Coding	A	10.4135/9781071878781	Content Analysis: An Introduction to Its Methodology
+77	Context/harm	B	10.1515/9780804772891	Privacy in Context: Technology, Policy, and the Integrity of Social Life
+78	Context/harm	B	10.1007/s00766-010-0115-7	A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements
+79	Context/harm	B	10.6028/NIST.IR.8062	An Introduction to Privacy Engineering and Risk Management in Federal Systems
+80	Context/harm	A	10.2139/ssrn.3782222	Privacy Harms
+81	Context/harm	A	10.2139/ssrn.4655228	No Cookies For You!: Evaluating The Promises Of Big Tech's Privacy-Enhancing Techniques
+82	App reviews	A	10.1016/j.invent.2018.12.001	Reviewing the data security and privacy policies of mobile apps for depression
+83	LLM annotation	B	10.17169/fqs-26.1.4252	Qualitative Content Analysis With ChatGPT: Pitfalls, Rough Approximations and Gross Errors

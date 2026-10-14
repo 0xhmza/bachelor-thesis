@@ -1,0 +1,817 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T04:03:10Z",
+      "timestamp": 1791950590110,
+      "version": "4.3.4"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 101,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              11
+            ]
+          ],
+          "date-time": "2024-05-11T00:00:00Z",
+          "timestamp": 1715385600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/https://doi.org/10.13039/100006785",
+        "name": "Google",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/https://doi.org/10.13039/100006785",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1145/3613904.3642521",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2024-05-11T08:38:06Z",
+      "timestamp": 1715416686000
+    },
+    "page": "1-24",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 50,
+    "title": [
+      "Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0004-7282-3767",
+        "authenticated-orcid": false,
+        "given": "Lisa Mekioussa",
+        "family": "Malki",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4303-924X",
+        "authenticated-orcid": false,
+        "given": "Ina",
+        "family": "Kaleva",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3746-8171",
+        "authenticated-orcid": false,
+        "given": "Dilisha",
+        "family": "Patel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Global Disability Innovation Hub, University College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7494-6275",
+        "authenticated-orcid": false,
+        "given": "Mark",
+        "family": "Warner",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5316-9956",
+        "authenticated-orcid": false,
+        "given": "Ruba",
+        "family": "Abu-Salma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "King's College London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_3_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14722/eurousec.2017.23006"
+      },
+      {
+        "key": "e_1_3_3_3_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/33735"
+      },
+      {
+        "key": "e_1_3_3_3_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3547522.3547674"
+      },
+      {
+        "key": "e_1_3_3_3_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.56553/popets-2022-0108"
+      },
+      {
+        "key": "e_1_3_3_3_5_1",
+        "unstructured": "Apple. 2023. Privacy Labels - Apple. https://www.apple.com/uk/privacy/labels/"
+      },
+      {
+        "key": "e_1_3_3_3_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3570348"
+      },
+      {
+        "key": "e_1_3_3_3_7_1",
+        "volume-title": "Exploring Privacy and Incentives Considerations in Adoption of COVID-19 Contact Tracing Apps. In 32nd USENIX Security Symposium (USENIX Security 23)",
+        "author": "Ayalon Oshrat",
+        "year": "2023",
+        "unstructured": "Oshrat Ayalon, Dana Turjeman, and Elissa M. Redmiles. 2023. Exploring Privacy and Incentives Considerations in Adoption of COVID-19 Contact Tracing Apps. In 32nd USENIX Security Symposium (USENIX Security 23) (August 9–11, 2023, Anaheim, CA, USA). USENIX Association, USA, 517–534. https://www.usenix.org/conference/usenixsecurity23/presentation/ayalon"
+      },
+      {
+        "key": "e_1_3_3_3_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3502288"
+      },
+      {
+        "key": "e_1_3_3_3_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3201064.3201089"
+      },
+      {
+        "key": "e_1_3_3_3_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EuroSPW51379.2020.00029"
+      },
+      {
+        "key": "e_1_3_3_3_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/503376.503459"
+      },
+      {
+        "key": "e_1_3_3_3_12_1",
+        "volume-title": "Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017",
+        "author": "Bowers Jasmine",
+        "year": "2017",
+        "unstructured": "Jasmine Bowers, Bradley Reaves, Imani N. Sherman, Patrick Traynor, and Kevin Butler. 2017. Regulators, Mount Up! Analysis of Privacy Policies for Mobile Money Services. In Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017). (July 12–14, 2017, Santa Clara, CA). USENIX Association, USA, 97–114. https://www.usenix.org/conference/soups2017/technical-sessions/presentation/bowers"
+      },
+      {
+        "key": "e_1_3_3_3_13_1",
+        "unstructured": "British Pregnancy Advisory Service (BPAS). 2012. Britain’s Abortion Law. https://www.bpas.org/get-involved/campaigns/briefings/abortion-law/"
+      },
+      {
+        "key": "e_1_3_3_3_14_1",
+        "first-page": "289",
+        "article-title": "The Femtech Paradox: How Workplace Monitoring Threatens Women’s Equity",
+        "volume": "61",
+        "author": "Brown Elizabeth",
+        "year": "2021",
+        "unstructured": "Elizabeth Brown. 2021. The Femtech Paradox: How Workplace Monitoring Threatens Women’s Equity. Jurimetrics 61, 3 (2021), 289–329. https://heinonline.org/HOL/LandingPage?handle=hein.journals/juraba61&div=18&id=&page=",
+        "journal-title": "Jurimetrics"
+      },
+      {
+        "key": "e_1_3_3_3_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/mts.2012.2225459"
+      },
+      {
+        "key": "e_1_3_3_3_16_1",
+        "unstructured": "Google Help Center. [n. d.]. Provide Information for Google Play’s Data safety section. https://support.google.com/googleplay/android-developer/answer/10787469?hl=en"
+      },
+      {
+        "key": "e_1_3_3_3_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamiaopen"
+      },
+      {
+        "key": "e_1_3_3_3_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.o2075"
+      },
+      {
+        "key": "e_1_3_3_3_19_1",
+        "volume-title": "Discrimination Against the Unhealthy in Health Insurance. Kansas Law Review 54 (Jul",
+        "author": "Crossley Mary",
+        "year": "2005",
+        "unstructured": "Mary Crossley. 2005. Discrimination Against the Unhealthy in Health Insurance. Kansas Law Review 54 (Jul. 2005), 73. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1167043"
+      },
+      {
+        "key": "e_1_3_3_3_20_1",
+        "volume-title": "How Menstruation Apps Are Sharing Your Data",
+        "author": "Business But Mine No Body’s",
+        "year": "2020",
+        "unstructured": "No Body’s Business But Mine: How Menstruation Apps Are Sharing Your Data. 2020. Privacy International. https://privacyinternational.org/long-read/3196/no-bodys-business-mine-how-menstruations-apps-are-sharing-your-data"
+      },
+      {
+        "key": "e_1_3_3_3_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-021-00549-7"
+      },
+      {
+        "key": "e_1_3_3_3_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3551349.3561343"
+      },
+      {
+        "key": "e_1_3_3_3_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3501869"
+      },
+      {
+        "key": "e_1_3_3_3_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjsrh-2019-200488"
+      },
+      {
+        "key": "e_1_3_3_3_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3551349.3561155"
+      },
+      {
+        "key": "e_1_3_3_3_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025635"
+      },
+      {
+        "key": "e_1_3_3_3_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tts.2022.3160928"
+      },
+      {
+        "key": "e_1_3_3_3_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3508396.3512880"
+      },
+      {
+        "key": "e_1_3_3_3_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1524839919899924"
+      },
+      {
+        "key": "e_1_3_3_3_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3322276.3323695"
+      },
+      {
+        "key": "e_1_3_3_3_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10447311003781334"
+      },
+      {
+        "key": "e_1_3_3_3_32_1",
+        "unstructured": "Flora Garamvolgyi. 2022. Why US Women are Deleting their Period Tracking Apps. https://www.theguardian.com/world/2022/jun/28/why-us-woman-are-deleting-their-period-tracking-apps"
+      },
+      {
+        "key": "e_1_3_3_3_33_1",
+        "unstructured": "Gdpr.eu. [n. d.]. General Data Protection Regulation (GDPR). https://gdpr.eu/tag/gdpr/"
+      },
+      {
+        "key": "e_1_3_3_3_34_1",
+        "volume-title": "Women’s Use of Online Health and Social Media Resources to Make Sense of Their Polycystic Ovary Syndrome (PCOS) Diagnosis: A Qualitative Study. BMC Women’s Health",
+        "author": "Gomula Julia",
+        "year": "2024",
+        "unstructured": "Julia Gomula, Mark Warner, and Ann Blandford. 2024. Women’s Use of Online Health and Social Media Resources to Make Sense of Their Polycystic Ovary Syndrome (PCOS) Diagnosis: A Qualitative Study. BMC Women’s Health (2024), 1–13."
+      },
+      {
+        "key": "e_1_3_3_3_35_1",
+        "unstructured": "Google. [n. d.]. Provide information for Google Play’s Data safety section. https://support.google.com/googleplay/android-developer/answer/10787469?hl=en-GB#zippy=%2Cdata-types%2Cpurposes%2Cdata-collection%2Cdata-sharing"
+      },
+      {
+        "key": "e_1_3_3_3_36_1",
+        "unstructured": "Gov.uk. [n. d.]. Data Protection: The Data Protection Act. https://www.gov.uk/data-protection"
+      },
+      {
+        "key": "e_1_3_3_3_37_1",
+        "volume-title": "7th Annual Privacy Forum (APF ’19) (June 13–14",
+        "author": "Gutmann Andreas",
+        "year": "2019",
+        "unstructured": "Andreas Gutmann and Mark Warner. 2019. Fight to be Forgotten: Exploring the Eﬃcacy of Data Erasure in Popular Operating Systems. In 7th Annual Privacy Forum (APF ’19) (June 13–14, 2019, Rome, Italy). Springer, New York, NY, USA, 45–58."
+      },
+      {
+        "key": "e_1_3_3_3_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3313831.3376511"
+      },
+      {
+        "key": "e_1_3_3_3_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/3361476.3361505"
+      },
+      {
+        "key": "e_1_3_3_3_40_1",
+        "unstructured": "Flo Health. [n. d.]. Anonymous Mode FAQ. https://flo.health/privacy-portal/anonymous-mode-faq"
+      },
+      {
+        "key": "e_1_3_3_3_41_1",
+        "unstructured": "Kashmir Hill. 2023. Deleting Your Period Tracker Won’t Protect You. https://www.nytimes.com/2022/06/30/technology/period-tracker-privacy-abortion.html"
+      },
+      {
+        "key": "e_1_3_3_3_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/mic.2022.3225568"
+      },
+      {
+        "key": "e_1_3_3_3_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1297144.1297200"
+      },
+      {
+        "key": "e_1_3_3_3_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3498366.3505756"
+      },
+      {
+        "key": "e_1_3_3_3_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2021.3130086"
+      },
+      {
+        "key": "e_1_3_3_3_46_1",
+        "unstructured": "Information Commissioner’s Office (ICO). 2023. ICO to Review Period and Fertility Tracking Apps as Poll Shows more than Half of Women are Concerned over Data Security. https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2023/09/ico-to-review-period-and-fertility-tracking-apps/"
+      },
+      {
+        "key": "e_1_3_3_3_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3488307"
+      },
+      {
+        "key": "e_1_3_3_3_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/142750.142873"
+      },
+      {
+        "key": "e_1_3_3_3_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1572532.1572538"
+      },
+      {
+        "key": "e_1_3_3_3_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.48550/arxiv.2112.11117"
+      },
+      {
+        "key": "e_1_3_3_3_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.48550/arxiv.2109.13722"
+      },
+      {
+        "key": "e_1_3_3_3_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-92925-5_20"
+      },
+      {
+        "key": "e_1_3_3_3_53_1",
+        "unstructured": "Bloomberg Law. [n. d.]. California Consumer Privacy Laws. https://pro.bloomberglaw.com/brief/california-consumer-privacy-laws-ccpa-cpra/"
+      },
+      {
+        "key": "e_1_3_3_3_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ijerph20021012"
+      },
+      {
+        "key": "e_1_3_3_3_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12889-019-7549-8"
+      },
+      {
+        "key": "e_1_3_3_3_56_1",
+        "first-page": "3",
+        "article-title": "Intimate Surveillance",
+        "volume": "51",
+        "author": "Levy Karen",
+        "year": "2015",
+        "unstructured": "Karen Levy. 2015. Intimate Surveillance. Idaho Law Review 51, 3 (Sep. 2015). https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2834354",
+        "journal-title": "Idaho Law Review"
+      },
+      {
+        "key": "e_1_3_3_3_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3432919"
+      },
+      {
+        "key": "e_1_3_3_3_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3502012"
+      },
+      {
+        "key": "e_1_3_3_3_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3501824"
+      },
+      {
+        "key": "e_1_3_3_3_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clsr.2014.07.008"
+      },
+      {
+        "key": "e_1_3_3_3_61_1",
+        "volume-title": "McDonald and Lorrie Faith Cranor",
+        "author": "M.",
+        "year": "2009",
+        "unstructured": "Aleecia M. McDonald and Lorrie Faith Cranor. 2009. The Cost of Reading Privacy Policies. https://api.semanticscholar.org/CorpusID:197633124"
+      },
+      {
+        "key": "e_1_3_3_3_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3589960"
+      },
+      {
+        "key": "e_1_3_3_3_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.o1622"
+      },
+      {
+        "key": "e_1_3_3_3_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445132"
+      },
+      {
+        "key": "e_1_3_3_3_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.56553/popets-2023-0111"
+      },
+      {
+        "key": "e_1_3_3_3_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3502136"
+      },
+      {
+        "key": "e_1_3_3_3_67_1",
+        "unstructured": "Miro. [n. d.]. Miro. https://miro.com/"
+      },
+      {
+        "key": "e_1_3_3_3_68_1",
+        "volume-title": "Intimate Data: Exploring Perceptions of Privacy and Privacy-Seeking Behaviors Through the Story Completion Method. In Human-Computer Interaction – INTERACT 2023 (August 28 –",
+        "author": "Moniz P.",
+        "year": "2023",
+        "unstructured": "Diana P. Moniz, Maryam Mehrnezhad, and Teresa Almeida. 2023. Intimate Data: Exploring Perceptions of Privacy and Privacy-Seeking Behaviors Through the Story Completion Method. In Human-Computer Interaction – INTERACT 2023 (August 28 – September 1, 2023, York, UK). Springer Nature, Cham, Switzerland, 533–543."
+      },
+      {
+        "key": "e_1_3_3_3_69_1",
+        "unstructured": "Mozilla. 2022. Talkspace Privacy and Security. https://foundation.mozilla.org/en/privacynotincluded/talkspace/"
+      },
+      {
+        "key": "e_1_3_3_3_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/97243.97281"
+      },
+      {
+        "key": "e_1_3_3_3_71_1",
+        "article-title": "Privacy as Contextual Integrity",
+        "volume": "79",
+        "author": "Nissenbaum Helen",
+        "year": "2004",
+        "unstructured": "Helen Nissenbaum. 2004. Privacy as Contextual Integrity. Washington Law Review 79, 1 (2004).",
+        "journal-title": "Washington Law Review"
+      },
+      {
+        "key": "e_1_3_3_3_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2020.2999934"
+      },
+      {
+        "key": "e_1_3_3_3_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1369118X.2018.1486870"
+      },
+      {
+        "key": "e_1_3_3_3_74_1",
+        "unstructured": "State of California Department of Justice. [n. d.]. California Consumer Privacy Act (CCPA). https://oag.ca.gov/privacy/ccpa"
+      },
+      {
+        "key": "e_1_3_3_3_75_1",
+        "volume-title": "On The Ridiculousness of Notice and Consent: Contradictions in App Privacy Policies. In The Workshop on Technology and Consumer Protection (ConPro ’19)",
+        "author": "Okoyomon Ehimare",
+        "year": "2019",
+        "unstructured": "Ehimare Okoyomon, Nikita Samarin, Primal Wijesekera, Amit Elazari Bar On, Narseo Vallina-Rodriguez, Irwin Reyes, Álvaro Feal, and Serge Egelman. 2019. On The Ridiculousness of Notice and Consent: Contradictions in App Privacy Policies. In The Workshop on Technology and Consumer Protection (ConPro ’19), in conjunction with the 39th IEEE Symposium on Security and Privacy. (May 23, 2019, San Francisco, CA, USA). https://api.semanticscholar.org/CorpusID:150370978"
+      },
+      {
+        "key": "e_1_3_3_3_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijlp.2019.04.002"
+      },
+      {
+        "key": "e_1_3_3_3_77_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1369118X.2021.1877771"
+      },
+      {
+        "key": "e_1_3_3_3_78_1",
+        "volume-title": "Proceedings of the Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017)",
+        "author": "Ramokapane Kopo Marvin",
+        "year": "2017",
+        "unstructured": "Kopo Marvin Ramokapane, Awais Rashid, and Jose Miguel Such. 2017. “I feel stupid I can’t delete...”: A Study of Users’ Cloud Deletion Practices and Coping Strategies. In Proceedings of the Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017) (July 12–14, 2017, Santa Clara, CA, USA). USENIX Association, USA, 241–256. https://www.usenix.org/conference/soups2017/technical-sessions/presentation/ramokapane"
+      },
+      {
+        "key": "e_1_3_3_3_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2139/ssrn.2418297"
+      },
+      {
+        "key": "e_1_3_3_3_81_1",
+        "first-page": "636",
+        "article-title": "This is No Ovary-Action: Femtech Apps Need Stronger Regulations to Protect Data and Advance Public Health Goals",
+        "volume": "23",
+        "author": "Scatterday Allysan",
+        "year": "2022",
+        "unstructured": "Allysan Scatterday. 2022. This is No Ovary-Action: Femtech Apps Need Stronger Regulations to Protect Data and Advance Public Health Goals. North Carolina Journal of Law & Technology 23, 3 (2022), 636. https://scholarship.law.unc.edu/ncjolt/vol23/iss3/6",
+        "journal-title": "North Carolina Journal of Law & Technology"
+      },
+      {
+        "key": "e_1_3_3_3_82_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3555142"
+      },
+      {
+        "key": "e_1_3_3_3_83_1",
+        "volume-title": "You Give Apps Sensitive Personal Information. Then They Tell Facebook.The Wall Street Journal (Feb",
+        "author": "Schechner Sam",
+        "year": "2019",
+        "unstructured": "Sam Schechner and Mark Secada. 2019. You Give Apps Sensitive Personal Information. Then They Tell Facebook.The Wall Street Journal (Feb. 2019). https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-then-they-tell-facebook-11550851636"
+      },
+      {
+        "key": "e_1_3_3_3_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327590ijhc0903_2"
+      },
+      {
+        "key": "e_1_3_3_3_85_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/popets-2020-0083"
+      },
+      {
+        "key": "e_1_3_3_3_86_1",
+        "volume-title": "Participatory Threat Modelling with Migrant Domestic Workers. In 31st USENIX Security Symposium (USENIX Security 22)",
+        "author": "Slupska Julia",
+        "year": "2022",
+        "unstructured": "Julia Slupska, Selina Cho, Marissa Begonia, Ruba Abu-Salma, Nayanatara Prakash, and Mallika Balakrishnan. 2022. \"They Look at Vulnerability and Use That to Abuse You’’: Participatory Threat Modelling with Migrant Domestic Workers. In 31st USENIX Security Symposium (USENIX Security 22) (August 10–12, 2022, Boston, MA, USA). USENIX Association, USA, 323–340. https://www.usenix.org/conference/usenixsecurity22/presentation/slupska-vulnerability"
+      },
+      {
+        "key": "e_1_3_3_3_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3573128.3609342"
+      },
+      {
+        "key": "e_1_3_3_3_88_1",
+        "unstructured": "Stardust. [n. d.]. Privacy Policy. https://stardust.app/privacy-policy.html"
+      },
+      {
+        "key": "e_1_3_3_3_89_1",
+        "volume-title": "d.]. Software developer gender distribution worldwide as of",
+        "year": "2022",
+        "unstructured": "Statista. [n. d.]. Software developer gender distribution worldwide as of 2022. https://www.statista.com/statistics/1126823/worldwide-developer-gender/"
+      },
+      {
+        "key": "e_1_3_3_3_90_1",
+        "volume-title": "Global Market Share Held by Mobile Operating Systems from 1st Quarter 2009 to 2nd Quarter",
+        "year": "2023",
+        "unstructured": "Statista. 2023. Global Market Share Held by Mobile Operating Systems from 1st Quarter 2009 to 2nd Quarter 2023. https://www.statista.com/statistics/272698/global-market-share-held-by-mobile-operating-systems-since-2009/"
+      },
+      {
+        "key": "e_1_3_3_3_91_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Borce Stojkovski Ruba Abu-Salma Karen Triquet and Gabriele Lenzini. 2022. “Unless One Does the Research It May Seem as Just a Useless Battery-consuming App”–Field Notes on COVID-19 Contact Tracing Applications. Digital Threats: Research and Practice (DTRAP) 3 3 (Sep. 2022) 1–17.",
+        "DOI": "10.1145/3480466"
+      },
+      {
+        "key": "e_1_3_3_3_92_1",
+        "unstructured": "Anne Stopper and Jen Caltrider. [n. d.]. See No Evil: Loopholes in Google’s Data Safety Labels Keep Companies in the Clear and Consumers in the Dark. https://foundation.mozilla.org/en/campaigns/googles-data-safety-labels/"
+      },
+      {
+        "key": "e_1_3_3_3_93_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3544548.3581060"
+      },
+      {
+        "key": "e_1_3_3_3_94_1",
+        "unstructured": "Tobi Thomas. 2023. Outrage at Jail Sentence for Woman Who Took Abortion Pills Later than UK Limit. https://www.theguardian.com/world/2023/jun/12/woman-in-uk-jailed-for-28-months-over-taking-abortion-pills-after-legal-time-limit"
+      },
+      {
+        "key": "e_1_3_3_3_95_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3517662"
+      },
+      {
+        "key": "e_1_3_3_3_96_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3494960"
+      },
+      {
+        "key": "e_1_3_3_3_97_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3517688"
+      },
+      {
+        "key": "e_1_3_3_3_98_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/mts.2016.2554419"
+      },
+      {
+        "key": "e_1_3_3_3_99_1",
+        "first-page": "7",
+        "article-title": "The Control by and Rights of the Data Subject Under the GDPR",
+        "volume": "22",
+        "author": "Wolters Pieter",
+        "year": "2018",
+        "unstructured": "Pieter Wolters. 2018. The Control by and Rights of the Data Subject Under the GDPR. Journal of Internet Law 22, 1 (2018), 7–18.",
+        "journal-title": "Journal of Internet Law"
+      },
+      {
+        "key": "e_1_3_3_3_100_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3579515"
+      },
+      {
+        "key": "e_1_3_3_3_101_1",
+        "unstructured": "Your Privacy Policy Must Include a D̎o Not TrackDNT) Clause. 2022.. https://www.privacypolicies.com/blog/privacy-policy-dnt-do-not-track/Last Accessed 12/06/2023."
+      },
+      {
+        "key": "e_1_3_3_3_102_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.56553/popets-2022-0106"
+      }
+    ],
+    "event": {
+      "name": "CHI '24: CHI Conference on Human Factors in Computing Systems",
+      "location": "Honolulu HI USA",
+      "acronym": "CHI '24",
+      "sponsor": [
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction",
+        "SIGACCESS ACM Special Interest Group on Accessible Computing"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the CHI Conference on Human Factors in Computing Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3613904.3642521",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642521",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T23:44:09Z",
+      "timestamp": 1750290249000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3613904.3642521"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "references-count": 101,
+    "alternative-id": [
+      "10.1145/3613904.3642521",
+      "10.1145/3613904"
+    ],
+    "URL": "https://doi.org/10.1145/3613904.3642521",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2024-05-11",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

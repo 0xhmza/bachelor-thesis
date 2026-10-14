@@ -1,0 +1,780 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T05:23:06Z",
+      "timestamp": 1791436986994,
+      "version": "4.3.3"
+    },
+    "reference-count": 78,
+    "publisher": "Informa UK Limited",
+    "issue": "8",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "International Journal of Human–Computer Interaction"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          30
+        ]
+      ]
+    },
+    "DOI": "10.1080/10447311003781409",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2010-07-27T08:46:25Z",
+      "timestamp": 1280220385000
+    },
+    "page": "741-785",
+    "source": "Crossref",
+    "is-referenced-by-count": 252,
+    "title": [
+      "State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions"
+    ],
+    "prefix": "10.1080",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Thomas",
+        "family": "Mahatody",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Univ Lille Nord de France"
+          },
+          {
+            "name": "UVHC, LAMIH",
+            "place": [
+              "France"
+            ]
+          },
+          {
+            "name": "CNRS",
+            "place": [
+              "France"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mouldi",
+        "family": "Sagar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lille Nord de France"
+          },
+          {
+            "name": "UVHC, LAMIH",
+            "place": [
+              "France"
+            ]
+          },
+          {
+            "name": "CNRS",
+            "place": [
+              "France"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christophe",
+        "family": "Kolski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ Lille Nord de France"
+          },
+          {
+            "name": "UVHC, LAMIH",
+            "place": [
+              "France"
+            ]
+          },
+          {
+            "name": "CNRS",
+            "place": [
+              "France"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-73279-2_36"
+      },
+      {
+        "key": "e_1_3_2_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1028014.1028052"
+      },
+      {
+        "key": "e_1_3_2_4_1",
+        "volume-title": "Psychologie ergonomique: tendances actuelles [Ergonomic Psycology: Current Texdexies]",
+        "author": "Bastien J. M. C.",
+        "year": "2004",
+        "unstructured": "Bastien , J. M. C. 2004 . “ L'inspection ergonomique des logiciels interactifs: Intérêts et limites. [Ergonomic inspection of interactive software: interests and limits] ” . In Psychologie ergonomique: tendances actuelles [Ergonomic Psycology: Current Texdexies] , Edited by: Hoc , J. M. and Darses , F. Paris : PUF ."
+      },
+      {
+        "key": "e_1_3_2_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10447319509526114"
+      },
+      {
+        "key": "e_1_3_2_6_1",
+        "first-page": "463",
+        "article-title": "Cognitive walkthrough for the Web",
+        "author": "Blackmon M.",
+        "year": "2002",
+        "unstructured": "Blackmon , M. , Polson , P. , Kitajima , M. and Lewis , C. 2002 . Cognitive walkthrough for the Web . Proceeding of CHI , : 463 – 470 .",
+        "journal-title": "Proceeding of CHI"
+      },
+      {
+        "key": "e_1_3_2_7_1",
+        "volume-title": "Prediction of medical device usability problems and use errors—An improved analytical methodical approach",
+        "author": "Bligard L. O.",
+        "year": "2007",
+        "unstructured": "Bligard , L. O. 2007 . Prediction of medical device usability problems and use errors—An improved analytical methodical approach , Göteborg : Chalmers University of Technology ."
+      },
+      {
+        "key": "e_1_3_2_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-76805-0_38"
+      },
+      {
+        "key": "e_1_3_2_9_1",
+        "volume-title": "The psychology of human–computer interaction",
+        "author": "Card S. K.",
+        "year": "1983",
+        "unstructured": "Card , S. K. , Moran , T. P. and Newell , A. 1983 . The psychology of human–computer interaction , Hillsdale, NJ : Erlbaum ."
+      },
+      {
+        "key": "e_1_3_2_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7551/mitpress/2697.001.0001"
+      },
+      {
+        "key": "e_1_3_2_11_1",
+        "first-page": "1118",
+        "volume-title": "The human–computer interaction handbook",
+        "author": "Cockton G.",
+        "year": "2003",
+        "unstructured": "Cockton , G. , Lavery , D. and Woolrych , A. 2003 . “ Inspection-based evaluations ” . In The human–computer interaction handbook , Edited by: Jacko , J. A. and Sears , A. 1118 – 1138 . Mahwah, NJ : Erlbaum ."
+      },
+      {
+        "key": "e_1_3_2_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/154193129203601616"
+      },
+      {
+        "key": "e_1_3_2_13_1",
+        "first-page": "89",
+        "volume-title": "People and computers VII: proceedings of HCI92, York, September 1992",
+        "author": "Desurvise H. W.",
+        "year": "1992",
+        "unstructured": "Desurvise , H. W. , Kondziela , J. M. and Atwood , M. E. 1992 . “ What is gained and lost when using evaluation methods other than empirical testing ” . In People and computers VII: proceedings of HCI92, York, September 1992 , Edited by: Monk , A. , Diaper , D. and Harrison , M. D. 89 – 102 . Cambridge University Press ."
+      },
+      {
+        "key": "e_1_3_2_14_1",
+        "volume-title": "Human–computer interaction",
+        "author": "Dix H.",
+        "year": "1993",
+        "unstructured": "Dix , H. , Finlay , J. , Abowd , G. and Beale , R. 1993 . Human–computer interaction , Englewood Cliffs, NJ : Prentice Hall ."
+      },
+      {
+        "key": "e_1_3_2_15_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1145/1254960.1255019",
+        "volume-title": "Proceedings of the 6th ACM SIGCHI conference on Creativity & Cognition",
+        "author": "Eden J.",
+        "year": "2007",
+        "unstructured": "Eden , J. June 2007 . “ Distributed cognitive walkthrough (DCW): A walkthrough-style usability evaluation method based on theories of distributed cognition ” . In Proceedings of the 6th ACM SIGCHI conference on Creativity & Cognition June , 283"
+      },
+      {
+        "key": "e_1_3_2_16_1",
+        "volume-title": "The Distributed Cognitive Walkthrough: The impact of differences in cognitive theory on usability evaluation",
+        "author": "Eden J",
+        "year": "2008",
+        "unstructured": "Eden , J . 2008 . The Distributed Cognitive Walkthrough: The impact of differences in cognitive theory on usability evaluation , Philadelphia, , Pennsylvania : Unpublished doctoral dissertation, Drexel University ."
+      },
+      {
+        "key": "e_1_3_2_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijhcs.2008.06.002"
+      },
+      {
+        "key": "e_1_3_2_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-73287-7_38"
+      },
+      {
+        "key": "e_1_3_2_19_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1007/1-4020-4205-1_20",
+        "volume-title": "HCI related papers of interacción 2004",
+        "author": "Granollers T.",
+        "year": "2006",
+        "unstructured": "Granollers , T. and Lorés , J. 2006 . “ Incorporation of users in the evaluation of usability by Cognitive Walkthrough ” . In HCI related papers of interacción 2004 Edited by: Navarro-Prieto , R. and Vidal , J. L. 243 – 255 ."
+      },
+      {
+        "key": "e_1_3_2_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327051hci1303_2"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_3_2_21_1",
+        "first-page": "265",
+        "article-title": "Evaluation des interfaces homme-machine lors du développement des systèmes interactifs [Human–machine interface evaluation during interactive system development]",
+        "volume": "15",
+        "author": "Grislin M.",
+        "year": "1996",
+        "unstructured": "Grislin , M. and Kolski , C. 1996 . Evaluation des interfaces homme-machine lors du développement des systèmes interactifs [Human–machine interface evaluation during interactive system development] . Technique et Science Informatiques , 15 ( 3 ) : 265 – 296 .",
+        "journal-title": "Technique et Science Informatiques"
+      },
+      {
+        "key": "e_1_3_2_22_1",
+        "first-page": "98",
+        "volume-title": "Proceedings of 9th IEEE WETICE 2000",
+        "author": "Gutwin C.",
+        "year": "2000",
+        "unstructured": "Gutwin , C. and Greenberg , S. 2000 . “ The mechanics of collaboration: developping low cost usability evaluation methods for shared workspaces ” . In Proceedings of 9th IEEE WETICE 2000 98 – 103 ."
+      },
+      {
+        "key": "e_1_3_2_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/353485.353487"
+      },
+      {
+        "key": "e_1_3_2_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.intcom.2003.12.005"
+      },
+      {
+        "key": "e_1_3_2_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327051hci0104_2"
+      },
+      {
+        "key": "e_1_3_2_26_1",
+        "volume-title": "Medical electrical equipment—Part 1–6: General requirements for safety—Collateral standard: Usability. International Electrotechnical Commission (EIC)",
+        "author": "IEC",
+        "year": "2004",
+        "unstructured": "IEC . 2004 . Medical electrical equipment—Part 1–6: General requirements for safety—Collateral standard: Usability. International Electrotechnical Commission (EIC)"
+      },
+      {
+        "key": "e_1_3_2_27_1",
+        "volume-title": "Two case studies in using Cognitive Walkthrough for interface evaluation (Tech. Rep. CMU–CS-00-132/CMU-HCI-00-100)",
+        "author": "Jacobsen N. E.",
+        "year": "2000",
+        "unstructured": "Jacobsen , N. E. and John , B. E. 2000 . Two case studies in using Cognitive Walkthrough for interface evaluation (Tech. Rep. CMU–CS-00-132/CMU-HCI-00-100) , Pittsburgh, PA : Carnegie Mellon University ."
+      },
+      {
+        "key": "e_1_3_2_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2008.10.002"
+      },
+      {
+        "key": "e_1_3_2_29_1",
+        "first-page": "119",
+        "volume-title": "Proceeding of ACM Computer–Human Interaction",
+        "author": "Jeffries M.",
+        "year": "1991",
+        "unstructured": "Jeffries , M. , Miller , J. R. , Wharton , C. and Uyeda , K. M. 1991 . “ User interface evaluation in real world: A comparison of four techniques ” . In Proceeding of ACM Computer–Human Interaction 119 – 124 ."
+      },
+      {
+        "key": "e_1_3_2_30_1",
+        "first-page": "429",
+        "volume-title": "Proceedings of CHI, 1995",
+        "author": "John B. E.",
+        "unstructured": "John , B. E. and Packer , H. Learning and using the Cognitive Walkthrough Method: A case study approach . Proceedings of CHI, 1995 . May 7–11 1995 , Denver, Colorado. pp. 429 – 436 . New York : ACM ."
+      },
+      {
+        "key": "e_1_3_2_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/014492997119789"
+      },
+      {
+        "key": "e_1_3_2_32_1",
+        "first-page": "45",
+        "volume-title": "Context and consciousness: Activity theory and human–computer interaction",
+        "author": "Kaptelinin V.",
+        "year": "1996",
+        "unstructured": "Kaptelinin , V. 1996 . “ Computer-mediated activity : Functional organs in social and developmental contexts ” . In Context and consciousness: Activity theory and human–computer interaction , Edited by: Nardi , B. 45 – 68 . Cambridge, MA : MIT Press ."
+      },
+      {
+        "key": "e_1_3_2_33_1",
+        "first-page": "397",
+        "volume-title": "Proceedings of ACM CHI",
+        "author": "Karat C. M.",
+        "year": "1992",
+        "unstructured": "Karat , C. M. , Cambell , R. and Fiegel , T. 1992 . “ Comparison of empirical testing and walkthrough methods in user interface evaluation ” . In Proceedings of ACM CHI 397 – 404 ."
+      },
+      {
+        "key": "e_1_3_2_34_1",
+        "volume-title": "Proceedings of HCI International, Las Vegas, July, 2005",
+        "author": "Kato T.",
+        "year": "2005",
+        "unstructured": "Kato , T. and Hori , M. 2005 . “ Articulating the cognitive walkthrough based on an extended model of HCI ” . In Proceedings of HCI International, Las Vegas, July, 2005"
+      },
+      {
+        "key": "e_1_3_2_35_1",
+        "first-page": "287",
+        "article-title": "Beyond perceivability: Critical requirements for universal design of information",
+        "author": "Kato T.",
+        "year": "2006",
+        "unstructured": "Kato , T. and Hori , M. 2006 . Beyond perceivability: Critical requirements for universal design of information . 8th Annual ACM Conference on Assistive Technologies , : 287 – 288 .",
+        "journal-title": "8th Annual ACM Conference on Assistive Technologies"
+      },
+      {
+        "key": "e_1_3_2_36_1",
+        "first-page": "365",
+        "article-title": "An approach to the formal analysis of user complexity",
+        "volume": "22",
+        "author": "Kieras D.",
+        "year": "1985",
+        "unstructured": "Kieras , D. 1985 . An approach to the formal analysis of user complexity . International Journal of Human–Computer Studies , 22 : 365 – 394 .",
+        "journal-title": "International Journal of Human–Computer Studies"
+      },
+      {
+        "key": "e_1_3_2_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.95.2.163"
+      },
+      {
+        "key": "e_1_3_2_38_1",
+        "first-page": "1044",
+        "volume-title": "International encyclopedia of ergonomics and human factors",
+        "author": "Kitajima M.",
+        "year": "2006",
+        "unstructured": "Kitajima , M. 2006 . “ Cognitive Walkthrough for the Web ” . In International encyclopedia of ergonomics and human factors , 2nd , 1044 – 1046 . CRC Press . chap. 216",
+        "edition": "2"
+      },
+      {
+        "key": "e_1_3_2_39_1",
+        "first-page": "357",
+        "volume-title": "People and Computer XIV",
+        "author": "Kitajjma M.",
+        "year": "2000",
+        "unstructured": "Kitajjma , M. , Blackmon , M. H. and Polson , P. 2000 . “ A comprehension-based model of Web navigation and its application to Web usability analysis ” . In People and Computer XIV 357 – 373 ."
+      },
+      {
+        "key": "e_1_3_2_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327051hci1204_3"
+      },
+      {
+        "key": "e_1_3_2_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0033-295X.104.2.211"
+      },
+      {
+        "key": "e_1_3_2_42_1",
+        "first-page": "306",
+        "volume-title": "Proceeding of ACM Computer–Human Interaction",
+        "author": "Lewis C.",
+        "year": "1986",
+        "unstructured": "Lewis , C. 1986 . “ A model of mental model construction ” . In Proceeding of ACM Computer–Human Interaction 306 – 313 ."
+      },
+      {
+        "key": "e_1_3_2_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15516709cog1202_3"
+      },
+      {
+        "key": "e_1_3_2_44_1",
+        "first-page": "235",
+        "volume-title": "Proceeding of ACM Computer-Human Interaction",
+        "author": "Lewis C.",
+        "year": "1990",
+        "unstructured": "Lewis , C. , Polson , P. , Wharton , C. and Rieman , J. 1990 . “ Testing a walkthrough methodology for theory-based design of walk-up and-use interface ” . In Proceeding of ACM Computer-Human Interaction 235 – 242 ."
+      },
+      {
+        "key": "e_1_3_2_45_1",
+        "first-page": "4",
+        "volume-title": "Usability inspection methods",
+        "author": "Mack R. L.",
+        "year": "1994",
+        "unstructured": "Mack , R. L. and Nielsen , J. 1994 . “ Executive summary ” . In Usability inspection methods , Edited by: Nielsen , J. and Mack , R. L. 4 – 23 . Amsterdam : Elsevier ."
+      },
+      {
+        "key": "e_1_3_2_46_1",
+        "first-page": "52",
+        "volume-title": "Engineering Psychology and Cognitive Ergonomics, HCII 2009, LNAI 5639",
+        "author": "Mahatody T.",
+        "year": "2009",
+        "unstructured": "Mahatody , T. , Kolski , C. and Sagar , M. 2009 . “ CWE: Assistance environment for evaluation operating a set of variations of cognitive walkthrough ergonomic inspection method ” . In Engineering Psychology and Cognitive Ergonomics, HCII 2009, LNAI 5639 , Edited by: Harris , D. 52 – 61 . Springer-Verlag ."
+      },
+      {
+        "key": "e_1_3_2_47_1",
+        "volume-title": "Proceedings EAM'07 European Annual Conference on Human-Decision Making and Manual Control June, 2007",
+        "author": "Mahatody T.",
+        "year": "2007",
+        "unstructured": "Mahatody , T. , Sagar , M. and Kolski , C. 2007a . “ Cognitive Walkthrough for HCI evaluation: Basic concepts, evolutions and variants, research issues ” . In Proceedings EAM'07 European Annual Conference on Human-Decision Making and Manual Control June, 2007 , Lyngby : Technical University of Danemark ."
+      },
+      {
+        "key": "e_1_3_2_48_1",
+        "first-page": "143",
+        "volume-title": "Proceedings of IHM 2007, 19ème Conférence de l'Association Francophone d'Interaction Homme–Machine",
+        "author": "Mahatody T.",
+        "year": "2007",
+        "unstructured": "Mahatody , T. , Sagar , M. and Kolski , C. 2007b . “ Cognitive Walkthrough pour l'évaluation des IHM: Synthèse des extensions et évolutions conceptuelles, méthodologiques et technologiques [Cognitive walkthrough for HCI evaluation: Synthesis of extensions and conceptual, methodological and technological extensions] ” . In Proceedings of IHM 2007, 19ème Conférence de l'Association Francophone d'Interaction Homme–Machine , 143 – 150 . Paris : International Conference Proceedings Series, ACM Press ."
+      },
+      {
+        "key": "e_1_3_2_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0010-0277(98)00031-6"
+      },
+      {
+        "key": "e_1_3_2_50_1",
+        "volume-title": "Context and consciousness: Activity theory and human–computer interaction",
+        "author": "Nardi B. A.",
+        "year": "1996",
+        "unstructured": "Nardi , B. A. 1996 . Context and consciousness: Activity theory and human–computer interaction , Cambridge, MA : MIT Press ."
+      },
+      {
+        "key": "e_1_3_2_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-89350-9_16"
+      },
+      {
+        "key": "e_1_3_2_52_1",
+        "first-page": "373",
+        "volume-title": "Proceedings of ACM CHI",
+        "author": "Nielsen J.",
+        "year": "1992",
+        "unstructured": "Nielsen , J. 1992 . “ Finding usability problems through heuristic evaluation ” . In Proceedings of ACM CHI 373 – 380 ."
+      },
+      {
+        "key": "e_1_3_2_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/259963.260531"
+      },
+      {
+        "key": "e_1_3_2_54_1",
+        "first-page": "249",
+        "volume-title": "Proceedings of CHI Conference on Human Factors in Computing System",
+        "author": "Nielsen J.",
+        "year": "1990",
+        "unstructured": "Nielsen , J. and Molich , R. 1990 . “ Heuristic evaluation of user interfaces ” . In Proceedings of CHI Conference on Human Factors in Computing System 249 – 256 ."
+      },
+      {
+        "key": "e_1_3_2_55_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1201/b15703-3",
+        "volume-title": "User centered systems design: New perspectives in human–computer interaction",
+        "author": "Norman D. A.",
+        "year": "1986",
+        "unstructured": "Norman , D. A. 1986 . “ Cognitive engineering ” . In User centered systems design: New perspectives in human–computer interaction , Edited by: Norman , D. A. and Draper , S. W. 31 – 61 . Hillsdale, NJ : Erlbaum ."
+      },
+      {
+        "key": "e_1_3_2_56_1",
+        "volume-title": "The psychology of everyday things",
+        "author": "Norman D.A.",
+        "year": "1988",
+        "unstructured": "Norman , D.A. 1988 . The psychology of everyday things , New York : Basic Books ."
+      },
+      {
+        "key": "e_1_3_2_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/301153.301168"
+      },
+      {
+        "key": "e_1_3_2_58_1",
+        "first-page": "455",
+        "volume-title": "Proceedings of ACM CHI",
+        "author": "Pinelle D.",
+        "year": "2002",
+        "unstructured": "Pinelle , D. and Gutwin , C. 2002 . “ Groupware walkthrough: Adding context to groupware usability ” . In Proceedings of ACM CHI 455 – 462 ."
+      },
+      {
+        "key": "e_1_3_2_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/07370024.1990.9667154"
+      },
+      {
+        "key": "e_1_3_2_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0020-7373(92)90039-N"
+      },
+      {
+        "key": "e_1_3_2_61_1",
+        "first-page": "427",
+        "volume-title": "Proceeding of ACM Computer–Human Interaction",
+        "author": "Rieman J.",
+        "year": "1991",
+        "unstructured": "Rieman , J. , Davies , S. , Hair , D. C. , Esemplare , M. , Polson , P. and Lewis , C. 1991 . “ An automated walkthrough: Description and evaluation ” . In Proceeding of ACM Computer–Human Interaction 427 – 428 ."
+      },
+      {
+        "key": "e_1_3_2_62_1",
+        "volume-title": "Experiencies with usability evaluation methods",
+        "author": "Riihiaho S.",
+        "year": "2000",
+        "unstructured": "Riihiaho , S. 2000 . Experiencies with usability evaluation methods , Helsinki, , Finland : Licentiate's thesis, Helsinki University of Technology, Laboratory of Information Processing Science ."
+      },
+      {
+        "key": "e_1_3_2_63_1",
+        "first-page": "305",
+        "volume-title": "Proceeding of Designing Interactive Systems: Processes, Practices, Methods, & Techniques",
+        "author": "Rizzo A.",
+        "year": "1997",
+        "unstructured": "Rizzo , A. , Mandrigiani , E. and Andreadis , A. 1997 . “ The AVANTI Project: Prototyping and evaluation with a Cognitive Walkthrough based on the Norman's Model of Action ” . In Proceeding of Designing Interactive Systems: Processes, Practices, Methods, & Techniques 305 – 309 ."
+      },
+      {
+        "key": "e_1_3_2_64_1",
+        "first-page": "395",
+        "volume-title": "Proceeding of ACM Computer–Human Interaction",
+        "author": "Rowley D. E.",
+        "year": "1992",
+        "unstructured": "Rowley , D. E. and Rhoades , D. G. 1992 . “ The Cognitive Jogthrough : A fast-paced user interface evaluation procedure ” . In Proceeding of ACM Computer–Human Interaction 395 – 398 ."
+      },
+      {
+        "key": "e_1_3_2_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-70872-8_7"
+      },
+      {
+        "key": "e_1_3_2_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJWET.2008.019536"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_3_2_67_1",
+        "first-page": "304",
+        "article-title": "Analysing interaction problems with cyclic interaction theory: Low-level Interaction Walkthrough",
+        "volume": "2",
+        "author": "Ryu H.",
+        "year": "2004",
+        "unstructured": "Ryu , H. and Monk , A. 2004 . Analysing interaction problems with cyclic interaction theory: Low-level Interaction Walkthrough . Psychology Journal , 2 ( 3 ) : 304 – 330 .",
+        "journal-title": "Psychology Journal"
+      },
+      {
+        "key": "e_1_3_2_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327590ijhc0903_2"
+      },
+      {
+        "key": "e_1_3_2_69_1",
+        "first-page": "1091",
+        "volume-title": "The human–computer interaction handbook",
+        "author": "Sears A.",
+        "year": "2003",
+        "unstructured": "Sears , A. 2003 . “ Testing and evaluation ” . In The human–computer interaction handbook , Edited by: Jacko , J. A. and Sears , A. 1091 – 1092 . Mahwah, NJ : Erlbaum ."
+      },
+      {
+        "key": "e_1_3_2_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/S15327590IJHC1103_1"
+      },
+      {
+        "key": "e_1_3_2_71_1",
+        "first-page": "353",
+        "volume-title": "Proceeding of ACM CHI",
+        "author": "Spencer R",
+        "year": "2000",
+        "unstructured": "Spencer , R . 2000 . “ The Streamlined Cognitive Walkthrough method, working around social constraints encountered in a software development company ” . In Proceeding of ACM CHI 353 – 359 ."
+      },
+      {
+        "key": "e_1_3_2_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/imms.1993.1032"
+      },
+      {
+        "key": "e_1_3_2_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0001-6918(95)00065-8"
+      },
+      {
+        "key": "e_1_3_2_74_1",
+        "first-page": "326",
+        "article-title": "Task-based groupware design: Putting theory into practice",
+        "author": "Van der Veer G. C.",
+        "year": "2000",
+        "unstructured": "Van der Veer , G. C. and van Velie , M. 2000 . Task-based groupware design: Putting theory into practice . Proceedings of DIS'2000 , : 326 – 337 .",
+        "journal-title": "Proceedings of DIS'2000"
+      },
+      {
+        "key": "e_1_3_2_75_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "705",
+        "DOI": "10.1016/B978-044481862-1.50095-9",
+        "volume-title": "Handbook of human–computer interaction",
+        "author": "Virzi R. A.",
+        "year": "1997",
+        "unstructured": "Virzi , R. A. 1997 . “ Usability inspection methods ” . In Handbook of human–computer interaction , Edited by: Helander , M. , Landauer , T. K. and Prablhu , P. 705 – 715 . Amsterdam : Elsevier ."
+      },
+      {
+        "key": "e_1_3_2_76_1",
+        "first-page": "408",
+        "article-title": "Design and evaluation of intelligent menu interface through Cognitive Walkthrough procedure and automated logging for management information system",
+        "volume": "5236",
+        "author": "Wang X.",
+        "year": "2008",
+        "unstructured": "Wang , X. 2008 . Design and evaluation of intelligent menu interface through Cognitive Walkthrough procedure and automated logging for management information system . Computer Supported Cooperative Work in Design IV, Lecture Notes in Computer Science , 5236 : 408 – 418 .",
+        "journal-title": "Computer Supported Cooperative Work in Design IV, Lecture Notes in Computer Science"
+      },
+      {
+        "key": "e_1_3_2_77_1",
+        "first-page": "381",
+        "volume-title": "Proceedings of Computer–Human Interaction",
+        "author": "Wharton C.",
+        "year": "1992",
+        "unstructured": "Wharton , C. , Bradford , J. , Jeffrey , R. and Franzke , M. 1992 . “ Applying Cognitive Walkthrough to more complex user interfaces: Experiences, issues, and recommendations ” . In Proceedings of Computer–Human Interaction 381 – 388 ."
+      },
+      {
+        "key": "e_1_3_2_78_1",
+        "first-page": "105",
+        "volume-title": "Usability inspection methods",
+        "author": "Wharton C.",
+        "year": "1994",
+        "unstructured": "Wharton , C. , Rieman , J. , Lewis , C. and Polson , P. 1994 . “ The Cognitive Walkthrough method: A practitioner's guide ” . In Usability inspection methods , Edited by: Nielsen , J. and Mack , R. L. 105 – 140 . New York : Wiley & Sons ."
+      },
+      {
+        "key": "e_1_3_2_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15516709cog1801_3"
+      }
+    ],
+    "container-title": [
+      "International Journal of Human–Computer Interaction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10447311003781409",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          12
+        ]
+      ],
+      "date-time": "2026-02-12T20:24:00Z",
+      "timestamp": 1770927840000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10447311003781409"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          27
+        ]
+      ]
+    },
+    "references-count": 78,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            30
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10447311003781409"
+    ],
+    "URL": "https://doi.org/10.1080/10447311003781409",
+    "relation": {},
+    "ISSN": [
+      "1044-7318",
+      "1532-7590"
+    ],
+    "issn-type": [
+      {
+        "value": "1044-7318",
+        "type": "print"
+      },
+      {
+        "value": "1532-7590",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          27
+        ]
+      ]
+    }
+  }
+}

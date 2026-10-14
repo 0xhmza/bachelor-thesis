@@ -27,7 +27,6 @@ indent.log.*
 
 # Keep the compiled PDFs of the actual documents
 !03_Thesis/proposal/proposal.pdf
-!99_Archive/_junk/02_Proposal/*.pdf
 !03_Thesis/thesis.pdf
 !06_Presentation/slides.pdf
 
@@ -62,3 +61,12 @@ venv/
 !05_Data/raw/.gitkeep
 !05_Data/raw/README.md
 /tmp
+
+# ---------- Graphify local state ----------
+.codex/hooks.json
+graphify-out/cache/
+graphify-out/.graphify_*
+graphify-out/.chunk-*
+graphify-out/.build_*
+graphify-out/memory/
+graphify-out/reflections/

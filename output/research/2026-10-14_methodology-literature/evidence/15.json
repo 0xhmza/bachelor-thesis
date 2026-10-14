@@ -1,0 +1,560 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T12:21:36Z",
+      "timestamp": 1790511696974,
+      "version": "4.1.0"
+    },
+    "reference-count": 53,
+    "publisher": "JMIR Publications Inc.",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR Mhealth Uhealth"
+    ],
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>The number of mobile health apps (MHAs), which are developed to promote healthy behaviors, prevent disease onset, manage and cure diseases, or assist with rehabilitation measures, has exploded. App store star ratings and descriptions usually provide insufficient or even false information about app quality, although they are popular among end users. A rigorous systematic approach to establish and evaluate the quality of MHAs is urgently needed. The Mobile App Rating Scale (MARS) is an assessment tool that facilitates the objective and systematic evaluation of the quality of MHAs. However, a German MARS is currently not available.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Objective</jats:title>\n                    <jats:p>The aim of this study was to translate and validate a German version of the MARS (MARS-G).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>The original 19-item MARS was forward and backward translated twice, and the MARS-G was created. App description items were extended, and 104 MHAs were rated twice by eight independent bilingual researchers, using the MARS-G and MARS. The internal consistency, validity, and reliability of both scales were assessed. Mokken scale analysis was used to investigate the scalability of the overall scores.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The retranslated scale showed excellent alignment with the original MARS. Additionally, the properties of the MARS-G were comparable to those of the original MARS. The internal consistency was good for all subscales (ie, omega ranged from 0.72 to 0.91). The correlation coefficients (r) between the dimensions of the MARS-G and MARS ranged from 0.93 to 0.98. The scalability of the MARS (H=0.50) and MARS-G (H=0.48) were good.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The MARS-G is a reliable and valid tool for experts and stakeholders to assess the quality of health apps in German-speaking populations. The overall score is a reliable quality indicator. However, further studies are needed to assess the factorial structure of the MARS and MARS-G.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2196/14479",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2019-09-25T00:09:31Z",
+      "timestamp": 1569370171000
+    },
+    "page": "e14479",
+    "source": "Crossref",
+    "is-referenced-by-count": 158,
+    "title": [
+      "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study"
+    ],
+    "prefix": "10.2196",
+    "volume": "8",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6100-8354",
+        "authenticated-orcid": false,
+        "given": "Eva-Maria",
+        "family": "Messner",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4091-5048",
+        "authenticated-orcid": false,
+        "given": "Yannik",
+        "family": "Terhorst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6863-3213",
+        "authenticated-orcid": false,
+        "given": "Antonia",
+        "family": "Barke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2040-661X",
+        "authenticated-orcid": false,
+        "given": "Harald",
+        "family": "Baumeister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3399-3347",
+        "authenticated-orcid": false,
+        "given": "Stoyan",
+        "family": "Stoyanov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4550-8460",
+        "authenticated-orcid": false,
+        "given": "Leanne",
+        "family": "Hides",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9072-8828",
+        "authenticated-orcid": false,
+        "given": "David",
+        "family": "Kavanagh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1522-785X",
+        "authenticated-orcid": false,
+        "given": "Rüdiger",
+        "family": "Pryss",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4222-9837",
+        "authenticated-orcid": false,
+        "given": "Lasse",
+        "family": "Sander",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6113-2133",
+        "authenticated-orcid": false,
+        "given": "Thomas",
+        "family": "Probst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "unstructured": "UM LondoneMarketerStatista - The Statistics Portal2014082019-12-05Smartphone user penetration as percentage of total population in Western Europe from 2011 to 2018https://www.statista.com/statistics/203722/smartphone- penetration-per-capita-in-western-europe-since-2000/"
+      },
+      {
+        "key": "ref2",
+        "unstructured": "ForwardAdGroupStatista - Das Statistik-Portal20152019-12-05Wie viele Apps haben Sie auf Ihrem Smartphone installiert?https://de.statista.com/statistik/daten/studie/162374/umfrage/durchschnittliche-anzahl-von-apps-auf-dem- handy-in-deutschland/"
+      },
+      {
+        "key": "ref3",
+        "first-page": "1",
+        "volume": "2",
+        "author": "Thranberend, T",
+        "year": "2016",
+        "journal-title": "Spotlight Gesundh"
+      },
+      {
+        "key": "ref4",
+        "unstructured": "Deutschland.deDeutschland.de20182019-04-24We speak Germanhttps://www.deutschland.de/en/topic/culture/the-german-language-surprising-facts-and-figures"
+      },
+      {
+        "key": "ref5",
+        "unstructured": "Contributors WikipediaWikipedia, The Free Encyclopedia20192019-04-24List of languages by number of native speakershttps://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14664208.2010.550544"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1348/135910709X466063"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1159/000481692"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1027/1016-9040/a000346"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5210/ojphi.v5i3.4814"
+      },
+      {
+        "key": "ref11",
+        "first-page": "176",
+        "author": "Albrecht, UV",
+        "year": "2016",
+        "journal-title": "Chancen und Risiken von Gesundheits-Apps (CHARISMHA)"
+      },
+      {
+        "key": "ref12",
+        "unstructured": "American Psychiatric AssociationAmerican Psychiatric Association20172019-12-05App evaluation modelhttps://www.psychiatry.org/psychiatrists/practice/mental-health-apps/app-evaluation-model"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13142-014-0293-9"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamia/ocy050"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.7270"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.3422"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12966-016-0359-9"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.6956"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/14991"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/J.BERH.2017.04.002"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.4328"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.5882"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/10718"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1753-6405.12688"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-016-0323-2"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2019.06.005"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41060-018-0111-4"
+      },
+      {
+        "key": "ref28",
+        "author": "Portney, LG",
+        "year": "2009",
+        "journal-title": "Foundations of clinical research: applications to practice"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2016-015226"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12888-017-1193-6"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bjop.12046"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11336-008-9102-z"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/met0000144"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0013164415594658"
+      },
+      {
+        "key": "ref35",
+        "author": "George, D",
+        "year": "2003",
+        "journal-title": "SPSS For Windows Step By Step: A Simple Guide And Reference, 11.0 Update"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11336-007-9034-z"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1515/9783110813203",
+        "author": "Mokken, RJ",
+        "year": "1971",
+        "journal-title": "A theory and procedure of scale analysis: With applications in political research"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v048.i05"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bmsp.12078"
+      },
+      {
+        "issue": "28",
+        "key": "ref40",
+        "first-page": "115",
+        "volume": "9",
+        "author": "Molenaar, I",
+        "year": "1988",
+        "journal-title": "Kwant Methoden"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/bf02293957"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/bf02288892"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0146621610392911"
+      },
+      {
+        "key": "ref44",
+        "year": "2017",
+        "journal-title": "R Found Stat Comput Vienna, Austria"
+      },
+      {
+        "key": "ref45",
+        "unstructured": "RevelleWpsych: Procedures for Psychological, Psychometric, and Personality Research [Computer Software]20172019-11-22https://personality-project.org/r/psych"
+      },
+      {
+        "key": "ref46",
+        "unstructured": "IBM CorporationIBM SPSS Advanced Statistics 24 [Software]20162020-01-16http://www-01.ibm.com/support/docview.wss?uid=swg27047033#ja%5Cnftp://public.dhe.ibm.com/software/analytics/spss/documentation/statistics/24.0/ja/client/Manuals/IBM_SPSS_Advanced_"
+      },
+      {
+        "key": "ref47",
+        "first-page": "65",
+        "volume": "6",
+        "author": "Holm, S",
+        "year": "1979",
+        "journal-title": "Scand J Stat"
+      },
+      {
+        "key": "ref48",
+        "unstructured": "MHAD Core TeamMobile Health App Database20192019-09-11http://www.mhad.science/"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.4026"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/tbm/ibx037"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.1194"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0100674"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.5849"
+      }
+    ],
+    "container-title": [
+      "JMIR mHealth and uHealth"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://mhealth.jmir.org/2020/3/e14479",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T18:05:12Z",
+      "timestamp": 1782842712000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://mhealth.jmir.org/2020/3/e14479/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          27
+        ]
+      ]
+    },
+    "references-count": 53,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2196/14479",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.2196/preprints.14479",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2291-5222"
+    ],
+    "issn-type": [
+      {
+        "value": "2291-5222",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          3,
+          27
+        ]
+      ]
+    }
+  }
+}

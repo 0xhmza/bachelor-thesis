@@ -15,6 +15,14 @@
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\rowrule}{\arrayrulecolor{black!25}\cmidrule[0.3pt]{2-4}\arrayrulecolor{black}}
+% Preserve the proposal's figure descriptions in PDF text without ACM macros.
+\newcommand{\Description}[1]{\par\smallskip{\footnotesize\textit{Figure description:} #1}\par}
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{multirow}

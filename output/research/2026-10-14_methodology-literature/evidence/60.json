@@ -1,0 +1,400 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          29
+        ]
+      ],
+      "date-time": "2026-05-29T22:06:46Z",
+      "timestamp": 1780092406310,
+      "version": "3.54.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 16,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              4,
+              27
+            ]
+          ],
+          "date-time": "2022-04-27T00:00:00Z",
+          "timestamp": 1651017600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100006602",
+        "name": "Air Force Research Laboratory",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "FA8750-15-2-0281"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "FA8750-15-2-0281"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006602",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CNS-1801472"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-1801472"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1145/3491101.3519739",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2022-04-29T16:49:48Z",
+      "timestamp": 1651250988000
+    },
+    "page": "1-7",
+    "source": "Crossref",
+    "is-referenced-by-count": 19,
+    "title": [
+      "Understanding iOS Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Yucheng",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Deyuan",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tianshi",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Human-Computer Interaction Institute, Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuvraj",
+        "family": "Agarwal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lorrie Faith",
+        "family": "Cranor",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason I.",
+        "family": "Hong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Human-Computer Interaction Institute, Carnegie Mellon University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          28
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2911988"
+      },
+      {
+        "key": "e_1_3_2_2_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SP40000.2020.00043"
+      },
+      {
+        "key": "e_1_3_2_2_3_1",
+        "volume-title": "Workshop on Technology and Consumer Protection (ConPro 2019), in conjunction with the 39th IEEE Symposium on Security and Privacy",
+        "author": "Han Catherine",
+        "year": "2019",
+        "unstructured": "Catherine Han , Irwin Reyes , Amit Elazari Bar On , Joel Reardon , Álvaro Feal , Serge Egelman , Narseo Vallina-Rodriguez , 2019 . Do you get what you pay for? Comparing the privacy behaviors of free vs. paid apps . In Workshop on Technology and Consumer Protection (ConPro 2019), in conjunction with the 39th IEEE Symposium on Security and Privacy , 23 May 2019, San Francisco, CA, USA. Catherine Han, Irwin Reyes, Amit Elazari Bar On, Joel Reardon, Álvaro Feal, Serge Egelman, Narseo Vallina-Rodriguez, 2019. Do you get what you pay for? Comparing the privacy behaviors of free vs. paid apps. In Workshop on Technology and Consumer Protection (ConPro 2019), in conjunction with the 39th IEEE Symposium on Security and Privacy, 23 May 2019, San Francisco, CA, USA."
+      },
+      {
+        "key": "e_1_3_2_2_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/985692.985752"
+      },
+      {
+        "key": "e_1_3_2_2_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1572532.1572538"
+      },
+      {
+        "key": "e_1_3_2_2_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1753326.1753561"
+      },
+      {
+        "key": "e_1_3_2_2_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2470654.2466466"
+      },
+      {
+        "key": "e_1_3_2_2_8_1",
+        "unstructured": "Konrad Kollnig Anastasia Shuba Reuben Binns Max Van Kleek and Nigel Shadbolt. 2021. Are iPhones Really Better for Privacy? Comparative Study of iOS and Android Apps. arXiv preprint arXiv:2109.13722(2021).  Konrad Kollnig Anastasia Shuba Reuben Binns Max Van Kleek and Nigel Shadbolt. 2021. Are iPhones Really Better for Privacy? Comparative Study of iOS and Android Apps. arXiv preprint arXiv:2109.13722(2021)."
+      },
+      {
+        "key": "e_1_3_2_2_9_1",
+        "first-page": "1",
+        "article-title": "Coconut: An IDE plugin for developing privacy-friendly apps",
+        "volume": "2",
+        "author": "Li Tianshi",
+        "year": "2018",
+        "unstructured": "Tianshi Li , Yuvraj Agarwal , and Jason  I Hong . 2018 . Coconut: An IDE plugin for developing privacy-friendly apps . Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 2 , 4 (2018), 1 – 35 . Tianshi Li, Yuvraj Agarwal, and Jason I Hong. 2018. Coconut: An IDE plugin for developing privacy-friendly apps. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 2, 4 (2018), 1–35.",
+        "journal-title": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies"
+      },
+      {
+        "key": "e_1_3_2_2_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3432919"
+      },
+      {
+        "key": "e_1_3_2_2_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3478097"
+      },
+      {
+        "key": "e_1_3_2_2_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3491102.3502012"
+      },
+      {
+        "key": "e_1_3_2_2_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/VLHCC.2018.8506574"
+      },
+      {
+        "key": "e_1_3_2_2_14_1",
+        "first-page": "543",
+        "article-title": "The cost of reading privacy policies",
+        "volume": "4",
+        "author": "McDonald M",
+        "year": "2008",
+        "unstructured": "Aleecia  M McDonald and Lorrie Faith Cranor . 2008 . The cost of reading privacy policies . I/S: A Journal of Law and Policy for the Information Society 4 (2008), 543 . Aleecia M McDonald and Lorrie Faith Cranor. 2008. The cost of reading privacy policies. I/S: A Journal of Law and Policy for the Information Society 4 (2008), 543.",
+        "journal-title": "I/S: A Journal of Law and Policy for the Information Society"
+      },
+      {
+        "key": "e_1_3_2_2_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/P16-1126"
+      },
+      {
+        "key": "e_1_3_2_2_16_1",
+        "volume-title": "2016 AAAI Fall Symposium Series.",
+        "author": "Zimmeck Sebastian",
+        "year": "2016",
+        "unstructured": "Sebastian Zimmeck , Ziqi Wang , Lieyong Zou , Roger Iyengar , Bin Liu , Florian Schaub , Shomir Wilson , Norman Sadeh , Steven Bellovin , and Joel Reidenberg . 2016 . Automated analysis of privacy requirements for mobile apps . In 2016 AAAI Fall Symposium Series. Sebastian Zimmeck, Ziqi Wang, Lieyong Zou, Roger Iyengar, Bin Liu, Florian Schaub, Shomir Wilson, Norman Sadeh, Steven Bellovin, and Joel Reidenberg. 2016. Automated analysis of privacy requirements for mobile apps. In 2016 AAAI Fall Symposium Series."
+      }
+    ],
+    "event": {
+      "name": "CHI '22: CHI Conference on Human Factors in Computing Systems",
+      "location": "New Orleans LA USA",
+      "acronym": "CHI '22",
+      "sponsor": [
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction"
+      ]
+    },
+    "container-title": [
+      "CHI Conference on Human Factors in Computing Systems Extended Abstracts"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3491101.3519739",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3491101.3519739",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3491101.3519739",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2025-06-17T19:31:00Z",
+      "timestamp": 1750188660000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3491101.3519739"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          27
+        ]
+      ]
+    },
+    "references-count": 16,
+    "alternative-id": [
+      "10.1145/3491101.3519739",
+      "10.1145/3491101"
+    ],
+    "URL": "https://doi.org/10.1145/3491101.3519739",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          27
+        ]
+      ]
+    }
+  }
+}

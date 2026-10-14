@@ -1,0 +1,648 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2026-09-01T22:46:42Z",
+      "timestamp": 1788302802201,
+      "version": "build-2803163510"
+    },
+    "reference-count": 35,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2019-09-01T00:00:00Z",
+          "timestamp": 1567296000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2019-09-01T00:00:00Z",
+          "timestamp": 1567296000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              3,
+              5
+            ]
+          ],
+          "date-time": "2019-03-05T00:00:00Z",
+          "timestamp": 1551744000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100008002",
+        "name": "Vancouver Coastal Health Research Institute",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007711",
+        "name": "British Columbia Knowledge Development Fund",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100007711",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Internet Interventions"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.invent.2019.100243",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2019-03-06T02:34:49Z",
+      "timestamp": 1551839689000
+    },
+    "page": "100243",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 105,
+    "special_numbering": "C",
+    "title": [
+      "Availability, readability, and content of privacy policies and terms of agreements of mental health apps"
+    ],
+    "prefix": "10.1016",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Julie M.",
+        "family": "Robillard",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tanya L.",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arlo B.",
+        "family": "Sporn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jen-Ai",
+        "family": "Lai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9635-3665",
+        "authenticated-orcid": false,
+        "given": "Cody",
+        "family": "Lo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Monica",
+        "family": "Ta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roland",
+        "family": "Nadler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "7597",
+        "key": "10.1016/j.invent.2019.100243_bb0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "20",
+        "DOI": "10.1038/532020a",
+        "article-title": "Mental health: there's an app for that",
+        "volume": "532",
+        "author": "Anthes",
+        "year": "2016",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0010",
+        "unstructured": "Apple, n.d. App Store review guidelines [online]. URL https://developer.apple.com/app-store/review/guidelines/ (date accessed 7.25.17)."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.invent.2019.100243_bb0015",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2196/mental.4984",
+        "article-title": "Mental health smartphone apps: review and evidence-based recommendations for future developments",
+        "volume": "3",
+        "author": "Bakker",
+        "year": "2016",
+        "journal-title": "JMIR Mental Health"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1109/MSP.2014.70",
+        "article-title": "Improving app privacy: nudging app developers to protect user privacy",
+        "volume": "12",
+        "author": "Balebako",
+        "year": "2014",
+        "journal-title": "IEEE Secur. Priv."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "1244",
+        "DOI": "10.1093/schbul/sbu033",
+        "article-title": "Feasibility, acceptability, and preliminary efficacy of a smartphone intervention for schizophrenia",
+        "volume": "40",
+        "author": "Ben-Zeev",
+        "year": "2014",
+        "journal-title": "Schizophr. Bull."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0030",
+        "first-page": "229",
+        "article-title": "Mobile medical and health apps: state of the art, concerns, regulatory control and certification",
+        "volume": "5",
+        "author": "Boulos",
+        "year": "2014",
+        "journal-title": "Online J. Public Health Inform."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "e55",
+        "DOI": "10.2196/jmir.1838",
+        "article-title": "Harnessing context sensing to develop a mobile intervention for depression",
+        "volume": "13",
+        "author": "Burns",
+        "year": "2011",
+        "journal-title": "J. Med. Internet Res."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "e8",
+        "DOI": "10.2196/mhealth.3672",
+        "article-title": "Exploring the far side of mobile health: information security and privacy of mobile health apps on iOS and Android",
+        "volume": "3",
+        "author": "Dehling",
+        "year": "2015",
+        "journal-title": "JMIR MHealth UHealth"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "e247",
+        "DOI": "10.2196/jmir.2791",
+        "article-title": "Smartphones for smarter delivery of mental health programs: a systematic review",
+        "volume": "15",
+        "author": "Donker",
+        "year": "2013",
+        "journal-title": "J. Med. Internet Res."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0050",
+        "unstructured": "Google, n.d. Upload an app [online]. URL https://support.google.com/googleplay/android-developer/answer/113469#privacy (date accessed 7.25.17)."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0055",
+        "series-title": "Pervasive Advertising, Human-Computer Interaction Series",
+        "doi-asserted-by": "crossref",
+        "first-page": "119",
+        "DOI": "10.1007/978-0-85729-352-7_6",
+        "article-title": "Targeted advertising on the handset: privacy and security challenges",
+        "author": "Haddadi",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0060",
+        "first-page": "1804",
+        "article-title": "Obtaining personal data and asking for erasure: do app vendors and website owners honour your privacy rights?",
+        "author": "Herrmann",
+        "year": "2016",
+        "journal-title": "ArXiv16020."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "214",
+        "DOI": "10.1186/s12916-015-0444-y",
+        "article-title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment",
+        "volume": "13",
+        "author": "Huckvale",
+        "year": "2015",
+        "journal-title": "BMC Med."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1037/pro0000069",
+        "article-title": "Ethical guidelines for mobile app development within health and mental health fields",
+        "volume": "47",
+        "author": "Jones",
+        "year": "2016",
+        "journal-title": "Prof. Psychol. Res. Pract."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1002/erv.2327",
+        "article-title": "Review of smartphone applications for the treatment of eating disorders",
+        "volume": "23",
+        "author": "Juarascio",
+        "year": "2015",
+        "journal-title": "Eur. Eat. Disord. Rev."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0080",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2196/mhealth.4924",
+        "article-title": "Health app use among US mobile phone owners: a national survey",
+        "volume": "3",
+        "author": "Krebs",
+        "year": "2015",
+        "journal-title": "JMIR MHealth UHealth"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "437",
+        "DOI": "10.1186/1745-6215-14-437",
+        "article-title": "Guided and unguided CBT for social anxiety disorder and/or panic disorder via the internet and a smartphone application: study protocol for a randomised controlled trial",
+        "volume": "14",
+        "author": "Lindner",
+        "year": "2013",
+        "journal-title": "Trials"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "505",
+        "DOI": "10.1037/a0024485",
+        "article-title": "mHealth for mental health: integrating smartphone technology in behavioral healthcare",
+        "volume": "42",
+        "author": "Luxton",
+        "year": "2011",
+        "journal-title": "Prof. Psychol. Res. Pract., Telehealth and Technology Innovations in Professional Psychology"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "62",
+        "DOI": "10.1186/1745-6215-13-62",
+        "article-title": "Behavioral activation-based guided self-help treatment administered through a smartphone application: study protocol for a randomized controlled trial",
+        "volume": "13",
+        "author": "Ly",
+        "year": "2012",
+        "journal-title": "Trials"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0100",
+        "first-page": "1",
+        "article-title": "Privacy and security in mobile health apps: a review and recommendations",
+        "volume": "39",
+        "author": "Martínez-Pérez",
+        "year": "2014",
+        "journal-title": "J. Med. Syst."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "294",
+        "DOI": "10.1080/15504263.2012.723312",
+        "article-title": "How patients recovering from alcoholism use a smartphone intervention",
+        "volume": "8",
+        "author": "McTavish",
+        "year": "2012",
+        "journal-title": "J. Dual Diagn."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0110",
+        "unstructured": "National Health Service, n.d. Digital Apps Library [online]. URL https://apps.beta.nhs.uk/ (date accessed 8.11.17)."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0115",
+        "unstructured": "Olmstead K, Atkinson M, 2015. Chapter 1: the majority of smartphone owners download apps [online]. Pew Res. Cent. Internet Sci. Tech. URL http://www.pewinternet.org/2015/11/10/the-majority-of-smartphone-owners-download-apps/ (date accessed 3.23.17)."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0120",
+        "author": "Pew Research Center"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "214",
+        "DOI": "10.1136/medethics-2012-101056",
+        "article-title": "Informed consent and routinisation",
+        "volume": "39",
+        "author": "Ploug",
+        "year": "2013",
+        "journal-title": "J. Med. Ethics"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0130",
+        "doi-asserted-by": "crossref",
+        "first-page": "282",
+        "DOI": "10.1037/a0038113",
+        "article-title": "A review of the risks and benefits associated with mobile phone applications for psychological interventions",
+        "volume": "55",
+        "author": "Prentice",
+        "year": "2014",
+        "journal-title": "Can. Psychol."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "427",
+        "DOI": "10.1002/cpp.1855",
+        "article-title": "mHealth: a mechanism to deliver more accessible, more effective mental health care",
+        "volume": "21",
+        "author": "Price",
+        "year": "2014",
+        "journal-title": "Clin. Psychol. Psychother."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0140",
+        "doi-asserted-by": "crossref",
+        "first-page": "e64",
+        "DOI": "10.2196/jmir.1475",
+        "article-title": "Community attitudes to the appropriation of mobile phones for monitoring and managing depression, anxiety, and stress",
+        "volume": "12",
+        "author": "Proudfoot",
+        "year": "2010",
+        "journal-title": "J. Med. Internet Res."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0145",
+        "unstructured": "Readability Calculator [online], n.d. Online Util. URL https://www.online-utility.org/english/readability_test_and_improve.jsp (date accessed 9.8.17)."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0150",
+        "first-page": "1",
+        "article-title": "A design space for effective privacy notices",
+        "author": "Schaub",
+        "year": "2015",
+        "journal-title": "Eleventh Symposium On Usable Privacy and Security"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0155",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1136/amiajnl-2013-002605",
+        "article-title": "Availability and quality of mobile health app privacy policies",
+        "volume": "22",
+        "author": "Sunyaev",
+        "year": "2015",
+        "journal-title": "J. Am. Med. Inform. Assoc."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0160",
+        "unstructured": "The World Health Organization. mHealth: New Horizons for Health Through Mobile Technologies, Global Observatory for eHealth Series. 2011."
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0165",
+        "series-title": "Examining Oversight of the Privacy & Security of Health Data Collected by Entities Not Regulated by HIPAA",
+        "author": "U.S. Department of Health and Human Services",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "e28",
+        "DOI": "10.2196/mhealth.4026",
+        "article-title": "mHealthApps: a repository and database of mobile health apps",
+        "volume": "3",
+        "author": "Xu",
+        "year": "2015",
+        "journal-title": "JMIR MHealth UHealth"
+      },
+      {
+        "key": "10.1016/j.invent.2019.100243_bb0175",
+        "series-title": "RAND Corporation",
+        "article-title": "Can Smartphones And Privacy Coexist? Assessing Technologies and Regulations Protecting Personal Data on Android and iOS Devices (No. RR-1393-DARPA). Massachusetts Institute of Technology",
+        "author": "Yerukhimovich",
+        "year": "2016"
+      }
+    ],
+    "container-title": [
+      "Internet Interventions"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2214782918300162?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2214782918300162?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2025-11-01T16:14:21Z",
+      "timestamp": 1762013661000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2214782918300162"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "references-count": 35,
+    "alternative-id": [
+      "S2214782918300162"
+    ],
+    "URL": "https://doi.org/10.1016/j.invent.2019.100243",
+    "relation": {},
+    "ISSN": [
+      "2214-7829"
+    ],
+    "issn-type": [
+      {
+        "value": "2214-7829",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Internet Interventions",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.invent.2019.100243",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2019 The Authors. Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100243"
+  }
+}

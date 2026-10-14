@@ -11,7 +11,7 @@ Do not register before the proposal is approved and the sampling is settled.
 The supervisor-facing proposal (`03_Thesis/proposal/`) no longer carries a
 schedule — it holds only what he asked for. The plan lives here, below the
 tracker. The long argued version, with where each phase can slip, is archived in
-`99_Archive/_junk/02_Proposal/sections/05_timeline.tex`.
+`99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/05_timeline.tex`).
 
 | # | Milestone | Target date | Status |
 |---|---|---|---|
@@ -22,7 +22,7 @@ tracker. The long argued version, with where each phase can slip, is archived in
 | 2 | Google Doc set up and shared with advisor | | ☐ |
 | 3 | Scope question resolved (document analysis vs. survey — see meeting notes §8) | 2026-09-18 | ◐ decided in the proposal (Scope; `Open-Points.md` item 1); awaiting advisor's confirmation |
 | 3b | Own literature search: privacy harms · tracker S&P · methods (advisor's explicit ask) | 2026-09-18 | ☑ first pass — 17 new entries in `_shared/references.bib`, all verified against the publisher record |
-| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, four pages of content plus references and a one-page appendix (the approved length). The old 4-page and 25-page versions are archived in `99_Archive/_junk/02_Proposal/`. Read once more, then send |
+| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, four pages of content plus references and a one-page appendix (the approved length). The old 4-page and 25-page versions are archived in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/`). Read once more, then send |
 | 5 | Proposal approved | | ☐ |
 | 6 | Thesis registered with the Prüfungsamt | | ☐ |
 | 7 | Keyword list + inclusion/exclusion criteria fixed | 2026-09-18 | ☑ drafted in `04_Study/App-Sample/sampling_protocol.md`; confirm thresholds with advisor |

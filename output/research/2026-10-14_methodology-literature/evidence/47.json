@@ -1,0 +1,509 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T22:14:15Z",
+      "timestamp": 1791670455570,
+      "version": "4.3.4"
+    },
+    "reference-count": 39,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 4718,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Human Comm Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2002,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1111/j.1468-2958.2002.tb00826.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2006-10-11T19:23:00Z",
+      "timestamp": 1160594580000
+    },
+    "page": "587-604",
+    "source": "Crossref",
+    "is-referenced-by-count": 2186,
+    "title": [
+      "Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability"
+    ],
+    "prefix": "10.1093",
+    "volume": "28",
+    "author": [
+      {
+        "given": "Matthew",
+        "family": "Lombard",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jennifer",
+        "family": "Snyder-Duch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cheryl Campanella",
+        "family": "Bracken",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "reference": [
+      {
+        "key": "b1_253",
+        "first-page": "138",
+        "volume-title": "Handbook of research methods in social and personality psychology",
+        "author": "Bakeman R.",
+        "year": "2000"
+      },
+      {
+        "key": "b2_254",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.2307/3315487",
+        "volume": "27",
+        "author": "Banerjee M.",
+        "year": "1999",
+        "journal-title": "The Canadian Journal of Statistics"
+      },
+      {
+        "key": "b3_255",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1086/266520",
+        "volume": "18",
+        "author": "Bennett E. M.",
+        "year": "1954",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "key": "b4_256",
+        "volume-title": "Content analysis in communication research",
+        "author": "Berelson B.",
+        "year": "1952"
+      },
+      {
+        "key": "b5_257",
+        "doi-asserted-by": "crossref",
+        "first-page": "527",
+        "DOI": "10.1177/0013164497057003013",
+        "volume": "57",
+        "author": "Berry K. J.",
+        "year": "1997",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "key": "b6_258",
+        "doi-asserted-by": "crossref",
+        "first-page": "687",
+        "DOI": "10.1177/001316448104100307",
+        "volume": "41",
+        "author": "Brennan R. L.",
+        "year": "1981",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "key": "b7_259",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1177/001316446002000104",
+        "volume": "20",
+        "author": "Cohen J.",
+        "year": "1960",
+        "journal-title": "Educational and Psychological Measurement"
+      },
+      {
+        "key": "b8_260",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1037/h0026256",
+        "volume": "70",
+        "author": "Cohen J.",
+        "year": "1968",
+        "journal-title": "Psychological Bulletin"
+      },
+      {
+        "key": "b9_261",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.1086/268657",
+        "volume": "45",
+        "author": "Craig R. T.",
+        "year": "1981",
+        "journal-title": "Public Opinion Quarterly"
+      },
+      {
+        "key": "b10_262",
+        "doi-asserted-by": "crossref",
+        "first-page": "487",
+        "DOI": "10.1192/bjp.143.5.487",
+        "volume": "143",
+        "author": "Dewey M. E.",
+        "year": "1983",
+        "journal-title": "British Journal of Psychiatry"
+      },
+      {
+        "key": "b11_263",
+        "volume-title": "Research methods in the social sciences",
+        "author": "Ellis L.",
+        "year": "1994"
+      },
+      {
+        "key": "b12_264",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0031619"
+      },
+      {
+        "key": "b13_265",
+        "volume-title": "Investigating communication: An introduction to research methods",
+        "author": "Frey L. R.",
+        "year": "2000",
+        "edition": "2"
+      },
+      {
+        "key": "b14_266",
+        "volume-title": "Content analysis for the social sciences and humanities",
+        "author": "Holsti O. R.",
+        "year": "1969"
+      },
+      {
+        "key": "b15_267",
+        "doi-asserted-by": "crossref",
+        "first-page": "185",
+        "DOI": "10.1177/002224379002700206",
+        "volume": "27",
+        "author": "Hughes M. A.",
+        "year": "1990",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "key": "b16_268",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1080/00913367.1993.10673400",
+        "volume": "23",
+        "author": "Kang N.",
+        "year": "1993",
+        "journal-title": "Journal of Advertising"
+      },
+      {
+        "key": "b17_269",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1086/209256",
+        "volume": "18",
+        "author": "Kolbe R. H.",
+        "year": "1991",
+        "journal-title": "Journal of Consumer Research"
+      },
+      {
+        "key": "b18_270",
+        "volume-title": "Content analysis: An introduction to its methodology",
+        "author": "Krippendorff K.",
+        "year": "1980"
+      },
+      {
+        "key": "b19_271",
+        "unstructured": "K. Krippendorff (2001 ). Content #724. Message posted to the Content electronic mailing list, available fromhttp://www.content-analysis.de/contpub.htm."
+      },
+      {
+        "key": "b20_272",
+        "first-page": "969",
+        "volume": "73",
+        "author": "Lacy S.",
+        "year": "1996",
+        "journal-title": "Journalism & Mass Communication Quarterly"
+      },
+      {
+        "key": "b21_273",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0032935"
+      },
+      {
+        "key": "b22_274",
+        "doi-asserted-by": "crossref",
+        "first-page": "68",
+        "DOI": "10.1111/j.1460-2466.1997.tb02693.x",
+        "volume": "47",
+        "author": "Lichter S. R.",
+        "year": "1997",
+        "journal-title": "Journal of Communication"
+      },
+      {
+        "key": "b23_275",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2532051"
+      },
+      {
+        "key": "b24_276",
+        "volume-title": "The content analysis guidebook",
+        "author": "Neuendorf K. A.",
+        "year": "2002"
+      },
+      {
+        "key": "b25_277",
+        "unstructured": "Y. Pasadeos, B. Huhman, T. Standley, and G. Wilson (1995 ). Applications of content analysis in news research: A critical examination . Paper presented at the annual conference of the Association for Education in Journalism and Mass Communication, Washington, D.C."
+      },
+      {
+        "key": "b26_278",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1177/002224378902600201",
+        "volume": "26",
+        "author": "Perreault W. D.",
+        "year": "1989",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "key": "b27_279",
+        "doi-asserted-by": "crossref",
+        "first-page": "182",
+        "DOI": "10.1016/0167-9473(84)90008-2",
+        "volume": "2",
+        "author": "Popping R.",
+        "year": "1984",
+        "journal-title": "Computational Statistics and Data Analysis"
+      },
+      {
+        "key": "b28_280",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1007/978-1-349-19051-5_6",
+        "volume-title": "Sociometric research: Data collection and scaling",
+        "volume": "1",
+        "author": "Popping R.",
+        "year": "1988"
+      },
+      {
+        "key": "b29_281",
+        "doi-asserted-by": "crossref",
+        "first-page": "258",
+        "DOI": "10.1080/00909889909365539",
+        "volume": "27",
+        "author": "Potter W. J.",
+        "year": "1999",
+        "journal-title": "Journal of Applied Communication Research"
+      },
+      {
+        "key": "b30_282",
+        "unstructured": "ProGAMMA. (2002 ). AGREE [Computer software]. Available fromhttp://www.gamma.rug.nl/."
+      },
+      {
+        "key": "b31_283",
+        "doi-asserted-by": "crossref",
+        "first-page": "873",
+        "DOI": "10.1177/107769909707400414",
+        "volume": "74",
+        "author": "Riffe D.",
+        "year": "1997",
+        "journal-title": "Journalism & Mass Communication Quarterly"
+      },
+      {
+        "key": "b32_284",
+        "volume-title": "Analyzing media messages: Using quantitative content analysis in research",
+        "author": "Riffe D.",
+        "year": "1998"
+      },
+      {
+        "key": "b33_285",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1177/002224379403100101",
+        "volume": "31",
+        "author": "Rust R.",
+        "year": "1994",
+        "journal-title": "Journal of Marketing Research"
+      },
+      {
+        "key": "b34_286",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/266577"
+      },
+      {
+        "key": "b35_287",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1007/BF00960754",
+        "volume": "7",
+        "author": "Seun H. K.",
+        "year": "1985",
+        "journal-title": "Journal of Psychopathology and Behavioral Assessment"
+      },
+      {
+        "key": "b36_288",
+        "volume-title": "Mass communication research: Contemporary methods and applications",
+        "author": "Singletary M. W.",
+        "year": "1993"
+      },
+      {
+        "key": "b37_289",
+        "unstructured": "Skymeg Software (2002 ). Program for reliability assessment with multiple coders (PRAM) [Computer software]. Available fromhttp://www.geocities.com/skymegsoftware/pram.html."
+      },
+      {
+        "key": "b38_290",
+        "doi-asserted-by": "crossref",
+        "first-page": "358",
+        "DOI": "10.1037/h0076640",
+        "volume": "22",
+        "author": "Tinsley H. E. A.",
+        "year": "1975",
+        "journal-title": "Journal of Counseling Psychology"
+      },
+      {
+        "key": "b39_291",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1016/B978-012691360-6/50005-7",
+        "volume-title": "Handbook of applied multivariate statistics and mathematical modeling",
+        "author": "Tinsley H. E. A.",
+        "year": "2000"
+      }
+    ],
+    "container-title": [
+      "Human Communication Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1468-2958.2002.tb00826.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2019-01-13T17:44:31Z",
+      "timestamp": 1547401471000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/hcr/article/28/4/587-604/4331304"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2002,
+          10
+        ]
+      ]
+    },
+    "references-count": 39,
+    "aliases": [
+      "10.1093/hcr/28.4.587"
+    ],
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2002,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/j.1468-2958.2002.tb00826.x"
+    ],
+    "URL": "https://doi.org/10.1111/j.1468-2958.2002.tb00826.x",
+    "relation": {},
+    "ISSN": [
+      "0360-3989",
+      "1468-2958"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-3989",
+        "type": "print"
+      },
+      {
+        "value": "1468-2958",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          10
+        ]
+      ]
+    }
+  }
+}

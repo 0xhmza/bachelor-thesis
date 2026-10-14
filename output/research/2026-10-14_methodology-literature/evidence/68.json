@@ -1,0 +1,237 @@
+{
+  "data": {
+    "id": "10.48550/arxiv.2509.08825",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.48550/arxiv.2509.08825",
+      "prefix": "10.48550",
+      "suffix": "arxiv.2509.08825",
+      "identifiers": [
+        {
+          "identifier": "2509.08825",
+          "identifierType": "arXiv"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "arXiv",
+          "alternateIdentifier": "2509.08825"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Baumann, Joachim",
+          "nameType": "Personal",
+          "givenName": "Joachim",
+          "familyName": "Baumann",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Röttger, Paul",
+          "nameType": "Personal",
+          "givenName": "Paul",
+          "familyName": "Röttger",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Urman, Aleksandra",
+          "nameType": "Personal",
+          "givenName": "Aleksandra",
+          "familyName": "Urman",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Wendsjö, Albert",
+          "nameType": "Personal",
+          "givenName": "Albert",
+          "familyName": "Wendsjö",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Plaza-del-Arco, Flor Miriam",
+          "nameType": "Personal",
+          "givenName": "Flor Miriam",
+          "familyName": "Plaza-del-Arco",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Gruber, Johannes B.",
+          "nameType": "Personal",
+          "givenName": "Johannes B.",
+          "familyName": "Gruber",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Hovy, Dirk",
+          "nameType": "Personal",
+          "givenName": "Dirk",
+          "familyName": "Hovy",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation"
+        }
+      ],
+      "publisher": "arXiv",
+      "container": {},
+      "publicationYear": 2025,
+      "subjects": [
+        {
+          "lang": "en",
+          "subject": "Computation and Language (cs.CL)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "lang": "en",
+          "subject": "Artificial Intelligence (cs.AI)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "lang": "en",
+          "subject": "Machine Learning (cs.LG)",
+          "subjectScheme": "arXiv"
+        },
+        {
+          "subject": "FOS: Computer and information sciences",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        },
+        {
+          "subject": "FOS: Computer and information sciences",
+          "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+          "subjectScheme": "Fields of Science and Technology (FOS)"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2025-09-10T17:58:53Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2025-09-11T00:47:34Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2025-10-06T16:58:59Z",
+          "dateType": "Submitted",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2025-10-07T01:46:11Z",
+          "dateType": "Updated",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2025-09",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2025",
+          "dateType": "Issued"
+        }
+      ],
+      "language": null,
+      "types": {
+        "ris": "GEN",
+        "bibtex": "misc",
+        "citeproc": "article",
+        "schemaOrg": "CreativeWork",
+        "resourceType": "Article",
+        "resourceTypeGeneral": "Preprint"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": "2",
+      "rightsList": [
+        {
+          "rights": "arXiv.org perpetual, non-exclusive license",
+          "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "Large language models are rapidly transforming social science research by enabling the automation of labor-intensive tasks like data annotation and text analysis. However, LLM outputs vary significantly depending on the implementation choices made by researchers (e.g., model selection or prompting strategy). Such variation can introduce systematic biases and random errors, which propagate to downstream analyses and cause Type I (false positive), Type II (false negative), Type S (wrong sign), or Type M (exaggerated effect) errors. We call this phenomenon where configuration choices lead to incorrect conclusions LLM hacking.\n We find that intentional LLM hacking is strikingly simple. By replicating 37 data annotation tasks from 21 published social science studies, we show that, with just a handful of prompt paraphrases, virtually anything can be presented as statistically significant.\n Beyond intentional manipulation, our analysis of 13 million labels from 18 different LLMs across 2361 realistic hypotheses shows that there is also a high risk of accidental LLM hacking, even when following standard research practices. We find incorrect conclusions in approximately 31% of hypotheses for state-of-the-art LLMs, and in half the hypotheses for smaller language models. While higher task performance and stronger general model capabilities reduce LLM hacking risk, even highly accurate models remain susceptible. The risk of LLM hacking decreases as effect sizes increase, indicating the need for more rigorous verification of LLM-based findings near significance thresholds. We analyze 21 mitigation techniques and find that human annotations provide crucial protection against false positives. Common regression estimator correction techniques can restore valid inference but trade off Type I vs. Type II errors.\n We publish a list of practical recommendations to prevent LLM hacking.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNTA5LjA4ODI1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjUwOS4wODgyNTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5CYXVtYW5uLCBKb2FjaGltPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Kb2FjaGltPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkJhdW1hbm48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+UsO2dHRnZXIsIFBhdWw8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlBhdWw8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UsO2dHRnZXI8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+VXJtYW4sIEFsZWtzYW5kcmE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFsZWtzYW5kcmE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+VXJtYW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2VuZHNqw7YsIEFsYmVydDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QWxiZXJ0PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPldlbmRzasO2PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlBsYXphLWRlbC1BcmNvLCBGbG9yIE1pcmlhbTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RmxvciBNaXJpYW08L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UGxhemEtZGVsLUFyY288L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+R3J1YmVyLCBKb2hhbm5lcyBCLjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Sm9oYW5uZXMgQi48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+R3J1YmVyPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkhvdnksIERpcms8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkRpcms8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+SG92eTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TGFyZ2UgTGFuZ3VhZ2UgTW9kZWwgSGFja2luZzogUXVhbnRpZnlpbmcgdGhlIEhpZGRlbiBSaXNrcyBvZiBVc2luZyBMTE1zIGZvciBUZXh0IEFubm90YXRpb248L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjU8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5NYWNoaW5lIExlYXJuaW5nIChjcy5MRyk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI1LTA5LTEwVDE3OjU4OjUzWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI1LTA5LTExVDAwOjQ3OjM0WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjUtMTAtMDZUMTY6NTg6NTlaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjUtMTAtMDdUMDE6NDY6MTFaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNS0wOTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4yPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TGFyZ2UgbGFuZ3VhZ2UgbW9kZWxzIGFyZSByYXBpZGx5IHRyYW5zZm9ybWluZyBzb2NpYWwgc2NpZW5jZSByZXNlYXJjaCBieSBlbmFibGluZyB0aGUgYXV0b21hdGlvbiBvZiBsYWJvci1pbnRlbnNpdmUgdGFza3MgbGlrZSBkYXRhIGFubm90YXRpb24gYW5kIHRleHQgYW5hbHlzaXMuIEhvd2V2ZXIsIExMTSBvdXRwdXRzIHZhcnkgc2lnbmlmaWNhbnRseSBkZXBlbmRpbmcgb24gdGhlIGltcGxlbWVudGF0aW9uIGNob2ljZXMgbWFkZSBieSByZXNlYXJjaGVycyAoZS5nLiwgbW9kZWwgc2VsZWN0aW9uIG9yIHByb21wdGluZyBzdHJhdGVneSkuIFN1Y2ggdmFyaWF0aW9uIGNhbiBpbnRyb2R1Y2Ugc3lzdGVtYXRpYyBiaWFzZXMgYW5kIHJhbmRvbSBlcnJvcnMsIHdoaWNoIHByb3BhZ2F0ZSB0byBkb3duc3RyZWFtIGFuYWx5c2VzIGFuZCBjYXVzZSBUeXBlIEkgKGZhbHNlIHBvc2l0aXZlKSwgVHlwZSBJSSAoZmFsc2UgbmVnYXRpdmUpLCBUeXBlIFMgKHdyb25nIHNpZ24pLCBvciBUeXBlIE0gKGV4YWdnZXJhdGVkIGVmZmVjdCkgZXJyb3JzLiBXZSBjYWxsIHRoaXMgcGhlbm9tZW5vbiB3aGVyZSBjb25maWd1cmF0aW9uIGNob2ljZXMgbGVhZCB0byBpbmNvcnJlY3QgY29uY2x1c2lvbnMgTExNIGhhY2tpbmcuCiAgV2UgZmluZCB0aGF0IGludGVudGlvbmFsIExMTSBoYWNraW5nIGlzIHN0cmlraW5nbHkgc2ltcGxlLiBCeSByZXBsaWNhdGluZyAzNyBkYXRhIGFubm90YXRpb24gdGFza3MgZnJvbSAyMSBwdWJsaXNoZWQgc29jaWFsIHNjaWVuY2Ugc3R1ZGllcywgd2Ugc2hvdyB0aGF0LCB3aXRoIGp1c3QgYSBoYW5kZnVsIG9mIHByb21wdCBwYXJhcGhyYXNlcywgdmlydHVhbGx5IGFueXRoaW5nIGNhbiBiZSBwcmVzZW50ZWQgYXMgc3RhdGlzdGljYWxseSBzaWduaWZpY2FudC4KICBCZXlvbmQgaW50ZW50aW9uYWwgbWFuaXB1bGF0aW9uLCBvdXIgYW5hbHlzaXMgb2YgMTMgbWlsbGlvbiBsYWJlbHMgZnJvbSAxOCBkaWZmZXJlbnQgTExNcyBhY3Jvc3MgMjM2MSByZWFsaXN0aWMgaHlwb3RoZXNlcyBzaG93cyB0aGF0IHRoZXJlIGlzIGFsc28gYSBoaWdoIHJpc2sgb2YgYWNjaWRlbnRhbCBMTE0gaGFja2luZywgZXZlbiB3aGVuIGZvbGxvd2luZyBzdGFuZGFyZCByZXNlYXJjaCBwcmFjdGljZXMuIFdlIGZpbmQgaW5jb3JyZWN0IGNvbmNsdXNpb25zIGluIGFwcHJveGltYXRlbHkgMzElIG9mIGh5cG90aGVzZXMgZm9yIHN0YXRlLW9mLXRoZS1hcnQgTExNcywgYW5kIGluIGhhbGYgdGhlIGh5cG90aGVzZXMgZm9yIHNtYWxsZXIgbGFuZ3VhZ2UgbW9kZWxzLiBXaGlsZSBoaWdoZXIgdGFzayBwZXJmb3JtYW5jZSBhbmQgc3Ryb25nZXIgZ2VuZXJhbCBtb2RlbCBjYXBhYmlsaXRpZXMgcmVkdWNlIExMTSBoYWNraW5nIHJpc2ssIGV2ZW4gaGlnaGx5IGFjY3VyYXRlIG1vZGVscyByZW1haW4gc3VzY2VwdGlibGUuIFRoZSByaXNrIG9mIExMTSBoYWNraW5nIGRlY3JlYXNlcyBhcyBlZmZlY3Qgc2l6ZXMgaW5jcmVhc2UsIGluZGljYXRpbmcgdGhlIG5lZWQgZm9yIG1vcmUgcmlnb3JvdXMgdmVyaWZpY2F0aW9uIG9mIExMTS1iYXNlZCBmaW5kaW5ncyBuZWFyIHNpZ25pZmljYW5jZSB0aHJlc2hvbGRzLiBXZSBhbmFseXplIDIxIG1pdGlnYXRpb24gdGVjaG5pcXVlcyBhbmQgZmluZCB0aGF0IGh1bWFuIGFubm90YXRpb25zIHByb3ZpZGUgY3J1Y2lhbCBwcm90ZWN0aW9uIGFnYWluc3QgZmFsc2UgcG9zaXRpdmVzLiBDb21tb24gcmVncmVzc2lvbiBlc3RpbWF0b3IgY29ycmVjdGlvbiB0ZWNobmlxdWVzIGNhbiByZXN0b3JlIHZhbGlkIGluZmVyZW5jZSBidXQgdHJhZGUgb2ZmIFR5cGUgSSB2cy4gVHlwZSBJSSBlcnJvcnMuCiAgV2UgcHVibGlzaCBhIGxpc3Qgb2YgcHJhY3RpY2FsIHJlY29tbWVuZGF0aW9ucyB0byBwcmV2ZW50IExMTSBoYWNraW5nLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+      "url": "https://arxiv.org/abs/2509.08825",
+      "contentUrl": null,
+      "metadataVersion": 1,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2025-09-11T01:37:50.000Z",
+      "registered": "2025-09-11T01:37:51.000Z",
+      "published": "2025",
+      "updated": "2025-10-07T03:54:32.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "arxiv.content",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "arxiv",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.48550/arxiv.2509.08825",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

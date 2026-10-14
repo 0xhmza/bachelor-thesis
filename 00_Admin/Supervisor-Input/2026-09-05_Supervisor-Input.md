@@ -123,7 +123,7 @@ sources listed, not a user survey.
 | 5 | Run own literature search on **methodologies**: privacy-policy analysis, cognitive walkthrough | Hamza | done 2026-09-18 — OPP-115, Polisis, MAPS, McDonald & Cranor, Nielsen 1994, Braun & Clarke, Cohen, McDonald et al. 2019 added |
 | 6 | Survey existing **LLM tools for privacy-policy analysis** | Hamza | partly done — Polisis and Rodriguez et al. 2024 reviewed in proposal §4.6; their schemes code *data practices*, not harms, so a purpose-built prompt pipeline is used |
 | 7 | Define the keyword search and inclusion criteria for the German app sample (Play Store + App Store) → `04_Study/` | Hamza | done 2026-09-18 — `04_Study/App-Sample/sampling_protocol.md` |
-| 8 | Fold the RQ and scope above into the proposal (now `99_Archive/_junk/02_Proposal/proposal.tex`; the hand-in is `03_Thesis/proposal/proposal.tex`) | Hamza | done 2026-09-18 — RQ verbatim in §2.2, split into RQ1–RQ4; scope in §2.3 |
+| 8 | Fold the RQ and scope above into the proposal (now `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/proposal.tex`); the hand-in is `03_Thesis/proposal/proposal.tex`) | Hamza | done 2026-09-18 — RQ verbatim in §2.2, split into RQ1–RQ4; scope in §2.3 |
 | 9 | Confirm the scope question in the 2026-09-04 notes (§8) can be closed as "document/interface analysis" | Hamza | pending advisor — proposal §7 item 1 |
 
 ## 10. Open questions

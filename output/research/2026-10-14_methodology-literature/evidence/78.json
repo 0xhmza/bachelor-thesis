@@ -1,0 +1,795 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T07:09:58Z",
+      "timestamp": 1791356998051,
+      "version": "4.3.1"
+    },
+    "reference-count": 94,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              11,
+              16
+            ]
+          ],
+          "date-time": "2010-11-16T00:00:00Z",
+          "timestamp": 1289865600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Requirements Eng"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1007/s00766-010-0115-7",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          15
+        ]
+      ],
+      "date-time": "2010-11-15T07:06:48Z",
+      "timestamp": 1289804808000
+    },
+    "page": "3-32",
+    "source": "Crossref",
+    "is-referenced-by-count": 463,
+    "title": [
+      "A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements"
+    ],
+    "prefix": "10.1007",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Mina",
+        "family": "Deng",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kim",
+        "family": "Wuyts",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Riccardo",
+        "family": "Scandariato",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bart",
+        "family": "Preneel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Joosen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "115_CR1",
+        "unstructured": "Lamsweerde AV, Brohez S, Landtsheer RD, Janssens D, Informatique DD (2003) From system goals to intruder anti-goals: attack generation and resolution for security requirements engineering. In: Proceedings of the RE03 workshop on requirements for high assurance systems (RHAS03), pp 49–56"
+      },
+      {
+        "key": "115_CR2",
+        "volume-title": "Requirements engineering: from system goals to UML models to software specifications",
+        "author": "A Lamsweerde van",
+        "year": "2009",
+        "unstructured": "van Lamsweerde A (2009) Requirements engineering: from system goals to UML models to software specifications. Wiley, Chichester"
+      },
+      {
+        "key": "115_CR3",
+        "volume-title": "The security development lifecycle",
+        "author": "M Howard",
+        "year": "2006",
+        "unstructured": "Howard M, Lipner S (2006) The security development lifecycle. Microsoft Press, Redmond, WA"
+      },
+      {
+        "key": "115_CR4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mcgraw G (2006) Software security: building security. Addison-Wesley Professional, Boston, NY",
+        "DOI": "10.1109/ISSRE.2006.43"
+      },
+      {
+        "key": "115_CR5",
+        "volume-title": "Secrets and lies: digital security in a networked world",
+        "author": "B Schneier",
+        "year": "2000",
+        "unstructured": "Schneier B (2000) Secrets and lies: digital security in a networked world. Wiley, New York"
+      },
+      {
+        "key": "115_CR6",
+        "unstructured": "Andreas GS, Opdahl AL (2001) Templates for misuse case description. In: Proceedings of the 7th international workshop on requirements engineering, foundation for software quality, pp 4–5"
+      },
+      {
+        "key": "115_CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Opdahl AL, Sindre G (2009) Experimental comparison of attack trees and misuse cases for security threat identification. Inf Softw Technol 51(5):916–932. SPECIAL ISSUE: Model-Driven Development for Secure Information Systems",
+        "DOI": "10.1016/j.infsof.2008.05.013"
+      },
+      {
+        "key": "115_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Solove DJ (2006) A taxonomy of privacy. Univ PA Law Rev 154(3):477; GWU Law School Public Law Research Paper No. 129",
+        "DOI": "10.2307/40041279"
+      },
+      {
+        "key": "115_CR9",
+        "volume-title": "Understanding privacy",
+        "author": "DJ Solove",
+        "year": "2008",
+        "unstructured": "Solove DJ (2008) Understanding privacy. Harvard University Press, Cambridge"
+      },
+      {
+        "key": "115_CR10",
+        "unstructured": "Pfitzmann A, Hansen M (2010) A terminology for talking about privacy by data minimization: anonymity, unlinkability, undetectability, unobservability, pseudonymity, and identity management (Version 0.33 April 2010), technical report, TU Dresden and ULD Kiel, http://dud.inf.tu-dresden.de/Anon_Terminology.shtml"
+      },
+      {
+        "key": "115_CR11",
+        "unstructured": "Hansen M (2008) Linkage control integrating the essence of privacy protection into identity management systems. In: Cunningham P, Cunningham M (eds) Collaboration and the knowledge economy: issues, applications, case studies, Proceedings of eChallenges, IOS Press, Amsterdam, pp 1585–1592"
+      },
+      {
+        "key": "115_CR12",
+        "unstructured": "Danezis G (2008) Talk: an introduction to u-prove privacy protection technology, and its role in the identity metasystem—what future for privacy technology. http://www.petsfinebalance.com/agenda/index.php"
+      },
+      {
+        "key": "115_CR13",
+        "unstructured": "ISO 17799 (2000) Information technology code of practice for information security management, technical report, British Standards Institute"
+      },
+      {
+        "key": "115_CR14",
+        "unstructured": "Roe M (1997) Cryptography and evidence. PhD thesis, University of Cambridge, Clare College"
+      },
+      {
+        "key": "115_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "McCallister E, Grance T, Kent K (2009) Guide to protecting the confidentiality of personally identifiable information (PII) (draft), technical report, National Institute of Standards and Technology (US)",
+        "DOI": "10.6028/NIST.SP.800-122"
+      },
+      {
+        "key": "115_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "440",
+        "DOI": "10.1007/s00779-004-0304-9",
+        "volume": "8",
+        "author": "S Lederer",
+        "year": "2004",
+        "unstructured": "Lederer S, Hong JI, Dey AK, Landay JA (2004) Personal privacy through understanding and action: five pitfalls for designers. Pers Ubiquitous Comput 8:440–454",
+        "journal-title": "Pers Ubiquitous Comput"
+      },
+      {
+        "key": "115_CR17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Patil S, Kobsa A (2009) Privacy considerations in awareness systems: designing with privacy in mind, chap 8. In: Human computer interaction series, Springer London, pp 187–206",
+        "DOI": "10.1007/978-1-84882-477-5_8"
+      },
+      {
+        "key": "115_CR18",
+        "unstructured": "P3P, Platform for privacy preferences project, W3C P3P specifications. http://www.w3.org/TR/P3P/"
+      },
+      {
+        "key": "115_CR19",
+        "unstructured": "EU (1995) Directive 95/46/EC of the European parliament and of the council of 24 october 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data. Off J Eur Commun 281:31–50. http://europa.eu/scadplus/leg/en/lvb/l14012.htm"
+      },
+      {
+        "key": "115_CR20",
+        "unstructured": "HIPAA (2006) HIPAA administrative simplification: enforcement; final rule. United States Department of Health & Human Service. Fed Regist Rules Regul 71(32):8390–8433. http://www.hhs.gov/ocr/privacy/hipaa/administrative/privacyrule/finalenforcementrule06.pdf"
+      },
+      {
+        "key": "115_CR21",
+        "unstructured": "PIPEDA (2009) Personal information protection and electronic documents act (2000, c. 5). http://laws.justice.gc.ca/en/showtdm/cs/P-8.6"
+      },
+      {
+        "key": "115_CR22",
+        "unstructured": "Australia’s national privacy regulator: privacy act. http://www.privacy.gov.au/law/act"
+      },
+      {
+        "key": "115_CR23",
+        "unstructured": "OECD (1980) Guidelines on the protection of privacy and transborder flows of personal data, organization for economic cooperation and development. http://www.oecd.org/document/18/0,2340,en_2649_34255_1815186_1_1_1_1,00.html"
+      },
+      {
+        "key": "115_CR24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Breaux TD, Anton AI, Boucher, Dorfman M (2008) Legal requirements, compliance and practice: an industry case study in accessibility. In: RE’08: Proceedings of the 16th IEEE international requirements engineering conference (RE’08), IEEE Society Press, pp 43–52",
+        "DOI": "10.1109/RE.2008.36"
+      },
+      {
+        "key": "115_CR25",
+        "unstructured": "United States Department of Justice, Workforce investment act of 1998, SEC. 508. electronic and information technology. http://www.justice.gov/crt/508/508law.php"
+      },
+      {
+        "issue": "1",
+        "key": "115_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1109/TSE.2007.70746",
+        "volume": "34",
+        "author": "T Breaux",
+        "year": "2008",
+        "unstructured": "Breaux T, Antón A (2008) Analyzing regulatory rules for privacy and security requirements. IEEE Trans Softw Eng 34(1):5–20",
+        "journal-title": "IEEE Trans Softw Eng"
+      },
+      {
+        "key": "115_CR27",
+        "first-page": "61",
+        "volume-title": "Systems for anonymous communication. In: CRC handbook of financial cryptography and security",
+        "author": "G Danezis",
+        "year": "2009",
+        "unstructured": "Danezis G, Diaz C, Syverson P (2009) Systems for anonymous communication. In: CRC handbook of financial cryptography and security. Chapman and Hall, Boca Raton, FL, p 61"
+      },
+      {
+        "key": "115_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sweeney L (2002) K-anonymity: a model for protecting privacy. Int J Uncertain Fuzziness Knowl-Based Syst 10(5):557–570",
+        "DOI": "10.1142/S0218488502001648"
+      },
+      {
+        "issue": "1",
+        "key": "115_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1109/MS.2003.1159030",
+        "volume": "20",
+        "author": "I Alexander",
+        "year": "2003",
+        "unstructured": "Alexander I (2003) Misuse cases: use cases with hostile intent. IEEE Softw 20(1):58–66",
+        "journal-title": "IEEE Softw"
+      },
+      {
+        "key": "115_CR30",
+        "unstructured": "OWASP, Risk rating methodology. http://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology"
+      },
+      {
+        "key": "115_CR31",
+        "unstructured": "MSDN Library, Improving web application security: threats and countermeasures"
+      },
+      {
+        "key": "115_CR32",
+        "unstructured": "NIST, Risk management guide for information technology systems, special publication 800-30. http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf"
+      },
+      {
+        "key": "115_CR33",
+        "unstructured": "C. S. E. Institute, OCTAVE. http://www.cert.org/octave/"
+      },
+      {
+        "key": "115_CR34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wuyts K, Scandariato R, Decker BD, Joosen W (2009) Linking privacy solutions to developer goals. Availability, reliability and security, international conference on 0:847–852",
+        "DOI": "10.1109/ARES.2009.51"
+      },
+      {
+        "key": "115_CR35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kalloniatis C, Kavakli E, Gritzalis S (2008) Addressing privacy requirements in system design: the pris method. Requir Eng 13:241–255. http://dx.doi.org/10.1007/s00766-008-0067-3",
+        "DOI": "10.1007/s00766-008-0067-3"
+      },
+      {
+        "key": "115_CR36",
+        "unstructured": "PETs, Annual symposium on privacy enhancing technologies, homepage. http://petsymposium.org/"
+      },
+      {
+        "issue": "2",
+        "key": "115_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1145/358549.358563",
+        "volume": "24",
+        "author": "D Chaum",
+        "year": "1981",
+        "unstructured": "Chaum D (1981) Untraceable electronic mail, return addresses, and digital pseudonyms. Commun ACM 24(2):84–88",
+        "journal-title": "Commun ACM"
+      },
+      {
+        "issue": "10",
+        "key": "115_CR38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1030",
+        "DOI": "10.1145/4372.4373",
+        "volume": "28",
+        "author": "D Chaum",
+        "year": "1985",
+        "unstructured": "Chaum D (1985) Security without identification: transaction systems to make big brother obsolete. Commun ACM 28(10):1030–1044",
+        "journal-title": "Commun ACM"
+      },
+      {
+        "issue": "1",
+        "key": "115_CR39",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1007/BF00206326",
+        "volume": "1",
+        "author": "D Chaum",
+        "year": "1988",
+        "unstructured": "Chaum D (1988) The dining cryptographers problem: unconditional sender and recipient untraceability. J Cryptol 1(1):65–75",
+        "journal-title": "J Cryptol"
+      },
+      {
+        "key": "115_CR40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pfitzmann A, Pfitzmann B, Waidner M (1991) ISDN-mixes: untraceable communication with very small bandwidth overhead. In: Proceedings of the GI/ITG conference on communication in distributed systems, pp 451–463",
+        "DOI": "10.1007/978-3-642-76462-2_32"
+      },
+      {
+        "key": "115_CR41",
+        "unstructured": "Goldschlag DM, Reed MG, Syverson PF (1996) Hiding routing information. In: Anderson R (ed) Proceedings of information hiding: first international workshop. Springer-Verlag, LNCS 1174, pp 137–150"
+      },
+      {
+        "key": "115_CR42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Reiter M, Rubin A (1998) Crowds: anonymity for web transactions. ACM Transact Inf Syst Secur 1(1):1–23. http://avirubin.com/crowds.pdf",
+        "DOI": "10.1145/290163.290168"
+      },
+      {
+        "key": "115_CR43",
+        "unstructured": "Bacard A, Anonymous.to: Cypherpunk tutorial. http://www.andrebacard.com/remail.html"
+      },
+      {
+        "key": "115_CR44",
+        "unstructured": "Mixmaster, Mixmaster homepage. http://mixmaster.sourceforge.net/"
+      },
+      {
+        "key": "115_CR45",
+        "unstructured": "Mixminion, Mixminion officia site. http://mixminion.net/"
+      },
+      {
+        "key": "115_CR46",
+        "unstructured": "Back A, Goldberg I, Shostack A (2001) Freedom systems 2.1 security issues and analysis, white paper, Zero Knowledge Systems, Inc"
+      },
+      {
+        "key": "115_CR47",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Berthold O, Federrath H, Köpsell S (2000) Web MIXes: a system for anonymous and unobservable internet access. In: Federrath H (ed) Proceedings of designing privacy enhancing technologies: workshop on design issues in anonymity and unobservability, Springer-Verlag, LNCS 2009, pp 115–129",
+        "DOI": "10.1007/3-540-44702-4_7"
+      },
+      {
+        "key": "115_CR48",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dingledine R, Mathewson N, Syverson P (2004) Tor: the second-generation onion router. In: Proceedings of the 13th USENIX security symposium",
+        "DOI": "10.21236/ADA465464"
+      },
+      {
+        "key": "115_CR49",
+        "unstructured": "Pfitzmann A, Waidner M (1985) Networks without user observability—design options. In: Proceedings of EUROCRYPT 1985, Springer-Verlag, LNCS 219"
+      },
+      {
+        "key": "115_CR50",
+        "unstructured": "Waidner M, Pfitzmann B (1990) The dining cryptographers in the disco: unconditional sender and recipient untraceability. In: Proceedings of EUROCRYPT 1989, Springer-Verlag, LNCS 434"
+      },
+      {
+        "key": "115_CR51",
+        "doi-asserted-by": "crossref",
+        "first-page": "427",
+        "DOI": "10.1016/j.tcs.2003.12.023",
+        "volume": "322",
+        "author": "M Abadia",
+        "year": "2004",
+        "unstructured": "Abadia M, Fournet C (2004) Private authentication. Theor Comput Sci 322:427–476",
+        "journal-title": "Theor Comput Sci"
+      },
+      {
+        "key": "115_CR52",
+        "doi-asserted-by": "crossref",
+        "first-page": "2004",
+        "DOI": "10.1145/996943.996946",
+        "volume": "7",
+        "author": "W Aiello",
+        "year": "2004",
+        "unstructured": "Aiello W, Bellovin SM, Blaze M, Canetti R, Ioannidis J, Keromytis AD, Reingold O (2004) Just fast keying: key agreement in a hostile internet. ACM Trans Inf Syst Secur 7:2004",
+        "journal-title": "ACM Trans Inf Syst Secur"
+      },
+      {
+        "key": "115_CR53",
+        "unstructured": "Brands S, Chaum D (1993) Distance-bounding protocols (extended abstract). In: EUROCRYPT93. Springer-Verlag, LNCS 765, pp 344–359"
+      },
+      {
+        "key": "115_CR54",
+        "unstructured": "Camenisch J, Lysyanskaya A (2004) Signature schemes and anonymous credentials from bilinear maps. In: Proceedings crypto. Springer-Verlag, LNCS 3152, pp 56–72"
+      },
+      {
+        "key": "115_CR55",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Naor M (2002) Deniable ring authentication. In: Proceedings of crypto 2002, Springer-Verlag, LNCS 2442, pp 481–498",
+        "DOI": "10.1007/3-540-45708-9_31"
+      },
+      {
+        "key": "115_CR56",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Borisov N, Goldberg I, Brewer E (2004) Off-the-record communication, or, why not to use PGP. In: Proceedings of the 2004 ACM workshop on privacy in the electronic society. ACM New York, NY, pp. 77–84",
+        "DOI": "10.1145/1029179.1029200"
+      },
+      {
+        "key": "115_CR57",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yao ACC (1982) Protocols for secure computations. In: Proceedings of 23rd IEEE symposium on foundations of computer science, pp 160–164",
+        "DOI": "10.1109/SFCS.1982.38"
+      },
+      {
+        "key": "115_CR58",
+        "unstructured": "Naor M, Nissim K (2001) Communication complexity and secure function evaluation, CoRR, vol. cs.CR/0109011"
+      },
+      {
+        "key": "115_CR59",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deng M, Bianchi T, Piva A, Preneel B (2009) An efficient buyer-seller watermarking protocol based on composite signal representation. In: Proceedings of the 11th ACM workshop on multimedia and security (Princeton, NJ). ACM, New York, NY, pp 9–18",
+        "DOI": "10.1145/1597817.1597820"
+      },
+      {
+        "key": "115_CR60",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chor B, Goldreich O, Kushilevitz E, Sudan M (1998) Private information retrieval. J ACM 45:965–981",
+        "DOI": "10.1145/293347.293350"
+      },
+      {
+        "key": "115_CR61",
+        "unstructured": "Rabin MO (1981) How to exchange secrets by oblivious transfer, technical report tr-81. Aiken Computation Laboratory, Harvard University"
+      },
+      {
+        "key": "115_CR62",
+        "unstructured": "Cachin C (1998) On the foundations of oblivious transfer. In: Advances in cryptology—Eurocrypt 1998. Springer-Verlag, LNCS 1403, pp 361–374"
+      },
+      {
+        "key": "115_CR63",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1145/974121.974131",
+        "volume": "3",
+        "author": "V Verykios",
+        "year": "2004",
+        "unstructured": "Verykios V, Bertino E, Fovino I, Provenza L, Saygin Y, Theodoridis Y (2004) State-of-the-art in privacy preserving data mining. ACM SIGMOD Record 3:50–57",
+        "journal-title": "ACM SIGMOD Record"
+      },
+      {
+        "issue": "2",
+        "key": "115_CR64",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1145/772862.772865",
+        "volume": "4",
+        "author": "B Pinkas",
+        "year": "2002",
+        "unstructured": "Pinkas B (2002) Cryptographic techniques for privacy preserving data mining. SIGKDD Explor 4(2):12–19",
+        "journal-title": "SIGKDD Explor"
+      },
+      {
+        "key": "115_CR65",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Abdalla M, Bellare M, Catalano D, Kiltz E, Kohno T, Lange T, Malone-lee J, Neven G, Paillier P, Shi H (2005) Searchable encryption revisited: consistency properties, relation to anonymous ibe, and extensions. In: Proceeding of CRYPTO. Springer-Verlag, pp 205–222",
+        "DOI": "10.1007/11535218_13"
+      },
+      {
+        "key": "115_CR66",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ostrovsky R, Skeith WE III (2005) Private searching on streaming data. CRYPTO pp 223–240",
+        "DOI": "10.1007/11535218_14"
+      },
+      {
+        "key": "115_CR67",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sweeney L (2002) Achieving k-anonymity privacy protection using generalization and suppression. Int J Uncertain Fuzziness Knowl-Based Syst 10(5):571–588",
+        "DOI": "10.1142/S021848850200165X"
+      },
+      {
+        "key": "115_CR68",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Machanavajjhala A, Gehrke J, Kifer D, Venkitasubramaniam M (2006) l-diversity: privacy beyond k-anonymity. In: Proceedings of the 22nd international conference on data engineering (ICDE’06), p 24",
+        "DOI": "10.1109/ICDE.2006.1"
+      },
+      {
+        "key": "115_CR69",
+        "doi-asserted-by": "crossref",
+        "first-page": "474",
+        "DOI": "10.1109/49.668971",
+        "volume": "16",
+        "author": "R Anderson",
+        "year": "1998",
+        "unstructured": "Anderson R, Petitcolas F (1998) On the limits of steganography. IEEE J Sel Areas Commun 16:474–481",
+        "journal-title": "IEEE J Sel Areas Commun"
+      },
+      {
+        "key": "115_CR70",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Moskowitz I, Newman RE, Crepeau DP, Miller AR (2003) Covert channels and anonymizing networks. In: Workshop on privacy in the electronic society, ACM, Washington, DC, pp 79–88",
+        "DOI": "10.21236/ADA465268"
+      },
+      {
+        "key": "115_CR71",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kirovski D, Malvar HS (2001) Robust covert communication over a public audio channel using spread spectrum. In: Information hiding, pp 354–368",
+        "DOI": "10.1007/3-540-45496-9_26"
+      },
+      {
+        "key": "115_CR72",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hansen M, Berlich P, Camenisch J, Clauß S, Pfitzmann A, Waidner M (2004) Privacy-enhancing identity management. Inf Secur Tech Rep (ISTR) 9(1):35–44. http://dx.doi.org/10.1016/S1363-4127(04)00014-7 )",
+        "DOI": "10.1016/S1363-4127(04)00014-7"
+      },
+      {
+        "key": "115_CR73",
+        "first-page": "8",
+        "volume": "67",
+        "author": "S Clauß",
+        "year": "2002",
+        "unstructured": "Clauß S, Pfitzmann A, Hansen M, Herreweghen EV (2002) Privacy-enhancing identity management. IPTS Rep 67:8–16",
+        "journal-title": "IPTS Rep"
+      },
+      {
+        "key": "115_CR74",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Simoens K, Tuyls P, Preneel B (2009) Privacy weaknesses in biometric sketches. In: Proceedings of the 2009 30th IEEE symposium on security and privacy. IEEE Computer Society, Washington, DC, pp 188–203",
+        "DOI": "10.1109/SP.2009.24"
+      },
+      {
+        "key": "115_CR75",
+        "unstructured": "Menezes AJ, Oorschot PCV, Vanstone SA, Rivest RL (1997) Handbook of applied cryptography. CRC Press, Washington"
+      },
+      {
+        "key": "115_CR76",
+        "unstructured": "Fontaine C, Galand F (2007) A survey of homomorphic encryption for non-specialists. EURASIP J Inf Secur. http://www.hindawi.com/RecentlyAcceptedArticlePDF.aspx?journal=IS&number=13801"
+      },
+      {
+        "key": "115_CR77",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Camenisch J, Damgard I (1998) Verifiable encryption and applications to group signatures and signature sharing. In: Technical report RS-98-32, BRICS, Department of Computer Science, University of Aarhus",
+        "DOI": "10.7146/brics.v5i32.19438"
+      },
+      {
+        "key": "115_CR78",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Georgiadis CK, Mavridis I, Pangalos G, Thomas RK (2001) Flexible team-based access control using contexts. In: SACMAT, pp 21–27",
+        "DOI": "10.1145/373256.373259"
+      },
+      {
+        "key": "115_CR79",
+        "unstructured": "Carminati B, Ferrari E (2008) Privacy-aware collaborative access control in web-based social networks. In: Proceedings of the 22nd IFIP WG 11.3 working conference on data and applications security (DBSEC2008)"
+      },
+      {
+        "key": "115_CR80",
+        "unstructured": "Ardagna CA, Camenisch J, Kohlweiss M, Leenes R, Neven G, Priem B, Samarati P, Sommer D, Verdicchio M (2009) Exploiting cryptography for privacy-enhanced access control: a result of the PRIME project. J Comput Secur 18(1):123–160"
+      },
+      {
+        "key": "115_CR81",
+        "unstructured": "OASIS, eXtensible access control markup language: XACML 3.0. http://xml.coverpages.org/xacml.html"
+      },
+      {
+        "key": "115_CR82",
+        "unstructured": "IBM, Enterprise privacy authorization language: EPAL 1.2. http://www.w3.org/Submission/2003/SUBM-E"
+      },
+      {
+        "key": "115_CR83",
+        "unstructured": "Lipford HR, Besmer A, Watson J (2008) Understanding privacy settings in facebook with an audience view. In: Churchill EF, Dhamija R (eds) Proceedings of the 1st conference on usability, psychology, and security, USENIX Association, Berkeley, CA, USA. http://www.usenix.org/events/upsec08/tech/full_papers/lipford/lipford.pdf"
+      },
+      {
+        "key": "115_CR84",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Anderson J, Diaz C, Bonneau J, Stajano F (2009) Privacy-enabling social networking over untrusted networks. In: WOSN ’09: Proceedings of the 2nd ACM workshop on online social networks. pp 1–6",
+        "DOI": "10.1145/1592665.1592667"
+      },
+      {
+        "key": "115_CR85",
+        "unstructured": "Beato F, Kohlweiss M, Wouters K (2009) Enforcing access control in social networks. HotPets. http://www.cosic.esat.kuleuven.be/publications/article-1240.pdf"
+      },
+      {
+        "key": "115_CR86",
+        "unstructured": "PrimeLife, The European PrimeLife research project—privacy and identity management in Europe for life. http://www.primelife.eu/"
+      },
+      {
+        "key": "115_CR87",
+        "doi-asserted-by": "crossref",
+        "first-page": "483",
+        "DOI": "10.1109/32.142871",
+        "volume": "18",
+        "author": "J Mylopoulos",
+        "year": "1992",
+        "unstructured": "Mylopoulos J, Chung L, Nixon B (1992) Representing and using non-functional requirements: a process-oriented approach. IEEE Transact Softw Eng 18:483–497",
+        "journal-title": "IEEE Transact Softw Eng"
+      },
+      {
+        "key": "115_CR88",
+        "unstructured": "Privacy guidelines for developing software products and services, version 3.1, technical report, Microsoft Coorporation, Sept 2008"
+      },
+      {
+        "key": "115_CR89",
+        "unstructured": "Microsoft security development lifecycle (SDL) version 3.2, technical report, Microsoft Coorporation, April 2008"
+      },
+      {
+        "key": "115_CR90",
+        "unstructured": "Yu E, Cysneiros LM (2002) Designing for privacy and other competing requirements. In: Proceedings of the 2nd symposium on requirements engineering for information security, SREIS-02, pp 15–16"
+      },
+      {
+        "key": "115_CR91",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu L, Yu E, Mylopoulos J (2003) Security and privacy requirements analysis within a social setting. Requir Eng IEEE Int Conf 0:151",
+        "DOI": "10.1109/ICRE.2003.1232746"
+      },
+      {
+        "key": "115_CR92",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Miyazaki S, Mead N, Zhan J (2008) Computer-aided privacy requirements elicitation technique. Asia-Pacific conference on services computing. 2006 IEEE, pp 367–372",
+        "DOI": "10.1109/APSCC.2008.263"
+      },
+      {
+        "key": "115_CR93",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Antón AI, Earp JB, Reese A (2002) Analyzing website privacy requirements using a privacy goal taxonomy. In: RE ’02: Proceedings of the 10th anniversary IEEE joint international conference on requirements engineering. IEEE Computer Society, pp 23–31",
+        "DOI": "10.1109/ICRE.2002.1048502"
+      },
+      {
+        "key": "115_CR94",
+        "unstructured": "Danezis G (2007) Talk: introduction to privacy technology. http://research.microsoft.com/en-us/um/people/gdane/talks/Privacy_Technology_cosic.pdf"
+      }
+    ],
+    "container-title": [
+      "Requirements Engineering"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s00766-010-0115-7.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s00766-010-0115-7/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s00766-010-0115-7",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2019-06-06T04:50:23Z",
+      "timestamp": 1559796623000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s00766-010-0115-7"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          16
+        ]
+      ]
+    },
+    "references-count": 94,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "115"
+    ],
+    "URL": "https://doi.org/10.1007/s00766-010-0115-7",
+    "relation": {},
+    "ISSN": [
+      "0947-3602",
+      "1432-010X"
+    ],
+    "issn-type": [
+      {
+        "value": "0947-3602",
+        "type": "print"
+      },
+      {
+        "value": "1432-010X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          16
+        ]
+      ]
+    }
+  }
+}

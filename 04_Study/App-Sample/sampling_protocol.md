@@ -4,7 +4,7 @@
 confirmation of the points marked ⚠ in
 [`00_Admin/Open-Points.md`](../../00_Admin/Open-Points.md)
 
-This file is the operational version of the Sampling paragraph of the proposal (`03_Thesis/proposal/`; argued in full in `99_Archive/_junk/02_Proposal/sections/04_methodology.tex` §4.2). Fill in the empty
+This file is the operational version of the Sampling paragraph of the proposal (`03_Thesis/proposal/`; argued in full in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/04_methodology.tex`) §4.2). Fill in the empty
 cells **before** collecting anything, and do not change the protocol afterwards
 without an entry in the change log at the bottom. The methodology chapter is
 written from this document.

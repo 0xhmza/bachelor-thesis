@@ -1,0 +1,2255 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T06:03:46Z",
+      "timestamp": 1790834626971,
+      "version": "4.1.0"
+    },
+    "reference-count": 270,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              9
+            ]
+          ],
+          "date-time": "2024-04-09T00:00:00Z",
+          "timestamp": 1712620800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001711",
+        "name": "Swiss National Science Foundation",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "200021_178978 (PrivateLife)"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "200021_178978 (PrivateLife)"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001711",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "name": "Armasuisse S+T",
+        "award": [
+          "CYD-C-2020007"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CYD-C-2020007"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "ACM Comput. Surv."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          31
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Over the past decade, wearable activity trackers (WATs) have become increasingly popular. However, despite many research studies in different fields (e.g. psychology, health, and design), few have sought to jointly examine the critical aspects of utility (i.e., benefits brought by these devices), privacy, and security (i.e., risks and vulnerabilities associated with them). To fill this gap, we reviewed 236 studies that researched the benefits of using WATs, the implications for the privacy of users of WATs, and the security vulnerabilities of these devices. Our survey revealed that these devices expose users to several threats. For example, WAT data can be mined to infer private information, such as the personality traits of the user. Whereas many works propose empirical findings about users’ privacy perceptions and their behaviors in relation to privacy, we found relatively few studies researching technologies to better protect users’ privacy with these devices. This survey contributes to systematizing knowledge on the utility, privacy, and security of WATs, shedding light on the state-of-the-art approaches with these devices, and discussing open research opportunities.</jats:p>",
+    "DOI": "10.1145/3645091",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          8
+        ]
+      ],
+      "date-time": "2024-02-08T07:08:10Z",
+      "timestamp": 1707376090000
+    },
+    "page": "1-40",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 43,
+    "title": [
+      "Wearable Activity Trackers: A Survey on Utility, Privacy, and Security"
+    ],
+    "prefix": "10.1145",
+    "volume": "56",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4438-3544",
+        "authenticated-orcid": false,
+        "given": "Kavous",
+        "family": "Salehzadeh Niksirat",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Lausanne &amp; EPFL, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7343-2731",
+        "authenticated-orcid": false,
+        "given": "Lev",
+        "family": "Velykoivanenko",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3886-0877",
+        "authenticated-orcid": false,
+        "given": "Noé",
+        "family": "Zufferey",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1860-6110",
+        "authenticated-orcid": false,
+        "given": "Mauro",
+        "family": "Cherubini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7147-1828",
+        "authenticated-orcid": false,
+        "given": "Kévin",
+        "family": "Huguenin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5046-1727",
+        "authenticated-orcid": false,
+        "given": "Mathias",
+        "family": "Humbert",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Lausanne, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3448083"
+      },
+      {
+        "key": "e_1_3_3_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/16721"
+      },
+      {
+        "key": "e_1_3_3_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3463528"
+      },
+      {
+        "key": "e_1_3_3_5_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Conference on Multimedia Privacy and Security (MPS ’17)",
+        "author": "Aktypi A.",
+        "year": "2017",
+        "unstructured": "A. Aktypi, J. R. Nurse, and M. Goldsmith. 2017. Unwinding Ariadne’s identity thread: Privacy risks with fitness trackers and online social networks. In Proceedings of the Conference on Multimedia Privacy and Security (MPS ’17). ACM, 1–11. DOI:10.1145/3137616.3137617"
+      },
+      {
+        "key": "e_1_3_3_6_2",
+        "first-page": "44",
+        "volume-title": "Proceedings of the IEEE International Conference on Cyber Security and Cloud Computing (CSCloud ’20)International Conference on Edge Computing and Scalable Cloud (EdgeCom ’20)",
+        "author": "Almogbil A.",
+        "year": "2020",
+        "unstructured": "A. Almogbil, A. Alghofaili, C. Deane, T. Leschke, A. Almogbil, and A. Alghofaili. 2020. Digital forensic analysis of Fitbit wearable technology: An investigator’s guide. In Proceedings of the IEEE International Conference on Cyber Security and Cloud Computing (CSCloud ’20)International Conference on Edge Computing and Scalable Cloud (EdgeCom ’20). IEEE, 44–49. DOI:10.1109/CSCloud-EdgeCom49738.2020.00017"
+      },
+      {
+        "key": "e_1_3_3_7_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1807",
+        "DOI": "10.1145/3357236.3395448",
+        "volume-title": "Proceedings of the ACM Designing Interactive Systems Conference (DIS ’20)",
+        "author": "Alqahtani D.",
+        "year": "2020",
+        "unstructured": "D. Alqahtani, C. Jay, and M. Vigo. 2020. The role of uncertainty as a facilitator to reflection in self-tracking. In Proceedings of the ACM Designing Interactive Systems Conference (DIS ’20). ACM, 1807–1818. DOI:10.1145/3357236.3395448"
+      },
+      {
+        "key": "e_1_3_3_8_2",
+        "first-page": "421",
+        "volume-title": "Proceedings of the Symposium on Usable Privacy and Security (SOUPS ’19)",
+        "author": "Alqhatani A.",
+        "year": "2019",
+        "unstructured": "A. Alqhatani and H. R. Lipford. 2019. “There is nothing that I need to keep secret”: Sharing practices and concerns of wearable fitness data. In Proceedings of the Symposium on Usable Privacy and Security (SOUPS ’19). 421–434. https://www.usenix.org/conference/soups2019/presentation/alqhatani"
+      },
+      {
+        "key": "e_1_3_3_9_2",
+        "first-page": "9",
+        "volume-title": "Workshop on Usable Security and Privacy (USEC ’21)",
+        "author": "Alqhatani A.",
+        "year": "2021",
+        "unstructured": "A. Alqhatani and H. R. Lipford. 2021. Exploring the design space of sharing and privacy mechanisms in wearable fitness platforms. In Workshop on Usable Security and Privacy (USEC ’21), Vol. 7. Internet Society, 9. https://www.ndss-symposium.org/ndss-paper/auto-draft-178/"
+      },
+      {
+        "key": "e_1_3_3_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/15398285.2020.1852386"
+      },
+      {
+        "key": "e_1_3_3_11_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1145/3154862.3154879",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’17)",
+        "author": "Amini F.",
+        "year": "2017",
+        "unstructured": "F. Amini, K. Hasan, A. Bunt, and P. Irani. 2017. Data representations for in-situ exploration of health and fitness data. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’17). ACM, 163–172. DOI:10.1145/3154862.3154879"
+      },
+      {
+        "key": "e_1_3_3_12_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1109/ISWC.2012.21",
+        "volume-title": "Proceedings of the 2012 16th International Symposium on Wearable Computers",
+        "author": "Amma C.",
+        "year": "2012",
+        "unstructured": "C. Amma, M. Georgi, and T. Schultz. 2012. Airwriting: Hands-free mobile text input by spotting and continuous recognition of 3D-space handwriting with inertial sensors. In Proceedings of the 2012 16th International Symposium on Wearable Computers. IEEE, 52–59. DOI:10.1109/ISWC.2012.21"
+      },
+      {
+        "key": "e_1_3_3_13_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of Pervasive Computing and Communication Workshops (PerCom Workshops ’16)",
+        "author": "Ardüser L.",
+        "year": "2016",
+        "unstructured": "L. Ardüser, P. Bissig, P. Brandes, and R. Wattenhofer. 2016. Recognizing text using motion data from a smartwatch. In Proceedings of Pervasive Computing and Communication Workshops (PerCom Workshops ’16). IEEE, 1–6. DOI:10.1109/PERCOMW.2016.7457172"
+      },
+      {
+        "key": "e_1_3_3_14_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "E. M. Aromataris and Z. Munn. 2020. JBI Manual for Evidence Synthesis. Retrieved February 18 2024 from https://jbi-global-wiki.refined.site/space/MANUAL",
+        "DOI": "10.46658/JBIMES-24-01"
+      },
+      {
+        "key": "e_1_3_3_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2019.08.025"
+      },
+      {
+        "key": "e_1_3_3_16_2",
+        "first-page": "616",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’16)",
+        "author": "Bae S.",
+        "year": "2016",
+        "unstructured": "S. Bae, A. K. Dey, and C. A. Low. 2016. Using passively collected sedentary behavior to predict hospital readmission. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’16). ACM, 616–621. DOI:10.1145/2971648.2971750"
+      },
+      {
+        "key": "e_1_3_3_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3463512"
+      },
+      {
+        "key": "e_1_3_3_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5210/fm.v11i9.1394"
+      },
+      {
+        "key": "e_1_3_3_19_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1145/3378539.3393856",
+        "volume-title": "Proceedings of the Computers and People Research Conference (SIGMIS-CPR ’20)",
+        "author": "Baskaran K.",
+        "year": "2020",
+        "unstructured": "K. Baskaran and S. K. Mathew. 2020. Danger vs fear: An empirical study on wearable users’ privacy coping. In Proceedings of the Computers and People Research Conference (SIGMIS-CPR ’20). ACM, 123–132. DOI:10.1145/3378539.3393856"
+      },
+      {
+        "key": "e_1_3_3_20_2",
+        "first-page": "11",
+        "article-title": "Are you coping or copping out? Wearable users’ information privacy perspective",
+        "volume": "8",
+        "author": "Baskaran K.",
+        "year": "2020",
+        "unstructured": "K. Baskaran, V. Sugumaran, and S. K. Mathew. 2020. Are you coping or copping out? Wearable users’ information privacy perspective. AMCIS 2020 Proceedings 8 (2020), 11.",
+        "journal-title": "AMCIS 2020 Proceedings"
+      },
+      {
+        "key": "e_1_3_3_21_2",
+        "first-page": "6",
+        "article-title": "What do I do? Uncovering fitness tracker users’ privacy coping strategy",
+        "volume": "5",
+        "author": "Baskaran K.",
+        "year": "2021",
+        "unstructured": "K. Baskaran, V. Sugumaran, and S. K. Mathew. 2021. What do I do? Uncovering fitness tracker users’ privacy coping strategy. AMCIS 2021 Proceedings 5 (2021), 6. https://aisel.aisnet.org/amcis2021/info_security/info_security/5",
+        "journal-title": "AMCIS 2021 Proceedings"
+      },
+      {
+        "key": "e_1_3_3_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/popets-2019-0036"
+      },
+      {
+        "key": "e_1_3_3_23_2",
+        "first-page": "3261",
+        "volume-title": "Proceedings of the Hawaii International Conference on System Sciences",
+        "author": "Becker M.",
+        "year": "2018",
+        "unstructured": "M. Becker. 2018. Understanding users’ health information privacy concerns for health wearables. In Proceedings of the Hawaii International Conference on System Sciences. 3261–3270. DOI:10.24251/HICSS.2018.413"
+      },
+      {
+        "key": "e_1_3_3_24_2",
+        "first-page": "12",
+        "article-title": "Understanding the continuous use of fitness trackers: A thematic analysis",
+        "volume": "40",
+        "author": "Becker M.",
+        "year": "2017",
+        "unstructured": "M. Becker, A. Kolbeck, C. Matt, and T. Hess. 2017. Understanding the continuous use of fitness trackers: A thematic analysis. PACIS 2017 Proceedings 40 (2017), 12. https://aisel.aisnet.org/pacis2017/40",
+        "journal-title": "PACIS 2017 Proceedings"
+      },
+      {
+        "key": "e_1_3_3_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3380799.3380804"
+      },
+      {
+        "key": "e_1_3_3_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3462766.3462769"
+      },
+      {
+        "key": "e_1_3_3_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17705/1thci.00126"
+      },
+      {
+        "key": "e_1_3_3_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3415200"
+      },
+      {
+        "key": "e_1_3_3_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3161161"
+      },
+      {
+        "key": "e_1_3_3_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2023.108036"
+      },
+      {
+        "key": "e_1_3_3_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17705/1CAIS.04505"
+      },
+      {
+        "key": "e_1_3_3_32_2",
+        "first-page": "335",
+        "volume-title": "Proceedings of the IEEE Annual Computer Software and Applications Conference (COMPSAC ’18)",
+        "volume": "02",
+        "author": "Braghin C.",
+        "year": "2018",
+        "unstructured": "C. Braghin, S. Cimato, and A. D. Libera. 2018. Are mHealth apps secure? A case study. In Proceedings of the IEEE Annual Computer Software and Applications Conference (COMPSAC ’18), Vol. 02. IEEE, 335–340. DOI:10.1109/COMPSAC.2018.10253"
+      },
+      {
+        "key": "e_1_3_3_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10641734.2018.1503108"
+      },
+      {
+        "key": "e_1_3_3_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/joca.12320"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_3_3_35_2",
+        "first-page": "1",
+        "article-title": "The Fitbit fault line: Two proposals to protect health and fitness data at work",
+        "volume": "16",
+        "author": "Brown E. A.",
+        "year": "2016",
+        "unstructured": "E. A. Brown. 2016. The Fitbit fault line: Two proposals to protect health and fitness data at work. Yale Journal of Health Policy, Law and Ethics 16, 1 (2016), 1–50. https://heinonline.org/HOL/P?h=hein.journals/yjhple16&i=7",
+        "journal-title": "Yale Journal of Health Policy, Law and Ethics"
+      },
+      {
+        "key": "e_1_3_3_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2019.05.004"
+      },
+      {
+        "key": "e_1_3_3_37_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1145/3411497.3420223",
+        "volume-title": "Proceedings of the Workshop on Privacy in the Electronic Society (WPES ’20)",
+        "author": "Calloway L.",
+        "year": "2020",
+        "unstructured": "L. Calloway, H. Hadan, S. Gopavaram, S. Mare, and L. J. Camp. 2020. Privacy in crisis: Participants’ privacy preferences for health and marketing data during a pandemic. In Proceedings of the Workshop on Privacy in the Electronic Society (WPES ’20). ACM, 181–189. DOI:10.1145/3411497.3420223"
+      },
+      {
+        "key": "e_1_3_3_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3550307"
+      },
+      {
+        "key": "e_1_3_3_39_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.46586/tches.v2022.i3.330-366"
+      },
+      {
+        "key": "e_1_3_3_40_2",
+        "unstructured": "Casetext. 2014. Sunbelt Rentals Inc. Plaintiff v. Santiago Victor Defendant. Retrieved February 18 2024 from https://casetext.com/case/sunbelt-rentals-inc-v-victor"
+      },
+      {
+        "key": "e_1_3_3_41_2",
+        "first-page": "24",
+        "volume-title": "Proceedings of the International ACM Workshop on Security and Privacy for the Internet (IoT S&P ’19)",
+        "author": "Celosia G.",
+        "year": "2019",
+        "unstructured": "G. Celosia and M. Cunche. 2019. Fingerprinting Bluetooth-Low-Energy devices based on the generic attribute profile. In Proceedings of the International ACM Workshop on Security and Privacy for the Internet (IoT S&P ’19). ACM, 24–31. DOI:10.1145/3338507.3358617"
+      },
+      {
+        "key": "e_1_3_3_42_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on Mobile Computing and Networking (MobiCom ’19)",
+        "author": "Chen W.",
+        "year": "2019",
+        "unstructured": "W. Chen, L. Chen, Y. Huang, X. Zhang, L. Wang, R. Ruby, and K. Wu. 2019. Taprint: Secure text input for commodity smart wristbands. In Proceedings of the International Conference on Mobile Computing and Networking (MobiCom ’19). ACM, 1–16. DOI:10.1145/3300061.3300124"
+      },
+      {
+        "key": "e_1_3_3_43_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1145/3154862.3154881",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’17)",
+        "author": "Choe E. K.",
+        "year": "2017",
+        "unstructured": "E. K. Choe, B. Lee, H. Zhu, N. H. Riche, and D. Baur. 2017. Understanding self-reflection: How people reflect on personal data through visual data exploration. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’17). ACM, 173–182. DOI:10.1145/3154862.3154881"
+      },
+      {
+        "key": "e_1_3_3_44_2",
+        "first-page": "4875",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17)",
+        "author": "Chung C.-F.",
+        "year": "2017",
+        "unstructured": "C.-F. Chung, N. Gorm, I. A. Shklovski, and S. Munson. 2017. Finding the right fit: Understanding health tracking in workplace wellness programs. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, 4875–4886. DOI:10.1145/3025453.3025510"
+      },
+      {
+        "key": "e_1_3_3_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3364685"
+      },
+      {
+        "key": "e_1_3_3_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1833358319851684"
+      },
+      {
+        "key": "e_1_3_3_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3191737"
+      },
+      {
+        "key": "e_1_3_3_48_2",
+        "first-page": "647",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Clawson J.",
+        "year": "2015",
+        "unstructured": "J. Clawson, J. A. Pater, A. D. Miller, E. D. Mynatt, and L. Mamykina. 2015. No longer wearing: Investigating the abandonment of personal health-tracking technologies on Craigslist. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 647–658. DOI:10.1145/2750858.2807554"
+      },
+      {
+        "key": "e_1_3_3_49_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "208",
+        "DOI": "10.1145/2994374.2994393",
+        "volume-title": "Proceedings of the International Conference on Mobile and Ubiquitous Systems: Computing, Networking, and Services (MOBIQUITOUS ’16)",
+        "author": "Cola G.",
+        "year": "2016",
+        "unstructured": "G. Cola, M. Avvenuti, F. Musso, and A. Vecchio. 2016. Gait-based authentication using a wrist-worn device. In Proceedings of the International Conference on Mobile and Ubiquitous Systems: Computing, Networking, and Services (MOBIQUITOUS ’16). ACM, 208–217. DOI:10.1145/2994374.2994393"
+      },
+      {
+        "key": "e_1_3_3_50_2",
+        "first-page": "4",
+        "article-title": "Users knowledge and attitudes towards data collection in activity trackers",
+        "author": "Dahlstrøm P.",
+        "year": "2020",
+        "unstructured": "P. Dahlstrøm, E. Fauchald, B. Fimreite, and M. Lillebo. 2020. Users knowledge and attitudes towards data collection in activity trackers. EReMCIS 2020 Proceedings 2020 (2020), 4.",
+        "journal-title": "EReMCIS 2020 Proceedings"
+      },
+      {
+        "key": "e_1_3_3_51_2",
+        "volume-title": "The Law and Ethics of ‘Self-Quantified’ Health Information: An Australian Perspective",
+        "author": "Daly A.",
+        "year": "2015",
+        "unstructured": "A. Daly. 2015. The Law and Ethics of ‘Self-Quantified’ Health Information: An Australian Perspective. SSRN Scholarly Paper ID 2559068. Social Science Research Network. https://papers.ssrn.com/abstract=2559068"
+      },
+      {
+        "key": "e_1_3_3_52_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1145/2873587.2873594",
+        "volume-title": "Proceedings of the International Workshop on Mobile Computing Systems and Applications (HotMobile ’16)",
+        "author": "Das A. K.",
+        "year": "2016",
+        "unstructured": "A. K. Das, P. H. Pathak, C.-N. Chuah, and P. Mohapatra. 2016. Uncovering privacy leakage in BLE network traffic of wearable fitness trackers. In Proceedings of the International Workshop on Mobile Computing Systems and Applications (HotMobile ’16). ACM, 99–104. DOI:10.1145/2873587.2873594"
+      },
+      {
+        "key": "e_1_3_3_53_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "4549",
+        "DOI": "10.1109/BigData.2018.8622110",
+        "volume-title": "Proceedings of the 2018 IEEE International Conference on Big Data (Big Data ’18)",
+        "author": "Datta P.",
+        "year": "2018",
+        "unstructured": "P. Datta, A. S. Namin, and M. Chatterjee. 2018. A survey of privacy concerns in wearable devices. In Proceedings of the 2018 IEEE International Conference on Big Data (Big Data ’18). IEEE, 4549–4553. DOI:10.1109/BigData.2018.8622110"
+      },
+      {
+        "key": "e_1_3_3_54_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "327",
+        "DOI": "10.1145/3243082.3267452",
+        "volume-title": "Proceedings of the Brazilian Symposium on Multimedia and the Web (WebMedia ’18)",
+        "author": "Faria I. L. de",
+        "year": "2018",
+        "unstructured": "I. L. de Faria and V. Vieira. 2018. A comparative study on fitness activity recognition. In Proceedings of the Brazilian Symposium on Multimedia and the Web (WebMedia ’18). ACM, 327–330. DOI:10.1145/3243082.3267452"
+      },
+      {
+        "key": "e_1_3_3_55_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1145/2808047.2808056",
+        "volume-title": "Proceedings of the New Zealand Conference on Human Computer Interaction (HCI ’15)",
+        "author": "Dhawale P. P.",
+        "year": "2015",
+        "unstructured": "P. P. Dhawale and R. J. Wellington. 2015. Identifying the characteristics of usability that encourage prolonged use of an activity monitor. In Proceedings of the New Zealand Conference on Human Computer Interaction (HCI ’15). ACM, 39–42. DOI:10.1145/2808047.2808056"
+      },
+      {
+        "key": "e_1_3_3_56_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Workshop on Sensor Based Activity Recognition and Interaction",
+        "author": "Dietrich M.",
+        "year": "2015",
+        "unstructured": "M. Dietrich and K. van Laerhoven. 2015. A typology of wearable activity recognition and interaction. In Proceedings of the International Workshop on Sensor Based Activity Recognition and Interaction. ACM, 1–8. DOI:10.1145/2790044.2790048"
+      },
+      {
+        "key": "e_1_3_3_57_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "O. D’Mello M. Gelin F. B. Khelil R. E. Surek and H. Chi. 2018. Wearable IoT security and privacy: A review from technology and policy perspective. In Future Network Systems and Security Robin Doss Selwyn Piramuthu and Wei Zhou (Eds.). Communications in Computer and Information Science. Springer International Publishing 162–177. DOI:10.1007/978-3-319-94421-0_13",
+        "DOI": "10.1007/978-3-319-94421-0_13"
+      },
+      {
+        "key": "e_1_3_3_58_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clbc.2019.05.005"
+      },
+      {
+        "key": "e_1_3_3_59_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58201-2_9"
+      },
+      {
+        "key": "e_1_3_3_60_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "J. du Toit. 2020. PAUDIT: A distributed data architecture for fitness data. In Information and Cyber Security Hein Venter Marianne Loock Marijke Coetzee Mariki Eloff and Jan Eloff (Eds.). Communications in Computer and Information Science. Springer International Publishing 43–56. DOI:10.1007/978-3-030-43276-8_4",
+        "DOI": "10.1007/978-3-030-43276-8_4"
+      },
+      {
+        "key": "e_1_3_3_61_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20)",
+        "author": "Ebert N.",
+        "year": "2020",
+        "unstructured": "N. Ebert, K. A. Ackermann, and P. Heinrich. 2020. Does context in privacy communication really matter? A survey on consumer concerns and preferences. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). ACM, 1–11. DOI:10.1145/3313831.3376575"
+      },
+      {
+        "key": "e_1_3_3_62_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "889",
+        "DOI": "10.1109/SP.2018.00053",
+        "volume-title": "Proceedings of the 2018 IEEE Symposium on Security and Privacy (S&P ’18)",
+        "author": "Eberz S.",
+        "year": "2018",
+        "unstructured": "S. Eberz, G. Lovisotto, A. Patane, M. Kwiatkowska, V. Lenders, and I. Martinovic. 2018. When your fitness tracker betrays you: Quantifying the predictability of biometric features across contexts. In Proceedings of the 2018 IEEE Symposium on Security and Privacy (S&P ’18). IEEE, 889–905. DOI:10.1109/SP.2018.00053"
+      },
+      {
+        "key": "e_1_3_3_63_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17705/1CAIS.04711"
+      },
+      {
+        "key": "e_1_3_3_64_2",
+        "first-page": "489",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’13)",
+        "author": "Epstein D. A.",
+        "year": "2013",
+        "unstructured": "D. A. Epstein, A. Borning, and J. Fogarty. 2013. Fine-grained sharing of sensed physical activity: A value sensitive approach. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’13). ACM, 489–498. DOI:10.1145/2493432.2493433"
+      },
+      {
+        "key": "e_1_3_3_65_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3432231"
+      },
+      {
+        "key": "e_1_3_3_66_2",
+        "first-page": "1109",
+        "volume-title": "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16)",
+        "author": "Epstein D. A.",
+        "year": "2016",
+        "unstructured": "D. A. Epstein, M. Caraway, C. Johnston, A. Ping, J. Fogarty, and S. A. Munson. 2016. Beyond abandonment to next steps: Understanding and designing for life after personal informatics tool use. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, 1109–1113. DOI:10.1145/2858036.2858045"
+      },
+      {
+        "key": "e_1_3_3_67_2",
+        "first-page": "829",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’16)",
+        "author": "Epstein D. A.",
+        "year": "2016",
+        "unstructured": "D. A. Epstein, J. H. Kang, L. R. Pina, J. Fogarty, and S. A. Munson. 2016. Reconsidering the device in the drawer: Lapses as a design opportunity in personal informatics. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’16). ACM, 829–840. DOI:10.1145/2971648.2971656"
+      },
+      {
+        "key": "e_1_3_3_68_2",
+        "first-page": "731",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Epstein D. A.",
+        "year": "2015",
+        "unstructured": "D. A. Epstein, A. Ping, J. Fogarty, and S. A. Munson. 2015. A lived informatics model of personal informatics. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 731–742. DOI:10.1145/2750858.2804250"
+      },
+      {
+        "key": "e_1_3_3_69_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12966-015-0314-1"
+      },
+      {
+        "key": "e_1_3_3_70_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LSP.2016.2642300"
+      },
+      {
+        "key": "e_1_3_3_71_2",
+        "first-page": "216",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’19)",
+        "author": "Faust L.",
+        "year": "2019",
+        "unstructured": "L. Faust, P. Jiménez-Pazmino, J. K. Holland, O. Lizardo, D. Hachen, and N. V. Chawla. 2019. What 30 days tells us about 3 years: Identifying early signs of user abandonment and non-adherence. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’19). ACM, 216–224. DOI:10.1145/3329189.3329196"
+      },
+      {
+        "key": "e_1_3_3_72_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "198",
+        "DOI": "10.1145/2994310.2994317",
+        "volume-title": "Proceedings of the International Academic Mindtrek Conference (AcademicMindtrek ’16)",
+        "author": "Fedosov A.",
+        "year": "2016",
+        "unstructured": "A. Fedosov, J. Ojala, E. Niforatos, T. Olsson, and M. Langheinrich. 2016. Mobile first? Understanding device usage practices in novel content sharing services. In Proceedings of the International Academic Mindtrek Conference (AcademicMindtrek ’16). ACM, 198–207. DOI:10.1145/2994310.2994317"
+      },
+      {
+        "key": "e_1_3_3_73_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "H. Fereidooni J. Classen T. Spink P. Patras M. Miettinen A.-R. Sadeghi M. Hollick and M. Conti. 2017. Breaking fitness records without moving: Reverse engineering and spoofing Fitbit. In Research in Attacks Intrusions and Defenses. Lecture Notes in Computer Science Vol. 10453. Springer 48–69. DOI:10.1007/978-3-319-66332-6_3",
+        "DOI": "10.1007/978-3-319-66332-6_3"
+      },
+      {
+        "key": "e_1_3_3_74_2",
+        "first-page": "19",
+        "volume-title": "Proceedings of the IEEE/International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE ’17)",
+        "author": "Fereidooni H.",
+        "year": "2017",
+        "unstructured": "H. Fereidooni, T. Frassetto, M. Miettinen, A.-R. Sadeghi, and M. Conti. 2017. Fitness trackers: Fit for health but unfit for security and privacy. In Proceedings of the IEEE/International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE ’17). IEEE, 19–24. DOI:10.1109/CHASE.2017.54"
+      },
+      {
+        "key": "e_1_3_3_75_2",
+        "first-page": "3439",
+        "volume-title": "Proceedings of the 53rd Hawaii International Conference on System Sciences",
+        "author": "Fietkiewicz K.",
+        "year": "2020",
+        "unstructured": "K. Fietkiewicz and A. Ilhan. 2020. Fitness tracking technologies: Data privacy doesn’t matter? The (un)concerns of users, former users, and non-users. In Proceedings of the 53rd Hawaii International Conference on System Sciences. 3439–3448. DOI:10.24251/HICSS.2020.421"
+      },
+      {
+        "key": "e_1_3_3_76_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "K. J. Fietkiewicz and M. Henkel. 2018. Privacy protecting fitness trackers: An oxymoron or soon to be reality? In Social Computing and Social Media. Lecture Notes in Computer Science Vol. 10913. Springer 431–444. DOI:10.1007/978-3-319-91521-0_31",
+        "DOI": "10.1007/978-3-319-91521-0_31"
+      },
+      {
+        "key": "e_1_3_3_77_2",
+        "first-page": "487",
+        "volume-title": "Proceedings of the 2014 CHI Conference on Human Factors in Computing Systems (CHI ’14)",
+        "author": "Fritz T.",
+        "year": "2014",
+        "unstructured": "T. Fritz, E. M. Huang, G. C. Murphy, and T. Zimmermann. 2014. Persuasive technology in the real world: A study of long-term use of activity sensing devices for fitness. In Proceedings of the 2014 CHI Conference on Human Factors in Computing Systems (CHI ’14). ACM, 487–496. DOI:10.1145/2556288.2557383"
+      },
+      {
+        "key": "e_1_3_3_78_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Workshop on Experiences with the Design and Implementation of Frugal Smart Objects (FRUGALTHINGS ’20)",
+        "author": "Furini M.",
+        "year": "2020",
+        "unstructured": "M. Furini, S. Mirri, M. Montangero, and C. Prandi. 2020. Can IoT wearable devices feed frugal innovation? In Proceedings of the Workshop on Experiences with the Design and Implementation of Frugal Smart Objects (FRUGALTHINGS ’20). ACM, 1–6. DOI:10.1145/3410670.3410861"
+      },
+      {
+        "key": "e_1_3_3_79_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20)",
+        "author": "Gabriele S.",
+        "year": "2020",
+        "unstructured": "S. Gabriele and S. Chiasson. 2020. Understanding fitness tracker users’ security and privacy knowledge, attitudes and behaviours. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). ACM, 1–12. DOI:10.1145/3313831.3376651"
+      },
+      {
+        "key": "e_1_3_3_80_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IMDS-03-2015-0087"
+      },
+      {
+        "key": "e_1_3_3_81_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18)",
+        "author": "Garbett A.",
+        "year": "2018",
+        "unstructured": "A. Garbett, D. Chatting, G. Wilkinson, C. Lee, and A. Kharrufa. 2018. ThinkActive: Designing for pseudonymous activity tracking in the classroom. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18). ACM, 1–13. DOI:10.1145/3173574.3173581"
+      },
+      {
+        "key": "e_1_3_3_82_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/folmed-2018-0012"
+      },
+      {
+        "key": "e_1_3_3_83_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cose.2018.04.002"
+      },
+      {
+        "key": "e_1_3_3_84_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/popets-2019-0047"
+      },
+      {
+        "key": "e_1_3_3_85_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2017.08.322"
+      },
+      {
+        "key": "e_1_3_3_86_2",
+        "first-page": "321",
+        "volume-title": "Proceedings of the 12th Symposium on Usable Privacy and Security (SOUPS ’16)",
+        "author": "Gluck J.",
+        "year": "2016",
+        "unstructured": "J. Gluck, F. Schaub, A. Friedman, H. Habib, N. Sadeh, L. F. Cranor, and Y. Agarwal. 2016. How short Is too short? Implications of length and framing on the effectiveness of privacy notices. In Proceedings of the 12th Symposium on Usable Privacy and Security (SOUPS ’16). 321–340. https://www.usenix.org/conference/soups2016/technical-sessions/presentation/gluck"
+      },
+      {
+        "key": "e_1_3_3_87_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCBB.2016.2515610"
+      },
+      {
+        "key": "e_1_3_3_88_2",
+        "first-page": "4315",
+        "volume-title": "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16)",
+        "author": "Gorm N.",
+        "year": "2016",
+        "unstructured": "N. Gorm and I. Shklovski. 2016. Sharing steps in the workplace: Changing privacy concerns over time. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, 4315–4319. DOI:10.1145/2858036.2858352"
+      },
+      {
+        "key": "e_1_3_3_89_2",
+        "first-page": "148",
+        "volume-title": "Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+        "author": "Gorm N.",
+        "year": "2016",
+        "unstructured": "N. Gorm and I. Shklovski. 2016. Steps, choices and moral accounting: Observations from a step-counting campaign in the workplace. In Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work and Social Computing. ACM, 148–159. DOI:10.1145/2818048.2819944"
+      },
+      {
+        "key": "e_1_3_3_90_2",
+        "first-page": "1350",
+        "volume-title": "Proceedings of the ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW ’17)",
+        "author": "Gorm N.",
+        "year": "2017",
+        "unstructured": "N. Gorm and I. Shklovski. 2017. Participant driven photo elicitation for understanding activity tracking: Benefits and limitations. In Proceedings of the ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW ’17). ACM, 1350–1361. DOI:10.1145/2998181.2998214"
+      },
+      {
+        "key": "e_1_3_3_91_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on Computer, Information, and Telecommunication Systems (CITS ’20)",
+        "author": "Gouda O. M.",
+        "year": "2020",
+        "unstructured": "O. M. Gouda, D. J. Hejji, and M. S. Obaidat. 2020. Privacy assessment of fitness tracker devices. In Proceedings of the International Conference on Computer, Information, and Telecommunication Systems (CITS ’20). IEEE, 1–8. DOI:10.1109/CITS49457.2020.9232503"
+      },
+      {
+        "key": "e_1_3_3_92_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2014 Advances in Computer Entertainment Conference Workshops (ACE Workshops ’14)",
+        "author": "Gouveia R.",
+        "year": "2014",
+        "unstructured": "R. Gouveia, S. Barros, and E. Karapanos. 2014. Understanding users’ disengagement with wearable activity trackers. In Proceedings of the 2014 Advances in Computer Entertainment Conference Workshops (ACE Workshops ’14). ACM, 1–3. DOI:10.1145/2693787.2693802"
+      },
+      {
+        "key": "e_1_3_3_93_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18)",
+        "author": "Gouveia R.",
+        "year": "2018",
+        "unstructured": "R. Gouveia, E. Karapanos, and M. Hassenzahl. 2018. Activity tracking in Vivo. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18). ACM, 1–13. DOI:10.1145/3173574.3173936"
+      },
+      {
+        "key": "e_1_3_3_94_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1145/2851613.2851685",
+        "volume-title": "Proceedings of the Annual ACM Symposium on Applied Computing (SAC ’16)",
+        "author": "Goyal R.",
+        "year": "2016",
+        "unstructured": "R. Goyal, N. Dragoni, and A. Spognardi. 2016. Mind the tracker you wear: A security analysis of wearable health trackers. In Proceedings of the Annual ACM Symposium on Applied Computing (SAC ’16). ACM, 131–136. DOI:10.1145/2851613.2851685"
+      },
+      {
+        "key": "e_1_3_3_95_2",
+        "first-page": "1647",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17)",
+        "author": "Gui X.",
+        "year": "2017",
+        "unstructured": "X. Gui, Y. Chen, C. Caldeira, D. Xiao, and Y. Chen. 2017. When fitness meets social networks: Investigating fitness tracking and social practices on WeRun. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, 1647–1659. DOI:10.1145/3025453.3025654"
+      },
+      {
+        "key": "e_1_3_3_96_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3494970"
+      },
+      {
+        "key": "e_1_3_3_97_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1145/3411497.3420221",
+        "volume-title": "Proceedings of the Workshop on Privacy in the Electronic Society (WPES ’20)",
+        "author": "Guo W.",
+        "year": "2020",
+        "unstructured": "W. Guo, J. Rodolitz, and E. Birrell. 2020. Poli-See: An interactive tool for visualizing privacy policies. In Proceedings of the Workshop on Privacy in the Electronic Society (WPES ’20). ACM, 57–71. DOI:10.1145/3411497.3420221"
+      },
+      {
+        "key": "e_1_3_3_98_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "156",
+        "DOI": "10.1145/3421937.3421991",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’20)",
+        "author": "Gupta A.",
+        "year": "2020",
+        "unstructured": "A. Gupta, T. Heng, C. Shaw, D. Gromala, J. Leese, and L. Li. 2020. Oh, I didn’t do a good job: How objective data affects physiotherapist-patient conversations for arthritis patients. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’20). ACM, 156–165. DOI:10.1145/3421937.3421991"
+      },
+      {
+        "key": "e_1_3_3_99_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’18)",
+        "author": "Gupta A.",
+        "year": "2018",
+        "unstructured": "A. Gupta, T. Heng, C. Shaw, L. Li, and L. Feehan. 2018. Designing pervasive technology for physical activity self-management in arthritis patients. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’18). ACM, 1–10. DOI:10.1145/3240925.3240956"
+      },
+      {
+        "key": "e_1_3_3_100_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. A. Gutierrez M. L. Fast A. H. Ngu and B. J. Gao. 2016. Real-time prediction of blood alcohol content using smartwatch sensor data. In Smart Health. Lecture Notes in Computer Science Vol. 9545. Springer 175–186.",
+        "DOI": "10.1007/978-3-319-29175-8_16"
+      },
+      {
+        "key": "e_1_3_3_101_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dcan.2018.10.009"
+      },
+      {
+        "key": "e_1_3_3_102_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "500",
+        "DOI": "10.1109/EuroSPW51379.2020.00073",
+        "volume-title": "Proceedings of the IEEE European Symposium on Security and Privacy Workshops (EuroS&PW ’20)",
+        "author": "Hantke F.",
+        "year": "2020",
+        "unstructured": "F. Hantke and A. Dewald. 2020. How can data from fitness trackers be obtained and analyzed with a forensic approach? In Proceedings of the IEEE European Symposium on Security and Privacy Workshops (EuroS&PW ’20). IEEE, 500–508. DOI:10.1109/EuroSPW51379.2020.00073"
+      },
+      {
+        "key": "e_1_3_3_103_2",
+        "first-page": "617",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Harrison D.",
+        "year": "2015",
+        "unstructured": "D. Harrison, P. Marshall, N. Bianchi-Berthouze, and J. Bird. 2015. Activity tracking: Barriers, workarounds and customisation. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 617–621. DOI:10.1145/2750858.2805832"
+      },
+      {
+        "key": "e_1_3_3_104_2",
+        "first-page": "497",
+        "volume-title": "Proceedings of the USENIX Symposium on Security",
+        "author": "Hassan W. U.",
+        "year": "2018",
+        "unstructured": "W. U. Hassan, S. Hussain, and A. Bates. 2018. Analysis of privacy protections in networks—Or—You can run, but can you hide? In Proceedings of the USENIX Symposium on Security. 497–512. https://www.usenix.org/conference/usenixsecurity18/presentation/hassan"
+      },
+      {
+        "key": "e_1_3_3_105_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on Availability, Reliability, and Security (ARES ’19)",
+        "author": "Hassenfeldt C.",
+        "year": "2019",
+        "unstructured": "C. Hassenfeldt, S. Baig, I. Baggili, and X. Zhang. 2019. Map my murder: A digital forensic study of mobile health and fitness applications. In Proceedings of the International Conference on Availability, Reliability, and Security (ARES ’19). ACM, 1–12. DOI:10.1145/3339252.3340515"
+      },
+      {
+        "key": "e_1_3_3_106_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/26107"
+      },
+      {
+        "key": "e_1_3_3_107_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02763869.2016.1117300"
+      },
+      {
+        "key": "e_1_3_3_108_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3360498"
+      },
+      {
+        "key": "e_1_3_3_109_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/mhealth.9217"
+      },
+      {
+        "key": "e_1_3_3_110_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/AJIM-03-2020-0067"
+      },
+      {
+        "key": "e_1_3_3_111_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0141076816663560"
+      },
+      {
+        "key": "e_1_3_3_112_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1145/2509352.2509400",
+        "volume-title": "Proceedings of the International Workshop on Personal Data Meets Distributed Multimedia (PDM ’13)",
+        "author": "Jalali L.",
+        "year": "2013",
+        "unstructured": "L. Jalali and R. Jain. 2013. Building health persona from personal data streams. In Proceedings of the International Workshop on Personal Data Meets Distributed Multimedia (PDM ’13). ACM, 19–26. DOI:10.1145/2509352.2509400"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_3_3_113_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "287",
+        "DOI": "10.25300/MISQ/2019/14128",
+        "article-title": "Using organismic integration theory to explore the associations between users’ exercise motivations and fitness technology feature set use",
+        "volume": "43",
+        "author": "James T.",
+        "year": "2019",
+        "unstructured": "T. James, L. Wallace, and J. Dean. 2019. Using organismic integration theory to explore the associations between users’ exercise motivations and fitness technology feature set use. Management Information Systems Quarterly 43, 1 (2019), 287–312. https://aisel.aisnet.org/misq/vol43/iss1/15",
+        "journal-title": "Management Information Systems Quarterly"
+      },
+      {
+        "key": "e_1_3_3_114_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00779-017-1099-9"
+      },
+      {
+        "key": "e_1_3_3_115_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on Biometrics Theory, Applications, and Systems (BTAS ’15)",
+        "author": "Johnston A. H.",
+        "year": "2015",
+        "unstructured": "A. H. Johnston and G. M. Weiss. 2015. Smartwatch-based biometric gait recognition. In Proceedings of the International Conference on Biometrics Theory, Applications, and Systems (BTAS ’15). IEEE, 1–6. DOI:10.1109/BTAS.2015.7358794"
+      },
+      {
+        "key": "e_1_3_3_116_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3448093"
+      },
+      {
+        "key": "e_1_3_3_117_2",
+        "first-page": "50",
+        "volume-title": "Proceedings of the Australian Conference on Computer (Human Interaction ’16)",
+        "author": "Jørgensen M. S.",
+        "year": "2016",
+        "unstructured": "M. S. Jørgensen, F. K. Nissen, J. Paay, J. Kjeldskov, and M. B. Skov. 2016. Monitoring children’s physical activity and sleep: A study of surveillance and information disclosure. In Proceedings of the Australian Conference on Computer (Human Interaction ’16). ACM, 50–58. DOI:10.1145/3010915.3010936"
+      },
+      {
+        "key": "e_1_3_3_118_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJTMKT.2017.089665"
+      },
+      {
+        "key": "e_1_3_3_119_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.29007/qsp7"
+      },
+      {
+        "key": "e_1_3_3_120_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.5220/0010233103690376",
+        "volume-title": "Proceedings of the International Joint Conference on Biomedical Engineering Systems and Technologies",
+        "author": "Kazlouski A.",
+        "year": "2021",
+        "unstructured": "A. Kazlouski, T. Marchioro, H. Manifavas, and E. Markatos. 2021. I still see you! Inferring fitness data from encrypted traffic of wearables. In Proceedings of the International Joint Conference on Biomedical Engineering Systems and Technologies. 369–376. DOI:10.5220/0010233103690376"
+      },
+      {
+        "key": "e_1_3_3_121_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1008689307411"
+      },
+      {
+        "key": "e_1_3_3_122_2",
+        "first-page": "699",
+        "volume-title": "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16)",
+        "author": "Kim D.-J.",
+        "year": "2016",
+        "unstructured": "D.-J. Kim, Y. Lee, S. Rho, and Y.-K. Lim. 2016. Design opportunities in three stages of relationship development between users and self-tracking devices. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI ’16). ACM, 699–703. DOI:10.1145/2858036.2858148"
+      },
+      {
+        "key": "e_1_3_3_123_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/18312"
+      },
+      {
+        "key": "e_1_3_3_124_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20)",
+        "author": "Kim S.",
+        "year": "2020",
+        "unstructured": "S. Kim, A. Thakur, and J. Kim. 2020. Understanding users’ perception towards automated personality detection with group-specific behavioral data. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). ACM, 1–12. DOI:10.1145/3313831.3376250"
+      },
+      {
+        "key": "e_1_3_3_125_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tele.2021.101603"
+      },
+      {
+        "key": "e_1_3_3_126_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3130930"
+      },
+      {
+        "key": "e_1_3_3_127_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.infsof.2008.09.009"
+      },
+      {
+        "key": "e_1_3_3_128_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1586/17434440.2016.1171708"
+      },
+      {
+        "key": "e_1_3_3_129_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "V. Kumari and S. A. Hook. 2017. The privacy security and discoverability of data on wearable health devices: Fitness or folly? In Universal Access in Human–Computer Interaction. Human and Technological Environments. Lecture Notes in Computer Science Vol. 10279. Springer 50–64. DOI:10.1007/978-3-319-58700-4_5",
+        "DOI": "10.1007/978-3-319-58700-4_5"
+      },
+      {
+        "key": "e_1_3_3_130_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3328923"
+      },
+      {
+        "key": "e_1_3_3_131_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2012.110112.00192"
+      },
+      {
+        "key": "e_1_3_3_132_2",
+        "first-page": "635",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Lazar A.",
+        "year": "2015",
+        "unstructured": "A. Lazar, C. Koehler, J. Tanenbaum, and D. H. Nguyen. 2015. Why we use and abandon smart devices. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 635–646. DOI:10.1145/2750858.2804288"
+      },
+      {
+        "key": "e_1_3_3_133_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3534623"
+      },
+      {
+        "key": "e_1_3_3_134_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12525-021-00474-3"
+      },
+      {
+        "key": "e_1_3_3_135_2",
+        "first-page": "243",
+        "volume-title": "Proceedings of the 2017 16th European Conference on Cyber Warfare and Security (ECCWS ’17)",
+        "author": "Lehto M.",
+        "year": "2017",
+        "unstructured": "M. Lehto and M. Miikael. 2017. Health information privacy of activity trackers. In Proceedings of the 2017 16th European Conference on Cyber Warfare and Security (ECCWS ’17). 243–251."
+      },
+      {
+        "key": "e_1_3_3_136_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/popets-2016-0042"
+      },
+      {
+        "key": "e_1_3_3_137_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "527",
+        "DOI": "10.1145/3322276.3322366",
+        "volume-title": "Proceedings of the Designing Interactive Systems Conference (DIS ’19)",
+        "author": "Leitão R.",
+        "year": "2019",
+        "unstructured": "R. Leitão. 2019. Anticipating smart home security and privacy threats with survivors of intimate partner abuse. In Proceedings of the Designing Interactive Systems Conference (DIS ’19). ACM, 527–539. DOI:10.1145/3322276.3322366"
+      },
+      {
+        "key": "e_1_3_3_138_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2015.12.010"
+      },
+      {
+        "key": "e_1_3_3_139_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3550333"
+      },
+      {
+        "key": "e_1_3_3_140_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’20)",
+        "author": "Li Q.",
+        "year": "2020",
+        "unstructured": "Q. Li, C. Caldeira, D. A. Epstein, and Y. Chen. 2020. Supporting caring among intergenerational family members through family fitness tracking. In Proceedings of the Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth ’20). ACM, 1–10. DOI:10.1145/3421937.3422018"
+      },
+      {
+        "key": "e_1_3_3_141_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Annual International Conference on Mobile Computing and Networking (MobiCom ’19)",
+        "author": "Li X.",
+        "year": "2019",
+        "unstructured": "X. Li, F. Yan, F. Zuo, Q. Zeng, and L. Luo. 2019. Touch well before use: Intuitive and secure authentication for IoT devices. In Proceedings of the Annual International Conference on Mobile Computing and Networking (MobiCom ’19). ACM, 1–17. DOI:10.1145/3300061.3345434"
+      },
+      {
+        "key": "e_1_3_3_142_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "194",
+        "DOI": "10.1145/3328529.3328560",
+        "volume-title": "Proceedings of the International Conference on Social Media and Society (SMSociety ’19)",
+        "author": "Liao Y.",
+        "year": "2019",
+        "unstructured": "Y. Liao. 2019. Sharing personal health information on social media: Balancing self-presentation and privacy. In Proceedings of the International Conference on Social Media and Society (SMSociety ’19). ACM, 194–204. DOI:10.1145/3328529.3328560"
+      },
+      {
+        "key": "e_1_3_3_143_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "C. Lidynia P. Brauner and M. Ziefle. 2018. A step in the right direction—Understanding privacy concerns and perceived sensitivity of fitness trackers. In Advances in Human Factors in Wearable Technologies and Game Design Tareq Ahram and Christianne Falcão (Eds.). Advances in Intelligent Systems and Computing. Springer International Publishing 42–53. DOI:10.1007/978-3-319-60639-2_5",
+        "DOI": "10.1007/978-3-319-60639-2_5"
+      },
+      {
+        "key": "e_1_3_3_144_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3328928"
+      },
+      {
+        "key": "e_1_3_3_145_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "334",
+        "DOI": "10.1145/2973750.2973752",
+        "volume-title": "Proceedings of the 22nd Annual International Conference on Mobile Computing and Networking",
+        "author": "Liu C.",
+        "year": "2016",
+        "unstructured": "C. Liu, L. Zhang, Z. Liu, K. Liu, X. Li, and Y. Liu. 2016. Lasagna: Towards deep hierarchical understanding and searching over mobile sensing data. In Proceedings of the 22nd Annual International Conference on Mobile Computing and Networking. ACM, 334–347. DOI:10.1145/2973750.2973752"
+      },
+      {
+        "key": "e_1_3_3_146_2",
+        "first-page": "142",
+        "volume-title": "Proceedings of the Annual Meeting of the Australian Special Interest Group for Computer Human Interaction (OzCHI ’15)",
+        "author": "Liu W.",
+        "year": "2015",
+        "unstructured": "W. Liu, B. Ploderer, and T. Hoang. 2015. In bed with technology: Challenges and opportunities for sleep tracking. In Proceedings of the Annual Meeting of the Australian Special Interest Group for Computer Human Interaction (OzCHI ’15). ACM, 142–151. DOI:10.1145/2838739.2838742"
+      },
+      {
+        "key": "e_1_3_3_147_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "25",
+        "DOI": "10.1109/MobServ.2016.15",
+        "volume-title": "Proceedings of the International Conference on Mobile Services (MS ’16)",
+        "author": "Lotfy K.",
+        "year": "2016",
+        "unstructured": "K. Lotfy and M. L. Hale. 2016. Assessing pairing and data exchange mechanism security in the wearable Internet of Things. In Proceedings of the International Conference on Mobile Services (MS ’16). IEEE, 25–32. DOI:10.1109/MobServ.2016.15"
+      },
+      {
+        "key": "e_1_3_3_148_2",
+        "first-page": "295",
+        "volume-title": "Proceedings of the International Conference on Healthcare Informatics (ICHI ’17)",
+        "author": "Lowens B.",
+        "year": "2017",
+        "unstructured": "B. Lowens, V. G. Motti, and K. Caine. 2017. Wearable privacy: Skeletons in the data closet. In Proceedings of the International Conference on Healthcare Informatics (ICHI ’17). IEEE, 295–304. DOI:10.1109/ICHI.2017.29"
+      },
+      {
+        "key": "e_1_3_3_149_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3161196"
+      },
+      {
+        "key": "e_1_3_3_150_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2016.08.007"
+      },
+      {
+        "key": "e_1_3_3_151_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03085147.2016.1143726"
+      },
+      {
+        "key": "e_1_3_3_152_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/13573322.2018.1555661"
+      },
+      {
+        "key": "e_1_3_3_153_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fdgth.2021.649275"
+      },
+      {
+        "key": "e_1_3_3_154_2",
+        "first-page": "795",
+        "volume-title": "Proceedings of the ACM Asia Conference on Computer and Communications Security (ASIA CCS ’16)",
+        "author": "Maiti A.",
+        "year": "2016",
+        "unstructured": "A. Maiti, O. Armbruster, M. Jadliwala, and J. He. 2016. Smartwatch-based keystroke inference attacks and context-aware protection mechanisms. In Proceedings of the ACM Asia Conference on Computer and Communications Security (ASIA CCS ’16). ACM, 795–806. DOI:10.1145/2897845.2897905"
+      },
+      {
+        "key": "e_1_3_3_155_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1145/3212480.3212498",
+        "volume-title": "Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’18)",
+        "author": "Maiti A.",
+        "year": "2018",
+        "unstructured": "A. Maiti, R. Heard, M. Sabra, and M. Jadliwala. 2018. Towards inferring mechanical lock combinations using wrist-wearables as a side-channel. In Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’18). ACM, 111–122. DOI:10.1145/3212480.3212498arxiv:1710.00217"
+      },
+      {
+        "key": "e_1_3_3_156_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2018.2794984"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_3_3_157_2",
+        "first-page": "30",
+        "article-title": "Is that lawful? Data privacy and fitness trackers in the workplace",
+        "volume": "37",
+        "author": "Marassi S.",
+        "year": "2021",
+        "unstructured": "S. Marassi and P. Collins. 2021. Is that lawful? Data privacy and fitness trackers in the workplace. International Journal of Comparative Labour Law and Industrial Relations 37, 1 (2021), 30. https://kluwerlawonline.com/journalarticle/International+Journal+of+Comparative+Labour+Law+and+Industrial+Relations/37.1/IJCL2021003",
+        "journal-title": "International Journal of Comparative Labour Law and Industrial Relations"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_3_158_2",
+        "first-page": "159",
+        "article-title": "To cover or not to cover: The relationship between the Apple Watch and the Health Insurance Portability and Accountability Act",
+        "volume": "18",
+        "author": "Mares C. M.",
+        "year": "2016",
+        "unstructured": "C. M. Mares. 2016. To cover or not to cover: The relationship between the Apple Watch and the Health Insurance Portability and Accountability Act. DePaul Journal of Health Care Law 18, 2 (2016), 159–180. https://heinonline.org/HOL/P?h=hein.journals/dephcl18&i=173",
+        "journal-title": "DePaul Journal of Health Care Law"
+      },
+      {
+        "key": "e_1_3_3_159_2",
+        "first-page": "3871",
+        "volume-title": "Proceedings of the 54th Hawaii International Conference on System Sciences",
+        "author": "Masuch K.",
+        "year": "2021",
+        "unstructured": "K. Masuch, M. Greve, and S. Trang. 2021. Fitness first or safety first? Examining adverse consequences of privacy seals in the event of a data breach. In Proceedings of the 54th Hawaii International Conference on System Sciences. 3871. DOI:10.24251/HICSS.2021.469"
+      },
+      {
+        "key": "e_1_3_3_160_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17705/1pais.11105"
+      },
+      {
+        "key": "e_1_3_3_161_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "S. McNary and A. Hunter. 2018. Wearable device data for criminal investigation. In Security Privacy and Anonymity in Computation Communication and Storage. Lecture Notes in Computer Science Vol. 11342. Springer 60–71. DOI:10.1007/978-3-030-05345-1_5",
+        "DOI": "10.1007/978-3-030-05345-1_5"
+      },
+      {
+        "key": "e_1_3_3_162_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/proceedings2191235"
+      },
+      {
+        "key": "e_1_3_3_163_2",
+        "first-page": "464",
+        "volume-title": "Proceedings of the IEEE International Conference on Distributed Computing Systems (ICDCS ’20)",
+        "author": "Meteriz Ü.",
+        "year": "2020",
+        "unstructured": "Ü. Meteriz, N. F. Y \\(\\iota\\) ld \\(\\iota\\) ran, J. Kim, and D. Mohaisen. 2020. Understanding the potential risks of sharing elevation information on fitness applications. In Proceedings of the IEEE International Conference on Distributed Computing Systems (ICDCS ’20). IEEE, 464–473. DOI:10.1109/ICDCS47774.2020.00063"
+      },
+      {
+        "key": "e_1_3_3_164_2",
+        "first-page": "667",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17)",
+        "author": "Meyer J.",
+        "year": "2017",
+        "unstructured": "J. Meyer, M. Wasmann, W. Heuten, A. El Ali, and S. C. Boll. 2017. Identification and classification of usage patterns in long-term activity tracking. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, 667–678. DOI:10.1145/3025453.3025690"
+      },
+      {
+        "key": "e_1_3_3_165_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "66",
+        "DOI": "10.1109/ISSA.2017.8251776",
+        "volume-title": "Proceedings of the 2017 Conference on Information Security for South Africa (ISSA ’17)",
+        "author": "Mnjama J.",
+        "year": "2017",
+        "unstructured": "J. Mnjama, G. Foster, and B. Irwin. 2017. A privacy and security threat assessment framework for consumer health wearables. In Proceedings of the 2017 Conference on Information Security for South Africa (ISSA ’17). IEEE, 66–73. DOI:10.1109/ISSA.2017.8251776"
+      },
+      {
+        "key": "e_1_3_3_166_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-66039-0_8"
+      },
+      {
+        "key": "e_1_3_3_167_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3188387.3188392"
+      },
+      {
+        "key": "e_1_3_3_168_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on the Design of Communication (SIGDOC ’16)",
+        "author": "Motti V. G.",
+        "year": "2016",
+        "unstructured": "V. G. Motti and K. Caine. 2016. Smart wearables or dumb wearables? Understanding how context impacts the UX in wrist worn interaction. In Proceedings of the International Conference on the Design of Communication (SIGDOC ’16). ACM, 1–10. DOI:10.1145/2987592.2987606"
+      },
+      {
+        "key": "e_1_3_3_169_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pmcj.2021.101480"
+      },
+      {
+        "key": "e_1_3_3_170_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2018.6040"
+      },
+      {
+        "key": "e_1_3_3_171_2",
+        "first-page": "119",
+        "article-title": "Privacy as contextual integrity",
+        "volume": "79",
+        "author": "Nissenbaum H.",
+        "year": "2004",
+        "unstructured": "H. Nissenbaum. 2004. Privacy as contextual integrity. HeinOnline 79 (2004), 119.",
+        "journal-title": "HeinOnline"
+      },
+      {
+        "key": "e_1_3_3_172_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chb.2021.106798"
+      },
+      {
+        "key": "e_1_3_3_173_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1145/3299815.3314468",
+        "volume-title": "Proceedings of the ACM Southeast Conference (ACM SE ’19)",
+        "author": "Orlosky J.",
+        "year": "2019",
+        "unstructured": "J. Orlosky, O. Ezenwoye, H. Yates, and G. Besenyi. 2019. A look at the security and privacy of Fitbit as a health activity tracker. In Proceedings of the ACM Southeast Conference (ACM SE ’19). ACM, 241–244. DOI:10.1145/3299815.3314468"
+      },
+      {
+        "key": "e_1_3_3_174_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5923/j.ijit.20190802.02"
+      },
+      {
+        "key": "e_1_3_3_175_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3415228"
+      },
+      {
+        "key": "e_1_3_3_176_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3287061"
+      },
+      {
+        "key": "e_1_3_3_177_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/JSM-03-2018-0091"
+      },
+      {
+        "key": "e_1_3_3_178_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSMCC.2009.2032660"
+      },
+      {
+        "key": "e_1_3_3_179_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4018/IJISP.2020070105"
+      },
+      {
+        "key": "e_1_3_3_180_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ifacol.2022.09.410"
+      },
+      {
+        "key": "e_1_3_3_181_2",
+        "first-page": "2923",
+        "volume-title": "Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15)",
+        "author": "Patel M.",
+        "year": "2015",
+        "unstructured": "M. Patel and A. A. O’Kane. 2015. Contextual influences on the use and non-use of digital technology while exercising at the Gym. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI ’15). ACM, 2923–2932. DOI:10.1145/2702123.2702384"
+      },
+      {
+        "key": "e_1_3_3_182_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1743-0003-9-21"
+      },
+      {
+        "key": "e_1_3_3_183_2",
+        "first-page": "117",
+        "volume-title": "Proceedings of the International Conference on Security of Information and Networks (SIN ’14)",
+        "author": "Paul G.",
+        "year": "2014",
+        "unstructured": "G. Paul and J. Irvine. 2014. Privacy implications of wearable health devices. In Proceedings of the International Conference on Security of Information and Networks (SIN ’14). ACM, 117–121. DOI:10.1145/2659651.2659683"
+      },
+      {
+        "key": "e_1_3_3_184_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0165908"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_3_185_2",
+        "first-page": "4",
+        "article-title": "Privacy concerns and data sharing habits of personal fitness information collected via activity trackers",
+        "volume": "14",
+        "author": "Pinchot J.",
+        "year": "2021",
+        "unstructured": "J. Pinchot and D. Cellante. 2021. Privacy concerns and data sharing habits of personal fitness information collected via activity trackers. Journal of Information Systems Applied Research 14, 2 (2021), 4–13. http://jisar.org/2021-14/n2/JISARv14n2p4.html",
+        "journal-title": "Journal of Information Systems Applied Research"
+      },
+      {
+        "key": "e_1_3_3_186_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Z. Pingo and B. Narayan. 2018. Users’ responses to privacy issues with the connected information ecologies created by fitness trackers. In Maturity and Innovation in Digital Libraries. Lecture Notes in Computer Science Vol. 11279. Springer 240–255. DOI:10.1007/978-3-030-04257-8_25",
+        "DOI": "10.1007/978-3-030-04257-8_25"
+      },
+      {
+        "key": "e_1_3_3_187_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/OIR-04-2018-0115"
+      },
+      {
+        "key": "e_1_3_3_188_2",
+        "first-page": "519",
+        "volume-title": "Proceedings of the Interaction Design and Children Conference (IDC ’20)",
+        "author": "Potapov K.",
+        "year": "2020",
+        "unstructured": "K. Potapov and P. Marshall. 2020. LifeMosaic: Co-design of a personal informatics tool for youth. In Proceedings of the Interaction Design and Children Conference (IDC ’20). ACM, 519–531. DOI:10.1145/3392063.3394429"
+      },
+      {
+        "key": "e_1_3_3_189_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0733464815624151"
+      },
+      {
+        "key": "e_1_3_3_190_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2018.2873950"
+      },
+      {
+        "key": "e_1_3_3_191_2",
+        "first-page": "6936",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17)",
+        "author": "Puussaar A.",
+        "year": "2017",
+        "unstructured": "A. Puussaar, A. K. Clear, and P. Wright. 2017. Enhancing personal informatics through social sensemaking. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, 6936–6942. DOI:10.1145/3025453.3025804"
+      },
+      {
+        "key": "e_1_3_3_192_2",
+        "first-page": "257",
+        "volume-title": "Proceedings of the 13th Symposium on Usable Privacy and Security (SOUPS ’17)",
+        "author": "Rader E.",
+        "year": "2017",
+        "unstructured": "E. Rader and J. Slaker. 2017. The importance of visibility for folk theories of sensor data. In Proceedings of the 13th Symposium on Usable Privacy and Security (SOUPS ’17). 257–270. https://www.usenix.org/conference/soups2017/technical-sessions/presentation/rader"
+      },
+      {
+        "key": "e_1_3_3_193_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2015.2418774"
+      },
+      {
+        "key": "e_1_3_3_194_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "154",
+        "DOI": "10.1145/3131085.3131118",
+        "volume-title": "Proceedings of the International Academic Mindtrek Conference (AcademicMindtrek ’17)",
+        "author": "Rajanen D.",
+        "year": "2017",
+        "unstructured": "D. Rajanen and M. Weng. 2017. Digitization for fun or reward? A study of acceptance of wearable devices for personal healthcare. In Proceedings of the International Academic Mindtrek Conference (AcademicMindtrek ’17). ACM, 154–163. DOI:10.1145/3131085.3131118"
+      },
+      {
+        "key": "e_1_3_3_195_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2017.92"
+      },
+      {
+        "key": "e_1_3_3_196_2",
+        "first-page": "51",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Ranjan J.",
+        "year": "2015",
+        "unstructured": "J. Ranjan and K. Whitehouse. 2015. Object hallmarks: Identifying object users using wearable wrist sensors. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 51–61. DOI:10.1145/2750858.2804263"
+      },
+      {
+        "key": "e_1_3_3_197_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3196829"
+      },
+      {
+        "key": "e_1_3_3_198_2",
+        "first-page": "6864",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17)",
+        "author": "Ravichandran R.",
+        "year": "2017",
+        "unstructured": "R. Ravichandran, S.-W. Sien, S. N. Patel, J. A. Kientz, and L. R. Pina. 2017. Making sense of sleep sensors: How sleep sensing technologies support and undermine sleep health. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI ’17). ACM, 6864–6875. DOI:10.1145/3025453.3025557"
+      },
+      {
+        "key": "e_1_3_3_199_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/S0219877020500492"
+      },
+      {
+        "key": "e_1_3_3_200_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274415"
+      },
+      {
+        "key": "e_1_3_3_201_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10447318.2020.1819669"
+      },
+      {
+        "key": "e_1_3_3_202_2",
+        "volume-title": "The Stanford Encyclopedia of Philosophy (Winter 2020 ed.)",
+        "author": "Ishii T. Robertson",
+        "year": "2020",
+        "unstructured": "T. Robertson Ishii and P. Atkins. 2020. Essential vs. accidental properties. In The Stanford Encyclopedia of Philosophy (Winter 2020 ed.), Edward N. Zalta (Ed.). Metaphysics Research Lab, Stanford University. https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=essential-accidental#"
+      },
+      {
+        "key": "e_1_3_3_203_2",
+        "first-page": "1163",
+        "volume-title": "Proceedings of the 2014 CHI Conference on Human Factors in Computing Systems (CHI ’14)",
+        "author": "Rooksby J.",
+        "year": "2014",
+        "unstructured": "J. Rooksby, M. Rost, A. Morrison, and M. Chalmers. 2014. Personal tracking as lived informatics. In Proceedings of the 2014 CHI Conference on Human Factors in Computing Systems (CHI ’14). ACM, 1163–1172. DOI:10.1145/2556288.2557039"
+      },
+      {
+        "key": "e_1_3_3_204_2",
+        "first-page": "2417",
+        "volume-title": "Proceedings of the 2015 CHI Conference on Human Factors in Computing Systems (CHI ’15)",
+        "author": "Rooksby J.",
+        "year": "2015",
+        "unstructured": "J. Rooksby, M. Rost, A. Morrison, and M. Chalmers. 2015. Pass the ball: Enforced turn-taking in activity tracking. In Proceedings of the 2015 CHI Conference on Human Factors in Computing Systems (CHI ’15). ACM, 2417–2426. DOI:10.1145/2702123.2702577"
+      },
+      {
+        "key": "e_1_3_3_205_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1109/OI.2018.8535831",
+        "volume-title": "Proceedings of the Open Innovations Conference (OI ’18)",
+        "author": "Rubin A.",
+        "year": "2018",
+        "unstructured": "A. Rubin and J. Ophoff. 2018. Investigating adoption factors of wearable technology in health and fitness. In Proceedings of the Open Innovations Conference (OI ’18). IEEE, 176–186. DOI:10.1109/OI.2018.8535831"
+      },
+      {
+        "key": "e_1_3_3_206_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.apergo.2018.02.005"
+      },
+      {
+        "key": "e_1_3_3_207_2",
+        "volume-title": "Proceedings of the International Conference on Information Technology and Systems (ICITS ’18)",
+        "author": "Saa P.",
+        "year": "2018",
+        "unstructured": "P. Saa, O. Moscoso-Zea, and S. Lujan-Mora. 2018. Wearable technology, privacy issues. In Proceedings of the International Conference on Information Technology and Systems (ICITS ’18). 518–527. DOI:10.1007/978-3-319-73450-7_49"
+      },
+      {
+        "key": "e_1_3_3_208_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1145/3211960.3211973",
+        "volume-title": "Proceedings of the ACM Workshop on Wearable Systems and Applications",
+        "author": "Sabra M.",
+        "year": "2018",
+        "unstructured": "M. Sabra, A. Maiti, and M. Jadliwala. 2018. Keystroke inference using ambient light sensor on wrist-wearables: A feasibility study. In Proceedings of the ACM Workshop on Wearable Systems and Applications. ACM, 21–26. DOI:10.1145/3211960.3211973"
+      },
+      {
+        "key": "e_1_3_3_209_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18)",
+        "author": "Saksono H.",
+        "year": "2018",
+        "unstructured": "H. Saksono, C. Castaneda-Sceppa, J. Hoffman, M. Seif El-Nasr, V. Morris, and A. G. Parker. 2018. Family health promotion in low-SES neighborhoods: A two-month study of wearable activity tracking. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI ’18). ACM, 1–13. DOI:10.1145/3173574.3173883"
+      },
+      {
+        "key": "e_1_3_3_210_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19)",
+        "author": "Saksono H.",
+        "year": "2019",
+        "unstructured": "H. Saksono, C. Castaneda-Sceppa, J. Hoffman, M. Seif El-Nasr, V. Morris, and A. G. Parker. 2019. Social reflections on fitness tracking data: A study with families in low-SES neighborhoods. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19). ACM, 1–14. DOI:10.1145/3290605.3300543"
+      },
+      {
+        "key": "e_1_3_3_211_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI ’23)",
+        "author": "Niksirat K. Salehzadeh",
+        "year": "2023",
+        "unstructured": "K. Salehzadeh Niksirat, L. Goswami, P. S. B. Rao, J. Tyler, A. Silacci, S. Aliyu, A. Aebli, C. Wacharamanotham, and M. Cherubini. 2023. Changes in research ethics, openness, and transparency in empirical studies between CHI 2017 and CHI 2022. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI ’23). ACM, 1–23. DOI:10.1145/3544548.3580848"
+      },
+      {
+        "key": "e_1_3_3_212_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s42486-021-00082-2"
+      },
+      {
+        "key": "e_1_3_3_213_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11257-019-09246-3"
+      },
+      {
+        "key": "e_1_3_3_214_2",
+        "first-page": "3690",
+        "volume-title": "Proceedings of the 53rd Hawaii International Conference on System Sciences",
+        "author": "Schiller B.",
+        "year": "2020",
+        "unstructured": "B. Schiller, T. Brogt, J. P. M. Schuler, G. Strobel, and S. Eicker. 2020. Identifying quality factors for self-tracking solutions: A systematic literature review. In Proceedings of the 53rd Hawaii International Conference on System Sciences. 3690–3699. http://hdl.handle.net/10125/64194"
+      },
+      {
+        "key": "e_1_3_3_215_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19)",
+        "author": "Schneegass S.",
+        "year": "2019",
+        "unstructured": "S. Schneegass, R. Poguntke, and T. Machulla. 2019. Understanding the impact of information representation on willingness to share information. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19). ACM, 1–6. DOI:10.1145/3290605.3300753"
+      },
+      {
+        "key": "e_1_3_3_216_2",
+        "first-page": "306",
+        "volume-title": "Proceedings of the International Conference on Wireless and Mobile Computing, Networking, and Communications (WiMob ’19)",
+        "author": "Schomakers E.",
+        "year": "2019",
+        "unstructured": "E. Schomakers, C. Lidynia, and M. Ziefle. 2019. Listen to my heart? How privacy concerns shape users’ acceptance of e-Health technologies. In Proceedings of the International Conference on Wireless and Mobile Computing, Networking, and Communications (WiMob ’19). IEEE, 306–311. DOI:10.1109/WiMOB.2019.8923448"
+      },
+      {
+        "issue": "4",
+        "key": "e_1_3_3_217_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "2573",
+        "DOI": "10.1109/COMST.2017.2731979",
+        "article-title": "A survey of wearable devices and challenges",
+        "volume": "19",
+        "author": "Seneviratne S.",
+        "year": "2017",
+        "unstructured": "S. Seneviratne, Y. Hu, T. Nguyen, G. Lan, S. Khalifa, K. Thilakarathna, M. Hassan, and A. Seneviratne. 2017. A survey of wearable devices and challenges. IEEE Communications Surveys & Tutorials 19, 4 (2017), 2573–2620. https://ieeexplore.ieee.org/document/7993011",
+        "journal-title": "IEEE Communications Surveys & Tutorials"
+      },
+      {
+        "key": "e_1_3_3_218_2",
+        "first-page": "85",
+        "volume-title": "Proceedings of the International Conference on Mobile Systems, Applications, and Services",
+        "author": "Shen S.",
+        "year": "2016",
+        "unstructured": "S. Shen, H. Wang, and R. Roy Choudhury. 2016. I am a smartwatch and I can track my user’s arm. In Proceedings of the International Conference on Mobile Systems, Applications, and Services. ACM, 85–96. DOI:10.1145/2906388.2906407"
+      },
+      {
+        "key": "e_1_3_3_219_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3378669"
+      },
+      {
+        "issue": "4",
+        "key": "e_1_3_3_220_2",
+        "first-page": "25",
+        "article-title": "A case study on vulnerability analysis and firmware modification attack for a wearable fitness tracker",
+        "volume": "5",
+        "author": "Shim J.",
+        "year": "2017",
+        "unstructured": "J. Shim, K. Lim, J. Jeong, S.-j. Cho, M. Park, and S. Han. 2017. A case study on vulnerability analysis and firmware modification attack for a wearable fitness tracker. IT Convergence Practice 5, 4 (2017), 25–33.",
+        "journal-title": "IT Convergence Practice"
+      },
+      {
+        "key": "e_1_3_3_221_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2019.103153"
+      },
+      {
+        "key": "e_1_3_3_222_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2020.104222"
+      },
+      {
+        "key": "e_1_3_3_223_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2016 IEEE 18th International Conference on e-Health Networking, Applications, and Services (Healthcom ’16)",
+        "author": "Shoaib M.",
+        "year": "2016",
+        "unstructured": "M. Shoaib, H. Scholten, P. J. M. Havinga, and O. D. Incel. 2016. A hierarchical lazy smoking detection algorithm using smartwatch sensors. In Proceedings of the 2016 IEEE 18th International Conference on e-Health Networking, Applications, and Services (Healthcom ’16). IEEE, 1–6. DOI:10.1109/HealthCom.2016.7749439"
+      },
+      {
+        "key": "e_1_3_3_224_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3133837"
+      },
+      {
+        "key": "e_1_3_3_225_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1145/3395351.3399366",
+        "volume-title": "Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’20)",
+        "author": "Shrestha P.",
+        "year": "2020",
+        "unstructured": "P. Shrestha and N. Saxena. 2020. Hacksaw: Biometric-free non-stop web authentication in an emerging world of wearables. In Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’20). ACM, 13–24. DOI:10.1145/3395351.3399366"
+      },
+      {
+        "key": "e_1_3_3_226_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2020.2982958"
+      },
+      {
+        "key": "e_1_3_3_227_2",
+        "first-page": "1115",
+        "volume-title": "Proceedings of the ACM SIGSAC Conference on Computer and Communications Security (CCS ’19)",
+        "author": "Skalka C.",
+        "year": "2019",
+        "unstructured": "C. Skalka, J. Ring, D. Darias, M. Kwon, S. Gupta, K. Diller, S. Smolka, and N. Foster. 2019. Proof-carrying network code. In Proceedings of the ACM SIGSAC Conference on Computer and Communications Security (CCS ’19). ACM, 1115–1129. DOI:10.1145/3319535.3363214"
+      },
+      {
+        "key": "e_1_3_3_228_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10551-021-04863-8"
+      },
+      {
+        "key": "e_1_3_3_229_2",
+        "first-page": "519",
+        "volume-title": "Proceedings of the International Conference on World Wide Web (WWW ’17)",
+        "author": "Stück D.",
+        "year": "2017",
+        "unstructured": "D. Stück, H. T. Hallgrímsson, G. Ver Steeg, A. Epasto, and L. Foschini. 2017. The spread of physical activity through social networks. In Proceedings of the International Conference on World Wide Web (WWW ’17). 519–528. DOI:10.1145/3038912.3052688"
+      },
+      {
+        "key": "e_1_3_3_230_2",
+        "first-page": "775",
+        "volume-title": "Proceedings of the 2022 IEEE International Conference on Pervasive Computing and Communications Workshops and Other Affiliated Events (PerCom Workshops ’22)",
+        "author": "Sturgess J.",
+        "year": "2022",
+        "unstructured": "J. Sturgess, S. Eberz, I. Sluganovic, and I. Martinovic. 2022. Inferring user height and improving impersonation attacks in mobile payments using a smartwatch. In Proceedings of the 2022 IEEE International Conference on Pervasive Computing and Communications Workshops and Other Affiliated Events (PerCom Workshops ’22). IEEE, 775–780. DOI:10.1109/PerComWorkshops53856.2022.9767287"
+      },
+      {
+        "key": "e_1_3_3_231_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. Sturgess S. Eberz I. Sluganovic and I. Martinovic. 2022. WatchAuth: User authentication and intent recognition in mobile payments using a smartwatch. arXiv:2202.01736 [cs] 2022). http://arxiv.org/abs/2202.01736",
+        "DOI": "10.1109/EuroSP53844.2022.00031"
+      },
+      {
+        "key": "e_1_3_3_232_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpubh.2016.00289"
+      },
+      {
+        "key": "e_1_3_3_233_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s21113844"
+      },
+      {
+        "key": "e_1_3_3_234_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3090091"
+      },
+      {
+        "key": "e_1_3_3_235_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3191769"
+      },
+      {
+        "key": "e_1_3_3_236_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the International Conference on Consumer Electronics (ICCE ’18)",
+        "author": "Tehranipoor F.",
+        "year": "2018",
+        "unstructured": "F. Tehranipoor, N. Karimian, P. A. Wortman, and J. A. Chandy. 2018. Low-cost authentication paradigm for consumer electronics within the Internet of wearable fitness tracking applications. In Proceedings of the International Conference on Consumer Electronics (ICCE ’18). IEEE, 1–6. DOI:10.1109/ICCE.2018.8326233"
+      },
+      {
+        "key": "e_1_3_3_237_2",
+        "first-page": "1029",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Thomaz E.",
+        "year": "2015",
+        "unstructured": "E. Thomaz, I. Essa, and G. D. Abowd. 2015. A practical approach for recognizing eating moments with wrist-mounted inertial sensing. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 1029–1040. DOI:10.1145/2750858.2807545"
+      },
+      {
+        "key": "e_1_3_3_238_2",
+        "first-page": "173",
+        "volume-title": "Proceedings of the ACM Symposium on Access Control Models and Technologies (SACMAT ’18)",
+        "author": "Thuraisingham B.",
+        "year": "2018",
+        "unstructured": "B. Thuraisingham, M. Kantarcioglu, E. Bertino, J. Z. Bakdash, and M. Fernandez. 2018. Towards a privacy-aware quantified self data management framework. In Proceedings of the ACM Symposium on Access Control Models and Technologies (SACMAT ’18). ACM, 173–184. DOI:10.1145/3205977.3205997"
+      },
+      {
+        "key": "e_1_3_3_239_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00779-017-1068-3"
+      },
+      {
+        "key": "e_1_3_3_240_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "3235",
+        "DOI": "10.1109/CEC.2019.8790173",
+        "volume-title": "Proceedings of the IEEE Congress on Evolutionary Computation (CEC ’19)",
+        "author": "Tuovinen L.",
+        "year": "2019",
+        "unstructured": "L. Tuovinen and A. F. Smeaton. 2019. Unlocking the black box of wearable intelligence: Ethical considerations and social impact. In Proceedings of the IEEE Congress on Evolutionary Computation (CEC ’19). IEEE, 3235–3243. DOI:10.1109/CEC.2019.8790173"
+      },
+      {
+        "key": "e_1_3_3_241_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the Australasian Computer Science Week Multiconference (ACSW ’18)",
+        "author": "Kasteren Y. F. van",
+        "year": "2018",
+        "unstructured": "Y. F. van Kasteren, L. Perimal-Lewis, and A. Maeder. 2018. Detecting short-duration ambulatory episodes in Fitbit®data. In Proceedings of the Australasian Computer Science Week Multiconference (ACSW ’18). ACM, 1–5. DOI:10.1145/3167918.3167954"
+      },
+      {
+        "key": "e_1_3_3_242_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "23",
+        "DOI": "10.1145/2896338.2896341",
+        "volume-title": "Proceedings of the International Conference on Digital Health (DH ’16)",
+        "author": "Vandervort D.",
+        "year": "2016",
+        "unstructured": "D. Vandervort. 2016. Medical device data goes to court. In Proceedings of the International Conference on Digital Health (DH ’16). ACM, 23–27. DOI:10.1145/2896338.2896341"
+      },
+      {
+        "key": "e_1_3_3_243_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3494960"
+      },
+      {
+        "key": "e_1_3_3_244_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "712",
+        "DOI": "10.1145/2901790.2901887",
+        "volume-title": "Proceedings of the ACM Conference on Designing Interactive Systems (DIS ’16)",
+        "author": "Vermeulen J.",
+        "year": "2016",
+        "unstructured": "J. Vermeulen, L. MacDonald, J. Schöning, R. Beale, and S. Carpendale. 2016. Heartefacts: Augmenting mobile video sharing using wrist-worn heart rate sensors. In Proceedings of the ACM Conference on Designing Interactive Systems (DIS ’16). ACM, 712–723. DOI:10.1145/2901790.2901887"
+      },
+      {
+        "key": "e_1_3_3_245_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the 2017 IEEE 28th Annual International Symposium on Personal, Indoor, and Mobile Radio Communications (PIMRC ’17)",
+        "author": "Vhaduri S.",
+        "year": "2017",
+        "unstructured": "S. Vhaduri and C. Poellabauer. 2017. Wearable device user authentication using physiological and behavioral metrics. In Proceedings of the 2017 IEEE 28th Annual International Symposium on Personal, Indoor, and Mobile Radio Communications (PIMRC ’17). IEEE, 1–6. DOI:10.1109/PIMRC.2017.8292272"
+      },
+      {
+        "key": "e_1_3_3_246_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2018.2884669"
+      },
+      {
+        "key": "e_1_3_3_247_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "J. Vitak Y. Liao P. Kumar M. Zimmer and K. Kritikos. 2018. Privacy attitudes and data valuation among fitness tracker users. In Transforming Digital Worlds. Lecture Notes in Computer Science Vol. 10766. Springer 229–239. DOI:10.1007/978-3-319-78105-1_27",
+        "DOI": "10.1007/978-3-319-78105-1_27"
+      },
+      {
+        "key": "e_1_3_3_248_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2017.2737533"
+      },
+      {
+        "key": "e_1_3_3_249_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "286",
+        "DOI": "10.1145/3386901.3389025",
+        "volume-title": "Proceedings of the International Conference on Mobile Systems, Applications, and Services (MobiSys ’20)",
+        "author": "Wang J.",
+        "year": "2020",
+        "unstructured": "J. Wang, F. Hu, Y. Zhou, Y. Liu, H. Zhang, and Z. Liu. 2020. BlueDoor: Breaking the secure information flow via BLE vulnerability. In Proceedings of the International Conference on Mobile Systems, Applications, and Services (MobiSys ’20). ACM, 286–298. DOI:10.1145/3386901.3389025"
+      },
+      {
+        "key": "e_1_3_3_250_2",
+        "first-page": "299",
+        "volume-title": "Proceedings of the International Conference on Intelligent User Interfaces (IUI ’16)",
+        "author": "Wang J.",
+        "year": "2016",
+        "unstructured": "J. Wang, N. Wang, and H. Jin. 2016. Context matters? How adding the obfuscation option affects end users’ data disclosure decisions. In Proceedings of the International Conference on Intelligent User Interfaces (IUI ’16). ACM, 299–304. DOI:10.1145/2856767.2856817"
+      },
+      {
+        "key": "e_1_3_3_251_2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Y. Wang I. Weber and P. Mitra. 2016. Quantified self meets social media: Sharing of weight updates on Twitter. In Proceedings of the International Conference on Digital Health (DH ’16). ACM 93–97. DOI:10.1145/2896338.2896363",
+        "DOI": "10.1145/2896338.2896363"
+      },
+      {
+        "key": "e_1_3_3_252_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "148",
+        "DOI": "10.1145/3267242.3267263",
+        "volume-title": "Proceedings of the 2018 ACM International Symposium on Wearable Computers",
+        "author": "Ward J. A.",
+        "year": "2018",
+        "unstructured": "J. A. Ward, D. Richardson, G. Orgs, K. Hunter, and A. Hamilton. 2018. Sensing interpersonal synchrony between actors and autistic children in theatre using wrist-worn accelerometers. In Proceedings of the 2018 ACM International Symposium on Wearable Computers. ACM, 148–155. DOI:10.1145/3267242.3267263"
+      },
+      {
+        "key": "e_1_3_3_253_2",
+        "first-page": "426",
+        "volume-title": "Proceedings of the IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI ’16)",
+        "author": "Weiss G. M.",
+        "year": "2016",
+        "unstructured": "G. M. Weiss, J. L. Timko, C. M. Gallagher, K. Yoneda, and A. J. Schreiber. 2016. Smartwatch-based activity recognition: A machine learning approach. In Proceedings of the IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI ’16). IEEE, 426–429. DOI:10.1109/BHI.2016.7455925"
+      },
+      {
+        "key": "e_1_3_3_254_2",
+        "first-page": "16",
+        "article-title": "Privacy-related decision-making in the context of wearable use",
+        "volume": "67",
+        "author": "Wieneke A.",
+        "year": "2016",
+        "unstructured": "A. Wieneke, C. Lehrer, R. Zeder, and R. Jung. 2016. Privacy-related decision-making in the context of wearable use. PACIS 2016 Proceedings 67 (2016), 16. https://aisel.aisnet.org/pacis2016/67",
+        "journal-title": "PACIS 2016 Proceedings"
+      },
+      {
+        "key": "e_1_3_3_255_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1145/3317549.3319722",
+        "volume-title": "Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’19)",
+        "author": "Wijewickrama R.",
+        "year": "2019",
+        "unstructured": "R. Wijewickrama, A. Maiti, and M. Jadliwala. 2019. deWristified: Handwriting inference using wrist-based motion sensors revisited. In Proceedings of the ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec ’19). ACM, 49–59. DOI:10.1145/3317549.3319722"
+      },
+      {
+        "key": "e_1_3_3_256_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijinfomgt.2020.102292"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_3_3_257_2",
+        "article-title": "Wearable technology applications in healthcare: A literature review",
+        "volume": "23",
+        "author": "Wu M.",
+        "year": "2019",
+        "unstructured": "M. Wu and J. Luo. 2019. Wearable technology applications in healthcare: A literature review. Online Journal of Nursing Informatics 23, 3 (2019). https://www.himss.org/resources/wearable-technology-applications-healthcare-literature-review",
+        "journal-title": "Online Journal of Nursing Informatics"
+      },
+      {
+        "key": "e_1_3_3_258_2",
+        "first-page": "468",
+        "volume-title": "Proceedings of the IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS ’18)",
+        "author": "Xia Q.",
+        "year": "2018",
+        "unstructured": "Q. Xia, F. Hong, Y. Feng, and Z. Guo. 2018. MotionHacker: Motion sensor based eavesdropping on handwriting via smartwatch. In Proceedings of the IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS ’18). IEEE, 468–473. DOI:10.1109/INFCOMW.2018.8406879"
+      },
+      {
+        "key": "e_1_3_3_259_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3534577"
+      },
+      {
+        "key": "e_1_3_3_260_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1145/2699343.2699350",
+        "volume-title": "Proceedings of the 16th International Workshop on Mobile Computing Systems and Applications (HotMobile ’15)",
+        "author": "Xu C.",
+        "year": "2015",
+        "unstructured": "C. Xu, P. H. Pathak, and P. Mohapatra. 2015. Finger-writing with smartwatch: A case for finger and hand gesture recognition using smartwatch. In Proceedings of the 16th International Workshop on Mobile Computing Systems and Applications (HotMobile ’15). ACM, 9–14. DOI:10.1145/2699343.2699350"
+      },
+      {
+        "key": "e_1_3_3_261_2",
+        "first-page": "1",
+        "volume-title": "Proceedings of the ACM Workshop on Wearable Systems and Applications (WearSys ’20)",
+        "author": "Yan W.",
+        "year": "2020",
+        "unstructured": "W. Yan, S. Hylamia, T. Voigt, and C. Rohner. 2020. PHY-IDS: A physical-layer spoofing attack detection system for wearable devices. In Proceedings of the ACM Workshop on Wearable Systems and Applications (WearSys ’20). ACM, 1–6. DOI:10.1145/3396870.3400010"
+      },
+      {
+        "key": "e_1_3_3_262_2",
+        "first-page": "623",
+        "volume-title": "Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15)",
+        "author": "Yang R.",
+        "year": "2015",
+        "unstructured": "R. Yang, E. Shin, M. W. Newman, and M. S. Ackerman. 2015. When fitness trackers don’t ‘fit’: End-user difficulties in the assessment of personal tracking device accuracy. In Proceedings of the Conference on Ubiquitous Computing (UbiComp ’15). ACM, 623–634. DOI:10.1145/2750858.2804269"
+      },
+      {
+        "key": "e_1_3_3_263_2",
+        "first-page": "87",
+        "volume-title": "Proceedings of the International Conference on Education and E (Learning ’18)",
+        "author": "Yazawa S.",
+        "year": "2018",
+        "unstructured": "S. Yazawa, H. Yoshimoto, and K. Hiraki. 2018. Learning with wearable devices reveals learners’ best time to learn. In Proceedings of the International Conference on Education and E (Learning ’18). ACM, 87–92. DOI:10.1145/3291078.3291097"
+      },
+      {
+        "key": "e_1_3_3_264_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics9091431"
+      },
+      {
+        "key": "e_1_3_3_265_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3534578"
+      },
+      {
+        "key": "e_1_3_3_266_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "421",
+        "DOI": "10.1109/ICFST.2017.8210548",
+        "volume-title": "Proceedings of the International Conference on Frontiers of Sensors Technologies (ICFST ’17)",
+        "author": "Zhang Q.",
+        "year": "2017",
+        "unstructured": "Q. Zhang and Z. Liang. 2017. Security analysis of Bluetooth Low Energy based smart wristbands. In Proceedings of the International Conference on Frontiers of Sensors Technologies (ICFST ’17). IEEE, 421–425. DOI:10.1109/ICFST.2017.8210548"
+      },
+      {
+        "key": "e_1_3_3_267_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0144929X.2021.1915383"
+      },
+      {
+        "key": "e_1_3_3_268_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1369118X.2018.1543442"
+      },
+      {
+        "key": "e_1_3_3_269_2",
+        "first-page": "193",
+        "volume-title": "Proceedings of the 32nd USENIX Security Symposium (USENIX Security ’23)",
+        "author": "Zufferey N.",
+        "year": "2023",
+        "unstructured": "N. Zufferey, M. Humbert, R. Tavenard, and K. Huguenin. 2023. Watch your watch: Inferring personality traits from wearable activity trackers. In Proceedings of the 32nd USENIX Security Symposium (USENIX Security ’23). 193–210. https://www.usenix.org/conference/usenixsecurity23/presentation/zufferey"
+      },
+      {
+        "key": "e_1_3_3_270_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.56553/popets-2023-0004"
+      },
+      {
+        "key": "e_1_3_3_271_2",
+        "first-page": "1469",
+        "volume-title": "Proceedings of the ACM SIGSAC Conference on Computer and Communications Security (CCS ’19)",
+        "author": "Zuo C.",
+        "year": "2019",
+        "unstructured": "C. Zuo, H. Wen, Z. Lin, and Y. Zhang. 2019. Automatic fingerprinting of vulnerable BLE IoT devices with static UUIDs from mobile apps. In Proceedings of the ACM SIGSAC Conference on Computer and Communications Security (CCS ’19). ACM, 1469–1483. DOI:10.1145/3319535.3354240"
+      }
+    ],
+    "container-title": [
+      "ACM Computing Surveys"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3645091",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3645091",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T20:03:27Z",
+      "timestamp": 1750277007000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3645091"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          9
+        ]
+      ]
+    },
+    "references-count": 270,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            31
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/3645091"
+    ],
+    "URL": "https://doi.org/10.1145/3645091",
+    "relation": {},
+    "ISSN": [
+      "0360-0300",
+      "1557-7341"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-0300",
+        "type": "print"
+      },
+      {
+        "value": "1557-7341",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2022-12-22",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-01-31",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-04-09",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

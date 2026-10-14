@@ -1,0 +1,489 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T06:43:49Z",
+      "timestamp": 1791960229608,
+      "version": "4.3.4"
+    },
+    "reference-count": 42,
+    "publisher": "SAGE Publications",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2013-08-01T00:00:00Z",
+          "timestamp": 1375315200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Sociological Methods &amp; Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Many social science studies are based on coded in-depth semistructured interview transcripts. But researchers rarely report or discuss coding reliability in this work. Nor is there much literature on the subject for this type of data. This article presents a procedure for developing coding schemes for such data. It involves standardizing the units of text on which coders work and then improving the coding scheme’s discriminant capability (i.e., reducing coding errors) to an acceptable point as indicated by measures of either intercoder reliability or intercoder agreement. This approach is especially useful for situations where a single knowledgeable coder will code all the transcripts once the coding scheme has been established. This approach can also be used with other types of qualitative data and in other circumstances.</jats:p>",
+    "DOI": "10.1177/0049124113500475",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2013-08-22T20:38:45Z",
+      "timestamp": 1377203925000
+    },
+    "page": "294-320",
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2590,
+    "title": [
+      "Coding In-depth Semistructured Interviews"
+    ],
+    "prefix": "10.1177",
+    "volume": "42",
+    "author": [
+      {
+        "given": "John L.",
+        "family": "Campbell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Sociology, Dartmouth College, Hanover, NH, USA"
+          },
+          {
+            "name": "Department of Business and Politics, Copenhagen Business School, Frederiksberg, Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Charles",
+        "family": "Quincy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IBM Corporation, New York, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jordan",
+        "family": "Osserman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Birkbeck College, University of London, London, United Kingdom"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ove K.",
+        "family": "Pedersen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Business and Politics, Copenhagen Business School, Frederiksberg, Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0038038597031003015"
+      },
+      {
+        "key": "bibr2-0049124113500475",
+        "first-page": "189",
+        "volume-title": "Qualitative Methodology",
+        "author": "Becker Howard",
+        "year": "1970"
+      },
+      {
+        "key": "bibr3-0049124113500475",
+        "volume-title": "Social Research Methods: Qualitative and Quantitative Approaches",
+        "author": "Bernard H. Russell",
+        "year": "2000"
+      },
+      {
+        "key": "bibr4-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/01.NNR.0000313482.33917.7d"
+      },
+      {
+        "key": "bibr5-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0003122411427177"
+      },
+      {
+        "key": "bibr6-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/9781400850365"
+      },
+      {
+        "key": "bibr7-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0003122410372226"
+      },
+      {
+        "key": "bibr8-0049124113500475",
+        "first-page": "202",
+        "volume-title": "Qualitative Methodology",
+        "author": "Deutscher Irwin",
+        "year": "1970"
+      },
+      {
+        "key": "bibr9-0049124113500475",
+        "volume-title": "Design and Analysis of Reliability Studies: The Statistical Evaluation of Measurement Errors",
+        "author": "Dunn Graham",
+        "year": "1989"
+      },
+      {
+        "key": "bibr10-0049124113500475",
+        "volume-title": "Promises I Can Keep: Why Poor Women Put Motherhood Before Marriage",
+        "author": "Edin Kathryn",
+        "year": "2005"
+      },
+      {
+        "key": "bibr11-0049124113500475",
+        "volume-title": "Making Ends Meet: How Single Mothers Survive Welfare and Low-wage Work",
+        "author": "Edin Kathryn",
+        "year": "1997"
+      },
+      {
+        "key": "bibr12-0049124113500475",
+        "first-page": "255",
+        "volume-title": "Unmarried Couples with Children",
+        "author": "Engel Mimi",
+        "year": "2007"
+      },
+      {
+        "key": "bibr13-0049124113500475",
+        "first-page": "3",
+        "volume-title": "Unmarried Couples with Children",
+        "author": "England Paula",
+        "year": "2007"
+      },
+      {
+        "key": "bibr14-0049124113500475",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fahy Patrick. 2001. “Addressing Some Common Problems in Transcript Analysis.” The International Review of Research in Open and Distance Learning 1. (http://www.irrodl.org/index/php/irrodl/article/view/321).",
+        "DOI": "10.19173/irrodl.v1i2.321"
+      },
+      {
+        "key": "bibr15-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.iheduc.2005.11.001"
+      },
+      {
+        "key": "bibr16-0049124113500475",
+        "volume-title": "Hard Choices",
+        "author": "Gerson Kathleen",
+        "year": "1985"
+      },
+      {
+        "key": "bibr17-0049124113500475",
+        "volume-title": "The Discovery of Grounded Theory",
+        "author": "Glaser Barney",
+        "year": "1967"
+      },
+      {
+        "key": "bibr18-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/S15327663JCP1001&2_06"
+      },
+      {
+        "key": "bibr19-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/01623737011003255"
+      },
+      {
+        "key": "bibr20-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/9780804776288"
+      },
+      {
+        "key": "bibr21-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781412983372"
+      },
+      {
+        "key": "bibr22-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1525822X04266540"
+      },
+      {
+        "key": "bibr23-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/271061"
+      },
+      {
+        "key": "bibr24-0049124113500475",
+        "volume-title": "Content Analysis: An Introduction to Its Methodology",
+        "author": "Krippendorff Klaus",
+        "year": "2004",
+        "edition": "2"
+      },
+      {
+        "key": "bibr25-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1525822X0001200301"
+      },
+      {
+        "key": "bibr26-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9780857025012"
+      },
+      {
+        "key": "bibr27-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1468-2958.2002.tb00826.x"
+      },
+      {
+        "key": "bibr28-0049124113500475",
+        "volume-title": "Qualitative Researching",
+        "author": "Mason Jennifer",
+        "year": "2002",
+        "edition": "2"
+      },
+      {
+        "key": "bibr29-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0891241611403588"
+      },
+      {
+        "key": "bibr30-0049124113500475",
+        "volume-title": "Qualitative Data Analysis: A Sourcebook of New Methods",
+        "author": "Miles Matthew B.",
+        "year": "1984"
+      },
+      {
+        "key": "bibr31-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/004912417400300204"
+      },
+      {
+        "key": "bibr32-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF02273550"
+      },
+      {
+        "key": "bibr33-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11135-009-9258-3"
+      },
+      {
+        "key": "bibr34-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/107769909707400414"
+      },
+      {
+        "key": "bibr35-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511527807"
+      },
+      {
+        "key": "bibr36-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781452226651"
+      },
+      {
+        "key": "bibr37-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/9781400835195"
+      },
+      {
+        "key": "bibr38-0049124113500475",
+        "volume-title": "Mixed Methodology: Combining Qualitative and Quantitative Approaches",
+        "author": "Tashakkori Abbas",
+        "year": "1998"
+      },
+      {
+        "key": "bibr39-0049124113500475",
+        "volume-title": "The Inner Circle: Large Corporations and the Rise of Business Political Activity in the U.S. and U.K",
+        "author": "Useem Michael",
+        "year": "1984"
+      },
+      {
+        "key": "bibr40-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781412983488"
+      },
+      {
+        "key": "bibr41-0049124113500475",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2152085"
+      },
+      {
+        "key": "bibr42-0049124113500475",
+        "first-page": "217",
+        "volume-title": "Qualitative Methodology,",
+        "author": "Zelditch Morris",
+        "year": "1970"
+      }
+    ],
+    "container-title": [
+      "Sociological Methods &amp; Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0049124113500475",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0049124113500475",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0049124113500475",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T13:17:39Z",
+      "timestamp": 1777641459000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/0049124113500475"
+      }
+    },
+    "subtitle": [
+      "Problems of Unitization and Intercoder Reliability and Agreement"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          8
+        ]
+      ]
+    },
+    "references-count": 42,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/0049124113500475"
+    ],
+    "URL": "https://doi.org/10.1177/0049124113500475",
+    "relation": {},
+    "ISSN": [
+      "0049-1241",
+      "1552-8294"
+    ],
+    "issn-type": [
+      {
+        "value": "0049-1241",
+        "type": "print"
+      },
+      {
+        "value": "1552-8294",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          8
+        ]
+      ]
+    }
+  }
+}
