@@ -25,7 +25,7 @@
       "rank": 2,
       "title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach",
       "doi": "10.2196/mhealth.9217",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
       "attempts": [
         {
@@ -58,18 +58,22 @@
           "error": "HTTPError: HTTP Error 404: Not Found"
         }
       ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.html",
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf",
       "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6231850/fullTextXML",
+      "source_url": "user-supplied",
       "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6231850/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "1428321aec79ec135eb35024b99ec6d42026685ece92b27b863478d991d98095",
-      "bytes": 65698,
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record",
+      "sha256": "52be7f752ff43d31a595514b48b092a002fe5eb369d8688e13e3982e8d508be4",
+      "bytes": 779325,
       "format": "HTML + source XML",
       "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach"
+      "article_title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach",
+      "pages": 16,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching"
     },
     {
       "id": 3,
@@ -103,136 +107,74 @@
       "rank": 4,
       "title": "Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis",
       "doi": "10.2196/33735",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://mhealth.jmir.org/2022/5/e33735/PDF",
-          "source_kind": "OA journal",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://www.zora.uzh.ch/id/eprint/218564/1/document218564.pdf",
-          "source_kind": "OA repository",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC9123546?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC9123546",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9123546/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9123546/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "e957c828f20bd26bb3598201d87a36ec6fe04a536b094010c3bb41694467bbb9",
-      "bytes": 62078,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis"
+      "attempts": [],
+      "pages": 14,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "d10d96c9c0f26eb0bf2a06c520c8aa7bf732720589360374b672688325c5aecf",
+      "bytes": 331204,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9123546.1/PMC9123546.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9123546.1/PMC9123546.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 82,
       "rank": 5,
       "title": "Reviewing the data security and privacy policies of mobile apps for depression",
       "doi": "10.1016/j.invent.2018.12.001",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://www.sciencedirect.com/science/article/pii/S2214782918300460/pdf",
-          "source_kind": "OA journal",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC6371412?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "http://europepmc.org/pmc/articles/PMC6371412",
-          "source_kind": "OA landing page",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6371412",
-          "source_kind": "OA landing page",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "PMC OA package PMC6371412",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6371412/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6371412/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "dafec89547a30d36697fb5ea002c0ef31212bc6125019dde22f14c397c026c3d",
-      "bytes": 38094,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Reviewing the data security and privacy policies of mobile apps for depression"
+      "attempts": [],
+      "pages": 6,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "3988d4ac6d19ac66eafd0095e15c377edc2f082f5aa282ae05d94fd39ea468e5",
+      "bytes": 1064404,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6371412.1/PMC6371412.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6371412.1/PMC6371412.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 12,
       "rank": 6,
       "title": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps",
       "doi": "10.1016/j.invent.2019.100243",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://www.sciencedirect.com/science/article/pii/S2214782918300162/pdf",
-          "source_kind": "OA journal",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC6430038?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6430038",
-          "source_kind": "OA landing page",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "PMC OA package PMC6430038",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6430038/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6430038/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "be89b2a0881871b5c3dbd3a0c2d886c5e1cf470a8cbef0a86a3afd5f56eca596",
-      "bytes": 38093,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps"
+      "attempts": [],
+      "pages": 8,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "53aed5d1863ec6271a3ebdf4d9ea101aa48af1e82bac609c1816ea706be79561",
+      "bytes": 754887,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6430038.1/PMC6430038.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6430038.1/PMC6430038.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 9,
       "rank": 7,
       "title": "Availability and quality of mobile health app privacy policies",
       "doi": "10.1136/amiajnl-2013-002605",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://citeseerx.ist.psu.edu/document?doi=47ccdad9b2312b900ea4a56ef670fa1f651f1e11&repid=rep1&type=pdf",
@@ -268,10 +210,17 @@
           "error": "HTTPError: HTTP Error 500: "
         }
       ],
-      "status": "free_but_blocked",
-      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 404: NOT FOUND; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 404: Not Found; HTTPError: HTTP Error 500: ",
-      "oa_status": "bronze",
-      "oa_landing_url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf"
+      "status": "available",
+      "pages": 6,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "01c3eed59b894af464d30b6fb42e5c76fe25312fa99c6e75fbb5ac4902a72357",
+      "bytes": 394954,
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 4,
@@ -453,156 +402,95 @@
       "rank": 16,
       "title": "Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines",
       "doi": "10.2196/26317",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://www.jmir.org/2021/9/e26317/PDF",
-          "source_kind": "OA journal",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC8485195?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC8485195",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8485195/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8485195/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "d6aa0b7ec1bb79653275e4f66c59965e311f077dd32cfe1e929036030752bba3",
-      "bytes": 69780,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines"
+      "attempts": [],
+      "pages": 14,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "c294484cb4c63eff7041db7c072e2a3980ff14909a031bca68b1bb8c91ed2d53",
+      "bytes": 173711,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8485195.1/PMC8485195.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8485195.1/PMC8485195.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 14,
       "rank": 17,
       "title": "Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores",
       "doi": "10.1007/s12529-020-09944-y",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://link.springer.com/content/pdf/10.1007/s12529-020-09944-y.pdf",
-          "source_kind": "OA journal",
-          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC8384800?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC8384800",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8384800/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8384800/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "608219b470ed08af1e2920fa60f2e672f3be53e6201ded4142b72fc7592b31dd",
-      "bytes": 48462,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores"
+      "attempts": [],
+      "pages": 9,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "e422d3b534feba8c8f8fa2e5df8cb2f60e090553371d11a9ca3785e696ea921d",
+      "bytes": 702876,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8384800.1/PMC8384800.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8384800.1/PMC8384800.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 15,
       "rank": 18,
       "title": "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study",
       "doi": "10.2196/14479",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "http://mhealth.jmir.org/2020/3/e14479/PDF",
-          "source_kind": "open publisher",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC7148545?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC7148545",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7148545/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7148545/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "dcd62a1525146f347370abf33abba02070712801c524fc67f763e5d875c11c13",
-      "bytes": 44564,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study"
+      "attempts": [],
+      "pages": 9,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "f021a596b1697f552cdaed969f9f8a58f8024735b56231844d2d0867cda406d2",
+      "bytes": 102139,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7148545.1/PMC7148545.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7148545.1/PMC7148545.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 18,
       "rank": 19,
       "title": "Privacy Assessment in Mobile Health Apps: Scoping Review",
       "doi": "10.2196/18868",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://mhealth.jmir.org/2020/7/e18868/PDF",
-          "source_kind": "OA journal",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC7367524?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7367524",
-          "source_kind": "OA landing page",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "PMC OA package PMC7367524",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7367524/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7367524/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "4a821411799385d28cf6186445e49a3bf3a73b253624387d883d64a46a6b036a",
-      "bytes": 79114,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Privacy Assessment in Mobile Health Apps: Scoping Review"
+      "attempts": [],
+      "pages": 18,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "88e17e5731e9a4ebc272903f40038a75cc5dab92ce2c1d6accb53242150b1c20",
+      "bytes": 275228,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7367524.1/PMC7367524.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7367524.1/PMC7367524.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 19,
       "rank": 20,
       "title": "Mobile health and privacy: cross sectional study",
       "doi": "10.1136/bmj.n1248",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
       "attempts": [
         {
@@ -621,30 +509,39 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         },
         {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8207561",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
           "url": "PMC OA package PMC8207561",
           "error": "HTTPError: HTTP Error 404: Not Found"
         }
       ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.html",
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.pdf",
       "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8207561/fullTextXML",
+      "source_url": "user-supplied",
       "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8207561/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "759c848cd8547d76c5494ce83a8c0961594b443740a4e5c4f914169c05d59179",
-      "bytes": 67762,
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record",
+      "sha256": "c34a6e7adca2986cb0903b407430ff4715d0d43dc72ac93e78ddabcf72b55053",
+      "bytes": 1009177,
       "format": "HTML + source XML",
       "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Mobile health and privacy: cross sectional study"
+      "article_title": "Mobile health and privacy: cross sectional study",
+      "pages": 12,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching"
     },
     {
       "id": 20,
       "rank": 21,
       "title": "The walkthrough method: An approach to the study of apps",
       "doi": "10.1177/1461444816675438",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://salford-repository.worktribe.com/OutputFile/1493547",
@@ -667,10 +564,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "free_but_blocked",
-      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "green",
-      "oa_landing_url": "http://usir.salford.ac.uk/id/eprint/40327/1/The%20Walkthrough%20Method%20-%20Final%20Pre-print%20version.doc"
+      "status": "available",
+      "pages": 20,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "ea4120fe71b3891f85ce5752fbb02952b91e71e75dbfb042c7052eb653c794cf",
+      "bytes": 344178,
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/21_Light_2018_The-walkthrough-method-An-approach-to-the-study-of-apps.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 76,
@@ -728,48 +632,29 @@
       "rank": 25,
       "title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment",
       "doi": "10.1186/s12916-015-0444-y",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-015-0444-y",
-          "source_kind": "OA journal",
-          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
-        },
-        {
-          "url": "https://link.springer.com/content/pdf/10.1186/s12916-015-0444-y.pdf",
-          "source_kind": "publisher PDF link",
-          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC4582624?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC4582624",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4582624/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4582624/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "1eccb251ede13f451ea9139843486ca9d7cc745426f23a2cbff132f80fff9437",
-      "bytes": 78358,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment"
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "a9efdcec1bf55161814e612e916cfec5d0059cca4943fd92ef51e705e81a87f4",
+      "bytes": 558830,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4582624.1/PMC4582624.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4582624.1/PMC4582624.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 22,
       "rank": 26,
       "title": "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation",
       "doi": "10.1001/jamanetworkopen.2019.2542",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
       "attempts": [
         {
@@ -797,64 +682,44 @@
           "error": "HTTPError: HTTP Error 404: Not Found"
         }
       ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.html",
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf",
       "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6481440/fullTextXML",
+      "source_url": "user-supplied",
       "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6481440/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "0d067c4e422283074e849af0c2266c3ec2ddf523a3788566e691900d864bd579",
-      "bytes": 39978,
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record",
+      "sha256": "d11520095a9b6944b4d5e12f3ec2644a333e6b6151ea9ddfd676508b5dde2168",
+      "bytes": 729949,
       "format": "HTML + source XML",
       "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation"
+      "article_title": "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation",
+      "pages": 10,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching"
     },
     {
       "id": 23,
       "rank": 27,
       "title": "Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis",
       "doi": "10.1136/bmj.l920",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf",
-          "source_kind": "OA journal",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC6425456?pdf=render",
-          "source_kind": "Europe PMC free PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://doi.org/10.1136/bmj.l920",
-          "source_kind": "OA landing page",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6425456",
-          "source_kind": "OA landing page",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "PMC OA package PMC6425456",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6425456/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6425456/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "128c7e796106fa645bb6c9e94e76c36489280a20de96bb16fc4eb5c376a0d25b",
-      "bytes": 69299,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis"
+      "attempts": [],
+      "pages": 11,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "84ce9321d06735881e4ff1550654ef02d7f801427f934466b918eaf65163f0ba",
+      "bytes": 322227,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.pdf",
+      "source_url": "https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf",
+      "resolved_url": "https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf",
+      "source_kind": "OA journal",
+      "version": "publishedVersion",
+      "license": "cc-by-nc"
     },
     {
       "id": 24,
@@ -919,8 +784,8 @@
       "rank": 31,
       "title": "A Coefficient of Agreement for Nominal Scales",
       "doi": "10.1177/001316446002000104",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://journals.sagepub.com/doi/pdf/10.1177/001316446002000104",
@@ -928,10 +793,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "not_retrieved",
-      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 10,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "5f90748b37bb9cbc7afb112ae95770ae912e9c810322cac88a721a851336e440",
+      "bytes": 443739,
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/31_Cohen_1960_A-Coefficient-of-Agreement-for-Nominal-Scales.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 28,
@@ -987,13 +859,20 @@
       "rank": 34,
       "title": "High agreement but low Kappa: I. the problems of two paradoxes",
       "doi": "10.1016/0895-4356(90)90158-L",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [],
-      "status": "no_free_copy_located",
-      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 7,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "5e43871b0710cdb9bd8c553c35f301cc48bb54071d98faa99a738d71f3e75de9",
+      "bytes": 742219,
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 31,
@@ -1055,41 +934,22 @@
       "rank": 38,
       "title": "Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study",
       "doi": "10.2196/66762",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://www.jmir.org/2025/1/e66762/PDF",
-          "source_kind": "open publisher",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC12271965?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://doaj.org/article/a48b3a5153854471afa8892c76dec0c6",
-          "source_kind": "OA landing page",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC12271965",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12271965/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12271965/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "13372d9cc8ddf0a9c2ddf263ae59f86016264ac0fd4e71a7f94e5fb61e4d5f6d",
-      "bytes": 98589,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study"
+      "attempts": [],
+      "pages": 20,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "ad0dcea600f479b6a5f4e9bd20c40e23d2915229dffa71ea5a67a1836ad81de9",
+      "bytes": 1098739,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12271965.1/PMC12271965.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12271965.1/PMC12271965.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 35,
@@ -1114,41 +974,22 @@
       "rank": 40,
       "title": "Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android",
       "doi": "10.2196/mhealth.3672",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://mhealth.jmir.org/2015/1/e8/PDF",
-          "source_kind": "OA journal",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "http://mhealth.jmir.org/2015/1/e8/PDF",
-          "source_kind": "open publisher",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://europepmc.org/articles/PMC4319144?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC4319144",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4319144/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4319144/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "d88805b9bde68a6707ccf40d30c58fd4903b4b487f459176d6d385907be7e926",
-      "bytes": 77297,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android"
+      "attempts": [],
+      "pages": 17,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "67f99edc0ee5686f9ce8ec747bc798d9ce23f898eda734ac9abe6570be8332e6",
+      "bytes": 5633047,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4319144.1/PMC4319144.1.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4319144.1/PMC4319144.1.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 37,
@@ -1214,8 +1055,8 @@
       "rank": 44,
       "title": "Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps",
       "doi": "10.1177/20563051231158822",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231158822",
@@ -1233,10 +1074,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "free_but_blocked",
-      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "gold",
-      "oa_landing_url": "https://doi.org/10.1177/20563051231158822"
+      "status": "available",
+      "pages": 10,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "6e65d0dcb70fec6abca66ffeba180a7bc4a45b119ad161434a4b0837295c4bd1",
+      "bytes": 158568,
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/44_Duguay_2023_Stumbling-Blocks-and-Alternative-Paths-Reconsidering-the-Walkthrough-Method-for-Analyzing-.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 41,
@@ -1264,21 +1112,28 @@
       "rank": 46,
       "title": "Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations",
       "doi": "10.1145/142750.142864",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [],
-      "status": "no_free_copy_located",
-      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 8,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "f81c4f21ee3895e6689e465d799a638e934d71e7f7bac3cfe996bba70a001c31",
+      "bytes": 1129314,
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/46_Wharton_1992_Applying-cognitive-walkthroughs-to-more-complex-user-interfaces-experiences-issues-and-rec.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 43,
       "rank": 47,
       "title": "Codebook Development for Team-Based Qualitative Analysis",
       "doi": "10.1177/1525822X980100020301",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://journals.sagepub.com/doi/pdf/10.1177/1525822X980100020301",
@@ -1286,18 +1141,25 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "not_retrieved",
-      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 6,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "be1603a8896aaed72c69180387785e31075708821676822cd8e63592e17bf61b",
+      "bytes": 3766947,
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/47_MacQueen_1998_Codebook-Development-for-Team-Based-Qualitative-Analysis.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 44,
       "rank": 48,
       "title": "Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research",
       "doi": "10.1177/1525822X04266540",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://citeseerx.ist.psu.edu/document?doi=f62c0497ffb0096e5200b43b827b9887812f3138&repid=rep1&type=pdf",
@@ -1310,10 +1172,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "not_retrieved",
-      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 404: NOT FOUND; HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 25,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "d050da0e0afb34b2f5892917c93207f625799a98e4bbb06b9df2f897f8aa8703",
+      "bytes": 136104,
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/48_Hruschka_2004_Reliability-in-Coding-Open-Ended-Data-Lessons-Learned-from-HIV-Behavioral-Research.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 45,
@@ -1369,7 +1238,7 @@
       "title": "Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability",
       "doi": "10.1111/j.1468-2958.2002.tb00826.x",
       "checked_on": "2026-10-16",
-      "downloaded": false,
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://is.muni.cz/el/fss/podzim2021/CDSn4008/um/readings/lombard.pdf",
@@ -1392,10 +1261,17 @@
           "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
         }
       ],
-      "status": "free_but_blocked",
-      "reason": "Accepted postprint in the Cleveland State repository; its PDF link is behind a Cloudflare verification challenge.",
-      "oa_status": "green",
-      "oa_landing_url": "https://engagedscholarship.csuohio.edu/clcom_facpub/50"
+      "status": "available",
+      "pages": 18,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "2c872b6416e6c467830146a39c3dd97f3d6b0855b179f7297a3417ddfb042894",
+      "bytes": 121349,
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/51_Lombard_2002_Content-Analysis-in-Mass-Communication-Assessment-and-Reporting-of-Intercoder-Reliability.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 48,
@@ -1474,8 +1350,8 @@
       "rank": 55,
       "title": "One size fits all? What counts as quality practice in (reflexive) thematic analysis?",
       "doi": "10.1080/14780887.2020.1769238",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://www.tandfonline.com/doi/pdf/10.1080/14780887.2020.1769238",
@@ -1488,10 +1364,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "free_but_blocked",
-      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "green",
-      "oa_landing_url": "https://uwe-repository.worktribe.com/6631950/1/One%20size%20fits%20all%20-%20What%20counts%20a...is%20UWE%20Repository%20version"
+      "status": "available",
+      "pages": 26,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "60e7e0188ed27f89b0cb244f32e0426093c29456c9c384c20c9fa8092ebf114b",
+      "bytes": 449671,
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/55_Braun_2021_One-size-fits-all-What-counts-as-quality-practice-in-reflexive-thematic-analysis.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 53,
@@ -1726,8 +1609,8 @@
       "rank": 68,
       "title": "Toward Risk Communication in Intimate Health Technologies",
       "doi": "10.1080/10447318.2025.2597502",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://www.tandfonline.com/doi/pdf/10.1080/10447318.2025.2597502",
@@ -1735,10 +1618,17 @@
           "error": "HTTPError: HTTP Error 403: Forbidden"
         }
       ],
-      "status": "not_retrieved",
-      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 22,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "a4150fed85c7a028ee43f413ffa8ff283853e66c42a179df9c8bace27ab30a2a",
+      "bytes": 2195661,
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/68_Moniz_2026_Toward-Risk-Communication-in-Intimate-Health-Technologies.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 75,
@@ -1786,8 +1676,8 @@
       "rank": 71,
       "title": "A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements",
       "doi": "10.1007/s00766-010-0115-7",
-      "checked_on": "2026-10-14",
-      "downloaded": false,
+      "checked_on": "2026-10-16",
+      "downloaded": true,
       "attempts": [
         {
           "url": "https://link.springer.com/content/pdf/10.1007/s00766-010-0115-7.pdf",
@@ -1800,10 +1690,17 @@
           "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
         }
       ],
-      "status": "not_retrieved",
-      "reason": "No verified free PDF retrieved; attempted sources returned: ValueError: Bot/JavaScript verification page returned instead of PDF; ValueError: Bot/JavaScript verification page returned instead of PDF",
-      "oa_status": "closed",
-      "oa_landing_url": null
+      "status": "available",
+      "pages": 30,
+      "title_word_coverage": 0.875,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "f7610138f299c40ecb510aa290f3783c41889fa7b674f4c2ed66201535f5b113",
+      "bytes": 1122407,
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
     },
     {
       "id": 79,
@@ -1885,41 +1782,22 @@
       "rank": 76,
       "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies",
       "doi": "10.1371/journal.pmed.0040296",
-      "checked_on": "2026-10-14",
+      "checked_on": "2026-10-16",
       "downloaded": true,
-      "attempts": [
-        {
-          "url": "https://europepmc.org/articles/PMC2020495?pdf=render",
-          "source_kind": "Europe PMC linked PDF",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2020495",
-          "source_kind": "OA landing page",
-          "error": "ValueError: Server returned HTML/non-PDF content"
-        },
-        {
-          "url": "https://doaj.org/article/c81cd795fa3f4881b81b393582aa4d10",
-          "source_kind": "OA landing page",
-          "error": "HTTPError: HTTP Error 403: Forbidden"
-        },
-        {
-          "url": "PMC OA package PMC2020495",
-          "error": "HTTPError: HTTP Error 404: Not Found"
-        }
-      ],
-      "status": "available_html",
-      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.html",
-      "xml_file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.xml",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2020495/fullTextXML",
-      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2020495/fullTextXML",
-      "source_kind": "Europe PMC public full-text XML",
-      "version": "PMC full-text copy",
-      "sha256": "1fa924dc1a04bd1d72532c7da086c5a6ad91f3e36de6ea4696bdff6a10946ffc",
-      "bytes": 25139,
-      "format": "HTML + source XML",
-      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
-      "article_title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies"
+      "attempts": [],
+      "pages": 5,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "5969e378c7492e254a97911ceea84db2a0f34aef2680dd261a57c182d292cf8b",
+      "bytes": 95819,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.pdf",
+      "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC2020495.2/PMC2020495.2.pdf",
+      "resolved_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC2020495.2/PMC2020495.2.pdf",
+      "source_kind": "PMC Open Access dataset (AWS)",
+      "version": "article PDF deposited in PMC",
+      "license": null
     },
     {
       "id": 62,
@@ -2239,11 +2117,9 @@
     }
   ],
   "summary": {
-    "available": 62,
-    "available_html": 15,
-    "free_but_blocked": 5,
-    "no_free_copy_located": 4,
-    "not_retrieved": 6,
+    "available": 89,
+    "no_free_copy_located": 2,
+    "not_retrieved": 1,
     "web_resource": 1
   }
 }

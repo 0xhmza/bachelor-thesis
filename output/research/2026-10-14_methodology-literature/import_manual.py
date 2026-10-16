@@ -81,7 +81,9 @@ def run(forced=None, compile_after=True):
         return
     imported = 0
     for path in pdfs:
-        missing = [rows[i] for i, r in records.items() if not r.get('downloaded') and i in rows]
+        # Gaps, plus HTML-only copies that a real PDF should replace.
+        missing = [rows[i] for i, r in records.items()
+                   if (not r.get('downloaded') or r.get('status') == 'available_html') and i in rows]
         try:
             body = path.read_bytes()
             if forced:
@@ -93,6 +95,8 @@ def run(forced=None, compile_after=True):
             dest = oa.FOLDER / oa.GROUPS.get(row.get('category'), '11_Official-and-Methods') / oa.name_for(row)
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(path, dest)
+            for ext in ('.html', '.xml'):  # the PDF supersedes the Europe PMC text fallback
+                dest.with_suffix(ext).unlink(missing_ok=True)
         except Exception as e:
             print(f'SKIPPED {path.name}: {e}')
             continue

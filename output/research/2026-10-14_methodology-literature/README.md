@@ -113,3 +113,57 @@ Deng et al. 2011 are different works (Wuyts' thesis; Sion et al.); for Moniz & A
 
 Verification of the six new files: first-page title and author text were read
 directly; each matches its work.
+
+## HTML-to-PDF upgrade — 16 October 2026
+
+The 15 works that were only held as Europe PMC full-text HTML were retried for real
+PDFs. The retired PMC package service (`oa.fcgi`, HTTP 404) is replaced in
+`download_open_access.py` by NLM's official PMC Open Access dataset on AWS
+(`pmc-oa-opendata`), which carries the deposited article PDF for CC-licensed articles.
+Only the article's own `PMC<id>.<version>.pdf` is taken, never supplementary files.
+
+Twelve works were upgraded and their HTML and XML fallbacks removed: eleven from the
+AWS dataset and the BMJ medicines-apps paper (Grundy 2019) from bmj.com, which answered
+this time. Every file's page-1 text was read to confirm it is the article and not a
+supplement or web appendix. The record keeps `PMC dataset` or `bmj.com` as the source and
+the checklist shows the new version label.
+
+Three remain HTML because no PDF could be fetched without passing a bot check:
+
+| Work | Obstacle |
+|---|---|
+| Hutton et al. 2018 (JMIR mHealth) | PDF route answers with an empty HTTP 202 (AWS WAF challenge) |
+| Tangari et al. 2021 (BMJ) | Cloudflare "Just a moment" challenge |
+| Huckvale et al. 2019 (JAMA Netw Open) | HTTP 403; not in the AWS dataset |
+
+All three are gold open access, so a normal browser can save them. Put the PDF in
+`_Inbox/` and run `import_manual.py`: it now also replaces an HTML-only copy and deletes
+the superseded HTML and XML. The earlier HTML versions remain in git history (commit
+`c259e9b`). No typeset rendering of the HTML was substituted for a real PDF. All three were later fetched in the browser-assisted pass below.
+
+## Browser-assisted pass — 16 October 2026
+
+At the user's request the built-in browser pane was used for the works that scripts could
+not fetch. No credentials were typed and no verification check was completed by the
+assistant: where Cloudflare showed a "Verify you are human" box, the user completed it
+or the request was retried later. The pane saves downloads to the user's Downloads
+folder; each file was copied into `_Inbox/` and filed by `import_manual.py`, whose
+title, first-author and DOI check identified every one (first page also read by hand).
+SAGE pages listed the user's university link resolver, so no separate login was needed
+there; that is an observation, not an access guarantee.
+
+Fifteen works were added: Cohen 1960, MacQueen 1998, Hruschka 2004, Wharton 1992, Deng
+2011, Moniz & Almeida 2026, Feinstein & Cicchetti 1990 and Lombard 2002 (previously
+paywalled for scripts); Light 2018, Duguay & Gold-Apel 2023, Sunyaev 2015 and Braun &
+Clarke 2021 (open access, blocked for scripts); and Hutton 2018, Tangari 2021 and
+Huckvale 2019 (the last three HTML-only copies, now replaced by the real PDFs). Lombard
+2002 came as two files with different hashes; one was filed. The corpus is now 89 PDFs
+and no HTML copies; the superseded HTML and XML are removed and remain in git history.
+
+Four items are still without a local copy:
+
+| Work | Why |
+|---|---|
+| Parker et al. 2019 | ScienceDirect article not retrieved: the pane refused navigation to the site's search page and the article's page address (PII) was not found |
+| Krippendorff 2019, Nissenbaum 2009 | Books: no licensed whole-book file (per-chapter PDFs or a paid e-book only); a library e-book or loan is the route. Not filed into the corpus or repository |
+| APA App Evaluation Model | Living web page, cited as a dated page |

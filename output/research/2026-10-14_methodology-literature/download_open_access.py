@@ -238,8 +238,27 @@ def candidates_for(row,openalex,europe):
             add(candidates,link.get('url'),'Europe PMC linked PDF')
     pmcid=pm.get('pmcid')
     if pmcid:
+        aws=pmc_open_data(pmcid)
+        if aws:
+            candidates.insert(0,{'url':aws,'kind':'PMC Open Access dataset (AWS)','version':'article PDF deposited in PMC','license':None})
         add(candidates,'https://europepmc.org/articles/'+pmcid+'?pdf=render','Europe PMC free PDF')
     return candidates,w,pmcid
+
+S3_NS='{http://s3.amazonaws.com/doc/2006-03-01/}'
+
+def pmc_open_data(pmcid):
+    """Main article PDF from NLM's official PMC Open Access dataset on AWS, if deposited.
+
+    Replaces the retired oa.fcgi package service. Only the article's own
+    PMC<id>.<version>.pdf is taken (not supplementary files); latest version wins.
+    """
+    try:
+        listing,_,_=get('https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&max-keys=200&prefix='+pmcid+'.','application/xml')
+        keys=[c.findtext(S3_NS+'Key','') for c in ET.fromstring(listing).findall(S3_NS+'Contents')]
+    except Exception:
+        return None
+    main=[(int(m[1]),k) for k in keys if (m:=re.fullmatch(re.escape(pmcid)+r'\.(\d+)/'+re.escape(pmcid)+r'\.\d+\.pdf',k))]
+    return 'https://pmc-oa-opendata.s3.amazonaws.com/'+max(main)[1] if main else None
 
 def retrieve_xml(row,pmcid,dest,record):
     """Public OA full text is still useful when a publisher PDF is blocked."""
@@ -332,6 +351,8 @@ def acquire(row,openalex,europe,manual):
             info=validate(body,row)
             dest.parent.mkdir(parents=True,exist_ok=True)
             dest.write_bytes(body)
+            for ext in ('.html','.xml'):  # a real PDF supersedes the Europe PMC text fallback
+                dest.with_suffix(ext).unlink(missing_ok=True)
             return {**record,**info,'downloaded':True,'status':'available','file':dest.relative_to(ROOT).as_posix(),
                     'source_url':c['url'],'resolved_url':final,'source_kind':c['kind'],
                     'version':c.get('version') or 'version not specified by source','license':c.get('license')}

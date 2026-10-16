@@ -105,7 +105,9 @@ def write_checklist(rows,extras,downloads):
                 else: parts.append('  - File verified locally; original retrieval URL was not retained after the interrupted first batch.\n')
                 if r['id'] in {80,81}: parts.append('  - Published law-review copy; the ranked DOI identifies the earlier SSRN record.\n')
                 if r['id']==8: parts.append('  - Scanned 1991 report verified visually against title/authors; the ranked DOI identifies the 1992 journal article.\n')
-                if r['status']=='available_html': parts.append('  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.\n')
+                if r['status']=='available_html':
+                    parts.append('  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.\n')
+                    parts.append(f"  - **Real PDF still wanted:** open <{url}> in a browser and save the article PDF into the inbox; the importer replaces this HTML copy.\n")
             else:
                 parts.append('  - **Obstacle:** '+r['obstacle']+'\n')
                 if r['status']=='free_but_blocked' and r.get('oa_landing_url'):

@@ -1,6 +1,6 @@
 # Literature download checklist
 
-Checked **16 October 2026**: **62 PDFs**, **15 full-text HTML copies**, **16 items without a local full-text copy**. Covers all 83 ranked DOI records and 10 official/non-DOI resources.
+Checked **16 October 2026**: **89 PDFs**, **0 full-text HTML copies**, **4 items without a local full-text copy**. Covers all 83 ranked DOI records and 10 official/non-DOI resources.
 
 A checked box means a verified local copy is available, **not that the paper has been read**. Files are grouped by methodological topic under [PDFs/Methods-Reading](PDFs/Methods-Reading/README.md). Filename numbers retain the reading priority. HTML copies include source XML, tables and references; figure images are not bundled. Manuscript, technical-report and whole-book versions are labelled below. Download failures are observations from this environment, not proof of a paywall or of no free copy existing anywhere.
 
@@ -17,67 +17,56 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - Reused the verified project-held copy.
 
 - [x] **2 / A — [Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach](https://doi.org/10.2196/mhealth.9217)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6231850/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf) · 16 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **3 / A — [How private is your period?: A systematic analysis of menstrual app privacy policies](https://doi.org/10.2478/popets-2020-0083)**
   - [PDF](PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf) · 20 pages · version: publishedVersion.
   - [Download source](https://petsymposium.org/popets/2020/popets-2020-0083.pdf).
 
 - [x] **4 / A — [Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis](https://doi.org/10.2196/33735)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9123546/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.pdf) · 14 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC9123546.1/PMC9123546.1.pdf).
 
 - [x] **5 / A — [Reviewing the data security and privacy policies of mobile apps for depression](https://doi.org/10.1016/j.invent.2018.12.001)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6371412/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf) · 6 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC6371412.1/PMC6371412.1.pdf).
 
 - [x] **6 / A — [Availability, readability, and content of privacy policies and terms of agreements of mental health apps](https://doi.org/10.1016/j.invent.2019.100243)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6430038/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf) · 8 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC6430038.1/PMC6430038.1.pdf).
 
-- [ ] **7 / A — [Availability and quality of mobile health app privacy policies](https://doi.org/10.1136/amiajnl-2013-002605)**
-  - **Obstacle:** Open access, but the publisher/repository blocks scripted downloads (server denied automated access (HTTP 403); download/repository link is missing (HTTP 404); full-text service failed (HTTP 500)). Save it from a normal browser into the inbox (see the top of this page).
-  - Open-access location to open in a browser: <https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf>
+- [x] **7 / A — [Availability and quality of mobile health app privacy policies](https://doi.org/10.1136/amiajnl-2013-002605)**
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf) · 6 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **16 / A — [Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines](https://doi.org/10.2196/26317)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8485195/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.pdf) · 14 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC8485195.1/PMC8485195.1.pdf).
 
 - [x] **17 / A — [Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores](https://doi.org/10.1007/s12529-020-09944-y)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8384800/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.pdf) · 9 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC8384800.1/PMC8384800.1.pdf).
 
 - [x] **19 / A — [Privacy Assessment in Mobile Health Apps: Scoping Review](https://doi.org/10.2196/18868)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7367524/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.pdf) · 18 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC7367524.1/PMC7367524.1.pdf).
 
 - [x] **20 / A — [Mobile health and privacy: cross sectional study](https://doi.org/10.1136/bmj.n1248)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8207561/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.pdf) · 12 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **25 / B — [Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment](https://doi.org/10.1186/s12916-015-0444-y)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4582624/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.pdf) · 13 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC4582624.1/PMC4582624.1.pdf).
 
 - [x] **26 / B — [Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation](https://doi.org/10.1001/jamanetworkopen.2019.2542)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6481440/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf) · 10 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **27 / B — [Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis](https://doi.org/10.1136/bmj.l920)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6425456/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.pdf) · 11 pages · version: publishedVersion.
+  - [Download source](https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf).
 
 - [x] **28 / B — [On the privacy of mental health apps: An empirical investigation and its implications for app development](https://doi.org/10.1007/s10664-022-10236-0)**
   - [PDF](PDFs/Methods-Reading/01_App-Reviews/28_Iwaya_2023_On-the-privacy-of-mental-health-apps-An-empirical-investigation-and-its-implications-for-a.pdf) · 40 pages · version: version not recorded; verified local copy from interrupted first batch.
@@ -92,18 +81,16 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - File verified locally; original retrieval URL was not retained after the interrupted first batch.
 
 - [x] **38 / B — [Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study](https://doi.org/10.2196/66762)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12271965/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.pdf) · 20 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC12271965.1/PMC12271965.1.pdf).
 
 - [x] **39 / B — [The Quality and Characteristics of Digital Mental Health Apps: Mixed Methods Study](https://doi.org/10.2196/67944)**
   - [PDF](PDFs/Methods-Reading/01_App-Reviews/39_Zych_2026_The-Quality-and-Characteristics-of-Digital-Mental-Health-Apps-Mixed-Methods-Study.pdf) · 18 pages · version: version not recorded; verified local copy from interrupted first batch.
   - File verified locally; original retrieval URL was not retained after the interrupted first batch.
 
 - [x] **40 / B — [Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android](https://doi.org/10.2196/mhealth.3672)**
-  - [HTML full text](PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4319144/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.pdf) · 17 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC4319144.1/PMC4319144.1.pdf).
 
 - [ ] **41 / B — [How private is your mental health app data? An empirical study of mental health app privacy policies and practices](https://doi.org/10.1016/j.ijlp.2019.04.002)**
   - **Obstacle:** No open-access copy located in the Unpaywall, OpenAlex, Europe PMC, publisher and repository sources checked; likely paywalled. Library access or an author copy is needed.
@@ -131,13 +118,13 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - **Obstacle:** No open-access copy located in the Unpaywall, OpenAlex, Europe PMC, publisher and repository sources checked; likely paywalled. Library access or an author copy is needed.
   - DOI / publisher page for library access: <https://doi.org/10.4135/9781071878781>
 
-- [ ] **47 / B — [Codebook Development for Team-Based Qualitative Analysis](https://doi.org/10.1177/1525822X980100020301)**
-  - **Obstacle:** No open-access copy retrieved (server denied automated access (HTTP 403)); likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1177/1525822X980100020301>
+- [x] **47 / B — [Codebook Development for Team-Based Qualitative Analysis](https://doi.org/10.1177/1525822X980100020301)**
+  - [PDF](PDFs/Methods-Reading/04_Coding/47_MacQueen_1998_Codebook-Development-for-Team-Based-Qualitative-Analysis.pdf) · 6 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
-- [ ] **48 / B — [Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research](https://doi.org/10.1177/1525822X04266540)**
-  - **Obstacle:** No open-access copy retrieved (server denied automated access (HTTP 403); download/repository link is missing (HTTP 404)); likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1177/1525822X04266540>
+- [x] **48 / B — [Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research](https://doi.org/10.1177/1525822X04266540)**
+  - [PDF](PDFs/Methods-Reading/04_Coding/48_Hruschka_2004_Reliability-in-Coding-Open-Ended-Data-Lessons-Learned-from-HIV-Behavioral-Research.pdf) · 25 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **49 / B — [Demonstrating Rigor Using Thematic Analysis: A Hybrid Approach of Inductive and Deductive Coding and Theme Development](https://doi.org/10.1177/160940690600500107)**
   - [PDF](PDFs/Methods-Reading/04_Coding/49_Fereday_2006_Demonstrating-Rigor-Using-Thematic-Analysis-A-Hybrid-Approach-of-Inductive-and-Deductive-C.pdf) · 13 pages · version: publishedVersion.
@@ -151,9 +138,9 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - [PDF](PDFs/Methods-Reading/04_Coding/52_Nowell_2017_Thematic-Analysis-Striving-to-Meet-the-Trustworthiness-Criteria.pdf) · 13 pages · version: user-supplied; version not recorded — compare with the DOI record.
   - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
-- [ ] **55 / B — [One size fits all? What counts as quality practice in (reflexive) thematic analysis?](https://doi.org/10.1080/14780887.2020.1769238)**
-  - **Obstacle:** Open access, but the publisher/repository blocks scripted downloads (server denied automated access (HTTP 403)). Save it from a normal browser into the inbox (see the top of this page).
-  - Open-access location to open in a browser: <https://uwe-repository.worktribe.com/6631950/1/One%20size%20fits%20all%20-%20What%20counts%20a...is%20UWE%20Repository%20version>
+- [x] **55 / B — [One size fits all? What counts as quality practice in (reflexive) thematic analysis?](https://doi.org/10.1080/14780887.2020.1769238)**
+  - [PDF](PDFs/Methods-Reading/04_Coding/55_Braun_2021_One-size-fits-all-What-counts-as-quality-practice-in-reflexive-thematic-analysis.pdf) · 26 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **74 / C — [Using thematic analysis in psychology](https://doi.org/10.1191/1478088706qp063oa)**
   - [PDF](PDFs/Methods-Reading/04_Coding/74_Braun_2006_Using-thematic-analysis-in-psychology.pdf) · 2 pages · version: version not recorded; verified local copy from interrupted first batch.
@@ -170,25 +157,25 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - [Download source](https://www.colorado.edu/ics/sites/default/files/attached-files/91-01.pdf).
   - Scanned 1991 report verified visually against title/authors; the ranked DOI identifies the 1992 journal article.
 
-- [ ] **21 / A — [The walkthrough method: An approach to the study of apps](https://doi.org/10.1177/1461444816675438)**
-  - **Obstacle:** Open access, but the publisher/repository blocks scripted downloads (server denied automated access (HTTP 403)). Save it from a normal browser into the inbox (see the top of this page).
-  - Open-access location to open in a browser: <http://usir.salford.ac.uk/id/eprint/40327/1/The%20Walkthrough%20Method%20-%20Final%20Pre-print%20version.doc>
+- [x] **21 / A — [The walkthrough method: An approach to the study of apps](https://doi.org/10.1177/1461444816675438)**
+  - [PDF](PDFs/Methods-Reading/03_Walkthroughs/21_Light_2018_The-walkthrough-method-An-approach-to-the-study-of-apps.pdf) · 20 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **29 / B — [The streamlined cognitive walkthrough method, working around social constraints encountered in a software development company](https://doi.org/10.1145/332040.332456)**
   - [PDF](PDFs/Methods-Reading/03_Walkthroughs/29_Spencer_2000_The-streamlined-cognitive-walkthrough-method-working-around-social-constraints-encountered.pdf) · 7 pages · version: publishedVersion.
   - [Download source](https://facweb.cdm.depaul.edu/cmiller/eval/p353-spencer.pdf).
 
-- [ ] **44 / B — [Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps](https://doi.org/10.1177/20563051231158822)**
-  - **Obstacle:** Open access, but the publisher/repository blocks scripted downloads (server denied automated access (HTTP 403)). Save it from a normal browser into the inbox (see the top of this page).
-  - Open-access location to open in a browser: <https://doi.org/10.1177/20563051231158822>
+- [x] **44 / B — [Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps](https://doi.org/10.1177/20563051231158822)**
+  - [PDF](PDFs/Methods-Reading/03_Walkthroughs/44_Duguay_2023_Stumbling-Blocks-and-Alternative-Paths-Reconsidering-the-Walkthrough-Method-for-Analyzing-.pdf) · 10 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **45 / B — [Heuristic evaluation of user interfaces](https://doi.org/10.1145/97243.97281)**
   - [PDF](PDFs/Methods-Reading/03_Walkthroughs/45_Nielsen_1990_Heuristic-evaluation-of-user-interfaces.pdf) · 8 pages · version: publishedVersion.
   - [Download source](https://www.cs.cmu.edu/~bam/uicourse/20790utc04/cmuonly/p249-nielsen.pdf).
 
-- [ ] **46 / B — [Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations](https://doi.org/10.1145/142750.142864)**
-  - **Obstacle:** No open-access copy located in the Unpaywall, OpenAlex, Europe PMC, publisher and repository sources checked; likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1145/142750.142864>
+- [x] **46 / B — [Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations](https://doi.org/10.1145/142750.142864)**
+  - [PDF](PDFs/Methods-Reading/03_Walkthroughs/46_Wharton_1992_Applying-cognitive-walkthroughs-to-more-complex-user-interfaces-experiences-issues-and-rec.pdf) · 8 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 ## Agreement
 
@@ -200,9 +187,9 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/30_Hallgren_2012_Computing-Inter-Rater-Reliability-for-Observational-Data-An-Overview-and-Tutorial.pdf) · 12 pages · version: version not recorded; verified local copy from interrupted first batch.
   - File verified locally; original retrieval URL was not retained after the interrupted first batch.
 
-- [ ] **31 / B — [A Coefficient of Agreement for Nominal Scales](https://doi.org/10.1177/001316446002000104)**
-  - **Obstacle:** No open-access copy retrieved (server denied automated access (HTTP 403)); likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1177/001316446002000104>
+- [x] **31 / B — [A Coefficient of Agreement for Nominal Scales](https://doi.org/10.1177/001316446002000104)**
+  - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/31_Cohen_1960_A-Coefficient-of-Agreement-for-Nominal-Scales.pdf) · 10 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **32 / B — [Reliability in Content Analysis.: Some Common Misconceptions and Recommendations](https://doi.org/10.1111/j.1468-2958.2004.tb00738.x)**
   - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/32_Krippendorff_2004_Reliability-in-Content-Analysis-Some-Common-Misconceptions-and-Recommendations.pdf) · 15 pages · version: acceptedVersion (author manuscript, HCR 30(3): 411-433).
@@ -212,13 +199,13 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf) · 20 pages · version: author-hosted article.
   - [Download source](https://www.agreestat.com/assets/paper-variance-high-agreement-2008.pdf).
 
-- [ ] **34 / B — [High agreement but low Kappa: I. the problems of two paradoxes](https://doi.org/10.1016/0895-4356%2890%2990158-L)**
-  - **Obstacle:** No open-access copy located in the Unpaywall, OpenAlex, Europe PMC, publisher and repository sources checked; likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1016/0895-4356%2890%2990158-L>
+- [x] **34 / B — [High agreement but low Kappa: I. the problems of two paradoxes](https://doi.org/10.1016/0895-4356%2890%2990158-L)**
+  - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf) · 7 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
-- [ ] **51 / B — [Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability](https://doi.org/10.1111/j.1468-2958.2002.tb00826.x)**
-  - **Obstacle:** Open access, but the publisher/repository blocks scripted downloads (server denied automated access (HTTP 403); link returned a webpage or verification screen instead of a PDF). Save it from a normal browser into the inbox (see the top of this page).
-  - Open-access location to open in a browser: <https://engagedscholarship.csuohio.edu/clcom_facpub/50>
+- [x] **51 / B — [Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability](https://doi.org/10.1111/j.1468-2958.2002.tb00826.x)**
+  - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/51_Lombard_2002_Content-Analysis-in-Mass-Communication-Assessment-and-Reporting-of-Intercoder-Reliability.pdf) · 18 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **53 / B — [Inter-Coder Agreement for Computational Linguistics](https://doi.org/10.1162/coli.07-034-R2)**
   - [PDF](PDFs/Methods-Reading/05_Coder-Agreement/53_Artstein_2008_Inter-Coder-Agreement-for-Computational-Linguistics.pdf) · 42 pages · version: version not recorded; verified local copy from interrupted first batch.
@@ -249,9 +236,8 @@ Automated retrieval uses only public, honestly identified requests; it does not 
 ## App appraisal
 
 - [x] **18 / A — [The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study](https://doi.org/10.2196/14479)**
-  - [HTML full text](PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7148545/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.pdf) · 9 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC7148545.1/PMC7148545.1.pdf).
 
 - [x] **36 / B — [Mobile App Rating Scale: A New Tool for Assessing the Quality of Health Mobile Apps](https://doi.org/10.2196/mhealth.3422)**
   - [PDF](PDFs/Methods-Reading/02_App-Appraisal/36_Stoyanov_2015_Mobile-App-Rating-Scale-A-New-Tool-for-Assessing-the-Quality-of-Health-Mobile-Apps.pdf) · 9 pages · version: version not recorded; verified local copy from interrupted first batch.
@@ -269,9 +255,9 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - Reused the verified project-held copy.
   - Published law-review copy; the ranked DOI identifies the earlier SSRN record.
 
-- [ ] **68 / B — [Toward Risk Communication in Intimate Health Technologies](https://doi.org/10.1080/10447318.2025.2597502)**
-  - **Obstacle:** No open-access copy retrieved (server denied automated access (HTTP 403)); likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1080/10447318.2025.2597502>
+- [x] **68 / B — [Toward Risk Communication in Intimate Health Technologies](https://doi.org/10.1080/10447318.2025.2597502)**
+  - [PDF](PDFs/Methods-Reading/10_Harm-and-Context/68_Moniz_2026_Toward-Risk-Communication-in-Intimate-Health-Technologies.pdf) · 22 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **69 / B — [A Taxonomy of Privacy](https://doi.org/10.2307/40041279)**
   - [PDF](PDFs/Methods-Reading/10_Harm-and-Context/69_Solove_2006_A-Taxonomy-of-Privacy.pdf) · 84 pages · version: publishedVersion.
@@ -281,9 +267,9 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - **Obstacle:** No open-access copy retrieved (link returned a webpage or verification screen instead of a PDF); likely paywalled. Library access or an author copy is needed.
   - DOI / publisher page for library access: <https://doi.org/10.1515/9780804772891>
 
-- [ ] **71 / B — [A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements](https://doi.org/10.1007/s00766-010-0115-7)**
-  - **Obstacle:** No open-access copy retrieved (link returned a webpage or verification screen instead of a PDF); likely paywalled. Library access or an author copy is needed.
-  - DOI / publisher page for library access: <https://doi.org/10.1007/s00766-010-0115-7>
+- [x] **71 / B — [A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements](https://doi.org/10.1007/s00766-010-0115-7)**
+  - [PDF](PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf) · 30 pages · version: user-supplied; version not recorded — compare with the DOI record.
+  - Saved by hand from a browser or library login and filed by the inbox importer; compare the version with the DOI record.
 
 - [x] **72 / B — [An introduction to privacy engineering and risk management in federal systems](https://doi.org/10.6028/NIST.IR.8062)**
   - [PDF](PDFs/Methods-Reading/10_Harm-and-Context/72_Brooks_2017_An-introduction-to-privacy-engineering-and-risk-management-in-federal-systems.pdf) · 49 pages · version: version not recorded; verified local copy from interrupted first batch.
@@ -350,9 +336,8 @@ Automated retrieval uses only public, honestly identified requests; it does not 
   - File verified locally; original retrieval URL was not retained after the interrupted first batch.
 
 - [x] **76 / C — [The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies](https://doi.org/10.1371/journal.pmed.0040296)**
-  - [HTML full text](PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.html) · full text with source XML · version: PMC full-text copy.
-  - [Download source](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2020495/fullTextXML).
-  - PDF retrieval was blocked; complete article text saved from public Europe PMC XML. Figure images remain online.
+  - [PDF](PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.pdf) · 5 pages · version: article PDF deposited in PMC.
+  - [Download source](https://pmc-oa-opendata.s3.amazonaws.com/PMC2020495.2/PMC2020495.2.pdf).
 
 ## LLM annotation
 
