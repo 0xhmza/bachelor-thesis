@@ -1,0 +1,2249 @@
+{
+  "checked_on": "2026-10-16",
+  "records": [
+    {
+      "id": 1,
+      "rank": 1,
+      "title": "Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World",
+      "doi": "10.1145/3613904.3642521",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 24,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "26ce26dde93e2de244f9420cad7222cf7cfdb0fa2636b1f1dfea3602b172a113",
+      "bytes": 1278382,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/01_Malki_2024_Exploring-Privacy-Practices-of-Female-mHealth-Apps-in-a-Post-Roe-World.pdf",
+      "source_url": "01_Literature/PDFs/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach",
+      "doi": "10.2196/mhealth.9217",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://mhealth.jmir.org/2018/10/e185/PDF",
+          "source_kind": "OA journal",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "http://hdl.handle.net/11343/218175",
+          "source_kind": "OA repository",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://oro.open.ac.uk/57500/1/57500.pdf",
+          "source_kind": "OA repository",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "http://mhealth.jmir.org/2018/10/e185/PDF",
+          "source_kind": "open publisher",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC6231850?pdf=render",
+          "source_kind": "Europe PMC free PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC6231850",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6231850/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6231850/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "1428321aec79ec135eb35024b99ec6d42026685ece92b27b863478d991d98095",
+      "bytes": 65698,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach"
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "title": "How private is your period?: A systematic analysis of menstrual app privacy policies",
+      "doi": "10.2478/popets-2020-0083",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.sciendo.com/pdf/10.2478/popets-2020-0083",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "pages": 20,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "c78eb7d6ed9b936984e40e05d388a5349a22dcfacf69782720d6f1cf999de5d0",
+      "bytes": 2452306,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf",
+      "source_url": "https://petsymposium.org/popets/2020/popets-2020-0083.pdf",
+      "resolved_url": "https://petsymposium.org/popets/2020/popets-2020-0083.pdf",
+      "source_kind": "PDF linked by OA landing page",
+      "version": "publishedVersion",
+      "license": "cc-by-nc-nd"
+    },
+    {
+      "id": 11,
+      "rank": 4,
+      "title": "Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis",
+      "doi": "10.2196/33735",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://mhealth.jmir.org/2022/5/e33735/PDF",
+          "source_kind": "OA journal",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://www.zora.uzh.ch/id/eprint/218564/1/document218564.pdf",
+          "source_kind": "OA repository",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC9123546?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC9123546",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9123546/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9123546/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "e957c828f20bd26bb3598201d87a36ec6fe04a536b094010c3bb41694467bbb9",
+      "bytes": 62078,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis"
+    },
+    {
+      "id": 82,
+      "rank": 5,
+      "title": "Reviewing the data security and privacy policies of mobile apps for depression",
+      "doi": "10.1016/j.invent.2018.12.001",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S2214782918300460/pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC6371412?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "http://europepmc.org/pmc/articles/PMC6371412",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6371412",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "PMC OA package PMC6371412",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6371412/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6371412/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "dafec89547a30d36697fb5ea002c0ef31212bc6125019dde22f14c397c026c3d",
+      "bytes": 38094,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Reviewing the data security and privacy policies of mobile apps for depression"
+    },
+    {
+      "id": 12,
+      "rank": 6,
+      "title": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps",
+      "doi": "10.1016/j.invent.2019.100243",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S2214782918300162/pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC6430038?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6430038",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "PMC OA package PMC6430038",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6430038/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6430038/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "be89b2a0881871b5c3dbd3a0c2d886c5e1cf470a8cbef0a86a3afd5f56eca596",
+      "bytes": 38093,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps"
+    },
+    {
+      "id": 9,
+      "rank": 7,
+      "title": "Availability and quality of mobile health app privacy policies",
+      "doi": "10.1136/amiajnl-2013-002605",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://citeseerx.ist.psu.edu/document?doi=47ccdad9b2312b900ea4a56ef670fa1f651f1e11&repid=rep1&type=pdf",
+          "source_kind": "Penn State CiteSeerX",
+          "error": "HTTPError: HTTP Error 404: NOT FOUND"
+        },
+        {
+          "url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC11888337?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1136/amiajnl-2013-002605",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2731756_code1903155.pdf?abstractid=2485118&mirid=3",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC11888337",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        },
+        {
+          "url": "Europe PMC full-text XML PMC11888337",
+          "error": "HTTPError: HTTP Error 500: "
+        }
+      ],
+      "status": "free_but_blocked",
+      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 404: NOT FOUND; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 404: Not Found; HTTPError: HTTP Error 500: ",
+      "oa_status": "bronze",
+      "oa_landing_url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf"
+    },
+    {
+      "id": 4,
+      "rank": 8,
+      "title": "Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines",
+      "doi": "10.1177/1609406919899220",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "1ff859a271acf5ee9f3ca4a09e1da9bff12752d43c472421d3e819a63997a4bb",
+      "bytes": 766064,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/08_O-Connor_2020_Intercoder-Reliability-in-Qualitative-Research-Debates-and-Practical-Guidelines.pdf",
+      "source_url": "https://discovery.ucl.ac.uk/id/eprint/10091273/1/1609406919899220.pdf",
+      "resolved_url": "https://discovery.ucl.ac.uk/id/eprint/10091273/1/1609406919899220.pdf",
+      "source_kind": "UCL institutional repository",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 6,
+      "rank": 9,
+      "title": "Reliability and Inter-rater Reliability in Qualitative Research: Norms and Guidelines for CSCW and HCI Practice",
+      "doi": "10.1145/3359174",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 23,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "38502f888469b9fc06077c89f187d96dcdfb3f1603f92a0773cd4cf2ed600c86",
+      "bytes": 391252,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf",
+      "source_url": "https://par.nsf.gov/servlets/purl/10176357",
+      "resolved_url": "https://par.nsf.gov/servlets/purl/10176357",
+      "source_kind": "NSF public access repository",
+      "version": "acceptedVersion",
+      "license": null
+    },
+    {
+      "id": 7,
+      "rank": 10,
+      "title": "Three Approaches to Qualitative Content Analysis",
+      "doi": "10.1177/1049732305276687",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://reppu.kamk.fi/pluginfile.php/178974/mod_resource/content/1/Three%20Approaches%20to%20Qualitative%20Content%20Analysis%20Hsieh%20Shannon%202005.pdf",
+          "source_kind": "university hosted teaching copy",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        }
+      ],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "bd3a9cf394ed09fb85ab680fea7fedc6273bba59de0995e2e249909403a7a34a",
+      "bytes": 102878,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf",
+      "source_url": "https://www33.homepage.villanova.edu/edward.fierros/pdf/Hsieh%20Shannon.pdf",
+      "resolved_url": "https://homepage.villanova.edu/edward.fierros/pdf/Hsieh%20Shannon.pdf",
+      "source_kind": "Villanova faculty teaching copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 5,
+      "rank": 11,
+      "title": "State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions",
+      "doi": "10.1080/10447311003781409",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 40,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "ef8b7f37e079070174c87aa6ef6a724472648bdef906181569f561465d47ef43",
+      "bytes": 347616,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/11_Mahatody_2010_State-of-the-Art-on-the-Cognitive-Walkthrough-Method-Its-Variants-and-Evolutions.pdf",
+      "source_url": "https://www.uphf.fr/LAMIH-intra/site/publications/204316.pdf",
+      "resolved_url": "https://www.uphf.fr/lamih-intra/site/publications/204316.pdf",
+      "source_kind": "author institutional copy",
+      "version": "acceptedVersion",
+      "license": null
+    },
+    {
+      "id": 8,
+      "rank": 12,
+      "title": "Cognitive walkthroughs: a method for theory-based evaluation of user interfaces",
+      "doi": "10.1016/0020-7373(92)90039-N",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 54,
+      "title_word_coverage": 0.0,
+      "doi_in_front_pages": false,
+      "validation_method": "visually checked scan; exact SHA-256",
+      "sha256": "af0c078e4ac7c9ec64f1b0db86e07fac24b679e27fac0c7560b110c674dbfb88",
+      "bytes": 2793396,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/12_Polson_1992_Cognitive-walkthroughs-a-method-for-theory-based-evaluation-of-user-interfaces.pdf",
+      "source_url": "https://www.colorado.edu/ics/sites/default/files/attached-files/91-01.pdf",
+      "resolved_url": "https://www.colorado.edu/ics/sites/default/files/attached-files/91-01.pdf",
+      "source_kind": "author technical report preceding 1992 journal version",
+      "version": "technical report 91-1 (1991)",
+      "license": null
+    },
+    {
+      "id": 16,
+      "rank": 13,
+      "title": "Coding In-depth Semistructured Interviews: Problems of Unitization and Intercoder Reliability and Agreement",
+      "doi": "10.1177/0049124113500475",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 27,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "822dce8c0e2403298053958d827d998bc8f2fb15ee4c8acf04d4aabc5b3312fa",
+      "bytes": 194414,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/13_Campbell_2013_Coding-In-depth-Semistructured-Interviews-Problems-of-Unitization-and-Intercoder-Reliabili.pdf",
+      "source_url": "https://sociology.dartmouth.edu/sites/sociology/files/coding_in_depth_semi.pdf",
+      "resolved_url": "https://sociology.dartmouth.edu/sites/sociology/files/coding_in_depth_semi.pdf",
+      "source_kind": "author institutional copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 17,
+      "rank": 14,
+      "title": "Answering the Call for a Standard Reliability Measure for Coding Data",
+      "doi": "10.1080/19312450709336664",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "80fabf7495ee17baecb8bfa46906dcbb7c9d88b99706bdb53a8b8074cf9368c2",
+      "bytes": 365985,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/14_Hayes_2007_Answering-the-Call-for-a-Standard-Reliability-Measure-for-Coding-Data.pdf",
+      "source_url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Answering%20the%20Call%20for%20a%20Standard%20Reliability%20Measure%20for%20Coding%20Data.pdf",
+      "resolved_url": "https://www.asc.upenn.edu/sites/default/files/2021-03/Answering%20the%20Call%20for%20a%20Standard%20Reliability%20Measure%20for%20Coding%20Data.pdf",
+      "source_kind": "author institutional copy",
+      "version": "acceptedVersion",
+      "license": null
+    },
+    {
+      "id": 10,
+      "rank": 15,
+      "title": "The Creation and Analysis of a Website Privacy Policy Corpus",
+      "doi": "10.18653/v1/P16-1126",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 11,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "18e4e3410169571abdc8b86efa8250111e13556e801fe51adcee4ea1f190f963",
+      "bytes": 462148,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/15_Wilson_2016_The-Creation-and-Analysis-of-a-Website-Privacy-Policy-Corpus.pdf",
+      "source_url": "https://www.aclweb.org/anthology/P16-1126.pdf",
+      "resolved_url": "https://aclanthology.org/P16-1126.pdf",
+      "source_kind": "OA conference",
+      "version": "publishedVersion",
+      "license": "cc-by"
+    },
+    {
+      "id": 13,
+      "rank": 16,
+      "title": "Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines",
+      "doi": "10.2196/26317",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.jmir.org/2021/9/e26317/PDF",
+          "source_kind": "OA journal",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC8485195?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC8485195",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8485195/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8485195/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "d6aa0b7ec1bb79653275e4f66c59965e311f077dd32cfe1e929036030752bba3",
+      "bytes": 69780,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines"
+    },
+    {
+      "id": 14,
+      "rank": 17,
+      "title": "Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores",
+      "doi": "10.1007/s12529-020-09944-y",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s12529-020-09944-y.pdf",
+          "source_kind": "OA journal",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC8384800?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC8384800",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8384800/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8384800/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "608219b470ed08af1e2920fa60f2e672f3be53e6201ded4142b72fc7592b31dd",
+      "bytes": 48462,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores"
+    },
+    {
+      "id": 15,
+      "rank": 18,
+      "title": "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study",
+      "doi": "10.2196/14479",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "http://mhealth.jmir.org/2020/3/e14479/PDF",
+          "source_kind": "open publisher",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC7148545?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC7148545",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7148545/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7148545/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "dcd62a1525146f347370abf33abba02070712801c524fc67f763e5d875c11c13",
+      "bytes": 44564,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study"
+    },
+    {
+      "id": 18,
+      "rank": 19,
+      "title": "Privacy Assessment in Mobile Health Apps: Scoping Review",
+      "doi": "10.2196/18868",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://mhealth.jmir.org/2020/7/e18868/PDF",
+          "source_kind": "OA journal",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC7367524?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7367524",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "PMC OA package PMC7367524",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7367524/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7367524/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "4a821411799385d28cf6186445e49a3bf3a73b253624387d883d64a46a6b036a",
+      "bytes": 79114,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Privacy Assessment in Mobile Health Apps: Scoping Review"
+    },
+    {
+      "id": 19,
+      "rank": 20,
+      "title": "Mobile health and privacy: cross sectional study",
+      "doi": "10.1136/bmj.n1248",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.bmj.com/content/bmj/373/bmj.n1248.full.pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC8207561?pdf=render",
+          "source_kind": "Europe PMC free PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1136/bmj.n1248",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC8207561",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8207561/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8207561/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "759c848cd8547d76c5494ce83a8c0961594b443740a4e5c4f914169c05d59179",
+      "bytes": 67762,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Mobile health and privacy: cross sectional study"
+    },
+    {
+      "id": 20,
+      "rank": 21,
+      "title": "The walkthrough method: An approach to the study of apps",
+      "doi": "10.1177/1461444816675438",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://salford-repository.worktribe.com/OutputFile/1493547",
+          "source_kind": "author institutional repository",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://salford-repository.worktribe.com/preview/1493547/The20Walkthrough20Method20-20Final20Pre-print20version1.pdf",
+          "source_kind": "Salford institutional repository",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/1461444816675438",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "http://usir.salford.ac.uk/id/eprint/40327/1/The%20Walkthrough%20Method%20-%20Final%20Pre-print%20version.doc",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "free_but_blocked",
+      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "green",
+      "oa_landing_url": "http://usir.salford.ac.uk/id/eprint/40327/1/The%20Walkthrough%20Method%20-%20Final%20Pre-print%20version.doc"
+    },
+    {
+      "id": 76,
+      "rank": 22,
+      "title": "Content Analysis: An Introduction to Its Methodology",
+      "doi": "10.4135/9781071878781",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [],
+      "status": "no_free_copy_located",
+      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 80,
+      "rank": 23,
+      "title": "Privacy Harms",
+      "doi": "10.2139/ssrn.3782222",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 71,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "754d62428a3b0aaf9882ca18a0f7fd4f5d8fcc432e3c1828b49df820e3e1c3ad",
+      "bytes": 1041698,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/23_Citron_2021_Privacy-Harms.pdf",
+      "source_url": "01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 81,
+      "rank": 24,
+      "title": "No Cookies For You!: Evaluating The Promises Of Big Tech’s ‘Privacy-Enhancing’ Techniques.",
+      "doi": "10.2139/ssrn.4655228",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 64,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "30e9368c438e8017b4fe6555f029ba4ddc1228f9b74293449736f42b8c766f21",
+      "bytes": 2244154,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/24_Martin_2023_No-Cookies-For-You-Evaluating-The-Promises-Of-Big-Tech-s-Privacy-Enhancing-Techniques.pdf",
+      "source_url": "01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 21,
+      "rank": 25,
+      "title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment",
+      "doi": "10.1186/s12916-015-0444-y",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://bmcmedicine.biomedcentral.com/track/pdf/10.1186/s12916-015-0444-y",
+          "source_kind": "OA journal",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        },
+        {
+          "url": "https://link.springer.com/content/pdf/10.1186/s12916-015-0444-y.pdf",
+          "source_kind": "publisher PDF link",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC4582624?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC4582624",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4582624/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4582624/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "1eccb251ede13f451ea9139843486ca9d7cc745426f23a2cbff132f80fff9437",
+      "bytes": 78358,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment"
+    },
+    {
+      "id": 22,
+      "rank": 26,
+      "title": "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation",
+      "doi": "10.1001/jamanetworkopen.2019.2542",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2730782/huckvale_2019_oi_190111.pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https:///jamanetworkopen/article-pdf/2/4/e192542/17478493/huckvale_2019_oi_190111.pdf",
+          "source_kind": "publisher PDF link",
+          "error": "URLError: <urlopen error no host given>"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC6481440?pdf=render",
+          "source_kind": "Europe PMC free PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1001/jamanetworkopen.2019.2542",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC6481440",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6481440/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6481440/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "0d067c4e422283074e849af0c2266c3ec2ddf523a3788566e691900d864bd579",
+      "bytes": 39978,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation"
+    },
+    {
+      "id": 23,
+      "rank": 27,
+      "title": "Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis",
+      "doi": "10.1136/bmj.l920",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC6425456?pdf=render",
+          "source_kind": "Europe PMC free PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1136/bmj.l920",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6425456",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "PMC OA package PMC6425456",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6425456/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6425456/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "128c7e796106fa645bb6c9e94e76c36489280a20de96bb16fc4eb5c376a0d25b",
+      "bytes": 69299,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis"
+    },
+    {
+      "id": 24,
+      "rank": 28,
+      "title": "On the privacy of mental health apps: An empirical investigation and its implications for app development",
+      "doi": "10.1007/s10664-022-10236-0",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 40,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "6ba44b439759f2ffaa819d5a6b1e2b633f9fd608e41df525ea00629ba6eae617",
+      "bytes": 2476336,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/28_Iwaya_2023_On-the-privacy-of-mental-health-apps-An-empirical-investigation-and-its-implications-for-a.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 25,
+      "rank": 29,
+      "title": "The streamlined cognitive walkthrough method, working around social constraints encountered in a software development company",
+      "doi": "10.1145/332040.332456",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 7,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "2a41888a5e199d33b302ce3b238fc2b146207bdce239b9951df03790f6d9da31",
+      "bytes": 711279,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/29_Spencer_2000_The-streamlined-cognitive-walkthrough-method-working-around-social-constraints-encountered.pdf",
+      "source_url": "https://facweb.cdm.depaul.edu/cmiller/eval/p353-spencer.pdf",
+      "resolved_url": "https://facweb.cdm.depaul.edu/cmiller/eval/p353-spencer.pdf",
+      "source_kind": "university faculty teaching copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 26,
+      "rank": 30,
+      "title": "Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial",
+      "doi": "10.20982/tqmp.08.1.p023",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 12,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "513390c89159e1b6e0768bad882e1dcfdb30a11536decd96ad8abf9021c65d58",
+      "bytes": 308165,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/30_Hallgren_2012_Computing-Inter-Rater-Reliability-for-Observational-Data-An-Overview-and-Tutorial.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 27,
+      "rank": 31,
+      "title": "A Coefficient of Agreement for Nominal Scales",
+      "doi": "10.1177/001316446002000104",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/001316446002000104",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 28,
+      "rank": 32,
+      "title": "Reliability in Content Analysis.: Some Common Misconceptions and Recommendations",
+      "doi": "10.1111/j.1468-2958.2004.tb00738.x",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://faculty.washington.edu/jwilker/559/Krippendorf.pdf",
+          "source_kind": "University of Washington teaching copy",
+          "error": "HTTPError: HTTP Error 404: "
+        }
+      ],
+      "pages": 15,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "4639fa0cfb1a7ce8f5f510496e5a0306c2c41c320b48ff05ae47fc5db2b76672",
+      "bytes": 286771,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/32_Krippendorff_2004_Reliability-in-Content-Analysis-Some-Common-Misconceptions-and-Recommendations.pdf",
+      "source_url": "https://repository.upenn.edu/server/api/core/bitstreams/b6ea3a5b-3dee-4f27-a159-e44393eda7d4/content",
+      "resolved_url": "https://repository.upenn.edu/server/api/core/bitstreams/b6ea3a5b-3dee-4f27-a159-e44393eda7d4/content",
+      "source_kind": "University of Pennsylvania institutional repository",
+      "version": "acceptedVersion (author manuscript, HCR 30(3): 411-433)",
+      "license": null
+    },
+    {
+      "id": 29,
+      "rank": 33,
+      "title": "Computing inter‐rater reliability and its variance in the presence of high agreement",
+      "doi": "10.1348/000711006X126600",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 20,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "447118803d2c30eb983ad3d16364b9cd4fc4bd21d7342300a9a8a1396dfe8eef",
+      "bytes": 267920,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf",
+      "source_url": "https://www.agreestat.com/assets/paper-variance-high-agreement-2008.pdf",
+      "resolved_url": "https://www.agreestat.com/assets/paper-variance-high-agreement-2008.pdf",
+      "source_kind": "author official research page",
+      "version": "author-hosted article",
+      "license": null
+    },
+    {
+      "id": 30,
+      "rank": 34,
+      "title": "High agreement but low Kappa: I. the problems of two paradoxes",
+      "doi": "10.1016/0895-4356(90)90158-L",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [],
+      "status": "no_free_copy_located",
+      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 31,
+      "rank": 35,
+      "title": "Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking",
+      "doi": "10.1145/3706598.3714089",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 24,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "724cf006c36ebe36311a61532ab7d5cee68450b2b6b2efc4d38711f867e663a9",
+      "bytes": 3256579,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/35_Hudig_2025_Intimate-Data-Sharing-Enhancing-Transparency-and-Control-in-Fertility-Tracking.pdf",
+      "source_url": "01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 32,
+      "rank": 36,
+      "title": "Mobile App Rating Scale: A New Tool for Assessing the Quality of Health Mobile Apps",
+      "doi": "10.2196/mhealth.3422",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 9,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "ce128b7c3a1cde97579a8c87f9571f72c5276e0b4e5a3443796e58f154bfc741",
+      "bytes": 387012,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/02_App-Appraisal/36_Stoyanov_2015_Mobile-App-Rating-Scale-A-New-Tool-for-Assessing-the-Quality-of-Health-Mobile-Apps.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 33,
+      "rank": 37,
+      "title": "Help for insomnia from the app store? A standardized rating of mobile health applications claiming to target insomnia",
+      "doi": "10.1111/jsr.13642",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 14,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "118c36cf4403e8fec1e6be2f93abcdacbc1c5bdf9b889741ffe855a0977d6d70",
+      "bytes": 1076272,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/37_Simon_2023_Help-for-insomnia-from-the-app-store-A-standardized-rating-of-mobile-health-applications-c.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 34,
+      "rank": 38,
+      "title": "Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study",
+      "doi": "10.2196/66762",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.jmir.org/2025/1/e66762/PDF",
+          "source_kind": "open publisher",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC12271965?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doaj.org/article/a48b3a5153854471afa8892c76dec0c6",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC12271965",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12271965/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12271965/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "13372d9cc8ddf0a9c2ddf263ae59f86016264ac0fd4e71a7f94e5fb61e4d5f6d",
+      "bytes": 98589,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study"
+    },
+    {
+      "id": 35,
+      "rank": 39,
+      "title": "The Quality and Characteristics of Digital Mental Health Apps: Mixed Methods Study",
+      "doi": "10.2196/67944",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 18,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "4727fca1182ad35c476e9aa7359ad5dffd2a70a3b40cc7515beafdb52ec2853d",
+      "bytes": 1727903,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/39_Zych_2026_The-Quality-and-Characteristics-of-Digital-Mental-Health-Apps-Mixed-Methods-Study.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 36,
+      "rank": 40,
+      "title": "Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android",
+      "doi": "10.2196/mhealth.3672",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://mhealth.jmir.org/2015/1/e8/PDF",
+          "source_kind": "OA journal",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "http://mhealth.jmir.org/2015/1/e8/PDF",
+          "source_kind": "open publisher",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://europepmc.org/articles/PMC4319144?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC4319144",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4319144/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4319144/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "d88805b9bde68a6707ccf40d30c58fd4903b4b487f459176d6d385907be7e926",
+      "bytes": 77297,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android"
+    },
+    {
+      "id": 37,
+      "rank": 41,
+      "title": "How private is your mental health app data? An empirical study of mental health app privacy policies and practices",
+      "doi": "10.1016/j.ijlp.2019.04.002",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [],
+      "status": "no_free_copy_located",
+      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 38,
+      "rank": 42,
+      "title": "Mobile App Privacy Disclosures on Google Play in the Post-GDPR Context: A Large-Scale Analysis of Data Safety Section and Permissions",
+      "doi": "10.3390/info17040343",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 23,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "4269f7281381d3857ddaada8ec295ce3fbd69c2d12506493c060a86eee0d5cb9",
+      "bytes": 1996418,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/42_Magoulas_2026_Mobile-App-Privacy-Disclosures-on-Google-Play-in-the-Post-GDPR-Context-A-Large-Scale-Analy.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 39,
+      "rank": 43,
+      "title": "\"It's a scavenger hunt\": Usability of Websites' Opt-Out and Data Deletion Choices",
+      "doi": "10.1145/3313831.3376511",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://www.heinz.cmu.edu/~acquisti/papers/Acquisti_Usability_of_Sites_Opt-Out_and_Data_Deletion_Choices.pdf",
+          "source_kind": "author CMU site",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "pages": 12,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "51455662e0750e20f1d3fadabe05f15010e4ee61136c4740ee5547a9733be2f6",
+      "bytes": 533785,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/43_Habib_2020_It-s-a-scavenger-hunt-Usability-of-Websites-Opt-Out-and-Data-Deletion-Choices.pdf",
+      "source_url": "https://www.usableprivacy.org/static/files/habib_chi_2020.pdf",
+      "resolved_url": "https://www.usableprivacy.org/static/files/habib_chi_2020.pdf",
+      "source_kind": "author project site (Usable Privacy Policy Project)",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 40,
+      "rank": 44,
+      "title": "Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps",
+      "doi": "10.1177/20563051231158822",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231158822",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1177/20563051231158822",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doaj.org/article/e643987fa7554ce5b9fd487a45f688e3",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "free_but_blocked",
+      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "gold",
+      "oa_landing_url": "https://doi.org/10.1177/20563051231158822"
+    },
+    {
+      "id": 41,
+      "rank": 45,
+      "title": "Heuristic evaluation of user interfaces",
+      "doi": "10.1145/97243.97281",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 8,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "55029eb925528400286bcaaced8a1898ee96dedf9fff57769f1ab95a0f78f05e",
+      "bytes": 935837,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/03_Walkthroughs/45_Nielsen_1990_Heuristic-evaluation-of-user-interfaces.pdf",
+      "source_url": "https://www.cs.cmu.edu/~bam/uicourse/20790utc04/cmuonly/p249-nielsen.pdf",
+      "resolved_url": "https://www.cs.cmu.edu/~bam/uicourse/20790utc04/cmuonly/p249-nielsen.pdf",
+      "source_kind": "university faculty teaching copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 42,
+      "rank": 46,
+      "title": "Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations",
+      "doi": "10.1145/142750.142864",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [],
+      "status": "no_free_copy_located",
+      "reason": "No free PDF located in checked OA metadata/publisher sources; library access or an author copy may be needed.",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 43,
+      "rank": 47,
+      "title": "Codebook Development for Team-Based Qualitative Analysis",
+      "doi": "10.1177/1525822X980100020301",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/1525822X980100020301",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 44,
+      "rank": 48,
+      "title": "Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research",
+      "doi": "10.1177/1525822X04266540",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://citeseerx.ist.psu.edu/document?doi=f62c0497ffb0096e5200b43b827b9887812f3138&repid=rep1&type=pdf",
+          "source_kind": "Penn State CiteSeerX",
+          "error": "HTTPError: HTTP Error 404: NOT FOUND"
+        },
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/1525822X04266540",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 404: NOT FOUND; HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 45,
+      "rank": 49,
+      "title": "Demonstrating Rigor Using Thematic Analysis: A Hybrid Approach of Inductive and Deductive Coding and Theme Development",
+      "doi": "10.1177/160940690600500107",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://citeseerx.ist.psu.edu/document?doi=0a4a3874843f3cca3aa7bcbd4e3794bb03c1e85c&repid=rep1&type=pdf",
+          "source_kind": "Penn State CiteSeerX",
+          "error": "HTTPError: HTTP Error 404: NOT FOUND"
+        }
+      ],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "bfa6331b1786c58f57264e60305afb0ef433b641da3094cf9ec3de3ed0de1842",
+      "bytes": 437023,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/49_Fereday_2006_Demonstrating-Rigor-Using-Thematic-Analysis-A-Hybrid-Approach-of-Inductive-and-Deductive-C.pdf",
+      "source_url": "https://fac.flinders.edu.au/dspace/api/core/bitstreams/8ad4da30-b2cc-451e-bb5b-aeab190d04f0/content",
+      "resolved_url": "https://fac.flinders.edu.au/dspace/api/core/bitstreams/8ad4da30-b2cc-451e-bb5b-aeab190d04f0/content",
+      "source_kind": "Flinders institutional repository",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 46,
+      "rank": 50,
+      "title": "Qualitative Content Analysis",
+      "doi": "10.17169/fqs-1.2.1089",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 10,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "675fc4ecc22015000728f36f6541fd974f903bb3250f7dc70bea1381a066271f",
+      "bytes": 130228,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/50_Mayring_2000_Qualitative-Content-Analysis.pdf",
+      "source_url": "https://www.qualitative-research.net/index.php/fqs/article/download/1089/2386/3455",
+      "resolved_url": "https://www.qualitative-research.net/index.php/fqs/article/download/1089/2386/3455",
+      "source_kind": "official FQS English PDF",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 47,
+      "rank": 51,
+      "title": "Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability",
+      "doi": "10.1111/j.1468-2958.2002.tb00826.x",
+      "checked_on": "2026-10-16",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://is.muni.cz/el/fss/podzim2021/CDSn4008/um/readings/lombard.pdf",
+          "source_kind": "university hosted teaching copy",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1049&context=clcom_facpub",
+          "source_kind": "Cleveland State institutional repository",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1049&context=clcom_facpub",
+          "source_kind": "Cleveland State institutional repository",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1049&context=clcom_facpub",
+          "source_kind": "Cleveland State repository (accepted postprint)",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        }
+      ],
+      "status": "free_but_blocked",
+      "reason": "Accepted postprint in the Cleveland State repository; its PDF link is behind a Cloudflare verification challenge.",
+      "oa_status": "green",
+      "oa_landing_url": "https://engagedscholarship.csuohio.edu/clcom_facpub/50"
+    },
+    {
+      "id": 48,
+      "rank": 52,
+      "title": "Thematic Analysis: Striving to Meet the Trustworthiness Criteria",
+      "doi": "10.1177/1609406917733847",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://journals.sagepub.com/doi/pdf/10.1177/1609406917733847",
+          "source_kind": "OA journal",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doi.org/10.1177/1609406917733847",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://doaj.org/article/765b3a92e8444f8aad8b8720e6c38459",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "available",
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "c5e6476bd7b35fd6907456c2a6ad51790930db9a838a7e4bb0d1db3f9b1d7bb3",
+      "bytes": 640411,
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/52_Nowell_2017_Thematic-Analysis-Striving-to-Meet-the-Trustworthiness-Criteria.pdf",
+      "source_url": "user-supplied",
+      "source_kind": "user-supplied PDF (browser or library download)",
+      "version": "user-supplied; version not recorded — compare with the DOI record"
+    },
+    {
+      "id": 49,
+      "rank": 53,
+      "title": "Inter-Coder Agreement for Computational Linguistics",
+      "doi": "10.1162/coli.07-034-R2",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 42,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "c9e7973615bfb017c9182c70c18fab4deb4e8103a32a53c407bc6de6dc383e26",
+      "bytes": 322100,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/53_Artstein_2008_Inter-Coder-Agreement-for-Computational-Linguistics.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 50,
+      "rank": 54,
+      "title": "Interrater reliability: the kappa statistic",
+      "doi": "10.11613/BM.2012.031",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 7,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "886bfe4112b254fc78b0e9f7e5d6fae25e0604c344827725be3c394769574861",
+      "bytes": 184118,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/54_McHugh_2012_Interrater-reliability-the-kappa-statistic.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 52,
+      "rank": 55,
+      "title": "One size fits all? What counts as quality practice in (reflexive) thematic analysis?",
+      "doi": "10.1080/14780887.2020.1769238",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/14780887.2020.1769238",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://uwe-repository.worktribe.com/6631950/1/One%20size%20fits%20all%20-%20What%20counts%20a...is%20UWE%20Repository%20version",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "free_but_blocked",
+      "reason": "Free copy indexed, but retrieval failed: HTTPError: HTTP Error 403: Forbidden; HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "green",
+      "oa_landing_url": "https://uwe-repository.worktribe.com/6631950/1/One%20size%20fits%20all%20-%20What%20counts%20a...is%20UWE%20Repository%20version"
+    },
+    {
+      "id": 53,
+      "rank": 56,
+      "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+      "doi": "10.1136/bmj.n71",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "5eb52bac25fa69985bc8661c9b9364f30ecdf9aefd95f2f2352d23e70c55b04d",
+      "bytes": 820184,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/56_Page_2021_The-PRISMA-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 54,
+      "rank": 57,
+      "title": "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews",
+      "doi": "10.1186/s13643-020-01542-z",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 19,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "82a893638c69647c3699552f07f13e309648c2921017331aa07b99965a3e9a21",
+      "bytes": 737278,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/57_Rethlefsen_2021_PRISMA-S-an-extension-to-the-PRISMA-Statement-for-Reporting-Literature-Searches-in-Systema.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 55,
+      "rank": 58,
+      "title": "PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation",
+      "doi": "10.7326/M18-0850",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 29,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "057c12251d0a531ec7d94ade4b830bef341ea051ef39cc644a8e6dfb070d6113",
+      "bytes": 426500,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/58_Tricco_2018_PRISMA-Extension-for-Scoping-Reviews-PRISMA-ScR-Checklist-and-Explanation.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 57,
+      "rank": 59,
+      "title": "Standards for Reporting Qualitative Research: A Synthesis of Recommendations",
+      "doi": "10.1097/ACM.0000000000000388",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 51,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "692e60aaf4e8018f268b382ca9414eda727491ef5b8632298e85df7350b023da",
+      "bytes": 394888,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/59_O-Brien_2014_Standards-for-Reporting-Qualitative-Research-A-Synthesis-of-Recommendations.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 59,
+      "rank": 60,
+      "title": "A \"nutrition label\" for privacy",
+      "doi": "10.1145/1572532.1572538",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 12,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "9f9e48b085643dd9e9892cd8e801dc3a163ffe8564223a10dac7a53b1c51523c",
+      "bytes": 2213691,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/60_Kelley_2009_A-nutrition-label-for-privacy.pdf",
+      "source_url": "https://cups.cs.cmu.edu/soups/2009/proceedings/a4-kelley.pdf",
+      "resolved_url": "https://cups.cs.cmu.edu/soups/2009/proceedings/a4-kelley.pdf",
+      "source_kind": "author institutional copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 60,
+      "rank": 61,
+      "title": "Understanding iOS Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data",
+      "doi": "10.1145/3491101.3519739",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 7,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "1ebce15ee4d9648656e9e4829bd9f4b7a21efe7e35d138f2633e48c41ad6a47b",
+      "bytes": 232078,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/61_Li_2022_Understanding-iOS-Privacy-Nutrition-Labels-An-Exploratory-Large-Scale-Analysis-of-App-Stor.pdf",
+      "source_url": "https://par.nsf.gov/servlets/purl/10399852",
+      "resolved_url": "https://par.nsf.gov/servlets/purl/10399852",
+      "source_kind": "NSF public access repository",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 61,
+      "rank": 62,
+      "title": "You `Might' Be Affected: An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications",
+      "doi": "10.1145/3290605.3300424",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 14,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "5f9993e2de56b1c3e6c97141dc20442a0264e3067a18a74af890239ab9af9634",
+      "bytes": 4508947,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf",
+      "source_url": "https://yixinzou.github.io/publications/pdf/chi2019-zou.pdf",
+      "resolved_url": "https://yixinzou.github.io/publications/pdf/chi2019-zou.pdf",
+      "source_kind": "author official website",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 65,
+      "rank": 63,
+      "title": "Large language models: a new approach for privacy policy analysis at scale",
+      "doi": "10.1007/s00607-024-01331-9",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 16,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "0dc98164d7b90a4ac876e9a091c46145b2fc9811fb601e12e18a226a423e374a",
+      "bytes": 1588139,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/63_Rodriguez_2024_Large-language-models-a-new-approach-for-privacy-policy-analysis-at-scale.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 66,
+      "rank": 64,
+      "title": "Best Practices for Text Annotation with Large Language Models",
+      "doi": "10.6092/issn.1971-8853/19461",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 19,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "5be67dd5b3c2aec432fd3bf4a99b788b0c1b438b0306567c623f520f6f69eac6",
+      "bytes": 307420,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+      "source_url": "https://sociologica.unibo.it/article/download/19461/18663/85177",
+      "resolved_url": "https://sociologica.unibo.it/article/download/19461/18663/85177",
+      "source_kind": "open publisher PDF",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 67,
+      "rank": 65,
+      "title": "ChatGPT outperforms crowd workers for text-annotation tasks",
+      "doi": "10.1073/pnas.2305016120",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "da6865c3e57e8a956f2aeeadef0c814b2ab4a2db4753ef50037a4074b6e3d26f",
+      "bytes": 180360,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/65_Gilardi_2023_ChatGPT-outperforms-crowd-workers-for-text-annotation-tasks.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 68,
+      "rank": 66,
+      "title": "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation",
+      "doi": "10.48550/arXiv.2509.08825",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 97,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "845293eda2d5bd7f524051ecc29b8f73c67753cfb975cedfa4481f28507f0000",
+      "bytes": 1705726,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 69,
+      "rank": 67,
+      "title": "Automated Annotation with Generative AI Requires Validation",
+      "doi": "10.48550/arXiv.2306.00176",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 20,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "bb82e59025600014ce8d513e7d5cc27c0ead5686ac2b7093dbf2786cc970cb50",
+      "bytes": 325371,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/67_Pangakis_2023_Automated-Annotation-with-Generative-AI-Requires-Validation.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 73,
+      "rank": 68,
+      "title": "Toward Risk Communication in Intimate Health Technologies",
+      "doi": "10.1080/10447318.2025.2597502",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/10447318.2025.2597502",
+          "source_kind": "publisher PDF link",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: HTTPError: HTTP Error 403: Forbidden",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 75,
+      "rank": 69,
+      "title": "A Taxonomy of Privacy",
+      "doi": "10.2307/40041279",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 84,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "2af3ff67bbc903ea63f0f21a7bf27fc4aeeee164885248856c4fda4639e11f9e",
+      "bytes": 775631,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/69_Solove_2006_A-Taxonomy-of-Privacy.pdf",
+      "source_url": "https://zoo.cs.yale.edu/classes/cs457/fall13/SoloveTaxonomy.pdf",
+      "resolved_url": "https://zoo.cs.yale.edu/classes/cs457/fall13/SoloveTaxonomy.pdf",
+      "source_kind": "Yale course-hosted copy of the Penn Law Review article",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 77,
+      "rank": 70,
+      "title": "Privacy in Context: Technology, Policy, and the Integrity of Social Life",
+      "doi": "10.1515/9780804772891",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://www.degruyter.com/document/doi/10.1515/9780804772891/pdf",
+          "source_kind": "publisher PDF link",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: ValueError: Server returned HTML/non-PDF content",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 78,
+      "rank": 71,
+      "title": "A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements",
+      "doi": "10.1007/s00766-010-0115-7",
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s00766-010-0115-7.pdf",
+          "source_kind": "publisher PDF link",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        },
+        {
+          "url": "https://link.springer.com/content/pdf/10.1007/s00766-010-0115-7",
+          "source_kind": "publisher PDF link",
+          "error": "ValueError: Bot/JavaScript verification page returned instead of PDF"
+        }
+      ],
+      "status": "not_retrieved",
+      "reason": "No verified free PDF retrieved; attempted sources returned: ValueError: Bot/JavaScript verification page returned instead of PDF; ValueError: Bot/JavaScript verification page returned instead of PDF",
+      "oa_status": "closed",
+      "oa_landing_url": null
+    },
+    {
+      "id": 79,
+      "rank": 72,
+      "title": "An introduction to privacy engineering and risk management in federal systems",
+      "doi": "10.6028/NIST.IR.8062",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 49,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "bc07d208aaab554a106da95686ff347c9759ae1c502ae77d98a1fa2cf3ef4391",
+      "bytes": 4116793,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/72_Brooks_2017_An-introduction-to-privacy-engineering-and-risk-management-in-federal-systems.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 83,
+      "rank": 73,
+      "title": "Qualitative Content Analysis With ChatGPT: Pitfalls, Rough Approximations and Gross Errors. A Field Report",
+      "doi": "10.17169/fqs-26.1.4252",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "224084ab56a7c51cc9200887186bab484fafeae9d5ec073c1a65258140caa180",
+      "bytes": 141258,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/73_Mayring_2025_Qualitative-Content-Analysis-With-ChatGPT-Pitfalls-Rough-Approximations-and-Gross-Errors-A.pdf",
+      "source_url": "https://www.qualitative-research.net/index.php/fqs/article/download/4252/5160/19733",
+      "resolved_url": "https://www.qualitative-research.net/index.php/fqs/article/download/4252/5160/19733",
+      "source_kind": "official FQS English PDF",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 51,
+      "rank": 74,
+      "title": "Using thematic analysis in psychology",
+      "doi": "10.1191/1478088706qp063oa",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 2,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "dbad16b45c8a3ede7a6cd0105944aa6dae1c94beb7ac5bb67af607396f734937",
+      "bytes": 878269,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/04_Coding/74_Braun_2006_Using-thematic-analysis-in-psychology.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 56,
+      "rank": 75,
+      "title": "Scoping studies: towards a methodological framework",
+      "doi": "10.1080/1364557032000119616",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 31,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "b0fb1cfee5338ca0656f372bd88798c9c304800418bfdc3cd400113f4710bf77",
+      "bytes": 257595,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/75_Arksey_2005_Scoping-studies-towards-a-methodological-framework.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 58,
+      "rank": 76,
+      "title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies",
+      "doi": "10.1371/journal.pmed.0040296",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [
+        {
+          "url": "https://europepmc.org/articles/PMC2020495?pdf=render",
+          "source_kind": "Europe PMC linked PDF",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2020495",
+          "source_kind": "OA landing page",
+          "error": "ValueError: Server returned HTML/non-PDF content"
+        },
+        {
+          "url": "https://doaj.org/article/c81cd795fa3f4881b81b393582aa4d10",
+          "source_kind": "OA landing page",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "PMC OA package PMC2020495",
+          "error": "HTTPError: HTTP Error 404: Not Found"
+        }
+      ],
+      "status": "available_html",
+      "file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.html",
+      "xml_file": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2020495/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2020495/fullTextXML",
+      "source_kind": "Europe PMC public full-text XML",
+      "version": "PMC full-text copy",
+      "sha256": "1fa924dc1a04bd1d72532c7da086c5a6ad91f3e36de6ea4696bdff6a10946ffc",
+      "bytes": 25139,
+      "format": "HTML + source XML",
+      "note": "Full-text HTML from the public Europe PMC XML; figure images are not bundled.",
+      "article_title": "The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies"
+    },
+    {
+      "id": 62,
+      "rank": 77,
+      "title": "Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence",
+      "doi": "10.1145/3313831.3376321",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 13,
+      "title_word_coverage": 0.875,
+      "doi_in_front_pages": true,
+      "sha256": "bfb6f1ee7fa32dde6b255bea970855ee8fb20fca83b1bbc2458386aed8fae440",
+      "bytes": 1293053,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/77_Nouwens_2020_Dark-Patterns-after-the-GDPR-Scraping-Consent-Pop-ups-and-Demonstrating-their-Influence.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 63,
+      "rank": 78,
+      "title": "Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites",
+      "doi": "10.1145/3359183",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 32,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "6fbbb4d6e644ca1c7c49a129d84f33423ddd1fb24fcd0be0731e8db21be7afc5",
+      "bytes": 5993727,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/78_Mathur_2019_Dark-Patterns-at-Scale-Findings-from-a-Crawl-of-11K-Shopping-Websites.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": 64,
+      "rank": 79,
+      "title": "The Dark (Patterns) Side of UX Design",
+      "doi": "10.1145/3173574.3174108",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 15,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "b114d53b3f4fc945962f8a9faef637fa74a784958e0553f74b3bdd74f6353d24",
+      "bytes": 563547,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/79_Gray_2018_The-Dark-Patterns-Side-of-UX-Design.pdf",
+      "source_url": "https://classes.cs.uchicago.edu/archive/2020/fall/33231-1/readings/2018_Grayetal_CHI_DarkPatternsUXDesign",
+      "resolved_url": "https://classes.cs.uchicago.edu/archive/2020/fall/33231-1/readings/2018_Grayetal_CHI_DarkPatternsUXDesign",
+      "source_kind": "University of Chicago teaching copy",
+      "version": "publishedVersion",
+      "license": null
+    },
+    {
+      "id": 70,
+      "rank": 80,
+      "title": "Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours",
+      "doi": "10.1145/3313831.3376651",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 12,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "de7700e240623e9707d0df557da38d02c164116d812dbdbd8bb3cbf35c510a4b",
+      "bytes": 7156113,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/80_Gabriele_2020_Understanding-Fitness-Tracker-Users-Security-and-Privacy-Knowledge-Attitudes-and-Behaviour.pdf",
+      "source_url": "01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 71,
+      "rank": 81,
+      "title": "\"I Deleted It After the Overturn of Roe v. Wade\": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era",
+      "doi": "10.1145/3613904.3642042",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 22,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "be6e9a59f6eb64b3f55ab0287390075557478a635bb661371b6e35fb60732e28",
+      "bytes": 1062787,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/81_Cao_2024_I-Deleted-It-After-the-Overturn-of-Roe-v-Wade-Understanding-Women-s-Privacy-Concerns-Towar.pdf",
+      "source_url": "01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 72,
+      "rank": 82,
+      "title": "Wearable Activity Trackers: A Survey on Utility, Privacy, and Security",
+      "doi": "10.1145/3645091",
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 40,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": true,
+      "sha256": "9f9950a79e995371a955c57a066b526e2003e1047c79df46c89e6f164dd102eb",
+      "bytes": 1455280,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf",
+      "source_url": "01_Literature/PDFs/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf",
+      "version": "published copy already in project",
+      "reused_existing": true
+    },
+    {
+      "id": 74,
+      "rank": 83,
+      "title": "Analysis of Transparency and User-Relevancy of DTC Company Policies",
+      "doi": "10.1007/978-3-031-76265-9_9",
+      "checked_on": "2026-10-16",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 26,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "validation_method": "PDF parsing and title/DOI matching",
+      "sha256": "ba260fb9e01d5bcb902627ed631528ae82361f763028e8c235109ea363cc5eab",
+      "bytes": 5553531,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/83_Doan_2025_Analysis-of-Transparency-and-User-Relevancy-of-DTC-Company-Policies.pdf",
+      "source_url": "https://orbilu.uni.lu/bitstream/10993/61227/1/PrivIno2024_paper_46-3.pdf",
+      "resolved_url": "https://orbilu.uni.lu/bitstream/10993/61227/1/PrivIno2024_paper_46-3.pdf",
+      "source_kind": "OA repository",
+      "version": "submittedVersion",
+      "license": "other-oa"
+    },
+    {
+      "id": "N1",
+      "rank": null,
+      "title": "Knabenhans et al. (2026), On the (Privacy) Harms of the European Digital Identity Framework",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 23,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac",
+      "bytes": 2621810,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N1_Knabenhans__Knabenhans-et-al-2026-On-the-Privacy-Harms-of-the-European-Digital-Identity-Framework.pdf",
+      "source_url": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "version": "project-held harm-tree version; compare May/September revision",
+      "reused_existing": true
+    },
+    {
+      "id": "N2",
+      "rank": null,
+      "title": "Wharton et al. (1994), The Cognitive Walkthrough Method: A Practitioner's Guide",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 439,
+      "title_word_coverage": 0.0,
+      "doi_in_front_pages": false,
+      "sha256": "56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5",
+      "bytes": 23759462,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N2_Wharton__Wharton-et-al-1994-The-Cognitive-Walkthrough-Method-A-Practitioner-s-Guide.pdf",
+      "source_url": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "version": "whole edited book; relevant chapter pp. 105–140",
+      "reused_existing": true
+    },
+    {
+      "id": "N3",
+      "rank": null,
+      "title": "Schaub et al. (2015), A Design Space for Effective Privacy Notices",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 17,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "80f3bb73f9351dd44adec4348d5aea5a99acd59e09b9c25f85fdd714484a2c8c",
+      "bytes": 423027,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N3_Schaub__Schaub-et-al-2015-A-Design-Space-for-Effective-Privacy-Notices.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": "N4",
+      "rank": null,
+      "title": "Habib et al. (2019), An Empirical Analysis of Data Deletion and Opt-Out Choices on 150 Websites",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 21,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "78afeb2d7442ed37241743134b4bfceb3c402418d10b51d93e7f7575c1333d83",
+      "bytes": 1586697,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N4_Habib__Habib-et-al-2019-An-Empirical-Analysis-of-Data-Deletion-and-Opt-Out-Choices-on-150-Website.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": "N5",
+      "rank": null,
+      "title": "Arkalakis et al. (2024), Abandon All Hope Ye Who Enter Here: A Dynamic, Longitudinal Investigation of Android's Data Safety Section",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 19,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "b5acadd9dd07cd62ba77b170ef140f5cb7282462f2b3df1f684257a62242102a",
+      "bytes": 1172192,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N5_Arkalakis__Arkalakis-et-al-2024-Abandon-All-Hope-Ye-Who-Enter-Here-A-Dynamic-Longitudinal-Investigati.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": "N6",
+      "rank": null,
+      "title": "Harkous et al. (2018), Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 19,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "805b0e28348de8fd75945f35c6be139b7386ea3b9f1ac88df328ec4398637205",
+      "bytes": 977177,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": "N7",
+      "rank": null,
+      "title": "American Psychiatric Association, The App Evaluation Model",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": false,
+      "attempts": [],
+      "status": "web_resource",
+      "reason": "Living official web framework, not a paper PDF; the public webpage remains linked.",
+      "oa_status": null,
+      "oa_landing_url": null
+    },
+    {
+      "id": "N8",
+      "rank": null,
+      "title": "Article 29 Working Party / EDPB, Guidelines on transparency under Regulation 2016/679",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 40,
+      "title_word_coverage": 0.875,
+      "doi_in_front_pages": false,
+      "sha256": "e026fbc21b2c6a6246ee09f8e66a6dc2a11830833eab15d54882bd6ad6c0c624",
+      "bytes": 1176674,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N8_Article-29-Working-Party-EDPB__Article-29-Working-Party-EDPB-Guidelines-on-transparency-under-Regulation-2016-679.pdf",
+      "source_url": "https://www.edpb.europa.eu/system/files/documents/2023-09/wp260rev01_en.pdf",
+      "resolved_url": "https://www.edpb.europa.eu/system/files/documents/2023-09/wp260rev01_en.pdf",
+      "source_kind": "EDPB official English guideline",
+      "version": "11 April 2018 revision",
+      "license": null
+    },
+    {
+      "id": "N9",
+      "rank": null,
+      "title": "Association of Internet Researchers, Internet Research: Ethical Guidelines 3.0",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 83,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "8be5a1d7f6c4c792e0bf87a2a719d3f30ae921b18ac28f9359f13b7097bc45c8",
+      "bytes": 836041,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N9_Association-of-Internet-Researchers__Association-of-Internet-Researchers-Internet-Research-Ethical-Guidelines-3-0.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    },
+    {
+      "id": "N10",
+      "rank": null,
+      "title": "BfArM, The Fast-Track Process for Digital Health Applications (DiGA)",
+      "doi": null,
+      "checked_on": "2026-10-14",
+      "downloaded": true,
+      "attempts": [],
+      "pages": 128,
+      "title_word_coverage": 1.0,
+      "doi_in_front_pages": false,
+      "sha256": "53037df12b4c9634eda974834e75eb141988901dee143087b98429ddebe5d01e",
+      "bytes": 2121985,
+      "status": "available",
+      "file": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N10_BfArM__BfArM-The-Fast-Track-Process-for-Digital-Health-Applications-DiGA.pdf",
+      "source_url": "already downloaded",
+      "version": "version not recorded; verified local copy from interrupted first batch"
+    }
+  ],
+  "summary": {
+    "available": 62,
+    "available_html": 15,
+    "free_but_blocked": 5,
+    "no_free_copy_located": 4,
+    "not_retrieved": 6,
+    "web_resource": 1
+  }
+}

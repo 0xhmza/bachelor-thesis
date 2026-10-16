@@ -2,6 +2,8 @@
 
 Refresh is local and makes no API calls. Outdated semantic nodes are excluded,
 not silently retained. `prepare` lists sources for the installed Graphify skill.
+The methodology literature corpus (catalogue, download state, stage and RQ links)
+is rebuilt deterministically from its JSON on every refresh.
 """
 from __future__ import annotations
 
@@ -71,7 +73,8 @@ def prepare():
     (OUT / '.graphify_root').write_text(str(ROOT), encoding='utf-8')
     d = corpus()
     write_json(OUT / '.graphify_detect.json', d)
-    files = [f for cat in ('document', 'paper', 'image') for f in d['files'].get(cat, [])]
+    files = [f for cat in ('document', 'paper', 'image') for f in d['files'].get(cat, [])
+             if relative(f) not in CATALOGUE_DRIVEN]
     nodes, edges, hyperedges, uncached = check_semantic_cache(files, root=ROOT, prompt_file=SPEC)
     write_json(OUT / '.graphify_cached.json', {'nodes': nodes, 'edges': edges, 'hyperedges': hyperedges})
     (OUT / '.graphify_uncached.txt').write_text('\n'.join(uncached), encoding='utf-8')
@@ -141,6 +144,168 @@ def import_semantic():
     print(f'Imported {len(chunks)} semantic chunks: {len(nodes)} nodes, {len(edges)} edges.')
 
 
+LITERATURE = ROOT / '01_Literature'
+CATALOGUE = LITERATURE / 'methodology-literature.json'
+DOWNLOADS = ROOT / 'output/research/2026-10-14_methodology-literature/download-status.json'
+GUIDE = LITERATURE / 'Methods-Reading-List.md'
+# Generated from the catalogue and parsed by `literature()`; semantic extraction
+# would only duplicate those nodes, so these are never queued or reused.
+CATALOGUE_DRIVEN = {'01_Literature/Methods-Reading-List.md', '01_Literature/Download-Checklist.md'}
+LIT_STATS = {}
+
+
+def family_names(work):
+    """Lower-case slugs of a catalogued work's first three author surnames."""
+    authors = work.get('authors') if isinstance(work.get('authors'), list) else []
+    names = [slug(a.get('family') or a.get('familyName') or a.get('name', '')) for a in authors[:3]]
+    return [n for n in names if n] or [slug(re.split(r'[ ,(&]', work.get('author_label') or work['title'])[0])]
+
+
+def guide_rationale(node, edge, root, works, guide):
+    """Meeting-decision map and method distinctions of the reading guide, as nodes.
+
+    Hand-written rationale in the guide that the catalogue does not hold. Links
+    to recommended papers are INFERRED from author names in the "Start with"
+    cell; a name pair such as Hayes/Krippendorff must match one work.
+    """
+    section = None
+    for number, line in enumerate(guide.splitlines(), 1):
+        if line.startswith('#'):
+            section = ('decision' if line.startswith('## Meeting decision') else
+                       'distinction' if line.startswith('### Method distinctions') else None)
+            continue
+        if section == 'decision' and line.startswith('| ') and not line.startswith(('| Decision', '|---')):
+            cells = [c.strip() for c in line.strip().strip('|').split('|')]
+            if len(cells) < 3:
+                continue
+            decision = node('index_lit_decision_' + slug(cells[0])[:60], f'Meeting decision: {cells[0]}', GUIDE,
+                            number, file_type='rationale', description=f'Start with: {cells[1]}. Record while reading: {cells[2]}')
+            edge(root, decision, 'contains', GUIDE, number)
+            for token in (t.strip() for t in cells[1].split(';')):
+                ids = re.findall(r'\bN\d+\b', token)
+                token = re.sub(r'\s+et al\.?|\s+\d{4}$', '', token)
+                if ids:
+                    targets = [w for w in works if str(w['id']) in ids]
+                else:
+                    parts = [slug(p) for p in re.split(r'/| and ', token) if re.match(r"[A-Z][\w'’-]+$", p.strip())]
+                    targets = [w for w in works if not str(w['id']).startswith('N') and parts and
+                               (all(p in family_names(w) for p in parts) if len(parts) > 1
+                                else parts[0] == family_names(w)[0])]
+                for target in targets:
+                    edge(decision, 'index_lit_' + slug(str(target['id'])), 'recommended_reading', GUIDE, number,
+                         confidence='INFERRED', score=0.75)
+        elif section == 'distinction':
+            match = re.match(r'(\d+)\. \*\*(.+?)\*\*:? ?(.*)', line)
+            if match:
+                item = node('index_lit_distinction_' + match[1], f'Method distinction: {match[2].rstrip(":")}', GUIDE,
+                            number, file_type='rationale', description=match[3].strip())
+                edge(root, item, 'contains', GUIDE, number)
+
+
+def literature(node, edge, file_ids, bib_nodes, bib_dois):
+    """Index the methodology literature corpus from its catalogue and download manifest.
+
+    Deterministic and local: titles, ranks, stages and download state come
+    straight from the maintained JSON, so they are never stale and need no
+    model extraction. Paper full text is not indexed; local copies are an
+    inventory only.
+    """
+    catalogue, manifest = read_json(CATALOGUE), read_json(DOWNLOADS)
+    if not catalogue or not manifest:
+        return
+    records = {str(r['id']): r for r in manifest['records']}
+    works = catalogue['ranked_doi_records'] + catalogue['official_or_no_doi_resources']
+    guide = GUIDE.read_text(encoding='utf-8') if GUIDE.exists() else ''
+    stage_names = {m[1]: m[2].strip() for m in re.finditer(r'^\| ([SADWCILHR]) \| (.+?) \|', guide, re.M)}
+    rq_names = {m[1]: m[2].strip() for m in re.finditer(r'RQ(\d) = ([^;.]+)', guide)}
+    root = node('index_lit_corpus', f'Methodology literature corpus ({len(works)} works)', CATALOGUE, 1,
+                file_type='paper', description='Ranked methodology reading list with local reading copies and '
+                'download gaps. Catalogue-driven; paper full text is not indexed.')
+    for name in ('Methods-Reading-List.md', 'Download-Checklist.md', 'README.md'):
+        owner = file_ids.get(f'01_Literature/{name}')
+        if owner:
+            edge(owner, root, 'indexes', LITERATURE / name)
+    gaps = {
+        'open_access_blocked': node('index_lit_gap_open_access_blocked',
+            'Literature gap: free to read but blocked for scripts (save by hand)', DOWNLOADS, 1, file_type='concept',
+            description='Open-access copy exists; the publisher or repository refuses automated downloads. '
+                        'Save it from a browser into 01_Literature/PDFs/Methods-Reading/_Inbox and run import_manual.py.'),
+        'paywalled': node('index_lit_gap_paywalled', 'Literature gap: paywalled, no open-access copy found',
+            DOWNLOADS, 1, file_type='concept',
+            description='No open-access copy located in Unpaywall, OpenAlex, Europe PMC or repository checks; '
+                        'needs library access or an author copy.'),
+        'web_only': node('index_lit_gap_web_only', 'Literature note: living web resource, no PDF',
+            DOWNLOADS, 1, file_type='concept', description='Official web page; cite the dated page, not a PDF.')}
+    for target in gaps.values():
+        edge(root, target, 'contains', DOWNLOADS)
+    stats = {'pdf': 0, 'html': 0, 'open_access_blocked': 0, 'paywalled': 0, 'web_only': 0}
+    categories, stages, rqs = {}, {}, {}
+    for work in works:
+        identifier = str(work['id'])
+        record = records.get(identifier, {})
+        category = work.get('category', 'Official and non-DOI resources')
+        if category not in categories:
+            categories[category] = node('index_lit_topic_' + slug(category), f'Methods literature topic: {category}',
+                                        CATALOGUE, 1, file_type='concept',
+                                        description=f'{category} works in the methodology reading list.')
+            edge(root, categories[category], 'contains', CATALOGUE)
+        if record.get('downloaded'):
+            kind = 'HTML' if record.get('status') == 'available_html' else 'PDF'
+            stats[kind.lower()] += 1
+            state = f'local {kind}'
+        elif record.get('status') == 'web_resource':
+            stats['web_only'] += 1; state = 'web page only'
+        elif record.get('status') == 'free_but_blocked':
+            stats['open_access_blocked'] += 1; state = 'NO LOCAL COPY, open access but blocked'
+        else:
+            stats['paywalled'] += 1; state = 'NO LOCAL COPY, paywalled'
+        who = f"{work['author_label']} ({work.get('year', '')}) — " if work.get('author_label') else ''
+        rank = f"rank {work['rank']}/{work['priority']}" if work.get('rank') else f"{identifier}/{work['priority']}"
+        label = f"{who}{work['title']} [{rank} · {category} · {state}]"
+        doi = (work.get('doi') or '').lower()
+        in_bib = bib_dois.get(doi)
+        extra = {'doi': doi} if doi else {}
+        work_id = node('index_lit_' + slug(identifier), label, CATALOGUE, 1, file_type='paper',
+                       description=f"When: {work.get('when', '')}. Use: {work.get('use', '')} "
+                                   f"Limit: {work.get('caution', '')}".strip(),
+                       download_state=state, in_thesis_bibliography=bool(in_bib), **extra)
+        edge(categories[category], work_id, 'contains', CATALOGUE)
+        if in_bib:
+            edge(work_id, bib_nodes[in_bib], 'same_work_as', CATALOGUE)
+        head, _, tail = work.get('when', '').partition(';')
+        for letter in sorted(set(re.findall(r'\b[SADWCILHR]\b', head))):
+            if letter not in stages:
+                stages[letter] = node('index_lit_stage_' + letter.lower(),
+                                      f'Method stage {letter}: {stage_names.get(letter, letter)}', GUIDE, 1,
+                                      file_type='concept', description='Stage letter used by the reading guide.')
+                edge(root, stages[letter], 'contains', GUIDE)
+            edge(work_id, stages[letter], 'supports_stage', CATALOGUE)
+        for first, last in re.findall(r'RQ(\d)(?:\s*[–-]\s*(?:RQ)?(\d))?', tail):
+            for number in range(int(first), int(last or first) + 1):
+                key = str(number)
+                if key not in rqs:
+                    rqs[key] = node('index_lit_rq' + key, f'RQ{key}: {rq_names.get(key, "research question")}',
+                                    GUIDE, 1, file_type='concept',
+                                    description='Research-question label used by the reading guide.')
+                    edge(root, rqs[key], 'contains', GUIDE)
+                edge(work_id, rqs[key], 'informs_rq', CATALOGUE)
+        if record.get('downloaded'):
+            copy = ROOT / record['file']
+            copy_id = node('index_lit_copy_' + slug(identifier), copy.name, copy, 1, file_type='paper',
+                           description=f'Local reading copy ({kind}); inventory only, read the paper for evidence. '
+                                       f"Version: {record.get('version') or 'not recorded'}.")
+            edge(work_id, copy_id, 'has_local_copy', DOWNLOADS)
+        elif record.get('status') == 'web_resource':
+            edge(work_id, gaps['web_only'], 'lacks_local_copy', DOWNLOADS)
+        elif record.get('status') == 'free_but_blocked':
+            edge(work_id, gaps['open_access_blocked'], 'lacks_local_copy', DOWNLOADS)
+        else:
+            edge(work_id, gaps['paywalled'], 'lacks_local_copy', DOWNLOADS)
+    guide_rationale(node, edge, root, works, guide)
+    LIT_STATS.update(stats, works=len(works), checked_on=manifest.get('checked_on'),
+                     catalogue_sha256=digest(CATALOGUE), manifest_sha256=digest(DOWNLOADS))
+
+
 def structural(files):
     nodes, edges, ids = [], [], set()
     def node(identifier, label, file, line=None, **attrs):
@@ -161,10 +326,13 @@ def structural(files):
     bib = ROOT / '_shared/references.bib'
     body = bib.read_text(encoding='utf-8')
     entries = list(re.finditer(r'@\w+\s*\{\s*([^,]+),', body))
-    citations = {}
+    citations, bib_dois = {}, {}
     for index, match in enumerate(entries):
         key = match[1].strip()
         entry = body[match.end():entries[index + 1].start() if index + 1 < len(entries) else len(body)]
+        doi = re.search(r'\bdoi\s*=\s*[{"]\s*(?:https?://(?:dx\.)?doi\.org/)?([^}"\s,]+)', entry, re.I)
+        if doi:
+            bib_dois[doi[1].lower()] = key
         title = re.search(r'\btitle\s*=\s*\{(.*?)\}\s*,', entry, re.S | re.I)
         label = key + (': ' + re.sub(r'[{}\n]+', ' ', title[1]).strip() if title else '')
         citations[key] = node('index_bib_' + slug(key), label, bib, body[:match.start()].count('\n') + 1,
@@ -211,6 +379,7 @@ def structural(files):
             year = re.search(r'\d{4}', key)
             if author and year and name.startswith(author[0]) and year[0] in name:
                 edge(target, pdf_id, 'likely_original_pdf', bib, confidence='INFERRED', score=0.85)
+    literature(node, edge, file_ids, citations, bib_dois)
     return nodes, edges
 
 
@@ -220,7 +389,7 @@ def refresh():
     files = [f for group in d['files'].values() for f in group]
     ast = extract([Path(f) for f in d['files']['code']], cache_root=ROOT, root=ROOT, parallel=False)
     semantic = read_json(OUT / 'semantic.json', {'nodes': [], 'edges': [], 'hyperedges': [], 'source_hashes': {}})
-    active = {relative(f) for f in files}
+    active = {relative(f) for f in files} - CATALOGUE_DRIVEN
     valid = {f for f, value in semantic.get('source_hashes', {}).items()
              if f in active and (ROOT / f).is_file() and digest(ROOT / f) == value}
     sem_nodes = [deepcopy(n) for n in semantic['nodes'] if n['source_file'] in valid]
@@ -283,14 +452,20 @@ def refresh():
                       {'input': 0, 'output': 0}, str(ROOT), suggested_questions=questions)
     report = report.replace('- Token cost: 0 input · 0 output',
                             '- Token cost: host semantic extraction unmeasured; local refresh makes no model calls')
-    stale = sorted(relative(f) for f in d['files']['document'] if relative(f) not in valid)
+    stale = sorted(relative(f) for f in d['files']['document']
+                   if relative(f) not in valid and relative(f) not in CATALOGUE_DRIVEN)
     scope = ('\n## Project extraction scope and cost\n\n'
              'AST and structure refreshes are local and make no model calls. Semantic extraction used host agents; '
              'their token usage is unavailable, so displayed upstream zero counters are placeholders, not measured costs. '
              'No actual session token saving has been measured.\n\n'
              'LaTeX sections, inputs, citations and bibliography entries are indexed by the project adapter. '
              'PDF nodes describe file inventory only; full paper text, archives and raw/processed data are excluded.\n\n'
-             f'Fresh semantic sources: {len(valid)}. Sources needing semantic extraction: {len(stale)}. '
+             + (f"Methodology literature corpus: {LIT_STATS['works']} catalogued works from the ranked catalogue and download "
+                f"manifest (checked {LIT_STATS['checked_on']}): {LIT_STATS['pdf']} local PDFs, {LIT_STATS['html']} local HTML "
+                f"full-text copies, {LIT_STATS['open_access_blocked']} open access but blocked for scripts, "
+                f"{LIT_STATS['paywalled']} paywalled, {LIT_STATS['web_only']} web-only. Rebuilt from the JSON on every "
+                'refresh, so it is never semantically stale; availability is not reading status.\n\n' if LIT_STATS else '')
+             + f'Fresh semantic sources: {len(valid)}. Sources needing semantic extraction: {len(stale)}. '
              'Local structure remains available for changed files.\n')
     collapsed = diagnostic.get('undirected_same_endpoint_collapsed_edges', 0)
     if collapsed:
@@ -306,6 +481,7 @@ def refresh():
     write_json(OUT / 'freshness.json', {'built_at_utc': datetime.now(timezone.utc).isoformat(),
                'fresh_semantic_files': sorted(valid), 'needs_semantic_extraction': stale,
                'source_hashes': {relative(f): digest(Path(f)) for f in files},
+               'literature_corpus': LIT_STATS or None,
                'nodes': graph.number_of_nodes(), 'edges': graph.number_of_edges(),
                'communities': len(communities), 'semantic_token_usage': None,
                'actual_token_savings_measured': False})

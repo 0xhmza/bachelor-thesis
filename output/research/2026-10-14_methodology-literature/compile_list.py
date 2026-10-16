@@ -6,10 +6,12 @@ import html
 import json
 from pathlib import Path
 from urllib.parse import quote
+from download_report import load_downloads, md_cell, html_cell, write_checklist
 
 BASE = Path(__file__).resolve().parent
 ROOT = BASE.parents[2]
 DEST = ROOT / '01_Literature'
+downloads = load_downloads()
 rows = json.loads((BASE / 'metadata.json').read_text(encoding='utf-8'))
 with (BASE / 'annotations.tsv').open(encoding='utf-8', newline='') as stream:
     notes = {int(r['id']): r for r in csv.DictReader(stream, delimiter='\t')}
@@ -24,6 +26,7 @@ existing = (ROOT / '_shared/references.bib').read_text(encoding='utf-8').lower()
 for r in rows:
     r.update({k:v for k,v in notes[r['id']].items() if k!='id'})
     r['rank'] = ranks[r['id']]
+    r['download'] = downloads.get(str(r['id']))
     r['title'] = r.get('display_title') or r['registered_title']
     names = [a.get('family') or a.get('familyName') or a.get('name','Unknown') for a in r['authors']]
     r['author_label'] = names[0] + (' & '+names[1] if len(names)==2 else ' et al.' if len(names)>2 else '')
@@ -81,9 +84,9 @@ RQ1 = coverage; RQ2 = stance; RQ3 = protection framing; RQ4 = surfaces. These re
 ## First reading route
 
 """
-parts = [intro,'| Global rank | Source | Start here / helps with |\n|---:|---|---|\n']
+parts = [intro,'Download ticks, local files and obstacles are recorded in the [complete download checklist](Download-Checklist.md). A tick means available locally, not read. HTML full text is distinguished from PDF.\n\n','| Global rank | Source | Start here / helps with | Download |\n|---:|---|---|---|\n']
 for r in rows[:20]:
-    parts.append(f"| {r['rank']} | **{r['author_label']} ({r['year']})** — [{r['title']}]({r['doi_url']}) | {r['when']} |\n")
+    parts.append(f"| {r['rank']} | **{r['author_label']} ({r['year']})** — [{r['title']}]({r['doi_url']}) | {r['when']} | {md_cell(r['download'])} |\n")
 parts.append("""
 
 Read **N1 (harm trees), N2 (practical CW guide) and N3–N4 (privacy notices and controls)** alongside the corresponding DOI papers.
@@ -123,18 +126,18 @@ Ranks are global; grouping helps you find the stage currently being designed. Ea
 """)
 categories = ['App reviews','App appraisal','Walkthrough','Coding','Agreement','Review/reporting','Policy annotation','Privacy interfaces','LLM annotation','Context/harm']
 for category in categories:
-    parts += [f'### {category}\n\n','| Rank / priority | Source and DOI | When / what it helps with | Transfer limit |\n|---|---|---|---|\n']
+    parts += [f'### {category}\n\n','| Rank / priority | Source and DOI | When / what it helps with | Transfer limit | Download |\n|---|---|---|---|---|\n']
     for r in [x for x in rows if x['category']==category]:
         tag = '' if r['version']=='published article/paper' else f" **[{r['version']}]**"
         if r['id']==80:
             tag += ' [2022 law-review version](https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf).'
         if r['id']==81:
             tag += ' [2025 law-review version](https://georgetownlawtechreview.org/wp-content/uploads/2025/01/No_Cookies_For_You_Martin_Nissenbaum_Shmatikov-2025.pdf).'
-        parts.append(f"| **{r['rank']} / {r['priority']}** | **{r['author_label']} ({r['year']})** — {r['title']}.{tag}<br>[{r['doi']}]({r['doi_url']}) | **{r['when']}**<br>{r['use']} | {r['caution']} |\n")
+        parts.append(f"| **{r['rank']} / {r['priority']}** | **{r['author_label']} ({r['year']})** — {r['title']}.{tag}<br>[{r['doi']}]({r['doi_url']}) | **{r['when']}**<br>{r['use']} | {r['caution']} | {md_cell(r['download'])} |\n")
     parts.append('\n')
-parts += ['## Important sources with no DOI for the cited version or living official guidance\n\n','| ID / priority | Source | When | Use / version limit |\n|---|---|---|---|\n']
+parts += ['## Important sources with no DOI for the cited version or living official guidance\n\n','| ID / priority | Source | When | Use / version limit | Download |\n|---|---|---|---|---|\n']
 for identifier,priority,title,url,when,use in extras:
-    parts.append(f'| **{identifier} / {priority}** | [{title}]({url}) | {when} | {use} |\n')
+    parts.append(f'| **{identifier} / {priority}** | [{title}]({url}) | {when} | {use} | {md_cell(downloads.get(identifier))} |\n')
 parts.append("""
 
 ## App-review comparison sheet
@@ -172,6 +175,9 @@ document = ''.join(parts)
 (DEST/'Methods-Reading-List.md').write_text(document,encoding='utf-8')
 (DEST/'ranked-dois.txt').write_text('\n'.join(r['doi'] for r in rows)+'\n',encoding='utf-8')
 data = {'prepared_on':'2026-10-14','meeting_date':'2026-10-13','ranked_doi_records':rows,'official_or_no_doi_resources':[dict(zip(['id','priority','title','url','when','use'],e)) for e in extras]}
+for r in data['official_or_no_doi_resources']:
+    r['download'] = downloads.get(r['id'])
+write_checklist(rows,data['official_or_no_doi_resources'],downloads)
 (DEST/'methodology-literature.json').write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding='utf-8')
 
 # Search/filter view of the same local dataset; no server or remote scripts.
@@ -179,11 +185,12 @@ cards = []
 for r in rows:
     text = f"{r['author_label']} ({r['year']})"
     tag = '' if r['version']=='published article/paper' else '<br><em>'+html.escape(r['version'])+'</em>'
-    cards.append(f'<tr data-category="{html.escape(r["category"])}" data-priority="{r["priority"]}"><td>{r["rank"]}</td><td>{r["priority"]}</td><td><strong>{html.escape(text)}</strong><br>{html.escape(r["title"])}<br><a target="_blank" rel="noopener" href="{r["doi_url"]}">{html.escape(r["doi"])}</a>{tag}</td><td>{html.escape(r["category"])}<br><strong>{html.escape(r["when"])}</strong></td><td>{html.escape(r["use"])}<details><summary>Adaptation limit</summary>{html.escape(r["caution"])}</details></td></tr>')
+    download_kind = "HTML" if (r["download"] or {}).get("status")=="available_html" else "PDF" if (r["download"] or {}).get("downloaded") else "missing"
+    cards.append(f'<tr data-category="{html.escape(r["category"])}" data-priority="{r["priority"]}" data-download="{download_kind}"><td>{r["rank"]}</td><td>{r["priority"]}</td><td><strong>{html.escape(text)}</strong><br>{html.escape(r["title"])}<br><a target="_blank" rel="noopener" href="{r["doi_url"]}">{html.escape(r["doi"])}</a>{tag}</td><td>{html.escape(r["category"])}<br><strong>{html.escape(r["when"])}</strong></td><td>{html.escape(r["use"])}<details><summary>Adaptation limit</summary>{html.escape(r["caution"])}</details></td><td>{html_cell(r["download"])}</td></tr>')
 options = ''.join('<option>'+html.escape(c)+'</option>' for c in categories)
 page = """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thesis methodology literature</title><style>
 body{font:15px/1.5 system-ui,sans-serif;margin:0;color:#18334b;background:#f4f7fb}main{max-width:1450px;margin:32px auto;padding:0 24px}h1{font-size:30px;line-height:1.2}a{color:#075d96}p{max-width:1000px}.controls{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0;position:sticky;top:0;padding:12px;background:#f4f7fb;z-index:3}input,select{padding:10px;border:1px solid #91a3b6;border-radius:6px;font:inherit}input{min-width:250px;flex:1}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;vertical-align:top;border-bottom:1px solid #d2dee8;padding:12px}th{background:#12384e;color:white}td:nth-child(3){width:30%}td:nth-child(4){width:17%}td:nth-child(5){width:43%}details{margin-top:10px;color:#63421f}summary{cursor:pointer;font-weight:600}.scroll{overflow-x:auto}.legend{background:#e1edf5;padding:16px;border-radius:8px}
-</style><main><h1>Ranked methodology literature</h1><p>Privacy harm communication in health apps · Based on the meeting of 13 October 2026. <strong>83 verified DOI records</strong> plus 10 official/non-DOI resources in the companion reading guide.</p><p>A = essential; B = strong support; C = optional/adjacent. Ranking is an editorial assessment for this thesis. DOI verification is bibliographic verification, not a full-text appraisal of every work.</p><p class="legend"><strong>Stages:</strong> S scope · A app selection · D capture · W walkthrough · C codebook · I coder comparison · L LLM pilot · H harm tree · R reporting.<br><a href="Methods-Reading-List.md">Full reading guide, non-DOI sources and decision map</a> · <a href="ranked-dois.txt">DOIs for reference-manager import</a></p><div class="controls"><input id="search" type="search" aria-label="Search literature" placeholder="Search title, author, DOI or methodological use"><select id="category" aria-label="Category"><option value="">All categories</option>""" + options + """</select><select id="priority" aria-label="Priority"><option value="">All priorities</option><option>A</option><option>B</option><option>C</option></select><span id="count" aria-live="polite"></span></div><div class="scroll"><table><thead><tr><th>Rank</th><th>Priority</th><th>Source / DOI</th><th>Category / stage</th><th>What to extract</th></tr></thead><tbody>""" + ''.join(cards) + """</tbody></table></div><script>const search=document.querySelector('#search'),category=document.querySelector('#category'),priority=document.querySelector('#priority'),rows=[...document.querySelectorAll('tbody tr')];function filter(){const q=search.value.toLowerCase();let n=0;for(const r of rows){const ok=r.textContent.toLowerCase().includes(q)&&(!category.value||r.dataset.category===category.value)&&(!priority.value||r.dataset.priority===priority.value);r.hidden=!ok;if(ok)n++;}document.querySelector('#count').textContent=n+' / '+rows.length+' records';}for(const e of [search,category,priority])e.addEventListener('input',filter);filter();</script></main></html>"""
+</style><main><h1>Ranked methodology literature</h1><p>Privacy harm communication in health apps · Based on the meeting of 13 October 2026. <strong>83 verified DOI records</strong> plus 10 official/non-DOI resources in the companion reading guide.</p><p>A = essential; B = strong support; C = optional/adjacent. Ranking is an editorial assessment for this thesis. DOI verification is bibliographic verification, not a full-text appraisal of every work.</p><p class="legend"><strong>Stages:</strong> S scope · A app selection · D capture · W walkthrough · C codebook · I coder comparison · L LLM pilot · H harm tree · R reporting.<br><a href="Methods-Reading-List.md">Full reading guide, non-DOI sources and decision map</a> · <a href="ranked-dois.txt">DOIs for reference-manager import</a> · <a href="Download-Checklist.md">Download checklist: all 93 items and obstacles</a></p><div class="controls"><input id="search" type="search" aria-label="Search literature" placeholder="Search title, author, DOI or methodological use"><select id="category" aria-label="Category"><option value="">All categories</option>""" + options + """</select><select id="priority" aria-label="Priority"><option value="">All priorities</option><option>A</option><option>B</option><option>C</option></select><select id="availability" aria-label="Download status"><option value="">All download statuses</option><option value="PDF">PDF available</option><option value="HTML">HTML full text available</option><option value="missing">Missing / obstacle</option></select><span id="count" aria-live="polite"></span></div><div class="scroll"><table><thead><tr><th>Rank</th><th>Priority</th><th>Source / DOI</th><th>Category / stage</th><th>What to extract</th><th>Download / obstacle</th></tr></thead><tbody>""" + ''.join(cards) + """</tbody></table></div><script>const search=document.querySelector('#search'),category=document.querySelector('#category'),priority=document.querySelector('#priority'),availability=document.querySelector('#availability'),rows=[...document.querySelectorAll('tbody tr')];function filter(){const q=search.value.toLowerCase();let n=0;for(const r of rows){const ok=r.textContent.toLowerCase().includes(q)&&(!category.value||r.dataset.category===category.value)&&(!priority.value||r.dataset.priority===priority.value)&&(!availability.value||r.dataset.download===availability.value);r.hidden=!ok;if(ok)n++;}document.querySelector('#count').textContent=n+' / '+rows.length+' records';}for(const e of [search,category,priority,availability])e.addEventListener('input',filter);filter();</script></main></html>"""
 (DEST/'Methods-Reading-List.html').write_text(page,encoding='utf-8')
 checks = {'doi_records':83,'no_doi_resources':len(extras),'priorities':dict(Counter(r['priority'] for r in rows)),'unique_dois':True,'all_registrations_verified':True,'all_records_annotated':True,'bib_sha256':hashlib.sha256((ROOT/'_shared/references.bib').read_bytes()).hexdigest(),'outputs':['01_Literature/Methods-Reading-List.md','01_Literature/Methods-Reading-List.html','01_Literature/ranked-dois.txt','01_Literature/methodology-literature.json']}
 (BASE/'verification.json').write_text(json.dumps(checks,indent=2),encoding='utf-8')

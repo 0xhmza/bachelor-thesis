@@ -1,0 +1,2272 @@
+{
+  "version": "6.9",
+  "hitCount": 5,
+  "request": {
+    "queryString": "DOI:\"10.1016/j.ijlp.2019.04.002\" OR DOI:\"10.3390/info17040343\" OR DOI:\"10.1145/3313831.3376511\" OR DOI:\"10.1177/20563051231158822\" OR DOI:\"10.1145/97243.97281\" OR DOI:\"10.1145/142750.142864\" OR DOI:\"10.1177/1525822X980100020301\" OR DOI:\"10.1177/1525822X04266540\" OR DOI:\"10.1177/160940690600500107\" OR DOI:\"10.17169/fqs-1.2.1089\" OR DOI:\"10.1111/j.1468-2958.2002.tb00826.x\" OR DOI:\"10.1177/1609406917733847\" OR DOI:\"10.1162/coli.07-034-R2\" OR DOI:\"10.11613/BM.2012.031\" OR DOI:\"10.1080/14780887.2020.1769238\" OR DOI:\"10.1136/bmj.n71\" OR DOI:\"10.1186/s13643-020-01542-z\" OR DOI:\"10.7326/M18-0850\" OR DOI:\"10.1097/ACM.0000000000000388\" OR DOI:\"10.1145/1572532.1572538\"",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 1000,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "33782057",
+        "source": "MED",
+        "pmid": "33782057",
+        "pmcid": "PMC8005924",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8005924"
+          ]
+        },
+        "doi": "10.1136/bmj.n71",
+        "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews.",
+        "authorString": "Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, Shamseer L, Tetzlaff JM, Akl EA, Brennan SE, Chou R, Glanville J, Grimshaw JM, Hróbjartsson A, Lalu MM, Li T, Loder EW, Mayo-Wilson E, McDonald S, McGuinness LA, Stewart LA, Thomas J, Tricco AC, Welch VA, Whiting P, Moher D.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Page MJ",
+              "lastName": "Page",
+              "firstName": "Matthew J",
+              "initials": "MJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4242-7526"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia matthew.page@monash.edu."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McKenzie JE",
+              "lastName": "McKenzie",
+              "firstName": "Joanne E",
+              "initials": "JE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bossuyt PM",
+              "lastName": "Bossuyt",
+              "firstName": "Patrick M",
+              "initials": "PM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Epidemiology, Biostatistics and Bioinformatics, Amsterdam University Medical Centres, University of Amsterdam, Amsterdam, Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Boutron I",
+              "lastName": "Boutron",
+              "firstName": "Isabelle",
+              "initials": "I",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Université de Paris, Centre of Epidemiology and Statistics (CRESS), Inserm, F 75004 Paris, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hoffmann TC",
+              "lastName": "Hoffmann",
+              "firstName": "Tammy C",
+              "initials": "TC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5210-8548"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Evidence-Based Healthcare, Faculty of Health Sciences and Medicine, Bond University, Gold Coast, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mulrow CD",
+              "lastName": "Mulrow",
+              "firstName": "Cynthia D",
+              "initials": "CD",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Texas Health Science Center at San Antonio, San Antonio, Texas, USA; Annals of Internal Medicine."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shamseer L",
+              "lastName": "Shamseer",
+              "firstName": "Larissa",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3690-3378"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Knowledge Translation Program, Li Ka Shing Knowledge Institute, Toronto, Canada; School of Epidemiology and Public Health, Faculty of Medicine, University of Ottawa, Ottawa, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tetzlaff JM",
+              "lastName": "Tetzlaff",
+              "firstName": "Jennifer M",
+              "initials": "JM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Evidence Partners, Ottawa, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Akl EA",
+              "lastName": "Akl",
+              "firstName": "Elie A",
+              "initials": "EA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Institute, American University of Beirut, Beirut, Lebanon; Department of Health Research Methods, Evidence, and Impact, McMaster University, Hamilton, Ontario, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Brennan SE",
+              "lastName": "Brennan",
+              "firstName": "Sue E",
+              "initials": "SE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chou R",
+              "lastName": "Chou",
+              "firstName": "Roger",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Informatics and Clinical Epidemiology, Oregon Health & Science University, Portland, Oregon, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Glanville J",
+              "lastName": "Glanville",
+              "firstName": "Julie",
+              "initials": "J",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1253-8524"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "York Health Economics Consortium (YHEC Ltd), University of York, York, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Grimshaw JM",
+              "lastName": "Grimshaw",
+              "firstName": "Jeremy M",
+              "initials": "JM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Epidemiology Program, Ottawa Hospital Research Institute, Ottawa, Canada; School of Epidemiology and Public Health, University of Ottawa, Ottawa, Canada; Department of Medicine, University of Ottawa, Ottawa, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hróbjartsson A",
+              "lastName": "Hróbjartsson",
+              "firstName": "Asbjørn",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Evidence-Based Medicine Odense (CEBMO) and Cochrane Denmark, Department of Clinical Research, University of Southern Denmark, Odense, Denmark; Open Patient data Exploratory Network (OPEN), Odense University Hospital, Odense, Denmark."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lalu MM",
+              "lastName": "Lalu",
+              "firstName": "Manoj M",
+              "initials": "MM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Pain Medicine, The Ottawa Hospital, Ottawa, Canada; Clinical Epidemiology Program, Blueprint Translational Research Group, Ottawa Hospital Research Institute, Ottawa, Canada; Regenerative Medicine Program, Ottawa Hospital Research Institute, Ottawa, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li T",
+              "lastName": "Li",
+              "firstName": "Tianjing",
+              "initials": "T",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5371-4558"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Ophthalmology, School of Medicine, University of Colorado Denver, Denver, Colorado, United States; Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Loder EW",
+              "lastName": "Loder",
+              "firstName": "Elizabeth W",
+              "initials": "EW",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Headache, Department of Neurology, Brigham and Women's Hospital, Harvard Medical School, Boston, Massachusetts, USA; Head of Research, The BMJ, London, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mayo-Wilson E",
+              "lastName": "Mayo-Wilson",
+              "firstName": "Evan",
+              "initials": "E",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6126-2459"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington, Bloomington, Indiana, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McDonald S",
+              "lastName": "McDonald",
+              "firstName": "Steve",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2832-5205"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McGuinness LA",
+              "lastName": "McGuinness",
+              "firstName": "Luke A",
+              "initials": "LA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stewart LA",
+              "lastName": "Stewart",
+              "firstName": "Lesley A",
+              "initials": "LA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Reviews and Dissemination, University of York, York, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Thomas J",
+              "lastName": "Thomas",
+              "firstName": "James",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "EPPI-Centre, UCL Social Research Institute, University College London, London, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tricco AC",
+              "lastName": "Tricco",
+              "firstName": "Andrea C",
+              "initials": "AC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4114-8971"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Li Ka Shing Knowledge Institute of St. Michael's Hospital, Unity Health Toronto, Toronto, Canada; Epidemiology Division of the Dalla Lana School of Public Health and the Institute of Health Management, Policy, and Evaluation, University of Toronto, Toronto, Canada; Queen's Collaboration for Health Care Quality Joanna Briggs Institute Centre of Excellence, Queen's University, Kingston, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Welch VA",
+              "lastName": "Welch",
+              "firstName": "Vivian A",
+              "initials": "VA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods Centre, Bruyère Research Institute, Ottawa, Ontario, Canada; School of Epidemiology and Public Health, Faculty of Medicine, University of Ottawa, Ottawa, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Whiting P",
+              "lastName": "Whiting",
+              "firstName": "Penny",
+              "initials": "P",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1138-5682"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Population Health Sciences, Bristol Medical School, University of Bristol, Bristol, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moher D",
+              "lastName": "Moher",
+              "firstName": "David",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Journalology, Clinical Epidemiology Program, Ottawa Hospital Research Institute, Ottawa, Canada; School of Epidemiology and Public Health, Faculty of Medicine, University of Ottawa, Ottawa, Canada."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5210-8548"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5371-4558"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6126-2459"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1253-8524"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4114-8971"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4242-7526"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1138-5682"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2832-5205"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3690-3378"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-2571-2176"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "372",
+          "journalIssueId": 3122166,
+          "dateOfPublication": "2021 Mar",
+          "monthOfPublication": 3,
+          "yearOfPublication": 2021,
+          "journal": {
+            "medlineAbbreviation": "BMJ",
+            "title": "BMJ (Clinical research ed.)",
+            "essn": "1756-1833",
+            "issn": "0959-8138",
+            "nlmid": "8900488",
+            "isoabbreviation": "BMJ"
+          },
+          "printPublicationDate": "2021-03-01"
+        },
+        "pubYear": "2021",
+        "pageInfo": "n71",
+        "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia matthew.page@monash.edu.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "other",
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "DRF-2018-11-ST2-048",
+              "orderIn": 0
+            },
+            {
+              "agency": "NEI NIH HHS",
+              "acronym": "EY",
+              "grantId": "UG1 EY020522",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Research Design",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Quality Control"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Terminology as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Statistics as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Meta-Analysis as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Practice Guidelines as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Medical Writing",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Systematic Reviews as Topic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1136/bmj.n71"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8005924"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "35672954",
+              "reference": "Int J Health Plann Manage. 2022 Sep;37(5):2523-2527. doi: 10.1002/hpm.3510.",
+              "type": "Comment in",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 58715,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2021-04-06",
+        "dateOfCreation": "2021-03-30",
+        "dateOfRevision": "2025-05-13",
+        "electronicPublicationDate": "2021-03-29",
+        "firstPublicationDate": "2021-03-29",
+        "firstIndexDate": "2021-03-31",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "33499930",
+        "source": "MED",
+        "pmid": "33499930",
+        "pmcid": "PMC7839230",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7839230"
+          ]
+        },
+        "doi": "10.1186/s13643-020-01542-z",
+        "title": "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews.",
+        "authorString": "Rethlefsen ML, Kirtley S, Waffenschmidt S, Ayala AP, Moher D, Page MJ, Koffel JB, PRISMA-S Group.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Rethlefsen ML",
+              "lastName": "Rethlefsen",
+              "firstName": "Melissa L",
+              "initials": "ML",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5322-9368"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Health Science Center Libraries, George A. Smathers Libraries, University of Florida, Gainesville, USA. mlrethlefsen@gmail.com."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kirtley S",
+              "lastName": "Kirtley",
+              "firstName": "Shona",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7801-5777"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK EQUATOR Centre, Centre for Statistics in Medicine (CSM), Nuffield Department of Orthopaedics, Rheumatology and Musculoskeletal Sciences (NDORMS), Botnar Research Centre, University of Oxford, Windmill Road, Oxford, OX3 7LD, UK."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Waffenschmidt S",
+              "lastName": "Waffenschmidt",
+              "firstName": "Siw",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6860-6699"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Quality and Efficiency in Health Care, Cologne, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ayala AP",
+              "lastName": "Ayala",
+              "firstName": "Ana Patricia",
+              "initials": "AP",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3613-2270"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Gerstein Science Information Centre, University of Toronto, Toronto, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moher D",
+              "lastName": "Moher",
+              "firstName": "David",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2434-4206"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Journalology, Clinical Epidemiology Program, Ottawa Hospital Research Institute, The Ottawa Hospital, General Campus, Centre for Practice Changing Research Building, 501 Smyth Road, PO BOX 201B, Ottawa, Ontario, K1H 8L6, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Page MJ",
+              "lastName": "Page",
+              "firstName": "Matthew J",
+              "initials": "MJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4242-7526"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health and Preventive Medicine, Monash University, Melbourne, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Koffel JB",
+              "lastName": "Koffel",
+              "firstName": "Jonathan B",
+              "initials": "JB",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1723-5087"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Minnesota, Minneapolis, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "collectiveName": "PRISMA-S Group"
+            }
+          ]
+        },
+        "investigatorList": {
+          "investigator": [
+            {
+              "fullName": "Blunt H",
+              "lastName": "Blunt",
+              "firstName": "Heather",
+              "initials": "H"
+            },
+            {
+              "fullName": "Brigham T",
+              "lastName": "Brigham",
+              "firstName": "Tara",
+              "initials": "T"
+            },
+            {
+              "fullName": "Chang S",
+              "lastName": "Chang",
+              "firstName": "Steven",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3193-7969"
+              }
+            },
+            {
+              "fullName": "Clark J",
+              "lastName": "Clark",
+              "firstName": "Justin",
+              "initials": "J",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0133-1613"
+              }
+            },
+            {
+              "fullName": "Conway A",
+              "lastName": "Conway",
+              "firstName": "Aislinn",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7566-3138"
+              }
+            },
+            {
+              "fullName": "Couban R",
+              "lastName": "Couban",
+              "firstName": "Rachel",
+              "initials": "R",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8672-2845"
+              }
+            },
+            {
+              "fullName": "de Kock S",
+              "lastName": "de Kock",
+              "firstName": "Shelley",
+              "initials": "S"
+            },
+            {
+              "fullName": "Farrah K",
+              "lastName": "Farrah",
+              "firstName": "Kelly",
+              "initials": "K"
+            },
+            {
+              "fullName": "Fehrmann P",
+              "lastName": "Fehrmann",
+              "firstName": "Paul",
+              "initials": "P"
+            },
+            {
+              "fullName": "Foster M",
+              "lastName": "Foster",
+              "firstName": "Margaret",
+              "initials": "M"
+            },
+            {
+              "fullName": "Fowler SA",
+              "lastName": "Fowler",
+              "firstName": "Susan A",
+              "initials": "SA"
+            },
+            {
+              "fullName": "Glanville J",
+              "lastName": "Glanville",
+              "firstName": "Julie",
+              "initials": "J"
+            },
+            {
+              "fullName": "Harris E",
+              "lastName": "Harris",
+              "firstName": "Elizabeth",
+              "initials": "E"
+            },
+            {
+              "fullName": "Hoffecker L",
+              "lastName": "Hoffecker",
+              "firstName": "Lilian",
+              "initials": "L"
+            },
+            {
+              "fullName": "Isojarvi J",
+              "lastName": "Isojarvi",
+              "firstName": "Jaana",
+              "initials": "J"
+            },
+            {
+              "fullName": "Kaunelis D",
+              "lastName": "Kaunelis",
+              "firstName": "David",
+              "initials": "D"
+            },
+            {
+              "fullName": "Ket H",
+              "lastName": "Ket",
+              "firstName": "Hans",
+              "initials": "H"
+            },
+            {
+              "fullName": "Levay P",
+              "lastName": "Levay",
+              "firstName": "Paul",
+              "initials": "P"
+            },
+            {
+              "fullName": "Lyon J",
+              "lastName": "Lyon",
+              "firstName": "Jennifer",
+              "initials": "J"
+            },
+            {
+              "fullName": "McGowan J",
+              "lastName": "McGowan",
+              "firstName": "Jessie",
+              "initials": "J"
+            },
+            {
+              "fullName": "Murad MH",
+              "lastName": "Murad",
+              "firstName": "M Hassan",
+              "initials": "MH"
+            },
+            {
+              "fullName": "Nicholson J",
+              "lastName": "Nicholson",
+              "firstName": "Joey",
+              "initials": "J"
+            },
+            {
+              "fullName": "Pannabecker V",
+              "lastName": "Pannabecker",
+              "firstName": "Virginia",
+              "initials": "V"
+            },
+            {
+              "fullName": "Paynter R",
+              "lastName": "Paynter",
+              "firstName": "Robin",
+              "initials": "R",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6969-4261"
+              }
+            },
+            {
+              "fullName": "Pinotti R",
+              "lastName": "Pinotti",
+              "firstName": "Rachel",
+              "initials": "R"
+            },
+            {
+              "fullName": "Ross-White A",
+              "lastName": "Ross-White",
+              "firstName": "Amanda",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4737-0968"
+              }
+            },
+            {
+              "fullName": "Sampson M",
+              "lastName": "Sampson",
+              "firstName": "Margaret",
+              "initials": "M"
+            },
+            {
+              "fullName": "Shields T",
+              "lastName": "Shields",
+              "firstName": "Tracy",
+              "initials": "T"
+            },
+            {
+              "fullName": "Stevens A",
+              "lastName": "Stevens",
+              "firstName": "Adrienne",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6257-4806"
+              }
+            },
+            {
+              "fullName": "Sutton A",
+              "lastName": "Sutton",
+              "firstName": "Anthea",
+              "initials": "A"
+            },
+            {
+              "fullName": "Weinfurter E",
+              "lastName": "Weinfurter",
+              "firstName": "Elizabeth",
+              "initials": "E"
+            },
+            {
+              "fullName": "Wright K",
+              "lastName": "Wright",
+              "firstName": "Kath",
+              "initials": "K"
+            },
+            {
+              "fullName": "Young S",
+              "lastName": "Young",
+              "firstName": "Sarah",
+              "initials": "S"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5322-9368"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6860-6699"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8672-2845"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3193-7969"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3613-2270"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4242-7526"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6257-4806"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6969-4261"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7566-3138"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7801-5777"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0133-1613"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1723-5087"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2434-4206"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4737-0968"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "10",
+          "journalIssueId": 3082699,
+          "dateOfPublication": "2021 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 2021,
+          "journal": {
+            "medlineAbbreviation": "Syst Rev",
+            "title": "Systematic reviews",
+            "essn": "2046-4053",
+            "issn": "2046-4053",
+            "nlmid": "101580575",
+            "isoabbreviation": "Syst Rev"
+          },
+          "printPublicationDate": "2021-01-01"
+        },
+        "pubYear": "2021",
+        "pageInfo": "39",
+        "abstractText": "<h4>Background</h4>Literature searches underlie the foundations of systematic reviews and related review types. Yet, the literature searching component of systematic reviews and related review types is often poorly reported. Guidance for literature search reporting has been diverse, and, in many cases, does not offer enough detail to authors who need more specific information about reporting search methods and information sources in a clear, reproducible way. This document presents the PRISMA-S (Preferred Reporting Items for Systematic reviews and Meta-Analyses literature search extension) checklist, and explanation and elaboration.<h4>Methods</h4>The checklist was developed using a 3-stage Delphi survey process, followed by a consensus conference and public review process.<h4>Results</h4>The final checklist includes 16 reporting items, each of which is detailed with exemplar reporting and rationale.<h4>Conclusions</h4>The intent of PRISMA-S is to complement the PRISMA Statement and its extensions by providing a checklist that could be used by interdisciplinary authors, editors, and peer reviewers to verify that each component of a search is completely reported and therefore reproducible.",
+        "affiliation": "Health Science Center Libraries, George A. Smathers Libraries, University of Florida, Gainesville, USA. mlrethlefsen@gmail.com.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Cancer Research UK",
+              "acronym": "CRUK_",
+              "grantId": "27294",
+              "orderIn": 0
+            },
+            {
+              "agency": "Cancer Research UK",
+              "acronym": "CRUK_",
+              "grantId": "C49297/A27294",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCATS NIH HHS",
+              "acronym": "TR",
+              "grantId": "UL1 TR002538",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Center for Advancing Translational Sciences",
+              "grantId": "UL1TR002538",
+              "orderIn": 0
+            },
+            {
+              "agency": "Medical Research Council",
+              "acronym": "MRC_",
+              "grantId": "MR/J00488X/1",
+              "orderIn": 0
+            },
+            {
+              "agency": "Australian Research Council",
+              "grantId": "DE200101618",
+              "orderIn": 0
+            },
+            {
+              "agency": "Cancer Research UK",
+              "acronym": "CRUK_",
+              "grantId": "16895",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Consensus"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Publications"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Checklist"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Research Report"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Systematic Reviews as Topic"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Reproducibility",
+            "Information Retrieval",
+            "Systematic Reviews",
+            "Literature Search",
+            "Search Strategies",
+            "Reporting Guidelines"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s13643-020-01542-z"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7839230"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7839230?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 1513,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2021-06-24",
+        "dateOfCreation": "2021-01-27",
+        "dateOfRevision": "2025-05-30",
+        "electronicPublicationDate": "2021-01-26",
+        "firstPublicationDate": "2021-01-26",
+        "firstIndexDate": "2021-01-28",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "31122630",
+        "source": "MED",
+        "pmid": "31122630",
+        "doi": "10.1016/j.ijlp.2019.04.002",
+        "title": "How private is your mental health app data? An empirical study of mental health app privacy policies and practices.",
+        "authorString": "Parker L, Halter V, Karliychuk T, Grundy Q.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Parker L",
+              "lastName": "Parker",
+              "firstName": "Lisa",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8635-6953"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The University of Sydney, School of Pharmacy, Charles Perkins Centre, D17, Level 6 The Hub, NSW 2006, Australia. Electronic address: lisa.parker@sydney.edu.au."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Halter V",
+              "lastName": "Halter",
+              "firstName": "Vanessa",
+              "initials": "V",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Digital Health Agency, Level 25, 56 Pitt Street, Sydney, NSW 2000, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Karliychuk T",
+              "lastName": "Karliychuk",
+              "firstName": "Tanya",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Communications Consumer Action Network (ACCAN), PO Box 639, Broadway, NSW 2007, Australia. Electronic address: tanya.karliychuk@accan.org.au."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Grundy Q",
+              "lastName": "Grundy",
+              "firstName": "Quinn",
+              "initials": "Q",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The University of Sydney, School of Pharmacy, Charles Perkins Centre, D17, Level 6 The Hub, NSW 2006, Australia. Electronic address: quinn.grundy@utoronto.ca."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8635-6953"
+            }
+          ]
+        },
+        "journalInfo": {
+          "volume": "64",
+          "journalIssueId": 2820034,
+          "dateOfPublication": "2019 May - Jun",
+          "monthOfPublication": 0,
+          "yearOfPublication": 2019,
+          "journal": {
+            "medlineAbbreviation": "Int J Law Psychiatry",
+            "title": "International journal of law and psychiatry",
+            "essn": "1873-6386",
+            "issn": "0160-2527",
+            "nlmid": "7806862",
+            "isoabbreviation": "Int J Law Psychiatry"
+          },
+          "printPublicationDate": "2019-05-01"
+        },
+        "pubYear": "2019",
+        "pageInfo": "198-204",
+        "abstractText": "Digital mental health services are increasingly endorsed by governments and health professionals as a low cost, accessible alternative or adjunct to face-to-face therapy. App users may suffer loss of personal privacy due to security breaches or common data sharing practices between app developers and third parties. Loss of privacy around personal health data may harm an individual's reputation or health. The purpose of this project was to identify salient consumer issues related to privacy in the mental health app market and to inform advocacy efforts towards promoting consumer interests. We conducted a critical content analysis of promotional (advertising) materials for prominent mental health apps in selected dominant English-speaking markets in late 2016-early 2017, updated in 2018. We identified 61 prominent mental health apps, 56 of which were still available in 2018. Apps frequently requested permission to access elements of the user's mobile device, including requesting so-called 'dangerous' permissions. Many apps encouraged users to share their own data with an online community. Nearly half of the apps (25/61, 41%) did not have a privacy policy to inform users about how and when personal information would be collected and retained or shared with third parties, despite this being a standard recommendation of privacy regulations. We consider that the app industry pays insufficient attention to protecting the privacy of mental health app users. We advocate for increased monitoring and enforcement of privacy principles and practices in mental health apps and the mobile ecosystem, more broadly. We also suggest a re-framing of regulatory attention that places consumer interests at the centre of guidance.",
+        "affiliation": "The University of Sydney, School of Pharmacy, Charles Perkins Centre, D17, Level 6 The Hub, NSW 2006, Australia. Electronic address: lisa.parker@sydney.edu.au.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Australian Communications Consumer Action Network",
+              "orderIn": 0
+            },
+            {
+              "agency": "CIHR",
+              "orderIn": 0
+            },
+            {
+              "agency": "Canadian Institutes of Health Research",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Mental Health",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ES",
+                    "qualifierName": "ethics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Confidentiality",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ES",
+                    "qualifierName": "ethics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Telemedicine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ES",
+                    "qualifierName": "ethics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Organizational Policy"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Computer Security"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Mobile Applications",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ES",
+                    "qualifierName": "ethics"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Mental health",
+            "Qualitative Research",
+            "Privacy",
+            "Mhealth",
+            "Mobile Health"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ijlp.2019.04.002"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 41,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "N",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2020-02-11",
+        "dateOfCreation": "2019-05-25",
+        "dateOfRevision": "2020-02-11",
+        "electronicPublicationDate": "2019-04-28",
+        "firstPublicationDate": "2019-04-28",
+        "firstIndexDate": "2019-05-25",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "30178033",
+        "source": "MED",
+        "pmid": "30178033",
+        "doi": "10.7326/m18-0850",
+        "title": "PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation.",
+        "authorString": "Tricco AC, Lillie E, Zarin W, O'Brien KK, Colquhoun H, Levac D, Moher D, Peters MDJ, Horsley T, Weeks L, Hempel S, Akl EA, Chang C, McGowan J, Stewart L, Hartling L, Aldcroft A, Wilson MG, Garritty C, Lewin S, Godfrey CM, Macdonald MT, Langlois EV, Soares-Weiser K, Moriarty J, Clifford T, Tunçalp Ö, Straus SE.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Tricco AC",
+              "lastName": "Tricco",
+              "firstName": "Andrea C",
+              "initials": "AC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St. Michael's Hospital and University of Toronto, Toronto, Ontario, Canada (A.C.T., S.E.S.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lillie E",
+              "lastName": "Lillie",
+              "firstName": "Erin",
+              "initials": "E",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St. Michael's Hospital, Toronto, Ontario, Canada (E.L., W.Z.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zarin W",
+              "lastName": "Zarin",
+              "firstName": "Wasifa",
+              "initials": "W",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St. Michael's Hospital, Toronto, Ontario, Canada (E.L., W.Z.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "O'Brien KK",
+              "lastName": "O'Brien",
+              "firstName": "Kelly K",
+              "initials": "KK",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Toronto, Toronto, Ontario, Canada (K.K.O., H.C.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Colquhoun H",
+              "lastName": "Colquhoun",
+              "firstName": "Heather",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Toronto, Toronto, Ontario, Canada (K.K.O., H.C.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Levac D",
+              "lastName": "Levac",
+              "firstName": "Danielle",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7356-9335"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Northeastern University, Boston, Massachusetts (D.L.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moher D",
+              "lastName": "Moher",
+              "firstName": "David",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Ottawa Hospital Research Institute, Ottawa, Ontario, Canada (D.M., C.G.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Peters MDJ",
+              "lastName": "Peters",
+              "firstName": "Micah D J",
+              "initials": "MDJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1108-3783"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of South Australia and University of Adelaide, Adelaide, South Australia, Australia (M.D.P.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Horsley T",
+              "lastName": "Horsley",
+              "firstName": "Tanya",
+              "initials": "T",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1256-9582"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Royal College of Physicians and Surgeons of Canada, Ottawa, Ontario, Canada (T.H.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Weeks L",
+              "lastName": "Weeks",
+              "firstName": "Laura",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Canadian Agency for Drugs and Technologies in Health, Ottawa, Ontario, Canada (L.W., T.C.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hempel S",
+              "lastName": "Hempel",
+              "firstName": "Susanne",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1597-5110"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "RAND Corporation, Santa Monica, California (S.H.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Akl EA",
+              "lastName": "Akl",
+              "firstName": "Elie A",
+              "initials": "EA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "American University of Beirut, Beirut, Lebanon (E.A.A.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chang C",
+              "lastName": "Chang",
+              "firstName": "Christine",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Agency for Healthcare Research and Quality, Rockville, Maryland (C.C.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McGowan J",
+              "lastName": "McGowan",
+              "firstName": "Jessie",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Ottawa, Ottawa, Ontario, Canada (J.M.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stewart L",
+              "lastName": "Stewart",
+              "firstName": "Lesley",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0287-4724"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of York, York, United Kingdom (L.S.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hartling L",
+              "lastName": "Hartling",
+              "firstName": "Lisa",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Alberta, Edmonton, Alberta, Canada (L.H.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Aldcroft A",
+              "lastName": "Aldcroft",
+              "firstName": "Adrian",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0106-720X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "BMJ Open, London, United Kingdom (A.A.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wilson MG",
+              "lastName": "Wilson",
+              "firstName": "Michael G",
+              "initials": "MG",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "McMaster University, Hamilton, Ontario, Canada (M.G.W.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Garritty C",
+              "lastName": "Garritty",
+              "firstName": "Chantelle",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Ottawa Hospital Research Institute, Ottawa, Ontario, Canada (D.M., C.G.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lewin S",
+              "lastName": "Lewin",
+              "firstName": "Simon",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Norwegian Institute of Public Health, Oslo, Norway, and South African Medical Research Council, Cape Town, South Africa (S.L.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Godfrey CM",
+              "lastName": "Godfrey",
+              "firstName": "Christina M",
+              "initials": "CM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Queen's University, Kingston, Ontario, Canada (C.M.G.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Macdonald MT",
+              "lastName": "Macdonald",
+              "firstName": "Marilyn T",
+              "initials": "MT",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0204-6278"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dalhousie University, Halifax, Nova Scotia, Canada (M.T.M.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Langlois EV",
+              "lastName": "Langlois",
+              "firstName": "Etienne V",
+              "initials": "EV",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "World Health Organization, Geneva, Switzerland (E.V.L., Ö.T.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Soares-Weiser K",
+              "lastName": "Soares-Weiser",
+              "firstName": "Karla",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Cochrane, London, United Kingdom (K.S.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Moriarty J",
+              "lastName": "Moriarty",
+              "firstName": "Jo",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "King's College London, London, United Kingdom (J.M.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Clifford T",
+              "lastName": "Clifford",
+              "firstName": "Tammy",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Canadian Agency for Drugs and Technologies in Health, Ottawa, Ontario, Canada (L.W., T.C.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tunçalp Ö",
+              "lastName": "Tunçalp",
+              "firstName": "Özge",
+              "initials": "Ö",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5370-682X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "World Health Organization, Geneva, Switzerland (E.V.L., Ö.T.)."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Straus SE",
+              "lastName": "Straus",
+              "firstName": "Sharon E",
+              "initials": "SE",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6106-832X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St. Michael's Hospital and University of Toronto, Toronto, Ontario, Canada (A.C.T., S.E.S.)."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5229-6294"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7356-9335"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0204-6278"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1108-3783"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1256-9582"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5370-682X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6106-832X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0106-720X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0287-4724"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1597-5110"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-6862-2661"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0008-4691-3768"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "7",
+          "volume": "169",
+          "journalIssueId": 2734040,
+          "dateOfPublication": "2018 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Ann Intern Med",
+            "title": "Annals of internal medicine",
+            "essn": "1539-3704",
+            "issn": "0003-4819",
+            "nlmid": "0372351",
+            "isoabbreviation": "Ann Intern Med"
+          },
+          "printPublicationDate": "2018-10-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "467-473",
+        "abstractText": "Scoping reviews, a type of knowledge synthesis, follow a systematic approach to map evidence on a topic and identify main concepts, theories, sources, and knowledge gaps. Although more scoping reviews are being done, their methodological and reporting quality need improvement. This document presents the PRISMA-ScR (Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews) checklist and explanation. The checklist was developed by a 24-member expert panel and 2 research leads following published guidance from the EQUATOR (Enhancing the QUAlity and Transparency Of health Research) Network. The final checklist contains 20 essential reporting items and 2 optional items. The authors provide a rationale and an example of good reporting for each item. The intent of the PRISMA-ScR is to help readers (including researchers, publishers, commissioners, policymakers, health care providers, guideline developers, and patients or consumers) develop a greater understanding of relevant terminology, core concepts, and key items to report for scoping reviews.",
+        "affiliation": "St. Michael's Hospital and University of Toronto, Toronto, Ontario, Canada (A.C.T., S.E.S.).",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Guideline",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "World Health Organization",
+              "acronym": "WHO_",
+              "grantId": "001",
+              "orderIn": 0
+            },
+            {
+              "agency": "CIHR",
+              "grantId": "KRS 144046",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "NF-SI-0507-10259",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Delphi Technique"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Review Literature as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Meta-Analysis as Topic"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Checklist"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Scoping Reviews As Topic"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7326/M18-0850"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "30178036",
+              "reference": "Ann Intern Med. 2018 Oct 2;169(7):502-503. doi: 10.7326/M18-2205.",
+              "type": "Comment in",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 25326,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2019-08-23",
+        "dateOfCreation": "2018-09-05",
+        "dateOfRevision": "2026-01-27",
+        "electronicPublicationDate": "2018-09-04",
+        "firstPublicationDate": "2018-09-04",
+        "firstIndexDate": "2018-09-04",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "24979285",
+        "source": "MED",
+        "pmid": "24979285",
+        "doi": "10.1097/acm.0000000000000388",
+        "title": "Standards for reporting qualitative research: a synthesis of recommendations.",
+        "authorString": "O'Brien BC, Harris IB, Beckman TJ, Reed DA, Cook DA.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "O'Brien BC",
+              "lastName": "O'Brien",
+              "firstName": "Bridget C",
+              "initials": "BC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dr. O'Brien is assistant professor, Department of Medicine and Office of Research and Development in Medical Education, University of California, San Francisco, School of Medicine, San Francisco, California. Dr. Harris is professor and head, Department of Medical Education, University of Illinois at Chicago College of Medicine, Chicago, Illinois. Dr. Beckman is professor of medicine and medical education, Department of Medicine, Mayo Clinic College of Medicine, Rochester, Minnesota. Dr. Reed is associate professor of medicine and medical education, Department of Medicine, Mayo Clinic College of Medicine, Rochester, Minnesota. Dr. Cook is associate director, Mayo Clinic Online Learning, research chair, Mayo Multidisciplinary Simulation Center, and professor of medicine and medical education, Mayo Clinic College of Medicine, Rochester, Minnesota."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Harris IB",
+              "lastName": "Harris",
+              "firstName": "Ilene B",
+              "initials": "IB"
+            },
+            {
+              "fullName": "Beckman TJ",
+              "lastName": "Beckman",
+              "firstName": "Thomas J",
+              "initials": "TJ"
+            },
+            {
+              "fullName": "Reed DA",
+              "lastName": "Reed",
+              "firstName": "Darcy A",
+              "initials": "DA"
+            },
+            {
+              "fullName": "Cook DA",
+              "lastName": "Cook",
+              "firstName": "David A",
+              "initials": "DA"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "9",
+          "volume": "89",
+          "journalIssueId": 2194250,
+          "dateOfPublication": "2014 Sep",
+          "monthOfPublication": 9,
+          "yearOfPublication": 2014,
+          "journal": {
+            "medlineAbbreviation": "Acad Med",
+            "title": "Academic medicine : journal of the Association of American Medical Colleges",
+            "essn": "1040-2446",
+            "issn": "1040-2446",
+            "nlmid": "8904605",
+            "isoabbreviation": "Acad Med"
+          },
+          "printPublicationDate": "2014-09-01"
+        },
+        "pubYear": "2014",
+        "pageInfo": "1245-1251",
+        "abstractText": "<h4>Purpose</h4>Standards for reporting exist for many types of quantitative research, but currently none exist for the broad spectrum of qualitative research. The purpose of the present study was to formulate and define standards for reporting qualitative research while preserving the requisite flexibility to accommodate various paradigms, approaches, and methods.<h4>Method</h4>The authors identified guidelines, reporting standards, and critical appraisal criteria for qualitative research by searching PubMed, Web of Science, and Google through July 2013; reviewing the reference lists of retrieved sources; and contacting experts. Specifically, two authors reviewed a sample of sources to generate an initial set of items that were potentially important in reporting qualitative research. Through an iterative process of reviewing sources, modifying the set of items, and coding all sources for items, the authors prepared a near-final list of items and descriptions and sent this list to five external reviewers for feedback. The final items and descriptions included in the reporting standards reflect this feedback.<h4>Results</h4>The Standards for Reporting Qualitative Research (SRQR) consists of 21 items. The authors define and explain key elements of each item and provide examples from recently published articles to illustrate ways in which the standards can be met.<h4>Conclusions</h4>The SRQR aims to improve the transparency of all aspects of qualitative research by providing clear standards for reporting qualitative research. These standards will assist authors during manuscript preparation, editors and reviewers in evaluating a manuscript for potential publication, and readers when critically appraising, applying, and synthesizing study findings.",
+        "affiliation": "Dr. O'Brien is assistant professor, Department of Medicine and Office of Research and Development in Medical Education, University of California, San Francisco, School of Medicine, San Francisco, California. Dr. Harris is professor and head, Department of Medical Education, University of Illinois at Chicago College of Medicine, Chicago, Illinois. Dr. Beckman is professor of medicine and medical education, Department of Medicine, Mayo Clinic College of Medicine, Rochester, Minnesota. Dr. Reed is associate professor of medicine and medical education, Department of Medicine, Mayo Clinic College of Medicine, Rochester, Minnesota. Dr. Cook is associate director, Mayo Clinic Online Learning, research chair, Mayo Multidisciplinary Simulation Center, and professor of medicine and medical education, Mayo Clinic College of Medicine, Rochester, Minnesota.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Qualitative Research"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Research Design",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Publishing",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Research Report",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ST",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "http://links.lww.com/ACADMED/A218"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1097/ACM.0000000000000388"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8263,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2014-10-24",
+        "dateOfCreation": "2014-07-01",
+        "dateOfRevision": "2024-01-09",
+        "firstPublicationDate": "2014-09-01",
+        "firstIndexDate": "2014-07-01",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-10-16",
+  "records": 93,
+  "counts": {
+    "PDF": 62,
+    "HTML": 15,
+    "missing": 16
+  },
+  "all_local_files_exist_and_match_sha256": true,
+  "all_missing_have_obstacles": true
+}

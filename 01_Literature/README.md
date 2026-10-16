@@ -12,6 +12,17 @@ identifies the work point it helps with and its adaptation limits.
 - [Ranked DOI list](ranked-dois.txt) — one DOI per line for reference-manager import.
 - [Structured catalogue](methodology-literature.json) — titles, provenance,
   rank, methodological use and version notes.
+- [Download checklist](Download-Checklist.md) — ticks and local links for all
+  available copies, with a specific obstacle and a direct link (open-access page or
+  DOI) for every missing item.
+- [Organized reading copies](PDFs/Methods-Reading/README.md) — folders by topic;
+  PDF and full-text HTML formats are labelled separately. Downloaded is not read.
+- [Hand-saved PDFs](PDFs/Methods-Reading/_Inbox/README.md) — drop a PDF you obtained
+  yourself (browser, library login) into `_Inbox/` and run `import_manual.py`; it
+  matches title, first-author surname and DOI before filing and rebuilding the checklist.
+- Graphify indexes this corpus from the catalogue and download manifest (topic,
+  method stage, research question, download state, gaps); paper full text is not
+  indexed. Query it with `.\graphify.ps1 query "<question>"`.
 
 These are **reading candidates and method resources**, not newly added thesis
 citations. The shared bibliography and existing reading-status records are
