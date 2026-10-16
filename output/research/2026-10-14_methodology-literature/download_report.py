@@ -70,13 +70,16 @@ def write_checklist(rows,extras,downloads):
     counts=Counter('HTML' if r['status']=='available_html' else 'PDF' if r.get('downloaded') else 'missing' for r in downloads.values())
     checked=date.fromisoformat(max(r.get('checked_on','2026-10-14') for r in downloads.values()))
     checked_label=f"{checked.day} {checked:%B %Y}"
+    html_count=f"**{counts['HTML']} full-text HTML copies**, " if counts['HTML'] else ''
+    html_note=("HTML copies include source XML, tables and references; figure images are not bundled. "
+               if counts['HTML'] else '')
     intro=(f"# Literature download checklist\n\nChecked **{checked_label}**: **{counts['PDF']} PDFs**, "
-           f"**{counts['HTML']} full-text HTML copies**, **{counts['missing']} items without a local full-text copy**. "
+           f"{html_count}**{counts['missing']} items without a local full-text copy**. "
            "Covers all 83 ranked DOI records and 10 official/non-DOI resources.\n\n"
            "A checked box means a verified local copy is available, **not that the paper has been read**. "
            "Files are grouped by methodological topic under [PDFs/Methods-Reading](PDFs/Methods-Reading/README.md). "
-           "Filename numbers retain the reading priority. HTML copies include source XML, tables and references; "
-           "figure images are not bundled. Manuscript, technical-report and whole-book versions are labelled below. "
+           "Filename numbers retain the reading priority. " + html_note +
+           "Manuscript, technical-report and whole-book versions are labelled below. "
            "Download failures are observations from this environment, not proof of a paywall or of no free copy existing anywhere.\n\n"
            "[Searchable ranked guide](Methods-Reading-List.html) · [Methodological relevance and stage](Methods-Reading-List.md)\n\n"
            "## Adding a missing copy\n\n"
@@ -118,14 +121,15 @@ def write_checklist(rows,extras,downloads):
     (DEST/'Download-Checklist.md').write_text(''.join(parts),encoding='utf-8')
     folder=DEST/'PDFs/Methods-Reading'
     folders=Counter(Path(r['file']).parent.name for r in downloads.values() if r.get('downloaded'))
-    text=(f"# Methodology reading copies\n\n{counts['PDF']} PDFs and {counts['HTML']} HTML full-text copies, organized by topic. "
+    html_clause=f" and {counts['HTML']} HTML full-text copies" if counts['HTML'] else ''
+    text=(f"# Methodology reading copies\n\n{counts['PDF']} PDFs{html_clause}, organized by topic. "
           f"Checked on {checked_label}.\n\n[Complete download checklist and obstacles](../../Download-Checklist.md) · "
           "[Ranked relevance and stage](../../Methods-Reading-List.md) · [Searchable guide](../../Methods-Reading-List.html)\n\n"
           "These are reading candidates; downloading does not mark them as read or add them to the thesis bibliography. "
           "Numbers in filenames are the global reading rank; N1–N10 are official/non-DOI resources.\n\n")
     text+='| Folder | Local works |\n|---|---:|\n'+''.join(f'| [{name}]({name}/) | {n} |\n' for name,n in sorted(folders.items()))
-    text+='\nHTML full text includes an adjacent original XML file. Figure images are not bundled. '
-    text+='Accepted manuscripts and technical reports can differ from final publications. The Wharton file is the whole edited book; relevant chapter pp. 105–140. '
+    text+='\n'+('HTML full text includes an adjacent original XML file. Figure images are not bundled. ' if counts['HTML'] else '')
+    text+='Accepted manuscripts and technical reports can differ from final publications. The N2 file (Wharton et al. 1994) is the whole edited book; relevant chapter pp. 105–140. '
     text+='Citron and Martin files are published law-review versions of the earlier SSRN DOI records. '
     text+='Retrieval URLs, version labels, SHA-256 checksums, PDF page counts and individual failed attempts are retained in '
     text+='[the audit manifest](../../../output/research/2026-10-14_methodology-literature/download-status.json).\n'

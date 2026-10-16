@@ -1,8 +1,8 @@
 # Literature download checklist
 
-Checked **16 October 2026**: **89 PDFs**, **0 full-text HTML copies**, **4 items without a local full-text copy**. Covers all 83 ranked DOI records and 10 official/non-DOI resources.
+Checked **16 October 2026**: **89 PDFs**, **4 items without a local full-text copy**. Covers all 83 ranked DOI records and 10 official/non-DOI resources.
 
-A checked box means a verified local copy is available, **not that the paper has been read**. Files are grouped by methodological topic under [PDFs/Methods-Reading](PDFs/Methods-Reading/README.md). Filename numbers retain the reading priority. HTML copies include source XML, tables and references; figure images are not bundled. Manuscript, technical-report and whole-book versions are labelled below. Download failures are observations from this environment, not proof of a paywall or of no free copy existing anywhere.
+A checked box means a verified local copy is available, **not that the paper has been read**. Files are grouped by methodological topic under [PDFs/Methods-Reading](PDFs/Methods-Reading/README.md). Filename numbers retain the reading priority. Manuscript, technical-report and whole-book versions are labelled below. Download failures are observations from this environment, not proof of a paywall or of no free copy existing anywhere.
 
 [Searchable ranked guide](Methods-Reading-List.html) · [Methodological relevance and stage](Methods-Reading-List.md)
 

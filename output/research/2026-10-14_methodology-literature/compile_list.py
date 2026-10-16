@@ -84,7 +84,7 @@ RQ1 = coverage; RQ2 = stance; RQ3 = protection framing; RQ4 = surfaces. These re
 ## First reading route
 
 """
-parts = [intro,'Download ticks, local files and obstacles are recorded in the [complete download checklist](Download-Checklist.md). A tick means available locally, not read. HTML full text is distinguished from PDF.\n\n','| Global rank | Source | Start here / helps with | Download |\n|---:|---|---|---|\n']
+parts = [intro,'Download ticks, local files and obstacles are recorded in the [complete download checklist](Download-Checklist.md). A tick means available locally, not read.'+(' HTML full text is distinguished from PDF.' if any((d or {}).get('status')=='available_html' for d in downloads.values()) else '')+'\n\n','| Global rank | Source | Start here / helps with | Download |\n|---:|---|---|---|\n']
 for r in rows[:20]:
     parts.append(f"| {r['rank']} | **{r['author_label']} ({r['year']})** — [{r['title']}]({r['doi_url']}) | {r['when']} | {md_cell(r['download'])} |\n")
 parts.append("""

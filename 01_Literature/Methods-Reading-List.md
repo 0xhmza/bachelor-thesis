@@ -28,7 +28,7 @@ RQ1 = coverage; RQ2 = stance; RQ3 = protection framing; RQ4 = surfaces. These re
 
 ## First reading route
 
-Download ticks, local files and obstacles are recorded in the [complete download checklist](Download-Checklist.md). A tick means available locally, not read. HTML full text is distinguished from PDF.
+Download ticks, local files and obstacles are recorded in the [complete download checklist](Download-Checklist.md). A tick means available locally, not read.
 
 | Global rank | Source | Start here / helps with | Download |
 |---:|---|---|---|

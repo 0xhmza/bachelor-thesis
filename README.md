@@ -30,15 +30,15 @@ LaTeX Workshop settings there. The shared bibliography is `_shared/references.bi
 | Folder | Content |
 |---|---|
 | `00_Admin/` | Supervisor input, meeting notes, timeline and open decisions |
-| `01_Literature/` | Original papers and literature notes |
+| `01_Literature/` | Core reading list with PDFs and notes, plus the ranked methodology corpus (89 of 93 works as PDFs), its download checklist and a hand-saved-PDF inbox. Start at its `README.md` |
 | `03_Thesis/` | Main thesis, chapters, appendices and proposal snapshot |
 | `04_Study/` | Sampling protocol, codebook versions, walkthrough and LLM prompts |
 | `05_Data/` | Raw, processed and analysis study material; raw data is gitignored |
 | `06_Presentation/` | Beamer presentation |
 | `_shared/` | Single bibliography |
-| `output/research/` | Dated sampling trials and their evidence |
+| `output/research/` | Dated research: sampling trials and their evidence, and the methodology-literature pipeline (retrieval scripts, DOI evidence, download manifest) |
 | `99_Archive/` | Application material and compact cleanup recovery archive |
-| `scripts/` | Local Graphify integration |
+| `scripts/` | Local Graphify integration: LaTeX/BibTeX structure and the literature-corpus layer |
 | `graphify-out/` | Queryable graph, report, HTML and freshness information |
 
 Read the relevant folder README before changing study records. Research trials
@@ -71,6 +71,11 @@ Graphify does not natively detect `.tex`/`.bib`, so the project integration hand
 those formats. Refresh updates structural information locally and reuses semantic
 fragments only while their source hashes match. Changed semantic sources are listed
 for re-extraction using the Graphify skill; no API key is required for assistant extraction.
+
+The methodology literature corpus is indexed from its catalogue and download manifest
+on every refresh, so it never goes semantically stale: each of the 93 works becomes a
+node with its topic, method stage, research question, local PDF and any download gap,
+alongside the reading guide's meeting-decision map. Paper full text is not indexed.
 
 `.graphifyignore` excludes generated files, archives, duplicate proposal content,
 raw/processed trial data and full PDF text. Original literature is reached through
