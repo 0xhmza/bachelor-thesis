@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-16T16:40:24.231487+00:00",
+  "built_at_utc": "2026-10-17T16:36:50.022764+00:00",
   "fresh_semantic_files": [
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md",
@@ -51,7 +51,9 @@
     "output/research/2026-10-14_methodology-literature/README.md",
     "requirements-graphify.txt"
   ],
-  "needs_semantic_extraction": [],
+  "needs_semantic_extraction": [
+    "00_Admin/Action-Plan_2026-10-13.md"
+  ],
   "source_hashes": {
     "03_Thesis/.vscode/extensions.json": "9aceee57773787fc454bc8437bc8d1a04d03db95d0678ed13f93d606c478951b",
     "03_Thesis/.vscode/settings.json": "88a6ecc1bb0ef5f11504b011b7c851fcaf1b9654ecda7cd1bf891e513ad5775e",
@@ -85,6 +87,7 @@
     "output/research/2026-10-14_methodology-literature/verification.json": "bf19c146882431b378a0051df5c8b3d7a9df131f23d7af595a0e4f557743dd3e",
     "output/research/2026-10-14_methodology-literature/verify_metadata.py": "1876fb597259e6d2e8713dc984c81436ce2867485482aaa5f1edb7d2e830ba85",
     "scripts/thesis_graph.py": "9c73400c0502b4787573340c044a381c95d24ae9f20cc5d19b1c9f07b57beae7",
+    "00_Admin/Action-Plan_2026-10-13.md": "1d2b5150c9c00703560e19f6b98d98afd509292b24e9183ac117ece5d1383e22",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md": "1173b4216992570863ae41023e1d1ed0b39939f9ae1519f38de1a8405ef1112d",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md": "54040706ddf4d41cce8418b3f3b9c3f55b8e526b9d11d9618821ded94e858cdd",
@@ -148,9 +151,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1029,
-  "edges": 1835,
-  "communities": 74,
+  "nodes": 1041,
+  "edges": 1846,
+  "communities": 70,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
