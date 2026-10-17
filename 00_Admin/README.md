@@ -3,6 +3,10 @@
 | File / folder | What it is |
 |---|---|
 | `Timeline.md` | Milestones and the administrative checklist. Keep it current. |
+| `Action-Plan_2026-10-13.md` | Ordered work plan from the 13 October meeting: clarify → evidence → decide → protocols → pilot → rewrite. |
+| `Decision-Log.md` | Register of methodological decisions D1–D12 with status and evidence; one record per decision in `Decisions/`. |
+| `Risk-Register.md` | Risks with early signs and mitigations; reviewed weekly. |
+| `Weekly-Log.md` | Five-line weekly progress note for the supervisor. |
 | `Open-Points.md` | Decisions the proposal makes on your behalf, to confirm or overturn with the supervisor. |
 | `Meeting-Notes/` | One file per supervisor meeting, `YYYY-MM-DD_Topic.md`. Use `TEMPLATE.md`. |
 | `Supervisor-Input/` | Material sent by the advisor between meetings: the original attachment plus a `.md` transcription. |

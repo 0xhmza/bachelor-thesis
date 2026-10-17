@@ -20,6 +20,11 @@ remain unfinished. See `output/reviews/2026-10-14_proposal-migration.md` for the
 .\build.ps1 slides
 ```
 
+TeX Live 2025 is installed; `build.ps1` adds its binary folder to the current
+session. Each document's `latexmkrc` defines its build chain. In TeXstudio open
+`thesis.tex` as the root document; in VS Code open `03_Thesis/` and use the
+LaTeX Workshop settings there. The shared bibliography is `_shared/references.bib`.
+
 ## For the supervisor: review copy
 
 `03_Thesis/Thesis_Review-Copy.docx` is a Word version of the current thesis draft
@@ -45,11 +50,6 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 - **Reading status** is edited in `01_Literature/reading-status.csv` (the README table follows it).
 - **CI** (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles
   the thesis on every push; download both from the run's artifacts.
-
-TeX Live 2025 is installed; `build.ps1` adds its binary folder to the current
-session. Each document's `latexmkrc` defines its build chain. In TeXstudio open
-`thesis.tex` as the root document; in VS Code open `03_Thesis/` and use the
-LaTeX Workshop settings there. The shared bibliography is `_shared/references.bib`.
 
 ## Folder map
 

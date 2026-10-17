@@ -19,7 +19,7 @@ tracker. The long argued version, with where each phase can slip, is archived in
 | 1 | Read Citron & Solove, *Privacy Harms* (PDF in `01_Literature/PDFs/`) | | ☐ |
 | 1b | Read Knabenhans et al., *(Privacy) Harms of the EU Digital Identity Framework* — for the harm model | | ☐ |
 | 1c | Read Martin, Nissenbaum & Shmatikov, *No Cookies For You!* — for PET framing | | ☐ |
-| 2 | Google Doc set up and shared with advisor | | ☐ |
+| 2 | Review copy for the advisor: `03_Thesis/Thesis_Review-Copy.docx`, rebuilt with every thesis commit (replaces the Google Doc) | 2026-10-17 | ◐ generated; share the file or the GitHub link with the advisor |
 | 3 | Scope question resolved (document analysis vs. survey — see meeting notes §8) | 2026-09-18 | ◐ decided in the proposal (Scope; `Open-Points.md` item 1); awaiting advisor's confirmation |
 | 3b | Own literature search: privacy harms · tracker S&P · methods (advisor's explicit ask) | 2026-09-18 | ☑ first pass — 17 new entries in `_shared/references.bib`, all verified against the publisher record |
 | 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources catalogued and fetched | 2026-10-16 | ◐ 89 of 93 held as PDFs in `01_Literature/PDFs/Methods-Reading/` (see `01_Literature/Download-Checklist.md`); missing: Parker 2019, two books, the APA web page. None read yet; reading and any bibliography additions stay open |

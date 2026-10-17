@@ -20,7 +20,7 @@ pilot → freeze → rewrite the methodology. No decision without evidence; ❓ 
 - [ ] Capability table for the harm tree (capability → source → data → adversary).
 - [ ] Finish the three core harm papers (Citron & Solove, Knabenhans et al., Martin et al.).
 
-## 3 · Decide — one cited record each (by 10-26)
+## 3 · Decide — one cited record each (by 10-26) · register: [Decision-Log.md](Decision-Log.md)
 
 | ID | Decision | Proposal says | Meeting says |
 |---|---|---|---|
