@@ -1,0 +1,40 @@
+# Checks every push: project health, the supervisor's review copy, and that the
+# thesis still compiles. Download the PDF and the .docx from the run's artifacts.
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    name: Project checks and review copy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Project health (citations, links, reading rule)
+        run: python scripts/check_project.py
+      - name: Build the supervisor's review copy
+        run: python scripts/build_review_docx.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thesis-review-copy
+          path: 03_Thesis/Thesis_Review-Copy.docx
+
+  thesis:
+    name: Compile thesis PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: thesis.tex
+          working_directory: 03_Thesis
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thesis-pdf
+          path: 03_Thesis/thesis.pdf

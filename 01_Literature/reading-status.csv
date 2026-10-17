@@ -1,16 +1,15 @@
 id,collection,priority,author_year,title,status,note_file,changed_on
 cao2024deleted,core,core · C,Cao et al. (2024),“I Deleted It After the Overturn of Roe v. Wade”: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era,to read,,2026-10-17
-citron2021harms,core,core,Citron & Solove (2022),Privacy Harms,to read,,2026-10-17
+citron2021harms,core,core · A,Citron & Solove (2022),Privacy Harms,to read,,2026-10-17
 gabriele2020understanding,core,core · C,Gabriele & Chiasson (2020),"Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours",to read,,2026-10-17
 hudig2025intimate,core,core · B,Hudig & Singh (2025),Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking,to read,,2026-10-17
 knabenhans2026harms,core,core · A,Knabenhans et al. (2026),On the (Privacy) Harms of the European Digital Identity Framework,to read,,2026-10-17
 malki2024exploring,core,core · A,Malki et al. (2024),Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World,to read,,2026-10-17
-martin2025cookies,core,core,"Martin, Nissenbaum & Shmatikov (2025)",No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques,to read,,2026-10-17
+martin2025cookies,core,core · A,"Martin, Nissenbaum & Shmatikov (2025)",No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques,to read,,2026-10-17
 niksirat2024wearable,core,core · C,Salehzadeh Niksirat et al. (2024),"Wearable Activity Trackers: A Survey on Utility, Privacy, and Security",read,,2026-10-17
-nissenbaum2009privacy,core,core,Nissenbaum (2009),"Privacy in Context: Technology, Policy, and the Integrity of Social Life",to read,,2026-10-17
-wharton1994cognitive,core,core,Wharton et al. (1994),The Cognitive Walkthrough Method: A Practitioner's Guide,to read,,2026-10-17
+nissenbaum2009privacy,core,core · B,Nissenbaum (2009),"Privacy in Context: Technology, Policy, and the Integrity of Social Life",to read,,2026-10-17
+wharton1994cognitive,core,core · A,Wharton et al. (1994),The Cognitive Walkthrough Method: A Practitioner's Guide,to read,,2026-10-17
 M2,methods,A,Hutton et al. (2018),Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach,to read,,2026-10-17
-MN2,methods,A,,"Wharton et al. (1994), The Cognitive Walkthrough Method: A Practitioner's Guide",to read,,2026-10-17
 M3,methods,A,Shipp & Blasco (2020),How private is your period?: A systematic analysis of menstrual app privacy policies,to read,,2026-10-17
 MN3,methods,A,,"Schaub et al. (2015), A Design Space for Effective Privacy Notices",to read,,2026-10-17
 M4,methods,A,O’Connor & Joffe (2020),Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines,to read,,2026-10-17
@@ -89,10 +88,7 @@ M73,methods,B,Moniz & Almeida (2026),Toward Risk Communication in Intimate Healt
 M74,methods,C,Doan et al. (2025),Analysis of Transparency and User-Relevancy of DTC Company Policies,to read,,2026-10-17
 M75,methods,B,Solove (2006),A Taxonomy of Privacy,to read,,2026-10-17
 M76,methods,A,Krippendorff (2019),Content Analysis: An Introduction to Its Methodology,to read,,2026-10-17
-M77,methods,B,Nissenbaum (2009),"Privacy in Context: Technology, Policy, and the Integrity of Social Life",to read,,2026-10-17
 M78,methods,B,Deng et al. (2011),A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements,to read,,2026-10-17
 M79,methods,B,Brooks et al. (2017),An introduction to privacy engineering and risk management in federal systems,to read,,2026-10-17
-M80,methods,A,Citron & Solove (2021),Privacy Harms,to read,,2026-10-17
-M81,methods,A,Martin et al. (2023),No Cookies For You!: Evaluating The Promises Of Big Tech’s ‘Privacy-Enhancing’ Techniques.,to read,,2026-10-17
 M82,methods,A,O'Loughlin et al. (2019),Reviewing the data security and privacy policies of mobile apps for depression,to read,,2026-10-17
 M83,methods,B,Mayring (2025),"Qualitative Content Analysis With ChatGPT: Pitfalls, Rough Approximations and Gross Errors. A Field Report",to read,,2026-10-17

@@ -20,6 +20,32 @@ remain unfinished. See `output/reviews/2026-10-14_proposal-migration.md` for the
 .\build.ps1 slides
 ```
 
+## For the supervisor: review copy
+
+`03_Thesis/Thesis_Review-Copy.docx` is a Word version of the current thesis draft
+for comments and tracked changes. It is generated from the LaTeX sources and rebuilt
+with **every commit that changes the thesis**, so the copy in the repository always
+matches the committed draft; the box on its first page names that commit. Citation
+numbers link to the bibliography, and bibliography entries link to their DOI or URL.
+Save an annotated copy under a new name and send it back: the next commit replaces
+this file. `thesis.pdf` remains the authoritative layout (diagrams appear in the
+Word copy as text descriptions).
+
+## Working routine
+
+```powershell
+sh scripts/hooks/install.sh                 # once per clone: review-copy hook
+python scripts/check_project.py             # citations, links, reading rule, TODOs
+python scripts/build_review_docx.py         # review copy now (the hook does it on commit)
+.\graphify.ps1 refresh                      # graph, literature index, map, reading tracker
+```
+
+- **Decisions** are recorded in `00_Admin/Decision-Log.md` before the methodology states them.
+- **Progress** goes into `00_Admin/Weekly-Log.md`; risks into `00_Admin/Risk-Register.md`.
+- **Reading status** is edited in `01_Literature/reading-status.csv` (the README table follows it).
+- **CI** (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles
+  the thesis on every push; download both from the run's artifacts.
+
 TeX Live 2025 is installed; `build.ps1` adds its binary folder to the current
 session. Each document's `latexmkrc` defines its build chain. In TeXstudio open
 `thesis.tex` as the root document; in VS Code open `03_Thesis/` and use the
@@ -29,16 +55,17 @@ LaTeX Workshop settings there. The shared bibliography is `_shared/references.bi
 
 | Folder | Content |
 |---|---|
-| `00_Admin/` | Supervisor input, meeting notes, timeline and open decisions |
-| `01_Literature/` | Core reading list with PDFs and notes, plus the ranked methodology corpus (89 of 93 works as PDFs), its download checklist and a hand-saved-PDF inbox. Start at its `README.md` |
-| `03_Thesis/` | Main thesis, chapters, appendices and proposal snapshot |
+| `00_Admin/` | Supervisor input, meeting notes, action plan, decision log, risk register, weekly log, timeline |
+| `01_Literature/` | Core reading list with PDFs and notes, the ranked methodology corpus (89 of 93 works as PDFs), the reading tracker, the abstract index and the interactive literature map. Start at its `README.md` |
+| `03_Thesis/` | Main thesis, chapters, appendices, the supervisor's review copy (.docx) and the proposal snapshot |
 | `04_Study/` | Sampling protocol, codebook versions, walkthrough and LLM prompts |
 | `05_Data/` | Raw, processed and analysis study material; raw data is gitignored |
 | `06_Presentation/` | Beamer presentation |
 | `_shared/` | Single bibliography |
 | `output/research/` | Dated research: sampling trials and their evidence, and the methodology-literature pipeline (retrieval scripts, DOI evidence, download manifest) |
 | `99_Archive/` | Application material and compact cleanup recovery archive |
-| `scripts/` | Local Graphify integration: LaTeX/BibTeX structure and the literature-corpus layer |
+| `scripts/` | Graphify integration (LaTeX/BibTeX structure, literature layer), review-copy builder, project checks, git hooks |
+| `.github/` | CI: checks, review copy and thesis PDF on every push |
 | `graphify-out/` | Queryable graph, report, HTML and freshness information |
 
 Read the relevant folder README before changing study records. Research trials
@@ -75,7 +102,13 @@ for re-extraction using the Graphify skill; no API key is required for assistant
 The methodology literature corpus is indexed from its catalogue and download manifest
 on every refresh, so it never goes semantically stale: each of the 93 works becomes a
 node with its topic, method stage, research question, local PDF and any download gap,
-alongside the reading guide's meeting-decision map. Paper full text is not indexed.
+alongside the reading guide's meeting-decision map. Paper full text is not indexed;
+the abstract and keywords printed on each local PDF's title page are
+(`scripts/literature_index.py`, cached by file hash in
+`01_Literature/literature-index.json`), together with each work's reading status, so
+queries such as "which agreement-statistics papers are still to read" work. The same
+refresh writes `01_Literature/Literature-Map.html`, an interactive map of thesis
+chapters, cited works, the corpus, meeting decisions and reading status.
 
 `.graphifyignore` excludes generated files, archives, duplicate proposal content,
 raw/processed trial data and full PDF text. Original literature is reached through

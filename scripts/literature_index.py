@@ -76,6 +76,12 @@ def latex_text(s):
     return re.sub(r'\s+', ' ', re.sub(r'[{}]', '', s)).strip()
 
 
+def norm_title(s):
+    """Comparable title: lower-case letters and digits only, subtitle kept."""
+    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
+    return re.sub(r'[^a-z0-9]+', '', s)
+
+
 def bib_entries():
     text = BIB.read_text(encoding='utf-8')
     out = {}
@@ -107,9 +113,9 @@ def core_pdf(key, row):
         return folder / row['pdf']
     author = re.match(r'[a-z]+', key)
     year = re.search(r'\d{4}', key)
-    for p in sorted(folder.glob('*.pdf')):
+    for p in sorted(folder.glob('*.pdf')):  # surname anywhere (double surnames), plus the year
         name = slug(p.stem)
-        if author and name.replace('_', '').startswith(author.group(0)[:6]) and year and year.group(0)[:3] in name:
+        if author and author.group(0) in name.replace('_', '') and year and year.group(0)[:3] in name:
             return p
     return None
 
@@ -158,6 +164,7 @@ def update(verbose=True):
     bib = bib_entries()
     bib_by_doi = {v['doi']: k for k, v in bib.items() if v['doi']}
     bib_by_url = {v['url']: k for k, v in bib.items() if v['url']}
+    bib_by_title = {norm_title(v['title']): k for k, v in bib.items() if len(v['title']) > 12}
     core = core_rows()
     catalogue = read_json(CATALOGUE, {'ranked_doi_records': [], 'official_or_no_doi_resources': []})
     manifest = {str(r['id']): r for r in read_json(MANIFEST, {'records': []})['records']}
@@ -175,7 +182,8 @@ def update(verbose=True):
     for work in catalogue['ranked_doi_records'] + catalogue['official_or_no_doi_resources']:
         wid = str(work['id'])
         doi = (work.get('doi') or '').lower()
-        key = bib_by_doi.get(doi) or bib_by_url.get(work.get('url', ''))
+        title = norm_title(re.sub(r'^.*?\(\d{4}\),\s*', '', work.get('title', '')))
+        key = bib_by_doi.get(doi) or bib_by_url.get(work.get('url', '')) or bib_by_title.get(title)
         if key in items:  # same work as a core entry: one item, two identities
             items[key]['methods_id'] = wid
             items[key]['topic'] = work.get('category', 'Official and non-DOI resources')
@@ -295,6 +303,9 @@ def build_map(graph_path=ROOT / 'graphify-out/graph.json'):
 
     keep, out_edges = {}, set()
     alias = {}  # methods work -> bib node when they are the same work
+    for item in by_work.values():
+        if item.get('bib_key') and 'index_bib_' + slug(item['bib_key']) in nodes:
+            alias['index_lit_' + slug(item['methods_id'])] = 'index_bib_' + slug(item['bib_key'])
     for e in links:
         if e.get('relation') == 'same_work_as':
             a, b = e['source'], e['target']

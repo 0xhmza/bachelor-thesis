@@ -1,0 +1,23 @@
+# Shared editor settings (VS Code, TeXstudio and most editors read this file)
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{py,ps1}]
+indent_style = space
+indent_size = 4
+
+[*.{tex,bib,json,yml,yaml,html,css,js}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+# two trailing spaces are a Markdown line break
+trim_trailing_whitespace = false
+
+[{scripts/hooks/*,*.sh}]
+end_of_line = lf

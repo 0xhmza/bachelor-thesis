@@ -1,0 +1,16 @@
+# Risk register
+
+Reviewed weekly with the weekly log. Likelihood and impact: L / M / H.
+Close a risk only when its trigger can no longer occur.
+
+| # | Risk | L | I | Early sign | Mitigation | Owner | Status |
+|---|---|---|---|---|---|---|---|
+| R1 | Open decisions (D1–D12) delay the pilot past 2026-10-30 | M | H | No supervisor answer to the question email within a week | Send one batched email; propose a default with evidence for each decision so silence can be read as consent where acceptable | Hamza | open |
+| R2 | Second coder not available | M | H | No name by pilot start | Ask the chair / MPI-SP now; fallback: supervisor reviews a sample, limitation reported | Hamza | open |
+| R3 | Store or policy pages change during collection | H | M | Different text on re-visit | Archive every source with URL, date, hash and app version at capture | Hamza | open |
+| R4 | Scraping blocked or against store terms | M | M | Rate limits, CAPTCHAs | Check terms first; manual capture protocol for blocked sources | Hamza | open |
+| R5 | LLM output not reproducible (model updates) | M | M | Same prompt, different labels | Freeze model identifier and settings; keep raw outputs; prefer an open-weight model | Hamza | open |
+| R6 | Reading backlog (92 works marked "to read") blocks evidence for decisions | H | M | Decision records without citations | Read by decision: start with the "Start with" column of the reading guide | Hamza | open |
+| R7 | Ethics review turns out to be required | L | H | Reply from the ethics contact | Ask for written confirmation before collection | Hamza | open |
+| R8 | Registration later than 2026-11-02 compresses the 12-week plan | M | M | Proposal not approved by 10-30 | Keep the minimum feasible study defined after the pilot | Hamza | open |
+| R9 | Data loss | L | H | — | Git + GitHub remote for sources; raw data backed up outside the repository | Hamza | open |
