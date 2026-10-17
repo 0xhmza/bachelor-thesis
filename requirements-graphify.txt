@@ -1,3 +1,4 @@
 # Project-local Graphify; PDF text support is available for deliberate expansion.
 graphifyy==0.9.90
 pypdf==6.20.1
+pymupdf==1.28.2

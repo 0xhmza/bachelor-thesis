@@ -1,19 +1,21 @@
 """Build the supervisor's review copy of the thesis as a Word document.
 
-    python scripts/build_review_docx.py            # writes 03_Thesis/Thesis_Review-Copy.docx
-    python scripts/build_review_docx.py --text     # also prints the plain text (for checks)
+    python scripts/build_review_docx.py            # from the working tree
+    python scripts/build_review_docx.py --staged   # from the git index (used by the hook)
+    python scripts/build_review_docx.py --text     # also print the plain text (for checks)
 
-The LaTeX sources stay authoritative. This script reads thesis.tex, the chapter
-and appendix files it inputs and _shared/references.bib, and writes a .docx the
-supervisor can annotate with Word comments or tracked changes. Citations become
-numbered [n] links that jump to a bookmark on the bibliography entry; entries
-link to their DOI or URL. \\ref/\\Cref become internal links. TikZ figures are
-replaced by their \\Description text, since Word cannot render TikZ.
+Writes 03_Thesis/Thesis_Review-Copy.docx. The LaTeX sources stay authoritative:
+this script reads thesis.tex, the chapter and appendix files it inputs and
+_shared/references.bib, and writes a .docx the supervisor can annotate with
+Word comments or tracked changes. Citations become numbered [n] links that jump
+to a bookmark on the bibliography entry (numbering as biblatex numeric-comp,
+sorting=nyt); entries link to their DOI or URL. \\ref/\\Cref become internal
+links. TikZ figures are replaced by their \\Description text.
 
-Only the Python standard library is used, so the post-commit hook
-(scripts/hooks/post-commit) never fails on a missing package. The output is
-gitignored: it is rebuilt from each commit, and the stamp on its first page
-names that commit.
+The pre-commit hook (scripts/hooks/pre-commit) runs this with --staged whenever
+a commit touches the thesis sources, and adds the result to the same commit, so
+the copy in the repository always matches the committed draft. Only the Python
+standard library is used, so the hook never fails on a missing package.
 """
 import datetime
 import html
@@ -31,9 +33,34 @@ BIB = os.path.join(ROOT, '_shared', 'references.bib')
 BS = chr(92)
 
 
+STAGED = '--staged' in sys.argv
+
+
+def git(*args):
+    try:
+        return subprocess.run(['git', *args], cwd=ROOT, capture_output=True, timeout=20)
+    except Exception:
+        return None
+
+
 def read(path):
+    """Read a source file from the working tree, or from the git index with --staged."""
+    if STAGED:
+        rel = os.path.relpath(path, ROOT).replace(os.sep, '/')
+        res = git('show', ':' + rel)
+        if res is not None and res.returncode == 0:
+            return res.stdout.decode('utf8')
     with open(path, encoding='utf8') as fh:
         return fh.read()
+
+
+def exists(path):
+    if STAGED:
+        rel = os.path.relpath(path, ROOT).replace(os.sep, '/')
+        res = git('cat-file', '-e', ':' + rel)
+        if res is not None and res.returncode == 0:
+            return True
+    return os.path.exists(path)
 
 
 def strip_comments(s):
@@ -49,16 +76,20 @@ def metadata():
 
 
 def git_stamp():
+    """One sentence for the first page saying which draft this copy shows."""
     def run(*args):
-        try:
-            return subprocess.run(['git', *args], cwd=ROOT, capture_output=True, text=True, timeout=20).stdout.strip()
-        except Exception:
-            return ''
-    commit = run('rev-parse', '--short', 'HEAD') or 'unknown'
-    subject = run('log', '-1', '--format=%s')
+        res = git(*args)
+        return res.stdout.decode('utf8', 'replace').strip() if res is not None and res.returncode == 0 else ''
+    head = run('rev-parse', '--short', 'HEAD') or 'unknown'
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+    if STAGED:  # the commit being made has no hash yet
+        return head, f'Generated automatically from the LaTeX sources of the commit made on {now} (the commit after {head}).'
+    sources = ['03_Thesis/thesis.tex', '03_Thesis/chapters', '03_Thesis/appendix', '03_Thesis/config',
+               '_shared/references.bib']
+    dirty = bool(run('status', '--porcelain', '--', *sources))
     date = run('log', '-1', '--format=%cd', '--date=format:%Y-%m-%d %H:%M')
-    dirty = bool(run('status', '--porcelain', '--', '03_Thesis', '_shared/references.bib'))
-    return commit, subject, date, dirty
+    return head, (f'Generated automatically from the LaTeX sources at commit {head} ({date})'
+                  + (', plus uncommitted edits.' if dirty else '.'))
 
 
 # ================================================================= bibliography
@@ -272,16 +303,30 @@ def inline(s, ctx, fmt=frozenset()):
                 i = j
                 continue
             if name in ('parencite', 'cite', 'autocite', 'textcite', 'parencites') and arg is not None:
+                prev = buf or (runs[-1][0] if runs else '')
                 flush()
                 keys = [k.strip() for k in arg.split(',') if k.strip()]
-                runs.append(('\u00a0[' if not buf.endswith(' ') else '[', fmt, None))
-                for n, key in enumerate(keys):
+                spaced = prev.endswith((' ', '\u00a0', '(')) or not prev
+                runs.append(('[' if spaced else '\u00a0[', fmt, None))
+                for key in keys:
                     if key not in ctx.cite_order:
                         ctx.cite_order.append(key)
-                    num = ctx.cite_num.get(key, '?')
+                # numeric-comp: sorted, three or more consecutive numbers compressed to a range
+                nums = sorted({ctx.cite_num[k] for k in keys if k in ctx.cite_num}) or ['?']
+                groups = []
+                for num in nums:
+                    if groups and isinstance(num, int) and num == groups[-1][-1] + 1:
+                        groups[-1].append(num)
+                    else:
+                        groups.append([num])
+                for n, grp in enumerate(groups):
                     if n:
                         runs.append((', ', fmt, None))
-                    runs.append((str(num), fmt, ('int', f'ref_{num}')))
+                    shown = [grp[0], grp[-1]] if len(grp) >= 3 else grp
+                    for m_i, num in enumerate(shown):
+                        if m_i:
+                            runs.append(('\u2013' if len(grp) >= 3 else ', ', fmt, None))
+                        runs.append((str(num), fmt, ('int', f'ref_{num}')))
                 if opt:
                     runs.extend((t, fmt | f2, l) for t, f2, l in inline(', ' + opt, ctx))
                 runs.append((']', fmt, None))
@@ -504,6 +549,8 @@ def parse_file(text, doc, ctx):
                 st += ' ' + lines[i].strip()
                 title, rest = group_arg(st, m.end() - 1)
             labs = labels_in(st)
+            # text written on the same line after the heading starts the first paragraph
+            tail = re.sub(r'\\label\{[^}]*\}', '', st[rest:]).strip()
             j = i + 1
             while j < len(lines) and lines[j].strip().startswith(BS + 'label'):
                 labs += labels_in(lines[j])
@@ -532,6 +579,8 @@ def parse_file(text, doc, ctx):
             shown = (f'Appendix {number}: ' if level == 'chapter' and doc.appendix and number else
                      f'{number} ' if number else '')
             doc.blocks.append(('h', (lvl, shown, title, mark)))
+            if tail:
+                para.append(tail)
             continue
         m = re.match(r'\\begin\{(table|figure|itemize|description|enumerate|lstlisting|verbatim)\*?\}', st)
         if m:
@@ -594,7 +643,7 @@ def load_thesis(ctx):
                 doc.blocks.append(('h', (1, '', 'Abstract', f'h_{doc.bm}')))
         elif m.group(2) and m.group(2).startswith(('chapters/', 'appendix/')):
             path = os.path.join(THESIS_DIR, m.group(2) + ('' if m.group(2).endswith('.tex') else '.tex'))
-            if os.path.exists(path):
+            if exists(path):
                 parse_file(read(path), doc, ctx)
     return doc
 
@@ -762,7 +811,7 @@ def build(print_text=False):
     ctx.cite_num = {k: n + 1 for n, k in enumerate(order)}
 
     meta = metadata()
-    commit, subject, date, dirty = git_stamp()
+    commit, stamp = git_stamp()
     w = Writer()
     body = []
     text_dump = []
@@ -778,9 +827,7 @@ def build(print_text=False):
     add(w.para(w.run(f'{meta.get("authorname", "")} · Advisor: {meta.get("advisorname", "")}', set()), 'Subtitle'))
     note = [
         ('Review copy for the supervisor. ', {'b'}),
-        (f'Generated automatically from the LaTeX sources at commit {commit}'
-         f'{" (with uncommitted changes)" if dirty else ""}, {date}'
-         f'{" — " + subject if subject else ""}. It is rebuilt after every commit, so this file always '
+        (stamp + ' It is rebuilt with every commit that changes the thesis, so this file always '
          'shows the latest committed draft.', set()),
         ('\nHow to review: ', {'b'}),
         ('add Word comments (Review → New Comment) or switch on Track Changes, then send the file back. '
@@ -888,7 +935,7 @@ def build(print_text=False):
         'xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" '
         'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
         f'<dc:title>{esc(title)} (review copy)</dc:title><dc:creator>{esc(meta.get("authorname", ""))}</dc:creator>'
-        f'<dc:description>Generated from commit {commit}</dc:description>'
+        f'<dc:description>{esc(stamp)}</dc:description>'
         f'<dcterms:created xsi:type="dcterms:W3CDTF">{now}</dcterms:created>'
         f'<dcterms:modified xsi:type="dcterms:W3CDTF">{now}</dcterms:modified></cp:coreProperties>',
     }

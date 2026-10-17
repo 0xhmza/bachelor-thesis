@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-17T16:36:50.022764+00:00",
+  "built_at_utc": "2026-10-17T17:45:13.748800+00:00",
   "fresh_semantic_files": [
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md",
@@ -48,11 +48,11 @@
     "output/research/2026-10-11_app-sampling-trial/report.md",
     "output/research/2026-10-11_germany-download-sampling/README.md",
     "output/research/2026-10-11_scraper-mechanism/research-note.md",
-    "output/research/2026-10-14_methodology-literature/README.md",
-    "requirements-graphify.txt"
+    "output/research/2026-10-14_methodology-literature/README.md"
   ],
   "needs_semantic_extraction": [
-    "00_Admin/Action-Plan_2026-10-13.md"
+    "00_Admin/Action-Plan_2026-10-13.md",
+    "requirements-graphify.txt"
   ],
   "source_hashes": {
     "03_Thesis/.vscode/extensions.json": "9aceee57773787fc454bc8437bc8d1a04d03db95d0678ed13f93d606c478951b",
@@ -86,8 +86,12 @@
     "output/research/2026-10-14_methodology-literature/oa-sources.json": "a5ca8acd1d1387e51be78e056f7f8b26193c0c55fd3f6aca20a8e7a97e9cfd75",
     "output/research/2026-10-14_methodology-literature/verification.json": "bf19c146882431b378a0051df5c8b3d7a9df131f23d7af595a0e4f557743dd3e",
     "output/research/2026-10-14_methodology-literature/verify_metadata.py": "1876fb597259e6d2e8713dc984c81436ce2867485482aaa5f1edb7d2e830ba85",
-    "scripts/thesis_graph.py": "9c73400c0502b4787573340c044a381c95d24ae9f20cc5d19b1c9f07b57beae7",
-    "00_Admin/Action-Plan_2026-10-13.md": "1d2b5150c9c00703560e19f6b98d98afd509292b24e9183ac117ece5d1383e22",
+    "scripts/build_review_docx.py": "fe0255bdd48c05b900d73360a5380f9c9f440820323f4cf2a3d416b05cbea044",
+    "scripts/hooks/install.sh": "f28a1161ab4eba0edc1993015bed02d7efcaff934a1baf73961197b9b9b2ece3",
+    "scripts/hooks/pre-commit": "2b78f336301d6ba176193b38ee7b4bd51b092f1a1216f20140302e73ab3faa1f",
+    "scripts/literature_index.py": "3a458e9f917ea8b2657f87f202d36db4f18883a8ab0392e07024d6a2801a4360",
+    "scripts/thesis_graph.py": "bcfb6807e029b5f89f13e4c49b4c8180d3a7da1d193374e8e5d301c14ace76ca",
+    "00_Admin/Action-Plan_2026-10-13.md": "37c8f9095f89349a1d3bf9254c0bdfecb3ed80dad0bd9709c36ecb5b644d3b21",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md": "1173b4216992570863ae41023e1d1ed0b39939f9ae1519f38de1a8405ef1112d",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md": "54040706ddf4d41cce8418b3f3b9c3f55b8e526b9d11d9618821ded94e858cdd",
@@ -120,7 +124,7 @@
     "output/research/2026-10-11_germany-download-sampling/README.md": "d312899125168e101412be7605965461e4c3d4c20c9f13a28bb90d54160057cf",
     "output/research/2026-10-11_scraper-mechanism/research-note.md": "d30b616e3f1621646a053d6e5c8004a7885268e99046dd408ebe5e82356119a2",
     "output/research/2026-10-14_methodology-literature/README.md": "52beac402f50e3036c0955da02ca584b241372ae62828e12149db51729f43cb8",
-    "requirements-graphify.txt": "6d494bbb7465590f0fb85189dd2e9434911908241023e80b5759a17befeb0ced",
+    "requirements-graphify.txt": "72e73236da77abc84446f5718bedd98efb99572f271e5d8f772ece43ea51e06d",
     "03_Thesis/appendix/A_codebook.tex": "b94076b046eb112ca520827f2f510e1a7d451d999e9ea2d8ec86f8b184a3d918",
     "03_Thesis/appendix/B_prompts.tex": "a3be430ddd10e0a996c28e4eaf187df583beaee77289035eb0afb68de68b4f7f",
     "03_Thesis/appendix/C_app_sample.tex": "ea7f9e8f64738783162beb58c2ba9a13934560db178384b93f91ff507335d02f",
@@ -151,9 +155,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1041,
-  "edges": 1846,
-  "communities": 70,
+  "nodes": 1119,
+  "edges": 2116,
+  "communities": 69,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

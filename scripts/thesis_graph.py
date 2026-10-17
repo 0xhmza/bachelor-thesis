@@ -28,6 +28,8 @@ from graphify.export import to_json
 from graphify.extract import extract
 from graphify.report import generate
 
+import literature_index
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'graphify-out'
 SPEC = Path(sys.prefix) / 'Lib/site-packages/graphify/skills/codex/references/extraction-spec.md'
@@ -152,6 +154,28 @@ GUIDE = LITERATURE / 'Methods-Reading-List.md'
 # would only duplicate those nodes, so these are never queued or reused.
 CATALOGUE_DRIVEN = {'01_Literature/Methods-Reading-List.md', '01_Literature/Download-Checklist.md'}
 LIT_STATS = {}
+LIT_INDEX = {}   # filled by refresh(): abstracts and reading status per work
+
+
+def abstract_text(item, limit=900):
+    """Verbatim abstract excerpt for a node description, or a note that none was found."""
+    if not item:
+        return ''
+    if item.get('abstract'):
+        text = item['abstract']
+        return ' Abstract (verbatim from the PDF): ' + (text[:limit] + '…' if len(text) > limit else text)
+    return ''
+
+
+def status_nodes(node, edge, root):
+    """One concept node per reading status, so 'still to read' is a queryable neighbourhood."""
+    ids = {}
+    for status in literature_index.STATUSES:
+        ids[status] = node('index_lit_status_' + slug(status), f'Reading status: {status}',
+                           literature_index.STATUS, 1, file_type='concept',
+                           description=f'Works marked "{status}" in 01_Literature/reading-status.csv.')
+        edge(root, ids[status], 'contains', literature_index.STATUS)
+    return ids
 
 
 def family_names(work):
@@ -238,6 +262,11 @@ def literature(node, edge, file_ids, bib_nodes, bib_dois):
             DOWNLOADS, 1, file_type='concept', description='Official web page; cite the dated page, not a PDF.')}
     for target in gaps.values():
         edge(root, target, 'contains', DOWNLOADS)
+    by_bib, by_work = literature_index.lookup(LIT_INDEX) if LIT_INDEX else ({}, {})
+    statuses = status_nodes(node, edge, root)
+    for key, bib_id in bib_nodes.items():
+        if key in by_bib:
+            edge(bib_id, statuses[by_bib[key]['status']], 'reading_status', literature_index.STATUS)
     stats = {'pdf': 0, 'html': 0, 'open_access_blocked': 0, 'paywalled': 0, 'web_only': 0}
     categories, stages, rqs = {}, {}, {}
     for work in works:
@@ -265,11 +294,18 @@ def literature(node, edge, file_ids, bib_nodes, bib_dois):
         doi = (work.get('doi') or '').lower()
         in_bib = bib_dois.get(doi)
         extra = {'doi': doi} if doi else {}
+        item = by_work.get(identifier)
+        if item:
+            extra['reading_status'] = item['status']
+            if item.get('keywords'):
+                extra['keywords'] = item['keywords']
         work_id = node('index_lit_' + slug(identifier), label, CATALOGUE, 1, file_type='paper',
-                       description=f"When: {work.get('when', '')}. Use: {work.get('use', '')} "
-                                   f"Limit: {work.get('caution', '')}".strip(),
+                       description=(f"When: {work.get('when', '')}. Use: {work.get('use', '')} "
+                                    f"Limit: {work.get('caution', '')}".strip() + abstract_text(item)),
                        download_state=state, in_thesis_bibliography=bool(in_bib), **extra)
         edge(categories[category], work_id, 'contains', CATALOGUE)
+        if item:
+            edge(work_id, statuses[item['status']], 'reading_status', literature_index.STATUS)
         if in_bib:
             edge(work_id, bib_nodes[in_bib], 'same_work_as', CATALOGUE)
         head, _, tail = work.get('when', '').partition(';')
@@ -335,8 +371,11 @@ def structural(files):
             bib_dois[doi[1].lower()] = key
         title = re.search(r'\btitle\s*=\s*\{(.*?)\}\s*,', entry, re.S | re.I)
         label = key + (': ' + re.sub(r'[{}\n]+', ' ', title[1]).strip() if title else '')
+        item = literature_index.lookup(LIT_INDEX)[0].get(key) if LIT_INDEX else None
+        status = {'reading_status': item['status']} if item else {}
         citations[key] = node('index_bib_' + slug(key), label, bib, body[:match.start()].count('\n') + 1,
-                              file_type='paper', description='Bibliography entry; verify claims in the original paper.')
+                              file_type='paper', description='Bibliography entry; verify claims in the original paper.'
+                              + abstract_text(item), **status)
     file_ids = {}
     for f in files:
         p = Path(f); rel = relative(p)
@@ -385,6 +424,8 @@ def structural(files):
 
 def refresh():
     OUT.mkdir(exist_ok=True)
+    LIT_INDEX.clear()
+    LIT_INDEX.update(literature_index.update())
     d = corpus()
     files = [f for group in d['files'].values() for f in group]
     ast = extract([Path(f) for f in d['files']['code']], cache_root=ROOT, root=ROOT, parallel=False)
@@ -491,6 +532,7 @@ def refresh():
     (OUT / '.graphify_python').write_text(sys.executable, encoding='utf-8')
     (OUT / '.graphify_root').write_text(str(ROOT), encoding='utf-8')
     subprocess.run([sys.executable, '-m', 'graphify', 'export', 'html'], cwd=ROOT, check=True)
+    literature_index.build_map(OUT / 'graph.json')
     print(f'Graph: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges, {len(communities)} communities.')
     print(f'{len(stale)} files need semantic extraction; see graphify-out/freshness.json.')
 

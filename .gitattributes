@@ -17,3 +17,7 @@
 *.docx  binary
 *.zip   binary
 *.mp4   binary
+
+# Git hooks run under sh: keep LF line endings
+scripts/hooks/*  text eol=lf
+*.sh             text eol=lf
