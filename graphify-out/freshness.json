@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-17T17:53:36.999271+00:00",
+  "built_at_utc": "2026-10-19T21:21:55.627963+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -10,11 +10,9 @@
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md",
     "00_Admin/Meeting-Notes/TEMPLATE.md",
     "00_Admin/Open-Points.md",
-    "00_Admin/README.md",
     "00_Admin/Risk-Register.md",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md",
     "00_Admin/Supervisor-Input/README.md",
-    "00_Admin/Timeline.md",
     "00_Admin/Weekly-Log.md",
     "01_Literature/README.md",
     "03_Thesis/appendix/A_codebook.tex",
@@ -56,7 +54,11 @@
     "output/research/2026-10-14_methodology-literature/README.md",
     "requirements-graphify.txt"
   ],
-  "needs_semantic_extraction": [],
+  "needs_semantic_extraction": [
+    "00_Admin/Correspondence/2026-10-19_Registration-Email.md",
+    "00_Admin/README.md",
+    "00_Admin/Timeline.md"
+  ],
   "source_hashes": {
     "03_Thesis/.vscode/extensions.json": "9aceee57773787fc454bc8437bc8d1a04d03db95d0678ed13f93d606c478951b",
     "03_Thesis/.vscode/settings.json": "88a6ecc1bb0ef5f11504b011b7c851fcaf1b9654ecda7cd1bf891e513ad5775e",
@@ -98,17 +100,18 @@
     ".github/workflows/ci.yml": "7e237f8b5c6a8cd159b821885f4527e5abbda58fb533c057acca0fceee207224",
     "00_Admin/Action-Plan_2026-10-13.md": "2be097c37c79d3831f8b8c4f5f78e4cbd8f017fc035bfabf16b6c96ca74803ac",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
+    "00_Admin/Correspondence/2026-10-19_Registration-Email.md": "2e6b71a2c3a923565c21a8276b8a5bfb9a0cdec675d1bee179e6932f379ee19f",
     "00_Admin/Decision-Log.md": "57c624e90ef6349cba80d90df039f14764f5dd5581b788c4ceaa725bd714f8bc",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md": "1173b4216992570863ae41023e1d1ed0b39939f9ae1519f38de1a8405ef1112d",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md": "54040706ddf4d41cce8418b3f3b9c3f55b8e526b9d11d9618821ded94e858cdd",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md": "02fb72d5bb4dd805d2e44c5e9893d7ca91e927bbd80ce2928af6f8d0b4e94ff1",
     "00_Admin/Meeting-Notes/TEMPLATE.md": "7eb543b606ac7fa4c707bead98ec47cd3e999ccb3df1986145ca914b78c0186e",
     "00_Admin/Open-Points.md": "058f42e4733c11c60c3b76bdc4f40b0cfcf2fa33e5d5dd287d6a23a611380322",
-    "00_Admin/README.md": "562223822a23dcfda21cd82f9115c222cf11e524f9fc8b21c78c84122f7ef549",
+    "00_Admin/README.md": "1f56401c7c246abfa7b1cc8ae4a62cb3e38cae590f666332876786a7eae1347b",
     "00_Admin/Risk-Register.md": "621de9f6ae65bf691148c66c2abfc258a4c08169b30d00f14af2317f05f0b362",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md": "adf7f59502c17a2c90a0c48aa3f66e15b49e0b402ba7127f376119f835150188",
     "00_Admin/Supervisor-Input/README.md": "e5134cc2bfb7545cb21a6c000cdb2a9fcdbe4d7391074b3660787c94e5c4310c",
-    "00_Admin/Timeline.md": "57480de2796438c3b9f81618a17c8bcb0f2d6c67c7517be4b7b2da97a2f87716",
+    "00_Admin/Timeline.md": "08a21c99b2d5081c15ad23d255b9fc342384f72d0a702ad4845b5d26274f6c8f",
     "00_Admin/Weekly-Log.md": "f7eec7cf4ecb75fb3a9a7dd2b2e6d04e471716f9e770a25eecb3dbbe23b0350b",
     "01_Literature/Download-Checklist.md": "941aed1435bf28a479369f681687e7d24c5d16c4a4221c162f08f3ad20619033",
     "01_Literature/Methods-Reading-List.md": "39187fc6c3cb8f43b582323c4992f9c44fc6546b54e4ed4fa5a8fa26ec826987",
@@ -163,9 +166,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1174,
-  "edges": 2193,
-  "communities": 69,
+  "nodes": 1167,
+  "edges": 2178,
+  "communities": 77,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

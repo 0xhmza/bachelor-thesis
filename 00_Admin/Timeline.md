@@ -25,7 +25,7 @@ tracker. The long argued version, with where each phase can slip, is archived in
 | 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources catalogued and fetched | 2026-10-16 | ◐ 89 of 93 held as PDFs in `01_Literature/PDFs/Methods-Reading/` (see `01_Literature/Download-Checklist.md`); missing: Parker 2019, two books, the APA web page. None read yet; reading and any bibliography additions stay open |
 | 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, four pages of content plus references and a one-page appendix (the approved length). The old 4-page and 25-page versions are archived in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/`). Read once more, then send |
 | 5 | Proposal approved | | ☐ |
-| 6 | Thesis registered with the Prüfungsamt | | ☐ |
+| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting his answer on the first and second examiner |
 | 7 | Keyword list + inclusion/exclusion criteria fixed | 2026-09-18 | ☑ drafted in `04_Study/App-Sample/sampling_protocol.md`; confirm thresholds with advisor |
 | 8 | App sample collected and frozen | | ☐ |
 | 9 | Codebook v1 | 2026-09-18 | ◐ structure and definitions written (`04_Study/Codebook/codebook_v1.md`); examples and counter-examples come from the pilot |
