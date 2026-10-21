@@ -1,26 +1,26 @@
 {
-  "node_count": 1196,
+  "node_count": 1447,
   "unverified_node_count": 0,
-  "raw_edge_count": 2201,
+  "raw_edge_count": 2624,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 2201,
+  "valid_candidate_edges": 2624,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 2181,
-  "directed_same_endpoint_collapsed_edges": 20,
-  "undirected_unique_endpoint_pairs": 2180,
-  "undirected_same_endpoint_collapsed_edges": 21,
-  "same_endpoint_group_count": 20,
-  "relation_variant_groups": 20,
+  "directed_unique_endpoint_pairs": 2602,
+  "directed_same_endpoint_collapsed_edges": 22,
+  "undirected_unique_endpoint_pairs": 2601,
+  "undirected_same_endpoint_collapsed_edges": 23,
+  "same_endpoint_group_count": 22,
+  "relation_variant_groups": 22,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 1167,
-  "post_build_edge_count": 2178,
+  "post_build_node_count": 1406,
+  "post_build_edge_count": 2599,
   "post_build_error": "",
   "producer_suppression": {
     "path": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
@@ -103,6 +103,26 @@
   },
   "examples": [
     {
+      "source": "01_literature_methods_digest_build_digest_locate",
+      "target": "01_literature_methods_digest_build_digest_locate_idx",
+      "edge_count": 2,
+      "relations": [
+        "calls",
+        "contains"
+      ],
+      "source_files": [
+        "01_Literature/Methods-Digest/build_digest.py"
+      ],
+      "source_locations": [
+        "L203",
+        "L207"
+      ],
+      "contexts": [
+        "",
+        "call"
+      ]
+    },
+    {
       "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table",
       "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table_clean",
       "edge_count": 2,
@@ -180,26 +200,6 @@
       "contexts": [
         "",
         "call"
-      ]
-    },
-    {
-      "source": "output_research_2026_10_11_scraper_mechanism_check_mechanism_main",
-      "target": "output_research_2026_10_11_scraper_mechanism_check_mechanism_main_fake_get",
-      "edge_count": 2,
-      "relations": [
-        "contains",
-        "indirect_call"
-      ],
-      "source_files": [
-        "output/research/2026-10-11_scraper-mechanism/check_mechanism.py"
-      ],
-      "source_locations": [
-        "L83",
-        "L88"
-      ],
-      "contexts": [
-        "",
-        "argument"
       ]
     }
   ]

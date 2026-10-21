@@ -19,6 +19,12 @@ Rules:
 - Run `python scripts/check_project.py` after editing the thesis, the bibliography or Markdown links; it must report 0 errors.
 - Record methodological choices in `00_Admin/Decision-Log.md` with evidence before the methodology states them. Organizational files never add thesis content.
 
+## Scripting projects
+
+- Give each new scripting project its own `scripts/<project-name>/` folder.
+- Version scripts with folder names `v001/`, `v002/`, etc.; preserve prior versions. Do not use Git branches or tags for script versioning.
+- Keep generated files in the version's `output/` folder, excluded from Git and Graphify. Prefer short, standalone scripts.
+
 ## Thesis authority
 
 - Main document: `03_Thesis/thesis.tex`; write in its chapters and appendices.

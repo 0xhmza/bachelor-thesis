@@ -1,0 +1,50 @@
+\stagechapter{S}{Scope and definitions}
+
+\noindent\textbf{What this stage covers.} The terms the study has to fix before any sampling or coding: what a health or fitness tracker app is, what counts as harm, risk and problem, what ``privacy'' means when it is measured as communication, what transparency requires, and what kind of study this is (a mapping or scoping exercise, a cross-sectional descriptive study of apps, a qualitative content analysis). These choices appear in the Decision Log as D3 (tracker scope and keyword space), D6 (native and platform apps), D11 (device scope) and, for the basis of the harm comparison, D12. The corpus offers definitions, not a single agreed one; each subsection lists what the sources say and what must be stated by the thesis itself.
+
+\section{What is the object: health and tracker apps}
+\begin{itemize}
+\item By function, not store category: \pa{robillard2019} requires personal input \emph{over time}; \pa{dehling2015} clusters about 24{,}000 English apps by tagged functionality into 12 archetypes and separates trackers (fitness and intimate) from information providers and calculators, with menstruation, intercourse, fertility and pregnancy trackers as one archetype \pc{dehling2015}{10}{Menstruation, intercourse, fertility, and pregnancy tracker}; \pa{malki2024} drops apps without a tracking or predictive feature.
+\item By regulation: \pa{bfarm2023} defines a DiGA as a medical device of risk class I or IIa whose main function is digital, that supports recognition, monitoring, treatment or alleviation of disease, is not primary prevention and is used by the patient or by patient and provider \pc{bfarm2023}{13}{A DiGA is a medical device that has the following properties}. The draft thesis excludes DiGA.
+\item By clinical role: \pa{apa2024} treats the app as one candidate in a clinician--patient decision with six levels (background, access, privacy and security, clinical foundation, usability, integration), without any minimum number of levels that makes an app ``good''.
+\item By intimacy: \pa{moniz2026} define intimate health technologies as ``tools, apps, and devices designed to support personal health in private contexts'' \pc{moniz2026}{2}{Intimate health technologies encompass tools, apps, and devices designed to support personal health in private contexts}; \pa{hudig2025} (fertility trackers) and \pa{cao2024} (cycle tracking after \emph{Dobbs}) show why this domain is treated apart.
+\item Boundary cases to log: sleep trackers against sleep therapy (\pa{simon2023}), mindfulness against timers and music (\pa{schultchen2021}), wearables and device companions (\pa{niksirat2024} defines wearable activity trackers by essential and accidental properties; the thesis excludes connected-device analysis, D11).
+\end{itemize}
+
+\section{What is harm, risk and problem}
+\begin{table}[t]
+\centering\small
+\caption{Working definitions found in the corpus.}
+\label{tab:S-defs}
+\begin{tabularx}{\textwidth}{@{}P{2.3cm}YP{2.6cm}@{}}
+\toprule
+\textbf{Term} & \textbf{Definition or position} & \textbf{Source}\\
+\midrule
+Harm & ``injuries, setbacks, losses, or impairments to well-being''; types and severity & \pa{citron2021}\\
+Harm (modelled) & impairment of the capacity to function as one otherwise would in one's usual context; baseline = usual context & \pa{knabenhans2026}\\
+Risk / problem & likelihood $\times$ impact of a problematic data action on individuals & \pa{brooks2017}\\
+Privacy violation & breach of context norms of appropriateness or flow & \pa{nissenbaum2004}, \pa{nissenbaum2009}\\
+Privacy problem & sixteen harmful activities in four groups & \pa{solove2006}\\
+Privacy-enhancing claim & requires that the system achieves certain flow patterns \emph{and} that the patterns embody a sound conception of privacy & \pa{martin2023}\\
+Transparency & user-centric, covers information, communication about rights and facilitation of rights, throughout the processing life cycle & \pa{wp292018}\\
+Intimate health technology & tools, apps and devices for personal health in private contexts & \pa{moniz2026}\\
+Scoping study & maps extent, range and nature of evidence; no quality appraisal or synthesis & \pa{arksey2005}, \pa{tricco2018}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+Two distinctions recur. First, \emph{harm versus risk}: \pa{citron2021} accept risk as part of many harm types, while the thesis' coding axes keep a ``generic risk'' (possible misuse without a concrete consequence) apart from a ``concrete harm''. Second, \emph{what is measured}: the thesis measures how harms and protections are \emph{communicated}, not whether harms occur; \pa{martin2023} shows that removing raw data while exposing inferences is not sufficient to claim privacy \pc{martin2023}{63}{Simply removing access to raw data—while exposing inferences—is not sufficient to argue that privacy has been protected}, which supports coding protection claims by their scope.
+
+\section{Privacy as the benchmark}
+\pa{nissenbaum2004} and the introduction of \pa{nissenbaum2009} replace a definition of privacy by appropriate flow of information under context-relative norms; \pa{martin2023} state that contextual integrity is ``basically asserting that privacy is the appropriate flow of information'' \pc{martin2023}{5}{contextual integrity (CI), basically asserting that privacy is the appropriate flow of information}. \pa{doan2025} operationalises CI parameters for policy statements; \pa{kelley2009} reduces a notice to a data--purpose--recipient triplet; \pa{schaub2015} describes notices by timing, channel, modality and control. The thesis does not need a legal definition: it needs one working benchmark (CI parameters for flows, WP260 criteria for communication) and a statement that findings are inconsistencies with that benchmark, not legal violations (as \pa{doan2025} and \pa{nouwens2020} also frame them).
+
+\section{What kind of study}
+\begin{itemize}
+\item \emph{Mapping, not appraisal.} \pa{arksey2005}: a scoping study maps the extent, range and nature of material, does not weigh evidence and can identify gaps of absence only; \pa{tricco2018} gives its reporting extension.
+\item \emph{Cross-sectional descriptive.} The empirical part (apps and documents sampled at one time, coded and counted) matches the design that \pa{vonelm2007} reports; STROBE items serve as a reporting model, not a claim of compliance.
+\item \emph{Content analysis family.} Directed, codebook-based content analysis (\pa{hsieh2005}, \pa{krippendorff2019}, \pa{mayring2000}), distinct from reflexive thematic analysis (\pa{braun2021}).
+\item \emph{Communication-only.} \pa{tangari2021}, \pa{arkalakis2024}, \pa{huckvale2015} and \pa{grundy2019} observe behaviour with traffic or code analysis; the thesis excludes this (D11) and so cannot claim that disclosures are true. \pa{li2022} chose likewise not to compare labels with behaviour and treats them as self-reports.
+\end{itemize}
+
+\begin{thesisbox}[Implications for this thesis (stage S)]
+Write a one-page definitions section whose entries each cite one row of Table~\ref{tab:S-defs}: tracker (by function: records data over time; log the boundary cases), harm (Citron and Solove types; Knabenhans definition and baseline), generic risk versus concrete harm, privacy (CI as benchmark), transparency (WP260), and the study type (descriptive mapping of communication, with an explicit ``cannot establish provider intent, actual harms or effects on users''). Keep D3, D6 and D11 as separate log entries because each changes the sample frame.
+\end{thesisbox}

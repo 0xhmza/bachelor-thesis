@@ -1,0 +1,48 @@
+\stagechapter{W}{Walkthrough}
+
+\noindent\textbf{What this stage covers.} The structured inspection of an app's interface by the researcher: which tasks, which questions at each step, how outcomes are recorded and how many inspectors. The draft thesis plan inspects 12 apps (six per domain, three Android and three iOS each) on a fresh install with synthetic data and a study account, covers tasks from finding collected and inferred data to deleting the account, and asks Wharton et al.'s four questions at each step; it is an expert inspection, not a user test. Open decision: D10 (checklist and outputs), with D11 (apps only).
+
+\section{Family 1: the cognitive walkthrough (CW)}
+\begin{itemize}
+\item \pa{polson1992} gives the theory and the second, form-based version (CW2): exploration means ``guessing what to do using cues provided by the system'' \pc{polson1992}{6}{by guessing what to do using cues provided by the system}; the input is a task scenario, assumptions about users and a correct action sequence \pc{polson1992}{5}{The input to a cognitive walkthrough session includes a detailed design description}; claims that a step is fine or problematic must be supported \pc{polson1992}{5}{Claims that a given step would not cause any difficulties must be supported}. Its form (items 2.1--2.8 on availability, label, label--goal link, wrong choices; 3.1--3.6 on goal completion) maps directly onto finding a privacy setting or policy section. Early validation: CW1 found about half of the observed errors with a false-alarm rate near 75\,\% \pc{polson1992}{37}{The false alarm rate, the proportion of errors identified in the walkthrough}.
+\item \pa{wharton1992} reports how developer teams used CW2 on three systems and is the source of rules on task selection, granularity and group process; \pa{wharton1994} is the simplified third version with four questions (will the user try to achieve the right effect, notice the action, associate it with the effect, see progress) and the ``credible story'' procedure \pc{mahatody2010}{4}{In CW3, the evaluator is invited to imagine a specific and credible scenario}.
+\item \pa{spencer2000} streamlined the method for large teams: five phases, two questions and ground rules \pc{mahatody2010}{6}{SCW is a variant of CW3 with 5 phases}, with a documented trade-off in cause detail; \pa{mahatody2010} reviews three original versions and eleven variants and finds that no study helps choose among them and that validation is thin \pc{mahatody2010}{21}{No comprehensive study has ever been made to compare the different versions and extensions}. Effectiveness depends on evaluator expertise \pc{mahatody2010}{20}{the effectiveness of the method depends greatly on the expertise of the evaluator}.
+\end{itemize}
+CW is a learnability method for walk-up-and-use interfaces \pc{mahatody2010}{2}{was designed to evaluate walk- up-and-use interfaces}. Using it for \emph{finding and understanding privacy information} is an adaptation that must be named as such; \pa{polson1992} itself says the method identifies problems only in task context and does not cover general guidelines.
+
+\section{Family 2: the walkthrough as a critical app-studies method}
+\pa{light2018} is not a usability method: the researcher takes a user's position while applying an analytic eye to acquiring, registering, using and discontinuing an app \pc{light2018}{11}{Walking through the app requires the researcher assume a user’s position}. The walkthrough examines affordances at several scales \pc{light2018}{6}{The walkthrough examines affordances at multiple levels of scale} and follows flows, since static screens miss mediation, for example location-permission requests \pc{light2018}{14}{Since attending only to static interface elements risks missing important points of mediation}. Leaving is part of the method: deleting an account can remove data from the device but not from the server \pc{light2018}{14}{this action deletes data from the user’s device but not from Facebook’s database}. \pa{duguay2023} updates it (data flows, algorithms, personalisation, updates and users are where it fails) and warns that a clean account is not neutral.
+
+\section{Family 3: heuristic evaluation and checklist-based inspection}
+\pa{nielsen1990} shows that individual evaluators find only a fraction of the problems while aggregates of independent evaluators do well; \pa{nielsen1994} gives the procedure (independent evaluation before discussion, problems listed with the violated heuristic, severity rated afterwards) and the low reliability of severity ratings. \pa{hutton2018} turns privacy into 26 heuristics with anchored ordinal levels and an explicit ``not applicable'' rule (operational sheet \pp{hutton2017heuristics}); \pa{malki2024} combines a cognitive walkthrough with Nielsen's ten heuristics and privacy-by-design guidelines on 20 apps, with two authors inspecting each app independently and problems aggregated by constant comparison. \pa{hudig2025} organises tasks by the product lifecycle (selection, set-up, use, post-use).
+
+\section{Family 4: expert inspection of privacy choices with counts}
+\pa{habib2019} built a fixed capture template, ran it with two coders ($\kappa=0.82$ on a double-coded half sample), counted the shortest action paths and used study-only accounts; \pa{habib2020} then ran an in-lab usability study ($n=24$) with tasks drawn from the expert review and coded outcomes by finding, learning, using and understanding. \pa{nouwens2020} operationalised legal requirements as observable, countable conditions (explicit consent, reject as easy as accept by click count, no pre-ticked options), a model for checks in an app's consent screen. \pa{lin2025} distinguishes a policy reminder at log-in from active confirmation. \pa{mathur2019} and \pa{gray2018} provide characteristics and strategies of dark patterns as observable codes for interface elements (see stage C). \pa{schaub2015} supplies design-space dimensions for privacy notices (timing, channel, modality, control).
+
+\begin{table}[t]
+\centering\small
+\caption{Walkthrough variants and what they offer for a privacy inspection.}
+\label{tab:W-variants}
+\begin{tabularx}{\textwidth}{@{}P{2.6cm}P{3.2cm}YY@{}}
+\toprule
+\textbf{Method} & \textbf{Core device} & \textbf{Useful for the thesis} & \textbf{Limit}\\
+\midrule
+CW2 \pa{polson1992} & three-section form, goal structure, percentage estimates & item set for finding a setting or policy; evidence rule per step & long, theory-heavy, false alarms\\
+CW3 \pa{wharton1994} & four questions, credible story & compact per-step record; knowledge requirements & learnability focus\\
+Streamlined CW \pa{spencer2000} & two questions, ground rules & documented simplification; ``note and move on'' & coarser causes\\
+App walkthrough \pa{light2018}, \pa{duguay2023} & expected-use environment; registration, use, leaving & capture of context; deletion and exit flows & interpretive, not a score\\
+Heuristic evaluation \pa{nielsen1994}, \pa{hutton2018} & heuristics with severity or anchored levels & observable ordinal checklist & severity ratings unreliable\\
+Expert privacy inspection \pa{habib2019}, \pa{habib2020} & fixed template, action counts, UAF phases & task design and effort metric & websites, not apps\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{thesisbox}[Implications for this thesis (stage W)]
+\begin{enumerate}[leftmargin=1.3em]
+\item Name the method precisely: an expert, privacy-information walkthrough that borrows CW's per-step questions and Light's registration--use--leaving structure, not a usability test and not a validated instrument (\pa{mahatody2010}). State the adaptation and its trade-offs, as \pa{spencer2000} does.
+\item Fix the tasks before collection and derive them from prior reviews (\pa{habib2020}); use realistic cross-screen tasks (\pa{wharton1992}): find collected data, reach the policy, stop optional sharing, export, delete the account. Record one documented correct path and log alternatives.
+\item Record per step: screenshot, the four answers with a credible story, knowledge requirements, outcome (completed, information not found, unsupported, access barrier) and the click count against the ideal path (\pa{habib2019}). Use anchored levels where a score is needed (\pa{hutton2018}).
+\item A single inspector undercounts (\pa{nielsen1990}); frame results as a lower bound or add an independent second inspection of a subset, with a ``blind first, discuss later'' rule (D8, D10).
+\item Keep synthetic data, a fresh install, a frozen version and a recorded persona; apps needing a paired device, payment or identity verification are skipped with a reason (D4, D11).
+\end{enumerate}
+\end{thesisbox}

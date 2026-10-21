@@ -29,6 +29,22 @@ The reading that supports each decision is mapped in
 [`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)
 ("Meeting decision → reading → extraction target") and in the literature map.
 
+## Collector development — 20 October 2026 (D2 remains open)
+
+The user requested a Python iPhone App Store keyword collector, starting with
+`fitness`, returning as much available app information as possible. The
+[collector documentation](../scripts/appstore-scraper/v001/README_app_store_search.md) records its
+technical settings and interpretation limits. Germany is the configurable
+default because the [13 October meeting](Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md)
+retains the German market; English text is requested. Apple's
+[Search API documentation](https://performance-partners.apple.com/search-api)
+supports keyword/storefront parameters, a requested limit of 1–200 and JSON
+responses. Public product pages provide supplementary privacy and listing data.
+These choices support a candidate-discovery development run, with original API
+order and raw evidence retained. They do not confirm an API-to-store-UI rank
+equivalence, a final search frame, a rating threshold, or eligibility decisions.
+No methodology chapter or sampling protocol is changed; D2 remains open.
+
 ## Record template
 
 Copy into `Decisions/Dnn_short-name.md` and link it from the register.
