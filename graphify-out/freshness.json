@@ -1,8 +1,7 @@
 {
-  "built_at_utc": "2026-10-23T08:08:21.131124+00:00",
+  "built_at_utc": "2026-10-23T08:26:25.041913+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
-    "00_Admin/Action-Plan_2026-10-13.md",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
     "00_Admin/Correspondence/2026-10-19_Registration-Email.md",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md",
@@ -53,6 +52,7 @@
     "scripts/googleplay-scraper/v001/requirements.txt"
   ],
   "needs_semantic_extraction": [
+    "00_Admin/Action-Plan_2026-10-13.md",
     "00_Admin/App-Selection-Evaluation_2026-10-23.md",
     "00_Admin/Decision-Log.md",
     "00_Admin/Decisions/D01_sample-size.md",
@@ -77,7 +77,7 @@
   "source_hashes": {
     "01_Literature/Methods-Digest/add_paper.py": "5cf51414b9fde190a2baa34c08599542b195116b1143278f3ae60ff7dedafe2f",
     "01_Literature/Methods-Digest/build_digest.py": "d9403b922fdb1924a9e0162992af88828948234059d0fafe7baeab11bd9de782",
-    "01_Literature/Methods-Digest/registry.json": "bee1c5f037d475ba11d93cac5ea71bd2479f73be267bd4d8ad62c1cd90f105ea",
+    "01_Literature/Methods-Digest/registry.json": "5289740626918b2eb9213a1c69f902c7cd8fc38d3182327fc660bc784a59341d",
     "01_Literature/Methods-Digest/tools/blocks.py": "a4952126484f99b0a50e888ed768537097449e04a9e7f45b61fe7bb68649adb4",
     "01_Literature/Methods-Digest/tools/ocr_pdf.py": "48ecc813a434e23fa2d5c9b8c87d57e52a1dc77c9e917fa623ef22d745757b11",
     "01_Literature/Methods-Digest/tools/package.py": "86e2dd347f1d78f1eb7ce59970788d1d39e896a4c2bb25e5cce322cfa1de75e3",
@@ -133,7 +133,7 @@
     "scripts/sampling-checks/v001/check_pool.py": "daf7b6a62243e8ac574a306fc0f84a722280c298886adb6f99426ff7696e9a02",
     "scripts/thesis_graph.py": "bcfb6807e029b5f89f13e4c49b4c8180d3a7da1d193374e8e5d301c14ace76ca",
     ".github/workflows/ci.yml": "7e237f8b5c6a8cd159b821885f4527e5abbda58fb533c057acca0fceee207224",
-    "00_Admin/Action-Plan_2026-10-13.md": "2be097c37c79d3831f8b8c4f5f78e4cbd8f017fc035bfabf16b6c96ca74803ac",
+    "00_Admin/Action-Plan_2026-10-13.md": "a245657e2cdc9fe1ee6b1f4913fa1b1d1dda203c009725d46c0f7350bb76cb1f",
     "00_Admin/App-Selection-Evaluation_2026-10-23.md": "16792a6a88ef818bacee618f2af0b8d95deaf7451fb9e55249a49d3957fecaf0",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Admin/Correspondence/2026-10-19_Registration-Email.md": "2e6b71a2c3a923565c21a8276b8a5bfb9a0cdec675d1bee179e6932f379ee19f",
@@ -217,9 +217,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1431,
-  "edges": 2518,
-  "communities": 116,
+  "nodes": 1427,
+  "edges": 2507,
+  "communities": 117,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
