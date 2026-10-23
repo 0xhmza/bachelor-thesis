@@ -8,6 +8,7 @@
 | `Risk-Register.md` | Risks with early signs and mitigations; reviewed weekly. |
 | `Weekly-Log.md` | Five-line weekly progress note for the supervisor. |
 | `Open-Points.md` | Decisions the proposal makes on your behalf, to confirm or overturn with the supervisor. |
+| `App-Selection-Evaluation_2026-10-23.md` | Evaluation of the proposed app selection and ranking (D1, D2, D6) against the Play pilot and the literature; proposed changes, none adopted. |
 | `Meeting-Notes/` | One file per supervisor meeting, `YYYY-MM-DD_Topic.md`. Use `TEMPLATE.md`. |
 | `Supervisor-Input/` | Material sent by the advisor between meetings: the original attachment plus a `.md` transcription. |
 | `Thesis-Offer/` | The official thesis offer as published by the chair, with the date it was captured. |

@@ -1,5 +1,10 @@
 # Candidate additional literature (found while reading)
 
+A wider search on 23 October 2026 (LLM coding of privacy policies, stance and
+protection-claim language, domains, app selection) is in
+[`../Literature-Gap-Search_2026-10-23.md`](../Literature-Gap-Search_2026-10-23.md).
+Its priority-A items are the next candidates for `add_paper.py` and cards.
+
 | Candidate | Found in | Why | Priority |
 |---|---|---|---|
 | Bondaronek et al. 2018 JMIR mHealth 6(3):e53 (physical activity apps quality, privacy items) | Alfawzan [27], Benjumea | source instrument of Alfawzan's checklist | medium |
