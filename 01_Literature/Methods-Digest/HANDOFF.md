@@ -117,6 +117,10 @@ The tables in the next subsection are the old to-do list from before this sessio
 ### Additional literature (not yet added)
 See `candidates.md`. High priority: Henson/Torous APA framework papers, Zimmeck APP-350, Cicchetti and Feinstein 1990 Part II (the "resolving the paradoxes" companion of card 034). Others: Krippendorff 2011/2016, Hertzum and Jacobsen, Gasteiger TECH, Mehrnezhad and Almeida 2021, attack trees (Schneier/Mauw), Calo 2011, Xiao 2023 (Rumi consent chatbot, cited by Moniz). Procedure: download (university network), put under `01_Literature/PDFs/Methods-Reading/12_Additions/`, `python add_paper.py '{...json...}'`, then `blocks.py` and a card.
 
+### Additions of 23 October 2026
+
+Registry nos. 101–116 are the priority-A papers of the gap search (`../Literature-Gap-Search_2026-10-23.md`), PDFs in `PDFs/Methods-Reading/13_Search-2026-10-23/`, each with a card (`cards/101_xie2025.tex` … `cards/116_mehrnezhad2024.tex`). The L chapter has two new sections (recent LLM policy studies; from model labels to conclusions) and extended table, notebox, checklist and thesisbox; H and C have one new item each. `--check`: 2,317 passages, 115 papers, 0 problems. Only the stage L volume was rebuilt; the other stage volumes and the complete volume still show the 99-paper state. Priority-A items without a PDF (Velykoivanenko 2021, Mehrnezhad & Almeida 2021, Doherty 2025, Gasteiger 2023, Martin 2015, Pollach 2005, Bhatia 2016) are listed in the gap search and the action plan (§8).
+
 ## 6. Things to tell the user at the end
 
 - Nissenbaum 2009 PDF problem and the OCR replacement (section 5).

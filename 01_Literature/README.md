@@ -13,7 +13,7 @@ tied to the bibliography rule; the **methodology corpus** is reading material.
 | `literature-index.json` | Generated: abstract and keywords copied verbatim from each local PDF's title page, cached by file hash; feeds the knowledge graph |
 | `Literature-Map.html` | Generated: interactive map of thesis chapters, cited works, the corpus, meeting decisions and reading status. Open it in a browser |
 | `PDFs/Methods-Reading/` | Reading copies of the methodology corpus in topic folders; `_Inbox/` takes hand-saved PDFs |
-| `Literature-Gap-Search_2026-10-23.md` | Gap search across the digest stages, focused on LLM coding of privacy policies: about 60 candidates with priority and use; 37 open-access copies in `PDFs/Methods-Reading/13_Search-2026-10-23/`. Not yet in the catalogue, tracker or bibliography |
+| `Literature-Gap-Search_2026-10-23.md` | Gap search across the digest stages, focused on LLM coding of privacy policies: about 75 candidates with priority and use; 46 open-access copies in `PDFs/Methods-Reading/13_Search-2026-10-23/`; the 16 priority-A papers with a PDF are registered in the Methods Digest (nos. 101–116) with cards. Not yet in the catalogue, tracker or bibliography |
 | `../output/research/2026-10-14_methodology-literature/` | The pipeline: scripts, DOI evidence, download manifest |
 
 ## Methodology reading guide — 13 October meeting

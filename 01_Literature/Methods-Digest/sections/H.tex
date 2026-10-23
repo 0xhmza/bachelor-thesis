@@ -22,6 +22,7 @@
 \item \emph{Inference and ecosystem.} \pa{niksirat2024} (236 studies on wearable trackers: health, mental-state, activity and location inferences; insurers, employers, advertisers and abusive partners as recipients; limited user awareness of third-party access); \pa{grundy2019}, \pa{huckvale2019}, \pa{arkalakis2024} for actors and the gap between declared and observed sharing.
 \item \emph{Policy and interface evidence.} \pa{malki2024}, \pa{shipp2020}, \pa{hudig2025} (ten transparency and control mechanisms by lifecycle), \pa{doan2025} (stated risks and benefits, collective harms), \pa{zych2026} (only 6\,\% of assessed mental-health apps met the item ``does the developer make clear risks associated with using the app'' \pc{zych2026}{12}{Does the developer make clear risks associated with using the app}).
 \item \emph{Regulatory statements of harm.} \pa{bfarm2023}: users in an illness situation ``must not be exploited''; \pa{wp292018}: controllers should spell out the most important consequences of complex or unexpected processing.
+\item \emph{Pathways with a named failure condition (added 23 October 2026).} Endpoint privacy zones in fitness networks hide the start and end of routes, yet the protected place could be inferred for 95.1\,\% of moderately active Strava users (\pa{hassan2018}) and, after the vendors' fixes, still for up to 85\,\% of zones \pc{dhondt2022}{1}{our attack discovers the protected location for up to 85\% of EPZs} (\pa{dhondt2022}). Personality traits can be inferred from steps and heart rate, with advertisers, insurers, employers and governments named as interested parties (\pa{zufferey2023}). For FemTech, \pa{mehrnezhad2024} list intimate partners, family, employers, insurers, advertisers, political and religious organisations and governments as threat actors, and note that the data concern partners and children too; EU law does not name FemTech data.
 \end{itemize}
 
 \begin{table}[t]
@@ -40,6 +41,9 @@
 \pa{nissenbaum2004} & norm breach as the core; six values & no coding procedure\\
 \pa{martin2023} & purpose and inference as drivers & vignette survey, US\\
 \pa{dehling2015} & damage characteristics from store metadata & English store, 2013 data\\
+\pa{hassan2018}, \pa{dhondt2022} & a fitness PET with a quantified failure (location) & attack feasibility, not victims\\
+\pa{zufferey2023} & inference capability (personality) and interested parties & one device, volunteers\\
+\pa{mehrnezhad2024} & FemTech threat actors; third parties affected & products illustrative, not sampled\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -50,5 +54,6 @@
 \item State the harm definition and baseline once (user's situation without the modelled pathway) and keep ``generic risk'' and ``concrete harm'' separate, as the coding axes do.
 \item Source each pathway: the data, adversary, access condition, capability and consequence must each have a cited origin (users' scenarios, inference studies, policy evidence). The domain sources in the draft (\pa{niksirat2024}, \pa{gabriele2020}, \pa{shipp2020}, \pa{malki2024}, \pa{hudig2025}, \pa{cao2024}) match the evidence above; \pa{moniz2026} and \pa{martin2023} can add user-perceived harms and purposes.
 \item D12 (basis of the ``best app'' comparison) should be settled by the supervisor; \pa{brooks2017} and \pa{citron2021} both warn that severity is contextual, so a ranking of apps by number of applicable pathways is not a ranking of harm.
+\item Use pathways whose protection is known to fail as test cases for Axis C: a privacy-zone claim can be compared with the conditions under which \pa{hassan2018} and \pa{dhondt2022} defeat it, which is what a human-judged ``potential mismatch'' needs.
 \end{enumerate}
 \end{thesisbox}

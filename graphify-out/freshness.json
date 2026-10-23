@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-23T08:26:25.041913+00:00",
+  "built_at_utc": "2026-10-23T08:37:25.188974+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -133,7 +133,7 @@
     "scripts/sampling-checks/v001/check_pool.py": "daf7b6a62243e8ac574a306fc0f84a722280c298886adb6f99426ff7696e9a02",
     "scripts/thesis_graph.py": "bcfb6807e029b5f89f13e4c49b4c8180d3a7da1d193374e8e5d301c14ace76ca",
     ".github/workflows/ci.yml": "7e237f8b5c6a8cd159b821885f4527e5abbda58fb533c057acca0fceee207224",
-    "00_Admin/Action-Plan_2026-10-13.md": "a245657e2cdc9fe1ee6b1f4913fa1b1d1dda203c009725d46c0f7350bb76cb1f",
+    "00_Admin/Action-Plan_2026-10-13.md": "5cb471f56ace7891ecbf9738d3a7c7b6fe60bdca272a2d805306c7c97c5dc3d2",
     "00_Admin/App-Selection-Evaluation_2026-10-23.md": "16792a6a88ef818bacee618f2af0b8d95deaf7451fb9e55249a49d3957fecaf0",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Admin/Correspondence/2026-10-19_Registration-Email.md": "2e6b71a2c3a923565c21a8276b8a5bfb9a0cdec675d1bee179e6932f379ee19f",
@@ -154,11 +154,11 @@
     "00_Admin/Weekly-Log.md": "f7eec7cf4ecb75fb3a9a7dd2b2e6d04e471716f9e770a25eecb3dbbe23b0350b",
     "01_Literature/AI Literature Analysis/README.md": "0cc579030837e60aad222118f7dab3628466fcb46f05af63a7e525b37e4c5f48",
     "01_Literature/Download-Checklist.md": "941aed1435bf28a479369f681687e7d24c5d16c4a4221c162f08f3ad20619033",
-    "01_Literature/Methods-Digest/HANDOFF.md": "0575b6db294541cbab835cf0aae7c36ec5f69fc2b527cc0fb586e6138f999f2f",
+    "01_Literature/Methods-Digest/HANDOFF.md": "01c2a1f335c57c90dc5a7109a8560cf95b5102fe966890c1c385adf07e729bd3",
     "01_Literature/Methods-Digest/candidates.md": "f26cd93dab0f247ae7c6ed0139ca3228bae624d56b3e05f7ca023dfab2d9ef5a",
     "01_Literature/Methods-Digest/handout.md": "371acfb565f0d2b5fc496739c221a5dff4b05d327846c0a22b0c63ca4610350a",
     "01_Literature/Methods-Reading-List.md": "39187fc6c3cb8f43b582323c4992f9c44fc6546b54e4ed4fa5a8fa26ec826987",
-    "01_Literature/README.md": "b1ef8a7e5d9760b0ba317c7189dbaf42852f08d74ec3655c30bb5e50766f2d65",
+    "01_Literature/README.md": "59975b028a507033e549e7ed27d3f16292fbbdf05c1654b5f6c014d0a1ac9082",
     "04_Study/App-Sample/sampling_protocol.md": "08b59630e1a8c07dacf95cffb705f81f00518b45dd7a1f787447a92cd364f484",
     "04_Study/Codebook/codebook_v1.md": "90e8133d452507ce85b22412a72922faebf38789e1da3a81b94bda08ed02a4f6",
     "04_Study/Codebook/codebook_v2.md": "7239af6f04f699a2e7300a2142eee2bc08b631fb122902cb7cb3c7ef16fd66ae",
@@ -204,7 +204,7 @@
     "03_Thesis/config/titlepage.tex": "ac56805bba396693cac0646782b5aa7bf634919e877eba5742bfd9b7e9ae2515",
     "03_Thesis/thesis.tex": "f3be96f3128758a21f1702e94d262824b13ac98c8048615ac3d08cfb597c8ed8",
     "06_Presentation/slides.tex": "90cef770d2132e894485a342862d32137cee48e788fb3fcaa3d3a7cef6641aa7",
-    "01_Literature/Literature-Gap-Search_2026-10-23.md": "635b3631c1a6937d72f63edc1e0fd9fb68624ba6c154784f18e97240e0b50078"
+    "01_Literature/Literature-Gap-Search_2026-10-23.md": "b2d982e29e3489f939c67a61bd34321b244e48b8a80ad3062128a4ef30161328"
   },
   "literature_corpus": {
     "pdf": 89,
@@ -217,9 +217,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1427,
-  "edges": 2507,
-  "communities": 117,
+  "nodes": 1429,
+  "edges": 2509,
+  "communities": 112,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

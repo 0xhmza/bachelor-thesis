@@ -15,7 +15,7 @@ landing page and must be checked before citing. The app-selection evaluation
 that uses part of this search is in
 [`00_Admin/App-Selection-Evaluation_2026-10-23.md`](../00_Admin/App-Selection-Evaluation_2026-10-23.md).
 
-Downloaded open-access copies (37 PDFs):
+Downloaded open-access copies (46 PDFs, 37 from the first round and 9 from the second, §10):
 [`PDFs/Methods-Reading/13_Search-2026-10-23/`](PDFs/Methods-Reading/13_Search-2026-10-23/).
 Priority: **A** read before freezing the method · **B** read for the related-work
 chapter or a specific decision · **C** background.
@@ -142,8 +142,41 @@ These points come from the sources above; none is a decision.
 - **Exclusions:** studies of LLMs as privacy *risks* (memorisation, chatbot privacy), LLM privacy-norm benchmarks, and policy-generation tools; they do not inform coding of provider communication.
 - **Not retrieved:** ACM (Mehrnezhad 2021, Velykoivanenko 2021, Wang 2024, Smart 2022), npj Digital Medicine (Doherty 2025), BMJ Open (Gasteiger 2023) and JMIR (Bijker 2024) blocked scripted downloads although open access; paywalled: Pollach 2005 and 2007, Bhatia 2016, Draper and Turow 2019, Martin 2015, Garg and Telang 2013, Grundy 2016, Wasil 2020. Save them through the browser or library login into [`PDFs/Methods-Reading/_Inbox/`](PDFs/Methods-Reading/_Inbox/README.md).
 
-## 10. Next steps (not done)
+## 10. Second round: recent preprints, the advisor's network and context
+
+Searched later on 23 October 2026 for 2025–2026 preprints from established groups (CMU/Penn State
+policy-annotation group, TU Berlin, Lausanne fitness-tracker group, Newcastle FemTech group, Troncoso's
+harm work) and for German and EU context. Nine more PDFs are in the same folder (46 in total).
+
+| Pri. | Work | What it shows | Use for the thesis | Copy |
+|---|---|---|---|---|
+| A | Cory, Rieder, Krämer, Raschke, Herbke, Küpper (2026). *Word-level Annotation of GDPR Transparency Compliance in Privacy Policies using LLMs.* PoPETs 2026(1) (TU Berlin) | *(read)* Word-level LLM annotation of 21 GDPR transparency requirements; passage classifier, retrieval and a self-correcting second model; 200 app policies (apps available in Germany), seven models. Reference built by six experts reviewing model output, α = 0.669. Short labels worked, long context-dependent ones did not | Closest published design to the thesis's span coding; decomposition as a pilot variant; contrast to blind coding | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Cory_2026_Word-level-LLM-annotation-GDPR-transparency_PoPETs.pdf) |
+| A | Zufferey, Humbert, Tavenard, Huguenin (2023). *Watch your Watch: Inferring Personality Traits from Wearable Activity Trackers.* USENIX Security 2023 | *(read)* 200+ Fitbit users, four months: openness, extraversion and neuroticism inferable from steps and heart rate; advertisers, insurers, employers and governments named as interested parties | Inference capability for the fitness harm tree (Lausanne group, the advisor's network) | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Zufferey_2023_Watch-your-Watch-personality-from-activity-trackers_USENIX.pdf) |
+| A | Mehrnezhad, Van Der Merwe, Catt (2024). *Mind the FemTech gap: regulation failings and exploitative systems.* Frontiers in the Internet of Things 3 | *(read)* GDPR, Swiss FADP, UK MHRA and EU MDR do not name FemTech data; most product websites track before cookie consent; threat actors include intimate partners, employers and insurers | Fertility harm tree adversaries; EU regulatory gap | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Mehrnezhad_2024_Mind-the-FemTech-gap_FrontiersIoT.pdf) |
+| B | Zufferey, Salehzadeh Niksirat, Humbert, Huguenin (2023). *"Revoked just now!" Users' Behaviors Toward Fitness-Data Sharing with Third-Party Applications.* PoPETs 2023(1) | Survey of 628 US tracker users: about half underestimate how many third-party apps have access, 63 % share data with at least one app they do not actively use, 67 % think such apps cannot see data collected before access was granted | **Advisor co-author.** Third-party access as a harm-tree component; responsibility-shifting stance (users are told to manage access) | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Zufferey_2023_Revoked-just-now-fitness-data-sharing-third-party-apps_PoPETs.pdf) |
+| B | Theis, Stellmacher, Pütz, Arend (2023). *Understanding Fitness Tracker Users' and Non-Users' Requirements for Interactive and Transparent Privacy Information.* CHI EA 2023 | Online survey (n = 204, German authors): privacy information should accompany the whole usage life cycle | RQ4: when in the interface privacy information should appear | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Theis_2023_Fitness-tracker-privacy-information-requirements_CHI-EA.pdf) |
+| B | Xiang, Pei, Yue (2025). *Exploring the Effectiveness of Google Play Store's Privacy Transparency Channels.* arXiv:2511.13576 | 190 participants: Data Safety section most intuitive, policy most informative, permission list best at raising concern | RQ4: the surfaces complement each other | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Xiang_2025_Google-Play-privacy-transparency-channels.pdf) |
+| B | Aryal, Saha, Manandhar, Chhabra, Kafle (2026). *A Systematic Evaluation of Traditional Privacy Policy Analysis Tools Against LLMs.* arXiv:2607.17075 | GPT-5.2 and Gemini-2.5 against six specialised tools (contradiction, compliance, summarisation); on OPP-115 first-party collection 81.8 % precision, 70.9 % recall | Current-model baseline; recall of 0.7 is a warning for a recall-oriented screener | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Aryal_2026_Traditional-policy-analysis-tools-vs-LLMs.pdf) |
+| B | Alsebayel, Troiano, Gunawan, Saksono, Harteveld (2025). *"An Ad Posing as Medical Advice": User Accounts of Dark UX in FemTech mHealth Apps.* PACM HCI (MobileHCI) | User reviews of 16 systematically selected FemTech apps: problematic design patterns, risks for minors | Walkthrough and interface codes for fertility apps | [DOI](https://doi.org/10.1145/3743736) |
+| C | Lainfiesta, Alsebayel, Jia, Harteveld (2026). *"I Want My Data To Be Used Purposely": Women's Data Relationships with FemTech Apps.* CHI EA 2026 | Users' views on commercial data practices | Background for the fertility domain | not retrieved |
+| C | Tang, Wang, Liu, Sarabi (2026). *Decoding the Legalese.* arXiv:2609.26680 | LLM pipeline over 10,000 policies with metrics for completeness, transparency, commitment to user protection and business emphasis | Metric ideas for Axis C | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Tang_2026_Decoding-the-legalese-corporate-privacy-policies.pdf) |
+| C | Gajavalli, Koizumi, Hasan (2025). *What's Privacy Good for? Measuring Privacy as a Shield from Harms due to Personal Data Use.* arXiv:2506.22787 | 400 students rated 14 harms from AI inferences; the harms form one construct | Harm list cross-check | [PDF](PDFs/Methods-Reading/13_Search-2026-10-23/X_Gajavalli_2025_Measuring-privacy-as-shield-from-harms.pdf) |
+| C | Jackson, Vanteeva, Fearon (2019). Breach notification letters, readability and severity. JASIST 70(11) | 512 US breach letters: more severe breaches came with more complex, longer letters and fewer numbers | Stance analogy: complexity rises with severity | [IDEAS](https://ideas.repec.org/a/bla/jinfst/v70y2019i11p1277-1289.html) |
+| C | Regulation (EU) 2025/327 (European Health Data Space), Art. 47–49 | Labelling and registration of wellness apps that claim interoperability with EHR systems | EU context for fitness apps | [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2025/327/oj) |
+| C | BSI TR-03161 (security and data protection requirements for DiGA) | German technical directive; DiGA must show compliance since 1 January 2025 (secondary source; check the BSI text) | Contrast to non-DiGA trackers in the German market | [Overview (PwC)](https://www.pwc.de/de/gesundheitswesen-und-pharma/krankenhaeuser/technologien-und-treiber/bsi-tr-03161-anforderungen-an-anwendungen-im-gesundheitswesen.html) |
+
+**Context worth knowing.** Knabenhans et al. 2026 (already core reading) appeared as IACR ePrint 2026/867
+with Carmela Troncoso, the proposed first examiner, among the authors; its harm-tree method is the
+thesis's backbone. The Lausanne fitness-tracker group (Huguenin, Humbert, Zufferey, Velykoivanenko)
+works with the advisor; four of its papers are now in the list.
+
+**Registered in the digest (23 October 2026).** The 16 priority-A papers with a local PDF are numbers
+101–116 in `Methods-Digest/registry.json`, each with a card (`cards/101_xie2025.tex` …
+`cards/116_mehrnezhad2024.tex`). The L, H and C chapters cite them. `build_digest.py --check`: 2,317
+passages anchored across 115 papers, 0 problems.
+
+## 11. Next steps (not done)
 
 1. Read the **A** items; decide which become thesis references, then apply the one rule in the [README](README.md) (PDF, row, bib entry).
-2. Register the kept items in the digest (`Methods-Digest/add_paper.py`), write cards and extend the L, C, H and A chapters.
-3. Add the open-access items that failed to download through the browser.
+2. Get the A items without a PDF (Velykoivanenko 2021, Mehrnezhad & Almeida 2021, Doherty 2025, Gasteiger 2023, Martin 2015, Pollach 2005, Bhatia 2016) through the browser or library login, then register and card them.
+3. Rebuild the other stage volumes and the complete digest when convenient (see `Methods-Digest/HANDOFF.md`, section 3a); only stage L was rebuilt on 23 October.
