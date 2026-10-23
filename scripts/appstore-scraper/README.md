@@ -9,8 +9,14 @@ Each scripting project gets its own folder under `scripts/`, with named versions
 - `v003/scraper.py`: previous selected-fields version with null placeholders.
 - `v004/scraper.py`: previous version; omits unavailable fields, App Name first,
   optional `--downloads` retrieves public monthly download estimate ranges.
-- `v005/scraper.py`: current compact Apple-only collector for sampling/ranking
+- `v005/scraper.py`: compact Apple-only collector for sampling/ranking
   metadata, including original API position and per-keyword collection provenance.
+- `v006/scraper.py`: shortest working version, shown in Appendix E of the thesis.
+  Input is a JSON file, output is JSON on stdout, and fewer fields are kept
+  (see the `fields` map). Run
+  `python scripts/appstore-scraper/v006/scraper.py scripts/appstore-scraper/v006/input.json > scripts/appstore-scraper/v006/output/run.json`
+  after creating `v006/output/`. The `Rating Count` fields keep the v005 names, so
+  `app-ranking` reads the output unchanged.
 
 ```powershell
 python scripts/appstore-scraper/v005/scraper.py fitness --region de
@@ -61,6 +67,17 @@ The capture is current; it does not reconstruct historical 2023 statistics.
 `Average Rating`. Any missing/null API fields are omitted while real zero values,
 such as a free download price, are retained.
 
+## Rating counts are storefront-specific (checked 22 October 2026)
+
+Apple's `lookup` returns different `userRatingCount` and `averageUserRating` values
+per `country`, and `scraper.py` requests with `country=<region>`. With the default
+`--region de`, `Rating Count` therefore describes the German storefront. Example
+(DE / US / GB): Yazio 446,768 / 51,379 / 12,351; Google Gemini 270,417 / 2,363,183 /
+241,116; MyFitnessPal 80,176 / 2,381,357 / 474,412. The check covered 6 apps and
+3 storefronts in one session. The Google Play counterpart does not behave this way, see
+[the Play README](../googleplay-scraper/README.md) and
+[D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md).
+
 ## Download sources checked on 20 October 2026
 
 The optional `--downloads` flag extracts Sensor Tower's public overview metadata
@@ -96,3 +113,27 @@ describes worldwide last-month snapshots, not free German cumulative counts.
 Apple's [Analytics Reports API](https://developer.apple.com/documentation/appstoreconnectapi/downloading-analytics-reports)
 provides reports for apps accessible through a developer account and requires
 an appropriate API-key role; it is not a public competitor-download lookup.
+
+## All known App Store interfaces (checked 22 October 2026)
+
+Includes interfaces that `robots.txt` disallows and interfaces open only to the
+app's developer. Tested once, at low volume, on Yazio (id 946099227). Ignoring
+`robots.txt` is the author's decision; see
+[D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md) for the inventory of
+both stores and the conclusion.
+
+| Interface | Data | Regional | robots.txt | Result |
+|---|---|---|---|---|
+| Search API `itunes.apple.com/search` | rating count and average, both also for the current version; result order | storefront | disallowed (`/search*`) | works; used by v001–v006 |
+| Lookup API `itunes.apple.com/lookup?id=…&country=…` | same fields for known IDs | storefront | allowed without a country path segment | works |
+| Product page `apps.apple.com/<cc>/app/id…` | rating count, average, 1–5★ histogram (`ratingCounts`), chart-position badge, a few review texts; schema.org `reviewCount` equals the rating count | storefront | allowed | works; repeated requests returned HTTP 429 |
+| Category chart page `apps.apple.com/<cc>/iphone/charts/6013?chart=top-free` | top 50 Health & Fitness, rank only | storefront | allowed | works |
+| Old RSS chart `itunes.apple.com/<cc>/rss/topfreeapplications/limit=200/genre=6013/json` | top 100 by category, rank only | storefront | disallowed (`/*/rss/*`) | works |
+| Old RSS reviews `itunes.apple.com/<cc>/rss/customerreviews/page=N/id=…/sortBy=mostRecent/json` | 50 reviews per page, pages 1–10: title, text, stars, version, votes, date | per storefront URL | disallowed (`/*/rss/*`) | works; no total count |
+| RSS v2 `rss.marketingtools.apple.com/api/v2/<cc>/apps/top-free/N/apps.json` | overall top free and paid apps, rank only | storefront | no rules | works; no category filter found |
+| Web-store API `amp-api.apps.apple.com` | rating data and paged reviews | storefront | — | not reached: no access token found |
+| App Store Connect Analytics (developer only) | total, first-time and redownloads by territory; ratings and reviews per country | storefront | — | needs the app's own account |
+
+None of these gives a public download count or a total of written reviews. The
+collectors record only the Search API fields; the product-page histogram and chart
+badge would need a separate capture.

@@ -1,0 +1,206 @@
+{
+  "node_count": 1447,
+  "unverified_node_count": 0,
+  "raw_edge_count": 2624,
+  "non_object_edges": 0,
+  "missing_endpoint_edges": 0,
+  "dangling_endpoint_edges": 0,
+  "external_reference_edges": 0,
+  "self_loop_edges": 0,
+  "valid_candidate_edges": 2624,
+  "exact_duplicate_edges": 0,
+  "directed_unique_endpoint_pairs": 2602,
+  "directed_same_endpoint_collapsed_edges": 22,
+  "undirected_unique_endpoint_pairs": 2601,
+  "undirected_same_endpoint_collapsed_edges": 23,
+  "same_endpoint_group_count": 22,
+  "relation_variant_groups": 22,
+  "source_file_variant_groups": 0,
+  "source_location_variant_groups": 0,
+  "context_variant_groups": 0,
+  "post_build_graph_type": "Graph",
+  "post_build_node_count": 1406,
+  "post_build_edge_count": 2599,
+  "post_build_error": "",
+  "producer_suppression": {
+    "path": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
+    "total_sites": 12,
+    "sites": [
+      {
+        "line": 1785,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 2349,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 2351,
+        "name": "seen_doc_refs",
+        "tuple_arity": 0,
+        "sample": "seen_doc_refs: set[str] = set()"
+      },
+      {
+        "line": 3018,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 3165,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids = {n.get(\"id\") for n in nodes}"
+      },
+      {
+        "line": 4175,
+        "name": "seen_keys",
+        "tuple_arity": 0,
+        "sample": "seen_keys: set[tuple] = set()"
+      },
+      {
+        "line": 4361,
+        "name": "seen_keys",
+        "tuple_arity": 0,
+        "sample": "seen_keys: set[tuple] = set()"
+      },
+      {
+        "line": 7452,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 7560,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 7639,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 8154,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 8155,
+        "name": "seen_edges",
+        "tuple_arity": 4,
+        "sample": "seen_edges: set[tuple[str, str, str, str | None]] = set()"
+      }
+    ],
+    "error": ""
+  },
+  "examples": [
+    {
+      "source": "01_literature_methods_digest_build_digest_locate",
+      "target": "01_literature_methods_digest_build_digest_locate_idx",
+      "edge_count": 2,
+      "relations": [
+        "calls",
+        "contains"
+      ],
+      "source_files": [
+        "01_Literature/Methods-Digest/build_digest.py"
+      ],
+      "source_locations": [
+        "L203",
+        "L207"
+      ],
+      "contexts": [
+        "",
+        "call"
+      ]
+    },
+    {
+      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table",
+      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table_clean",
+      "edge_count": 2,
+      "relations": [
+        "calls",
+        "contains"
+      ],
+      "source_files": [
+        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+      ],
+      "source_locations": [
+        "L11",
+        "L14"
+      ],
+      "contexts": [
+        "",
+        "call"
+      ]
+    },
+    {
+      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf",
+      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf_paragraph",
+      "edge_count": 2,
+      "relations": [
+        "calls",
+        "contains"
+      ],
+      "source_files": [
+        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+      ],
+      "source_locations": [
+        "L201",
+        "L219"
+      ],
+      "contexts": [
+        "",
+        "call"
+      ]
+    },
+    {
+      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf",
+      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf_footer",
+      "edge_count": 2,
+      "relations": [
+        "contains",
+        "indirect_call"
+      ],
+      "source_files": [
+        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+      ],
+      "source_locations": [
+        "L245",
+        "L256"
+      ],
+      "contexts": [
+        "",
+        "argument"
+      ]
+    },
+    {
+      "source": "output_research_2026_10_11_germany_download_sampling_sampling_fetch",
+      "target": "output_research_2026_10_11_germany_download_sampling_sampling_fetch_get",
+      "edge_count": 2,
+      "relations": [
+        "calls",
+        "contains"
+      ],
+      "source_files": [
+        "output/research/2026-10-11_germany-download-sampling/sampling.py"
+      ],
+      "source_locations": [
+        "L107",
+        "L69"
+      ],
+      "contexts": [
+        "",
+        "call"
+      ]
+    }
+  ]
+}

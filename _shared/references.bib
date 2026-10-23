@@ -532,3 +532,123 @@
                   Germany aged 16 and over, calendar weeks 38--43 of
                   2025.}
 }
+
+% ---------------------------------------------------------------------
+%  App-store data sources (methodology, Table on listing fields)
+% ---------------------------------------------------------------------
+
+% Documents the search endpoint and its `country` parameter ("the two-letter
+% country code for the store you want to search"). The page does not list
+% userRatingCount or averageUserRating; those were observed in responses
+% (field check of 2026-10-22). Page footer: (c) 2022 Apple Inc.
+% Checked 2026-10-22.
+@online{apple2022itunessearch,
+  author       = {{Apple Inc.}},
+  title        = {{iTunes} Search {API}},
+  organization = {Apple Services Performance Partners},
+  url          = {https://performance-partners.apple.com/search-api},
+  urldate      = {2026-10-22}
+}
+
+% Library used by the Google Play collector. The README shows app() with
+% lang and country arguments and the output keys score, ratings, reviews,
+% histogram, installs, minInstalls and realInstalls, without defining them.
+% Version 1.2.7 uploaded to PyPI on 2024-06-07 (source audit of 2026-10-11).
+% Checked 2026-10-22.
+@software{jomingyu2024googleplayscraper,
+  author  = {{JoMingyu}},
+  title   = {google-play-scraper},
+  version = {1.2.7},
+  year    = {2024},
+  url     = {https://github.com/JoMingyu/google-play-scraper},
+  urldate = {2026-10-22}
+}
+
+% Says developers see installs and uninstalls for their own apps on the
+% Play Console Dashboard and Statistics pages. Checked 2026-10-22.
+@online{google2026playstatistics,
+  author       = {{Google LLC}},
+  title        = {View App Statistics},
+  organization = {Play Console Help},
+  url          = {https://support.google.com/googleplay/android-developer/answer/139628},
+  urldate      = {2026-10-22}
+}
+
+% Says the product page shows one overview rating per App Store country or
+% region, tied to the storefront where the customer bought the app.
+% Checked 2026-10-22.
+@online{apple2026ratingsoverview,
+  author       = {{Apple Inc.}},
+  title        = {Ratings and Reviews Overview},
+  organization = {App Store Connect Help},
+  url          = {https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/ratings-and-reviews-overview},
+  urldate      = {2026-10-22}
+}
+
+% Describes Total Downloads, first-time downloads and redownloads as App
+% Store Connect Analytics metrics for the developer, with a territory
+% filter. Checked 2026-10-22.
+@online{apple2026acquisition,
+  author       = {{Apple Inc.}},
+  title        = {Acquisition},
+  organization = {App Store Connect Analytics Help},
+  url          = {https://developer.apple.com/help/app-store-connect-analytics/acquisition/acquisition},
+  urldate      = {2026-10-22}
+}
+
+% Announces country-specific ratings for phone users from November 2021
+% and device-specific ratings from early 2022. Authors are Google Play
+% product managers. Checked 2026-10-22.
+@online{grinsted2021making,
+  author       = {Grinsted, Tom and Lin, Scott and Koh, Tat Yang},
+  title        = {Making Ratings and Reviews Better for Users and Developers},
+  date         = {2021-08-23},
+  organization = {Android Developers Blog},
+  url          = {https://android-developers.googleblog.com/2021/08/making-ratings-and-reviews-better-for.html},
+  urldate      = {2026-10-22}
+}
+
+% ---------------------------------------------------------------------
+%  App sampling (methodology, App Sampling section)
+% ---------------------------------------------------------------------
+
+% Selected the 300 most frequently rated apps per store (600 in total) and
+% used rating count as a download proxy: "For Android apps, rating count
+% and download count are strongly positively correlated (Spearman r=0.89,
+% p<0.001)" (Methods). The paper does not describe the download measure or
+% the sample behind the coefficient. Checked against the PDF 2026-10-22.
+@article{sunyaev2015availability,
+  author  = {Sunyaev, Ali and Dehling, Tobias and Taylor, Patrick L. and Mandl, Kenneth D.},
+  title   = {Availability and Quality of Mobile Health App Privacy Policies},
+  journal = {Journal of the American Medical Informatics Association},
+  year    = {2015},
+  volume  = {22},
+  number  = {e1},
+  pages   = {e28--e33},
+  doi     = {10.1136/amiajnl-2013-002605}
+}
+
+% Limited the App Store to the first 250 results because Google Play shows
+% at most 250, so that results "would not be biased towards findings from
+% the iTunes App Store" (Method). Checked against the PDF 2026-10-22.
+@article{oloughlin2019reviewing,
+  author  = {O'Loughlin, Kristen and Neary, Martha and Adkins, Elizabeth C. and Schueller, Stephen M.},
+  title   = {Reviewing the Data Security and Privacy Policies of Mobile Apps for Depression},
+  journal = {Internet Interventions},
+  year    = {2019},
+  volume  = {15},
+  pages   = {110--115},
+  doi     = {10.1016/j.invent.2018.12.001}
+}
+
+% Page-view based vendor shares, not sales or installed base. September
+% 2026: Samsung 39.34 %, Apple 27.63 %, Xiaomi 21.4 %, unknown 3.96 %,
+% Huawei 1.54 %, Google 1.46 %. Checked 2026-10-22.
+@online{statcounter2026vendor,
+  author       = {{StatCounter}},
+  title        = {Mobile Vendor Market Share Germany},
+  organization = {StatCounter Global Stats},
+  url          = {https://gs.statcounter.com/vendor-market-share/mobile/germany},
+  urldate      = {2026-10-22},
+  addendum     = {Share of mobile page views by device vendor, September 2026.}
+}

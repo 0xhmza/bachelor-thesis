@@ -61,7 +61,11 @@
   \csgdef{pn@#1}{#2}\csgdef{pl@#1}{#3}\csgdef{ph@#1}{#4}}
 \newcommand\pnum[1]{\ifcsname pn@#1\endcsname\csname pn@#1\endcsname\else\textbf{??#1}\fi}
 \newcommand\plabel[1]{\ifcsname pl@#1\endcsname\csname pl@#1\endcsname\else\textbf{??#1}\fi}
-\newcommand\paperdest[1]{\ifcsstring{ph@#1}{1}{paper:#1}{bib:#1}}
+% ph@key: 1 = full text appended, 0 = no full text, 2 = paper not part of this volume (plain text)
+\newcommand\paperdest[1]{\csname pd@#1\endcsname}
+\renewcommand\regpaper[4]{%
+  \csgdef{pn@#1}{#2}\csgdef{pl@#1}{#3}\csgdef{ph@#1}{#4}%
+  \ifstrequal{#4}{1}{\csgdef{pd@#1}{paper:#1}}{\csgdef{pd@#1}{bib:#1}}}
 
 % backrefs: written to aux at shipout, collected per paper for the bibliography
 \providecommand\pcback[3]{}
@@ -80,14 +84,15 @@
     \Hy@raisedlink{\hypertarget{c:\pc@hash}{}}}%
   \edef\pc@tmp{\noexpand\protected@write\noexpand\@auxout{}%
     {\string\pcback{#1}{\noexpand\thepage}{c:\pc@hash}}}\pc@tmp
-  \begingroup\hypersetup{linkcolor=LinkBlue}%
-  \hyperlink{a:\pc@hash}{[\pnum{#1},\,p.\,#2]}\endgroup}
+  \ifcsstring{ph@#1}{2}{[\pnum{#1},\,p.\,#2]}{%
+    \begingroup\hypersetup{linkcolor=LinkBlue}%
+    \hyperlink{a:\pc@hash}{[\pnum{#1},\,p.\,#2]}\endgroup}}
 % \pp{key}: [n] -> first page of the appended full text
-\newcommand\pp[1]{\hyperlink{\paperdest{#1}}{[\pnum{#1}]}}
+\newcommand\pp[1]{\ifcsstring{ph@#1}{2}{[\pnum{#1}]}{\hyperlink{\paperdest{#1}}{[\pnum{#1}]}}}
 % \pa{key}: Author (Year) [n]
-\newcommand\pa[1]{\hyperlink{bib:#1}{\plabel{#1}}~\pp{#1}}
+\newcommand\pa[1]{\ifcsstring{ph@#1}{2}{\plabel{#1}}{\hyperlink{bib:#1}{\plabel{#1}}}~\pp{#1}}
 % \pt{key}: Author (Year)
-\newcommand\pt[1]{\hyperlink{bib:#1}{\plabel{#1}}}
+\newcommand\pt[1]{\ifcsstring{ph@#1}{2}{\plabel{#1}}{\hyperlink{bib:#1}{\plabel{#1}}}}
 % back-link from a highlighted passage to the sentence that cites it
 \newcommand\backlinkbox[3]{\hyperlink{c:#1}{\rule{0pt}{#3}\rule{#2}{0pt}}}
 \newcommand\appendixtag[3]{%

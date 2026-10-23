@@ -1,0 +1,323 @@
+% Migrated from proposal/proposal.tex (5 October 2026) on 14 October 2026.
+\chapter{Methodology}
+\label{ch:methodology}
+
+\section{Draft Status and Study Design}
+The study plan below is transferred from the proposal dated 5 October 2026.
+It describes intended work; it does not report a completed study.
+\todo{Revise this plan against the supervisor meeting of 13 October 2026:
+remove category quotas; use English primarily with German as fallback;
+include apps without a privacy policy; extend the keyword space to mental
+health trackers; exclude connected-device analysis; specify two-coder
+procedures and justify the sampling and access rules. The ordering and
+remaining thresholds require a documented decision.}
+
+The study will use structured content analysis~\parencite{krippendorff2019content}
+with an adapted cognitive walkthrough. Figure~\ref{fig:pipeline} summarises
+the workflow. Each positive code will link to a verbatim quotation, source
+location and capture date. Sampling rules, reference trees, the codebook and
+prompts will be versioned and frozen as a dated release before the main study.
+Model identifiers, settings and raw outputs will be retained so that reported
+counts can be traced to evidence.
+
+\section{Literature Review} Searches will cover privacy harms
+\parencite{solove2006taxonomy,calo2011boundaries}, tracker privacy, and
+methods for policy analysis~\parencite{wilson2016creation,zimmeck2019maps}
+and LLM-assisted annotation. The log will record databases, queries, dates and
+inclusion decisions. A comparison matrix will distinguish each study's domain,
+sources and treatment of harms.
+
+\section{Pilot} A five-app pilot (three fitness, two fertility) will test
+collection and coding boundaries and estimate capture time, coding units,
+manual effort and model cost. Pilot apps will be recoded with the final
+instrument and remain in the sample, but will not enter the validation set.
+
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\scriptsize,
+  bx/.style={draw,rounded corners=2pt,align=center,text width=29mm,
+             minimum height=13mm,inner sep=2.5pt},
+  arr/.style={-{Stealth[length=1.6mm]},semithick}]
+  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\30 fitness apps\\20 fertility apps};
+  \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs for 12};
+  \node[bx] (c) at (0,0) {\textbf{Code}\\coverage, stance\\protection claims};
+  \node[bx] (d) at (3.6,0) {\textbf{Check}\\blind manual coding\\audit missed mentions};
+  \node[bx] (e) at (7.2,0) {\textbf{Compare}\\RQ1--RQ4\\with source evidence};
+  \draw[arr] (a)--(b); \draw[arr] (b)--(c);
+  \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+\end{tikzpicture}}
+\caption{Planned workflow. The pilot will refine the instruments before they
+are frozen. Later changes will be logged and affected material recoded.}
+\Description{Five boxes connected by arrows: pilot and sample, capture,
+code, check, compare. Documents cover 50 apps and walkthroughs cover 12.}
+\label{fig:pipeline}
+\end{figure}
+
+\section{App Sampling} A fixed keyword list will cover both domains in German
+and common English listing terms, such as \emph{Schrittzähler}, \emph{Workout},
+\emph{Periode}, \emph{Eisprung} and \emph{period tracker}. The first 20 results
+per keyword and store will be recorded. Eligible listings must have at least
+1{,}000 ratings, a practical threshold to limit reliance on very small rating
+counts. Candidates will be ranked by average rating, with rating count as a
+tie-break. An app on both stores will count once. Its ranking score will use
+the rating-count-weighted mean of its eligible listings, while both listings
+will be captured. These scores select highly rated candidates within the
+search results, not the most popular apps in Germany.
+
+The target is \textbf{50 apps}, with 30 fitness and 20 fertility apps. Apps
+must collect health or body-related tracking data, be free to install, offer
+German or English text and have a reachable policy. Device companions remain
+eligible if they record or display tracking data. Duplicates and DiGA
+(Germany's reimbursable digital health applications) will be excluded. Apps serving both domains will enter the fertility stratum if cycle
+tracking is a main function, with the overlap flagged. Unreachable policies
+will be logged in the screening results before exclusion from text analysis.
+If a stratum is too small, all eligible candidates will be retained and the
+shortfall reported. Thresholds will not be lowered after inspecting results.
+
+\section{Material and Language} For each app, the core corpus will include
+the policy, store descriptions, structured store disclosures, the main product
+page, and privacy/security pages linked directly from it or the policy. A
+fixed supplementary search will capture provider-hosted privacy blog posts
+from the preceding 12 months. Ads encountered during collection will form an
+opportunistic supplement. The absence of ads or blog posts will not count as
+absence of a harm in the core corpus.
+
+Language is recorded per source. German text will be primary, with English
+used when German is unavailable; results describe this German-first corpus.
+If both exist, differences will be logged. Original wording will be coded.
+Each source will be archived with URL, date, language, file hash and app
+version where applicable. Shared policies will be coded
+once and linked to all relevant apps.
+
+\section{App Walkthroughs} Twelve distinct apps will be inspected, six per domain
+with three Android and three iOS apps in each. Selection will follow the
+ranking, alternating Android and iOS slots without reusing an app; the balance
+serves coverage, not platform comparison. Apps requiring an unavailable paired
+device, payment or identity verification will be skipped with a recorded
+reason, and unfilled slots reported. Each session will use a fresh install,
+synthetic data and a study account where required.
+
+Tasks will cover finding collected data, inferred data, breach consequences
+and incident responses, reaching the policy, stopping optional third-party
+sharing, exporting data and deleting the account. At each step the researcher
+will ask Wharton et al.'s four questions: would the user pursue the intended
+goal, notice the action, connect it to that goal and recognise progress
+\parencite{wharton1994cognitive}? The pilot will fix starting points and
+time limits. Outcomes will distinguish completion, information not found,
+unsupported tasks and access barriers. Screen recordings will preserve the
+text encountered. This is an expert inspection, not a test of real users.
+
+\section{Reference Harm Trees} Before main coding, a tree will be built for
+each domain from prior tracker research. For fitness, sources are a survey of
+tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable}
+and users' harm scenarios~\parencite{gabriele2020understanding}. For fertility,
+sources are analyses of policies, data flows and interfaces
+\parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
+user concerns~\parencite{cao2024deleted}. Sources found in the logged search
+will be added with a recorded reason. Each pathway will name the data, potential
+adversary, access conditions, capability and possible consequence. Required
+conditions will be connected explicitly, following Knabenhans et al.'s
+AND/OR approach. A prediction made for the user will not itself establish
+third-party access (Appendix~\ref{app:example}). As in Knabenhans et al., capabilities include incapabilities, such as a user
+being unable to use a feature without agreeing to data sharing.
+
+The component origins will distinguish core functionality, digital context
+and implementation choices within the stated model. For every app and
+pathway, an applicability record will note the required feature, its
+evidence (listing, policy or walkthrough), the access and context
+assumptions, the decision (applicable, not applicable or uncertain) and the
+reason. A harm category applies to an app when at least one of its pathways
+does. The trees are reference models of possible harms, not complete
+descriptions of the apps' actual systems. Uncertain cases will be counted and
+reported, not silently dropped, so that sparsely documented providers do not
+vanish from the gap analysis.
+
+\section{Harm Categories} The starting categories are Knabenhans et al.'s
+physical, economic, psychological, autonomy/deprivation, discrimination,
+reputational and societal harms~\parencite[App.~A]{knabenhans2026harms},
+drawn from Citron and Solove and the CyberPeace Institute. Following them, a
+harm is an impairment of the ability to function as one otherwise would in
+one's usual context~\parencite[\S4.1]{knabenhans2026harms}; here, the baseline
+is the user's situation without the modelled pathway. A relationship tag will
+retain Citron and Solove's relationship harms~\parencite{citron2021harms},
+which the list omits. New harms found in the pilot will be documented rather
+than forced into a category.
+
+\section{Coding Units and Axes} To code a text is to attach labels that
+record what it says. A unit will be one paragraph or one coherent block of
+interface text. Adjacent text will be available for context, but supporting quotations must
+be identified precisely. The codebook will define each label, a fitting
+example and a counter-example. Table~\ref{tab:axes} summarises the three axes.
+Appendix~\ref{app:example} shows the procedure on a constructed example.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption{Coding axes and boundaries. All example wording is constructed.
+Several labels may apply to one unit.}
+\label{tab:axes}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.6cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
+\midrule
+A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
+  & \enquote{We store your cycle dates.} \\
+\rowrule
+ & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
+  & \enquote{We estimate your fertile window.} \\
+\rowrule
+ & Concrete harm & A named negative consequence and its category
+  & \enquote{Disclosure could cause distress.} \\
+\rowrule
+ & Generic risk & Possible misuse without a concrete consequence
+  & \enquote{Your data could be used against you.} \\
+\rowrule
+ & No relevant content & None of the coverage labels applies
+  & A contact address alone \\
+\rowrule
+ & Additional details & Breach consequences, incident response and relationship impacts
+  & Code concrete response steps separately from a general legal-notice promise \\
+\midrule
+B: Stance & Acknowledged & A named harm presented as possible
+  & \enquote{A disclosure could cause distress.} \\
+\rowrule
+ & Qualified & Uncertainty or likelihood language, with its target recorded
+  & \enquote{A leak is unlikely, but could cause distress.} \\
+\rowrule
+ & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
+  & \enquote{Such distress is no cause for concern.} \\
+\rowrule
+ & Responsibility shifted & Responsibility for a named harm placed on the user
+  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
+\rowrule
+ & Denied/prevented & A named harm presented as impossible or prevented
+  & \enquote{This makes harassment impossible.} \\
+\midrule
+C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
+  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
+\rowrule
+ & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
+  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
+\rowrule
+ & Reassurance & Broad safety language without a specific measure
+  & \enquote{Your data is safe with us.} \\
+\rowrule
+ & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
+  & A residual risk outside the claim's scope is not sufficient \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\subsection{Axis A: Coverage} All explicitly mentioned nodes will be
+recorded, including whether each is asserted, presented as possible or denied.
+The highest level reached will be a separate summary, so a harm
+mention does not erase accompanying data-flow information. Feature descriptions can mention inference without presenting it as a risk.
+
+\subsection{Axis B: Stance} Stance labels will be linked to the
+particular harm and supporting span, rather than assigned to the paragraph
+as a whole. A statement may acknowledge a harm and qualify its likelihood,
+and the coder will distinguish uncertainty about a breach from uncertainty
+about its consequences. Minimisation will be judged from wording in the unit
+or adjacent text, never from inferred intent; qualification alone does not
+establish it. RQ2 thus covers stance toward named harms; dismissive language
+without one is coded as reassurance. These distinctions adapt Zou et
+al.~\parencite{zou2019might} and will be refined in the pilot.
+
+\subsection{Axis C: Protection} The coder will record the measure
+and claimed benefit, with actor, data and conditions where specified. Any
+technical measure claimed to limit exposure or misuse counts, PET-labelled or
+not, including ordinary security controls; non-technical commitments are kept
+separate. A \emph{potential mismatch} requires a pathway within the claim's
+scope and an explanation of why the measure misses its necessary conditions;
+partial protection is not rejected merely because other risks remain. Vague
+scope will be recorded as unclear, and no deployed system judged safe or
+unsafe.
+
+\section{LLM-Assisted Coding} Polisis and recent LLM approaches are precedents for
+data-practice analysis~\parencite{harkous2018polisis,rodriguez2024llm}. The
+harm-focused scheme will use prompts and a model selected on the pilot, then
+frozen~\parencite{tornberg2024best}; an open-weight model will be preferred if
+it performs close to a hosted one, keeping the run repeatable. Prompts will
+work in stages: relevant spans, then stance for detected harms, then
+protection details. All retained harm mentions and potential mismatches will
+be reviewed manually, so the model acts as a screener whose prompts favour
+recall. The author will decide tree applicability and mismatches, logging
+evidence and reasoning; uncertain outputs or missing spans enter manual
+review rather than becoming negative codes. Each unit will run three times;
+agreement is a stability check, not validation, and labels returned once are
+reviewed rather than discarded. Raw output is kept apart from adjudicated
+labels, so performance is not measured after correction.
+
+\section{Validation and Missed Mentions} Ten apps, five per domain, will be
+drawn at random with a recorded seed from providers and documents not used in
+the pilot, stratified by the language of the coded policy where both occur;
+the numbers of independent providers and unique documents will be reported.
+The author will code them fully before seeing model output, and they will not
+be used to tune prompts. Because prompt wording alone can change
+conclusions~\parencite{baumann2025llm}, two paraphrased prompts will also be
+run and headline counts compared. Disagreements will be adjudicated with each
+label's source hidden; two apps will be recoded after at least two weeks,
+before drafting, to estimate intra-coder consistency. A second coder will be
+sought for applicability, minimisation and mismatch decisions; failing that,
+the supervisor will review a sample, including judged non-mismatches, with
+disagreements recorded before discussion. A detection is correct only with
+the right label, unit and evidence span, and the staged pipeline is scored end
+to end, so first-stage misses count. Reported will be per-code precision
+(share of model labels supported), recall (share of manual mentions found)
+and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient}, with
+counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$
+despite high agreement~\parencite{feinstein1990high,gwet2008computing}.
+App-level detection is also reported, by domain and, where counts allow, by
+source and language. Exploratory 95\,\% intervals will resample providers to
+respect shared sources; with ten apps they will be wide.
+
+A separate missed-mention audit, reported apart from validation, will search
+the remaining corpus for harm-related vocabulary in both languages and check
+every unlabelled hit manually. To expose the vocabulary's blind spots, 100
+units outside the hits (or all, if fewer), allocated across domains, languages
+and sources in advance, will also be read. Recall will be reported as
+unestimable where manual positives are too few. For any code with fewer than
+20 validation positives or recall below 0.90, all relevant material will be
+checked manually or corpus-wide absence claims withheld; these are review
+triggers, not proof of accuracy.
+
+\section{Analysis and Reporting} Results will be descriptive and reported
+separately for fitness and fertility apps. For RQ1, each harm's denominator
+will include only applicable apps with the required core sources captured. A
+source the provider does not offer is recorded as such; only sources that
+exist but cannot be retrieved reduce the denominator. Inapplicable pathways
+and text with no identified mention will have different labels. Counts will be per app and surface, with
+shared-provider results also shown after grouping repeated providers.
+RQ2 will report harm--stance combinations and their denominators. RQ3 will
+summarise measures, scope, claim strength and manually reviewed mismatches.
+Examples that support and challenge the expected gap will both be retained.
+
+For RQ4, the principal policy--interface comparison will use the same 12
+inspected apps; the 50-app document analysis gives the broader overview, and
+other surface pairs report how many apps have both surfaces. At the fixed
+decision points, onboarding before consent and the privacy-settings screen,
+text shown directly, behind a visible link or not found within the task limit
+will be distinguished. Inconsistent claims will be reported apart from mere
+differences in detail. Absence will mean \enquote{no mention was identified
+in the captured material}, with the instrument's measured limitations stated.
+
+\section{Ethics and Feasibility} No human participants are planned.
+Walkthroughs use synthetic data, store terms will be checked before automated
+retrieval, and any review requirements confirmed before collection. The
+pilot's estimates will fix a minimum feasible study (core documents, the blind
+validation set, the walkthroughs) before collection; if time runs short,
+supplementary marketing collection is reduced first and other changes are
+agreed with the supervisor.
+
+\section{Limitations} The sample favours free, highly rated apps with reachable
+policies and does not represent all German users' exposure. The corpus is a
+dated snapshot, walkthroughs cover selected paths, and reference trees depend
+on the chosen literature. Unless a second coder joins, one person provides the
+reference labels, so model agreement is not independent human-coder
+reliability~\parencite{mcdonald2019reliability}. Missed mentions may remain.
+The study cannot establish provider intent, actual harms or effects on users.

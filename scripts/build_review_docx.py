@@ -582,6 +582,14 @@ def parse_file(text, doc, ctx):
             if tail:
                 para.append(tail)
             continue
+        m = re.match(r'\\lstinputlisting(?:\[[^\]]*\])?\{([^}]*)\}', st)
+        if m:  # a listing read from a source file, e.g. a script shown in an appendix
+            flush()
+            path = os.path.normpath(os.path.join(THESIS_DIR, m.group(1)))
+            if exists(path):
+                doc.blocks.append(('code', read(path).rstrip('\n')))
+            i += 1
+            continue
         m = re.match(r'\\begin\{(table|figure|itemize|description|enumerate|lstlisting|verbatim)\*?\}', st)
         if m:
             flush()

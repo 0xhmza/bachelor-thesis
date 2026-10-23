@@ -1,0 +1,64 @@
+# Google Play sampling collector
+
+`v001/scraper.py` is the Google Play counterpart of the Apple collector. It reads
+Google Play directly using the pinned open-source `google-play-scraper` parser;
+it does not use commercial estimates or the authenticated Developer API.
+
+The project has an isolated environment at `.venv/`. Setup from the repository root:
+
+```powershell
+python -m venv scripts/googleplay-scraper/.venv
+scripts/googleplay-scraper/.venv/Scripts/python.exe -m pip install -r scripts/googleplay-scraper/v001/requirements.txt
+scripts/googleplay-scraper/.venv/Scripts/python.exe scripts/googleplay-scraper/v001/scraper.py fitness --region de --limit 20
+scripts/googleplay-scraper/.venv/Scripts/python.exe scripts/googleplay-scraper/v001/scraper.py fitness "sleep tracker" -r de -n 20 -l en
+```
+
+Defaults: region `de`, language `en`, requested limit 200. Prints the JSON path in
+`v001/output/`, named `googleplay-scraper-<region>-<keywords>-<UTC timestamp>.json`.
+Create future versions as `v002/`, etc., preserving prior sources.
+
+## Recorded data
+
+App Name first, package ID, genres, developer identity, release/update/version,
+displayed install band, numeric install lower bound, raw embedded install count,
+average rating, rating/review counts, rating histogram, prices, free/IAP/advertising
+flags, age/content advisories, listing text, screenshots, videos, embedded review
+snippets and Google/developer/policy links. Missing fields are omitted; observed
+zeros are retained. Parser fallback values are disabled so a failed extraction
+does not invent zero ratings, empty screenshots, false flags or a version string.
+Developer type and historical 2023 counts are not supplied by this parser and
+are omitted. Embedded review snippets, when available, are not a review corpus.
+
+Each app retains its original `Search Position` in the parser's returned web-search
+order. Repeated apps remain under each keyword, and details are fetched once per
+distinct package. Failed details retain the search candidate and position, with
+the failure recorded in `detail_errors`. HTTP request metadata includes timestamps,
+requested/final URLs, status and response hashes. No eligibility or ranking score
+is imposed. Empty search results or fewer results than requested are not proof
+of exhaustive coverage; this parser reads one search response, without pagination.
+Its merged top-result/ordinary-result ordering is not verified native Android
+store rank and does not label advertisements versus organic entries.
+A small local search adapter handles missing/null top-result sections, which
+otherwise cause the pinned upstream search function to fail on current pages.
+It keeps the upstream field mappings and stops after the first ordinary grid.
+
+## Metric and transport limits
+
+`Downloads` is Google's displayed install band (for example `100,000,000+`),
+not a precise download count. `Minimum Installs` is its lower bound.
+`Embedded Install Count` is the field the library calls `realInstalls`: a number
+copied from Google's page data, not a third-party estimate. Its counting definition
+and update cadence are not established here, so it is not labeled exact downloads,
+users or German installs. Region is storefront context; rating/review/install
+fields must not be assumed to describe identical geographic populations. Review
+Count is the returned listing aggregate, not a preceding-12-month review count.
+
+The library's [search implementation](https://github.com/JoMingyu/google-play-scraper/blob/ce1df6d67e6d8c39826daac2f668808fc025f284/google_play_scraper/features/search.py)
+and [field mappings](https://github.com/JoMingyu/google-play-scraper/blob/ce1df6d67e6d8c39826daac2f668808fc025f284/google_play_scraper/constants/element.py)
+explain these extraction routes. The prior [project audit](../../output/research/2026-10-11_scraper-mechanism/research-note.md)
+documents their limitations. This script restores the TLS factory after importing
+the library and replaces its GET transport with certificate-verified requests,
+30-second timeouts and one-second pacing. Country-removing fallbacks and unexpected
+country/host redirects are rejected. Version-specific positional parsers can break
+when Google changes its pages; successful extraction is not independent validation
+of each metric's meaning or the app's eligibility in a final study.

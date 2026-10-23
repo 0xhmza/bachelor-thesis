@@ -77,5 +77,51 @@
   showstringspaces = false
 }
 
+% Coloured style for source code in the appendices: muted palette, bold
+% keywords and italic comments so it still reads in greyscale print.
+\definecolor{codebg}{HTML}{F6F8FA}
+\definecolor{coderule}{HTML}{B8C2CC}
+\definecolor{codekeyword}{HTML}{16537E}
+\definecolor{codebuiltin}{HTML}{6A3FA0}
+\definecolor{codestring}{HTML}{1E7B4F}
+\definecolor{codecomment}{HTML}{6B7280}
+\lstdefinelanguage{json}{
+  morestring = [b]",
+  morekeywords = {true,false,null},
+  sensitive = true
+}
+\lstdefinestyle{thesiscode}{
+  basicstyle      = \ttfamily\scriptsize,
+  keywordstyle    = \color{codekeyword}\bfseries,
+  keywordstyle    = [2]\color{codebuiltin},
+  stringstyle     = \color{codestring},
+  commentstyle    = \color{codecomment}\itshape,
+  numberstyle     = \tiny\color{codecomment},
+  numbers         = left,
+  numbersep       = 8pt,
+  stepnumber      = 1,
+  frame           = leftline,
+  rulecolor       = \color{coderule},
+  backgroundcolor = \color{codebg},
+  xleftmargin     = 1.8em,
+  framexleftmargin = 0.6em,
+  breaklines      = true,
+  breakindent     = 1.2em,
+  postbreak       = \mbox{\textcolor{codecomment}{$\hookrightarrow$}\space},
+  columns         = flexible,
+  keepspaces      = true,
+  showstringspaces = false,
+  tabsize         = 4,
+  aboveskip       = 1ex,
+  belowskip       = 1.5ex,
+  captionpos      = t
+}
+\lstdefinestyle{pythoncode}{
+  style    = thesiscode,
+  language = Python,
+  morekeywords = [2]{open,print,len,enumerate,any,dict,str,isinstance,set,list}
+}
+\lstdefinestyle{jsoncode}{style = thesiscode, language = json}
+
 % --- Helpers ---------------------------------------------------------
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}

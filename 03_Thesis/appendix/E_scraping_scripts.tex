@@ -1,0 +1,45 @@
+% Source of the listings (read from the repository at compile time, not copied):
+%   App Store collector   scripts/appstore-scraper/v006/    scraper.py, input.json
+%   Google Play collector scripts/googleplay-scraper/v002/  scraper.py, input.json, requirements.txt
+% To show a newer version, change the paths below and the two comments above.
+\chapter{Scraping Scripts}
+\label{app:scripts}
+Both collectors read a JSON file and print the result as JSON on standard
+output. They record what each store returns for a keyword search or, for Google
+Play, for a list of package IDs. They apply no eligibility rule and no ranking,
+and they do not observe app behaviour. The listings are the files used in the
+project, shown unchanged.
+
+\section{Input Format}
+\begin{description}
+  \item[\texttt{keywords}] Search terms, one request each (both scripts).
+  \item[\texttt{ids}] Google Play package IDs to look up directly, without a search.
+  \item[\texttt{region}] Two-letter storefront; \texttt{de} selects the German store.
+  \item[\texttt{language}] Interface language requested from Google Play.
+  \item[\texttt{limit}] Maximum results per keyword (default 20 on Google Play).
+\end{description}
+
+\lstinputlisting[style=jsoncode, caption={Example input for the App Store collector.}, label={lst:input-apple}]{../scripts/appstore-scraper/v006/input.json}
+
+\lstinputlisting[style=jsoncode, caption={Example input for the Google Play collector.}, label={lst:input-play}]{../scripts/googleplay-scraper/v002/input.json}
+
+\section{App Store Collector}
+The script calls Apple's documented iTunes Search API once per keyword and
+storefront, keeps iPhone-compatible results in the order returned, and pauses
+between requests to respect the rate limit. Rating counts and averages describe
+the requested storefront (Table~\ref{tab:storefront-fields}).
+
+\lstinputlisting[style=pythoncode, caption={App Store collector.}, label={lst:scraper-apple}]{../scripts/appstore-scraper/v006/scraper.py}
+
+\section{Google Play Collector}
+The script uses the open-source \texttt{google-play-scraper} parser (version
+1.2.7) to read the embedded data of the search page and the product page of each
+app. It restores TLS certificate verification, which the library disables on
+import, and rejects any request or redirect that drops the storefront
+parameter, so a result cannot silently come from another country. Failed
+lookups are recorded under \texttt{errors}. Search positions follow the order of
+the search response and are not verified as the store's native ranking. Rating
+counts, rating distribution and install figures are worldwide on Google Play
+(Table~\ref{tab:storefront-fields}).
+
+\lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../scripts/googleplay-scraper/v002/scraper.py}

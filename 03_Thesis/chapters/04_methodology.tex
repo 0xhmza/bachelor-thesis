@@ -40,7 +40,7 @@ instrument and remain in the sample, but will not enter the validation set.
   bx/.style={draw,rounded corners=2pt,align=center,text width=29mm,
              minimum height=13mm,inner sep=2.5pt},
   arr/.style={-{Stealth[length=1.6mm]},semithick}]
-  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\30 fitness apps\\20 fertility apps};
+  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\47 ranked store apps\\3 preinstalled apps};
   \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs for 12};
   \node[bx] (c) at (0,0) {\textbf{Code}\\coverage, stance\\protection claims};
   \node[bx] (d) at (3.6,0) {\textbf{Check}\\blind manual coding\\audit missed mentions};
@@ -55,26 +55,144 @@ code, check, compare. Documents cover 50 apps and walkthroughs cover 12.}
 \label{fig:pipeline}
 \end{figure}
 
-\section{App Sampling} A fixed keyword list will cover both domains in German
-and common English listing terms, such as \emph{Schrittzähler}, \emph{Workout},
-\emph{Periode}, \emph{Eisprung} and \emph{period tracker}. The first 20 results
-per keyword and store will be recorded. Eligible listings must have at least
-1{,}000 ratings, a practical threshold to limit reliance on very small rating
-counts. Candidates will be ranked by average rating, with rating count as a
-tie-break. An app on both stores will count once. Its ranking score will use
-the rating-count-weighted mean of its eligible listings, while both listings
-will be captured. These scores select highly rated candidates within the
-search results, not the most popular apps in Germany.
+\section{App Sampling}
+\paragraph{Candidates.} A fixed list of 19 keywords will cover both domains in
+German and common English listing terms, such as \emph{Schrittzähler},
+\emph{Workout}, \emph{Periode}, \emph{Eisprung} and \emph{period tracker}. Each
+keyword will be searched in the German App Store and the German Google Play
+store with the collectors in Appendix~\ref{app:scripts}, and the first 20
+results per keyword and store will be recorded with the date of collection.
+Listings found by several keywords will be merged.
 
-The target is \textbf{50 apps}, with 30 fitness and 20 fertility apps. Apps
-must collect health or body-related tracking data, be free to install, offer
-German or English text and have a reachable policy. Device companions remain
-eligible if they record or display tracking data. Duplicates and DiGA
-(Germany's reimbursable digital health applications) will be excluded. Apps serving both domains will enter the fertility stratum if cycle
-tracking is a main function, with the overlap flagged. Unreachable policies
-will be logged in the screening results before exclusion from text analysis.
-If a stratum is too small, all eligible candidates will be retained and the
-shortfall reported. Thresholds will not be lowered after inspecting results.
+\paragraph{Ranking by exposure.} The study concerns the communication that
+users meet, so candidates will be ranked by how widely an app is used, not by
+how well it is rated. Neither store publishes download counts
+(Table~\ref{tab:storefront-fields}), so the number of ratings will stand in for
+use. Sunyaev et al.\ selected the 300 most frequently rated apps per store on
+the same grounds and reported a Spearman correlation of 0.89 between rating
+count and download count on Android~\parencite{sunyaev2015availability}. The
+relationship will be checked again on the candidate pool: Google Play shows a
+worldwide rating count and a worldwide install figure for each app, and their
+Spearman rank correlation will be reported. A pilot collection on 22 October
+2026 with all 19 keywords found 159 Google Play apps with both figures; their
+correlation was 0.96, and 0.94 for the 135 apps with at least 1{,}000 ratings.
+The App Store publishes no downloads, so the check rests on Google Play. Eligible listings need at least
+1{,}000 ratings. Each store will be ranked separately, because App Store counts
+describe the German storefront and Google Play counts the worldwide store, so
+the two counts cannot be compared directly.
+
+\paragraph{Store balance.} Both stores will have equal weight, as in earlier
+reviews that took the same number of apps from each
+store~\parencite{sunyaev2015availability,oloughlin2019reviewing}. Apps will be
+taken alternately from the two ranked lists, starting with Google Play, whose
+operating system runs on most German smartphones~\parencite{statcounter2026vendor}.
+An app already selected through the other store will be skipped, so each app
+counts once and both of its listings are captured. Selection stops at 47 apps,
+about half from each store.
+
+\paragraph{Preinstalled apps.} Three places are reserved for health apps that
+ship with the phone. They reach users without a download and so cannot be
+ranked by the same measure. The rule covers phone vendors with at least 10\,\%
+of German mobile use; in September 2026 these were Samsung (39\,\%), Apple
+(28\,\%) and Xiaomi (21\,\%)~\parencite{statcounter2026vendor}. Their
+preinstalled health or fitness trackers are Apple Health and Apple Fitness on
+the iPhone and Samsung Health on Samsung phones. No preinstalled tracker on
+Xiaomi's international software could be identified, so Xiaomi contributes
+none, and Huawei and Google fall below the threshold with about 1.5\,\% each. A
+preinstalled app that also appears in the ranked lists moves to this group, and
+the ranked selection continues to 47. Apple Health has no store listing, so it
+will be analysed through its documentation and the device.
+
+Neither store publishes German figures for every listing field, and the two
+stores split their fields differently. Apple shows one summary rating per
+country or region, tied to the storefront where the customer bought the
+app~\parencite{apple2026ratingsoverview}. Google Play has shown phone users
+ratings from their registered country since November
+2021~\parencite{grinsted2021making}. Download counts are reported only to an
+app's developer, in App Store Connect~\parencite{apple2026acquisition} and in the
+Play Console~\parencite{google2026playstatistics}. These sources do not say
+which public field follows which rule, so Table~\ref{tab:storefront-fields}
+rests on a field check. On 22 October 2026 it requested the same listings from
+the German, US and British storefronts and compared the values from Apple's
+search and lookup endpoint~\parencite{apple2022itunessearch}, the App Store
+product pages, and the Google Play product pages read with an open-source
+parser~\parencite{jomingyu2024googleplayscraper}. On the App Store, every rating
+figure describes the requested storefront and no worldwide total is published.
+On Google Play, the rating count and the install figures were the same in every
+storefront, while the average rating and the one-to-five-star breakdown
+changed: the breakdown is the country's distribution scaled to the worldwide
+count. Both stores show an app's position in a category chart of the
+storefront. The check covered few apps in one session, so it shows how the
+fields behave and does not enter the sample. The two stores therefore count
+ratings on different bases.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption{Public listing data by geographic basis. Observed on 22 October 2026
+for up to six App Store and five Google Play listings in the German (DE), US
+and British (GB) storefronts; fields shown only on product pages were checked
+for one app per store in DE and US. \emph{Market-specific}: the value changed
+with the storefront. \emph{Worldwide}: it was identical across storefronts.
+A field check, not part of the sample.}
+\label{tab:storefront-fields}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Field} & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Rating count & \textbf{Market-specific}, also for the current version; no
+  worldwide total. Yazio: 446{,}768 (DE), 51{,}379 (US), 12{,}351 (GB)
+  & \textbf{Worldwide}, labelled \enquote{reviews} on the page; no country
+  count. Home Workout: 4{,}045{,}258 (DE, US), 4{,}045{,}260 (GB) \\
+\midrule
+Average rating & \textbf{Market-specific}, also for the current version.
+  Yazio: 4.62 (DE), 4.70 (US)
+  & \textbf{Market-specific}. MyFitnessPal: 3.94 (DE), 4.41 (US) \\
+\midrule
+One-to-five-star breakdown & \textbf{Market-specific}, on the product page
+  only. Yazio five-star: 349{,}509 (DE), 42{,}759 (US)
+  & \textbf{Mixed}: the country's distribution scaled to the worldwide count.
+  MyFitnessPal one-star: 428{,}497 (DE), 205{,}443 (US) \\
+\midrule
+Written reviews & A few review texts on the product page; \textbf{no public
+  count}
+  & Undocumented embedded count, not displayed, \textbf{market-specific}.
+  MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
+\midrule
+Downloads or installs & \textbf{Not public}; reported to the developer
+  only~\parencite{apple2026acquisition}
+  & \textbf{Worldwide} band on the page (\enquote{100M+}) and an
+  undocumented exact count (Home Workout: 303{,}142{,}208 in all three);
+  country figures to the developer only~\parencite{google2026playstatistics} \\
+\midrule
+Chart position & \textbf{Market-specific} badge on the product page (Yazio:
+  no.~3 in Health \& Fitness, DE) and public category chart pages
+  & \textbf{Market-specific} badge when ranked (MyFitnessPal: no.~2 top
+  grossing in Health \& Fitness, US; none in DE) \\
+\midrule
+Search result order & Endpoint order per storefront; not verified as the
+  native store rank
+  & Page order per storefront; not verified as the native store rank \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Sample size and eligibility.} The target is \textbf{50 apps}: 47
+ranked store apps and 3 preinstalled apps. The number of preinstalled apps
+follows from the vendor rule, and the ranking fills the rest of the target.
+There are no quotas per domain; fitness and fertility apps compete in one
+ranking, and the resulting mix will be reported. Apps must collect health or
+body-related tracking data, be free to install, offer German or English text
+and have a reachable policy. Device companions remain eligible if they record
+or display tracking data. Duplicates and DiGA (Germany's reimbursable digital
+health applications) will be excluded. Apps serving both domains will be
+flagged. Unreachable policies will be logged in the screening results before
+exclusion from text analysis. If fewer than 47 eligible store apps are found,
+all will be retained and the shortfall reported. Thresholds will not be lowered
+after inspecting results.
 
 \section{Material and Language} For each app, the core corpus will include
 the policy, store descriptions, structured store disclosures, the main product
@@ -314,8 +432,10 @@ validation set, the walkthroughs) before collection; if time runs short,
 supplementary marketing collection is reduced first and other changes are
 agreed with the supervisor.
 
-\section{Limitations} The sample favours free, highly rated apps with reachable
-policies and does not represent all German users' exposure. The corpus is a
+\section{Limitations} The sample favours free, frequently rated apps with
+reachable policies and does not represent all German users' exposure. Rating
+counts are a proxy for use: Google Play's count is worldwide rather than
+German, and apps that prompt users to rate collect more ratings. The corpus is a
 dated snapshot, walkthroughs cover selected paths, and reference trees depend
 on the chosen literature. Unless a second coder joins, one person provides the
 reference labels, so model agreement is not independent human-coder

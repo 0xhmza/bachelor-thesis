@@ -12,12 +12,12 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 
 | ID | Question | Status | Evidence so far | Record |
 |---|---|---|---|---|
-| D1 | Sample size and stopping rule | open | Meeting 10-13: first 50 eligible, no quotas | — |
-| D2 | Store search, ranking, rating/download floor | open | Meeting 10-13; sampling trial 2026-10-11 | — |
+| D1 | Sample size and stopping rule | proposed (47 ranked + 3 preinstalled, no quotas) | Meeting 10-13: first 50 eligible, no quotas | [D01](Decisions/D01_sample-size.md) |
+| D2 | Store search, ranking, rating/download floor | ranking, floor and store balance proposed; search frame open | Meeting 10-13; sampling trial 2026-10-11; storefront check 2026-10-22 | [D02](Decisions/D02_ranking-and-rating-floor.md) |
 | D3 | Tracker scope and keyword space | open | Meeting 10-13: add mental health, sleep, specialised | — |
 | D4 | Payment, trial and account eligibility | open | Meeting 10-13 | — |
 | D5 | Apps without a privacy policy | open | Meeting 10-13: include, report absence | — |
-| D6 | Native / platform health apps | open | Meeting 10-13 | — |
+| D6 | Native / platform health apps | proposed (Apple Health, Apple Fitness, Samsung Health) | Meeting 10-13; StatCounter vendor shares | [D06](Decisions/D06_preinstalled-apps.md) |
 | D7 | Language rule per material type | open | Meeting 10-13: English first, German fallback | — |
 | D8 | Two-coder procedure | open | Meeting 10-13 | — |
 | D9 | LLM role and acceptance thresholds | open | Proposal; meeting 10-13 | — |

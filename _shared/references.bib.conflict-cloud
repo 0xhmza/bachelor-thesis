@@ -1,0 +1,534 @@
+% =====================================================================
+%  Shared bibliography — used by 03_Thesis (incl. proposal/) and 06_Presentation
+%  Add every new source HERE only. Never keep a second .bib file.
+%
+%  Key convention:  lastnameYEARfirstword   e.g. citron2021harms
+%
+%  House rule for `note`: it is PRINTED in the reference list, so it may
+%  only carry information a reader needs (an open-access pointer, the
+%  method behind a non-academic statistic). Everything else — provenance,
+%  verification records, why a key is spelled the way it is — goes in a
+%  % comment above the entry.
+% =====================================================================
+
+% ---------------------------------------------------------------------
+%  Core literature from the thesis offer
+% ---------------------------------------------------------------------
+
+% Key kept as citron2021harms after the SSRN posting year (2021); the
+% entry itself carries the 2022 Boston University Law Review details.
+% Also circulated as GWU Legal Studies Research Paper No. 2021-11.
+% The seven-category typology is at pp. 830–861.
+@article{citron2021harms,
+  author  = {Citron, Danielle Keats and Solove, Daniel J.},
+  title   = {Privacy Harms},
+  journal = {Boston University Law Review},
+  volume  = {102},
+  pages   = {793--863},
+  year    = {2022},
+  url     = {https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf}
+}
+
+% The camera-ready PDF footer prints 10.1145/3313831.3376346. The ACM DL
+% record and DBLP both give 3376651, which is the DOI used here.
+% Checked 2026-09-18.
+@inproceedings{gabriele2020understanding,
+  author    = {Gabriele, Sandra and Chiasson, Sonia},
+  title     = {Understanding Fitness Tracker Users' Security and Privacy
+               Knowledge, Attitudes and Behaviours},
+  booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in
+               Computing Systems},
+  pages     = {1--12},
+  year      = {2020},
+  address   = {Honolulu, HI, USA},
+  publisher = {ACM},
+  doi       = {10.1145/3313831.3376651}
+}
+
+@article{niksirat2024wearable,
+  author    = {Salehzadeh Niksirat, Kavous and Velykoivanenko, Lev and
+               Zufferey, No{\'e} and Cherubini, Mauro and Huguenin, K{\'e}vin
+               and Humbert, Mathias},
+  title     = {Wearable Activity Trackers: A Survey on Utility, Privacy,
+               and Security},
+  journal   = {ACM Computing Surveys},
+  volume    = {56},
+  number    = {7},
+  articleno = {183},
+  eid       = {183},
+  numpages  = {40},
+  pages     = {1--40},
+  year      = {2024},
+  doi       = {10.1145/3645091}
+}
+
+@book{nissenbaum2009privacy,
+  author    = {Nissenbaum, Helen},
+  title     = {Privacy in Context: Technology, Policy, and the Integrity
+               of Social Life},
+  publisher = {Stanford University Press},
+  address   = {Stanford, CA},
+  year      = {2009},
+  isbn      = {978-0-8047-5237-4}
+}
+
+% ---------------------------------------------------------------------
+%  Supervisor's reading list, 2026-09-05
+%  See 00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md
+% ---------------------------------------------------------------------
+
+@misc{knabenhans2026harms,
+  author       = {Knabenhans, Christian and Veitch, Shannon and
+                  Raynal, Mathilde and Stadler, Theresa and
+                  Chatel, Sylvain and Lueks, Wouter and Troncoso, Carmela},
+  title        = {On the (Privacy) Harms of the European Digital Identity
+                  Framework},
+  year         = {2026},
+  howpublished = {Cryptology ePrint Archive, Paper 2026/867},
+  note         = {Preprint, version of 4 May 2026 (revised 16 September
+                  2026); section references follow the May version},
+  url          = {https://eprint.iacr.org/2026/867}
+}
+
+% Page range verified against the published issue PDF on 2026-09-18:
+% the article runs to printed page 64.
+@article{martin2025cookies,
+  author  = {Martin, Kirsten and Nissenbaum, Helen and Shmatikov, Vitaly},
+  title   = {No Cookies For You!: Evaluating the Promises of Big Tech's
+             `Privacy-Enhancing' Techniques},
+  journal = {Georgetown Law Technology Review},
+  volume  = {9},
+  number  = {1},
+  pages   = {1--64},
+  year    = {2025},
+  addendum = {SSRN abstract 4655228.}
+}
+
+@inproceedings{hudig2025intimate,
+  author    = {Hudig, Anna Ida and Singh, Jatinder},
+  title     = {Intimate Data Sharing: Enhancing Transparency and Control in
+               Fertility Tracking},
+  booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in
+               Computing Systems},
+  pages     = {1--24},
+  year      = {2025},
+  address   = {Yokohama, Japan},
+  publisher = {ACM},
+  doi       = {10.1145/3706598.3714089}
+}
+
+@inproceedings{malki2024exploring,
+  author    = {Malki, Lisa Mekioussa and Kaleva, Ina and Patel, Dilisha and
+               Warner, Mark and Abu-Salma, Ruba},
+  title     = {Exploring Privacy Practices of Female mHealth Apps in a
+               Post-Roe World},
+  booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in
+               Computing Systems},
+  pages     = {1--24},
+  year      = {2024},
+  address   = {Honolulu, HI, USA},
+  publisher = {ACM},
+  doi       = {10.1145/3613904.3642521}
+}
+
+% Survey of US women from states with differing abortion policies.
+% The quoted phrase in the title uses \mkbibquote so that biblatex nests
+% it as inner (single) quotes inside the title's own quotation marks.
+@inproceedings{cao2024deleted,
+  author    = {Cao, Jiaxun and Laabadli, Hiba and Mathis, Chase H. and
+               Stern, Rebecca D. and Emami-Naeini, Pardis},
+  title     = {\mkbibquote{I Deleted It After the Overturn of Roe v. Wade}:
+               Understanding Women's Privacy Concerns Toward Period-Tracking
+               Apps in the Post Roe v. Wade Era},
+  booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in
+               Computing Systems},
+  pages     = {1--22},
+  year      = {2024},
+  address   = {Honolulu, HI, USA},
+  publisher = {ACM},
+  doi       = {10.1145/3613904.3642042}
+}
+
+% No DOI; the work predates DOI registration. The four walkthrough
+% questions are in Table 5.1, p. 106. PDF of the full volume is in
+% 01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf.
+@incollection{wharton1994cognitive,
+  author    = {Wharton, Cathleen and Rieman, John and Lewis, Clayton and
+               Polson, Peter},
+  title     = {The Cognitive Walkthrough Method: A Practitioner's Guide},
+  booktitle = {Usability Inspection Methods},
+  editor    = {Nielsen, Jakob and Mack, Robert L.},
+  pages     = {105--140},
+  publisher = {John Wiley \& Sons},
+  address   = {New York},
+  year      = {1994},
+  isbn      = {0-471-01877-5}
+}
+
+% ---------------------------------------------------------------------
+%  Own literature search, 2026-09-18
+%  Covers the three areas the supervisor asked for in the 2026-09-05
+%  input, §8: privacy harms · health-tracker security and privacy ·
+%  methodology (privacy-policy analysis, cognitive walkthrough).
+%  Every entry below was checked against the publisher record or the
+%  paper itself on 2026-09-18.
+% ---------------------------------------------------------------------
+
+% --- Privacy harms: conceptual groundwork -----------------------------
+
+% SSRN abstract 667622.
+@article{solove2006taxonomy,
+  author  = {Solove, Daniel J.},
+  title   = {A Taxonomy of Privacy},
+  journal = {University of Pennsylvania Law Review},
+  volume  = {154},
+  number  = {3},
+  pages   = {477--560},
+  year    = {2006},
+  doi     = {10.2307/40041279}
+}
+
+% Article 8 of the issue. Distinguishes subjective privacy harm (the
+% perception of unwanted observation) from objective privacy harm (the
+% unanticipated or coerced use of information against a person).
+@article{calo2011boundaries,
+  author  = {Calo, M. Ryan},
+  title   = {The Boundaries of Privacy Harm},
+  journal = {Indiana Law Journal},
+  volume  = {86},
+  number  = {3},
+  pages   = {1131--1162},
+  year    = {2011},
+  url     = {https://www.repository.law.indiana.edu/ilj/vol86/iss3/8/}
+}
+
+% --- Health trackers: security and privacy ----------------------------
+
+% 30 Android menstrual apps analysed.
+@article{shipp2020period,
+  author  = {Shipp, Laura and Blasco, Jorge},
+  title   = {How Private Is Your Period?: A Systematic Analysis of
+             Menstrual App Privacy Policies},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  volume  = {2020},
+  number  = {4},
+  pages   = {491--510},
+  year    = {2020},
+  doi     = {10.2478/popets-2020-0083}
+}
+
+% 29/36 apps transmitted to Google or Facebook. Specific company naming:
+% 12/28 for Google and 6/12 for Facebook (not 12 of the combined 29).
+@article{huckvale2019assessment,
+  author  = {Huckvale, Kit and Torous, John and Larsen, Mark E.},
+  title   = {Assessment of the Data Sharing and Privacy Practices of
+             Smartphone Apps for Depression and Smoking Cessation},
+  journal = {JAMA Network Open},
+  volume  = {2},
+  number  = {4},
+  pages   = {e192542},
+  year    = {2019},
+  doi     = {10.1001/jamanetworkopen.2019.2542}
+}
+
+% --- Stated practice vs. actual practice ------------------------------
+
+% Almost 5,000 Android apps; 81% misrepresent data collection or sharing
+% in the Data Safety section.
+@inproceedings{arkalakis2024abandon,
+  author    = {Arkalakis, Ioannis and Diamantaris, Michalis and
+               Moustakas, Serafeim and Ioannidis, Sotiris and
+               Polakis, Jason and Ilia, Panagiotis},
+  title     = {Abandon All Hope Ye Who Enter Here: A Dynamic,
+               Longitudinal Investigation of {Android}'s Data Safety
+               Section},
+  booktitle = {Proceedings of the 33rd USENIX Security Symposium
+               (USENIX Security 24)},
+  pages     = {5645--5662},
+  year      = {2024},
+  publisher = {USENIX Association},
+  address   = {Philadelphia, PA, USA},
+  url       = {https://www.usenix.org/conference/usenixsecurity24/presentation/arkalakis}
+}
+
+% 36 weekly snapshots of 1.6 million apps, July 2021 – March 2022.
+@inproceedings{li2022ios,
+  author    = {Li, Yucheng and Chen, Deyuan and Li, Tianshi and
+               Agarwal, Yuvraj and Cranor, Lorrie Faith and
+               Hong, Jason I.},
+  title     = {Understanding {iOS} Privacy Nutrition Labels: An
+               Exploratory Large-Scale Analysis of App Store Data},
+  booktitle = {Extended Abstracts of the 2022 CHI Conference on Human
+               Factors in Computing Systems},
+  pages     = {1--7},
+  year      = {2022},
+  address   = {New Orleans, LA, USA},
+  publisher = {ACM},
+  doi       = {10.1145/3491101.3519739}
+}
+
+% 161 US breach notification letters; hedging language ("might") in
+% what companies tell affected people after a breach. The closest
+% precedent for coding stance in provider communication. Checked
+% against the ACM DL record on 2026-09-29. Pages verified through
+% Crossref on 2026-10-05.
+@inproceedings{zou2019might,
+  author    = {Zou, Yixin and Danino, Shawn and Sun, Kaiwen and
+               Schaub, Florian},
+  title     = {You `Might' Be Affected: An Empirical Analysis of
+               Readability and Usability Issues in Data Breach
+               Notifications},
+  booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in
+               Computing Systems},
+  year      = {2019},
+  address   = {Glasgow, Scotland, UK},
+  publisher = {ACM},
+  doi       = {10.1145/3290605.3300424},
+  pages     = {1--14}
+}
+
+% Design-probe study of user perceptions and privacy management in
+% intimate-health technologies; argues for communicating potential harms.
+% Online first, no volume or pages yet. Checked against the Taylor &
+% Francis record on 2026-10-05.
+@article{moniz2025toward,
+  author  = {Moniz, Diana P. and Almeida, Teresa},
+  title   = {Toward Risk Communication in Intimate Health Technologies},
+  journal = {International Journal of Human--Computer Interaction},
+  year    = {2025},
+  doi     = {10.1080/10447318.2025.2597502},
+  note    = {Published online 11 December 2025}
+}
+
+% Adjacent risk-communication study. Publisher DOI metadata verified
+% through Crossref on 2026-10-05, with the author manuscript on ORBilu.
+@incollection{doan2024transparency,
+  author    = {Doan, Xengie and Do{\u g}an, Fatma S{\"u}meyra and Rossi, Arianna},
+  title     = {Analysis of Transparency and User-Relevancy of {DTC} Company Policies},
+  booktitle = {Privacy Symposium 2024},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  year      = {2024},
+  pages     = {191--215},
+  doi       = {10.1007/978-3-031-76265-9_9}
+}
+
+% --- Methodology: analysing privacy policies --------------------------
+
+% Introduces the OPP-115 corpus and its annotation scheme for data
+% practices. Corpus at https://usableprivacy.org/data
+@inproceedings{wilson2016creation,
+  author    = {Wilson, Shomir and Schaub, Florian and
+               Dara, Aswarth Abhilash and Liu, Frederick and
+               Cherivirala, Sushain and Leon, Pedro Giovanni and
+               Andersen, Mads Schaarup and Zimmeck, Sebastian and
+               Sathyendra, Kanthashree Mysore and Russell, N. Cameron and
+               Norton, Thomas B. and Hovy, Eduard and
+               Reidenberg, Joel and Sadeh, Norman},
+  title     = {The Creation and Analysis of a Website Privacy Policy
+               Corpus},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association
+               for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {1330--1340},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/P16-1126}
+}
+
+@inproceedings{harkous2018polisis,
+  author    = {Harkous, Hamza and Fawaz, Kassem and Lebret, R{\'e}mi and
+               Schaub, Florian and Shin, Kang G. and Aberer, Karl},
+  title     = {Polisis: Automated Analysis and Presentation of Privacy
+               Policies Using Deep Learning},
+  booktitle = {Proceedings of the 27th USENIX Security Symposium
+               (USENIX Security 18)},
+  pages     = {531--548},
+  year      = {2018},
+  publisher = {USENIX Association},
+  address   = {Baltimore, MD, USA}
+}
+
+@article{zimmeck2019maps,
+  author  = {Zimmeck, Sebastian and Story, Peter and Smullen, Daniel and
+             Ravichander, Abhilasha and Wang, Ziqi and
+             Reidenberg, Joel R. and Russell, N. Cameron and
+             Sadeh, Norman},
+  title   = {{MAPS}: Scaling Privacy Compliance Analysis to a Million
+             Apps},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  volume  = {2019},
+  number  = {3},
+  pages   = {66--86},
+  year    = {2019},
+  doi     = {10.2478/popets-2019-0037}
+}
+
+@article{rodriguez2024llm,
+  author  = {Rodriguez, David and Yang, Ian and
+             Del Alamo, Jose M. and Sadeh, Norman},
+  title   = {Large Language Models: A New Approach for Privacy Policy
+             Analysis at Scale},
+  journal = {Computing},
+  volume  = {106},
+  number  = {12},
+  pages   = {3879--3903},
+  year    = {2024},
+  doi     = {10.1007/s00607-024-01331-9},
+  addendum = {Preprint: arXiv:2405.20900.}
+}
+
+% --- Methodology: inspection and qualitative coding --------------------
+
+% Guidelines for LLM annotation: fixed model versions, structured
+% prompts, prompt stability, and validation only after prompts are
+% final. Checked against the journal page on 2026-10-05.
+@article{tornberg2024best,
+  author  = {T{\"o}rnberg, Petter},
+  title   = {Best Practices for Text Annotation with Large Language Models},
+  journal = {Sociologica},
+  volume  = {18},
+  number  = {2},
+  pages   = {67--85},
+  year    = {2024},
+  doi     = {10.6092/issn.1971-8853/19461}
+}
+
+% 37 annotation tasks from 21 studies, 18 LLMs: about 31% of hypotheses
+% reached a wrong conclusion depending on model and prompt choices.
+% Preprint; checked against the arXiv record on 2026-10-05.
+@misc{baumann2025llm,
+  author       = {Baumann, Joachim and R{\"o}ttger, Paul and Urman, Aleksandra
+                  and Wendsj{\"o}, Albert and Plaza-del-Arco, Flor Miriam and
+                  Gruber, Johannes B. and Hovy, Dirk},
+  title        = {Large Language Model Hacking: Quantifying the Hidden Risks
+                  of Using {LLMs} for Text Annotation},
+  year         = {2025},
+  howpublished = {arXiv preprint arXiv:2509.08825},
+  url          = {https://arxiv.org/abs/2509.08825}
+}
+
+% Standard reference for (quantitative) content analysis and for
+% reliability of predefined codes. Checked against the SAGE record
+% on 2026-09-29.
+@book{krippendorff2019content,
+  author    = {Krippendorff, Klaus},
+  title     = {Content Analysis: An Introduction to Its Methodology},
+  edition   = {4},
+  publisher = {SAGE},
+  address   = {Thousand Oaks, CA},
+  year      = {2019},
+  isbn      = {978-1-5063-9566-1}
+}
+
+% The kappa paradox: high observed agreement but low kappa when the
+% marginals are unbalanced, i.e. when a code is rare. Checked against
+% PubMed 2348207 on 2026-09-29.
+@article{feinstein1990high,
+  author  = {Feinstein, Alvan R. and Cicchetti, Domenic V.},
+  title   = {High Agreement but Low Kappa: {I}. The Problems of Two
+             Paradoxes},
+  journal = {Journal of Clinical Epidemiology},
+  volume  = {43},
+  number  = {6},
+  pages   = {543--549},
+  year    = {1990},
+  doi     = {10.1016/0895-4356(90)90158-L}
+}
+
+% Introduces the AC1 coefficient, which avoids the kappa paradoxes when
+% a category is rare. Checked against the Wiley record on 2026-10-05.
+@article{gwet2008computing,
+  author  = {Gwet, Kilem Li},
+  title   = {Computing Inter-Rater Reliability and Its Variance in the
+             Presence of High Agreement},
+  journal = {British Journal of Mathematical and Statistical Psychology},
+  volume  = {61},
+  number  = {1},
+  pages   = {29--48},
+  year    = {2008},
+  doi     = {10.1348/000711006X126600}
+}
+
+@article{cohen1960coefficient,
+  author  = {Cohen, Jacob},
+  title   = {A Coefficient of Agreement for Nominal Scales},
+  journal = {Educational and Psychological Measurement},
+  volume  = {20},
+  number  = {1},
+  pages   = {37--46},
+  year    = {1960},
+  doi     = {10.1177/001316446002000104}
+}
+
+@article{mcdonald2019reliability,
+  author  = {McDonald, Nora and Schoenebeck, Sarita and Forte, Andrea},
+  title   = {Reliability and Inter-Rater Reliability in Qualitative
+             Research: Norms and Guidelines for {CSCW} and {HCI}
+             Practice},
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  volume  = {3},
+  number  = {CSCW},
+  pages   = {1--23},
+  year    = {2019},
+  doi     = {10.1145/3359174}
+}
+
+% --- Legal and market context -----------------------------------------
+
+% Articles used in the proposal: 4(15) and Recital 35 health data,
+% 9(1) special categories, 13–14 transparency, 13(2)(e) consequences of
+% not providing data, 13(2)(f)/14(2)(g) consequences of automated
+% decision-making, 33(3)(c)/34(2) likely consequences of a breach,
+% Recital 39 awareness of risks.
+@misc{gdpr2016,
+  author       = {{European Parliament and Council of the European Union}},
+  title        = {Regulation (EU) 2016/679 of 27 April 2016 on the
+                  Protection of Natural Persons with Regard to the
+                  Processing of Personal Data and on the Free Movement
+                  of Such Data (General Data Protection Regulation)},
+  year         = {2016},
+  howpublished = {Official Journal of the European Union, L 119,
+                  4 May 2016, pp. 1--88},
+  url          = {https://eur-lex.europa.eu/eli/reg/2016/679/oj}
+}
+
+% WP29 guidelines, endorsed by the EDPB on 25 May 2018. Recommends that
+% controllers spell out "the most important consequences of the
+% processing". Guidance, not an operative obligation. Checked against
+% the EDPB PDF on 2026-09-29.
+@misc{wp292018transparency,
+  author       = {{Article 29 Data Protection Working Party}},
+  title        = {Guidelines on Transparency under Regulation 2016/679},
+  year         = {2018},
+  howpublished = {WP260 rev.01, adopted 29 November 2017, as last revised
+                  and adopted 11 April 2018; endorsed by the EDPB},
+  url          = {https://www.edpb.europa.eu/documents/guideline/transparency_en},
+  urldate      = {2026-10-05}
+}
+
+% Unfair Commercial Practices Directive; governs misleading claims in
+% store listings and advertising, including privacy claims.
+@misc{ucpd2005,
+  author       = {{European Parliament and Council of the European Union}},
+  title        = {Directive 2005/29/EC of 11 May 2005 Concerning Unfair
+                  Business-to-Consumer Commercial Practices in the
+                  Internal Market (Unfair Commercial Practices Directive)},
+  year         = {2005},
+  howpublished = {Official Journal of the European Union, L 149,
+                  11 June 2005, pp. 22--39},
+  url          = {https://eur-lex.europa.eu/eli/dir/2005/29/oj}
+}
+
+% Non-academic source, so the method stays in the printed note.
+@online{bitkom2025health,
+  author       = {{Bitkom Research}},
+  title        = {Dr. {KI}: Wenn der Chatbot zum medizinischen Ratgeber wird},
+  date         = {2025-11-20},
+  organization = {Bitkom Research GmbH, Berlin},
+  url          = {https://bitkom-research.de/news/digital-health-2025},
+  urldate      = {2026-10-05},
+  addendum     = {Representative telephone survey of 1{,}145 people in
+                  Germany aged 16 and over, calendar weeks 38--43 of
+                  2025.}
+}
