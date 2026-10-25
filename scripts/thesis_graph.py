@@ -148,7 +148,7 @@ def import_semantic():
 
 LITERATURE = ROOT / '01_Literature'
 CATALOGUE = LITERATURE / 'methodology-literature.json'
-DOWNLOADS = ROOT / 'output/research/2026-10-14_methodology-literature/download-status.json'
+DOWNLOADS = ROOT / '01_Literature/download-status.json'
 GUIDE = LITERATURE / 'Methods-Reading-List.md'
 # Generated from the catalogue and parsed by `literature()`; semantic extraction
 # would only duplicate those nodes, so these are never queued or reused.

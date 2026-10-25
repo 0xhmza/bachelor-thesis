@@ -1,8 +1,0 @@
-{
-  "tests_passed": 6,
-  "raw_response_hashes_verified": 26,
-  "embedded_source_exact": true,
-  "offline_metadata_reproduction_identical": true,
-  "final_sample_not_fabricated": true,
-  "note": "Ranking tests use temporary constructed data, never study downloads."
-}

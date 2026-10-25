@@ -27,12 +27,6 @@ graphify-out/
 *.toc
 *.lof
 *.lot
-output/research/*/raw/
-output/research/*/processed/
-output/research/*/qa/
-output/research/*/config/
-output/research/*/evidence/
-output/reviews/
 # Reading-guide exports and the paper copies stay out of semantic extraction. The
 # catalogue JSON and download manifest are read directly by scripts/thesis_graph.py,
 # which indexes every catalogued work, its local copy and its gaps (never paper text).

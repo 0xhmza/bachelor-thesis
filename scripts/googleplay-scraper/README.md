@@ -29,7 +29,7 @@ The ID mode was tested live on 22 October 2026. The keyword mode reuses the v001
 search adapter unchanged; it was run on 22 October with 19 keywords (the pilot in
 [D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md)) at the author's
 direction, although `robots.txt` disallows the `/store/search` path (see the
-[mechanism note](../../output/research/2026-10-11_scraper-mechanism/research-note.md)).
+mechanism note (removed on 25 October 2026; in Git history)).
 
 `v003/scraper.py` is the sampling collector of 23 October 2026 (D2, D3). It keeps
 every v002 safeguard and adds developer ID, genre ID, minimum installs, rating
@@ -123,7 +123,7 @@ Count is the returned listing aggregate, not a preceding-12-month review count.
 
 The library's [search implementation](https://github.com/JoMingyu/google-play-scraper/blob/ce1df6d67e6d8c39826daac2f668808fc025f284/google_play_scraper/features/search.py)
 and [field mappings](https://github.com/JoMingyu/google-play-scraper/blob/ce1df6d67e6d8c39826daac2f668808fc025f284/google_play_scraper/constants/element.py)
-explain these extraction routes. The prior [project audit](../../output/research/2026-10-11_scraper-mechanism/research-note.md)
+explain these extraction routes. The prior project audit (removed on 25 October 2026; in Git history)
 documents their limitations. This script restores the TLS factory after importing
 the library and replaces its GET transport with certificate-verified requests,
 30-second timeouts and one-second pacing. Country-removing fallbacks and unexpected

@@ -1,26 +1,26 @@
 {
-  "node_count": 1793,
+  "node_count": 1461,
   "unverified_node_count": 0,
-  "raw_edge_count": 3114,
+  "raw_edge_count": 2538,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 3114,
+  "valid_candidate_edges": 2538,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 3085,
-  "directed_same_endpoint_collapsed_edges": 29,
-  "undirected_unique_endpoint_pairs": 3082,
-  "undirected_same_endpoint_collapsed_edges": 32,
-  "same_endpoint_group_count": 29,
-  "relation_variant_groups": 29,
+  "directed_unique_endpoint_pairs": 2516,
+  "directed_same_endpoint_collapsed_edges": 22,
+  "undirected_unique_endpoint_pairs": 2513,
+  "undirected_same_endpoint_collapsed_edges": 25,
+  "same_endpoint_group_count": 22,
+  "relation_variant_groups": 22,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 1739,
-  "post_build_edge_count": 3079,
+  "post_build_node_count": 1427,
+  "post_build_edge_count": 2511,
   "post_build_error": "",
   "producer_suppression": {
     "path": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
@@ -123,19 +123,19 @@
       ]
     },
     {
-      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table",
-      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_md_table_clean",
+      "source": "scripts_app_ranking_v002_rank_spearman",
+      "target": "scripts_app_ranking_v002_rank_spearman_ranks",
       "edge_count": 2,
       "relations": [
         "calls",
         "contains"
       ],
       "source_files": [
-        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+        "scripts/app-ranking/v002/rank.py"
       ],
       "source_locations": [
-        "L11",
-        "L14"
+        "L122",
+        "L134"
       ],
       "contexts": [
         "",
@@ -143,19 +143,19 @@
       ]
     },
     {
-      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf",
-      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf_paragraph",
+      "source": "scripts_app_ranking_v002_rank_main",
+      "target": "scripts_app_ranking_v002_rank_main_run",
       "edge_count": 2,
       "relations": [
         "calls",
         "contains"
       ],
       "source_files": [
-        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+        "scripts/app-ranking/v002/rank.py"
       ],
       "source_locations": [
-        "L201",
-        "L219"
+        "L165",
+        "L170"
       ],
       "contexts": [
         "",
@@ -163,19 +163,19 @@
       ]
     },
     {
-      "source": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf",
-      "target": "output_research_2026_10_11_app_sampling_trial_scripts_build_report_render_pdf_footer",
+      "source": "scripts_app_ranking_v002_rank_main",
+      "target": "scripts_app_ranking_v002_rank_main_per_year",
       "edge_count": 2,
       "relations": [
         "contains",
         "indirect_call"
       ],
       "source_files": [
-        "output/research/2026-10-11_app-sampling-trial/scripts/build_report.py"
+        "scripts/app-ranking/v002/rank.py"
       ],
       "source_locations": [
-        "L245",
-        "L256"
+        "L177",
+        "L188"
       ],
       "contexts": [
         "",
@@ -183,23 +183,23 @@
       ]
     },
     {
-      "source": "output_research_2026_10_11_germany_download_sampling_sampling_fetch",
-      "target": "output_research_2026_10_11_germany_download_sampling_sampling_fetch_get",
+      "source": "scripts_app_ranking_v002_rank_main",
+      "target": "scripts_app_ranking_v002_rank_main_blend",
       "edge_count": 2,
       "relations": [
-        "calls",
-        "contains"
+        "contains",
+        "indirect_call"
       ],
       "source_files": [
-        "output/research/2026-10-11_germany-download-sampling/sampling.py"
+        "scripts/app-ranking/v002/rank.py"
       ],
       "source_locations": [
-        "L107",
-        "L69"
+        "L180",
+        "L189"
       ],
       "contexts": [
         "",
-        "call"
+        "argument"
       ]
     }
   ]

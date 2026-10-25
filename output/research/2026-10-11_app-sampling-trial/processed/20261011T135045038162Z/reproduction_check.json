@@ -1,9 +1,0 @@
-{
-  "offline_reproduction_identical": true,
-  "file_hashes": {
-    "listings.json": "bb9a056950be1d84f8f34bc7dc9380a60c5450222542d0b7dafe5453774fee16",
-    "screening.json": "95d753e54d5afaa195aaadcdff036b5c1704f03eecd346dc2d0f4113b91cad73",
-    "trial_working_set.json": "ddefd7a1161cf296a835d625f8bc7935613e9bd76158a21f74b298b35fbe3f1e",
-    "trial_working_set.csv": "f5af04e6f9c779e75c1c0c1f10c2fb1ee639034a78fad877bea15e4576c7dfdd"
-  }
-}

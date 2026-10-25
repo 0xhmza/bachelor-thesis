@@ -12,7 +12,7 @@ The existing CycleMate worked example remains in Appendix A.
 
 The methodology marks the revisions required by the supervisor meeting of
 13 October. Empirical results, final conclusions and personal submission metadata
-remain unfinished. See `output/reviews/2026-10-14_proposal-migration.md` for the transfer map.
+remain unfinished.
 
 ```powershell
 .\build.ps1 thesis       # main thesis; latexmk handles pdflatex and biber
@@ -62,7 +62,6 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 | `05_Data/` | Raw, processed and analysis study material; raw data is gitignored |
 | `06_Presentation/` | Beamer presentation |
 | `_shared/` | Single bibliography |
-| `output/research/` | Dated research: sampling trials and their evidence, and the methodology-literature pipeline (retrieval scripts, DOI evidence, download manifest) |
 | `99_Archive/` | Application material and compact cleanup recovery archive |
 | `scripts/` | Graphify integration (LaTeX/BibTeX structure, literature layer), review-copy builder, project checks, git hooks |
 | `.github/` | CI: checks, review copy and thesis PDF on every push |
@@ -122,4 +121,4 @@ The retired `_junk/` folder, sync conflicts and temporary build/review files are
 removed from the active project. Source/PDF recovery is stored in
 `99_Archive/2026-10-14_cleanup-recovery.zip`; full removed folders/files are kept in
 the adjacent `../bachelor-thesis-cleanup-20261014/` because permanent deletion was
-blocked by automatic approval review. See `output/reviews/2026-10-14_cleanup.json`.
+blocked by automatic approval review.

@@ -8,7 +8,7 @@ A checked box means a verified local copy is available, **not that the paper has
 
 ## Adding a missing copy
 
-Automated retrieval uses only public, honestly identified requests; it does not log in, solve verification checks or use shadow libraries. To close a gap, save the PDF from a normal browser (your own library access is fine) into `01_Literature/PDFs/Methods-Reading/_Inbox/`, then run `.venv/Scripts/python.exe output/research/2026-10-14_methodology-literature/import_manual.py`. The importer matches each file to a catalogue entry by title, first-author surname and DOI, refuses anything it cannot identify (scans without a text layer: `--assume ID`), files it under the right topic folder and regenerates this checklist.
+Automated retrieval uses only public, honestly identified requests; it does not log in, solve verification checks or use shadow libraries. To close a gap, save the PDF from a normal browser (your own library access is fine) into `01_Literature/PDFs/Methods-Reading/_Inbox/`; the importer script was removed on 25 October 2026 (in Git history), so file it by hand under the naming rule. The importer matches each file to a catalogue entry by title, first-author surname and DOI, refuses anything it cannot identify (scans without a text layer: `--assume ID`), files it under the right topic folder and regenerates this checklist.
 
 ## App reviews
 

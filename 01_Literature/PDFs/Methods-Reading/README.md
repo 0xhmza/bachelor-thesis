@@ -20,4 +20,4 @@ These are reading candidates; downloading does not mark them as read or add them
 | [10_Harm-and-Context](10_Harm-and-Context/) | 9 |
 | [11_Official-and-Methods](11_Official-and-Methods/) | 9 |
 
-Accepted manuscripts and technical reports can differ from final publications. The N2 file (Wharton et al. 1994) is the whole edited book; relevant chapter pp. 105–140. Citron and Martin files are published law-review versions of the earlier SSRN DOI records. Retrieval URLs, version labels, SHA-256 checksums, PDF page counts and individual failed attempts are retained in [the audit manifest](../../../output/research/2026-10-14_methodology-literature/download-status.json).
+Accepted manuscripts and technical reports can differ from final publications. The N2 file (Wharton et al. 1994) is the whole edited book; relevant chapter pp. 105–140. Citron and Martin files are published law-review versions of the earlier SSRN DOI records. Retrieval URLs, version labels, SHA-256 checksums, PDF page counts and individual failed attempts are retained in the audit manifest (removed on 25 October 2026; in Git history).
