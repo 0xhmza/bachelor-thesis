@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-25T14:35:54.702369+00:00",
+  "built_at_utc": "2026-10-25T14:36:49.138072+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -60,7 +60,6 @@
     "05_Data/README.md",
     "06_Presentation/README.md",
     "06_Presentation/slides.tex",
-    "AGENTS.md",
     "README.md",
     "output/research/2026-10-11_app-sampling-trial/README.md",
     "output/research/2026-10-11_app-sampling-trial/data_dictionary.md",
@@ -81,7 +80,8 @@
   "needs_semantic_extraction": [
     "00_Admin/Decisions/D01_sample-size.md",
     "03_Thesis/chapters/04_methodology.tex",
-    "03_Thesis/chapters/05_results.tex"
+    "03_Thesis/chapters/05_results.tex",
+    "AGENTS.md"
   ],
   "source_hashes": {
     "01_Literature/Methods-Digest/add_paper.py": "5cf51414b9fde190a2baa34c08599542b195116b1143278f3ae60ff7dedafe2f",
@@ -195,7 +195,7 @@
     "04_Study/README.md": "168537e88237d8e8d70e4e9063f78a36e5e0e58df7fb5bad70faa9ec5fb46e3a",
     "05_Data/README.md": "d4c6e982753390047b5e217ff54d3ecb9683396fb9e4bfd0a3ead3cdf29cf47f",
     "06_Presentation/README.md": "0788c9757c7f5a4fcef78795fd1f94869e1d69d5205a87a2cbd4f1bc44045468",
-    "AGENTS.md": "de6000c02be1120e1b09c883f8865909c72ed21c17fcab6d61ebce561bc5a5af",
+    "AGENTS.md": "0c81d6f2e156082a02dd921b56e91cf3ec9d9fa0993e1fff111e4aae7f57fda9",
     "README.md": "c4c1a7e5434a36cd3b7eaa4fe5e5cc1d75fbb758fc158cdde47e06cd0a26ed41",
     "output/research/2026-10-11_app-sampling-trial/README.md": "39b514b8643dfda24da7e79efe7f4bdbc509f37f501651e8d5e3306367db85e5",
     "output/research/2026-10-11_app-sampling-trial/data_dictionary.md": "bd6269f24fb380e8e4c8556d7f59dd2995f15bf24ea5202df4ecaa4c55b70c95",
@@ -245,8 +245,8 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1748,
-  "edges": 3099,
+  "nodes": 1739,
+  "edges": 3079,
   "communities": 126,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
