@@ -262,3 +262,15 @@ play,com.urbandroid.sleep,Sleep as Android: Schlafzyklen,Petr Nálevka (Urbandro
 play,com.google.android.apps.fitness,Google Fit: Aktivitätstracker,Google LLC,eligible,,activity,records activity steps and cardio points
 play,com.alltrails.alltrails,AllTrails: Wandern & Radfahren,"AllTrails, LLC",eligible,,activity,records activities and statistics
 play,com.weightwatchers.mobile,Weight Watchers Programm,"WW INTERNATIONAL, INC",eligible,,diet-weight,food activity and sleep tracking (subscription; free to install)
+play,com.fddb,Fddb: KI Kalorienzähler & Diät,Fddb,eligible,,diet-weight,calorie counter and food diary
+play,monitoryourweight.bustan.net,Überwache dein Gewicht,Husain Al-Bustan,eligible,,diet-weight,weight log
+play,com.sportractive,GPS Laufen Joggen & Radfahren,sportractive.com,eligible,,activity,records runs rides and other activities with GPS
+play,com.baviux.pillreminder,Lady Pill Reminder,Baviux,excluded,E1,,pill reminder; listing states no recording of the user's data
+play,com.stt.android,Sports Tracker,Suunto,eligible,,activity,records activities with GPS and keeps a sports diary
+play,com.getsomeheadspace.android,Headspace Schlaf & Meditation,"Headspace for Meditation, Mindfulness and Sleep",eligible,,mood,tracks mental health with goals and progress (as on the App Store)
+play,org.naviki,Naviki – das Fahrrad-Navi,beemo,eligible,,activity,bicycle route planner that records the user's rides
+play,com.sleepmonitor.aio,Sleep Monitor - Schlaftracker,Fasting APP Group,eligible,,sleep,records and analyses sleep
+play,de.aktiwir.aktibmi,BMI Rechner & Gewichtstagebuch,aktiWir GmbH,eligible,,diet-weight,BMI calculator with weight diary
+play,com.ovyapp.android,Ovy App Verhütung Kinderwunsch,Ovy GmbH,eligible,,cycle,symptothermal cycle tracking for contraception and conception
+play,com.pookies.food.ai,BitePal: KI-Kalorienzähler,RefaceLithuania,eligible,,diet-weight,food diary and calorie tracking
+play,homeworkout.fitness.app,Trainingsplan & Gym・FitAI,Social Tech.,eligible,,activity,training diary and workout tracker

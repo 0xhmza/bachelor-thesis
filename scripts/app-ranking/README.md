@@ -7,8 +7,15 @@ Ranks eligible apps by exposure (rating count), as proposed in
 - `v001/rank.py`: standard-library ranking script with unit tests in `v001/tests/`.
   It merges the stores by within-store percentile, a rule D2 has since replaced by
   alternation; kept for the record.
-- `v002/rank.py`: the selection of 23 October 2026 (D1, D2, D3, D6). Standard library,
-  unit tests in `v002/tests/`.
+- `v002/rank.py`: selection of 24 October 2026 by store alternation with the worldwide
+  Play count; replaced by v003, kept for the comparison.
+- `v003/rank.py`: the selection of 25 October 2026 (D2 revision). One ranking of both
+  stores on German exposure E = v + c·r (r: German App Store ratings, v: German Google
+  Play reviews, c from the apps listed in both stores and the German OS shares); the
+  same app in both stores is one candidate; one app per developer; sensitivity
+  variants incl. the pool-sum scale, equal platform weights, worldwide Play counts
+  and the v002 selection. Unit tests in `v003/tests/`; config lists aliases and
+  translated-title pairs matched by hand. It writes `03_Thesis/tables/app-sample.tex`.
 
 ## v002
 
