@@ -236,13 +236,16 @@ listing, and each decision is logged with its reason.
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
-counts of app~$i$ in the German storefronts. This is a proxy for popularity
-used to select the sample; it does not measure users, downloads or encounters
-with privacy communication. Count-based selection has precedent: Sunyaev et
+counts of app~$i$ in the German storefronts: ratings in the App Store and
+written reviews on Google Play. Feedback counts are used because they are the
+only count-based measure that is available for the German market. Download and
+install counts are either reported worldwide only or not published at all,
+whereas rating and review counts are shown for each storefront. The score is
+therefore a proxy for popularity used to select the sample; it does not measure
+users or downloads. Count-based selection has precedent: Sunyaev et
 al.\ selected frequently rated health apps and reported a Spearman correlation
 of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availability}.
-Their finding supports the use of feedback counts, but does not validate the
-cross-store conversion used here.
+Their finding supports the use of feedback counts as a proxy.
 
 The available German-market feedback count differs between stores
 (Table~\ref{tab:storefront-fields}):
