@@ -50,6 +50,8 @@ python 01_Literature\Methods-Digest\tools\blocks.py key [key ...]         # pape
 python 01_Literature\Methods-Digest\tools\package.py                      # copy to build/deliverables/
 ```
 
+### 3a. Volumes
+
 A stage volume = front matter + the stage chapter + cards, references and full
 texts of (a) papers whose registry `stages` contain the stage, (b) every paper the
 chapter cites, (c) everything those cards cite. Built from `digest.tex` with
