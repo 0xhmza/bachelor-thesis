@@ -27,13 +27,13 @@
 
 % --- Colours ----------------------------------------------------------
 % Restrained accents for diagrams, source listings and linked references.
-% Body text, headings, table rules and navigation remain black.
+% Body text, headings and table rules remain black.
 \usepackage{xcolor}
 \definecolor{primary}{HTML}{233F5B}
 \definecolor{accent}{HTML}{37665D}
 \colorlet{accentdark}{accent}
 \definecolor{muted}{HTML}{535B63}
-\colorlet{linkblue}{primary}
+\definecolor{linkblue}{HTML}{496D91}
 
 % --- Figures, tables, code ------------------------------------------
 \usepackage{graphicx}
@@ -100,9 +100,7 @@
 \usepackage{hyperref}
 \hypersetup{
   colorlinks = true,
-  linkcolor  = black,
-  citecolor  = linkblue,
-  urlcolor   = linkblue,
+  allcolors  = linkblue,
   pdftitle   = {\thesistitle},
   pdfauthor  = {\authorname}
 }
@@ -120,7 +118,7 @@
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
 \appto{\bibsetup}{\raggedright}
-\DeclareFieldFormat{labelnumberwidth}{\textcolor{primary}{\mkbibbrackets{#1}}}
+\DeclareFieldFormat{labelnumberwidth}{\textcolor{linkblue}{\mkbibbrackets{#1}}}
 
 % --- Listings style --------------------------------------------------
 \lstset{
