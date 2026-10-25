@@ -45,10 +45,13 @@ each and was stopped after 2 h 50 min without output.
 the search page for every keyword and records each hit with position, title,
 developer and the install band the page shows, taking a top result's ID from its
 details URL. It then ranks the distinct apps by band (ties: best position, package
-ID) and opens only the first `pages` product pages (100), appending each to the
-`cache` file so that an interrupted run resumes; progress goes to stderr. The output
-keeps the v003 form under `results` and adds `search` (all hits), `distinct_apps`,
-`page_band_cutoff` and `apps_at_cutoff_without_page`.
+ID) and opens the first `pages` product pages, appending each to the `cache` file
+so that an interrupted run resumes; progress goes to stderr. `search_from` reuses
+the search of an earlier output. The output keeps the v003 form under `results` and
+adds `search` (all hits), `distinct_apps`, `page_band_cutoff` and
+`apps_at_cutoff_without_page`. The run of 24 October opened 100 pages; the run
+completed on 25 October (`pages` 1000, search of 24 October) opened all 645, which
+the ranking `app-ranking/v003` uses.
 
 ## Recorded data
 
@@ -105,8 +108,10 @@ country-specific phone ratings from November 2021
 and country install figures are shown only to the developer
 ([Play Console help](https://support.google.com/googleplay/android-developer/answer/139628)).
 Treat `Rating Count` as worldwide, `Average Rating` and the histogram's shape as
-country-specific, and `Review Count` as country-specific but undocumented and
-unvalidated as an exposure measure. See
+country-specific, and `Review Count` as country-specific but undocumented. On
+25 October 2026 `Review Count` followed `gl`, not `hl` (MyFitnessPal 32,562 DE,
+2,887 AT, 454,109 US, unchanged between `hl=de` and `hl=en`); it is the German
+measure of the ranking since then. See
 [D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md) for how this enters
 the ranking.
 

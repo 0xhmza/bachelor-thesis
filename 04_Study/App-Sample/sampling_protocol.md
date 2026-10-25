@@ -1,24 +1,24 @@
 # Sampling Protocol
 
-**Version:** 2 · **Date:** 2026-10-23 · **Status:** proposed (D1–D7, D11 in the
-[Decision Log](../../00_Admin/Decision-Log.md)); fixed before the collection of
-23 October 2026. Version 1 (2026-09-18) follows below as history; where the two
-differ, version 2 applies.
+**Version:** 2 · **Date:** 2026-10-23, ranking revised 2026-10-25 · **Status:**
+proposed (D1–D7, D11 in the [Decision Log](../../00_Admin/Decision-Log.md));
+fixed before the collection of 23 October 2026. Version 1 (2026-09-18) follows
+below as history; where the two differ, version 2 applies.
 
-## Version 2 (2026-10-23)
+## Version 2 (2026-10-23, ranking of 2026-10-25)
 
 | Step | Rule | Record |
 |---|---|---|
-| Frame | German App Store (Search API, `country=de`, iPhone-compatible results) and German Google Play (search page, `gl=de`, `hl=de`); one session, logged out | collector outputs of `appstore-scraper/v007` and `googleplay-scraper/v003` |
+| Frame | German App Store (Search API, `country=de`, iPhone-compatible results) and German Google Play (search page, `gl=de`, `hl=de`); one session, logged out | collector outputs of `appstore-scraper/v007` and `googleplay-scraper/v004` |
 | Keywords | 49 queries: the mHealth keywords of Hutton et al. (2018) and the terms of Malki et al. (2024), each in English and German ([keywords.csv](keywords.csv)) | D3 |
 | Depth | First 30 results per query in each store; App Store also to 200 for a saturation check | D2 |
-| Play pages | Google Play hits ranked by the install band on the search page (ties: best position, package ID); product pages, and so rating counts, for the first 100 only (added 2026-10-24, before the Play collection) | D2; `googleplay-scraper/v004` |
-| Preinstalled | Apple Health, Apple Fitness, Samsung Health: own group; their listings leave the rankings; Apple and Samsung count as providers in the sample | D6 |
-| Floor | At least 1,000 ratings in the store's own count | D2 |
-| Ranking | Within each store by rating count, ties by listing ID | D2 |
+| Play pages | Product page of every Google Play hit within depth 30 (645 apps) | D2; `googleplay-scraper/v004` |
+| Preinstalled | Apple Health, Apple Fitness, Samsung Health: own group; their listings leave the ranking; Apple and Samsung count as providers in the sample | D6 |
+| Floor | None | D2 |
+| Ranking | One ranking of both stores by German exposure E = v + c·r: r German App Store ratings, v German Google Play reviews, c = median(v/r) over apps in both stores × iOS share / Android share; the same app in both stores is one candidate | D2; `app-ranking/v003` |
 | Eligibility | E1 records the user's own health or body data over time in a Hutton or Malki category; E2 consumer app for the general public; E3 free to install; E4 German or English listing; E5 not a DiGA. A policy is **not** required (D5) | [screening.csv](screening.csv), one row per screened listing with the reason |
-| Selection | Alternate Google Play, App Store, …; skip a listing whose developer is already in the sample; stop at 47 | D1, D2 |
-| Sensitivity | No developer rule; App Store first; depth 20; App Store depth 200; leave one keyword out; English-only and German-only keywords; rating count per year; blend with shrunk average rating | `app-ranking/v002` output |
+| Selection | In the order of E; skip a candidate whose developer is already in the sample; stop at 47 | D1, D2 |
+| Sensitivity | No developer rule; equal platform weights; pool-sum scale; worldwide Play rating count; earlier selection (v002); depth 20; App Store depth 200; leave one keyword out; English-only and German-only keywords | `app-ranking/v003` output |
 
 Screening is done in rank order on the store listing (name, developer, genre,
 price, description). A listing is eligible under E1 only if its listing states
@@ -218,3 +218,4 @@ An app is excluded if **any** of the following hold:
 | 2026-09-29 | Unit of analysis and walkthrough selection rule stated | Both were implicit; the proposal now states them |
 | 2026-10-05 | Walkthrough slots alternate Android/iOS; validation set excludes pilot providers and documents; search and matching rules added as proposed defaults | Android-first filling favoured Android; shared policies could leak pilot material into validation; ties, sponsored results, matching, duplicates and source completeness were undefined |
 | 2026-10-23 | Version 2: sourced keywords (D3), depth 30 in both stores (D2), rating-count ranking with store alternation (D2), one app per developer (D2), function rule E1 (D3), free to install (D4), policy not required (D5), English first (D7) | Supervisor meeting of 13 October and the app-selection evaluation of 23 October; rules fixed before the collection of that day |
+| 2026-10-25 | One ranking of both stores by German exposure replaces store alternation, the worldwide Play count, the 100-page limit and the floor (D2) | The Play rating count is worldwide; its review count is German, so both stores can be ranked on German counts (author's direction) |

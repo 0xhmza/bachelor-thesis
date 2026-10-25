@@ -18,7 +18,7 @@ a structured content analysis~\parencite{krippendorff2019content} with an
 adapted cognitive walkthrough~\parencite{wharton1994cognitive};
 Figure~\ref{fig:pipeline} summarises the workflow. The sample comprises 50
 apps: eligible apps from the German market of Google Play and the App Store,
-\highlight[orange!25]{ranked by their number of ratings as a proxy for use}\todo{Not true for the Google Play apps: their product pages were opened for the 100 apps with the highest install band, and those are ranked by the worldwide rating count (Section~\ref{sec:app-sampling}). Reword.}, and the health apps that
+\highlight[orange!25]{ranked together by their German ratings and reviews as a proxy for use}\todo{Revised on 25 October: both stores are now ranked on one German scale (Section~\ref{sec:app-sampling}). Check the wording.}, and the health apps that
 come preinstalled on the phones of the largest vendors in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
 For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
@@ -213,16 +213,9 @@ a single page of results, and deeper results need an interface that the store's
 O'Loughlin et al., who capped both stores at the number of results Google Play
 shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
 App Store is also searched to 200 results, which serves only to check whether
-a deeper search would change the sample. On Google Play, the rating count
-appears only on an app's product page. In a first run the store served these
-pages at about five seconds each, so opening every page was not feasible. All
-Google Play hits are therefore first ranked by the
-install band that the search page shows for each hit, with ties broken by the
-best search position, and only the product pages of the first 100 apps are
-opened. The install band is the store's own public figure of use and
-correlated with the rating count at 0.95 in the trial collection of 22 October.
-Section~\ref{sec:results-sample} reports whether this limit affected the
-selection.
+a deeper search would change the sample. On Google Play, the German count used
+for the ranking appears only on an app's product page, so the product page of
+every Google Play candidate is opened.
 
 \paragraph{Eligibility.} A listing is eligible if (E1) the app lets users
 record their own health or body data over time in a category of the
@@ -239,29 +232,39 @@ the absence is reported. In-app purchases and subscriptions are recorded but
 do not exclude an app. Screening follows the rank order and uses the store
 listing, and each decision is logged with its reason.
 
-\paragraph{Ranking by exposure.} The study concerns the communication that
-users meet, so candidates are ranked by how widely an app is used, not by how
-well it is rated. Neither store publishes download counts for Germany
-(Table~\ref{tab:storefront-fields}), so the number of ratings stands in for
-use. Sunyaev et al.\ selected the 300 most frequently rated apps per store on
-the same grounds and reported a Spearman correlation of 0.89 between rating
-count and download count on Android~\parencite{sunyaev2015availability}. A
-trial collection on 22 October 2026, with the 19 keywords of an earlier,
-author-chosen list, found 159 Google Play apps that show both a worldwide
-rating count and a worldwide install figure; their correlation was 0.96, and
-0.94 for the 135 apps with at least 1{,}000 ratings. The App Store publishes no
-downloads, so the check rests on Google Play, and it is repeated on the
-candidates of the study. A listing needs at least 1{,}000 ratings to be ranked.
-Each store is ranked separately, because App Store counts describe the German
-storefront and Google Play counts the worldwide store, so the two counts cannot
-be compared directly.
+\paragraph{Ranking by German exposure.} The study concerns the communication
+that users in Germany meet, so candidates are ranked by how widely an app is
+used in the German market, not by how well it is rated. Neither store
+publishes download counts for Germany (Table~\ref{tab:storefront-fields}), so
+user feedback stands in for use, as in Sunyaev et al., who selected the most
+frequently rated apps and reported a Spearman correlation of 0.89 between
+rating count and download count on Android~\parencite{sunyaev2015availability}.
+The measure must describe the German market in both stores. On the App Store
+it is the rating count of the German storefront, $r$. On Google Play, the
+rating count and the installs are worldwide; the only German count is the
+review count of the German storefront, $v$, which changes with the storefront
+country and not with the interface language. The two counts measure different
+things, so they are put on one scale with the apps that are listed in both
+stores: assuming that, on average, an app's German users divide between the
+platforms like the German shares of iOS and Android ($s_{\mathrm{iOS}}$,
+$s_{\mathrm{Android}}$; \cite{statcounter2026os}), one App Store rating
+corresponds to
+\[
+  c = \operatorname{median}\!\left(\frac{v}{r}\right)
+      \cdot \frac{s_{\mathrm{iOS}}}{s_{\mathrm{Android}}}
+\]
+German Google Play reviews, where the median runs over the apps with both
+counts. An app's German exposure is then $E = v + c\,r$. The same app in both
+stores is one candidate, so its two counts add up, and an app found in only one
+store contributes only that store's count. All candidates of both stores are
+ranked together by $E$. This treats iOS and Android users alike, each platform
+weighted by its share of German users. Two checks accompany the measure: the
+correlation between $r$ and $v$ for the apps in both stores, since two German
+measures of the same use should agree, and the alternative scale of the first
+recorded formula, which weights each app's share of its store's total count by
+the platform share.
 
-\paragraph{Selection.} Both stores have equal weight, as in earlier reviews
-that took the same number of apps from each
-store~\parencite{sunyaev2015availability,oloughlin2019reviewing}. Apps are
-taken alternately from the two ranked lists, starting with Google Play, whose
-operating system runs on most German smartphones~\parencite{statcounter2026vendor}.
-The unit of selection is the provider: a listing is skipped when its developer
+\paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
 trial collection on 22 October 2026, one developer held 10 of the 47 most-rated
 Google Play apps under a single privacy policy; RQ1--RQ3 concern what providers
@@ -270,8 +273,8 @@ reduce the number of independent providers. The rule also means that each app
 counts once, and both of its listings are captured. Developers are compared by
 name after removing case, accents, punctuation and legal forms; where the same
 app appears under different developer names in the two stores, the names are
-matched by hand. Selection stops when the target of 50 apps is reached,
-counting the preinstalled apps. If fewer eligible apps are found, all are kept
+matched by hand. Candidates are taken in the order of $E$, and selection stops
+when the target of 50 apps is reached, counting the preinstalled apps. If fewer eligible apps are found, all are kept
 and the shortfall is reported.
 Thresholds are not lowered after the results have been inspected.
 
@@ -298,11 +301,13 @@ The vendors found and the resulting apps are reported in
 Section~\ref{sec:results-sample}.
 
 \paragraph{Sensitivity checks.} The selection is repeated with one rule changed
-at a time: without the developer rule, starting with the App Store, at depth 20,
-with the App Store at depth 200, with each keyword left out, with English or
-German keywords only, ranked by rating count per year since release, and ranked
-by a blend of rating count and an average rating shrunk towards the pool mean.
-For each variant, the number of selected providers that change is reported.
+at a time: without the developer rule; with equal weights for the two
+platforms; on the alternative scale; with the worldwide Google Play rating count
+in place of the German review count; at depth 20; with the App Store at depth
+200; with each keyword left out; and with English or German keywords only. It
+is also compared with an earlier selection that took apps alternately from a
+German App Store ranking and a worldwide Google Play ranking. For each variant,
+the number of selected providers that change is reported.
 
 Neither store publishes German figures for every listing field, and the two
 stores split their fields differently. Apple shows one summary rating per
@@ -359,7 +364,8 @@ One-to-five-star breakdown & \textbf{Market-specific}, on the product page
 \midrule
 Written reviews & A few review texts on the product page; \textbf{no public
   count}
-  & Undocumented embedded count, not displayed, \textbf{market-specific}.
+  & Undocumented embedded count, not displayed, \textbf{market-specific}: it
+  follows the storefront country, not the interface language (25 October).
   MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
 \midrule
 Downloads or installs & \textbf{Not public}; reported to the developer
@@ -635,9 +641,11 @@ agreed with the supervisor.
 
 \section{Limitations} The sample favours free, frequently rated apps found by
 the chosen keywords and does not represent all German users' exposure; one app
-per provider also leaves out further apps of large providers. Rating
-counts are a proxy for use: Google Play's count is worldwide rather than
-German, and apps that prompt users to rate collect more ratings. The corpus is a
+per provider also leaves out further apps of large providers. German ratings
+and reviews are a proxy for use: apps that prompt users to rate collect more of
+them, the common scale assumes that an app's users divide between the platforms
+like the OS shares, and an app found in only one store's search counts only
+that store's users. The corpus is a
 dated snapshot, walkthroughs cover selected paths, and reference trees depend
 on the chosen literature. Unless a second coder joins, one person provides the
 reference labels, so model agreement is not independent human-coder

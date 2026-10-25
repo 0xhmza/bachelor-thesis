@@ -18,10 +18,10 @@ before this section states who screened.}
 \emph{reproduktive Gesundheit} returned none. The first 30 positions held 1{,}440
 hits and 848 distinct listings. Google Play was searched on 24 October 2026
 between 15:07 and 15:29~UTC. Each query returned between 8 and 50 results, 1{,}178
-in total; the first 30 positions held 1{,}138 hits and 645 distinct apps. Every
-hit carried an app ID and an install band, and no product page failed. The 100
-apps with the highest install bands, all with at least 10 million installs,
-received a product page; three further apps of that band did not.
+in total; the first 30 positions held 1{,}138 hits and 645 distinct apps, and
+every hit carried an app ID. The product pages of all 645 apps were read on
+24 and 25 October 2026; one page that timed out was read again, so none is
+missing.
 
 \paragraph{Preinstalled apps.} The vendor shares for September 2026, read on
 22 October 2026, put three vendors above the threshold of 10\,\% of German
@@ -31,27 +31,38 @@ each~\parencite{statcounter2026vendor}. The qualifying apps are Apple Health
 and Apple Fitness on the iPhone and Samsung Health on Samsung phones. No
 preinstalled tracker could be identified on Xiaomi's international software, so
 Xiaomi contributes none. The rule therefore yields three preinstalled apps,
-which leaves 47 places for the store rankings. All three have store listings,
-which were removed from the rankings; Apple Health, for instance, has 2{,}134
-ratings in the German App Store.
+which leaves 47 places for the ranking. All three have store listings, which
+were removed from the ranking; Apple Health, for instance, has 2{,}134 ratings
+in the German App Store.
+
+\paragraph{One German scale.} Of the candidates, 123 apps were found in both
+stores. For the 114 of them with both a German App Store rating count and a
+German Google Play review count, the two counts correlated at Spearman 0.80.
+The median ratio of reviews to ratings was 0.23, so with the German OS shares
+of September 2026, Android 72.3\,\% and iOS 27.7\,\%~\parencite{statcounter2026os},
+one German App Store rating corresponds to $c = 0.090$ German Google Play
+reviews. Across all 644 Google Play candidates, the German review count and the
+worldwide rating count correlated at 0.95, yet they rank the leading apps
+differently: among the 100 apps with the most installs worldwide, the German
+review count ranged from 5 to 99{,}884.
 
 \paragraph{Screening and selection.} Table~\ref{tab:sample-flow} gives the
-cascade for each store. In rank order, 44 App Store listings and 48 Google Play
-listings were reached before the 47 places were filled. Of these, 15 were
-excluded at screening, 14 of them because the app records no health or body data
-over time (E1) and one as a DiGA (E5). Another 30 listings were skipped because
-their developer was already in the sample. Matching developers by name missed
-eight providers whose names differ between the two stores (Clue, Pregnancy+,
-Alarmy, Leap Fitness, Map My Run, Daylio, MeetYou and BabyCenter); these were
-matched by hand, because the same app appeared under both names. Across the main
-selection and all sensitivity checks, 263 listings were screened: 145 were
-eligible and 118 excluded (E1~113, E2~1, E3~2, E4~1, E5~1).
+cascade. Merging the two stores' listings gave 1{,}367 candidates. In the order
+of German exposure, 70 candidates were reached before the 47 places were filled.
+Of these, 11 were excluded at screening because the app records no health or
+body data over time (E1), and 12 were skipped because their developer was
+already in the sample. Developer names that differ between the two stores were
+matched by hand for 13 providers, among them Clue, Pregnancy+, Fddb and
+Headspace, and three apps whose titles were translated between the stores were
+paired by hand. Across the main selection and all sensitivity checks, 275
+listings were screened: 156 were eligible and 119 excluded (E1~114, E2~1,
+E3~2, E4~1, E5~1).
 
 \begin{table}[t]
 \centering
 \begin{singlespace}
-\caption{From search hits to the 47 ranked apps, by store. Positions are the
-first 30 per query; Google Play rating counts come from the product page.}
+\caption{From search hits to the 47 ranked apps. Positions are the first 30 per
+query; the same app in both stores is one candidate.}
 \label{tab:sample-flow}
 \small
 \begin{tabular}{@{}lrr@{}}
@@ -61,42 +72,36 @@ first 30 per query; Google Play rating counts come from the product page.}
 Queries & 49 & 49 \\
 Hits within the first 30 positions & 1{,}440 & 1{,}138 \\
 Distinct listings & 848 & 645 \\
-\quad with a product page & -- & 100 \\
 Listings of preinstalled apps removed & 2 & 1 \\
-Below 1{,}000 ratings & 544 & 0 \\
-Ranked by rating count & 302 & 99 \\
-Reached in rank order & 44 & 48 \\
-\quad excluded at screening & 8 & 7 \\
-\quad skipped: developer already in the sample & 13 & 17 \\
-\quad selected & 23 & 24 \\
+Listings ranked & 846 & 644 \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Candidates after merging the stores}} \\
+\quad in both stores & \multicolumn{2}{r}{123} \\
+\quad App Store only & \multicolumn{2}{r}{723} \\
+\quad Google Play only & \multicolumn{2}{r}{521} \\
+Reached in the order of German exposure & \multicolumn{2}{r}{70} \\
+\quad excluded at screening (E1) & \multicolumn{2}{r}{11} \\
+\quad skipped: developer already in the sample & \multicolumn{2}{r}{12} \\
+\quad selected & \multicolumn{2}{r}{47} \\
 \bottomrule
 \end{tabular}
 \end{singlespace}
 \end{table}
 
-\paragraph{The sample.} The 47 ranked apps come from 47 providers, 24 through
-Google Play and 23 through the App Store; with Apple Health, Apple Fitness and
-Samsung Health, the sample holds 50 apps. By primary category, the ranked apps
-comprise 23 activity apps, 8 diet and weight apps, 7 cycle trackers, 4
-pregnancy apps, 2 sleep apps, 2 mood apps and 1 wearable companion. The selected
-Google Play apps have between 392{,}809 and 5{,}157{,}244 ratings worldwide; the
-selected App Store apps have between 19{,}737 and 447{,}096 ratings in the German
-storefront. All are free to install, and all 24 Google Play listings name a
-privacy policy. Of the 47 apps, 43 were found within the first ten positions of
-at least one query and 4 within positions 11 to 20; two were found by a single
-keyword. Of the 24 apps selected through Google Play, 18 also appeared with
-German ratings in the App Store search; 6 did not.
+\paragraph{The sample.} The 47 ranked apps come from 47 providers; 32 are listed
+in both stores, 9 only on Google Play and 6 only on the App Store. With Apple
+Health, Apple Fitness and Samsung Health, the sample holds 50 apps. By primary
+category, the ranked apps comprise 22 activity apps, 12 diet and weight apps, 4
+cycle trackers, 2 pregnancy apps, 3 sleep apps, 2 mood apps, 1 heart-rate app and
+1 wearable companion. The selected apps have between 648 and 447{,}096 German App
+Store ratings (38 apps with an App Store listing) and between 1{,}486 and
+99{,}884 German Google Play reviews (41 apps with a Google Play listing). All are
+free to install, and all 41 Google Play listings name a privacy policy. Of the
+47 apps, 42 were found within the first ten positions of at least one query and
+5 within positions 11 to 20.
 
-\paragraph{Checks.} Among the 100 Google Play apps with a product page, the
-rating count and the install count correlated at Spearman 0.80, lower than the
-0.96 of the trial collection, because only apps with at least 10 million
-installs were included. The last app selected through Google Play has 392{,}809
-ratings and lies in the lowest install band that received product pages. The
-three apps of that band without a page, fetched afterwards as a check, have
-314{,}218, 60{,}483 and 39{,}376 ratings, so none would have entered the
-selection; apps of lower bands were not checked. Table~\ref{tab:sensitivity}
-shows how many of the 47 selected providers change when one rule is changed at
-a time.
+\paragraph{Sensitivity.} Table~\ref{tab:sensitivity} shows how many of the 47
+selected providers change when one rule is changed at a time.
 
 \begin{table}[t]
 \centering
@@ -109,15 +114,16 @@ are not selected when one rule changes.}
 \toprule
 \textbf{Variant} & \textbf{Providers changed} \\
 \midrule
-No developer rule (the 47 places go to 39 providers) & 8 \\
-Alternation starts with the App Store & 1 \\
-Depth 20 instead of 30 & 0 \\
+No developer rule (the 47 places go to 37 providers) & 10 \\
+Equal weights for iOS and Android & 5 \\
+Alternative scale (share of each store's total count) & 0 \\
+Worldwide Google Play rating count instead of German reviews & 11 \\
+Earlier selection: store alternation with the worldwide Google Play count & 10 \\
+Depth 20 instead of 30 & 1 \\
 App Store searched to depth 200 & 2 \\
-English keywords only & 0 \\
-German keywords only & 1 \\
+English keywords only & 2 \\
+German keywords only & 3 \\
 One keyword left out (49 runs; largest change) & 1 \\
-Ranked by rating count per year since release & 8 \\
-Ranked by a blend with the shrunk average rating ($w=0.5$) & 14 \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}

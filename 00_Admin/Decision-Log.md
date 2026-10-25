@@ -13,7 +13,7 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | ID | Question | Status | Evidence so far | Record |
 |---|---|---|---|---|
 | D1 | Sample size and stopping rule | proposed (47 ranked + 3 preinstalled, no quotas) | Meeting 10-13: first 50 eligible, no quotas | [D01](Decisions/D01_sample-size.md) |
-| D2 | Store search, ranking, rating/download floor | proposed: ranking, floor, store balance; search frame and one app per developer (10-23) | Meeting 10-13; sampling trial 2026-10-11; storefront check 2026-10-22; evaluation 2026-10-23 | [D02](Decisions/D02_ranking-and-rating-floor.md) |
+| D2 | Store search, ranking, rating/download floor | proposed: one ranking of both stores by German exposure, no floor (10-25); search frame and one app per developer (10-23) | Meeting 10-13; sampling trial 2026-10-11; storefront check 2026-10-22; evaluation 2026-10-23; country check of Play reviews 2026-10-25 | [D02](Decisions/D02_ranking-and-rating-floor.md) |
 | D3 | Tracker scope and keyword space | proposed (10-23): domains and keywords of Hutton et al. 2018 and Malki et al. 2024, EN + DE; tracking-over-time rule | Meeting 10-13; Hutton 2018; Malki 2024; Robillard 2019 | [D03](Decisions/D03_scope-keywords-function.md) |
 | D4 | Payment, trial and account eligibility | proposed (10-23): free to install; payment recorded, decides walkthroughs only | Meeting 10-13; Robillard 2019 | [D04](Decisions/D04_payment-access.md) |
 | D5 | Apps without a privacy policy | confirmed (meeting 10-13; adopted 10-23): included, absence reported | Meeting 10-13; Sunyaev 2015; O'Loughlin 2019 | [D05](Decisions/D05_apps-without-policy.md) |

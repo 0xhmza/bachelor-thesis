@@ -1,52 +1,48 @@
 # App ranking
 
-Ranks eligible apps by exposure (rating count), as proposed in
+Selects the ranked apps of the sample as set out in
 [D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md). Each version lives in
 `vNNN/`; outputs stay in the version's `output/` folder.
 
-- `v001/rank.py`: standard-library ranking script with unit tests in `v001/tests/`.
-  It merges the stores by within-store percentile, a rule D2 has since replaced by
-  alternation; kept for the record.
+- `v001/rank.py`: merges the stores by within-store percentile; replaced, kept for
+  the record.
 - `v002/rank.py`: selection of 24 October 2026 by store alternation with the worldwide
   Play count; replaced by v003, kept for the comparison.
-- `v003/rank.py`: the selection of 25 October 2026 (D2 revision). One ranking of both
-  stores on German exposure E = v + c·r (r: German App Store ratings, v: German Google
-  Play reviews, c from the apps listed in both stores and the German OS shares); the
-  same app in both stores is one candidate; one app per developer; sensitivity
-  variants incl. the pool-sum scale, equal platform weights, worldwide Play counts
-  and the v002 selection. Unit tests in `v003/tests/`; config lists aliases and
-  translated-title pairs matched by hand. It writes `03_Thesis/tables/app-sample.tex`.
+- `v003/rank.py`: the selection of 25 October 2026 (D2 revision).
 
-## v002
+## v003
 
 ```powershell
-python scripts/app-ranking/v002/rank.py scripts/app-ranking/v002/config.json
-python -I -m unittest discover -s scripts/app-ranking/v002/tests
+python scripts/app-ranking/v003/rank.py scripts/app-ranking/v003/config.json
+python -I -m unittest discover -s scripts/app-ranking/v003/tests
 ```
 
 **Inputs** (paths in `config.json`): an `appstore-scraper/v007` and a
-`googleplay-scraper/v003` output, the keyword table
+`googleplay-scraper/v004` output, the keyword table
 `04_Study/App-Sample/keywords.csv` and the screening decisions
 `04_Study/App-Sample/screening.csv` (one row per screened listing: decision,
 criterion E1–E5, category, reason).
 
-**Method.** Within each store, listings in the first `depth` results of any keyword
-with at least `floor` ratings are ranked by rating count, ties by listing ID; the
-preinstalled listings are removed. Apps are taken alternately from the two lists,
-starting with `start`. A listing is skipped when its developer is already in the
-sample, including the preinstalled vendors; developers are compared after removing
-case, punctuation and legal forms (`aliases` maps further spellings). A listing
-without a screening decision counts as eligible and is reported as pending; the
-selection is final only when nothing is pending.
+**Method.** Listings in the first `depth` results of any keyword are pooled per
+store; the preinstalled listings are removed. The same app in both stores (same
+provider and a matching title, or a hand-made pair in `pairs`) becomes one
+candidate. Each candidate gets the German exposure E = v + c·r: r is the German App
+Store rating count, v the German Google Play review count, and
+c = median(v / r) over candidates in both stores × `os_share.ios` /
+`os_share.android`. Candidates are taken in the order of E; one is skipped when its
+developer is already in the sample, including the preinstalled vendors. Developers
+are compared after removing case, accents, punctuation and legal forms; `aliases`
+maps further spellings. An excluded listing in either store excludes the candidate.
+A candidate without a screening decision counts as eligible and is reported as
+pending; the selection is final only when nothing is pending.
 
-**Outputs.** `selection.csv` (order, store, listing, developer, ratings, category,
-best search position, counterpart in the other store), `excluded.csv`,
-`sensitivity.csv` (how many selected providers change under each variant),
-`report.json` (cascade per store, proxy check, depth, categories, German exposure
-check) and `screening-sheet.csv` (pending listings with a description excerpt, for
-screening).
+**Outputs.** `selection.csv`, `excluded.csv`, `sensitivity.csv` (how many selected
+providers change under each variant), `report.json` (cascade, calibration, checks,
+categories) and `screening-sheet.csv` (pending listings, for screening). It also
+writes `03_Thesis/tables/app-sample.tex`.
 
-**What a rating count means per store.** App Store counts come from the requested
-storefront. Google Play's rating count and install figure are worldwide; its
-histogram is the country's distribution scaled to the worldwide count. Rankings are
-therefore made within each store.
+**What the counts mean.** App Store rating counts come from the requested
+storefront. On Google Play, the rating count and installs are worldwide, the
+histogram is the country's distribution scaled to the worldwide count, and the
+review count embedded in the product page follows the storefront country (checked
+25 October 2026).

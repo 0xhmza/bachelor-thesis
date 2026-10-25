@@ -8,7 +8,7 @@ Both collectors read a JSON file and print the result as JSON on standard
 output. They record what each store returns for a keyword search or, for Google
 Play, for a list of package IDs. They apply no eligibility rule and no ranking,
 and they do not observe app behaviour. The listings are the versions that
-collected the sample on 23 October (App Store) and 24 October 2026 (Google Play), shown unchanged; their inputs hold the
+collected the sample on 23 October (App Store) and 24 and 25 October 2026 (Google Play), shown unchanged; their inputs hold the
 49 queries of Table~\ref{tab:keywords}.
 
 \section{Input Format}
@@ -18,8 +18,9 @@ collected the sample on 23 October (App Store) and 24 October 2026 (Google Play)
   \item[\texttt{region}] Two-letter storefront; \texttt{de} selects the German store.
   \item[\texttt{language}] Interface language requested from Google Play.
   \item[\texttt{limit}] App Store: maximum results per keyword (up to 200).
-  \item[\texttt{pages}] Google Play: number of product pages opened, chosen by the
-    install band shown on the search page.
+  \item[\texttt{pages}] Google Play: maximum number of product pages opened, in the
+    order of the install band shown on the search page; the sample run opened
+    all of them.
   \item[\texttt{cache}] Google Play: file to which each product page is appended.
 \end{description}
 
@@ -50,7 +51,8 @@ so a result cannot silently come from another country. Failed lookups are
 recorded under \texttt{errors}. Search positions follow the order of the search
 response and are not verified as the store's native ranking. Rating counts and
 install figures are worldwide on Google Play; the one-to-five-star breakdown is
-the country's distribution scaled to the worldwide count
+the country's distribution scaled to the worldwide count, and the count of
+written reviews, which the ranking uses, follows the storefront country
 (Table~\ref{tab:storefront-fields}).
 
 \lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../scripts/googleplay-scraper/v004/scraper.py}
