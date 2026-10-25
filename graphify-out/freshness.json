@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-25T17:41:42.689007+00:00",
+  "built_at_utc": "2026-10-25T18:07:53.749540+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -41,7 +41,6 @@
     "03_Thesis/chapters/01_introduction.tex",
     "03_Thesis/chapters/02_background.tex",
     "03_Thesis/chapters/03_related_work.tex",
-    "03_Thesis/chapters/04_methodology.tex",
     "03_Thesis/chapters/05_results.tex",
     "03_Thesis/chapters/06_discussion.tex",
     "03_Thesis/chapters/07_conclusion.tex",
@@ -77,7 +76,11 @@
     "scripts/googleplay-scraper/v003/requirements.txt",
     "scripts/googleplay-scraper/v004/requirements.txt"
   ],
-  "needs_semantic_extraction": [],
+  "needs_semantic_extraction": [
+    "00_Admin/Sampling-Audit_2026-10-25.md",
+    "03_Thesis/chapters/04_methodology.tex",
+    "scripts/sampling-audit/v001/README.md"
+  ],
   "source_hashes": {
     "01_Literature/Methods-Digest/add_paper.py": "5cf51414b9fde190a2baa34c08599542b195116b1143278f3ae60ff7dedafe2f",
     "01_Literature/Methods-Digest/build_digest.py": "d9403b922fdb1924a9e0162992af88828948234059d0fafe7baeab11bd9de782",
@@ -121,6 +124,7 @@
     "scripts/hooks/install.sh": "f28a1161ab4eba0edc1993015bed02d7efcaff934a1baf73961197b9b9b2ece3",
     "scripts/hooks/pre-commit": "2b78f336301d6ba176193b38ee7b4bd51b092f1a1216f20140302e73ab3faa1f",
     "scripts/literature_index.py": "a207253a8e47fe815bb8e4ebc871a71ac6ed4150f20d13e44701e178d1182be5",
+    "scripts/sampling-audit/v001/audit.py": "23918435e86e96561f189b5e3898e943041a2019f5a36238063fb22f5c3e6848",
     "scripts/sampling-checks/v001/check_pool.py": "daf7b6a62243e8ac574a306fc0f84a722280c298886adb6f99426ff7696e9a02",
     "scripts/thesis_graph.py": "8f739b2345f57b0fec9e9114af299492cc5fb1ab1f51b8654a098b62582c1259",
     "scripts/zotero-pin-keys/v001/apply_pins.py": "142517fa082b6b7f430c8572d93058a9768d865686ad411af721996ad755b40b",
@@ -146,6 +150,7 @@
     "00_Admin/Project-Handoff_2026-10-25.md": "d712cac5339e675fe3ca86ab24eae80715a41407b741d474b57239bd3ac9271a",
     "00_Admin/README.md": "896189f0059175f63178feaf4296354ed12a937b574a938fb4582853ab87e761",
     "00_Admin/Risk-Register.md": "7dbaed240dc6a55b717ae6bb87271d21811f6c23cdcf5f5f58607a229d37c737",
+    "00_Admin/Sampling-Audit_2026-10-25.md": "6784b826de4c5b4686a64263ed57d9bf665e6c598f4fe3c8ea5a4b2c8c59580e",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md": "adf7f59502c17a2c90a0c48aa3f66e15b49e0b402ba7127f376119f835150188",
     "00_Admin/Supervisor-Input/README.md": "e5134cc2bfb7545cb21a6c000cdb2a9fcdbe4d7391074b3660787c94e5c4310c",
     "00_Admin/Timeline.md": "6e91cf73fd5a377712f70ca3664a0edf7c58ce2f9a0cf3d557924899985c3677",
@@ -181,6 +186,7 @@
     "scripts/googleplay-scraper/v002/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
     "scripts/googleplay-scraper/v003/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
     "scripts/googleplay-scraper/v004/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
+    "scripts/sampling-audit/v001/README.md": "604f73aa190f6d117ec62c1d4b579eed8061445cea6950f679c6857b0a83a953",
     "03_Thesis/appendix/A_codebook.tex": "229cb93483246a838cdb5c35e6fcdb87ebabbc7621f3230a8f443289118f5587",
     "03_Thesis/appendix/B_prompts.tex": "a3be430ddd10e0a996c28e4eaf187df583beaee77289035eb0afb68de68b4f7f",
     "03_Thesis/appendix/C_app_sample.tex": "9c8897a74d8c38d5e451f940412d397cc57b762767b362c6da2d3bd3511e3a85",
@@ -190,7 +196,7 @@
     "03_Thesis/chapters/01_introduction.tex": "3540d09e1aea6f3eab19355a6a29d3cf203508f1ffeadb3d42dfc7d07a8aab2d",
     "03_Thesis/chapters/02_background.tex": "ea8a03d55a7c401aa915609a9690de952493f4b5945afb3d9093ad279ef65855",
     "03_Thesis/chapters/03_related_work.tex": "e932a602f5a1899a588255d9d5f86529a1605f9f3d79c4e8abb68aed4da639f1",
-    "03_Thesis/chapters/04_methodology.tex": "b93d6af2eef5b065fb2cff26db0a391bc86f5f97345c02757cec787738d5a52b",
+    "03_Thesis/chapters/04_methodology.tex": "dc2a417ceccfcc4d83e33db48d314966fdf06502fd66339d1133473fb6fa5ac6",
     "03_Thesis/chapters/05_results.tex": "b8afc2cba8122e10e9fe8e57d897b2744c6e529214e53ee81c6ae5538e534ec9",
     "03_Thesis/chapters/06_discussion.tex": "5de8c2cbab9d576ffe4d64a93bf399d9006b8e9164068bd5368f998ed6ad2247",
     "03_Thesis/chapters/07_conclusion.tex": "761fd33662b0d993f5e23cdef9b92bae74ef3162d67f778a0429b180d9596dbb",
@@ -214,9 +220,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1567,
-  "edges": 2793,
-  "communities": 105,
+  "nodes": 1558,
+  "edges": 2747,
+  "communities": 113,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

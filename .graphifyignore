@@ -39,6 +39,7 @@ graphify-out/
 scripts/appstore-scraper/*/output/
 scripts/googleplay-scraper/*/output/
 scripts/app-ranking/*/output/
+scripts/sampling-audit/*/output/
 scripts/zotero-pin-keys/*/output/
 01_Literature/literature-index.json
 01_Literature/Literature-Map.html
