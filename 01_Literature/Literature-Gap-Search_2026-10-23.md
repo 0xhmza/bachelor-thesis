@@ -6,14 +6,13 @@ hold. The emphasis is LLM-assisted coding of privacy policies. The other digest
 stages were checked for gaps against the research questions and the open
 decisions in the [Decision Log](../00_Admin/Decision-Log.md).
 
-**Status of everything below:** reading candidates. Nothing has been added to
-`_shared/references.bib`, `reading-status.csv`, the catalogue or the digest
-registry. Metadata was checked against the publisher, arXiv, ACL Anthology,
-PoPETs, USENIX or Crossref page. Method details marked *(read)* were checked in
-the downloaded full text; all other summaries come from the abstract or the
-landing page and must be checked before citing. The app-selection evaluation
-that uses part of this search is in
-[`00_Admin/App-Selection-Evaluation_2026-10-23.md`](../00_Admin/App-Selection-Evaluation_2026-10-23.md).
+**Status:** reading candidates; none is in `_shared/references.bib`,
+`reading-status.csv` or the catalogue. The 16 priority-A papers with a PDF are
+registered in the Methods Digest (nos. 101–116, with cards; §10). Metadata was
+checked against the publisher, arXiv, ACL Anthology, PoPETs, USENIX or Crossref
+page. Details marked *(read)* were checked in the full text; all other summaries
+come from the abstract or landing page and must be checked before citing. Used by
+the [app-selection evaluation](../00_Admin/App-Selection-Evaluation_2026-10-23.md).
 
 Downloaded open-access copies (46 PDFs, 37 from the first round and 9 from the second, §10):
 [`PDFs/Methods-Reading/13_Search-2026-10-23/`](PDFs/Methods-Reading/13_Search-2026-10-23/).
@@ -170,13 +169,8 @@ with Carmela Troncoso, the proposed first examiner, among the authors; its harm-
 thesis's backbone. The Lausanne fitness-tracker group (Huguenin, Humbert, Zufferey, Velykoivanenko)
 works with the advisor; four of its papers are now in the list.
 
-**Registered in the digest (23 October 2026).** The 16 priority-A papers with a local PDF are numbers
-101–116 in `Methods-Digest/registry.json`, each with a card (`cards/101_xie2025.tex` …
-`cards/116_mehrnezhad2024.tex`). The L, H and C chapters cite them. `build_digest.py --check`: 2,317
-passages anchored across 115 papers, 0 problems.
-
-## 11. Next steps (not done)
-
-1. Read the **A** items; decide which become thesis references, then apply the one rule in the [README](README.md) (PDF, row, bib entry).
-2. Get the A items without a PDF (Velykoivanenko 2021, Mehrnezhad & Almeida 2021, Doherty 2025, Gasteiger 2023, Martin 2015, Pollach 2005, Bhatia 2016) through the browser or library login, then register and card them.
-3. Rebuild the other stage volumes and the complete digest when convenient (see `Methods-Digest/HANDOFF.md`, section 3a); only stage L was rebuilt on 23 October.
+**Registered in the digest (23 October 2026):** the 16 priority-A papers with a local PDF are
+nos. 101–116 in `Methods-Digest/registry.json`, cited in the L, H and C chapters (state in
+[HANDOFF.md](Methods-Digest/HANDOFF.md) §5). Next steps (reading the A items, the A items without a
+PDF, the rebuild) are tracked in the [action plan](../00_Admin/Action-Plan_2026-10-13.md) §8; a
+work becomes a thesis reference only through the rule in the [README](README.md) (PDF, row, bib entry).

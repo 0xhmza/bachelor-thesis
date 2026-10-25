@@ -40,7 +40,8 @@ A stage volume holds its chapter plus the cards, references and full texts of th
 
 ## What to know before relying on it
 
-- 99 of 100 papers are included; Parker 2019 (no. 41) has no PDF and no card.
+- 115 papers have cards (nos. 101–116 added on 23 October; only the stage L volume
+  includes them so far); Parker 2019 (no. 41) has no PDF and no card.
 - Nissenbaum 2009 (no. 70) is only the table of contents and introduction, from a scan with an OCR text layer. Quotes may contain recognition errors, as may Polson 1992 and Cohen 1960 (also OCR).
 - Several files are author manuscripts, preprints, web captures (APA, 20 Oct 2026) or supplementary appendices; each card says so. The BfArM guide is the 2020 text although the corpus label says 2023.
 - The thesis plan statements come from `03_Thesis/chapters/04_methodology.tex` (draft) and the Decision Log. They change as decisions close.
@@ -64,7 +65,7 @@ python 01_Literature\Methods-Digest\tools\package.py
 
 Compiling all ten in parallel (about four at a time, limited by RAM) took roughly 13 minutes; one after another about 80. If a compile stops at `\begin{document}` with "File ended while scanning use of \BKM@entry", delete that volume's folder under `build/` and rerun.
 
-Quick check without building PDFs: `python 01_Literature\Methods-Digest\build_digest.py --check --fix-pages` (expect 2,186 passages, 0 problems).
+Quick check without building PDFs: `python 01_Literature\Methods-Digest\build_digest.py --check --fix-pages` (2,317 passages across 115 papers, 0 problems, on 23 October).
 
 The `text-cache/` and `pdf-cache/` folders were deleted as reproducible. Recreate the text of a paper with `tools\blocks.py KEY`. `pdf-cache/012_Polson_1991_OCR.pdf` is needed by the build and is made with `tools\ocr_pdf.py` from the scan in `PDFs/Methods-Reading/03_Walkthroughs/`; it already exists again.
 

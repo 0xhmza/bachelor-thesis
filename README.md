@@ -4,37 +4,31 @@ Author: Hamza Sghaier · RUB · Advisor: Kavous Salehzadeh Niksirat, MPI-SP
 
 ## Main document
 
-Work in `03_Thesis/thesis.tex` and its `chapters/` and `appendix/` fragments.
-The 5 October 2026 proposal is integrated into the main thesis: abstract,
-introduction, background, related work, methodology and Appendix D. Its original
-source and PDF remain in `03_Thesis/proposal/` as a historical submission snapshot.
-The existing CycleMate worked example remains in Appendix A.
-
-The methodology marks the revisions required by the supervisor meeting of
-13 October. Empirical results, final conclusions and personal submission metadata
-remain unfinished.
+`03_Thesis/thesis.tex` with its `chapters/` and `appendix/` fragments. The proposal
+of 5 October 2026 is integrated (abstract, introduction, background, related work,
+methodology, Appendix D); its source and PDF stay in `03_Thesis/proposal/` as a
+snapshot. The CycleMate worked example is in Appendix A. The methodology marks the
+revisions from the supervisor meeting of 13 October; results beyond the sample,
+conclusions and submission metadata are unfinished.
 
 ```powershell
-.\build.ps1 thesis       # main thesis; latexmk handles pdflatex and biber
-.\build.ps1 proposal     # historical proposal snapshot
+.\build.ps1 thesis       # main thesis; latexmk runs pdflatex and biber
+.\build.ps1 proposal     # proposal snapshot
 .\build.ps1 slides
 ```
 
-TeX Live 2025 is installed; `build.ps1` adds its binary folder to the current
-session. Each document's `latexmkrc` defines its build chain. In TeXstudio open
-`thesis.tex` as the root document; in VS Code open `03_Thesis/` and use the
-LaTeX Workshop settings there. The shared bibliography is `_shared/references.bib`.
+`build.ps1` adds TeX Live 2025 to the session; each document's `latexmkrc` defines
+its chain. TeXstudio: open `thesis.tex` as root; VS Code: open `03_Thesis/` (LaTeX
+Workshop settings there). Bibliography: `_shared/references.bib`.
 
-## For the supervisor: review copy
+## Review copy for the supervisor
 
-`03_Thesis/Thesis_Review-Copy.docx` is a Word version of the current thesis draft
-for comments and tracked changes. It is generated from the LaTeX sources and rebuilt
-with **every commit that changes the thesis**, so the copy in the repository always
-matches the committed draft; the box on its first page names that commit. Citation
-numbers link to the bibliography, and bibliography entries link to their DOI or URL.
-Save an annotated copy under a new name and send it back: the next commit replaces
-this file. `thesis.pdf` remains the authoritative layout (diagrams appear in the
-Word copy as text descriptions).
+`03_Thesis/Thesis_Review-Copy.docx` is generated from the LaTeX sources by the
+pre-commit hook on every commit that changes the thesis; the box on its first page
+names that commit. Citation numbers link to the bibliography, entries to their DOI
+or URL; diagrams appear as text descriptions. Annotated copies come back under a
+new name, because the next commit replaces the file. `thesis.pdf` is the
+authoritative layout.
 
 ## Working routine
 
@@ -45,80 +39,61 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 .\graphify.ps1 refresh                      # graph, literature index, map, reading tracker
 ```
 
-- **Decisions** are recorded in `00_Admin/Decision-Log.md` before the methodology states them.
-- **Progress** goes into `00_Admin/Weekly-Log.md`; risks into `00_Admin/Risk-Register.md`.
-- **Reading status** is edited in `01_Literature/reading-status.csv` (the README table follows it).
-- **CI** (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles
-  the thesis on every push; download both from the run's artifacts.
+Decisions go into `00_Admin/Decision-Log.md` before the methodology states them;
+progress into `00_Admin/Weekly-Log.md`, risks into `00_Admin/Risk-Register.md`;
+reading status into `01_Literature/reading-status.csv`. CI
+(`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles the
+thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md).
 
 ## Folder map
 
 | Folder | Content |
 |---|---|
-| `00_Admin/` | Supervisor input, meeting notes, action plan, decision log, risk register, weekly log, timeline |
-| `01_Literature/` | Core reading list with PDFs and notes, the ranked methodology corpus (89 of 93 works as PDFs), the reading tracker, the abstract index and the interactive literature map. Start at its `README.md` |
-| `03_Thesis/` | Main thesis, chapters, appendices, the supervisor's review copy (.docx) and the proposal snapshot |
-| `04_Study/` | Sampling protocol, codebook versions, walkthrough and LLM prompts |
-| `05_Data/` | Raw, processed and analysis study material; raw data is gitignored |
+| `00_Admin/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
+| `01_Literature/` | Core reading list (PDFs, notes), the ranked methodology corpus (89 of 93 works as PDFs), the Methods Digest, the reading tracker, abstract index and literature map; start at its `README.md` |
+| `03_Thesis/` | Main thesis, chapters, appendices, review copy, proposal snapshot |
+| `04_Study/` | Sampling protocol and app sample, codebook versions, walkthrough protocol, LLM prompts, ethics |
+| `05_Data/` | Raw, processed and analysis material; raw data is git-ignored |
 | `06_Presentation/` | Beamer presentation |
 | `_shared/` | Single bibliography |
-| `99_Archive/` | Application material and compact cleanup recovery archive |
-| `scripts/` | Graphify integration (LaTeX/BibTeX structure, literature layer), review-copy builder, project checks, git hooks |
-| `.github/` | CI: checks, review copy and thesis PDF on every push |
-| `graphify-out/` | Queryable graph, report, HTML and freshness information |
+| `99_Archive/` | Application material and the cleanup recovery archive |
+| `scripts/` | Collectors, ranking, graph integration, review-copy builder, project checks, git hooks |
+| `.github/` | CI |
+| `graphify-out/` | Queryable graph, report, HTML, freshness information |
 
-Read the relevant folder README before changing study records. Research trials
-are historical evidence; preserve their source data and manifests.
+Read a folder's README before changing study records; research trials are
+historical evidence.
 
-## Graphify for LLM navigation
+## Graphify
 
-Graphify 0.9.90 is installed in the ignored project `.venv/`. Its Codex skill is
-installed in the user's skill folder; `AGENTS.md` directs assistants to scoped
-queries. The wrapper uses the project interpreter without changing global PATH.
+Graphify 0.9.90 runs from the git-ignored `.venv/`; the wrapper uses that
+interpreter without changing PATH.
 
 ```powershell
 .\graphify.ps1 query "blind validation and missed mentions" --budget 1200
 .\graphify.ps1 explain "RQ3"
-.\graphify.ps1 refresh
-```
-
-To recreate the local environment:
-
-```powershell
-python -m venv .venv
+python -m venv .venv                                              # recreate the environment
 .\.venv\Scripts\python.exe -m pip install -r requirements-graphify.txt
 .\.venv\Scripts\python.exe -m graphify install --platform codex
-.\graphify.ps1 refresh
 ```
 
-The graph combines Graphify's code AST and semantic extraction with local
-LaTeX/Markdown structure, citations, bibliography entries and literature file names.
-Graphify does not natively detect `.tex`/`.bib`, so the project integration handles
-those formats. Refresh updates structural information locally and reuses semantic
-fragments only while their source hashes match. Changed semantic sources are listed
-for re-extraction using the Graphify skill; no API key is required for assistant extraction.
-
-The methodology literature corpus is indexed from its catalogue and download manifest
-on every refresh, so it never goes semantically stale: each of the 93 works becomes a
-node with its topic, method stage, research question, local PDF and any download gap,
-alongside the reading guide's meeting-decision map. Paper full text is not indexed;
-the abstract and keywords printed on each local PDF's title page are
-(`scripts/literature_index.py`, cached by file hash in
-`01_Literature/literature-index.json`), together with each work's reading status, so
-queries such as "which agreement-statistics papers are still to read" work. The same
-refresh writes `01_Literature/Literature-Map.html`, an interactive map of thesis
-chapters, cited works, the corpus, meeting decisions and reading status.
-
+The graph combines Graphify's code AST and semantic extraction with the project's
+own LaTeX/Markdown structure, citations, bibliography entries and literature file
+names (Graphify does not detect `.tex`/`.bib`). Semantic fragments are reused only
+while their source hash matches; changed sources are listed for re-extraction with
+the Graphify skill. The 93 corpus works are indexed on every refresh from the
+catalogue and download manifest (topic, stage, research question, PDF, download
+gap, reading status) plus the abstract and keywords from each PDF's title page
+(`scripts/literature_index.py`, cached in `01_Literature/literature-index.json`);
+full text is not indexed. The refresh also writes `01_Literature/Literature-Map.html`.
 `.graphifyignore` excludes generated files, archives, duplicate proposal content,
-raw/processed trial data and full PDF text. Original literature is reached through
-its file and bibliography nodes; open a paper when needed for evidence. Query with a
-small budget and then read the located passage. Actual token savings depend on the
-question and were not measured against a real assistant baseline.
+raw/processed data and PDF text. Token savings were not measured.
 
 ## Cleanup recovery
 
-The retired `_junk/` folder, sync conflicts and temporary build/review files are
-removed from the active project. Source/PDF recovery is stored in
-`99_Archive/2026-10-14_cleanup-recovery.zip`; full removed folders/files are kept in
-the adjacent `../bachelor-thesis-cleanup-20261014/` because permanent deletion was
-blocked by automatic approval review.
+The retired `_junk/` folder, sync conflicts and temporary files were removed on
+14 October 2026; source and PDF recovery is in
+`99_Archive/2026-10-14_cleanup-recovery.zip`, full removed folders in the adjacent
+`../bachelor-thesis-cleanup-20261014/`. The superseded `output/` research folder
+was removed on 25 October 2026 (in Git history; its git-ignored raw data was lost,
+see `00_Admin/Risk-Register.md` R9).
