@@ -7,10 +7,35 @@
 
 - **Frame.** Both stores searched in one session, logged out, German storefronts: Apple's Search API with `country=de` (iPhone-compatible results) and the Google Play search page with `gl=de`, `hl=de`; the 49 queries of D3; the first 30 results per query in each store. The App Store is also searched to 200 results, used only as a saturation check.
 - **Measure.** r = German App Store rating count; v = German Google Play review count (the product page's embedded review count, which follows the storefront country). Every Google Play candidate within depth 30 gets its product page (645 apps).
-- **Score.** E = v + c · r, with c = median(v / r) over the apps listed in both stores × s_iOS / s_Android, in units of German Google Play reviews. Assumption: on average, an app's German users split between the platforms like the OS shares. OS shares, September 2026 (StatCounter, read 25 October): Android 72.3 %, iOS 27.7 %.
-- **Selection.** The same app in both stores is one candidate. One ranking of all candidates by E; a candidate is skipped when its developer is already in the sample, including the preinstalled vendors; stop at 47 (D1). Developers are matched by developer ID within a store and by normalised name across stores. No rating floor (it never decided a selected app).
+- **Score.** The German-market popularity score is P_i = v_i + c · r_i, where c = median(v_j / r_j) over matched candidates with positive counts in both stores × s_iOS / s_Android. Calibration precedes eligibility screening. The score is expressed in Google Play review-equivalent units and ranks candidates; it does not estimate users, downloads or encounters with privacy communication. StatCounter's shares describe mobile web page views, used here as a proxy for the platform distribution of users. OS shares, September 2026 (read 25 October): Android 72.3 %, iOS 27.7 %.
+- **Selection.** The same app in both stores is one candidate. Rank all candidates by descending P_i; break ties by the stable candidate key, as in `app-ranking/v003`. A candidate is skipped when its developer is already in the sample, including the preinstalled vendors; stop at 47 (D1). Developers are matched by developer ID within a store and by normalised name across stores. If a counterpart listing is absent from the search frame, its score contribution is zero; this does not establish that the app is unavailable in that store. No rating floor (it never decided a selected app).
 - **Checks.** Spearman correlation of r and v for apps in both stores. Sensitivity, as the number of the 47 providers that change: no developer rule; equal platform weights; pool-sum scale; worldwide Play rating count; the earlier selection (v002); depth 20; App Store depth 200; leave one keyword out; English-only and German-only keywords.
-- **Reason.** The thesis studies the privacy communication that users in Germany meet, so the selection measures German exposure and not quality, and both platforms' users count by their share. Published app studies select on counts, ranks or download bands, never on average ratings. Neither store publishes German downloads; r and v are the only public German counts.
+- **Reason.** The thesis prioritises popular apps in the German market. Storefront-specific feedback counts provide an observable proxy when German download counts are unavailable. App Store ratings and Google Play written reviews represent different feedback actions, so one common conversion factor is applied before combining them. Sunyaev et al. (2015, PDF p. 3) support rating counts as a popularity proxy; they do not validate this cross-store conversion. The score is a study-specific sampling rule whose assumptions and sensitivity must be reported.
+
+### Terminology and interpretation clarified (25 October 2026)
+
+At the author's request, the paper calls the unchanged ranking measure the
+**German-market popularity score**, denoted P rather than E. This replaces the
+earlier name because the observed feedback counts do not measure exposure to
+privacy communication. Script v003 retains the output field `exposure`; its
+values, calibration and selection are unchanged.
+
+The conversion assumes approximately stable platform-specific feedback rates
+across apps and a typical Android-to-iOS user ratio among matched candidates
+that follows the platform-share ratio. Under the simplified model
+v_i ≈ q_A N_Ai and r_i ≈ q_I N_Ii, the observed ratio includes both the feedback-rate
+ratio and the platform-size ratio. Multiplying its median by s_iOS / s_Android
+removes the assumed platform-size component, giving c ≈ q_A / q_I. The sum is
+then proportional to combined use only under those assumptions. The median
+limits the influence of extreme ratios; it does not remove systematic bias.
+
+Evidence: `scripts/app-ranking/v003/rank.py` (`calibration`, `german`, `ranked`)
+and `output/report.json` / `output/selection.csv`; Sunyaev et al., PDF p. 3;
+StatCounter's page-view basis recorded in `statcounter2026os` in the shared
+bibliography. App-specific platform preferences, feedback prompts and the
+accumulation of counts over different app lifetimes limit interpretation.
+Correlation and selection sensitivity are checks of agreement and stability,
+not validation against actual German user counts. D2 remains proposed.
 
 ## As run
 

@@ -18,7 +18,7 @@ a structured content analysis~\parencite{krippendorff2019content} with an
 adapted cognitive walkthrough~\parencite{wharton1994cognitive};
 Figure~\ref{fig:pipeline} summarises the workflow. The sample comprises 50
 apps: eligible apps from the German market of Google Play and the App Store,
-\highlight[orange!25]{ranked together by their German ratings and reviews as a proxy for use}\todo{Revised on 25 October: both stores are now ranked on one German scale (Section~\ref{sec:app-sampling}). Check the wording.}, and the health apps that
+\highlight[orange!25]{ranked together by a German-market popularity score based on ratings and reviews}\todo{Revised on 25 October: both stores use the same popularity score (Section~\ref{sec:app-sampling}). Check the wording.}, and the health apps that
 come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
 For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
@@ -147,11 +147,13 @@ installed and inspected 20~\parencite{malki2024exploring}, Huckvale et al.\
 analysed 36~\parencite{huckvale2019assessment} and Hutton et al.\ evaluated
 64~\parencite{hutton2018assessing}. A target of 50 lies within this range. The
 sample combines the health apps that the leading phone vendor of each platform preinstalls with
-the most widely used eligible apps of the German market of Google Play and the
-App Store. The number of preinstalled apps follows from the vendor rule
+eligible apps with the highest German-market popularity scores from Google Play
+and the App Store. The number of preinstalled apps follows from the vendor rule
 described below, and the store rankings fill the remaining places. There are no
-quotas per domain. Every rule in this section was fixed before the data were
-collected and recorded with its evidence; the resulting numbers are reported in
+quotas per domain. The search frame and eligibility rules were recorded before
+collection. The combined ranking rule was revised after collection and before
+the first combined ranking was computed. The rules and their revisions are
+recorded with supporting evidence; the resulting numbers are reported in
 Section~\ref{sec:results-sample}.
 
 \paragraph{Domain.} The study adopts the domain of two published app studies
@@ -232,37 +234,58 @@ the absence is reported. In-app purchases and subscriptions are recorded but
 do not exclude an app. Screening follows the rank order and uses the store
 listing, and each decision is logged with its reason.
 
-\paragraph{Ranking by German exposure.} The study concerns the communication
-that users in Germany meet, so candidates are ranked by how widely an app is
-used in the German market, not by how well it is rated. Neither store
-publishes download counts for Germany (Table~\ref{tab:storefront-fields}), so
-user feedback stands in for use, as in Sunyaev et al., who selected the most
-frequently rated apps and reported a Spearman correlation of 0.89 between
-rating count and download count on Android~\parencite{sunyaev2015availability}.
-The measure must describe the German market in both stores. On the App Store
-it is the rating count of the German storefront, $r$. On Google Play, the
-rating count and the installs are worldwide; the only German count is the
-review count of the German storefront, $v$, which changes with the storefront
-country and not with the interface language. The two counts measure different
-things, so they are put on one scale with the apps that are listed in both
-stores: assuming that, on average, an app's German users divide between the
-platforms like the German shares of iOS and Android ($s_{\mathrm{iOS}}$,
-$s_{\mathrm{Android}}$; \cite{statcounter2026os}), one App Store rating
-corresponds to
+\paragraph{Ranking by German-market popularity.} Candidates are ordered by a
+\emph{German-market popularity score}, $P_i$, calculated from the feedback
+counts of app~$i$ in the German storefronts. This is a proxy for popularity
+used to select the sample; it does not measure users, downloads or encounters
+with privacy communication. Count-based selection has precedent: Sunyaev et
+al.\ selected frequently rated health apps and reported a Spearman correlation
+of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availability}.
+Their finding supports the use of feedback counts, but does not validate the
+cross-store conversion used here.
+
+For each candidate, $r_i$ is its rating count in the German App Store and
+$v_i$ is its written-review count in German Google Play. Google Play's rating
+and install counts are worldwide and are not used in the main score
+(Table~\ref{tab:storefront-fields}). A star rating and a written review are
+different feedback actions, so the two counts are converted to a common scale
+before they are added:
 \[
-  c = \operatorname{median}\!\left(\frac{v}{r}\right)
-      \cdot \frac{s_{\mathrm{iOS}}}{s_{\mathrm{Android}}}
+  P_i = v_i + c\,r_i.
 \]
-German Google Play reviews, where the median runs over the apps with both
-counts. An app's German exposure is then $E = v + c\,r$. The same app in both
-stores is one candidate, so its two counts add up, and an app found in only one
-store contributes only that store's count. All candidates of both stores are
-ranked together by $E$. This treats iOS and Android users alike, each platform
-weighted by its share of German users. Two checks accompany the measure: the
-correlation between $r$ and $v$ for the apps in both stores, since two German
-measures of the same use should agree, and the alternative scale of the first
-recorded formula, which weights each app's share of its store's total count by
-the platform share.
+One Play review contributes one score unit; one App Store rating contributes
+$c$ units. The same conversion factor $c$ is used for every candidate.
+
+The conversion is calculated from the matched candidates found in both stores,
+before eligibility screening. Let $M$ contain those candidates with positive
+counts in both stores. First, calculate the median ratio of Play reviews to
+App Store ratings. Then adjust that ratio using the German platform shares:
+\[
+  m = \operatorname{median}_{j\in M}\!\left(\frac{v_j}{r_j}\right),
+  \qquad
+  c = m\,\frac{s_{\mathrm{iOS}}}{s_{\mathrm{Android}}}.
+\]
+Here, $s_{\mathrm{iOS}}$ and $s_{\mathrm{Android}}$ are the platforms' shares of
+German mobile web page views in the month preceding collection, taken from
+StatCounter~\parencite{statcounter2026os}. These shares approximate the
+platform distribution of users. The observed ratio $m$ reflects both the
+different platform sizes and the different rates at which users leave ratings
+or reviews. Multiplication by the inverse platform-share ratio aims to remove
+the platform-size component, so that $c$ converts App Store ratings into Play
+review-equivalent units. This assumes that the typical user split of matched
+apps follows the platform shares and that platform-specific feedback rates
+are sufficiently similar across apps. The median limits the influence of
+extreme app ratios; it does not remove systematic differences between apps.
+
+The same app found in both stores is one candidate and contributes both
+counts. If a counterpart listing is absent from the search frame, its
+term is set to zero, without imputing an unobserved count. This does not
+establish that the app is unavailable in the other store. All candidates are
+ranked by descending $P_i$, with ties broken by the stable candidate key used
+by the ranking script. The score has review-equivalent units and is used only
+to compare candidates. Agreement between the two counts and the selection's
+sensitivity to alternative calibrations are checked below; neither establishes
+the score's accuracy against actual user counts.
 
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
@@ -273,7 +296,7 @@ reduce the number of independent providers. The rule also means that each app
 counts once, and both of its listings are captured. Developers are compared by
 name after removing case, accents, punctuation and legal forms; where the same
 app appears under different developer names in the two stores, the names are
-matched by hand. Candidates are taken in the order of $E$, and selection stops
+matched by hand. Candidates are taken in descending order of $P_i$, and selection stops
 when the target of 50 apps is reached, counting the preinstalled apps. If fewer eligible apps are found, all are kept
 and the shortfall is reported.
 Thresholds are not lowered after the results have been inspected.
@@ -646,13 +669,16 @@ validation set, the walkthroughs) before collection; if time runs short,
 supplementary marketing collection is reduced first and other changes are
 agreed with the supervisor.
 
-\section{Limitations} The sample favours free, frequently rated apps found by
-the chosen keywords and does not represent all German users' exposure; one app
-per provider also leaves out further apps of large providers. German ratings
-and reviews are a proxy for use: apps that prompt users to rate collect more of
-them, the common scale assumes that an app's users divide between the platforms
-like the OS shares, and an app found in only one store's search counts only
-that store's users. The corpus is a
+\section{Limitations} The sample favours free apps with high German-market
+popularity scores found by the chosen keywords and does not represent all
+health-tracking apps or their users in Germany; one app per provider also
+leaves out further apps of large providers. Feedback counts accumulate over
+different app lifetimes and depend on prompts to rate or review. The common
+scale assumes a typical platform distribution and approximately stable
+platform-specific feedback rates across apps. StatCounter's page-view shares
+are an approximation of the user distribution, and a listing not found in one
+store contributes no count from that store. These limits prevent interpreting
+the score as a count of users or communication encounters. The corpus is a
 dated snapshot, walkthroughs cover selected paths, and reference trees depend
 on the chosen literature. Unless a second coder joins, one person provides the
 reference labels, so model agreement is not independent human-coder

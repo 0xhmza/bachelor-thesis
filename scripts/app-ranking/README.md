@@ -26,10 +26,17 @@ criterion E1–E5, category, reason).
 **Method.** Listings in the first `depth` results of any keyword are pooled per
 store; the preinstalled listings are removed. The same app in both stores (same
 provider and a matching title, or a hand-made pair in `pairs`) becomes one
-candidate. Each candidate gets the German exposure E = v + c·r: r is the German App
-Store rating count, v the German Google Play review count, and
-c = median(v / r) over candidates in both stores × `os_share.ios` /
-`os_share.android`. Candidates are taken in the order of E; one is skipped when its
+candidate. Each candidate gets the German-market popularity score P = v + c·r:
+r is the German App Store rating count, v the German Google Play written-review
+count, and c = median(v / r) over matched candidates with positive counts in both
+stores, before eligibility screening, × `os_share.ios` / `os_share.android`.
+These shares are mobile web page-view shares used as a proxy for the platform
+distribution of users. The score has Play review-equivalent units; it does not
+estimate actual users or encounters with privacy communication. A listing absent
+from the search frame contributes zero from that store, without implying actual
+store unavailability. Script v003 retains the output field `exposure` for this
+unchanged score. Candidates are taken by descending score, with ties broken by
+the candidate key; one is skipped when its
 developer is already in the sample, including the preinstalled vendors. Developers
 are compared after removing case, accents, punctuation and legal forms; `aliases`
 maps further spellings. An excluded listing in either store excludes the candidate.
