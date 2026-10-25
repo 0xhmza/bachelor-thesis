@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-25T15:29:22.232895+00:00",
+  "built_at_utc": "2026-10-25T15:30:30.564696+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -51,6 +51,7 @@
     "00_Admin/Decisions/D02_ranking-and-rating-floor.md",
     "00_Admin/Decisions/D06_preinstalled-apps.md",
     "00_Admin/Open-Points.md",
+    "00_Admin/Project-Handoff_2026-10-25.md",
     "00_Admin/README.md",
     "00_Admin/Risk-Register.md",
     "00_Admin/Timeline.md",
@@ -141,7 +142,8 @@
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md": "02fb72d5bb4dd805d2e44c5e9893d7ca91e927bbd80ce2928af6f8d0b4e94ff1",
     "00_Admin/Meeting-Notes/TEMPLATE.md": "7eb543b606ac7fa4c707bead98ec47cd3e999ccb3df1986145ca914b78c0186e",
     "00_Admin/Open-Points.md": "1aad18be708af112c79967b428b95796ba455559e1ddbc26ead309930df60d5b",
-    "00_Admin/README.md": "4a6c081227760ebfceeee8a16f4a26ec894bdfe17cec28ddfb41f3b14cd5d81f",
+    "00_Admin/Project-Handoff_2026-10-25.md": "d712cac5339e675fe3ca86ab24eae80715a41407b741d474b57239bd3ac9271a",
+    "00_Admin/README.md": "896189f0059175f63178feaf4296354ed12a937b574a938fb4582853ab87e761",
     "00_Admin/Risk-Register.md": "7dbaed240dc6a55b717ae6bb87271d21811f6c23cdcf5f5f58607a229d37c737",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md": "adf7f59502c17a2c90a0c48aa3f66e15b49e0b402ba7127f376119f835150188",
     "00_Admin/Supervisor-Input/README.md": "e5134cc2bfb7545cb21a6c000cdb2a9fcdbe4d7391074b3660787c94e5c4310c",
@@ -210,9 +212,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1278,
-  "edges": 2199,
-  "communities": 112,
+  "nodes": 1287,
+  "edges": 2207,
+  "communities": 118,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

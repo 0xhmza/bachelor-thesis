@@ -2,6 +2,7 @@
 
 | File / folder | What it is |
 |---|---|
+| `Project-Handoff_2026-10-25.md` | State of the whole project: chapters, sample, decisions, next steps, risks. Start here. |
 | `Timeline.md` | Milestones and the administrative checklist. Keep it current. |
 | `Action-Plan_2026-10-13.md` | Ordered work plan from the 13 October meeting: clarify → evidence → decide → protocols → pilot → rewrite. |
 | `Decision-Log.md` | Register of methodological decisions D1–D12 with status and evidence; one record per decision in `Decisions/`. |
