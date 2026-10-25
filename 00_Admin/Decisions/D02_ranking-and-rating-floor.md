@@ -37,6 +37,27 @@ accumulation of counts over different app lifetimes limit interpretation.
 Correlation and selection sensitivity are checks of agreement and stability,
 not validation against actual German user counts. D2 remains proposed.
 
+### Store-specific inputs and verification clarified (25 October 2026)
+
+The author requested a gradual explanation of the available inputs before the
+sum. The comparable German-market count used from a Google Play listing is its
+written-review count, v_i; from an App Store listing it is its rating count,
+r_i. This does not mean Google Play has no ratings or the App Store has no
+written reviews: the collected Play rating count is worldwide, while the App
+Store review texts do not provide the German written-review total used here.
+Evidence: the storefront checks above, Table 4.2 in the thesis, and v003's
+`load` and `candidates` functions. A Play-only candidate contributes v_i; an
+App-Store-only candidate contributes c·r_i; a matched candidate contributes
+v_i + c·r_i. The formula uses zero only for an absent listing's contribution,
+not as a claim about the unobserved count. Calculation and sample are unchanged.
+
+Verification has three separate targets: code correctness can be checked by
+unit tests and reproducing the stored calculation; sensitivity checks assess
+selection stability; empirical validity requires comparison with an independent
+German app-use measure with a defined population and time window. The existing
+cross-store correlation alone cannot establish that validity. No new validation
+threshold or collection method is adopted by this clarification.
+
 ## As run
 
 - **25 October 2026** (`scripts/app-ranking/v003/`): 1,367 candidates, 123 in both stores. c = 0.090 (median v / r = 0.234 over the 114 apps with both counts; Spearman r–v 0.80). 47 apps from 47 providers: 32 in both stores, 9 Google Play only, 6 App Store only. Developer spellings matched by hand (`aliases` in `config.json`): Clue, Pregnancy+, Alarmy, Leap Fitness, Map My Run, Daylio, MeetYou, BabyCenter (24 October), Fddb, Headspace, Macadam, BetterSleep, Babelli (25 October); translated titles paired by hand (`pairs`): Monitor Your Weight, Instant Heart Rate, WalkFit. Providers changed out of 47: pool-sum scale 0, equal weights 5, worldwide Play count 11, earlier selection 10, no developer rule 10. Outcome in the thesis, Results, section "Sample".

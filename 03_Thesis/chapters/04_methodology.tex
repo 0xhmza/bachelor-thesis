@@ -244,17 +244,41 @@ of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availa
 Their finding supports the use of feedback counts, but does not validate the
 cross-store conversion used here.
 
-For each candidate, $r_i$ is its rating count in the German App Store and
-$v_i$ is its written-review count in German Google Play. Google Play's rating
-and install counts are worldwide and are not used in the main score
-(Table~\ref{tab:storefront-fields}). A star rating and a written review are
-different feedback actions, so the two counts are converted to a common scale
-before they are added:
+The available German-market feedback count differs between stores
+(Table~\ref{tab:storefront-fields}):
+\begin{itemize}
+  \item A \textbf{Google Play listing} contributes its German written-review
+    count, denoted $v_i$. Google Play also publishes rating and install counts,
+    but the collected values are worldwide and are not used in the main score.
+  \item An \textbf{App Store listing} contributes its German rating count,
+    denoted $r_i$. Individual written reviews can be viewed, but the collected
+    listing data do not provide a German written-review total.
+\end{itemize}
+Thus, a listing supplies one of the two inputs. The unit being ranked is the
+\emph{app}, however: its listings are matched across stores before scoring.
+An app found only in Google Play has an observed $v_i$ contribution; one found
+only in the App Store has an observed $r_i$ contribution. A matched app found
+in both stores has both. Here, \enquote{only} refers to listings in the search
+frame, not proof that the app is unavailable in the other store.
+
+A rating and a written review are different feedback actions. They cannot be
+treated as interchangeable counts without a conversion. Google Play reviews
+serve as the reference unit: one contributes one score unit. Each App Store
+rating contributes $c$ units, where the same conversion factor $c$ is applied
+to all candidates. The three cases are therefore
 \[
-  P_i = v_i + c\,r_i.
+  P_i =
+  \begin{cases}
+    v_i, & \text{Google Play listing only},\\
+    c\,r_i, & \text{App Store listing only},\\
+    v_i+c\,r_i, & \text{matched listings in both stores}.
+  \end{cases}
 \]
-One Play review contributes one score unit; one App Store rating contributes
-$c$ units. The same conversion factor $c$ is used for every candidate.
+For bookkeeping, the contribution of a listing absent from the search frame
+is set to zero. The three cases can then be written compactly as
+$P_i=v_i+c\,r_i$. The addition combines the converted contributions of the two
+listings of a matched app; it does not require every app to have both inputs
+or imply that an unobserved store count is actually zero.
 
 The conversion is calculated from the matched candidates found in both stores,
 before eligibility screening. Let $M$ contain those candidates with positive
@@ -277,15 +301,14 @@ apps follows the platform shares and that platform-specific feedback rates
 are sufficiently similar across apps. The median limits the influence of
 extreme app ratios; it does not remove systematic differences between apps.
 
-The same app found in both stores is one candidate and contributes both
-counts. If a counterpart listing is absent from the search frame, its
-term is set to zero, without imputing an unobserved count. This does not
-establish that the app is unavailable in the other store. All candidates are
-ranked by descending $P_i$, with ties broken by the stable candidate key used
-by the ranking script. The score has review-equivalent units and is used only
-to compare candidates. Agreement between the two counts and the selection's
-sensitivity to alternative calibrations are checked below; neither establishes
-the score's accuracy against actual user counts.
+All candidates are ranked by descending $P_i$, with ties broken by the stable
+candidate key used by the ranking script. The score has review-equivalent
+units and is used only to compare candidates. Agreement between the two counts
+and the selection's sensitivity to alternative calibrations are checked below.
+These assess agreement and selection stability. Empirical validation of the
+popularity interpretation would require comparison with an independent measure
+of German app use for a defined population and time window; the present checks
+do not establish accuracy against actual user counts.
 
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
