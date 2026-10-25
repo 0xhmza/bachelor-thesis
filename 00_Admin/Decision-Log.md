@@ -17,7 +17,7 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | D3 | Tracker scope and keyword space | proposed (10-23): domains and keywords of Hutton et al. 2018 and Malki et al. 2024, EN + DE; tracking-over-time rule | Meeting 10-13; Hutton 2018; Malki 2024; Robillard 2019 | [D03](Decisions/D03_scope-keywords-function.md) |
 | D4 | Payment, trial and account eligibility | proposed (10-23): free to install; payment recorded, decides walkthroughs only | Meeting 10-13; Robillard 2019 | [D04](Decisions/D04_payment-access.md) |
 | D5 | Apps without a privacy policy | confirmed (meeting 10-13; adopted 10-23): included, absence reported | Meeting 10-13; Sunyaev 2015; O'Loughlin 2019 | [D05](Decisions/D05_apps-without-policy.md) |
-| D6 | Native / platform health apps | proposed (Apple Health, Apple Fitness, Samsung Health) | Meeting 10-13; StatCounter vendor shares | [D06](Decisions/D06_preinstalled-apps.md) |
+| D6 | Native / platform health apps | proposed (10-25): leading vendor per platform (Apple, Samsung) → Apple Health, Apple Fitness, Samsung Health; replaces the 10 % threshold | Meeting 10-13; StatCounter vendor and OS shares | [D06](Decisions/D06_preinstalled-apps.md) |
 | D7 | Language rule per material type | confirmed (meeting 10-13; adopted 10-23): English first, German fallback | Meeting 10-13; Arora et al. 2022 on English–German policy differences | [D07](Decisions/D07_language.md) |
 | D8 | Two-coder procedure | open | Meeting 10-13 | — |
 | D9 | LLM role and acceptance thresholds | open | Proposal; meeting 10-13 | — |

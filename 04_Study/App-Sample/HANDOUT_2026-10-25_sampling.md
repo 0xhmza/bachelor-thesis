@@ -38,7 +38,7 @@ Full figures: `scripts/app-ranking/v003/output/report.json`.
    activity recording); Oviva (out as a DiGA; confirm in the BfArM directory);
    Meine AOK (out, E2).
 2. **Supervisor questions:** domain from Hutton et al. and Malki et al. (D3); one
-   app per developer and the German exposure ranking (D2); the vendor rule (D6);
+   app per developer and the German exposure ranking (D2); the vendor rule (D6, now the leading vendor per platform);
    the two mood apps and the six cycle and pregnancy apps against the two-domain
    design.
 3. Back up the git-ignored outputs: `scripts/appstore-scraper/v007/output/`,

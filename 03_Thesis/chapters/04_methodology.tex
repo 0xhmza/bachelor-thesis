@@ -19,7 +19,7 @@ adapted cognitive walkthrough~\parencite{wharton1994cognitive};
 Figure~\ref{fig:pipeline} summarises the workflow. The sample comprises 50
 apps: eligible apps from the German market of Google Play and the App Store,
 \highlight[orange!25]{ranked together by their German ratings and reviews as a proxy for use}\todo{Revised on 25 October: both stores are now ranked on one German scale (Section~\ref{sec:app-sampling}). Check the wording.}, and the health apps that
-come preinstalled on the phones of the largest vendors in Germany. A pilot
+come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
 For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
 pages}\todo{Not sure the provider pages will be collected.} will be collected, and \highlight[orange!25]{12 apps will additionally be inspected in
@@ -146,7 +146,7 @@ also inspect the apps themselves have worked with 20 to 64 apps: Malki et al.\
 installed and inspected 20~\parencite{malki2024exploring}, Huckvale et al.\
 analysed 36~\parencite{huckvale2019assessment} and Hutton et al.\ evaluated
 64~\parencite{hutton2018assessing}. A target of 50 lies within this range. The
-sample combines the health apps that the largest phone vendors preinstall with
+sample combines the health apps that the leading phone vendor of each platform preinstalls with
 the most widely used eligible apps of the German market of Google Play and the
 App Store. The number of preinstalled apps follows from the vendor rule
 described below, and the store rankings fill the remaining places. There are no
@@ -282,13 +282,20 @@ Thresholds are not lowered after the results have been inspected.
 users without a download, so their rating counts understate their reach and
 they cannot be ranked by the same measure. They form a group of their own, and
 the number of its members follows from a rule with three steps.
-\emph{Vendors:} a phone vendor is included if its share of mobile page views
-in Germany is at least 10\,\%, according to the vendor statistics of
-StatCounter~\parencite{statcounter2026vendor}, read at the time of the
-collection and recorded with its date. Page views are a proxy for the installed
-base and not for sales. The threshold separates the large vendors from the rest
-and is fixed before the shares are read.
-\emph{Apps:} for each included vendor, the preinstalled apps are identified
+\emph{Vendors:} on each of the two platforms, the vendor with the largest share
+of the platform's mobile page views in Germany is included, according to the
+vendor statistics of StatCounter~\parencite{statcounter2026vendor}, read at the
+time of the collection and recorded with its date. A vendor's share of its
+platform is its share of all mobile page views divided by the platform's share
+of all mobile page views~\parencite{statcounter2026os}, so that the vendors of
+each platform are compared with their own users. The rule has no threshold to tune and treats
+iOS and Android alike, as the ranking does: a German user of either platform
+most often meets the configuration of its leading vendor, the same logic as
+taking the most widely used apps. Page views are a proxy for the installed base
+and not for sales. Threshold rules that admit more vendors, such as a minimum
+share of all page views or vendors that together cover most of a platform, are
+reported as checks of the rule.
+\emph{Apps:} for each leading vendor, the preinstalled apps are identified
 from the vendor's documentation and from the store listings. An app qualifies
 if the vendor itself provides it, if it is installed on the vendor's current
 phones without a download, and if it meets the eligibility criteria E1 to E5,

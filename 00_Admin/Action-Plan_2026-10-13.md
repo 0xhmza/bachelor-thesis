@@ -40,7 +40,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 | D3 | Tracker scope | fitness + fertility | add mental health, sleep, snoring, chronic disease | proposed 10-23 |
 | D4 | Access | free to install | free to install vs. free to use; card-required trials | proposed 10-23 |
 | D5 | No privacy policy | excluded | included, absence reported | confirmed 10-23 |
-| D6 | Native apps | — | state how Apple/Samsung/Huawei Health can enter | proposed |
+| D6 | Native apps | — | state how Apple/Samsung/Huawei Health can enter | proposed (leading vendor per platform, 10-25) |
 | D7 | Language | German first | English first, German fallback | confirmed 10-23 |
 | D8 | Coding | one coder, second sought | two coders | open |
 | D9 | LLM | screener, chosen on pilot | test usability on policies | open; see §8 |

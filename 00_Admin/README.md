@@ -17,7 +17,7 @@
 
 ## The thesis in one paragraph
 
-Fitness and health tracking apps collect continuous behavioural and physiological
+Health tracking apps collect continuous behavioural and physiological
 data. Their privacy communication — policies, store listings, websites, in-app
 text, ads — describes downstream data practices, but says little or nothing about
 **inference**, **breaches**, and **incident handling**. This thesis examines what
