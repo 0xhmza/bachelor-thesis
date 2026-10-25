@@ -24,9 +24,17 @@ collected the sample on 23 October (App Store) and 24 and 25 October 2026 (Googl
   \item[\texttt{cache}] Google Play: file to which each product page is appended.
 \end{description}
 
+\par\medskip\noindent
+\begin{minipage}{\linewidth}
 \lstinputlisting[style=jsoncode, caption={Input of the App Store collector; lines 6--50 hold the remaining keywords of Table~\ref{tab:keywords}.}, label={lst:input-apple}, linerange={1-5,51-55}]{../scripts/appstore-scraper/v007/input.json}
+\end{minipage}
+\par\medskip
 
+\noindent
+\begin{minipage}{\linewidth}
 \lstinputlisting[style=jsoncode, caption={Input of the Google Play collector; lines 6--50 as above.}, label={lst:input-play}, linerange={1-5,51-57}]{../scripts/googleplay-scraper/v004/input.json}
+\end{minipage}
+\par\medskip
 
 \section{App Store Collector}
 The script calls Apple's documented iTunes Search API once per keyword and

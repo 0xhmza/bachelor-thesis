@@ -6,31 +6,34 @@
 \usepackage[english]{babel}
 
 % --- Fonts and maths --------------------------------------------------
-% Libertinus Serif for text and maths (the face of the ACM proceedings),
-% Source Sans for headings and labels, Inconsolata for code.
+% Times-compatible text and mathematics; a distinct monospaced face for code.
+% Headings use the same serif family as the body.
 \usepackage{amsmath}
-\usepackage[lining]{libertinus}
-\usepackage{libertinust1math}
-\usepackage[semibold,scale=0.92]{sourcesanspro}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
 \usepackage[varqu,scaled=0.95]{zi4}
 \usepackage{microtype}
 
-\usepackage[a4paper,inner=3.0cm,outer=2.5cm,top=2.7cm,bottom=2.7cm]{geometry}
+\usepackage[a4paper,inner=3.0cm,outer=2.5cm,top=2.5cm,bottom=2.5cm,
+  headheight=20pt,headsep=7mm,footskip=12mm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
+\raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
 \setlength{\emergencystretch}{1.5em}
 \hyphenation{Kna-ben-hans}
 
 % --- Colours ----------------------------------------------------------
-% RUB corporate blue and green; everything else derives from these two.
+% Restrained accents for diagrams, source listings and linked references.
+% Body text, headings, table rules and navigation remain black.
 \usepackage{xcolor}
-\definecolor{rubblue}{HTML}{003560}
-\definecolor{rubgreen}{HTML}{8DAE10}
-\colorlet{primary}{rubblue}
-\colorlet{accent}{rubgreen}
-\definecolor{accentdark}{HTML}{5B7508}
-\definecolor{muted}{HTML}{5F6B76}
-\colorlet{linkblue}{primary!85!cyan}
+\definecolor{primary}{HTML}{233F5B}
+\definecolor{accent}{HTML}{37665D}
+\colorlet{accentdark}{accent}
+\definecolor{muted}{HTML}{535B63}
+\colorlet{linkblue}{primary}
 
 % --- Figures, tables, code ------------------------------------------
 \usepackage{graphicx}
@@ -38,20 +41,21 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{colortbl}
-\arrayrulecolor{primary}
-\setlength{\heavyrulewidth}{0.9pt}
+\arrayrulecolor{black}
+\setlength{\heavyrulewidth}{0.8pt}
 \setlength{\lightrulewidth}{0.4pt}
+\renewcommand{\arraystretch}{1.12}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcommand{\rowrule}{\arrayrulecolor{primary!25}\cmidrule[0.3pt]{2-4}\arrayrulecolor{primary}}
+\newcommand{\rowrule}{\cmidrule[0.3pt]{2-4}}
 % Preserve the proposal's figure descriptions in PDF text without ACM macros.
-\newcommand{\Description}[1]{\par\smallskip{\footnotesize\color{muted}\textit{Figure description:} #1}\par}
+\newcommand{\Description}[1]{\par\smallskip{\raggedright\footnotesize\color{muted}\textit{Figure description:} #1\par}}
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{caption}
-\captionsetup{font=small, labelfont={sf,bf,color=primary}, labelsep=quad,
+\captionsetup{font={small,stretch=1}, labelfont=bf, labelsep=period,
   format=hang, justification=justified, singlelinecheck=true}
 \captionsetup[table]{position=top, skip=6pt}
 \captionsetup[figure]{skip=8pt}
@@ -59,57 +63,45 @@
 \usepackage{float}
 \usepackage{enumitem}
 \setlist{itemsep=0.2\baselineskip, topsep=0.4\baselineskip}
-\setlist[itemize]{label=\textcolor{accent}{\small\textbullet}}
+\setlist[itemize]{label=\small\textbullet}
 \usepackage{csquotes}
 \usepackage{listings}
 
 % --- Headings ---------------------------------------------------------
-% Chapter openers: a large green numeral above a blue rule and the title.
+% Conventional numbered chapters, without decorative rules or display numerals.
 \KOMAoptions{numbers=noenddot}
-\setkomafont{disposition}{\sffamily\bfseries\color{primary}}
-\setkomafont{chapter}{\fontsize{26}{31}\selectfont}
-\setkomafont{section}{\Large}
+\setkomafont{disposition}{\normalfont\bfseries\color{black}}
+\setkomafont{chapter}{\fontsize{20}{25}\selectfont}
+\setkomafont{section}{\fontsize{15}{19}\selectfont}
 \setkomafont{subsection}{\large}
+\setkomafont{subsubsection}{\normalsize}
 \setkomafont{paragraph}{\normalsize}
-\setkomafont{descriptionlabel}{\sffamily\bfseries\color{primary}}
-\RedeclareSectionCommand[beforeskip=0pt, afterskip=2.2\baselineskip]{chapter}
-\renewcommand*{\chapterformat}{%
-  {\fontsize{64}{64}\selectfont\mdseries\color{accent}\thechapter}}
-\renewcommand*{\chapterlinesformat}[3]{%
-  \Ifstr{#2}{}{\vspace*{3.4\baselineskip}}{\raggedleft #2\par\nobreak}%
-  {\color{primary}\rule{\linewidth}{0.8pt}}\par\nobreak
-  \vspace{0.7\baselineskip}%
-  {\raggedright #3\par}}
-\renewcommand*{\sectionformat}{\textcolor{accent}{\thesection}\enskip}
-\renewcommand*{\subsectionformat}{\textcolor{accent}{\thesubsection}\enskip}
-\renewcommand*{\subsubsectionformat}{\textcolor{accent}{\thesubsubsection}\enskip}
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+\RedeclareSectionCommand[beforeskip=0pt, afterskip=1.5\baselineskip]{chapter}
 
-% Table of contents: chapter entries in the heading face.
-\setkomafont{chapterentry}{\sffamily\bfseries\color{primary}}
-\setkomafont{chapterentrypagenumber}{\sffamily\bfseries\color{primary}}
+\setkomafont{chapterentry}{\normalfont\bfseries}
+\setkomafont{chapterentrypagenumber}{\normalfont\bfseries}
 
 % --- Running heads ----------------------------------------------------
-\usepackage[headsepline=0.4pt]{scrlayer-scrpage}
+\usepackage{scrlayer-scrpage}
 \clearpairofpagestyles
 \automark[section]{chapter}
 \ihead{\headmark}
-\ohead{\pagemark}
-\cfoot[\pagemark]{}
-\setkomafont{pageheadfoot}{\small\sffamily\color{muted}}
-\setkomafont{pagenumber}{\sffamily\bfseries\color{primary}}
-\setkomafont{headsepline}{\color{primary!30}}
+\ofoot*{\pagemark}
+\setkomafont{pageheadfoot}{\normalfont\small\color{black}}
+\setkomafont{pagenumber}{\normalfont\small\color{black}}
 \renewcommand*{\chaptermarkformat}{\thechapter\enskip}
 \renewcommand*{\sectionmarkformat}{\thesection\enskip}
 
 % --- Footnotes --------------------------------------------------------
-\deffootnote{1.2em}{1em}{\makebox[1.2em][l]{\textcolor{primary}{\sffamily\footnotesize\thefootnotemark}}}
+\deffootnote{1.2em}{1em}{\textsuperscript{\thefootnotemark}\,}
 
 % --- Links -----------------------------------------------------------
 \usepackage{hyperref}
 \hypersetup{
   colorlinks = true,
-  linkcolor  = linkblue,
-  citecolor  = accentdark,
+  linkcolor  = black,
+  citecolor  = linkblue,
   urlcolor   = linkblue,
   pdftitle   = {\thesistitle},
   pdfauthor  = {\authorname}
@@ -117,8 +109,7 @@
 \usepackage[capitalise,noabbrev]{cleveref}
 
 % --- Bibliography ----------------------------------------------------
-% Switch to  style=apa  (needs biblatex-apa) or  style=alphabetic
-% if your examiner prefers a different citation style.
+% Numeric references with Biber; restrained blue for linked citation numbers.
 \usepackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
 \addbibresource{../_shared/references.bib}
 \renewcommand*{\bibfont}{\small}
@@ -142,21 +133,20 @@
   showstringspaces = false
 }
 
-% Coloured style for source code in the appendices: muted palette and bold
-% keywords so it still reads in greyscale print (Inconsolata has no italic).
-\definecolor{codebg}{HTML}{F5F7FA}
-\colorlet{coderule}{accent}
+% Subtle background and syntax accents; bold keywords also work in greyscale.
+\definecolor{codebg}{HTML}{F5F6F7}
+\colorlet{coderule}{primary!45}
 \colorlet{codekeyword}{primary}
-\definecolor{codebuiltin}{HTML}{6A3FA0}
-\definecolor{codestring}{HTML}{1E7B4F}
-\definecolor{codecomment}{HTML}{6B7280}
+\definecolor{codebuiltin}{HTML}{665078}
+\colorlet{codestring}{accent}
+\colorlet{codecomment}{muted}
 \lstdefinelanguage{json}{
   morestring = [b]",
   morekeywords = {true,false,null},
   sensitive = true
 }
 \lstdefinestyle{thesiscode}{
-  basicstyle      = \ttfamily\scriptsize,
+  basicstyle      = \linespread{1}\ttfamily\fontsize{9}{11}\selectfont,
   keywordstyle    = \color{codekeyword}\bfseries,
   keywordstyle    = [2]\color{codebuiltin},
   stringstyle     = \color{codestring},
@@ -173,7 +163,7 @@
   breaklines      = true,
   breakindent     = 1.2em,
   postbreak       = \mbox{\textcolor{codecomment}{$\hookrightarrow$}\space},
-  columns         = flexible,
+  columns         = fullflexible,
   keepspaces      = true,
   showstringspaces = false,
   tabsize         = 4,
@@ -187,6 +177,7 @@
   morekeywords = [2]{open,print,len,enumerate,any,dict,str,isinstance,set,list}
 }
 \lstdefinestyle{jsoncode}{style = thesiscode, language = json}
+\lstset{style=thesiscode}
 
 % --- Helpers ---------------------------------------------------------
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}

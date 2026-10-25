@@ -21,30 +21,30 @@ brokerage; sending interest categories instead of entries does not, because a
 category such as \enquote{family planning} still carries the
 pregnancy~\parencite{martin2025cookies}.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
   font=\footnotesize,
-  bx/.style={draw,rounded corners=2pt,align=center,text width=30mm,
-             minimum height=10mm,inner sep=2pt},
+  bx/.style={draw=primary!65,fill=primary!4,rounded corners=2pt,align=center,text width=28mm,
+             minimum height=17mm,inner sep=3pt},
   lb/.style={font=\scriptsize\itshape,fill=white,inner sep=1pt}]
-  \node[bx,text width=118mm,minimum height=6mm] (h) at (8.4,2.15)
+  \node[bx,fill=primary!12,text width=100mm,minimum height=12mm] (h) at (6.6,4.5)
     {\textbf{Harm:} targeted advertising, e.g.\ pregnancy ads after a
      pregnancy loss (psychological)};
-  \node[bx,text width=48mm,minimum height=6mm] (t) at (5.0,1.1) {\textbf{Capability:} tracking/profiling};
-  \node[bx,text width=34mm,minimum height=6mm] (d) at (13.6,1.1) {\textbf{Capability:} data brokerage};
+  \node[bx,fill=accent!10,text width=70mm,minimum height=12mm] (t) at (4.95,2.25) {\textbf{Capability:} tracking/profiling};
+  \node[bx,fill=accent!10,text width=28mm,minimum height=12mm] (d) at (13.2,2.25) {\textbf{Capability:} data brokerage};
   \node[bx] (c1) at (0.0,0) {C1: Pregnancy Mode events\\sent to an ad SDK\\(implementation)};
-  \node[bx] (c2) at (3.35,0) {C2: user ID shared\\with ad partners\\(implementation)};
-  \node[bx] (c3) at (6.7,0) {C3: advertising ID,\\IP address\\(digital context)};
-  \node[bx] (c4) at (10.05,0) {C4: daily use\\of the app\\(core)};
-  \node[bx] (c5) at (13.6,0) {C5: cycle records on\\the provider's servers\\(implementation)};
+  \node[bx] (c2) at (3.3,0) {C2: user ID shared\\with ad partners\\(implementation)};
+  \node[bx] (c3) at (6.6,0) {C3: advertising ID,\\IP address\\(digital context)};
+  \node[bx] (c4) at (9.9,0) {C4: daily use\\of the app\\(core)};
+  \node[bx] (c5) at (13.2,0) {C5: cycle records on\\the provider's servers\\(implementation)};
   \foreach \c in {c1,c2,c3,c4} \draw (\c.north) -- (t.south);
   \draw (c5.north) -- (d.south);
   \draw (t.north) -- (h.south);
   \draw (d.north) -- (h.south);
-  \node[lb] at (5.0,0.62) {OR+};
-  \node[lb] at (9.3,1.62) {OR};
+  \node[lb] at (4.95,1.35) {OR+};
+  \node[lb] at (6.6,3.65) {OR};
 \end{tikzpicture}}
 \caption{App~F's version of Knabenhans et al.'s targeted-advertising tree,
 read from the bottom up.}
@@ -69,13 +69,13 @@ is one unit. A: every mentioned element with its status (asserted, possible,
 denied); B: a stance, only for a named harm; C: the measure's framing,
 strength and scope. A dash: not applicable.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{singlespace}
 \caption{Constructed statements and their codes.}
 \label{tab:worked}
 \small
-\begin{tabularx}{\textwidth}{@{}L{0.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X L{2.2cm}>{\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\textwidth}{@{}L{0.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X L{2.4cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
  & \textbf{Statement} & \textbf{A: What is mentioned} & \textbf{B: Stance}
  & \textbf{C: Protection} \\

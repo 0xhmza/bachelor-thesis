@@ -1,40 +1,32 @@
 \begin{titlepage}
 \setlength{\parindent}{0pt}
-\begin{tikzpicture}[remember picture, overlay]
-  \fill[primary] (current page.north west) rectangle
-    ([yshift=-6.2cm]current page.north east);
-  \fill[accent] ([yshift=-6.2cm]current page.north west) rectangle
-    ([yshift=-6.45cm]current page.north east);
-  \node[anchor=south west, inner sep=0pt, text=white, align=left,
-        font=\sffamily] at ([xshift=3cm, yshift=-5.3cm]current page.north west)
-    {{\LARGE\bfseries \theuniversity}\\[6pt]
-     {\large \thefaculty}\\[3pt]
-     {\large \thechair}};
-\end{tikzpicture}
-\vspace*{6.6cm}
-
-{\sffamily\bfseries\color{accentdark}\textls[120]{\MakeUppercase{\thesistype}}\par}
-\vspace{0.7cm}
-{\raggedright\sffamily\bfseries\color{primary}\fontsize{30}{37}\selectfont
-  \thesistitle\par}
-\vspace{0.6cm}
-{\color{accent}\rule{2.5cm}{2pt}\par}
-\vspace{0.6cm}
-{\large \theprogram\par}
-
-\vfill
-{\sffamily\LARGE \authorname\par}
+\singlespacing
+\centering
+\vspace*{1cm}
+{\large\bfseries \theuniversity\par}
+\vspace{0.35cm}
+{\normalsize \thefaculty\par}
 \vspace{0.2cm}
-{\color{muted} Matriculation number: \matriculation\par}
-
-\vspace{1.4cm}
-{\color{primary!30}\rule{\linewidth}{0.4pt}\par}
+{\normalsize \thechair\par}
+\vfill
+{\fontsize{22}{28}\selectfont\bfseries \thesistitle\par}
+\vspace{1cm}
+{\large \thesistype\par}
+\vspace{0.45cm}
+{\normalsize \theprogram\par}
+\vspace{1.5cm}
+{\large \authorname\par}
 \vspace{0.3cm}
-{\small
-\begin{tabular}{@{}>{\sffamily\bfseries\color{primary}}l@{\hspace{1.2em}}l@{}}
+{\normalsize Matriculation number: \matriculation\par}
+\vfill
+\begin{minipage}{0.94\textwidth}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\linewidth}{@{}l@{\hspace{1.5em}}>{\raggedright\arraybackslash}X@{}}
 First examiner  & \supervisorone \\
 Second examiner & \supervisortwo \\
 Advisor         & \advisorname \\
 Submitted on    & \submissiondate \\
-\end{tabular}\par}
+\end{tabularx}
+\end{minipage}
+\vspace*{0.8cm}
 \end{titlepage}
