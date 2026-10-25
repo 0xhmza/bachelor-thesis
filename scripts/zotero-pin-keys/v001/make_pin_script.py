@@ -60,4 +60,5 @@ return `pinned ${done}, unchanged ${same}, missing ${missing.length}: ${missing.
 """ % json.dumps(mapping, indent=1)
 out = here / 'output'; out.mkdir(exist_ok=True)
 (out / 'pin_keys.js').write_text(js, encoding='utf-8')
+(out / 'mapping.json').write_text(json.dumps(mapping, indent=1), encoding='utf-8')
 print(len(mapping), 'mapped;', len(problems), 'problems'); print(*problems, sep='\n')
