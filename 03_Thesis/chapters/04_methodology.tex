@@ -17,30 +17,104 @@ This chapter describes how the study will be carried out. The study combines
 a structured content analysis~\parencite{krippendorff2019content} with an
 adapted cognitive walkthrough~\parencite{wharton1994cognitive};
 Figure~\ref{fig:pipeline} summarises the workflow. The sample comprises 50
-apps: 47 \todo{the decision of 47 apps from appstores vs 3 preinstalled from providers has to depend on some research and be later updated} apps from the German App Store and the German Google Play store,
-ranked by their number of ratings as a proxy for use, and 3 health apps that
+apps: eligible apps from the German market of Google Play and the App Store,
+\highlight[orange!25]{ranked by their number of ratings as a proxy for use}\todo{Not true for the Google Play apps: their product pages were opened for the 100 apps with the highest install band, and those are ranked by the worldwide rating count (Section~\ref{sec:app-sampling}). Reword.}, and the health apps that
 come preinstalled on the phones of the largest vendors in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
-For each app, the privacy policy, the store listings and related provider
-pages will be collected, and 12 apps will additionally be inspected in
-walkthroughs. The collected text will be coded on three axes: the data flows,
+For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
+pages}\todo{Not sure the provider pages will be collected.} will be collected, and \highlight[orange!25]{12 apps will additionally be inspected in
+walkthroughs}\todo{May inspect all 50 apps; also changes the walkthrough section and Figure~\ref{fig:pipeline}.}. The collected text will be coded on three axes: the data flows,
 capabilities and harms it mentions (coverage), how it presents named harms
-(stance) and which protections it claims (protection). Reference harm trees
-built from prior research define which harms could apply to each app, so that
+(stance) and which protections it claims (protection). \highlight[orange!25]{Reference harm trees
+built from prior research define which harms could apply to each app}\todo{Should be one harm tree for health tracking apps as a whole, applied to all apps? The section Reference Harm Trees still plans one tree per domain (D12).}, so that
 applicable harms that providers do not mention can be identified. A large
-language model (LLM) will assist the coding, and its output will be checked
-against blind manual coding. The results will be reported descriptively for
-the health apps, by tracking domain, and compared across communication
+language model (LLM) will assist the coding, and its output \highlight[orange!25]{will be checked
+against blind manual coding}\todo{Not sure yet whether this check will be done; also affects the Check step of Figure~\ref{fig:pipeline} and the Validation section.}. The results will be reported descriptively and compared across communication
 surfaces to answer RQ1--RQ4.
 
-\section{Literature Review} Searches will cover privacy harms
-\parencite{solove2006taxonomy,calo2011boundaries}, tracker privacy, and
-methods for policy analysis~\parencite{wilson2016creation,zimmeck2019maps}
-and LLM-assisted annotation. The log will record databases, queries, dates and
-inclusion decisions. A comparison matrix will distinguish each study's domain,
-sources and treatment of harms.
+\section{Literature Review}
+\label{sec:lit-review}
+The literature review has three purposes. It supports the background and
+related-work chapters and tests the research gap stated in the introduction. It
+supplies the capabilities and harms from which the reference harm trees are
+built. Third, it provides the evidence for each methodological decision of
+this chapter, since every decision is to rest on cited sources. The review is
+targeted and not exhaustive. It follows the stages of a scoping review set out
+by Arksey and O'Malley~\parencite{arksey2005scoping}, which maps a field instead
+of weighing studies against each other: identifying the questions, identifying
+relevant studies, selecting studies, charting the data, and collating and
+reporting the results. The paragraphs below follow these stages. The search is
+reported with the items of PRISMA-ScR and PRISMA-S that apply to a search by a
+single author~\parencite{tricco2018prisma,rethlefsen2021prisma}.
 
+\paragraph{Review questions.} Four questions guide the search, one for each part
+of the study. (1)~Which privacy harms and capabilities have been documented for
+health trackers, including wearables, starting from
+general taxonomies of privacy harm~\parencite{solove2006taxonomy,calo2011boundaries}?
+(2)~How have earlier studies sampled apps and analysed their privacy
+communication, and with which material, coding scheme and agreement measure,
+starting from work on policy analysis~\parencite{wilson2016creation,zimmeck2019maps}?
+(3)~How have large language
+models been used to annotate privacy policies, and how were they validated?
+(4)~How do providers word risk and protection in policies and notices?
 
+\paragraph{Sources and search.} Searches cover the proceedings of the main
+venues for privacy, security and human--computer interaction research, namely
+PoPETs, CCS, USENIX Security, IEEE Security and Privacy and CHI/CSCW, together
+with the ACM Digital Library, arXiv and Google Scholar. Queries combine three groups of terms. The first names the
+domain (health app, fitness tracker, wearable, menstrual or fertility app,
+mental-health app). The second names the object (privacy policy, store listing,
+privacy label, data-safety section, breach notification). The third names the
+method or topic (content analysis, cognitive walkthrough, heuristic evaluation,
+harm taxonomy, inference, large language model annotation). German terms are
+used only to find German-market sources. The reference lists and citing papers
+of the closest studies, such as Malki et al.~\parencite{malki2024exploring},
+Hutton et al.~\parencite{hutton2018assessing} and
+Knabenhans et al.~\parencite{knabenhans2026harms}, are searched as well.
+\todo{The venue names in the meeting notes are abbreviated and partly unclear
+(\enquote{mdmp}, \enquote{ccw}, \enquote{acmpl}); confirm them with the
+supervisor before the search is reported as complete.}
+
+\paragraph{Selection.} A work is included if it is a peer-reviewed paper, a
+report of an established institution or an archival preprint; is written in
+English or German; and studies mobile health apps or wearables, the analysis of
+privacy communication, harms or risk wording, or the validation of language
+models for coding text. Studies of language models as a privacy risk (for
+example memorisation by chatbots), benchmarks of privacy norms, and tools that
+generate policies are excluded, because they do not inform the coding of
+provider communication. Titles and abstracts are screened first, and the full
+text is read for works that bear on a decision. Each included work is ranked
+\emph{A} (read before the relevant procedure is frozen), \emph{B} (read for a
+specific decision or chapter) or \emph{C} (background). This rank is a reading
+priority and not a quality score. A work whose full text is not freely
+available through open access or the university library is recorded as not
+retrieved, and no claim is based on its abstract alone.
+
+\paragraph{Record and extraction.} The log records for each search round the
+date, the tool, the queries, the exclusions and the works that could not be
+retrieved. Two rounds have been run. On 14 October 2026, a methodology corpus of
+93 works (83 records with a DOI verified against Crossref or DataCite, and 10
+official resources) was compiled from the topics of the supervisor meeting; 89
+are held as full texts. On 23 October 2026, a search for gaps, centred on the
+coding of privacy policies with language models, produced about 75 candidate
+works, of which 46 open-access full texts were obtained. For every work that is
+used, a card records the domain, the material, the sampling and coding
+procedure, the agreement statistics, the findings and the authors' stated
+limits, each with its page, and separates these from the reviewer's own
+critique. A comparison matrix then sets out, for each study, its domain, the
+sources it analyses and how it treats harms; the matrix tests the research gap.
+Capabilities found in the literature are collected in a table that links each
+capability to its source, the data it needs and the adversary that could use it,
+which is the input to the harm trees.
+\todo{Hits and inclusion decisions per query are not yet logged for the venues
+named above; add them to the search log, and update the counts if further rounds
+are run before the instruments are frozen.}
+
+\paragraph{Limits.} One person searches and screens, so no inter-rater check of
+the selection is possible. The search favours English sources and published work
+up to October 2026, and works behind a paywall may be missing. Later literature
+is added through the change log, with a reason, and does not alter the frozen
+instruments without a logged revision.
 
 \begin{figure}[t]
 \centering
@@ -50,8 +124,8 @@ sources and treatment of harms.
   bx/.style={draw,rounded corners=2pt,align=center,text width=29mm,
              minimum height=13mm,inner sep=2.5pt},
   arr/.style={-{Stealth[length=1.6mm]},semithick}]
-  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\47 ranked store apps\\3 preinstalled apps};
-  \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs for 12};
+  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\store rankings\\preinstalled apps};
+  \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs};
   \node[bx] (c) at (0,0) {\textbf{Code}\\coverage, stance\\protection claims};
   \node[bx] (d) at (3.6,0) {\textbf{Check}\\blind manual coding\\audit missed mentions};
   \node[bx] (e) at (7.2,0) {\textbf{Compare}\\RQ1--RQ4\\with source evidence};
@@ -61,18 +135,24 @@ sources and treatment of harms.
 \caption{Planned workflow. The pilot will refine the instruments before they
 are frozen. Later changes will be logged and affected material recoded.}
 \Description{Five boxes connected by arrows: pilot and sample, capture,
-code, check, compare. Documents cover 50 apps and walkthroughs cover 12.}
+code, check, compare. Documents cover 50 apps.}
 \label{fig:pipeline}
 \end{figure}
 
 \section{App Sampling}
 \label{sec:app-sampling}
-The sample contains 50 apps: the health apps that the largest phone vendors
-preinstall, and the most widely used eligible apps of the two German app
-stores. The vendor rule yields three preinstalled apps, so 47 places are filled
-from the stores. There are no quotas per domain. Every rule in this section was
-fixed before the collection of 23 October 2026 and recorded with its evidence;
-Section~\ref{sec:results-sample} reports the outcome.
+The target sample is 50 apps. Studies that analyse the documents of apps and
+also inspect the apps themselves have worked with 20 to 64 apps: Malki et al.\
+installed and inspected 20~\parencite{malki2024exploring}, Huckvale et al.\
+analysed 36~\parencite{huckvale2019assessment} and Hutton et al.\ evaluated
+64~\parencite{hutton2018assessing}. A target of 50 lies within this range. The
+sample combines the health apps that the largest phone vendors preinstall with
+the most widely used eligible apps of the German market of Google Play and the
+App Store. The number of preinstalled apps follows from the vendor rule
+described below, and the store rankings fill the remaining places. There are no
+quotas per domain. Every rule in this section was fixed before the data were
+collected and recorded with its evidence; the resulting numbers are reported in
+Section~\ref{sec:results-sample}.
 
 \paragraph{Domain.} The study adopts the domain of two published app studies
 on health trackers instead of defining its own. Hutton et
@@ -82,8 +162,8 @@ self-tracking apps existed; their health categories are cycling, diet,
 exercise, heart rate, mood, running and walking, sleep, steps and weight. This
 survey-based list has no reproductive category, so the domain of Malki et
 al.~\parencite{malki2024exploring} is added: female reproductive health,
-including pregnancy apps. The domain thus covers fitness, sleep,
-mental-health (mood) and fertility tracking.
+including pregnancy apps. The domain thus covers activity, diet and weight,
+heart rate, sleep, mood and reproductive health.
 
 \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
 terms of Malki et al.\ are searched in the original English and in one German
@@ -123,19 +203,20 @@ birth control (Verhütung), pregnancy (Schwangerschaft), pregnant (schwanger)} \
 \end{singlespace}
 \end{table}
 
-\paragraph{Search.} Both stores are searched in one session, logged out, in
-the German storefront: the App Store through Apple's Search
+\paragraph{Search.} Each store is searched in a single session, logged out, in
+its German storefront: the App Store through Apple's Search
 API~\parencite{apple2022itunessearch} and the Google Play store through its
 search page, with the collectors in Appendix~\ref{app:scripts}. For each query,
 the first 30 results are kept in both stores. A Google Play search page shows
-one set of results, mostly 20 to 30, and deeper results need an interface that
-the store's \texttt{robots.txt} disallows. Using the same depth for the App Store follows
+a single page of results, and deeper results need an interface that the store's
+\texttt{robots.txt} disallows. Using the same depth for the App Store follows
 O'Loughlin et al., who capped both stores at the number of results Google Play
 shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
 App Store is also searched to 200 results, which serves only to check whether
 a deeper search would change the sample. On Google Play, the rating count
-appears only on an app's product page, which the store served slowly, at about
-five seconds per page. All Google Play hits are therefore first ranked by the
+appears only on an app's product page. In a first run the store served these
+pages at about five seconds each, so opening every page was not feasible. All
+Google Play hits are therefore first ranked by the
 install band that the search page shows for each hit, with ties broken by the
 best search position, and only the product pages of the first 100 apps are
 opened. The install band is the store's own public figure of use and
@@ -159,21 +240,21 @@ do not exclude an app. Screening follows the rank order and uses the store
 listing, and each decision is logged with its reason.
 
 \paragraph{Ranking by exposure.} The study concerns the communication that
-users meet, so candidates will be ranked by how widely an app is used, not by
-how well it is rated. Neither store publishes download counts for Germany
-(Table~\ref{tab:storefront-fields}), so the number of ratings will stand in for
+users meet, so candidates are ranked by how widely an app is used, not by how
+well it is rated. Neither store publishes download counts for Germany
+(Table~\ref{tab:storefront-fields}), so the number of ratings stands in for
 use. Sunyaev et al.\ selected the 300 most frequently rated apps per store on
 the same grounds and reported a Spearman correlation of 0.89 between rating
-count and download count on Android~\parencite{sunyaev2015availability}. The
-relationship will be checked again on the candidate pool: Google Play shows a
-worldwide rating count and a worldwide install figure for each app, and their
-Spearman rank correlation will be reported. A pilot collection on 22 October
-2026 with all 19 keywords found 159 Google Play apps with both figures; their
-correlation was 0.96, and 0.94 for the 135 apps with at least 1{,}000 ratings.
-The App Store publishes no downloads, so the check rests on Google Play. Eligible listings need at least
-1{,}000 ratings. Each store will be ranked separately, because App Store counts
-describe the German storefront and Google Play counts the worldwide store, so
-the two counts cannot be compared directly.
+count and download count on Android~\parencite{sunyaev2015availability}. A
+trial collection on 22 October 2026, with the 19 keywords of an earlier,
+author-chosen list, found 159 Google Play apps that show both a worldwide
+rating count and a worldwide install figure; their correlation was 0.96, and
+0.94 for the 135 apps with at least 1{,}000 ratings. The App Store publishes no
+downloads, so the check rests on Google Play, and it is repeated on the
+candidates of the study. A listing needs at least 1{,}000 ratings to be ranked.
+Each store is ranked separately, because App Store counts describe the German
+storefront and Google Play counts the worldwide store, so the two counts cannot
+be compared directly.
 
 \paragraph{Selection.} Both stores have equal weight, as in earlier reviews
 that took the same number of apps from each
@@ -189,21 +270,32 @@ reduce the number of independent providers. The rule also means that each app
 counts once, and both of its listings are captured. Developers are compared by
 name after removing case, accents, punctuation and legal forms; where the same
 app appears under different developer names in the two stores, the names are
-matched by hand. Selection stops at 47 apps.
-If fewer eligible apps are found, all are kept and the shortfall is reported.
+matched by hand. Selection stops when the target of 50 apps is reached,
+counting the preinstalled apps. If fewer eligible apps are found, all are kept
+and the shortfall is reported.
 Thresholds are not lowered after the results have been inspected.
 
-\paragraph{Preinstalled apps.} Three places are reserved for health apps that
-ship with the phone. They reach users without a download, so their rating
-counts understate their reach. The rule covers phone vendors with at least
-10\,\% of German mobile use; in September 2026 these were Samsung (39\,\%),
-Apple (28\,\%) and Xiaomi (21\,\%)~\parencite{statcounter2026vendor}. Their
-preinstalled health or fitness trackers are Apple Health and Apple Fitness on
-the iPhone and Samsung Health on Samsung phones. No preinstalled tracker on
-Xiaomi's international software could be identified, so Xiaomi contributes
-none, and Huawei and Google fall below the threshold with about 1.5\,\% each.
-The three apps also have store listings, which are removed from the rankings;
-Apple Health, for instance, has 2{,}134 ratings in the German App Store.
+\paragraph{Preinstalled apps.} Health apps that ship with the phone reach
+users without a download, so their rating counts understate their reach and
+they cannot be ranked by the same measure. They form a group of their own, and
+the number of its members follows from a rule with three steps.
+\emph{Vendors:} a phone vendor is included if its share of mobile page views
+in Germany is at least 10\,\%, according to the vendor statistics of
+StatCounter~\parencite{statcounter2026vendor}, read at the time of the
+collection and recorded with its date. Page views are a proxy for the installed
+base and not for sales. The threshold separates the large vendors from the rest
+and is fixed before the shares are read.
+\emph{Apps:} for each included vendor, the preinstalled apps are identified
+from the vendor's documentation and from the store listings. An app qualifies
+if the vendor itself provides it, if it is installed on the vendor's current
+phones without a download, and if it meets the eligibility criteria E1 to E5,
+in particular E1: it records the user's own health or body data over time. A vendor
+whose software ships no such app contributes none, and this is recorded.
+\emph{Treatment:} if a qualifying app also has a store listing, that listing is
+removed from the store rankings, and its vendor counts as a provider already in
+the sample, so that the vendor's other apps are skipped by the developer rule.
+The vendors found and the resulting apps are reported in
+Section~\ref{sec:results-sample}.
 
 \paragraph{Sensitivity checks.} The selection is repeated with one rule changed
 at a time: without the developer rule, starting with the App Store, at depth 20,
@@ -514,8 +606,7 @@ unestimable where manual positives are too few. For any code with fewer than
 checked manually or corpus-wide absence claims withheld; these are review
 triggers, not proof of accuracy.
 
-\section{Analysis and Reporting} Results will be descriptive and reported
-for the health apps, by tracking domain. For RQ1, each harm's denominator
+\section{Analysis and Reporting} Results will be descriptive. For RQ1, each harm's denominator
 will include only applicable apps with the required core sources captured. A
 source the provider does not offer is recorded as such; only sources that
 exist but cannot be retrieved reduce the denominator. Inapplicable pathways
