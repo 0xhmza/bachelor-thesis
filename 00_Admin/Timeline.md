@@ -1,34 +1,29 @@
 # Timeline and Milestones
 
-**Registration date:** TODO — *planned* 2026-11-02 (see the plan below)
-**Official deadline:** TODO — fill in as soon as the thesis is registered with the
-Prüfungsamt, then work backwards from it. For a 2026-11-02 registration the
-three-month deadline is 2027-02-02.
-
-Bachelor's theses at RUB Informatik typically run 3 months from registration.
-Do not register before the proposal is approved and the sampling is settled.
-
-The supervisor-facing proposal (`03_Thesis/proposal/`) no longer carries a
-schedule — it holds only what he asked for. The plan lives here, below the
-tracker. The long argued version, with where each phase can slip, is archived in
-`99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/05_timeline.tex`).
+**Registration date:** TODO — planned 2026-11-02. **Official deadline:** TODO — fill
+in after registration; for a 2026-11-02 registration the three-month deadline is
+2027-02-02. Bachelor's theses at RUB Informatik typically run 3 months from
+registration; register only after the proposal is approved and the sampling is
+settled. The argued schedule with slip points is archived in
+`99_Archive/2026-10-14_cleanup-recovery.zip` (member
+`99_Archive/_junk/02_Proposal/sections/05_timeline.tex`); the proposal carries no schedule.
 
 | # | Milestone | Target date | Status |
 |---|---|---|---|
-| 0 | Advisor's reading list obtained and filed in `01_Literature/` | 2026-09-05 | ☑ |
-| 1 | Read Citron & Solove, *Privacy Harms* (PDF in `01_Literature/PDFs/`) | | ☐ |
-| 1b | Read Knabenhans et al., *(Privacy) Harms of the EU Digital Identity Framework* — for the harm model | | ☐ |
-| 1c | Read Martin, Nissenbaum & Shmatikov, *No Cookies For You!* — for PET framing | | ☐ |
-| 2 | Review copy for the advisor: `03_Thesis/Thesis_Review-Copy.docx`, rebuilt with every thesis commit (replaces the Google Doc) | 2026-10-17 | ◐ generated; share the file or the GitHub link with the advisor |
-| 3 | Scope question resolved (document analysis vs. survey — see meeting notes §8) | 2026-09-18 | ◐ decided in the proposal (Scope; `Open-Points.md` item 1); awaiting advisor's confirmation |
-| 3b | Own literature search: privacy harms · tracker S&P · methods (advisor's explicit ask) | 2026-09-18 | ☑ first pass — 17 new entries in `_shared/references.bib`, all verified against the publisher record |
-| 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources catalogued and fetched | 2026-10-16 | ◐ 89 of 93 held as PDFs in `01_Literature/PDFs/Methods-Reading/` (see `01_Literature/Download-Checklist.md`); missing: Parker 2019, two books, the APA web page. None read yet; reading and any bibliography additions stay open |
-| 4 | Proposal draft v1 sent to supervisor | 2026-09-30 | ◐ written and compiling. **Hand in `03_Thesis/proposal/proposal.pdf`** — a paper-format proposal, four pages of content plus references and a one-page appendix (the approved length). The old 4-page and 25-page versions are archived in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/`). Read once more, then send |
+| 0 | Advisor's reading list filed in `01_Literature/` | 2026-09-05 | ☑ |
+| 1 | Read Citron & Solove, *Privacy Harms* | | ☐ |
+| 1b | Read Knabenhans et al., *(Privacy) Harms of the EU Digital Identity Framework* (harm model) | | ☐ |
+| 1c | Read Martin, Nissenbaum & Shmatikov, *No Cookies For You!* (PET framing) | | ☐ |
+| 2 | Review copy `03_Thesis/Thesis_Review-Copy.docx`, rebuilt with every thesis commit (replaces the Google Doc) | 2026-10-17 | ◐ generated; share it with the advisor |
+| 3 | Scope: document and interface analysis, not a survey (`Open-Points.md` item 1) | 2026-09-18 | ◐ decided in the proposal; awaiting confirmation |
+| 3b | Own literature search: privacy harms, tracker S&P, methods | 2026-09-18 | ☑ first pass: 17 verified entries in `_shared/references.bib` |
+| 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources | 2026-10-16 | ◐ 89 of 93 held as PDFs (`01_Literature/Download-Checklist.md`); missing Parker 2019, two books, the APA web page; none read yet |
+| 4 | Proposal sent to the supervisor | 2026-09-30 | ☑ sent 2026-10-05 ([email](Correspondence/2026-10-05_Proposal-Email.md)); snapshot in `03_Thesis/proposal/` |
 | 5 | Proposal approved | | ☐ |
-| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting his answer on the first and second examiner |
-| 7 | Keyword list + inclusion/exclusion criteria fixed | 2026-09-18 | ☑ drafted in `04_Study/App-Sample/sampling_protocol.md`; confirm thresholds with advisor |
-| 8 | App sample collected and frozen | | ☐ |
-| 9 | Codebook v1 | 2026-09-18 | ◐ structure and definitions written (`04_Study/Codebook/codebook_v1.md`); examples and counter-examples come from the pilot |
+| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting first and second examiner |
+| 7 | Keywords and inclusion/exclusion criteria fixed | 2026-09-18 | ☑ sampling protocol v2 (2026-10-23; ranking revised 2026-10-25) |
+| 8 | App sample collected and frozen | | ◐ drawn 2026-10-25 (47 + 3 apps); frozen after the author checks the screening |
+| 9 | Codebook | 2026-09-18 | ◐ v3 in `04_Study/Codebook/`; examples come from the pilot |
 | 10 | LLM prompts v1 + validation on a subsample | | ☐ |
 | 11 | Data collection complete | | ☐ |
 | 12 | Analysis complete | | ☐ |
@@ -37,43 +32,33 @@ tracker. The long argued version, with where each phase can slip, is archived in
 | 15 | Submission | | ☐ |
 | 16 | Colloquium / defence | | ☐ |
 
-Legend: ☐ not started · ◐ in progress · ☑ done
-
-Milestone 3 is **partly settled**: the advisor's input of 2026-09-05 lists only
-document and interface sources, which points at analysis rather than a user
-survey. The proposal proceeds on that reading and delimits the survey out of
-scope. Decisions of this kind are listed in [`Open-Points.md`](Open-Points.md) —
-take that list to the next meeting and close them one by one.
+Legend: ☐ not started · ◐ in progress · ☑ done. Open decisions: [`Open-Points.md`](Open-Points.md), [`Decision-Log.md`](Decision-Log.md).
 
 ## Twelve-week plan
 
-Assumes registration on 2026-11-02; the three-month deadline is then 2027-02-02,
-leaving the last week as slack. Introduction, background, and related work are
-drafted alongside collection, so week 11 assembles rather than writes.
+Registration 2026-11-02, deadline 2027-02-02; the last week is slack. Introduction,
+background and related work are drafted alongside collection.
 
 | Phase | Period | Deliverable |
 |---|---|---|
 | Preparation | to 2026-10-30 | Proposal approved; five-app pilot; instruments v1 frozen |
 | Weeks 1–4 | 2026-11-02 – 11-29 | Sample frozen (n = 50); corpus collected, hashed, segmented |
-| Weeks 5–6 | 2026-11-30 – 12-13 | Twelve privacy walkthroughs |
+| Weeks 5–6 | 2026-11-30 – 12-13 | Privacy walkthroughs |
 | Weeks 7–8 | 2026-12-14 – 12-27 | LLM coding runs; manual validation subsample |
-| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Re-code two validation apps (≥ 2 weeks after first coding); agreement, precision and recall reports; results |
+| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Re-code two validation apps (≥ 2 weeks after first coding); agreement, precision and recall; results |
 | Weeks 11–12 | 2027-01-11 – 01-24 | Full draft to supervisor; revisions |
 | Buffer | to 2027-02-02 | Final checks and submission |
 
 ## Standing rhythm
 
-- Weekly: update this file and write one paragraph of the thesis, whatever else happens.
-- After every supervisor meeting: a new file in `00_Admin/Meeting-Notes/`
-  named `YYYY-MM-DD_Topic.md`, with an action-item table.
-- Whenever the advisor sends material between meetings: a pair of files in
-  `00_Admin/Supervisor-Input/`, named `YYYY-MM-DD_Supervisor-Input.*`.
+- Weekly: update this file and write one paragraph of the thesis.
+- After every supervisor meeting: `00_Admin/Meeting-Notes/YYYY-MM-DD_Topic.md` with an action-item table.
+- Material from the advisor between meetings: `00_Admin/Supervisor-Input/YYYY-MM-DD_Supervisor-Input.*`.
 
 ## Administrative checklist
 
 - [ ] Confirm first and second examiner (Erst-/Zweitprüfer\*in)
-- [ ] Check the official formatting requirements of your Prüfungsordnung
-      (page limits, declaration wording, number of printed copies)
-- [ ] Check the required statutory declaration text, including the AI-use statement
+- [ ] Check the formatting requirements of the Prüfungsordnung (page limits, declaration wording, printed copies)
+- [ ] Check the statutory declaration text, including the AI-use statement
 - [ ] Confirm whether an ethics review is needed
 - [ ] Confirm the submission format (print, PDF, both) and where it goes

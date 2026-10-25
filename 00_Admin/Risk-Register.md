@@ -13,4 +13,4 @@ Close a risk only when its trigger can no longer occur.
 | R6 | Reading backlog (92 works marked "to read") blocks evidence for decisions | H | M | Decision records without citations | Read by decision: start with the "Start with" column of the reading guide | Hamza | open |
 | R7 | Ethics review turns out to be required | L | H | Reply from the ethics contact | Ask for written confirmation before collection | Hamza | open |
 | R8 | Registration later than 2026-11-02 compresses the 12-week plan | M | M | Proposal not approved by 10-30 | Keep the minimum feasible study defined after the pilot | Hamza | open |
-| R9 | Data loss | L | H | — | Git + GitHub remote for sources; raw data backed up outside the repository | Hamza | open |
+| R9 | Data loss | L | H | — | Git + GitHub remote for sources; raw data backed up outside the repository | Hamza | **occurred 2026-10-25:** deleting the old `output/` folder also removed its git-ignored `raw/` data (11 October sampling trial, download-sampling test); recover from Syncthing `.stversions` on another device |

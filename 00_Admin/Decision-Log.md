@@ -29,21 +29,17 @@ The reading that supports each decision is mapped in
 [`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)
 ("Meeting decision → reading → extraction target") and in the literature map.
 
-## Collector development — 20 October 2026 (D2 remains open)
+## Collector development — 20 October 2026
 
-The user requested a Python iPhone App Store keyword collector, starting with
-`fitness`, returning as much available app information as possible. The
-[collector documentation](../scripts/appstore-scraper/v001/README_app_store_search.md) records its
-technical settings and interpretation limits. Germany is the configurable
-default because the [13 October meeting](Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md)
-retains the German market; English text is requested. Apple's
-[Search API documentation](https://performance-partners.apple.com/search-api)
-supports keyword/storefront parameters, a requested limit of 1–200 and JSON
-responses. Public product pages provide supplementary privacy and listing data.
-These choices support a candidate-discovery development run, with original API
-order and raw evidence retained. They do not confirm an API-to-store-UI rank
-equivalence, a final search frame, a rating threshold, or eligibility decisions.
-No methodology chapter or sampling protocol is changed; D2 remains open.
+An iPhone App Store keyword collector (first query `fitness`) was built as a
+development run; settings and limits are in its
+[documentation](../scripts/appstore-scraper/v001/README_app_store_search.md).
+Germany is the default storefront (the [13 October meeting](Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md)
+keeps the German market); English text is requested. Apple's
+[Search API](https://performance-partners.apple.com/search-api) takes keyword and
+storefront parameters and a limit of 1–200. The run fixed no search frame,
+threshold or eligibility rule and did not establish that API order equals
+store-UI order.
 
 ## Record template
 
