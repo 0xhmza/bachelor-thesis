@@ -125,3 +125,15 @@
 
 % --- Helpers ---------------------------------------------------------
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\usepackage{soul}
+
+\newif\ifshowhighlights
+\showhighlightstrue % Change to \showhighlightsfalse to hide highlights
+
+\newcommand{\highlight}[2][yellow]{%
+	\ifshowhighlights
+	{\sethlcolor{#1}\hl{#2}}%
+	\else
+	#2%
+	\fi
+}

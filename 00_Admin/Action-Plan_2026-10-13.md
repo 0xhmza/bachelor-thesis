@@ -44,7 +44,7 @@ Legend: ☐ open · ◐ started · ☑ done.
 | D4 | Access | free to install | free to install vs. free to use; card-required trials | open |
 | D5 | No privacy policy | excluded | included, absence reported | open |
 | D6 | Native apps (Apple/Samsung/Huawei Health) | — | state how they can enter the sample | proposed |
-| D7 | Language | German first | English first, German fallback | open; see §8 (versions differ) |
+| D7 | Language | German first | English first, German fallback | confirmed 10-23 ([D07](Decisions/D07_language.md)) |
 | D8 | Coding | one coder, second sought | two coders | open |
 | D9 | LLM | screener, chosen on pilot | test usability on policies | open; see §8 |
 | D10 | Walkthrough | 12 apps, expert inspection | checklist; define the data it yields | open |
@@ -124,9 +124,9 @@ Source: [Literature-Gap-Search_2026-10-23.md](../01_Literature/Literature-Gap-Se
       GDPR annotation design (Cory et al. 2026), repeated runs (Atil et al. 2025).
 - [ ] D8: whether a second coder can label 50–100 units, which the alternative annotator test needs
       (Calderon et al. 2025).
-- [ ] ❓ D7: revisit "English first, German fallback". *Comment:* in Arora et al. 2022 (MAPP corpus), 14 of 59 apps
-      acknowledged the GDPR only in their German policy, and 13 English–German pairs differed substantially. For a
-      German-market study the German version may be the one written for these users. Proposal for the email:
-      capture both versions where both exist, code the German one (or both in the pilot), and log differences.
+- [x] D7: revisit "English first, German fallback". *Comment:* in Arora et al. 2022 (MAPP corpus), 14 of 59 apps
+      acknowledged the GDPR only in their German policy, and 13 English–German pairs differed substantially.
+      **Settled 10-23:** the meeting rule stands (English first, German fallback); both versions are captured where
+      both exist and differences are logged ([D07](Decisions/D07_language.md)).
 
 **Start with:** the email (§1, now with the §7 questions), the App Store run (§7.1), the glossary (§1).

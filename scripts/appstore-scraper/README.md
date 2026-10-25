@@ -17,6 +17,12 @@ Each scripting project gets its own folder under `scripts/`, with named versions
   `python scripts/appstore-scraper/v006/scraper.py scripts/appstore-scraper/v006/input.json > scripts/appstore-scraper/v006/output/run.json`
   after creating `v006/output/`. The `Rating Count` fields keep the v005 names, so
   `app-ranking` reads the output unchanged.
+- `v007/scraper.py`: sampling collector of 23 October 2026 (D2, D3). Same input and
+  output form as v006, plus developer ID, seller, bundle ID, genres, version, content
+  rating, full description and seller URL; logs every request (URL, time, returned
+  count, SHA-256) under `requests` and backs off on HTTP 403/429/5xx. `input.json`
+  holds the 49 keywords of `04_Study/App-Sample/keywords.csv` with `limit` 200; the
+  ranking uses the first 30 positions and the rest only for a saturation check.
 
 ```powershell
 python scripts/appstore-scraper/v005/scraper.py fitness --region de

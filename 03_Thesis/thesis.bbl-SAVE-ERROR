@@ -1,0 +1,1993 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{apple2026acquisition}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3325b015fbae57ba74629a53f1ead961}{%
+           family={{Apple Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {App Store Connect Analytics Help}%
+      }
+      \strng{namehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \strng{bibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorbibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authornamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Acquisition}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.apple.com/help/app-store-connect-analytics/acquisition/acquisition
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/help/app-store-connect-analytics/acquisition/acquisition
+      \endverb
+    \endentry
+    \entry{apple2022itunessearch}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3325b015fbae57ba74629a53f1ead961}{%
+           family={{Apple Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Apple Services Performance Partners}%
+      }
+      \strng{namehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \strng{bibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorbibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authornamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{iTunes} Search {API}}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://performance-partners.apple.com/search-api
+      \endverb
+      \verb{url}
+      \verb https://performance-partners.apple.com/search-api
+      \endverb
+    \endentry
+    \entry{apple2026ratingsoverview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3325b015fbae57ba74629a53f1ead961}{%
+           family={{Apple Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {App Store Connect Help}%
+      }
+      \strng{namehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{fullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \strng{bibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorbibnamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authornamehash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhash}{3325b015fbae57ba74629a53f1ead961}
+      \strng{authorfullhashraw}{3325b015fbae57ba74629a53f1ead961}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ratings and Reviews Overview}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/ratings-and-reviews-overview
+      \endverb
+      \verb{url}
+      \verb https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/ratings-and-reviews-overview
+      \endverb
+    \endentry
+    \entry{arkalakis2024abandon}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=1634e51a7c2b33a13752e9971b01cef2}{%
+           family={Arkalakis},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=388b75d90b0378a9311156b2e50f0603}{%
+           family={Diamantaris},
+           familyi={D\bibinitperiod},
+           given={Michalis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e2e19a8f10066b82699050537d99bfdd}{%
+           family={Moustakas},
+           familyi={M\bibinitperiod},
+           given={Serafeim},
+           giveni={S\bibinitperiod}}}%
+        {{hash=28205d8976912470245f745ecd7df210}{%
+           family={Ioannidis},
+           familyi={I\bibinitperiod},
+           given={Sotiris},
+           giveni={S\bibinitperiod}}}%
+        {{hash=72bb0c8a2c0727d8418b8df6ccbe3a41}{%
+           family={Polakis},
+           familyi={P\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=22fe70cbfe14c738c94f0b4d7f652392}{%
+           family={Ilia},
+           familyi={I\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA, USA}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{4cba2b7b90ab9c022fd5872f16398fb4}
+      \strng{fullhash}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \strng{fullhashraw}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \strng{bibnamehash}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \strng{authorbibnamehash}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \strng{authornamehash}{4cba2b7b90ab9c022fd5872f16398fb4}
+      \strng{authorfullhash}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \strng{authorfullhashraw}{2ca420cfa4fbe5e2d4a8f4c9198558bd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 33rd USENIX Security Symposium (USENIX Security 24)}
+      \field{title}{Abandon All Hope Ye Who Enter Here: A Dynamic, Longitudinal Investigation of {Android}'s Data Safety Section}
+      \field{year}{2024}
+      \field{pages}{5645\bibrangedash 5662}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://www.usenix.org/conference/usenixsecurity24/presentation/arkalakis
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/conference/usenixsecurity24/presentation/arkalakis
+      \endverb
+    \endentry
+    \entry{wp292018transparency}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b174282b17752b7e71493efda9d32d29}{%
+           family={{Article 29 Data Protection Working Party}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b174282b17752b7e71493efda9d32d29}
+      \strng{fullhash}{b174282b17752b7e71493efda9d32d29}
+      \strng{fullhashraw}{b174282b17752b7e71493efda9d32d29}
+      \strng{bibnamehash}{b174282b17752b7e71493efda9d32d29}
+      \strng{authorbibnamehash}{b174282b17752b7e71493efda9d32d29}
+      \strng{authornamehash}{b174282b17752b7e71493efda9d32d29}
+      \strng{authorfullhash}{b174282b17752b7e71493efda9d32d29}
+      \strng{authorfullhashraw}{b174282b17752b7e71493efda9d32d29}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{WP260 rev.01, adopted 29 November 2017, as last revised and adopted 11 April 2018; endorsed by the EDPB}
+      \field{title}{Guidelines on Transparency under Regulation 2016/679}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.edpb.europa.eu/documents/guideline/transparency_en
+      \endverb
+      \verb{url}
+      \verb https://www.edpb.europa.eu/documents/guideline/transparency_en
+      \endverb
+    \endentry
+    \entry{baumann2025llm}{misc}{}{}
+      \name{author}{7}{}{%
+        {{hash=cab9c0d1285f012ab5a45b2b5b082788}{%
+           family={Baumann},
+           familyi={B\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ac25e0d7adb3ef6ecaa7e0e8e689f480}{%
+           family={Röttger},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ffb2cc4fff296e98df1ef5bb6c28bd46}{%
+           family={Urman},
+           familyi={U\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=80340edbda88c6220e327f6450aab1dd}{%
+           family={Wendsjö},
+           familyi={W\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5cab1e9726c3145c44033df259211f3f}{%
+           family={Plaza-del-Arco},
+           familyi={P\bibinithyphendelim d\bibinithyphendelim A\bibinitperiod},
+           given={Flor\bibnamedelima Miriam},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dbf590abc988d033dc5a2c22c6a58ba6}{%
+           family={Gruber},
+           familyi={G\bibinitperiod},
+           given={Johannes\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=460909209014ce11714ba7d75523ebc8}{%
+           family={Hovy},
+           familyi={H\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{41312a240362e6142a06a626b59fd50e}
+      \strng{fullhash}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \strng{fullhashraw}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \strng{bibnamehash}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \strng{authorbibnamehash}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \strng{authornamehash}{41312a240362e6142a06a626b59fd50e}
+      \strng{authorfullhash}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \strng{authorfullhashraw}{10afdc400d0ea2f1cad6fa355860a0a8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{arXiv preprint arXiv:2509.08825}
+      \field{title}{Large Language Model Hacking: Quantifying the Hidden Risks of Using {LLMs} for Text Annotation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2509.08825
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2509.08825
+      \endverb
+    \endentry
+    \entry{bitkom2025health}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8dda6a3fdef03f266a3409bc87daa586}{%
+           family={{Bitkom Research}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Bitkom Research GmbH, Berlin}%
+      }
+      \strng{namehash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{fullhash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{fullhashraw}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{bibnamehash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{authorbibnamehash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{authornamehash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{authorfullhash}{8dda6a3fdef03f266a3409bc87daa586}
+      \strng{authorfullhashraw}{8dda6a3fdef03f266a3409bc87daa586}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{Representative telephone survey of 1{,}145 people in Germany aged 16 and over, calendar weeks 38--43 of 2025.}
+      \field{day}{20}
+      \field{month}{11}
+      \field{title}{Dr. {KI}: Wenn der Chatbot zum medizinischen Ratgeber wird}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bitkom-research.de/news/digital-health-2025
+      \endverb
+      \verb{url}
+      \verb https://bitkom-research.de/news/digital-health-2025
+      \endverb
+    \endentry
+    \entry{calo2011boundaries}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8a70af4f589e51b5fdd3a3946970760b}{%
+           family={Calo},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi Ryan},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{fullhash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{fullhashraw}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{bibnamehash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{authorbibnamehash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{authornamehash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{authorfullhash}{8a70af4f589e51b5fdd3a3946970760b}
+      \strng{authorfullhashraw}{8a70af4f589e51b5fdd3a3946970760b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indiana Law Journal}
+      \field{number}{3}
+      \field{title}{The Boundaries of Privacy Harm}
+      \field{volume}{86}
+      \field{year}{2011}
+      \field{pages}{1131\bibrangedash 1162}
+      \range{pages}{32}
+      \verb{urlraw}
+      \verb https://www.repository.law.indiana.edu/ilj/vol86/iss3/8/
+      \endverb
+      \verb{url}
+      \verb https://www.repository.law.indiana.edu/ilj/vol86/iss3/8/
+      \endverb
+    \endentry
+    \entry{cao2024deleted}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=365f35ef1d6635f807c952a50ceab25d}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Jiaxun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eb576ceec51524397aeb8f9f7b986457}{%
+           family={Laabadli},
+           familyi={L\bibinitperiod},
+           given={Hiba},
+           giveni={H\bibinitperiod}}}%
+        {{hash=eb584ded27348ecefb4ae327fb9f8db8}{%
+           family={Mathis},
+           familyi={M\bibinitperiod},
+           given={Chase\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=cb9e345c2bbb0b0739fbf70204f20b90}{%
+           family={Stern},
+           familyi={S\bibinitperiod},
+           given={Rebecca\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=83a931f80ee21799bf857e51f4cb2681}{%
+           family={Emami-Naeini},
+           familyi={E\bibinithyphendelim N\bibinitperiod},
+           given={Pardis},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Honolulu, HI, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{b1018ac1221554688f7f66da86e313c4}
+      \strng{fullhash}{828599e1f24116ef7077bbe8a10ad29e}
+      \strng{fullhashraw}{828599e1f24116ef7077bbe8a10ad29e}
+      \strng{bibnamehash}{828599e1f24116ef7077bbe8a10ad29e}
+      \strng{authorbibnamehash}{828599e1f24116ef7077bbe8a10ad29e}
+      \strng{authornamehash}{b1018ac1221554688f7f66da86e313c4}
+      \strng{authorfullhash}{828599e1f24116ef7077bbe8a10ad29e}
+      \strng{authorfullhashraw}{828599e1f24116ef7077bbe8a10ad29e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{\mkbibquote{I Deleted It After the Overturn of Roe v. Wade}: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1145/3613904.3642042
+      \endverb
+    \endentry
+    \entry{citron2021harms}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=030938ad908895410b2de486843abc3b}{%
+           family={Citron},
+           familyi={C\bibinitperiod},
+           given={Danielle\bibnamedelima Keats},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f1dc39ef46c82aedd794fbb782c60c49}{%
+           family={Solove},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{fullhash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{fullhashraw}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{bibnamehash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{authorbibnamehash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{authornamehash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{authorfullhash}{4530e3678e49a01321bb1718f10fe3c3}
+      \strng{authorfullhashraw}{4530e3678e49a01321bb1718f10fe3c3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boston University Law Review}
+      \field{title}{Privacy Harms}
+      \field{volume}{102}
+      \field{year}{2022}
+      \field{pages}{793\bibrangedash 863}
+      \range{pages}{71}
+      \verb{urlraw}
+      \verb https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.bu.edu/bulawreview/files/2022/04/CITRON-SOLOVE.pdf
+      \endverb
+    \endentry
+    \entry{cohen1960coefficient}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=eaad07ee1c6ef93a9308150f12c3c2eb}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{fullhash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{fullhashraw}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{bibnamehash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{authorbibnamehash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{authornamehash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{authorfullhash}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \strng{authorfullhashraw}{eaad07ee1c6ef93a9308150f12c3c2eb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Educational and Psychological Measurement}
+      \field{number}{1}
+      \field{title}{A Coefficient of Agreement for Nominal Scales}
+      \field{volume}{20}
+      \field{year}{1960}
+      \field{pages}{37\bibrangedash 46}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1177/001316446002000104
+      \endverb
+    \endentry
+    \entry{doan2024transparency}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=ff8f1b27ff048b6cb745d46c38e7f315}{%
+           family={Doan},
+           familyi={D\bibinitperiod},
+           given={Xengie},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6b3165f5ba57eeeb8cb376a1a8a66a69}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Fatma\bibnamedelima Sümeyra},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=076a1bce35c9f8fd40c539ff880bc0aa}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Arianna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland}%
+      }
+      \strng{namehash}{f2229783496868ae63d79751da75e519}
+      \strng{fullhash}{f2229783496868ae63d79751da75e519}
+      \strng{fullhashraw}{f2229783496868ae63d79751da75e519}
+      \strng{bibnamehash}{f2229783496868ae63d79751da75e519}
+      \strng{authorbibnamehash}{f2229783496868ae63d79751da75e519}
+      \strng{authornamehash}{f2229783496868ae63d79751da75e519}
+      \strng{authorfullhash}{f2229783496868ae63d79751da75e519}
+      \strng{authorfullhashraw}{f2229783496868ae63d79751da75e519}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Privacy Symposium 2024}
+      \field{title}{Analysis of Transparency and User-Relevancy of {DTC} Company Policies}
+      \field{year}{2024}
+      \field{pages}{191\bibrangedash 215}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/978-3-031-76265-9_9
+      \endverb
+    \endentry
+    \entry{ucpd2005}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d0baa957acb6522d22e3251a428fe067}{%
+           family={{European Parliament and Council of the European Union}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \strng{bibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorbibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authornamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \field{extraname}{1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Official Journal of the European Union, L 149, 11 June 2005, pp. 22--39}
+      \field{title}{Directive 2005/29/EC of 11 May 2005 Concerning Unfair Business-to-Consumer Commercial Practices in the Internal Market (Unfair Commercial Practices Directive)}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/dir/2005/29/oj
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/dir/2005/29/oj
+      \endverb
+    \endentry
+    \entry{gdpr2016}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d0baa957acb6522d22e3251a428fe067}{%
+           family={{European Parliament and Council of the European Union}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{fullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \strng{bibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorbibnamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authornamehash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhash}{d0baa957acb6522d22e3251a428fe067}
+      \strng{authorfullhashraw}{d0baa957acb6522d22e3251a428fe067}
+      \field{extraname}{2}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Official Journal of the European Union, L 119, 4 May 2016, pp. 1--88}
+      \field{title}{Regulation (EU) 2016/679 of 27 April 2016 on the Protection of Natural Persons with Regard to the Processing of Personal Data and on the Free Movement of Such Data (General Data Protection Regulation)}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/eli/reg/2016/679/oj
+      \endverb
+    \endentry
+    \entry{feinstein1990high}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=011b9ec3a5c18f707e641ff6f968b05e}{%
+           family={Feinstein},
+           familyi={F\bibinitperiod},
+           given={Alvan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=848f14ddfd48ee3ffdbb75c1c6d2fff9}{%
+           family={Cicchetti},
+           familyi={C\bibinitperiod},
+           given={Domenic\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{fullhash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{fullhashraw}{204ac40126870e75e47517f5430c3cc7}
+      \strng{bibnamehash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{authorbibnamehash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{authornamehash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{authorfullhash}{204ac40126870e75e47517f5430c3cc7}
+      \strng{authorfullhashraw}{204ac40126870e75e47517f5430c3cc7}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Clinical Epidemiology}
+      \field{number}{6}
+      \field{title}{High Agreement but Low Kappa: {I}. The Problems of Two Paradoxes}
+      \field{volume}{43}
+      \field{year}{1990}
+      \field{pages}{543\bibrangedash 549}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/0895-4356(90)90158-L
+      \endverb
+    \endentry
+    \entry{gabriele2020understanding}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b0c21bbfa42d96de5ca98d4db8680c18}{%
+           family={Gabriele},
+           familyi={G\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f95d31847023f710af29acf71beb03e6}{%
+           family={Chiasson},
+           familyi={C\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Honolulu, HI, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{fullhash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{fullhashraw}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{bibnamehash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{authorbibnamehash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{authornamehash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{authorfullhash}{2f9f6df264bbd2adc024930f7a129469}
+      \strng{authorfullhashraw}{2f9f6df264bbd2adc024930f7a129469}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3313831.3376651
+      \endverb
+    \endentry
+    \entry{google2026playstatistics}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7b568e72d25af32b0cec03e49cbf3f70}{%
+           family={{Google LLC}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Play Console Help}%
+      }
+      \strng{namehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{fullhash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{fullhashraw}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{bibnamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authorbibnamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authornamehash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authorfullhash}{7b568e72d25af32b0cec03e49cbf3f70}
+      \strng{authorfullhashraw}{7b568e72d25af32b0cec03e49cbf3f70}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{View App Statistics}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://support.google.com/googleplay/android-developer/answer/139628
+      \endverb
+      \verb{url}
+      \verb https://support.google.com/googleplay/android-developer/answer/139628
+      \endverb
+    \endentry
+    \entry{grinsted2021making}{online}{}{}
+      \name{author}{3}{}{%
+        {{hash=43e4585c05567df00b0651d4879e9941}{%
+           family={Grinsted},
+           familyi={G\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=211181b17256a58919463475198dcc87}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=48a09862b00255c1b93e16222ee17094}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Tat\bibnamedelima Yang},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Android Developers Blog}%
+      }
+      \strng{namehash}{090ab38916eced7649b8bd555abe1425}
+      \strng{fullhash}{090ab38916eced7649b8bd555abe1425}
+      \strng{fullhashraw}{090ab38916eced7649b8bd555abe1425}
+      \strng{bibnamehash}{090ab38916eced7649b8bd555abe1425}
+      \strng{authorbibnamehash}{090ab38916eced7649b8bd555abe1425}
+      \strng{authornamehash}{090ab38916eced7649b8bd555abe1425}
+      \strng{authorfullhash}{090ab38916eced7649b8bd555abe1425}
+      \strng{authorfullhashraw}{090ab38916eced7649b8bd555abe1425}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{month}{8}
+      \field{title}{Making Ratings and Reviews Better for Users and Developers}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://android-developers.googleblog.com/2021/08/making-ratings-and-reviews-better-for.html
+      \endverb
+      \verb{url}
+      \verb https://android-developers.googleblog.com/2021/08/making-ratings-and-reviews-better-for.html
+      \endverb
+    \endentry
+    \entry{gwet2008computing}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=839b6477543c3b0ec4a6d4b15183b093}{%
+           family={Gwet},
+           familyi={G\bibinitperiod},
+           given={Kilem\bibnamedelima Li},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{fullhash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{fullhashraw}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{bibnamehash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{authorbibnamehash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{authornamehash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{authorfullhash}{839b6477543c3b0ec4a6d4b15183b093}
+      \strng{authorfullhashraw}{839b6477543c3b0ec4a6d4b15183b093}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Mathematical and Statistical Psychology}
+      \field{number}{1}
+      \field{title}{Computing Inter-Rater Reliability and Its Variance in the Presence of High Agreement}
+      \field{volume}{61}
+      \field{year}{2008}
+      \field{pages}{29\bibrangedash 48}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1348/000711006X126600
+      \endverb
+    \endentry
+    \entry{harkous2018polisis}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=8241836e846dd96544307b26d4147864}{%
+           family={Harkous},
+           familyi={H\bibinitperiod},
+           given={Hamza},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a62f25ab093e40ce5414dcff8c43c09b}{%
+           family={Fawaz},
+           familyi={F\bibinitperiod},
+           given={Kassem},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d9eb7e1e5eb666275e8f86a11b9c29e8}{%
+           family={Lebret},
+           familyi={L\bibinitperiod},
+           given={Rémi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a05863d8a25de139038a80b6e8649de1}{%
+           family={Schaub},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=163411def426f522803d5a27828d3b8d}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Kang\bibnamedelima G.},
+           giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=a552ea986948881cb21d3eb65ac82d09}{%
+           family={Aberer},
+           familyi={A\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Baltimore, MD, USA}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{7203869a3b5b3f8ae46fffbdd38b7345}
+      \strng{fullhash}{9e040414ecb8c3cccf01b058f6674eb6}
+      \strng{fullhashraw}{9e040414ecb8c3cccf01b058f6674eb6}
+      \strng{bibnamehash}{9e040414ecb8c3cccf01b058f6674eb6}
+      \strng{authorbibnamehash}{9e040414ecb8c3cccf01b058f6674eb6}
+      \strng{authornamehash}{7203869a3b5b3f8ae46fffbdd38b7345}
+      \strng{authorfullhash}{9e040414ecb8c3cccf01b058f6674eb6}
+      \strng{authorfullhashraw}{9e040414ecb8c3cccf01b058f6674eb6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 27th USENIX Security Symposium (USENIX Security 18)}
+      \field{title}{Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning}
+      \field{year}{2018}
+      \field{pages}{531\bibrangedash 548}
+      \range{pages}{18}
+    \endentry
+    \entry{huckvale2019assessment}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=23978abb735b577147e999a6cde4b350}{%
+           family={Huckvale},
+           familyi={H\bibinitperiod},
+           given={Kit},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa15a0643d173ce791cf57a2c478df8c}{%
+           family={Torous},
+           familyi={T\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bff9e79f050c5817daec0f07e8e8d172}{%
+           family={Larsen},
+           familyi={L\bibinitperiod},
+           given={Mark\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{fullhash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{fullhashraw}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{bibnamehash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{authorbibnamehash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{authornamehash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{authorfullhash}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \strng{authorfullhashraw}{4db721903c1dbccbd4c2d3d84fff2b88}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JAMA Network Open}
+      \field{number}{4}
+      \field{title}{Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation}
+      \field{volume}{2}
+      \field{year}{2019}
+      \field{pages}{e192542}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1001/jamanetworkopen.2019.2542
+      \endverb
+    \endentry
+    \entry{hudig2025intimate}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=afd79e7944562316864e3d2c96fd61ac}{%
+           family={Hudig},
+           familyi={H\bibinitperiod},
+           given={Anna\bibnamedelima Ida},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=09a44253e98a486f8cd6997ca3903272}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Jatinder},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Yokohama, Japan}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{fullhash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{fullhashraw}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{bibnamehash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{authorbibnamehash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{authornamehash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{authorfullhash}{278bdd301f12b40de5dfaa0783a6df35}
+      \strng{authorfullhashraw}{278bdd301f12b40de5dfaa0783a6df35}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1145/3706598.3714089
+      \endverb
+    \endentry
+    \entry{hutton2018assessing}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=9f06937f0c6eecb37ba404228b01cf23}{%
+           family={Hutton},
+           familyi={H\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a8bb921765bacf84d182784492463f60}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Blaine\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ba732dea27251bf7c998d7b276346620}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7b845aaebaac6ac8fe07c7bb0e068b0f}{%
+           family={McCormick},
+           familyi={M\bibinitperiod},
+           given={Ciaran},
+           giveni={C\bibinitperiod}}}%
+        {{hash=951b7eb29dbdca3ad7d6add866b2df5e}{%
+           family={Bandara},
+           familyi={B\bibinitperiod},
+           given={Arosha\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=af471511e84b28bc1d01572a5660a752}{%
+           family={Hatzakis},
+           familyi={H\bibinitperiod},
+           given={Tally},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8c6b5765d95280bcc48935a7ece2fe3c}{%
+           family={Meadows},
+           familyi={M\bibinitperiod},
+           given={Maureen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=62e2903d907045d036533b99a869bfd9}{%
+           family={Nuseibeh},
+           familyi={N\bibinitperiod},
+           given={Bashar},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a49d7b0c6630e5bef4fe13130ae1665d}
+      \strng{fullhash}{a49bc9cc2243b79bff8e378b3660d764}
+      \strng{fullhashraw}{a49bc9cc2243b79bff8e378b3660d764}
+      \strng{bibnamehash}{a49bc9cc2243b79bff8e378b3660d764}
+      \strng{authorbibnamehash}{a49bc9cc2243b79bff8e378b3660d764}
+      \strng{authornamehash}{a49d7b0c6630e5bef4fe13130ae1665d}
+      \strng{authorfullhash}{a49bc9cc2243b79bff8e378b3660d764}
+      \strng{authorfullhashraw}{a49bc9cc2243b79bff8e378b3660d764}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JMIR mHealth and uHealth}
+      \field{number}{10}
+      \field{title}{Assessing the Privacy of {mHealth} Apps for Self-Tracking: Heuristic Evaluation Approach}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{e185}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2196/mhealth.9217
+      \endverb
+    \endentry
+    \entry{jomingyu2024googleplayscraper}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=38b2cac79561235b28242b113d296535}{%
+           family={{JoMingyu}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{38b2cac79561235b28242b113d296535}
+      \strng{fullhash}{38b2cac79561235b28242b113d296535}
+      \strng{fullhashraw}{38b2cac79561235b28242b113d296535}
+      \strng{bibnamehash}{38b2cac79561235b28242b113d296535}
+      \strng{authorbibnamehash}{38b2cac79561235b28242b113d296535}
+      \strng{authornamehash}{38b2cac79561235b28242b113d296535}
+      \strng{authorfullhash}{38b2cac79561235b28242b113d296535}
+      \strng{authorfullhashraw}{38b2cac79561235b28242b113d296535}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{google-play-scraper}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{1.2.7}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/JoMingyu/google-play-scraper
+      \endverb
+      \verb{url}
+      \verb https://github.com/JoMingyu/google-play-scraper
+      \endverb
+    \endentry
+    \entry{knabenhans2026harms}{misc}{}{}
+      \name{author}{7}{}{%
+        {{hash=271adc58af5ee98f2f1e4eca6973d29e}{%
+           family={Knabenhans},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=35ba622e3a75bc939f10ede7232828d8}{%
+           family={Veitch},
+           familyi={V\bibinitperiod},
+           given={Shannon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d2b1fb084f9bbd6a11106b591281d96e}{%
+           family={Raynal},
+           familyi={R\bibinitperiod},
+           given={Mathilde},
+           giveni={M\bibinitperiod}}}%
+        {{hash=797b80dd0c240841f357ac89370682a8}{%
+           family={Stadler},
+           familyi={S\bibinitperiod},
+           given={Theresa},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3b21e3dd29aaab105e1241d149e7f79a}{%
+           family={Chatel},
+           familyi={C\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=409d14912498db6daab7862ec6ef71a5}{%
+           family={Lueks},
+           familyi={L\bibinitperiod},
+           given={Wouter},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5c1489fa5bc4972de90b493e3c520030}{%
+           family={Troncoso},
+           familyi={T\bibinitperiod},
+           given={Carmela},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{12e8c7a459ffb0e51119312ac6a82b8c}
+      \strng{fullhash}{ce6704d99816dcc091ec5f57cf780624}
+      \strng{fullhashraw}{ce6704d99816dcc091ec5f57cf780624}
+      \strng{bibnamehash}{ce6704d99816dcc091ec5f57cf780624}
+      \strng{authorbibnamehash}{ce6704d99816dcc091ec5f57cf780624}
+      \strng{authornamehash}{12e8c7a459ffb0e51119312ac6a82b8c}
+      \strng{authorfullhash}{ce6704d99816dcc091ec5f57cf780624}
+      \strng{authorfullhashraw}{ce6704d99816dcc091ec5f57cf780624}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Cryptology ePrint Archive, Paper 2026/867}
+      \field{note}{Preprint, version of 4 May 2026 (revised 16 September 2026); section references follow the May version}
+      \field{title}{On the (Privacy) Harms of the European Digital Identity Framework}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://eprint.iacr.org/2026/867
+      \endverb
+      \verb{url}
+      \verb https://eprint.iacr.org/2026/867
+      \endverb
+    \endentry
+    \entry{krippendorff2019content}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0fe2f29cabde5dc6e650c498ae365d50}{%
+           family={Krippendorff},
+           familyi={K\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Thousand Oaks, CA}%
+      }
+      \list{publisher}{1}{%
+        {SAGE}%
+      }
+      \strng{namehash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{fullhash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{fullhashraw}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{bibnamehash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{authorbibnamehash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{authornamehash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{authorfullhash}{0fe2f29cabde5dc6e650c498ae365d50}
+      \strng{authorfullhashraw}{0fe2f29cabde5dc6e650c498ae365d50}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{978-1-5063-9566-1}
+      \field{title}{Content Analysis: An Introduction to Its Methodology}
+      \field{year}{2019}
+    \endentry
+    \entry{li2022ios}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=8e417b0eb6d78af30c7f97963a79ac25}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yucheng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=db3930ba9197b61d11182d4475bb2a6e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Deyuan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f36c30dbf96328d4c5497c22349a0c93}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tianshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=aee759f0db79d628438edd12223ddcad}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Yuvraj},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a5c6780668a3e651a6abfc56640c0b1a}{%
+           family={Cranor},
+           familyi={C\bibinitperiod},
+           given={Lorrie\bibnamedelima Faith},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a02dbba0b8917170fcac7c0f836417f7}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Jason\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Orleans, LA, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{32d212064bad2bda745fe835db977826}
+      \strng{fullhash}{ef03cbe17169ce792929795bd3a70804}
+      \strng{fullhashraw}{ef03cbe17169ce792929795bd3a70804}
+      \strng{bibnamehash}{ef03cbe17169ce792929795bd3a70804}
+      \strng{authorbibnamehash}{ef03cbe17169ce792929795bd3a70804}
+      \strng{authornamehash}{32d212064bad2bda745fe835db977826}
+      \strng{authorfullhash}{ef03cbe17169ce792929795bd3a70804}
+      \strng{authorfullhashraw}{ef03cbe17169ce792929795bd3a70804}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Understanding {iOS} Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3491101.3519739
+      \endverb
+    \endentry
+    \entry{malki2024exploring}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=d0ed9b2f1434c768db4d79659652ec25}{%
+           family={Malki},
+           familyi={M\bibinitperiod},
+           given={Lisa\bibnamedelima Mekioussa},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a96cb317407e1b53ddf81518fefbeb31}{%
+           family={Kaleva},
+           familyi={K\bibinitperiod},
+           given={Ina},
+           giveni={I\bibinitperiod}}}%
+        {{hash=620feb4a692156845626324601e3dad1}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Dilisha},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2be4d236ff23cc55970adfdb4391ed67}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fe6dd6ca024e3a461304deed35f762a4}{%
+           family={Abu-Salma},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Ruba},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Honolulu, HI, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{078dce09fedcf996765a46b61a2fd18d}
+      \strng{fullhash}{58b13d57247801e6b8afea2d998eada9}
+      \strng{fullhashraw}{58b13d57247801e6b8afea2d998eada9}
+      \strng{bibnamehash}{58b13d57247801e6b8afea2d998eada9}
+      \strng{authorbibnamehash}{58b13d57247801e6b8afea2d998eada9}
+      \strng{authornamehash}{078dce09fedcf996765a46b61a2fd18d}
+      \strng{authorfullhash}{58b13d57247801e6b8afea2d998eada9}
+      \strng{authorfullhashraw}{58b13d57247801e6b8afea2d998eada9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1145/3613904.3642521
+      \endverb
+    \endentry
+    \entry{martin2025cookies}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6c04b6b094e0b92dcfd729c30320db6c}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Kirsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b87272f33535d7231ff18fbf708063a0}{%
+           family={Nissenbaum},
+           familyi={N\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{fullhash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{fullhashraw}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{bibnamehash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{authorbibnamehash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{authornamehash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{authorfullhash}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \strng{authorfullhashraw}{8aa2ba6f9613676a2d8b743499ee6b5e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{SSRN abstract 4655228.}
+      \field{journaltitle}{Georgetown Law Technology Review}
+      \field{number}{1}
+      \field{title}{No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques}
+      \field{volume}{9}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 64}
+      \range{pages}{64}
+    \endentry
+    \entry{mcdonald2019reliability}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4345e91116c13d8a5392bf028a514728}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={Nora},
+           giveni={N\bibinitperiod}}}%
+        {{hash=29a8bf87d87621a0ac1abfeadaa60c0f}{%
+           family={Schoenebeck},
+           familyi={S\bibinitperiod},
+           given={Sarita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d01d81a5cc5ecce88f7a7f6fcf131d3}{%
+           family={Forte},
+           familyi={F\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{fullhash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{fullhashraw}{d94420e834939aababf9c2bf8b80b412}
+      \strng{bibnamehash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{authorbibnamehash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{authornamehash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{authorfullhash}{d94420e834939aababf9c2bf8b80b412}
+      \strng{authorfullhashraw}{d94420e834939aababf9c2bf8b80b412}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
+      \field{number}{CSCW}
+      \field{title}{Reliability and Inter-Rater Reliability in Qualitative Research: Norms and Guidelines for {CSCW} and {HCI} Practice}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1145/3359174
+      \endverb
+    \endentry
+    \entry{moniz2025toward}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=cc475a8a2bcd3ab353d4f6dfef4b2017}{%
+           family={Moniz},
+           familyi={M\bibinitperiod},
+           given={Diana\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=91e25b29fb8c1a97450b44105cf564cf}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Teresa},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{850177004f601f19a004035cc53ec365}
+      \strng{fullhash}{850177004f601f19a004035cc53ec365}
+      \strng{fullhashraw}{850177004f601f19a004035cc53ec365}
+      \strng{bibnamehash}{850177004f601f19a004035cc53ec365}
+      \strng{authorbibnamehash}{850177004f601f19a004035cc53ec365}
+      \strng{authornamehash}{850177004f601f19a004035cc53ec365}
+      \strng{authorfullhash}{850177004f601f19a004035cc53ec365}
+      \strng{authorfullhashraw}{850177004f601f19a004035cc53ec365}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human--Computer Interaction}
+      \field{note}{Published online 11 December 2025}
+      \field{title}{Toward Risk Communication in Intimate Health Technologies}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1080/10447318.2025.2597502
+      \endverb
+    \endentry
+    \entry{oloughlin2019reviewing}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=68dfbe209db091250404e992d172a888}{%
+           family={O'Loughlin},
+           familyi={O\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=777c3059e5b275cd0aa624ab309bc5b3}{%
+           family={Neary},
+           familyi={N\bibinitperiod},
+           given={Martha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3a4172df3aa03d17b9d7fee86ec664d3}{%
+           family={Adkins},
+           familyi={A\bibinitperiod},
+           given={Elizabeth\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b9c6c4aa5290c14874d240261ae2da63}{%
+           family={Schueller},
+           familyi={S\bibinitperiod},
+           given={Stephen\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e06fb32badd121183713f26b0916eb22}
+      \strng{fullhash}{4d4040620bee2ee236396b098a7b4279}
+      \strng{fullhashraw}{4d4040620bee2ee236396b098a7b4279}
+      \strng{bibnamehash}{4d4040620bee2ee236396b098a7b4279}
+      \strng{authorbibnamehash}{4d4040620bee2ee236396b098a7b4279}
+      \strng{authornamehash}{e06fb32badd121183713f26b0916eb22}
+      \strng{authorfullhash}{4d4040620bee2ee236396b098a7b4279}
+      \strng{authorfullhashraw}{4d4040620bee2ee236396b098a7b4279}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Internet Interventions}
+      \field{title}{Reviewing the Data Security and Privacy Policies of Mobile Apps for Depression}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{pages}{110\bibrangedash 115}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.invent.2018.12.001
+      \endverb
+    \endentry
+    \entry{robillard2019availability}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=ae01d1ec762557225f7da7d9e9d783e5}{%
+           family={Robillard},
+           familyi={R\bibinitperiod},
+           given={Julie\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=71110e6ad9c43ce4c0eee00c286ca2e3}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Tanya\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2fdac002d589ae28fa75456fb3a7f966}{%
+           family={Sporn},
+           familyi={S\bibinitperiod},
+           given={Arlo\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=c67fdcd6d16ba0a60fdd5ee2305e93ff}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Jen-Ai},
+           giveni={J\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=18a8bb83288bbd99c635682451aee544}{%
+           family={Lo},
+           familyi={L\bibinitperiod},
+           given={Cody},
+           giveni={C\bibinitperiod}}}%
+        {{hash=596f52f554382c7e9dcf6bd1159ed392}{%
+           family={Ta},
+           familyi={T\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d333648583ebdadbfb469772ec8699a1}{%
+           family={Nadler},
+           familyi={N\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea8e0d6a4284bdd333c80db154a55778}
+      \strng{fullhash}{1b8760305a503c12355f93bfbb4e9ae1}
+      \strng{fullhashraw}{1b8760305a503c12355f93bfbb4e9ae1}
+      \strng{bibnamehash}{1b8760305a503c12355f93bfbb4e9ae1}
+      \strng{authorbibnamehash}{1b8760305a503c12355f93bfbb4e9ae1}
+      \strng{authornamehash}{ea8e0d6a4284bdd333c80db154a55778}
+      \strng{authorfullhash}{1b8760305a503c12355f93bfbb4e9ae1}
+      \strng{authorfullhashraw}{1b8760305a503c12355f93bfbb4e9ae1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Internet Interventions}
+      \field{title}{Availability, Readability, and Content of Privacy Policies and Terms of Agreements of Mental Health Apps}
+      \field{volume}{17}
+      \field{year}{2019}
+      \field{pages}{100243}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.invent.2019.100243
+      \endverb
+    \endentry
+    \entry{rodriguez2024llm}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=04b052076e56829ced69eac61441c892}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b5a03a5248b0ead6a7ec986ebe943665}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=fcb33ecb9a043590895fb305d97b3c90}{%
+           family={Del\bibnamedelima Alamo},
+           familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=870d7a93ca1daa6a917c2cb8c1c213f1}{%
+           family={Sadeh},
+           familyi={S\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{b45971a8d1674578d8eac7071f59aaa6}
+      \strng{fullhash}{591f79bfccac234324562667eec01c2d}
+      \strng{fullhashraw}{591f79bfccac234324562667eec01c2d}
+      \strng{bibnamehash}{591f79bfccac234324562667eec01c2d}
+      \strng{authorbibnamehash}{591f79bfccac234324562667eec01c2d}
+      \strng{authornamehash}{b45971a8d1674578d8eac7071f59aaa6}
+      \strng{authorfullhash}{591f79bfccac234324562667eec01c2d}
+      \strng{authorfullhashraw}{591f79bfccac234324562667eec01c2d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{Preprint: arXiv:2405.20900.}
+      \field{journaltitle}{Computing}
+      \field{number}{12}
+      \field{title}{Large Language Models: A New Approach for Privacy Policy Analysis at Scale}
+      \field{volume}{106}
+      \field{year}{2024}
+      \field{pages}{3879\bibrangedash 3903}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s00607-024-01331-9
+      \endverb
+    \endentry
+    \entry{niksirat2024wearable}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=fba5ffced8889b7f7bf4ff95fc858121}{%
+           family={Salehzadeh\bibnamedelima Niksirat},
+           familyi={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Kavous},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dd8eac2140dee1ae9cc9aea3549fbeb3}{%
+           family={Velykoivanenko},
+           familyi={V\bibinitperiod},
+           given={Lev},
+           giveni={L\bibinitperiod}}}%
+        {{hash=50edb5a7ce53c7e5762945d225480cb5}{%
+           family={Zufferey},
+           familyi={Z\bibinitperiod},
+           given={Noé},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2dc770e66765ab7841c36ddcea935162}{%
+           family={Cherubini},
+           familyi={C\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c159885d81711fbc88552fe4d026132d}{%
+           family={Huguenin},
+           familyi={H\bibinitperiod},
+           given={Kévin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=682403e2adaf3566bffc2de456871168}{%
+           family={Humbert},
+           familyi={H\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f769aa1c1f29f73168ef42429efb9c89}
+      \strng{fullhash}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \strng{fullhashraw}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \strng{bibnamehash}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \strng{authorbibnamehash}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \strng{authornamehash}{f769aa1c1f29f73168ef42429efb9c89}
+      \strng{authorfullhash}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \strng{authorfullhashraw}{bce7c5d8284cfc0e9f1adf221afc7ee6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{183}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{number}{7}
+      \field{title}{Wearable Activity Trackers: A Survey on Utility, Privacy, and Security}
+      \field{volume}{56}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 40}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1145/3645091
+      \endverb
+    \endentry
+    \entry{shipp2020period}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=62253ef11131fb4936b7f70ce4ce7017}{%
+           family={Shipp},
+           familyi={S\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b16d1df5d495b352a4070361c12d5f}{%
+           family={Blasco},
+           familyi={B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{fullhash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{fullhashraw}{d3e49b863ad71742d80466a836944a8d}
+      \strng{bibnamehash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{authorbibnamehash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{authornamehash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{authorfullhash}{d3e49b863ad71742d80466a836944a8d}
+      \strng{authorfullhashraw}{d3e49b863ad71742d80466a836944a8d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings on Privacy Enhancing Technologies}
+      \field{number}{4}
+      \field{title}{How Private Is Your Period?: A Systematic Analysis of Menstrual App Privacy Policies}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{pages}{491\bibrangedash 510}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.2478/popets-2020-0083
+      \endverb
+    \endentry
+    \entry{solove2006taxonomy}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1dc39ef46c82aedd794fbb782c60c49}{%
+           family={Solove},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{fullhash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{fullhashraw}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{bibnamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorbibnamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authornamehash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorfullhash}{f1dc39ef46c82aedd794fbb782c60c49}
+      \strng{authorfullhashraw}{f1dc39ef46c82aedd794fbb782c60c49}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Pennsylvania Law Review}
+      \field{number}{3}
+      \field{title}{A Taxonomy of Privacy}
+      \field{volume}{154}
+      \field{year}{2006}
+      \field{pages}{477\bibrangedash 560}
+      \range{pages}{84}
+      \verb{doi}
+      \verb 10.2307/40041279
+      \endverb
+    \endentry
+    \entry{statcounter2026vendor}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fee3fc182e02f376217580e5bfec4f51}{%
+           family={{StatCounter}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {StatCounter Global Stats}%
+      }
+      \strng{namehash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{fullhash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{fullhashraw}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{bibnamehash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{authorbibnamehash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{authornamehash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{authorfullhash}{fee3fc182e02f376217580e5bfec4f51}
+      \strng{authorfullhashraw}{fee3fc182e02f376217580e5bfec4f51}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{Share of mobile page views by device vendor, September 2026.}
+      \field{title}{Mobile Vendor Market Share Germany}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://gs.statcounter.com/vendor-market-share/mobile/germany
+      \endverb
+      \verb{url}
+      \verb https://gs.statcounter.com/vendor-market-share/mobile/germany
+      \endverb
+    \endentry
+    \entry{sunyaev2015availability}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0aace507a7fdfb4a9fb1cef030e81151}{%
+           family={Sunyaev},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=97ca1de0ff6a0a6e4a793f28b19fa9ea}{%
+           family={Dehling},
+           familyi={D\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e2af746f9e3cdf9c255dc990d783d084}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Patrick\bibnamedelima L.},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=dd53f4bbe048e75a6971730b5ef5d7ee}{%
+           family={Mandl},
+           familyi={M\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{16d15a172c8c630aa78f754fbfb284f2}
+      \strng{fullhash}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \strng{fullhashraw}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \strng{bibnamehash}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \strng{authorbibnamehash}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \strng{authornamehash}{16d15a172c8c630aa78f754fbfb284f2}
+      \strng{authorfullhash}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \strng{authorfullhashraw}{99c0f6fac5fbe0b79e79fbe03d9422ce}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Medical Informatics Association}
+      \field{number}{e1}
+      \field{title}{Availability and Quality of Mobile Health App Privacy Policies}
+      \field{volume}{22}
+      \field{year}{2015}
+      \field{pages}{e28\bibrangedash e33}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1136/amiajnl-2013-002605
+      \endverb
+    \endentry
+    \entry{tornberg2024best}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=474a5a92cee5fca423d58b3bc32c442d}{%
+           family={Törnberg},
+           familyi={T\bibinitperiod},
+           given={Petter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{fullhash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{fullhashraw}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{bibnamehash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{authorbibnamehash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{authornamehash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{authorfullhash}{474a5a92cee5fca423d58b3bc32c442d}
+      \strng{authorfullhashraw}{474a5a92cee5fca423d58b3bc32c442d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sociologica}
+      \field{number}{2}
+      \field{title}{Best Practices for Text Annotation with Large Language Models}
+      \field{volume}{18}
+      \field{year}{2024}
+      \field{pages}{67\bibrangedash 85}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.6092/issn.1971-8853/19461
+      \endverb
+    \endentry
+    \entry{wharton1994cognitive}{incollection}{}{}
+      \name{author}{4}{}{%
+        {{hash=751a0863a4a46faac90c5ff4158a1f8d}{%
+           family={Wharton},
+           familyi={W\bibinitperiod},
+           given={Cathleen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1286904a4db30272f1232cac4c47d5eb}{%
+           family={Rieman},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3a33467913e4f76c15a23e8203a05771}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Clayton},
+           giveni={C\bibinitperiod}}}%
+        {{hash=737686982a6675fd831022b5ee35c64d}{%
+           family={Polson},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=753054f71283d85f82cda8e35daf6bac}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d7aa4758755dea96ed16492e8cd3f4a}{%
+           family={Mack},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{81338f1140732e8669cd6403be20427c}
+      \strng{fullhash}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{fullhashraw}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{bibnamehash}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{authorbibnamehash}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{authornamehash}{81338f1140732e8669cd6403be20427c}
+      \strng{authorfullhash}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{authorfullhashraw}{bd19b8bbda1d2c6ee007713d7fbbde43}
+      \strng{editorbibnamehash}{11441dbfc2430f16988b7df12fe0ae37}
+      \strng{editornamehash}{11441dbfc2430f16988b7df12fe0ae37}
+      \strng{editorfullhash}{11441dbfc2430f16988b7df12fe0ae37}
+      \strng{editorfullhashraw}{11441dbfc2430f16988b7df12fe0ae37}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Usability Inspection Methods}
+      \field{isbn}{0-471-01877-5}
+      \field{title}{The Cognitive Walkthrough Method: A Practitioner's Guide}
+      \field{year}{1994}
+      \field{pages}{105\bibrangedash 140}
+      \range{pages}{36}
+    \endentry
+    \entry{wilson2016creation}{inproceedings}{}{}
+      \name{author}{14}{}{%
+        {{hash=da6cecd9236957f0c2cd7c2bcbf3975a}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Shomir},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a05863d8a25de139038a80b6e8649de1}{%
+           family={Schaub},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c882ce925ecc27163c4fd0dcb94a1836}{%
+           family={Dara},
+           familyi={D\bibinitperiod},
+           given={Aswarth\bibnamedelima Abhilash},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bf75bdf07d8da3a19b1de7e0d9f7977e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Frederick},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8dc480a6f0011dd2f0e231f1187642d0}{%
+           family={Cherivirala},
+           familyi={C\bibinitperiod},
+           given={Sushain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6e24548a3dacdcd30e2e022741393848}{%
+           family={Leon},
+           familyi={L\bibinitperiod},
+           given={Pedro\bibnamedelima Giovanni},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=9183ef8c6198eef992210cd87dd05325}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Mads\bibnamedelima Schaarup},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=662a982882262d1c312883705f9e3098}{%
+           family={Zimmeck},
+           familyi={Z\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2346545014705773caebc00442b8c62f}{%
+           family={Sathyendra},
+           familyi={S\bibinitperiod},
+           given={Kanthashree\bibnamedelima Mysore},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0c7ebe9515c27f5d652e5dfbb47c49b5}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={N.\bibnamedelimi Cameron},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4597d474299cb3aa912de49787839031}{%
+           family={Norton},
+           familyi={N\bibinitperiod},
+           given={Thomas\bibnamedelima B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=4c40167d6c8ae2073badfccef0c76767}{%
+           family={Hovy},
+           familyi={H\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87e80b57d79e77d61aa7c487350375ec}{%
+           family={Reidenberg},
+           familyi={R\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+        {{hash=870d7a93ca1daa6a917c2cb8c1c213f1}{%
+           family={Sadeh},
+           familyi={S\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Germany}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{5e6a102873c08e7464d88c42a79f9c3c}
+      \strng{fullhash}{4860e678f6c19968e09f60f99b827e6e}
+      \strng{fullhashraw}{4860e678f6c19968e09f60f99b827e6e}
+      \strng{bibnamehash}{4860e678f6c19968e09f60f99b827e6e}
+      \strng{authorbibnamehash}{4860e678f6c19968e09f60f99b827e6e}
+      \strng{authornamehash}{5e6a102873c08e7464d88c42a79f9c3c}
+      \strng{authorfullhash}{4860e678f6c19968e09f60f99b827e6e}
+      \strng{authorfullhashraw}{4860e678f6c19968e09f60f99b827e6e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{title}{The Creation and Analysis of a Website Privacy Policy Corpus}
+      \field{year}{2016}
+      \field{pages}{1330\bibrangedash 1340}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/P16-1126
+      \endverb
+    \endentry
+    \entry{zimmeck2019maps}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=662a982882262d1c312883705f9e3098}{%
+           family={Zimmeck},
+           familyi={Z\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fff81b73bc336f0bd8d020588295581f}{%
+           family={Story},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5c02df9265de904503cc8573170e7f43}{%
+           family={Smullen},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ab8be38c736f011bc98faabd1ea90c94}{%
+           family={Ravichander},
+           familyi={R\bibinitperiod},
+           given={Abhilasha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4f65dcdb28d6cbdb06bcdf017961b3ac}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ziqi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c72f2cee84e35833894490ee612644d7}{%
+           family={Reidenberg},
+           familyi={R\bibinitperiod},
+           given={Joel\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=0c7ebe9515c27f5d652e5dfbb47c49b5}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={N.\bibnamedelimi Cameron},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=870d7a93ca1daa6a917c2cb8c1c213f1}{%
+           family={Sadeh},
+           familyi={S\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8937b56d442a65980299d1faf9be2d4b}
+      \strng{fullhash}{581e0ee7d3836a7274974588d28c5128}
+      \strng{fullhashraw}{581e0ee7d3836a7274974588d28c5128}
+      \strng{bibnamehash}{581e0ee7d3836a7274974588d28c5128}
+      \strng{authorbibnamehash}{581e0ee7d3836a7274974588d28c5128}
+      \strng{authornamehash}{8937b56d442a65980299d1faf9be2d4b}
+      \strng{authorfullhash}{581e0ee7d3836a7274974588d28c5128}
+      \strng{authorfullhashraw}{581e0ee7d3836a7274974588d28c5128}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings on Privacy Enhancing Technologies}
+      \field{number}{3}
+      \field{title}{{MAPS}: Scaling Privacy Compliance Analysis to a Million Apps}
+      \field{volume}{2019}
+      \field{year}{2019}
+      \field{pages}{66\bibrangedash 86}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.2478/popets-2019-0037
+      \endverb
+    \endentry
+    \entry{zou2019might}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=d3a6f56aa5a1f70d0f3a42deab761ce8}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yixin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b8c4ba9474e9d3af76f66477a778345e}{%
+           family={Danino},
+           familyi={D\bibinitperiod},
+           given={Shawn},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7fc6702e3f4e68f99f445cab21ca031d}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Kaiwen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a05863d8a25de139038a80b6e8649de1}{%
+           family={Schaub},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Glasgow, Scotland, UK}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d52167a5677c3327f6a02f916dd1f962}
+      \strng{fullhash}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \strng{fullhashraw}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \strng{bibnamehash}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \strng{authorbibnamehash}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \strng{authornamehash}{d52167a5677c3327f6a02f916dd1f962}
+      \strng{authorfullhash}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \strng{authorfullhashraw}{a9537fb9b5e5d2dd840bcd991e49a679}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{You `Might' Be Affected: An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/3290605.3300424
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

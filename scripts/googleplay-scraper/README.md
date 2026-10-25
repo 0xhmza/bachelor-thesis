@@ -26,8 +26,29 @@ but records fewer fields. Run it with the environment above, after creating
 `v002/output/`:
 `scripts/googleplay-scraper/.venv/Scripts/python.exe scripts/googleplay-scraper/v002/scraper.py scripts/googleplay-scraper/v002/input.json > scripts/googleplay-scraper/v002/output/run.json`.
 The ID mode was tested live on 22 October 2026. The keyword mode reuses the v001
-search adapter unchanged and was not run again, because `robots.txt` disallows the
-`/store/search` path (see the [mechanism note](../../output/research/2026-10-11_scraper-mechanism/research-note.md)).
+search adapter unchanged; it was run on 22 October with 19 keywords (the pilot in
+[D2](../../00_Admin/Decisions/D02_ranking-and-rating-floor.md)) at the author's
+direction, although `robots.txt` disallows the `/store/search` path (see the
+[mechanism note](../../output/research/2026-10-11_scraper-mechanism/research-note.md)).
+
+`v003/scraper.py` is the sampling collector of 23 October 2026 (D2, D3). It keeps
+every v002 safeguard and adds developer ID, genre ID, minimum installs, rating
+histogram, in-app purchase and content-rating fields, summary and full description.
+Without `limit` it keeps every result of the first search page (20–30 in a probe on
+23 October). It counts hits without an app ID under `hits_without_id`; a probe on
+24 October showed that these are the highlighted top results, whose ID the parser
+misses (for `running`: adidas Running), not non-app cards, so v003 drops each
+query's top result. Its run of 23 October fetched every product page at about 5 s
+each and was stopped after 2 h 50 min without output.
+
+`v004/scraper.py` is the sampling collector of 24 October 2026 (D2). It first reads
+the search page for every keyword and records each hit with position, title,
+developer and the install band the page shows, taking a top result's ID from its
+details URL. It then ranks the distinct apps by band (ties: best position, package
+ID) and opens only the first `pages` product pages (100), appending each to the
+`cache` file so that an interrupted run resumes; progress goes to stderr. The output
+keeps the v003 form under `results` and adds `search` (all hits), `distinct_apps`,
+`page_band_cutoff` and `apps_at_cutoff_without_page`.
 
 ## Recorded data
 

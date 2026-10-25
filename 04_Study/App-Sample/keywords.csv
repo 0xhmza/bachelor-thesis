@@ -1,0 +1,50 @@
+query,language,source,category,source_term
+cycling,en,Hutton et al. 2018,cycling,cycling
+Radfahren,de,Hutton et al. 2018,cycling,cycling
+diet,en,Hutton et al. 2018,diet,diet
+Diät,de,Hutton et al. 2018,diet,diet
+eating,en,Hutton et al. 2018,diet,eating
+Ernährung,de,Hutton et al. 2018,diet,eating
+exercise,en,Hutton et al. 2018,exercise,exercise
+Training,de,Hutton et al. 2018,exercise,exercise
+workouts,en+de,Hutton et al. 2018,exercise,workouts
+heartrate,en,Hutton et al. 2018,heart,heartrate
+Herzfrequenz,de,Hutton et al. 2018,heart,heartrate
+heart rate,en,Hutton et al. 2018,heart,heart rate
+Puls,de,Hutton et al. 2018,heart,heart rate
+mood,en,Hutton et al. 2018,mood,mood
+Stimmung,de,Hutton et al. 2018,mood,mood
+happiness,en,Hutton et al. 2018,mood,happiness
+Glück,de,Hutton et al. 2018,mood,happiness
+walking,en,Hutton et al. 2018,running,walking
+Gehen,de,Hutton et al. 2018,running,walking
+running,en,Hutton et al. 2018,running,running
+Laufen,de,Hutton et al. 2018,running,running
+sleep,en,Hutton et al. 2018,sleep,sleep
+Schlaf,de,Hutton et al. 2018,sleep,sleep
+steps,en,Hutton et al. 2018,step count,steps
+Schritte,de,Hutton et al. 2018,step count,steps
+weight,en,Hutton et al. 2018,weight,weight
+Gewicht,de,Hutton et al. 2018,weight,weight
+body fat,en,Hutton et al. 2018,weight,body fat
+Körperfett,de,Hutton et al. 2018,weight,body fat
+female health,en,Malki et al. 2024,reproductive,female health
+women's health,en,Malki et al. 2024,reproductive,women's health
+Frauengesundheit,de,Malki et al. 2024,reproductive,female health; women's health
+reproductive health,en,Malki et al. 2024,reproductive,reproductive health
+reproduktive Gesundheit,de,Malki et al. 2024,reproductive,reproductive health
+fertility,en,Malki et al. 2024,reproductive,fertility
+Fruchtbarkeit,de,Malki et al. 2024,reproductive,fertility
+ovulation,en,Malki et al. 2024,reproductive,ovulation
+Eisprung,de,Malki et al. 2024,reproductive,ovulation
+menstrual,en,Malki et al. 2024,reproductive,menstrual
+menstruation,en+de,Malki et al. 2024,reproductive,menstrual; menstruation
+period,en,Malki et al. 2024,reproductive,period
+Periode,de,Malki et al. 2024,reproductive,period
+contraception,en,Malki et al. 2024,reproductive,contraception
+birth control,en,Malki et al. 2024,reproductive,birth control
+Verhütung,de,Malki et al. 2024,reproductive,contraception; birth control
+pregnancy,en,Malki et al. 2024,reproductive,pregnancy
+Schwangerschaft,de,Malki et al. 2024,reproductive,pregnancy
+pregnant,en,Malki et al. 2024,reproductive,pregnant
+schwanger,de,Malki et al. 2024,reproductive,pregnant

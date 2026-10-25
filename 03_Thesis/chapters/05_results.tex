@@ -3,8 +3,113 @@
 
 % Report findings only. Interpretation belongs in the discussion.
 
-\section{Overview of the Sample}
-\todo{}
+\section{Sample}
+\label{sec:results-sample}
+This section reports how the sample of Section~\ref{sec:app-sampling} was
+drawn. All figures come from the collector outputs and the ranking script
+(Appendix~\ref{app:scripts}); the sample is listed in
+Appendix~\ref{app:app-sample}.
+\todo{The screening decisions in 04\_Study/App-Sample/screening.csv were
+prepared by an AI assistant from the store listings. Check every decision
+before this section states who screened.}
+
+\paragraph{Collection.} The App Store was searched on 23 October 2026 between
+19:46 and 19:53~UTC. Of the 49 queries, 48 returned between 64 and 190 results;
+\emph{reproduktive Gesundheit} returned none. The first 30 positions held 1{,}440
+hits and 848 distinct listings. Google Play was searched on 24 October 2026
+between 15:07 and 15:29~UTC. Each query returned between 8 and 50 results, 1{,}178
+in total; the first 30 positions held 1{,}138 hits and 645 distinct apps. Every
+hit carried an app ID and an install band, and no product page failed. The 100
+apps with the highest install bands, all with at least 10 million installs,
+received a product page; three further apps of that band did not.
+
+\paragraph{Screening and selection.} Table~\ref{tab:sample-flow} gives the
+cascade for each store. In rank order, 44 App Store listings and 48 Google Play
+listings were reached before the 47 places were filled. Of these, 15 were
+excluded at screening, 14 of them because the app records no health or body data
+over time (E1) and one as a DiGA (E5). Another 30 listings were skipped because
+their developer was already in the sample. Matching developers by name missed
+eight providers whose names differ between the two stores (Clue, Pregnancy+,
+Alarmy, Leap Fitness, Map My Run, Daylio, MeetYou and BabyCenter); these were
+matched by hand, because the same app appeared under both names. Across the main
+selection and all sensitivity checks, 263 listings were screened: 145 were
+eligible and 118 excluded (E1~113, E2~1, E3~2, E4~1, E5~1).
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption{From search hits to the 47 ranked apps, by store. Positions are the
+first 30 per query; Google Play rating counts come from the product page.}
+\label{tab:sample-flow}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Queries & 49 & 49 \\
+Hits within the first 30 positions & 1{,}440 & 1{,}138 \\
+Distinct listings & 848 & 645 \\
+\quad with a product page & -- & 100 \\
+Listings of preinstalled apps removed & 2 & 1 \\
+Below 1{,}000 ratings & 544 & 0 \\
+Ranked by rating count & 302 & 99 \\
+Reached in rank order & 44 & 48 \\
+\quad excluded at screening & 8 & 7 \\
+\quad skipped: developer already in the sample & 13 & 17 \\
+\quad selected & 23 & 24 \\
+\bottomrule
+\end{tabular}
+\end{singlespace}
+\end{table}
+
+\paragraph{The sample.} The 47 ranked apps come from 47 providers, 24 through
+Google Play and 23 through the App Store; with Apple Health, Apple Fitness and
+Samsung Health, the sample holds 50 apps. By primary category, the ranked apps
+comprise 23 activity apps, 8 diet and weight apps, 7 cycle trackers, 4
+pregnancy apps, 2 sleep apps, 2 mood apps and 1 wearable companion. The selected
+Google Play apps have between 392{,}809 and 5{,}157{,}244 ratings worldwide; the
+selected App Store apps have between 19{,}737 and 447{,}096 ratings in the German
+storefront. All are free to install, and all 24 Google Play listings name a
+privacy policy. Of the 47 apps, 43 were found within the first ten positions of
+at least one query and 4 within positions 11 to 20; two were found by a single
+keyword. Of the 24 apps selected through Google Play, 18 also appeared with
+German ratings in the App Store search; 6 did not.
+
+\paragraph{Checks.} Among the 100 Google Play apps with a product page, the
+rating count and the install count correlated at Spearman 0.80, lower than the
+0.96 of the trial collection, because only apps with at least 10 million
+installs were included. The last app selected through Google Play has 392{,}809
+ratings and lies in the lowest install band that received product pages. The
+three apps of that band without a page, fetched afterwards as a check, have
+314{,}218, 60{,}483 and 39{,}376 ratings, so none would have entered the
+selection; apps of lower bands were not checked. Table~\ref{tab:sensitivity}
+shows how many of the 47 selected providers change when one rule is changed at
+a time.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption{Sensitivity of the selection. Number of the 47 selected providers that
+are not selected when one rule changes.}
+\label{tab:sensitivity}
+\small
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\toprule
+\textbf{Variant} & \textbf{Providers changed} \\
+\midrule
+No developer rule (the 47 places go to 39 providers) & 8 \\
+Alternation starts with the App Store & 1 \\
+Depth 20 instead of 30 & 0 \\
+App Store searched to depth 200 & 2 \\
+English keywords only & 0 \\
+German keywords only & 1 \\
+One keyword left out (49 runs; largest change) & 1 \\
+Ranked by rating count per year since release & 8 \\
+Ranked by a blend with the shrunk average rating ($w=0.5$) & 14 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
 
 \section{What Privacy Communication Covers}
 \todo{}

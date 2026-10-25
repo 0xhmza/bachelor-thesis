@@ -45,6 +45,7 @@ output/reviews/
 scripts/appstore-scraper/*/output/
 scripts/googleplay-scraper/*/output/
 scripts/app-ranking/*/output/
+scripts/zotero-pin-keys/*/output/
 01_Literature/literature-index.json
 01_Literature/Literature-Map.html
 01_Literature/reading-status.csv

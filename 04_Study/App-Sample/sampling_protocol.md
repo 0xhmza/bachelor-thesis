@@ -1,8 +1,38 @@
 # Sampling Protocol
 
-**Version:** 1 (draft) · **Date:** 2026-09-18 · **Status:** awaiting supervisor
-confirmation of the points marked ⚠ in
-[`00_Admin/Open-Points.md`](../../00_Admin/Open-Points.md)
+**Version:** 2 · **Date:** 2026-10-23 · **Status:** proposed (D1–D7, D11 in the
+[Decision Log](../../00_Admin/Decision-Log.md)); fixed before the collection of
+23 October 2026. Version 1 (2026-09-18) follows below as history; where the two
+differ, version 2 applies.
+
+## Version 2 (2026-10-23)
+
+| Step | Rule | Record |
+|---|---|---|
+| Frame | German App Store (Search API, `country=de`, iPhone-compatible results) and German Google Play (search page, `gl=de`, `hl=de`); one session, logged out | collector outputs of `appstore-scraper/v007` and `googleplay-scraper/v003` |
+| Keywords | 49 queries: the mHealth keywords of Hutton et al. (2018) and the terms of Malki et al. (2024), each in English and German ([keywords.csv](keywords.csv)) | D3 |
+| Depth | First 30 results per query in each store; App Store also to 200 for a saturation check | D2 |
+| Play pages | Google Play hits ranked by the install band on the search page (ties: best position, package ID); product pages, and so rating counts, for the first 100 only (added 2026-10-24, before the Play collection) | D2; `googleplay-scraper/v004` |
+| Preinstalled | Apple Health, Apple Fitness, Samsung Health: own group; their listings leave the rankings; Apple and Samsung count as providers in the sample | D6 |
+| Floor | At least 1,000 ratings in the store's own count | D2 |
+| Ranking | Within each store by rating count, ties by listing ID | D2 |
+| Eligibility | E1 records the user's own health or body data over time in a Hutton or Malki category; E2 consumer app for the general public; E3 free to install; E4 German or English listing; E5 not a DiGA. A policy is **not** required (D5) | [screening.csv](screening.csv), one row per screened listing with the reason |
+| Selection | Alternate Google Play, App Store, …; skip a listing whose developer is already in the sample; stop at 47 | D1, D2 |
+| Sensitivity | No developer rule; App Store first; depth 20; App Store depth 200; leave one keyword out; English-only and German-only keywords; rating count per year; blend with shrunk average rating | `app-ranking/v002` output |
+
+Screening is done in rank order on the store listing (name, developer, genre,
+price, description). A listing is eligible under E1 only if its listing states
+that the app records, logs or stores the user's own measurements or activities
+(for example workouts, steps, food, weight, cycle, mood, sleep); instructional or
+content apps without such a statement, apps that track a child, games, shops and
+general-purpose apps are excluded. DiGA are identified by a listing that
+describes prescription or reimbursement by statutory health insurance and are
+confirmed against the BfArM directory.
+
+# Version 1 (history)
+
+**Version:** 1 (draft) · **Date:** 2026-09-18 · **Status:** superseded by version 2
+where they differ; kept for the record.
 
 This file is the operational version of the Sampling paragraph of the proposal (`03_Thesis/proposal/`; argued in full in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/04_methodology.tex`) §4.2). Fill in the empty
 cells **before** collecting anything, and do not change the protocol afterwards
@@ -142,8 +172,9 @@ An app is excluded if **any** of the following hold:
   an app with a different core function (e.g. a cycle tracker and a step
   counter from one provider) is a different product. Repeated providers are
   flagged so they are not read as independent.
-- **Language:** recorded per source, not per app. German is primary; English is
-  used when German is unavailable.
+- **Language:** recorded per source, not per app. English is primary; German is
+  used when no English version is available. Where both exist, both are captured
+  and differences logged (D7). Search keywords combine German and English terms.
 - **Source completeness:** record for each core source whether it was captured,
   is **not offered** by the provider, or **exists but could not be
   retrieved**. Only the last reduces an analysis denominator.
@@ -186,3 +217,4 @@ An app is excluded if **any** of the following hold:
 | 2026-09-29 | Pilot apps kept out of the validation set | They shaped the instruments, so validating on them would overstate accuracy |
 | 2026-09-29 | Unit of analysis and walkthrough selection rule stated | Both were implicit; the proposal now states them |
 | 2026-10-05 | Walkthrough slots alternate Android/iOS; validation set excludes pilot providers and documents; search and matching rules added as proposed defaults | Android-first filling favoured Android; shared policies could leak pilot material into validation; ties, sponsored results, matching, duplicates and source completeness were undefined |
+| 2026-10-23 | Version 2: sourced keywords (D3), depth 30 in both stores (D2), rating-count ranking with store alternation (D2), one app per developer (D2), function rule E1 (D3), free to install (D4), policy not required (D5), English first (D7) | Supervisor meeting of 13 October and the app-selection evaluation of 23 October; rules fixed before the collection of that day |
