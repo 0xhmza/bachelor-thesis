@@ -121,9 +121,9 @@ instruments without a logged revision.
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[
   font=\scriptsize,
-  bx/.style={draw,rounded corners=2pt,align=center,text width=29mm,
-             minimum height=13mm,inner sep=2.5pt},
-  arr/.style={-{Stealth[length=1.6mm]},semithick}]
+  bx/.style={draw=primary,fill=primary!6,rounded corners=2pt,align=center,
+             text width=29mm,minimum height=13mm,inner sep=2.5pt},
+  arr/.style={-{Stealth[length=1.6mm]},semithick,accentdark}]
   \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\store rankings\\preinstalled apps};
   \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs};
   \node[bx] (c) at (0,0) {\textbf{Code}\\coverage, stance\\protection claims};
@@ -449,7 +449,7 @@ reported, not silently dropped, so that sparsely documented providers do not
 vanish from the gap analysis.
 
 \section{Harm Categories} The starting categories are Knabenhans et al.'s
-physical, economic, psychological, autonomy/deprivation, discrimination,
+physical, economic, psychological, autonomy/\allowbreak deprivation, discrimination,
 reputational and societal harms~\parencite[App.~A]{knabenhans2026harms},
 drawn from Citron and Solove and the CyberPeace Institute. Following them, a
 harm is an impairment of the ability to function as one otherwise would in
