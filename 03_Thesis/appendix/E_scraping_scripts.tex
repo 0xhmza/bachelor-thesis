@@ -1,38 +1,41 @@
 % Source of the listings (read from the repository at compile time, not copied):
 %   App Store collector   scripts/appstore-scraper/v007/    scraper.py, input.json
-%   Google Play collector scripts/googleplay-scraper/v004/  scraper.py, input.json, requirements.txt
+%   Google Play collector scripts/googleplay-scraper/v005/  scraper.py, input.json, requirements.txt
 % To show a newer version, change the paths below and the two comments above.
 \chapter{Scraping Scripts}
 \label{app:scripts}
 Both collectors read a JSON file and print the result as JSON on standard
-output. They record what each store returns for a keyword search or, for Google
-Play, for a list of package IDs. They apply no eligibility rule and no ranking,
-and they do not observe app behaviour. The listings are the versions that
-collected the sample on 23 October (App Store) and 24 and 25 October 2026 (Google Play), shown unchanged; their inputs hold the
-49 queries of Table~\ref{tab:keywords}.
+output. They record what each store returns for a keyword search. They apply no
+eligibility rule and no ranking, and they do not observe app behaviour. The App
+Store collector is the version that collected the sample on 23 October 2026,
+shown unchanged. The Google Play collector is a shortened form of the version
+that collected the sample on 24 and 25 October 2026
+(\texttt{googleplay-scraper/v004}, kept in the repository): it drops that
+version's page limit, which the sample run did not reach, and gives the same
+results from the same search hits and product pages. The collected files are
+kept unchanged in \texttt{05\_Data/raw/app-sample\_2026-10-25/}. The inputs
+hold the 49 queries of Table~\ref{tab:keywords}.
 
 \section{Input Format}
 \begin{description}
   \item[\texttt{keywords}] Search terms, one request each (both scripts).
-  \item[\texttt{ids}] Google Play package IDs to look up directly, without a search.
   \item[\texttt{region}] Two-letter storefront; \texttt{de} selects the German store.
   \item[\texttt{language}] Interface language requested from Google Play.
   \item[\texttt{limit}] App Store: maximum results per keyword (up to 200).
-  \item[\texttt{pages}] Google Play: maximum number of product pages opened, in the
-    order of the install band shown on the search page; the sample run opened
-    all of them.
+  \item[\texttt{depth}] Google Play: search positions whose apps get their
+    product page read (30).
   \item[\texttt{cache}] Google Play: file to which each product page is appended.
 \end{description}
 
 \par\medskip\noindent
 \begin{minipage}{\linewidth}
-\lstinputlisting[style=jsoncode, caption={Input of the App Store collector; lines 6--50 hold the remaining keywords of Table~\ref{tab:keywords}.}, label={lst:input-apple}, linerange={1-5,51-55}]{../scripts/appstore-scraper/v007/input.json}
+\lstinputlisting[style=jsoncode, caption={Input of the App Store collector; the remaining 46 keywords of Table~\ref{tab:keywords} are left out after line~5.}, label={lst:input-apple}, linerange={1-5,51-55}]{../scripts/appstore-scraper/v007/input.json}
 \end{minipage}
 \par\medskip
 
 \noindent
 \begin{minipage}{\linewidth}
-\lstinputlisting[style=jsoncode, caption={Input of the Google Play collector; lines 6--50 as above.}, label={lst:input-play}, linerange={1-5,51-57}]{../scripts/googleplay-scraper/v004/input.json}
+\lstinputlisting[style=jsoncode, caption={Input of the Google Play collector; keywords left out as above.}, label={lst:input-play}, linerange={1-5,51-57}]{../scripts/googleplay-scraper/v005/input.json}
 \end{minipage}
 \par\medskip
 
@@ -50,17 +53,16 @@ The script uses the open-source \texttt{google-play-scraper} parser (version
 1.2.7). It first reads the embedded data of the first search page for every
 keyword and records each hit's position, title, developer and install band; the
 app ID of a highlighted top result is read from its details URL, which the
-parser's own field misses. It then ranks the distinct apps by install band, with
-ties broken by the best search position, and opens the product pages of the first
-\texttt{pages} apps, appending each to the \texttt{cache} file so that an
-interrupted run resumes. It restores TLS certificate verification, which the library disables on
-import, and rejects any request or redirect that drops the storefront parameter,
-so a result cannot silently come from another country. Failed lookups are
-recorded under \texttt{errors}. Search positions follow the order of the search
-response and are not verified as the store's native ranking. Rating counts and
-install figures are worldwide on Google Play; the one-to-five-star breakdown is
-the country's distribution scaled to the worldwide count, and the count of
-written reviews, which the ranking uses, follows the storefront country
-(Table~\ref{tab:storefront-fields}).
+parser's own field misses. It then opens the product page of every app found
+within \texttt{depth}, appending each to the \texttt{cache} file so that an
+interrupted run resumes. It restores TLS certificate verification, which the
+library disables on import, and rejects any request or redirect that drops the
+storefront parameter, so a result cannot silently come from another country.
+Failed lookups are recorded under \texttt{errors}. Search positions follow the
+order of the search response and are not verified as the store's native
+ranking. Rating counts and install figures are worldwide on Google Play; the
+one-to-five-star breakdown is the country's distribution scaled to the
+worldwide count, and the count of written reviews, which the ranking uses,
+follows the storefront country (Table~\ref{tab:storefront-fields}).
 
-\lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../scripts/googleplay-scraper/v004/scraper.py}
+\lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../scripts/googleplay-scraper/v005/scraper.py}
