@@ -1,7 +1,9 @@
 % !TeX document-id = {f4f6165e-7e15-441d-9a85-fe79757ad5fa}
 %======================================================================
 %  BACHELOR'S THESIS
-%  Ruhr-Universität Bochum — IT-Sicherheit / Informationstechnik
+%  Ruhr-Universität Bochum — IT-Sicherheit; carried out at MPI-SP
+%  Layout: RUB thesis template (bossthesis.cls, bosscoverpage.sty, boss/),
+%  adapted for MPI-SP; see the head of bossthesis.cls.
 %
 %  COMPILE:  latexmk (see latexmkrc): pdflatex -> biber -> pdflatex ...
 %            Only the passes an edit actually needs are run.
@@ -12,28 +14,47 @@
 %
 %  EDIT config/metadata.tex first. Then write in chapters/.
 %======================================================================
-\documentclass[
-  12pt,
-  a4paper,
-  twoside,          % remove for one-sided printing
-  openright,
-  chapterprefix=false
-]{scrreprt}
+\documentclass[twoside,its]{bossthesis}
+% options of the class (see bossthesis.cls): [privacy] hides date and place
+% of birth; [earlydraft] for quick printouts; [germanthesis] for German.
 
 \input{config/metadata}
 \input{config/preamble}
+
+\author{\authorname}
+\title{\thesistitle}
+\thesistype{\thesiskind}
+\thesiscite{\thesiscitetype}
+\birthday{\birthdate}
+\birthplace{\birthplacename}
+\thesisstart{\startdate}
+\thesisend{\submissiondate}
+\institute{\thechair}
+\instituteaddress{\thechairaddress}
+\advisors{& \textbf{\advisorname}\\}
+\examiners{First examiner: & \textbf{\examinerone}\\
+           Second examiner: & \textbf{\examinertwo}\\}
+\aitools{\aitoollist}
 
 %======================================================================
 \begin{document}
 
 %---------------------------- Front matter ----------------------------
+\pagestyle{fancy}
 \pagenumbering{roman}
-\input{config/titlepage}
 
-\cleardoublepage
+% Cover page, title page and the declaration with the AI-tools box.
+\maketitle
+
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \input{chapters/00_abstract}
+
+\chapter*{Kurzfassung}
+\addcontentsline{toc}{chapter}{Kurzfassung}
+\begin{otherlanguage*}{ngerman}
+\todo{German version of the abstract, required by the template.}
+\end{otherlanguage*}
 
 \cleardoublepage
 \chapter*{Acknowledgements}
@@ -42,10 +63,6 @@
 
 \cleardoublepage
 \tableofcontents
-\cleardoublepage
-\listoffigures
-\cleardoublepage
-\listoftables
 
 %---------------------------- Main matter -----------------------------
 \cleardoublepage
@@ -61,8 +78,39 @@
 
 %---------------------------- Back matter -----------------------------
 \cleardoublepage
-\printbibliography[heading=bibintoc,title={Bibliography}]
+\pagestyle{fancy-lists}
 
+% Unnumbered lists chapter, as in the template: \phantomsection lets hyperref
+% point to the right page, \sectionmark sets the running head.
+\phantomsection
+\addcontentsline{toc}{chapter}{\listoftitlename}%
+\chaptermark{\listoftitlename}
+
+\phantomsection
+\addcontentsline{toc}{section}{\listfigurename}%
+\sectionmark{\listfigurename}
+\listoffigures
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{section}{\listtablename}%
+\sectionmark{\listtablename}
+\listoftables
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{section}{\lstlistlistingname}%
+\sectionmark{\lstlistlistingname}
+\lstlistoflistings
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{section}{\bibname}%
+\sectionmark{\bibname}
+\printbibliography[title={\bibname}]
+\cleardoublepage
+
+\pagestyle{fancy}
 \appendix
 \input{appendix/A_codebook}
 \input{appendix/B_prompts}
@@ -71,6 +119,7 @@
 \input{appendix/E_scraping_scripts}
 
 \cleardoublepage
-\input{config/declaration}
+\pagestyle{fancy-lists}
+\input{appendix/ai_appendix}
 
 \end{document}

@@ -1,27 +1,9 @@
 %----------------------------------------------------------------------
-%  Packages and layout
+%  Packages added to the bossthesis class (RUB template)
+%  The class sets fonts, page layout, headings, page styles, captions,
+%  hyperref, cleveref, babel and biblatex; this file adds what the thesis
+%  needs beyond that and does not load those packages again.
 %----------------------------------------------------------------------
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-
-% --- Fonts and maths --------------------------------------------------
-% Times-compatible text and mathematics; a distinct monospaced face for code.
-% Headings use the same serif family as the body.
-\usepackage{amsmath}
-\usepackage{newtxtext}
-\usepackage{newtxmath}
-\usepackage[varqu,scaled=0.95]{zi4}
-\usepackage{microtype}
-
-\usepackage[a4paper,inner=3.0cm,outer=2.5cm,top=2.5cm,bottom=2.5cm,
-  headheight=20pt,headsep=7mm,footskip=12mm]{geometry}
-\usepackage{setspace}
-\onehalfspacing
-\raggedbottom
-\clubpenalty=10000
-\widowpenalty=10000
-\displaywidowpenalty=10000
 \setlength{\emergencystretch}{1.5em}
 \hyphenation{Kna-ben-hans}
 
@@ -56,9 +38,6 @@
 \usepackage{pdflscape} % wide appendix tables on landscape pages
 \colorlet{devshade}{primary!12} % rows of a developer with several apps
 \usepackage{multirow}
-\usepackage{caption}
-\captionsetup{font={small,stretch=1}, labelfont=bf, labelsep=period,
-  format=hang, justification=justified, singlelinecheck=true}
 \captionsetup[table]{position=top, skip=6pt}
 \captionsetup[figure]{skip=8pt}
 \usepackage{subcaption}
@@ -69,48 +48,16 @@
 \usepackage{csquotes}
 \usepackage{listings}
 
-% --- Headings ---------------------------------------------------------
-% Conventional numbered chapters, without decorative rules or display numerals.
-\KOMAoptions{numbers=noenddot}
-\setkomafont{disposition}{\normalfont\bfseries\color{black}}
-\setkomafont{chapter}{\fontsize{20}{25}\selectfont}
-\setkomafont{section}{\fontsize{15}{19}\selectfont}
-\setkomafont{subsection}{\large}
-\setkomafont{subsubsection}{\normalsize}
-\setkomafont{paragraph}{\normalsize}
-\setkomafont{descriptionlabel}{\normalfont\bfseries}
-\RedeclareSectionCommand[beforeskip=0pt, afterskip=1.5\baselineskip]{chapter}
-
-\setkomafont{chapterentry}{\normalfont\bfseries}
-\setkomafont{chapterentrypagenumber}{\normalfont\bfseries}
-
-% --- Running heads ----------------------------------------------------
-\usepackage{scrlayer-scrpage}
-\clearpairofpagestyles
-\automark[section]{chapter}
-\ihead{\headmark}
-\ofoot*{\pagemark}
-\setkomafont{pageheadfoot}{\normalfont\small\color{black}}
-\setkomafont{pagenumber}{\normalfont\small\color{black}}
-\renewcommand*{\chaptermarkformat}{\thechapter\enskip}
-\renewcommand*{\sectionmarkformat}{\thesection\enskip}
-
-% --- Footnotes --------------------------------------------------------
-\deffootnote{1.2em}{1em}{\textsuperscript{\thefootnotemark}\,}
-
 % --- Links -----------------------------------------------------------
-\usepackage{hyperref}
+% The class loads hyperref and cleveref; links keep the thesis's blue.
 \hypersetup{
   colorlinks = true,
-  allcolors  = linkblue,
-  pdftitle   = {\thesistitle},
-  pdfauthor  = {\authorname}
+  allcolors  = linkblue
 }
-\usepackage[capitalise,noabbrev]{cleveref}
 
 % --- Bibliography ----------------------------------------------------
-% Numeric references with Biber; restrained blue for linked citation numbers.
-\usepackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
+% The class loads biblatex (Biber, numeric-comp); restrained blue for
+% linked citation numbers.
 \addbibresource{../_shared/references.bib}
 \renewcommand*{\bibfont}{\small}
 \setlength{\bibitemsep}{0.35\baselineskip}
@@ -182,7 +129,9 @@
 \lstset{style=thesiscode}
 
 % --- Helpers ---------------------------------------------------------
-\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+% Inline revision marks; replaces the margin notes of todonotes, which the
+% class loads.
+\renewcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
 \usepackage{soul}
 
 \newif\ifshowhighlights

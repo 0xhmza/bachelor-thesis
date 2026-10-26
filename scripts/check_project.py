@@ -46,7 +46,8 @@ def check_citations():
     cited = {}
     for f in tex_files():
         for n, line in enumerate(strip_comments(f.read_text(encoding='utf-8')).splitlines(), 1):
-            for m in re.finditer(r'\\[a-zA-Z]*cite[a-zA-Z]*\*?(?:\[[^\]]*\]){0,2}\{([^}]+)\}', line):
+            # \thesiscite{...} sets the cover's citation type (bossthesis.cls); not a citation
+            for m in re.finditer(r'\\(?!thesiscite\b)[a-zA-Z]*cite[a-zA-Z]*\*?(?:\[[^\]]*\]){0,2}\{([^}]+)\}', line):
                 for k in m.group(1).split(','):
                     cited.setdefault(k.strip(), f'{f.relative_to(ROOT).as_posix()}:{n}')
     for k, where in sorted(cited.items()):

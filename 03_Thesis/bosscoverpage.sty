@@ -1,0 +1,182 @@
+%% bosscoverpage.sty
+%% Copyright (C) 2009 Christoph Sommer <christoph.sommer@informatik.uni-erlangen.de>
+%%                    Falko Dressler
+%% Copyright (C) 2014 Clemens Lang <cl@clang.name)
+%% Copyright (C) 2015 Christian Dietrich <stettberger@dokucode.de>
+%% Version 3.04-svn
+%
+% License (pick one or both):
+% - Creative Commons Attribution-Share Alike 3.0 (or later)
+% - GPL v2 (or later)
+%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bosscoverpage}[2021/10/07 v4.00-git BOSS Cover Page]  % YYYY/MM/DD
+
+
+% -----------------------------------------------------------------------------
+% Class options
+% -----------------------------------------------------------------------------
+\RequirePackage{ifthen}
+\RequirePackage{csquotes} % for enquote
+
+% [earlydraft] - Settings for quick draft printouts
+\newboolean{@isevencoverpage@earlydraft}
+\setboolean{@isevencoverpage@earlydraft}{false}
+\DeclareOption{earlydraft}{\setboolean{@isevencoverpage@earlydraft}{true}}
+
+\ProcessOptions \relax
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% All the simple stuff goes here
+% -----------------------------------------------------------------------------
+
+% Use Helvetica for sans-serif text
+\RequirePackage{helvet}
+
+% For cover page
+\RequirePackage{tikz}
+\tikzoption{text @isevencoverpage@ badly  raggedleft}[]{\def\tikz@text@action{\raggedleft\relax}}
+\usetikzlibrary{calc,fit}
+
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% Cover page
+% -----------------------------------------------------------------------------
+
+\newcommand{\coverpagetextsmall}[1]{%
+	\@isevencoverpage@smalltextsize%
+	#1%
+	\vspace{0.5cm}\\%
+}
+
+\newcommand{\coverpagetextlarge}[1]{%
+	\vspace{0.25cm}%
+	\@isevencoverpage@largetextsize%
+	#1%
+	\@isevencoverpage@smalltextsize%
+	\vspace{0.5cm}\\%
+}
+
+%\makecoverpage
+% Adapted 26 October 2026: affiliation and address come from \institute and
+% \instituteaddress (bossthesis.cls) instead of the BOSS group.
+\newcommand{\makecoverpage}{%
+	\makecoverpage@modernrub{\theinstitute}%
+		{\theauthor}%
+		{\thetitle}%
+		{\thethesistype\\[3ex]\thedate}%
+		{%
+			\begin{otherlanguage*}{american}%
+				Please cite as:\\[1em]%
+				\nohyphens{\theauthor{}\\
+				\textit{\enquote{\thetitle}}\\
+				\thethesiscite,\\
+				Ruhr-Universität Bochum (RUB)\\
+				Faculty of Computer Science\\
+				\monthname~\the\year.}
+			\end{otherlanguage*}
+		}{%
+			\theinstituteaddress%
+		}{%
+		\href{https://www.mpi-sp.org}{www.mpi-sp.org}%
+		}{%
+			%\includegraphics[width=76.4mm]{boss/logo-tf-neu}%
+		}{%
+			%\includegraphics{boss/watermark-inf.pdf}%
+		}
+}
+
+
+
+
+\newcommand{\makecoverpage@modernrub}[9]{%
+% Cover page uses single line spacing
+
+\begingroup
+\pagestyle{empty}
+\setcounter{page}\@ne
+
+\def\@isevencoverpage@affiliationsize{\fontsize{12}{14}\selectfont}
+\def\@isevencoverpage@authorsize{\fontsize{14}{17}\selectfont}
+\def\@isevencoverpage@titlesize{\fontsize{20}{24}\selectfont}
+\def\@isevencoverpage@subtitlesize{\fontsize{14}{17}\selectfont}
+\def\@isevencoverpage@citeassize{\fontsize{8}{9}\selectfont}
+\def\@isevencoverpage@addresssize{\fontsize{8}{9}\selectfont}
+\def\@isevencoverpage@smalltextsize{\@setfontsize{\@isevencoverpage@smalltextsize}{14}{17pt}}
+\def\@isevencoverpage@largetextsize{\@setfontsize{\@isevencoverpage@largetextsize}{20}{24pt}}
+
+
+\pgfdeclarelayer{bosscoverback}
+\pgfdeclarelayer{bosscoverfront}
+\pgfsetlayers{bosscoverback,main,bosscoverfront}
+
+\definecolor{rubgray}{HTML}{E6E5E4}
+\definecolor{rubblue}{HTML}{003761}
+\definecolor{rubgreen}{HTML}{92BF1F}
+
+\begin{tikzpicture}[overlay, remember picture]
+	% Basics: RUB design
+	\draw[draw=rubgreen, fill=rubgreen] (current page.south west) rectangle (current page.north east);
+	\draw[draw=rubgray, fill=rubgray] (current page.north west) rectangle ++(.8\paperwidth, -.3\paperheight);
+
+	\node[below right=0, inner sep=0] at ($(current page.north west) + (.8\paperwidth, 0) - (2/3 * .25\paperwidth, 0)$) {%
+		\includegraphics[width=.25\paperwidth]{boss/rub-block}%
+	};
+
+	\node[below right=0, inner sep=0] at ($(current page.north west) + (.08\paperwidth, -0.06\paperheight)$) {%
+		\includegraphics[width=.3\paperwidth]{boss/rub-text}%
+	};
+
+	\coordinate (titlecontent) at ($(current page.north west) + (0, -.3\paperheight)$);
+
+
+	% Author
+	\node[below right, shift={(.05\paperwidth, -1cm)}, font=\sffamily\bfseries\color{white}\@isevencoverpage@authorsize, text width=.85\paperwidth] at (titlecontent) {\nohyphens{#2}};
+	% Title
+	\node[below right, shift={(.05\paperwidth, -2cm)}, font=\sffamily\bfseries\color{white}\@isevencoverpage@titlesize,  text width=.85\paperwidth] (titletext) at (titlecontent) {\nohyphens{#3}};
+
+	% Subtitle
+	\node[below right, shift={(.05\paperwidth, -4cm)}, font=\sffamily\bfseries\color{white}\@isevencoverpage@subtitlesize, text width=.85\paperwidth] at (titlecontent) {\nohyphens{#4}};
+
+	% Affil
+	\node[below right, shift={(.05\paperwidth, -6cm)}, font=\sffamily\bfseries\color{white}\@isevencoverpage@affiliationsize, text width=.85\paperwidth] at (titlecontent) {\nohyphens{#1}};
+
+
+
+
+	\draw[draw=rubgray, fill=rubgray] (current page.south east) rectangle ++(-.4\paperwidth, .25\paperheight);
+
+	\node[below right=0, inner sep=0] (inf) at ($(current page.south east) + (-.385\paperwidth, .235\paperheight)$) {%
+		\includegraphics[width=.35\paperwidth]{boss/inf-logo}%
+	};
+
+
+	% Addr
+	\node[above right=0, font=\sffamily\bfseries\color{black}\@isevencoverpage@addresssize, text width=.35\paperwidth] at ($(current page.south east) + (-.385\paperwidth, .05\paperheight)$) {\nohyphens{#6}};
+
+
+
+	% Cite (green)
+	%\draw[draw=rubgreen!50, fill=rubgreen!50] ($(current page.south east) + (-.4\paperwidth, 0)$) rectangle ++(-.4\paperwidth, .25\paperheight);
+	%\node[below left=0, rubgreen!25] at ($(current page.south east) + (-.4\paperwidth, .25\paperheight)$) {\@setfontsize{\@isevencoverpage@largetextsize}{100}{100pt}"};
+	%\node[above right=0, font=\sffamily\bfseries\color{black}\@isevencoverpage@citeassize, text width=.35\paperwidth] at ($(current page.south east) + (-.785\paperwidth, .05\paperheight)$) {\nohyphens{#5}};
+
+	% Cite (blue)
+	\draw[draw=rubblue, fill=rubblue] ($(current page.south east) + (-.4\paperwidth, 0)$) rectangle ++(-.4\paperwidth, .25\paperheight);
+	\node[below left=0, rubblue!50] at ($(current page.south east) + (-.4\paperwidth, .25\paperheight)$) {\@setfontsize{\@isevencoverpage@largetextsize}{100}{100pt}"};
+	\node[above right=0, font=\sffamily\bfseries\color{white}\@isevencoverpage@citeassize, text width=.35\paperwidth] at ($(current page.south east) + (-.785\paperwidth, .05\paperheight)$) {\nohyphens{#5}};
+
+
+\end{tikzpicture}
+
+
+\cleardoublepage
+\setcounter{page}\@ne
+\endgroup
+}
+
