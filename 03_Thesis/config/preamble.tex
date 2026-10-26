@@ -18,16 +18,14 @@
 \definecolor{linkblue}{HTML}{496D91}
 
 % --- Figures, tables, code ------------------------------------------
-\usepackage{graphicx}
+% graphicx, booktabs, float, tikz, listings and csquotes come with the class.
 \graphicspath{{figures/}}
-\usepackage{booktabs}
 \usepackage{array}
 \usepackage{colortbl}
 \arrayrulecolor{black}
 \setlength{\heavyrulewidth}{0.8pt}
 \setlength{\lightrulewidth}{0.4pt}
 \renewcommand{\arraystretch}{1.12}
-\usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcommand{\rowrule}{\cmidrule[0.3pt]{2-4}}
@@ -37,16 +35,11 @@
 \usepackage{longtable}
 \usepackage{pdflscape} % wide appendix tables on landscape pages
 \colorlet{devshade}{primary!12} % rows of a developer with several apps
-\usepackage{multirow}
 \captionsetup[table]{position=top, skip=6pt}
 \captionsetup[figure]{skip=8pt}
-\usepackage{subcaption}
-\usepackage{float}
 \usepackage{enumitem}
 \setlist{itemsep=0.2\baselineskip, topsep=0.4\baselineskip}
 \setlist[itemize]{label=\small\textbullet}
-\usepackage{csquotes}
-\usepackage{listings}
 
 % --- Links -----------------------------------------------------------
 % The class loads hyperref and cleveref; links keep the thesis's blue.
@@ -70,16 +63,6 @@
 \DeclareFieldFormat{labelnumberwidth}{\textcolor{linkblue}{\mkbibbrackets{#1}}}
 
 % --- Listings style --------------------------------------------------
-\lstset{
-  basicstyle       = \ttfamily\footnotesize,
-  breaklines       = true,
-  frame            = single,
-  numbers          = left,
-  numberstyle      = \tiny,
-  captionpos       = b,
-  showstringspaces = false
-}
-
 % Subtle background and syntax accents; bold keywords also work in greyscale.
 \definecolor{codebg}{HTML}{F5F6F7}
 \colorlet{coderule}{primary!45}
@@ -93,7 +76,8 @@
   sensitive = true
 }
 \lstdefinestyle{thesiscode}{
-  basicstyle      = \linespread{1}\ttfamily\fontsize{9}{11}\selectfont,
+  basicstyle      = \linespread{1}\ttfamily\fontsize{8}{10}\selectfont,
+  identifierstyle = {}, % the class sets bold blue identifiers
   keywordstyle    = \color{codekeyword}\bfseries,
   keywordstyle    = [2]\color{codebuiltin},
   stringstyle     = \color{codestring},
@@ -111,6 +95,7 @@
   framexleftmargin = 4pt,
   breaklines      = true,
   breakindent     = 1.2em,
+  prebreak        = {},
   postbreak       = \mbox{\textcolor{codecomment}{$\hookrightarrow$}\space},
   columns         = fullflexible,
   keepspaces      = true,
@@ -129,9 +114,9 @@
 \lstset{style=thesiscode}
 
 % --- Helpers ---------------------------------------------------------
-% Inline revision marks; replaces the margin notes of todonotes, which the
-% class loads.
-\renewcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+% Revision marks are the template's todonotes: \todo{...} in the margin,
+% \todo[inline]{...} where a margin note cannot go (tables, boxes, the
+% title page).
 \usepackage{soul}
 
 \newif\ifshowhighlights

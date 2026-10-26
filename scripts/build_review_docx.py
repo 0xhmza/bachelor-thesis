@@ -854,8 +854,8 @@ def build(print_text=False):
 
     title = bib_clean(meta.get('thesistitle', 'Thesis'))
     add(w.para(w.run(title, set()), 'Title'), title)
-    add(w.para(w.run(f'{meta.get("thesiskind", "Thesis")} · working draft for review', set()), 'Subtitle'))
-    add(w.para(w.run(f'{meta.get("authorname", "")} · Advisor: {meta.get("advisorname", "")}', set()), 'Subtitle'))
+    add(w.para(w.run(f'{bib_clean(meta.get("thesiskind", "Thesis"))} · working draft for review', set()), 'Subtitle'))
+    add(w.para(w.run(f'{bib_clean(meta.get("authorname", ""))} · Advisor: {bib_clean(meta.get("advisorname", ""))}', set()), 'Subtitle'))
     note = [
         ('Review copy for the supervisor. ', {'b'}),
         (stamp + ' It is rebuilt with every commit that changes the thesis, so this file always '

@@ -15,7 +15,12 @@
 % - English title page for the Max Planck Institute for Security and Privacy
 %   (MPI-SP), with \institute, \instituteaddress and \examiners in place of the
 %   BOSS group and its professor;
-% - declaration and AI-tools box unchanged (faculty-wide wording).
+% - declaration and AI-tools box unchanged (faculty-wide wording);
+% - packages the thesis does not use removed: siunitx, acronym, algorithm,
+%   algorithmic, listing, placeins, subcaption;
+% - todonotes with loadshadowlibrary, which its shadow option needs;
+% - listings without [savemem], which suppressed keyword styles;
+% - the declaration box kept inside the text block.
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{bossthesis}[2026/10/26 The BOSS Thesis Class, adapted for MPI-SP]  % YYYY/MM/DD
@@ -220,20 +225,9 @@
 % Captions
 \RequirePackage[font=small, labelfont=bf, labelsep=endash, margin=1cm]{caption}
 
-% Subfigures
-\RequirePackage{subcaption}
-
 % Citations
 \RequirePackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
 \defbibheading{bibliography}[\refname]{\chapter*{#1}\chaptermark{#1}}
-
-% The "SI" and "num" commands for typesetting units
-%\RequirePackage[sepfour=true,tophrase=\dots,per=slash,obeyall]{siunitx}
-%\RequirePackage[range-phrase={\dots\,},per-mode=symbol,detect-all,load-configurations=binary,forbid-literal-units]{siunitx}
-\RequirePackage[range-phrase={\dots\,},per-mode=symbol,detect-all]{siunitx} % binary-units: removed in siunitx 3
-\DeclareSIUnit\byte{Byte}
-\DeclareSIUnit\decibelm{dBm}
-\DeclareSIUnit\mph{mph}
 
 % Commands for beautiful tables
 \RequirePackage{booktabs}
@@ -314,9 +308,6 @@
 % All the simple stuff goes here
 % -----------------------------------------------------------------------------
 
-% The Acronym package
-\RequirePackage[printonlyused]{acronym}
-
 % Make automatically inserted "blank pages" really blank
 \RequirePackage{emptypage}
 
@@ -363,9 +354,6 @@
 % Ensure that no floats are typeset before they are referenced
 \RequirePackage{flafter}
 
-% Provide the \FloatBarrier command that flushes all pending floats
-\RequirePackage{placeins}
-
 % Nag about deprecated LaTeX packages and commands
 \RequirePackage[l2tabu, orthodox]{nag}
 
@@ -386,26 +374,6 @@
 		};
 	\end{tikzpicture}%
 }{}}
-
-% The "algorithm" environment
-\RequirePackage{algorithmic}[2009/08/24]
-\RequirePackage[plain,chapter]{algorithm}
-
-\renewcommand\fs@plain{%
-\def\@fs@cfont{\rmfamily}%
-\let\@fs@capt\floatc@plain%
-\def\@fs@pre{\hrule\relax\kern2pt}%
-\def\@fs@post{}%
-\def\@fs@mid{\kern2pt\hrule\relax\vspace\abovecaptionskip\relax}%
-\let\@fs@iftopcapt\iffalse%
-}
-\floatstyle{plain}
-\restylefloat{algorithm}
-\ifthenelse{\boolean{germanthesis}}{
-	\floatname{algorithm}{Algorithmus}
-	\renewcommand{\listalgorithmname}{Algorithmenverzeichnis}
-}{
-}
 
 % Chapter/section headings and page styles
 %\RequirePackage[pagestyles,nobottomtitles*]{titlesec}
@@ -572,8 +540,7 @@
 % -----------------------------------------------------------------------------
 % Listings
 % -----------------------------------------------------------------------------
-\RequirePackage{listing} % For \listoflistings
-\RequirePackage[savemem]{listings}
+\RequirePackage{listings} % without [savemem], which dropped the keyword styles
 \ifthenelse{\boolean{germanthesis}}{
     \gdef\listlistingname{Quellcodeverzeichnis}
 	\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
@@ -647,12 +614,12 @@
 % Visible TODO and FIXME markers
 % -----------------------------------------------------------------------------
 \ifthenelse{\boolean{germanthesis}}{
-	\RequirePackage[colorinlistoftodos, textwidth=2.8cm, shadow, ngerman]{todonotes}
+	\RequirePackage[colorinlistoftodos, textwidth=2.8cm, shadow, loadshadowlibrary, ngerman]{todonotes}
 	\makeatletter
 	\@todonotes@SetTodoListName{Offene Punkte}
 	\makeatother
 }{
-	\RequirePackage[colorinlistoftodos, textwidth=3.0cm, shadow]{todonotes}
+	\RequirePackage[colorinlistoftodos, textwidth=3.0cm, shadow, loadshadowlibrary]{todonotes}
 }
 \newcounter{TODOCOUNT}
 \newcommand{\TODO}[1]{\vspace{0.5em}\todo[inline, color=orange]{#1}\stepcounter{TODOCOUNT}}
@@ -775,8 +742,8 @@ submitted by\\[2\baselineskip]
 \textbf{\theauthor}\\[1\baselineskip]
 
 \ifthenelse{\boolean{privacy}}{}{%
-born on \thebirthday\\
-in \thebirthplace\\[2\baselineskip]
+born on \thebirthday\par
+in \thebirthplace\par\vspace{2\baselineskip}
 }
 
 carried out at the\\[2\baselineskip]
@@ -863,8 +830,8 @@ generative AI.\\[2mm]
 
 \vspace{1.5cm}
 \noindent%
-\fbox{%
-	\begin{minipage}{\textwidth}
+\fbox{% the frame and its padding stay inside the text block
+	\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
 	Beim Verfassen dieser Arbeit habe ich die unten aufgeführten KI-Tools für folgende Zwecke verwendet:\\
 	\textit{In writing this paper, I have used the AI tools specified below for the following purposes:}
 
@@ -882,7 +849,7 @@ generative AI.\\[2mm]
 	\vspace*{0.25cm}
 	Ich bestätige hiermit, dass ich keine KI-Tools zur Generierung vollständiger Textabschnitte verwendet habe.\\
 	\textit{I hereby confirm that I have not used AI tools for generating entire text sections.}
-	\end{minipage}
+	\end{minipage}% no space inside the frame
 }
 
 \vspace{3cm}

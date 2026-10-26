@@ -110,7 +110,7 @@ def check_todos():
     total = 0
     parts = []
     for f in tex_files():
-        n = len(re.findall(r'\\todo\{', strip_comments(f.read_text(encoding='utf-8'))))
+        n = len(re.findall(r'\\todo(?:\[[^\]]*\])?\{', strip_comments(f.read_text(encoding='utf-8'))))
         if n:
             parts.append(f'{f.stem} {n}')
             total += n
