@@ -29,8 +29,9 @@
 \usetikzlibrary{arrows.meta}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcommand{\rowrule}{\cmidrule[0.3pt]{2-4}}
-% Preserve the proposal's figure descriptions in PDF text without ACM macros.
-\newcommand{\Description}[1]{\par\smallskip{\raggedright\footnotesize\color{muted}\textit{Figure description:} #1\par}}
+% Figure descriptions (from the proposal's ACM \Description) are not printed;
+% they stay in the source for the review copy, which shows TikZ figures as text.
+\newcommand{\Description}[1]{}
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{pdflscape} % wide appendix tables on landscape pages
