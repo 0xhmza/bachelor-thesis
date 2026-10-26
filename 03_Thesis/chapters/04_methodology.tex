@@ -231,8 +231,9 @@ the frozen instruments without a logged revision.
   \draw[arr] (a)--(b); \draw[arr] (b)--(c);
   \draw[arr] (c)--(d); \draw[arr] (d)--(e);
 \end{tikzpicture}}
-\caption[Planned workflow]{Planned workflow. The pilot will refine the instruments before they
-are frozen. Later changes will be logged and affected material recoded.}
+\todo[inline]{Draft}% a margin \todo cannot go inside a float
+\caption[Planned workflow]{\textcolor{red}{DRAFT! Planned workflow. The pilot will refine the instruments before they
+		are frozen. Later changes will be logged and affected material recoded.}}
 \Description{Five boxes connected by arrows: pilot and sample, capture,
 code, check, compare. Documents cover 50 apps.}
 \label{fig:pipeline}
@@ -240,20 +241,20 @@ code, check, compare. Documents cover 50 apps.}
 
 \section{App Sampling}
 \label{sec:app-sampling}
-The target sample is 50 apps. Studies that analyse the documents of apps and
-also inspect the apps themselves have worked with 20 to 64 apps: Malki et al.\
-installed and inspected 20~\parencite{malki2024exploring}, Huckvale et al.\
-analysed 36~\parencite{huckvale2019assessment} and Hutton et al.\ evaluated
-64~\parencite{hutton2018assessing}. A target of 50 lies within this range. The
-sample combines the health apps that the leading phone vendor of each platform preinstalls with
-eligible apps with the highest German-market popularity scores from Google Play
-and the App Store. The number of preinstalled apps follows from the vendor rule
-described below, and the store rankings fill the remaining places. There are no
-quotas per domain. The search frame and eligibility rules were recorded before
-collection. The combined ranking rule was revised after collection and before
-the first combined ranking was computed. The rules and their revisions are
-recorded with supporting evidence; the resulting numbers are reported in
-Section~\ref{sec:results-sample}.
+The target sample consists of 50 apps. Previous studies that examined both
+app documents and the apps themselves used samples of 20 to 64 apps:
+Malki et al.\ installed and inspected 20~\parencite{malki2024exploring},
+Huckvale et al.\ analysed 36~\parencite{huckvale2019assessment}, and
+Hutton et al.\ evaluated 64~\parencite{hutton2018assessing}.
+
+The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
+by major device manufacturers; \textcolor{accent}{(ii)} apps listed on
+Google Play; and \textcolor{accent}{(iii)} apps listed on the Apple App Store.
+Preinstalled apps are selected based on the popularity of each manufacturer's
+devices. The remaining places are filled with apps from Google Play and the
+Apple App Store using defined collection and ranking rules. No quotas are set for the three source groups \textcolor{accent}{(i)}-\textcolor{accent}{(iii)}. The search frame and eligibility rules were
+recorded before collection. The resulting sample composition is reported
+in Section~\ref{sec:results-sample}.
 
 \paragraph{Domain.} The study adopts the domain of two published app studies
 on health trackers instead of defining its own. Hutton et
