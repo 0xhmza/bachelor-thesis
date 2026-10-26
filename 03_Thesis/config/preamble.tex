@@ -142,10 +142,31 @@
 \newif\ifshowhighlights
 \showhighlightstrue % Change to \showhighlightsfalse to hide highlights
 
+% A todonotes leader line is drawn from the note's anchor along one text line
+% only. A highlighted passage that is followed directly by \todo therefore
+% gets a thin bottom edge in the note's colour on every line it spans, which
+% runs into the leader line; a highlight without a note stays plain.
+% \texthlul draws the highlight and the edge in one soul pass (soul cannot
+% nest \hl and \ul); it uses soul's internals (\SOUL@...) as of TeX Live 2026.
+\makeatletter
+\newdimen\hl@lnht
+\newdimen\hl@lnthick \hl@lnthick=0.7pt
+\def\hl@ulpreamble{\SOUL@hlpreamble
+  \hl@lnht=-\SOUL@uldp \advance\hl@lnht by \hl@lnthick}
+\def\hl@ulleaders{\xleaders\hbox to 1pt{%
+  \rlap{\vrule width 1.2pt height \SOUL@ulht depth \SOUL@uldp}%
+  \rlap{\textcolor{todoline}{\vrule width 1.2pt height \hl@lnht depth \SOUL@uldp}}\hss}}
+\DeclareRobustCommand*\texthlul{\SOUL@hlsetup
+  \let\SOUL@preamble\hl@ulpreamble \let\SOUL@ulleaders\hl@ulleaders \SOUL@}
+\newcommand{\hl@plain}[2]{{\sethlcolor{#1}\hl{#2}}}
+\newcommand{\hl@marked}[2]{{\sethlcolor{#1}\texthlul{#2}}}
+\newcommand{\hl@off}[2]{#2}
+\newcommand{\hl@on}[2]{\@ifnextchar\todo{\hl@marked{#1}{#2}}{\hl@plain{#1}{#2}}}
 \newcommand{\highlight}[2][yellow]{%
-	\ifshowhighlights
-	{\sethlcolor{#1}\hl{#2}}%
-	\else
-	#2%
-	\fi
-}
+  \ifshowhighlights
+    \expandafter\hl@on % \expandafter closes the conditional before the look-ahead
+  \else
+    \expandafter\hl@off
+  \fi
+  {#1}{#2}}
+\makeatother

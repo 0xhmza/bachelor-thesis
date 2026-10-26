@@ -1,0 +1,34 @@
+{
+  "_comment": "Stage 0 of the literature review (D13): one Boolean query per review question, searched in titles and abstracts of OpenAlex and Semantic Scholar. The Semantic Scholar form is derived from the same string (AND -> +, OR -> |).",
+  "searched_until": "2026-10-26",
+  "mailto": "shamza5568@gmail.com",
+  "min_citations_per_year": 3,
+  "citation_exempt_from_year": 2026,
+  "domain": "(\"health app\" OR \"health apps\" OR \"mHealth\" OR \"fitness app\" OR \"fitness apps\" OR \"fitness tracker\" OR \"fitness trackers\" OR \"wearable\" OR \"wearables\" OR \"menstrual\" OR \"period tracking\" OR \"fertility app\" OR \"fertility apps\" OR \"femtech\" OR \"mental health app\" OR \"mental health apps\")",
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Privacy harms and capabilities documented for health trackers",
+      "from": "2014-01-01",
+      "query": "{domain} AND privacy AND (harm OR harms OR threat OR threats OR attack OR attacks OR \"privacy risk\" OR \"privacy risks\")"
+    },
+    {
+      "id": "Q2",
+      "question": "Analyses of the privacy communication of health apps",
+      "from": "2014-01-01",
+      "query": "{domain} AND (\"privacy policy\" OR \"privacy policies\" OR \"privacy label\" OR \"privacy labels\" OR \"data safety\" OR \"privacy notice\" OR \"privacy notices\" OR \"app store\")"
+    },
+    {
+      "id": "Q3",
+      "question": "Language models used to annotate privacy policies, and their validation",
+      "from": "2022-01-01",
+      "query": "(\"privacy policy\" OR \"privacy policies\") AND (\"large language model\" OR \"large language models\" OR LLM OR LLMs OR GPT OR ChatGPT) AND (annotation OR classification OR \"content analysis\" OR coding OR extraction OR benchmark)"
+    },
+    {
+      "id": "Q4",
+      "question": "How providers word risk and protection in policies and notices",
+      "from": "2014-01-01",
+      "query": "(\"privacy policy\" OR \"privacy policies\" OR \"privacy notice\" OR \"privacy notices\" OR \"breach notification\" OR \"breach notifications\") AND (vague OR vagueness OR hedging OR reassurance OR framing OR rhetoric OR rhetorical OR \"risk communication\" OR \"privacy washing\" OR persuasive)"
+    }
+  ]
+}
