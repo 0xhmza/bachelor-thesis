@@ -8,7 +8,28 @@ Selects the ranked apps of the sample as set out in
   the record.
 - `v002/rank.py`: selection of 24 October 2026 by store alternation with the worldwide
   Play count; replaced by v003, kept for the comparison.
-- `v003/rank.py`: the selection of 25 October 2026 (D2 revision).
+- `v003/rank.py`: the selection of 25 October 2026 (D2 revision); replaced by v004,
+  kept for the record. Its Daylio and MeetYou aliases never matched.
+- `v004/rank.py`: the selection of 26 October 2026 on the frozen dataset
+  `05_Data/raw/app-sample_2026-10-25/`; provider identity rules P1–P3 (D2).
+
+## v004
+
+```powershell
+python scripts/app-ranking/v004/rank.py scripts/app-ranking/v004/config.json
+python -I -m unittest discover -s scripts/app-ranking/v004/tests
+```
+
+Changes from v003, described below: aliases fixed (Daylio, MeetYou) and Philips
+narrowed to Philips Digital; the run stops if an alias matches no developer or one
+store account falls under two providers; `provider-review.csv` lists provider
+pairs among the reached candidates whose website or policy links share a domain,
+and the tables are written only when each pair is merged or listed in `distinct`.
+The score field is `popularity` (v003: `exposure`). It also writes
+`03_Thesis/tables/developer-rule.tex` (selection without the developer rule),
+`03_Thesis/tables/developer-aliases.tex` (aliases with `alias_evidence`) and the
+sample as `05_Data/processed/app-sample/apps.csv`. Takes about four minutes
+(60 sensitivity variants).
 
 ## v003
 

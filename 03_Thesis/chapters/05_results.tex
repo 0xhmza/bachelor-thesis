@@ -39,9 +39,9 @@ under that rule and under a rule that covers 80\,\% of Android. All three have s
 were removed from the ranking; Apple Health, for instance, has 2{,}134 ratings
 in the German App Store.
 
-\paragraph{German-market popularity score.} Of the candidates, 123 apps were
-found in both stores. The calibration used the 114 with positive rating and
-review counts in both stores. Their counts correlated at Spearman 0.80, and
+\paragraph{German-market popularity score.} Of the candidates, 125 apps were
+found in both stores. The calibration used the 116 with positive rating and
+review counts in both stores. Their counts correlated at Spearman 0.79, and
 the median ratio was $m = 0.233815$. With the German platform shares of
 September 2026, Android 72.3\,\% and iOS
 27.7\,\%~\parencite{statcounter2026os}, the conversion factor was
@@ -59,15 +59,17 @@ differently: among the 100 apps with the most installs worldwide, the German
 review count ranged from 5 to 99{,}884.
 
 \paragraph{Screening and selection.} Table~\ref{tab:sample-flow} gives the
-cascade. Merging the two stores' listings gave 1{,}367 candidates. In descending
+cascade. Merging the two stores' listings gave 1{,}365 candidates. In descending
 order of German-market popularity score, 70 candidates were reached before
 the 47 places were filled.
 Of these, 11 were excluded at screening because the app records no health or
 body data over time (E1), and 12 were skipped because their developer was
 already in the sample. Developer names that differ between the two stores were
 matched by hand for 13 providers, among them Clue, Pregnancy+, Fddb and
-Headspace, and three apps whose titles were translated between the stores were
-paired by hand. Across the main selection and all sensitivity checks, 275
+Headspace, each on the evidence listed in Table~\ref{tab:developer-aliases};
+no store account was found under two providers, and no two providers among the
+70 candidates reached named the same web domain. Three apps whose titles were
+translated between the stores were paired by hand. Across the main selection and all sensitivity checks, 275
 listings were screened: 156 were eligible and 119 excluded (E1~114, E2~1,
 E3~2, E4~1, E5~1).
 
@@ -89,9 +91,9 @@ Listings of preinstalled apps removed & 2 & 1 \\
 Listings ranked & 846 & 644 \\
 \midrule
 \multicolumn{3}{@{}l}{\textbf{Candidates after merging the stores}} \\
-\quad in both stores & \multicolumn{2}{r}{123} \\
-\quad App Store only & \multicolumn{2}{r}{723} \\
-\quad Google Play only & \multicolumn{2}{r}{521} \\
+\quad in both stores & \multicolumn{2}{r}{125} \\
+\quad App Store only & \multicolumn{2}{r}{721} \\
+\quad Google Play only & \multicolumn{2}{r}{519} \\
 Reached in descending score order & \multicolumn{2}{r}{70} \\
 \quad excluded at screening (E1) & \multicolumn{2}{r}{11} \\
 \quad skipped: developer already in the sample & \multicolumn{2}{r}{12} \\
@@ -101,20 +103,22 @@ Reached in descending score order & \multicolumn{2}{r}{70} \\
 \end{singlespace}
 \end{table}
 
-\paragraph{The sample.} The 47 ranked apps come from 47 providers; 32 are listed
-in both stores, 9 only on Google Play and 6 only on the App Store. With Apple
+\paragraph{The sample.} The 47 ranked apps come from 47 providers; 33 are listed
+in both stores, 8 only on Google Play and 6 only on the App Store. With Apple
 Health, Apple Fitness and Samsung Health, the sample holds 50 apps. By primary
 category, the ranked apps comprise 22 activity apps, 12 diet and weight apps, 4
 cycle trackers, 2 pregnancy apps, 3 sleep apps, 2 mood apps, 1 heart-rate app and
 1 wearable companion. The selected apps have between 648 and 447{,}096 German App
-Store ratings (38 apps with an App Store listing) and between 1{,}486 and
+Store ratings (39 apps with an App Store listing) and between 1{,}486 and
 99{,}884 German Google Play reviews (41 apps with a Google Play listing). All are
 free to install, and all 41 Google Play listings name a privacy policy. Of the
 47 apps, 42 were found within the first ten positions of at least one query and
 5 within positions 11 to 20.
 
 \paragraph{Sensitivity.} Table~\ref{tab:sensitivity} shows how many of the 47
-selected providers change when one rule is changed at a time.
+selected providers change when one rule is changed at a time. Without the
+developer rule, Leap Fitness Group would take 7 of the 47 places, Simple Design
+3, and Google and Nike 2 each (Table~\ref{tab:developer-rule}).
 
 \begin{table}[t]
 \centering

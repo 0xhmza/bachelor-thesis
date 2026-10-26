@@ -316,13 +316,36 @@ do not establish accuracy against actual user counts.
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
 trial collection on 22 October 2026, one developer held 10 of the 47 most-rated
-Google Play apps under a single privacy policy; RQ1--RQ3 concern what providers
+Google Play apps under a single privacy policy (Table~\ref{tab:developer-pilot});
+RQ1--RQ3 concern what providers
 communicate, so further apps of one provider add little new communication and
 reduce the number of independent providers. The rule also means that each app
-counts once, and both of its listings are captured. Developers are compared by
-name after removing case, accents, punctuation and legal forms; where the same
-app appears under different developer names in the two stores, the names are
-matched by hand. Candidates are taken in descending order of $P_i$, and selection stops
+counts once, and both of its listings are captured.
+
+Two listings belong to the same provider if one of three conditions holds.
+(P1) They belong to the same developer account of a store, which both stores
+identify by a developer ID. (P2) Their developer names agree after case,
+accents, punctuation, legal forms and regional entity words are removed, as
+\enquote{WW International, Inc.} on the App Store and \enquote{WW
+INTERNATIONAL, INC} on Google Play do.
+(P3) The names differ, but the listings document one provider: the legal entity
+that the App Store shows as seller carries the other developer name, or
+listings of the two developer accounts link to the same registered web domain,
+as seller or developer website, privacy policy or a link in the description.
+Daylio, for example, is published by
+\enquote{Relaxio s.r.o.} on the App Store and by \enquote{Habitics} on Google
+Play; the App Store seller website, daylio.net, is the domain of the Play
+privacy policy. P3 matches are made by hand and recorded with their evidence
+(Table~\ref{tab:developer-aliases}). A similar name is no evidence:
+\enquote{Leap Health} and \enquote{Leapjoy Games} are different developers.
+Domains of hosting services and policy generators, which many unrelated
+developers use, do not count. Among the candidates that the selection
+reaches, every pair of providers whose listings name the same domain as
+website or privacy policy is listed by the ranking script, reviewed by hand and
+either matched or recorded as distinct; the selection is final only when no
+pair is open. Companies of one group that publish under
+their own accounts, names and domains count as separate providers, because
+the listings do not show the link. Candidates are taken in descending order of $P_i$, and selection stops
 when the target of 50 apps is reached, counting the preinstalled apps. If fewer eligible apps are found, all are kept
 and the shortfall is reported.
 Thresholds are not lowered after the results have been inspected.

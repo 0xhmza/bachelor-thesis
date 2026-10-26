@@ -49,7 +49,11 @@
   `v001/`, `v002/`, …; a change of behaviour is a new version, and earlier
   versions stay. No Git branches or tags for script versions.
 - Generated files stay in the version's `output/` folder, excluded from Git and
-  Graphify; back up raw collections separately. Prefer short standalone scripts
+  Graphify; back up raw collections separately.
+- The app sample rests on the frozen collections in
+  `05_Data/raw/app-sample_2026-10-25/` (read-only; hashes in
+  `05_Data/raw/README.md`) and the sample in `05_Data/processed/app-sample/`.
+  Later work reads these, not a script's `output/` folder. Prefer short standalone scripts
   with unit tests where they decide the sample.
 
 ## graphify

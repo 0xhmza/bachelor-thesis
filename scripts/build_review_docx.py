@@ -241,7 +241,7 @@ MATH = {'kappa': 'κ', 'alpha': 'α', 'times': '×', 'leq': '≤', 'geq': '≥',
         'to': '→', 'ge': '≥', 'le': '≤', 'pm': '±', 'cdot': '·'}
 DROP_WITH_ARG = {'label', 'Description', 'addcontentsline', 'setlength', 'vspace', 'hspace', 'arrayrulecolor',
                  'cmidrule', 'phantomsection', 'index'}
-FORMAT = {'textbf': 'b', 'emph': 'i', 'textit': 'i', 'texttt': 'mono', 'textsc': '', 'textrm': '', 'mbox': '',
+FORMAT = {'textbf': 'b', 'emph': 'i', 'textit': 'i', 'texttt': 'mono', 'path': 'mono', 'textsc': '', 'textrm': '', 'mbox': '',
           'text': '', 'textsf': '', 'underline': 'u', 'textcolor': ''}
 
 
@@ -368,6 +368,13 @@ def inline(s, ctx, fmt=frozenset()):
                 runs.append((arg, fmt, ('ext', arg)))
                 i = j
                 continue
+            if name == 'multicolumn' and arg is not None:  # \multicolumn{n}{spec}{text}: keep the text
+                k = find_close(s, j)
+                e = find_close(s, k + 1)
+                flush()
+                runs.extend(inline(s[k + 2:e], ctx, fmt))
+                i = e + 1
+                continue
             if name in FORMAT and arg is not None:
                 flush()
                 if name == 'textcolor':  # \textcolor{red}{x}: arg is the colour, next group the text
@@ -481,6 +488,20 @@ def parse_tabular(body):
     return rows
 
 
+def longtable_as_table(body):
+    """A longtable as a table holding one tabular: its first head, then its rows,
+    with generated row files (\\input{tables/...}) read in."""
+    def rows_file(m):
+        path = os.path.join(THESIS_DIR, m.group(1) + ('' if m.group(1).endswith('.tex') else '.tex'))
+        return strip_comments(read(path)) if exists(path) else ''
+    body = re.sub(r'\\input\{([^}]*)\}', rows_file, body)
+    body = re.sub(r'\\rowcolor\{[^}]*\}', '', body)
+    head, _, rest = body.partition(BS + 'endfirsthead')
+    caption, _, head = head.partition(BS + BS)  # \begin{longtable}{...}\caption{...}\label{...}\\
+    rows = rest.split(BS + 'endfoot', 1)[-1].split(BS + 'end{longtable}')[0]
+    return caption + '\n' + BS + 'begin{tabular}{l}' + head + rows + BS + 'end{tabular}'
+
+
 def env_body(lines, i, env):
     """Collect lines from index i (which holds \\begin{env}) to the matching \\end{env}."""
     depth, buf, j = 0, [], i
@@ -590,12 +611,14 @@ def parse_file(text, doc, ctx):
                 doc.blocks.append(('code', read(path).rstrip('\n')))
             i += 1
             continue
-        m = re.match(r'\\begin\{(table|figure|itemize|description|enumerate|lstlisting|verbatim)\*?\}', st)
+        m = re.match(r'\\begin\{(table|longtable|figure|itemize|description|enumerate|lstlisting|verbatim)\*?\}', st)
         if m:
             flush()
             env = m.group(1)
             body, j = env_body(lines, i, env)
             i = j + 1
+            if env == 'longtable':
+                env, body = 'table', longtable_as_table(body)
             if env in ('table', 'figure'):
                 doc.bm += 1
                 mark = f'f_{doc.bm}'
@@ -623,8 +646,8 @@ def parse_file(text, doc, ctx):
             else:
                 doc.blocks.append(('list', (env, parse_items(body))))
             continue
-        if re.match(r'\\(begin|end)\{(singlespace|center|flushleft|small|footnotesize|minipage)\}', st) \
-                or re.match(r'\\(clearpage|cleardoublepage|newpage|bigskip|medskip|smallskip|vspace)', st):
+        if re.match(r'\\(begin|end)\{(singlespace|center|flushleft|small|footnotesize|minipage|landscape)\}', st) \
+                or re.match(r'\\(clearpage|cleardoublepage|newpage|bigskip|medskip|smallskip|vspace|setlength)', st):
             flush()
             i += 1
             continue
