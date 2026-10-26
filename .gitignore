@@ -9,6 +9,9 @@ build/
 *.log
 *.lof
 *.lot
+*.lol
+*.loa
+*.tdo
 *.out
 *.run.xml
 *.synctex.gz
