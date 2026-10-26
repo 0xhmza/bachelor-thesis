@@ -1,0 +1,6 @@
+{
+  // The thesis is compiled in TeXstudio. LaTeX Workshop's default rebuilds on
+  // every .tex change, which starts a second latexmk in 03_Thesis and corrupts
+  // the shared thesis.aux; build from VS Code only on request.
+  "latex-workshop.latex.autoBuild.run": "never"
+}

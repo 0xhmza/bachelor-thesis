@@ -130,7 +130,7 @@ instruments without a logged revision.
   \draw[arr] (a)--(b); \draw[arr] (b)--(c);
   \draw[arr] (c)--(d); \draw[arr] (d)--(e);
 \end{tikzpicture}}
-\caption{Planned workflow. The pilot will refine the instruments before they
+\caption[Planned workflow]{Planned workflow. The pilot will refine the instruments before they
 are frozen. Later changes will be logged and affected material recoded.}
 \Description{Five boxes connected by arrows: pilot and sample, capture,
 code, check, compare. Documents cover 50 apps.}
@@ -175,7 +175,9 @@ Identical spellings and repeated translations are searched once, which gives
 \begin{table}[t]
 \centering
 \begin{singlespace}
-\caption{Search keywords. English terms from Hutton et
+% The short form keeps citations out of the List of Tables, where they force
+% an extra Biber run.
+\caption[Search keywords]{Search keywords. English terms from Hutton et
 al.~\parencite[Table~2]{hutton2018assessing} (health categories) and Malki et
 al.~\parencite[\S3.1]{malki2024exploring}, each with the German query used.
 \emph{workouts} and \emph{menstruation} are spelled alike in both languages and
@@ -322,11 +324,13 @@ The conversion is calculated from the matched candidates found in both stores,
 before eligibility screening. Let $M$ contain those candidates with positive
 counts in both stores. First, calculate the median ratio of Play reviews to
 App Store ratings. Then adjust that ratio using the German platform shares:
+
 \[
   m = \operatorname{median}_{j\in M}\!\left(\frac{v_j}{r_j}\right),
   \qquad
   c = m\,\frac{s_{\mathrm{iOS}}}{s_{\mathrm{Android}}}.
 \]
+
 Here, $s_{\mathrm{iOS}}$ and $s_{\mathrm{Android}}$ are the platforms' shares of
 German mobile web page views in the month preceding collection, taken from
 StatCounter~\parencite{statcounter2026os}. These shares approximate the
@@ -449,12 +453,12 @@ ratings on different bases.
 \begin{table}[t]
 \centering
 \begin{singlespace}
-\caption{Public listing data by geographic basis. Observed on 22 October 2026
+\caption[Public listing data by geographic basis]{Public listing data by geographic basis. Observed on 22 October 2026
 for up to six App Store and five Google Play listings in the German (DE), US
 and British (GB) storefronts; fields shown only on product pages were checked
 for one app per store in DE and US\@. \emph{Market-specific}: the value changed
 with the storefront. \emph{Worldwide}: it was identical across storefronts.
-A field check, not part of the sample.}
+}
 \label{tab:storefront-fields}
 \small
 \setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
@@ -595,7 +599,7 @@ Appendix~\ref{app:example} shows the procedure on a constructed example.
 \begin{table}[t]
 \centering
 \begin{singlespace}
-\caption{Coding axes and boundaries. All example wording is constructed.
+\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
 Several labels may apply to one unit.}
 \label{tab:axes}
 \small

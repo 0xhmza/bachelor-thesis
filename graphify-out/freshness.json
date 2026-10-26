@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-26T10:49:35.093686+00:00",
+  "built_at_utc": "2026-10-26T11:06:11.473036+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -85,6 +85,7 @@
   ],
   "needs_semantic_extraction": [],
   "source_hashes": {
+    ".vscode/settings.json": "44bec166ef052f34a76fa1a617803ec506a6adbf56c691e47138feca14028c0d",
     "01_Literature/Methods-Digest/add_paper.py": "5cf51414b9fde190a2baa34c08599542b195116b1143278f3ae60ff7dedafe2f",
     "01_Literature/Methods-Digest/build_digest.py": "d9403b922fdb1924a9e0162992af88828948234059d0fafe7baeab11bd9de782",
     "01_Literature/Methods-Digest/registry.json": "5289740626918b2eb9213a1c69f902c7cd8fc38d3182327fc660bc784a59341d",
@@ -95,7 +96,7 @@
     "03_Thesis/.vscode/extensions.json": "9aceee57773787fc454bc8437bc8d1a04d03db95d0678ed13f93d606c478951b",
     "03_Thesis/.vscode/settings.json": "88a6ecc1bb0ef5f11504b011b7c851fcaf1b9654ecda7cd1bf891e513ad5775e",
     "03_Thesis/.vscode/tasks.json": "934e5f00e69a4171f21c75a7674e9155b195c799e12c410b532705a4c146ecc6",
-    "03_Thesis/bossthesis.cls": "f818c06554fbe33f6a56edbacf24cce2bc6b9c1706f71f110ccda55743b1da31",
+    "03_Thesis/bossthesis.cls": "a514e2644adf194cd9befde7442dc95c35ce5da9e1fae4112084f25243807d92",
     "build.ps1": "f4f91ed493c085e0b12bf4610a953cff3932df29d0a1f84a3683df0206de60ff",
     "graphify.ps1": "6ef7b09327e035687a61bd8c252ec6d9d8d1eca2fa481c54c57a0fd6a941f2dc",
     "scripts/app-ranking/v001/rank.py": "b8fc5b1a127332aaf4b4b02dd5b4da06f8b429b07d3fc49b8273f864fe3f368a",
@@ -209,8 +210,8 @@
     "03_Thesis/chapters/01_introduction.tex": "16e6a1f95245374287b1a4911dd2268e0ca9989d60a279ba30b18d014fea389d",
     "03_Thesis/chapters/02_background.tex": "c61f2d743064480f14e0f1c36fe07357c699394b958269806ec45e1ab1f3dcc3",
     "03_Thesis/chapters/03_related_work.tex": "e932a602f5a1899a588255d9d5f86529a1605f9f3d79c4e8abb68aed4da639f1",
-    "03_Thesis/chapters/04_methodology.tex": "78bc8dd6ecd12a0e0ec3f95cf431bda7d7f368d0515bd6491a83cf217253b122",
-    "03_Thesis/chapters/05_results.tex": "655746bbc092c240cbd2298453d69e14dedd9a6493e0692cf3abc028685984ee",
+    "03_Thesis/chapters/04_methodology.tex": "6ac31a4432e7885762709953a145a67afd58b7fa00dea1e1af7c6b216d009c4d",
+    "03_Thesis/chapters/05_results.tex": "dee151726523948d24b858b3bda4a86ba72bd1725ab029389850b8a9b0ae599e",
     "03_Thesis/chapters/06_discussion.tex": "beb6d9784c1a5dc46076d6c61c4cd1c3adf1c5f122f6ebbdb44fb61cf7872511",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
     "03_Thesis/config/metadata.tex": "b1e78332310404e3e9637433a589d5e00fd82a65d51d02b904169ba5241be9a7",
@@ -234,9 +235,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1708,
-  "edges": 3010,
-  "communities": 124,
+  "nodes": 1709,
+  "edges": 3009,
+  "communities": 125,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

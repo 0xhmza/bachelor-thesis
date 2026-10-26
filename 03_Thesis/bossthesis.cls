@@ -17,7 +17,7 @@
 %   BOSS group and its professor;
 % - declaration and AI-tools box unchanged (faculty-wide wording);
 % - packages the thesis does not use removed: siunitx, acronym, algorithm,
-%   algorithmic, listing, placeins, subcaption;
+%   algorithmic, listing, placeins, subcaption, nag;
 % - todonotes with loadshadowlibrary, which its shadow option needs;
 % - listings without [savemem], which suppressed keyword styles;
 % - the declaration box kept inside the text block.
@@ -354,8 +354,8 @@
 % Ensure that no floats are typeset before they are referenced
 \RequirePackage{flafter}
 
-% Nag about deprecated LaTeX packages and commands
-\RequirePackage[l2tabu, orthodox]{nag}
+% The template loaded nag here (warnings about deprecated commands); removed
+% to save about a tenth of each pass. Lint with chktex instead.
 
 % Define command that will return current filename
 \ifthenelse{\boolean{watermark}}{

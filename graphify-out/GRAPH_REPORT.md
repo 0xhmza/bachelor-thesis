@@ -1,13 +1,13 @@
 # Graph Report - bachelor-thesis  (2026-10-26)
 
 ## Corpus Check
-- 137 files · ~130,819 words
+- 138 files · ~130,907 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 176 file(s) not represented in the graph (top: .tex 147, (none) 23, .csv 3)
 
 ## Summary
-- 1708 nodes · 3010 edges · 124 communities (75 shown, 49 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 98 edges (avg confidence: 0.8)
+- 1709 nodes · 3009 edges · 125 communities (75 shown, 50 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 97 edges (avg confidence: 0.8)
 - Token cost: host semantic extraction unmeasured; local refresh makes no model calls
 
 ## Community Hubs (Navigation)
@@ -120,8 +120,6 @@
 10. `Method stage A: App search and selection` - 27 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Eligibility table E1-E5 with the check on the German store listing for each criterion` --semantically_similar_to--> `Operational checks: E1 recording statement, E2 open to anyone, E3 price 0 in both stores, E4 listing language, E5 BfArM directory`  [INFERRED] [semantically similar]
-  03_Thesis/chapters/04_methodology.tex → 00_Admin/Decisions/D03_scope-keywords-function.md
 - `gabriele2020understanding: Understanding Fitness Tracker Users' Security and Privacy                Knowledge, Attitudes and Behaviours` --likely_original_pdf--> `Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes`  [INFERRED]
   _shared/references.bib → 01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf
 - `knabenhans2026harms: On the (Privacy) Harms of the European Digital Identity                   Framework` --likely_original_pdf--> `Knabenhans_2026_PrivacyHarms-EUDigitalIdentity`  [INFERRED]
@@ -130,6 +128,8 @@
   _shared/references.bib → 01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf
 - `hudig2025intimate: Intimate Data Sharing: Enhancing Transparency and Control in                Fertility Tracking` --likely_original_pdf--> `Hudig_2025_IntimateDataSharing-FertilityTracking`  [INFERRED]
   _shared/references.bib → 01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf
+- `malki2024exploring: Exploring Privacy Practices of Female mHealth Apps in a                Post-Roe World` --likely_original_pdf--> `Malki_2024_PrivacyPractices-FemaleMHealthApps`  [INFERRED]
+  _shared/references.bib → 01_Literature/PDFs/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf
 
 ## Import Cycles
 - None detected.
@@ -139,7 +139,7 @@
 - **Coverage, stance and protection analysis** — 04_study_codebook_codebook_v3_coverage, 04_study_codebook_codebook_v3_stance, 04_study_codebook_codebook_v3_measures, 00_admin_supervisor_input_2026_09_05_supervisor_input_research_question [EXTRACTED 1.00]
 - **Applicability and recall guard absence claims** — 04_study_codebook_codebook_v3_applicability, 04_study_codebook_codebook_v3_coverage, 04_study_codebook_codebook_v3_blind_validation, 04_study_codebook_codebook_v3_missed_mentions [INFERRED 0.95]
 
-## Communities (124 total, 49 thin omitted)
+## Communities (125 total, 50 thin omitted)
 
 ### Community 0 - "Supervisor Decisions 0"
 Cohesion: 0.05
@@ -447,24 +447,24 @@ Nodes (3): at(), fetch(), search()
 
 ## Knowledge Gaps
 - **413 isolated node(s):** `Supervisor meeting record template`, `LLM prompt appendix placeholder`, `Pinned Graphify dependencies (graphifyy, pypdf, pymupdf)`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+408 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 671 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **49 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 672 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **50 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Literature gap search of 23 October 2026` connect `Literature and Evidence 2` to `Supervisor Decisions 0`, `Supervisor Decisions 1`, `Literature and Evidence 17`, `Supervisor Decisions 7`?**
-  _High betweenness centrality (0.134) - this node is a cross-community bridge._
+- **Why does `Methodology literature corpus (93 works)` connect `Literature and Evidence 26` to `Literature and Evidence 2`, `Literature and Evidence 3`, `Literature and Evidence 40`, `Literature and Evidence 9`, `Literature and Evidence 10`, `Literature and Evidence 76`, `Literature and Evidence 22`, `Literature and Evidence 23`, `Literature and Evidence 29`, `Literature and Evidence 30`?**
+  _High betweenness centrality (0.122) - this node is a cross-community bridge._
 - **What connects `Supervisor meeting record template`, `LLM prompt appendix placeholder`, `Pinned Graphify dependencies (graphifyy, pypdf, pymupdf)` to the rest of the system?**
   _413 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Supervisor Decisions 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
-- **Why does `Methodology literature corpus (93 works)` connect `Literature and Evidence 26` to `Literature and Evidence 2`, `Literature and Evidence 3`, `Literature and Evidence 40`, `Literature and Evidence 9`, `Literature and Evidence 10`, `Literature and Evidence 76`, `Literature and Evidence 22`, `Literature and Evidence 23`, `Literature and Evidence 29`, `Literature and Evidence 30`?**
-  _High betweenness centrality (0.126) - this node is a cross-community bridge._
+- **Why does `Literature gap search of 23 October 2026` connect `Literature and Evidence 2` to `Supervisor Decisions 0`, `Supervisor Decisions 1`, `Literature and Evidence 17`, `Supervisor Decisions 7`?**
+  _High betweenness centrality (0.121) - this node is a cross-community bridge._
 - **Should `Supervisor Decisions 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05656565656565657 - nodes in this community are weakly interconnected._
-- **Should `Literature and Evidence 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.053109713487071976 - nodes in this community are weakly interconnected._
+- **Why does `Reading status: to read` connect `Literature and Evidence 3` to `Bibliography 64`, `Bibliography 33`, `Bibliography 39`, `Literature and Evidence 9`, `Literature and Evidence 10`, `Thesis Writing and Methods 75`, `Bibliography 44`, `Literature and Evidence 22`, `Literature and Evidence 23`, `Literature and Evidence 26`, `Literature and Evidence 29`?**
+  _High betweenness centrality (0.102) - this node is a cross-community bridge._
 
 ### Low-confidence Hints
 _AMBIGUOUS edges — the extractor was unsure. Verify before acting on these._
