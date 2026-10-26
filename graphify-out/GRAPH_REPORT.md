@@ -1,7 +1,7 @@
 # Graph Report - bachelor-thesis  (2026-10-26)
 
 ## Corpus Check
-- 138 files · ~131,051 words
+- 138 files · ~131,031 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 176 file(s) not represented in the graph (top: .tex 147, (none) 23, .csv 3)
 

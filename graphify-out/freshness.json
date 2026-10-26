@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-26T11:20:37.925570+00:00",
+  "built_at_utc": "2026-10-26T11:22:40.076578+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -210,7 +210,7 @@
     "03_Thesis/chapters/01_introduction.tex": "16e6a1f95245374287b1a4911dd2268e0ca9989d60a279ba30b18d014fea389d",
     "03_Thesis/chapters/02_background.tex": "c61f2d743064480f14e0f1c36fe07357c699394b958269806ec45e1ab1f3dcc3",
     "03_Thesis/chapters/03_related_work.tex": "e932a602f5a1899a588255d9d5f86529a1605f9f3d79c4e8abb68aed4da639f1",
-    "03_Thesis/chapters/04_methodology.tex": "02b12995d0e9f97101cfac2da8d485bb744a1ed09506b2ebf4c2e2343a0942fc",
+    "03_Thesis/chapters/04_methodology.tex": "3c8637288cf5fbb37bcc63e5f7156e8e6805db50f76acd496d33f96a4a0b75ff",
     "03_Thesis/chapters/05_results.tex": "dee151726523948d24b858b3bda4a86ba72bd1725ab029389850b8a9b0ae599e",
     "03_Thesis/chapters/06_discussion.tex": "beb6d9784c1a5dc46076d6c61c4cd1c3adf1c5f122f6ebbdb44fb61cf7872511",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
