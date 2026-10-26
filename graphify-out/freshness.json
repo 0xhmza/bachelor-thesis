@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-26T11:06:11.473036+00:00",
+  "built_at_utc": "2026-10-26T11:20:37.925570+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -148,7 +148,7 @@
     "00_Admin/Decision-Log.md": "9aac5931d5124e0bc28491cb790576815ffc1b17f027d649a9b010963010916b",
     "00_Admin/Decisions/D01_sample-size.md": "c143741ddc8b124471e8b0372c1999045dba47be419e4673c405943dce4efdf4",
     "00_Admin/Decisions/D02_ranking-and-rating-floor.md": "b379c2d3b3c11e19f8c57ea598b740db0eef309e4be039196d29d48bc9898cb2",
-    "00_Admin/Decisions/D03_scope-keywords-function.md": "ff2567699b1eb5390463a13a36190b1b3e0d7d9958ed4aaee3068d853c982381",
+    "00_Admin/Decisions/D03_scope-keywords-function.md": "6d293f04992da764e20c7b056e32f8bb22f205a80b7ccf37f72dbf56cb625dc7",
     "00_Admin/Decisions/D04_payment-access.md": "77bd386759137667adf945871b3f34931fbdea143f8026b0186ff4f7e7bc5dd6",
     "00_Admin/Decisions/D05_apps-without-policy.md": "f19e9c1fd55b700a45c85a12313b43da3b45c945a1204d112f983c14bf4ff54c",
     "00_Admin/Decisions/D06_preinstalled-apps.md": "3df390f8750f1d61cfc99bf8b8c4e0986246f78824a57d12b78774086a59ed7e",
@@ -210,7 +210,7 @@
     "03_Thesis/chapters/01_introduction.tex": "16e6a1f95245374287b1a4911dd2268e0ca9989d60a279ba30b18d014fea389d",
     "03_Thesis/chapters/02_background.tex": "c61f2d743064480f14e0f1c36fe07357c699394b958269806ec45e1ab1f3dcc3",
     "03_Thesis/chapters/03_related_work.tex": "e932a602f5a1899a588255d9d5f86529a1605f9f3d79c4e8abb68aed4da639f1",
-    "03_Thesis/chapters/04_methodology.tex": "6ac31a4432e7885762709953a145a67afd58b7fa00dea1e1af7c6b216d009c4d",
+    "03_Thesis/chapters/04_methodology.tex": "02b12995d0e9f97101cfac2da8d485bb744a1ed09506b2ebf4c2e2343a0942fc",
     "03_Thesis/chapters/05_results.tex": "dee151726523948d24b858b3bda4a86ba72bd1725ab029389850b8a9b0ae599e",
     "03_Thesis/chapters/06_discussion.tex": "beb6d9784c1a5dc46076d6c61c4cd1c3adf1c5f122f6ebbdb44fb61cf7872511",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
