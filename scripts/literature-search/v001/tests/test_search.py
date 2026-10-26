@@ -40,11 +40,11 @@ class CitationFilterTest(unittest.TestCase):
         self.assertEqual(search.citations_per_year(5, 2026, 2026), 5.0)  # at least one year
         self.assertEqual(search.citations_per_year(5, None, 2026), 0.0)
 
-    def test_threshold_and_exemption(self):
-        self.assertTrue(search.passes_citation_filter(30, 2016, 2026, 3, 2026))
-        self.assertFalse(search.passes_citation_filter(29, 2016, 2026, 3, 2026))
-        self.assertTrue(search.passes_citation_filter(0, 2026, 2026, 3, 2026))
-        self.assertFalse(search.passes_citation_filter(2, 2025, 2026, 3, 2026))
+    def test_threshold_without_exemption(self):
+        self.assertTrue(search.passes_citation_filter(30, 2016, 2026, 3))
+        self.assertFalse(search.passes_citation_filter(29, 2016, 2026, 3))
+        self.assertFalse(search.passes_citation_filter(2, 2026, 2026, 3))  # recent works are not exempt
+        self.assertTrue(search.passes_citation_filter(3, 2026, 2026, 3))
 
 
 class MergeTest(unittest.TestCase):
@@ -61,7 +61,7 @@ class MergeTest(unittest.TestCase):
     def test_record_prefers_published_doi_and_max_citations(self):
         group = [hit(doi='10.48550/arxiv.1', citations=40, year=2022, title='T', authors=['A']),
                  hit(source='Semantic Scholar', doi='10.1/pub', citations=55, year=2023, title='T', abstract='long text')]
-        r = search.record(group, 2026, 3, 2026)
+        r = search.record(group, 2026, 3)
         self.assertEqual(r['doi'], '10.1/pub')
         self.assertEqual(r['other_dois'], '10.48550/arxiv.1')
         self.assertEqual(r['citations'], 55)

@@ -24,6 +24,7 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | D10 | Walkthrough checklist and outputs | open | Meeting 10-13 | — |
 | D11 | Device scope (apps only) | proposed (10-23, in D3): companion apps eligible if the app records or displays tracking data; devices not analysed | Meeting 10-13 | [D03](Decisions/D03_scope-keywords-function.md) |
 | D12 | Basis of the harm tree ("best app") | open — needs supervisor | Meeting 10-13, wording ambiguous | — |
+| D13 | Literature search, filter and screening | proposed (10-26): staged procedure of Baumann et al. 2025 (App. A) on OpenAlex and Semantic Scholar, one query per review question, ≥ 3 citations per year, criteria I1–I4 / E1–E5 | Baumann 2025 App. A pp. 56–57; meeting 10-13 §3; API access test 10-26 | [D13](Decisions/D13_literature-review.md) |
 
 The reading that supports each decision is mapped in
 [`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)

@@ -3,6 +3,51 @@
 
 % Report findings only. Interpretation belongs in the discussion.
 
+\section{Literature Search}
+\label{sec:results-lit}
+This section reports the literature search of Section~\ref{sec:lit-review}.
+The counts come from the search script and the screening file; the included
+works are listed in Appendix~\ref{app:literature}.
+\todo{The screening decisions in 01\_Literature/\allowbreak Systematic-Review/\allowbreak screening.csv
+were prepared by an AI assistant from titles and abstracts. Check every
+decision before this section states who screened.}
+
+\begin{table}[tbp]
+\centering
+\small
+\caption[Records at each stage of the literature search]{Records at each stage
+of the literature search of 26 October 2026. Hits are counted per query and
+database before duplicates are removed.}
+\label{tab:lit-flow}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & \textbf{OpenAlex} & \textbf{Semantic Scholar} \\
+\midrule
+\input{tables/literature-flow}
+\end{tabular}
+\end{table}
+
+\paragraph{Search.} OpenAlex and Semantic Scholar were searched on 26 October
+2026 at 18:13~UTC\@. The four queries returned 5{,}667 hits, 3{,}352 of them for
+the query on harms (Table~\ref{tab:lit-flow}). Fifteen works were added by
+hand. Merging duplicates left 3{,}506 records.
+
+\paragraph{Citation filter.} The filter removed 2{,}553 records, among them 611
+of the 648 records published in 2026, and left 953 records for screening. Ten
+of the fifteen works added by hand passed it. For 111 of the 953 records
+neither database held an abstract, so they were screened on the title.
+
+\paragraph{Screening.} Screening included 168 records: 76 that document harms
+or capabilities (I1), 46 that analyse the privacy communication of health apps
+or wearables (I2), 13 on language models and privacy text (I3) and 33 on the
+presentation and wording of policies, notices or labels (I4). Of the 785
+excluded records, 248 proposed technical systems (E1), 236 lay outside the
+domain (E2) and 283 studied health apps or wearables without analysing privacy
+(E3); 6 were not usable records (E4) and 12 concerned language models without
+annotating privacy text (E5). The included works were published between 2014
+and 2026: 55 in 2014--2019, 45 in 2020--2022 and 68 in 2023--2026. Eight have no
+DOI and are linked to their database page.
+
 \section{Sample}
 \label{sec:results-sample}
 This section reports how the sample of Section~\ref{sec:app-sampling} was
