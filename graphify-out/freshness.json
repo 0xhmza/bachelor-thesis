@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-25T18:07:53.749540+00:00",
+  "built_at_utc": "2026-10-26T08:38:56.656930+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -22,6 +22,7 @@
     "00_Admin/Project-Handoff_2026-10-25.md",
     "00_Admin/README.md",
     "00_Admin/Risk-Register.md",
+    "00_Admin/Sampling-Audit_2026-10-25.md",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md",
     "00_Admin/Supervisor-Input/README.md",
     "00_Admin/Timeline.md",
@@ -41,6 +42,7 @@
     "03_Thesis/chapters/01_introduction.tex",
     "03_Thesis/chapters/02_background.tex",
     "03_Thesis/chapters/03_related_work.tex",
+    "03_Thesis/chapters/04_methodology.tex",
     "03_Thesis/chapters/05_results.tex",
     "03_Thesis/chapters/06_discussion.tex",
     "03_Thesis/chapters/07_conclusion.tex",
@@ -74,13 +76,10 @@
     "scripts/googleplay-scraper/v001/requirements.txt",
     "scripts/googleplay-scraper/v002/requirements.txt",
     "scripts/googleplay-scraper/v003/requirements.txt",
-    "scripts/googleplay-scraper/v004/requirements.txt"
-  ],
-  "needs_semantic_extraction": [
-    "00_Admin/Sampling-Audit_2026-10-25.md",
-    "03_Thesis/chapters/04_methodology.tex",
+    "scripts/googleplay-scraper/v004/requirements.txt",
     "scripts/sampling-audit/v001/README.md"
   ],
+  "needs_semantic_extraction": [],
   "source_hashes": {
     "01_Literature/Methods-Digest/add_paper.py": "5cf51414b9fde190a2baa34c08599542b195116b1143278f3ae60ff7dedafe2f",
     "01_Literature/Methods-Digest/build_digest.py": "d9403b922fdb1924a9e0162992af88828948234059d0fafe7baeab11bd9de782",
@@ -220,9 +219,9 @@
     "catalogue_sha256": "5e32ccf132681526081e52087f857a66ab58f6c39321f8d48e1a344486743de0",
     "manifest_sha256": "4b8a1cf8f9e9a43f557204389bf9d235e8baf4070b3b92a8ae5c11224302035e"
   },
-  "nodes": 1558,
-  "edges": 2747,
-  "communities": 113,
+  "nodes": 1620,
+  "edges": 2898,
+  "communities": 105,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
