@@ -45,6 +45,11 @@ indent.log.*
 *.sync-conflict-*
 .stversions/
 
+# ---------- Editor save failures and copies ----------
+*-SAVE-ERROR
+* - Copy.*
+* - Kopie.*
+
 # ---------- Office / OS temp ----------
 ~$*
 .DS_Store

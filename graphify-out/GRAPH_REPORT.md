@@ -3,7 +3,7 @@
 ## Corpus Check
 - 137 files · ~130,384 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 177 file(s) not represented in the graph (top: .tex 147, (none) 23, .csv 3)
+- Unclassified: 176 file(s) not represented in the graph (top: .tex 147, (none) 23, .csv 3)
 
 ## Summary
 - 1707 nodes · 3009 edges · 118 communities (69 shown, 49 thin omitted)
