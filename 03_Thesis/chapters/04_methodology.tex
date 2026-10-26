@@ -172,7 +172,8 @@ data type rather than the word (\emph{eating} becomes \emph{Ernährung}).
 Identical spellings and repeated translations are searched once, which gives
 49 queries.
 
-\begin{table}[t]
+% Tables 4.1 and 4.2 share one float on a page of their own ([p]).
+\begin{table}[p]
 \centering
 \begin{singlespace}
 % The short form keeps citations out of the List of Tables, where they force
@@ -202,41 +203,12 @@ menstrual and menstruation (menstruation), period (Periode), contraception and
 birth control (Verhütung), pregnancy (Schwangerschaft), pregnant (schwanger)} \\
 \bottomrule
 \end{tabularx}
-\end{singlespace}
-\end{table}
 
-\paragraph{Search.} Each store is searched in a single session, logged out, in
-its German storefront: the App Store through Apple's Search
-API~\parencite{apple2022itunessearch} and the Google Play store through its
-search page, with the collectors in Appendix~\ref{app:scripts}. For each query,
-the first 30 results are kept in both stores. A Google Play search page shows
-a single page of results, and deeper results need an interface that the store's
-\texttt{robots.txt} disallows. Using the same depth for the App Store follows
-O'Loughlin et al., who capped both stores at the number of results Google Play
-shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
-App Store is also searched to 200 results, which serves only to check whether
-a deeper search would change the sample. On Google Play, the German count used
-for the ranking appears only on an app's product page, so the product page of
-every Google Play candidate is opened.
-
-\paragraph{Eligibility.} A listing is eligible if it meets the five criteria
-of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
-in the German storefront: title, developer, genre, price and description. An
-app listed in both stores is decided on one screened listing. If both of its
-listings are screened, the app is excluded when either listing fails a
-criterion; in the collection, this never happened. A privacy policy is not
-required: an app
-without one stays in the sample, and the absence is reported. In-app purchases
-and subscriptions are recorded but do not exclude an app. Screening follows the
-rank order, and each decision is logged with its reason.
-
-\begin{table}[t]
-\centering
-\begin{singlespace}
+\vspace{3\baselineskip}
 \caption{Eligibility criteria and how each is checked on the store listing in
 the German storefront.}
 \label{tab:eligibility}
-\small
+\setlength{\aboverulesep}{0.4ex}\setlength{\belowrulesep}{0.65ex}
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
  & \textbf{Criterion} & \textbf{Check on the listing} \\
@@ -271,6 +243,31 @@ E5 & Not a DiGA, Germany's reimbursable digital health applications
 \end{tabularx}
 \end{singlespace}
 \end{table}
+
+\paragraph{Search.} Each store is searched in a single session, logged out, in
+its German storefront: the App Store through Apple's Search
+API~\parencite{apple2022itunessearch} and the Google Play store through its
+search page, with the collectors in Appendix~\ref{app:scripts}. For each query,
+the first 30 results are kept in both stores. A Google Play search page shows
+a single page of results, and deeper results need an interface that the store's
+\texttt{robots.txt} disallows. Using the same depth for the App Store follows
+O'Loughlin et al., who capped both stores at the number of results Google Play
+shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
+App Store is also searched to 200 results, which serves only to check whether
+a deeper search would change the sample. On Google Play, the German count used
+for the ranking appears only on an app's product page, so the product page of
+every Google Play candidate is opened.
+
+\paragraph{Eligibility.} A listing is eligible if it meets the five criteria
+of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
+in the German storefront: title, developer, genre, price and description. An
+app listed in both stores is decided on one screened listing. If both of its
+listings are screened, the app is excluded when either listing fails a
+criterion; in the collection, this never happened. A privacy policy is not
+required: an app
+without one stays in the sample, and the absence is reported. In-app purchases
+and subscriptions are recorded but do not exclude an app. Screening follows the
+rank order, and each decision is logged with its reason.
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback

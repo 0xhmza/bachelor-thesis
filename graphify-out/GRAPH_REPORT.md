@@ -1,7 +1,7 @@
 # Graph Report - bachelor-thesis  (2026-10-26)
 
 ## Corpus Check
-- 138 files · ~131,031 words
+- 138 files · ~131,104 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 176 file(s) not represented in the graph (top: .tex 147, (none) 23, .csv 3)
 
@@ -454,17 +454,17 @@ Nodes (3): at(), fetch(), search()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Methodology literature corpus (93 works)` connect `Literature and Evidence 26` to `Literature and Evidence 2`, `Literature and Evidence 3`, `Literature and Evidence 40`, `Literature and Evidence 9`, `Literature and Evidence 10`, `Literature and Evidence 76`, `Literature and Evidence 22`, `Literature and Evidence 23`, `Literature and Evidence 29`, `Literature and Evidence 30`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+  _High betweenness centrality (0.121) - this node is a cross-community bridge._
 - **What connects `Supervisor meeting record template`, `LLM prompt appendix placeholder`, `Pinned Graphify dependencies (graphifyy, pypdf, pymupdf)` to the rest of the system?**
   _413 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Supervisor Decisions 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
 - **Why does `Literature gap search of 23 October 2026` connect `Literature and Evidence 2` to `Supervisor Decisions 0`, `Supervisor Decisions 1`, `Literature and Evidence 17`, `Supervisor Decisions 7`?**
-  _High betweenness centrality (0.121) - this node is a cross-community bridge._
+  _High betweenness centrality (0.119) - this node is a cross-community bridge._
 - **Should `Supervisor Decisions 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05656565656565657 - nodes in this community are weakly interconnected._
 - **Why does `Reading status: to read` connect `Literature and Evidence 3` to `Bibliography 64`, `Bibliography 33`, `Bibliography 39`, `Literature and Evidence 9`, `Literature and Evidence 10`, `Thesis Writing and Methods 75`, `Bibliography 44`, `Literature and Evidence 22`, `Literature and Evidence 23`, `Literature and Evidence 26`, `Literature and Evidence 29`?**
-  _High betweenness centrality (0.102) - this node is a cross-community bridge._
+  _High betweenness centrality (0.099) - this node is a cross-community bridge._
 
 ### Low-confidence Hints
 _AMBIGUOUS edges — the extractor was unsure. Verify before acting on these._

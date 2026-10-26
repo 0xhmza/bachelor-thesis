@@ -20,7 +20,8 @@
 %   algorithmic, listing, placeins, subcaption, nag;
 % - todonotes with loadshadowlibrary, which its shadow option needs;
 % - listings without [savemem], which suppressed keyword styles;
-% - the declaration box kept inside the text block.
+% - the declaration box kept inside the text block;
+% - no negative space above displayed equations.
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{bossthesis}[2026/10/26 The BOSS Thesis Class, adapted for MPI-SP]  % YYYY/MM/DD
@@ -235,7 +236,9 @@
 % Equation typesetting fixes and tweaks + proof/theorem environment
 \RequirePackage{amsmath}
 \newtheorem{thm}{Theorem}[section]
-\everydisplay={\setlength{\abovedisplayshortskip}{-0.5em plus1ex minus1ex}\setlength{\abovedisplayskip}{-0.5em plus1ex minus1ex}}
+% The template set the space above displays to -0.5em, which made tall
+% displays (cases, fractions) overlap the line before them; the standard
+% skips of the report class are kept instead.
 
 % -----------------------------------------------------------------------------
 
