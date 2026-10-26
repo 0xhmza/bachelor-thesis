@@ -71,9 +71,7 @@ used only to find German-market sources. The reference lists and citing papers
 of the closest studies, such as Malki et al.~\parencite{malki2024exploring},
 Hutton et al.~\parencite{hutton2018assessing} and
 Knabenhans et al.~\parencite{knabenhans2026harms}, are searched as well.
-\todo{The venue names in the meeting notes are abbreviated and partly unclear
-(\enquote{mdmp}, \enquote{ccw}, \enquote{acmpl}); confirm them with the
-supervisor before the search is reported as complete.}
+
 
 \paragraph{Selection.} A work is included if it is a peer-reviewed paper, a
 report of an established institution or an archival preprint; is written in
@@ -219,20 +217,56 @@ a deeper search would change the sample. On Google Play, the German count used
 for the ranking appears only on an app's product page, so the product page of
 every Google Play candidate is opened.
 
-\paragraph{Eligibility.} A listing is eligible if (E1) the app lets users
-record their own health or body data over time in a category of the
-domain~\parencite{robillard2019availability,malki2024exploring}; (E2) it is a
-consumer app for the general public; (E3) it is free to install; (E4) its
-listing is in German or English; and (E5) it is not a DiGA, Germany's
-reimbursable digital health applications. Under E1, instructional and content
-apps without recording are excluded, as in Hutton et
-al.~\parencite{hutton2018assessing}, and so are apps that track a child, games,
-shops and general-purpose apps. Companion apps of wearables are eligible when
-the app records or displays the data; the device itself is not analysed. A
-privacy policy is not required: an app without one stays in the sample, and
-the absence is reported. In-app purchases and subscriptions are recorded but
-do not exclude an app. Screening follows the rank order and uses the store
-listing, and each decision is logged with its reason.
+\paragraph{Eligibility.} A listing is eligible if it meets the five criteria
+of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
+in the German storefront: title, developer, genre, price and description. An
+app listed in both stores must meet every criterion in both; an exclusion in
+either listing excludes the app. A privacy policy is not required: an app
+without one stays in the sample, and the absence is reported. In-app purchases
+and subscriptions are recorded but do not exclude an app. Screening follows the
+rank order, and each decision is logged with its reason.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption{Eligibility criteria and how each is checked on the store listing in
+the German storefront.}
+\label{tab:eligibility}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \textbf{Criterion} & \textbf{Check on the listing} \\
+\midrule
+E1 & Records the user's own health or body data over time, in a category of the
+  domain~\parencite{robillard2019availability,malki2024exploring}
+  & The description states that the app records, logs or stores the user's own
+  measurements or activities, entered by the user or recorded by a sensor or
+  paired device. Excluded: instructional and content apps without recording, as
+  in Hutton et al.~\parencite{hutton2018assessing}; apps that track a child;
+  games, shops and general-purpose apps. A wearable's companion app is eligible
+  when the app records or displays the data; the device itself is not analysed. \\
+\addlinespace
+E2 & Consumer app for the general public
+  & The listing offers the app to anyone. Excluded: apps whose listing limits use
+  to the members, patients, employees or professional users of an organisation,
+  such as a health insurer's service app for its members. \\
+\addlinespace
+E3 & Free to install
+  & App Store: price 0~EUR in the German storefront (Search API field
+  \texttt{price}). Google Play: price 0 and marked as free on the product page
+  (fields \texttt{price} and \texttt{free}). \\
+\addlinespace
+E4 & Listing in German or English
+  & The listing text in the German storefront is in German or English. \\
+\addlinespace
+E5 & Not a DiGA, Germany's reimbursable digital health applications
+  & A listing that describes prescription by a doctor or reimbursement by
+  statutory health insurance is checked against the DiGA directory of the
+  Federal Institute for Drugs and Medical Devices (BfArM). \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
