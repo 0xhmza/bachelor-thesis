@@ -120,7 +120,23 @@
 % --- Helpers ---------------------------------------------------------
 % Revision marks are the template's todonotes: \todo{...} in the margin,
 % \todo[inline]{...} where a margin note cannot go (tables, boxes, the
-% title page).
+% title page). Quiet style: pale amber fill, thin amber border and leader
+% line, small text, no shadow; the amber matches the orange \highlight
+% marks. (size takes a size command only: todonotes also uses it inside
+% \csname, so \sffamily there is an error.)
+\definecolor{todofill}{HTML}{FFF5E1}
+\definecolor{todoline}{HTML}{D9952E}
+\definecolor{todotext}{HTML}{4A3410}
+\setuptodonotes{color=todofill, bordercolor=todoline, linecolor=todoline,
+  textcolor=todotext, size=\scriptsize}
+\tikzset{notestyleraw/.append style={line width=0.4pt, rounded corners=1.5pt,
+  inner sep=0.7ex}}
+\usepackage{xpatch}
+\makeatletter
+% todonotes redraws the leader line "thick" for every note; make it thin.
+\xpatchcmd{\@todo}{thick,}{line width=0.4pt,}{}{%
+  \PackageWarning{preamble}{todonotes leader line not restyled}}
+\makeatother
 \usepackage{soul}
 
 \newif\ifshowhighlights

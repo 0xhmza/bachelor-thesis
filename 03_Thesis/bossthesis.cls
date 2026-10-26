@@ -18,7 +18,7 @@
 % - declaration and AI-tools box unchanged (faculty-wide wording);
 % - packages the thesis does not use removed: siunitx, acronym, algorithm,
 %   algorithmic, listing, placeins, subcaption, nag;
-% - todonotes with loadshadowlibrary, which its shadow option needs;
+% - todonotes without shadows (the note style is set in the thesis preamble);
 % - listings without [savemem], which suppressed keyword styles;
 % - the declaration box kept inside the text block;
 % - no negative space above displayed equations.
@@ -617,12 +617,12 @@
 % Visible TODO and FIXME markers
 % -----------------------------------------------------------------------------
 \ifthenelse{\boolean{germanthesis}}{
-	\RequirePackage[colorinlistoftodos, textwidth=2.8cm, shadow, loadshadowlibrary, ngerman]{todonotes}
+	\RequirePackage[colorinlistoftodos, textwidth=2.8cm, ngerman]{todonotes}
 	\makeatletter
 	\@todonotes@SetTodoListName{Offene Punkte}
 	\makeatother
 }{
-	\RequirePackage[colorinlistoftodos, textwidth=3.0cm, shadow, loadshadowlibrary]{todonotes}
+	\RequirePackage[colorinlistoftodos, textwidth=3.0cm]{todonotes}
 }
 \newcounter{TODOCOUNT}
 \newcommand{\TODO}[1]{\vspace{0.5em}\todo[inline, color=orange]{#1}\stepcounter{TODOCOUNT}}
