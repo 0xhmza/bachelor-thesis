@@ -620,25 +620,31 @@ def parse_file(text, doc, ctx):
             if env == 'longtable':
                 env, body = 'table', longtable_as_table(body)
             if env in ('table', 'figure'):
-                doc.bm += 1
-                mark = f'f_{doc.bm}'
-                if env == 'table':
-                    doc.tab += 1
-                    number = f'{doc.chapter_no()}.{doc.tab}'
-                    name = 'Table'
-                else:
-                    doc.fig += 1
-                    number = f'{doc.chapter_no()}.{doc.fig}'
-                    name = 'Figure'
-                for lab in labels_in(body):
-                    ctx.labels[lab] = (f'{name} {number}', mark)
-                desc = ''
-                k = body.find(BS + 'Description')
-                if k >= 0:
-                    desc, _ = group_arg(body, body.index('{', k))
-                doc.blocks.append((env, {'number': f'{name} {number}', 'caption': caption_of(body),
-                                         'rows': parse_tabular(body), 'desc': desc,
-                                         'tikz': 'tikzpicture' in body, 'mark': mark}))
+                # A float may hold several tables, each with its own caption (Tables 4.1 and 4.2):
+                # every caption starts a part with its own number, label and rows.
+                starts = [c.start() for c in re.finditer(r'\\caption\b', body)] if env == 'table' else []
+                parts = ([body[s:e] for s, e in zip(starts, starts[1:] + [len(body)])]
+                         if len(starts) > 1 else [body])
+                for part in parts:
+                    doc.bm += 1
+                    mark = f'f_{doc.bm}'
+                    if env == 'table':
+                        doc.tab += 1
+                        number = f'{doc.chapter_no()}.{doc.tab}'
+                        name = 'Table'
+                    else:
+                        doc.fig += 1
+                        number = f'{doc.chapter_no()}.{doc.fig}'
+                        name = 'Figure'
+                    for lab in labels_in(part):
+                        ctx.labels[lab] = (f'{name} {number}', mark)
+                    desc = ''
+                    k = part.find(BS + 'Description')
+                    if k >= 0:
+                        desc, _ = group_arg(part, part.index('{', k))
+                    doc.blocks.append((env, {'number': f'{name} {number}', 'caption': caption_of(part),
+                                             'rows': parse_tabular(part), 'desc': desc,
+                                             'tikz': 'tikzpicture' in part, 'mark': mark}))
             elif env in ('lstlisting', 'verbatim'):
                 code = re.sub(r'^\\begin\{\w+\}(\[[^\]]*\])?\n?', '', body)
                 code = re.sub(r'\n?\\end\{\w+\}\s*$', '', code)
