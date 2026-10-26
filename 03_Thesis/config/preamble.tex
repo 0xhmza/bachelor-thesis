@@ -153,13 +153,15 @@
   commentstyle    = \color{codecomment},
   numberstyle     = \tiny\color{codecomment},
   numbers         = left,
-  numbersep       = 8pt,
+  % Numbers stand outside the left rule with 8pt of clear space before it
+  % (absolute units: listings sets em-lengths in the tiny number font).
+  numbersep       = 12pt,
   stepnumber      = 1,
   frame           = leftline,
   rulecolor       = \color{coderule},
   backgroundcolor = \color{codebg},
-  xleftmargin     = 1.8em,
-  framexleftmargin = 0.6em,
+  xleftmargin     = 26pt,
+  framexleftmargin = 4pt,
   breaklines      = true,
   breakindent     = 1.2em,
   postbreak       = \mbox{\textcolor{codecomment}{$\hookrightarrow$}\space},
