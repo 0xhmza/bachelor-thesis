@@ -45,3 +45,7 @@ scripts/zotero-pin-keys/*/output/
 01_Literature/Literature-Map.html
 01_Literature/reading-status.csv
 03_Thesis/Thesis_Review-Copy.docx
+
+# Backup copies of the methods digest sources (the originals live in 01_Literature/Methods-Digest).
+literature_new/literature methodology analysis/tex/
+literature_new/zotero/
