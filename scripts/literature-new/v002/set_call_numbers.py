@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 here = pathlib.Path(__file__).parent
 sys.path.insert(0, str(here))
-from match import load_items, match
+from match import load_items, match, norm
 
 root = here.parents[2]
 dbp = pathlib.Path(sys.argv[1])
@@ -25,6 +25,9 @@ now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 nums = {}
 for e in reg:
     hits = match(dict(title=e['title'], doi=e.get('doi') or '', year=e.get('year'), label=e['label']), items)
+    if len(hits) > 1:  # prefer a DOI match, then an exact title
+        exact = [h for h in hits if h[1] == 'doi'] or [h for h in hits if norm(h[0]['title']) == norm(e['title'])]
+        hits = exact or hits
     if len(hits) == 1:
         nums.setdefault(hits[0][0]['id'], []).append(e['num'])
     elif hits:
