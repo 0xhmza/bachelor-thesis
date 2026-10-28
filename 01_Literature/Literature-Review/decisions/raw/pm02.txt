@@ -1,0 +1,170 @@
+1 R1 overview
+2 R4
+3 R3
+4 R1 ethics commentary
+5 R1 ethics essay
+6 R4 quality evaluation
+7 R3
+8 R4
+9 R1 policy essay on insurance models
+10 R3 contact tracing
+11 R5
+12 R4
+13 R4
+14 R1
+15 R4 legal analysis
+16 R5
+17 R4
+18 R3
+19 R1
+20 R3
+21 R3 research ethics
+22 R5
+23 R3 protocol
+24 ft:LQ1 scoping review of risks of health apps in the German statutory system
+25 R3 protocol
+26 R1 legal essay
+27 ft:LQ2
+28 R3 brain data
+29 R5
+30 ft:LQ2
+31 R3
+32 R1
+33 R4
+34 R3
+35 ft:LQ2
+36 R1
+37 R3
+38 R4
+39 R3
+40 R4
+41 R1 position paper
+42 R1 theory paper
+43 R3
+44 R3
+45 R1
+46 R4
+47 R4
+48 R5
+49 R5
+50 R3
+51 R3
+52 R3
+53 R4
+54 R4
+55 R4
+56 R5
+57 R3
+58 ft:LQ1 privacy-related permissions of diabetes apps
+59 R3 research consent
+60 R4
+61 R3
+62 R3
+63 R4 attitudes survey
+64 R4
+65 R3
+66 R3 consumer digital data in general
+67 R3
+68 R1
+69 R3
+70 R4
+71 R3
+72 R3
+73 R1
+74 R1
+75 R1 ethical analysis
+76 R3
+77 R3
+78 R4
+79 R3
+80 R4
+81 R1
+82 R4 attitudes and behaviour
+83 R4
+84 R3
+85 R3
+86 ft:LQ1 interviews on period tracking and surveillance
+87 R3
+88 R4
+89 R4
+90 R3
+91 R3
+92 R4
+93 R5
+94 R3
+95 R1
+96 R3
+97 ft:LQ1;LQ2
+98 R4
+99 R4
+100 R3
+101 R4 concern survey, HIV prevention apps
+102 ft:LQ2
+103 R1 essay
+104 R3
+105 R4
+106 R5
+107 R4
+108 R4 awareness of app sponsors
+109 R4
+110 R3
+111 R4
+112 R4
+113 ft:LQ2
+114 R4
+115 R3
+116 R4
+117 R3
+118 R4
+119 R3
+120 R1
+121 ft:LQ1 re-identification from wrist-worn accelerometry
+122 R3
+123 R1 framework proposal
+124 R5
+125 R3
+126 R3
+127 R4
+128 R5
+129 ft:LQ1 interviews naming insurer access to sensor data
+130 R3
+131 R5
+132 R5
+133 R3
+134 R3 ambient assisted living
+135 R4
+136 R4
+137 R4
+138 R3
+139 R3
+140 R4
+141 R3
+142 R3
+143 R3
+144 R5 detection system
+145 R1
+146 R3
+147 R3
+148 R3
+149 R3
+150 R3
+151 R4
+152 R3
+153 R4
+154 R4
+155 R4
+156 R3
+157 R3
+158 R1 toolkit
+159 R3
+160 R4 policy comparison
+161 R1 guidelines
+162 R3
+163 R3
+164 R3
+165 R3
+166 R4
+167 R3
+168 R4 legal analysis
+169 R1
+170 R4

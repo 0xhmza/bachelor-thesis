@@ -1,0 +1,86 @@
+{
+ "records": 2980,
+ "funnel": [
+  {
+   "rule": "R1",
+   "text": "not a research article",
+   "assessed": 2980,
+   "excluded": 423,
+   "remaining": 2557,
+   "percent": 14.2
+  },
+  {
+   "rule": "R2",
+   "text": "outside language or period",
+   "assessed": 2557,
+   "excluded": 55,
+   "remaining": 2502,
+   "percent": 2.2
+  },
+  {
+   "rule": "R3",
+   "text": "outside the domain",
+   "assessed": 2502,
+   "excluded": 1243,
+   "remaining": 1259,
+   "percent": 49.7
+  },
+  {
+   "rule": "R4",
+   "text": "domain without privacy focus",
+   "assessed": 1259,
+   "excluded": 585,
+   "remaining": 674,
+   "percent": 46.5
+  },
+  {
+   "rule": "R5",
+   "text": "technical system without harms or communication",
+   "assessed": 674,
+   "excluded": 276,
+   "remaining": 398,
+   "percent": 40.9
+  },
+  {
+   "rule": "R6",
+   "text": "privacy text outside LQ3 and LQ4",
+   "assessed": 398,
+   "excluded": 106,
+   "remaining": 292,
+   "percent": 26.6
+  },
+  {
+   "rule": "R7",
+   "text": "full text not retrievable",
+   "assessed": 147,
+   "excluded": 0,
+   "remaining": 147,
+   "percent": 0.0
+  },
+  {
+   "rule": "R8",
+   "text": "fails C1 or C4 on full text",
+   "assessed": 147,
+   "excluded": 7,
+   "remaining": 140,
+   "percent": 4.8
+  }
+ ],
+ "included": 140,
+ "per_lq": {
+  "LQ1": 67,
+  "LQ2": 52,
+  "LQ3": 36,
+  "LQ4": 15
+ },
+ "pending": 145,
+ "pending_per_lq": {
+  "LQ1": 102,
+  "LQ2": 38,
+  "LQ3": 13,
+  "LQ4": 12
+ },
+ "contextual": 32,
+ "title_stage_passed": 292,
+ "fulltext_assessed": 147
+}

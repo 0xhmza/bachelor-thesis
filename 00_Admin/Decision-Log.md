@@ -24,7 +24,8 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | D10 | Walkthrough checklist and outputs | open | Meeting 10-13 | — |
 | D11 | Device scope (apps only) | proposed (10-23, in D3): companion apps eligible if the app records or displays tracking data; devices not analysed | Meeting 10-13 | [D03](Decisions/D03_scope-keywords-function.md) |
 | D12 | Basis of the harm tree ("best app") | open — needs supervisor | Meeting 10-13, wording ambiguous | — |
-| D13 | Literature search, filter and screening | proposed (10-26): staged procedure of Baumann et al. 2025 (App. A) on OpenAlex and Semantic Scholar, one query per review question, ≥ 3 citations per year, criteria I1–I4 / E1–E5 | Baumann 2025 App. A pp. 56–57; meeting 10-13 §3; API access test 10-26 | [D13](Decisions/D13_literature-review.md) |
+| D13 | Literature search, filter and screening | superseded by D14 (10-28); was: staged procedure of Baumann et al. 2025 (App. A) on OpenAlex and Semantic Scholar, ≥ 3 citations per year | Baumann 2025 App. A pp. 56–57; meeting 10-13 §3; API access test 10-26 | [D13](Decisions/D13_literature-review.md) |
+| D14 | Literature search, screening and reporting (v002) | proposed (10-28): supervisor's venues listed in full, PubMed / IEEE Xplore / arXiv / ACL Anthology searched with one query per sub-question LQ1–LQ4, citation searching from the four supervisor papers, every thesis citation and digest paper screened; criteria C1–C4, ordered rules R1–R8 with one primary reason; no citation filter; contextual collection for cited works outside the criteria | Baumann 2025 App. A; PRISMA 2020, PRISMA-S, PRISMA-ScR; meeting 10-13 §3; access tests 10-28 | [D14](Decisions/D14_literature-review-v2.md) |
 
 The reading that supports each decision is mapped in
 [`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)

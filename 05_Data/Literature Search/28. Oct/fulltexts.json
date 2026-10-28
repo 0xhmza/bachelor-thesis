@@ -1,0 +1,1309 @@
+{
+ "R0079": {
+  "tried": []
+ },
+ "R0083": {
+  "tried": []
+ },
+ "R0101": {
+  "tried": []
+ },
+ "R0105": {
+  "tried": []
+ },
+ "R0128": {
+  "tried": [
+   "OpenAlex OA location: https://orbilu.uni.lu/bitstream/10993/22093/1/CNS15.pdf -> ok"
+  ],
+  "file": "R0128.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://orbilu.uni.lu/bitstream/10993/22093/1/CNS15.pdf"
+ },
+ "R0136": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/1512.05616 -> ok"
+  ],
+  "file": "R0136.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/1512.05616"
+ },
+ "R0167": {
+  "tried": []
+ },
+ "R0192": {
+  "tried": []
+ },
+ "R0196": {
+  "tried": []
+ },
+ "R0197": {
+  "tried": []
+ },
+ "R0201": {
+  "tried": []
+ },
+ "R0216": {
+  "tried": []
+ },
+ "R0227": {
+  "tried": [
+   "usenix.org: https://www.usenix.org/system/files/conference/soups2016/soups2016-paper-gluck.pdf -> ok"
+  ],
+  "file": "R0227.pdf",
+  "source": "usenix.org",
+  "url": "https://www.usenix.org/system/files/conference/soups2016/soups2016-paper-gluck.pdf"
+ },
+ "R0228": {
+  "tried": []
+ },
+ "R0232": {
+  "tried": []
+ },
+ "R0233": {
+  "tried": []
+ },
+ "R0245": {
+  "tried": []
+ },
+ "R0247": {
+  "tried": []
+ },
+ "R0257": {
+  "tried": []
+ },
+ "R0262": {
+  "tried": [
+   "OpenAlex OA location: https://arxiv.org/pdf/1703.08455 -> ok"
+  ],
+  "file": "R0262.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://arxiv.org/pdf/1703.08455"
+ },
+ "R0263": {
+  "tried": []
+ },
+ "R0265": {
+  "tried": []
+ },
+ "R0270": {
+  "tried": []
+ },
+ "R0278": {
+  "tried": [
+   "OpenAlex OA location: http://www.escholarship.org/uc/item/52h8734r -> HTTP 403"
+  ]
+ },
+ "R0293": {
+  "tried": []
+ },
+ "R0311": {
+  "tried": [
+   "OpenAlex OA location: https://arxiv.org/pdf/1706.09165 -> ok"
+  ],
+  "file": "R0311.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://arxiv.org/pdf/1706.09165"
+ },
+ "R0314": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5666225/fullTextXML -> ok"
+  ],
+  "file": "R0314.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5666225/fullTextXML"
+ },
+ "R0321": {
+  "tried": []
+ },
+ "R0336": {
+  "tried": []
+ },
+ "R0337": {
+  "tried": [
+   "usenix.org: https://www.usenix.org/system/files/conference/soups2017/soups2017-samat-disclosure.pdf -> ok"
+  ],
+  "file": "R0337.pdf",
+  "source": "usenix.org",
+  "url": "https://www.usenix.org/system/files/conference/soups2017/soups2017-samat-disclosure.pdf"
+ },
+ "R0347": {
+  "tried": []
+ },
+ "R0360": {
+  "tried": []
+ },
+ "R0367": {
+  "tried": []
+ },
+ "R0376": {
+  "tried": []
+ },
+ "R0383": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5508111/fullTextXML -> ok"
+  ],
+  "file": "R0383.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5508111/fullTextXML"
+ },
+ "R0385": {
+  "tried": []
+ },
+ "R0388": {
+  "tried": []
+ },
+ "R0403": {
+  "tried": []
+ },
+ "R0405": {
+  "tried": []
+ },
+ "R0410": {
+  "tried": []
+ },
+ "R0411": {
+  "tried": []
+ },
+ "R0413": {
+  "tried": []
+ },
+ "R0437": {
+  "tried": []
+ },
+ "R0441": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6324329/fullTextXML -> ok"
+  ],
+  "file": "R0441.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6324329/fullTextXML"
+ },
+ "R0453": {
+  "tried": []
+ },
+ "R0463": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/1805.10393 -> ok"
+  ],
+  "file": "R0463.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/1805.10393"
+ },
+ "R0464": {
+  "tried": []
+ },
+ "R0467": {
+  "tried": [
+   "OpenAlex OA location: https://unsworks.unsw.edu.au/bitstreams/ede4c1ab-dd09-4852-b763-d4d36236b965/download -> ok"
+  ],
+  "file": "R0467.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://unsworks.unsw.edu.au/bitstreams/ede4c1ab-dd09-4852-b763-d4d36236b965/download"
+ },
+ "R0469": {
+  "tried": []
+ },
+ "R0475": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6347475/fullTextXML -> HTTP 500"
+  ]
+ },
+ "R0477": {
+  "tried": []
+ },
+ "R0486": {
+  "tried": []
+ },
+ "R0490": {
+  "tried": []
+ },
+ "R0491": {
+  "tried": [
+   "OpenAlex OA location: https://arxiv.org/pdf/1912.04836 -> ok"
+  ],
+  "file": "R0491.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://arxiv.org/pdf/1912.04836"
+ },
+ "R0497": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6090172/fullTextXML -> ok"
+  ],
+  "file": "R0497.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6090172/fullTextXML"
+ },
+ "R0510": {
+  "tried": [
+   "OpenAlex OA location: https://arxiv.org/pdf/1710.00217 -> ok"
+  ],
+  "file": "R0510.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://arxiv.org/pdf/1710.00217"
+ },
+ "R0520": {
+  "tried": []
+ },
+ "R0523": {
+  "tried": [
+   "OpenAlex OA location: https://ieeexplore.ieee.org/ielx7/8418581/8418583/08418644.pdf -> HTTP 502"
+  ]
+ },
+ "R0531": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3299815.3314468 -> HTTP 403"
+  ]
+ },
+ "R0539": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6651239/fullTextXML -> ok"
+  ],
+  "file": "R0539.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6651239/fullTextXML"
+ },
+ "R0567": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3317549.3319722 -> HTTP 403"
+  ]
+ },
+ "R0590": {
+  "tried": []
+ },
+ "R0600": {
+  "tried": [
+   "OpenAlex OA location: https://digitalcommons.newhaven.edu/electricalcomputerengineering-facpubs/94 -> text/html; charset=UTF-8"
+  ]
+ },
+ "R0611": {
+  "tried": [
+   "OpenAlex OA location: https://www.tandfonline.com/doi/pdf/10.1080/03085147.2019.1570707?needAccess=true -> HTTP 403"
+  ]
+ },
+ "R0617": {
+  "tried": []
+ },
+ "R0637": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6364205/fullTextXML -> ok"
+  ],
+  "file": "R0637.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6364205/fullTextXML"
+ },
+ "R0646": {
+  "tried": []
+ },
+ "R0660": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/1910.09041 -> ok"
+  ],
+  "file": "R0660.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/1910.09041"
+ },
+ "R0683": {
+  "tried": []
+ },
+ "R0688": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2008.05864 -> ok"
+  ],
+  "file": "R0688.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2008.05864"
+ },
+ "R0697": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7420637/fullTextXML -> ok"
+  ],
+  "file": "R0697.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7420637/fullTextXML"
+ },
+ "R0699": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8034868/fullTextXML -> HTTP 500"
+  ]
+ },
+ "R0702": {
+  "tried": []
+ },
+ "R0723": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7442507/fullTextXML -> ok"
+  ],
+  "file": "R0723.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7442507/fullTextXML"
+ },
+ "R0726": {
+  "tried": []
+ },
+ "R0747": {
+  "tried": [
+   "OpenAlex OA location: https://www.mdpi.com/2079-9292/9/9/1431/pdf?version=1599045541 -> HTTP 403"
+  ]
+ },
+ "R0754": {
+  "tried": []
+ },
+ "R0799": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7542416/fullTextXML -> ok"
+  ],
+  "file": "R0799.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7542416/fullTextXML"
+ },
+ "R0806": {
+  "tried": []
+ },
+ "R0810": {
+  "tried": []
+ },
+ "R0816": {
+  "tried": []
+ },
+ "R0826": {
+  "tried": []
+ },
+ "R0827": {
+  "tried": [
+   "OpenAlex OA location: https://digitalcommons.kennesaw.edu/undergradsymposiumksu/spring2020/presentations/78 -> text/html; charset=UTF-8"
+  ]
+ },
+ "R0828": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2006.12069 -> ok"
+  ],
+  "file": "R0828.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2006.12069"
+ },
+ "R0829": {
+  "tried": []
+ },
+ "R0830": {
+  "tried": []
+ },
+ "R0837": {
+  "tried": []
+ },
+ "R0856": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2003.13922 -> ok"
+  ],
+  "file": "R0856.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2003.13922"
+ },
+ "R0858": {
+  "tried": []
+ },
+ "R0866": {
+  "tried": [
+   "OpenAlex OA location: http://hdl.handle.net/11603/19725 -> HTTP 400"
+  ]
+ },
+ "R0889": {
+  "tried": []
+ },
+ "R0893": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7840294/fullTextXML -> ok"
+  ],
+  "file": "R0893.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7840294/fullTextXML"
+ },
+ "R0895": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3494960 -> HTTP 403",
+   "OpenAlex OA location: https://iris.unil.ch/bitstreams/dbde49cd-c36b-445e-8707-c694fea0681e/download -> ok"
+  ],
+  "file": "R0895.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://iris.unil.ch/bitstreams/dbde49cd-c36b-445e-8707-c694fea0681e/download"
+ },
+ "R0905": {
+  "tried": [
+   "OpenAlex OA location: https://policyreview.info/pdf/policyreview-2021-4-1599.pdf -> ok"
+  ],
+  "file": "R0905.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://policyreview.info/pdf/policyreview-2021-4-1599.pdf"
+ },
+ "R0912": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3411764.3445132 -> HTTP 403"
+  ]
+ },
+ "R0940": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2107.13754 -> ok"
+  ],
+  "file": "R0940.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2107.13754"
+ },
+ "R0950": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2105.11172 -> ok"
+  ],
+  "file": "R0950.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2105.11172"
+ },
+ "R0955": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2109.13816 -> ok"
+  ],
+  "file": "R0955.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2109.13816"
+ },
+ "R0956": {
+  "tried": [
+   "OpenAlex OA location: http://scholarspace.manoa.hawaii.edu/bitstream/10125/71085/1/0381.pdf -> URLError",
+   "OpenAlex OA location: https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1347&amp;amp;context=hicss-54 -> HTTP 403"
+  ]
+ },
+ "R0966": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614476/fullTextXML -> ok"
+  ],
+  "file": "R0966.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7614476/fullTextXML"
+ },
+ "R0969": {
+  "tried": [
+   "OpenAlex OA location: https://zenodo.org/record/8020011 -> text/html; charset=utf-8"
+  ]
+ },
+ "R0996": {
+  "tried": [
+   "OpenAlex OA location: https://journals.library.columbia.edu/index.php/cjgl/article/download/8824/4562 -> HTTP 404"
+  ]
+ },
+ "R0997": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2106.11900 -> ok"
+  ],
+  "file": "R0997.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2106.11900"
+ },
+ "R1008": {
+  "tried": []
+ },
+ "R1011": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7878107/fullTextXML -> ok"
+  ],
+  "file": "R1011.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7878107/fullTextXML"
+ },
+ "R1015": {
+  "tried": []
+ },
+ "R1021": {
+  "tried": [
+   "OpenAlex OA location: https://www.sciencedirect.com/science/article/pii/S1574119221001127/pdf -> HTTP 403"
+  ]
+ },
+ "R1050": {
+  "tried": []
+ },
+ "R1051": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8350589/fullTextXML -> ok"
+  ],
+  "file": "R1051.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8350589/fullTextXML"
+ },
+ "R1054": {
+  "tried": []
+ },
+ "R1081": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9988376/fullTextXML -> HTTP 500"
+  ]
+ },
+ "R1102": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10194177/fullTextXML -> ok"
+  ],
+  "file": "R1102.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10194177/fullTextXML"
+ },
+ "R1105": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2211.07585 -> ok"
+  ],
+  "file": "R1105.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2211.07585"
+ },
+ "R1132": {
+  "tried": [
+   "OpenAlex OA location: https://tches.iacr.org/index.php/TCHES/article/download/9704/9234 -> ok"
+  ],
+  "file": "R1132.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://tches.iacr.org/index.php/TCHES/article/download/9704/9234"
+ },
+ "R1193": {
+  "tried": []
+ },
+ "R1201": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2210.15529 -> ok"
+  ],
+  "file": "R1201.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2210.15529"
+ },
+ "R1209": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2206.10728 -> ok"
+  ],
+  "file": "R1209.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2206.10728"
+ },
+ "R1221": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8839540/fullTextXML -> ok"
+  ],
+  "file": "R1221.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8839540/fullTextXML"
+ },
+ "R1234": {
+  "tried": []
+ },
+ "R1238": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3551349.3561343 -> HTTP 403"
+  ]
+ },
+ "R1255": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8805452/fullTextXML -> ok"
+  ],
+  "file": "R1255.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8805452/fullTextXML"
+ },
+ "R1268": {
+  "tried": []
+ },
+ "R1299": {
+  "tried": []
+ },
+ "R1300": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3549015.3554204 -> HTTP 403"
+  ]
+ },
+ "R1305": {
+  "tried": []
+ },
+ "R1315": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10878744/fullTextXML -> ok"
+  ],
+  "file": "R1315.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10878744/fullTextXML"
+ },
+ "R1332": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10011839/fullTextXML -> ok"
+  ],
+  "file": "R1332.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10011839/fullTextXML"
+ },
+ "R1357": {
+  "tried": []
+ },
+ "R1370": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10040444/fullTextXML -> HTTP 500",
+   "OpenAlex OA location: https://pmc.ncbi.nlm.nih.gov/articles/PMC10040444/pdf/nihms-1883636.pdf -> text/html; charset=utf-8"
+  ]
+ },
+ "R1383": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9843666/fullTextXML -> ok"
+  ],
+  "file": "R1383.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9843666/fullTextXML"
+ },
+ "R1384": {
+  "tried": [
+   "OpenAlex OA location: https://mdsoar.org/bitstreams/cebefa47-c583-429e-aac4-a58efeb0c6be/download -> HTTP 400"
+  ]
+ },
+ "R1407": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3589960 -> HTTP 403"
+  ]
+ },
+ "R1408": {
+  "tried": []
+ },
+ "R1431": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2306.05956 -> ok"
+  ],
+  "file": "R1431.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2306.05956"
+ },
+ "R1451": {
+  "tried": []
+ },
+ "R1455": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9869200/fullTextXML -> ok"
+  ],
+  "file": "R1455.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9869200/fullTextXML"
+ },
+ "R1470": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2308.08310 -> ok"
+  ],
+  "file": "R1470.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2308.08310"
+ },
+ "R1482": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10347671/fullTextXML -> ok"
+  ],
+  "file": "R1482.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10347671/fullTextXML"
+ },
+ "R1495": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11581184/fullTextXML -> HTTP 500",
+   "OpenAlex OA location: https://pmc.ncbi.nlm.nih.gov/articles/PMC11581184/pdf/nihms-1992781.pdf -> text/html; charset=utf-8"
+  ]
+ },
+ "R1504": {
+  "tried": []
+ },
+ "R1506": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2310.14490 -> ok"
+  ],
+  "file": "R1506.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2310.14490"
+ },
+ "R1508": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2308.04933 -> ok"
+  ],
+  "file": "R1508.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2308.04933"
+ },
+ "R1509": {
+  "tried": []
+ },
+ "R1516": {
+  "tried": []
+ },
+ "R1521": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2405.17971 -> ok"
+  ],
+  "file": "R1521.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2405.17971"
+ },
+ "R1528": {
+  "tried": []
+ },
+ "R1560": {
+  "tried": [
+   "OpenAlex OA location: https://annals-csis.org/Volume_39/drp/pdf/3979.pdf -> URLError",
+   "OpenAlex OA location: https://researchonline.lse.ac.uk/id/eprint/126674/3/3979.pdf -> ok"
+  ],
+  "file": "R1560.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://researchonline.lse.ac.uk/id/eprint/126674/3/3979.pdf"
+ },
+ "R1562": {
+  "tried": [
+   "OpenAlex OA location: https://ieeexplore.ieee.org/ielx7/47/10472708/10472565.pdf -> HTTP 502",
+   "OpenAlex OA location: https://www.weizenbaum-library.de/bitstreams/e87f560d-537c-4802-a5f1-1d36879661fd/download -> text/html"
+  ]
+ },
+ "R1567": {
+  "tried": [
+   "OpenAlex OA location: https://link.springer.com/content/pdf/10.1007/s10207-024-00883-3.pdf -> text/html; charset=utf-8",
+   "OpenAlex OA location: https://www.researchsquare.com/article/rs-3877210/latest.pdf -> HTTP 404"
+  ]
+ },
+ "R1571": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2410.13387 -> ok"
+  ],
+  "file": "R1571.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2410.13387"
+ },
+ "R1573": {
+  "tried": []
+ },
+ "R1583": {
+  "tried": []
+ },
+ "R1590": {
+  "tried": []
+ },
+ "R1605": {
+  "tried": []
+ },
+ "R1608": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2408.10228 -> ok"
+  ],
+  "file": "R1608.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2408.10228"
+ },
+ "R1619": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2410.11906 -> ok"
+  ],
+  "file": "R1619.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2410.11906"
+ },
+ "R1620": {
+  "tried": []
+ },
+ "R1626": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2409.16621 -> ok"
+  ],
+  "file": "R1626.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2409.16621"
+ },
+ "R1648": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11586532/fullTextXML -> ok"
+  ],
+  "file": "R1648.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11586532/fullTextXML"
+ },
+ "R1661": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2409.02375 -> ok"
+  ],
+  "file": "R1661.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2409.02375"
+ },
+ "R1671": {
+  "tried": []
+ },
+ "R1674": {
+  "tried": []
+ },
+ "R1707": {
+  "tried": []
+ },
+ "R1711": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11179037/fullTextXML -> ok"
+  ],
+  "file": "R1711.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11179037/fullTextXML"
+ },
+ "R1717": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2408.14830 -> ok"
+  ],
+  "file": "R1717.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2408.14830"
+ },
+ "R1728": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2405.10979 -> ok"
+  ],
+  "file": "R1728.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2405.10979"
+ },
+ "R1729": {
+  "tried": []
+ },
+ "R1730": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2404.19744 -> ok"
+  ],
+  "file": "R1730.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2404.19744"
+ },
+ "R1753": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2409.18528 -> ok"
+  ],
+  "file": "R1753.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2409.18528"
+ },
+ "R1754": {
+  "tried": []
+ },
+ "R1759": {
+  "tried": [
+   "OpenAlex OA location: https://hal.science/hal-04668582v1/document -> ok"
+  ],
+  "file": "R1759.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://hal.science/hal-04668582v1/document"
+ },
+ "R1762": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3613904.3642705 -> HTTP 403"
+  ]
+ },
+ "R1765": {
+  "tried": []
+ },
+ "R1769": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2501.19223 -> ok"
+  ],
+  "file": "R1769.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2501.19223"
+ },
+ "R1770": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2410.00277 -> ok"
+  ],
+  "file": "R1770.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2410.00277"
+ },
+ "R1785": {
+  "tried": []
+ },
+ "R1793": {
+  "tried": []
+ },
+ "R1812": {
+  "tried": []
+ },
+ "R1817": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2506.02998 -> ok"
+  ],
+  "file": "R1817.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2506.02998"
+ },
+ "R1825": {
+  "tried": []
+ },
+ "R1861": {
+  "tried": []
+ },
+ "R1873": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2509.01716 -> ok"
+  ],
+  "file": "R1873.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2509.01716"
+ },
+ "R1892": {
+  "tried": [
+   "OpenAlex OA location: https://r-libre.teluq.ca/3808/1/Bouayed2025.pdf -> ok"
+  ],
+  "file": "R1892.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://r-libre.teluq.ca/3808/1/Bouayed2025.pdf"
+ },
+ "R1953": {
+  "tried": []
+ },
+ "R1965": {
+  "tried": []
+ },
+ "R2011": {
+  "tried": []
+ },
+ "R2018": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12451934/fullTextXML -> HTTP 500"
+  ]
+ },
+ "R2027": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11923453/fullTextXML -> ok"
+  ],
+  "file": "R2027.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11923453/fullTextXML"
+ },
+ "R2064": {
+  "tried": [
+   "OpenAlex OA location: https://doi.org/10.36740/merkur202506120 -> ok"
+  ],
+  "file": "R2064.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://doi.org/10.36740/merkur202506120"
+ },
+ "R2079": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2501.16033 -> ok"
+  ],
+  "file": "R2079.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2501.16033"
+ },
+ "R2081": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3706598.3713702 -> HTTP 403"
+  ]
+ },
+ "R2088": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2505.11502 -> ok"
+  ],
+  "file": "R2088.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2505.11502"
+ },
+ "R2091": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3706598.3713941 -> HTTP 403"
+  ]
+ },
+ "R2093": {
+  "tried": [
+   "OpenAlex OA location: https://www.tandfonline.com/doi/pdf/10.1080/1177083X.2025.2508258?needAccess=true -> HTTP 403"
+  ]
+ },
+ "R2114": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3757488 -> HTTP 403"
+  ]
+ },
+ "R2129": {
+  "tried": []
+ },
+ "R2134": {
+  "tried": []
+ },
+ "R2147": {
+  "tried": []
+ },
+ "R2162": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2511.12377 -> ok"
+  ],
+  "file": "R2162.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2511.12377"
+ },
+ "R2168": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2510.05860 -> ok"
+  ],
+  "file": "R2168.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2510.05860"
+ },
+ "R2169": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2505.05214 -> ok"
+  ],
+  "file": "R2169.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2505.05214"
+ },
+ "R2187": {
+  "tried": []
+ },
+ "R2233": {
+  "tried": []
+ },
+ "R2263": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3715275.3732154 -> HTTP 403"
+  ]
+ },
+ "R2269": {
+  "tried": []
+ },
+ "R2304": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2505.11672 -> ok"
+  ],
+  "file": "R2304.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2505.11672"
+ },
+ "R2307": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2510.22531 -> ok"
+  ],
+  "file": "R2307.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2510.22531"
+ },
+ "R2314": {
+  "tried": []
+ },
+ "R2330": {
+  "tried": []
+ },
+ "R2335": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2502.02749 -> ok"
+  ],
+  "file": "R2335.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2502.02749"
+ },
+ "R2342": {
+  "tried": []
+ },
+ "R2349": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2507.07210 -> ok"
+  ],
+  "file": "R2349.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2507.07210"
+ },
+ "R2355": {
+  "tried": [
+   "OpenAlex OA location: https://dl.acm.org/doi/pdf/10.1145/3701716.3715287 -> HTTP 403"
+  ]
+ },
+ "R2358": {
+  "tried": []
+ },
+ "R2365": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2510.06015 -> ok"
+  ],
+  "file": "R2365.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2510.06015"
+ },
+ "R2495": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2610.23851 -> ok"
+  ],
+  "file": "R2495.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2610.23851"
+ },
+ "R2510": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13498789/fullTextXML -> ok"
+  ],
+  "file": "R2510.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13498789/fullTextXML"
+ },
+ "R2525": {
+  "tried": []
+ },
+ "R2547": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13667700/fullTextXML -> ok"
+  ],
+  "file": "R2547.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13667700/fullTextXML"
+ },
+ "R2604": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2607.18424 -> ok"
+  ],
+  "file": "R2604.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2607.18424"
+ },
+ "R2617": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2602.18616 -> ok"
+  ],
+  "file": "R2617.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2602.18616"
+ },
+ "R2619": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2606.26276 -> ok"
+  ],
+  "file": "R2619.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2606.26276"
+ },
+ "R2621": {
+  "tried": [
+   "OpenAlex OA location: https://kar.kent.ac.uk/111721/1/White%20et%20al%20%282025%29.pdf -> ok"
+  ],
+  "file": "R2621.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://kar.kent.ac.uk/111721/1/White%20et%20al%20%282025%29.pdf"
+ },
+ "R2646": {
+  "tried": []
+ },
+ "R2668": {
+  "tried": [
+   "PoPETs: https://petsymposium.org/popets/2026/popets-2026-0060.pdf -> ok"
+  ],
+  "file": "R2668.pdf",
+  "source": "PoPETs",
+  "url": "https://petsymposium.org/popets/2026/popets-2026-0060.pdf"
+ },
+ "R2693": {
+  "tried": []
+ },
+ "R2694": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2601.20792 -> ok"
+  ],
+  "file": "R2694.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2601.20792"
+ },
+ "R2697": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2601.10413 -> ok"
+  ],
+  "file": "R2697.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2601.10413"
+ },
+ "R2718": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12898987/fullTextXML -> ok"
+  ],
+  "file": "R2718.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12898987/fullTextXML"
+ },
+ "R2731": {
+  "tried": [
+   "OpenAlex OA location: https://ueaeprints.uea.ac.uk/id/eprint/104587/1/Multi-AI_Agent.pdf -> ok"
+  ],
+  "file": "R2731.pdf",
+  "source": "OpenAlex OA location",
+  "url": "https://ueaeprints.uea.ac.uk/id/eprint/104587/1/Multi-AI_Agent.pdf"
+ },
+ "R2792": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13533825/fullTextXML -> ok"
+  ],
+  "file": "R2792.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13533825/fullTextXML"
+ },
+ "R2793": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12893645/fullTextXML -> ok"
+  ],
+  "file": "R2793.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12893645/fullTextXML"
+ },
+ "R2814": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2609.09697 -> ok"
+  ],
+  "file": "R2814.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2609.09697"
+ },
+ "R2815": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2603.09214 -> ok"
+  ],
+  "file": "R2815.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2603.09214"
+ },
+ "R2816": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2605.02005 -> ok"
+  ],
+  "file": "R2816.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2605.02005"
+ },
+ "R2819": {
+  "tried": []
+ },
+ "R2828": {
+  "tried": [
+   "Europe PMC: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13282400/fullTextXML -> ok"
+  ],
+  "file": "R2828.xml",
+  "source": "Europe PMC",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13282400/fullTextXML"
+ },
+ "R2883": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2601.06357 -> ok"
+  ],
+  "file": "R2883.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2601.06357"
+ },
+ "R2887": {
+  "tried": [
+   "arXiv: https://arxiv.org/pdf/2608.12511 -> ok"
+  ],
+  "file": "R2887.pdf",
+  "source": "arXiv",
+  "url": "https://arxiv.org/pdf/2608.12511"
+ },
+ "R2906": {
+  "tried": []
+ },
+ "R2956": {
+  "tried": [
+   "OpenAlex OA location: https://scholarsphere.psu.edu/resources/065fb190-2515-4dad-9ff9-03d583850999/downloads/49172 -> text/html; charset=utf-8"
+  ]
+ },
+ "R2959": {
+  "tried": []
+ },
+ "R2972": {
+  "tried": []
+ },
+ "R2975": {
+  "tried": []
+ }
+}

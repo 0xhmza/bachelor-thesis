@@ -1,0 +1,99 @@
+{
+ "hits": 3228,
+ "provenance_hits": 159,
+ "records": 2980,
+ "records_from_searches": 2395,
+ "cited_keys": 43,
+ "per_source": {
+  "PubMed": {
+   "hits": 987,
+   "records": 911,
+   "in_merged": 911,
+   "only_here": 850
+  },
+  "IEEE Xplore": {
+   "hits": 1297,
+   "records": 1240,
+   "in_merged": 1240,
+   "only_here": 1154
+  },
+  "arXiv": {
+   "hits": 278,
+   "records": 253,
+   "in_merged": 253,
+   "only_here": 173
+  },
+  "ACL Anthology": {
+   "hits": 18,
+   "records": 17,
+   "in_merged": 17,
+   "only_here": 8
+  },
+  "PoPETs": {
+   "hits": 28,
+   "records": 27,
+   "in_merged": 27,
+   "only_here": 12
+  },
+  "USENIX Security": {
+   "hits": 21,
+   "records": 20,
+   "in_merged": 20,
+   "only_here": 16
+  },
+  "SOUPS": {
+   "hits": 10,
+   "records": 9,
+   "in_merged": 9,
+   "only_here": 9
+  },
+  "CCS": {
+   "hits": 3,
+   "records": 3,
+   "in_merged": 3,
+   "only_here": 3
+  },
+  "IEEE S&P": {
+   "hits": 2,
+   "records": 2,
+   "in_merged": 2,
+   "only_here": 0
+  },
+  "NDSS": {
+   "hits": 1,
+   "records": 1,
+   "in_merged": 1,
+   "only_here": 1
+  },
+  "CHI": {
+   "hits": 19,
+   "records": 17,
+   "in_merged": 17,
+   "only_here": 7
+  },
+  "CSCW": {
+   "hits": 8,
+   "records": 6,
+   "in_merged": 6,
+   "only_here": 4
+  },
+  "Citation searching": {
+   "hits": 556,
+   "records": 525,
+   "in_merged": 525,
+   "only_here": 483
+  },
+  "Thesis citation": {
+   "hits": 43,
+   "records": 43,
+   "in_merged": 43,
+   "only_here": 12
+  },
+  "Methods Digest": {
+   "hits": 116,
+   "records": 116,
+   "in_merged": 116,
+   "only_here": 64
+  }
+ }
+}

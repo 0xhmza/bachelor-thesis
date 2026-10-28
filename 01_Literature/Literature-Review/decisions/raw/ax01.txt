@@ -1,0 +1,200 @@
+1 R3
+2 R1
+3 ft:LQ1
+4 R3
+5 R1
+6 R3
+7 R3
+8 R4
+9 R6 pre-LLM policy annotation
+10 R3
+11 ft:LQ4
+12 ft:LQ4
+13 R5
+14 R3
+15 R5
+16 ft:LQ1
+17 R6 policy corpus
+18 R6 semantic role labelling
+19 R1
+20 R5
+21 R3
+22 R5
+23 R1
+24 R6 deep active learning
+25 R6 notice-design experiment
+26 R4
+27 R5
+28 ft:LQ1;LQ2 symptom-checker apps
+29 R4
+30 ft:LQ1
+31 ft:LQ4 clarity of disclosures
+32 ft:LQ1
+33 R3
+34 R3
+35 R3
+36 ft:LQ1
+37 R3
+38 R3
+39 R6 tracking transparency and labels
+40 R3
+41 R6 label compliance
+42 ft:LQ1
+43 R4
+44 R4
+45 R6 policy knowledge graphs without language models
+46 R4
+47 R5
+48 R5
+49 R3
+50 R5
+51 R3
+52 ft:LQ3
+53 R1
+54 R4
+55 R3
+56 R6 label usability
+57 ft:LQ3
+58 R3
+59 R4
+60 ft:LQ1 risk perceptions of femtech users
+61 ft:LQ3
+62 R3
+63 R3
+64 ft:LQ1
+65 R3
+66 R4
+67 ft:LQ1;LQ2
+68 ft:LQ1
+69 R1
+70 R3
+71 R6 labels for generative-AI apps
+72 R3
+73 R3
+74 R6 SDK compliance
+75 ft:LQ3 check evaluation
+76 R3
+77 ft:LQ3
+78 R3
+79 R3
+80 R3
+81 R3
+82 R6 terms of generative-AI tools
+83 R3
+84 R3
+85 R4
+86 ft:LQ3
+87 ft:LQ3
+88 R6 policy generation
+89 ft:LQ3
+90 R4
+91 ft:LQ3 check use of language models
+92 ft:LQ1;LQ2
+93 ft:LQ3
+94 ft:LQ1
+95 ft:LQ3
+96 R6 access-right compliance
+97 R4
+98 R3
+99 ft:LQ1
+100 ft:LQ1
+101 R4
+102 R6 web forms
+103 R3
+104 R6 evolution of LLM developers policies
+105 ft:LQ3
+106 R4
+107 ft:LQ3
+108 R6 auditing agents
+109 R3
+110 R4
+111 R3
+112 R4
+113 R4
+114 R5
+115 R6 policy generation
+116 R1
+117 R1
+118 R5
+119 ft:LQ3
+120 R3
+121 R3
+122 R1
+123 ft:LQ1;LQ2 mHealth chatbots
+124 ft:LQ3 check use of language models
+125 ft:LQ2 smartwatch policies
+126 R5
+127 R6 privacy-norm benchmark
+128 R5
+129 R3
+130 R5
+131 R3
+132 R3
+133 ft:LQ3
+134 R6 reading interface
+135 ft:LQ3
+136 ft:LQ1;LQ2
+137 R6 policies of LLM developers
+138 ft:LQ3
+139 R4
+140 R4
+141 ft:LQ1
+142 R4
+143 R3
+144 R3
+145 ft:LQ3
+146 ft:LQ3
+147 R6 review of policy visualisation
+148 ft:LQ3
+149 R3
+150 R1
+151 R3
+152 R6 summarisation corpus
+153 R4
+154 R6 caption generation
+155 ft:LQ1;LQ2
+156 R4
+157 R5
+158 R3
+159 R3
+160 ft:LQ3
+161 R3
+162 R6 consent-flow experiment
+163 ft:LQ3 check use of language models
+164 R3
+165 R3
+166 R6 policy-log consistency
+167 R1
+168 R4
+169 ft:LQ3
+170 R3
+171 R4
+172 ft:LQ1;LQ2
+173 R4
+174 R3
+175 R3
+176 R3
+177 ft:LQ4 organisation of policies hides disclosures
+178 ft:LQ3
+179 R3
+180 R3
+181 R3
+182 R5
+183 R6 compliance dataset
+184 R4
+185 R4
+186 ft:LQ3
+187 R3
+188 R3
+189 R5
+190 R3
+191 ft:LQ3;LQ4
+192 ft:LQ3 check use of language models
+193 ft:LQ3
+194 ft:LQ3
+195 R6 LLM terms
+196 ft:LQ3;LQ4
+197 ft:LQ3;LQ4 systematisation of privacy-document research
+198 R3
+199 R3
+200 R3

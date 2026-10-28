@@ -1,0 +1,153 @@
+{
+ "platform": "venue enumeration",
+ "searched_at": "2026-10-28 15:10 UTC",
+ "venues": {
+  "PoPETs": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "issn:2299-0984"
+   ],
+   "papers": 1160,
+   "with_abstract": 1113,
+   "matched": 27
+  },
+  "USENIX Security": {
+   "platform": "usenix.org",
+   "containers_or_pages": [
+    "https://www.usenix.org/conference/usenixsecurity14/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity15/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity16/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity17/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity18/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity19/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity20/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity21/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity22/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity23/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity24/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity25/technical-sessions",
+    "https://www.usenix.org/conference/usenixsecurity26/technical-sessions"
+   ],
+   "papers": 2900,
+   "with_abstract": 2893,
+   "matched": 20
+  },
+  "SOUPS": {
+   "platform": "usenix.org",
+   "containers_or_pages": [
+    "https://www.usenix.org/conference/soups2014/technical-sessions",
+    "https://www.usenix.org/conference/soups2016/technical-sessions",
+    "https://www.usenix.org/conference/soups2017/technical-sessions",
+    "https://www.usenix.org/conference/soups2018/technical-sessions",
+    "https://www.usenix.org/conference/soups2019/technical-sessions",
+    "https://www.usenix.org/conference/soups2020/technical-sessions",
+    "https://www.usenix.org/conference/soups2021/technical-sessions",
+    "https://www.usenix.org/conference/soups2022/technical-sessions",
+    "https://www.usenix.org/conference/soups2023/technical-sessions",
+    "https://www.usenix.org/conference/soups2024/technical-sessions",
+    "https://www.usenix.org/conference/soups2025/technical-sessions"
+   ],
+   "papers": 372,
+   "with_abstract": 334,
+   "matched": 9
+  },
+  "CCS": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security  - CCS '18",
+    "Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security",
+    "Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security"
+   ],
+   "papers": 3061,
+   "with_abstract": 0,
+   "matched": 3
+  },
+  "IEEE S&P": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "2014 IEEE Symposium on Security and Privacy",
+    "2015 IEEE Symposium on Security and Privacy",
+    "2016 IEEE Symposium on Security and Privacy (SP)",
+    "2017 IEEE Symposium on Security and Privacy (SP)",
+    "2018 IEEE Symposium on Security and Privacy (SP)",
+    "2019 IEEE Symposium on Security and Privacy (SP)",
+    "2020 IEEE Symposium on Security and Privacy (SP)",
+    "2021 IEEE Symposium on Security and Privacy (SP)",
+    "2022 IEEE Symposium on Security and Privacy (SP)",
+    "2023 IEEE Symposium on Security and Privacy (SP)",
+    "2024 IEEE Symposium on Security and Privacy (SP)",
+    "2025 IEEE Symposium on Security and Privacy (SP)",
+    "2026 IEEE Symposium on Security and Privacy (SP)"
+   ],
+   "papers": 1818,
+   "with_abstract": 0,
+   "matched": 2
+  },
+  "NDSS": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "Proceedings 2014 Network and Distributed System Security Symposium",
+    "Proceedings 2015 Network and Distributed System Security Symposium",
+    "Proceedings 2016 Network and Distributed System Security Symposium",
+    "Proceedings 2017 Network and Distributed System Security Symposium",
+    "Proceedings 2018 Network and Distributed System Security Symposium",
+    "Proceedings 2019 Network and Distributed System Security Symposium",
+    "Proceedings 2020 Network and Distributed System Security Symposium",
+    "Proceedings 2021 Network and Distributed System Security Symposium",
+    "Proceedings 2022 Network and Distributed System Security Symposium",
+    "Proceedings 2023 Network and Distributed System Security Symposium",
+    "Proceedings 2024 Network and Distributed System Security Symposium",
+    "Proceedings 2025 Network and Distributed System Security Symposium",
+    "Proceedings 2026 Network and Distributed System Security Symposium"
+   ],
+   "papers": 1361,
+   "with_abstract": 0,
+   "matched": 1
+  },
+  "CHI": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems",
+    "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+    "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+   ],
+   "papers": 10718,
+   "with_abstract": 0,
+   "matched": 17
+  },
+  "CSCW": {
+   "platform": "Crossref",
+   "containers_or_pages": [
+    "Proceedings of the 17th ACM conference on Computer supported cooperative work &amp; social computing",
+    "Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work &amp; Social Computing",
+    "Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work &amp; Social Computing",
+    "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing",
+    "issn:2573-0142 issue CSCW*"
+   ],
+   "papers": 3806,
+   "with_abstract": 3102,
+   "matched": 6
+  }
+ }
+}

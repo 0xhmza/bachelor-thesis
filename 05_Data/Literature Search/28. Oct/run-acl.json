@@ -1,0 +1,29 @@
+{
+ "platform": "ACL Anthology",
+ "searched_at": "2026-10-28 14:47 UTC",
+ "field": "title and abstract (local Boolean)",
+ "file": "https://aclanthology.org/anthology+abstracts.bib.gz",
+ "queries": {
+  "S1": {
+   "query": "D AND P AND H",
+   "from": "2014-01-01",
+   "count": 1
+  },
+  "S2": {
+   "query": "D AND P AND C",
+   "from": "2014-01-01",
+   "count": 0
+  },
+  "S3": {
+   "query": "T AND L AND A",
+   "from": "2022-01-01",
+   "count": 14
+  },
+  "S4": {
+   "query": "T AND F",
+   "from": "2014-01-01",
+   "count": 3
+  }
+ },
+ "entries": 135780
+}

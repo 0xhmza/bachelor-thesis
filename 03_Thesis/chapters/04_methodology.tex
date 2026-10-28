@@ -25,195 +25,282 @@ pages}\todo{Not sure if the providers pages will be collected.} will be collecte
 
 \section{Literature Review}
 \label{sec:lit-review}
-\todo[inline]{Inspired from the paper: Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation, cited [5]}
-Adding to understanding the related research on the matter, the literature review
-supplies the capabilities and harms from which the reference harm trees are
-built. It provides also the evidence for the methodological decisions of this
-chapter. The review consists of the following the procedure:
-fixed queries, the removal of duplicates and of rarely cited works, the
-screening of titles and abstracts against explicit criteria, and the extraction
-of fixed fields from the included works ~\parencite[App.~A, pp.~56--57]{baumann2025llm}. Afterwards, capabilities are collected to build the harm tree.
-\todo[color=green, inline]{done!}
+\todo[inline]{Rewritten on 28 October 2026 (Decision D14, which supersedes D13): the search no longer rests on OpenAlex and Semantic Scholar. Check the procedure, and the screening log in 01\_Literature/\allowbreak Literature-Review/, before the supervisor sees it.}
+The literature review has three tasks in this study. It collects the harms and
+capabilities from which the reference harm trees are built, it supplies the
+evidence for the methodological decisions of this chapter, and it tests the
+research gap stated in Section~\ref{ch:introduction}. Its procedure follows the
+staged review of Baumann et al.~\parencite[App.~A, pp.~56--57]{baumann2025llm}:
+fixed Boolean queries built from term groups, the exact string and hit count
+reported for every source, works added by hand reported as a source of their
+own, removal of duplicates, screening against explicit criteria and the
+extraction of fixed fields. Table~\ref{tab:lit-adaptation} lists which of their
+choices are kept and which are changed. The search and the screening are reported
+with the items of PRISMA~2020 and its search extension
+PRISMA-S~\parencite{page2021prisma,rethlefsen2021prisma}. Because the review
+maps evidence rather than pooling effects, it is a scoping
+review in the sense of Arksey and O'Malley~\parencite{arksey2005scoping}.
 
-\paragraph{Review questions.} Four questions guide the search, one for each part
-of the study. (1)~Which privacy harms and capabilities have been documented for
-health trackers, including wearables, starting from
-general taxonomies of privacy harm~\parencite{solove2006taxonomy,calo2011boundaries}?
-(2)~How have earlier studies sampled apps and analysed their privacy
-communication, and with which material, coding scheme and agreement measure,
-starting from work on policy analysis~\parencite{wilson2016creation,zimmeck2019maps}?
-(3)~How have large language
-models been used to annotate privacy policies, and how were they validated?
-(4)~How do providers word risk and protection in policies and notices?
-\todo{questions may be extended as the thesis evolves}
+\paragraph{Review question.} The review asks one question, derived from the RQ
+and the supervisor's statement of the gap, \enquote{what harms service providers
+communicate}: \emph{What is known about the privacy harms and capabilities
+associated with health tracking apps, about how their privacy communication has
+been analysed and what it says, about how language models have been used and
+validated for coding privacy text, and about how privacy texts frame risk and
+protection?} It has four sub-questions, each tied to a part of this study.
+\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,labelindent=0pt,font=\normalfont\bfseries]
+  \item[LQ1] \textit{Harms and capabilities.} Which privacy harms, risks, threats
+    and inference capabilities concern the users of health tracking apps and
+    their wearables? It supplies the nodes of the harm trees and the reference
+    model of RQ1 and RQ3, and starts from general accounts of privacy
+    harm~\parencite{solove2006taxonomy,calo2011boundaries,citron2021harms}.
+  \item[LQ2] \textit{Communication.} How has the privacy communication of health
+    tracking apps (policies, labels, store listings, notices, settings and
+    consent interfaces, marketing) been analysed, and what was found? It informs
+    the sampling, material and coding decisions and tests the gap for RQ1--RQ4;
+    work on the large-scale analysis of policies is its methodological
+    background~\parencite{wilson2016creation,zimmeck2019maps}.
+  \item[LQ3] \textit{Language models.} How have large language models been used
+    to annotate, classify, extract from or assess privacy text, and how were
+    they validated? It informs the LLM-assisted coding.
+  \item[LQ4] \textit{Framing.} How do privacy texts in any domain word or present
+    risks, harms and protections, for example through vagueness, hedging,
+    reassurance or misleading claims? It informs the stance and protection axes
+    (RQ2, RQ3).
+\end{description}
 
-\paragraph{Stage 0: database search.} The search covers the titles and abstracts
-in two open bibliographic databases, OpenAlex~\parencite{priem2022openalex} and
-Semantic Scholar~\parencite{kinney2023semantic}.
-\todo[inline, color=red]{redo the rest of the literature review, ditching OpenAlex and Sematic Scholar, use traditional platforms.}
-% Both index the main venues of
-%privacy, security and human--computer interaction research (PoPETs, CCS, USENIX
-%Security, IEEE Security and Privacy, CHI and CSCW), the ACM Digital Library, the
-%ACL Anthology and arXiv. Baumann et al.\ also searched Scopus, Web of Science and
-%Google Scholar. The first two require institutional access to their interfaces,
-%and Google Scholar offers no interface for automated queries, so a search in
-%them could not be repeated from the project's scripts. Each review question has
-%one query, which joins groups of terms with AND and the alternatives within a
-%group with OR (Table~\ref{tab:lit-queries}). The domain group, shared by the
-%first two queries, names health and fitness apps, fitness trackers, wearables,
-%menstrual, fertility and mental-health apps, and femtech. The search period runs
-%from 1~January 2014 to the day of the search. The query on language models
-%starts on 1~January 2022, as in Baumann et al., because annotation with large
-%language models begins then. A script runs the queries and records every hit,
-%and the collection is kept unchanged. Works known from earlier reading that meet
-%an inclusion criterion but are not retrieved by the queries are added by hand,
-%as in the source procedure, and pass through the same filters.
-%
-%\begin{table}[tbp]
-%\centering
-%\small
-%\caption[Search queries of the literature review]{Search queries of the
-%literature review, applied to titles and abstracts in OpenAlex and Semantic
-%Scholar. DOMAIN stands for the domain group in the first row.}
-%\label{tab:lit-queries}
-%\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
-%\toprule
-%\textbf{Query} & \textbf{Period} & \textbf{Terms} \\
-%\midrule
-%\input{tables/literature-queries}% the generated rows end with \bottomrule; a second one here breaks the table
-%\end{tabularx}
-%\end{table}
-%
-%\paragraph{Duplicates and citation filter.} Records that share a DOI, an arXiv
-%identifier or a normalised title, with publication years at most one year apart,
-%are merged. Following Baumann et al., records with fewer than three citations
-%per year are then removed. Citations per year are the higher of the two
-%databases' counts divided by the number of years since publication, which is at
-%least one. The filter keeps the screening manageable and favours works that the
-%field has taken up. As in the source procedure, recent works are not exempt, so
-%most works from the year of the search are removed; the closest recent studies
-%are discussed in the related-work chapter instead.
-%
-%\paragraph{Stage 1: screening.} Titles and abstracts are screened, and each
-%record receives one code. A record is included if it
-%\begin{description}
-%  \item[I1] documents privacy harms, risks, threats or inferable capabilities
-%    that affect the users of health apps, fitness trackers or health wearables;
-%  \item[I2] analyses the privacy communication of such apps or wearables, such
-%    as privacy policies, privacy labels, store listings, notices or terms;
-%  \item[I3] uses or evaluates language models to annotate, classify or extract
-%    information from privacy policies or similar privacy text; or
-%  \item[I4] analyses how policies, notices or labels present or word data
-%    practices, risks or protections, in any domain.
-%\end{description}
-%A record is excluded if it
-%\begin{description}
-%  \item[E1] proposes or evaluates a technical system, such as a protocol, an
-%    encryption scheme, an architecture or a detection model, without
-%    documenting harms or analysing communication;
-%  \item[E2] lies outside the domain and topics above;
-%  \item[E3] studies health apps or wearables without analysing privacy harms or
-%    privacy communication, for example their quality, usability, adoption or
-%    features;
-%  \item[E4] is not a usable scholarly record, such as a commentary, a
-%    dissertation or a duplicate; or
-%  \item[E5] concerns language models without annotating privacy text, for
-%    example language models as a privacy risk, benchmarks of privacy norms or
-%    tools that generate policies.
-%\end{description}
-%\highlight[orange!25]{Each decision is recorded with its code.}\todo{The screening
-%decisions in 01\_Literature/\allowbreak Systematic-Review/\allowbreak screening.csv
-%were prepared by an AI assistant from titles and abstracts. Check every decision
-%before this section states who screened.}
-%
-%\paragraph{Stage 2: extraction.} For every included work that is used, a card
-%records the review question it answers, the domain, the material, the sampling
-%and coding procedure, the agreement statistics, for language-model studies the
-%models and their validation, the harms and capabilities named, the findings and
-%the authors' stated limits, each with its page, and separates these from the
-%reviewer's own critique. A comparison matrix then sets out, for each study, its
-%domain, the sources it analyses and how it treats harms; the matrix tests the
-%research gap.
-%
-%\paragraph{Stage 3: capabilities.} Capabilities named in the works included
-%under I1 are collected in a table that links each capability to its source, the
-%data it needs and the adversary that could use it. The table is the input to the
-%harm trees.
-%
-%\paragraph{Limits.} One person screens, so no inter-rater check of the selection
-%is possible. The citation filter removes most works of the last year. The open
-%databases lack the abstracts of some records, which are then screened on the
-%title alone. The queries are in English, which favours English sources. Later
-%literature is added through the change log, with a reason, and does not alter
-%the frozen instruments without a logged revision.
-%
-%\paragraph{Review questions.} Four questions guide the search, one for each part
-%of the study. (1)~Which privacy harms and capabilities have been documented for
-%health trackers, including wearables, starting from
-%general taxonomies of privacy harm~\parencite{solove2006taxonomy,calo2011boundaries}?
-%(2)~How have earlier studies sampled apps and analysed their privacy
-%communication, and with which material, coding scheme and agreement measure,
-%starting from work on policy analysis~\parencite{wilson2016creation,zimmeck2019maps}?
-%(3)~How have large language
-%models been used to annotate privacy policies, and how were they validated?
-%(4)~How do providers word risk and protection in policies and notices?
-%
-%\paragraph{Sources and search.} Searches cover the proceedings of the main
-%venues for privacy, security and human--computer interaction research, namely
-%PoPETs, CCS, USENIX Security, IEEE Security and Privacy and CHI/CSCW, together
-%with the ACM Digital Library, arXiv and Google Scholar. Queries combine three groups of terms. The first names the
-%domain (health app, fitness tracker, wearable, menstrual or fertility app,
-%mental-health app). The second names the object (privacy policy, store listing,
-%privacy label, data-safety section, breach notification). The third names the
-%method or topic (content analysis, cognitive walkthrough, heuristic evaluation,
-%harm taxonomy, inference, large language model annotation). German terms are
-%used only to find German-market sources. The reference lists and citing papers
-%of the closest studies, such as Malki et al.~\parencite{malki2024exploring},
-%Hutton et al.~\parencite{hutton2018assessing} and
-%Knabenhans et al.~\parencite{knabenhans2026harms}, are searched as well.
-%
-%
-%\paragraph{Selection.} A work is included if it is a peer-reviewed paper, a
-%report of an established institution or an archival preprint; is written in
-%English or German; and studies mobile health apps or wearables, the analysis of
-%privacy communication, harms or risk wording, or the validation of language
-%models for coding text. Studies of language models as a privacy risk (for
-%example memorisation by chatbots), benchmarks of privacy norms, and tools that
-%generate policies are excluded, because they do not inform the coding of
-%provider communication. Titles and abstracts are screened first, and the full
-%text is read for works that bear on a decision. Each included work is ranked
-%\emph{A} (read before the relevant procedure is frozen), \emph{B} (read for a
-%specific decision or chapter) or \emph{C} (background). This rank is a reading
-%priority and not a quality score. A work whose full text is not freely
-%available through open access or the university library is recorded as not
-%retrieved, and no claim is based on its abstract alone.
-%
-%\paragraph{Record and extraction.} The log records for each search round the
-%date, the tool, the queries, the exclusions and the works that could not be
-%retrieved. Two rounds have been run. On 14 October 2026, a methodology corpus of
-%93 works (83 records with a DOI verified against Crossref or DataCite, and 10
-%official resources) was compiled from the topics of the supervisor meeting; 89
-%are held as full texts. On 23 October 2026, a search for gaps, centred on the
-%coding of privacy policies with language models, produced about 75 candidate
-%works, of which 46 open-access full texts were obtained. For every work that is
-%used, a card records the domain, the material, the sampling and coding
-%procedure, the agreement statistics, the findings and the authors' stated
-%limits, each with its page, and separates these from the reviewer's own
-%critique. A comparison matrix then sets out, for each study, its domain, the
-%sources it analyses and how it treats harms; the matrix tests the research gap.
-%Capabilities found in the literature are collected in a table that links each
-%capability to its source, the data it needs and the adversary that could use it,
-%which is the input to the harm trees.
-%\todo{Hits and inclusion decisions per query are not yet logged for the venues
-%named above; add them to the search log, and update the counts if further rounds
-%are run before the instruments are frozen.}
-%
-%\paragraph{Limits.} One person searches and screens, so no inter-rater check of
-%the selection is possible. The search favours English sources and published work
-%up to October 2026, and works behind a paywall may be missing. Later literature
-%is added through the change log, with a reason, and does not alter the frozen
-%instruments without a logged revision.
-%
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Choices of the reference procedure and how they are applied]{Choices of
+the reference procedure of Baumann et al.\ (App.~A) and how they are applied in
+this review.}
+\label{tab:lit-adaptation}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Choice} & \textbf{Baumann et al.} & \textbf{This review, and why} \\
+\midrule
+Query & One query of four term groups joined by AND & Kept as a structure; four queries, one per sub-question, because the review serves four parts of the study. The terms are derived from the RQ, not copied. \\
+\addlinespace
+Sources & Scopus, Web of Science, Semantic Scholar, ACL Anthology, Google Scholar & The supervisor's venues are listed in full; PubMed, IEEE Xplore, arXiv and the ACL Anthology are searched as databases. Scopus, Web of Science and Google Scholar could not be queried (see Sources). \\
+\addlinespace
+Period & 2022 to the search date & 2014 to the search date, because the policy studies this study builds on start in 2014--2015~\parencite{sunyaev2015availability}; 2022 for LQ3 only, as in the source. \\
+\addlinespace
+Works added by hand & Reported as a row of their own & Kept: thesis citations, Methods Digest papers and citation searching are routes of their own, recorded per record. \\
+\addlinespace
+Citation filter & Fewer than 3 citations per year removed & Not kept. The closest precedents date from 2024--2026, and a citation rate is no criterion of relevance or quality. \\
+\addlinespace
+Screening & Title and abstract; two inclusion criteria, one exclusion & Kept and extended: four criteria, eight ordered exclusion rules with one primary reason, and a full-text stage. \\
+\addlinespace
+Extraction & Fixed fields per paper & Kept, with fields for the harm trees and the evidence map. \\
+\addlinespace
+Stage 3 & Selection of datasets & Replaced by the capability table that feeds the harm trees. \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Search concepts.} Eight term groups translate the concepts of the
+review question into search terms (Table~\ref{tab:lit-groups}). The domain group
+(D) names health tracking apps and their wearables, with the domains of the
+sample in Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and
+mental health, cycle, fertility and pregnancy) and the generic terms under which
+such apps are studied (mHealth, wearable, self-tracking). The privacy group (P)
+keeps the domain searches to privacy. The harm group (H) names harms and the
+threats and inferences through which capabilities are described. The
+communication group (C) names the surfaces the study codes. The privacy-text
+group (T) names policies, labels and notices in any domain; the model group (L)
+and the task group (A) select language-model studies that annotate or assess
+such text; the framing group (F) names the wording strategies that the stance
+axis codes. Groups are joined with AND into five strands: S1~=~D AND P AND H
+for LQ1, S2~=~D AND P AND C for LQ2, S3~=~T AND L AND A for LQ3, S4~=~T AND F
+for LQ4, and S5, the German terms for health apps and data protection, searched
+in PubMed only to reach German-language studies of the German market.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Term groups of the literature search]{Term groups of the literature
+search. A trailing * truncates; phrases are searched as phrases. The strands join
+the groups with AND: S1~=~D, P, H; S2~=~D, P, C; S3~=~T, L, A (from 2022);
+S4~=~T, F.}
+\label{tab:lit-groups}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Group} & \textbf{Concept} & \textbf{Terms (joined with OR)} \\
+\midrule
+\input{tables/literature-groups}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Sources.} Venues, where studies are published, are distinguished from
+the platforms through which they are searched (Table~\ref{tab:lit-sources-method}).
+The venues are those named in the supervisor meeting of 13~October 2026, read
+as PoPETs, CCS, USENIX Security, IEEE S\&P and CSCW, together with CHI, where
+the supervisor's three example papers appeared, and SOUPS, the venue for usable
+privacy; NDSS is added as a reading of the unresolved name \enquote{mdmp}, to be
+confirmed. Each venue is listed completely for 2014 to the search date, and the
+strands are applied to the listed titles and abstracts. At the security and
+privacy venues, privacy is the subject of the venue, so the domain group alone
+selects candidates for S1 and S2; at CHI and CSCW the full strands are applied.
+Where the platform holds no abstract, titles are matched with two groups
+instead of three (for example D AND P), because a title rarely names three
+concepts. Four databases add the literature that these venues do not hold:
+PubMed for health informatics and medicine, IEEE Xplore for engineering
+venues, arXiv for preprints and the ACL Anthology for language processing.
+The ACM Digital Library and dblp answered the project's browser and scripts with a
+bot verification, which was not completed; Scopus and Web of Science require an
+institutional login; Google Scholar offers no export and blocks automated
+queries. These sources were therefore not searched, and the ACM venues were
+listed through their DOI metadata in Crossref instead. An earlier run of this
+review in OpenAlex and Semantic
+Scholar~\parencite{priem2022openalex,kinney2023semantic}, on 26 October 2026,
+is superseded and not used.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Sources of the literature search]{Sources of the literature search, all
+searched on 28 October 2026. Venues are listed in full and filtered locally;
+databases are searched with the strands.}
+\label{tab:lit-sources-method}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Source} & \textbf{Searched through} & \textbf{Fields and coverage} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Venues}} \\
+PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 \\
+USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; SOUPS 2015 has no page there \\
+CCS, IEEE S\&P, NDSS, CHI & Crossref, exact proceedings titles & Title only; Crossref holds no abstracts for them \\
+CSCW & Crossref: proceedings to 2017, then PACM HCI & Title, abstract from 2017 \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{Databases}} \\
+PubMed & E-utilities & Title and abstract [tiab]; publication date \\
+IEEE Xplore & Web search interface & Document title and abstract; year range \\
+arXiv & API & Title and abstract; submission date \\
+ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{Other methods}} \\
+Citation searching & OpenCitations Index, Crossref & References and citing works of four seed papers \\
+Thesis citations & \texttt{\_shared/references.bib} & Every work cited in the thesis \\
+Methods Digest & Its registry of 116 papers & Every paper of the digest \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Platform strings.} Each strand is translated for each platform, and
+the exact strings, fields, filters and search times are given in
+Appendix~\ref{app:literature}. PubMed searches titles and abstracts with
+truncation inside phrases. IEEE Xplore does not stem, so its strings keep the
+truncation and name the title and abstract fields for every term. The arXiv
+interface stems words but cannot truncate inside a phrase, and in a test it
+returned 34 records for the full S3 string but 62 for \emph{privacy policy} AND
+\emph{LLM} alone. Its records are therefore retrieved with short pairs of words
+(for example \emph{privacy} AND \emph{fitness}), and the strands are applied to
+the retrieved titles and abstracts, as for the venue lists and the ACL
+Anthology. No language or publication-type filter is set; both are screening
+rules.
+
+\paragraph{Citation searching.} One round of backward and forward citation
+searching starts from the four health-tracker papers the supervisor sent on
+5~September 2026~\parencite{malki2024exploring,hudig2025intimate,cao2024deleted,niksirat2024wearable}.
+Their references and the works citing them are taken from the OpenCitations
+Index and their metadata from Crossref.
+
+\paragraph{Existing literature.} Every work cited in the thesis and every paper
+of the Methods Digest, the reading collection compiled before the search,
+enters the corpus and is screened with the same rules. A thesis citation that
+fails a rule is kept in a \emph{contextual collection} with the rule that
+excluded it; it may still be cited, for example for a definition or a
+statistic, but it is not counted as review evidence.
+
+\paragraph{Deduplication and provenance.} Records that share a DOI, an arXiv
+identifier, or a normalised title with publication years at most one year
+apart (three years when one of them is an arXiv preprint, which may precede its
+paper) are merged into one record. A fuzzy comparison of all titles then
+lists near-identical pairs, which are merged by hand when they are the same
+work. Each record keeps every route that found it: database, venue, citation
+searching, thesis citation or Methods Digest.
+
+\paragraph{Eligibility and screening.} The criteria and the exclusion rules of
+Table~\ref{tab:lit-criteria} were fixed before screening. A record is eligible
+if it meets C1--C4. Rules R1--R6 are applied to the title, and to the abstract
+where the title does not decide; R7--R8 to the full text of the records that
+pass. The rules are applied in their order, and an excluded record receives one
+primary reason: the first rule that applies. The results therefore report, for
+each rule, how many records it assessed and excluded and how many remained.
+Every decision and its reason are recorded in a screening log. Where neither
+the platform nor Crossref holds an abstract, the abstract is looked up by DOI
+in OpenAlex for screening only; OpenAlex is not a search source here. Two
+conventions keep the rules apart: systems for hospitals, health records,
+telemedicine or the Internet of Things in general fall under R3, and systems
+for wearables, body-area networks or health apps under R5; adoption, attitude
+and concern studies fall under R4 unless they name specific harms or actors.
+\highlight[orange!25]{The screening decisions were prepared by an AI assistant
+from titles, abstracts and full texts.}\todo{Check every decision in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv before this section states who screened.}
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Eligibility criteria and exclusion rules of the literature
+review]{Eligibility criteria and exclusion rules of the literature review. A
+record is excluded under the first rule that applies.}
+\label{tab:lit-criteria}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}@{}}
+\toprule
+ & \textbf{Criterion or rule} & \textbf{Stage} \\
+\midrule
+C1 & A research article (journal, conference or workshop paper, archival preprint) reporting original empirical or analytical work, or a systematic or scoping review & \\
+C2 & Written in English or German & \\
+C3 & Published from 1 January 2014 (LQ3: 2022) to 28 October 2026 & \\
+C4 & Answers at least one of LQ1--LQ4 & \\
+\midrule
+R1 & Not a research article: editorial, commentary, letter, erratum, abstract, poster, keynote, book or chapter, thesis, front matter, narrative overview, position paper & title, abstract \\
+R2 & Outside the language or period of C2--C3 & title, abstract \\
+R3 & Outside the domain: neither health tracking apps or wearables nor privacy text (for example hospital systems, health records, telemedicine, clinical sensor networks) & title, abstract \\
+R4 & Health tracking without a privacy focus (quality, usability, clinical effect, adoption, features) & title, abstract \\
+R5 & A technical system or protocol whose evaluation documents neither harms or capabilities nor communication & title, abstract \\
+R6 & Privacy text or language models outside health tracking, answering neither LQ3 nor LQ4 (for example models as a privacy risk, readability, compliance or label accuracy without risk wording) & title, abstract \\
+R7 & Full text not retrievable & full text \\
+R8 & On the full text, C1 or C4 does not hold & full text \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Full texts and appraisal.} Full texts are taken from the project's
+collection, then from open access, tried in a fixed order (arXiv, Europe PMC,
+usenix.org, the PoPETs site and the open-access locations OpenAlex lists for the
+DOI), and finally from the university library. A record stays \emph{awaiting
+full text} until the library has been tried; only a record that none of these
+provides is excluded under R7. The review maps
+evidence, so no quality score decides inclusion, as PRISMA-ScR allows for
+scoping reviews~\parencite{tricco2018prisma}; the peer-review status of each
+study is recorded instead, and preprints are marked as such.
+
+\paragraph{Extraction and synthesis.} For every included study, the
+sub-questions it answers, the app domain, the surfaces or material studied,
+the parts of the RQ it bears on and the harms and capabilities it names are
+coded. An evidence map crosses the app domains with the surfaces and with the
+parts of the RQ, and shows where evidence is missing. As the counterpart of
+Baumann et al.'s Stage~3, the capabilities named in LQ1 studies are collected
+in a table that links each capability to its source, the data it needs and the
+actor that could use it; this table is the input to the harm trees.
+
+\paragraph{Limits.} One person screens, so no agreement between screeners can
+be reported. The ACM Digital Library, Scopus, Web of Science and Google Scholar
+were not searched, and five venues could be filtered on titles only, which
+lowers recall there; citation searching and the thesis and digest routes
+compensate in part. The strands are in English. Later literature is added
+through the change log, with a reason, and does not alter the frozen
+instruments without a logged revision.
+
 \begin{figure}[t]
 \centering
 \resizebox{\textwidth}{!}{%

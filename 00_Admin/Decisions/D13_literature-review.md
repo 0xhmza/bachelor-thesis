@@ -1,7 +1,7 @@
 # D13 — How is the literature searched, filtered and screened?
 
-- **Status:** proposed (2026-10-26, requested by the author; not yet discussed with the supervisor). The methodology states this procedure.
-- **Affects:** Methodology, Literature Review; Results, Literature Search; [`scripts/literature-search/v001`](../../scripts/literature-search/v001/); [`01_Literature/Systematic-Review/`](../../01_Literature/Systematic-Review/README.md); frozen collection `05_Data/raw/literature-search_2026-10-26/`
+- **Status:** superseded by [D14](D14_literature-review-v2.md) (2026-10-28, at the author's request: the review no longer rests on OpenAlex and Semantic Scholar). Was proposed on 2026-10-26.
+- **Affects:** Methodology, Literature Review; Results, Literature Search; [`scripts/literature-search/v001`](../../scripts/literature-search/v001/); `01_Literature/Systematic-Review/` (since 28 October 2026 in `01_Literature/#_Junk_Backup/Systematic-Review/`); frozen collection `05_Data/raw/literature-search_2026-10-26/`
 - **Options considered:**
   1. Targeted scoping review after Arksey and O'Malley, searched by hand in venues and Google Scholar, with no fixed query or filter (the text up to 26 October 2026).
   2. **The staged procedure of Baumann et al. (2025, App. A, pp. 56–57), adapted to the four review questions and to open databases (chosen).**

@@ -29,7 +29,10 @@
 \setlength{\heavyrulewidth}{0.8pt}
 \setlength{\lightrulewidth}{0.4pt}
 \renewcommand{\arraystretch}{1.12}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta,positioning}
+% Charts of the literature review (figures/literature-*.tex, generated).
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcommand{\rowrule}{\cmidrule[0.3pt]{2-4}}
 % Figure descriptions (from the proposal's ACM \Description) are not printed;

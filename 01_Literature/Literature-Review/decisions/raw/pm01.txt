@@ -1,0 +1,160 @@
+1 ft:LQ2
+2 R3
+3 R4
+4 R4
+5 R1 narrative overview
+6 R4 privacy as adoption factor
+7 R1 overview
+8 R1 research-ethics overview
+9 R3
+10 ft:LQ1;LQ2 analysis of store content of sexual and reproductive tracking apps
+11 R1 working-group overview
+12 R3
+13 R3
+14 R4
+15 ft:LQ2
+16 R3 hospital sensor network
+17 ft:LQ1;LQ2
+18 R4
+19 R1 guidelines
+20 R3 implantable devices
+21 R1 commentary
+22 ft:LQ1;LQ2
+23 R4
+24 R4
+25 R5 body-area-network authentication
+26 R3
+27 ft:LQ1
+28 R1 legal and ethical essay
+29 R5
+30 R1 legal commentary
+31 R5
+32 R4 privacy calculus adoption
+33 R3
+34 R3
+35 R3
+36 R3
+37 R5
+38 R3
+39 R4 attitudes
+40 R1 ethical review
+41 R1 overview
+42 R3
+43 R1
+44 R1
+45 R3
+46 R4 quality survey, privacy policy one criterion
+47 R4 legal guide, no harms or communication analysis
+48 R3
+49 R4
+50 ft:LQ1 transport security of mHealth apps
+51 ft:LQ2
+52 R3
+53 R4 quality framework, privacy one criterion
+54 R3
+55 R3
+56 R3
+57 R1 yearbook survey
+58 R3
+59 R3
+60 R3
+61 R3 general IoT
+62 ft:LQ1 third-party data flows of health and fitness apps
+63 R4
+64 R3
+65 ft:LQ1 password inference from wrist-worn devices
+66 R4
+67 R1
+68 R4
+69 R3
+70 R4 attitudes survey
+71 ft:LQ2
+72 ft:LQ1 re-identification from physical activity data
+73 R3
+74 R4
+75 R1 ethics essay
+76 R3
+77 R3
+78 R3
+79 R3 clinical telemonitoring
+80 R3
+81 R1
+82 R4
+83 ft:LQ2
+84 R3
+85 R4
+86 R3
+87 R4
+88 R3
+89 R5
+90 R3
+91 ft:LQ2
+92 R1 ethics essay
+93 R3
+94 R4
+95 R3
+96 R3 patient portals
+97 R6 policy content of genetic-testing companies, no risk wording
+98 R3
+99 R3
+100 R3
+101 ft:LQ1 attribute inference from IMU gait data
+102 R4
+103 R3
+104 ft:LQ1;LQ2
+105 ft:LQ2
+106 R4 attitudes survey
+107 R3
+108 R3
+109 R1 workshop report
+110 R1 ethics essay
+111 R3
+112 R3
+113 R3
+114 R4
+115 R3 sensor hardware
+116 ft:LQ1;LQ2
+117 R1
+118 R4
+119 R1
+120 R4
+121 R3 primary-care mHealth system
+122 R4
+123 R3
+124 R5
+125 R1 essay
+126 ft:LQ2
+127 R5
+128 ft:LQ1 server-side vulnerabilities of mHealth apps
+129 R3
+130 R4
+131 R4 regulation case study
+132 R4 users' understanding survey
+133 R1 principles
+134 R3 contact tracing
+135 R3
+136 R1
+137 R3
+138 R3
+139 R5
+140 R5
+141 R3
+142 R1
+143 R5
+144 ft:LQ2
+145 R4
+146 ft:LQ1 privacy experiences of bipolar self-tracking
+147 R3
+148 R6 readability of contact-tracing policies
+149 R3
+150 R1
+151 R3
+152 R1
+153 R5
+154 R4
+155 R4
+156 ft:LQ1 literature review on mHealth privacy, check scope on full text
+157 R3
+158 R3
+159 R3
+160 R4 quality framework, privacy one dimension

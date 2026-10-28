@@ -1,0 +1,28 @@
+{
+ "platform": "OpenCitations Index API v2 + Crossref",
+ "searched_at": "2026-10-28 15:10 UTC",
+ "seeds": {
+  "10.1145/3613904.3642521": {
+   "label": "Malki 2024",
+   "backward": 62,
+   "forward": 28
+  },
+  "10.1145/3706598.3714089": {
+   "label": "Hudig 2025",
+   "backward": 103,
+   "forward": 3
+  },
+  "10.1145/3613904.3642042": {
+   "label": "Cao 2024",
+   "backward": 60,
+   "forward": 29
+  },
+  "10.1145/3645091": {
+   "label": "Salehzadeh Niksirat 2024",
+   "backward": 245,
+   "forward": 30
+  }
+ },
+ "dois": 529,
+ "without_metadata": 4
+}

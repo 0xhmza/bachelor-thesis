@@ -1,0 +1,141 @@
+id,rq,capability,harms
+R0132,Method precedent,,
+R0139,RQ1 harms named or missing;Method precedent,,potential damage from disclosed data
+R0177,RQ1 harms named or missing;RQ3 protection claims;RQ4 several surfaces;Method precedent,K5;K6,unencrypted transmission; undisclosed sharing
+R0227,RQ2 stance on harms;RQ4 several surfaces,,length and framing of privacy notices for fitness wearables
+R0262,RQ1 harms named or missing,K6,attacks on fitness-tracker communication
+R0311,RQ1 harms named or missing,K6,reverse engineering and spoofing of Fitbit
+R0314,RQ1 harms named or missing,K6,transport security of mHealth apps
+R0337,RQ2 stance on harms,,risk and framing of privacy notices in experiments
+R0383,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K5,promotion material and data flows of health and fitness apps
+R0408,RQ1 harms named or missing;RQ3 protection claims,K1,location inference despite privacy zones
+R0412,RQ4 several surfaces;Method precedent,,
+R0415,RQ2 stance on harms;Method precedent,,
+R0441,RQ1 harms named or missing,K4,re-identification of physical-activity data
+R0463,RQ2 stance on harms;Method precedent,,vagueness in privacy policies
+R0467,RQ1 harms named or missing,K5,over-privileged third-party fitness apps
+R0491,RQ1 harms named or missing,K3,password inference from smartwatch motion
+R0497,Method precedent,,complexity of mental-health app policies
+R0510,RQ1 harms named or missing,K3,lock combinations from wrist-wearables
+R0539,RQ1 harms named or missing,K2,age and gender from gait traces
+R0548,RQ1 harms named or missing;RQ3 protection claims;RQ4 several surfaces;Method precedent,K5,undisclosed third-party sharing
+R0552,RQ1 harms named or missing;Method precedent,,
+R0564,RQ1 harms named or missing;Method precedent,K5,third-party sharing
+R0584,Method precedent,,
+R0629,RQ1 harms named or missing;Method precedent,,
+R0637,RQ1 harms named or missing,K6,server security of mHealth apps
+R0660,RQ1 harms named or missing,K1,location from elevation profiles
+R0661,RQ2 stance on harms;Method precedent,,downplayed breach risk
+R0688,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K5,GDPR violations of Android mHealth apps (policy and code)
+R0697,Method precedent,,fairness of privacy policies of cancer apps
+R0723,RQ1 harms named or missing,,literature review of mHealth privacy and data ownership
+R0755,RQ1 harms named or missing;RQ3 protection claims;Method precedent,,
+R0799,RQ1 harms named or missing,,scoping review of risks of health apps in the German statutory system
+R0805,Method precedent,,
+R0828,RQ1 harms named or missing,,systematic mapping of mHealth security and privacy research
+R0856,RQ3 protection claims,,communicating differential privacy in a health app
+R0857,RQ1 harms named or missing,,harm scenarios rated by users
+R0893,RQ1 harms named or missing,,privacy-related permissions of diabetes apps
+R0895,RQ1 harms named or missing,K2,perceived inference risks of tracker users
+R0905,RQ1 harms named or missing;Method precedent,K5,data processing of fertility and menstruation apps under law
+R0940,RQ1 harms named or missing;RQ4 several surfaces,,security and privacy of symptom-checker apps
+R0950,RQ1 harms named or missing,K2;K6,Bluetooth traffic of wearables reveals devices and activities
+R0955,RQ2 stance on harms,,clarity of CCPA disclosures
+R0986,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K5,collection and sharing beyond policies
+R0997,RQ1 harms named or missing,K4,re-identification from PPG and gesture data
+R1011,Method precedent,,policy compliance of chronic-disease apps in China
+R1013,RQ1 harms named or missing;Method precedent,,
+R1051,Method precedent,,readability of depression-app policies
+R1094,RQ1 harms named or missing;RQ3 protection claims,K1,endpoint inference despite privacy zones
+R1102,RQ1 harms named or missing,K8,interviews naming insurer access to sensor data
+R1105,RQ1 harms named or missing,K6,attack simulation with mHealth app users
+R1132,RQ1 harms named or missing,K6,reversing and exploiting the Xiaomi fitness ecosystem
+R1201,RQ1 harms named or missing,K1,location from shared elevation profiles
+R1209,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K6,policies permissions and code of mental-health apps
+R1220,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K5;K6,vulnerabilities and data leaks
+R1221,RQ1 harms named or missing,K6,Bluetooth security of two heart-rate wearables
+R1241,RQ1 harms named or missing;Method precedent,,
+R1255,Method precedent,,privacy policies of pulse-oximeter apps
+R1315,Method precedent,,GDPR-based scale for mHealth policies
+R1332,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,,store descriptions and policies of depression apps
+R1337,Method precedent,,
+R1383,RQ1 harms named or missing;RQ4 several surfaces,K2,inferences from fitness-tracker data and policies
+R1399,Method precedent,,
+R1431,RQ1 harms named or missing,,femtech users' perceptions of harms and risks
+R1433,RQ3 protection claims,,inference despite privacy-enhancing techniques
+R1439,Method precedent,,
+R1455,Method precedent,,cognitive accessibility of health-app policies in three European countries
+R1461,RQ1 harms named or missing,K2,inferences by third-party apps
+R1470,RQ1 harms named or missing,K4,re-identification in smartwatch health data
+R1482,RQ1 harms named or missing;Method precedent,,ethical framework for the risks in mHealth user agreements
+R1503,RQ1 harms named or missing,K2,personality inference
+R1508,RQ1 harms named or missing,K2,attribute inference from step counts
+R1521,Method precedent,,qualitative framework for mHealth privacy practices
+R1540,RQ1 harms named or missing;RQ2 stance on harms,,
+R1560,Method precedent,,LLM question answering on EdTech privacy policies
+R1571,Method precedent,,LLM analysis of policies of LLM applications
+R1608,RQ1 harms named or missing,K4,re-identification in ECG datasets
+R1619,Method precedent,,LLM agents for privacy-policy tasks
+R1626,Method precedent,,entailment-based policy classification with LLMs
+R1639,RQ1 harms named or missing;RQ3 protection claims;RQ4 several surfaces;Method precedent,K5;K7,
+R1648,RQ1 harms named or missing,K7,legal analysis of femtech surveillance by private and state actors
+R1661,Method precedent,,LLMs in privacy compliance and technical review
+R1665,RQ1 harms named or missing,K7,legal exposure after Roe v. Wade
+R1677,Method precedent,,
+R1689,RQ1 harms named or missing;RQ3 protection claims,,
+R1711,RQ1 harms named or missing,,systematic review of patients' privacy perspectives on mHealth apps
+R1717,Method precedent,,logic representation of policies built with LLMs
+R1719,RQ1 harms named or missing;RQ4 several surfaces,K6,PII collection and vulnerabilities
+R1721,Method precedent,,
+R1728,RQ1 harms named or missing,K6,data leakage in federated activity recognition on wearables
+R1730,Method precedent,,knowledge graph and LLMs for policy compliance
+R1753,RQ1 harms named or missing,K5;K6,security of top-ranked fitness apps
+R1759,RQ1 harms named or missing,K2,shadow health-related data
+R1770,RQ1 harms named or missing,K5;K6,personal-information leaks of mobile health apps
+R1790,RQ1 harms named or missing;RQ3 protection claims,,
+R1817,Method precedent,,multi-agent LLM question answering on policies
+R1873,Method precedent,,LLM framework for consuming policies
+R1892,RQ1 harms named or missing,K6,privacy and security compliance of incontinence wearables
+R2019,Method precedent,,
+R2027,RQ1 harms named or missing;Method precedent,,policies of four reproductive-health apps and risks to users
+R2079,Method precedent,,LLM policy assessment in a browser extension
+R2109,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,,
+R2162,RQ1 harms named or missing;RQ4 several surfaces,K6,security and privacy of AI-based mHealth chatbots
+R2168,Method precedent,,multilingual LLM analysis of Swiss privacy policies
+R2169,Method precedent,,conceptual model of smartwatch privacy policies
+R2232,RQ1 harms named or missing;Method precedent,,
+R2304,Method precedent,,LLM agents auditing terms of service
+R2307,Method precedent,,fine-tuned and zero-shot LLMs detecting unfair terms
+R2325,RQ1 harms named or missing;RQ2 stance on harms,,
+R2335,RQ1 harms named or missing;RQ4 several surfaces,K5,privacy and security gaps of female health apps
+R2340,Method precedent,,
+R2349,RQ1 harms named or missing,K6,reverse engineering Apple Watch protocols
+R2363,Method precedent,,
+R2364,Method precedent,,
+R2365,RQ1 harms named or missing;RQ4 several surfaces,K5;K6,audit of 272 mHealth apps (permissions code reviews)
+R2429,Method precedent,,
+R2495,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,K5,consent and data collection of more than 10000 mHealth apps
+R2510,RQ3 protection claims;RQ4 several surfaces,,discourse analysis of Apple Health privacy text and user interviews
+R2547,RQ1 harms named or missing,K6,threat model of smart sensing insoles
+R2550,Method precedent,,
+R2576,RQ4 several surfaces;Method precedent,,
+R2604,Method precedent,,multilingual LLM audits of Spanish app policies
+R2617,Method precedent,,human and LLM analysis of e-commerce policies
+R2619,RQ1 harms named or missing;RQ4 several surfaces,K5,network analysis of fertility apps and health-data leakage to advertisers
+R2621,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,,experiential audit of three period trackers
+R2668,RQ1 harms named or missing,,privacy experiences and concerns of FemHealth users
+R2694,RQ2 stance on harms,,policy organisation hides disclosures
+R2697,Method precedent,,LLM and RAG data-flow analysis of policies
+R2718,Method precedent,,privacy metadata of mHealth apps
+R2731,Method precedent,,multi-agent LLM compliance checking of IoT companion-app policies
+R2775,RQ4 several surfaces;Method precedent,,
+R2792,Method precedent,,readability of digital-therapeutics policies
+R2793,Method precedent,,policy compliance of sports and health apps in China
+R2811,RQ2 stance on harms;RQ3 protection claims;Method precedent,,
+R2814,Method precedent,,LLM audit of CCPA disclosures
+R2815,Method precedent,,language models detecting label-policy discrepancies
+R2816,Method precedent,,LLM extraction of privacy rights from policies
+R2828,Method precedent,,policies of 100 health apps under the EHDS
+R2883,RQ2 stance on harms;Method precedent,,LLM assistant extracting clauses and risk levels
+R2887,Method precedent,,systematisation of privacy-document research
+R2973,RQ1 harms named or missing;RQ4 several surfaces;Method precedent,,
