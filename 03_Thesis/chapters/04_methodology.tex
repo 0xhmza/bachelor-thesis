@@ -506,32 +506,30 @@ Thresholds are not lowered after the results have been inspected.
 
 \paragraph{Preinstalled apps.} Health apps that ship with the phone reach
 users without a download, so their rating counts understate their reach and
-they cannot be ranked by the same measure. They form a group of their own, and
-the number of its members follows from a rule with three steps.
-\emph{Vendors:} on each of the two platforms, the vendor with the largest share
-of the platform's mobile page views in Germany is included, according to the
+they cannot be ranked like the store apps. They form a separate group, and
+its members follow from a rule with three steps.
+\emph{Vendors:} on each platform, the vendor with the largest share of the
+platform's mobile page views in Germany is included. The shares come from the
 vendor statistics of StatCounter~\parencite{statcounter2026vendor}, read at the
-time of the collection and recorded with its date. A vendor's share of its
+time of the collection and recorded with their date. A vendor's share of its
 platform is its share of all mobile page views divided by the platform's share
-of all mobile page views~\parencite{statcounter2026os}, so that the vendors of
-each platform are compared with their own users. The rule has no threshold to tune and treats
-iOS and Android alike, as the ranking does: a German user of either platform
-most often meets the configuration of its leading vendor, the same logic as
-taking the most widely used apps. Page views are a proxy for the installed base
-and not for sales. Threshold rules that admit more vendors, such as a minimum
-share of all page views or vendors that together cover most of a platform, are
-reported as checks of the rule.
-\emph{Apps:} for each leading vendor, the preinstalled apps are identified
-from the vendor's documentation and from the store listings. An app qualifies
-if the vendor itself provides it, if it is installed on the vendor's current
-phones without a download, and if it meets the eligibility criteria E1 to E5,
-in particular E1: it records the user's own health or body data over time. A vendor
-whose software ships no such app contributes none, and this is recorded.
-\emph{Treatment:} if a qualifying app also has a store listing, that listing is
+of all mobile page views~\parencite{statcounter2026os}, so that each vendor is
+compared within its own platform. The rule has no threshold and treats iOS and
+Android alike, as the ranking does: a German user of either platform most often
+meets the configuration of its leading vendor, the same logic as taking the
+most widely used apps. Page views approximate the installed base, not sales.
+Rules that admit more vendors, such as a minimum share of all page views or
+vendors that together cover most of a platform, are reported as checks.
+\emph{Apps:} for each leading vendor, the preinstalled apps are identified from
+its documentation and the store listings. An app qualifies if the vendor itself
+provides it, if it is installed on the vendor's current phones without a
+download, and if it meets the eligibility criteria E1 to E5, in particular E1
+(it records the user's own health or body data over time). A vendor that ships
+no such app contributes none, and this is recorded.
+\emph{Treatment:} the store listing of a qualifying app, if it has one, is
 removed from the store rankings, and its vendor counts as a provider already in
 the sample, so that the vendor's other apps are skipped by the developer rule.
-The vendors found and the resulting apps are reported in
-Section~\ref{sec:results-sample}.
+The vendors and apps found are reported in Section~\ref{sec:results-sample}.
 
 \paragraph{Sensitivity checks.} The selection is repeated with one rule changed
 at a time: without the developer rule; with equal weights for the two
