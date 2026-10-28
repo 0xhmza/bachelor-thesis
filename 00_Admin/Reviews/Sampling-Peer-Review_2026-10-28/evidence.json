@@ -1,0 +1,551 @@
+{
+  "commit": "6664310f669407bf79b6b09c3780191bb22aa0cc",
+  "configured_paths": {
+    "apple": {
+      "path": "05_Data/raw/app-sample_2026-10-25/appstore_2026-10-23.json",
+      "exists": false
+    },
+    "play": {
+      "path": "05_Data/raw/app-sample_2026-10-25/googleplay_2026-10-24.json",
+      "exists": false
+    },
+    "keywords": {
+      "path": "04_Study/App-Sample/keywords.csv",
+      "exists": true
+    },
+    "screening": {
+      "path": "04_Study/App-Sample/screening.csv",
+      "exists": true
+    },
+    "dataset": {
+      "path": "05_Data/processed/app-sample/apps.csv",
+      "exists": false
+    },
+    "compare_selection": {
+      "path": "scripts/app-ranking/v002/output/selection.csv",
+      "exists": true
+    }
+  },
+  "actual_inputs": {
+    "apple": "05_Data\\App Sampling\\26. Oct\\Raw\\appstore_2026-10-23.json",
+    "play": "05_Data\\App Sampling\\26. Oct\\Raw\\googleplay_2026-10-24.json"
+  },
+  "duplicate_content_conflicts": [
+    [
+      "apple",
+      "320606217",
+      "sleep"
+    ],
+    [
+      "apple",
+      "1491340863",
+      "sleep"
+    ],
+    [
+      "apple",
+      "928930388",
+      "sleep"
+    ],
+    [
+      "apple",
+      "462638897",
+      "sleep"
+    ],
+    [
+      "apple",
+      "1490078804",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1164801111",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1551928101",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "878691772",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "529443604",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "571800810",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "493145008",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1190294015",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "943347681",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1632947950",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1629426238",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1481584395",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1163786766",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "337472899",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "6498938838",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1512367809",
+      "Schlaf"
+    ],
+    [
+      "apple",
+      "1439575933",
+      "Schwangerschaft"
+    ]
+  ],
+  "raw_counts": {
+    "apple": {
+      "distinct": 5058,
+      "rows": 8172,
+      "queries": 49
+    },
+    "play": {
+      "distinct": 645,
+      "rows": 1139,
+      "queries": 49
+    }
+  },
+  "apple_first30_hits": 1440,
+  "play_search_hits": 1178,
+  "play_depth30_hits": 1138,
+  "pool": {
+    "apple": 846,
+    "play": 644
+  },
+  "candidates": 1365,
+  "matched": 125,
+  "calibration": {
+    "c": 0.08958070788703418,
+    "n": 116,
+    "ratio_median": 0.2338153494668798,
+    "ratio_min": 0.01137153326173479,
+    "ratio_max": 26.050080775444265,
+    "quartiles": [
+      0.08434350578287209,
+      0.2338153494668798,
+      0.6107352167476233
+    ]
+  },
+  "selection": {
+    "n": 47,
+    "providers": 47,
+    "reached": 70,
+    "skipped": 12,
+    "excluded": 11,
+    "pending": 0,
+    "categories": {
+      "activity": 22,
+      "diet-weight": 12,
+      "multiple": 1,
+      "cycle": 4,
+      "pregnancy": 2,
+      "mood": 2,
+      "sleep": 3,
+      "heart": 1
+    }
+  },
+  "screening": {
+    "n": 275,
+    "unique": 275,
+    "counts": {
+      "eligible": 156,
+      "excluded": 119
+    },
+    "exclusions": {
+      "E1": 114,
+      "E5": 1,
+      "E3": 2,
+      "E4": 1,
+      "E2": 1
+    },
+    "invalid_ids": [],
+    "matched_both_screened": 27,
+    "matched_one_screened": 38,
+    "selected_both_screened": 22
+  },
+  "missing_play_reviews": 240,
+  "explicit_zero_reviews": 5,
+  "observed_correlation": {
+    "n": 404,
+    "rho": 0.8167323941833406
+  },
+  "cache": {
+    "rows": 645,
+    "unique": 645,
+    "dates": {
+      "2026-10-24": 100,
+      "2026-10-25": 545
+    },
+    "id_coverage": true,
+    "rows_equal": true,
+    "hash_coverage": 104,
+    "hash_missing": 541
+  },
+  "manifest": {
+    "appstore_2026-10-23.json": {
+      "sha256": "f222b474cbec444732dbc3fbb51a4a15b6ff1e72fba982f45cff08b24c6d43b6",
+      "historical_matches": [
+        "appstore_2026-10-23.json"
+      ]
+    },
+    "googleplay-pages_2026-10-24.jsonl": {
+      "sha256": "814c1936fa67805908e9793689352c310de60daa90a7ed797befeb495dfc6488",
+      "historical_matches": [
+        "googleplay-pages_2026-10-24.jsonl"
+      ]
+    },
+    "googleplay-pilot_2026-10-22.json": {
+      "sha256": "43c808297fc5c7200098be241b3d56775f1ba375b457499b7ea47724cbdd07f7",
+      "historical_matches": [
+        "googleplay-pilot_2026-10-22.json"
+      ]
+    },
+    "googleplay_2026-10-24.json": {
+      "sha256": "4ea95c01b6e89ed638b21c44aef51e3d2580836d0c82bda7d6a0cd8426da46fe",
+      "historical_matches": [
+        "googleplay_2026-10-24.json"
+      ]
+    },
+    "googleplay_2026-10-24.log": {
+      "sha256": "5befc207822c5dfd1aca6e9e6be58bd6c59729ab798e2a8dd41cc5d7d16dbc83",
+      "historical_matches": [
+        "googleplay_2026-10-24.log"
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "name": "five identity reference corrections",
+      "factor": 0.08962630023742701,
+      "pairs": 117,
+      "candidates": 1364,
+      "entries": [],
+      "exits": [],
+      "order_changes": 0,
+      "listing_changes": [
+        {
+          "provider": "babycenter",
+          "old_apple": "289560144",
+          "new_apple": "386022579"
+        },
+        {
+          "provider": "nike",
+          "old_apple": "301521403",
+          "new_apple": "387771637"
+        }
+      ],
+      "pending": []
+    },
+    {
+      "name": "Kinomap eligible (diagnostic)",
+      "factor": 0.08958070788703418,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [],
+      "exits": [],
+      "order_changes": 0,
+      "listing_changes": [],
+      "pending": []
+    },
+    {
+      "name": "Lady Pill Reminder eligible (diagnostic)",
+      "factor": 0.08958070788703418,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "Lady Pill Reminder"
+      ],
+      "exits": [
+        "Sleep Monitor - Schlaftracker"
+      ],
+      "order_changes": 11,
+      "listing_changes": [],
+      "pending": []
+    },
+    {
+      "name": "factor 0",
+      "factor": 0,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "BMI Rechner & Gewichtstagebuch",
+        "Abnehmen für Frauen: Zuhause",
+        "Babelli Schwangerschafts App",
+        "Ovy App Verhütung Kinderwunsch",
+        "Virtuafood: KI-Kalorienzähler",
+        "Map My Run: Running Tracker",
+        "Preventicus Heartbeats",
+        "Radfahren — Fahrrad Tracker"
+      ],
+      "exits": [
+        "StepsApp Schrittzähler",
+        "Fastic AI Abnehmen & Fasten",
+        "Seven: 7 Minuten Workout",
+        "STADTRADELN",
+        "Kalorien Zähler Abnehmen Arise",
+        "BetterMe Well-Being Coach",
+        "BodyFast: Intervallfasten KI",
+        "Schrittzähler++"
+      ],
+      "order_changes": 44,
+      "listing_changes": [],
+      "pending": [
+        "play:de.twopeaches.babelli",
+        "play:com.preventicus.heartbeats",
+        "play:com.zeopoxa.fitness.cycling.bike"
+      ]
+    },
+    {
+      "name": "factor 0.02",
+      "factor": 0.02,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "BMI Rechner & Gewichtstagebuch",
+        "Abnehmen für Frauen: Zuhause",
+        "Babelli Schwangerschafts App",
+        "Ovy App Verhütung Kinderwunsch",
+        "Virtuafood: KI-Kalorienzähler",
+        "Map My Run: Running Tracker"
+      ],
+      "exits": [
+        "STADTRADELN",
+        "Kalorien Zähler Abnehmen Arise",
+        "BetterMe Well-Being Coach",
+        "Bikemap: Fahrrad Navi & GPS",
+        "BodyFast: Intervallfasten KI",
+        "Schrittzähler++"
+      ],
+      "order_changes": 40,
+      "listing_changes": [],
+      "pending": [
+        "play:de.twopeaches.babelli"
+      ]
+    },
+    {
+      "name": "factor 0.05",
+      "factor": 0.05,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "BMI Rechner & Gewichtstagebuch",
+        "Babelli Schwangerschafts App",
+        "Virtuafood: KI-Kalorienzähler",
+        "Abnehmen für Frauen: Zuhause"
+      ],
+      "exits": [
+        "Kalorien Zähler Abnehmen Arise",
+        "BetterMe Well-Being Coach",
+        "BodyFast: Intervallfasten KI",
+        "Schrittzähler++"
+      ],
+      "order_changes": 35,
+      "listing_changes": [],
+      "pending": [
+        "play:de.twopeaches.babelli"
+      ]
+    },
+    {
+      "name": "factor 0.08958070788703418",
+      "factor": 0.08958070788703418,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [],
+      "exits": [],
+      "order_changes": 0,
+      "listing_changes": [],
+      "pending": []
+    },
+    {
+      "name": "factor 0.2338153494668798",
+      "factor": 0.2338153494668798,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "urbia Eisprungkalender",
+        "Perioden Kalender - Zyklus App",
+        "Sofortige Herzfrequenz",
+        "Perioden Kalender +",
+        "WeWard – die Walking-App"
+      ],
+      "exits": [
+        "Herzfrequenzmesser - Puls",
+        "Sports Tracker",
+        "Schrittzähler - Pedometer",
+        "Naviki – das Fahrrad-Navi",
+        "Sleep Monitor - Schlaftracker"
+      ],
+      "order_changes": 42,
+      "listing_changes": [],
+      "pending": []
+    },
+    {
+      "name": "factor 0.5",
+      "factor": 0.5,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "urbia Eisprungkalender",
+        "Perioden Kalender - Zyklus App",
+        "Perioden Kalender +",
+        "Joggen Laufen Walken Goals GPS",
+        "Outdooractive Wandern, Fahrrad",
+        "Sofortige Herzfrequenz",
+        "Tacx Training™",
+        "Fitness App—Gym Workout, Sport"
+      ],
+      "exits": [
+        "GPS Laufen Joggen & Radfahren",
+        "Sleep as Android: Schlafzyklen",
+        "Herzfrequenzmesser - Puls",
+        "Sports Tracker",
+        "Schrittzähler - Pedometer",
+        "Foodvisor - KI Kalorien Zähler",
+        "Naviki – das Fahrrad-Navi",
+        "Sleep Monitor - Schlaftracker"
+      ],
+      "order_changes": 41,
+      "listing_changes": [],
+      "pending": []
+    },
+    {
+      "name": "factor 1",
+      "factor": 1,
+      "pairs": 116,
+      "candidates": 1365,
+      "entries": [
+        "urbia Eisprungkalender",
+        "Perioden Kalender - Zyklus App",
+        "Perioden Kalender +",
+        "Joggen Laufen Walken Goals GPS",
+        "Outdooractive Wandern, Fahrrad",
+        "Sofortige Herzfrequenz",
+        "Fitness App—Gym Workout, Sport",
+        "Tacx Training™",
+        "Stepz: Schrittzähler Pedometer",
+        "Cardiio: Pulsmesser",
+        "Clover - Periodenkalender"
+      ],
+      "exits": [
+        "Pregnancy App & Baby Tracker",
+        "Noom: Gesund Abnehmen",
+        "Daylio Tagebuch & Gewohnheiten",
+        "GPS Laufen Joggen & Radfahren",
+        "Sleep as Android: Schlafzyklen",
+        "Herzfrequenzmesser - Puls",
+        "Sports Tracker",
+        "Schrittzähler - Pedometer",
+        "Foodvisor - KI Kalorien Zähler",
+        "Naviki – das Fahrrad-Navi",
+        "Sleep Monitor - Schlaftracker"
+      ],
+      "order_changes": 42,
+      "listing_changes": [],
+      "pending": []
+    }
+  ],
+  "selected_checks": {
+    "free": true,
+    "play_free_flag": true,
+    "counts_observed": true,
+    "play_policies": 41
+  },
+  "replay": {
+    "report.json": true,
+    "selection.csv": true,
+    "excluded.csv": true,
+    "sensitivity.csv": true,
+    "processed_dataset": true,
+    "table": true,
+    "developer_table": true,
+    "alias_table": true
+  },
+  "originals_unchanged": true,
+  "protected_sha256": {
+    "03_Thesis\\thesis.tex": "afe77dc50f0429d7f15a73f2f5e69d3f1165cca13b069cfc453162edca7238dd",
+    "03_Thesis\\appendix\\ai_appendix.tex": "d563769e956ad69ca43468a030a9ee1518fe01d1c820485f7b04432437d4f6e3",
+    "03_Thesis\\appendix\\A_codebook.tex": "229cb93483246a838cdb5c35e6fcdb87ebabbc7621f3230a8f443289118f5587",
+    "03_Thesis\\appendix\\B_prompts.tex": "a3be430ddd10e0a996c28e4eaf187df583beaee77289035eb0afb68de68b4f7f",
+    "03_Thesis\\appendix\\C_app_sample.tex": "3566cc4cd701191267c60ac2578c36cb483a5b4f72679968d568d516d009bf6d",
+    "03_Thesis\\appendix\\D_proposal_example.tex": "945a963373de77fdac7a356f34f41f118cdb219406851abf4a56616ee8897460",
+    "03_Thesis\\appendix\\E_scraping_scripts.tex": "a578b8fc6f47e47a0f2dc2f2db242eb662149364fece228db261c903d841692e",
+    "03_Thesis\\appendix\\F_literature.tex": "c80a57a07f86af26a813a574fb5c894af6651f1135ce16d95feee2d18360668a",
+    "03_Thesis\\chapters\\00_abstract.tex": "f7367dfb9e4b4f6f79dde9d83e933505b20f1ccbaab8ed9772f959bc21950a6c",
+    "03_Thesis\\chapters\\01_introduction.tex": "e9a99e07d4674e8461a72f009819686ea03299b4900054c2165c1ff51f3a2100",
+    "03_Thesis\\chapters\\02_background.tex": "d6fb35df8df1f6411376835a386edcc112ffacf88bdc18b11b6af45775acfbbb",
+    "03_Thesis\\chapters\\03_related_work.tex": "f7d246ed2607aef34faa8fcf6387eb0ffc4d1252b9f6aa7b1be560fe8cc641b1",
+    "03_Thesis\\chapters\\04_methodology.tex": "91a94fe5dcf72e30336680a9d5943cbc34ce22106a417355fefeb271d5c765c0",
+    "03_Thesis\\chapters\\05_results.tex": "39a0e31008e32371dd2f37682e5775a5b0eea90a12c13d36bd5b2b4f7291327c",
+    "03_Thesis\\chapters\\06_discussion.tex": "beb6d9784c1a5dc46076d6c61c4cd1c3adf1c5f122f6ebbdb44fb61cf7872511",
+    "03_Thesis\\chapters\\07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
+    "03_Thesis\\config\\metadata.tex": "370066676ddb895db5f173ed9394297005fccd8dae52fafbe10d623d1dfa036d",
+    "03_Thesis\\config\\preamble.tex": "dfe92b869a42248553ec74ad3c319963ebe38609af5901df05d0dca68319287f",
+    "03_Thesis\\proposal\\proposal.tex": "ce8f86f72b97db34303ec5115ae21b0d346845948fe692607701cc20cebab9c5",
+    "03_Thesis\\tables\\app-sample.tex": "ef0ebe76d19e3befa06909eab814e987965a6ab86bd2279575b1b45cce45ec33",
+    "03_Thesis\\tables\\developer-aliases.tex": "d661237f7810995ba4ec99275db26ecb4287aae6ab8168f24d2bd4280f988e91",
+    "03_Thesis\\tables\\developer-pilot.tex": "450509a942765ab022a4a563595e96a7d15cd3b3b6056ed98743b9ec9dcf49dc",
+    "03_Thesis\\tables\\developer-rule.tex": "f91189e1bc6826d3460c4380f666b17bc49dbaf7c2a935add3732f260579abd1",
+    "03_Thesis\\tables\\literature-flow.tex": "9b7850be9cba7a85bba27cb44ef8dc60f0b27be031ed5be751c6e5be053f32e4",
+    "03_Thesis\\tables\\literature-included.tex": "5ee6bac1349c8ea770c6ce41f22b8eb3d4da1a6dad257e62e5bf1b37a3a62aa8",
+    "03_Thesis\\tables\\literature-queries.tex": "c481350a4a4d3d9cba7a206fee2a947b15c1be02e31b4abdef5fd96f272cc63e",
+    "05_Data\\App Sampling\\26. Oct\\Raw\\appstore_2026-10-23.json": "f222b474cbec444732dbc3fbb51a4a15b6ff1e72fba982f45cff08b24c6d43b6",
+    "05_Data\\App Sampling\\26. Oct\\Raw\\googleplay-pages_2026-10-24.jsonl": "814c1936fa67805908e9793689352c310de60daa90a7ed797befeb495dfc6488",
+    "05_Data\\App Sampling\\26. Oct\\Raw\\googleplay-pilot_2026-10-22.json": "43c808297fc5c7200098be241b3d56775f1ba375b457499b7ea47724cbdd07f7",
+    "05_Data\\App Sampling\\26. Oct\\Raw\\googleplay_2026-10-24.json": "4ea95c01b6e89ed638b21c44aef51e3d2580836d0c82bda7d6a0cd8426da46fe",
+    "05_Data\\App Sampling\\26. Oct\\Raw\\googleplay_2026-10-24.log": "5befc207822c5dfd1aca6e9e6be58bd6c59729ab798e2a8dd41cc5d7d16dbc83",
+    "04_Study\\App-Sample\\screening.csv": "122a3059f5a20e7193b26a3cf81db54b926f56c4475ab38bded2ba7d60a7ad8f",
+    "04_Study\\App-Sample\\keywords.csv": "f3c67ecac362ad5549a826ce488f7654a0f80d2f850d6f693a050ba2a892a164",
+    "05_Data\\App Sampling\\26. Oct\\Processed\\apps.csv": "e9220e6ff39abca18d536cb09e9d383dfc3ec5863f1a592b58326d9e79ad5432",
+    "scripts\\app-ranking\\v004\\output\\excluded.csv": "1ce953c410929f4de6427ea5303fc01f0b2ca6a5298ce0b527e58ea201c4add6",
+    "scripts\\app-ranking\\v004\\output\\provider-review.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts\\app-ranking\\v004\\output\\report.json": "6efdb6a4fc6f875f4125c2712611f0f00e7541789af301d68c8f57cef3dade99",
+    "scripts\\app-ranking\\v004\\output\\run.txt": "171f642e6e7e641383bc34ffa02aa5390b815290a9a0f4632112a98e54be3eb8",
+    "scripts\\app-ranking\\v004\\output\\screening-sheet.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts\\app-ranking\\v004\\output\\selection.csv": "28ad700dd6412aa735c8f071a31f3b60ee3c04a2c7a9b0c80c79876c89b80ff8",
+    "scripts\\app-ranking\\v004\\output\\sensitivity.csv": "9e9349124c3141ea333cb54663f241c043e21e01359453aa4ddbb9a7d8194cdd"
+  }
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "F01",
+    "severity": "CRITICAL",
+    "title": "Selected cross-store identities are wrong",
+    "brief": "Nike Run Club is paired with Nike Training Club on iOS; BabyCenter is paired with What to Expect. Five evidence-backed pairing corrections leave the selected providers and order unchanged, but change two selected iOS IDs, the candidate total (1,365 to 1,364), calibration pairs (116 to 117), and c (0.0895807 to 0.0896263). Provider stability does not make the selected products correct.",
+    "detail": "The matcher accepts a shared first word of at least three characters when the normalized provider agrees, and greedily takes the available Apple listing with the largest rating count. This is a product-identity error, not a harmless spelling issue. In selected row 25, Play com.nike.plusgps is paired with Apple 301521403, whose archived name is Nike Training Club and bundle is com.nike.niketrainingclub. Nike Run Club is Apple 387771637, bundle com.nike.nikeplus-gps. Selected row 17 pairs com.babycenter.pregnancytracker with Apple 289560144, Pregnancy Tracker App - WTE, bundle com.ryanbond.PregnancyTracker. BabyCenter is Apple 386022579, bundle com.babycenter.mypregnancytoday. Shared publishing accounts do not establish the same product.\n\nThe same rule reverses the other Nike pair and pairs a men's weight-loss app with a women's product. The five-reference-case scenario is an isolated diagnostic, not an adopted sample correction or a complete identity certification. The unchanged provider order hides a real change in what iOS app would be collected and inspected. BabyCenter's observed Apple contribution would be based on 6,928 ratings rather than WTE's 648; the selected Apple minimum of 648 consequently also requires regeneration.",
+    "evidence": "scripts/app-ranking/v004/rank.py: same_app, candidates; v004/output/selection.csv rows 17 and 25; archived Apple IDs 289560144, 386022579, 301521403, 387771637; evidence.json: scenarios[0].",
+    "required": "Review product identity for every matched pair using product-specific evidence; preserve explicit decisions, add negative regression cases, and regenerate the sample, score summaries and all sensitivity results together."
+  },
+  {
+    "id": "F02",
+    "severity": "MAJOR",
+    "title": "Unobserved Play feedback is silently treated as zero",
+    "brief": "240 of 645 Play listings omit both review and rating counts, while five contain an explicit review count of zero. load() collapses these distinct states to zero. Missing-count candidates may never reach screening; observed counts for the selected apps do not prove the sample is unaffected.",
+    "detail": "The collector deliberately disables parser fallback values, retaining missingness by omitting failed or unavailable fields. The ranking immediately discards that distinction through row.get(...) or 0. Missing reviews affect 37.2% of collected Play apps, so this is not an isolated edge case. The missing group includes Periodenkalender Paula (3,540,694 embedded worldwide installs) and iMumz (2,166,851). Worldwide installs do not reveal German reviews; they show why a missing German observation cannot establish no German feedback.\n\nThe archived data cannot distinguish a valid absence of regional feedback from a schema problem or other extraction failure. The 47 selected candidates all have observed inputs for their present listings, but a ranking audit must also assess candidates that were suppressed before selection. No defensible upper bound on the missing candidates' possible German counts is documented. The existing sample therefore cannot be certified insensitive to the missing-data policy.",
+    "evidence": "v004/rank.py: load; frozen-equivalent Play JSON and page cache; evidence.json: missing_play_reviews, explicit_zero_reviews; missing-play-counts.csv.",
+    "required": "Retain missing, observed zero and absent counterpart as separate states; establish field semantics and an evidence-backed missing-data rule, then rerun or bound its selection impact."
+  },
+  {
+    "id": "F03",
+    "severity": "MAJOR",
+    "title": "The reported 0.95 correlation is inflated by imputed zero pairs",
+    "brief": "The reported Spearman rho 0.9490524 uses 644 Play candidates after zero substitution. Restricting the same calculation to the 404 candidates with both counts observed gives rho 0.8167324. The 0.95 is reproducible but is not the observed-count association suggested by the prose.",
+    "detail": "Both missing fields become zero for the same 240 listings. This creates a large artificial tied block at the bottom of both rankings, increasing their agreement. The complete-observation calculation excludes Samsung Health just as the main candidate frame does, and retains actual recorded zeros. It is therefore n=404, not 405 or 644.\n\nThe corrected observation-only coefficient is still positive and substantial. The issue is the interpretation and missingness disclosure, rather than a claim that the measures have no relationship. Neither correlation validates German user reach or resolves selection bias. Any replacement analysis should state the population, missing-value policy, sample size, and whether the statistic is Spearman, rather than presenting an unlabeled correlation as general validation.",
+    "evidence": "03_Thesis/chapters/05_results.tex:101-104; v004/rank.py: load, spearman, report; evidence.json: observed_correlation.",
+    "required": "Report the observed-count association and disclose the imputed calculation separately if retained; do not use the larger coefficient as evidence that missing values are harmless."
+  },
+  {
+    "id": "F04",
+    "severity": "MAJOR",
+    "title": "The documented current ranking command cannot run unchanged",
+    "brief": "v004 config points to absent 05_Data/raw/app-sample_2026-10-25 files and an absent processed-data destination. The data now live under 05_Data/App Sampling/26. Oct. Exact reproduction succeeded only with a temporary configuration that redirected inputs and every output.",
+    "detail": "Both configured input files are missing in the audited checkout. This breaks the executable chain from documented command to results even though the source data still exist. The configured processed destination also differs from the committed sample's actual location, so an adapted rerun could create a second sample tree unless its output paths are deliberately reconciled.\n\nThe reviewer did not repair the configuration or populate the old paths. In the isolated replay, the same production ranking code received the relocated files and wrote all CSV, JSON, dataset and table outputs inside the ignored audit folder. All eight comparisons passed: report, selection, exclusions, sensitivity rows, processed apps.csv, and the three generated tables. This establishes conditional computational repeatability, while leaving the documented entry point broken.",
+    "evidence": "scripts/app-ranking/v004/config.json; scripts/app-ranking/README.md; evidence.json: configured_paths, actual_inputs, replay.",
+    "required": "Reconcile one canonical input/output location and test the documented command from a clean checkout or supplied artifact package."
+  },
+  {
+    "id": "F05",
+    "severity": "MAJOR",
+    "title": "Freeze documentation and the current data layout have separated",
+    "brief": "The current tree lacks the raw hash README, sampling protocol and processed-sample README referenced throughout the project. All five relocated sampling files match the hashes recovered from the preceding commit. This supports unchanged bytes, but current documentation no longer provides a working freeze/backup trail.",
+    "detail": "The historical manifest was recovered read-only with git show HEAD^:05_Data/raw/README.md. The App Store JSON, final Play JSON, page cache, pilot JSON and progress log all match its recorded SHA-256 values. There is no evidence here of byte alteration during the move. The distinction matters: missing present-day provenance documentation should not be described as demonstrated raw-data corruption.\n\nThe files are now tracked under a path outside the old raw-data exclusion rule. AGENTS.md and several READMEs still say that raw collections are ignored and must be separately backed up. The historical protocol is recoverable from Git, but absent from the current working tree. These are assessable packaging and governance failures. A durable snapshot must identify its actual location, contents, hashes, generating versions and access/backup policy in the version being reviewed.",
+    "evidence": "Current git ls-files; absent 05_Data/raw/README.md and 04_Study/App-Sample/sampling_protocol.md; HEAD^ historical manifest; evidence.json: manifest.",
+    "required": "Restore an accurate current manifest and protocol through the normal author workflow; distinguish relocation from data mutation and document the intended tracking and backup policy."
+  },
+  {
+    "id": "F06",
+    "severity": "MAJOR",
+    "title": "Original HTTP evidence is incomplete",
+    "brief": "The final Play JSON retains only the last request. Across retained collector JSONs, hashes exist for 104 of 645 product-page IDs; 541 lack a retained response hash. Parsed rows and capture times survive, but original response bodies are not available for independent reparsing.",
+    "detail": "The append-only cache stores parsed rows and timestamps, not the response body or its hash. A cache-reusing execution starts a fresh process-local requests dictionary and does not recover earlier HTTP metadata. Consequently, a complete progress log is evidence that cached or new records were processed, not that all 645 pages were fetched again. All 645 cache rows reproduce the final parsed records, which is a meaningful preservation check but not validation of the upstream parsing.\n\nThe App Store collection records 49 response hashes, but the raw API response bodies are likewise not retained here. Hashes attest to a particular body only if that body or independently verifiable archival evidence is available; a hash alone cannot show that the parser read the correct field. Existing missing HTTP hashes cannot be reconstructed honestly by hashing the parsed JSON.",
+    "evidence": "googleplay-scraper/v004/scraper.py: fetch and cache entry; retained v004/output/*.json; evidence.json: cache; App Store requests mapping.",
+    "required": "For future captures preserve source bodies where permitted, per-row URL, capture time, response hash, status/final URL and parser version. Describe the historical gap explicitly rather than claiming full source-level reproducibility."
+  },
+  {
+    "id": "F07",
+    "severity": "MAJOR",
+    "title": "Country-sensitive review counts are not fully semantically validated",
+    "brief": "The embedded Play review field varies with country in the documented probes, but the original comparison responses and scratch scripts are not preserved. Official country-specific rating documentation does not identify the undocumented integer as a complete German written-review total.",
+    "detail": "The project's DE/AT/US and language checks are plausible evidence that the integer is country-sensitive, and the distinction from worldwide rating counts is methodologically useful. However, D2 explicitly says that the initial storefront-check scratch scripts are not in the repository. The retained final German sample cannot reproduce a cross-country or cross-language experiment by itself.\n\nGoogle's announcement concerns ratings seen by users registered in a country and device-specific presentation; it does not document the exact positional field consumed by google-play-scraper. A variable's response to gl is evidence of regional behavior, not sufficient evidence of exhaustiveness, historical period, deduplication or precise event meaning. Current live pages would not by themselves validate what the archived parser extracted on 24-25 October. The missing-value pattern makes this validation especially consequential. Source: https://android-developers.googleblog.com/2021/08/making-ratings-and-reviews-better-for.html",
+    "evidence": "D02 storefront checks and endpoint inventory; googleplay-scraper/README.md field basis; scraper FIELDS mapping; official Google announcement.",
+    "required": "Preserve a reproducible country/language validation fixture, identify the exact upstream field, distinguish empirical inference from platform documentation, and qualify the measurement name until its semantics are established."
+  },
+  {
+    "id": "F08",
+    "severity": "MAJOR",
+    "title": "The cache can bypass storefront and parser freshness safeguards",
+    "brief": "A network-free execution of the unchanged v005 main function reproduced all 1,139 stored result rows. Requesting US/en with the same cache then returned the identical German rows while labeling the output US. Cache keys contain package ID only; cached failures also remain failures unless manually removed.",
+    "detail": "Both sampling-era v004 and shortened v005 accept an existing entry solely because its app ID is in the cache. They do not validate country, interface language, schema version, collector version, expiry or response provenance. fetch()'s storefront test runs only on new requests, so it does not protect cache reuse. The synthetic US replay demonstrates a latent correctness defect without making live requests. It does not establish that the historical German collection was contaminated by another country.\n\nThe same cache policy reuses an error entry indefinitely; the loop does not retry an ID already present with error rather than row. The historical final collection has no unresolved page errors, so this hazard should not be misreported as a current missing-page count. HTTP failures have a timeout, but persistent failure records and lack of robust retry/backoff in the Play collector can matter during a fresh rerun.",
+    "evidence": "v004/v005 cache-loading and if-ID-not-in-cache loops; diagnostics.json: collector_replay.",
+    "required": "Key or validate caches by storefront, language and parser/schema version; distinguish successful records from retryable failures; retain immutable historical caches separately."
+  },
+  {
+    "id": "F09",
+    "severity": "MODERATE",
+    "title": "Endpoint coverage and ordering are incompletely validated",
+    "brief": "The frame is the collectors' first-page/API output, not a verified native-store ranking or a complete census. Sponsored-result handling and all search-card types are not validated. Equal nominal depth does not establish equal coverage across two different interfaces.",
+    "detail": "The Apple collector preserves API position before iPhone filtering, so the first 30 API positions can yield fewer than 30 eligible device-compatible results. The Google parser adds highlighted results, takes one regular carousel and stops. The supplied metadata show no missing IDs in the observed parsed frame, but cannot expose cards omitted before a row was created. Original search bodies are unavailable for an independent completeness comparison.\n\nThe thesis already acknowledges that endpoint order was not checked against the native store order; this is a strength and should be retained. The deeper App Store check is asymmetric and cannot demonstrate Play search saturation. The historical protocol contains proposed ad exclusion language, whereas the current collectors do not record ad status. Absence of ad markers in the parsed data is not proof that sponsored placements were absent.",
+    "evidence": "appstore v007: API Position and supportedDevices filter; Play v004/v005: search; Methodology Search; historical protocol Search and matching rules.",
+    "required": "Define the endpoint-based frame precisely, validate retained versus omitted cards on archived fixtures, and either operationalize ad handling or disclose it as unmeasured."
+  },
+  {
+    "id": "F10",
+    "severity": "MAJOR",
+    "title": "The common popularity scale is conditional, not independently validated",
+    "brief": "The formula is mathematically coherent under its explicit model; there is no demonstrated arithmetic error or automatic double weighting. Its assumptions about app-specific platform use and feedback rates remain unvalidated. StatCounter measures web page views, not unique app users.",
+    "detail": "Let v_i=q_A N_Ai and r_i=q_I N_Ii, with platform-specific feedback propensities q_A and q_I. If a typical matched app has N_Ai/N_Ii=s_A/s_I, then median(v/r) times s_I/s_A estimates q_A/q_I, and v+c r is proportional to N_Ai+N_Ii. Thus the factor direction has a defensible derivation. A rigorous review should not invent a double-weighting mistake that the stated model does not imply.\n\nThe empirical weakness is that app user splits and feedback behavior can vary substantially by domain, price, age and prompts. StatCounter's own methodology describes page-view-based internet usage. Using it to approximate the user distribution of health apps adds an external validity assumption, not a measured correction. The equal-platform variant changes five providers, demonstrating dependence on the conversion rule. No actual German active-user or download benchmark was supplied. Source: https://gs.statcounter.com/faq",
+    "evidence": "v004 calibration; Methodology:444-464; D02 simplified model; main and equal-platform sensitivity outputs; StatCounter FAQ.",
+    "required": "Present P as a study-specific purposive ordering, retain the model derivation and assumptions, and validate against independent German reach data if making stronger popularity claims."
+  },
+  {
+    "id": "F11",
+    "severity": "MODERATE",
+    "title": "Calibration heterogeneity and uncertainty are underreported",
+    "brief": "Of 116 positive calibration pairs, 57 are recorded eligible, eight excluded and 51 unscreened. Their review/rating ratios range from 0.0114 to 26.05, with quartiles 0.0843 and 0.6107. One median hides substantial variation and includes unverified identities and off-domain products.",
+    "detail": "Calibration before eligibility is documented and therefore not a secret implementation mismatch. It still needs justification: games, content tools and unscreened apps may have different review propensities from the intended health-tracker population. Multiple products from one provider can also enter calibration even though selection later limits providers. The known identity errors contaminate some ratio observations, even when their effect on the median is small.\n\nAs a diagnostic only, 2,000 seeded resamples of the current 116 ratios gave a 2.5th-97.5th percentile factor range of 0.06308-0.12829. Across 200 sampled factors, provider changes ranged from zero to four, with 15 runs reaching unscreened candidates. These are not population confidence intervals: the frame is purposive, the pair errors remain, and provider dependence is not adjusted. They illustrate uncertainty that one fixed alternative weight does not summarize. Restricting to already-screened eligible positive pairs gives c=0.09167, which does not settle representativeness of that subset.",
+    "evidence": "evidence.json: calibration; diagnostics.json: bootstrap, calibration_groups; seed 20261028.",
+    "required": "After identity repair, assess calibration by relevant domain/provider groups, report uncertainty and missingness, and fully screen every candidate reached by any adopted robustness analysis."
+  },
+  {
+    "id": "F12",
+    "severity": "MAJOR",
+    "title": "Missing counterpart discovery creates differential score truncation",
+    "brief": "A listing absent from a store's top-30 frame contributes nothing even if the app exists there. Cross-platform products with one undiscovered listing can therefore rank below equally popular products found in both stores. \"Store only\" must mean found only in this frame.",
+    "detail": "The thesis correctly says that no observed counterpart is not proof of no counterpart. However, the computational consequence is more than terminology: the score is a lower-information sum for poorly retrieved apps. Search discoverability can therefore change the ranking through two mechanisms, entry into the frame and availability of the second score contribution.\n\nThe reported 33 both-store, eight Play-only and six Apple-only selected products describe the matched search frame, subject also to F01. They do not establish platform exclusivity. Targeted lookup of known candidate products is a possible way to reduce missing counterpart contributions, but would be a methodological change requiring a documented prospective rule and new processing version. Sensitivity analyses that drop keywords also alter matching and recalibrate, so their differences combine frame and scoring effects.",
+    "evidence": "v004 pool, candidates, build; Results:151-158; Appendix C Listed in definition; D02 missing counterpart clarification.",
+    "required": "Report frame-specific presence consistently, assess counterpart discovery before stronger cross-platform claims, and separate the mechanisms changed in sensitivity interpretations."
+  },
+  {
+    "id": "F13",
+    "severity": "MAJOR",
+    "title": "Screening remains an unadjudicated AI first pass",
+    "brief": "All 275 screening keys are unique and exist in the collections; 156 eligible and 119 excluded reproduce. These structural checks do not validate eligibility. The thesis still says every AI-prepared decision awaits author review; the CSV has no reviewer, date, criterion-level outcomes or evidence spans.",
+    "detail": "The current no-pending result means that the program encountered a row with a decision. It does not mean an independent person reviewed it. Many reasons are short paraphrases; some assert that a listing states no recording when the text merely does not mention it. Those are different evidentiary standards. A single final exclusion code also does not preserve which of the other four criteria were checked or passed.\n\nThe review inspected the whole screening sheet structurally and all recorded exclusion reasons, then checked selected and high-risk descriptions in detail. It did not recreate 275 independent human eligibility judgments or install every candidate. Claiming perfect screening would exceed that evidence. In particular, listing-based eligibility is an operational proxy for capability, not a functional test. A failure of the listing to establish tracking should be distinguished from evidence that tracking does not exist.",
+    "evidence": "04_Study/App-Sample/screening.csv schema; Results:57-59; v004 decision/select; evidence.json: screening.",
+    "required": "Complete and date author adjudication, retain quoted criterion-specific evidence and uncertainty, and independently review high-impact inclusions/exclusions before calling the sample final."
+  },
+  {
+    "id": "F14",
+    "severity": "MAJOR",
+    "title": "Kinomap's exclusion reason is contradicted by its archived listing",
+    "brief": "Apple 611177969 is excluded as not recording user data. Its archived German description explicitly says that the app records individual training sessions and describes exporting activities. Making Kinomap eligible does not change the main selection because its score is below the cutoff; the screening error still matters.",
+    "detail": "The record says interactive training videos; listing states no recording of the user's data. Under the archived Freies Training heading, the description explicitly states that individual sessions are recorded so users can maintain an overview. It also mentions synchronization of activities with Strava and adidas Running. This directly contradicts the stated factual rationale under E1.\n\nThis finding need not decide every other criterion to establish that the recorded reason is unsupported. Its score is approximately 2,066 versus the 3,819 main cutoff. An isolated E1-eligible scenario left the main provider set and order unchanged, which bounds this particular main-selection effect. It does not excuse the record or prove no sensitivity output could be affected; all relevant variants should be regenerated after the author adjudicates the app.",
+    "evidence": "screening.csv apple/611177969; archived App Store Description, Freies Training and Andere Funktionen; evidence.json Kinomap scenario.",
+    "required": "Correct the rationale through recorded author adjudication and rerun the affected analysis rather than silently relabeling the old screening record."
+  },
+  {
+    "id": "F15",
+    "severity": "MAJOR",
+    "title": "Lady Pill Reminder is an unresolved cutoff-changing boundary case",
+    "brief": "The listing says users can retrieve how many pills they have already taken during the current cycle. The record categorically says no recording. Whether this means user-confirmed intake or a schedule-derived count is unresolved. If eligible, Lady Pill Reminder enters and Sleep Monitor leaves.",
+    "detail": "An intake record over time is potentially relevant to the stated reproductive-health boundary. A reminder generated only from a fixed schedule might fail that rule. The archived sentence alone does not distinguish these implementations, so the strict conclusion is that the current categorical rationale is too strong, not that eligibility is already proved.\n\nThe candidate has 4,742 observed German reviews, above the main cutoff. Changing only this screening decision in memory substitutes one provider in the 47 and changes 11 order positions. This is a concrete sample-changing ambiguity. It should be resolved by a consistent operational rule and appropriate functional/documentary evidence, then applied to comparable medication and contraception reminder apps rather than adjudicating only the convenient cutoff case.",
+    "evidence": "screening.csv play/com.baviux.pillreminder; archived Play Description; main-cascade.csv; evidence.json Lady Pill Reminder scenario.",
+    "required": "Adjudicate confirmed intake history versus scheduled reminders with retained evidence; apply the same rule to comparable apps and regenerate sample and sensitivities."
+  },
+  {
+    "id": "F16",
+    "severity": "MAJOR",
+    "title": "The mental-health boundary needs consistent evidence",
+    "brief": "Headspace is supported by explicit progress/reflection wording, so its inclusion is not disproved. Calm is excluded for recording only meditation, although its listing also mentions saving meditation and sleep sessions to Apple Health. That may describe content sessions rather than physiological sleep. A Calm-eligible scenario replaces Sleep Monitor.",
+    "detail": "Headspace's archived Apple description expressly mentions tracking mental health, documenting reflections and progress, which is more evidence than a meditation-only label suggests. A fair review must retain that support. Calm lists time spent meditating and daily streaks, and mentions saving meditation and sleep sessions. Those sessions are not automatically evidence of measured sleep, so the present record should not be reversed without clarifying what counts as health tracking.\n\nThe operational boundary among recording wellbeing/reflection, recording activity completion and measuring mood or sleep remains insufficiently explicit for consistent exclusion of Calm, 7Mind and Insight Timer. The isolated Calm scenario changed both its Apple and Play decisions to eligible and replaced Sleep Monitor, with no pending candidates. This is a diagnostic, not an adopted classification. The relevant question is consistent application of a rule across all mental-health candidates, not whether one popular app seems desirable.",
+    "evidence": "Archived Headspace Apple/493145008 and Calm Apple/571800810 descriptions; corresponding screening rows; diagnostics.json: calm_counterfactual.",
+    "required": "Define the recording boundary before adjudication and apply it to all similar apps, preserving uncertain and proxy-based judgments."
+  },
+  {
+    "id": "F17",
+    "severity": "MODERATE",
+    "title": "The DiGA exclusion lacks its required verification record",
+    "brief": "Oviva Direkt Apple 1556652646 is excluded under E5 while its reason still says confirm in the BfArM directory. Prescription/reimbursement language is a trigger for checking the registry, not the retained check itself.",
+    "detail": "The methodology requires registry confirmation. The screening row records the listing-level reimbursement signal and explicitly leaves confirmation outstanding. No dated registry capture or exact entry identifier is linked from this row. The classification may be correct; the audit finding is that the prescribed evidence trail is incomplete.\n\nIt is also necessary to distinguish the exact Oviva Direkt product from other apps of the same provider. A later web page or a provider-level reimbursement statement would not establish the exact historical registry status of the selected product. This review makes no independent legal or regulatory determination and does not infer that E5 was substantively wrong.",
+    "evidence": "screening.csv apple/1556652646; D03 E5 operational check; Methodology:363-366.",
+    "required": "Retain the exact registry identity, date/status and documentary evidence for the exclusion; clearly label unresolved checks."
+  },
+  {
+    "id": "F18",
+    "severity": "CRITICAL",
+    "title": "The pilot and validation allocation is infeasible as written",
+    "brief": "The ranked sample has four cycle and two pregnancy apps: six reproductive-health apps. The plan requires two reproductive pilot apps plus five different validation apps, with pilot apps/providers excluded from validation. Seven are needed. No allocation satisfying the stated rules exists under the reported primary categories.",
+    "detail": "The pilot specifies five apps, three fitness and two fertility. Validation specifies ten apps, five per domain, from providers/documents not used in the pilot. Even if every pregnancy app is treated as reproductive/fertility, only six candidate apps are available for that domain. Once two enter the pilot, four remain, below the required five. If pregnancy is not included in fertility, the shortage is larger.\n\nThe three preinstalled apps do not supply additional reproductive-primary apps. Some multi-function apps might have reproductive features, but no explicit domain mapping or disjoint allocation has been supplied that permits counting them in this stratum. The honest conclusion is infeasibility under the stated classification, requiring a revised justified design. Quietly reusing a pilot app in validation would undermine the claimed separation between instrument development and validation.",
+    "evidence": "Results:154-156; Methodology Pilot and Validation and Missed Mentions; v004/output/report.json categories; D03 Consequences.",
+    "required": "Choose and document a feasible allocation before pilot selection; preserve independent validation and explain any change in size, stratification or domain definition."
+  },
+  {
+    "id": "F19",
+    "severity": "MAJOR",
+    "title": "The expanded sample is not aligned with downstream domain plans",
+    "brief": "Mood tracking was added to meet the supervisor's guidance, but harm trees, walkthrough strata, pilot and validation still largely assume fitness and fertility. The two mood apps and the multi-function companion have no complete mapping to those plans. A no-quota sample does not itself define an analysis taxonomy.",
+    "detail": "The supervisor explicitly requested mental-health trackers and broader consideration of sleep and specialized tracking. The current search adds mood and happiness and reports two mood apps. D03 itself recognizes the two-domain consequences as open. Nevertheless, the methodology defines separate fitness/fertility harm trees, six walkthroughs per domain and five validation apps per domain without a complete mapping for the sampled categories.\n\nSleep, diet, activity and heart-rate tracking might reasonably be grouped under a broader physical-health domain, but that taxonomy has to be stated and justified. Assigning all non-reproductive apps to fitness would hide substantively different mental-health pathways. Broad keyword coverage also does not establish comprehensive coverage of depression, anxiety or specialized chronic-disease tracking; the chosen source vocabularies delimit this study.",
+    "evidence": "13 October organized notes sections 1 and 4; D03 Consequences; Methodology App Walkthroughs, Reference Harm Trees, Pilot and Validation.",
+    "required": "Define app-to-domain and multi-function mappings and align harm applicability, walkthroughs and validation with them; state the search-domain limits."
+  },
+  {
+    "id": "F20",
+    "severity": "MODERATE",
+    "title": "Provider independence and repeated-source handling need qualification",
+    "brief": "The 47 ranked apps have unique provider keys, but adding Apple Health and Apple Fitness plus Samsung Health gives 50 apps from 49 provider keys. One account/normalized name/shared domain is an operational grouping, not proof of independent corporate entities or unique policies.",
+    "detail": "The deliberate two-app Apple exception is defensible if it is explicitly an exception. It prevents describing the full sample as 50 independent providers. Provider normalization removes legal/regional words, while aliases and domain reviews handle some further spellings; these checks improve consistency but do not verify corporate ownership or cross-provider policy duplication. The main reached set has no shared-domain flags under the implementation, which is narrower than proving no organizational dependence.\n\nThe pilot evidence for one policy among ten Leap products strips query strings from policy URLs. A pkg query parameter may only select a product-specific view, but stripping it does not itself establish identical text, controller or scope. The provider-diversity rationale can remain useful without claiming that every additional app of the provider has identical communication. Downstream coding and resampling should track unique documents as well as provider keys.",
+    "evidence": "v004 config preinstalled_table, provider_key and shared_domains; processed apps.csv; sampling-checks/v002/pilot_table.py: policy; Appendix C developer-pilot explanation.",
+    "required": "State the 49-provider total and Apple exception, audit shared document identities/scopes, and use the actual dependence structure in analysis and validation."
+  },
+  {
+    "id": "F21",
+    "severity": "MODERATE",
+    "title": "Preinstalled-app coverage is not established to the stated current-phone rule",
+    "brief": "Apple/Samsung are a plausible purposive group, but D6 relies partly on secondary reporting and lacks a model/OS/market-specific preinstallation matrix. Failure to identify a Xiaomi tracker is not proof that none ships on current global phones, so the claimed identical 10%/80% alternatives remain conditional.",
+    "detail": "The methodology requires that an eligible tracker ship on the vendor's current phones without a download. Store availability, eligibility and historical availability without a wearable are separate propositions. D6 describes Apple's iOS 16 behavior, Samsung listings and unsuccessful identification of a global Xiaomi preinstalled tracker, but does not retain a current model-level observation or official preinstallation table covering the German market.\n\nVendor page-view share divided by a platform page-view share can compare vendors within an assumed platform, but does not measure the fraction of devices on which an app is actually installed, enabled or used. The claim that alternative vendor coverage rules produce the same three apps depends on the unresolved Xiaomi premise. This review does not assert that a fourth app must be added; it requires evidence adequate to the rule being stated.",
+    "evidence": "D06 Evidence and Would change if; Methodology:496-521; Results:71-85.",
+    "required": "Retain dated official vendor/model/OS/region evidence or clearly narrow the preinstalled claim; report uncertainty in alternatives rather than treating an unsuccessful search as verified absence."
+  },
+  {
+    "id": "F22",
+    "severity": "MAJOR",
+    "title": "Sensitivity outcomes conceal product-level failures",
+    "brief": "The depth-200 variant pairs Fitbit with Google Search and Google Fit with Chrome. Their screened exclusions can then exclude tracker candidates. Counting only changed provider keys hides these mistakes and changes of app, platform listing or within-provider representative.",
+    "detail": "This failure is reproducible from the current matcher: Google Health (Fitbit), Play com.fitbit.FitbitMobile, pairs with Apple 284815942 (Google), and Google Fit pairs with Apple 535886823 (Google Chrome). A provider-normalized shared first word is insufficient. The one-store exclusion rule then propagates unrelated off-topic decisions to the tracker. D03 acknowledges these examples, but acknowledgment does not repair the variant.\n\nAll 58 stored sensitivity rows reproduce, including the earlier selection comparison. The reported provider differences are valid counts under that implementation; their interpretation as reliable robustness evidence is compromised. The five identity corrections in F01 already show why zero provider turnover can coexist with two different selected iOS products. One-factor-at-a-time checks also do not bound joint effects, missing counts, screening uncertainty or discovery incompleteness.",
+    "evidence": "diagnostics.json: deep_google_pairs; D03 final operational-check bullet; v004/output/sensitivity.csv; evidence.json replay.",
+    "required": "Repair and adjudicate identities across every variant, then report provider, app, listing and order changes separately and state which uncertainties remain untested."
+  },
+  {
+    "id": "F23",
+    "severity": "MAJOR",
+    "title": "Tests and finality gates do not enforce the scientific invariants",
+    "brief": "All 12 v004 tests pass despite known product errors and missing-value collapse. Missing screening rows provisionally count as eligible, and an unfinal run still writes selection/report files before its warning. The old audit targets v003 and hard-codes 114 calibration pairs, so it cannot certify current v004.",
+    "detail": "The tests cover positive matching examples, provider skips, aliases and arithmetic, but have no negative Nike/BabyCenter/gender-specific product cases or explicit missing-versus-zero behavior. A candidate with one eligible store decision is accepted even if the other listing was never screened. The final table/dataset gate checks pending rows and unresolved domain pairs, not author adjudication, identity approval, raw hashes or all five eligibility fields.\n\nWhen pending work exists, selection.csv and report.json have already been written, and main prints a warning without raising an error. Previously generated final tables/datasets may remain. This can leave provisional and older final artifacts side by side. Similarly, write() does nothing for an empty row list, potentially retaining an older nonempty file in an existing output directory. These are latent lifecycle risks, not evidence that the present zero-byte screening/provider-review files contain stale nonempty rows.",
+    "evidence": "v004/tests/test_rank.py; rank.py: decision, select, write, main output block; scripts/sampling-audit/v001/audit.py.",
+    "required": "Add meaningful negative and missing-state tests, schema validation and machine-enforced finality; prevent stale/provisional artifacts from being mistaken for an approved sample; update independent verification to the active version."
+  },
+  {
+    "id": "F24",
+    "severity": "MODERATE",
+    "title": "Sample-size precedent is contextual, not an adequacy argument",
+    "brief": "The cited sample sizes are real: Malki 20, Huckvale 36 and Hutton 64. They support feasibility, not saturation, precision or adequacy for this study's full domain/validation plan. Hutton's 64 include non-health tracking categories; Malki ranks recent-year reviews rather than this study's lifetime mixed counts.",
+    "detail": "The original PDFs support the important precedents. Hutton PDF page 5 derives categories from 105 London Quantified Self members, reports 64 apps and includes spending and time keeping as other self-tracking categories. Malki PDF page 4 reports 20 apps and ranks reviews during the preceding 12 months to reduce bias against newer apps. Huckvale PDF page 3 reports 36 apps and a different search-rank design. Robillard PDF page 2 supports free download and repeated personal input. Sunyaev PDF page 3 reports the 0.89 Android ratings/download correlation.\n\nThose papers justify borrowing selected components with transparent adaptation. They do not validate a combined-store conversion factor, a universal first-30 rule, one app per provider, 50 apps across a broader domain or the new downstream allocation. Sunyaev's ratings/download result is not a direct validation of undocumented German written-review counts. The chapter should distinguish literature precedent, practical constraints, supervisor preference and empirical validation.",
+    "evidence": "Local original PDFs: Malki 2024 p4; Hutton 2018 p5; Huckvale 2019 p3; Robillard 2019 p2; Sunyaev 2015 p3; Methodology sample-size and ranking paragraphs.",
+    "required": "State the intended descriptive claims and practical adequacy argument explicitly; explain adaptations and avoid presenting precedent as statistical validation."
+  },
+  {
+    "id": "F25",
+    "severity": "MAJOR",
+    "title": "Protocol timing and decision authority need reconciliation",
+    "brief": "Major ranking and provider rules changed after collection on 25-26 October; D1-D4/D6 remain proposed and D8-D12 include open decisions. The historical protocol simultaneously says fixed before collection and records later revisions. The methodology should not imply complete prospective specification or settled authority.",
+    "detail": "Post-collection methodological revision is not automatically misconduct or invalid research. Here the history is largely visible and the ranking rationale changed when the worldwide/market-specific distinction was recognized. That is preferable to concealing the change. The problem is inconsistent descriptions of what was predetermined and which rules remain proposed.\n\nThe current Decision Log says a choice is open until supported and confirmed where needed and that methodology does not state open choices. The chapter nevertheless states several proposed choices as operative and retains plans for open D8-D12 matters. The preserved protocol labels version 2 fixed before 23 October while also incorporating later score and preinstalled changes. The scope and timing need a clear versioned account separating pre-collection frame rules, post-collection revisions, exploratory checks and author/supervisor approvals. No claim of outcome-driven manipulation is established by this audit.",
+    "evidence": "Decision-Log register and introductory rule; D02 History; D03 operational checks; historical sampling_protocol.md header and change log; current Methodology.",
+    "required": "Provide one accurate chronology and authority/status table; retain proposed language and open decisions where appropriate and avoid retrospective preregistration claims."
+  },
+  {
+    "id": "F26",
+    "severity": "MODERATE",
+    "title": "Results blur distinct denominators and overstate some checks",
+    "brief": "There are 27 matched candidates with both listings screened across the main frame, but only 22 among the 33 selected matched apps; D3 incorrectly attributes 27 to main selection. Eleven selected both-store apps are decided from one listing. The prose also calls frame presence store availability and turns provider-name/domain checks into broader assurances.",
+    "detail": "The actual screening counts are 27 both-screened matched candidates, 38 one-screened matched candidates and 60 with neither listing screened among 125 matched candidates. Selected matched apps are 22 both-screened plus 11 one-screened, totaling 33. This is compatible with the documented one-listing decision rule; it is not evidence that the code secretly demands two decisions. It does expose an incorrect denominator in D03's explanatory note.\n\nMethodology says that where both listings are screened, an exclusion in either excludes the app and that this never happened in the collection. The deep variant's wrong Google pairings contradict an unqualified across-variants reading. Main-frame absence of conflicting decisions does not establish cross-platform equivalence of access, features, price or language. Similarly, the category label multiple is described as one wearable companion in Results; that interpretation should be recorded rather than silently substituting taxonomy labels. F01 also invalidates the present 648 Apple minimum for the intended BabyCenter product.",
+    "evidence": "D03 operational-check final bullet; evidence.json: screening; all-matched-pairs.csv; Results:115-119,151-159; Methodology:386-391.",
+    "required": "Use separate counts for listings, matched candidates, reached candidates, selected apps and providers; reconcile D3 and Results and qualify checks to their actual implementation scope."
+  },
+  {
+    "id": "F27",
+    "severity": "MAJOR",
+    "title": "The rest of the methodology is still a plan, with unresolved operational dependencies",
+    "brief": "The chapter contains explicit literature-search rework, material-scope TODOs, unfinished instruments and open LLM/two-coder decisions. These are not fabricated results, but prevent a claim that the whole methodology is publication ready. The supervisor required two coders; seeking one later or substituting a small supervisor review is not the same procedure.",
+    "detail": "The sampling work should not be confused with completed privacy coding or walkthrough results: the substantive Results sections remain placeholders. The chapter honestly uses future tense and retains revision marks. However, its opening is unsure about related provider pages, while Material and Language specifies linked provider pages and a supplementary blog search. Walkthrough protocol setup still has device, OS and language blanks. Reference model, coding acceptance and validation choices require a settled decision record and pilot outcomes.\n\nThe literature section names OpenAlex/Semantic Scholar while an inline instruction says to redo the remainder using traditional platforms; much of the detailed procedure is commented out even though literature Results report finalized counts. This review does not audit that literature retrieval pipeline numerically. The relevance here is that methodological decisions and harm trees depend on an unsettled evidence workflow. These items are design incompleteness rather than errors in the reproduced sample counts.",
+    "evidence": "Methodology introduction, Literature Review, Material and Language, Validation, Ethics; Decision Log D8-D13; 04_Study/Instrument/walkthrough_protocol.md; Results stubs; supervisor notes section 6.",
+    "required": "Resolve and freeze the operational design through its decision records before main collection/coding; align material scope, coder roles, instruments and evidence review. Keep unresolved passages visibly provisional."
+  },
+  {
+    "id": "F28",
+    "severity": "MODERATE",
+    "title": "Collection-terms and ethics documentation is incomplete",
+    "brief": "The project acknowledges collection of disallowed search endpoints at the author's direction, but the historical terms-check table is blank and the current methodology says terms will be checked before retrieval. No dated completed collection review was located. Robots rules alone are not a legal or ethics determination.",
+    "detail": "The scraper READMEs and D02 are candid about robots restrictions. That disclosure should not be omitted. However, an author's instruction to collect and a technical robots file are different from a retained terms assessment or an institutional determination where required. The thesis's future-tense ethics promise is chronologically incomplete for a collection that has already occurred.\n\nThe proportionate publication issue is a documented acquisition basis and appropriate handling of any incidental public review snippets in retained pilot data. This audit does not assert a breach of law or that a human-subjects review is necessarily required for public listings. Those questions depend on the actual terms, jurisdiction, data and institutional guidance; the evidence reviewed here does not resolve them.",
+    "evidence": "D02 Endpoint inventory; scraper READMEs; historical protocol Terms table; 04_Study/Ethics/README.md; Methodology Ethics and Feasibility.",
+    "required": "Record what acquisition review was actually performed, by whom and when; resolve any required institutional/terms questions without retroactively presenting an unchecked condition as completed."
+  },
+  {
+    "id": "F29",
+    "severity": "MAJOR",
+    "title": "The project's own validation infrastructure currently fails",
+    "brief": "python scripts/check_project.py crashes on missing 01_Literature/README.md, and graphify refresh fails on the same missing file. Neither reports a successful project-wide check. The graph is useful for navigation, but its old semantic assertions cannot establish the state of deleted or moved files.",
+    "detail": "These were direct read/check attempts in the audited checkout, not hypothetical failures. Twelve ranking tests passed independently. The checker crash means no 0-error result was obtained; it should not be summarized as a clean project or as a known exact number of remaining errors. The same absent README stops literature_index.update during graph refresh.\n\nThe normal artifact package should also identify the exact collection environment, local adapters, dependency versions and commands. The Play parser requirement is pinned to 1.2.7, which is good; a pin alone does not preserve source-response fixtures or the collection-time runtime. Current code plus a historical output does not independently establish the historical environment. The current artifact is recoverable and partially reproducible after input redirection, but not exercisable as documented without intervention.",
+    "evidence": "Captured check_project.py and graphify refresh tracebacks; v004 tests; googleplay requirements; scripts/thesis_graph.py and literature_index.py.",
+    "required": "Restore a runnable check/data package and verify documented commands; report environment and evidence coverage. Do not equate passing narrow unit tests with project or scientific validation."
+  },
+  {
+    "id": "F30",
+    "severity": "MODERATE",
+    "title": "Repeated Apple records use an implicit first-observation rule",
+    "brief": "Twenty-one repeated Apple occurrences disagree with their first metadata observation, including counts and some versions. load() silently keeps the first row while updating search positions. This is deterministic but order dependent and not described as the snapshot-resolution rule.",
+    "detail": "The original collection preserves repeated per-query observations, which makes the inconsistency visible. For Fitbit, the first Apple count is 48,117, while a later query has 48,097. Sleep Cycle has 5,778 versus 5,770. Napper appears with different versions and update timestamps; Meditopia also changes version. Caching, update timing or backend variation could explain these records, and they are not evidence of fabrication.\n\nThe selection code's setdefault takes its factual metadata from the earliest occurrence in JSON query order, including an occurrence outside the analysis depth, while positions are accumulated from all occurrences. A keyword subset sensitivity can consequently use metadata first observed under an omitted query. A declared per-listing observation-resolution policy would make this behavior auditable. The present examples are small count changes, but version divergence can matter when claims are tied to captured product text.",
+    "evidence": "v004/rank.py: load; diagnostics.json: repeated_apple_listing_conflicts; raw Apple per-query records.",
+    "required": "Specify and justify first/last/canonical observation handling, retain timestamps and conflicting values, and test its effect where a cutoff or text/version comparison is sensitive."
+  },
+  {
+    "id": "F31",
+    "severity": "MODERATE",
+    "title": "The reported Play search end time includes product-page collection",
+    "brief": "Results say Google Play was searched from 15:07 to 15:29 UTC on 24 October. The 49 search requests in the retained first run span 15:07:47-15:14:57; its first 100 product-page requests span 15:15:01-15:28:49. Search and enrichment windows have been conflated.",
+    "detail": "The final Play file reuses exactly the search mapping in run-2026-10-24-first.json. That source's request URLs identify 49 search captures ending at 15:14:57.626043 UTC and 100 details captures ending at 15:28:49.334605 UTC. The claimed 15:29 search endpoint is consistent with rounding the end of the whole first collection phase, not the search phase.\n\nThe broader Results statement that product pages were collected on 24 and 25 October is supported: the cache has 100 captures on the 24th and 545 on the 25th. This is a precise reporting error of limited direct sampling impact, but important for a strict snapshot audit and for distinguishing changing search results from later changing product counts.",
+    "evidence": "Results:64-68; scripts/googleplay-scraper/v004/output/run-2026-10-24-first.json requests; final raw search mapping equality; evidence.json cache dates.",
+    "required": "Report search and product-page enrichment times separately, preferably from a machine-generated provenance summary."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "Brief-Review.pdf": {
+    "pages": 5,
+    "outside_safe_region": 0,
+    "missing_findings": [],
+    "sha256": "2006e1c3a67a1049f8709996591773c8c83e4b38c912f29525af34d59a866434"
+  },
+  "Detailed-Review.pdf": {
+    "pages": 14,
+    "outside_safe_region": 0,
+    "missing_findings": [],
+    "sha256": "d969379e8ecb486942657197faeef0ea2ae295fcaaa31f1a6522898e20191f99"
+  },
+  "production_unchanged": true
+}

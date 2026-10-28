@@ -1,0 +1,71 @@
+rank,key,name,provider,r,v,score,status,category,reason
+1,play:com.roblox.client,Roblox,roblox,0,314584,314584.0,excluded,,game
+2,play:de.komoot.android,komoot - Wandern und Radfahren,komoot,417443,99884,137278.83944248722,eligible,activity,records rides and hikes with GPS in a personal log
+3,play:com.gameloft.android.ANMP.GloftDMHM,Minion Rush: Totaler Renn-Spaß,gameloft,0,122681,122681.0,excluded,,game
+4,play:com.yazio.android,Yazio: KI Kalorienzähler,yazio,447096,41489,81540.17617346143,eligible,diet-weight,calorie counter and food diary
+5,play:com.runtastic.android,adidas Running: Lauftracker,adidas,313702,38883,66984.6472255784,eligible,activity,records runs walks and workouts
+6,play:com.weightwatchers.mobile,Weight Watchers Programm,ww,103871,46679,55983.83770893412,eligible,diet-weight,food activity and sleep tracking (subscription; free to install)
+7,play:com.imangi.templerun2,Temple Run 2,imangi studios,0,46000,46000.0,excluded,,game
+8,play:com.fitbit.FitbitMobile,Google Health (Fitbit),google,48117,40627,44937.35492140042,eligible,multiple,Fitbit companion: activity sleep and health data
+9,play:com.myfitnesspal.android,MyFitnessPal: Kalorien Tracker,myfitnesspal,80204,32562,39746.73109537169,eligible,diet-weight,food calorie and fitness tracking
+10,play:org.iggymedia.periodtracker,Flo Zyklus- & Periodenkalender,flo health,218522,14357,33932.35544889048,eligible,cycle,period ovulation and pregnancy tracking
+11,play:com.popularapp.periodcalendar,"Periodenkalender, Zyklus",simple design,0,32901,32901.0,eligible,cycle,period ovulation and pregnancy tracking
+12,play:com.sillens.shapeupclub,Lifesum: Kalorienzähler AI,lifesum,81834,21767,29097.747649227553,eligible,diet-weight,food and calorie tracking
+13,apple:1108185179,Kalender,apple,279233,0,25013.889805420215,provider-skip,,calendar; no health tracking
+14,apple:478618165,Chefkoch – Rezepte & Kochen,chefkoch,269425,0,24135.282222464182,excluded,,recipe collection; no recording of the user's data
+15,play:com.tayu.tau.pedometer,Schrittzähler & Pedometer,ito technologies,46124,18692,22823.820570581564,eligible,activity,step counter
+16,play:com.hp.pregnancy.lite,Schwangerschaft + Tracker-App,philips digital,45420,18564,22632.75575222909,eligible,pregnancy,pregnancy tracking with contraction recorder
+17,play:homeworkout.homeworkouts.noequipment,Workouts zuhause - ohne Geräte,leap fitness,17457,20907,22470.810417583954,eligible,activity,records training progress automatically and tracks body weight
+18,play:sixpack.sixpackabs.absworkout,Sixpack in 30 Tagen,leap fitness,7206,19202,19847.518581033968,provider-skip,activity,records training progress automatically
+19,play:com.clue.android,Clue Perioden Kalender,biowink,99558,10118,19036.47611581735,eligible,cycle,cycle and fertility tracking
+20,play:com.fddb,Fddb: KI Kalorienzähler & Diät,food database,17446,15600,17162.825029797197,eligible,diet-weight,calorie counter and food diary
+21,play:cc.pacer.androidapp,Pacer Pedometer: Schrittzähler,pacer health,43302,13269,17148.023812924355,eligible,activity,step and calorie tracking
+22,play:pedometer.steptracker.calorieburner.stepcounter,Schrittzähler - Pedometer,leap fitness,0,16558,16558.0,provider-skip,activity,step counter
+23,play:menloseweight.loseweightappformen.weightlossformen,Abnehmen für Männer-30 Tagen,leap fitness,619,16125,16180.450458182075,provider-skip,activity,tracks calories burned and weight loss over time
+24,play:com.freeletics.lite,Freeletics: Fitness Workouts,freeletics,53060,11206,15959.152360486034,eligible,activity,tracks workouts and progress
+25,play:com.babycenter.pregnancytracker,Pregnancy App & Baby Tracker,babycenter,648,15132,15190.048298710799,eligible,pregnancy,due-date pregnancy tracker with kick counter
+26,play:com.fatsecret.android,Kalorienzähler von fatsecret,fatsecret,8648,13890,14664.693961807072,eligible,diet-weight,food and weight tracking
+27,play:in.sweatco.app,Sweatcoin Schrittzähler,sweatco,30005,11695,14382.86914015046,eligible,activity,step tracking with rewards
+28,play:com.stepsappgmbh.stepsapp,StepsApp Schrittzähler,stepsapp,126084,1486,12780.693973228817,eligible,activity,step counter with daily history
+29,play:steptracker.healthandfitness.walkingtracker.pedometer,"Schrittzähler - Health , iStep",leap fitness,0,12354,12354.0,provider-skip,activity,records daily steps automatically
+30,play:com.google.android.apps.fitness,Google Fit: Aktivitätstracker,google,0,11765,11765.0,provider-skip,activity,records activity steps and cardio points
+31,apple:1459260306,Fastic AI Abnehmen & Fasten,healthvida and,131138,0,11747.434870889889,eligible,diet-weight,fasting food and weight tracking
+32,play:com.getsomeheadspace.android,Headspace Schlaf & Meditation,headspace,84651,4141,11724.09650334533,eligible,mood,tracks mental health with goals and progress (as on the App Store)
+33,play:com.calm.android,Calm: Meditation und Schlaf,calm com,78316,4559,11574.602718880968,excluded,,meditation and sleep content; records only meditation streaks and no mood or sleep data (as on the App Store)
+34,play:com.strava,Strava: Laufen & Radfahren,strava,27351,8425,10875.121941418272,eligible,activity,records activities
+35,play:monitoryourweight.bustan.net,Überwache dein Gewicht,husain al bustan,12260,9164,10262.25947869504,eligible,diet-weight,weight log
+36,play:com.nike.plusgps,Nike Run Club: Laufen & Cardio,nike,40450,6305,9928.539634030532,eligible,activity,records runs
+37,play:pedometer.stepcounter.calorieburner.pedometerforwalking,Schrittzähler - Pedometer,simple design,0,9421,9421.0,provider-skip,activity,step counter
+38,apple:1389111413,Hole.io,voodoo,99150,0,8881.927186999439,excluded,,game
+39,play:droom.sleepIfUCan,Alarmy – Wecker und Schlaf,delight room,15070,7195,8544.981267857605,eligible,sleep,alarm clock with sleep and snoring tracker
+40,play:com.wsl.noom,Noom: Gesund Abnehmen,noom,6345,7911,8479.389591543231,eligible,diet-weight,weight food activity tracking
+41,play:net.daylio,Daylio Tagebuch & Gewohnheiten,habitics,7948,7435,8146.9874662861475,eligible,mood,mood diary
+42,play:com.sportractive,GPS Laufen Joggen & Radfahren,sportractive com,0,8091,8091.0,eligible,activity,records runs rides and other activities with GPS
+43,play:se.perigee.android.seven,Seven: 7 Minuten Workout,perigee,66701,2036,8011.1227967730665,eligible,activity,records completed workouts and calories
+44,apple:388123359,Stepstone Jobs: Deine Jobbörse,stepstone,87997,0,7882.833551935347,excluded,,job portal
+45,play:com.doubleugames.DoubleUCasino,DoubleU Casino™ - Vegas-Spiele,doubleugames,0,7480,7480.0,excluded,,casino game
+46,play:com.lbrc.PeriodCalendar,Periodenkalender - Zyklus,simpleinnovation,23575,5253,7364.86518843683,eligible,cycle,cycle ovulation and symptom tracking
+47,play:com.fitnesskeeper.runkeeper.pro,ASICS Runkeeper: Running App,asics runner app,24090,5105,7262.999252998654,eligible,activity,records runs
+48,apple:1359069906,STADTRADELN,klima bundnis climate alliance alianza del clima,79411,0,7113.693594017271,eligible,activity,records cycling kilometres over a campaign; export to health app
+49,play:com.urbandroid.sleep,Sleep as Android: Schlafzyklen,petr nalevka urbandroid,0,7044,7044.0,eligible,sleep,sleep cycle tracking alarm
+50,play:loseweight.weightloss.workout.fitness,Abnehmen in 30 Tagen - Fitness,simple design,0,6908,6908.0,provider-skip,activity,workouts with weight-loss tracking
+51,apple:1011796416,"Gymondo Fitness, Pilates, Yoga",gymondo,71987,0,6448.64641866393,excluded,,workout video courses; listing states no recording of the user's data
+52,play:com.nike.ntc,Nike Training Club,nike,36896,2587,5892.169798200013,provider-skip,activity,records runs
+53,play:com.macadamapp,"Macadam, Der Schrittzähler.",macadam technologies,28105,3136,5653.665795165096,eligible,activity,step tracking with rewards
+54,play:loseweightapp.loseweightappforwomen.womenworkoutathome,Abnehm-App für Frauen,leap fitness,0,5569,5569.0,provider-skip,activity,tracks calories burned and weight loss over time
+55,play:bodyfast.zero.fastingtracker.weightloss,Intervallfasten - Fasten-App,leap fitness,2650,5175,5412.38887590064,provider-skip,diet-weight,fasting tracker
+56,apple:549217094,Kalorien Zähler Abnehmen Arise,a r i s e apps resulting in self enhancement,57600,0,5159.848774293168,eligible,diet-weight,calorie and food tracking
+57,play:com.baviux.pillreminder,Lady Pill Reminder,baviux,0,4742,4742.0,excluded,,pill reminder; listing states no recording of the user's data
+58,play:heartratemonitor.heartrate.pulse.pulseapp,Herzfrequenzmesser - Puls,qr code scanner,0,4740,4740.0,eligible,heart,heart rate measurement with health log
+59,play:com.stt.android,Sports Tracker,suunto,0,4521,4521.0,eligible,activity,records activities with GPS and keeps a sports diary
+60,play:losebellyfat.flatstomach.absworkout.fatburning,Bauchfett Verlieren,leap fitness,1835,4314,4478.380598972708,provider-skip,,
+61,play:stepcounter.pedometer.stepstracker,Schrittzähler - Pedometer,hitchhike tech,0,4352,4352.0,eligible,activity,records daily steps automatically
+62,play:io.foodvisor.foodvisor,Foodvisor - KI Kalorien Zähler,foodvisor,6287,3752,4315.193910485784,eligible,diet-weight,calorie tracking
+63,play:cc.relive.reliveapp,Relive: 3D-Videos erstellen,relive,16760,2503,4004.372664186693,eligible,activity,records activities with the phone and shows statistics
+64,apple:1264546236,BetterMe Well-Being Coach,betterme,44421,0,3979.264625049945,eligible,activity,workouts meal logging and progress tracking
+65,play:com.toursprung.bikemap,Bikemap: Fahrrad Navi & GPS,bikemap,19737,2182,3950.0544315663938,eligible,activity,records rides
+66,play:org.naviki,Naviki – das Fahrrad-Navi,beemo,0,3941,3941.0,eligible,activity,bicycle route planner that records the user's rides
+67,play:ipnossoft.rma.free,BetterSleep: Einschlafhilfe,ipnos software,8065,3193,3915.4684091089307,excluded,,sleep sounds and stories; listing states no sleep recording (as on the App Store)
+68,apple:1189568780,BodyFast: Intervallfasten KI,bodyfast,43488,0,3895.685824591342,eligible,diet-weight,fasting and weight tracking
+69,apple:712286167,Schrittzähler++,cross forward consulting,43328,0,3881.3529113294167,eligible,activity,step counter with daily and weekly history
+70,play:com.sleepmonitor.aio,Sleep Monitor - Schlaftracker,fasting app,0,3819,3819.0,eligible,sleep,records and analyses sleep

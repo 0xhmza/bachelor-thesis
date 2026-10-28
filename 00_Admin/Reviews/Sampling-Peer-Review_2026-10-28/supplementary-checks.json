@@ -1,0 +1,33 @@
+{
+  "production_changed_since_start": [],
+  "search_source_equal": true,
+  "search_times": {
+    "n": 49,
+    "first": "2026-10-24T15:07:47.025371+00:00",
+    "last": "2026-10-24T15:14:57.626043+00:00"
+  },
+  "first_pass_page_times": {
+    "n": 100,
+    "first": "2026-10-24T15:15:01.828570+00:00",
+    "last": "2026-10-24T15:28:49.334605+00:00"
+  },
+  "result_rows_beyond_depth": [
+    [
+      "Schritte",
+      "com.weward",
+      36
+    ]
+  ],
+  "ranking_tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "project_check": {
+    "success": false,
+    "reason": "FileNotFoundError: 01_Literature/README.md"
+  },
+  "graphify_refresh": {
+    "success": false,
+    "reason": "FileNotFoundError: 01_Literature/README.md"
+  }
+}
