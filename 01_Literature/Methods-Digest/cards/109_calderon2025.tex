@@ -1,0 +1,13 @@
+\begin{papercard}{calderon2025}
+\cf{Stages} \stagetag{L} (when model labels may stand in for human labels), \stagetag{I} (comparing a model with each of several human annotators). ACL 2025 long paper (Technion). Added from the gap search of 23 October 2026 because it turns ``is the LLM good enough?'' into a test with stated data requirements.
+
+\cf{Problem} LLM labels are used across disciplines, yet there is no accepted procedure to decide whether they can replace human annotators \pc{calderon2025}{1}{there is no standard or rigorous proce- dure to determine whether LLMs can replace human annotators}.
+
+\cf{Procedure (alt-test)} Leave out one human annotator at a time; ask whether the LLM agrees with the remaining humans at least as well as the left-out human does, allowing a cost-benefit margin $\varepsilon$; correct for multiple tests and compute the winning rate $\omega$, the share of humans the model beats. The model may replace the humans if $\omega \geq 0.5$ \pc{calderon2025}{3}{If ω ≥0.5, we conclude that the LLM is more likely to hold an advan- tage over human annotators, which justifies using it}. Data needed: a small group of human annotators on a modest sample \pc{calderon2025}{2}{it involves comparing the LLM to a small group of human annotators (at least three) on a modest subset of examples (between 50 and 100)}. A second measure, the average advantage probability, ranks LLM judges.
+
+\cf{Findings} Ten datasets, six LLMs, four prompting techniques: LLMs could sometimes replace humans, closed models more often than the open models tested \pc{calderon2025}{1}{Our results show that LLMs can sometimes replace humans with closed-source LLMs (such as GPT-4o), outper- forming the open-source LLMs we examine}.
+
+\cf{Limits (card)} With few annotators $\omega$ is coarse (with three it can only be 0, 1/3, 2/3 or 1) \pc{calderon2025}{5}{with only three annotators, ω value is limited to 0, 1⁄3, 2⁄3, 1}. The test assumes the humans are exchangeable and competent; it says nothing about which human is right. Datasets are NLP and vision tasks, not policy coding.
+
+\cf{Use for this thesis} (1) Makes the D8 decision concrete: with one human coder there is no test of whether the model could replace a human, only of how it compares with that one coder (which the methodology already states). A second (and ideally third) coder on 50--100 units would allow the test for the codes where the model is meant to carry weight. (2) Supports the thesis's design choice to keep the model as a screener with full human review, because the replacement claim cannot be tested with the planned staffing. (3) The leave-one-annotator-out idea is also a fair way to compare model--human with human--human agreement if a second coder joins.
+\end{papercard}

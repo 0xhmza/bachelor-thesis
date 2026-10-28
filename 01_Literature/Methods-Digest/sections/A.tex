@@ -1,0 +1,93 @@
+\stagechapter{A}{App search and selection}
+
+\noindent\textbf{What this stage covers.} How a set of apps is drawn from the stores: which stores and storefronts, which keywords, how results are ranked and cut off, which functional and language rules decide eligibility, how missing policies are treated, and how the cascade from hits to the analysed sample is documented. The thesis draft (50 apps, 30 fitness and 20 fertility; German and English keywords; first 20 results per keyword and store; at least 1{,}000 ratings; ranked by average rating) is under revision after the supervisor meeting of 13 October; the open items are D1 (sample size and stopping rule), D2 (store search, ranking, rating or download floor), D3 (tracker scope and keywords), D4 (payment, trial, accounts), D5 (apps without a policy), D6 (native apps) and D7 (language rule) in the Decision Log.
+
+\section{Approach 1: keyword search of the live stores, top-$N$ or ranked}
+Most app-review studies in the corpus search the public stores with a keyword set and keep either the first results or a ranked subset. The differences lie in what is recorded and how personalisation is limited.
+\begin{itemize}
+\item \pa{malki2024} searched Google Play only, requiring availability in both the US and UK stores \pc{malki2024}{4}{We included apps which were available in both the US and}. Terms were refined by testing each in the store search \pc{malki2024}{4}{improved our terms by testing each with the Play Store search}; a script collected the results in March 2023 and returned 184 unique apps \pc{malki2024}{4}{This returned a total of 184 unique apps}. Exclusions followed (zero ratings, not English, not updated for a year, no direct female reproductive-health service, no tracking or predictive feature, non-consumer apps), leaving 52 \pc{malki2024}{4}{This left a total of 52 eligible apps}. Apps were then ranked by the number of reviews in the preceding 12 months, so that rising apps are not disadvantaged, and the top 20 were analysed \pc{malki2024}{4}{We ranked these apps based on the number of reviews}.
+\item \pa{huckvale2019} used an anonymised account to limit tailoring, a dated search per country-specific store, a pre-specified stopping rule of the first 10 apps per term and store, and pooling with de-duplication (36 apps); \pa{lin2025} searched three Chinese stores anonymously, without logging in, because Google Play is unavailable there, and chose the Android version when an app existed on both platforms.
+\item \pa{oloughlin2019} searched one term (``depression'') on 15 October 2017 and capped both stores at the first 250 results, the limit that Google Play shows, so that neither store is favoured; \pa{robillard2019} repeated the same searches on six phone models to capture device-dependent results and screened the first 100 results of each search.
+\item \pa{hutton2018} derived 20 data-type keywords from a survey of self-tracking users, scraped store metadata, excluded instructional apps (345 hits, 292 left), added two missing vendors by hand and took the seven most popular apps per category (64 apps).
+\item \pa{schultchen2021} and \pa{simon2023} used a validated crawler on the European stores (German and British storefronts for the latter), recorded the date, de-duplicated automatically and screened in two steps (store page, then download); the mindfulness review ended with 192 apps from 605 screened, with a German or English language rule based on reviewer competence.
+\end{itemize}
+
+\begin{notebox}[What the store search cannot tell you]
+Rank in a store depends on account, device, region and time (\pa{messner2020} reports account-dependent ranking; \pa{robillard2019} used six phones for this reason). Only \pa{huckvale2019} adds an end-of-study rank-stability check. A thesis that uses the Apple search API for candidate discovery has not shown that the API order equals the visible store rank; the Decision Log keeps this as an open point in D2.
+\end{notebox}
+
+\section{Approach 2: census, curated lists and crawls}
+A second family avoids sampling by taking (almost) everything or by using an external list.
+\begin{itemize}
+\item \pa{sunyaev2015} discovered 37{,}246 apps in the Medical and Health \& Fitness categories of both stores \pc{sunyaev2015}{2}{Flow diagram for app discovery and processing} and kept 24{,}405 English health-related apps after tagging \pc{sunyaev2015}{3}{Tagging reduced the number of discovered apps to}. \pa{tangari2021} started from the top 100 apps and snowballed through ``similar apps'' to crawl more than 1.7 million apps, keeping 20{,}991 health apps because Google Play search does not list everything. \pa{li2022} crawled every app in the US App Store weekly for 32 weeks (1{,}437{,}605 apps); \pa{magoulas2026} took the top-free, top-paid and top-grossing lists (49{,}578 apps after de-duplication) and recorded the full Data Safety schema.
+\item \pa{huckvale2015} assessed \emph{all} 79 testable apps of an accredited library (88 listed, 9 excluded), a census of a curated frame; \pa{zych2026} re-analysed a commercial assessment dataset (436 mental-health apps), which changes the population to apps that were assessed; \pa{grundy2019} triangulated a crawler of weekly top-100 lists in four Google Play stores with endorsed apps.
+\item \pa{bfarm2023} defines a bounded, public frame for Germany: the DiGA directory lists reimbursable digital health applications (risk class I or IIa) with manufacturer, status and data-processing locations. The draft thesis excludes DiGA, but the directory is the way to identify them and to compare them with ordinary store apps.
+\end{itemize}
+Census designs give prevalence statements about a store but cost depth: none of them can run a walkthrough or double-coded policy analysis on tens of thousands of apps. They are contrast cases for the thesis, which reads in detail (\pa{tangari2021} also shows what a communication-only study cannot claim: observed transmissions).
+
+\section{Approach 3: popularity and rating thresholds}
+Popularity is used both as a sampling filter and as a proxy for exposure.
+\begin{itemize}
+\item \pa{alfawzan2022} derived the cut-off statistically instead of choosing a round number. Rating counts below a threshold have high variance, so separate cut-offs were set for the two store categories \pc{alfawzan2022}{5}{we concluded that the 2 categories needed separate cutoff values}, giving 720 ratings for health \& fitness and 100 for medical apps, with a sensitivity check of the next excluded apps \pc{alfawzan2022}{5}{revealed that the apps not chosen in the sequence had 540 and}.
+\item \pa{sunyaev2015} used rating count as a proxy for downloads on iOS, which reports none; on Android the two correlated at Spearman $r=0.89$ \pc{sunyaev2015}{3}{since only Android (and not iOS) reports download count}. \pa{tangari2021} adds that popularity correlates with policy presence, a sampling-bias argument.
+\item \pa{hutton2018} found that popularity does not predict privacy quality, which separates the claim ``these apps are widely used'' from ``these apps are good or bad''.
+\end{itemize}
+The draft thesis threshold (at least 1{,}000 ratings, ranking by average rating, rating count as tie-break) selects \emph{highly rated} candidates, not the most downloaded ones, as the draft itself says. \pa{alfawzan2022} shows how to justify a floor with data; \pa{malki2024} ranks by recent review count and states why.
+
+\section{Approach 4: functional eligibility and scope}
+Eligibility rules differ in whether they define the domain by store category, by keywords or by function.
+\begin{itemize}
+\item Function over category: \pa{robillard2019} requires personal input \emph{over time} (a tracking feature) and excludes one-time input; \pa{malki2024} drops apps without a tracking or predictive feature; \pa{schultchen2021} excludes timer-, music- or quote-only apps; \pa{alfawzan2022} requires a real women's-health service, not information only. \pa{dehling2015} offers a functional typology (12 archetypes from store metadata) that separates trackers from information providers and calculators.
+\item Boundary cases need explicit rules. \pa{simon2023} excluded sensor-only sleep trackers because the review targeted therapy; the thesis targets tracking, so the same evidence can justify the opposite rule if it is written down (D3).
+\item Language: the corpus uses a rule tied to reviewer competence (\pa{schultchen2021}: German or English) or to the market (\pa{alfawzan2022} checks that the policy language matches the app's languages). The meeting decision (English first, German fallback; D7) is a per-material-type rule that needs its own log.
+\item Access: apps behind a paired device, payment or identity check cannot be inspected; the studies skip and report them (\pa{huckvale2015} excluded apps with failed log-in and listed each reason; D4, D11).
+\item Clinical frameworks give attribute lists that can double as eligibility and descriptive fields: \pa{apa2024} (ownership, funding, updated within 180 days, cost, platforms, languages, intended users) and \pa{messner2020marsg} (classification block).
+\end{itemize}
+
+\section{Approach 5: policy discovery and apps without a policy}
+Whether an app without a policy stays in the sample changes every denominator.
+\begin{itemize}
+\item \pa{sunyaev2015} fixed a three-step discovery protocol with a stop rule: the store page, then the developer's website, then the first 30 Google results for ``\$APPNAME privacy policy'' \pc{sunyaev2015}{1}{We used a three-step manual procedure for privacy policy dis}, and kept \emph{absence} as an outcome.
+\item \pa{oloughlin2019} counts absence inside the transparency score, so the denominator stays at all eligible apps; \pa{tangari2021} applies a broken-or-empty-link rule and a comply/violate/no-policy trichotomy; \pa{alfawzan2022} found 16 of 23 apps with an in-app policy, three with none and one needing four clicks via the website \pc{alfawzan2022}{10}{at least four clicks were required to find it}.
+\end{itemize}
+This matches the meeting decision to include apps without a policy and report absence (D5), while the draft's eligibility rule ``reachable policy'' would remove them; the two need reconciling in the Decision Log.
+
+\section{Approach 6: documenting the cascade}
+Reporting guidance is consistent: \pa{page2021} wants sources and dates, the search as run, who screened and how independently, a flow of numbers with reasons for exclusion, and an availability statement; \pa{rethlefsen2021} adds platform, exact strategies as run, limits with justification, dates, record counts per source and the deduplication method; \pa{tricco2018} and \pa{arksey2005} give the scoping-review variant (criteria may be refined after seeing the volume, but must then be logged). Among app studies, \pa{alfawzan2022} (PRISMA flow, platform, date, string, filters), \pa{schultchen2021} and \pa{malki2024} (counted exclusion cascade) are the models. \pa{huckvale2015}'s exclusion table (AF6, in its additional file \pp{huckvale2015af}) lists every excluded app with its reason.
+
+\begin{table}[t]
+\centering\small
+\caption{Selection designs in the corpus. Numbers are as reported in the cards; ``--'' means not applicable or not a flow design.}
+\label{tab:A-designs}
+\begin{tabularx}{\textwidth}{@{}P{2.6cm}P{3.0cm}Y P{2.6cm}@{}}
+\toprule
+\textbf{Study} & \textbf{Stores, date} & \textbf{Search and rule} & \textbf{Flow}\\
+\midrule
+\pa{malki2024} & Google Play, US+UK, Mar 2023 & 10-term set, script; ranked by reviews in last 12 months, top 20 & 184 $\to$ 52 $\to$ 20\\
+\pa{alfawzan2022} & both stores, Jan 2021 & search string with category filters; per-category rating-count cut-off & 136 (text: 163) $\to$ 23\\
+\pa{sunyaev2015} & both stores, 2013 & crawl of two categories; tags, English & 37{,}246 $\to$ 24{,}405\\
+\pa{oloughlin2019} & both stores, 15 Oct 2017 & ``depression'', first 250 per store; two-stage screen by two raters & 500 $\to$ 116\\
+\pa{robillard2019} & both stores, six phones & 12$\times$15 keyword grid, first 100 results; tracking-over-time rule & see card\\
+\pa{schultchen2021} & European stores, 24 Oct 2018 & crawler, 4 keywords; functional mindfulness, DE/EN & 605 $\to$ 192\\
+\pa{simon2023} & DE+GB stores, Sep 2020 & crawler plus apps named in reviews; two-level screen & see card\\
+\pa{huckvale2019} & US+AU, Jan 2018 & anonymous account; first 10 per term and store & 36\\
+\pa{hutton2018} & UK Google Play & 20 keywords from user survey; 7 most popular per category & 345 $\to$ 292 $\to$ 64\\
+\pa{grundy2019} & Play top-100, UK/US/AU/CA, 2017 & crawler plus endorsed apps & 821 names screened\\
+\pa{huckvale2015} & NHS Apps Library, Jul 2013 & census of an accredited list & 88 $\to$ 79\\
+\pa{tangari2021} & Google Play, Oct--Nov 2019 & crawl plus ``similar apps'' snowball & 20{,}991\\
+\pa{li2022} & US App Store, weekly & every app, 32 weeks & 1{,}437{,}605\\
+\pa{magoulas2026} & Google Play top lists, May 2023 & top free/paid/grossing & 49{,}578\\
+\pa{zych2026} & ORCHA dataset & subset rule: mental-health category & 436\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{thesisbox}[Implications for this thesis (stage A)]
+\begin{enumerate}[leftmargin=1.3em]
+\item Write the store search as a protocol that PRISMA-S can audit: storefront and country, device or emulator, language setting, account state, query list, ranking order, number of results examined, date and time, filters, counts before and after de-duplication across stores. Keep raw lists unchanged and decide D2 only after the API-versus-store-rank question is settled.
+\item Justify the rating floor from data, as \pa{alfawzan2022} does (variance by rating-count bin, sensitivity of the next excluded apps), or state it as a practical choice and report how many candidates it removes; do not lower it after seeing results (the draft already says so).
+\item Define ``tracker'' by function (a feature that records data over time), not by store category, and log each boundary case (sleep, mental-health trackers, specialised apps; D3). Keep DiGA and native platform apps (D6) as explicit exclusions with a reason.
+\item Keep apps without a reachable policy in the denominator and code absence (D5); log the policy discovery steps and the stop rule, adapting \pa{sunyaev2015}.
+\item State what the ranking measures. Rating-based selection picks highly rated apps, not popular ones; \pa{hutton2018} shows popularity is not quality.
+\end{enumerate}
+\end{thesisbox}

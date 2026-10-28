@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 THESIS = ROOT / '03_Thesis'
 BIB = ROOT / '_shared/references.bib'
 LIT = ROOT / '01_Literature'
-SKIP = {'.git', '.venv', 'graphify-out', '99_Archive', 'node_modules', 'tmp'}
+SKIP = {'.git', '.venv', 'graphify-out', '99_Archive', '#_Junk_Backup', '.tex', 'node_modules', 'tmp'}
 QUIET = '--quiet' in sys.argv
 
 errors, warnings, info = [], [], []

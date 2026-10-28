@@ -1,0 +1,94 @@
+id,collection,priority,author_year,title,status,note_file,changed_on
+cao2024deleted,core,core · C,Cao et al. (2024),“I Deleted It After the Overturn of Roe v. Wade”: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era,to read,,2026-10-17
+citron2021harms,core,core · A,Citron & Solove (2022),Privacy Harms,to read,,2026-10-17
+gabriele2020understanding,core,core · C,Gabriele & Chiasson (2020),"Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours",to read,,2026-10-17
+hudig2025intimate,core,core · B,Hudig & Singh (2025),Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking,to read,,2026-10-17
+knabenhans2026harms,core,core · A,Knabenhans et al. (2026),On the (Privacy) Harms of the European Digital Identity Framework,to read,,2026-10-17
+malki2024exploring,core,core · A,Malki et al. (2024),Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World,to read,,2026-10-17
+martin2025cookies,core,core · A,"Martin, Nissenbaum & Shmatikov (2025)",No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques,to read,,2026-10-17
+niksirat2024wearable,core,core · C,Salehzadeh Niksirat et al. (2024),"Wearable Activity Trackers: A Survey on Utility, Privacy, and Security",read,,2026-10-17
+nissenbaum2009privacy,core,core · B,Nissenbaum (2009),"Privacy in Context: Technology, Policy, and the Integrity of Social Life",to read,,2026-10-17
+wharton1994cognitive,core,core · A,Wharton et al. (1994),The Cognitive Walkthrough Method: A Practitioner's Guide,to read,,2026-10-17
+M2,methods,A,Hutton et al. (2018),Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach,to read,,2026-10-17
+M3,methods,A,Shipp & Blasco (2020),How private is your period?: A systematic analysis of menstrual app privacy policies,to read,,2026-10-17
+MN3,methods,A,,"Schaub et al. (2015), A Design Space for Effective Privacy Notices",to read,,2026-10-17
+M4,methods,A,O’Connor & Joffe (2020),Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines,to read,,2026-10-17
+MN4,methods,A,,"Habib et al. (2019), An Empirical Analysis of Data Deletion and Opt-Out Choices on 150 Websites",to read,,2026-10-17
+M5,methods,A,Mahatody et al. (2010),"State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions",to read,,2026-10-17
+MN5,methods,B,,"Arkalakis et al. (2024), Abandon All Hope Ye Who Enter Here: A Dynamic, Longitudinal Investigation of Android's Data Safety Section",to read,,2026-10-17
+M6,methods,A,McDonald et al. (2019),Reliability and Inter-rater Reliability in Qualitative Research: Norms and Guidelines for CSCW and HCI Practice,to read,,2026-10-17
+MN6,methods,B,,"Harkous et al. (2018), Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning",to read,,2026-10-17
+M7,methods,A,Hsieh & Shannon (2005),Three Approaches to Qualitative Content Analysis,to read,,2026-10-17
+MN7,methods,B,,"American Psychiatric Association, The App Evaluation Model",to read,,2026-10-17
+M8,methods,A,Polson et al. (1992),Cognitive walkthroughs: a method for theory-based evaluation of user interfaces,to read,,2026-10-17
+MN8,methods,B,,"Article 29 Working Party / EDPB, Guidelines on transparency under Regulation 2016/679",to read,,2026-10-17
+M9,methods,A,Sunyaev et al. (2015),Availability and quality of mobile health app privacy policies,to read,,2026-10-17
+MN9,methods,B,,"Association of Internet Researchers, Internet Research: Ethical Guidelines 3.0",to read,,2026-10-17
+M10,methods,A,Wilson et al. (2016),The Creation and Analysis of a Website Privacy Policy Corpus,to read,,2026-10-17
+MN10,methods,C,,"BfArM, The Fast-Track Process for Digital Health Applications (DiGA)",to read,,2026-10-17
+M11,methods,A,Alfawzan et al. (2022),"Privacy, Data Sharing, and Data Security Policies of Women’s mHealth Apps: Scoping Review and Content Analysis",to read,,2026-10-17
+M12,methods,A,Robillard et al. (2019),"Availability, readability, and content of privacy policies and terms of agreements of mental health apps",to read,,2026-10-17
+M13,methods,A,LaMonica et al. (2021),Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines,to read,,2026-10-17
+M14,methods,A,Schultchen et al. (2021),Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores,to read,,2026-10-17
+M15,methods,A,Messner et al. (2020),The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study,to read,,2026-10-17
+M16,methods,A,Campbell et al. (2013),Coding In-depth Semistructured Interviews: Problems of Unitization and Intercoder Reliability and Agreement,to read,,2026-10-17
+M17,methods,A,Hayes & Krippendorff (2007),Answering the Call for a Standard Reliability Measure for Coding Data,to read,,2026-10-17
+M18,methods,A,Benjumea et al. (2020),Privacy Assessment in Mobile Health Apps: Scoping Review,to read,,2026-10-17
+M19,methods,A,Tangari et al. (2021),Mobile health and privacy: cross sectional study,to read,,2026-10-17
+M20,methods,A,Light et al. (2018),The walkthrough method: An approach to the study of apps,to read,,2026-10-17
+M21,methods,B,Huckvale et al. (2015),Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment,to read,,2026-10-17
+M22,methods,B,Huckvale et al. (2019),Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation,to read,,2026-10-17
+M23,methods,B,Grundy et al. (2019),"Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis",to read,,2026-10-17
+M24,methods,B,Iwaya et al. (2023),On the privacy of mental health apps: An empirical investigation and its implications for app development,to read,,2026-10-17
+M25,methods,B,Spencer (2000),"The streamlined cognitive walkthrough method, working around social constraints encountered in a software development company",to read,,2026-10-17
+M26,methods,B,Hallgren (2012),Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial,to read,,2026-10-17
+M27,methods,B,Cohen (1960),A Coefficient of Agreement for Nominal Scales,to read,,2026-10-17
+M28,methods,B,Krippendorff (2004),Reliability in Content Analysis.: Some Common Misconceptions and Recommendations,to read,,2026-10-17
+M29,methods,B,Gwet (2008),Computing inter‐rater reliability and its variance in the presence of high agreement,to read,,2026-10-17
+M30,methods,B,Feinstein & Cicchetti (1990),High agreement but low Kappa: I. the problems of two paradoxes,to read,,2026-10-17
+M32,methods,B,Stoyanov et al. (2015),Mobile App Rating Scale: A New Tool for Assessing the Quality of Health Mobile Apps,to read,,2026-10-17
+M33,methods,B,Simon et al. (2023),Help for insomnia from the app store? A standardized rating of mobile health applications claiming to target insomnia,to read,,2026-10-17
+M34,methods,B,Lin et al. (2025),Quality and Privacy Policy Compliance of Mental Health Care Apps in China: Cross-Sectional Evaluation Study,to read,,2026-10-17
+M35,methods,B,Zych et al. (2026),The Quality and Characteristics of Digital Mental Health Apps: Mixed Methods Study,to read,,2026-10-17
+M36,methods,B,Dehling et al. (2015),Exploring the Far Side of Mobile Health: Information Security and Privacy of Mobile Health Apps on iOS and Android,to read,,2026-10-17
+M37,methods,B,Parker et al. (2019),How private is your mental health app data? An empirical study of mental health app privacy policies and practices,to read,,2026-10-17
+M38,methods,B,Magoulas & Polykalas (2026),Mobile App Privacy Disclosures on Google Play in the Post-GDPR Context: A Large-Scale Analysis of Data Safety Section and Permissions,to read,,2026-10-17
+M39,methods,B,Habib et al. (2020),"""It's a scavenger hunt"": Usability of Websites' Opt-Out and Data Deletion Choices",to read,,2026-10-17
+M40,methods,B,Duguay & Gold-Apel (2023),Stumbling Blocks and Alternative Paths: Reconsidering the Walkthrough Method for Analyzing Apps,to read,,2026-10-17
+M41,methods,B,Nielsen & Molich (1990),Heuristic evaluation of user interfaces,to read,,2026-10-17
+M42,methods,B,Wharton et al. (1992),"Applying cognitive walkthroughs to more complex user interfaces: experiences, issues, and recommendations",to read,,2026-10-17
+M43,methods,B,MacQueen et al. (1998),Codebook Development for Team-Based Qualitative Analysis,to read,,2026-10-17
+M44,methods,B,Hruschka et al. (2004),Reliability in Coding Open-Ended Data: Lessons Learned from HIV Behavioral Research,to read,,2026-10-17
+M45,methods,B,Fereday & Muir-Cochrane (2006),Demonstrating Rigor Using Thematic Analysis: A Hybrid Approach of Inductive and Deductive Coding and Theme Development,to read,,2026-10-17
+M46,methods,B,Mayring (2000),Qualitative Content Analysis,to read,,2026-10-17
+M47,methods,B,Lombard et al. (2002),Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability,to read,,2026-10-17
+M48,methods,B,Nowell et al. (2017),Thematic Analysis: Striving to Meet the Trustworthiness Criteria,to read,,2026-10-17
+M49,methods,B,Artstein & Poesio (2008),Inter-Coder Agreement for Computational Linguistics,to read,,2026-10-17
+M50,methods,B,McHugh (2012),Interrater reliability: the kappa statistic,to read,,2026-10-17
+M51,methods,C,Braun & Clarke (2006),Using thematic analysis in psychology,to read,,2026-10-17
+M52,methods,B,Braun & Clarke (2021),One size fits all? What counts as quality practice in (reflexive) thematic analysis?,to read,,2026-10-17
+M53,methods,B,Page et al. (2021),The PRISMA 2020 statement: an updated guideline for reporting systematic reviews,to read,,2026-10-17
+M54,methods,B,Rethlefsen et al. (2021),PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews,to read,,2026-10-17
+M55,methods,B,Tricco et al. (2018),PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation,to read,,2026-10-17
+M56,methods,C,Arksey & O'Malley (2005),Scoping studies: towards a methodological framework,to read,,2026-10-17
+M57,methods,B,O’Brien et al. (2014),Standards for Reporting Qualitative Research: A Synthesis of Recommendations,to read,,2026-10-17
+M58,methods,C,von Elm et al. (2007),The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: Guidelines for Reporting Observational Studies,to read,,2026-10-17
+M59,methods,B,Kelley et al. (2009),"A ""nutrition label"" for privacy",to read,,2026-10-17
+M60,methods,B,Li et al. (2022),Understanding iOS Privacy Nutrition Labels: An Exploratory Large-Scale Analysis of App Store Data,to read,,2026-10-17
+M61,methods,B,Zou et al. (2019),You `Might' Be Affected: An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications,to read,,2026-10-17
+M62,methods,C,Nouwens et al. (2020),Dark Patterns after the GDPR: Scraping Consent Pop-ups and Demonstrating their Influence,to read,,2026-10-17
+M63,methods,C,Mathur et al. (2019),Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites,to read,,2026-10-17
+M64,methods,C,Gray et al. (2018),The Dark (Patterns) Side of UX Design,to read,,2026-10-17
+M65,methods,B,Rodriguez et al. (2024),Large language models: a new approach for privacy policy analysis at scale,to read,,2026-10-17
+M66,methods,B,Törnberg (2024),Best Practices for Text Annotation with Large Language Models,to read,,2026-10-17
+M67,methods,B,Gilardi et al. (2023),ChatGPT outperforms crowd workers for text-annotation tasks,to read,,2026-10-17
+M68,methods,B,Baumann et al. (2025),Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation,to read,,2026-10-17
+M69,methods,B,Pangakis et al. (2023),Automated Annotation with Generative AI Requires Validation,to read,,2026-10-17
+M73,methods,B,Moniz & Almeida (2026),Toward Risk Communication in Intimate Health Technologies,to read,,2026-10-17
+M74,methods,C,Doan et al. (2025),Analysis of Transparency and User-Relevancy of DTC Company Policies,to read,,2026-10-17
+M75,methods,B,Solove (2006),A Taxonomy of Privacy,to read,,2026-10-17
+M76,methods,A,Krippendorff (2019),Content Analysis: An Introduction to Its Methodology,to read,,2026-10-17
+M78,methods,B,Deng et al. (2011),A privacy threat analysis framework: supporting the elicitation and fulfillment of privacy requirements,to read,,2026-10-17
+M79,methods,B,Brooks et al. (2017),An introduction to privacy engineering and risk management in federal systems,to read,,2026-10-17
+M82,methods,A,O'Loughlin et al. (2019),Reviewing the data security and privacy policies of mobile apps for depression,to read,,2026-10-17
+M83,methods,B,Mayring (2025),"Qualitative Content Analysis With ChatGPT: Pitfalls, Rough Approximations and Gross Errors. A Field Report",to read,,2026-10-17
