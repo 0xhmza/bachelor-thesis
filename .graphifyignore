@@ -50,6 +50,15 @@ scripts/zotero-pin-keys/*/output/
 literature_new/literature methodology analysis/tex/
 literature_new/zotero/
 
+# Restored archives and generated research output are historical evidence,
+# not current methodological decisions. Keep the active sources indexed.
+01_Literature/#_Junk_Backup/
+01_Literature/.tex/
+01_Literature/Literature-Review/decisions/raw/
+output/
+00_Admin/Reviews/*/audit-source.txt
+00_Admin/Reviews/*/diagnostics-source.txt
+
 # Archived web pages and store records behind the identity register (raw data).
 04_Study/App-Sample/identity-evidence/*.html
 04_Study/App-Sample/identity-evidence/*.json
