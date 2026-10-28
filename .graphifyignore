@@ -49,3 +49,7 @@ scripts/zotero-pin-keys/*/output/
 # Backup copies of the methods digest sources (the originals live in 01_Literature/Methods-Digest).
 literature_new/literature methodology analysis/tex/
 literature_new/zotero/
+
+# Archived web pages and store records behind the identity register (raw data).
+04_Study/App-Sample/identity-evidence/*.html
+04_Study/App-Sample/identity-evidence/*.json

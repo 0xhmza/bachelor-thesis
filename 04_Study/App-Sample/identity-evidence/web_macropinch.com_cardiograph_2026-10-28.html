@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Cardiograph - Your Personal Heart Rate Meter</title>
+		<!-- Basic META TAGS
+		================================================================= -->
+        <meta http-equiv="Content-Type" content="txt/html; charset=utf-8" />
+		<meta name="description" content="Cardiograph is an app which measures your heart rate. You can save your results for future reference and keep track of multiple people with individual profiles." />
+        <meta name="keywords" content="cardio, health, hearth, pulse, hearth rate, track, measure, fitness, family, friends, pulse meter, instant, stress, medical, doctor" />
+		<meta name="author" content="MacroPinch"/>
+        <meta name="robots" content="index/follow"/>
+        <meta name="revisit-after" content="7 days"/>
+        
+        <!-- Mobile Specific Metas
+		================================================================= -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- Open Graph Metas
+		 ================================================== -->
+		<meta property="og:title" content="Cardiograph - Personal Heart Rate Meter by MacroPinch" /> <!-- The title of your object -->
+		<meta property="og:type" content="article" /> <!-- The type of your object, e.g., "video.movie". -->
+		
+		<link rel="shortcut icon" type="image/x-icon" href="http://macropinch.com/resources/img/favicon.ico" />
+
+
+<meta property="og:url" content="http://macropinch.com/cardiograph" /> <!-- The canonical URL of your object that will be used as its permanent ID in the graph -->
+<meta property="og:image" content="http://macropinch.com/fb/cardiograph_facebook_banner.jpg" /><!-- An image URL which should represent your object within the graph. -->
+<meta property="og:image:secure_url" content="https://macropinch.com/fb/cardiograph_facebook_banner.jpg" /> <!-- An alternate url to use if the webpage requires HTTPS.-->
+<meta property="og:image:type" content="image/jpeg" /><!-- A MIME type for this image. -->
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />		
+		<meta property="og:locale" content="en_US" /><!-- The locale these tags are marked up in. Of the format language_TERRITORY. Default is en_US. -->
+		<meta property="og:site_name" content="Cardiograph" />
+		<meta property="og:description" content="Cardiograph is an app which measures your heart rate. You can save your results for future reference and keep track of multiple people with individual profiles." /><!-- A one to two sentence description of your object. Same as meta name="description" -->
+		<meta name="apple-itunes-app" content="app-id=1073907652, affiliate-data=from_site, app-argument=https://itunes.apple.com/us/app/cardiograph/id1073907652?ls=1&mt=8">
+		<!--
+		 =============================================================================================================================
+			If a tag can have multiple values, just put multiple versions of the same <meta> tag on your page. 
+			The first tag (from top to bottom) is given preference during conflicts.
+		 ============================================================================================================================= 
+		 -->
+		<!--
+		 =============================================================================================================================
+			The Open Graph protocol enables any web page to become a rich object in a social graph. For more information http://ogp.me
+		 ============================================================================================================================= 
+		 -->
+		
+		  <!-- CSS
+		================================================================= -->
+        <link href="http://macropinch.com/resources/css/style.css" type="text/css" rel="stylesheet" /> 
+		<link href="http://macropinch.com/resources/css/styleInner.css" type="text/css" rel="stylesheet" /> 
+		<link href="http://macropinch.com/resources/js/bxslider/jquery.bxslider.css" type="text/css" rel="stylesheet" /><!-- bxslider css file --> 
+		<link href="http://macropinch.com/resources/css/MQ.css" type="text/css" rel="stylesheet" /><!-- Media Query file -->
+		
+		
+		<!-- JavaScript
+		================================================================= -->
+		<script type="text/javascript" src="http://macropinch.com/resources/js/jquery_1.10.2.js"></script><!-- jQuery -->
+		<script type="text/javascript" src="http://macropinch.com/resources/js/plugins.js"></script><!-- HTML5 support, Selectivizr ,easing.jquery -->
+		<script type="text/javascript" src="http://macropinch.com/resources/js/bxslider/jquery.bxslider.min.js"></script><!-- bx slider -->
+		<script type="text/javascript" src="http://macropinch.com/resources/js/main.js"></script><!-- My JavaScript file -->
+		<script type="text/javascript" src="http://macropinch.com/resources/js/jquery.prettyPhoto.js"  charset="utf-8"></script>
+		<link rel="stylesheet" href="http://macropinch.com/resources/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		
+		    </head>
+
+    <body id="innerpage" itemscope="itemscope" itemtype="http://schema.org/WebPage"><!-- USE MICRODATA PLEACE schema.org -->
+		<div id="detector-MQ"></div> <!-- this element is for detecting media queries with javascript resizeWindow function (remove if the site is not responsive!!!)-->
+		
+		<div id="main" class="cfix">
+			
+<!-- === === HEADER === === -->
+<header id="header">
+	<section class="container">
+		<h1 class="logo" itemtype="http://schema.org/Organization" itemscope="itemscope" itemprop="provider" itemref="address">
+			<a href="http://macropinch.com/" id="companyLogo" itemprop="url">
+				<!-- <img src="resources/img/logo.png" alt="macropinch" itemprop="logo" /> -->
+			</a>
+			<meta itemprop="name" content="MacroPinch">
+			<meta itemprop="description" content="MacroPinch, creator of numerous successful iOS and Android apps, including Cardiograph, Weather, MyGrocery, Alarm Clock, and more..." >
+		</h1>
+		<nav id="topMenu" class="cfix">
+			<ul id="siteMenu">
+				<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+					<a class="trans" href="http://macropinch.com/index.php#view-1" itemprop="url">
+						<span itemprop="name">Home</span>
+					</a>
+				</li>
+				<li itemtype="http://schema.org/SiteNavigationElement" class="selected" itemscope="itemscope">
+					<a class="trans" href="http://macropinch.com/index.php#view-2" itemprop="url">
+						<span itemprop="name">Apps</span>
+					</a>
+				</li>
+				<!-- 
+<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+					<a class="trans" href="http://macropinch.com/index.php#view-3" itemprop="url">
+						<span itemprop="name">About</span>
+					</a>
+				</li>
+ -->
+				<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+					<a class="trans" href="http://macropinch.com/index.php#footMenu" itemprop="url">
+						<span itemprop="name">Contact</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<div class="headline"></div>
+</header>
+<!-- === === //END HEADER === === -->			
+			<div id="content">
+				<div id="project_IMG" class="proj-cardio-new proj-2 cfix">
+					<div class="brandBox">
+						<div class="brandBoxInner cfix">
+							<a href="" class="brandLogo cfix">
+								<img src="http://macropinch.com/resources/img/newcardio/Logo.png" alt="Cardiograph" />
+							</a>
+						</div>
+					</div>
+					
+					<nav class="d-menu">
+						<a class="appLogo noMargin" href="https://itunes.apple.com/us/app/cardiograph/id1073907652?ls=1&mt=8" target="_blank">
+							<img src="http://macropinch.com/resources/img/grocery/appStore.png" class="grocery_app_store" alt="Download from AppStore" />
+						</a>
+						
+						<a class="appLogo" href="https://play.google.com/store/apps/details?id=com.macropinch.hydra.android" target="_blank">
+							<img src="http://macropinch.com/resources/img/compass/google_play.png" class="mobileCenteredImage" alt="Download GooglePlay" />
+						</a>
+						
+						<a class="appLogo" href="http://www.amazon.com/MacroPinch-Cardiograph/dp/B004LZDJCG/" target="_blank">
+							<img src="http://macropinch.com/resources/img/weather/amazon.png" class="mobileCenteredImage" alt="Download Amazon AppStore" />
+						</a>
+					</nav>
+				</div>
+				
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-white HSize-auto cfix">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<header class="header vpad30 full-box centerTxt cfix">
+							<h1 class="headStyler h_1">Measure Your <span class="cardio_red_txt">Heart Rate</span> Everywhere</h1>
+							<br/><br/>
+							<div class="txt" itemprop="articleBody">
+								<p>
+									Cardiograph is improved and redesigned to provide fast and reliable way to measure your heart rate on Android, iOS, watchOS, and macOS. Feeling sentimental? The old app is still available as "Cardiograph Classic".
+								</p>
+							</div>
+							<br/><br/><br/>
+						</header>
+						
+						<figure class="media-holder custom-alarm-tv cfix">
+							<img src="http://macropinch.com/resources/img/newcardio/phones@2x.png" alt="Cardiograph is available for Android and iOS." itemprop="image" />
+						</figure>
+					</article>
+				</div>
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-white cfix">
+					<br /><br />
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<header class="header vpad30 full-box centerTxt cfix">
+							<h1 class="headStyler h_1"><span class="cardio_red_txt cardio_title_font">FEATURES</span></h1>
+							<br/><br/>
+						</header>
+					</article>
+				</div>
+				
+				
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-dark woodBgrCardiograph HSize-auto HSize-media-291 cfix">
+				
+					<div class="bgr_div"></div>
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<div class="w100 cfix">
+							<section class="txt-section half-box setL setAbsolute customMarg75 cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<h1 class="headStyler h_1" itemprop="name"><span>Improved</span> Algorithm</h1>
+										<div class="txt opacity_06" itemprop="articleBody">
+											<p>
+												Get accurate results almost instantly with brand new measurement algorithm.<br/><br/>Easy integration with Cardiograph Classic.
+												<br/>
+											</p>
+										</div>
+										<div class="cardioVideo">
+											<iframe width="337" height="224" src="//www.youtube.com/embed/FUiArz1erIk?rel=0&showinfo=0&autoplay=0&autohide=1&controls=0&showsearch=0&wmode=Opaque" frameborder="0" allowfullscreen></iframe>
+								
+											<a href="http://www.youtube.com/watch?v=FUiArz1erIk" rel="prettyPhoto" class="cardioVideo2 cardioVideoButton" title="">
+												<img src="http://macropinch.com/resources/img/newcardio/play@2x.png" width="183" alt="Play video"/>
+											</a>
+										</div>
+										<br/><br/>
+									</div>	
+								</div>		
+							</section>
+							
+							<figure class="media-holder half-box media-height-310 cfix">
+								<img src="http://macropinch.com/resources/img/newcardio/history@2x.png" class="custom-fun-phone-cardiograph" alt="" itemprop="image" />
+							</figure>
+						</div>
+					</article>
+				</div>
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-white HSize-auto HSize-padding30 cfix">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<div class="w100 cfix">
+							<section class="txt-section half-box setL setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<figure class="cfix custom_cardio_image">
+											<img src="http://macropinch.com/resources/img/newcardio/beating@2x.png" class="padding-top-10" width="206" alt="" itemprop="image" />
+										</figure>
+										<h1 class="headStyler h_1 custom_cardio_title" itemprop="name">Keep track of your health</h1>
+										<div class="txt text-align-center" itemprop="articleBody">
+											<p>
+												It can be very useful while exercising, if you're under stress, if you have a heart-related medical condition, or even just out of curiosity.<br/><br/><br/>
+											</p>
+										</div>
+									</div>	
+								</div>		
+							</section>
+							
+							<section class="txt-section half-box setR setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<figure class="cfix custom_cardio_image">
+											<img src="http://macropinch.com/resources/img/newcardio/75bpm@2x.png" width="206" alt="" itemprop="image" />
+										</figure>
+										<h1 class="headStyler h_1 custom_cardio_title" itemprop="name">Simple and useful design</h1>
+										<div class="txt text-align-center" itemprop="articleBody">
+											<p>
+												The minimalistic and intuitive design shows you everything at a glance and makes Cardiograph approachable and easy to use for everyone.
+											</p>
+										</div>
+									</div>	
+								</div>		
+							</section>
+							<div class="cfix"></div>
+							
+						</div>
+					</article>
+				</div>
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-white HSize-auto HSize-padding30 cfix">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<div class="w100 cfix">
+							<section class="txt-section half-box setL setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<figure class="cfix custom_cardio_image">
+											<img src="http://macropinch.com/resources/img/newcardio/multipleusers@2x.png" class="padding-top-10" width="206" alt="" itemprop="image" />
+										</figure>
+										<h1 class="headStyler h_1 custom_cardio_title" itemprop="name">Multiple profiles</h1>
+										<div class="txt text-align-center" itemprop="articleBody">
+											<img src="http://macropinch.com/resources/img/newcardio/android@2x.png" alt="Android Only" class="cardio_specific_buttons" width="194" />
+											<p>
+												Cardiograph is perfectly tailored to allow multiple people to use the app on a shared device. You can create profiles for each of your family members or friends, and each of them has their own individual measurement history.
+											</p>
+										</div>
+									</div>	
+								</div>		
+							</section>
+							
+							<section class="txt-section half-box setR setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<figure class="cfix custom_cardio_image">
+											<img src="http://macropinch.com/resources/img/newcardio/health@2x.png" width="206" alt="" itemprop="image" />
+										</figure>
+										<h1 class="headStyler h_1 custom_cardio_title" itemprop="name">Health app and 3D Touch</h1>
+										<div class="txt text-align-center" itemprop="articleBody">
+											<img src="http://macropinch.com/resources/img/newcardio/ios@2x.png" alt="iOS Only" class="cardio_specific_buttons" width="142" />
+											<p>
+												The Health app keeps you motivated by showing you how much you move. It combines activity data from iPhone — like your steps and distance traveled — with metrics from third-party fitness apps.
+											</p>
+										</div>
+									</div>	
+								</div>		
+							</section>
+							
+							<div class="cfix"></div>
+							
+							
+						</div>
+					</article>
+				</div>
+				<br/><br/><br/><br/>
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-light HSize-auto cfix" style="clear:both;">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<div class="w100 cfix">
+							
+							<figure class="media-holder half-box mobileHidden cfix">
+								<img src="http://macropinch.com/resources/img/newcardio/iMessagePhone@2x.png" alt="" itemprop="image" />
+							</figure>
+							
+							<section class="txt-section half-box setR setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell text-align-center">
+										<figure class="cfix">
+											<img src="http://macropinch.com/resources/img/newcardio/iMessageIcon@2x.png" width="206" alt="" class="center_item" itemprop="image" />
+										</figure>
+										<br/>
+										<h1 class="headStyler h_1 custom_cardio_title" itemprop="name">iMessage Extension</h1>
+										<div class="txt" itemprop="articleBody">
+											<p>
+												Send your heart rate by presenting it in a beautiful way with our iMessage Extension.
+											</p>
+										</div>
+									</div>	
+								</div>		
+							</section>
+						</div>
+					</article>
+				</div>
+				<!-- CASE 6 -->
+				<div class="contentBox pad20 bgr_mode-white bg-img3-android bgImgSet-1 HSize-432 cfix">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						
+						
+						<section class="txt-section half-box setL setAbsolute cfix">
+								<div class="tableStyle">
+									<div class="tableCell">
+										<br/><br/>
+										<h1 class="headStyler h_1 cardio_red_txt" itemprop="name"><span>How it</span> Works?</h1>
+										<div class="txt col-grey" itemprop="articleBody">
+											<p>
+												Cardiograph works by illuminating your index finger with your device's camera flash, rendering your finger red and measuring the changes in the color caused by your pulse. Almost like magic.
+												<br/>
+												<div class="cardioVideo">
+													<iframe width="337" height="224" src="//www.youtube.com/embed/JJWXjTbD6qg?rel=0&showinfo=0&autoplay=0&autohide=1&controls=0&showsearch=0&wmode=Opaque" frameborder="0" allowfullscreen></iframe>
+											
+													<a href="http://www.youtube.com/watch?v=JJWXjTbD6qg" rel="prettyPhoto" class="cardioVideo2 cardioVideoButton" title="">
+														<img src="http://macropinch.com/resources/img/newcardio/play@2x.png" width="183" alt="Play video" class="padding_bottom_60"/>
+													</a>
+												</div>
+											</p>
+										</div>
+									</div>
+								</div>
+						</section>
+						
+						<figure class="media-holder half-box cfix customCardioImage mobileHidden">
+							<img src="http://macropinch.com/resources/img/newcardio/hands@2x.png" class="" alt="" itemprop="image" />
+						</figure>
+						<br/><br/><br/><br/>
+					</article>
+				</div>
+				
+				<!-- CASE 2 -->
+				<div class="contentBox pad20 bgr_mode-white cfix">
+					<article class="container" itemscope="itemscope" itemtype="http://schema.org/Article">
+						<header class="header vpad30 full-box centerTxt cfix">
+							<h1 class="headStyler h_1">
+							<span class="cardio_red_txt">Excited</span> already? <br/> Download it now! </h1>
+							<br/><br/>
+							<div class="txt" itemprop="articleBody">
+								<nav class="d-menu">
+									<a class="appLogo noMargin" href="https://itunes.apple.com/us/app/cardiograph/id1073907652?ls=1&mt=8" target="_blank">
+										<img src="http://macropinch.com/resources/img/grocery/appStore.png" class="grocery_app_store" alt="Download from AppStore" />
+									</a>
+						
+									<a class="appLogo" href="https://play.google.com/store/apps/details?id=com.macropinch.hydra.android" target="_blank">
+										<img src="http://macropinch.com/resources/img/compass/google_play.png" class="mobileCenteredImage" alt="Download GooglePlay" />
+									</a>
+						
+									<a class="appLogo" href="http://www.amazon.com/MacroPinch-Cardiograph/dp/B004LZDJCG/" target="_blank">
+										<img src="http://macropinch.com/resources/img/weather/amazon.png" class="mobileCenteredImage" alt="Download Amazon AppStore" />
+									</a>
+								</nav>
+							</div>
+						</header>
+					</article>
+				</div>
+			</div>
+			
+			<!-- === === FOOTER === === -->
+<div id="footer" class="cfix">
+	<nav id="footMenu" class="container">
+		<ul class="footMenuTopLevel">
+			<li class="contactSpot" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+								
+				<ul class="socialNet cfix">
+					<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+						<a href="https://www.facebook.com/macropinch" target="_blank" itemprop="url" class="facebook trans"></a>
+					</li>
+					<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+						<a href="https://twitter.com/macropinch" target="_blank" itemprop="url" class="rsfeed trans"></a>
+					</li>
+					<li itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope">
+						<a href="mailto:support@macropinch.com" itemprop="url" class="twitter trans"></a>
+					</li>
+										<li itemtype="http://schema.org/SiteNavigationElement" class="specialBlock" itemscope="itemscope">
+						<a href="http://macropinch.com/presskit/cardiograph.zip" itemprop="url" class="regularButton trans">
+							Press Kit
+						</a>
+					</li>
+				</ul>
+						
+				<address id="address"itemscope="itemscope">
+					<p><span>Have questions or suggestions?</p> 
+					<p><a href="mailto:support@macropinch.com" target="_top">support@macropinch.com</a>
+					<br /><br />
+					
+					<p><a href="http://macropinch.com/privacypolicy.html" target="_blank">MacroPinch Ltd. Privacy Policy</a></p>				</address>
+			</li>
+		</ul>
+	</nav>
+	
+	<div id="tc_zone" class="cfix">
+		<a href="http://macropinch.com/" id="botLogo"></a>
+		<!-- <figure>
+			<img id="botLogo" src="resources/img/logoBlack.png" alt="Macropinch" title="Macropinch" />
+		</figure> -->
+	</div>
+</div>
+<!-- === === //END FOOTER === === -->			
+        </div>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("a[rel^='prettyPhoto']").prettyPhoto({
+				social_tools: ''
+				});
+			});
+		</script>
+		<a href="http://macropinch.com/outwalk/" class="prev_arrow" style="display: block;"></a>
+<a href="http://macropinch.com/weather/" class="next_arrow" style="display: block;"></a>    </body>
+    
+</html>

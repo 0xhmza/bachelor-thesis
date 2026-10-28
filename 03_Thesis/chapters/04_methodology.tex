@@ -481,6 +481,36 @@ without one stays in the sample, and the absence is reported. In-app purchases
 and subscriptions are recorded but do not exclude an app. Screening follows the
 rank order, and each decision is logged with its reason.
 
+\paragraph{Same app in both stores.} An app listed in both stores is one
+candidate, so its two listings have to be found. Names are not enough for this:
+one developer can offer several similar products, and one product can carry
+different titles in the two stores~\parencite[\S3.2]{steinboeck2024comparing},
+which is why Hu et al.\ matched their cross-platform apps by
+hand~\parencite[\S3.1]{hu2018studying}. Following Steinböck et al., two listings are
+the same app if they offer the same branded product for the same
+use~\parencite[\S3.2, p.~352]{steinboeck2024comparing}. Pairs are first proposed
+from several signals, as in their
+matcher~\parencite[\S3.2.2, p.~353]{steinboeck2024comparing}: in every search
+frame that the selection or a sensitivity check uses, a Google Play and an App
+Store listing are proposed if they share the developer, the app identifier (the
+App Store bundle ID equals the Google Play package name), the title, or at least
+20 passages of four words of description text that occur in at most ten
+listings. A proposal decides nothing. Each proposed pair is then decided on
+product-specific evidence, which is recorded with the decision: an official page
+that links both listings, an identical app identifier, the same product name in
+both titles or in both English store names, shared description text, or one
+listing that names the product of the other. A shared developer, web domain or
+privacy policy is no such evidence, nor is a generic title such as
+\enquote{Schrittzähler}, and a different target group or main function makes a
+different app: Nike Run Club and Nike Training Club are two apps of one
+developer. Rating counts and the order of the listings play no part. Both
+listings of one app belong to one provider, so the developer rule below treats
+their two developer accounts as one provider. A pair that the evidence does not
+decide stays unresolved and is not merged, as some pairs could not be classified
+by Steinböck et al.~\parencite[\S5.2, p.~356]{steinboeck2024comparing}; the
+sample counts as final only if merging every unresolved pair would change none
+of the selected listings, in the main selection or in any check.
+
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
 counts of app~$i$ in the German storefronts: ratings count in the App Store and
@@ -614,7 +644,9 @@ in place of the German review count; at depth 20; with the App Store at depth
 200; with each keyword left out; and with English or German keywords only. It
 is also compared with an earlier selection that took apps alternately from a
 German App Store ranking and a worldwide Google Play ranking. For each variant,
-the number of selected providers that change is reported.
+the number of selected providers that change is reported, and separately the
+number of selected store listings that change, since a provider can stay in
+the sample with a different app or a different listing.
 
 Neither store publishes German figures for every listing field, and the two
 stores split their fields differently. Apple shows one summary rating per

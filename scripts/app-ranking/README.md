@@ -12,6 +12,44 @@ Selects the ranked apps of the sample as set out in
   kept for the record. Its Daylio and MeetYou aliases never matched.
 - `v004/rank.py`: the selection of 26 October 2026 on the frozen dataset
   `05_Data/raw/app-sample_2026-10-25/`; provider identity rules P1–P3 (D2).
+  Replaced by v005, kept for the record: its title rule paired different
+  products of one publisher (peer review F01).
+- `v005/rank.py`: the selection of 28 October 2026; the same app in both stores
+  only where the identity register says so (D2, rules I1–I5).
+
+## v005
+
+```powershell
+python scripts/app-ranking/v005/rank.py scripts/app-ranking/v005/config.json
+python -I -m unittest discover -s scripts/app-ranking/v005/tests
+```
+
+Changes from v004. The title rule (same provider and a shared first word, the
+App Store listing with the most ratings taken first) is gone, and so are the
+hand-made `pairs`. A Google Play and an App Store listing are one candidate only
+if `04_Study/App-Sample/identity.csv` records them as `same`; rating counts and
+input order play no part. The script proposes pairs for review in the union of
+all frames used (Google Play depth 30, App Store depth 200, all queries): same
+developer key, same app identifier (bundle ID = package name), same normalised
+title, or at least 20 rare four-word passages of description text. Proposals
+without a decision go to `output/identity-review.csv`. Both listings of a
+`same` pair belong to one provider (union of their developer keys). An
+`unresolved` pair is not merged; every run is repeated with the unresolved
+pairs merged, and the run is final only if no selected listing changes. The
+register is checked before use: known listings, decisions `same`, `different`
+or `unresolved`, evidence codes (`web`, `id`, `name`, `en-name`, `text`,
+`listing`) for every `same` pair, rationale, reviewer and date, and no listing
+in two `same` pairs; any error stops the run.
+
+When anything is pending (unscreened candidates, provider-review pairs,
+undecided proposals, unresolved pairs that change a selection) the script
+writes its `output/` files and exits with an error, without writing the thesis
+tables or the dataset. `sensitivity.csv` also counts selected listings that
+change (`listings_differ`) and changed positions (`order_changes`). New
+generated tables: `03_Thesis/tables/identity-providers.tex` (same app under two
+developer names) and `03_Thesis/tables/sensitivity.tex`. Inputs and the
+dataset are in `05_Data/App Sampling/26. Oct/` (the frozen collections, moved
+unchanged). Runs in about ten seconds.
 
 ## v004
 
