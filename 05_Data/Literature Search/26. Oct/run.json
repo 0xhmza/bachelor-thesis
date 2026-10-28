@@ -1,0 +1,20 @@
+{
+  "searched_on": "2026-10-26 18:13 UTC",
+  "searched_until": "2026-10-26",
+  "hits_per_query_and_database": {
+    "Q1 OpenAlex": 1997,
+    "Q1 Semantic Scholar": 1355,
+    "Q2 OpenAlex": 991,
+    "Q2 Semantic Scholar": 731,
+    "Q3 OpenAlex": 117,
+    "Q3 Semantic Scholar": 76,
+    "Q4 OpenAlex": 249,
+    "Q4 Semantic Scholar": 151,
+    "Manually added": 15
+  },
+  "hits": 5682,
+  "records_after_deduplication": 3506,
+  "duplicates_removed": 2176,
+  "removed_by_citation_filter": 2553,
+  "records_for_screening": 953
+}

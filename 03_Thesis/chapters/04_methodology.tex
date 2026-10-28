@@ -21,23 +21,19 @@ ranked together by a German-market popularity score based on ratings and reviews
 come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
 For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
-pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done} Figure~\ref{fig:pipeline} summarises this workflow.
+pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done} \todo[inline]{Summary of literature review} Figure~\ref{fig:pipeline} summarises this workflow.
 
 \section{Literature Review}
 \label{sec:lit-review}
-\todo[inline]{Inspire from the paper: Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation}
-The literature review has three purposes. It supports the background and
-related-work chapters and tests the research gap stated in the introduction. It
+\todo[inline]{Inspired from the paper: Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation, cited [5]}
+Adding to understanding the related research on the matter, the literature review
 supplies the capabilities and harms from which the reference harm trees are
-built. Third, it provides the evidence for the methodological decisions of this
-chapter. The review follows the staged procedure of Baumann
-et al.~\parencite[App.~A, pp.~56--57]{baumann2025llm}: a database search with
+built. It provides also the evidence for the methodological decisions of this
+chapter. The review consists of the following the procedure:
 fixed queries, the removal of duplicates and of rarely cited works, the
 screening of titles and abstracts against explicit criteria, and the extraction
-of fixed fields from the included works. Their last stage, the selection of
-datasets for experiments, is replaced here by the collection of capabilities
-for the harm trees. The search is reported with the items of PRISMA-S that
-apply to a search by a single author~\parencite{rethlefsen2021prisma}.
+of fixed fields from the included works ~\parencite[App.~A, pp.~56--57]{baumann2025llm}. Afterwards, capabilities are collected to build the harm tree.
+\todo[color=green, inline]{done!}
 
 \paragraph{Review questions.} Four questions guide the search, one for each part
 of the study. (1)~Which privacy harms and capabilities have been documented for
@@ -49,105 +45,108 @@ starting from work on policy analysis~\parencite{wilson2016creation,zimmeck2019m
 (3)~How have large language
 models been used to annotate privacy policies, and how were they validated?
 (4)~How do providers word risk and protection in policies and notices?
+\todo{questions may be extended as the thesis evolves}
 
 \paragraph{Stage 0: database search.} The search covers the titles and abstracts
 in two open bibliographic databases, OpenAlex~\parencite{priem2022openalex} and
-Semantic Scholar~\parencite{kinney2023semantic}. Both index the main venues of
-privacy, security and human--computer interaction research (PoPETs, CCS, USENIX
-Security, IEEE Security and Privacy, CHI and CSCW), the ACM Digital Library, the
-ACL Anthology and arXiv. Baumann et al.\ also searched Scopus, Web of Science and
-Google Scholar. The first two require institutional access to their interfaces,
-and Google Scholar offers no interface for automated queries, so a search in
-them could not be repeated from the project's scripts. Each review question has
-one query, which joins groups of terms with AND and the alternatives within a
-group with OR (Table~\ref{tab:lit-queries}). The domain group, shared by the
-first two queries, names health and fitness apps, fitness trackers, wearables,
-menstrual, fertility and mental-health apps, and femtech. The search period runs
-from 1~January 2014 to the day of the search. The query on language models
-starts on 1~January 2022, as in Baumann et al., because annotation with large
-language models begins then. A script runs the queries and records every hit,
-and the collection is kept unchanged. Works known from earlier reading that meet
-an inclusion criterion but are not retrieved by the queries are added by hand,
-as in the source procedure, and pass through the same filters.
-
-\begin{table}[tbp]
-\centering
-\small
-\caption[Search queries of the literature review]{Search queries of the
-literature review, applied to titles and abstracts in OpenAlex and Semantic
-Scholar. DOMAIN stands for the domain group in the first row.}
-\label{tab:lit-queries}
-\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Query} & \textbf{Period} & \textbf{Terms} \\
-\midrule
-\input{tables/literature-queries}% the generated rows end with \bottomrule; a second one here breaks the table
-\end{tabularx}
-\end{table}
-
-\paragraph{Duplicates and citation filter.} Records that share a DOI, an arXiv
-identifier or a normalised title, with publication years at most one year apart,
-are merged. Following Baumann et al., records with fewer than three citations
-per year are then removed. Citations per year are the higher of the two
-databases' counts divided by the number of years since publication, which is at
-least one. The filter keeps the screening manageable and favours works that the
-field has taken up. As in the source procedure, recent works are not exempt, so
-most works from the year of the search are removed; the closest recent studies
-are discussed in the related-work chapter instead.
-
-\paragraph{Stage 1: screening.} Titles and abstracts are screened, and each
-record receives one code. A record is included if it
-\begin{description}
-  \item[I1] documents privacy harms, risks, threats or inferable capabilities
-    that affect the users of health apps, fitness trackers or health wearables;
-  \item[I2] analyses the privacy communication of such apps or wearables, such
-    as privacy policies, privacy labels, store listings, notices or terms;
-  \item[I3] uses or evaluates language models to annotate, classify or extract
-    information from privacy policies or similar privacy text; or
-  \item[I4] analyses how policies, notices or labels present or word data
-    practices, risks or protections, in any domain.
-\end{description}
-A record is excluded if it
-\begin{description}
-  \item[E1] proposes or evaluates a technical system, such as a protocol, an
-    encryption scheme, an architecture or a detection model, without
-    documenting harms or analysing communication;
-  \item[E2] lies outside the domain and topics above;
-  \item[E3] studies health apps or wearables without analysing privacy harms or
-    privacy communication, for example their quality, usability, adoption or
-    features;
-  \item[E4] is not a usable scholarly record, such as a commentary, a
-    dissertation or a duplicate; or
-  \item[E5] concerns language models without annotating privacy text, for
-    example language models as a privacy risk, benchmarks of privacy norms or
-    tools that generate policies.
-\end{description}
-\highlight[orange!25]{Each decision is recorded with its code.}\todo{The screening
-decisions in 01\_Literature/\allowbreak Systematic-Review/\allowbreak screening.csv
-were prepared by an AI assistant from titles and abstracts. Check every decision
-before this section states who screened.}
-
-\paragraph{Stage 2: extraction.} For every included work that is used, a card
-records the review question it answers, the domain, the material, the sampling
-and coding procedure, the agreement statistics, for language-model studies the
-models and their validation, the harms and capabilities named, the findings and
-the authors' stated limits, each with its page, and separates these from the
-reviewer's own critique. A comparison matrix then sets out, for each study, its
-domain, the sources it analyses and how it treats harms; the matrix tests the
-research gap.
-
-\paragraph{Stage 3: capabilities.} Capabilities named in the works included
-under I1 are collected in a table that links each capability to its source, the
-data it needs and the adversary that could use it. The table is the input to the
-harm trees.
-
-\paragraph{Limits.} One person screens, so no inter-rater check of the selection
-is possible. The citation filter removes most works of the last year. The open
-databases lack the abstracts of some records, which are then screened on the
-title alone. The queries are in English, which favours English sources. Later
-literature is added through the change log, with a reason, and does not alter
-the frozen instruments without a logged revision.
-
+Semantic Scholar~\parencite{kinney2023semantic}.
+\todo[inline, color=red]{redo the rest of the literature review, ditching OpenAlex and Sematic Scholar, use traditional platforms.}
+% Both index the main venues of
+%privacy, security and human--computer interaction research (PoPETs, CCS, USENIX
+%Security, IEEE Security and Privacy, CHI and CSCW), the ACM Digital Library, the
+%ACL Anthology and arXiv. Baumann et al.\ also searched Scopus, Web of Science and
+%Google Scholar. The first two require institutional access to their interfaces,
+%and Google Scholar offers no interface for automated queries, so a search in
+%them could not be repeated from the project's scripts. Each review question has
+%one query, which joins groups of terms with AND and the alternatives within a
+%group with OR (Table~\ref{tab:lit-queries}). The domain group, shared by the
+%first two queries, names health and fitness apps, fitness trackers, wearables,
+%menstrual, fertility and mental-health apps, and femtech. The search period runs
+%from 1~January 2014 to the day of the search. The query on language models
+%starts on 1~January 2022, as in Baumann et al., because annotation with large
+%language models begins then. A script runs the queries and records every hit,
+%and the collection is kept unchanged. Works known from earlier reading that meet
+%an inclusion criterion but are not retrieved by the queries are added by hand,
+%as in the source procedure, and pass through the same filters.
+%
+%\begin{table}[tbp]
+%\centering
+%\small
+%\caption[Search queries of the literature review]{Search queries of the
+%literature review, applied to titles and abstracts in OpenAlex and Semantic
+%Scholar. DOMAIN stands for the domain group in the first row.}
+%\label{tab:lit-queries}
+%\begin{tabularx}{\textwidth}{@{}ll>{\raggedright\arraybackslash}X@{}}
+%\toprule
+%\textbf{Query} & \textbf{Period} & \textbf{Terms} \\
+%\midrule
+%\input{tables/literature-queries}% the generated rows end with \bottomrule; a second one here breaks the table
+%\end{tabularx}
+%\end{table}
+%
+%\paragraph{Duplicates and citation filter.} Records that share a DOI, an arXiv
+%identifier or a normalised title, with publication years at most one year apart,
+%are merged. Following Baumann et al., records with fewer than three citations
+%per year are then removed. Citations per year are the higher of the two
+%databases' counts divided by the number of years since publication, which is at
+%least one. The filter keeps the screening manageable and favours works that the
+%field has taken up. As in the source procedure, recent works are not exempt, so
+%most works from the year of the search are removed; the closest recent studies
+%are discussed in the related-work chapter instead.
+%
+%\paragraph{Stage 1: screening.} Titles and abstracts are screened, and each
+%record receives one code. A record is included if it
+%\begin{description}
+%  \item[I1] documents privacy harms, risks, threats or inferable capabilities
+%    that affect the users of health apps, fitness trackers or health wearables;
+%  \item[I2] analyses the privacy communication of such apps or wearables, such
+%    as privacy policies, privacy labels, store listings, notices or terms;
+%  \item[I3] uses or evaluates language models to annotate, classify or extract
+%    information from privacy policies or similar privacy text; or
+%  \item[I4] analyses how policies, notices or labels present or word data
+%    practices, risks or protections, in any domain.
+%\end{description}
+%A record is excluded if it
+%\begin{description}
+%  \item[E1] proposes or evaluates a technical system, such as a protocol, an
+%    encryption scheme, an architecture or a detection model, without
+%    documenting harms or analysing communication;
+%  \item[E2] lies outside the domain and topics above;
+%  \item[E3] studies health apps or wearables without analysing privacy harms or
+%    privacy communication, for example their quality, usability, adoption or
+%    features;
+%  \item[E4] is not a usable scholarly record, such as a commentary, a
+%    dissertation or a duplicate; or
+%  \item[E5] concerns language models without annotating privacy text, for
+%    example language models as a privacy risk, benchmarks of privacy norms or
+%    tools that generate policies.
+%\end{description}
+%\highlight[orange!25]{Each decision is recorded with its code.}\todo{The screening
+%decisions in 01\_Literature/\allowbreak Systematic-Review/\allowbreak screening.csv
+%were prepared by an AI assistant from titles and abstracts. Check every decision
+%before this section states who screened.}
+%
+%\paragraph{Stage 2: extraction.} For every included work that is used, a card
+%records the review question it answers, the domain, the material, the sampling
+%and coding procedure, the agreement statistics, for language-model studies the
+%models and their validation, the harms and capabilities named, the findings and
+%the authors' stated limits, each with its page, and separates these from the
+%reviewer's own critique. A comparison matrix then sets out, for each study, its
+%domain, the sources it analyses and how it treats harms; the matrix tests the
+%research gap.
+%
+%\paragraph{Stage 3: capabilities.} Capabilities named in the works included
+%under I1 are collected in a table that links each capability to its source, the
+%data it needs and the adversary that could use it. The table is the input to the
+%harm trees.
+%
+%\paragraph{Limits.} One person screens, so no inter-rater check of the selection
+%is possible. The citation filter removes most works of the last year. The open
+%databases lack the abstracts of some records, which are then screened on the
+%title alone. The queries are in English, which favours English sources. Later
+%literature is added through the change log, with a reason, and does not alter
+%the frozen instruments without a logged revision.
+%
 %\paragraph{Review questions.} Four questions guide the search, one for each part
 %of the study. (1)~Which privacy harms and capabilities have been documented for
 %health trackers, including wearables, starting from
@@ -214,7 +213,7 @@ the frozen instruments without a logged revision.
 %up to October 2026, and works behind a paywall may be missing. Later literature
 %is added through the change log, with a reason, and does not alter the frozen
 %instruments without a logged revision.
-
+%
 \begin{figure}[t]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -231,9 +230,9 @@ the frozen instruments without a logged revision.
   \draw[arr] (a)--(b); \draw[arr] (b)--(c);
   \draw[arr] (c)--(d); \draw[arr] (d)--(e);
 \end{tikzpicture}}
-\todo[inline]{Draft}% a margin \todo cannot go inside a float
-\caption[Planned workflow]{\textcolor{red}{DRAFT! Planned workflow. The pilot will refine the instruments before they
-		are frozen. Later changes will be logged and affected material recoded.}}
+\todo[inline, color=pink]{Draft!}% a margin \todo cannot go inside a float
+\caption[Planned workflow]{Planned workflow. The pilot will refine the instruments before they
+		are frozen. Later changes will be logged and affected material recoded.}
 \Description{Five boxes connected by arrows: pilot and sample, capture,
 code, check, compare. Documents cover 50 apps.}
 \label{fig:pipeline}
@@ -255,15 +254,15 @@ devices. The remaining places are filled with apps from Google Play and the
 Apple App Store using defined collection and ranking rules. No quotas are set for the three source groups \textcolor{accent}{(i)}-\textcolor{accent}{(iii)}. The search frame and eligibility rules were
 recorded before collection. The resulting sample composition is reported
 in Section~\ref{sec:results-sample}.
+\todo[inline, color=green]{done}
 
 \paragraph{Domain.} The study adopts the domain of two published app studies
-on health trackers instead of defining its own. Hutton et
-al.~\parencite{hutton2018assessing} derived their search categories from the
-data types that 105 self-trackers reported most often, because no taxonomy of
-self-tracking apps existed; their health categories are cycling, diet,
-exercise, heart rate, mood, running and walking, sleep, steps and weight. This
-survey-based list has no reproductive category, so the domain of Malki et
-al.~\parencite{malki2024exploring} is added: female reproductive health,
+on health trackers. The first domain is of Hutton et
+al.~\parencite{hutton2018assessing}, search categories are derived from the
+data types that 105 apps reported most often, because no taxonomy of tracking existed; their health categories are cycling, diet,
+exercise, heart, mood, running, sleep, step count and weight. This
+survey-based list has no reproductive/fertility category, so the domain of Malki et
+al.~\parencite{malki2024exploring} is added, since the paper is about \emph{female health apps}: female reproductive health,
 including pregnancy apps. The domain thus covers activity, diet and weight,
 heart rate, sleep, mood and reproductive health.
 
@@ -469,7 +468,7 @@ All candidates are ranked by descending $P_i$, with ties broken by the stable
 
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
-trial collection on 22 October 2026, one developer held 10 of the 47 most-rated
+trial collection on 22 October 2026\footnote{Collected with the same collection scripts as in Section~\ref{sec:app-sampling} (Search).}, one developer held 10 of the 47 most-rated
 Google Play apps under a single privacy policy (Table~\ref{tab:developer-pilot});
 RQ1--RQ3 concern what providers
 communicate, so further apps of one provider add little new communication and
@@ -492,17 +491,7 @@ Play; the App Store seller website, daylio.net, is the domain of the Play
 privacy policy. P3 matches are made by hand and recorded with their evidence
 (Table~\ref{tab:developer-aliases}). A similar name is no evidence:
 \enquote{Leap Health} and \enquote{Leapjoy Games} are different developers.
-Domains of hosting services and policy generators, which many unrelated
-developers use, do not count. Among the candidates that the selection
-reaches, every pair of providers whose listings name the same domain as
-website or privacy policy is listed by the ranking script, reviewed by hand and
-either matched or recorded as distinct; the selection is final only when no
-pair is open. Companies of one group that publish under
-their own accounts, names and domains count as separate providers, because
-the listings do not show the link. Candidates are taken in descending order of $P_i$, and selection stops
-when the target of 50 apps is reached, counting the preinstalled apps. If fewer eligible apps are found, all are kept
-and the shortfall is reported.
-Thresholds are not lowered after the results have been inspected.
+\todo[inline,color=green]{done!}
 
 \paragraph{Preinstalled apps.} Health apps that ship with the phone reach
 users without a download, so their rating counts understate their reach and
