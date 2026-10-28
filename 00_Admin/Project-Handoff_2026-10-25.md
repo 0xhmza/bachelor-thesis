@@ -1,5 +1,7 @@
 # Project handoff — 25 October 2026
 
+**Scope update, 28 October 2026:** the author confirmed one study domain, health trackers ([D15](Decisions/D15_health-tracker-domain.md)). The current methodology, codebook v4 and walkthrough protocol v3 remove category allocations from the pilot, validation and walkthroughs. Categories remain scope/keyword sources and descriptive metadata. References to separate domains in this dated handoff describe the earlier draft and no longer govern current work.
+
 For the author or whoever continues. State of the whole project; the graph
 (`graphify-out/`, 1,278 nodes, 112 communities) was queried and refreshed for this
 file. Rules for agents: [AGENTS.md](../AGENTS.md). Start every exploration with

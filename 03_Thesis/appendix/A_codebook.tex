@@ -1,13 +1,13 @@
 \chapter{Codebook}
 \label{app:codebook}
-\todo{Full coding scheme with definitions and examples, from codebook v3.}
+\todo{Full coding scheme with definitions and examples, from codebook v4.}
 
 %----------------------------------------------------------------------
 \section{Worked Example}
 \label{app:worked-example}
 
 This section walks through the whole procedure once, on one privacy policy,
-using codebook version~3. The app, \enquote{CycleMate}, and its policy are
+using codebook version~4. The app, \enquote{CycleMate}, and its policy are
 constructed: the text is written so that every important coding decision
 occurs at least once. Real policies are expected to stay mostly at the level
 of data practices and to name few harms.
@@ -25,7 +25,7 @@ A few terms are used throughout. They are explained here in plain words.
     a harm is named, how is it presented? \textbf{C}: What protection is
     promised?
   \item[Reference tree.] A list of the ways harm \emph{could} happen with a
-    fertility tracker, written down before any policy is read. Each way is a
+    health tracker, written down before any policy is read. Each way is a
     \emph{pathway}: data and access conditions, then something an actor
     can do with them (a \emph{capability}), then the harm.
   \item[Applicable.] A pathway is applicable to an app if the app has the
@@ -38,10 +38,12 @@ A few terms are used throughout. They are explained here in plain words.
 
 \subsection*{Step 0: The reference tree}
 
-The tree is built once for the fertility domain, from the tracker
-literature, following the harm-tree method of Knabenhans et
-al.~\parencite{knabenhans2026harms}. \Cref{tab:we-tree} shows five of its
-pathways. In the \emph{Conditions} column, AND means that every condition is
+The reference trees are built for health trackers from the literature,
+following the harm-tree method of Knabenhans et
+al.~\parencite{knabenhans2026harms}. \Cref{tab:we-tree} shows five constructed
+pathways relevant to CycleMate's features from this shared framework. These
+illustrate app-specific applicability rather than a separate study domain. In the
+\emph{Conditions} column, AND means that every condition is
 needed; OR means that any one of them is enough. Each condition carries its
 origin: \emph{core} (the app cannot work without it), \emph{context} (it comes
 from running on a phone and network), or \emph{implementation} (the provider
@@ -49,7 +51,7 @@ chose it and could choose otherwise).
 
 \begin{table}[H]
 \centering
-\caption{Excerpt of the reference tree for fertility trackers.}
+\caption{Constructed reference pathways relevant to the CycleMate example.}
 \label{tab:we-tree}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
@@ -188,7 +190,7 @@ is framed.
 
 \begin{table}[H]
 \centering
-\caption{Unit-level codes for the CycleMate policy (codebook v3).}
+\caption{Unit-level codes for the CycleMate policy (codebook v4).}
 \label{tab:we-units}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X

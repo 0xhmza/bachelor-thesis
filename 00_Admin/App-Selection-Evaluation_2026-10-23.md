@@ -47,7 +47,9 @@ no new communication. **Proposed:** at most one app per developer, clustered lis
 as sensitivity check. In the pilot this changes 6 of the 24 Play places and 13 of
 the top 47 and raises period trackers in the Play half from 3 to 4.
 
-### 2. Domain mix against the per-domain design (high, supervisor)
+### 2. Historical category-allocation concern — superseded by D15
+
+**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
 
 | Pilot, Play | Top 24 | Top 47 |
 |---|---|---|
@@ -114,7 +116,6 @@ storefronts only.
 
 ## Questions for the supervisor
 
-1. Should domain shape the sample, or be a descriptor without per-domain
-   walkthrough and validation slots?
+1. Resolved by the author on 28 October 2026 (D15): health trackers form one study domain; categories are descriptors and source-paper vocabulary, with no category-specific walkthrough or validation slots.
 2. Is one app per provider acceptable as the selection unit?
 3. Are pregnancy apps and workout-plan apps inside "health tracker"?

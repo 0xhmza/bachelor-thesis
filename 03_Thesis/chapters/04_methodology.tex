@@ -343,15 +343,18 @@ recorded before collection. The resulting sample composition is reported
 in Section~\ref{sec:results-sample}.
 \todo[inline, color=green]{done}
 
-\paragraph{Domain.} The study adopts the domain of two published app studies
-on health trackers. The first domain is of Hutton et
-al.~\parencite{hutton2018assessing}, search categories are derived from the
-data types that 105 apps reported most often, because no taxonomy of tracking existed; their health categories are cycling, diet,
-exercise, heart, mood, running, sleep, step count and weight. This
-survey-based list has no reproductive/fertility category, so the domain of Malki et
-al.~\parencite{malki2024exploring} is added, since the paper is about \emph{female health apps}: female reproductive health,
-including pregnancy apps. The domain thus covers activity, diet and weight,
-heart rate, sleep, mood and reproductive health.
+\paragraph{Domain.} The study concerns health trackers overall. Its operational
+scope and search vocabulary draw on two published app studies. Hutton et
+al.~\parencite{hutton2018assessing} derived their search categories from the
+data types most often reported by 105 members of a Quantified Self group;
+their health categories are cycling, diet, exercise, heart, mood, running,
+sleep, step count and weight. Malki et
+al.~\parencite{malki2024exploring} supply the reproductive-health scope,
+including pregnancy tracking, absent from that list. Together these sources
+inform the definition and keyword collection for activity, diet and weight,
+heart rate, sleep, mood and reproductive health within one health-tracker
+domain. Categories describe apps and their features; they do not define
+separate sampling, pilot, validation or analysis groups.
 
 \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
 terms of Malki et al.\ are searched in the original English and in one German
@@ -744,8 +747,8 @@ Each source will be archived with URL, date, language, file hash and app
 version where applicable. Shared policies will be coded
 once and linked to all relevant apps.
 
-\section{App Walkthroughs} Twelve distinct apps will be inspected, six per domain
-with three Android and three iOS apps in each. Selection will follow the
+\section{App Walkthroughs} Twelve distinct health-tracking apps will be inspected,
+six on Android and six on iOS. Selection will follow the
 ranking, alternating Android and iOS slots without reusing an app; the balance
 serves coverage, not platform comparison. Apps requiring an unavailable paired
 device, payment or identity verification will be skipped with a recorded
@@ -762,11 +765,11 @@ time limits. Outcomes will distinguish completion, information not found,
 unsupported tasks and access barriers. Screen recordings will preserve the
 text encountered. This is an expert inspection, not a test of real users.
 
-\section{Reference Harm Trees} Before main coding, a tree will be built for
-each domain from prior tracker research. For fitness, sources are a survey of
-tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable}
-and users' harm scenarios~\parencite{gabriele2020understanding}. For fertility,
-sources are analyses of policies, data flows and interfaces
+\section{Reference Harm Trees} Before main coding, reference harm trees will be
+built for health trackers from prior research. Sources include a survey of
+tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable},
+users' harm scenarios~\parencite{gabriele2020understanding}, analyses of policies,
+data flows and interfaces
 \parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
 user concerns~\parencite{cao2024deleted}. Sources found in the logged search
 will be added with a recorded reason. Each pathway will name the data, potential
@@ -800,8 +803,8 @@ than forced into a category.
 
 
 \section{Pilot} The pilot takes place after sampling and after the reference
-harm trees have been built. Five apps, three fitness and two fertility apps,
-will be drawn at random from the sample with a recorded seed. The pilot will
+harm trees have been built. Five apps will be drawn at random from the full
+health-tracker sample with a recorded seed, without category quotas. The pilot will
 test the boundaries of collection and coding and estimate capture time, coding
 units, manual effort and model cost. It will also settle the choices left open
 in the previous sections: the starting points and time limits of the
@@ -918,8 +921,8 @@ agreement is a stability check, not validation, and labels returned once are
 reviewed rather than discarded. Raw output is kept apart from adjudicated
 labels, so performance is not measured after correction.
 
-\section{Validation and Missed Mentions} Ten apps, five per domain, will be
-drawn at random with a recorded seed from providers and documents not used in
+\section{Validation and Missed Mentions} Ten apps will be drawn at random from
+the health-tracker sample, with a recorded seed, from providers and documents not used in
 the pilot, stratified by the language of the coded policy where both occur;
 the numbers of independent providers and unique documents will be reported.
 The author will code them fully before seeing model output, and they will not
@@ -937,15 +940,15 @@ to end, so first-stage misses count. Reported will be per-code precision
 and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient}, with
 counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$
 despite high agreement~\parencite{feinstein1990high,gwet2008computing}.
-App-level detection is also reported, by domain and, where counts allow, by
-source and language. Exploratory 95\,\% intervals will resample providers to
+App-level detection is also reported for the validation set as a whole and,
+where counts allow, by source and language. Exploratory 95\,\% intervals will resample providers to
 respect shared sources; with ten apps they will be wide.
 
 A separate missed-mention audit, reported apart from validation, will search
 the remaining corpus for harm-related vocabulary in both languages and check
 every unlabelled hit manually. To expose the vocabulary's blind spots, 100
-units outside the hits (or all, if fewer), allocated across domains, languages
-and sources in advance, will also be read. Recall will be reported as
+units outside the hits (or all, if fewer), allocated across languages and
+sources in advance, will also be read. Recall will be reported as
 unestimable where manual positives are too few. For any code with fewer than
 20 validation positives or recall below 0.90, all relevant material will be
 checked manually or corpus-wide absence claims withheld; these are review

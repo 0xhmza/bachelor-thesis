@@ -1,7 +1,8 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 2 · **Date:** 2026-10-05 · Operational version of the
-Walkthroughs paragraph of the proposal. Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
+**Version:** 3 · **Date:** 2026-10-28 · Operational version of the current
+methodology's Walkthroughs paragraph and D15's single health-tracker domain.
+Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
 *Usability Inspection Methods*, pp. 105–140. The four questions below are from
 Table 5.1, p. 106.
@@ -10,8 +11,8 @@ Walkthroughs are done **manually** — this is the part of the study that is not
 automated. The point is to make every walkthrough identical, so differences you
 find are differences between apps and not between sessions.
 
-**Subsample:** 12 apps, balanced 6 fitness / 6 fertility, each domain split
-3 Android / 3 iOS. Fill the slots in rank order, **alternating** Android and
+**Subsample:** 12 health-tracking apps, six on Android and six on iOS. Fill
+the slots in rank order, **alternating** Android and
 iOS, without reusing an app. The balance serves coverage, not platform
 comparison. Apps that need an unavailable paired device, payment, or identity
 verification are skipped with a recorded reason; unfilled slots are reported.
@@ -42,8 +43,8 @@ action sequence and ask Wharton et al.'s four questions at every step:
 | # | Task | Why it is here |
 |---|---|---|
 | T1 | Find out what data the app collects | baseline: this is what communication normally covers |
-| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v3) |
-| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v3) |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v4) |
+| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v4) |
 | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
 | T5 | Turn off sharing with third parties | control, and how it is framed |
 | T6 | Export the data | control |
@@ -83,7 +84,7 @@ Do these steps in this order, every time:
 | App | |
 | Version | |
 | Platform | |
-| Domain stratum | fitness / fertility |
+| App category / relevant features | descriptive metadata; no category stratum |
 | Date of walkthrough | |
 | T1 outcome | completed / not found / unsupported / access barrier; where it stopped |
 | T2 outcome | completed / not found / unsupported / access barrier; where it stopped |
@@ -122,3 +123,4 @@ the document sample but are skipped here. See
 |---|---|---|---|
 | 1 | 2026-09-18 | Added the seven privacy tasks, the four Wharton et al. questions, and the per-task record fields | Aligns the instrument with §4.4 of the proposal |
 | 2 | 2026-10-05 | "Expected to fail" removed; four neutral outcome categories; alternating Android/iOS slot filling; payment/ID-verification apps skipped here, not excluded from the sample; codebook v3 codes | Anticipated outcomes risk steering an analyst-based inspection; alignment with the current proposal |
+| 3 | 2026-10-28 | Twelve apps across the health-tracker sample, six per platform without category slots; descriptive feature metadata; codebook v4 | Author's clarification of one study domain, D15; totals and task procedures retained |

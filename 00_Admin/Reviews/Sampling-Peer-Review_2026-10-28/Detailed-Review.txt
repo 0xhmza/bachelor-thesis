@@ -4,9 +4,11 @@ Role: independent adversarial assessment of the sampling evidence; no adopted me
 Repository root: C:/Users/Hamza/Desktop/Share/Projects/bachelor-thesis
 All project source paths below are relative to that root. Line references identify the audited snapshot.
 
-VERDICT: MAJOR REVISION. The current sample should not be certified or frozen as scientifically validated. Its stored calculations are repeatable after temporary path redirection, and the relocated raw files match their historical hashes. Those strengths coexist with wrong selected product identities, unresolved missing counts, incomplete source provenance, unadjudicated screening and an infeasible pilot/validation allocation. There is no evidence here of fabricated raw bytes or invented completed privacy-study results. There is also insufficient evidence to call the entire process correct.
+VERDICT: MAJOR REVISION. The current sample should not be certified or frozen as scientifically validated. Its stored calculations are repeatable after temporary path redirection, and the relocated raw files match their historical hashes. Those strengths coexist with wrong selected product identities, unresolved missing counts, incomplete source provenance and unadjudicated screening. There is no evidence here of fabricated raw bytes or invented completed privacy-study results. There is also insufficient evidence to call the entire process correct.
 
 The review distinguishes confirmed defects, bounded implementation hazards, and unresolved methodological judgments. CRITICAL means a central identity or design condition fails; MAJOR means a validity, reproducibility or interpretability issue must be resolved before the affected claim is relied on; MODERATE means a material justification, evidence or reporting weakness. These are reviewer priorities, not a publisher's formal decision.
+
+Scope amendment, 28 October 2026: the author confirmed health trackers as the single study domain (D15). The current methodology and instruments now remove category allocations. F18 and F19 are resolved; the remaining findings retain their original audit scope and evidence date and have not been re-audited for unrelated intervening changes. There are 31 review records, including these two resolved items.
 
 ## Scope, coverage and limits
 The audit traced the 49-query vocabulary, original Apple v007 and Play v004 collectors, shortened Play v005, current ranking v004, decision records and the 13 October supervisor guidance, screening.csv, relocated raw collections/cache, stored outputs, generated tables, the processed 50-app sample, Methodology, sampling Results and relevant appendices. The preserved proposal was not treated as the current authority.
@@ -15,7 +17,7 @@ Every retained sampling raw file was compared to the historical manifest. The en
 
 The original PDFs of Malki, Hutton, Robillard, Sunyaev and Huckvale were checked for the methodological claims discussed in F24. This is not a full audit of all bibliography entries, the literature-search dataset, later policy coding, harms or actual app behavior. Future research activities are assessed for coherence and feasibility, not certified as completed.
 
-No production .tex file, frozen-equivalent collection, screening decision, ranking configuration, generated table, processed sample or historical script was edited. All replays and counterfactuals wrote only to tmp/sampling-peer-audit-2026-10-28. Source hashes were checked before and after the main replay. The reports introduce findings; they do not resolve author/supervisor decisions.
+During the original audit, no production .tex file, frozen-equivalent collection, screening decision, ranking configuration, generated table, processed sample or historical script was edited. All replays and counterfactuals wrote only to tmp/sampling-peer-audit-2026-10-28. Source hashes were checked before and after the main replay. The reports introduce findings; they do not resolve author/supervisor decisions.
 
 ## Review benchmark
 The main benchmark is traceable agreement between stated rules, retained evidence, executable processing and reported claims. ACM CCS artifact guidance distinguishes documented, consistent, complete and exercisable artifacts from mere availability; a successful replay does not independently validate a measurement or judgment. These criteria are used as a demanding comparison, not a claim of an official badge or universal mandatory publication checklist. The guidance also distinguishes archival availability from functionality. Different venues implement artifact policies differently; no venue was specified here.
@@ -42,7 +44,7 @@ Collectors: enough retained parsed evidence for downstream replay; full extracti
 Processing: calculations repeat; product matching and missing-value semantics have confirmed defects.
 Eligibility: structural consistency passes; human adjudication and several high-impact judgments remain unresolved.
 Results: most stated implementation counts reproduce; correlation interpretation, selected identities, timestamp and some denominators require correction.
-Study design: purposive sampling can be defensible, but the validation allocation and broader domain mapping do not currently align.
+Study design: one health-tracker domain now governs the pilot, validation, walkthroughs and reference-pathway applicability. The former category-allocation and mapping objections are resolved by D15.
 
 ## Detailed findings
 
@@ -199,23 +201,19 @@ Evidence: screening.csv apple/1556652646; D03 E5 operational check; Methodology:
 
 Required resolution: Retain the exact registry identity, date/status and documentary evidence for the exclusion; clearly label unresolved checks.
 
-## F18 | CRITICAL | The pilot and validation allocation is infeasible as written
-The pilot specifies five apps, three fitness and two fertility. Validation specifies ten apps, five per domain, from providers/documents not used in the pilot. Even if every pregnancy app is treated as reproductive/fertility, only six candidate apps are available for that domain. Once two enter the pilot, four remain, below the required five. If pregnancy is not included in fertility, the shortage is larger.
+## F18 | RESOLVED | Pilot and validation use the full health-tracker sample
+The author confirmed that the study domain is health trackers overall. The methodology and active instruments now draw five pilot apps and ten validation apps across the full sample, retaining recorded random seeds, separation by provider and document, and policy-language stratification where both languages occur. No category-specific sample requirement remains. The earlier feasibility objection arose from the superseded allocation and is closed by this change. This does not certify that the actual random draws, independent-document checks or validation have been performed.
 
-The three preinstalled apps do not supply additional reproductive-primary apps. Some multi-function apps might have reproductive features, but no explicit domain mapping or disjoint allocation has been supplied that permits counting them in this stratum. The honest conclusion is infeasibility under the stated classification, requiring a revised justified design. Quietly reusing a pilot app in validation would undermine the claimed separation between instrument development and validation.
+Evidence: 00_Admin/Decisions/D15_health-tracker-domain.md; revised Methodology Pilot and Validation; codebook v4.
 
-Evidence: Results:154-156; Methodology Pilot and Validation and Missed Mentions; v004/output/report.json categories; D03 Consequences.
+Required resolution: Implement the revised sample-wide draws and document their seeds and provider/document separation; no additional category quota is required.
 
-Required resolution: Choose and document a feasible allocation before pilot selection; preserve independent validation and explain any change in size, stratification or domain definition.
+## F19 | RESOLVED | One health-tracker domain governs the study design
+The author clarified that source-paper categories belong to the operational domain definition and keyword provenance. The active methodology, codebook v4 and walkthrough protocol v3 now apply to health trackers overall. Category allocations have been removed from pilot, validation and walkthrough selection. Reference trees form a shared health-tracker framework; each pathway's applicability is determined from an app's features, data, access and context conditions. Categories may still describe the sample. The earlier domain-mapping objection is closed. This clarification does not establish exhaustive keyword coverage or decide the separate open question about the supervisor's phrase "best app".
 
-## F19 | MAJOR | The expanded sample is not aligned with downstream domain plans
-The supervisor explicitly requested mental-health trackers and broader consideration of sleep and specialized tracking. The current search adds mood and happiness and reports two mood apps. D03 itself recognizes the two-domain consequences as open. Nevertheless, the methodology defines separate fitness/fertility harm trees, six walkthroughs per domain and five validation apps per domain without a complete mapping for the sampled categories.
+Evidence: D15; D03 current Consequences; revised Methodology, Appendix A, codebook v4 and walkthrough protocol v3.
 
-Sleep, diet, activity and heart-rate tracking might reasonably be grouped under a broader physical-health domain, but that taxonomy has to be stated and justified. Assigning all non-reproductive apps to fitness would hide substantively different mental-health pathways. Broad keyword coverage also does not establish comprehensive coverage of depression, anxiety or specialized chronic-disease tracking; the chosen source vocabularies delimit this study.
-
-Evidence: 13 October organized notes sections 1 and 4; D03 Consequences; Methodology App Walkthroughs, Reference Harm Trees, Pilot and Validation.
-
-Required resolution: Define app-to-domain and multi-function mappings and align harm applicability, walkthroughs and validation with them; state the search-domain limits.
+Required resolution: Use the single-domain procedures in main work and assess pathway applicability per app; retain the separate open D12 decision.
 
 ## F20 | MODERATE | Provider independence and repeated-source handling need qualification
 The deliberate two-app Apple exception is defensible if it is explicitly an exception. It prevents describing the full sample as 50 independent providers. Provider normalization removes legal/regional words, while aliases and domain reviews handle some further spellings; these checks improve consistency but do not verify corporate ownership or cross-provider policy duplication. The main reached set has no shared-domain flags under the implementation, which is narrower than proving no organizational dependence.
@@ -330,11 +328,11 @@ Required resolution: Report search and product-page enrichment times separately,
 2. Review all product pairs, repair identity rules in a new script version, and test negative examples across every sensitivity frame.
 3. Resolve the meaning and treatment of missing feedback counts, retain uncertainty, and replace misleading correlation reporting.
 4. Complete documented human screening adjudication, including Kinomap, Lady Pill Reminder, mental-health boundaries and exact DiGA evidence. A reviewer scenario is not an author decision.
-5. Revise the infeasible pilot/validation allocation and map all sampled domains to harm models and instruments before the pilot is drawn. Resolve the required coder procedure.
+5. Apply D15: draw the five pilot and ten independent validation apps across the full sample, without category allocations. Assess reference pathways per app and resolve the required coder procedure.
 6. Rerun the corrected, approved rules and all affected variants; regenerate sample/table/report artifacts together and reconcile claims with their actual denominators and provenance.
 7. Freeze a dated package with raw/parsed distinctions, hashes, source/collector versions, environment, schema, commands, screening evidence and documented remaining limitations. An archive or DOI may support a later venue artifact process, subject to rights and data handling; this review has not published anything.
 
-No finding is closed by this assessment. Mechanical replay does not clear identity, construct validity or unresolved eligibility. Conversely, the confirmed issues do not justify discarding preserved raw data whose hashes and downstream replay pass. The evidence supports repair and re-adjudication, not a claim of universal failure or a claim of perfection.
+F18 and F19 are closed by the author's subsequent scope clarification and its implementation; the other findings are not closed by this assessment. Mechanical replay does not clear identity, construct validity or unresolved eligibility. Conversely, the confirmed issues do not justify discarding preserved raw data whose hashes and downstream replay pass. The evidence supports repair and re-adjudication, not a claim of universal failure or a claim of perfection.
 
 ## Evidence package and reproduction
 evidence.json records original-source hashes, raw and frame totals, cache checks, main cascade, replay comparisons and isolated identity/eligibility scenarios. diagnostics.json records the seeded calibration diagnostic, current/deep matching examples, repeated Apple metadata conflicts and the network-free v005/cache experiment. all-matched-pairs.csv, main-cascade.csv and missing-play-counts.csv permit direct inspection of all affected records.
@@ -343,7 +341,7 @@ Local verification programs are retained in tmp/sampling_peer_audit.py and tmp/s
 
 The bootstrap uses seed 20261028 and 2,000 matched-ratio resamples; the selection diagnostic evaluates every tenth sorted bootstrap factor. It preserves unresolved candidates as pending. It is neither a population confidence interval nor a corrected-sample estimate.
 
-Checked commands: python -I -m unittest discover -s scripts/app-ranking/v004/tests (12 passed); python scripts/check_project.py (failed: missing literature README); .\graphify.ps1 refresh (failed: same dependency). No TeX compilation was performed because the assessment changes no TeX and the requested audit concerns sampling validity rather than typesetting.
+Checked commands: python -I -m unittest discover -s scripts/app-ranking/v004/tests (12 passed); python scripts/check_project.py (failed: missing literature README); .\graphify.ps1 refresh (failed: same dependency). No TeX compilation was performed during the original audit. The subsequent scope edit is verified separately in a copied tree, without writing build files into the author's thesis directory.
 
 ## Primary sources used for interpretation
 ACM CCS artifact evaluation: https://sigsac.hosting.acm.org/ccs/CCS2025/call-for-artifacts/

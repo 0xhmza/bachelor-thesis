@@ -4,14 +4,16 @@ Role: independent adversarial assessment of the sampling evidence; no adopted me
 Repository root: C:/Users/Hamza/Desktop/Share/Projects/bachelor-thesis
 All project source paths below are relative to that root. Line references identify the audited snapshot.
 
-VERDICT: MAJOR REVISION. The current sample should not be certified or frozen as scientifically validated. Its stored calculations are repeatable after temporary path redirection, and the relocated raw files match their historical hashes. Those strengths coexist with wrong selected product identities, unresolved missing counts, incomplete source provenance, unadjudicated screening and an infeasible pilot/validation allocation. There is no evidence here of fabricated raw bytes or invented completed privacy-study results. There is also insufficient evidence to call the entire process correct.
+VERDICT: MAJOR REVISION. The current sample should not be certified or frozen as scientifically validated. Its stored calculations are repeatable after temporary path redirection, and the relocated raw files match their historical hashes. Those strengths coexist with wrong selected product identities, unresolved missing counts, incomplete source provenance and unadjudicated screening. There is no evidence here of fabricated raw bytes or invented completed privacy-study results. There is also insufficient evidence to call the entire process correct.
 
 The review distinguishes confirmed defects, bounded implementation hazards, and unresolved methodological judgments. CRITICAL means a central identity or design condition fails; MAJOR means a validity, reproducibility or interpretability issue must be resolved before the affected claim is relied on; MODERATE means a material justification, evidence or reporting weakness. These are reviewer priorities, not a publisher's formal decision.
+
+Scope amendment, 28 October 2026: the author confirmed health trackers as the single study domain (D15). The current methodology and instruments now remove category allocations. F18 and F19 are resolved; the remaining findings retain their original audit scope and evidence date and have not been re-audited for unrelated intervening changes. There are 31 review records, including these two resolved items.
 
 ## Verified strengths and limits
 Five relocated raw files match historical hashes; all 12 current ranking tests pass. With input/output paths redirected temporarily, the ranking report, selection, exclusions, 58 sensitivity rows, processed 50-app sample and three generated tables reproduce exactly; the pilot table and v005 parsed results also reproduce. Current main counts are 1,365 candidates, 116 positive calibration pairs and 70 reached=47 selected+12 provider skips+11 exclusions. These are repeatable implementation results, subject to the defects below. The 50 apps represent 49 provider keys. All present selected score inputs are observed; 41 Play policy URLs are present, which does not establish valid policies.
 
-Coverage: complete structural checks of retained sampling data and 275 screening keys; title/ID inspection of 125 main matched pairs and all 119 exclusion reasons; targeted original-description and source-PDF checks. This is not an independent human re-screen of every full listing, installation audit, validation of missing original HTTP bodies, literature-search audit or certification of completed coding. No production .tex, raw data, screening, configuration, sample or generated table was changed.
+Coverage: complete structural checks of retained sampling data and 275 screening keys; title/ID inspection of 125 main matched pairs and all 119 exclusion reasons; targeted original-description and source-PDF checks. This is not an independent human re-screen of every full listing, installation audit, validation of missing original HTTP bodies, literature-search audit or certification of completed coding. During the original audit, no production .tex, raw data, screening, configuration, sample or generated table was changed. The subsequent D15 amendment changes the active methodology and instruments to implement the author's scope clarification.
 
 ## All findings (same IDs as the detailed report)
 
@@ -66,11 +68,11 @@ Headspace is supported by explicit progress/reflection wording, so its inclusion
 ### F17 | MODERATE | The DiGA exclusion lacks its required verification record
 Oviva Direkt Apple 1556652646 is excluded under E5 while its reason still says confirm in the BfArM directory. Prescription/reimbursement language is a trigger for checking the registry, not the retained check itself.
 
-### F18 | CRITICAL | The pilot and validation allocation is infeasible as written
-The ranked sample has four cycle and two pregnancy apps: six reproductive-health apps. The plan requires two reproductive pilot apps plus five different validation apps, with pilot apps/providers excluded from validation. Seven are needed. No allocation satisfying the stated rules exists under the reported primary categories.
+### F18 | RESOLVED | Pilot and validation use the full health-tracker sample
+Resolved by the author's 28 October clarification, recorded in D15. Five pilot apps and ten validation apps are selected across the full health-tracker sample without category allocations. Pilot providers and documents remain excluded from validation. The earlier category-specific numerical shortage no longer applies.
 
-### F19 | MAJOR | The expanded sample is not aligned with downstream domain plans
-Mood tracking was added to meet the supervisor's guidance, but harm trees, walkthrough strata, pilot and validation still largely assume fitness and fertility. The two mood apps and the multi-function companion have no complete mapping to those plans. A no-quota sample does not itself define an analysis taxonomy.
+### F19 | RESOLVED | One health-tracker domain governs the study design
+Resolved by D15. Prior studies' categories support scope definition and keyword collection; they do not define separate study populations, analysis strata or reference-tree assignments. Reference pathways apply to apps through their features and context. The twelve walkthroughs retain six Android and six iOS places across the whole sample.
 
 ### F20 | MODERATE | Provider independence and repeated-source handling need qualification
 The 47 ranked apps have unique provider keys, but adding Apple Health and Apple Fitness plus Samsung Health gives 50 apps from 49 provider keys. One account/normalized name/shared domain is an operational grouping, not proof of independent corporate entities or unique policies.
@@ -109,7 +111,7 @@ Twenty-one repeated Apple occurrences disagree with their first metadata observa
 Results say Google Play was searched from 15:07 to 15:29 UTC on 24 October. The 49 search requests in the retained first run span 15:07:47-15:14:57; its first 100 product-page requests span 15:15:01-15:28:49. Search and enrichment windows have been conflated.
 
 ## Priority sequence
-Repair canonical paths and manifest; verify all product identities; resolve missing counts and field semantics; complete human screening; choose a feasible domain/pilot/validation/coder design; rerun every affected result; reconcile chronology, denominators and acquisition evidence; freeze an executable, dated package. None of these corrections is adopted by this assessment.
+Repair canonical paths and manifest; verify all product identities; resolve missing counts and field semantics; complete human screening; apply the single-domain pilot and validation rules and resolve the coder procedure; rerun every affected result; reconcile chronology, denominators and acquisition evidence; freeze an executable, dated package. D15 resolves F18 and F19; the other corrections are not adopted by this assessment.
 
 The score has a coherent conditional derivation; it is not a validated user count. The sample is purposive, so no population margin of error or representative German-market prevalence claim is justified. Apple also permits rating resets: counts need not share one lifetime accumulation basis, and no selected-app reset was established.
 

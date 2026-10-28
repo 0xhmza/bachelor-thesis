@@ -154,21 +154,21 @@
   },
   {
     "id": "F18",
-    "severity": "CRITICAL",
-    "title": "The pilot and validation allocation is infeasible as written",
-    "brief": "The ranked sample has four cycle and two pregnancy apps: six reproductive-health apps. The plan requires two reproductive pilot apps plus five different validation apps, with pilot apps/providers excluded from validation. Seven are needed. No allocation satisfying the stated rules exists under the reported primary categories.",
-    "detail": "The pilot specifies five apps, three fitness and two fertility. Validation specifies ten apps, five per domain, from providers/documents not used in the pilot. Even if every pregnancy app is treated as reproductive/fertility, only six candidate apps are available for that domain. Once two enter the pilot, four remain, below the required five. If pregnancy is not included in fertility, the shortage is larger.\n\nThe three preinstalled apps do not supply additional reproductive-primary apps. Some multi-function apps might have reproductive features, but no explicit domain mapping or disjoint allocation has been supplied that permits counting them in this stratum. The honest conclusion is infeasibility under the stated classification, requiring a revised justified design. Quietly reusing a pilot app in validation would undermine the claimed separation between instrument development and validation.",
-    "evidence": "Results:154-156; Methodology Pilot and Validation and Missed Mentions; v004/output/report.json categories; D03 Consequences.",
-    "required": "Choose and document a feasible allocation before pilot selection; preserve independent validation and explain any change in size, stratification or domain definition."
+    "severity": "RESOLVED",
+    "title": "Pilot and validation use the full health-tracker sample",
+    "brief": "Resolved by the author's 28 October clarification, recorded in D15. Five pilot apps and ten validation apps are selected across the full health-tracker sample without category allocations. Pilot providers and documents remain excluded from validation. The earlier category-specific numerical shortage no longer applies.",
+    "detail": "The author confirmed that the study domain is health trackers overall. The methodology and active instruments now draw five pilot apps and ten validation apps across the full sample, retaining recorded random seeds, separation by provider and document, and policy-language stratification where both languages occur. No category-specific sample requirement remains. The earlier feasibility objection arose from the superseded allocation and is closed by this change. This does not certify that the actual random draws, independent-document checks or validation have been performed.",
+    "evidence": "00_Admin/Decisions/D15_health-tracker-domain.md; revised Methodology Pilot and Validation; codebook v4.",
+    "required": "Implement the revised sample-wide draws and document their seeds and provider/document separation; no additional category quota is required."
   },
   {
     "id": "F19",
-    "severity": "MAJOR",
-    "title": "The expanded sample is not aligned with downstream domain plans",
-    "brief": "Mood tracking was added to meet the supervisor's guidance, but harm trees, walkthrough strata, pilot and validation still largely assume fitness and fertility. The two mood apps and the multi-function companion have no complete mapping to those plans. A no-quota sample does not itself define an analysis taxonomy.",
-    "detail": "The supervisor explicitly requested mental-health trackers and broader consideration of sleep and specialized tracking. The current search adds mood and happiness and reports two mood apps. D03 itself recognizes the two-domain consequences as open. Nevertheless, the methodology defines separate fitness/fertility harm trees, six walkthroughs per domain and five validation apps per domain without a complete mapping for the sampled categories.\n\nSleep, diet, activity and heart-rate tracking might reasonably be grouped under a broader physical-health domain, but that taxonomy has to be stated and justified. Assigning all non-reproductive apps to fitness would hide substantively different mental-health pathways. Broad keyword coverage also does not establish comprehensive coverage of depression, anxiety or specialized chronic-disease tracking; the chosen source vocabularies delimit this study.",
-    "evidence": "13 October organized notes sections 1 and 4; D03 Consequences; Methodology App Walkthroughs, Reference Harm Trees, Pilot and Validation.",
-    "required": "Define app-to-domain and multi-function mappings and align harm applicability, walkthroughs and validation with them; state the search-domain limits."
+    "severity": "RESOLVED",
+    "title": "One health-tracker domain governs the study design",
+    "brief": "Resolved by D15. Prior studies' categories support scope definition and keyword collection; they do not define separate study populations, analysis strata or reference-tree assignments. Reference pathways apply to apps through their features and context. The twelve walkthroughs retain six Android and six iOS places across the whole sample.",
+    "detail": "The author clarified that source-paper categories belong to the operational domain definition and keyword provenance. The active methodology, codebook v4 and walkthrough protocol v3 now apply to health trackers overall. Category allocations have been removed from pilot, validation and walkthrough selection. Reference trees form a shared health-tracker framework; each pathway's applicability is determined from an app's features, data, access and context conditions. Categories may still describe the sample. The earlier domain-mapping objection is closed. This clarification does not establish exhaustive keyword coverage or decide the separate open question about the supervisor's phrase \"best app\".",
+    "evidence": "D15; D03 current Consequences; revised Methodology, Appendix A, codebook v4 and walkthrough protocol v3.",
+    "required": "Use the single-domain procedures in main work and assess pathway applicability per app; retain the separate open D12 decision."
   },
   {
     "id": "F20",
