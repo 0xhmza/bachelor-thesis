@@ -1,0 +1,983 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2026-09-28T19:18:34Z",
+      "timestamp": 1790623114316,
+      "version": "4.1.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 129,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              11
+            ]
+          ],
+          "date-time": "2024-05-11T00:00:00Z",
+          "timestamp": 1715385600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "ORAU RALPH E POWE JUNIOR FACULTY AWARD",
+        "award": [
+          "383001603"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "383001603"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Duke University Trinity College of Arts & Sciences",
+        "award": [
+          "4517834"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "4517834"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1145/3613904.3642042",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2024-05-11T04:38:06Z",
+      "timestamp": 1715402286000
+    },
+    "page": "1-22",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 53,
+    "title": [
+      "\"I Deleted It After the Overturn of Roe v. Wade\": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1167-2801",
+        "authenticated-orcid": false,
+        "given": "Jiaxun",
+        "family": "Cao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Duke Kunshan University, China and Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-0247-3960",
+        "authenticated-orcid": false,
+        "given": "Hiba",
+        "family": "Laabadli",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Duke University, United States and Duke Kunshan University, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-1765-2912",
+        "authenticated-orcid": false,
+        "given": "Chase H",
+        "family": "Mathis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "InSPIRe Lab, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-1640-7676",
+        "authenticated-orcid": false,
+        "given": "Rebecca D",
+        "family": "Stern",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "InSPIRe Lab, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9797-2495",
+        "authenticated-orcid": false,
+        "given": "Pardis",
+        "family": "Emami-Naeini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science Department, Duke University, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_3_1_1",
+        "unstructured": "[1] 2023. https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2023/09/ico-to-review-period-and-fertility-tracking-apps/"
+      },
+      {
+        "key": "e_1_3_3_3_2_1",
+        "unstructured": "[2] 2023. https://en.wikipedia.org/wiki/Abortion_in_the_United_Kingdom#Citations"
+      },
+      {
+        "key": "e_1_3_3_3_3_1",
+        "unstructured": "Davey Alba. 2015. An app for hacking fertility now also works for men. https://www.wired.com/2015/04/glow/"
+      },
+      {
+        "key": "e_1_3_3_3_4_1",
+        "volume-title": "data sharing, and data security policies of women’s mhealth apps: scoping review and content analysis. JMIR mHealth and uHealth 10, 5",
+        "author": "Alfawzan Najd",
+        "year": "2022",
+        "unstructured": "Najd Alfawzan, Markus Christen, Giovanni Spitale, Nikola Biller-Andorno, 2022. Privacy, data sharing, and data security policies of women’s mhealth apps: scoping review and content analysis. JMIR mHealth and uHealth 10, 5 (2022), e33735."
+      },
+      {
+        "key": "e_1_3_3_3_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2800835.2809440"
+      },
+      {
+        "key": "e_1_3_3_3_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858187"
+      },
+      {
+        "key": "e_1_3_3_3_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2598784.2602768"
+      },
+      {
+        "key": "e_1_3_3_3_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858119"
+      },
+      {
+        "key": "e_1_3_3_3_9_1",
+        "volume-title": "Bodies Like Yours: Enquiring Data Privacy in FemTech. In Adjunct Proceedings of the 2022 Nordic Human-Computer Interaction Conference. 1–5.",
+        "author": "Almeida Teresa",
+        "year": "2022",
+        "unstructured": "Teresa Almeida, Laura Shipp, Maryam Mehrnezhad, and Ehsan Toreini. 2022. Bodies Like Yours: Enquiring Data Privacy in FemTech. In Adjunct Proceedings of the 2022 Nordic Human-Computer Interaction Conference. 1–5."
+      },
+      {
+        "key": "e_1_3_3_3_10_1",
+        "unstructured": "Priscilla Alvarez. 2019. House Judiciary Committee asks former ORR director to clarify testimony on pregnant minors. https://edition.cnn.com/2019/03/22/politics/scott-lloyd-pregnant-minors/index.html Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_11_1",
+        "volume-title": "New Perspectives in Critical Data Studies: The Ambivalences of Data Power",
+        "author": "Amelang Katrin",
+        "unstructured": "Katrin Amelang. 2022. (Not) Safe to Use: Insecurities in Everyday Data Practices with Period-Tracking Apps. In New Perspectives in Critical Data Studies: The Ambivalences of Data Power. Springer, 297–321."
+      },
+      {
+        "key": "e_1_3_3_3_12_1",
+        "unstructured": "Sini-Marja Ant-Wuorinen Maria Knaapi Heli Koskela Emma Lindberg Anni Lintula and Linda Palenius. [n. d.]. “Your period starts in two days” Risks of period-tracking post Roe v. Wade. ([n. d.])."
+      },
+      {
+        "key": "e_1_3_3_3_13_1",
+        "volume-title": "Experimental vignette studies in survey research. Methodology",
+        "author": "Atzmüller Christiane",
+        "year": "2010",
+        "unstructured": "Christiane Atzmüller and Peter M Steiner. 2010. Experimental vignette studies in survey research. Methodology (2010)."
+      },
+      {
+        "key": "e_1_3_3_3_14_1",
+        "volume-title": "americans",
+        "author": "Auxier Brooke",
+        "year": "2019",
+        "unstructured": "Brooke Auxier, Lee Rainie, Monica Anderson, Andrew Perrin, Madhu Kumar, and Erica Turner. 2019. 4. americans’ attitudes and experiences with privacy policies and laws. Pew Research Center: Internet, Science & Tech (2019)."
+      },
+      {
+        "key": "e_1_3_3_3_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3027063.3027085"
+      },
+      {
+        "key": "e_1_3_3_3_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1978942.1978979"
+      },
+      {
+        "key": "e_1_3_3_3_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1753326.1753521"
+      },
+      {
+        "key": "e_1_3_3_3_18_1",
+        "volume-title": "CSCW. In Proceedings of the 18th ACM Conference Companion on Computer Supported Cooperative Work & Social Computing. 283–288",
+        "author": "Birnholtz Jeremy",
+        "year": "2015",
+        "unstructured": "Jeremy Birnholtz, Irina Shklovski, Mark Handel, and Eran Toch. 2015. Let’s talk about sex (Apps), CSCW. In Proceedings of the 18th ACM Conference Companion on Computer Supported Cooperative Work & Social Computing. 283–288."
+      },
+      {
+        "key": "e_1_3_3_3_19_1",
+        "volume-title": "Interval estimation for Cohen’s kappa as a measure of agreement. Statistics in medicine 19, 5",
+        "author": "Blackman Nicole J-M",
+        "year": "2000",
+        "unstructured": "Nicole J-M Blackman and John J Koval. 2000. Interval estimation for Cohen’s kappa as a measure of agreement. Statistics in medicine 19, 5 (2000), 723–741."
+      },
+      {
+        "key": "e_1_3_3_3_20_1",
+        "volume-title": "Economics of information security and privacy",
+        "author": "Bonneau Joseph",
+        "unstructured": "Joseph Bonneau and Sören Preibusch. 2010. The privacy jungle: On the market for data protection in social networks. In Economics of information security and privacy. Springer, 121–167."
+      },
+      {
+        "key": "e_1_3_3_3_21_1",
+        "unstructured": "The Census Bureau. 2022. U.S. Census Bureau quickfacts: United States. https://www.census.gov/quickfacts/fact/table/US/PST045222"
+      },
+      {
+        "key": "e_1_3_3_3_22_1",
+        "volume-title": "Educational Attainment in the United States",
+        "author": "The Census Bureau",
+        "year": "2022",
+        "unstructured": "The Census Bureau. 2023. Educational Attainment in the United States: 2022. https://www.census.gov/data/tables/2022/demo/educational-attainment/cps-detailed-tables.html"
+      },
+      {
+        "key": "e_1_3_3_3_23_1",
+        "unstructured": "Samantha T Campanella. 2022. Menstrual and Fertility Tracking Apps and the Post Roe v. Wade Era. (2022)."
+      },
+      {
+        "key": "e_1_3_3_3_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3313831.3376471"
+      },
+      {
+        "key": "e_1_3_3_3_25_1",
+        "volume-title": "Persistent gender gap in partisanship",
+        "author": "W RESEARCH CENTER.",
+        "year": "2020",
+        "unstructured": "PEW RESEARCH CENTER. 2020. Persistent gender gap in partisanship; men are more likely than women to identify as independents. https://www.pewresearch.org/politics/2020/06/02/democratic-edge-in-party-identification-narrows-slightly/pp_2020-06-02_party-id_1-02/"
+      },
+      {
+        "key": "e_1_3_3_3_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Karine Coen-Sanchez Bassey Ebenso Ieman Mona El-Mowafi Maria Berghs Dina Idriss-Wheeler and Sanni Yaya. 2022. Repercussions of overturning Roe v. Wade for women across systems and beyond borders. 5 pages.",
+        "DOI": "10.1186/s12978-022-01490-y"
+      },
+      {
+        "key": "e_1_3_3_3_27_1",
+        "unstructured": "Federal Trade Commission. 2021. FTC Finalizes Order with Flo Health a Fertility-Tracking App that Shared Sensitive Health Data with Facebook Google and Others. https://www.ftc.gov/news-events/news/press-releases/2021/06/ftc-finalizes-order-flo-health-fertility-tracking-app-shared-sensitive-health-data-facebook-google"
+      },
+      {
+        "key": "e_1_3_3_3_28_1",
+        "unstructured": "Federal Trade Commission. 2023. Ovulation Tracking App Premom Will be Barred from Sharing Health Data for Advertising Under Proposed FTC Order. https://www.ftc.gov/news-events/news/press-releases/2023/05/ovulation-tracking-app-premom-will-be-barred-sharing-health-data-advertising-under-proposed-ftc"
+      },
+      {
+        "key": "e_1_3_3_3_29_1",
+        "volume-title": "My Data Act of",
+        "author": "Body My",
+        "year": "2022",
+        "unstructured": "Congress. 2022. S.4434 - My Body, My Data Act of 2022. https://www.congress.gov/bill/117th-congress/senate-bill/4434/text"
+      },
+      {
+        "key": "e_1_3_3_3_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1744-6155.2011.00308.x"
+      },
+      {
+        "key": "e_1_3_3_3_31_1",
+        "unstructured": "Joseph Cox. 2022. Data broker is selling location data of people who visit abortion clinics. https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood"
+      },
+      {
+        "key": "e_1_3_3_3_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3551349.3561343"
+      },
+      {
+        "key": "e_1_3_3_3_33_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Anna Eaglin and Shaowen Bardzell. 2011. Sex toys and designing for sexual wellness. In CHI’11 Extended Abstracts on Human Factors in Computing Systems. 1837–1842.",
+        "DOI": "10.1145/1979742.1979879"
+      },
+      {
+        "key": "e_1_3_3_3_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SP40000.2020.00043"
+      },
+      {
+        "key": "e_1_3_3_3_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274317"
+      },
+      {
+        "key": "e_1_3_3_3_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSEC.2021.3132398"
+      },
+      {
+        "key": "e_1_3_3_3_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SP40001.2021.00112"
+      },
+      {
+        "key": "e_1_3_3_3_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300764"
+      },
+      {
+        "key": "e_1_3_3_3_39_1",
+        "volume-title": "Seventeenth Symposium on Usable Privacy and Security (SOUPS",
+        "author": "Emami-Naeini Pardis",
+        "year": "2021",
+        "unstructured": "Pardis Emami-Naeini, Tiona Francisco, Tadayoshi Kohno, and Franziska Roesner. 2021. Understanding Privacy Attitudes and Concerns Towards Remote Communications During the { COVID-19} Pandemic. In Seventeenth Symposium on Usable Privacy and Security (SOUPS 2021). 695–714."
+      },
+      {
+        "key": "e_1_3_3_3_40_1",
+        "volume-title": "Getting personal: Reflexivity, positionality, and feminist research. The professional geographer 46, 1",
+        "author": "England VL",
+        "year": "1994",
+        "unstructured": "Kim VL England. 1994. Getting personal: Reflexivity, positionality, and feminist research. The professional geographer 46, 1 (1994), 80–89."
+      },
+      {
+        "key": "e_1_3_3_3_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1463160.1463172"
+      },
+      {
+        "key": "e_1_3_3_3_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025635"
+      },
+      {
+        "key": "e_1_3_3_3_43_1",
+        "volume-title": "Health app policy: international comparison of nine countries",
+        "author": "Essén Anna",
+        "year": "2022",
+        "unstructured": "Anna Essén, Ariel D Stern, Christoffer Bjerre Haase, Josip Car, Felix Greaves, Dragana Paparova, Steven Vandeput, Rik Wehrens, and David W Bates. 2022. Health app policy: international comparison of nine countries’ approaches. NPJ digital medicine 5, 1 (2022), 31."
+      },
+      {
+        "key": "e_1_3_3_3_44_1",
+        "unstructured": "Eliza Fawcett. 2022. Georgia’s 6-Week Abortion Ban Begins Immediately After Court Ruling. https://www.nytimes.com/2022/07/20/us/georgia-abortion-ban.html Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-77392-2_19"
+      },
+      {
+        "key": "e_1_3_3_3_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5772/51645"
+      },
+      {
+        "key": "e_1_3_3_3_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173225.3173292"
+      },
+      {
+        "key": "e_1_3_3_3_48_1",
+        "unstructured": "Center for Reproductive Rights. 2022. High Court of Kenya in Malindi Ruling in PAK and Salim Mohammed vs. the Attorney General and 3 others. https://reproductiverights.org/high-court-of-kenya-in-malindi-ruling-in-pak-and-salim-mohammed-vs-the-attorney-general-and-3-others/ Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_49_1",
+        "volume-title": "Data Privacy Matters... Period.ORCHA Report on the Data Security of Period Tracking Apps",
+        "author": "Review of Care The Organisation",
+        "year": "2022",
+        "unstructured": "The Organisation for the Review of Care and Health Apps. 2022. Data Privacy Matters... Period.ORCHA Report on the Data Security of Period Tracking Apps (2022)."
+      },
+      {
+        "key": "e_1_3_3_3_50_1",
+        "volume-title": "Readability and accessibility of terms of service and privacy policies for menstruation-tracking smartphone applications. Health promotion practice 21, 5",
+        "author": "Fowler R",
+        "year": "2020",
+        "unstructured": "Leah R Fowler, Charlotte Gillard, and Stephanie R Morain. 2020. Readability and accessibility of terms of service and privacy policies for menstruation-tracking smartphone applications. Health promotion practice 21, 5 (2020), 679–683."
+      },
+      {
+        "key": "e_1_3_3_3_51_1",
+        "unstructured": "Gennie Gebhart and Daly Barnett. [n. d.]. Should You Really Delete Your Period Tracking App?Electronic Frontier Foundation ([n. d.]). https://www.eff.org/deeplinks/2022/06/should-you-really-delete-your-period-tracking-app"
+      },
+      {
+        "key": "e_1_3_3_3_52_1",
+        "volume-title": "Explaining the privacy paradox: A systematic review of literature investigating privacy attitude and behavior. Computers & security 77",
+        "author": "Gerber Nina",
+        "year": "2018",
+        "unstructured": "Nina Gerber, Paul Gerber, and Melanie Volkamer. 2018. Explaining the privacy paradox: A systematic review of literature investigating privacy attitude and behavior. Computers & security 77 (2018), 226–261."
+      },
+      {
+        "key": "e_1_3_3_3_53_1",
+        "volume-title": "What is an affordance and can it help us understand the use of ICT in education?Education and Information Technologies 15",
+        "author": "Hammond Michael",
+        "year": "2010",
+        "unstructured": "Michael Hammond. 2010. What is an affordance and can it help us understand the use of ICT in education?Education and Information Technologies 15 (2010), 205–217."
+      },
+      {
+        "key": "e_1_3_3_3_54_1",
+        "volume-title": "A fertility app for two? Women’s perspectives on sharing conceptive fertility work with male partners. Culture, health & sexuality 24, 12",
+        "author": "Hamper Josie",
+        "year": "2022",
+        "unstructured": "Josie Hamper. 2022. A fertility app for two? Women’s perspectives on sharing conceptive fertility work with male partners. Culture, health & sexuality 24, 12 (2022), 1713–1728."
+      },
+      {
+        "key": "e_1_3_3_3_55_1",
+        "unstructured": "Drew Harwell. 2019. Is your pregnancy app sharing your intimate data with your boss?https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/"
+      },
+      {
+        "key": "e_1_3_3_3_56_1",
+        "volume-title": "AMIA annual symposium proceedings, Vol. 2014",
+        "author": "He Dongjing",
+        "unstructured": "Dongjing He, Muhammad Naveed, Carl A Gunter, and Klara Nahrstedt. 2014. Security concerns in Android mHealth apps. In AMIA annual symposium proceedings, Vol. 2014. American Medical Informatics Association, 645."
+      },
+      {
+        "key": "e_1_3_3_3_57_1",
+        "unstructured": "Kashmir Hill. [n. d.]. Deleting Your Period Tracker Won’t Protect You. The New York Times ([n. d.]). https://www.nytimes.com/2022/06/30/technology/period-tracker-privacy-abortion.html"
+      },
+      {
+        "key": "e_1_3_3_3_58_1",
+        "volume-title": "Periods as powerful data: User understandings of menstrual app data and information",
+        "author": "Hohmann-Marriott Bryndl",
+        "year": "2021",
+        "unstructured": "Bryndl Hohmann-Marriott. 2021. Periods as powerful data: User understandings of menstrual app data and information. New Media & Society (2021), 14614448211040245."
+      },
+      {
+        "key": "e_1_3_3_3_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300291"
+      },
+      {
+        "key": "e_1_3_3_3_60_1",
+        "volume-title": "13 States have abortion trigger bans—here’s what happens when Roe is overturned",
+        "author": "Guttmacher Institute",
+        "year": "2022",
+        "unstructured": "Guttmacher Institute. 2022. 13 States have abortion trigger bans—here’s what happens when Roe is overturned. Guttmacher Institute. http://www.guttmacher.org/article/2022/06/13-states-have-abortion-trigger-bans-heres-what-happens-when-roe-overturned Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2771839.2771895"
+      },
+      {
+        "key": "e_1_3_3_3_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0049124105283121"
+      },
+      {
+        "key": "e_1_3_3_3_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3170427.3170639"
+      },
+      {
+        "key": "e_1_3_3_3_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2399016.2399116"
+      },
+      {
+        "key": "e_1_3_3_3_65_1",
+        "unstructured": "Martin Kaste. [n. d.]. Nebraska cops used Facebook messages to investigate an alleged illegal abortion. National Public Radio ([n. d.]). https://www.npr.org/2022/08/12/1117092169/nebraska-cops-used-facebook-messages-to-investigate-an-alleged-illegal-abortion"
+      },
+      {
+        "key": "e_1_3_3_3_66_1",
+        "volume-title": "Your Body",
+        "author": "Kemp Katharine",
+        "year": "2023",
+        "unstructured": "Katharine Kemp. 2023. Your Body, Our Data: Unfair and Unsafe Privacy Practices of Popular Fertility Apps. Social Science Research Network (2023)."
+      },
+      {
+        "key": "e_1_3_3_3_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3404218"
+      },
+      {
+        "key": "e_1_3_3_3_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3531146.3533116"
+      },
+      {
+        "key": "e_1_3_3_3_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2048259.2048269"
+      },
+      {
+        "key": "e_1_3_3_3_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2702123.2702258"
+      },
+      {
+        "key": "e_1_3_3_3_71_1",
+        "volume-title": "32nd USENIX Security Symposium (USENIX Security 23)",
+        "author": "Kustosch Lorenz",
+        "year": "2023",
+        "unstructured": "Lorenz Kustosch, Carlos Gañán, Mattis van’t Schip, Michel van Eeten, and Simon Parkin. 2023. Measuring Up to (Reasonable) Consumer Expectations: Providing an Empirical Basis for Holding { IoT} Manufacturers Legally Responsible. In 32nd USENIX Security Symposium (USENIX Security 23). 1487–1504."
+      },
+      {
+        "key": "e_1_3_3_3_72_1",
+        "unstructured": "Leona Lassak Hanna Püschel Tobias Gostomzyk and Markus Dürmuth. [n. d.]. Introducing Data Trustees: A Vignette-Based Study Approach to Get Users in the Loop. ([n. d.])."
+      },
+      {
+        "key": "e_1_3_3_3_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/09737189.2017.1420400"
+      },
+      {
+        "key": "e_1_3_3_3_74_1",
+        "volume-title": "lived experience, and qualitative research. Research in organizations: Foundations and methods of inquiry",
+        "author": "Lincoln S",
+        "year": "2005",
+        "unstructured": "Yvonna S Lincoln. 2005. Context, lived experience, and qualitative research. Research in organizations: Foundations and methods of inquiry (2005), 221–232."
+      },
+      {
+        "key": "e_1_3_3_3_75_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14680777.2019.1637916"
+      },
+      {
+        "key": "e_1_3_3_3_76_1",
+        "first-page": "176",
+        "article-title": "Measuring privacy: An empirical test using context to expose confounding variables",
+        "volume": "18",
+        "author": "Martin Kirsten",
+        "year": "2016",
+        "unstructured": "Kirsten Martin and Helen Nissenbaum. 2016. Measuring privacy: An empirical test using context to expose confounding variables. Colum. Sci. & Tech. L. Rev. 18 (2016), 176.",
+        "journal-title": "Colum. Sci. & Tech. L. Rev."
+      },
+      {
+        "key": "e_1_3_3_3_77_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10551-012-1215-8"
+      },
+      {
+        "key": "e_1_3_3_3_78_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nora Mcdonald and Nazanin Andalibi. 2023. “I Did Watch ‘The Handmaid’s Tale’”: Threat Modeling Privacy Post-Roe in the United States. ACM Transactions on Computer-Human Interaction (2023).",
+        "DOI": "10.1145/3589960"
+      },
+      {
+        "key": "e_1_3_3_3_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445132"
+      },
+      {
+        "key": "e_1_3_3_3_80_1",
+        "volume-title": "User Risk Perceptions and Protective Actions in Female-oriented Technologies. arXiv preprint arXiv:2306.05956",
+        "author": "Mehrnezhad Maryam",
+        "year": "2023",
+        "unstructured": "Maryam Mehrnezhad and Teresa Almeida. 2023. \" My sex-related data is more sensitive than my financial data and I want the same level of security and privacy\": User Risk Perceptions and Protective Actions in Female-oriented Technologies. arXiv preprint arXiv:2306.05956 (2023)."
+      },
+      {
+        "key": "e_1_3_3_3_81_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3173931"
+      },
+      {
+        "key": "e_1_3_3_3_82_1",
+        "unstructured": "Sorina Mihaila. 2023. Period tracking app Flo launches feature for male partners. https://www.femtechworld.co.uk/news/period-tracking-app-flo-launches-feature-for-male-partners/"
+      },
+      {
+        "key": "e_1_3_3_3_83_1",
+        "unstructured": "Mozilla. [n. d.]. In Post Roe v. Wade Era Mozilla Labels 18 of 25 Popular Period and Pregnancy Tracking Tech With *Privacy Not Included Warning. Mozilla ([n. d.]). https://foundation.mozilla.org/en/blog/in-post-roe-v-wade-era-mozilla-labels-18-of-25-popular-period-and-pregnancy-tracking-tech-with-privacy-not-included-warning/"
+      },
+      {
+        "key": "e_1_3_3_3_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3313831.3376294"
+      },
+      {
+        "key": "e_1_3_3_3_85_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445605"
+      },
+      {
+        "key": "e_1_3_3_3_86_1",
+        "volume-title": "Thirteenth Symposium on Usable Privacy and Security (SOUPS",
+        "author": "Naeini Pardis Emami",
+        "year": "2017",
+        "unstructured": "Pardis Emami Naeini, Sruti Bhagavatula, Hana Habib, Martin Degeling, Lujo Bauer, Lorrie Faith Cranor, and Norman Sadeh. 2017. Privacy expectations and preferences in an { IoT} world. In Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017). 399–412."
+      },
+      {
+        "key": "e_1_3_3_3_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3610062"
+      },
+      {
+        "key": "e_1_3_3_3_88_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2999934"
+      },
+      {
+        "key": "e_1_3_3_3_89_1",
+        "unstructured": "Amy Olivero. 2022. Privacy and digital health data: The femtech challenge. https://iapp.org/news/a/privacy-and-digital-health-data-the-femtech-challenge/"
+      },
+      {
+        "key": "e_1_3_3_3_90_1",
+        "unstructured": "Carly Page. 2022. Supreme Court overturns Roe v. Wade: Should You Delete Your Period-tracking app?https://techcrunch.com/2022/05/05/roe-wade-privacy-period-tracking#"
+      },
+      {
+        "key": "e_1_3_3_3_91_1",
+        "volume-title": "Considering positionality: The ethics of conducting research with marginalized groups. Research methods for social justice and equity in education",
+        "author": "Parson Laura",
+        "year": "2019",
+        "unstructured": "Laura Parson. 2019. Considering positionality: The ethics of conducting research with marginalized groups. Research methods for social justice and equity in education (2019), 15–32."
+      },
+      {
+        "key": "e_1_3_3_3_92_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2598510.2598572"
+      },
+      {
+        "key": "e_1_3_3_3_93_1",
+        "unstructured": "Kristen Poli. 2022. The most popular period-tracking apps ranked by Data Privacy. https://www.wired.com/story/period-tracking-apps-flo-clue-stardust-ranked-data-privacy/"
+      },
+      {
+        "key": "e_1_3_3_3_94_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290607.3311755"
+      },
+      {
+        "key": "e_1_3_3_3_95_1",
+        "volume-title": "Data Privacy and Pluralistic Ignorance. In Nineteenth Symposium on Usable Privacy and Security (SOUPS",
+        "author": "Rader Emilee",
+        "year": "2023",
+        "unstructured": "Emilee Rader. 2023. Data Privacy and Pluralistic Ignorance. In Nineteenth Symposium on Usable Privacy and Security (SOUPS 2023). 457–471."
+      },
+      {
+        "key": "e_1_3_3_3_96_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0964663916668391"
+      },
+      {
+        "key": "e_1_3_3_3_97_1",
+        "unstructured": "John Newman &; Amy Ritchie and Nick Jones. 2023. Ovulation Tracking app premom will be barred from sharing health data for advertising under proposed FTC Order. https://www.ftc.gov/news-events/news/press-releases/2023/05/ovulation-tracking-app-premom-will-be-barred-sharing-health-data-advertising-under-proposed-ftc"
+      },
+      {
+        "key": "e_1_3_3_3_98_1",
+        "unstructured": "Catherine Roberts. 2022. These Period Tracker Apps Say They Put Privacy First. Here’s What We Found.https://www.consumerreports.org/health/health-privacy/period-tracker-apps-privacy-a2278134145/"
+      },
+      {
+        "key": "e_1_3_3_3_99_1",
+        "volume-title": "The future of reproductive choice for poor women and women of color. Women’s Rts. L. Rep. 12",
+        "author": "Roberts E",
+        "year": "1990",
+        "unstructured": "Dorothy E Roberts. 1990. The future of reproductive choice for poor women and women of color. Women’s Rts. L. Rep. 12 (1990), 59."
+      },
+      {
+        "key": "e_1_3_3_3_100_1",
+        "volume-title": "Estimating the success of re-identifications in incomplete datasets using generative models. Nature communications 10, 1",
+        "author": "Rocher Luc",
+        "year": "2019",
+        "unstructured": "Luc Rocher, Julien M Hendrickx, and Yves-Alexandre De Montjoye. 2019. Estimating the success of re-identifications in incomplete datasets using generative models. Nature communications 10, 1 (2019), 1–9."
+      },
+      {
+        "key": "e_1_3_3_3_101_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2699742"
+      },
+      {
+        "key": "e_1_3_3_3_102_1",
+        "unstructured": "Donna Rosato. [n. d.]. What your period tracker app knows about you. Consumer Reports ([n. d.]). https://www.consumerreports.org/health/health-privacy/what-your-period-tracker-app-knows-about-you-a8701683935/"
+      },
+      {
+        "key": "e_1_3_3_3_103_1",
+        "unstructured": "Johnny Saldaña. 2021. The coding manual for qualitative researchers. sage."
+      },
+      {
+        "key": "e_1_3_3_3_104_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3555556"
+      },
+      {
+        "key": "e_1_3_3_3_105_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Natalia Serenko. 2014. Informational physical and psychological privacy as determinants of patient behaviour in health care. In Handbook of Research on Patient Safety and Quality Care through Health Informatics. IGI Global 1–20.",
+        "DOI": "10.4018/978-1-4666-4546-2.ch001"
+      },
+      {
+        "key": "e_1_3_3_3_106_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/popets-2020-0083"
+      },
+      {
+        "key": "e_1_3_3_3_107_1",
+        "unstructured": "Tierney Sneed. 2022. Some states move quickly to ban abortion after Supreme Court ruling. https://www.cnn.com/2022/06/24/politics/abortion-ban-states-move-quickly/index.html Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_108_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3027063.3027138"
+      },
+      {
+        "key": "e_1_3_3_3_109_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3411764.3445471"
+      },
+      {
+        "key": "e_1_3_3_3_110_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2971485.2996748"
+      },
+      {
+        "key": "e_1_3_3_3_111_1",
+        "volume-title": "Leading period tracker and female health apps worldwide",
+        "year": "2022",
+        "unstructured": "Statista. 2022. Leading period tracker and female health apps worldwide in April 2022, by downloads. https://www.statista.com/statistics/1307702/top-period-tracker-apps-worldwide-by-downloads/"
+      },
+      {
+        "key": "e_1_3_3_3_112_1",
+        "unstructured": "Statista. 2023. Contraception & Fertility Apps. https://www.statista.com/outlook/dmo/digital-health/ehealth/ehealth-apps/contraception-fertility-apps/worldwide"
+      },
+      {
+        "key": "e_1_3_3_3_113_1",
+        "unstructured": "David Stauss. 2023. Washington Legislature Passes My Health My Data Act. https://www.bytebacklaw.com/2023/04/washington-legislature-passes-my-health-my-data-act/"
+      },
+      {
+        "key": "e_1_3_3_3_114_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1215/00703370-9585908"
+      },
+      {
+        "key": "e_1_3_3_3_115_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3173589"
+      },
+      {
+        "key": "e_1_3_3_3_116_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nina Sun 2022. Overturning Roe v Wade: reproducing injustice.",
+        "DOI": "10.1136/bmj.o1588"
+      },
+      {
+        "key": "e_1_3_3_3_117_1",
+        "volume-title": "Mobile health and privacy: cross sectional study. bmj 373",
+        "author": "Tangari Gioacchino",
+        "year": "2021",
+        "unstructured": "Gioacchino Tangari, Muhammad Ikram, Kiran Ijaz, Mohamed Ali Kaafar, and Shlomo Berkovsky. 2021. Mobile health and privacy: cross sectional study. bmj 373 (2021)."
+      },
+      {
+        "key": "e_1_3_3_3_118_1",
+        "unstructured": "Kaitlyn Tiffany. 2018. Period-tracking apps are not for women. https://www.vox.com/the-goods/2018/11/13/18079458/menstrual-tracking-surveillance-glow-clue-apple-health"
+      },
+      {
+        "key": "e_1_3_3_3_119_1",
+        "unstructured": "The New York Times. 2023. Tracking the States Where Abortion Is Banned. https://www.nytimes.com/interactive/2022/us/abortion-laws-roe-v-wade.html?auth=login-google1tap&login=google1tap Accessed: 2023-07-18."
+      },
+      {
+        "key": "e_1_3_3_3_120_1",
+        "unstructured": "Rina Torchinsky. 2022. How period tracking apps and data privacy fit into a post-Roe v. wade climate. https://www.npr.org/2022/05/10/1097482967/roe-v-wade-supreme-court-abortion-period-apps"
+      },
+      {
+        "key": "e_1_3_3_3_121_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3170427.3180649"
+      },
+      {
+        "key": "e_1_3_3_3_122_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274443"
+      },
+      {
+        "key": "e_1_3_3_3_123_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3325282"
+      },
+      {
+        "key": "e_1_3_3_3_124_1",
+        "first-page": "213",
+        "article-title": "Attitude",
+        "author": "Vervier Luisa",
+        "year": "2019",
+        "unstructured": "Luisa Vervier, André Calero Valdez, and Martina Ziefle. 2019. \" Attitude\"-mHealth Apps and Users’ Insights: An Empirical Approach to Understand the Antecedents of Attitudes towards mHealth Applications.. In ICT4AWE. 213–221.",
+        "journal-title": "In ICT4AWE."
+      },
+      {
+        "key": "e_1_3_3_3_125_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/45503"
+      },
+      {
+        "key": "e_1_3_3_3_126_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ssresearch.2009.03.004"
+      },
+      {
+        "key": "e_1_3_3_3_127_1",
+        "volume-title": "Exploring Tenants’ Preferences of Privacy Negotiation in Airbnb. In 32nd USENIX Security Symposium (USENIX Security 23)",
+        "author": "Wang Zixin",
+        "year": "2023",
+        "unstructured": "Zixin Wang, Danny Yuxing Huang, and Yaxing Yao. 2023. Exploring Tenants’ Preferences of Privacy Negotiation in Airbnb. In 32nd USENIX Security Symposium (USENIX Security 23). 535–551."
+      },
+      {
+        "key": "e_1_3_3_3_128_1",
+        "unstructured": "Cat Zakrzewski Pranshu Verma and Claire Parker. [n. d.]. Texts web searches about abortion have been used to prosecute women. The Washington Post ([n. d.]). https://www. washingtonpost. com/technology/2022/07/03/abortion-data-privacy-prosecution"
+      },
+      {
+        "key": "e_1_3_3_3_129_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tele.2021.101601"
+      }
+    ],
+    "event": {
+      "name": "CHI '24: CHI Conference on Human Factors in Computing Systems",
+      "location": "Honolulu HI USA",
+      "acronym": "CHI '24",
+      "sponsor": [
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction",
+        "SIGACCESS ACM Special Interest Group on Accessible Computing"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the CHI Conference on Human Factors in Computing Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3613904.3642042",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642042",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T19:57:30Z",
+      "timestamp": 1750276650000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3613904.3642042"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "references-count": 129,
+    "alternative-id": [
+      "10.1145/3613904.3642042",
+      "10.1145/3613904"
+    ],
+    "URL": "https://doi.org/10.1145/3613904.3642042",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2024-05-11",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

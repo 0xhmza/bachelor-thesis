@@ -1,0 +1,586 @@
+{
+  "nodes": [
+    {
+      "id": "01_literature_ai_literature_analysis_readme_document",
+      "label": "Methods Digest PDF deliverables index",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_ai_literature_analysis_readme_consistent_paper_numbers",
+      "label": "Stable paper numbers across digest volumes",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": "L3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_ai_literature_analysis_readme_nine_stage_volumes",
+      "label": "Complete digest (99 cards) and nine stage volumes; stage L rebuilt with cards 101-116",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": "L5-L16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_ai_literature_analysis_readme_private_use_only",
+      "label": "Digest full texts are for private use only",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": "L18",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_document",
+      "label": "Methods Digest handoff, written 20 October and updated 23 October 2026",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_nine_stage_evidence_workflow",
+      "label": "Nine-stage ingest report replacing reading the methodology corpus",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L7-L16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_passage_anchoring",
+      "label": "Passage citations linked to highlighted source passages, with snippet rules",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L63-L90",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_registry_cards_build",
+      "label": "Registry, cards, stage sections and build_digest.py pipeline",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L26-L61",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_digest_status",
+      "label": "Status: 99 cards by 21 October; nos. 101-116 from the gap search added 23 October, only stage L rebuilt",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L92-L114",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handoff_historical_status_not_current_decisions",
+      "label": "The digest is organisational and decides nothing",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": "L18-L24",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_document",
+      "label": "Methods Digest handout: evidence resource rather than decisions",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_stage_decision_navigation",
+      "label": "Nine digest stages mapped to decisions D1-D12",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L9-L30",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_source_passage_anchors",
+      "label": "Links jump to highlighted passages in the appended copies",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L32-L39",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_recorded_evidence_limits",
+      "label": "115 papers with cards; Parker 2019 without PDF; OCR and version caveats",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L41-L47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_private_full_texts",
+      "label": "Digest full-text volumes are private-use copies",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_handout_offline_rebuild_workflow",
+      "label": "Offline rebuild: check, compile, package",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L50-L70",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_candidates_document",
+      "label": "Candidate literature found while reading the digest",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_candidates_gap_search_pointer",
+      "label": "Gap search of 23 October supplies the priority-A candidates",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": "L3-L6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_candidates_app_appraisal_instrument_sources",
+      "label": "Candidate sources for app appraisal instruments (Bondaronek, Baumel, Henson/Torous)",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": "L10-L17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_methods_digest_candidates_privacy_annotation_corpora",
+      "label": "Candidate MAPS/APP-350 and PrivacyQA evidence",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": "L22-L23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_document",
+      "label": "Literature collections, reading tracker and citation rule",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_core_vs_corpus",
+      "label": "Core reading list distinct from the methodology corpus",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L3-L16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_reading_status_source",
+      "label": "reading-status.csv is the reading tracker",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L12;L90-L92",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_generated_literature_index",
+      "label": "Generated catalogue, abstract index, download checklist and literature map",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L9-L14",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_citation_pdf_note_bibliography",
+      "label": "Every cited paper needs a PDF, a reading-list row and a bibliography entry",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L49-L61",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_core_reading_topics",
+      "label": "Core literature: harm theory, health trackers, walkthrough method",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L63-L88",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_gap_search",
+      "label": "Gap search of 23 October: about 75 candidates, 16 priority-A papers registered in the digest",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L16",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "01_literature_ai_literature_analysis_readme_document",
+      "target": "01_literature_ai_literature_analysis_readme_consistent_paper_numbers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_ai_literature_analysis_readme_document",
+      "target": "01_literature_ai_literature_analysis_readme_nine_stage_volumes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_ai_literature_analysis_readme_document",
+      "target": "01_literature_ai_literature_analysis_readme_private_use_only",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handoff_nine_stage_evidence_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handoff_passage_anchoring",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handoff_registry_cards_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handoff_digest_status",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handoff_historical_status_not_current_decisions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_stage_decision_navigation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_source_passage_anchors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_recorded_evidence_limits",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_private_full_texts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_offline_rebuild_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_candidates_document",
+      "target": "01_literature_methods_digest_candidates_gap_search_pointer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_candidates_document",
+      "target": "01_literature_methods_digest_candidates_app_appraisal_instrument_sources",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_candidates_document",
+      "target": "01_literature_methods_digest_candidates_privacy_annotation_corpora",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_core_vs_corpus",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_reading_status_source",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_generated_literature_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_citation_pdf_note_bibliography",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_core_reading_topics",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_gap_search",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_ai_literature_analysis_readme_document",
+      "target": "01_literature_methods_digest_handout_document",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\AI Literature Analysis\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handoff_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_document",
+      "target": "01_literature_methods_digest_handout_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handoff_digest_status",
+      "target": "01_literature_readme_gap_search",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\HANDOFF.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_candidates_gap_search_pointer",
+      "target": "01_literature_readme_gap_search",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\candidates.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_recorded_evidence_limits",
+      "target": "01_literature_methods_digest_handoff_digest_status",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

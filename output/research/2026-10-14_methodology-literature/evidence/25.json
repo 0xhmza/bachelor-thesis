@@ -1,0 +1,208 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          18
+        ]
+      ],
+      "date-time": "2026-09-18T19:02:58Z",
+      "timestamp": 1789758178812,
+      "version": "4.0.1"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 4,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2000,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2000-04-01T00:00:00Z",
+          "timestamp": 954547200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1145/332040.332456",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          11,
+          13
+        ]
+      ],
+      "date-time": "2003-11-13T16:10:21Z",
+      "timestamp": 1068739821000
+    },
+    "page": "353-359",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 101,
+    "title": [
+      "The streamlined cognitive walkthrough method, working around social constraints encountered in a software development company"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Rick",
+        "family": "Spencer",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Microsoft Corporation, One Microsoft Way, Redmond, WA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2000,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327051hci0602_3"
+      },
+      {
+        "key": "e_1_3_2_1_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/223904.223962"
+      },
+      {
+        "key": "e_1_3_2_1_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/142750.142869"
+      },
+      {
+        "key": "e_1_3_2_1_4_2",
+        "volume-title": "J. K. Nielson, &amp",
+        "author": "Wharton C. W.",
+        "year": "1994",
+        "unstructured": "Wharton , C. W. , Reiman , J. , Lewis , C. &amp; Poison , P. ( 1994 ) The cognitive walkthrough method: A practitioner's guide . In J. K. Nielson, &amp ; R. L. Mack (Eds.) Usability Inspection Methods. Wiley , New York, 1994. Wharton, C. W., Reiman, J., Lewis, C. &amp; Poison, P. (1994) The cognitive walkthrough method: A practitioner's guide. In J. K. Nielson, &amp; R. L. Mack (Eds.) Usability Inspection Methods. Wiley, New York, 1994."
+      }
+    ],
+    "event": {
+      "name": "CHI00: Human Factors in Computing Systems",
+      "location": "The Hague The Netherlands",
+      "acronym": "CHI00",
+      "sponsor": [
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the SIGCHI conference on Human Factors in Computing Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/332040.332456",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/332040.332456",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2025-06-17T23:53:57Z",
+      "timestamp": 1750204437000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/332040.332456"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          4
+        ]
+      ]
+    },
+    "references-count": 4,
+    "alternative-id": [
+      "10.1145/332040.332456",
+      "10.1145/332040"
+    ],
+    "URL": "https://doi.org/10.1145/332040.332456",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2000-04-01",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

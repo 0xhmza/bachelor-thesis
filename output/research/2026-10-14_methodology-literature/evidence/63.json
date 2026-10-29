@@ -1,0 +1,595 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2026-10-13T20:10:29Z",
+      "timestamp": 1791922229957,
+      "version": "4.3.4"
+    },
+    "reference-count": 50,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "CSCW",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2019-11-07T00:00:00Z",
+          "timestamp": 1573084800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Proc. ACM Hum.-Comput. Interact."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Dark patterns are user interface design choices that benefit an online service by coercing, steering, or deceiving users into making unintended and potentially harmful decisions. We present automated techniques that enable experts to identify dark patterns on a large set of websites. Using these techniques, we study shopping websites, which often use dark patterns to influence users into making more purchases or disclosing more information than they would otherwise. Analyzing ~53K product pages from ~11K shopping websites, we discover 1,818 dark pattern instances, together representing 15 types and 7 broader categories. We examine these dark patterns for deceptive practices, and find 183 websites that engage in such practices. We also uncover 22 third-party entities that offer dark patterns as a turnkey solution. Finally, we develop a taxonomy of dark pattern characteristics that describes the underlying influence of the dark patterns and their potential harm on user decision-making. Based on our findings, we make recommendations for stakeholders including researchers and regulators to study, mitigate, and minimize the use of these patterns.</jats:p>",
+    "DOI": "10.1145/3359183",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          8
+        ]
+      ],
+      "date-time": "2019-11-08T13:40:21Z",
+      "timestamp": 1573220421000
+    },
+    "page": "1-32",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 660,
+    "title": [
+      "Dark Patterns at Scale"
+    ],
+    "prefix": "10.1145",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Arunesh",
+        "family": "Mathur",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gunes",
+        "family": "Acar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael J.",
+        "family": "Friedman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eli",
+        "family": "Lucherini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jonathan",
+        "family": "Mayer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marshini",
+        "family": "Chetty",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arvind",
+        "family": "Narayanan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Princeton University, Princeton, NJ, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2660267.2660347"
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "volume-title": "https://adblockplus.org. Accessed",
+        "year": "2019",
+        "unstructured": "AdBlock. 2019. AdBlock. https://adblockplus.org. Accessed April 4, 2019."
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-11882-6_2"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/h0076860"
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "volume-title": "The sunk cost and Concorde effects: Are humans less rational than lower animals? Psychological bulletin",
+        "author": "Arkes Hal R",
+        "year": "1999",
+        "unstructured": "Hal R Arkes and Peter Ayton. 1999. The sunk cost and Concorde effects: Are humans less rational than lower animals? Psychological bulletin, Vol. 125, 5 (1999), 591."
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "volume-title": "Natural Language Processing with Python",
+        "author": "Bird Steven",
+        "unstructured": "Steven Bird, Ewan Klein, and Edward Loper. 2009. Natural Language Processing with Python 1st ed.). O'Reilly Media, Inc.",
+        "edition": "1"
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/popets-2016-0038"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "volume-title": "Accessed",
+        "author": "Brignull Harry",
+        "year": "2018",
+        "unstructured": "Harry Brignull. 2018. Dark Patterns. https://darkpatterns.org/. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "volume-title": "What works in e-commerce - a meta-analysis of 6700 online experiments",
+        "author": "Browne Will",
+        "year": "2017",
+        "unstructured": "Will Browne and Mike Swarbrick Jones. 2017. What works in e-commerce - a meta-analysis of 6700 online experiments. Qubit Digital Ltd (2017)."
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "first-page": "995",
+        "article-title": "Digital market manipulation",
+        "volume": "82",
+        "author": "Calo Ryan",
+        "year": "2013",
+        "unstructured": "Ryan Calo. 2013. Digital market manipulation. Geo. Wash. L. Rev., Vol. 82 (2013), 995.",
+        "journal-title": "Geo. Wash. L. Rev."
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "volume-title": "Advances in Knowledge Discovery and Data Mining",
+        "author": "Campello Ricardo J. G. B.",
+        "unstructured": "Ricardo J. G. B. Campello, Davoud Moulavi, and Joerg Sander. 2013. Density-Based Clustering Based on Hierarchical Density Estimates. In Advances in Knowledge Discovery and Data Mining, Jian Pei, Vincent S. Tseng, Longbing Cao, Hiroshi Motoda, and Guandong Xu (Eds.). Springer Berlin Heidelberg, Berlin, Heidelberg, 160--172."
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "volume-title": "Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (CHI EA '19). ACM",
+        "author": "Chivukula Shruthi Sai",
+        "unstructured": "Shruthi Sai Chivukula, Chris Watkins, Lucca McKay, and Colin M. Gray. 2019. &#34;Nothing Comes Before Profit&#34;: Asshole Design In the Wild. In Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (CHI EA '19). ACM, New York, NY, USA, Article LBW1314, bibinfonumpages6 pages. https://doi.org/10.1145/3290607.3312863"
+      },
+      {
+        "key": "e_1_2_1_13_1",
+        "volume-title": "Influence: Science and practice.",
+        "author": "Cialdini Robert B",
+        "year": "2009",
+        "unstructured": "Robert B Cialdini. 2009. Influence: Science and practice. Vol. 4. Pearson education Boston."
+      },
+      {
+        "key": "e_1_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1772690.1772719"
+      },
+      {
+        "key": "e_1_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3126594.3126651"
+      },
+      {
+        "key": "e_1_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2976749.2978313"
+      },
+      {
+        "key": "e_1_2_1_17_1",
+        "volume-title": "Emarketer's Updated Estimates and Forecast Through",
+        "author": "Ecommerce Sales Worldwide Retail",
+        "year": "2019",
+        "unstructured": "Worldwide Retail Ecommerce Sales: Emarketer's Updated Estimates and Forecast Through 2019. 2019. Online Shopping and E-Commerce. https://www.emarketer.com/public_media/docs/eMarketer_eTailWest2016_Worldwide_ECommerce_Report.pdf Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_18_1",
+        "volume-title": "Accessed",
+        "author": "European Parliament and Council of European Union.",
+        "year": "2011",
+        "unstructured": "European Parliament and Council of European Union. 2011. Directive 2011/83/EU. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0083. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_19_1",
+        "volume-title": "Accessed",
+        "author": "European Parliament and Council of European Union.",
+        "year": "2011",
+        "unstructured": "European Parliament and Council of European Union. 2011. Directive 2011/83/EU of the European Parliament and of the Council. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0083. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_20_1",
+        "volume-title": "Accessed",
+        "author": "European Parliament and Council of European Union.",
+        "year": "2018",
+        "unstructured": "European Parliament and Council of European Union. 2018. Consent under the GDPR: valid, freely given, specific, informed and active consent. https://www.i-scoop.eu/gdpr/consent-gdpr/. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_21_1",
+        "volume-title": "Accessed",
+        "author": "Federal Trade Commission",
+        "year": "1914",
+        "unstructured": "Federal Trade Commission. 1914. 15 U.S. Code S45. Unfair methods of competition unlawful; prevention by Commission. https://www.law.cornell.edu/uscode/text/15/45. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_22_1",
+        "unstructured": "Frobrukerrradet. 2018. Deceived by design: How tech companies use dark patterns to discourage us from exercising our rights to privacy. (2018)."
+      },
+      {
+        "key": "e_1_2_1_23_1",
+        "volume-title": "Accessed",
+        "year": "2018",
+        "unstructured": "Frobrukerrradet. 2018. New study: Google manipulates users into constant tracking. https://www.forbrukerradet.no/side/google-manipulates-users-into-constant-tracking. Accessed March 12, 2019."
+      },
+      {
+        "key": "e_1_2_1_24_1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18)",
+        "author": "Gray Colin M.",
+        "unstructured": "Colin M. Gray, Yubo Kou, Bryan Battles, Joseph Hoggatt, and Austin L. Toombs. 2018. The Dark (Patterns) Side of UX Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18). ACM, New York, NY, USA, Article 534, bibinfonumpages14 pages. https://doi.org/10.1145/3173574.3174108"
+      },
+      {
+        "key": "e_1_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2598510.2598541"
+      },
+      {
+        "key": "e_1_2_1_26_1",
+        "first-page": "630",
+        "article-title": "Taking behavioralism seriously: The problem of market manipulation",
+        "volume": "74",
+        "author": "Hanson Jon D",
+        "year": "1999",
+        "unstructured": "Jon D Hanson and Douglas A Kysar. 1999. Taking behavioralism seriously: The problem of market manipulation. NYUL Rev., Vol. 74 (1999), 630.",
+        "journal-title": "NYUL Rev."
+      },
+      {
+        "key": "e_1_2_1_27_1",
+        "volume-title": "The evolution of cognitive bias. The handbook of evolutionary psychology",
+        "author": "Haselton Martie G",
+        "year": "2015",
+        "unstructured": "Martie G Haselton, Daniel Nettle, and Damian R Murray. 2015. The evolution of cognitive bias. The handbook of evolutionary psychology (2015), 1--20."
+      },
+      {
+        "key": "e_1_2_1_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/208899"
+      },
+      {
+        "key": "e_1_2_1_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/002224379403100310"
+      },
+      {
+        "key": "e_1_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1015044207315"
+      },
+      {
+        "key": "e_1_2_1_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/mar.20027"
+      },
+      {
+        "key": "e_1_2_1_32_1",
+        "volume-title": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '13)",
+        "author": "Kumar Ranjitha",
+        "unstructured": "Ranjitha Kumar, Arvind Satyanarayan, Cesar Torres, Maxine Lim, Salman Ahmad, Scott R. Klemmer, and Jerry O. Talton. 2013. Webzeitgeist: Design Mining the Web. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '13). ACM, New York, NY, USA, 3083--3092. https://doi.org/10.1145/2470654.2466420"
+      },
+      {
+        "key": "e_1_2_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4302-6422-4"
+      },
+      {
+        "key": "e_1_2_1_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0038235"
+      },
+      {
+        "key": "e_1_2_1_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3242587.3242650"
+      },
+      {
+        "key": "e_1_2_1_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3230348.3230397"
+      },
+      {
+        "key": "e_1_2_1_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327663jcp1504_3"
+      },
+      {
+        "key": "e_1_2_1_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/mar.4220080105"
+      },
+      {
+        "key": "e_1_2_1_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274388"
+      },
+      {
+        "key": "e_1_2_1_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1464-0597.2009.00401.x"
+      },
+      {
+        "key": "e_1_2_1_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300472"
+      },
+      {
+        "key": "e_1_2_1_42_1",
+        "volume-title": "What Happened To Tracking Protection? https://support.mozilla.org/en-US/kb/tracking-protection-pbm. Accessed",
+        "year": "2019",
+        "unstructured": "Mozilla. 2019. What Happened To Tracking Protection? https://support.mozilla.org/en-US/kb/tracking-protection-pbm. Accessed April 4, 2019."
+      },
+      {
+        "key": "e_1_2_1_43_1",
+        "volume-title": "Beeketing eCommerce Success Community Public Group | Facebook. https://www.facebook.com/groups/beeketing.ecommerce.community/permalink/1691157507670306/. Accessed",
+        "author": "Nhan Dang Van",
+        "year": "2019",
+        "unstructured": "Dang Van Nhan. 2018. Beeketing eCommerce Success Community Public Group | Facebook. https://www.facebook.com/groups/beeketing.ecommerce.community/permalink/1691157507670306/. Accessed April 2, 2019."
+      },
+      {
+        "key": "e_1_2_1_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2382196.2382274"
+      },
+      {
+        "key": "e_1_2_1_45_1",
+        "volume-title": "Evil by design: Interaction design to lead us into temptation",
+        "author": "Nodder Chris",
+        "unstructured": "Chris Nodder. 2013. Evil by design: Interaction design to lead us into temptation .John Wiley & Sons."
+      },
+      {
+        "key": "e_1_2_1_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1509/jmkr.37.2.187.18731"
+      },
+      {
+        "key": "e_1_2_1_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/1953048.2078195"
+      },
+      {
+        "key": "e_1_2_1_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1089--2680.8.3.179"
+      },
+      {
+        "key": "e_1_2_1_49_1",
+        "unstructured": "José P Zagal Staffan Björk and Chris Lewis. 2013. Dark patterns in the design of games. In Foundations of Digital Games 2013 ."
+      },
+      {
+        "key": "e_1_2_1_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2750858.2805828"
+      }
+    ],
+    "container-title": [
+      "Proceedings of the ACM on Human-Computer Interaction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3359183",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3359183",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2025-06-17T23:12:53Z",
+      "timestamp": 1750201973000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3359183"
+      }
+    },
+    "subtitle": [
+      "Findings from a Crawl of 11K Shopping Websites"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "references-count": 50,
+    "journal-issue": {
+      "issue": "CSCW",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/3359183"
+    ],
+    "URL": "https://doi.org/10.1145/3359183",
+    "relation": {},
+    "ISSN": [
+      "2573-0142"
+    ],
+    "issn-type": [
+      {
+        "value": "2573-0142",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2019-11-07",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T03:36:08Z",
+      "timestamp": 1791344168712,
+      "version": "4.3.1"
+    },
+    "reference-count": 42,
+    "publisher": "Elsevier BV",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1992,
+              5,
+              1
+            ]
+          ],
+          "date-time": "1992-05-01T00:00:00Z",
+          "timestamp": 704678400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "International Journal of Man-Machine Studies"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1992,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/0020-7373(92)90039-n",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2004-09-02T21:57:35Z",
+      "timestamp": 1094162255000
+    },
+    "page": "741-773",
+    "source": "Crossref",
+    "is-referenced-by-count": 499,
+    "title": [
+      "Cognitive walkthroughs: a method for theory-based evaluation of user interfaces"
+    ],
+    "prefix": "10.1016",
+    "volume": "36",
+    "author": [
+      {
+        "given": "Peter G.",
+        "family": "Polson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Clayton",
+        "family": "Lewis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Rieman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cathleen",
+        "family": "Wharton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB1",
+        "series-title": "Proceeding of Interact90, 3rd IFIP Conference on Human-Computer Interaction",
+        "article-title": "A framework for assessing applicability of HCI techniques",
+        "author": "Bellotti",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB2",
+        "series-title": "Visual Display Terminals",
+        "first-page": "164",
+        "article-title": "Managing to meet usability requirements: establishing and meeting software development goals",
+        "author": "Bennett",
+        "year": "1984"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB3",
+        "series-title": "Proceeding of Interact87, 2nd IFIP Conference on Human-Computer Interaction",
+        "first-page": "21",
+        "article-title": "Developing a user interface technology for use in industry",
+        "author": "Bennett",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB4",
+        "series-title": "Paper read at the symposium Human Factors Methods (th)at Work, Annual Meeting of the Human Factors Society",
+        "article-title": "User interface walkthroughs with representative users and usability experts",
+        "author": "Bias",
+        "year": "1988"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1207/s15327051hci0501_1",
+        "article-title": "The acquisition and performance of text editing skill: a production system analysis",
+        "volume": "5",
+        "author": "Bovair",
+        "year": "1990",
+        "journal-title": "Human Computer Interaction"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB6",
+        "first-page": "63",
+        "article-title": "Predicting the complexity of human-computer interaction: report of the workshop on analytical models",
+        "volume": "20",
+        "author": "Butler",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB7",
+        "author": "Card",
+        "year": "1983"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB8",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.1207/s15327051hci0203_3",
+        "article-title": "Softening up hard science: reply to Newell and Card",
+        "volume": "2",
+        "author": "Carroll",
+        "year": "1986",
+        "journal-title": "Human Computer Interaction"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB9",
+        "doi-asserted-by": "crossref",
+        "first-page": "247",
+        "DOI": "10.1080/01449298908914556",
+        "article-title": "Artifacts as psychological theories: the case of human-computer interaction",
+        "volume": "8",
+        "author": "Carroll",
+        "year": "1989",
+        "journal-title": "Behavior and Information Technology"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB10",
+        "series-title": "Proceedings CHI'89 Human Factors in Computer Systems",
+        "first-page": "7",
+        "article-title": "Artifact as theory-nexus: hermeneutics meets theory-based design",
+        "author": "Carroll",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB11",
+        "series-title": "Proceedings of CHI'90 Conference on Human Factors in Computer Systems",
+        "first-page": "321",
+        "article-title": "Infinite detail and emulation in an ontologically minimized HCI",
+        "author": "Carroll",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB12",
+        "article-title": "UNIX command production: what users must know",
+        "author": "Doane",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB13",
+        "article-title": "Exceptions to generalizations: implications for formal models of human-computer interaction",
+        "author": "Engelbeck",
+        "year": "1986"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB14",
+        "doi-asserted-by": "crossref",
+        "first-page": "744",
+        "DOI": "10.1109/TSE.1986.6312976",
+        "article-title": "Advances in software inspections",
+        "volume": "SE-12",
+        "author": "Fagan",
+        "year": "1986",
+        "journal-title": "IEEE Transactions on Software Engineering"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB15",
+        "series-title": "Proceedings of CHI'90 Conference on Human Factors in Computer Systems",
+        "first-page": "277",
+        "article-title": "Why good engineers (sometimes) create bad interfaces",
+        "author": "Gentner",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB16",
+        "series-title": "The Handbook of Human-Computer Interaction",
+        "first-page": "757",
+        "article-title": "How to design usable systems",
+        "author": "Gould",
+        "year": "1988"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB17",
+        "doi-asserted-by": "crossref",
+        "first-page": "300",
+        "DOI": "10.1145/3166.3170",
+        "article-title": "Designing for usability—key principles and what designers think",
+        "volume": "28",
+        "author": "Gould",
+        "year": "1985",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB18",
+        "series-title": "Proceedings of the CHI'91 Conference on Human Factors in Computer Systems",
+        "first-page": "119",
+        "article-title": "User interface evaluation in the real world: a comparison of four techniques",
+        "author": "Jeffries",
+        "year": "1991"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB19",
+        "series-title": "Proceeding of Interact87, 2nd IFIP Conference on Human-Computer Interaction",
+        "first-page": "489",
+        "article-title": "Evaluating user interface complexity",
+        "author": "Karat",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB20",
+        "series-title": "The Handbook of Human-Computer Interaction",
+        "first-page": "135",
+        "article-title": "Towards a practical GOMS model methodology for user interface design",
+        "author": "Kieras",
+        "year": "1988"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB21",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1016/S0020-7373(85)80045-6",
+        "article-title": "An approach to the formal analysis of user complexity",
+        "volume": "22",
+        "author": "Kieras",
+        "year": "1985",
+        "journal-title": "International Journal of Man-Machine Studies"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB22",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1037/0033-295X.95.2.163",
+        "article-title": "The role of knowledge in discourse comprehension: a construction-integration model",
+        "volume": "95",
+        "author": "Kintsch",
+        "year": "1988",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/0004-3702(87)90050-6",
+        "article-title": "SOAR: An architecture for general intelligence",
+        "volume": "33",
+        "author": "Laird",
+        "year": "1987",
+        "journal-title": "Artificial Intelligence"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB24",
+        "series-title": "Proceedings of CHI'90 Conference on Human Factors in Computer Systems",
+        "first-page": "235",
+        "author": "Lewis",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB25",
+        "series-title": "Proceedings CHI'89 Human Factors in Computer Systems",
+        "first-page": "247",
+        "article-title": "Design rationale: the argument behind the artifact",
+        "author": "MacLean",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB26",
+        "doi-asserted-by": "crossref",
+        "first-page": "305",
+        "DOI": "10.1207/s15516709cog1503_1",
+        "article-title": "Routine computing tasks: planning as understanding",
+        "volume": "15",
+        "author": "Mannes",
+        "year": "1991",
+        "journal-title": "Cognitive Science"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB27",
+        "doi-asserted-by": "crossref",
+        "first-page": "338",
+        "DOI": "10.1145/77481.77486",
+        "article-title": "Improving a human-computer dialogue: what designers know about traditional interface design",
+        "volume": "33",
+        "author": "Molich",
+        "year": "1990",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB28",
+        "series-title": "Proceedings of CHI'90 Conference on Human Factors in Computer Systems",
+        "first-page": "249",
+        "article-title": "Heuristic evaluation of user interfaces",
+        "author": "Nielsen",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB29",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1037/0033-295X.88.1.1",
+        "article-title": "Categorization of action slips",
+        "volume": "88",
+        "author": "Norman",
+        "year": "1981",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB30",
+        "series-title": "User Centered Systems Design: New Perspectives in Human-Computer Interaction",
+        "first-page": "31",
+        "article-title": "Cognitive Engineering",
+        "author": "Norman",
+        "year": "1986"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB31",
+        "author": "Norman",
+        "year": "1988"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB32",
+        "series-title": "Interfacing Thought: Cognitive Aspects of Human-Computer Interaction",
+        "first-page": "185",
+        "article-title": "A quantitative theory of human-computer interaction",
+        "author": "Polson",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB33",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1207/s15327051hci0502&3_3",
+        "article-title": "Theory-based design for easily learned interfaces",
+        "volume": "5",
+        "author": "Polson",
+        "year": "1990",
+        "journal-title": "Human-Computer Interaction"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB34",
+        "author": "Rubenstein",
+        "year": "1984"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB35",
+        "series-title": "Human-computer interaction-INTERACT'84",
+        "first-page": "9",
+        "article-title": "Designing for people in the information age",
+        "author": "Shackel",
+        "year": "1984"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.21236/ADA177198",
+        "article-title": "Guidelines for designing the user interface software",
+        "author": "Smith",
+        "year": "1986"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB37",
+        "series-title": "The Handbook of Human-Computer Interaction",
+        "first-page": "791",
+        "article-title": "Usability engineering: our experience and evolution",
+        "author": "Whiteside",
+        "year": "1988"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB38",
+        "author": "Winograd",
+        "year": "1986"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB39",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.1145/67243.67249",
+        "article-title": "How would your favorite user model cope with these scerarios?",
+        "volume": "20",
+        "author": "Young",
+        "year": "1989",
+        "journal-title": "ACM SIGCHI Bulletin"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB40",
+        "series-title": "Proceedings of CHI'89 Conference on Human Factors in Computer Systems",
+        "first-page": "15",
+        "article-title": "Programmable user models for predictive evaluation of interface designs",
+        "author": "Young",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB41",
+        "series-title": "Proceedings of CHI'90 Conference on Human Factors in Computer Systems",
+        "first-page": "91",
+        "article-title": "Using a knowledge analysis to predict conceptual errors in text-editor usage",
+        "author": "Young",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/0020-7373(92)90039-N_BIB42",
+        "author": "Yourdon",
+        "year": "1989"
+      }
+    ],
+    "container-title": [
+      "International Journal of Man-Machine Studies"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:002073739290039N?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:002073739290039N?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          2,
+          4
+        ]
+      ],
+      "date-time": "2019-02-04T05:56:42Z",
+      "timestamp": 1549259802000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/002073739290039N"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1992,
+          5
+        ]
+      ]
+    },
+    "references-count": 42,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            1992,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "002073739290039N"
+    ],
+    "URL": "https://doi.org/10.1016/0020-7373(92)90039-n",
+    "relation": {},
+    "ISSN": [
+      "0020-7373"
+    ],
+    "issn-type": [
+      {
+        "value": "0020-7373",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          5
+        ]
+      ]
+    }
+  }
+}

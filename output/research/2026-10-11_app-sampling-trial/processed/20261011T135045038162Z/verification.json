@@ -1,0 +1,8 @@
+{
+  "logic_tests": 4,
+  "logic_tests_passed": true,
+  "raw_response_hashes_verified": 89,
+  "unique_listing_ids": 202,
+  "working_set_app_ids_unique": true,
+  "final_sample_correctly_withheld": true
+}

@@ -1,0 +1,439 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T06:15:03Z",
+      "timestamp": 1791612903332,
+      "version": "4.3.4"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 32,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              7,
+              15
+            ]
+          ],
+          "date-time": "2009-07-15T00:00:00Z",
+          "timestamp": 1247616000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000183",
+        "name": "Army Research Office",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DAAD19-02-1-0389"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DAAD19-02-1-0389"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000183",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000144",
+        "name": "Division of Computer and Network Systems",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CNS-0627513"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-0627513"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000144",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1145/1572532.1572538",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          28
+        ]
+      ],
+      "date-time": "2009-07-28T08:45:28Z",
+      "timestamp": 1248770728000
+    },
+    "page": "1-12",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 331,
+    "title": [
+      "A \"nutrition label\" for privacy"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Patrick Gage",
+        "family": "Kelley",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joanna",
+        "family": "Bresee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lorrie Faith",
+        "family": "Cranor",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert W.",
+        "family": "Reeder",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Trust User Experience (TUX)"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          15
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "]]Balasubramanian S. and Cole C. \"Consumers' Search and Use of Nutrition Information: The Challenge and Promise of the Nutrition Labeling and Education Act.\" Journal of Marketing. 2002. Vol. 66 112--127.  ]]Balasubramanian S. and Cole C. \"Consumers' Search and Use of Nutrition Information: The Challenge and Promise of the Nutrition Labeling and Education Act.\" Journal of Marketing . 2002. Vol. 66 112--127.",
+        "DOI": "10.1509/jmkg.66.3.112.18502"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "first-page": "19",
+        "author": "Beard T. C.",
+        "year": "2007",
+        "journal-title": "Aust."
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "author": "Belser B.",
+        "year": "1994",
+        "journal-title": "Journal."
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "author": "Buckley P.",
+        "year": "1993",
+        "journal-title": "Journal."
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1077727X01293004"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.elerap.2008.04.003"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "unstructured": "]]Consumer Product Safety Commission. \"Labeling Requirements for Toy and Game Advertisements.\" 2008. http://cpsc.gov/library/foia/foia08/brief/toygameads.pdf  ]]Consumer Product Safety Commission. \"Labeling Requirements for Toy and Game Advertisements.\" 2008. http://cpsc.gov/library/foia/foia08/brief/toygameads.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "unstructured": "]]DeJoy D. M. Cameron K. A. and Della L. J. Post-exposure evaluation of warning effectiveness: A review of field studies and population-based research. The Handbook of Warnings. 2006. (35--48).  ]]DeJoy D. M. Cameron K. A. and Della L. J. Post-exposure evaluation of warning effectiveness: A review of field studies and population-based research. The Handbook of Warnings . 2006. (35--48) ."
+      },
+      {
+        "issue": "2",
+        "key": "e_1_3_2_1_9_1",
+        "first-page": "159",
+        "volume": "99",
+        "author": "Downs J. S.",
+        "year": "2009",
+        "journal-title": "Review"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "unstructured": "]]Drichoutis AC Lazaridis P Nayga RM. 2006. Consumers' use of nutritional labels: a review of research studies and issues. Acad Marketing Sci Rev no. 9.  ]]Drichoutis AC Lazaridis P Nayga RM. 2006. Consumers' use of nutritional labels: a review of research studies and issues. Acad Marketing Sci Rev no. 9."
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "unstructured": "]]The Energy Label. 2007. www.energyrating.gov.au  ]]The Energy Label. 2007. www.energyrating.gov.au"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "unstructured": "]]European Union Commission Directive 98/11/EC \"Energy Labeling.\" 1998. http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:1998:071:0001:0008:EN:PDF  ]]European Union Commission Directive 98/11/EC \"Energy Labeling.\" 1998. http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:1998:071:0001:0008:EN:PDF"
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "unstructured": "]]Food Standards Agency. \"Signpost Labeling Research.\" 2005 http://www.food.gov.uk/foodlabelling/signposting/siognpostlabelresearch/  ]]Food Standards Agency. \"Signpost Labeling Research.\" 2005 http://www.food.gov.uk/foodlabelling/signposting/siognpostlabelresearch/"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/985692.985752"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "unstructured": "]]Kelley P. A. McDonald R. Reeder and L. Cranor. P3P Expandable Grids. Poster at Privacy MindSwap Carnegie Mellon University. 2007. http://cups.cs.cmu.edu/soups/2008/posters/kelley.pdf  ]]Kelley P. A. McDonald R. Reeder and L. Cranor. P3P Expandable Grids. Poster at Privacy MindSwap Carnegie Mellon University. 2007. http://cups.cs.cmu.edu/soups/2008/posters/kelley.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "unstructured": "]]Kleimann Communication Group Inc. Evolution of a Prototype Financial Privacy Notice. February 2006. Available: http://www.ftc.gov/privacy/privacyinitiatives/ftcfinalreport060228.pdf  ]]Kleimann Communication Group Inc. Evolution of a Prototype Financial Privacy Notice. February 2006. Available: http://www.ftc.gov/privacy/privacyinitiatives/ftcfinalreport060228.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "unstructured": "]]Levy A. and Hastak M. Consumer Comprehension of Financial Privacy Notices. December 2008. Available: http://www.ftc.gov/privacy/privacyinitiatives/Levy-Hastak-Report.pdf  ]]Levy A. and Hastak M. Consumer Comprehension of Financial Privacy Notices. December 2008. Available: http://www.ftc.gov/privacy/privacyinitiatives/Levy-Hastak-Report.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "unstructured": "]]Maubach N. Hoek J. \"The Effect of Alternative Nutrition Information Formats on Consumers' Evaluations of a Children's Breakfast Cereal\" Proceedings of the EParternships Proof and Practice -- International Nonprofit and Social Marketing Conference 2008.  ]]Maubach N. Hoek J. \"The Effect of Alternative Nutrition Information Formats on Consumers' Evaluations of a Children's Breakfast Cereal\" Proceedings of the EParternships Proof and Practice -- International Nonprofit and Social Marketing Conference 2008."
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-03168-7_3"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "volume-title": "The Cost of Reading Privacy Policies. Telecommunications Policy Research Conference",
+        "author": "McDonald A",
+        "year": "2008"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "unstructured": "]]Privacy Leadership Initiative. Privacy Notices Research Final Results November 2001 Available at: http://www.understandingprivacy.org/content/library/datasum.pdf.  ]]Privacy Leadership Initiative. Privacy Notices Research Final Results November 2001 Available at: http://www.understandingprivacy.org/content/library/datasum.pdf."
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "unstructured": "]]Reeder R. W. Expandable Grids: A user interface visualization technique and a policy semantics to support fast accurate security and privacy policy authoring. PhD thesis Carnegie Mellon. 2008. http://www.robreeder.com/pubs/ReederThesis.pdf   ]]Reeder R. W. Expandable Grids: A user interface visualization technique and a policy semantics to support fast accurate security and privacy policy authoring . PhD thesis Carnegie Mellon. 2008. http://www.robreeder.com/pubs/ReederThesis.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1456403.1456413"
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "]]Seymore J. D. Lazarus Yaroch A. Serdula M. Blanck H. M. and Khan L. K. \"Impact of nutrition environmental interventions on point-of-purchase behavior in adults a review.\" Preventative Medicine 2004. 29: S108--S136.  ]]Seymore J. D. Lazarus Yaroch A. Serdula M. Blanck H. M. and Khan L. K. \"Impact of nutrition environmental interventions on point-of-purchase behavior in adults a review.\" Preventative Medicine 2004. 29: S108--S136.",
+        "DOI": "10.1016/j.ypmed.2004.04.002"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "unstructured": "]]The Center for Information Policy Leadership H. W. L. Multi-layered notices.  ]]The Center for Information Policy Leadership H. W. L. Multi-layered notices."
+      },
+      {
+        "key": "e_1_3_2_1_26_1",
+        "unstructured": "]]Turow J. Feldman L. and Meltzer K. Open to Exploitation: American Shoppers Online and Offline. The Annenberg Public Policy Center. 2005. http://www.annenbergpublicpolicycenter.org/NewsDetails.aspx?myId=31  ]]Turow J. Feldman L. and Meltzer K. Open to Exploitation: American Shoppers Online and Offline. The Annenberg Public Policy Center. 2005. http://www.annenbergpublicpolicycenter.org/NewsDetails.aspx?myId=31"
+      },
+      {
+        "key": "e_1_3_2_1_27_1",
+        "unstructured": "]]U.S. Food and Drug Administration. A Food Labeling Guide. Center for Food Safety & Applied Nutrition. 1999. http://vm.cfsan.fda.gov/%7Edms/flg-toc.html.  ]]U.S. Food and Drug Administration. A Food Labeling Guide. Center for Food Safety & Applied Nutrition. 1999. http://vm.cfsan.fda.gov/%7Edms/flg-toc.html."
+      },
+      {
+        "key": "e_1_3_2_1_28_1",
+        "unstructured": "]]U.S. Food and Drug Administration. \"Guide to Nutrition Labeling and Education Act Requirements\" 1994. http://www.fda.gov/ora/inspect_ref/igs/nleatxt.html  ]]U.S. Food and Drug Administration. \"Guide to Nutrition Labeling and Education Act Requirements\" 1994. http://www.fda.gov/ora/inspect_ref/igs/nleatxt.html"
+      },
+      {
+        "key": "e_1_3_2_1_29_1",
+        "author": "]]U.S. Food and Drug Administration",
+        "year": "2002",
+        "journal-title": "Magazine."
+      },
+      {
+        "key": "e_1_3_2_1_30_1",
+        "unstructured": "]]W3C. The Platform for Privacy Preferences 1.0 (P3P1.0) Specification. http://www.w3.org/TR/P3P/  ]]W3C. The Platform for Privacy Preferences 1.0 (P3P1.0) Specification. http://www.w3.org/TR/P3P/"
+      },
+      {
+        "key": "e_1_3_2_1_31_1",
+        "unstructured": "]]W3C. The Platform for Privacy Preferences 1.1 (P3P1.1) Specification. http://www.w3.org/TR/P3P11/  ]]W3C. The Platform for Privacy Preferences 1.1 (P3P1.1) Specification. http://www.w3.org/TR/P3P11/"
+      },
+      {
+        "key": "e_1_3_2_1_32_1",
+        "unstructured": "]]WELS Regulator (Australian Government). \"WELS and Watermark.\" 2005. http://www.waterrating.gov.au/compliance.html  ]]WELS Regulator (Australian Government). \"WELS and Watermark.\" 2005. http://www.waterrating.gov.au/compliance.html"
+      }
+    ],
+    "event": {
+      "name": "SOUPS '09: Symposium on Usable Privacy and Security",
+      "location": "Mountain View California USA",
+      "acronym": "SOUPS '09",
+      "sponsor": [
+        "Carnegie Mellon CyLab",
+        "Google Inc.",
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 5th Symposium on Usable Privacy and Security"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1572532.1572538",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1572532.1572538",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T08:23:29Z",
+      "timestamp": 1750235009000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1572532.1572538"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          15
+        ]
+      ]
+    },
+    "references-count": 32,
+    "alternative-id": [
+      "10.1145/1572532.1572538",
+      "10.1145/1572532"
+    ],
+    "URL": "https://doi.org/10.1145/1572532.1572538",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          15
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2009-07-15",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

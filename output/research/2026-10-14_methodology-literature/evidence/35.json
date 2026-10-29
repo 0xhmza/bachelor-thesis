@@ -1,0 +1,503 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2026-08-01T00:43:30Z",
+      "timestamp": 1785545010302,
+      "version": "3.56.0"
+    },
+    "reference-count": 33,
+    "publisher": "JMIR Publications Inc.",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR Hum Factors"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec sec-type=\"background\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>There are around 20,000 mental health apps available in app stores. The Organisation for the Review of Care and Health Apps (ORCHA), a United Kingdom digital health compliance company, has assessed a number of digital mental health apps with regard to their quality, professional and clinical assurance, data privacy, and user experience. This study analyzes the data that were collected by ORCHA when they assessed mental health apps.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"objective\">\n                    <jats:title>Objective</jats:title>\n                    <jats:p>This study aimed to examine the characteristics of mental health apps regarding their quality, target users, features, underpinning evidence, and data privacy.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"methods\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A dataset comprising ORCHA Baseline Review assessments of over 2000 digital health apps, including 436 mental health apps, was used. This study uses exploratory data analysis to gain insight into the quality and characteristics of mental health apps. Methods such as descriptive and inferential statistics, k-modes clustering, and association rule mining were used to explore the quality of mental health apps as well as reveal insights into the different cost types, target users, app features, data types, and evidence of app content.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"results\">\n                    <jats:title>Results</jats:title>\n                    <jats:p>Information provision, data capture, and data sharing were the most common features within the 436 mental health apps. The examined apps primarily targeted the following groups: adults (n=229, 52.5%), everyone (n=184, 42.2%), and teens (n=135, 31%). The cost of apps has not been linked to the quality of mental health apps, although paid apps or apps with in-app purchases may include additional services. Indicated user acceptance or benefit is the most common type of evidence provided by these mental health apps. A total of 241 (55.3%) apps included a qualified professional in app development, and 251 (57.6%) apps provided evidence within the app that the developer validated any guidance with relevant reliable information sources or references. Usage data and email were the most commonly collected data types. Association rule mining showed that email, IP address, name, and usage data are often co-collected by the same apps. K-modes cluster analysis showed that mental health apps can be categorized into 2 clusters, where one cluster of apps (n=182, 41.7%) collected more data than apps in the other cluster.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"conclusions\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Mental health apps are commonly targeted for everyone to use, but many apps are targeted toward teens or adults. Our study suggests that many publicly available mental health apps did not take the precautions (such as the involvement of appropriate health professionals, literature references, or conducting tests) to ensure that their content is valid and research based. Greater effort on behalf of mental health app developers is needed to ensure that the public is provided with high-quality apps. Moreover, our study indicates that the mental health apps that collect more data tend to score better on the ORCHA Baseline Review assessment.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2196/67944",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2026-05-11T20:45:15Z",
+      "timestamp": 1778532315000
+    },
+    "page": "e67944-e67944",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "The Quality and Characteristics of Digital Mental Health Apps: Mixed Methods Study"
+    ],
+    "prefix": "10.2196",
+    "volume": "13",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0791-8976",
+        "authenticated-orcid": false,
+        "given": "Maciej Marek",
+        "family": "Zych",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1078-2232",
+        "authenticated-orcid": false,
+        "given": "Raymond",
+        "family": "Bond",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1554-0785",
+        "authenticated-orcid": false,
+        "given": "Maurice",
+        "family": "Mulvenna",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8017-2598",
+        "authenticated-orcid": false,
+        "given": "Jorge",
+        "family": "Martinez Carracedo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1242-5412",
+        "authenticated-orcid": false,
+        "given": "Lu",
+        "family": "Bai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0258-5108",
+        "authenticated-orcid": false,
+        "given": "Tim",
+        "family": "Andrews",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "R1",
+        "unstructured": "World Mental Health Report: transforming mental health for all. World Health Organization; 2022. URL: https://iris.who.int/server/api/core/bitstreams/40e5a13a-fe50-4efa-b56d-6e8cf00d5bfa/content [Accessed 11-04-2026]"
+      },
+      {
+        "issue": "1",
+        "key": "R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-021-89700-8",
+        "article-title": "Global prevalence of mental health issues among the general population during the coronavirus disease-2019 pandemic: a systematic review and meta-analysis",
+        "volume": "11",
+        "author": "Nochaiwong",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jad.2020.08.001",
+        "article-title": "Impact of COVID-19 pandemic on mental health in the general population: a systematic review",
+        "volume": "277",
+        "author": "Xiong",
+        "journal-title": "J Affect Disord"
+      },
+      {
+        "issue": "7",
+        "key": "R4",
+        "doi-asserted-by": "publisher",
+        "first-page": "301",
+        "DOI": "10.1007/s11920-023-01426-8",
+        "article-title": "Global mental health: where we are and where we are going",
+        "volume": "25",
+        "author": "Moitra",
+        "journal-title": "Curr Psychiatry Rep"
+      },
+      {
+        "issue": "1",
+        "key": "R5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40359-020-00399-0",
+        "article-title": "Social stigma is an underestimated contributing factor to unemployment in people with mental illness or mental health issues: position paper and future directions",
+        "volume": "8",
+        "author": "Brouwers",
+        "journal-title": "BMC Psychol"
+      },
+      {
+        "issue": "11",
+        "key": "R6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1114",
+        "DOI": "10.1176/appi.ps.202000098",
+        "article-title": "Smartphone apps for college mental health: a concern for privacy and quality of current offerings",
+        "volume": "71",
+        "author": "Melcher",
+        "journal-title": "Psychiatr Serv"
+      },
+      {
+        "issue": "4",
+        "key": "R7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0152285",
+        "article-title": "A systematic assessment of smartphone tools for suicide prevention",
+        "volume": "11",
+        "author": "Larsen",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "issue": "1",
+        "key": "R8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/20008198.2019.1701788",
+        "article-title": "“Help for trauma from the app stores?” A systematic review and standardised rating of apps for post-traumatic stress disorder (PTSD)",
+        "volume": "11",
+        "author": "Sander",
+        "journal-title": "Eur J Psychotraumatol"
+      },
+      {
+        "issue": "3",
+        "key": "R9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ijerph20032383",
+        "article-title": "The relationship between social media and the increase in mental health problems",
+        "volume": "20",
+        "author": "Beyari",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "issue": "11",
+        "key": "R10",
+        "doi-asserted-by": "publisher",
+        "first-page": "3660",
+        "DOI": "10.1257/aer.20211218",
+        "article-title": "Social media and mental health",
+        "volume": "112",
+        "author": "Braghieri",
+        "journal-title": "Am Econ Rev"
+      },
+      {
+        "issue": "5",
+        "key": "R11",
+        "doi-asserted-by": "publisher",
+        "first-page": "437",
+        "DOI": "10.1001/jamapsychiatry.2017.0262",
+        "article-title": "Needed innovation in digital health and smartphone applications for mental health: transparency and trust",
+        "volume": "74",
+        "author": "Torous",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "issue": "6",
+        "key": "R12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/10141",
+        "article-title": "Discovery of and interest in health apps among those with mental health needs: survey and focus group study",
+        "volume": "20",
+        "author": "Schueller",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "R13",
+        "unstructured": "ORCHA. URL: https://orchahealth.com/ [Accessed 02-06-2022]"
+      },
+      {
+        "key": "R14",
+        "unstructured": "National Institute for Health and Care Excellence. URL: https://www.nice.org.uk/ [Accessed 03-05-2022]"
+      },
+      {
+        "key": "R15",
+        "unstructured": "Evidence standards framework for digital health technologies. National Institute of Health and Care Excellence. Dec 10, 2018. URL: https://www.nice.org.uk/corporate/ecd7 [Accessed 06-11-2021]"
+      },
+      {
+        "issue": "1",
+        "key": "R16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s44184-023-00033-y",
+        "article-title": "Digital transformation of mental health services",
+        "volume": "2",
+        "author": "Bond",
+        "journal-title": "Npj Ment Health Res"
+      },
+      {
+        "issue": "8",
+        "key": "R17",
+        "doi-asserted-by": "publisher",
+        "first-page": "749",
+        "DOI": "10.1037/bul0000334",
+        "article-title": "Digital interventions for the treatment of depression: a meta-analytic review",
+        "volume": "147",
+        "author": "Moshe",
+        "journal-title": "Psychol Bull"
+      },
+      {
+        "issue": "5",
+        "key": "R18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/17458",
+        "article-title": "Mobile apps for mental health issues: meta-review of meta-analyses",
+        "volume": "8",
+        "author": "Lecomte",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "1",
+        "key": "R19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/30766",
+        "article-title": "User experience, engagement, and popularity in mental health apps: secondary analysis of app analytics and expert app reviews",
+        "volume": "9",
+        "author": "Kaveladze",
+        "journal-title": "JMIR Hum Factors"
+      },
+      {
+        "issue": "9",
+        "key": "R20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/14567",
+        "article-title": "Objective user engagement with mental health apps: systematic search and panel-based usage analysis",
+        "volume": "21",
+        "author": "Baumel",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "R21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/47043",
+        "article-title": "Quality of digital health interventions across different health care domains: secondary data analysis study",
+        "volume": "11",
+        "author": "Hyzy",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "key": "R22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/43052",
+        "article-title": "A mental health and well-being chatbot: user event log analysis",
+        "volume": "11",
+        "author": "Booth",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "11",
+        "key": "R23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/17065",
+        "article-title": "Artificial intelligence chatbot for depression: descriptive study of usage",
+        "volume": "4",
+        "author": "Dosovitsky",
+        "journal-title": "JMIR Form Res"
+      },
+      {
+        "key": "R24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v061.i06",
+        "article-title": "NbClust: an R package for determining the relevant number of clusters in a data set",
+        "volume": "61",
+        "author": "Charrad",
+        "journal-title": "J Stat Softw"
+      },
+      {
+        "key": "R25",
+        "unstructured": "Privacy policy. ORCHA. URL: https://www.orchahealth.com/privacy-policy [Accessed 27-04-2026]"
+      },
+      {
+        "issue": "1",
+        "key": "R26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10664-022-10236-0",
+        "article-title": "On the privacy of mental health apps: an empirical investigation and its implications for app development",
+        "volume": "28",
+        "author": "Iwaya",
+        "journal-title": "Empir Softw Eng"
+      },
+      {
+        "issue": "2",
+        "key": "R27",
+        "doi-asserted-by": "publisher",
+        "first-page": "201",
+        "DOI": "10.1111/acps.13306",
+        "article-title": "Assessing mental health apps marketplaces with objective metrics from 29,190 data points from 278 apps",
+        "volume": "144",
+        "author": "Lagan",
+        "journal-title": "Acta Psychiatr Scand"
+      },
+      {
+        "issue": "3",
+        "key": "R28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0298977",
+        "article-title": "Don’t judge a book or health app by its cover: user ratings and downloads are not linked to quality",
+        "volume": "19",
+        "author": "Hyzy",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "R29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-00312-4",
+        "article-title": "Actionable health app evaluation: translating expert frameworks into objective metrics",
+        "volume": "3",
+        "author": "Lagan",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "R30",
+        "unstructured": "The app evaluation model. American Psychiatric Association (APA). URL: https://www.psychiatry.org/psychiatrists/practice/mental-health-apps/the-app-evaluation-model [Accessed 26-08-2024]"
+      },
+      {
+        "key": "R31",
+        "unstructured": "Health app library. ORCHA. URL: https://us.orchahealth.com/digital-health-products/health-app-library/ [Accessed 19-01-2023]"
+      },
+      {
+        "issue": "1",
+        "key": "R32",
+        "doi-asserted-by": "publisher",
+        "first-page": "138",
+        "DOI": "10.1007/s10488-019-00979-2",
+        "article-title": "Opportunities for and tensions surrounding the use of technology-enabled mental health services in community mental health care",
+        "volume": "47",
+        "author": "Lattie",
+        "journal-title": "Adm Policy Ment Health"
+      },
+      {
+        "issue": "8",
+        "key": "R33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1080",
+        "DOI": "10.1037/amp0000686",
+        "article-title": "Implementation strategies for digital mental health interventions in health care settings",
+        "volume": "75",
+        "author": "Graham",
+        "journal-title": "Am Psychol"
+      }
+    ],
+    "container-title": [
+      "JMIR Human Factors"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://humanfactors.jmir.org/2026/1/e67944",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          31
+        ]
+      ],
+      "date-time": "2026-07-31T22:27:29Z",
+      "timestamp": 1785536849000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://humanfactors.jmir.org/2026/1/e67944"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ]
+    },
+    "references-count": 33,
+    "URL": "https://doi.org/10.2196/67944",
+    "relation": {},
+    "ISSN": [
+      "2292-9495"
+    ],
+    "issn-type": [
+      {
+        "value": "2292-9495",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          11
+        ]
+      ]
+    },
+    "article-number": "v13i1e67944"
+  }
+}

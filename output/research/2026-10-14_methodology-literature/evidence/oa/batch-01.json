@@ -1,0 +1,4043 @@
+{
+  "meta": {
+    "count": 20,
+    "db_response_time_ms": 26,
+    "page": 1,
+    "per_page": 100,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get works where DOI is (\n    10.1007/s12529-020-09944-y or \"10.1016/0020-7373(92)90039-N\"\n    or 10.1016/j.invent.2018.12.001 or 10.1016/j.invent.2019.100243\n    or 10.1080/10447311003781409 or 10.1080/19312450709336664\n    or 10.1136/amiajnl-2013-002605 or 10.1136/bmj.n1248 or 10.1145/3359174\n    or 10.1145/3613904.3642521 or 10.1177/0049124113500475\n    or 10.1177/1049732305276687 or 10.1177/1609406919899220\n    or 10.18653/v1/P16-1126 or 10.2196/14479 or 10.2196/18868 or 10.2196/26317\n    or 10.2196/33735 or 10.2196/mhealth.9217 or 10.2478/popets-2020-0083\n  )",
+      "x_new_oql": "get works where DOI is (10.1007/s12529-020-09944-y or \"10.1016/0020-7373(92)90039-N\" or 10.1016/j.invent.2018.12.001 or 10.1016/j.invent.2019.100243 or 10.1080/10447311003781409 or 10.1080/19312450709336664 or 10.1136/amiajnl-2013-002605 or 10.1136/bmj.n1248 or 10.1145/3359174 or 10.1145/3613904.3642521 or 10.1177/0049124113500475 or 10.1177/1049732305276687 or 10.1177/1609406919899220 or 10.18653/v1/P16-1126 or 10.2196/14479 or 10.2196/18868 or 10.2196/26317 or 10.2196/33735 or 10.2196/mhealth.9217 or 10.2478/popets-2020-0083)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "join": "or",
+            "filters": [
+              {
+                "column_id": "doi",
+                "value": "10.1007/s12529-020-09944-y"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1016/0020-7373(92)90039-N"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1016/j.invent.2018.12.001"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1016/j.invent.2019.100243"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1080/10447311003781409"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1080/19312450709336664"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1136/amiajnl-2013-002605"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1136/bmj.n1248"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1145/3359174"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1145/3613904.3642521"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1177/0049124113500475"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1177/1049732305276687"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.1177/1609406919899220"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.18653/v1/P16-1126"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2196/14479"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2196/18868"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2196/26317"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2196/33735"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2196/mhealth.9217"
+              },
+              {
+                "column_id": "doi",
+                "value": "10.2478/popets-2020-0083"
+              }
+            ]
+          }
+        ]
+      },
+      "url": "/works?filter=doi:10.1007%2Fs12529-020-09944-y|10.1016%2F0020-7373%2892%2990039-N|10.1016%2Fj.invent.2018.12.001|10.1016%2Fj.invent.2019.100243|10.1080%2F10447311003781409|10.1080%2F19312450709336664|10.1136%2Famiajnl-2013-002605|10.1136%2Fbmj.n1248|10.1145%2F3359174|10.1145%2F3613904.3642521|10.1177%2F0049124113500475|10.1177%2F1049732305276687|10.1177%2F1609406919899220|10.18653%2Fv1%2FP16-1126|10.2196%2F14479|10.2196%2F18868|10.2196%2F26317|10.2196%2F33735|10.2196%2Fmhealth.9217|10.2478%2Fpopets-2020-0083&per_page=100"
+    },
+    "cost_usd": 0.0001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2142225512",
+      "doi": "https://doi.org/10.1177/1049732305276687",
+      "title": "Three Approaches to Qualitative Content Analysis",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1177/1049732305276687",
+          "doi": "https://doi.org/10.1177/1049732305276687",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1177/1049732305276687",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S32648145",
+            "display_name": "Qualitative Health Research",
+            "issn_l": "1049-7323",
+            "issn": [
+              "1049-7323",
+              "1552-7557"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "doyens",
+              "jufo-3",
+              "ki-jl-1",
+              "medline",
+              "norway-2",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Qualitative Health Research",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:16204405",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/16204405",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Qualitative health research",
+          "raw_type": "Journal Article"
+        }
+      ],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W2061504941",
+      "doi": "https://doi.org/10.1080/19312450709336664",
+      "title": "Answering the Call for a Standard Reliability Measure for Coding Data",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1080/19312450709336664",
+          "doi": "https://doi.org/10.1080/19312450709336664",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/19312450709336664",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S193040567",
+            "display_name": "Communication Methods and Measures",
+            "issn_l": "1931-2458",
+            "issn": [
+              "1931-2458",
+              "1931-2466"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "jufo-1",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547",
+              "https://openalex.org/P4310320449"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis",
+              "Informa"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Communication Methods and Measures",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W3001362559",
+      "doi": "https://doi.org/10.1177/1609406919899220",
+      "title": "Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.1177/1609406919899220",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1177/1609406919899220",
+          "doi": "https://doi.org/10.1177/1609406919899220",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1177/1609406919899220",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210182004",
+            "display_name": "International Journal of Qualitative Methods",
+            "issn_l": "1609-4069",
+            "issn": [
+              "1609-4069"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "doaj",
+              "jufo-1",
+              "ki-jl-1",
+              "norway-2",
+              "poland-40",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Qualitative Methods",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:c7016109d54249ce85105caf5f0d7c84",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/c7016109d54249ce85105caf5f0d7c84",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "International Journal of Qualitative Methods, Vol 19 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:eprints.ucl.ac.uk.OAI2:10091273",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://discovery.ucl.ac.uk/id/eprint/10091273/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400024",
+            "display_name": "UCL Discovery (University College London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I45129253",
+            "host_organization_name": "University College London",
+            "host_organization_lineage": [
+              "https://openalex.org/I45129253"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "International Journal of Qualitative Methods , 19 pp. 1-13. (2020)",
+          "raw_type": "Article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1177/1609406919899220",
+        "doi": "https://doi.org/10.1177/1609406919899220",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1177/1609406919899220",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210182004",
+          "display_name": "International Journal of Qualitative Methods",
+          "issn_l": "1609-4069",
+          "issn": [
+            "1609-4069"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-2",
+            "poland-40",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_name": "SAGE Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "International Journal of Qualitative Methods",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W1981425990",
+      "doi": "https://doi.org/10.1177/0049124113500475",
+      "title": "Coding In-depth Semistructured Interviews",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1177/0049124113500475",
+          "doi": "https://doi.org/10.1177/0049124113500475",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1177/0049124113500475",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S9536269",
+            "display_name": "Sociological Methods & Research",
+            "issn_l": "0049-1241",
+            "issn": [
+              "0049-1241",
+              "1552-8294"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-class-a",
+              "anvur-scientific",
+              "cwts-core",
+              "erih-plus",
+              "fnege-4",
+              "jufo-3",
+              "norway-2",
+              "poland-200",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_name": "SAGE Publishing",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Sociological Methods &amp; Research",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:RePEc:sae:somere:v:42:y:2013:i:3:p:294-320",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://journals.sagepub.com/doi/10.1177/0049124113500475",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401271",
+            "display_name": "RePEc: Research Papers in Economics",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I77793887",
+            "host_organization_name": "Federal Reserve Bank of St. Louis",
+            "host_organization_lineage": [
+              "https://openalex.org/I77793887"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:eprints.bbk.ac.uk.oai2:8042",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://eprints.bbk.ac.uk/id/eprint/8042/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400465",
+            "display_name": "BIROn (Birkbeck, University of London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I98259816",
+            "host_organization_name": "Birkbeck, University of London",
+            "host_organization_lineage": [
+              "https://openalex.org/I98259816"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:research-api.cbs.dk:openaire_cris_publications/c2455413-0678-4ecf-aed9-8d6ec876d277",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://hdl.handle.net/10398/c2455413-0678-4ecf-aed9-8d6ec876d277",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401458",
+            "display_name": "CBS Research Portal (Copenhagen Business School)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I180519160",
+            "host_organization_name": "Copenhagen Business School",
+            "host_organization_lineage": [
+              "https://openalex.org/I180519160"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Campbell, J L, Quincy, C, Osserman, J & Pedersen, O K 2013, 'Coding In-depth Semistructured Interviews : Problems of Unitization and Intercoder Reliability and Agreement', Sociological Methods & Research, vol. 42, no. 3, pp. 294-320. https://doi.org/10.1177/0049124113500475",
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W3017863658",
+      "doi": "https://doi.org/10.1145/3359174",
+      "title": "Reliability and Inter-rater Reliability in Qualitative Research",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://dl.acm.org/doi/pdf/10.1145/3359174",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1145/3359174",
+          "doi": "https://doi.org/10.1145/3359174",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1145/3359174",
+          "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3359174",
+          "source": {
+            "id": "https://openalex.org/S4210183893",
+            "display_name": "Proceedings of the ACM on Human-Computer Interaction",
+            "issn_l": "2573-0142",
+            "issn": [
+              "2573-0142"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "ccf-c",
+              "cwts-core",
+              "jufo-2",
+              "norway-1",
+              "poland-20",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310319798",
+            "host_organization_name": "Association for Computing Machinery",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319798"
+            ],
+            "host_organization_lineage_names": [
+              "Association for Computing Machinery"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Proceedings of the ACM on Human-Computer Interaction",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1145/3359174",
+        "doi": "https://doi.org/10.1145/3359174",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1145/3359174",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3359174",
+        "source": {
+          "id": "https://openalex.org/S4210183893",
+          "display_name": "Proceedings of the ACM on Human-Computer Interaction",
+          "issn_l": "2573-0142",
+          "issn": [
+            "2573-0142"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "ccf-c",
+            "cwts-core",
+            "jufo-2",
+            "norway-1",
+            "poland-20",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319798",
+          "host_organization_name": "Association for Computing Machinery",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319798"
+          ],
+          "host_organization_lineage_names": [
+            "Association for Computing Machinery"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the ACM on Human-Computer Interaction",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W2118518941",
+      "doi": "https://doi.org/10.1016/0020-7373(92)90039-n",
+      "title": "Cognitive walkthroughs: a method for theory-based evaluation of user interfaces",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1016/0020-7373(92)90039-n",
+          "doi": "https://doi.org/10.1016/0020-7373(92)90039-n",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1016/0020-7373(92)90039-n",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210225790",
+            "display_name": "International Journal of Man-Machine Studies",
+            "issn_l": "0020-7373",
+            "issn": [
+              "0020-7373",
+              "1879-3614"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [
+              "norway-1"
+            ],
+            "host_organization": "https://openalex.org/P4310319955",
+            "host_organization_name": "Academic Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319955",
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Academic Press",
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Man-Machine Studies",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W1481354592",
+      "doi": "https://doi.org/10.1136/amiajnl-2013-002605",
+      "title": "Availability and quality of mobile health app privacy policies",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1136/amiajnl-2013-002605",
+          "doi": "https://doi.org/10.1136/amiajnl-2013-002605",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1136/amiajnl-2013-002605",
+          "pdf_url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf",
+          "source": {
+            "id": "https://openalex.org/S129839026",
+            "display_name": "Journal of the American Medical Informatics Association",
+            "issn_l": "1067-5027",
+            "issn": [
+              "1067-5027",
+              "1527-974X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "anvur-scientific",
+              "ccf-b",
+              "cwts-core",
+              "dongbi-b",
+              "doyens",
+              "jufo-2",
+              "ki-jl-2",
+              "medline",
+              "norway-1",
+              "poland-140",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310311648",
+            "host_organization_name": "Oxford University Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310311648",
+              "https://openalex.org/P4310311647"
+            ],
+            "host_organization_lineage_names": [
+              "Oxford University Press",
+              "University of Oxford"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of the American Medical Informatics Association",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:25147247",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/25147247",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of the American Medical Informatics Association : JAMIA",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:USBKOELN.ub.uni-koeln.de:40424",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://kups.ub.uni-koeln.de/40424/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400371",
+            "display_name": "K\u00f6lner Universit\u00e4ts PublikationsServer (Universit\u00e4t zu K\u00f6ln)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210115942",
+            "host_organization_name": "Rhenish Institute for Environmental Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210115942"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "",
+          "raw_type": "doc-type:article"
+        },
+        {
+          "id": "pmh:oai:USBKOELN.ub.uni-koeln.de:40913",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://kups.ub.uni-koeln.de/40913/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400371",
+            "display_name": "K\u00f6lner Universit\u00e4ts PublikationsServer (Universit\u00e4t zu K\u00f6ln)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210115942",
+            "host_organization_name": "Rhenish Institute for Environmental Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210115942"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "",
+          "raw_type": "doc-type:article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11888337",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11888337",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Am Med Inform Assoc",
+          "raw_type": "Text"
+        },
+        {
+          "id": "mag:3123048893",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2731756_code1903155.pdf?abstractid=2485118&mirid=3",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210172589",
+            "display_name": "SSRN Electronic Journal",
+            "issn_l": "1556-5068",
+            "issn": [
+              "1556-5068"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1318003438",
+            "host_organization_name": "RELX Group (Netherlands)",
+            "host_organization_lineage": [
+              "https://openalex.org/I1318003438"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "SSRN Electronic Journal",
+          "raw_type": null
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1136/amiajnl-2013-002605",
+        "doi": "https://doi.org/10.1136/amiajnl-2013-002605",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1136/amiajnl-2013-002605",
+        "pdf_url": "https://academic.oup.com/jamia/article-pdf/22/e1/e28/34145987/amiajnl-2013-002605.pdf",
+        "source": {
+          "id": "https://openalex.org/S129839026",
+          "display_name": "Journal of the American Medical Informatics Association",
+          "issn_l": "1067-5027",
+          "issn": [
+            "1067-5027",
+            "1527-974X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "ccf-b",
+            "cwts-core",
+            "dongbi-b",
+            "doyens",
+            "jufo-2",
+            "ki-jl-2",
+            "medline",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310311648",
+          "host_organization_name": "Oxford University Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310311648",
+            "https://openalex.org/P4310311647"
+          ],
+          "host_organization_lineage_names": [
+            "Oxford University Press",
+            "University of Oxford"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of the American Medical Informatics Association",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W1990580455",
+      "doi": "https://doi.org/10.1080/10447311003781409",
+      "title": "State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.1080/10447311003781409",
+          "doi": "https://doi.org/10.1080/10447311003781409",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1080/10447311003781409",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S165559636",
+            "display_name": "International Journal of Human-Computer Interaction",
+            "issn_l": "1044-7318",
+            "issn": [
+              "1044-7318",
+              "1532-7590"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "abdc-c",
+              "anvur-scientific",
+              "ccf-b",
+              "cwts-core",
+              "dongbi-c",
+              "jufo-2",
+              "ki-jl-1",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_name": "Taylor & Francis",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547",
+              "https://openalex.org/P4310320449"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis",
+              "Informa"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Human\u2013Computer Interaction",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:HAL:hal-03268866v1",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://uphf.hal.science/hal-03268866",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402512",
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "International Journal of Human-Computer Interaction, 2010, 26 (8), pp.741-785. &#x27E8;10.1080/10447311003781409&#x27E9;",
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": null
+    },
+    {
+      "id": "https://openalex.org/W2517394750",
+      "doi": "https://doi.org/10.18653/v1/p16-1126",
+      "title": "The Creation and Analysis of a Website Privacy Policy Corpus",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.aclweb.org/anthology/P16-1126.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.18653/v1/p16-1126",
+          "doi": "https://doi.org/10.18653/v1/p16-1126",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.18653/v1/p16-1126",
+          "pdf_url": "https://www.aclweb.org/anthology/P16-1126.pdf",
+          "source": {
+            "id": "https://openalex.org/S4363608652",
+            "display_name": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "conference"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+          "raw_type": "proceedings-article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.18653/v1/p16-1126",
+        "doi": "https://doi.org/10.18653/v1/p16-1126",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.18653/v1/p16-1126",
+        "pdf_url": "https://www.aclweb.org/anthology/P16-1126.pdf",
+        "source": {
+          "id": "https://openalex.org/S4363608652",
+          "display_name": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "raw_type": "proceedings-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W2905702366",
+      "doi": "https://doi.org/10.1016/j.invent.2018.12.001",
+      "title": "Reviewing the data security and privacy policies of mobile apps for depression",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300460/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1016/j.invent.2018.12.001",
+          "doi": "https://doi.org/10.1016/j.invent.2018.12.001",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.invent.2018.12.001",
+          "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300460/pdf",
+          "source": {
+            "id": "https://openalex.org/S4210232579",
+            "display_name": "Internet Interventions",
+            "issn_l": "2214-7829",
+            "issn": [
+              "2214-7829"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "doyens",
+              "jufo-1",
+              "ki-jl-1",
+              "norway-1"
+            ],
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Internet Interventions",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:30792962",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/30792962",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Internet interventions",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:5377794",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "http://europepmc.org/pmc/articles/PMC6371412",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:6371412",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6371412",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Internet Interv",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:058b918caf664c498163b191751e5dc1",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/058b918caf664c498163b191751e5dc1",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Internet Interventions, Vol 15, Iss , Pp 110-115 (2019)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:escholarship.org/ark:/13030/qt6f77j6cj",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://escholarship.org/uc/item/6f77j6cj",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt6f77j6cj",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://escholarship.org/uc/item/6f77j6cj",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:qt6f77j6cj",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "http://www.escholarship.org/uc/item/6f77j6cj",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "O'Loughlin, Kristen; Neary, Martha; Adkins, Elizabeth C; &amp; Schueller, Stephen M. (2019). Reviewing the data security and privacy policies of mobile apps for depression.. Internet interventions, 15, 110 - 115. doi: 10.1016/j.invent.2018.12.001. UC Irvine: Retrieved from: http://www.escholarship.org/uc/item/6f77j6cj",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1016/j.invent.2018.12.001",
+        "doi": "https://doi.org/10.1016/j.invent.2018.12.001",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.invent.2018.12.001",
+        "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300460/pdf",
+        "source": {
+          "id": "https://openalex.org/S4210232579",
+          "display_name": "Internet Interventions",
+          "issn_l": "2214-7829",
+          "issn": [
+            "2214-7829"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Internet Interventions",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W2975516305",
+      "doi": "https://doi.org/10.2196/14479",
+      "title": "The German Version of the Mobile App Rating Scale (MARS-G): Development and Validation Study",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://jmir.org/api/download?alt_name=mhealth_v8i3e14479_app2.pdf&filename=65503aa0c995889b3d206695ec1237c5.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/14479",
+          "doi": "https://doi.org/10.2196/14479",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/14479",
+          "pdf_url": "https://jmir.org/api/download?alt_name=mhealth_v8i3e14479_app2.pdf&filename=65503aa0c995889b3d206695ec1237c5.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764493120",
+            "display_name": "JMIR mhealth and uhealth",
+            "issn_l": "2291-5222",
+            "issn": [
+              "2291-5222"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-a",
+              "doyens",
+              "jufo-2",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.2196/preprints.14479",
+          "doi": "https://doi.org/10.2196/preprints.14479",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/preprints.14479",
+          "pdf_url": null,
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7148545",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7148545",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR Mhealth Uhealth",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmid:32217504",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32217504",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:generic.eprints.org:1914",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "http://utpedia.utp.edu.my/1914/1/SEPT_2011_-_9_JAN_2012_%28MONDAY%29.pdf",
+          "pdf_url": "http://utpedia.utp.edu.my/1914/1/SEPT_2011_-_9_JAN_2012_%28MONDAY%29.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401854",
+            "display_name": "UTPedia (Universiti Teknologi Petronas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I203899302",
+            "host_organization_name": "Universiti Teknologi Petronas",
+            "host_organization_lineage": [
+              "https://openalex.org/I203899302"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Examination Question"
+        },
+        {
+          "id": "pmh:oai:utpedia.utp.edu.my:1914",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "http://utpedia.utp.edu.my/id/eprint/1914/1/SEPT_2011_-_9_JAN_2012_%28MONDAY%29.pdf",
+          "pdf_url": "http://utpedia.utp.edu.my/id/eprint/1914/1/SEPT_2011_-_9_JAN_2012_%28MONDAY%29.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401854",
+            "display_name": "UTPedia (Universiti Teknologi Petronas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I203899302",
+            "host_organization_name": "Universiti Teknologi Petronas",
+            "host_organization_lineage": [
+              "https://openalex.org/I203899302"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Past Year Examination Question"
+        },
+        {
+          "id": "pmh:oai:utpedia.utp.edu.my:2140",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "http://utpedia.utp.edu.my/id/eprint/2140/1/JAN_2009_-_25_MAY_2009_%28MONDAY%29.pdf",
+          "pdf_url": "http://utpedia.utp.edu.my/id/eprint/2140/1/JAN_2009_-_25_MAY_2009_%28MONDAY%29.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401854",
+            "display_name": "UTPedia (Universiti Teknologi Petronas)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I203899302",
+            "host_organization_name": "Universiti Teknologi Petronas",
+            "host_organization_lineage": [
+              "https://openalex.org/I203899302"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Past Year Examination Question"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:f7218a2a04f34cd8b56be0962773612f",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/f7218a2a04f34cd8b56be0962773612f",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR mHealth and uHealth, Vol 8, Iss 3, p e14479 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:edoc.ku-eichstaett.de:27653",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "http://edoc.ku-eichstaett.de/27653/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400143",
+            "display_name": "Publication Server of the Catholic University Eichst\u00e4tt-Ingolstadt (Catholic University of Eichst\u00e4tt-Ingolstadt)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I199417121",
+            "host_organization_name": "Catholic University of Eichst\u00e4tt-Ingolstadt",
+            "host_organization_lineage": [
+              "https://openalex.org/I199417121"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Artikel"
+        },
+        {
+          "id": "pmh:oai:edoc.ku.de:23642",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://edoc.ku.de/id/eprint/23642/",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400143",
+            "display_name": "Publication Server of the Catholic University Eichst\u00e4tt-Ingolstadt (Catholic University of Eichst\u00e4tt-Ingolstadt)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I199417121",
+            "host_organization_name": "Catholic University of Eichst\u00e4tt-Ingolstadt",
+            "host_organization_lineage": [
+              "https://openalex.org/I199417121"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Artikel"
+        },
+        {
+          "id": "pmh:oai:edoc.ku.de:27653",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://mhealth.jmir.org/2020/3/e14479",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400143",
+            "display_name": "Publication Server of the Catholic University Eichst\u00e4tt-Ingolstadt (Catholic University of Eichst\u00e4tt-Ingolstadt)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I199417121",
+            "host_organization_name": "Catholic University of Eichst\u00e4tt-Ingolstadt",
+            "host_organization_lineage": [
+              "https://openalex.org/I199417121"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Artikel"
+        },
+        {
+          "id": "pmh:oai:oparu.uni-ulm.de:123456789/34974",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "http://nbn-resolving.de/urn:nbn:de:bsz:289-oparu-34974-5",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400353",
+            "display_name": "OPen Access Repositorium der Universit\u00e4t Ulm (OPARU) (Ulm University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I196349391",
+            "host_organization_name": "Universit\u00e4t Ulm",
+            "host_organization_lineage": [
+              "https://openalex.org/I196349391"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "doi:10.18725/oparu-34912",
+          "doi": "https://doi.org/10.18725/oparu-34912",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.18725/oparu-34912",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S7407052964",
+            "display_name": "Universit\u00e4t Ulm, Kommunikations- und Informationszentrum (kiz)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "Other"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/14479",
+        "doi": "https://doi.org/10.2196/14479",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/14479",
+        "pdf_url": "https://jmir.org/api/download?alt_name=mhealth_v8i3e14479_app2.pdf&filename=65503aa0c995889b3d206695ec1237c5.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764493120",
+          "display_name": "JMIR mhealth and uhealth",
+          "issn_l": "2291-5222",
+          "issn": [
+            "2291-5222"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR mHealth and uHealth",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3169274173",
+      "doi": "https://doi.org/10.1136/bmj.n1248",
+      "title": "Mobile health and privacy: cross sectional study",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://www.bmj.com/content/bmj/373/bmj.n1248.full.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1136/bmj.n1248",
+          "doi": "https://doi.org/10.1136/bmj.n1248",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1136/bmj.n1248",
+          "pdf_url": "https://www.bmj.com/content/bmj/373/bmj.n1248.full.pdf",
+          "source": {
+            "id": "https://openalex.org/S4393917726",
+            "display_name": "BMJ",
+            "issn_l": "1756-1833",
+            "issn": [
+              "1756-1833"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doyens",
+              "jufo-2",
+              "ki-jl-3",
+              "medline",
+              "norway-2"
+            ],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "BMJ",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:34135009",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34135009",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "BMJ (Clinical research ed.)",
+          "raw_type": "Comparative Study"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8207561",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8207561",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "BMJ",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:figshare.com:article/22124564",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/journal_contribution/Mobile_health_and_privacy_Cross_sectional_study/22124564",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196282",
+            "display_name": "Figshare",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc",
+          "license_id": "https://openalex.org/licenses/cc-by-nc",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1136/bmj.n1248",
+        "doi": "https://doi.org/10.1136/bmj.n1248",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1136/bmj.n1248",
+        "pdf_url": "https://www.bmj.com/content/bmj/373/bmj.n1248.full.pdf",
+        "source": {
+          "id": "https://openalex.org/S4393917726",
+          "display_name": "BMJ",
+          "issn_l": "1756-1833",
+          "issn": [
+            "1756-1833"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doyens",
+            "jufo-2",
+            "ki-jl-3",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "BMJ",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4213423749",
+      "doi": "https://doi.org/10.2196/33735",
+      "title": "Privacy, Data Sharing, and Data Security Policies of Women\u2019s mHealth Apps: Scoping Review and Content Analysis",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://mhealth.jmir.org/2022/5/e33735/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/33735",
+          "doi": "https://doi.org/10.2196/33735",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/33735",
+          "pdf_url": "https://mhealth.jmir.org/2022/5/e33735/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764493120",
+            "display_name": "JMIR mhealth and uhealth",
+            "issn_l": "2291-5222",
+            "issn": [
+              "2291-5222"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-a",
+              "doyens",
+              "jufo-2",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.2196/preprints.33735",
+          "doi": "https://doi.org/10.2196/preprints.33735",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/preprints.33735",
+          "pdf_url": null,
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmid:35522465",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35522465",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:www.zora.uzh.ch:218564",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.zora.uzh.ch/id/eprint/218564/1/document218564.pdf",
+          "pdf_url": "https://www.zora.uzh.ch/id/eprint/218564/1/document218564.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401281",
+            "display_name": "Zurich Open Repository and Archive (University of Zurich)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I202697423",
+            "host_organization_name": "University of Zurich",
+            "host_organization_lineage": [
+              "https://openalex.org/I202697423"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "Alfawzan, Najd; Christen, Markus; Spitale, Giovanni; Biller-Andorno, Nikola (2022). Privacy, Data Sharing, and Data Security Policies of Women\u2019s mHealth Apps: Scoping Review and Content Analysis. JMIR mHealth and uHealth, 10(5):e33735.",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:9123546",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9123546",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR Mhealth Uhealth",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:e2c57cc537da499e9b509bd22f821cb7",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/e2c57cc537da499e9b509bd22f821cb7",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR mHealth and uHealth, Vol 10, Iss 5, p e33735 (2022)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:www.zora.uzh.ch:20.500.14742/195802",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.zora.uzh.ch/handle/20.500.14742/195802",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401281",
+            "display_name": "Zurich Open Repository and Archive (University of Zurich)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I202697423",
+            "host_organization_name": "University of Zurich",
+            "host_organization_lineage": [
+              "https://openalex.org/I202697423"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Alfawzan, N., Christen, M., Spitale, G., & Biller-Andorno, N. (2022). Privacy, Data Sharing, and Data Security Policies of Women\u2019s mHealth Apps: Scoping Review and Content Analysis. JMIR MHealth and UHealth, 10, e33735. https://doi.org/10.2196/33735",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "doi:10.5167/uzh-218564",
+          "doi": "https://doi.org/10.5167/uzh-218564",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5167/uzh-218564",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401281",
+            "display_name": "Zurich Open Repository and Archive (University of Zurich)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I202697423",
+            "host_organization_name": "University of Zurich",
+            "host_organization_lineage": [
+              "https://openalex.org/I202697423"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "JournalArticle"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/33735",
+        "doi": "https://doi.org/10.2196/33735",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/33735",
+        "pdf_url": "https://mhealth.jmir.org/2022/5/e33735/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764493120",
+          "display_name": "JMIR mhealth and uhealth",
+          "issn_l": "2291-5222",
+          "issn": [
+            "2291-5222"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR mHealth and uHealth",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W2921902116",
+      "doi": "https://doi.org/10.1016/j.invent.2019.100243",
+      "title": "Availability, readability, and content of privacy policies and terms of agreements of mental health apps",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300162/pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1016/j.invent.2019.100243",
+          "doi": "https://doi.org/10.1016/j.invent.2019.100243",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.invent.2019.100243",
+          "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300162/pdf",
+          "source": {
+            "id": "https://openalex.org/S4210232579",
+            "display_name": "Internet Interventions",
+            "issn_l": "2214-7829",
+            "issn": [
+              "2214-7829"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-b",
+              "doyens",
+              "jufo-1",
+              "ki-jl-1",
+              "norway-1",
+              "poland-100",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Internet Interventions",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:30949436",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/30949436",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Internet interventions",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:5433138",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6430038",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:6430038",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6430038",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Internet Interv",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:636eb0fd89cf4f3e95ee05d19af5e0e3",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/636eb0fd89cf4f3e95ee05d19af5e0e3",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Internet Interventions, Vol 17, Iss , Pp - (2019)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1016/j.invent.2019.100243",
+        "doi": "https://doi.org/10.1016/j.invent.2019.100243",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.invent.2019.100243",
+        "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2214782918300162/pdf",
+        "source": {
+          "id": "https://openalex.org/S4210232579",
+          "display_name": "Internet Interventions",
+          "issn_l": "2214-7829",
+          "issn": [
+            "2214-7829"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1",
+            "poland-100",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Internet Interventions",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3081819535",
+      "doi": "https://doi.org/10.2478/popets-2020-0083",
+      "title": "How private is your period?: A systematic analysis of menstrual app privacy policies",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://doi.org/10.2478/popets-2020-0083",
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "id": "doi:10.2478/popets-2020-0083",
+          "doi": "https://doi.org/10.2478/popets-2020-0083",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2478/popets-2020-0083",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210183172",
+            "display_name": "Proceedings on Privacy Enhancing Technologies",
+            "issn_l": "2299-0984",
+            "issn": [
+              "2299-0984"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "jufo-1",
+              "norway-1"
+            ],
+            "host_organization": "https://openalex.org/P4310320322",
+            "host_organization_name": "De Gruyter Open",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320322",
+              "https://openalex.org/P4310313990"
+            ],
+            "host_organization_lineage_names": [
+              "De Gruyter Open",
+              "De Gruyter"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Proceedings on Privacy Enhancing Technologies",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:65b478adee524700abda74c0aa8abcc5",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/65b478adee524700abda74c0aa8abcc5",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Proceedings on Privacy Enhancing Technologies, Vol 2020, Iss 4, Pp 491-510 (2020)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2478/popets-2020-0083",
+        "doi": "https://doi.org/10.2478/popets-2020-0083",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2478/popets-2020-0083",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210183172",
+          "display_name": "Proceedings on Privacy Enhancing Technologies",
+          "issn_l": "2299-0984",
+          "issn": [
+            "2299-0984"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-1",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320322",
+          "host_organization_name": "De Gruyter Open",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320322",
+            "https://openalex.org/P4310313990"
+          ],
+          "host_organization_lineage_names": [
+            "De Gruyter Open",
+            "De Gruyter"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Proceedings on Privacy Enhancing Technologies",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3098422826",
+      "doi": "https://doi.org/10.1007/s12529-020-09944-y",
+      "title": "Stay Present with Your Phone: A Systematic Review and Standardized Rating of Mindfulness Apps in European App Stores",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "hybrid",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s12529-020-09944-y.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1007/s12529-020-09944-y",
+          "doi": "https://doi.org/10.1007/s12529-020-09944-y",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s12529-020-09944-y",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12529-020-09944-y.pdf",
+          "source": {
+            "id": "https://openalex.org/S35573031",
+            "display_name": "International Journal of Behavioral Medicine",
+            "issn_l": "1070-5503",
+            "issn": [
+              "1070-5503",
+              "1532-7558"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "dongbi-c",
+              "erih-plus",
+              "jufo-1",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-70",
+              "russia-white-list-2",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Journal of Behavioral Medicine",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:33215348",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33215348",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International journal of behavioral medicine",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:frl.publisso.de:frl:6471128",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8384800",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196269",
+            "display_name": "PUBLISSO (German National Library of Medicine)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210112663",
+            "host_organization_name": "ZB MED - Information Centre for Life Sciences",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210112663"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://lobid.org/resources/99370679144706441#!, 28(5):552-560",
+          "raw_type": "Zeitschriftenartikel"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8384800",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8384800",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Int J Behav Med",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1007/s12529-020-09944-y",
+        "doi": "https://doi.org/10.1007/s12529-020-09944-y",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s12529-020-09944-y",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12529-020-09944-y.pdf",
+        "source": {
+          "id": "https://openalex.org/S35573031",
+          "display_name": "International Journal of Behavioral Medicine",
+          "issn_l": "1070-5503",
+          "issn": [
+            "1070-5503",
+            "1532-7558"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-c",
+            "erih-plus",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "International Journal of Behavioral Medicine",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3024846856",
+      "doi": "https://doi.org/10.2196/18868",
+      "title": "Privacy Assessment in Mobile Health Apps: Scoping Review",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://mhealth.jmir.org/2020/7/e18868/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/18868",
+          "doi": "https://doi.org/10.2196/18868",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/18868",
+          "pdf_url": "https://mhealth.jmir.org/2020/7/e18868/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764493120",
+            "display_name": "JMIR mhealth and uhealth",
+            "issn_l": "2291-5222",
+            "issn": [
+              "2291-5222"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-a",
+              "doyens",
+              "jufo-2",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.2196/preprints.18868",
+          "doi": "https://doi.org/10.2196/preprints.18868",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/preprints.18868",
+          "pdf_url": null,
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmid:32459640",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32459640",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7367524",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7367524",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR Mhealth Uhealth",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:eda29a3dcc33466b8e3458391d134c25",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/eda29a3dcc33466b8e3458391d134c25",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR mHealth and uHealth, Vol 8, Iss 7, p e18868 (2020)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:idus.us.es:11441/144374",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://idus.us.es/handle//11441/144374",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400333",
+            "display_name": "idUS (Universidad de Sevilla)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I79238269",
+            "host_organization_name": "Universidad de Sevilla",
+            "host_organization_lineage": [
+              "https://openalex.org/I79238269"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/18868",
+        "doi": "https://doi.org/10.2196/18868",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/18868",
+        "pdf_url": "https://mhealth.jmir.org/2020/7/e18868/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764493120",
+          "display_name": "JMIR mhealth and uhealth",
+          "issn_l": "2291-5222",
+          "issn": [
+            "2291-5222"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR mHealth and uHealth",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4396833238",
+      "doi": "https://doi.org/10.1145/3613904.3642521",
+      "title": "Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://discovery.ucl.ac.uk/10188933/1/chi24-626%20%281%29.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.1145/3613904.3642521",
+          "doi": "https://doi.org/10.1145/3613904.3642521",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1145/3613904.3642521",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4363607743",
+            "display_name": "CHI Conference on Human Factors in Computing Systems",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "conference"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+          "raw_type": "proceedings-article"
+        },
+        {
+          "id": "pmh:oai:eprints.ucl.ac.uk.OAI2:10188933",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://discovery.ucl.ac.uk/id/eprint/10188933/",
+          "pdf_url": "https://discovery.ucl.ac.uk/10188933/1/chi24-626%20%281%29.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306400024",
+            "display_name": "UCL Discovery (University College London)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I45129253",
+            "host_organization_name": "University College London",
+            "host_organization_lineage": [
+              "https://openalex.org/I45129253"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "In: Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI \u201924). (pp. pp. 1-24). ACM (Association for Computing Machinery) (2024) (In press).",
+          "raw_type": "Proceedings paper"
+        }
+      ],
+      "best_oa_location": {
+        "id": "pmh:oai:eprints.ucl.ac.uk.OAI2:10188933",
+        "doi": null,
+        "is_oa": true,
+        "landing_page_url": "https://discovery.ucl.ac.uk/id/eprint/10188933/",
+        "pdf_url": "https://discovery.ucl.ac.uk/10188933/1/chi24-626%20%281%29.pdf",
+        "source": {
+          "id": "https://openalex.org/S4306400024",
+          "display_name": "UCL Discovery (University College London)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": "https://openalex.org/I45129253",
+          "host_organization_name": "University College London",
+          "host_organization_lineage": [
+            "https://openalex.org/I45129253"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "In: Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI \u201924). (pp. pp. 1-24). ACM (Association for Computing Machinery) (2024) (In press).",
+        "raw_type": "Proceedings paper"
+      }
+    },
+    {
+      "id": "https://openalex.org/W2844894817",
+      "doi": "https://doi.org/10.2196/mhealth.9217",
+      "title": "Assessing the Privacy of mHealth Apps for Self-Tracking: Heuristic Evaluation Approach",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://mhealth.jmir.org/2018/10/e185/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/mhealth.9217",
+          "doi": "https://doi.org/10.2196/mhealth.9217",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/mhealth.9217",
+          "pdf_url": "https://mhealth.jmir.org/2018/10/e185/PDF",
+          "source": {
+            "id": "https://openalex.org/S2764493120",
+            "display_name": "JMIR mhealth and uhealth",
+            "issn_l": "2291-5222",
+            "issn": [
+              "2291-5222"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "cwts-core",
+              "doaj",
+              "dongbi-a",
+              "doyens",
+              "jufo-2",
+              "ki-jl-1",
+              "medline",
+              "norway-1",
+              "poland-100",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.2196/preprints.9217",
+          "doi": "https://doi.org/10.2196/preprints.9217",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/preprints.9217",
+          "pdf_url": null,
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmid:30348623",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/30348623",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "JMIR mHealth and uHealth",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:http://www.rian.ie/156486/",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "http://hdl.handle.net/10344/7342",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400033",
+            "display_name": "Arrow@dit (Dublin Institute of Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I115570527",
+            "host_organization_name": "Dublin Institute of Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I115570527"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": "291652",
+          "raw_type": "Journal article"
+        },
+        {
+          "id": "pmh:oai:researchrepository.ul.ie:10344/7342",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10344/7342",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401530",
+            "display_name": "University of Limerick Institutional Repository (University of Limerick)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I230495080",
+            "host_organization_name": "University of Limerick",
+            "host_organization_lineage": [
+              "https://openalex.org/I230495080"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Article"
+        },
+        {
+          "id": "pmh:oai:jupiter.its.unimelb.edu.au:11343/218175",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/11343/218175",
+          "pdf_url": "http://hdl.handle.net/11343/218175",
+          "source": {
+            "id": "https://openalex.org/S4377196259",
+            "display_name": "Minerva Access (University of Melbourne)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I165779595",
+            "host_organization_name": "The University of Melbourne",
+            "host_organization_lineage": [
+              "https://openalex.org/I165779595"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:oro.open.ac.uk:57500",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://oro.open.ac.uk/view/person/lh23962.html>;",
+          "pdf_url": "https://oro.open.ac.uk/57500/1/57500.pdf",
+          "source": {
+            "id": "https://openalex.org/S4306401187",
+            "display_name": "Open Research Online (The Open University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I204136569",
+            "host_organization_name": "The Open University",
+            "host_organization_lineage": [
+              "https://openalex.org/I204136569"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "PeerReviewed"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:5241659",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6231850",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400806",
+            "display_name": "Europe PMC (PubMed Central)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_name": "European Bioinformatics Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:6231850",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6231850",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR Mhealth Uhealth",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:9f2d8e10dc61484b84c8b1b10873e64b",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/9f2d8e10dc61484b84c8b1b10873e64b",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "JMIR mHealth and uHealth, Vol 6, Iss 10, p e185 (2018)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:figshare.com:article/19852141",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://figshare.com/articles/journal_contribution/Assessing_the_privacy_of_mhealth_apps_for_self-tracking_heuristic_evaluation_approach/19852141",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4377196282",
+            "display_name": "Figshare",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I4210132348",
+            "host_organization_name": "Figshare (United Kingdom)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210132348"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:pure.atira.dk:openaire/569e2121-794d-41c7-a6a5-6a64f0cde9de",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://pureportal.coventry.ac.uk/files/22639271/Hutton_et_al_Assessing_privacy_mHealth_apps_JMIR.pdf",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306402411",
+            "display_name": "Pure (Coventry University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I73417466",
+            "host_organization_name": "Coventry University",
+            "host_organization_lineage": [
+              "https://openalex.org/I73417466"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Hutton, L, Price, B, Kelly, R, McCormick, C, Bandara, A, Hatzakis, T, Meadows, M & Nuseibeh, B 2018, 'Assessing the privacy of mHealth Apps for self tracking : A heuristic evaluation approach', JMIR mHealth and uHealth, vol. 6, no. 10, e185. https://doi.org/10.2196/mhealth.9217",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:ulir.ul.ie:10344/7342",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10344/7342",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401530",
+            "display_name": "University of Limerick Institutional Repository (University of Limerick)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I230495080",
+            "host_organization_name": "University of Limerick",
+            "host_organization_lineage": [
+              "https://openalex.org/I230495080"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by-nc-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "doi:10.34961/590",
+          "doi": "https://doi.org/10.34961/590",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.34961/590",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401530",
+            "display_name": "University of Limerick Institutional Repository (University of Limerick)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I230495080",
+            "host_organization_name": "University of Limerick",
+            "host_organization_lineage": [
+              "https://openalex.org/I230495080"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "JournalArticle"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/mhealth.9217",
+        "doi": "https://doi.org/10.2196/mhealth.9217",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/mhealth.9217",
+        "pdf_url": "https://mhealth.jmir.org/2018/10/e185/PDF",
+        "source": {
+          "id": "https://openalex.org/S2764493120",
+          "display_name": "JMIR mhealth and uhealth",
+          "issn_l": "2291-5222",
+          "issn": [
+            "2291-5222"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "JMIR mHealth and uHealth",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3200220317",
+      "doi": "https://doi.org/10.2196/26317",
+      "title": "Privacy Practices of Health Information Technologies: Privacy Policy Risk Assessment Study and Proposed Guidelines",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.jmir.org/2021/9/e26317/PDF",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/26317",
+          "doi": "https://doi.org/10.2196/26317",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/26317",
+          "pdf_url": "https://www.jmir.org/2021/9/e26317/PDF",
+          "source": {
+            "id": "https://openalex.org/S17147534",
+            "display_name": "Journal of Medical Internet Research",
+            "issn_l": "1438-8871",
+            "issn": [
+              "1438-8871",
+              "1439-4456"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "listed_in": [
+              "anvur-scientific",
+              "cwts-core",
+              "doaj",
+              "dongbi-b",
+              "doyens",
+              "fnege-4",
+              "jufo-2",
+              "ki-jl-2",
+              "medline",
+              "norway-2",
+              "poland-140",
+              "russia-white-list-1",
+              "vabb-shw"
+            ],
+            "host_organization": "https://openalex.org/P4310320608",
+            "host_organization_name": "JMIR Publications",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320608"
+            ],
+            "host_organization_lineage_names": [
+              "JMIR Publications"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Medical Internet Research",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "doi:10.2196/preprints.26317",
+          "doi": "https://doi.org/10.2196/preprints.26317",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.2196/preprints.26317",
+          "pdf_url": null,
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        },
+        {
+          "id": "pmid:34528895",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34528895",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of medical Internet research",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8485195",
+          "doi": null,
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8485195",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "J Med Internet Res",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:7553bef248b64319addc4de017e39c4c",
+          "doi": null,
+          "is_oa": false,
+          "landing_page_url": "https://doaj.org/article/7553bef248b64319addc4de017e39c4c",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401280",
+            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Medical Internet Research, Vol 23, Iss 9, p e26317 (2021)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.2196/26317",
+        "doi": "https://doi.org/10.2196/26317",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.2196/26317",
+        "pdf_url": "https://www.jmir.org/2021/9/e26317/PDF",
+        "source": {
+          "id": "https://openalex.org/S17147534",
+          "display_name": "Journal of Medical Internet Research",
+          "issn_l": "1438-8871",
+          "issn": [
+            "1438-8871",
+            "1439-4456"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "doyens",
+            "fnege-4",
+            "jufo-2",
+            "ki-jl-2",
+            "medline",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320608",
+          "host_organization_name": "JMIR Publications",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320608"
+          ],
+          "host_organization_lineage_names": [
+            "JMIR Publications"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Medical Internet Research",
+        "raw_type": "journal-article"
+      }
+    }
+  ],
+  "group_by": []
+}

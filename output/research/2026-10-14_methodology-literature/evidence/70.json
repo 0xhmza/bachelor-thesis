@@ -1,0 +1,524 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T20:20:15Z",
+      "timestamp": 1790281215094,
+      "version": "4.1.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 44,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              4,
+              21
+            ]
+          ],
+          "date-time": "2020-04-21T00:00:00Z",
+          "timestamp": 1587427200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100002790",
+        "name": "Natural Sciences and Engineering Research Council of Canada",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "RGPIN 06273-2017"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "RGPIN 06273-2017"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100002790",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001804",
+        "name": "Canada Research Chairs",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "950-231002-2016"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "950-231002-2016"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001804",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          21
+        ]
+      ]
+    },
+    "DOI": "10.1145/3313831.3376651",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          27
+        ]
+      ],
+      "date-time": "2020-05-27T14:26:57Z",
+      "timestamp": 1590589617000
+    },
+    "page": "1-12",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 52,
+    "title": [
+      "Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Sandra",
+        "family": "Gabriele",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "York University, Toronto, ON, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sonia",
+        "family": "Chiasson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Carleton University, Ottawa, ON, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. R. C. Aktypi A.and Nurse and M. Goldsmith. 2017. Unwinding Ariadne's identity thread: Privacy risks with fitness trackers and online social networks. In Multimedia Privacy and Security. ACM.",
+        "DOI": "10.1145/3137616.3137617"
+      },
+      {
+        "key": "e_1_3_2_2_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2702123.2702210"
+      },
+      {
+        "key": "e_1_3_2_2_3_1",
+        "volume-title": "Fifteenth Symposium on Usable Privacy and Security ({SOUPS}",
+        "author": "Alqhatani Abdulmajeed",
+        "year": "2019",
+        "unstructured": "Abdulmajeed Alqhatani and Heather Richter Lipford. 2019. \"There is nothing that I need to keep secret\": Sharing Practices and Concerns of Wearable Fitness Data. In Fifteenth Symposium on Usable Privacy and Security ({SOUPS} 2019). USENIX."
+      },
+      {
+        "key": "e_1_3_2_2_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. I. Antón J. B. Earp and J. D. Young. 2010. How internet users' privacy concerns have evolved since 2002. Security & Privacy 8 1 (2010).",
+        "DOI": "10.1109/MSP.2010.38"
+      },
+      {
+        "key": "e_1_3_2_2_5_1",
+        "volume-title": "The privacy paradox--Investigating discrepancies between expressed privacy concerns and actual online behavior--A systematic literature review. Telematics and Informatics 34, 7",
+        "author": "Barth S.",
+        "year": "2017",
+        "unstructured": "S. Barth and M. D. T. De Jong. 2017. The privacy paradox--Investigating discrepancies between expressed privacy concerns and actual online behavior--A systematic literature review. Telematics and Informatics 34, 7 (2017)."
+      },
+      {
+        "key": "e_1_3_2_2_6_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. Bian K. Yoshigoe A. Hicks J. Yuan Z. He M. Xie Y. Guo M. Prosperi R. Salloum and F. Modave. 2016. Mining twitter to Assess the public perception of the ?Internet of Things\". PloS one 11 7 (2016).",
+        "DOI": "10.1371/journal.pone.0158450"
+      },
+      {
+        "key": "e_1_3_2_2_7_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Bilogrevic I.",
+        "unstructured": "I. Bilogrevic and M. Ortlieb. 2016. If you put all the pieces together...: Attitudes towards data combination and sharing across services and companies. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_8_1",
+        "first-page": "1",
+        "article-title": "The Fitbit fault line: two proposals to protect health and fitness data at work",
+        "volume": "16",
+        "author": "Brown Elizabeth A",
+        "year": "2016",
+        "unstructured": "Elizabeth A Brown. 2016. The Fitbit fault line: two proposals to protect health and fitness data at work. Yale J. Health Pol'y L. & Ethics 16 (2016), 1--49.",
+        "journal-title": "Yale J. Health Pol'y L. & Ethics"
+      },
+      {
+        "key": "e_1_3_2_2_9_1",
+        "first-page": "273",
+        "article-title": "Necessary but not sufficient: Standardized mechanisms for privacy notice and choice",
+        "author": "Cranor Lorrie Faith",
+        "year": "2012",
+        "unstructured": "Lorrie Faith Cranor. 2012. Necessary but not sufficient: Standardized mechanisms for privacy notice and choice. J. on Telecomm. & High Tech. L. 10 (2012), 273.",
+        "journal-title": "J. on Telecomm. & High Tech."
+      },
+      {
+        "key": "e_1_3_2_2_10_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "L. F. Cranor J. Reagle and M. S. Ackerman. 2000. Beyond concern: Understanding net users' attitudes about online privacy. The Internet upheaval: raising questions seeking answers in communications policy (2000).",
+        "DOI": "10.7551/mitpress/3874.003.0008"
+      },
+      {
+        "key": "e_1_3_2_2_11_1",
+        "volume-title": "Pervasive Comp. Tech. for Healthcare",
+        "author": "Dhukaram A. V.",
+        "unstructured": "A. V. Dhukaram, C. Baber, B.-J. Elloumi, L.and van Beijnum, and P. De Stefanis. 2011. End-user perception towards pervasive cardiac healthcare services: Benefits, acceptance, adoption, risks, security, privacy and trust. In Pervasive Comp. Tech. for Healthcare. IEEE."
+      },
+      {
+        "key": "e_1_3_2_2_12_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. Fiesler M. Dye J. L. Feuston C. Hiruncharoenvate C. J. Hutto S. Morrison P. Khanipour Roshan U. Pavalanathan A. S. Bruckman and M. De Choudhury. 2017. What (or who) is public?: Privacy settings and social media content sharing. In Computer Supported Cooperative Work and Social Computing. ACM.",
+        "DOI": "10.1145/2998181.2998223"
+      },
+      {
+        "key": "e_1_3_2_2_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cose.2018.04.002"
+      },
+      {
+        "key": "e_1_3_2_2_14_1",
+        "volume-title": "Police Use Fitbit Data to Charge 90-Year-Old Man in Stepdaughter's Killing. (Oct",
+        "author": "Hauser Christine",
+        "year": "2018",
+        "unstructured": "Christine Hauser. 2018. Police Use Fitbit Data to Charge 90-Year-Old Man in Stepdaughter's Killing. (Oct 2018). https://www.nytimes.com/2018/10/03/us/fitbit-murderarrest.html"
+      },
+      {
+        "key": "e_1_3_2_2_15_1",
+        "unstructured": "A. Hilts C. Parsons and J. Knockel. 2016. Every Step You Fake: A Comparative Analysis of Fitness Tracker Privacy and Security. (Feb 2016). https://openeffect.ca/reports/Every_Step_You_Fake.pdf"
+      },
+      {
+        "key": "e_1_3_2_2_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2632048.2632079"
+      },
+      {
+        "key": "e_1_3_2_2_17_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Jensen C.",
+        "unstructured": "C. Jensen and C. Potts. 2004. Privacy policies as decision- making tools: an evaluation of online privacy notices. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijhcs.2005.04.019"
+      },
+      {
+        "key": "e_1_3_2_2_19_1",
+        "volume-title": "Privacy attitudes and privacy behaviour: A review of current research on the privacy paradox phenomenon. Computers & security 64",
+        "author": "Kokolakis Spyros",
+        "year": "2017",
+        "unstructured": "Spyros Kokolakis. 2017. Privacy attitudes and privacy behaviour: A review of current research on the privacy paradox phenomenon. Computers & security 64 (2017), 122--134."
+      },
+      {
+        "key": "e_1_3_2_2_20_1",
+        "volume-title": "Americas Conference on Information Systems. AIS/ICIS.",
+        "author": "Krasnova H.",
+        "unstructured": "H. Krasnova, E. Kolesnikova, and O. Guenther. 2009. \" It won't happen to me!\": self-disclosure in online social networks. In Americas Conference on Information Systems. AIS/ICIS."
+      },
+      {
+        "key": "e_1_3_2_2_21_1",
+        "volume-title": "Workshop on Usable Security. Internet Society.",
+        "author": "Lee L.",
+        "unstructured": "L. Lee, J. Lee, S. Egelman, and D. Wagner. 2016. Information disclosure concerns in the age of wearable computing. In Workshop on Usable Security. Internet Society."
+      },
+      {
+        "key": "e_1_3_2_2_22_1",
+        "volume-title": "Int. Conference on Healthcare Informatics. IEEE.",
+        "author": "Lowens B.",
+        "unstructured": "B. Lowens, V. G. Motti, and K. Caine. 2017. Wearable privacy: Skeletons in the data closet. In Int. Conference on Healthcare Informatics. IEEE."
+      },
+      {
+        "key": "e_1_3_2_2_23_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. Mancini K. Thomas Y. Rogers B. A. Price L. Jedrzejczyk A. K. Bandara A. N. Joinson and B. Nuseibeh. 2009. From spaces to places: emerging contexts in mobile privacy. In Ubiquitous Computing. ACM.",
+        "DOI": "10.1145/1620545.1620547"
+      },
+      {
+        "key": "e_1_3_2_2_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1978942.1979245"
+      },
+      {
+        "key": "e_1_3_2_2_25_1",
+        "volume-title": "Under Armour announces significant data breach of its MyFitnessPal app. (Mar",
+        "author": "Mirabella L.",
+        "year": "2018",
+        "unstructured": "L. Mirabella. 2018. Under Armour announces significant data breach of its MyFitnessPal app. (Mar 2018). https://www.baltimoresun.com/business/underarmour-blog/bs-bz-under-armour-myfitnesspal-breach20180329-story.html"
+      },
+      {
+        "key": "e_1_3_2_2_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "V. G. Motti and K. Caine. 2015. Users' privacy concerns about wearables. In Financial Cryptography and Data Security. Springer.",
+        "DOI": "10.1007/978-3-662-48051-9_17"
+      },
+      {
+        "key": "e_1_3_2_2_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1745-6606.2006.00070.x"
+      },
+      {
+        "key": "e_1_3_2_2_28_1",
+        "volume-title": "PIPEDA Fair Information Principle 9 -- Individual Access. (Jan",
+        "author": "Office of the Privacy Commission",
+        "year": "2018",
+        "unstructured": "Office of the Privacy Commissioner of Canada. 2018. PIPEDA Fair Information Principle 9 -- Individual Access. (Jan 2018). https://www.priv.gc.ca/en/privacy-topics/privacy-lawsin-canada/the-personal-information-protection-andelectronic-documents-act-pipeda"
+      },
+      {
+        "key": "e_1_3_2_2_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.9388"
+      },
+      {
+        "key": "e_1_3_2_2_30_1",
+        "unstructured": "R. Pérez-Peña and M. Rosenberg. 2018. Strava Fitness App Can Reveal Military Sites Analysts Say. (Jan 2018). https://www.nytimes.com/2018/01/29/world/middleeast/ strava-heat-map.html"
+      },
+      {
+        "key": "e_1_3_2_2_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2381966.2381983"
+      },
+      {
+        "key": "e_1_3_2_2_32_1",
+        "volume-title": "Symposium on Usable Privacy and Security. USENIX.",
+        "author": "Rader E.",
+        "unstructured": "E. Rader and J. Slaker. 2017. The importance of visibility for folk theories of sensor data. In Symposium on Usable Privacy and Security. USENIX."
+      },
+      {
+        "key": "e_1_3_2_2_33_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Raij A.",
+        "unstructured": "A. Raij, A. Ghosh, S. Kumar, and M. Srivastava. 2011. Privacy risks emerging from the adoption of innocuous wearable sensors in the mobile environment. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_34_1",
+        "volume-title": "Doubt: An Empirical Investigation of Canadians' Knowledge of Corporate Data Collection and Usage Practices. Canadian Journal of Administrative Sciences",
+        "author": "Rice M. D.",
+        "year": "2018",
+        "unstructured": "M. D. Rice and E. Bogdanov. 2018. Privacy in Doubt: An Empirical Investigation of Canadians' Knowledge of Corporate Data Collection and Usage Practices. Canadian Journal of Administrative Sciences (2018)."
+      },
+      {
+        "key": "e_1_3_2_2_35_1",
+        "volume-title": "With fitness trackers in the workplace, bosses can monitor your every step - and possibly more. (Feb",
+        "author": "Rowland C.",
+        "year": "2019",
+        "unstructured": "C. Rowland. 2019. With fitness trackers in the workplace, bosses can monitor your every step - and possibly more. (Feb 2019). https://www.washingtonpost.com/business/economy/withfitness-trackers-in-the-workplace-bosses-canmonitor-your-every-step--and-possibly-more/2019/02/ 15/75ee0848--2a45--11e9-b011-d8500644dc98_story.html"
+      },
+      {
+        "key": "e_1_3_2_2_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3290605.3300753"
+      },
+      {
+        "key": "e_1_3_2_2_37_1",
+        "volume-title": "The optimism bias. Current biology 21, 23",
+        "author": "Sharot Tali",
+        "year": "2011",
+        "unstructured": "Tali Sharot. 2011. The optimism bias. Current biology 21, 23 (2011), R941--R945."
+      },
+      {
+        "key": "e_1_3_2_2_38_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Shklovski I.",
+        "unstructured": "I. Shklovski, S. D. Mainwaring, H. H. Skúladóttir, and H. Borgthorsson. 2014. Leakiness and creepiness in app space: Perceptions of privacy and mobile app use. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_39_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Skirpan M. W.",
+        "unstructured": "M. W. Skirpan, T. Yeh, and C. Fiesler. 2018. What's at Stake: Characterizing Risk Perceptions of Emerging Technologies. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_40_1",
+        "article-title": "Worldwide survey of fitness trends for 2019",
+        "volume": "22",
+        "author": "Thompson W. R.",
+        "year": "2018",
+        "unstructured": "W. R. Thompson. 2018. Worldwide survey of fitness trends for 2019. Health & Fitness Journal 22, 6 (2018).",
+        "journal-title": "Health & Fitness Journal"
+      },
+      {
+        "key": "e_1_3_2_2_41_1",
+        "volume-title": "Conf. on Human Factors in Computing Systems. ACM.",
+        "author": "Kleek M. Van",
+        "unstructured": "M. Van Kleek, I. Liccardi, R. Binns, J. Zhao, D. J. Weitzner, and N. Shadbolt. 2017. Better the devil you know: Exposing the data sharing practices of smartphone apps. In Conf. on Human Factors in Computing Systems. ACM."
+      },
+      {
+        "key": "e_1_3_2_2_42_1",
+        "volume-title": "Privacy Attitudes and Data Valuation Among Fitness Tracker Users. In International Conference on Information. Springer, 229--239",
+        "author": "Vitak J.",
+        "unstructured": "J. Vitak, Y. Liao, P. Kumar, M. Zimmer, and K. Kritikos. 2018. Privacy Attitudes and Data Valuation Among Fitness Tracker Users. In International Conference on Information. Springer, 229--239."
+      },
+      {
+        "key": "e_1_3_2_2_43_1",
+        "volume-title": "The Data-Driven Life. (Apr",
+        "author": "Wolf G.",
+        "year": "2010",
+        "unstructured": "G. Wolf. 2010. The Data-Driven Life. (Apr 2010). https://www.nytimes.com/2010/05/02/magazine/02selfmeasurement-t.html"
+      },
+      {
+        "key": "e_1_3_2_2_44_1",
+        "volume-title": "Comm. & Society",
+        "author": "Zimmer M.",
+        "year": "2018",
+        "unstructured": "M. Zimmer, P. Kumar, J. Vitak, Y. Liao, and K. Chamberlain Kritikos. 2018. \"There's nothing really they can do with this information\": unpacking how users manage privacy boundaries for personal fitness information. Info., Comm. & Society (2018)."
+      }
+    ],
+    "event": {
+      "name": "CHI '20: CHI Conference on Human Factors in Computing Systems",
+      "location": "Honolulu HI USA",
+      "acronym": "CHI '20",
+      "sponsor": [
+        "SIGCHI ACM Special Interest Group on Computer-Human Interaction"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3313831.3376651",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3313831.3376651",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2026-09-21T18:16:18Z",
+      "timestamp": 1790014578000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3313831.3376651"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          21
+        ]
+      ]
+    },
+    "references-count": 44,
+    "alternative-id": [
+      "10.1145/3313831.3376651",
+      "10.1145/3313831"
+    ],
+    "URL": "https://doi.org/10.1145/3313831.3376651",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          21
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2020-04-23",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

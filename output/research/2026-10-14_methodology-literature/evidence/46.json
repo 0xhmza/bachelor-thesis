@@ -1,0 +1,262 @@
+{
+  "data": {
+    "id": "10.17169/fqs-1.2.1089",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.17169/fqs-1.2.1089",
+      "prefix": "10.17169",
+      "suffix": "fqs-1.2.1089",
+      "identifiers": [
+        {
+          "identifier": "1-28-1089",
+          "identifierType": "publisherId"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "publisherId",
+          "alternateIdentifier": "1-28-1089"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Mayring, Philipp",
+          "nameType": "Personal",
+          "givenName": "Philipp",
+          "familyName": "Mayring",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Qualitative Content Analysis"
+        },
+        {
+          "title": "Qualitative Inhaltsanalyse",
+          "titleType": "TranslatedTitle"
+        },
+        {
+          "title": "Análisis de contenido cualitativo",
+          "titleType": "TranslatedTitle"
+        }
+      ],
+      "publisher": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research",
+      "container": {
+        "type": "Series",
+        "title": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research",
+        "volume": "Vol 1",
+        "firstPage": "No 2 (2000): Qualitative Methods in Various Disciplines I: Psychology"
+      },
+      "publicationYear": 2000,
+      "subjects": [
+        {
+          "subject": "qualitative content analysis; content analysis; category; induction; intercoder-reliability"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2008-08-25",
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2008-08-25",
+          "dateType": "Accepted"
+        },
+        {
+          "date": "2000-06-30",
+          "dateType": "Issued"
+        },
+        {
+          "date": "2008-08-25",
+          "dateType": "Available"
+        },
+        {
+          "date": "2015-02-05",
+          "dateType": "Updated"
+        }
+      ],
+      "language": "en",
+      "types": {
+        "ris": "RPRT",
+        "bibtex": "article",
+        "citeproc": "article-journal",
+        "schemaOrg": "ScholarlyArticle",
+        "resourceType": "Article",
+        "resourceTypeGeneral": "Text"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
+          "rightsUri": "http://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "The article describes an approach of systematic, rule guided qualitative text analysis, which tries to preserve some methodological strengths of quantitative content analysis and widen them to a concept of qualitative procedure. First the development of content analysis is delineated and the basic principles are explained (units of analysis, step models, working with categories, validity and reliability). Then the central procedures of qualitative content analysis, inductive development of categories and deductive application of categories, are worked out. The possibilities of computer programs in supporting those qualitative steps of analysis are shown and the possibilities and limits of the approach are discussed. URN: urn:nbn:de:0114-fqs0002204",
+          "descriptionType": "Abstract"
+        },
+        {
+          "description": "Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, Vol 1, No 2 (2000): Qualitative Methods in Various Disciplines I: Psychology",
+          "descriptionType": "SeriesInformation"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6amF0cz0iaHR0cDovL3d3dy5uY2JpLm5sbS5uaWguZ292L0pBVFMxIiB4bWxuczphaT0iaHR0cDovL3d3dy5jcm9zc3JlZi5vcmcvQWNjZXNzSW5kaWNhdG9ycy54c2QiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTMgaHR0cDovL3NjaGVtYS5kYXRhY2l0ZS5vcmcvbWV0YS9rZXJuZWwtMy9tZXRhZGF0YS54c2QiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE3MTY5L2Zxcy0xLjIuMTA4OTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk1heXJpbmcsIFBoaWxpcHA8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPlF1YWxpdGF0aXZlIENvbnRlbnQgQW5hbHlzaXM8L3RpdGxlPjx0aXRsZSB0aXRsZVR5cGU9IlRyYW5zbGF0ZWRUaXRsZSI+UXVhbGl0YXRpdmUgSW5oYWx0c2FuYWx5c2U8L3RpdGxlPjx0aXRsZSB0aXRsZVR5cGU9IlRyYW5zbGF0ZWRUaXRsZSI+QW7DoWxpc2lzIGRlIGNvbnRlbmlkbyBjdWFsaXRhdGl2bzwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5Gb3J1bSBRdWFsaXRhdGl2ZSBTb3ppYWxmb3JzY2h1bmcgLyBGb3J1bTogUXVhbGl0YXRpdmUgU29jaWFsIFJlc2VhcmNoPC9wdWJsaXNoZXI+PHB1YmxpY2F0aW9uWWVhcj4yMDAwPC9wdWJsaWNhdGlvblllYXI+PHN1YmplY3RzPjxzdWJqZWN0PnF1YWxpdGF0aXZlIGNvbnRlbnQgYW5hbHlzaXM7IGNvbnRlbnQgYW5hbHlzaXM7IGNhdGVnb3J5OyBpbmR1Y3Rpb247IGludGVyY29kZXItcmVsaWFiaWxpdHk8L3N1YmplY3Q+PC9zdWJqZWN0cz48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCI+MjAwOC0wOC0yNTwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iQWNjZXB0ZWQiPjIwMDgtMDgtMjU8L2RhdGU+PGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAwMC0wNi0zMDwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDA4LTA4LTI1PC9kYXRlPjxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDE1LTAyLTA1PC9kYXRlPjwvZGF0ZXM+PGxhbmd1YWdlPmVuPC9sYW5ndWFnZT48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPkFydGljbGU8L3Jlc291cmNlVHlwZT48YWx0ZXJuYXRlSWRlbnRpZmllcnM+PGFsdGVybmF0ZUlkZW50aWZpZXIgYWx0ZXJuYXRlSWRlbnRpZmllclR5cGU9InB1Ymxpc2hlcklkIj4xLTI4LTEwODk8L2FsdGVybmF0ZUlkZW50aWZpZXI+PC9hbHRlcm5hdGVJZGVudGlmaWVycz48cmlnaHRzTGlzdD48cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wIj5UaGlzIHdvcmsgaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsIExpY2Vuc2UuPC9yaWdodHM+PC9yaWdodHNMaXN0PjxkZXNjcmlwdGlvbnM+PGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBhcnRpY2xlIGRlc2NyaWJlcyBhbiBhcHByb2FjaCBvZiBzeXN0ZW1hdGljLCBydWxlIGd1aWRlZCBxdWFsaXRhdGl2ZSB0ZXh0IGFuYWx5c2lzLCB3aGljaCB0cmllcyB0byBwcmVzZXJ2ZSBzb21lIG1ldGhvZG9sb2dpY2FsIHN0cmVuZ3RocyBvZiBxdWFudGl0YXRpdmUgY29udGVudCBhbmFseXNpcyBhbmQgd2lkZW4gdGhlbSB0byBhIGNvbmNlcHQgb2YgcXVhbGl0YXRpdmUgcHJvY2VkdXJlLiBGaXJzdCB0aGUgZGV2ZWxvcG1lbnQgb2YgY29udGVudCBhbmFseXNpcyBpcyBkZWxpbmVhdGVkIGFuZCB0aGUgYmFzaWMgcHJpbmNpcGxlcyBhcmUgZXhwbGFpbmVkICh1bml0cyBvZiBhbmFseXNpcywgc3RlcCBtb2RlbHMsIHdvcmtpbmcgd2l0aCBjYXRlZ29yaWVzLCB2YWxpZGl0eSBhbmQgcmVsaWFiaWxpdHkpLiBUaGVuIHRoZSBjZW50cmFsIHByb2NlZHVyZXMgb2YgcXVhbGl0YXRpdmUgY29udGVudCBhbmFseXNpcywgaW5kdWN0aXZlIGRldmVsb3BtZW50IG9mIGNhdGVnb3JpZXMgYW5kIGRlZHVjdGl2ZSBhcHBsaWNhdGlvbiBvZiBjYXRlZ29yaWVzLCBhcmUgd29ya2VkIG91dC4gVGhlIHBvc3NpYmlsaXRpZXMgb2YgY29tcHV0ZXIgcHJvZ3JhbXMgaW4gc3VwcG9ydGluZyB0aG9zZSBxdWFsaXRhdGl2ZSBzdGVwcyBvZiBhbmFseXNpcyBhcmUgc2hvd24gYW5kIHRoZSBwb3NzaWJpbGl0aWVzIGFuZCBsaW1pdHMgb2YgdGhlIGFwcHJvYWNoIGFyZSBkaXNjdXNzZWQuIFVSTjogdXJuOm5ibjpkZTowMTE0LWZxczAwMDIyMDQ8L2Rlc2NyaXB0aW9uPjxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IlNlcmllc0luZm9ybWF0aW9uIj5Gb3J1bSBRdWFsaXRhdGl2ZSBTb3ppYWxmb3JzY2h1bmcgLyBGb3J1bTogUXVhbGl0YXRpdmUgU29jaWFsIFJlc2VhcmNoLCBWb2wgMSwgTm8gMiAoMjAwMCk6IFF1YWxpdGF0aXZlIE1ldGhvZHMgaW4gVmFyaW91cyBEaXNjaXBsaW5lcyBJOiBQc3ljaG9sb2d5PC9kZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9ucz48L3Jlc291cmNlPgo=",
+      "url": "http://www.qualitative-research.net/index.php/fqs/article/view/1089",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": "http://datacite.org/schema/kernel-3",
+      "source": null,
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 18,
+      "citationsOverTime": [
+        {
+          "year": "2020",
+          "total": 2
+        },
+        {
+          "year": "2022",
+          "total": 14
+        },
+        {
+          "year": "2026",
+          "total": 2
+        }
+      ],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2017-07-06T13:49:44.000Z",
+      "registered": "2017-07-06T13:49:44.000Z",
+      "published": "2000",
+      "updated": "2020-09-18T21:28:06.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "tib.fuub",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "vsdn",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.17169/fqs-1.2.1089",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": [
+          {
+            "id": "10.6084/m9.figshare.19386787",
+            "type": "dois"
+          },
+          {
+            "id": "10.6084/m9.figshare.19386787.v1",
+            "type": "dois"
+          },
+          {
+            "id": "10.3390/ijerph19095478",
+            "type": "dois"
+          },
+          {
+            "id": "10.1177/01614681221087292",
+            "type": "dois"
+          },
+          {
+            "id": "10.1186/s12877-022-03058-8",
+            "type": "dois"
+          },
+          {
+            "id": "10.1186/s12913-022-07950-2",
+            "type": "dois"
+          },
+          {
+            "id": "10.1145/3397481.3450674",
+            "type": "dois"
+          },
+          {
+            "id": "10.1177/23294965211043548",
+            "type": "dois"
+          },
+          {
+            "id": "10.3390/ijerph19074308",
+            "type": "dois"
+          },
+          {
+            "id": "10.1186/s12913-022-07829-2",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s42087-020-00132-8",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s13138-022-00198-7",
+            "type": "dois"
+          },
+          {
+            "id": "10.1007/s12599-022-00743-1",
+            "type": "dois"
+          },
+          {
+            "id": "10.1061/9780784483978.020",
+            "type": "dois"
+          },
+          {
+            "id": "10.3928/00220124-20160920-06",
+            "type": "dois"
+          },
+          {
+            "id": "10.1108/ijpl-09-2021-0053",
+            "type": "dois"
+          },
+          {
+            "id": "10.1080/09638288.2020.1742391",
+            "type": "dois"
+          },
+          {
+            "id": "10.1177/2329488419898221",
+            "type": "dois"
+          }
+        ]
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T01:41:39Z",
+      "timestamp": 1791942099493,
+      "version": "4.3.4"
+    },
+    "reference-count": 95,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "CSCW",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2019-11-07T00:00:00Z",
+          "timestamp": 1573084800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "NSF",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CNS-1703736"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-1703736"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Proc. ACM Hum.-Comput. Interact."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:p>What does reliability mean for building a grounded theory? What about when writing an auto-ethnography? When is it appropriate to use measures like inter-rater reliability (IRR)? Reliability is a familiar concept in traditional scientific practice, but how, and even whether to establish reliability in qualitative research is an oft-debated question. For researchers in highly interdisciplinary fields like computer-supported cooperative work (CSCW) and human-computer interaction (HCI), the question is particularly complex as collaborators bring diverse epistemologies and training to their research. In this article, we use two approaches to understand reliability in qualitative research. We first investigate and describe local norms in the CSCW and HCI literature, then we combine examples from these findings with guidelines from methods literature to help researchers answer questions like: \"should I calculate IRR?\" Drawing on a meta-analysis of a representative sample of CSCW and HCI papers from 2016-2018, we find that authors use a variety of approaches to communicate reliability; notably, IRR is rare, occurring in around 1/9 of qualitative papers. We reflect on current practices and propose guidelines for reporting on reliability in qualitative research using IRR as a central example of a form of agreement. The guidelines are designed to generate discussion and orient new CSCW and HCI scholars and reviewers to reliability in qualitative research.</jats:p>",
+    "DOI": "10.1145/3359174",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          8
+        ]
+      ],
+      "date-time": "2019-11-08T08:40:21Z",
+      "timestamp": 1573202421000
+    },
+    "page": "1-23",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1135,
+    "title": [
+      "Reliability and Inter-rater Reliability in Qualitative Research"
+    ],
+    "prefix": "10.1145",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Nora",
+        "family": "McDonald",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Drexel University, Philadelphia, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarita",
+        "family": "Schoenebeck",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Forte",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Drexel University, Philadelphia, PA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025528"
+      },
+      {
+        "key": "e_1_2_1_2_1",
+        "volume-title": "The international encyclopedia of communication research methods",
+        "author": "Adams Tony E",
+        "year": "2017",
+        "unstructured": "Tony E Adams , Carolyn Ellis , and Stacy Holman Jones . 2017. Autoethnography. The international encyclopedia of communication research methods ( 2017 ), 1--11. Tony E Adams, Carolyn Ellis, and Stacy Holman Jones. 2017. Autoethnography. The international encyclopedia of communication research methods (2017), 1--11."
+      },
+      {
+        "key": "e_1_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0038038597031003015"
+      },
+      {
+        "key": "e_1_2_1_4_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Paul Anthony Atkinson Amanda Coffey Sara Delamont John Lofland and Lyn H. Lofland (Eds.). 2001. Handbook of Ethnography (1 edition ed.). SAGE Publications Ltd London?; Thousand Oaks Calif.  Paul Anthony Atkinson Amanda Coffey Sara Delamont John Lofland and Lyn H. Lofland (Eds.). 2001. Handbook of Ethnography (1 edition ed.). SAGE Publications Ltd London?; Thousand Oaks Calif.",
+        "DOI": "10.4135/9781848608337"
+      },
+      {
+        "key": "e_1_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2818048.2835203"
+      },
+      {
+        "key": "e_1_2_1_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1753326.1753521"
+      },
+      {
+        "key": "e_1_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858344"
+      },
+      {
+        "key": "e_1_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3170427.3185370"
+      },
+      {
+        "key": "e_1_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858326"
+      },
+      {
+        "key": "e_1_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1348/014466601164957"
+      },
+      {
+        "key": "e_1_2_1_11_1",
+        "volume-title": "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)",
+        "author": "Bousseau Adrien",
+        "unstructured": "Adrien Bousseau , Theophanis Tsandilas , Lora Oehlberg , and Wendy E. Mackay . 2016. How Novices Sketch and Prototype Hand-Fabricated Objects . In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16) , 397--408. DOI:https://doi.org/10.1145/2858036.2858159 Adrien Bousseau, Theophanis Tsandilas, Lora Oehlberg, and Wendy E. Mackay. 2016. How Novices Sketch and Prototype Hand-Fabricated Objects. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16), 397--408. DOI:https://doi.org/10.1145/2858036.2858159"
+      },
+      {
+        "key": "e_1_2_1_12_1",
+        "volume-title": "Bowker and Susan Leigh Star",
+        "author": "Geoffrey",
+        "year": "2000",
+        "unstructured": "Geoffrey C. Bowker and Susan Leigh Star . 2000 . Sorting Things Out: Classification and Its Consequences (Revised edition ed.). The MIT Press , Cambridge, Massachusetts London, England. Geoffrey C. Bowker and Susan Leigh Star. 2000. Sorting Things Out: Classification and Its Consequences (Revised edition ed.). The MIT Press, Cambridge, Massachusetts London, England."
+      },
+      {
+        "key": "e_1_2_1_13_1",
+        "volume-title": "Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)",
+        "author": "Boyd LouAnne E.",
+        "unstructured": "LouAnne E. Boyd , Alejandro Rangel , Helen Tomimbang , Andrea Conejo-Toledo , Kanika Patel , Monica Tentori , and Gillian R. Hayes . 2016. SayWAT: Augmenting Face-to-Face Conversations for Adults with Autism . In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16) , 4872--4883. DOI:https://doi.org/10.1145/2858036.2858215 LouAnne E. Boyd, Alejandro Rangel, Helen Tomimbang, Andrea Conejo-Toledo, Kanika Patel, Monica Tentori, and Gillian R. Hayes. 2016. SayWAT: Augmenting Face-to-Face Conversations for Adults with Autism. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16), 4872--4883. DOI:https://doi.org/10.1145/2858036.2858215"
+      },
+      {
+        "key": "e_1_2_1_14_1",
+        "volume-title": "Hayes",
+        "author": "Boyd LouAnne E.",
+        "year": "2017",
+        "unstructured": "LouAnne E. Boyd , Kyle Rector , Halley Profita , Abigale J. Stangl , Annuska Zolyomi , Shaun K. Kane , and Gillian R . Hayes . 2017 . Understanding the Role Fluidity of Stakeholders During Assistive Technology Research ?In the Wild.\" In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17), 6147--6158. DOI:https://doi.org/10.1145/3025453.3025493 LouAnne E. Boyd, Kyle Rector, Halley Profita, Abigale J. Stangl, Annuska Zolyomi, Shaun K. Kane, and Gillian R. Hayes. 2017. Understanding the Role Fluidity of Stakeholders During Assistive Technology Research ?In the Wild.\" In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17), 6147--6158. DOI:https://doi.org/10.1145/3025453.3025493"
+      },
+      {
+        "key": "e_1_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1191/1478088706qp063oa"
+      },
+      {
+        "key": "e_1_2_1_16_1",
+        "volume-title": "Burgess",
+        "author": "Bryman Alan",
+        "year": "1994",
+        "unstructured": "Alan Bryman and Robert G . Burgess . 1994 . Analyzing Qualitative Data. Routledge , London. Alan Bryman and Robert G. Burgess. 1994. Analyzing Qualitative Data. Routledge, London."
+      },
+      {
+        "key": "e_1_2_1_17_1",
+        "unstructured": "G. Burrell and G. Morgan. 1979. Sociological Paradigms and Organizational Analysis: Elements of the Sociology of Corporate Life. Ashgate Publishing.  G. Burrell and G. Morgan. 1979. Sociological Paradigms and Organizational Analysis: Elements of the Sociology of Corporate Life. Ashgate Publishing."
+      },
+      {
+        "key": "e_1_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858498"
+      },
+      {
+        "key": "e_1_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0049124113500475"
+      },
+      {
+        "key": "e_1_2_1_20_1",
+        "volume-title": "Constructing Grounded Theory: A Practical Guide through Qualitative Analysis (1 edition ed.)",
+        "author": "Charmaz Kathy",
+        "unstructured": "Kathy Charmaz . 2006. Constructing Grounded Theory: A Practical Guide through Qualitative Analysis (1 edition ed.) . SAGE Publications Ltd , London?; Thousand Oaks , Calif. Kathy Charmaz. 2006. Constructing Grounded Theory: A Practical Guide through Qualitative Analysis (1 edition ed.). SAGE Publications Ltd, London?; Thousand Oaks, Calif."
+      },
+      {
+        "key": "e_1_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3173765"
+      },
+      {
+        "key": "e_1_2_1_22_1",
+        "volume-title": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17)",
+        "author": "Chung Chia-Fang",
+        "unstructured": "Chia-Fang Chung , Elena Agapie , Jessica Schroeder , Sonali Mishra , James Fogarty , and Sean A. Munson . 2017. When Personal Tracking Becomes Social: Examining the Use of Instagram for Healthy Eating . In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17) , 1674--1687. DOI:https://doi.org/10.1145/3025453.3025747 Chia-Fang Chung, Elena Agapie, Jessica Schroeder, Sonali Mishra, James Fogarty, and Sean A. Munson. 2017. When Personal Tracking Becomes Social: Examining the Use of Instagram for Healthy Eating. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17), 1674--1687. DOI:https://doi.org/10.1145/3025453.3025747"
+      },
+      {
+        "key": "e_1_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-soc-073014-112142"
+      },
+      {
+        "key": "e_1_2_1_24_1",
+        "volume-title": "Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory",
+        "author": "Corbin Juliet",
+        "unstructured": "Juliet Corbin and Anselm Strauss . 2007. Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory ( 3 rd ed.). SAGE Publications, Inc. Juliet Corbin and Anselm Strauss. 2007. Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory (3rd ed.). SAGE Publications, Inc.",
+        "edition": "3"
+      },
+      {
+        "key": "e_1_2_1_25_1",
+        "volume-title": "Qualitative Inquiry and Research Design?: Choosing Among Five Traditions",
+        "author": "Creswell John W.",
+        "unstructured": "John W. Creswell . 1998. Qualitative Inquiry and Research Design?: Choosing Among Five Traditions . Sage Publications Inc, Thousand Oaks , Calif . John W. Creswell. 1998. Qualitative Inquiry and Research Design?: Choosing Among Five Traditions. Sage Publications Inc, Thousand Oaks, Calif."
+      },
+      {
+        "key": "e_1_2_1_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2998181.2998290"
+      },
+      {
+        "key": "e_1_2_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1124772.1124855"
+      },
+      {
+        "key": "e_1_2_1_28_1",
+        "volume-title": "Ways of Knowing in HCI (Judith S Olson and Wendy A. Kellogg (Eds))",
+        "author": "Dourish Paul",
+        "unstructured": "Paul Dourish . 2014. Reading and Interpreting Ethnography . In Ways of Knowing in HCI (Judith S Olson and Wendy A. Kellogg (Eds)) . Springer-Verlag , New York , 1--23. Paul Dourish. 2014. Reading and Interpreting Ethnography. In Ways of Knowing in HCI (Judith S Olson and Wendy A. Kellogg (Eds)). Springer-Verlag, New York, 1--23."
+      },
+      {
+        "key": "e_1_2_1_29_1",
+        "first-page": "1",
+        "article-title": "Validity and Reliability in Social Science Research",
+        "volume": "38",
+        "author": "Drost Ellen A.",
+        "year": "2011",
+        "unstructured": "Ellen A. Drost . 2011 . Validity and Reliability in Social Science Research . Education Research and Perspectives 38 , 1 (June 2011), 105--123. Ellen A. Drost. 2011. Validity and Reliability in Social Science Research. Education Research and Perspectives 38, 1 (June 2011), 105--123.",
+        "journal-title": "Education Research and Perspectives"
+      },
+      {
+        "key": "e_1_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1348/014466599162782"
+      },
+      {
+        "key": "e_1_2_1_31_1",
+        "volume-title": "Shaw",
+        "author": "Emerson Robert M.",
+        "year": "2011",
+        "unstructured": "Robert M. Emerson , Rachel I. Fretz , and Linda L . Shaw . 2011 . Writing Ethnographic Fieldnotes, Second Edition ( Second edition ed.). University of Chicago Press , Chicago. Robert M. Emerson, Rachel I. Fretz, and Linda L. Shaw. 2011. Writing Ethnographic Fieldnotes, Second Edition (Second edition ed.). University of Chicago Press, Chicago."
+      },
+      {
+        "key": "e_1_2_1_32_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Casey Fiesler Shannon Morrison and Amy S Bruckman. 2016. An archive of their own: a case study of feminist HCI and values in design. 2574--2585.  Casey Fiesler Shannon Morrison and Amy S Bruckman. 2016. An archive of their own: a case study of feminist HCI and values in design. 2574--2585.",
+        "DOI": "10.1145/2858036.2858409"
+      },
+      {
+        "key": "e_1_2_1_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2818048.2820031"
+      },
+      {
+        "key": "e_1_2_1_34_1",
+        "volume-title": "Proc. ACM Hum.-Comput. Interact. 1, CSCW (December",
+        "author": "Gach Katie Z.",
+        "year": "2017",
+        "unstructured": "Katie Z. Gach , Casey Fiesler , and Jed R. Brubaker . 2017. \"Control Your Emotions, Potter\": An Analysis of Grief Policing on Facebook in Response to Celebrity Death . Proc. ACM Hum.-Comput. Interact. 1, CSCW (December 2017 ), 47:1--47:18. DOI:https://doi.org/10.1145/3134682 Katie Z. Gach, Casey Fiesler, and Jed R. Brubaker. 2017. \"Control Your Emotions, Potter\": An Analysis of Grief Policing on Facebook in Response to Celebrity Death. Proc. ACM Hum.-Comput. Interact. 1, CSCW (December 2017), 47:1--47:18. DOI:https://doi.org/10.1145/3134682"
+      },
+      {
+        "key": "e_1_2_1_35_1",
+        "volume-title": "The Interpretation of Cultures",
+        "author": "Geertz C.",
+        "unstructured": "C. Geertz . 1983. Thick Description: toward an interpretive theory of culture . In The Interpretation of Cultures . Basic Books , New York , 3--32. C. Geertz. 1983. Thick Description: toward an interpretive theory of culture. In The Interpretation of Cultures. Basic Books, New York, 3--32."
+      },
+      {
+        "key": "e_1_2_1_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858070"
+      },
+      {
+        "key": "e_1_2_1_37_1",
+        "volume-title": "Natural Setting",
+        "author": "Given Lisa",
+        "unstructured": "Lisa Given . 2008. Natural Setting . In The Sage encyclopedia of qualitative research methods. SAGE, London . Lisa Given. 2008. Natural Setting. In The Sage encyclopedia of qualitative research methods. SAGE, London."
+      },
+      {
+        "key": "e_1_2_1_38_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Barney Glaser and Anselm Strauss. 1967. The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Transaction.  Barney Glaser and Anselm Strauss. 1967. The Discovery of Grounded Theory: Strategies for Qualitative Research. Aldine Transaction.",
+        "DOI": "10.1097/00006199-196807000-00014"
+      },
+      {
+        "key": "e_1_2_1_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858231"
+      },
+      {
+        "key": "e_1_2_1_40_1",
+        "volume-title": "Retrieved",
+        "author": "Grinter Beki",
+        "year": "2010",
+        "unstructured": "Beki Grinter . 2010 . Inter-Rater Reliability. Beki's Blog . Retrieved January 29, 2019 from https://beki70.wordpress.com/2010/09/09/inter-rater-reliability-apply-with-care/ Beki Grinter. 2010. Inter-Rater Reliability. Beki's Blog. Retrieved January 29, 2019 from https://beki70.wordpress.com/2010/09/09/inter-rater-reliability-apply-with-care/"
+      },
+      {
+        "key": "e_1_2_1_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF02766777"
+      },
+      {
+        "key": "e_1_2_1_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.20982/tqmp.08.1.p023"
+      },
+      {
+        "key": "e_1_2_1_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10508406.2013.802652"
+      },
+      {
+        "key": "e_1_2_1_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858468"
+      },
+      {
+        "key": "e_1_2_1_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/192844.193065"
+      },
+      {
+        "key": "e_1_2_1_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274344"
+      },
+      {
+        "key": "e_1_2_1_47_1",
+        "volume-title": "Proc. ACM Hum.-Comput. Interact. 2, CSCW (November",
+        "author": "Jiang Jialun",
+        "year": "2018",
+        "unstructured": "Jialun \"Aaron\" Jiang , Casey Fiesler , and Jed R. Brubaker . 2018. \"The Perfect One\": Understanding Communication Practices and Challenges with Animated GIFs . Proc. ACM Hum.-Comput. Interact. 2, CSCW (November 2018 ), 80:1--80:20. DOI:https://doi.org/10.1145/3274349 Jialun \"Aaron\" Jiang, Casey Fiesler, and Jed R. Brubaker. 2018. \"The Perfect One\": Understanding Communication Practices and Challenges with Animated GIFs. Proc. ACM Hum.-Comput. Interact. 2, CSCW (November 2018), 80:1--80:20. DOI:https://doi.org/10.1145/3274349"
+      },
+      {
+        "key": "e_1_2_1_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274353"
+      },
+      {
+        "key": "e_1_2_1_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274354"
+      },
+      {
+        "key": "e_1_2_1_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3027063.3027084"
+      },
+      {
+        "key": "e_1_2_1_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025750"
+      },
+      {
+        "key": "e_1_2_1_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2998181.2998184"
+      },
+      {
+        "key": "e_1_2_1_53_1",
+        "volume-title": "Miller",
+        "author": "Kirk Jerome",
+        "year": "1986",
+        "unstructured": "Jerome Kirk and Marc L . Miller . 1986 . Reliability and validity in qualitative research. Sage Publications, Beverly Hills . Jerome Kirk and Marc L. Miller. 1986. Reliability and validity in qualitative research. Sage Publications, Beverly Hills."
+      },
+      {
+        "key": "e_1_2_1_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3134693"
+      },
+      {
+        "key": "e_1_2_1_55_1",
+        "volume-title": "Content Analysis: An Introduction to Its Methodology",
+        "author": "Krippendorff Klaus H.",
+        "year": "2003",
+        "unstructured": "Klaus H. Krippendorff . 2003 . Content Analysis: An Introduction to Its Methodology ( 2 nd ed.). Sage Publications, Inc. Klaus H. Krippendorff. 2003. Content Analysis: An Introduction to Its Methodology (2nd ed.). Sage Publications, Inc.",
+        "edition": "2"
+      },
+      {
+        "key": "e_1_2_1_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1525822X0001200301"
+      },
+      {
+        "key": "e_1_2_1_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2529310"
+      },
+      {
+        "key": "e_1_2_1_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274370"
+      },
+      {
+        "key": "e_1_2_1_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274372"
+      },
+      {
+        "key": "e_1_2_1_60_1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18)",
+        "author": "Bras Pierre Le",
+        "unstructured": "Pierre Le Bras , David A. Robb , Thomas S. Methven , Stefano Padilla , and Mike J. Chantler . 2018. Improving User Confidence in Concept Maps: Exploring Data Driven Explanations . In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18) , 404:1--404:13. DOI:https://doi.org/10.1145/3173574.3173978 Pierre Le Bras, David A. Robb, Thomas S. Methven, Stefano Padilla, and Mike J. Chantler. 2018. Improving User Confidence in Concept Maps: Exploring Data Driven Explanations. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18), 404:1--404:13. DOI:https://doi.org/10.1145/3173574.3173978"
+      },
+      {
+        "key": "e_1_2_1_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3102/00346543052001031"
+      },
+      {
+        "key": "e_1_2_1_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ev.1427"
+      },
+      {
+        "key": "e_1_2_1_63_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Matthew Lombard Jennifer Snyder? Duch and Cheryl Campanella Bracken. Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability. Human Communication Research 28 4 587--604. DOI:https://doi.org/10.1111/j.1468--2958.2002.tb00826.x  Matthew Lombard Jennifer Snyder? Duch and Cheryl Campanella Bracken. Content Analysis in Mass Communication: Assessment and Reporting of Intercoder Reliability. Human Communication Research 28 4 587--604. DOI:https://doi.org/10.1111/j.1468--2958.2002.tb00826.x",
+        "DOI": "10.1111/j.1468-2958.2002.tb00826.x"
+      },
+      {
+        "key": "e_1_2_1_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1468794115577012"
+      },
+      {
+        "key": "e_1_2_1_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3173922"
+      },
+      {
+        "key": "e_1_2_1_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858080"
+      },
+      {
+        "key": "e_1_2_1_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274387"
+      },
+      {
+        "key": "e_1_2_1_68_1",
+        "volume-title": "Nobody Gets Mad\": Social Media, Privacy, and Personal Responsibility Among Low-SES Youth. Social Media + Society 3, 2 (April",
+        "author": "Marwick Alice",
+        "year": "2017",
+        "unstructured": "Alice Marwick , Claire Fontaine , and danah boyd. 2017. \" Nobody Sees It , Nobody Gets Mad\": Social Media, Privacy, and Personal Responsibility Among Low-SES Youth. Social Media + Society 3, 2 (April 2017 ), 2056305117710455. Alice Marwick, Claire Fontaine, and danah boyd. 2017. \"Nobody Sees It, Nobody Gets Mad\": Social Media, Privacy, and Personal Responsibility Among Low-SES Youth. Social Media + Society 3, 2 (April 2017), 2056305117710455."
+      },
+      {
+        "key": "e_1_2_1_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274392"
+      },
+      {
+        "key": "e_1_2_1_70_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D. R. Millen. 2000. Rapid ethnography: time deepening strategies for HCI field research. 280--286.  D. R. Millen. 2000. Rapid ethnography: time deepening strategies for HCI field research. 280--286.",
+        "DOI": "10.1145/347642.347763"
+      },
+      {
+        "key": "e_1_2_1_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3174133"
+      },
+      {
+        "key": "e_1_2_1_72_1",
+        "unstructured": "M. J. Muller and S. Kogan. 2010. Grounded theory method in hci and cscw. In Technical Report. IBM Watson Research Center.  M. J. Muller and S. Kogan. 2010. Grounded theory method in hci and cscw. In Technical Report. IBM Watson Research Center."
+      },
+      {
+        "key": "e_1_2_1_73_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Aisling Ann O'Kane Yvonne Rogers and Ann E Blandford. 2014. Gaining empathy for non-routine mobile device use through autoethnography. 987--990.  Aisling Ann O'Kane Yvonne Rogers and Ann E Blandford. 2014. Gaining empathy for non-routine mobile device use through autoethnography. 987--990.",
+        "DOI": "10.1145/2556288.2557179"
+      },
+      {
+        "key": "e_1_2_1_74_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Judith S. Olson and Wendy A. Kellogg (Eds.). 2014. Ways of Knowing in HCI. Springer-Verlag New York.  Judith S. Olson and Wendy A. Kellogg (Eds.). 2014. Ways of Knowing in HCI. Springer-Verlag New York.",
+        "DOI": "10.1007/978-1-4939-0378-8"
+      },
+      {
+        "key": "e_1_2_1_75_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025871"
+      },
+      {
+        "key": "e_1_2_1_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858381"
+      },
+      {
+        "key": "e_1_2_1_77_1",
+        "volume-title": "Proc. ACM Hum.-Comput. Interact. 2, CSCW (November",
+        "author": "Pina Laura R.",
+        "year": "2018",
+        "unstructured": "Laura R. Pina , Carmen Gonzalez , Carolina Nieto , Wendy Roldan , Edgar Onofre , and Jason C. Yip . 2018. How Latino Children in the U.S. Engage in Collaborative Online Information Problem Solving with Their Families . Proc. ACM Hum.-Comput. Interact. 2, CSCW (November 2018 ), 140:1--140:26. DOI:https://doi.org/10.1145/3274409 Laura R. Pina, Carmen Gonzalez, Carolina Nieto, Wendy Roldan, Edgar Onofre, and Jason C. Yip. 2018. How Latino Children in the U.S. Engage in Collaborative Online Information Problem Solving with Their Families. Proc. ACM Hum.-Comput. Interact. 2, CSCW (November 2018), 140:1--140:26. DOI:https://doi.org/10.1145/3274409"
+      },
+      {
+        "key": "e_1_2_1_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/647068.715503"
+      },
+      {
+        "key": "e_1_2_1_79_1",
+        "volume-title": "The SAGE Handbook of Action Research (P. Reason and H. Bradbury (eds))",
+        "author": "Rahman MD A.",
+        "unstructured": "MD A. Rahman . 2008. Some Trends in the Praxis of Participatory Action Research . In The SAGE Handbook of Action Research (P. Reason and H. Bradbury (eds)) . Sage , London , 49--62. MD A. Rahman. 2008. Some Trends in the Praxis of Participatory Action Research. In The SAGE Handbook of Action Research (P. Reason and H. Bradbury (eds)). Sage, London, 49--62."
+      },
+      {
+        "key": "e_1_2_1_80_1",
+        "volume-title": "Proc. ACM Hum.-Comput. Interact. 1, CSCW (December",
+        "author": "Raj Shriti",
+        "year": "2017",
+        "unstructured": "Shriti Raj , Mark W. Newman , Joyce M. Lee , and Mark S. Ackerman . 2017. Understanding Individual and Collaborative Problem-Solving with Patient-Generated Data: Challenges and Opportunities . Proc. ACM Hum.-Comput. Interact. 1, CSCW (December 2017 ), 88:1--88:18. DOI:https://doi.org/10.1145/3134723 Shriti Raj, Mark W. Newman, Joyce M. Lee, and Mark S. Ackerman. 2017. Understanding Individual and Collaborative Problem-Solving with Patient-Generated Data: Challenges and Opportunities. Proc. ACM Hum.-Comput. Interact. 1, CSCW (December 2017), 88:1--88:18. DOI:https://doi.org/10.1145/3134723"
+      },
+      {
+        "key": "e_1_2_1_81_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3173574.3173654"
+      },
+      {
+        "key": "e_1_2_1_82_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2818048.2819999"
+      },
+      {
+        "key": "e_1_2_1_83_1",
+        "volume-title": "The Phenomenology of the Social World",
+        "author": "Schutz Alfred",
+        "unstructured": "Alfred Schutz . 1967. The Phenomenology of the Social World . Northwestern University Press . Alfred Schutz. 1967. The Phenomenology of the Social World. Northwestern University Press."
+      },
+      {
+        "key": "e_1_2_1_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858551"
+      },
+      {
+        "key": "e_1_2_1_85_1",
+        "volume-title": "Qualitative Analysis for Social Scientists",
+        "author": "Strauss Anselm",
+        "unstructured": "Anselm Strauss . 1987. Qualitative Analysis for Social Scientists . Cambridge University Press , Cambridge . Anselm Strauss. 1987. Qualitative Analysis for Social Scientists. Cambridge University Press, Cambridge."
+      },
+      {
+        "key": "e_1_2_1_86_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025676"
+      },
+      {
+        "key": "e_1_2_1_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858477"
+      },
+      {
+        "key": "e_1_2_1_88_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3134741"
+      },
+      {
+        "key": "e_1_2_1_89_1",
+        "volume-title": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18)",
+        "author": "Wang April Y.",
+        "unstructured": "April Y. Wang , Ryan Mitts , Philip J. Guo , and Parmit K. Chilana . 2018. Mismatch of Expectations: How Modern Learning Resources Fail Conversational Programmers . In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18) , 511:1--511:13. DOI:https://doi.org/10.1145/3173574.3174085 April Y. Wang, Ryan Mitts, Philip J. Guo, and Parmit K. Chilana. 2018. Mismatch of Expectations: How Modern Learning Resources Fail Conversational Programmers. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18), 511:1--511:13. DOI:https://doi.org/10.1145/3173574.3174085"
+      },
+      {
+        "key": "e_1_2_1_90_1",
+        "volume-title": "Sampling Techniques",
+        "author": "William G. Cochran",
+        "unstructured": "G. Cochran William . 1977. Sampling Techniques , 3rd Edition (3 rd edition ed.). John Wiley & Sons , New York . G. Cochran William. 1977. Sampling Techniques, 3rd Edition (3rd edition ed.). John Wiley & Sons, New York.",
+        "edition": "3"
+      },
+      {
+        "key": "e_1_2_1_91_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3274459"
+      },
+      {
+        "key": "e_1_2_1_92_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2818048.2819961"
+      },
+      {
+        "key": "e_1_2_1_93_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858210"
+      },
+      {
+        "key": "e_1_2_1_94_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3025453.3025617"
+      },
+      {
+        "key": "e_1_2_1_95_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2858036.2858380"
+      }
+    ],
+    "container-title": [
+      "Proceedings of the ACM on Human-Computer Interaction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3359174",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3359174",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3359174",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2025-06-17T19:12:53Z",
+      "timestamp": 1750187573000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3359174"
+      }
+    },
+    "subtitle": [
+      "Norms and Guidelines for CSCW and HCI Practice"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "references-count": 95,
+    "journal-issue": {
+      "issue": "CSCW",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1145/3359174"
+    ],
+    "URL": "https://doi.org/10.1145/3359174",
+    "relation": {},
+    "ISSN": [
+      "2573-0142"
+    ],
+    "issn-type": [
+      {
+        "value": "2573-0142",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2019-11-07",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

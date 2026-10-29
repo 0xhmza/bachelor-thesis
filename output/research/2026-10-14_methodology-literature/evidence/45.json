@@ -1,0 +1,361 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T01:25:58Z",
+      "timestamp": 1791941158149,
+      "version": "4.3.4"
+    },
+    "reference-count": 22,
+    "publisher": "SAGE Publications",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2006-03-01T00:00:00Z",
+          "timestamp": 1141171200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2006-03-01T00:00:00Z",
+          "timestamp": 1141171200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Qualitative Methods"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:p>In this article, the authors describe how they used a hybrid process of inductive and deductive thematic analysis to interpret raw data in a doctoral study on the role of performance feedback in the self-assessment of nursing practice. The methodological approach integrated data-driven codes with theory-driven ones based on the tenets of social phenomenology. The authors present a detailed exemplar of the staged process of data coding and identification of themes. This process demonstrates how analysis of the raw data from interview transcripts and organizational documents progressed toward the identification of overarching themes that captured the phenomenon of performance feedback as described by participants in the study.</jats:p>",
+    "DOI": "10.1177/160940690600500107",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          19
+        ]
+      ],
+      "date-time": "2017-07-19T09:06:58Z",
+      "timestamp": 1500455218000
+    },
+    "page": "80-92",
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9198,
+    "title": [
+      "Demonstrating Rigor Using Thematic Analysis: A Hybrid Approach of Inductive and Deductive Coding and Theme Development"
+    ],
+    "prefix": "10.1177",
+    "volume": "5",
+    "author": [
+      {
+        "given": "Jennifer",
+        "family": "Fereday",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Youth & Women's Health Service, North Adelaide, South Australia, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eimear",
+        "family": "Muir-Cochrane",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of South Australia, Adelaide, South Australia, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2006,
+          3,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-160940690600500107",
+        "unstructured": "Aroni R., Goeman D., Stewart K., Sawyer S., Abramson M., Thien F.  (1999, July). Concepts of rigour: When methodological, clinical and ethical interests interact. Paper presented at the First AQR Conference, Melbourne, Australia. Retrieved May 9, 2005, from http://www.latrobe.edu.au/aqr/offer/papers/RAroni.htm."
+      },
+      {
+        "key": "bibr2-160940690600500107",
+        "volume-title": "Transforming qualitative information: Thematic analysis and code development.",
+        "author": "Boyatzis R.",
+        "year": "1998"
+      },
+      {
+        "key": "bibr3-160940690600500107",
+        "first-page": "163",
+        "volume-title": "Doing qualitative research",
+        "author": "Crabtree B.",
+        "year": "1999"
+      },
+      {
+        "key": "bibr4-160940690600500107",
+        "volume-title": "The foundations of social research.",
+        "author": "Crotty M.",
+        "year": "1998"
+      },
+      {
+        "key": "bibr5-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0020-7489(01)00063-3"
+      },
+      {
+        "key": "bibr6-160940690600500107",
+        "volume-title": "The public health researcher: A methodological approach.",
+        "author": "Daly J.",
+        "year": "1997"
+      },
+      {
+        "key": "bibr7-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1440-172X.1998.00105.x"
+      },
+      {
+        "key": "bibr8-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5172/conu.17.1-2.137"
+      },
+      {
+        "key": "bibr9-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1322-7696(08)60511-9"
+      },
+      {
+        "key": "bibr10-160940690600500107",
+        "first-page": "44",
+        "volume-title": "Critical moments in qualitative research",
+        "author": "Higgs J.",
+        "year": "2001"
+      },
+      {
+        "key": "bibr11-160940690600500107",
+        "first-page": "3",
+        "volume-title": "Critical moments in qualitative research",
+        "author": "Horsfall D.",
+        "year": "2001"
+      },
+      {
+        "key": "bibr12-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1365-2648.1994.tb01177.x"
+      },
+      {
+        "key": "bibr13-160940690600500107",
+        "first-page": "95",
+        "volume-title": "Critical issues in qualitative research methods",
+        "author": "Leininger M.",
+        "year": "1994"
+      },
+      {
+        "key": "bibr14-160940690600500107",
+        "volume-title": "Your practice, continuing competence and self-regulation [Pamphlet].",
+        "author": "Nurses Board of South Australia.",
+        "year": "2000"
+      },
+      {
+        "key": "bibr15-160940690600500107",
+        "volume-title": "Qualitative research & evaluation methods",
+        "author": "Patton M.",
+        "year": "2002",
+        "edition": "3"
+      },
+      {
+        "key": "bibr16-160940690600500107",
+        "volume-title": "Qualitative research methods: A health focus.",
+        "author": "Rice P.",
+        "year": "1999"
+      },
+      {
+        "key": "bibr17-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0029-6554(97)90043-9"
+      },
+      {
+        "key": "bibr18-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1049732302012001008"
+      },
+      {
+        "key": "bibr19-160940690600500107",
+        "volume-title": "The phenomenology of the social world",
+        "author": "Schutz A.",
+        "year": "1967"
+      },
+      {
+        "key": "bibr20-160940690600500107",
+        "volume-title": "On phenomenology and social relations: Selected writings",
+        "author": "Schutz A.",
+        "year": "1970"
+      },
+      {
+        "key": "bibr21-160940690600500107",
+        "volume-title": "Collected papers I: The problem of social reality",
+        "author": "Schutz A.",
+        "year": "1973"
+      },
+      {
+        "key": "bibr22-160940690600500107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1365-2648.2004.03207.x"
+      }
+    ],
+    "container-title": [
+      "International Journal of Qualitative Methods"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/160940690600500107",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/160940690600500107",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/160940690600500107",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2026-04-29T10:13:25Z",
+      "timestamp": 1777457605000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/160940690600500107"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          3
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/160940690600500107"
+    ],
+    "URL": "https://doi.org/10.1177/160940690600500107",
+    "relation": {},
+    "ISSN": [
+      "1609-4069",
+      "1609-4069"
+    ],
+    "issn-type": [
+      {
+        "value": "1609-4069",
+        "type": "print"
+      },
+      {
+        "value": "1609-4069",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          3
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T02:24:48Z",
+      "timestamp": 1791944688178,
+      "version": "4.3.4"
+    },
+    "publisher-location": "2455 Teller Road, Thousand Oaks California 91320 ",
+    "reference-count": 0,
+    "publisher": "SAGE Publications, Inc.",
+    "isbn-type": [
+      {
+        "value": "9781506395661",
+        "type": "print"
+      },
+      {
+        "value": "9781071878781",
+        "type": "electronic"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "DOI": "10.4135/9781071878781",
+    "type": "monograph",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          2
+        ]
+      ],
+      "date-time": "2022-02-02T09:09:10Z",
+      "timestamp": 1643792950000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 3441,
+    "title": [
+      "Content Analysis: An Introduction to Its Methodology"
+    ],
+    "prefix": "10.4135",
+    "author": [
+      {
+        "given": "Klaus",
+        "family": "Krippendorff",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "container-title": [],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          2
+        ]
+      ],
+      "date-time": "2022-02-02T09:09:10Z",
+      "timestamp": 1643792950000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://methods.sagepub.com/book/content-analysis-4e"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "ISBN": [
+      "9781506395661",
+      "9781071878781"
+    ],
+    "references-count": 0,
+    "alternative-id": [
+      "10.4135/9781071878781"
+    ],
+    "URL": "https://doi.org/10.4135/9781071878781",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,1439 @@
+{
+ "nodes": [
+  {
+   "id": "scripts_app_ranking_readme_document",
+   "label": "App-ranking project, current v005",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "document"
+  },
+  {
+   "id": "scripts_app_ranking_readme_versions",
+   "label": "v005 current; v004 kept, its title rule paired different products",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "opening",
+   "summary": "v001 percentile merge and v002 store alternation using worldwide Play counts remain for history/comparison; v003 implements the25October German-market popularity score."
+  },
+  {
+   "id": "scripts_app_ranking_readme_inputs",
+   "label": "Collector outputs, keywords and screening decisions",
+   "description": "AppStorev007,Playv004,keywords.csv,screening.csvwithdecision,E1-E5,category,reason;configaliases/manualpairs.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Inputs"
+  },
+  {
+   "id": "scripts_app_ranking_readme_method",
+   "label": "Pool depth, merge listings, calibrate popularity and cap providers",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v003 / Method",
+   "summary": "Remove preinstalled listings; match by provider/title or manual pairs; P=v+c*r with positive matched calibration before eligibility; page-view shares proxy platform users. Sort descending score/stable key; aliases normalize providers; exclusion in either listing excludes candidate."
+  },
+  {
+   "id": "scripts_app_ranking_readme_pending",
+   "label": "Unscreened candidates count provisionally eligible and pending",
+   "description": "Selectionfinalonlywhenno pendingdecisionsremain.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Method"
+  },
+  {
+   "id": "scripts_app_ranking_readme_outputs",
+   "label": "Ranking outputs and generated LaTeX sample table",
+   "description": "selection,excluded,sensitivity,report,screening-sheetunderignoredoutput;also writes03_Thesis/tables/app-sample.tex.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Outputs"
+  },
+  {
+   "id": "scripts_app_ranking_readme_basis",
+   "label": "Store counts have different geographic bases",
+   "description": "AppleratingcountGerman;Playratings/installsworldwide,histogramcountryscaledworldwide,reviewcountcountry.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "What counts mean"
+  },
+  {
+   "id": "scripts_app_ranking_readme_legacy_output",
+   "label": "v004 renames the v003 exposure field to popularity",
+   "summary": "README names the paper score P while v003 keeps exposure in existing output; calculation, calibration and sample remain unchanged.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v003 / Method"
+  },
+  {
+   "id": "scripts_app_ranking_readme_calibration_limits",
+   "label": "Page-view-share scaling gives review-equivalent ranking units",
+   "summary": "iOS/Android mobile web page-view shares approximate platform users; score compares observed feedback and does not estimate actual users or privacy-communication encounters; absent frame listing contributes zero without implying unavailability.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v003 / Method"
+  },
+  {
+   "id": "scripts_app_ranking_readme_provider_checks",
+   "label": "v004 stops on unmatched aliases or split accounts and lists shared-domain provider pairs",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v004",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_document",
+   "label": "App sample appendix with developer-rule evidence",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "document",
+   "summary": "Appendix C describes the 50 sampled apps and imports generated rows."
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_sample_numbering",
+   "label": "Sample table numbering and observed German feedback counts",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "App Sample introduction",
+   "summary": "Rows1–47 descend by German-market popularity score;48–50 are preinstalled. Ratings are German App Store23October and Reviews German Play24–25October. Dash means no listing in the search frame, not proven store unavailability."
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_generated_rows",
+   "label": "Longtable imports script-generated sample rows",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "App Sample longtable",
+   "summary": "Imports tables/app-sample; repeated headers and fixed app/developer columns; rows generated by scripts/app-ranking/v003/rank.py."
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_developer_evidence",
+   "label": "Developer-rule evidence: trial top 47, selection without the rule, aliases with evidence",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "Developer Rule",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_landscape",
+   "label": "Wide appendix tables on landscape pages",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "document",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "00_admin_decision_log_document",
+   "label": "Decision register and authority rules",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L1",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Methodological choices require evidence and confirmation where needed; statuses distinguish open, proposed, confirmed and superseded."
+  },
+  {
+   "id": "00_admin_decision_log_d15_confirmed",
+   "label": "D15 confirmed by the author on 28 October",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L28",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "One domain, health trackers; source categories inform scope and keywords only, and existing instrument totals apply across the sample."
+  },
+  {
+   "id": "00_admin_decision_log_other_method_choices_proposed",
+   "label": "Sampling and access decisions retain proposed status",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L15",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "D1-D4 and D6 remain proposed in the register; D5 and D7 are confirmed through meeting evidence."
+  },
+  {
+   "id": "00_admin_decision_log_open_best_app_coder_design",
+   "label": "Best-app harm-tree basis and instrument decisions remain open",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L26",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "D8 two-coder procedure, D9 LLM thresholds, D10 walkthrough specification and D12 best-app basis are open."
+  },
+  {
+   "id": "00_admin_decision_log_d13_superseded",
+   "label": "D13 superseded by D14 on 28 October",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L28",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "00_admin_decision_log_d14_proposed",
+   "label": "D14 proposed: supervisor venues, four databases, citation searching, ordered rules",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "L29",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_document",
+   "label": "Current health-tracker methodology",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L2",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Planned structured content analysis and adapted cognitive walkthrough; German-market 50-app sample and five-app pilot. Open choices and revision TODOs remain."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_single_domain",
+   "label": "One health-tracker study domain",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L328",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Health trackers overall. Hutton and Malki supply operational definition and 49-query vocabulary; categories do not define separate sampling, pilot, validation or analysis groups.",
+   "rationale": "Source-study vocabularies cover activity, diet/weight, heart, sleep, mood and reproductive health within one study domain; categories do not create strata."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_sampling_frame",
+   "label": "German-market combined app sample",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L310",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Target 50 apps; preinstalled trackers and eligible Google Play/App Store apps share defined frame and ranking rules, without source/category quotas."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_popularity_score",
+   "label": "German-market feedback popularity score",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L469",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "P=v+c*r combines German Play review and App Store rating contributions. Positive-pair median v/r is adjusted by platform shares. Score is a sampling proxy, not users/downloads."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_walkthrough_allocation",
+   "label": "Twelve walkthroughs with six apps per platform",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L700",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Across the whole health-tracker sample select twelve distinct apps, six Android and six iOS, by alternating rank-order slots. Record access barriers and unfilled slots."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_reference_pathways",
+   "label": "Shared health-tracker pathways and per-app applicability",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L718",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Literature trees name data, adversary, access, capability and consequence with AND/OR conditions. Per-app applicability is evidence-based and uncertain cases remain visible."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_pilot",
+   "label": "Five-app pilot across the full sample",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L755",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Random seeded five-app draw from full health-tracker sample, without category quotas. Refine/freeze instruments, recode pilot apps, exclude them from validation."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_validation",
+   "label": "Ten-app independent validation across health trackers",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L874",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Random seeded ten-app validation excludes pilot providers/documents, retains language stratification where both occur, and reports independent providers/documents. Blind coding precedes model viewing."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_llm_screener",
+   "label": "Recall-oriented model screening with human review",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L859",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "description": "Model finds spans, stances and protection details. Author reviews harms/mismatches and decides applicability. Triple runs measure stability, not validation."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_literature_review",
+   "label": "Scoping review after the staged procedure of Baumann et al., reported to PRISMA-S",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L26",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null,
+   "rationale": "Supervisor venues and established databases replace OpenAlex and Semantic Scholar (D14)."
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_lit_sources",
+   "label": "Supervisor venues enumerated in full; PubMed, IEEE Xplore, arXiv and ACL Anthology searched; citation searching from four seed papers",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L139",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_lit_rules",
+   "label": "Criteria C1-C4 and ordered exclusion rules R1-R8 with one primary reason",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L230",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_lit_fulltext",
+   "label": "Open-access full texts sought in fixed order; R7 only after the library was tried",
+   "file_type": "rationale",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L270",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_lit_contextual",
+   "label": "Cited works excluded by the rules kept as a contextual collection",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "L215",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_document",
+   "label": "Results: literature search and sample reported, substantive analyses unfinished",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "document",
+   "summary": "Sample collection, selection and sensitivity are reported; remaining RQ results remain TODO."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_screening_review",
+   "label": "AI-prepared screening still requires author verification",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample TODO",
+   "summary": "Every screening decision in 04_Study/App-Sample/screening.csv must be checked by the author before the thesis states who screened.",
+   "status": "awaiting author review"
+  },
+  {
+   "id": "03_thesis_chapters_05_results_collection_counts",
+   "label": "App Store and Google Play sample-collection counts",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / Collection",
+   "summary": "App Store 23 October: 49 queries, 1440 top-30 hits, 848 listings. Google Play 24 October: 1138 top-30 hits, 645 apps; product pages read 24–25 October, timeout retried."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_exposure_calibration",
+   "label": "Popularity calibration from 166 positive matched candidates",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / German-market popularity score",
+   "summary": "189 apps in both stores; Spearman 0.80; m = 0.236412; c = 0.090575."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_sample_cascade",
+   "label": "Candidate cascade: 1301 candidates to 47 ranked apps",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / Screening and selection",
+   "summary": "73 reached; 12 excluded (E1); 14 skipped by the developer rule; 276 listings screened across all runs."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_sample_composition",
+   "label": "47 ranked apps (36 both stores, 5 Play only, 6 App Store only) plus three preinstalled",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / The sample; Preinstalled apps",
+   "summary": "21 activity, 13 diet and weight, 4 cycle, 2 pregnancy, 3 sleep, 2 mood, 1 heart rate, 1 wearable companion; 471 to 447,096 App Store ratings."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_sensitivity_results",
+   "label": "Sensitivity outcomes for the 47 selected providers and their listings",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / Sensitivity",
+   "summary": "Changed providers: no provider rule 10; equal platform weights 5; alternative scale 0; worldwide Play ratings 11; earlier alternation 10; depth20 1; App Store depth200 2; English-only2; German-only3; leave-one-query-out max1."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_unfinished_results",
+   "label": "Results beyond sample remain unwritten",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "What Privacy Communication Covers; What Privacy Communication Omits; Differences Across Platforms and Categories; Privacy Content in Advertising",
+   "summary": "Coverage, omissions, platform/category comparisons and advertising results remain TODO sections.",
+   "status": "unfinished"
+  },
+  {
+   "id": "03_thesis_chapters_05_results_komoot_score",
+   "label": "Worked empirical popularity score for komoot",
+   "summary": "P approximately 137,694 with c = 0.090575.",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / German-market popularity score"
+  },
+  {
+   "id": "03_thesis_chapters_05_results_no_rule",
+   "label": "Without the developer rule the Leap / Simple Design group takes 10 places, Google and Nike 2 each",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sensitivity",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_literature_search",
+   "label": "Literature search: 2,421 database and 85 venue records; 2,980 screened, 292 passed title and abstract",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Literature Review / Search and Screening",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_lit_fulltext",
+   "label": "147 full texts assessed: 140 review studies (LQ1 67, LQ2 52, LQ3 36, LQ4 15), 7 excluded under R8; 145 awaiting full text",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Literature Review / Full texts",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_lit_contextual",
+   "label": "Contextual collection: 32 cited works excluded by the rules",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Literature Review / Existing literature",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_lit_evidence_map",
+   "label": "Evidence map of the 140 studies by thesis RQ and data surface; capability table for the harm trees",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Literature Review / What the Literature Shows",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "03_thesis_chapters_05_results_lit_gaps",
+   "label": "Gap: no study combines harm coverage, stance and protection framing across surfaces of health tracking apps; language-model studies validate data-practice annotation only",
+   "file_type": "rationale",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Literature Review / Answer to the review question and gaps",
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": null
+  },
+  {
+   "id": "00_admin_decision_log_d2_identity",
+   "label": "D2 adds cross-store product identity I1-I5 with a decision register (28 October)",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "Register / D2",
+   "summary": "Evidence: peer review F01, Steinboeck et al. 2024 sections 3.2-3.3 and 5.2, Hu et al. 2018 section 3.1, v005 and the identity register."
+  },
+  {
+   "id": "00_admin_decisions_d02_document",
+   "label": "D2: store search, ranking, rating floor, provider and product identity",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "document"
+  },
+  {
+   "id": "00_admin_decisions_d02_identity_rule",
+   "label": "Same app in both stores only on recorded product-specific evidence (I1-I5)",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity / Rule",
+   "summary": "Proposals from developer, app identifier, title or rare description passages over all frames decide nothing; each gets same, different or unresolved with evidence (web, id, name, en-name, text, listing); only same pairs merge; one app has one provider; unresolved pairs block finality if they change a selected listing."
+  },
+  {
+   "id": "00_admin_decisions_d02_title_rule_errors",
+   "label": "Title rule paired Nike Run Club with Nike Training Club, BabyCenter with What to Expect, men with women",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity / Problem",
+   "summary": "v004 matched same-provider listings sharing a first title word and took the App Store listing with most ratings; peer review F01."
+  },
+  {
+   "id": "00_admin_decisions_d02_simple_design_leap",
+   "label": "Simple Design, ABISHKKING and Leap Fitness count as one provider",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity / Provider consequence",
+   "summary": "Twin product pages (simpledesign.ltd, abishkking.com) link the Play and App Store listings of the same three apps; one App Store listing is on the Leap Health account; Leap Home Workout is skipped."
+  },
+  {
+   "id": "00_admin_decisions_d02_run_2026_10_28",
+   "label": "v005 run: 946 proposals, 308 same apps, 2 unresolved; 1,301 candidates, c = 0.0906",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "As run / 28 October 2026",
+   "summary": "189 candidates in both stores; 73 reached, 12 excluded, 14 skipped; 36 both stores, 5 Play only, 6 App Store only; Leap Home Workout leaves, aktiBMI enters."
+  },
+  {
+   "id": "00_admin_decisions_d02_steinboeck",
+   "label": "Steinboeck et al. 2024: same app = same use, core functions, provider; multi-signal matching",
+   "file_type": "rationale",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity / Reason"
+  },
+  {
+   "id": "04_study_app_sample_identity_evidence_readme_document",
+   "label": "Archived official pages and store records behind identity decisions",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\04_Study\\App-Sample\\identity-evidence\\README.md",
+   "source_location": "document",
+   "summary": "Eleven web pages and five store records of 28 October 2026; all other decisions rest on the frozen listing fields."
+  },
+  {
+   "id": "scripts_app_ranking_readme_v005_identity",
+   "label": "v005 merges listings only from the identity register; unresolved pairs gate finality",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v005",
+   "summary": "Proposals without decision go to identity-review.csv; not-final runs exit with an error and write no thesis tables; sensitivity counts listing changes."
+  },
+  {
+   "id": "03_thesis_appendix_c_app_sample_identity_table",
+   "label": "Same apps under two developer names, from the identity register",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "Developer Rule / identity-providers",
+   "summary": "Evidence kinds web, id, name, en-name, text, listing; rows generated by v005."
+  },
+  {
+   "id": "03_thesis_tables_app_sample_document",
+   "label": "Generated rows: the 47 ranked apps and three preinstalled apps (v005)",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\tables\\app-sample.tex",
+   "source_location": "document"
+  },
+  {
+   "id": "03_thesis_tables_developer_aliases_document",
+   "label": "Generated rows: developer names matched by hand (P3)",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\tables\\developer-aliases.tex",
+   "source_location": "document"
+  },
+  {
+   "id": "03_thesis_tables_developer_rule_document",
+   "label": "Generated rows: selection without the developer rule, 36 providers",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\tables\\developer-rule.tex",
+   "source_location": "document"
+  },
+  {
+   "id": "03_thesis_tables_identity_providers_document",
+   "label": "Generated rows: 118 same apps under two developer names",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\tables\\identity-providers.tex",
+   "source_location": "document"
+  },
+  {
+   "id": "03_thesis_tables_sensitivity_document",
+   "label": "Generated rows: providers and listings changed per sensitivity variant",
+   "file_type": "document",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\tables\\sensitivity.tex",
+   "source_location": "document"
+  },
+  {
+   "id": "03_thesis_chapters_04_methodology_same_app_rule",
+   "label": "Same app in both stores decided on product-specific evidence; proposals decide nothing",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "App Sampling / Same app in both stores",
+   "summary": "Signals after Steinboeck et al.; shared developer, domain, policy or generic title are no evidence; one app has one provider; unresolved pairs stay unmerged and must not change any selected listing."
+  },
+  {
+   "id": "03_thesis_chapters_05_results_identity_review",
+   "label": "Identity review: 946 proposals, 308 same apps, 636 different, 2 unresolved",
+   "file_type": "concept",
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample / Same app in both stores",
+   "summary": "Official pages support 8 pairs, English names 18 more; Nike Run Club, BabyCenter and Leap men/women pairings corrected; 118 pairs join two developers; decisions AI-prepared, author check pending."
+  }
+ ],
+ "edges": [
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_versions",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "opening",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_inputs",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Inputs",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_method",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Method",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_pending",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Method",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_outputs",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "Outputs",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_basis",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "What counts mean",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_legacy_output",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v003 / Method",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_calibration_limits",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v003 / Method",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_provider_checks",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "document",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_appendix_c_app_sample_sample_numbering",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "App Sample introduction",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_appendix_c_app_sample_generated_rows",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "App Sample longtable",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_appendix_c_app_sample_developer_evidence",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "document",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_appendix_c_app_sample_landscape",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "document",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_d15_confirmed",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_other_method_choices_proposed",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_open_best_app_coder_design",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_d13_superseded",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_d14_proposed",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_single_domain",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_sampling_frame",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_popularity_score",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_walkthrough_allocation",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_reference_pathways",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_pilot",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_validation",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_llm_screener",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_literature_review",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_literature_review",
+   "target": "03_thesis_chapters_04_methodology_lit_sources",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_literature_review",
+   "target": "03_thesis_chapters_04_methodology_lit_rules",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_literature_review",
+   "target": "03_thesis_chapters_04_methodology_lit_fulltext",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_literature_review",
+   "target": "03_thesis_chapters_04_methodology_lit_contextual",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_literature_review",
+   "target": "03_thesis_chapters_04_methodology_reference_pathways",
+   "relation": "shares_data_with",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_pilot",
+   "target": "03_thesis_chapters_04_methodology_validation",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_single_domain",
+   "target": "03_thesis_chapters_04_methodology_pilot",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_single_domain",
+   "target": "03_thesis_chapters_04_methodology_validation",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_single_domain",
+   "target": "03_thesis_chapters_04_methodology_walkthrough_allocation",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_single_domain",
+   "target": "03_thesis_chapters_04_methodology_reference_pathways",
+   "relation": "implements",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_screening_review",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_collection_counts",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_exposure_calibration",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_sample_cascade",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_sample_composition",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_sensitivity_results",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_unfinished_results",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_literature_search",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_komoot_score",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_exposure_calibration",
+   "target": "03_thesis_chapters_05_results_komoot_score",
+   "relation": "illustrated_by",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_no_rule",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_literature_search",
+   "target": "03_thesis_chapters_05_results_lit_fulltext",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_literature_search",
+   "target": "03_thesis_chapters_05_results_lit_contextual",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_literature_search",
+   "target": "03_thesis_chapters_05_results_lit_evidence_map",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_literature_search",
+   "target": "03_thesis_chapters_05_results_lit_gaps",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_literature_search",
+   "target": "03_thesis_chapters_04_methodology_literature_review",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_lit_contextual",
+   "target": "03_thesis_chapters_04_methodology_lit_contextual",
+   "relation": "semantically_similar_to",
+   "confidence": "INFERRED",
+   "confidence_score": 0.95,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_document",
+   "target": "00_admin_decision_log_d2_identity",
+   "relation": "records",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "Register / D2",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_document",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_document",
+   "target": "00_admin_decisions_d02_title_rule_errors",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_document",
+   "target": "00_admin_decisions_d02_simple_design_leap",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_document",
+   "target": "00_admin_decisions_d02_run_2026_10_28",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_document",
+   "target": "00_admin_decisions_d02_steinboeck",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Cross-store product identity",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_identity_rule",
+   "target": "00_admin_decisions_d02_title_rule_errors",
+   "relation": "corrects",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Problem",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_identity_rule",
+   "target": "00_admin_decisions_d02_simple_design_leap",
+   "relation": "implies",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Provider consequence",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_steinboeck",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "justifies",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "Reason",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decisions_d02_run_2026_10_28",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "applies",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decisions\\D02_ranking-and-rating-floor.md",
+   "source_location": "As run",
+   "weight": 1.0
+  },
+  {
+   "source": "00_admin_decision_log_d2_identity",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "references",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\00_Admin\\Decision-Log.md",
+   "source_location": "Register / D2",
+   "weight": 1.0
+  },
+  {
+   "source": "04_study_app_sample_identity_evidence_readme_document",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "supports",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\04_Study\\App-Sample\\identity-evidence\\README.md",
+   "source_location": "opening",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_document",
+   "target": "scripts_app_ranking_readme_v005_identity",
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v005",
+   "weight": 1.0
+  },
+  {
+   "source": "scripts_app_ranking_readme_v005_identity",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "implements",
+   "confidence": "INFERRED",
+   "confidence_score": 0.9,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\scripts\\app-ranking\\README.md",
+   "source_location": "v005",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_appendix_c_app_sample_identity_table",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "Developer Rule",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_tables_app_sample_document",
+   "relation": "includes",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "input",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_tables_developer_aliases_document",
+   "relation": "includes",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "input",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_tables_developer_rule_document",
+   "relation": "includes",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "input",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_appendix_c_app_sample_document",
+   "target": "03_thesis_tables_identity_providers_document",
+   "relation": "includes",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\appendix\\C_app_sample.tex",
+   "source_location": "input",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_tables_sensitivity_document",
+   "relation": "includes",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "input",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_document",
+   "target": "03_thesis_chapters_04_methodology_same_app_rule",
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "App Sampling",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_same_app_rule",
+   "target": "03_thesis_chapters_04_methodology_popularity_score",
+   "relation": "precedes",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "App Sampling",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_04_methodology_same_app_rule",
+   "target": "00_admin_decisions_d02_identity_rule",
+   "relation": "states",
+   "confidence": "INFERRED",
+   "confidence_score": 0.9,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\04_methodology.tex",
+   "source_location": "App Sampling",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_document",
+   "target": "03_thesis_chapters_05_results_identity_review",
+   "relation": "reports",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_identity_review",
+   "target": "03_thesis_chapters_04_methodology_same_app_rule",
+   "relation": "applies",
+   "confidence": "INFERRED",
+   "confidence_score": 0.9,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample",
+   "weight": 1.0
+  },
+  {
+   "source": "03_thesis_chapters_05_results_identity_review",
+   "target": "03_thesis_chapters_05_results_sample_cascade",
+   "relation": "precedes",
+   "confidence": "INFERRED",
+   "confidence_score": 0.85,
+   "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\03_Thesis\\chapters\\05_results.tex",
+   "source_location": "Sample",
+   "weight": 1.0
+  }
+ ],
+ "hyperedges": []
+}

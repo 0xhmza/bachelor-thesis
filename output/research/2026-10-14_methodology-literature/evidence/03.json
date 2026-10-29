@@ -1,0 +1,507 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T10:33:52Z",
+      "timestamp": 1790246032921,
+      "version": "4.1.0"
+    },
+    "reference-count": 58,
+    "publisher": "Privacy Enhancing Technologies Symposium Advisory Board",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              8,
+              17
+            ]
+          ],
+          "date-time": "2020-08-17T00:00:00Z",
+          "timestamp": 1597622400000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/3.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Menstruapps are mobile applications that can track a user’s reproductive cycle, sex life and health in order to provide them with algorithmically derived insights into their body. These apps are now hugely popular, with the most favoured boasting over 100 million downloads. In this study, we investigate the privacy practices of a set of 30 Android menstruapps, a set which accounts for nearly 200 million downloads.We measured how the apps present information and behave on a number of privacy related topics, such as the complexity of the language used, the information collected by them, the involvement of third parties and how they describe user rights. Our results show that while common pieces of personal data such as name, email, etc. are treated appropriately by most applications, reproductive-related data is not covered by the privacy policies and in most cases, completely disregarded, even when it is required for the apps to work. We have informed app developers of our findings and have tried to engage them in dialogue around improving their privacy practices.</jats:p>",
+    "DOI": "10.2478/popets-2020-0083",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          28
+        ]
+      ],
+      "date-time": "2020-08-28T14:43:20Z",
+      "timestamp": 1598625800000
+    },
+    "page": "491-510",
+    "source": "Crossref",
+    "is-referenced-by-count": 88,
+    "title": [
+      "How private is your period?: A systematic analysis of menstrual app privacy policies"
+    ],
+    "prefix": "10.56553",
+    "volume": "2020",
+    "author": [
+      {
+        "given": "Laura",
+        "family": "Shipp",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Information Security Group, Royal Holloway , University of London"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Blasco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Information Security Group, Royal Holloway , University of London"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "35752",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_001_w2aab3b7c50b1b6b1ab1ab1Aa",
+        "unstructured": "[1] Adhikari, R., Richards, D., and Scott, K. (2014). Security and privacy issues related to the use of mobile health apps. ACIS."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_002_w2aab3b7c50b1b6b1ab1ab2Aa",
+        "unstructured": "[2] Ahmed, E. (2019). No body’s business but mine: How menstruation apps are sharing your data. https://privacyinternational.org/long-read/3196/no-bodys-businessmine-how-menstruation-apps-are-sharing-your-data. Accessed on March 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_003_w2aab3b7c50b1b6b1ab1ab3Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[3] Backes, M., Bugiel, S., and Derr, E. (2016). Reliable thirdparty library detection in android and its security applications. In Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, pages 356–367. ACM.10.1145/2976749.2978333",
+        "DOI": "10.1145/2976749.2978333"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_004_w2aab3b7c50b1b6b1ab1ab4Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[4] Balebako, R., Marsh, A., Lin, J., Hong, J. I., and Cranor, L. F. (2014). The privacy and security behaviors of smartphone app developers.10.14722/usec.2014.23006",
+        "DOI": "10.14722/usec.2014.23006"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_005_w2aab3b7c50b1b6b1ab1ab5Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[5] Bhatia, J., Breaux, T. D., Reidenberg, J. R., and Norton, T. B. (2016). A theory of vagueness and privacy risk perception. In 2016 IEEE 24th International Requirements Engineering Conference (RE), pages 26–35. IEEE.10.1109/RE.2016.20",
+        "DOI": "10.1109/RE.2016.20"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_006_w2aab3b7c50b1b6b1ab1ab6Aa",
+        "unstructured": "[6] Book, T., Pridgen, A., and Wallach, D. S. (2013). Longitudinal analysis of android ad library permissions. arXiv preprint arXiv:1303.0857."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_007_w2aab3b7c50b1b6b1ab1ab7Aa",
+        "unstructured": "[7] Bowers, J., Reaves, B., Sherman, I. N., Traynor, P., and Butler, K. (2017). Regulators, mount up! analysis of privacy policies for mobile money services. In Thirteenth Symposium on Usable Privacy and Security (SOUPS 2017), pages 97–114."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_008_w2aab3b7c50b1b6b1ab1ab8Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[8] Brunton, F. and Nissenbaum, H. (2015). Obfuscation: A user’s guide for privacy and protest. Mit Press.10.7551/mitpress/9780262029735.001.0001",
+        "DOI": "10.7551/mitpress/9780262029735.001.0001"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_009_w2aab3b7c50b1b6b1ab1ab9Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[9] Burkell, J. and Fortier, A. (2013). Privacy policy disclosures of behavioural tracking on consumer health websites. In Proceedings of the 76th ASIS&T Annual Meeting: Beyond the Cloud: Rethinking Information Boundaries, page 56. American Society for Information Science.",
+        "DOI": "10.1002/meet.14505001087"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_010_w2aab3b7c50b1b6b1ab1ac10Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[10] Cate, F. H. (2010). The limits of notice and choice. IEEE Security & Privacy, 8(2):59–62.",
+        "DOI": "10.1109/MSP.2010.84"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_011_w2aab3b7c50b1b6b1ab1ac11Aa",
+        "unstructured": "[11] Center for Devices and Radiological Health (2018). FDA allows marketing of first direct-to-consumer app for contraceptive use to prevent pregnancy. https://www.fda.gov/newsevents/press-announcements/fda-allows-marketing-first-directconsumer-app-contraceptive-use-prevent-pregnancy. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_012_w2aab3b7c50b1b6b1ab1ac12Aa",
+        "unstructured": "[12] Claesson, A. and Bjørstad, T. E. (2020). Out of control - a review of data sharing by popular mobile apps. https://fil.forbrukerradet.no/wp-content/uploads/2020/01/mnemonicsecurity-test-report-v1.0.pdf. Accessed on January 2020."
+      },
+      {
+        "key": "#cr-split#-2022042602012659259_j_popets-2020-0083_ref_013_w2aab3b7c50b1b6b1ab1ac13Aa.1",
+        "unstructured": "[13] Council of European Union (2016). Regulation"
+      },
+      {
+        "key": "#cr-split#-2022042602012659259_j_popets-2020-0083_ref_013_w2aab3b7c50b1b6b1ab1ac13Aa.2",
+        "unstructured": "(eu) 2016/679 of the european parliament and of the council of 27 april 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing directive 95/46/ec (general data protection regulation). https://eur-lex.europa.eu/legalcontent/EN/TXT/?uri=CELEX%3A32016R0679."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_014_w2aab3b7c50b1b6b1ab1ac14Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[14] Cranor, L. F., Leon, P. G., and Ur, B. (2016). A large-scale evaluation of us financial institutions’ standardized privacy notices. ACM Transactions on the Web (TWEB), 10(3):1–33.",
+        "DOI": "10.1145/2911988"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_015_w2aab3b7c50b1b6b1ab1ac15Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[15] Das, G., Cheung, C., Nebeker, C., Bietz, M., and Bloss, C. (2018). Privacy policies for apps targeted toward youth: Descriptive analysis of readability. JMIR Mhealth Uhealth, 6(1):e3.",
+        "DOI": "10.2196/mhealth.7626"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_016_w2aab3b7c50b1b6b1ab1ac16Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[16] Degeling, M., Utz, C., Lentzsch, C., Hosseini, H., Schaub, F., and Holz, T. (2019). We value your privacy ... now take some cookies: Measuring the gdpr’s impact on web privacy. Proceedings 2019 Network and Distributed System Security Symposium.",
+        "DOI": "10.14722/ndss.2019.23378"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_017_w2aab3b7c50b1b6b1ab1ac17Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[17] Derr, E., Bugiel, S., Fahl, S., Acar, Y., and Backes, M. (2017). Keep me updated: An empirical study of third-party library updatability on android. In Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security, CCS ’17, page 2187–2200, New York, NY, USA. Association for Computing Machinery.10.1145/3133956.3134059",
+        "DOI": "10.1145/3133956.3134059"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_018_w2aab3b7c50b1b6b1ab1ac18Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[18] Epstein, D. A., Lee, N. B., Kang, J. H., Agapie, E., Schroeder, J., Pina, L. R., Fogarty, J., Kientz, J. A., and Munson, S. (2017). Examining menstrual tracking to inform the design of personal informatics tools. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, pages 6876–6888. ACM.10.1145/3025453.3025635543213328516176",
+        "DOI": "10.1145/3025453.3025635"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_019_w2aab3b7c50b1b6b1ab1ac19Aa",
+        "unstructured": "[19] Felizi, N. and Varon, J. (2017). Menstruapps - how to turn your period into money (for others). https://chupadados.codingrights.org/en/menstruapps-como-transformar-suamenstruacao-em-dinheiro-para-os-outros/. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_020_w2aab3b7c50b1b6b1ab1ac20Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[20] Flemings, M., Kazmi, S., Pak, R., and Shaer, O. (2018). Crimson wave: Shedding light on menstrual health. In Proceedings of the Twelfth International Conference on Tangible, Embedded, and Embodied Interaction, TEI ’18, page 343–348, New York, NY, USA. Association for Computing Machinery.10.1145/3173225.3173292",
+        "DOI": "10.1145/3173225.3173292"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_021_w2aab3b7c50b1b6b1ab1ac21Aa",
+        "unstructured": "[21] Flesch, R. (1979). How to write plain english: Let’s start with the formula. University of Canterbury."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_022_w2aab3b7c50b1b6b1ab1ac22Aa",
+        "unstructured": "[22] Frost & Sullivan (2018). Femtech - time for a digital revolution in the women’s health market. https://ww2.frost.com/frost-perspectives/femtechtime-digital-revolution-womenshealth-market/ Accessed on May 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_023_w2aab3b7c50b1b6b1ab1ac23Aa",
+        "unstructured": "[23] Gilding, K. (2020). Which femtech apps can you trust? https://www.medicalplasticsnews.com/news/which-femtechapps-can-you-trust/ Accessed on April 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_024_w2aab3b7c50b1b6b1ab1ac24Aa",
+        "unstructured": "[24] Gluck, J., Schaub, F., Friedman, A., Habib, H., Sadeh, N., Cranor, L. F., and Agarwal, Y. (2016). How short is too short? implications of length and framing on the effectiveness of privacy notices. In Twelfth Symposium on Usable Privacy and Security (SOUPS 2016), pages 321–340."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_025_w2aab3b7c50b1b6b1ab1ac25Aa",
+        "unstructured": "[25] Habib, H., Zou, Y., Jannu, A., Sridhar, N., Swoopes, C., Acquisti, A., Cranor, L. F., Sadeh, N., and Schaub, F. (2019). An empirical analysis of data deletion and opt-out choices on 150 websites. In Fifteenth Symposium on Usable Privacy and Security (SOUPS 2019)."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_026_w2aab3b7c50b1b6b1ab1ac26Aa",
+        "unstructured": "[26] Han, C., Reyes, I., Elazari Bar On, A., Reardon, J., Feal, Á., Bamberger, K. A., Egelman, S., and Vallina-Rodriguez, N. (2019). Do you get what you pay for? comparing the privacy behaviors of free vs. paid apps. In The Workshop on Technology and Consumer Protection (ConPro’19)."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_027_w2aab3b7c50b1b6b1ab1ac27Aa",
+        "unstructured": "[27] HM Government (2019). Online harms white paper. https://www.gov.uk/government/consultations/online-harms-whitepaper. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_028_w2aab3b7c50b1b6b1ab1ac28Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[28] Honnibal, M. and Johnson, M. (2015). An improved nonmonotonic transition system for dependency parsing. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 1373–1378, Lisbon, Portugal. Association for Computational Linguistics.",
+        "DOI": "10.18653/v1/D15-1162"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_029_w2aab3b7c50b1b6b1ab1ac29Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[29] Huckvale, K., Prieto, J. T., Tilney, M., Benghozi, P.-J., and Car, J. (2015). Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment. BMC medicine, 13(1):214.",
+        "DOI": "10.1186/s12916-015-0444-y"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_030_w2aab3b7c50b1b6b1ab1ac30Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[30] Hutton, L., Price, B. A., Kelly, R., McCormick, C., Bandara, A. K., Hatzakis, T., Meadows, M., and Nuseibeh, B. (2018). Assessing the privacy of mhealth apps for self-tracking: heuristic evaluation approach. JMIR mHealth and uHealth, 6(10):e185.",
+        "DOI": "10.2196/mhealth.9217"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_031_w2aab3b7c50b1b6b1ab1ac31Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[31] Jensen, C. and Potts, C. (2004). Privacy policies as decision-making tools: an evaluation of online privacy notices. In Proceedings of the SIGCHI conference on Human Factors in Computing Systems, pages 471–478. ACM.10.1145/985692.985752",
+        "DOI": "10.1145/985692.985752"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_032_w2aab3b7c50b1b6b1ab1ac32Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[32] Levy, J. (2018). Of mobiles and menses: Researching period tracking apps and issues of response-ability. Studies on Home and Community Science, 11(2):108–115.",
+        "DOI": "10.1080/09737189.2017.1420400"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_033_w2aab3b7c50b1b6b1ab1ac33Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[33] Li, L., Bissyandé, T. F., Klein, J., and Le Traon, Y. (2016). An investigation into the use of common libraries in android apps. In 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER), volume 1, pages 403–414. IEEE.10.1109/SANER.2016.52",
+        "DOI": "10.1109/SANER.2016.52"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_034_w2aab3b7c50b1b6b1ab1ac34Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[34] Liu, X., Liu, J., Zhu, S., Wang, W., and Zhang, X. (2019). Privacy risk analysis and mitigation of analytics libraries in the android ecosystem. IEEE Transactions on Mobile Computing.",
+        "DOI": "10.1109/TMC.2019.2903186"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_035_w2aab3b7c50b1b6b1ab1ac35Aa",
+        "unstructured": "[35] Lupton, D. (2015). ’mastering your fertility’: The digitised reproductive citizen. Chapter for Negotiating Digital Citizenship: Control, Contest and Culture, edited by Anthony Mc-Cosker, Sonja Vivienne and Amelia Johns. To be published by Rowman and Littlefield, London. Forthcoming."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_036_w2aab3b7c50b1b6b1ab1ac36Aa",
+        "unstructured": "[36] Mahdawi, A. (2019). If the government tracks women’s periods, why not track male ejaculation, too? https://fortune.com/2014/08/27/how-max-levchins-glow-app-got-25000-women-pregnant/ Accessed on March 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_037_w2aab3b7c50b1b6b1ab1ac37Aa",
+        "unstructured": "[37] McDonald, A. M. and Cranor, L. F. (2008). The cost of reading privacy policies. Isjlp, 4:543."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_038_w2aab3b7c50b1b6b1ab1ac38Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[38] Mcdonald, A. M., Reeder, R. W., Kelley, P. G., and Cranor, L. F. (2009). A comparative study of online privacy policies and formats. In International Symposium on Privacy Enhancing Technologies Symposium, pages 37–55. Springer.10.1145/1572532.1572586",
+        "DOI": "10.1007/978-3-642-03168-7_3"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_039_w2aab3b7c50b1b6b1ab1ac39Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[39] Moglia, M. L., Nguyen, H. V., Chyjek, K., Chen, K. T., and Castaño, P. M. (2016). Evaluation of smartphone menstrual cycle tracking applications using an adapted applications scoring system. Obstetrics & Gynecology, 127(6):1153–1160.",
+        "DOI": "10.1097/AOG.0000000000001444"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_040_w2aab3b7c50b1b6b1ab1ac40Aa",
+        "unstructured": "[40] Morrissey, J. (2018). Women struggling to get pregnant turn to fertility apps. https://www.nytimes.com/2018/08/27/business/women-fertility-apps-pregnancy.html. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_041_w2aab3b7c50b1b6b1ab1ac41Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[41] Pollach, I. (2005). A typology of communicative strategies in online privacy policies: Ethics, power and informed consent. Journal of Business Ethics, 62(3):221.",
+        "DOI": "10.1007/s10551-005-7898-3"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_042_w2aab3b7c50b1b6b1ab1ac42Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[42] Pollach, I. (2007). What’s wrong with online privacy policies? Communications of the ACM, 50(9):103–108.10.1145/1284621.1284627",
+        "DOI": "10.1145/1284621.1284627"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_043_w2aab3b7c50b1b6b1ab1ac43Aa",
+        "unstructured": "[43] Privacy International (2018). How apps on android share data with facebook (even if you don’t have a facebook account). https://privacyinternational.org/report/2647/howapps-android-share-data-facebook-report. Accessed on March 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_044_w2aab3b7c50b1b6b1ab1ac44Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[44] Reidenberg, J. R., Bhatia, J., Breaux, T. D., and Norton, T. B. (2016). Ambiguity in privacy policies and the impact of regulation. The Journal of Legal Studies, 45(S2):S163–S190.",
+        "DOI": "10.1086/688669"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_045_w2aab3b7c50b1b6b1ab1ac45Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[45] Reidenberg, J. R., Breaux, T., Cranor, L. F., French, B., Grannis, A., Graves, J. T., Liu, F., McDonald, A., Norton, T. B., and Ramanath, R. (2015). Disagreeable privacy policies: Mismatches between meaning and users’ understanding. Berkeley Tech. LJ, 30:39.",
+        "DOI": "10.2139/ssrn.2418297"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_046_w2aab3b7c50b1b6b1ab1ac46Aa",
+        "unstructured": "[46] Rizk, V. and Othman, D. (2016). Quantifying fertility and reproduction through mobile apps: A critical overview. Arrow for change, 22(1):13–21."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_047_w2aab3b7c50b1b6b1ab1ac47Aa",
+        "unstructured": "[47] Rosas, C. (2019). The future is femtech: Privacy and data security issues surrounding femtech applications. Hastings Business Law Journal, 15(2):319."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_048_w2aab3b7c50b1b6b1ab1ac48Aa",
+        "unstructured": "[48] Schechner, S. (2019). You give apps sensitive personal information. then they tell facebook. https://www.wsj.com/articles/you-give-apps-sensitive-personal-information-thenthey-tell-facebook-11550851636. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_049_w2aab3b7c50b1b6b1ab1ac49Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[49] Scott, K. M., Gome, G. A., Richards, D., and Caldwell, P. H. (2015). How trustworthy are apps for maternal and child health? Health and Technology, 4(4):329–336.10.1007/s12553-015-0099-x",
+        "DOI": "10.1007/s12553-015-0099-x"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_050_w2aab3b7c50b1b6b1ab1ac50Aa",
+        "unstructured": "[50] Sen, P. (2014). How max levchin’s glow app got 25,000 women pregnant. https://fortune.com/2014/08/27/how-maxlevchins-glow-app-got-25000-women-pregnant/ Accessed on March 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_051_w2aab3b7c50b1b6b1ab1ac51Aa",
+        "unstructured": "[51] Sheng, X. and Cranor, L. F. (2005). An evaluation of the effect of us financial privacy legislation through the analysis of privacy policies. ISJLP, 2:943."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_052_w2aab3b7c50b1b6b1ab1ac52Aa",
+        "unstructured": "[52] Steel, E. and Dembosky, A. (2013). Health apps run into privacy snags. https://www.ft.com/content/b709cf4a-12dd-11e3-a05e-00144feabdc0/ Accessed on May 2020."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_053_w2aab3b7c50b1b6b1ab1ac53Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[53] Sunyaev, A., Dehling, T., Taylor, P. L., and Mandl, K. D. (2014). Availability and quality of mobile health app privacy policies. Journal of the American Medical Informatics Association, 22(e1):e28–e33.",
+        "DOI": "10.1136/amiajnl-2013-002605"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_054_w2aab3b7c50b1b6b1ab1ac54Aa",
+        "unstructured": "[54] Weigel, M. (2016). ’Fitbit for your period’: the rise of fertility tracking. https://www.theguardian.com/technology/2016/mar/23/fitbit-for-your-period-the-rise-of-fertility-tracking. Accessed on August 2019."
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_055_w2aab3b7c50b1b6b1ab1ac55Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[55] Wilson, S., Schaub, F., Liu, F., Sathyendra, K. M., Smullen, D., Zimmeck, S., Ramanath, R., Story, P., Liu, F., Sadeh, N., et al. (2018). Analyzing privacy policies at scale: From crowdsourcing to automated annotations. ACM Transactions on the Web (TWEB), 13(1):1–29.",
+        "DOI": "10.1145/3230665"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_056_w2aab3b7c50b1b6b1ab1ac56Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[56] Yu, L., Luo, X., Liu, X., and Zhang, T. (2016). Can we trust the privacy policies of android apps? In 2016 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), pages 538–549. IEEE.",
+        "DOI": "10.1109/DSN.2016.55"
+      },
+      {
+        "key": "2022042602012659259_j_popets-2020-0083_ref_057_w2aab3b7c50b1b6b1ab1ac57Aa",
+        "doi-asserted-by": "crossref",
+        "unstructured": "[57] Zimmeck, S., Story, P., Smullen, D., Ravichander, A., Wang, Z., Reidenberg, J., Russell, N. C., and Sadeh, N. (2019). Maps: Scaling privacy compliance analysis to a million apps. Proceedings on Privacy Enhancing Technologies, 2019(3):66–86.",
+        "DOI": "10.2478/popets-2019-0037"
+      }
+    ],
+    "container-title": [
+      "Proceedings on Privacy Enhancing Technologies"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://content.sciendo.com/view/journals/popets/2020/4/article-p491.xml",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.sciendo.com/pdf/10.2478/popets-2020-0083",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          20
+        ]
+      ],
+      "date-time": "2022-07-20T16:31:16Z",
+      "timestamp": 1658334676000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://petsymposium.org/popets/2020/popets-2020-0083.php"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          17
+        ]
+      ]
+    },
+    "references-count": 58,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.2478/popets-2020-0083"
+    ],
+    "URL": "https://doi.org/10.2478/popets-2020-0083",
+    "relation": {},
+    "ISSN": [
+      "2299-0984"
+    ],
+    "issn-type": [
+      {
+        "value": "2299-0984",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          17
+        ]
+      ]
+    }
+  }
+}

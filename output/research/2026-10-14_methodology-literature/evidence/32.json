@@ -1,0 +1,346 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T10:51:42Z",
+      "timestamp": 1791543102458,
+      "version": "4.3.4"
+    },
+    "reference-count": 25,
+    "publisher": "JMIR Publications Inc.",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR mHealth uHealth"
+    ],
+    "DOI": "10.2196/mhealth.3422",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          11
+        ]
+      ],
+      "date-time": "2015-03-11T09:43:34Z",
+      "timestamp": 1426067014000
+    },
+    "page": "e27",
+    "source": "Crossref",
+    "is-referenced-by-count": 2146,
+    "title": [
+      "Mobile App Rating Scale: A New Tool for Assessing the Quality of Health Mobile Apps"
+    ],
+    "prefix": "10.2196",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Stoyan R",
+        "family": "Stoyanov",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Leanne",
+        "family": "Hides",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David J",
+        "family": "Kavanagh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oksana",
+        "family": "Zelenko",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dian",
+        "family": "Tjondronegoro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Madhavan",
+        "family": "Mani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13142-011-0021-7"
+      },
+      {
+        "key": "ref2",
+        "unstructured": "Cisco &CoCisco20142014-02-26Cisco visual networking indexCisco & CoCisco visual networking index: Global mobile data traffic forecast update, 2013–2018http://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/white_paper_c11-520862.html6NhLJgMdh"
+      },
+      {
+        "key": "ref3",
+        "unstructured": "DaumACanalys20132014-02-2711% quarterly growth in downloads for leading app storeshttp://www.canalys.com/newsroom/11-quarterly-growth-downloads-leading-app-stores6NhRNQhEe"
+      },
+      {
+        "key": "ref4",
+        "unstructured": "DredgeSThe Guardian Online20132014-02-27Mobile apps revenues tipped to reach $26bn in 2013http://www.theguardian.com/technology/appsblog/2013/sep/19/gartner-mobile-apps-revenues-report6NhSRyqfo"
+      },
+      {
+        "key": "ref5",
+        "first-page": "227",
+        "volume": "183",
+        "author": "Cummings, E",
+        "year": "2013",
+        "journal-title": "Stud Health Technol Inform"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CogSIMA.2013.6523820"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1851600.1851698"
+      },
+      {
+        "key": "ref8",
+        "unstructured": "SeethamrajuRMeasurement of user perceived web quality20040112th European Conference on Information Systems (ECIS)2004 JanTurku, Finland"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MMUL.2002.1041945"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0378-7206(01)00113-6"
+      },
+      {
+        "key": "ref11",
+        "unstructured": "MoustakisVLitosCDalivigasATsironisLWebsite quality assessment criteria2004119th international conference of information quality2004 Nov 5-7Boston, MA, USA5973"
+      },
+      {
+        "issue": "7184",
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "647",
+        "DOI": "10.1136/bmj.318.7184.647",
+        "volume": "318",
+        "author": "Kim, P",
+        "year": "1999",
+        "journal-title": "BMJ"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.explore.2011.04.011"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/tmj.2012.0073"
+      },
+      {
+        "key": "ref15",
+        "unstructured": "Health Care Information Management Systems SocietymHIMSS App Usability Work Group20122014-03-04mHIMSSSelecting a mobile app: Evaluating the usability of medical applicationshttp://www.himss.org/files/HIMSSorg/content/files/SelectingMobileApp_EvaluatingUsabilityMedicalApplications.pdf6NodXEotw"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.3133"
+      },
+      {
+        "key": "ref17",
+        "unstructured": "Usability.net2015-02-26Usability scienceshttp://www.usabilitynet.org/home.htm6WekMBJUr"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijsu.2010.02.007"
+      },
+      {
+        "key": "ref19",
+        "unstructured": "Randomization.com2014-03-03http://randomization.com/6Nmy5Mvfi"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.5466"
+      },
+      {
+        "issue": "2",
+        "key": "ref21",
+        "doi-asserted-by": "crossref",
+        "first-page": "420",
+        "DOI": "10.1037/0033-2909.86.2.420",
+        "volume": "86",
+        "author": "Shrout, PE",
+        "year": "1979",
+        "journal-title": "Psychol Bull"
+      },
+      {
+        "issue": "1",
+        "key": "ref22",
+        "doi-asserted-by": "crossref",
+        "first-page": "23",
+        "DOI": "10.20982/tqmp.08.1.p023",
+        "volume": "8",
+        "author": "Hallgren, KA",
+        "year": "2012",
+        "journal-title": "Tutor Quant Methods Psychol"
+      },
+      {
+        "key": "ref23",
+        "author": "Oppenheim, AN",
+        "year": "1992",
+        "journal-title": "Questionnaire design, interviewing, and attitude measurement"
+      },
+      {
+        "key": "ref24",
+        "unstructured": "JMIR PublicationsJMIR mhealth and uhealth (JMU)201303122014-11-12Apps peer-review launchedhttp://mhealth.jmir.org/announcement/view/676U1Hj5yAA"
+      },
+      {
+        "key": "ref25",
+        "unstructured": "SuWA preliminary survey of knowledge discovery on smartphone applications (apps): Principles, techniques and research directions for e-healthProceedings of the International Conference on Complex Medical Engineering2014Proceedings of the International Conference on Complex Medical Engineering2014Taipei, TaiwanarXiv.org"
+      }
+    ],
+    "container-title": [
+      "JMIR mHealth and uHealth"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://mhealth.jmir.org/2015/1/e27",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T17:51:34Z",
+      "timestamp": 1782841894000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://mhealth.jmir.org/2015/1/e27/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          11
+        ]
+      ]
+    },
+    "references-count": 25,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2196/mhealth.3422",
+    "relation": {},
+    "ISSN": [
+      "2291-5222"
+    ],
+    "issn-type": [
+      {
+        "value": "2291-5222",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          11
+        ]
+      ]
+    }
+  }
+}

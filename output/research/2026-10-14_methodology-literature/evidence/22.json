@@ -1,0 +1,582 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T13:41:20Z",
+      "timestamp": 1791380480612,
+      "version": "4.3.3"
+    },
+    "reference-count": 41,
+    "publisher": "American Medical Association (AMA)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JAMA Netw Open"
+    ],
+    "DOI": "10.1001/jamanetworkopen.2019.2542",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ],
+      "date-time": "2019-04-19T11:32:36Z",
+      "timestamp": 1555673556000
+    },
+    "page": "e192542",
+    "source": "Crossref",
+    "is-referenced-by-count": 301,
+    "title": [
+      "Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation"
+    ],
+    "prefix": "10.1001",
+    "volume": "2",
+    "author": [
+      {
+        "given": "Kit",
+        "family": "Huckvale",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Black Dog Institute, UNSW Sydney, Randwick, New South Wales, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Torous",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Psychiatry, Beth Israel Deaconess Medical Center, Boston, Massachusetts"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mark E.",
+        "family": "Larsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Black Dog Institute, UNSW Sydney, Randwick, New South Wales, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "10",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "10",
+        "key": "zoi190111r1",
+        "doi-asserted-by": "publisher",
+        "first-page": "775",
+        "DOI": "10.1016/S2215-0366(17)30333-4",
+        "article-title": "The WPA-Lancet Psychiatry Commission on the future of psychiatry.",
+        "volume": "4",
+        "author": "Bhugra",
+        "year": "2017",
+        "journal-title": "Lancet Psychiatry"
+      },
+      {
+        "issue": "3",
+        "key": "zoi190111r2",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1053",
+        "DOI": "10.1038/tp.2017.25",
+        "article-title": "New dimensions and new tools to realize the potential of RDoC: digital phenotyping via smartphones and connected devices.",
+        "volume": "7",
+        "author": "Torous",
+        "year": "2017",
+        "journal-title": "Transl Psychiatry"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r3",
+        "doi-asserted-by": "publisher",
+        "first-page": "e013518",
+        "DOI": "10.1136/bmjopen-2016-013518",
+        "article-title": "Ibobbly mobile health intervention for suicide prevention in Australian Indigenous youth: a pilot randomised controlled trial.",
+        "volume": "7",
+        "author": "Tighe",
+        "year": "2017",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r4",
+        "doi-asserted-by": "publisher",
+        "first-page": "117",
+        "DOI": "10.1016/j.chc.2016.07.006",
+        "article-title": "Confidentiality and privacy for smartphone applications in child and adolescent psychiatry: unmet needs and practical solutions.",
+        "volume": "26",
+        "author": "Wu",
+        "year": "2017",
+        "journal-title": "Child Adolesc Psychiatr Clin N Am"
+      },
+      {
+        "key": "zoi190111r5",
+        "doi-asserted-by": "publisher",
+        "first-page": "43",
+        "DOI": "10.1136/bmjinnov-2014-000019",
+        "article-title": "Health-related smartphone apps: regulations, safety, privacy and quality.",
+        "volume": "1",
+        "author": "BinDhim",
+        "year": "2015",
+        "journal-title": "BMJ Innov"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r6",
+        "doi-asserted-by": "publisher",
+        "first-page": "214",
+        "DOI": "10.1186/s12916-015-0444-y",
+        "article-title": "Unaddressed privacy risks in accredited health and wellness apps: a cross-sectional systematic assessment.",
+        "volume": "13",
+        "author": "Huckvale",
+        "year": "2015",
+        "journal-title": "BMC Med"
+      },
+      {
+        "issue": "7698",
+        "key": "zoi190111r7",
+        "doi-asserted-by": "crossref",
+        "first-page": "559",
+        "DOI": "10.1038/d41586-018-03856-4",
+        "article-title": "Cambridge Analytica controversy must spur researchers to update data ethics [editorial].",
+        "volume": "555",
+        "year": "2018",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "zoi190111r8",
+        "doi-asserted-by": "publisher",
+        "first-page": "k941",
+        "DOI": "10.1136/bmj.k941",
+        "article-title": "Are you ready for general data protection regulation?",
+        "volume": "360",
+        "author": "John",
+        "year": "2018",
+        "journal-title": "BMJ"
+      },
+      {
+        "key": "zoi190111r9",
+        "doi-asserted-by": "publisher",
+        "first-page": "53",
+        "DOI": "10.1016/j.coisb.2017.07.001",
+        "article-title": "Ethics and big data in health.",
+        "volume": "4",
+        "author": "Knoppers",
+        "year": "2017",
+        "journal-title": "Curr Opin Syst Biol"
+      },
+      {
+        "issue": "2",
+        "key": "zoi190111r10",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0170581",
+        "DOI": "10.1371/journal.pone.0170581",
+        "article-title": "What is the economic evidence for mHealth? a systematic review of economic evaluations of mHealth solutions.",
+        "volume": "12",
+        "author": "Iribarren",
+        "year": "2017",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "8",
+        "key": "zoi190111r11",
+        "doi-asserted-by": "publisher",
+        "first-page": "873",
+        "DOI": "10.1016/j.jagp.2017.04.009",
+        "article-title": "Data security and privacy in apps for dementia: an analysis of existing privacy policies.",
+        "volume": "25",
+        "author": "Rosenfeld",
+        "year": "2017",
+        "journal-title": "Am J Geriatr Psychiatry"
+      },
+      {
+        "issue": "10",
+        "key": "zoi190111r12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1051",
+        "DOI": "10.1001/jama.2015.19426",
+        "article-title": "Privacy policies of android diabetes apps and sharing of health information.",
+        "volume": "315",
+        "author": "Blenner",
+        "year": "2016",
+        "journal-title": "JAMA"
+      },
+      {
+        "issue": "11",
+        "key": "zoi190111r13",
+        "doi-asserted-by": "publisher",
+        "first-page": "494",
+        "DOI": "10.1007/s11920-014-0494-4",
+        "article-title": "Privacy in the digital world: medical and health data outside of HIPAA protections.",
+        "volume": "16",
+        "author": "Glenn",
+        "year": "2014",
+        "journal-title": "Curr Psychiatry Rep"
+      },
+      {
+        "issue": "5",
+        "key": "zoi190111r20",
+        "doi-asserted-by": "publisher",
+        "first-page": "498",
+        "DOI": "10.1176/appi.ps.201700423",
+        "article-title": "A hierarchical framework for evaluation and informed decision making regarding smartphone apps for clinical care.",
+        "volume": "69",
+        "author": "Torous",
+        "year": "2018",
+        "journal-title": "Psychiatr Serv"
+      },
+      {
+        "issue": "7",
+        "key": "zoi190111r21",
+        "doi-asserted-by": "publisher",
+        "first-page": "1014",
+        "DOI": "10.1111/head.v58.7",
+        "article-title": "Privacy issues in smartphone applications: an analysis of headache/migraine applications.",
+        "volume": "58",
+        "author": "Minen",
+        "year": "2018",
+        "journal-title": "Headache"
+      },
+      {
+        "key": "zoi190111r22",
+        "doi-asserted-by": "publisher",
+        "first-page": "110",
+        "DOI": "10.1016/j.invent.2018.12.001",
+        "article-title": "Reviewing the data security and privacy policies of mobile apps for depression.",
+        "volume": "15",
+        "author": "O’Loughlin",
+        "year": "2018",
+        "journal-title": "Internet Interv"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r23",
+        "doi-asserted-by": "publisher",
+        "first-page": "e15",
+        "DOI": "10.2196/mhealth.5176",
+        "article-title": "Interrater reliability of mHealth app rating measures: analysis of top depression and smoking cessation apps.",
+        "volume": "4",
+        "author": "Powell",
+        "year": "2016",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "6",
+        "key": "zoi190111r24",
+        "doi-asserted-by": "publisher",
+        "first-page": "617",
+        "DOI": "10.1001/archpsyc.62.6.617",
+        "article-title": "Prevalence, severity, and comorbidity of 12-month DSM-IV disorders in the National Comorbidity Survey Replication.",
+        "volume": "62",
+        "author": "Kessler",
+        "year": "2005",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "issue": "9063",
+        "key": "zoi190111r25",
+        "doi-asserted-by": "publisher",
+        "first-page": "1436",
+        "DOI": "10.1016/S0140-6736(96)07495-8",
+        "article-title": "Global mortality, disability, and the contribution of risk factors: Global Burden of Disease Study.",
+        "volume": "349",
+        "author": "Murray",
+        "year": "1997",
+        "journal-title": "Lancet"
+      },
+      {
+        "issue": "3",
+        "key": "zoi190111r26",
+        "doi-asserted-by": "publisher",
+        "first-page": "e82",
+        "DOI": "10.2196/mhealth.4328",
+        "article-title": "Review and evaluation of mindfulness-based iPhone apps.",
+        "volume": "3",
+        "author": "Mani",
+        "year": "2015",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "6",
+        "key": "zoi190111r27",
+        "doi-asserted-by": "publisher",
+        "first-page": "e83",
+        "DOI": "10.2196/mhealth.6827",
+        "article-title": "Users’ adoption of mental health apps: examining the impact of information cues.",
+        "volume": "5",
+        "author": "Huang",
+        "year": "2017",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r28",
+        "doi-asserted-by": "publisher",
+        "first-page": "e16",
+        "DOI": "10.2196/mhealth.3713",
+        "article-title": "Finding a depression app: a review and content analysis of the depression app marketplace.",
+        "volume": "3",
+        "author": "Shen",
+        "year": "2015",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "2",
+        "key": "zoi190111r29",
+        "doi-asserted-by": "publisher",
+        "first-page": "292",
+        "DOI": "10.1007/s13142-017-0492-2",
+        "article-title": "A systematic review of smartphone applications for smoking cessation.",
+        "volume": "7",
+        "author": "Haskins",
+        "year": "2017",
+        "journal-title": "Transl Behav Med"
+      },
+      {
+        "issue": "3",
+        "key": "zoi190111r30",
+        "doi-asserted-by": "publisher",
+        "first-page": "276",
+        "DOI": "10.11613/issn.1846-7482",
+        "article-title": "Interrater reliability: the kappa statistic.",
+        "volume": "22",
+        "author": "McHugh",
+        "year": "2012",
+        "journal-title": "Biochem Med (Zagreb)"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r31",
+        "doi-asserted-by": "publisher",
+        "first-page": "78",
+        "DOI": "10.1109/MSP.2009.12",
+        "article-title": "Man-in-the-middle attack to the HTTPS protocol.",
+        "volume": "7",
+        "author": "Callegati",
+        "year": "2009",
+        "journal-title": "IEEE Secur Priv"
+      },
+      {
+        "issue": "7624",
+        "key": "zoi190111r32",
+        "doi-asserted-by": "publisher",
+        "first-page": "806",
+        "DOI": "10.1136/bmj.39335.541782.AD",
+        "article-title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies.",
+        "volume": "335",
+        "author": "von Elm",
+        "year": "2007",
+        "journal-title": "BMJ"
+      },
+      {
+        "issue": "3",
+        "key": "zoi190111r36",
+        "doi-asserted-by": "publisher",
+        "first-page": "179",
+        "DOI": "10.1089/cyber.2015.0340",
+        "article-title": "Do smartphone power users protect mobile privacy better than nonpower users? exploring power usage as a factor in mobile privacy protection and disclosure.",
+        "volume": "19",
+        "author": "Kang",
+        "year": "2016",
+        "journal-title": "Cyberpsychol Behav Soc Netw"
+      },
+      {
+        "issue": "3",
+        "key": "zoi190111r40",
+        "doi-asserted-by": "publisher",
+        "first-page": "e96",
+        "DOI": "10.2196/mhealth.6020",
+        "article-title": "Quantifying app store dynamics: longitudinal tracking of mental health apps.",
+        "volume": "4",
+        "author": "Larsen",
+        "year": "2016",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "issue": "1",
+        "key": "zoi190111r41",
+        "doi-asserted-by": "publisher",
+        "first-page": "125",
+        "DOI": "10.1177/2050157914557509",
+        "article-title": "Choosing the right app: an exploratory perspective on heuristic decision processes for smartphone app selection.",
+        "volume": "3",
+        "author": "Dogruel",
+        "year": "2014",
+        "journal-title": "Mobile Media Commun"
+      },
+      {
+        "key": "zoi190111r14",
+        "volume-title": "Mobile Medical Applications—Guidance for Industry and Food and Drug Administration Staff",
+        "author": "Food and Drug Administration",
+        "year": "2015"
+      },
+      {
+        "key": "zoi190111r18",
+        "volume-title": "Legal Frameworks for eHealth: Based on the Findings of the Second Global Survey on eHealth",
+        "author": "World Health Organization",
+        "year": "2012"
+      },
+      {
+        "key": "zoi190111r15",
+        "unstructured": "US Food and Drug Administration. Digital health software precertification (pre-cert) program. https://www.fda.gov/MedicalDevices/DigitalHealth/DigitalHealthPreCertProgram/default.htm. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r16",
+        "unstructured": "NHS England. Apps library is advance for a digital NHS. https://www.england.nhs.uk/blog/apps-library-is-advance-for-a-digital-nhs/. Published April 10, 2017. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r17",
+        "unstructured": "Australian Commission on Safety and Quality in Health Care. Certification framework for digital mental health services. https://www.safetyandquality.gov.au/our-work/safety-in-e-health/certification-framework-for-digital-mental-health-services/. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r19",
+        "unstructured": "Xcertia. Xcertia mHealth App Guidelines. http://www.xcertia.org/the-guidelines/. Accessed July 1, 2018."
+      },
+      {
+        "key": "zoi190111r33",
+        "unstructured": "Google LLC. Google Analytics terms of service. https://www.google.com/analytics/terms/us.html. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r34",
+        "unstructured": "Facebook Inc. Facebook for developers: Facebook platform policy. https://developers.facebook.com/policy. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r35",
+        "unstructured": "GoogleLLC. AdSense help: content policies. https://support.google.com/adsense/answer/1348695?hl=en. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r37",
+        "unstructured": "Android Developers. Best practices for unique identifiers. https://developer.android.com/training/articles/user-data-ids. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r38",
+        "unstructured": "CutlerK-M. Amid privacy concerns, Apple has started rejecting apps that access UDIDs. https://techcrunch.com/2012/03/24/apple-udids/. Published March 24, 2012. Accessed June 1, 2018."
+      },
+      {
+        "key": "zoi190111r39",
+        "unstructured": "GoogleLLC. Advertising policies help: personalized advertising. https://support.google.com/adwordspolicy/answer/143465?hl=en&ref_topic=1626336. Accessed June 1, 2018."
+      }
+    ],
+    "container-title": [
+      "JAMA Network Open"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http:///jamanetworkopen/article-pdf/2/4/e192542/17478493/huckvale_2019_oi_190111.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ],
+      "date-time": "2019-04-19T11:32:53Z",
+      "timestamp": 1555673573000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://jamanetworkopen.jamanetwork.com/article.aspx?doi=10.1001/jamanetworkopen.2019.2542"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ]
+    },
+    "references-count": 41,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            5
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1001/jamanetworkopen.2019.2542",
+    "relation": {},
+    "ISSN": [
+      "2574-3805"
+    ],
+    "issn-type": [
+      {
+        "value": "2574-3805",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          19
+        ]
+      ]
+    }
+  }
+}

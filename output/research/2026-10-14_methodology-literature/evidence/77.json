@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T12:25:23Z",
+      "timestamp": 1791980723058,
+      "version": "4.4.0"
+    },
+    "reference-count": 0,
+    "publisher": "Stanford University Press",
+    "isbn-type": [
+      {
+        "value": "9780804772891",
+        "type": "electronic"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1515/9780804772891",
+    "type": "monograph",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2020-08-21T07:57:21Z",
+      "timestamp": 1597996641000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1245,
+    "title": [
+      "Privacy in Context"
+    ],
+    "prefix": "10.1515",
+    "author": [
+      {
+        "given": "Helen",
+        "family": "Nissenbaum",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "374",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.degruyter.com/view/title/589414",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.degruyter.com/document/doi/10.1515/9780804772891/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          19
+        ]
+      ],
+      "date-time": "2021-04-19T17:46:47Z",
+      "timestamp": 1618854407000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.degruyter.com/document/doi/10.1515/9780804772891/html"
+      }
+    },
+    "subtitle": [
+      "Technology, Policy, and the Integrity of Social Life"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          1,
+          1
+        ]
+      ]
+    },
+    "ISBN": [
+      "9780804772891"
+    ],
+    "references-count": 0,
+    "URL": "https://doi.org/10.1515/9780804772891",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          1,
+          1
+        ]
+      ]
+    }
+  }
+}

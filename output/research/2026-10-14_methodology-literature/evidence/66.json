@@ -1,0 +1,206 @@
+{
+  "data": {
+    "id": "10.6092/issn.1971-8853/19461",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.6092/issn.1971-8853/19461",
+      "prefix": "10.6092",
+      "suffix": "issn.1971-8853/19461",
+      "identifiers": [
+        {
+          "identifier": "49-1317-19461",
+          "identifierType": "publisherId"
+        }
+      ],
+      "alternateIdentifiers": [
+        {
+          "alternateIdentifierType": "publisherId",
+          "alternateIdentifier": "49-1317-19461"
+        }
+      ],
+      "creators": [
+        {
+          "name": "Törnberg, Petter",
+          "nameType": "Personal",
+          "givenName": "Petter",
+          "familyName": "Törnberg",
+          "affiliation": [
+            "Institute for Language, Logic and Computation, University of Amsterdam"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0001-8722-8646",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "titles": [
+        {
+          "title": "Best Practices for Text Annotation with Large Language Models"
+        }
+      ],
+      "publisher": "Sociologica",
+      "container": {
+        "type": "Series",
+        "identifier": "1971-8853",
+        "identifierType": "EISSN",
+        "title": "Sociologica",
+        "volume": "18",
+        "issue": "2",
+        "firstPage": "67",
+        "lastPage": "85"
+      },
+      "publicationYear": 2024,
+      "subjects": [
+        {
+          "subject": "Text labeling"
+        },
+        {
+          "subject": "classification"
+        },
+        {
+          "subject": "data annotation"
+        },
+        {
+          "subject": "large language models"
+        },
+        {
+          "subject": "text-as-data"
+        }
+      ],
+      "contributors": [],
+      "dates": [
+        {
+          "date": "2024-05-01",
+          "dateType": "Submitted"
+        },
+        {
+          "date": "2024-08-19",
+          "dateType": "Accepted"
+        },
+        {
+          "date": "2024-10-30",
+          "dateType": "Updated"
+        },
+        {
+          "date": "2024-10-30",
+          "dateType": "Issued"
+        }
+      ],
+      "language": "en",
+      "types": {
+        "ris": "JOUR",
+        "bibtex": "article",
+        "citeproc": "article-journal",
+        "schemaOrg": "ScholarlyArticle",
+        "resourceTypeGeneral": "JournalArticle"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [
+        {
+          "issue": "2",
+          "titles": [
+            {
+              "title": "Sociologica"
+            }
+          ],
+          "volume": "18",
+          "creators": [],
+          "lastPage": "85",
+          "firstPage": "67",
+          "contributors": [],
+          "relationType": "IsPublishedIn",
+          "relatedItemType": "Journal",
+          "relatedItemIdentifier": {
+            "relatedItemIdentifier": "1971-8853",
+            "relatedItemIdentifierType": "EISSN"
+          }
+        }
+      ],
+      "sizes": [],
+      "formats": [],
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "Large Language Models (LLMs) have ushered in a new era of text annotation, as their ease-of-use, high accuracy, and relatively low costs have meant that their use has exploded in recent months. However, the rapid growth of the field has meant that LLM-based annotation has become something of an academic Wild West: the lack of established practices and standards has led to concerns about the quality and validity of research. Researchers have warned that the ostensible simplicity of LLMs can be misleading, as they are prone to bias, misunderstandings, and unreliable results. Recognizing the transformative potential of LLMs, this essay proposes a comprehensive set of standards and best practices for their reliable, reproducible, and ethical use. These guidelines span critical areas such as model selection, prompt engineering, structured prompting, prompt stability analysis, rigorous model validation, and the consideration of ethical and legal implications. The essay emphasizes the need for a structured, directed, and formalized approach to using LLMs, aiming to ensure the integrity and robustness of text annotation practices, and advocates for a nuanced and critical engagement with LLMs in social scientific research.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA5Mi9JU1NOLjE5NzEtODg1My8xOTQ2MTwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlTDtnJuYmVyZywgUGV0dGVyPC9jcmVhdG9yTmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIHNjaGVtZVVSST0iaHR0cDovL29yY2lkLm9yZy8iIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCI+aHR0cHM6Ly9vcmNpZC5vcmcvMDAwMC0wMDAxLTg3MjItODY0NjwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5JbnN0aXR1dGUgZm9yIExhbmd1YWdlLCBMb2dpYyBhbmQgQ29tcHV0YXRpb24sIFVuaXZlcnNpdHkgb2YgQW1zdGVyZGFtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+QmVzdCBQcmFjdGljZXMgZm9yIFRleHQgQW5ub3RhdGlvbiB3aXRoIExhcmdlIExhbmd1YWdlIE1vZGVsczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5Tb2Npb2xvZ2ljYTwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNDwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0PlRleHQgbGFiZWxpbmc8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5jbGFzc2lmaWNhdGlvbjwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmRhdGEgYW5ub3RhdGlvbjwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmxhcmdlIGxhbmd1YWdlIG1vZGVsczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnRleHQtYXMtZGF0YTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiPjIwMjQtMDUtMDE8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQWNjZXB0ZWQiPjIwMjQtMDgtMTk8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAyNC0xMC0zMDwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjQtMTAtMzA8L2RhdGU+CiAgPC9kYXRlcz4KICA8bGFuZ3VhZ2U+ZW48L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iSm91cm5hbEFydGljbGUiLz4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0icHVibGlzaGVySWQiPjQ5LTEzMTctMTk0NjE8L2FsdGVybmF0ZUlkZW50aWZpZXI+CiAgPC9hbHRlcm5hdGVJZGVudGlmaWVycz4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wIj5UaGlzIHdvcmsgaXMgbGljZW5zZWQgdW5kZXIgYSBDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsIExpY2Vuc2UuPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TGFyZ2UgTGFuZ3VhZ2UgTW9kZWxzIChMTE1zKSBoYXZlIHVzaGVyZWQgaW4gYSBuZXcgZXJhIG9mIHRleHQgYW5ub3RhdGlvbiwgYXMgdGhlaXIgZWFzZS1vZi11c2UsIGhpZ2ggYWNjdXJhY3ksIGFuZCByZWxhdGl2ZWx5IGxvdyBjb3N0cyBoYXZlIG1lYW50IHRoYXQgdGhlaXIgdXNlIGhhcyBleHBsb2RlZCBpbiByZWNlbnQgbW9udGhzLiBIb3dldmVyLCB0aGUgcmFwaWQgZ3Jvd3RoIG9mIHRoZSBmaWVsZCBoYXMgbWVhbnQgdGhhdCBMTE0tYmFzZWQgYW5ub3RhdGlvbiBoYXMgYmVjb21lIHNvbWV0aGluZyBvZiBhbiBhY2FkZW1pYyBXaWxkIFdlc3Q6IHRoZSBsYWNrIG9mIGVzdGFibGlzaGVkIHByYWN0aWNlcyBhbmQgc3RhbmRhcmRzIGhhcyBsZWQgdG8gY29uY2VybnMgYWJvdXQgdGhlIHF1YWxpdHkgYW5kIHZhbGlkaXR5IG9mIHJlc2VhcmNoLiBSZXNlYXJjaGVycyBoYXZlIHdhcm5lZCB0aGF0IHRoZSBvc3RlbnNpYmxlIHNpbXBsaWNpdHkgb2YgTExNcyBjYW4gYmUgbWlzbGVhZGluZywgYXMgdGhleSBhcmUgcHJvbmUgdG8gYmlhcywgbWlzdW5kZXJzdGFuZGluZ3MsIGFuZCB1bnJlbGlhYmxlIHJlc3VsdHMuIFJlY29nbml6aW5nIHRoZSB0cmFuc2Zvcm1hdGl2ZSBwb3RlbnRpYWwgb2YgTExNcywgdGhpcyBlc3NheSBwcm9wb3NlcyBhIGNvbXByZWhlbnNpdmUgc2V0IG9mIHN0YW5kYXJkcyBhbmQgYmVzdCBwcmFjdGljZXMgZm9yIHRoZWlyIHJlbGlhYmxlLCByZXByb2R1Y2libGUsIGFuZCBldGhpY2FsIHVzZS4gVGhlc2UgZ3VpZGVsaW5lcyBzcGFuIGNyaXRpY2FsIGFyZWFzIHN1Y2ggYXMgbW9kZWwgc2VsZWN0aW9uLCBwcm9tcHQgZW5naW5lZXJpbmcsIHN0cnVjdHVyZWQgcHJvbXB0aW5nLCBwcm9tcHQgc3RhYmlsaXR5IGFuYWx5c2lzLCByaWdvcm91cyBtb2RlbCB2YWxpZGF0aW9uLCBhbmQgdGhlIGNvbnNpZGVyYXRpb24gb2YgZXRoaWNhbCBhbmQgbGVnYWwgaW1wbGljYXRpb25zLiBUaGUgZXNzYXkgZW1waGFzaXplcyB0aGUgbmVlZCBmb3IgYSBzdHJ1Y3R1cmVkLCBkaXJlY3RlZCwgYW5kIGZvcm1hbGl6ZWQgYXBwcm9hY2ggdG8gdXNpbmcgTExNcywgYWltaW5nIHRvIGVuc3VyZSB0aGUgaW50ZWdyaXR5IGFuZCByb2J1c3RuZXNzIG9mIHRleHQgYW5ub3RhdGlvbiBwcmFjdGljZXMsIGFuZCBhZHZvY2F0ZXMgZm9yIGEgbnVhbmNlZCBhbmQgY3JpdGljYWwgZW5nYWdlbWVudCB3aXRoIExMTXMgaW4gc29jaWFsIHNjaWVudGlmaWMgcmVzZWFyY2guCjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CiAgPHJlbGF0ZWRJdGVtcz4KICAgIDxyZWxhdGVkSXRlbSByZWxhdGlvblR5cGU9IklzUHVibGlzaGVkSW4iIHJlbGF0ZWRJdGVtVHlwZT0iSm91cm5hbCI+CiAgICAgIDxyZWxhdGVkSXRlbUlkZW50aWZpZXIgcmVsYXRlZEl0ZW1JZGVudGlmaWVyVHlwZT0iRUlTU04iPjE5NzEtODg1MzwvcmVsYXRlZEl0ZW1JZGVudGlmaWVyPgogICAgICA8dGl0bGVzPgogICAgICAgIDx0aXRsZT5Tb2Npb2xvZ2ljYTwvdGl0bGU+CiAgICAgIDwvdGl0bGVzPgogICAgICA8dm9sdW1lPjE4PC92b2x1bWU+CiAgICAgIDxpc3N1ZT4yPC9pc3N1ZT4KICAgICAgPGZpcnN0UGFnZT42NzwvZmlyc3RQYWdlPgogICAgICA8bGFzdFBhZ2U+ODU8L2xhc3RQYWdlPgogICAgPC9yZWxhdGVkSXRlbT4KICA8L3JlbGF0ZWRJdGVtcz4KPC9yZXNvdXJjZT4=",
+      "url": "https://sociologica.unibo.it/article/view/19461",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2024-10-30T15:04:41.000Z",
+      "registered": "2024-10-30T15:04:42.000Z",
+      "published": "2024",
+      "updated": "2024-10-30T15:04:42.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "crui.unibo",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "uyey",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.6092/issn.1971-8853/19461",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

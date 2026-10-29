@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "01_literature_methods_digest_handout_document",
+      "label": "Methods Digest handout: evidence resource rather than decisions",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L1-L7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "The handout says the digest adds no thesis content and decides nothing; plan statements derive from the draft methodology and Decision Log and change as decisions close."
+    },
+    {
+      "id": "01_literature_methods_digest_handout_stage_decision_navigation",
+      "label": "Nine digest stages map literature evidence to methodological decisions",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L18-L30",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "S/A/D/W/C/I/L/H/R cover scope, selection, capture, walkthrough, codebook/pilot, two-coder comparison, LLMs, harm tree and reporting; D1-D12 mappings are this handout's recorded plan."
+    },
+    {
+      "id": "01_literature_methods_digest_handout_source_passage_anchors",
+      "label": "Linked citations use appended-copy pages and exact highlighted source passages",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L32-L39",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Stable paper numbers across volumes, backlinks and bookmarks support checking summaries; compiler critiques must be checked against source papers."
+    },
+    {
+      "id": "01_literature_methods_digest_handout_recorded_evidence_limits",
+      "label": "Recorded digest limitations: 99 of 100 papers and version/OCR gaps",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L41-L46",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "This handout reports no Parker 2019 PDF/card, only Nissenbaum TOC/introduction, OCR risks, manuscripts/preprints/supplements, and a 2020 BfArM guide under a 2023 corpus label. It is an inventory statement, not independent verification of current files."
+    },
+    {
+      "id": "01_literature_methods_digest_handout_private_full_texts",
+      "label": "Digest full-text volumes are private-use copies",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Included full texts contain copies that must not be redistributed, including Krippendorff 2019 in an ignored private folder."
+    },
+    {
+      "id": "01_literature_methods_digest_handout_offline_rebuild_workflow",
+      "label": "Offline digest rebuild and exact-passage checks",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L49-L80",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Repository-root build_digest.py regenerates/checks anchors, compiles complete or stage volumes and package.py collects deliverables. Recorded expected count is 2,186 passages; registry is described as 100 papers."
+    },
+    {
+      "id": "01_literature_readme_document",
+      "label": "Literature collections, reading tracker and citation provenance",
+      "file_type": "document",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L1-L17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "01_literature_readme_core_vs_corpus",
+      "label": "Core thesis readings are distinct from methodology reading candidates",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L3-L4;L18-L47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "The guide describes 83 DOI records plus 10 official resources and 89 local PDFs; methodology candidates do not automatically become thesis citations or decisions."
+    },
+    {
+      "id": "01_literature_readme_reading_status_source",
+      "label": "reading-status.csv is the reading-status source of truth",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L12;L90-L92",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The README status column is generated during graph refresh; editing statuses in the CSV avoids divergence."
+    },
+    {
+      "id": "01_literature_readme_generated_literature_index",
+      "label": "Generated catalogue, PDF-title-page abstract index and literature map",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L9-L16;L40-L42",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "Graphify uses catalogue/download/topic/stage/RQ metadata and the hash-cached title-page abstract index; full paper text is not indexed."
+    },
+    {
+      "id": "01_literature_readme_citation_pdf_note_bibliography",
+      "label": "Cited papers require a PDF, reading-list row, bibliography entry and notes",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L49-L61",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The linked provenance rule is intended to prevent bibliography drift; stable BibTeX keys persist when version and publication years differ."
+    },
+    {
+      "id": "01_literature_readme_core_reading_topics",
+      "label": "Core literature spans harm models, health trackers and walkthrough method",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L65-L88",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "description": "The health/fitness/fertility heading groups reading topics, not study strata. Named core readings include Citron/Solove, Knabenhans, Martin/Nissenbaum/Shmatikov, tracker studies, and Wharton's walkthrough chapter."
+    }
+  ],
+  "edges": [
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_stage_decision_navigation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L18-L30",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_source_passage_anchors",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L32-L39",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_recorded_evidence_limits",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L41-L46",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_private_full_texts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_methods_digest_handout_document",
+      "target": "01_literature_methods_digest_handout_offline_rebuild_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\Methods-Digest\\handout.md",
+      "source_location": "L49-L80",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_core_vs_corpus",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L3-L4;L18-L47",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_reading_status_source",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L12;L90-L92",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_generated_literature_index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L9-L16;L40-L42",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_citation_pdf_note_bibliography",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L49-L61",
+      "weight": 1.0
+    },
+    {
+      "source": "01_literature_readme_document",
+      "target": "01_literature_readme_core_reading_topics",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\01_Literature\\README.md",
+      "source_location": "L65-L88",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

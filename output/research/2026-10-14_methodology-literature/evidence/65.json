@@ -1,0 +1,722 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2026-10-03T10:01:56Z",
+      "timestamp": 1791021716994,
+      "version": "4.1.0"
+    },
+    "reference-count": 49,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              22
+            ]
+          ],
+          "date-time": "2024-08-22T00:00:00Z",
+          "timestamp": 1724284800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              8,
+              22
+            ]
+          ],
+          "date-time": "2024-08-22T00:00:00Z",
+          "timestamp": 1724284800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Union",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "NextGenerationEU”/ PRTR"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NextGenerationEU”/ PRTR"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004837",
+        "name": "Ministerio de Ciencia e Innovación",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "MCIN/AEI/10.13039/501100011033"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "MCIN/AEI/10.13039/501100011033"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004837",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100023561",
+        "name": "Ministerio de Universidades",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "Plan Estatal de Investigación Científica, Técnica y de Innovación 2021-2023"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "Plan Estatal de Investigación Científica, Técnica y de Innovación 2021-2023"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100023561",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "National Science Foundation",
+        "award": [
+          "CNS-1914486"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CNS-1914486"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003759",
+        "name": "Universidad Politécnica de Madrid",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100003759",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Computing"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The number and dynamic nature of web sites and mobile applications present regulators and app store operators with significant challenges when it comes to enforcing compliance with applicable privacy and data protection laws. Over the past several years, people have turned to Natural Language Processing (NLP) techniques to automate privacy compliance analysis (e.g., comparing statements in privacy policies with analysis of the code and behavior of mobile apps) and to answer people’s privacy questions. Traditionally, these NLP techniques have relied on labor-intensive and potentially error-prone manual annotation processes to build the corpora necessary to train them. This article explores and evaluates the use of Large Language Models (LLMs) as an alternative for effectively and efficiently identifying and categorizing a variety of data practice disclosures found in the text of privacy policies. Specifically, we report on the performance of ChatGPT and Llama 2, two particularly popular LLM-based tools. This includes engineering prompts and evaluating different configurations of these LLM techniques. Evaluation of the resulting techniques on well-known corpora of privacy policy annotations yields an F1 score exceeding 93%. This score is higher than scores reported earlier in the literature on these benchmarks. This performance is obtained at minimal marginal cost (excluding the cost required to train the foundational models themselves). These results, which are consistent with those reported in other domains, suggest that LLMs offer a particularly promising approach to automated privacy policy analysis at scale.</jats:p>",
+    "DOI": "10.1007/s00607-024-01331-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2024-08-23T17:43:40Z",
+      "timestamp": 1724435020000
+    },
+    "page": "3879-3903",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 55,
+    "title": [
+      "Large language models: a new approach for privacy policy analysis at scale"
+    ],
+    "prefix": "10.1007",
+    "volume": "106",
+    "author": [
+      {
+        "given": "David",
+        "family": "Rodriguez",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ian",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jose M.",
+        "family": "Del Alamo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Norman",
+        "family": "Sadeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1331_CR1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Srinath M, Matheson L, Venkit PN, Zanfir-Fortuna G, Schaub F, Giles CL, Wilson S (2023) Privacy now or never: Large-scale extraction and analysis of dates in privacy policy text. In: Proceedings of the ACM Symposium on Document Engineering 2023. https://doi.org/10.1145/3573128.3609342. ACM",
+        "DOI": "10.1145/3573128.3609342"
+      },
+      {
+        "key": "1331_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2053",
+        "DOI": "10.1007/s00607-022-01076-3",
+        "volume": "104",
+        "author": "JM Del Alamo",
+        "year": "2022",
+        "unstructured": "Del Alamo JM, Guaman DS, García B et al (2022) A systematic mapping study on automated analysis of privacy policies. Computing 104:2053–2076. https://doi.org/10.1007/s00607-022-01076-3",
+        "journal-title": "Computing"
+      },
+      {
+        "key": "1331_CR3",
+        "first-page": "66",
+        "volume": "2019",
+        "author": "S Zimmeck",
+        "year": "2019",
+        "unstructured": "Zimmeck S, Story P, Smullen D, Ravichander A, Wang Z, Reidenberg JR, Russell NC, Sadeh N (2019) Maps: scaling privacy compliance analysis to a million apps. Proc Priv Enhanc Tech 2019:66",
+        "journal-title": "Proc Priv Enhanc Tech"
+      },
+      {
+        "key": "1331_CR4",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Bannihatti Kumar V, Iyengar R, Nisal N, Feng Y, Habib H, Story P, Cherivirala S, Hagan M, Cranor L, Wilson S, Schaub F,Sadeh N, (2020) Finding a choice in a haystack: automatic extraction of opt-out statements from privacy policy text. In: Proceedings of the web conference 2020, pp. 1943-1954. https://doi.org/10.1145/3366423.3380262",
+        "DOI": "10.1145/3366423.3380262"
+      },
+      {
+        "key": "1331_CR5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zimmeck S, Wang Z, Zou L, Iyengar R, Liu B, Schaub F, Wilson S, Sadeh N, Bellovin SM, Reidenberg J (2017) Automated analysis of privacy requirements for mobile apps. In: 24th Annual Network and Distributed System Security Symposium, NDSS 2017",
+        "DOI": "10.14722/ndss.2017.23034"
+      },
+      {
+        "issue": "1",
+        "key": "1331_CR6",
+        "first-page": "1",
+        "volume": "13",
+        "author": "S Wilson",
+        "year": "2018",
+        "unstructured": "Wilson S, Schaub F, Liu F, Sathyendra KM, Smullen D, Zimmeck S, Ramanath R, Story P, Liu F, Sadeh N et al (2018) Analyzing privacy policies at scale: From crowdsourcing to automated annotations. ACM Trans Web (TWEB) 13(1):1–29",
+        "journal-title": "ACM Trans Web (TWEB)"
+      },
+      {
+        "issue": "2",
+        "key": "1331_CR7",
+        "first-page": "88",
+        "volume": "2021",
+        "author": "D Bui",
+        "year": "2021",
+        "unstructured": "Bui D, Shin KG, Choi J-M, Shin J (2021) Automated extraction and presentation of data practices in privacy policies. Proc Priv Enhanc Technol 2021(2):88–110",
+        "journal-title": "Proc Priv Enhanc Technol"
+      },
+      {
+        "key": "1331_CR8",
+        "unstructured": "Harkous H, Fawaz K, Lebret R, Schaub F, Shin KG, Aberer K (2018) Polisis: Automated analysis and presentation of privacy policies using deep learning. In: 27th USENIX Security Symposium (USENIX Security 18), pp 531–548"
+      },
+      {
+        "issue": "1",
+        "key": "1331_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1162/coli_a_00464",
+        "volume": "49",
+        "author": "J-C Klie",
+        "year": "2023",
+        "unstructured": "Klie J-C, Webber B, Gurevych I (2023) Annotation error detection: analyzing the past and present for a more coherent future. Comput Linguist 49(1):157–198. https://doi.org/10.1162/coli_a_00464",
+        "journal-title": "Comput Linguist"
+      },
+      {
+        "key": "1331_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "387",
+        "DOI": "10.2139/ssrn.4335905",
+        "volume": "71",
+        "author": "JH Choi",
+        "year": "2022",
+        "unstructured": "Choi JH, Hickman KE, Monahan A, Schwarcz D (2022) Chatgpt goes to law school. J Legal Educat 71:387. https://doi.org/10.2139/ssrn.4335905",
+        "journal-title": "J Legal Educat"
+      },
+      {
+        "key": "1331_CR11",
+        "unstructured": "Tan J, Westermann H, Benyekhlef K (2023) Chatgpt as an artificial lawyer? Artificial Intelligence for Access to Justice (AI4AJ 2023)"
+      },
+      {
+        "key": "1331_CR12",
+        "unstructured": "Tang C, Liu Z, Ma C, Wu Z, Li Y, Liu W, Zhu D, Li Q, Li X, Liu T, Fan L (2023) PolicyGPT: automated analysis of privacy policies with large language models. Preprint at https://arxiv.org/abs/2309.10238"
+      },
+      {
+        "key": "1331_CR13",
+        "unstructured": "Arora S, Hosseini H, Utz C, Bannihatti VK, Dhellemmes T, Ravichander A, Story P, Mangat J, Chen R, Degeling M, Norton T, Hupperich T, Wilson S, Sadeh N (2022) A tale of two regulatory regimes: Creation and analysis of a bilingual privacy policy corpus. In: Proceedings of the thirteenth language resources and evaluation conference, pp 5460–5472. https://aclanthology.org/2022.lrec-1.585"
+      },
+      {
+        "key": "1331_CR14",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Wilson S, Schaub F, Dara A, Liu F, Cherivirala S, Leon PG, Andersen MS, Zimmeck S, Sathyendra K, Russell NC, Norton TB, Hovy E, Reidenberg JR, Sadeh N (2016) The creation and analysis of a website privacy policy corpus. In: Proceedings of the 54th annual meeting of the association for computational linguistics (Volume 1: Long Papers), pp 1330–1340. Association for Computational Linguistics, Berlin, Germany. https://doi.org/10.18653/v1/P16-1126",
+        "DOI": "10.18653/v1/P16-1126"
+      },
+      {
+        "key": "1331_CR15",
+        "unstructured": "PrivApp: IT100-Corpus. Accessed: January 10, 2024 (2024). https://github.com/PrivApp/IT100-Corpus"
+      },
+      {
+        "key": "1331_CR16",
+        "first-page": "39",
+        "volume": "30",
+        "author": "JR Reidenberg",
+        "year": "2015",
+        "unstructured": "Reidenberg JR, Breaux T, Cranor LF, French B, Grannis A, Graves JT, Liu F, McDonald A, Norton TB, Ramanath R, Russell NC, Sadeh N, Schaub F (2015) Disagreeable privacy policies: mismatches between meaning and users’ understanding. Berkeley Technol Law J 30:39–88",
+        "journal-title": "Berkeley Technol Law J"
+      },
+      {
+        "issue": "2",
+        "key": "1331_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.3233/SW-170283",
+        "volume": "9",
+        "author": "A Oltramari",
+        "year": "2018",
+        "unstructured": "Oltramari A, Piraviperumal D, Schaub F, Wilson S, Cherivirala S, Norton TB, Russell NC, Story P, Reidenberg J, Sadeh N (2018) Privonto: a semantic framework for the analysis of privacy policies. Semant Web 9(2):185–203. https://doi.org/10.3233/SW-170283",
+        "journal-title": "Semant Web"
+      },
+      {
+        "key": "1331_CR18",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Evans MC, Bhatia J, Wadkar S, Breaux TD (2017) An evaluation of constituency-based hyponymy extraction from privacy policies. In: 2017 IEEE 25th International Requirements Engineering Conference, pp 312–321. https://doi.org/10.1109/RE.2017.87",
+        "DOI": "10.1109/RE.2017.87"
+      },
+      {
+        "key": "1331_CR19",
+        "unstructured": "Hosseini MB, Wadkar S, Breaux TD, Niu J (2016) Lexical similarity of information type hypernyms, meronyms and synonyms in privacy policies. In: 2016 AAAI Fall Symposium Series"
+      },
+      {
+        "key": "1331_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen D, Manning CD (2014) A fast and accurate dependency parser using neural networks. In: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp 740–750",
+        "DOI": "10.3115/v1/D14-1082"
+      },
+      {
+        "key": "1331_CR21",
+        "unstructured": "Andow B, Mahmud SY, Wang W, Whitaker J, Enck W, Reaves B, Singh K, Xie T (2019) Policylint: investigating internal privacy policy contradictions on google play. In: 28th USENIX security symposium (USENIX Security 19), pp 585–602. USENIX Association. https://www.usenix.org/conference/usenixsecurity19/presentation/andow"
+      },
+      {
+        "key": "1331_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Guntamukkala N, Dara R, Grewal G (2015) A machine-learning based approach for measuring the completeness of online privacy policies. In: 2015 IEEE 14th International Conference on Machine Learning and Applications (ICMLA), pp 289–294. IEEE",
+        "DOI": "10.1109/ICMLA.2015.143"
+      },
+      {
+        "key": "1331_CR23",
+        "first-page": "336",
+        "volume": "2016",
+        "author": "AR Silva",
+        "year": "2016",
+        "unstructured": "Silva AR, Caramujo J, Monfared S, Calado P, Breaux T (2016) Improving the specification and analysis of privacy policies. ICEIS 2016:336",
+        "journal-title": "ICEIS"
+      },
+      {
+        "key": "1331_CR24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Story P, Zimmeck S, Ravichander A, Smullen D, Wang Z, Reidenberg J, Russell NC, Sadeh N (2019) Natural language processing for mobile app privacy compliance. In: AAAI Spring symposium on privacy-enhancing artificial intelligence and language technologies, vol 2, pp 24–32",
+        "DOI": "10.2478/popets-2019-0037"
+      },
+      {
+        "key": "1331_CR25",
+        "unstructured": "Sathyendra KM, Schaub F, Wilson S, Sadeh N (2016) Automatic extraction of opt-out choices from privacy policies. In: 2016 AAAI Fall Symposium Series"
+      },
+      {
+        "key": "1331_CR26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sathyendra KM, Wilson S, Schaub F, Zimmeck S, Sadeh N (2017) Identifying the provision of choices in privacy policy text. In: Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pp 2774–2779",
+        "DOI": "10.18653/v1/D17-1294"
+      },
+      {
+        "key": "1331_CR27",
+        "unstructured": "Liu F, Ramanath R, Sadeh N, Smith NA (2014) A step towards usable privacy policy: Automatic alignment of privacy statements. In: Proceedings of COLING 2014, the 25th International Conference on Computational Linguistics: Technical Papers, pp 884–894"
+      },
+      {
+        "key": "1331_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Massey AK, Eisenstein J, Antón AI, Swire PP (2013) Automated text mining for requirements analysis of policy documents. In: 2013 21st IEEE International Requirements Engineering Conference (RE), pp 4–13. IEEE",
+        "DOI": "10.1109/RE.2013.6636700"
+      },
+      {
+        "key": "1331_CR29",
+        "unstructured": "Keymanesh M, Elsner M, Sarthasarathy S (2020) Toward domain-guided controllable summarization of privacy policies. In: NLLP@ KDD, pp 18–24"
+      },
+      {
+        "key": "1331_CR30",
+        "unstructured": "Liu F, Fella NL, Liao K (2016) Modeling language vagueness in privacy policies using deep neural networks. In: 2016 AAAI Fall Symposium Series"
+      },
+      {
+        "key": "1331_CR31",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ravichander A, Black AW, Wilson S, Norton T, Sadeh N (2019) Question answering for privacy policies: Combining computational and legal perspectives. In: Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pp 4949–4959. Association for Computational Linguistics, Hong Kong, China. https://doi.org/10.18653/v1/D19-1500",
+        "DOI": "10.18653/v1/D19-1500"
+      },
+      {
+        "key": "1331_CR32",
+        "unstructured": "Radford A, Narasimhan K, Salimans T, Sutskever I et al. (2018) Improving language understanding by generative pre-training"
+      },
+      {
+        "key": "1331_CR33",
+        "unstructured": "Touvron H et al. (2023) Llama 2: Open foundation and fine-tuned chat models. Preprint at https://arxiv.org/abs/2307.09288"
+      },
+      {
+        "key": "1331_CR34",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ghanadian H, Nejadgholi I, Al Osman H (2023) ChatGPT for suicide risk assessment on social media: quantitative evaluation of model performance, potentials and limitations. In: Barnes J, De Clercq O, Klinger R (eds) Proceedings of the 13th Workshop on Computational Approaches to Subjectivity, Sentiment, & Social Media Analysis, pp 172–183. Association for Computational Linguistics, Toronto, Canada. https://doi.org/10.18653/v1/2023.wassa-1.16",
+        "DOI": "10.18653/v1/2023.wassa-1.16"
+      },
+      {
+        "key": "1331_CR35",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Shum K, Diao S, Zhang T (2023) Automatic prompt augmentation and selection with chain-of-thought from labeled data. In: Bouamor H, Pino J, Bali K (eds) Findings of the Association for Computational Linguistics: EMNLP 2023, pp 12113–12139. Association for Computational Linguistics, Singapore. https://doi.org/10.18653/v1/2023.findings-emnlp.811",
+        "DOI": "10.18653/v1/2023.findings-emnlp.811"
+      },
+      {
+        "key": "1331_CR36",
+        "unstructured": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser Ł, Polosukhin I (2017) Attention is all you need. Advances in neural information processing systems 30"
+      },
+      {
+        "key": "1331_CR37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Qin C, Zhang A, Zhang Z, Chen J, Yasunaga M, Yang D (2023) Is ChatGPT a General-Purpose Natural Language Processing Task Solver? Preprint at https://arxiv.org/abs/2302.06476",
+        "DOI": "10.18653/v1/2023.emnlp-main.85"
+      },
+      {
+        "key": "1331_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1279794",
+        "DOI": "10.3389/frai.2023.1279794",
+        "volume": "6",
+        "author": "J Savelka",
+        "year": "2023",
+        "unstructured": "Savelka J, Ashley KD (2023) The unreasonable effectiveness of large language models in zero-shot semantic annotation of legal texts. Front Artif Intell 6:1279794",
+        "journal-title": "Front Artif Intell"
+      },
+      {
+        "key": "1331_CR39",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Brocke J, Hevner A, Maedche A (2020) Introduction to Design Science Research, pp 1–13. Springer. https://doi.org/10.1007/978-3-030-46781-4_1",
+        "DOI": "10.1007/978-3-030-46781-4_1"
+      },
+      {
+        "key": "1331_CR40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4899-7502-7_891-2",
+        "author": "R Kohavi",
+        "year": "2015",
+        "unstructured": "Kohavi R, Longbotham R (2015) Online controlled experiments and a/b tests. Encycl Mach Learning data Min. https://doi.org/10.1007/978-1-4899-7502-7_891-2",
+        "journal-title": "Encycl Mach Learning data Min"
+      },
+      {
+        "key": "1331_CR41",
+        "unstructured": "OpenAI: Chat API Reference. Accessed: January 10, 2024 (2024). https://platform.openai.com/docs/api-reference/chat/create"
+      },
+      {
+        "key": "1331_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "202",
+        "DOI": "10.1007/978-3-030-64148-1_13",
+        "volume-title": "Product-Focused Softw Process Improv",
+        "author": "T Fredriksson",
+        "year": "2020",
+        "unstructured": "Fredriksson T, Mattos DI, Bosch J, Olsson HH (2020) Data labeling: An empirical investigation into industrial challenges and mitigation strategies. In: Morisio M, Torchiano M, Jedlitschka A (eds) Product-Focused Softw Process Improv. Springer, Cham, pp 202–216"
+      },
+      {
+        "key": "1331_CR43",
+        "first-page": "1877",
+        "volume": "33",
+        "author": "T Brown",
+        "year": "2020",
+        "unstructured": "Brown T, Mann B, Ryder N, Subbiah M, Kaplan JD, Dhariwal P, Neelakantan A, Shyam P, Sastry G, Askell A et al (2020) Language models are few-shot learners. Adv Neural Inform Process Syst 33:1877–1901",
+        "journal-title": "Adv Neural Inform Process Syst"
+      },
+      {
+        "key": "1331_CR44",
+        "unstructured": "Together AI: Inference Python Documentation. Accessed: January 10, 2024 (2024). https://docs.together.ai/docs/inference-python"
+      },
+      {
+        "key": "1331_CR45",
+        "unstructured": "Andow B (2024) PrivacyPolicyAnalysis. Accessed: January 10, 2024. https://github.com/benandow/PrivacyPolicyAnalysis"
+      },
+      {
+        "key": "1331_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "103262",
+        "DOI": "10.1016/j.cose.2023.103262",
+        "volume": "132",
+        "author": "DS Guamán",
+        "year": "2023",
+        "unstructured": "Guamán DS, Rodriguez D, del Alamo JM, Such J (2023) Automated GDPR compliance assessment for cross-border personal data transfers in android applications. Comput Secur 132:103262. https://doi.org/10.1016/j.cose.2023.103262",
+        "journal-title": "Comput Secur"
+      },
+      {
+        "issue": "3",
+        "key": "1331_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3590152",
+        "volume": "26",
+        "author": "I Wagner",
+        "year": "2023",
+        "unstructured": "Wagner I (2023) Privacy policies across the ages: content of privacy policies 1996–2021. ACM Trans Privacy Secur 26(3):1–32. https://doi.org/10.1145/3590152",
+        "journal-title": "ACM Trans Privacy Secur"
+      },
+      {
+        "key": "1331_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "291",
+        "DOI": "10.1007/s10994-013-5412-1",
+        "volume": "95",
+        "author": "Y Yan",
+        "year": "2014",
+        "unstructured": "Yan Y, Rosales R, Fung G et al (2014) Learning from multiple annotators with varying expertise. Mach Learning 95:291–327. https://doi.org/10.1007/s10994-013-5412-1",
+        "journal-title": "Mach Learning"
+      },
+      {
+        "key": "1331_CR49",
+        "unstructured": "Allen Institute for AI: Crowdsourcing, Pricing, Ethics, and Best Practices. https://blog.allenai.org/crowdsourcing-pricing-ethics-and-best-practices-8487fd5c9872. Accessed: January 10, 2024 (2024)"
+      }
+    ],
+    "container-title": [
+      "Computing"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00607-024-01331-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s00607-024-01331-9/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00607-024-01331-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2024-11-07T14:07:29Z",
+      "timestamp": 1730988449000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s00607-024-01331-9"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          22
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "12",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1331"
+    ],
+    "URL": "https://doi.org/10.1007/s00607-024-01331-9",
+    "relation": {},
+    "ISSN": [
+      "0010-485X",
+      "1436-5057"
+    ],
+    "issn-type": [
+      {
+        "value": "0010-485X",
+        "type": "print"
+      },
+      {
+        "value": "1436-5057",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          22
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "17 January 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "24 July 2024",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 August 2024",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Conflict of interest"
+        }
+      }
+    ]
+  }
+}

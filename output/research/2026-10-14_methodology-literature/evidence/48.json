@@ -1,0 +1,510 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2026-10-14T02:30:40Z",
+      "timestamp": 1791945040574,
+      "version": "4.3.4"
+    },
+    "reference-count": 43,
+    "publisher": "SAGE Publications",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              2
+            ]
+          ],
+          "date-time": "2017-10-02T00:00:00Z",
+          "timestamp": 1506902400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Collaborative Research & Innovation Opportunities grant Alberta Innovates Health Solutions",
+        "award": [
+          "20130152"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "20130152"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Qualitative Methods"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>As qualitative research becomes increasingly recognized and valued, it is imperative that it is conducted in a rigorous and methodical manner to yield meaningful and useful results. To be accepted as trustworthy, qualitative researchers must demonstrate that data analysis has been conducted in a precise, consistent, and exhaustive manner through recording, systematizing, and disclosing the methods of analysis with enough detail to enable the reader to determine whether the process is credible. Although there are numerous examples of how to conduct qualitative research, few sophisticated tools are available to researchers for conducting a rigorous and relevant thematic analysis. The purpose of this article is to guide researchers using thematic analysis as a research method. We offer personal insights and practical examples, while exploring issues of rigor and trustworthiness. The process of conducting a thematic analysis is illustrated through the presentation of an auditable decision trail, guiding interpreting and representing textual data. We detail our step-by-step approach to exploring the effectiveness of strategic clinical networks in Alberta, Canada, in our mixed methods case study. This article contributes a purposeful approach to thematic analysis in order to systematize and increase the traceability and verification of the analysis.</jats:p>",
+    "DOI": "10.1177/1609406917733847",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2017-10-03T11:58:00Z",
+      "timestamp": 1507031880000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 12341,
+    "title": [
+      "Thematic Analysis"
+    ],
+    "prefix": "10.1177",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Lorelli S.",
+        "family": "Nowell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Nursing, University of Calgary, Calgary, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jill M.",
+        "family": "Norris",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Nursing, University of Calgary, Calgary, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Deborah E.",
+        "family": "White",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Nursing, University of Calgary, Calgary, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nancy J.",
+        "family": "Moules",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Nursing, University of Calgary, Calgary, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-1609406917733847",
+        "unstructured": "Aronson J. (1994). A pragmatic view of thematic analysis. The Qualitative Report, 2, 1–3. Retrieved from http://www.nova.edu/ssss/QR/BackIssues/QR2-1/aronson.html"
+      },
+      {
+        "key": "bibr2-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/146879410100100307"
+      },
+      {
+        "key": "bibr4-1609406917733847",
+        "volume-title": "Transforming qualitative information: Thematic analysis and code development",
+        "author": "Boyatzis R.",
+        "year": "1998"
+      },
+      {
+        "key": "bibr5-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1191/1478088706qp063oa"
+      },
+      {
+        "key": "bibr6-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01421590400016308"
+      },
+      {
+        "key": "bibr7-1609406917733847",
+        "first-page": "163",
+        "volume-title": "Doing qualitative research",
+        "author": "Crabtree B.",
+        "year": "1999",
+        "edition": "2"
+      },
+      {
+        "key": "bibr8-1609406917733847",
+        "first-page": "179",
+        "volume-title": "Qualitative inquiry and research design: Choosing among five approaches",
+        "author": "Creswell J.",
+        "year": "2007",
+        "edition": "2"
+      },
+      {
+        "key": "bibr9-1609406917733847",
+        "volume-title": "Research design: Qualitative, quantitative, and mixed methods approaches",
+        "author": "Creswell J.",
+        "year": "2014",
+        "edition": "4"
+      },
+      {
+        "key": "bibr11-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-2648.1999.01090.x"
+      },
+      {
+        "key": "bibr12-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/019394590002200308"
+      },
+      {
+        "key": "bibr13-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9780203412497"
+      },
+      {
+        "key": "bibr14-1609406917733847",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fereday J., Muir-Cochrane E. (2006). Demonstrating rigor using thematic analysis: A hybrid approach of inductive and deductive coding and theme development. International Journal of Qualitative Research, 5, 80–92. Retrieved from http://ejournals.library.ualberta.ca/index.php/IJQM/article/view/4411/3530",
+        "DOI": "10.1177/160940690600500107"
+      },
+      {
+        "key": "bibr15-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/chp.47"
+      },
+      {
+        "key": "bibr16-1609406917733847",
+        "first-page": "981",
+        "volume-title": "Handbook of qualitative research",
+        "author": "Green J.",
+        "year": "2000",
+        "edition": "2"
+      },
+      {
+        "key": "bibr18-1609406917733847",
+        "volume-title": "Fourth generation evaluation",
+        "author": "Guba E. G.",
+        "year": "1989"
+      },
+      {
+        "key": "bibr19-1609406917733847",
+        "volume-title": "Applied thematic analysis",
+        "author": "Guest G.",
+        "year": "2011"
+      },
+      {
+        "key": "bibr20-1609406917733847",
+        "unstructured": "Halpren E. S. (1983). Auditing naturalistic inquiries: The development and application of a model (Unpublished doctoral dissertation). Indiana University, Bloomington."
+      },
+      {
+        "key": "bibr21-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1468794103033004"
+      },
+      {
+        "key": "bibr22-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4135/9781446280119.n21"
+      },
+      {
+        "key": "bibr23-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1365-2648.1994.tb01177.x"
+      },
+      {
+        "key": "bibr25-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/104973239200200403"
+      },
+      {
+        "key": "bibr26-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0147-1767(85)90062-8"
+      },
+      {
+        "key": "bibr27-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(01)05627-6"
+      },
+      {
+        "key": "bibr28-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0149206308316061"
+      },
+      {
+        "key": "bibr29-1609406917733847",
+        "volume-title": "Qualitative data analysis: A methods sourcebook",
+        "author": "Miles M. B.",
+        "year": "2014",
+        "edition": "3"
+      },
+      {
+        "key": "bibr30-1609406917733847",
+        "first-page": "111",
+        "volume-title": "Read me first for a user’s guide to qualitative methods",
+        "author": "Morse J.",
+        "year": "2002"
+      },
+      {
+        "key": "bibr31-1609406917733847",
+        "volume": "0174056",
+        "author": "Norris J. M.",
+        "year": "2017",
+        "journal-title": "PLoS One, 12"
+      },
+      {
+        "key": "bibr32-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13012-017-0625-5"
+      },
+      {
+        "key": "bibr34-1609406917733847",
+        "volume-title": "Nursing research: Generating and assessing evidence for nursing practice",
+        "volume": "8",
+        "author": "Polit D.",
+        "year": "2008"
+      },
+      {
+        "key": "bibr35-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.320.7227.114"
+      },
+      {
+        "key": "bibr37-1609406917733847",
+        "first-page": "769",
+        "volume-title": "Handbook of qualitative research",
+        "author": "Ryan G.",
+        "year": "2000",
+        "edition": "2"
+      },
+      {
+        "key": "bibr38-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.12968/bjon.2007.16.12.23726"
+      },
+      {
+        "key": "bibr39-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00012272-198604000-00005"
+      },
+      {
+        "key": "bibr40-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/nur.4770180411"
+      },
+      {
+        "key": "bibr41-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1049732304269672"
+      },
+      {
+        "key": "bibr42-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-2648.2000.01432.x"
+      },
+      {
+        "key": "bibr43-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1049732307307031"
+      },
+      {
+        "key": "bibr44-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/ebn.3.3.68"
+      },
+      {
+        "key": "bibr45-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1365-2648.2004.03207.x"
+      },
+      {
+        "key": "bibr46-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/intqhc/mzm042"
+      },
+      {
+        "key": "bibr47-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1077800410383121"
+      },
+      {
+        "key": "bibr48-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5172/conu.19.1-2.75"
+      },
+      {
+        "key": "bibr49-1609406917733847",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/160940691201100305"
+      }
+    ],
+    "container-title": [
+      "International Journal of Qualitative Methods"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1609406917733847",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/1609406917733847",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1609406917733847",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2026-04-29T10:11:57Z",
+      "timestamp": 1777457517000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/1609406917733847"
+      }
+    },
+    "subtitle": [
+      "Striving to Meet the Trustworthiness Criteria"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/1609406917733847"
+    ],
+    "URL": "https://doi.org/10.1177/1609406917733847",
+    "relation": {},
+    "ISSN": [
+      "1609-4069",
+      "1609-4069"
+    ],
+    "issn-type": [
+      {
+        "value": "1609-4069",
+        "type": "print"
+      },
+      {
+        "value": "1609-4069",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "article-number": "1609406917733847"
+  }
+}
