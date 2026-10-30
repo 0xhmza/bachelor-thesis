@@ -63,3 +63,6 @@ output/
 
 # Standalone HTML decks (presentation copies of thesis content, not sources)
 06_Presentation/*.html
+
+# Exported copy of the slide deck artifact (presentation, not a source)
+Harm Trees for Health Trackers.html

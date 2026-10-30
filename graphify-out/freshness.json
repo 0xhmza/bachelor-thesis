@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-30T15:12:26.280875+00:00",
+  "built_at_utc": "2026-10-30T17:54:27.040646+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Action-Plan_2026-10-13.md",
@@ -50,6 +50,7 @@
     "03_Thesis/chapters/01_introduction.tex",
     "03_Thesis/chapters/02_background.tex",
     "03_Thesis/chapters/03_related_work.tex",
+    "03_Thesis/chapters/04_methodology.tex",
     "03_Thesis/chapters/05_results.tex",
     "03_Thesis/chapters/06_discussion.tex",
     "03_Thesis/chapters/07_conclusion.tex",
@@ -108,10 +109,7 @@
     "scripts/literature-search/README.md",
     "scripts/sampling-audit/v001/README.md"
   ],
-  "needs_semantic_extraction": [
-    "03_Thesis/chapters/04_methodology.tex",
-    "Harm Trees for Health Trackers.html"
-  ],
+  "needs_semantic_extraction": [],
   "source_hashes": {
     ".vscode/settings.json": "44bec166ef052f34a76fa1a617803ec506a6adbf56c691e47138feca14028c0d",
     "00_Admin/Reviews/Sampling-Peer-Review_2026-10-28/artifact-qa-scope-amended.json": "3731d3bb103e59e0ecee27df30e1d67ef7c837639737e47c4818303411f9e073",
@@ -301,7 +299,6 @@
     "05_Data/Literature Search/28. Oct/README.md": "ff98a4d3b1e63c62c2cbcb1e816e45b6b28e08acaf278de80048511994fbd25f",
     "06_Presentation/README.md": "0788c9757c7f5a4fcef78795fd1f94869e1d69d5205a87a2cbd4f1bc44045468",
     "AGENTS.md": "1f2fcd1eb4cf41518ff17666928988fbdb54f22dc0528709d71cb01c2740a4d4",
-    "Harm Trees for Health Trackers.html": "4d270b4905b70b1c8f3b3d4871b95c9393452bb526d2cc2712d4cf5d4134b442",
     "README.md": "90b7ab7f7b4c57cc2eb56487f85547d2ffcdc1f901f179862d54499823a0ed78",
     "graphify-out/memory/query_20261025_162228_cd74d353_how_was_the_thesis_layout_revised_on_25_october_20.md": "3739c500549c3d81dacbfb8c1c933a8a7c026dcceb7d5853d9214433517aa524",
     "literature_new/README.md": "a714282481f245b1ade7867412b62f8183056ebcfaf25b136bd26a9a8881db09",
@@ -328,7 +325,7 @@
     "03_Thesis/chapters/01_introduction.tex": "e9a99e07d4674e8461a72f009819686ea03299b4900054c2165c1ff51f3a2100",
     "03_Thesis/chapters/02_background.tex": "d6fb35df8df1f6411376835a386edcc112ffacf88bdc18b11b6af45775acfbbb",
     "03_Thesis/chapters/03_related_work.tex": "9e54a1da15740a4a44a6bc918a48de20a11e5501fe1114e6fb2b818b9bd44f2b",
-    "03_Thesis/chapters/04_methodology.tex": "d51982cdc83f44b65a443e5610966928067744704754024d74ceb2dcf2240733",
+    "03_Thesis/chapters/04_methodology.tex": "46354c3566324e5b96b2b584912f79f296ed4219604c4ac9f0595c8832c68768",
     "03_Thesis/chapters/05_results.tex": "cf1ea339108e80bd333271a5fc764aa33786e4e37578b6ecfba7009d4e514980",
     "03_Thesis/chapters/06_discussion.tex": "beb6d9784c1a5dc46076d6c61c4cd1c3adf1c5f122f6ebbdb44fb61cf7872511",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
@@ -362,9 +359,9 @@
     "01_Literature/Literature-Review/README.md": "db5d6db6b0cb90035b3ff5f7a2a3a1b665a75b39b134eb66387c971c1695833b"
   },
   "literature_corpus": null,
-  "nodes": 2109,
-  "edges": 3282,
-  "communities": 218,
+  "nodes": 2135,
+  "edges": 3351,
+  "communities": 213,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
