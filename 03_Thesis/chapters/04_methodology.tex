@@ -695,6 +695,62 @@ The available German-market feedback count differs between stores
   \item An \textbf{App Store listing} contributes its German rating count,
     denoted $r_i$.
 \end{itemize}
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Public listing data by geographic basis]{Public listing data by geographic basis. Observed on 22 October 2026
+for up to six App Store and five Google Play listings in the German (DE), US
+and British (GB) storefronts; fields shown only on product pages were checked
+for one app per store in DE and US\@. \emph{Market-specific}: the value changed
+with the storefront. \emph{Worldwide}: it was identical across storefronts.
+}
+\label{tab:storefront-fields}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Field} & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Rating count & \textbf{Market-specific}, also for the current version; no
+  worldwide total. Yazio: 446{,}768 (DE), 51{,}379 (US), 12{,}351 (GB)
+  & \textbf{Worldwide}, labelled \enquote{reviews} on the page; no country
+  count. Home Workout: 4{,}045{,}258 (DE, US), 4{,}045{,}260 (GB) \\
+\midrule
+Average rating & \textbf{Market-specific}, also for the current version.
+  Yazio: 4.62 (DE), 4.70 (US)
+  & \textbf{Market-specific}. MyFitnessPal: 3.94 (DE), 4.41 (US) \\
+\midrule
+One-to-five-star breakdown & \textbf{Market-specific}, on the product page
+  only. Yazio five-star: 349{,}509 (DE), 42{,}759 (US)
+  & \textbf{Mixed}: the country's distribution scaled to the worldwide count.
+  MyFitnessPal one-star: 428{,}497 (DE), 205{,}443 (US) \\
+\midrule
+Written reviews & A few review texts on the product page; \textbf{no public
+  count}
+  & Undocumented embedded count, not displayed, \textbf{market-specific}: it
+  follows the storefront country, not the interface language (25 October).
+  MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
+\midrule
+Downloads or installs & \textbf{Not public}; reported to the developer
+  only~\parencite{apple2026acquisition}
+  & \textbf{Worldwide} band on the page (\enquote{100M+}) and an
+  undocumented exact count (Home Workout: 303{,}142{,}208 in all three);
+  country figures to the developer only~\parencite{google2026playstatistics} \\
+\midrule
+Chart position & \textbf{Market-specific} badge on the product page (Yazio:
+  no.~3 in Health \& Fitness, DE) and public category chart pages
+  & \textbf{Market-specific} badge when ranked (MyFitnessPal: no.~2 top
+  grossing in Health \& Fitness, US; none in DE) \\
+\midrule
+Search result order & Endpoint order per storefront; not verified as the
+  native store rank
+  & Page order per storefront; not verified as the native store rank \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
 Thus, a listing supplies one of the two inputs. The unit being ranked is the
 \emph{app}, the same app could be present in both stores, or just in one of both. The scoring formula changes accordingly.
  however: its listings are matched across stores before scoring.
@@ -832,61 +888,6 @@ the sample with a different app or a different listing.
 %storefront. The check covered few apps in one session, so it shows how the
 %fields behave and does not enter the sample. The two stores therefore count
 %ratings on different bases.
-
-\begin{table}[t]
-\centering
-\begin{singlespace}
-\caption[Public listing data by geographic basis]{Public listing data by geographic basis. Observed on 22 October 2026
-for up to six App Store and five Google Play listings in the German (DE), US
-and British (GB) storefronts; fields shown only on product pages were checked
-for one app per store in DE and US\@. \emph{Market-specific}: the value changed
-with the storefront. \emph{Worldwide}: it was identical across storefronts.
-}
-\label{tab:storefront-fields}
-\small
-\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Field} & \textbf{App Store} & \textbf{Google Play} \\
-\midrule
-Rating count & \textbf{Market-specific}, also for the current version; no
-  worldwide total. Yazio: 446{,}768 (DE), 51{,}379 (US), 12{,}351 (GB)
-  & \textbf{Worldwide}, labelled \enquote{reviews} on the page; no country
-  count. Home Workout: 4{,}045{,}258 (DE, US), 4{,}045{,}260 (GB) \\
-\midrule
-Average rating & \textbf{Market-specific}, also for the current version.
-  Yazio: 4.62 (DE), 4.70 (US)
-  & \textbf{Market-specific}. MyFitnessPal: 3.94 (DE), 4.41 (US) \\
-\midrule
-One-to-five-star breakdown & \textbf{Market-specific}, on the product page
-  only. Yazio five-star: 349{,}509 (DE), 42{,}759 (US)
-  & \textbf{Mixed}: the country's distribution scaled to the worldwide count.
-  MyFitnessPal one-star: 428{,}497 (DE), 205{,}443 (US) \\
-\midrule
-Written reviews & A few review texts on the product page; \textbf{no public
-  count}
-  & Undocumented embedded count, not displayed, \textbf{market-specific}: it
-  follows the storefront country, not the interface language (25 October).
-  MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
-\midrule
-Downloads or installs & \textbf{Not public}; reported to the developer
-  only~\parencite{apple2026acquisition}
-  & \textbf{Worldwide} band on the page (\enquote{100M+}) and an
-  undocumented exact count (Home Workout: 303{,}142{,}208 in all three);
-  country figures to the developer only~\parencite{google2026playstatistics} \\
-\midrule
-Chart position & \textbf{Market-specific} badge on the product page (Yazio:
-  no.~3 in Health \& Fitness, DE) and public category chart pages
-  & \textbf{Market-specific} badge when ranked (MyFitnessPal: no.~2 top
-  grossing in Health \& Fitness, US; none in DE) \\
-\midrule
-Search result order & Endpoint order per storefront; not verified as the
-  native store rank
-  & Page order per storefront; not verified as the native store rank \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
 
 \section{Material and Language}
 \todo[color=orange]{
