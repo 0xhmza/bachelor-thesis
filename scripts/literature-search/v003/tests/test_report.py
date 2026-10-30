@@ -28,6 +28,13 @@ class StringsTest(unittest.TestCase):
             self.assertIn(f'PubMed, {s}.', text)
             self.assertIn(f'IEEE Xplore, {s}.', text)
 
+    def test_examples_are_terms_of_their_group(self):
+        for g, group in CONFIG['groups'].items():
+            examples = CONFIG['group_examples'][g]
+            self.assertTrue(examples, g)
+            self.assertLessEqual(set(examples), set(group['terms']), g)
+        self.assertEqual(set(CONFIG['group_examples']) - {'_comment'}, set(CONFIG['groups']))
+
     def test_headings_are_set(self):
         text = self.strings()
         self.assertEqual(text.count('\\paragraph{'), text.count('}\\leavevmode\n\\begin{lstlisting}'))

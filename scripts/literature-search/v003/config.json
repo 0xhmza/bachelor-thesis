@@ -165,6 +165,17 @@
       ]
     }
   },
+  "group_examples": {
+    "_comment": "Terms shown in the body table of the thesis; each must be a term of its group (tests/test_report.py). The complete lists are in the appendix.",
+    "D": ["health app*", "wearable*", "fitness track*", "menstrual app*", "mhealth"],
+    "P": ["privacy", "data protection", "personal data"],
+    "H": ["harm*", "inference*", "re-identif*", "surveillance"],
+    "C": ["privacy polic*", "privacy label*", "data safety", "terms of service"],
+    "T": ["privacy polic*", "privacy label*", "data safety", "breach notification*"],
+    "L": ["large language model*", "llm", "gpt*", "chatgpt"],
+    "A": ["annotat*", "classif*", "extract*", "content analysis"],
+    "F": ["vague*", "hedg*", "reassur*", "dark pattern*"]
+  },
   "strands": [
     {
       "id": "S1",

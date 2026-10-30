@@ -77,7 +77,8 @@ protection?} It has four sub-questions, each tied to a part of this study.
 concept of the review question becomes a term group whose alternative terms are
 joined with OR, and the groups of a query are joined with AND, so that a record
 must contain at least one term of every group. Eight groups cover the concepts
-(Table~\ref{tab:lit-groups}). The domain group (D) names health tracking apps
+(Table~\ref{tab:lit-groups}; the complete term lists are in
+Appendix~\ref{app:lit-groups}). The domain group (D) names health tracking apps
 and their wearables, with the domains of the sample in
 Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and mental health,
 cycle, fertility and pregnancy) and the generic terms under which such apps are
@@ -94,6 +95,25 @@ names the wording strategies that the stance axis codes.
 % https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04 ;
 % baumann2025llm, App. A, pp. 56--57 (four term groups joined by AND).
 
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Term groups of the literature search]{Term groups of the literature
+search, with the number of terms and examples; the complete lists are in
+Table~\ref{tab:lit-groups-full}. The terms of a group are joined with OR. A
+trailing * truncates, and terms of several words are searched as phrases.
+Table~\ref{tab:lit-strands} shows how the groups are combined.}
+\label{tab:lit-groups}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}r>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Group} & \textbf{Concept} & \textbf{Terms} & \textbf{Examples} \\
+\midrule
+\input{tables/literature-groups-short}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
 Four strands combine the groups, one for each sub-question
 (Table~\ref{tab:lit-strands}). S1 and S2 search the domain together with
 privacy and add either harms (LQ1) or communication surfaces (LQ2). S3 and S4
@@ -106,35 +126,13 @@ review of language-model studies by Baumann et al.
 % 2014 for S1, S2 and S4 because the policy studies this thesis builds on start
 % in 2014--2015 (sunyaev2015availability, doi:10.1136/amiajnl-2013-002605).
 
-\begin{table}[tbp]
+\begin{table}[H]
 \centering
 \begin{singlespace}
-\caption[Term groups of the literature search]{Term groups of the literature
-search. The terms of a group are joined with OR. A trailing * truncates, and
-terms of several words are searched as phrases. Table~\ref{tab:lit-strands}
-shows how the groups are combined.}
-\label{tab:lit-groups}
-\small
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Group} & \textbf{Concept} & \textbf{Terms (joined with OR)} \\
-\midrule
-\input{tables/literature-groups}% the generated rows end with \bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-\begin{table}[tbp]
-\centering
-\begin{singlespace}
-\caption[Search strands and their application to the sources]{Search strands
-and their application to the sources. (a)~A dot marks a group that the strand
-requires; the marked groups are joined with AND. (b)~The databases receive each
-strand as a separate query; the venues are listed completely and the rule shown
-is applied to every listed paper.}
+\caption[Search strands]{Search strands, one for each sub-question. A dot marks
+a group that the strand requires; the marked groups are joined with AND.}
 \label{tab:lit-strands}
 \small
-\textit{(a) Strands}\par\smallskip
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll*{8}{c}lr@{}}
 \toprule
  & & \multicolumn{8}{c}{\textbf{Term group}} & & \\
@@ -147,40 +145,26 @@ S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L
 S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
 \bottomrule
 \end{tabular*}
-
-\bigskip
-\textit{(b) Application to the sources}\par\smallskip
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Sources} & \textbf{Fields} & \textbf{Selection} \\
-\midrule
-PubMed, IEEE Xplore, arXiv, ACL Anthology & title, abstract & S1, S2, S3 and S4, each on its own \\
-PoPETs, USENIX Security, SOUPS & title, abstract & D OR S3 OR S4 \\
-CCS, IEEE S\&P, NDSS & title & D OR S3 OR S4 \\
-CSCW from 2017 & title, abstract & S1 OR S2 OR S3 OR S4 \\
-CHI; CSCW to 2016 & title & \mbox{(D AND P)} OR \mbox{(D AND H)} OR \mbox{(D AND C)} OR \mbox{(T AND L)} OR \mbox{(T AND F)} \\
-\bottomrule
-\end{tabularx}
 \end{singlespace}
 \end{table}
 
-\paragraph{Sources.} Two kinds of source are searched
-(Table~\ref{tab:lit-sources-method}). The first are eight venues of security,
-privacy and human--computer interaction research, each listed completely from
-2014 to the search date: the four main security conferences (CCS, IEEE S\&P,
-NDSS and USENIX Security), the venues for privacy-enhancing technologies
+\paragraph{Sources.} Two kinds of source are searched: eight venues, which are
+listed completely, and four bibliographic databases, which are searched with
+the strands. Citation searching adds a third route, described below.
+
+\paragraph{Venues.} The eight venues of security, privacy and human--computer
+interaction research are each listed completely from 2014 to the search date
+(Table~\ref{tab:lit-venues}): the four main security conferences (CCS, IEEE
+S\&P, NDSS and USENIX Security), the venues for privacy-enhancing technologies
 (PoPETs) and for usable privacy and security (SOUPS), and CHI and CSCW, where
 user studies of privacy in health tracking appear; three of the four seed
 papers of the citation search were published at CHI. The strands are applied to
-the titles and abstracts of the listed papers (Table~\ref{tab:lit-strands}b).
-At the security and privacy venues, privacy is the subject of the venue itself,
-so the domain group alone selects the candidates for LQ1 and LQ2, while S3 and
-S4 are applied in full. Where a venue list holds titles only, CHI and CSCW
-papers are selected with pairs of groups instead of the full strands, because a
-title rarely names three concepts. The second kind are four bibliographic
-databases, which add the literature published elsewhere: PubMed for health
-informatics and medicine, IEEE Xplore for engineering, arXiv for preprints and
-the ACL Anthology for language processing.
+the titles and abstracts of the listed papers; the last column of the table
+gives the rule for each venue. At the security and privacy venues, privacy is
+the subject of the venue itself, so the domain group alone selects the
+candidates for LQ1 and LQ2, while S3 and S4 are applied in full. Where a venue
+list holds titles only, CHI and CSCW papers are selected with pairs of groups
+instead of the full strands, because a title rarely names three concepts.
 % Precedents:
 % - Complete output of selected top venues, filtered with keyword groups on
 %   title and abstract: Distler et al. 2021, "A Systematic Literature Review of
@@ -201,32 +185,51 @@ the ACL Anthology for language processing.
 %   Methods 11(2):181--217, doi:10.1002/jrsm.1378 (retrieval qualities of 28
 %   academic search systems; check which of the four databases they assessed).
 
-\begin{table}[tbp]
+\begin{table}[H]
 \centering
 \begin{singlespace}
-\caption[Sources of the literature search]{Sources of the literature search, all
-searched on 28 October 2026. Venues are listed in full and filtered locally;
-databases are searched with the strands.}
-\label{tab:lit-sources-method}
+\caption[Venues of the literature search]{Venues of the literature search, all
+listed on 28 October 2026 and filtered locally. $^a$~Titles only:
+\mbox{(D AND P)} OR \mbox{(D AND H)} OR \mbox{(D AND C)} OR \mbox{(T AND L)} OR
+\mbox{(T AND F)}, because a title rarely names three concepts.}
+\label{tab:lit-venues}
 \small
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
-\textbf{Source} & \textbf{Listed or searched through} & \textbf{Fields and coverage} \\
+\textbf{Venue} & \textbf{Listed through} & \textbf{Fields and period} & \textbf{Selection rule} \\
 \midrule
-\multicolumn{3}{@{}l}{\textit{Venues}} \\
-PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 \\
-USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; 2014 to 2026, except SOUPS 2015, which has no programme page there \\
-CCS, IEEE S\&P, NDSS, CHI & Crossref, exact proceedings titles & Title; 2014 to 2026 \\
-CSCW & Crossref: proceedings to 2017, then PACM HCI & Title to 2016, title and abstract from 2017 \\
-\addlinespace
-\multicolumn{3}{@{}l}{\textit{Databases}} \\
-PubMed & E-utilities & Title and abstract [tiab]; publication date \\
-IEEE Xplore & Web search interface & Document title and abstract; year range \\
-arXiv & API & Title and abstract; submission date \\
-ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year \\
-\addlinespace
-\multicolumn{3}{@{}l}{\textit{Citation searching}} \\
-Four seed papers & OpenCitations Index, Crossref & References and citing works \\
+PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 & D OR S3 OR S4 \\
+USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; 2014 to 2026, except SOUPS 2015, which has no programme page there & D OR S3 OR S4 \\
+CCS, IEEE S\&P, NDSS & Crossref, exact proceedings titles & Title; 2014 to 2026 & D OR S3 OR S4 \\
+CHI & Crossref, exact proceedings titles & Title; 2014 to 2026 & Title pairs$^a$ \\
+CSCW & Crossref: proceedings to 2017, then PACM HCI & Title to 2016, title and abstract from 2017 & Title pairs$^a$ to 2016; S1 OR S2 OR S3 OR S4 from 2017 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Databases.} Four bibliographic databases add the literature published
+elsewhere (Table~\ref{tab:lit-databases}): PubMed for health informatics and
+medicine, IEEE Xplore for engineering, arXiv for preprints and the ACL Anthology
+for language processing. Each strand is run against every database, either as a
+query of its own or locally on the retrieved records, as the next paragraph
+explains.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Databases of the literature search]{Databases of the literature
+search, all searched on 28 October 2026.}
+\label{tab:lit-databases}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Database} & \textbf{Searched through} & \textbf{Fields and limit} & \textbf{Strands} \\
+\midrule
+PubMed & E-utilities & Title and abstract [tiab]; publication date & S1 to S4, each as its own query \\
+IEEE Xplore & Web search interface & Document title and abstract; year range & S1 to S4, each as its own query \\
+arXiv & API & Title and abstract; submission date & S1 to S4 applied locally to the anchor pool \\
+ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year & S1 to S4 applied locally \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
@@ -269,7 +272,7 @@ or publication-type filter is set; both are screening rules.
 % - Local matching rules: scripts/literature-search/v002/lit.py (norm_text,
 %   term_regex); Appendix F, Sec. "Search Strings".
 
-\begin{table}[tbp]
+\begin{table}[H]
 \centering
 \begin{singlespace}
 \caption[Translation of a strand into platform syntax]{Translation of the shared
@@ -340,9 +343,31 @@ reported.
 %   2016, J. Med. Libr. Assoc. 104(3):240--243, doi:10.3163/1536-5050.104.3.014.
 % - Reporting: PRISMA-S (rethlefsen2021prisma) item 16.
 
-\paragraph{Eligibility and screening.} The criteria and the exclusion rules of
-Table~\ref{tab:lit-criteria} were fixed before screening. A record is eligible
-if it meets C1--C4. Screening has two stages: rules R1--R6 are applied to the
+\paragraph{Eligibility.} A record is eligible if it meets all four criteria of
+Table~\ref{tab:lit-eligibility}, which were fixed before screening.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Eligibility criteria of the literature review]{Eligibility criteria of
+the literature review.}
+\label{tab:lit-eligibility}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \textbf{Criterion} \\
+\midrule
+C1 & A research article (journal, conference or workshop paper, archival preprint) reporting original empirical or analytical work, or a systematic or scoping review \\
+C2 & Written in English \\
+C3 & Published from 1 January 2014 (LQ3: 2022) to 28 October 2026 \\
+C4 & Answers at least one of LQ1--LQ4 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Screening.} The exclusion rules of Table~\ref{tab:lit-criteria} were
+fixed before screening, which has two stages: rules R1--R6 are applied to the
 title, and to the abstract where the title does not decide; R7 and R8 are
 applied to the full text of the records that pass. The rules are applied in
 their order, and an excluded record receives one primary reason, the first rule
@@ -373,22 +398,16 @@ recorded instead, and preprints are marked as such.
 \highlight[orange!25]{The screening decisions were prepared by an AI assistant
 from titles, abstracts and full texts.}\todo{Check every decision in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv before this section states who screened.}
 
-\begin{table}[tbp]
+\begin{table}[H]
 \centering
 \begin{singlespace}
-\caption[Eligibility criteria and exclusion rules of the literature
-review]{Eligibility criteria and exclusion rules of the literature review. A
-record is excluded under the first rule that applies.}
+\caption[Exclusion rules of the literature review]{Exclusion rules of the
+literature review. A record is excluded under the first rule that applies.}
 \label{tab:lit-criteria}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}@{}}
 \toprule
- & \textbf{Criterion or rule} & \textbf{Stage} \\
-\midrule
-C1 & A research article (journal, conference or workshop paper, archival preprint) reporting original empirical or analytical work, or a systematic or scoping review & \\
-C2 & Written in English & \\
-C3 & Published from 1 January 2014 (LQ3: 2022) to 28 October 2026 & \\
-C4 & Answers at least one of LQ1--LQ4 & \\
+ & \textbf{Rule} & \textbf{Stage} \\
 \midrule
 R1 & Not a research article: editorial, commentary, letter, erratum, abstract, poster, keynote, book or chapter, thesis, front matter, narrative overview, position paper & title, abstract \\
 R2 & Outside the language or period of C2--C3 & title, abstract \\

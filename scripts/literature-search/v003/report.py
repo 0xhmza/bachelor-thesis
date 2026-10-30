@@ -1,7 +1,8 @@
 """Thesis tables and figures of the literature review v003 (D14 as revised on 30 October 2026), generated from the
 search and screening files.
 
-    python scripts/literature-search/v003/report.py strings   # the search strings of Appendix F only
+    python scripts/literature-search/v003/report.py groups strings   # term groups and search strings, no data needed
+    python scripts/literature-search/v003/report.py strings          # the search strings of Appendix F only
     python scripts/literature-search/v003/report.py           # every table and figure
 
 Reads the frozen search (run-*.json, ieee-raw.json in 05_Data/Literature Search/28. Oct/), output/merge.json,
@@ -95,10 +96,14 @@ def sources_table(runs, ieee, merge, rows):
 
 
 def groups_table(config):
-    out = []
+    """The complete term lists (appendix) and a short table with the number of terms and examples (body)."""
+    full, short = [], []
     for g in ['D', 'P', 'H', 'C', 'T', 'L', 'A', 'F']:
-        out.append(rf"{g} & {tex(config['groups'][g]['name'])} & \footnotesize {tex(', '.join(config['groups'][g]['terms']))} \\")
-    write(TABLES / 'literature-groups.tex', '\n'.join(out) + '\n\\bottomrule\n')
+        name, terms = tex(config['groups'][g]['name']), config['groups'][g]['terms']
+        full.append(rf"{g} & {name} & \footnotesize {tex(', '.join(terms))} \\")
+        short.append(rf"{g} & {name} & {len(terms)} & \footnotesize {tex(', '.join(config['group_examples'][g]))} \\")
+    write(TABLES / 'literature-groups.tex', '\n'.join(full) + '\n\\bottomrule\n')
+    write(TABLES / 'literature-groups-short.tex', '\n'.join(short) + '\n\\bottomrule\n')
 
 
 def strings_appendix(runs, ieee, config):
@@ -369,9 +374,12 @@ def map_figures(rows, ext, config):
 
 def main(argv):
     config = lit.load_config()
-    if argv == ['strings']:
-        strings_appendix(*load_search(), config)
-        print('search strings written')
+    if argv and set(argv) <= {'strings', 'groups'}:
+        if 'groups' in argv:
+            groups_table(config)
+        if 'strings' in argv:
+            strings_appendix(*load_search(), config)
+        print('written:', ', '.join(argv))
         return
     runs, ieee, merge, screen, rows, ext = load()
     sources_table(runs, ieee, merge, rows)

@@ -19,7 +19,7 @@ version's `output/` folder (outside Git).
 ## v003
 
 ```powershell
-python scripts/literature-search/v003/report.py strings   # -> 03_Thesis/tables/literature-strings.tex
+python scripts/literature-search/v003/report.py groups strings   # -> 03_Thesis/tables/literature-groups*.tex, literature-strings.tex
 python -I -m unittest discover -s scripts/literature-search/v003/tests
 ```
 
