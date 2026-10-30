@@ -96,4 +96,13 @@ The retired `_junk/` folder, sync conflicts and temporary files were removed on
 `99_Archive/2026-10-14_cleanup-recovery.zip`, full removed folders in the adjacent
 `../bachelor-thesis-cleanup-20261014/`. The superseded `output/` research folder
 was removed on 25 October 2026 (in Git history; its git-ignored raw data was lost,
-see `00_Admin/Risk-Register.md` R9).
+see `00_Admin/Risk-Register.md` R9) and later restored from Git as the historical
+evidence it is.
+
+On 30 October 2026 the stale duplicate `01_Literature/.tex/`, the `#_Junk_Backup/`
+folder, the second copy of the digest volumes in `01_Literature/PDFs/AI Literature
+Analysis/`, 155 sync and cloud conflict copies, LaTeX intermediates, bytecode
+caches and the scratch folder `tmp/` were removed. Everything tracked is in
+Git up to commit `f50e097`; what Git did not hold and was not provably a duplicate
+went to the adjacent `../bachelor-thesis-cleanup-20261030/` (`manifest.json` lists
+every file moved or deleted).
