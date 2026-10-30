@@ -25,24 +25,31 @@ pages}\todo{Not sure if the providers pages will be collected.} will be collecte
 
 \section{Literature Review}
 \label{sec:lit-review}
-\todo[inline]{Rewritten on 28 October 2026 (Decision D14, which supersedes D13): the search no longer rests on OpenAlex and Semantic Scholar. Check the procedure, and the screening log in 01\_Literature/\allowbreak Literature-Review/, before the supervisor sees it.}
-The literature review has three tasks in this study. It collects the harms and
-capabilities from which the reference harm trees are built, it supplies the
-evidence for the methodological decisions of this chapter, and it tests the
-research gap stated in Section~\ref{ch:introduction}. Its procedure follows the
-staged review of Baumann et al.~\parencite[App.~A, pp.~56--57]{baumann2025llm}:
-fixed Boolean queries built from term groups, the exact string and hit count
-reported for every source, works added by hand reported as a source of their
-own, removal of duplicates, screening against explicit criteria and the
-extraction of fixed fields. Table~\ref{tab:lit-adaptation} lists which of their
-choices are kept and which are changed. The search and the screening are reported
-with the items of PRISMA~2020 and its search extension
-PRISMA-S~\parencite{page2021prisma,rethlefsen2021prisma}. Because the review
-maps evidence rather than pooling effects, it is a scoping
-review in the sense of Arksey and O'Malley~\parencite{arksey2005scoping}.
+The literature review has two tasks in this study. It collects the harms and
+capabilities from which the reference harm trees are built, and it supplies the
+evidence for the methodological decisions of this chapter. Its procedure follows
+the staged review of Baumann et al.~\parencite{baumann2025llm}: fixed Boolean
+queries built from term groups, the exact string and hit count reported for
+every source, removal of duplicates, screening against explicit criteria and
+the extraction of fixed fields. The search is reported with the items of the
+PRISMA-S extension and the flow of records with the flow diagram of
+PRISMA~2020~\parencite{rethlefsen2021prisma,page2021prisma}. Because the review
+maps evidence rather than pooling effects, it is a scoping review in the sense
+of Arksey and O'Malley~\parencite{arksey2005scoping}.
+% Precedents (keep for comparison with the results):
+% - baumann2025llm, App. A, pp. 56--57, and Sec. 3, p. 7 (checked in the PDF,
+%   Decision D14): term groups joined by AND; exact query and hit count per
+%   database (Table 6); duplicates removed; title-and-abstract screening against
+%   explicit criteria; fixed extraction fields.
+% - rethlefsen2021prisma (PRISMA-S), doi:10.1186/s13643-020-01542-z: items 1
+%   (databases), 5 (citation searching), 8 (full strategies), 9 (limits),
+%   13 (dates of searches), 16 (deduplication).
+% - page2021prisma (PRISMA 2020), doi:10.1016/j.jclinepi.2021.03.001: Fig. 1 flow diagram,
+%   including "reports not retrieved" and full-text exclusions with reasons.
+% - arksey2005scoping, doi:10.1080/1364557032000119616: scoping review,
+%   stages 1--5.
 
-\paragraph{Review question.} The review asks one question, derived from the RQ
-and the supervisor's statement of the gap, \enquote{what harms service providers
+\paragraph{Review question.} The review asks one question, derived from the RQ \enquote{what harms service providers
 communicate}: \emph{What is known about the privacy harms and capabilities
 associated with health tracking apps, about how their privacy communication has
 been analysed and what it says, about how language models have been used and
@@ -53,13 +60,10 @@ protection?} It has four sub-questions, each tied to a part of this study.
     and inference capabilities concern the users of health tracking apps and
     their wearables? It supplies the nodes of the harm trees and the reference
     model of RQ1 and RQ3, and starts from general accounts of privacy
-    harm~\parencite{solove2006taxonomy,calo2011boundaries,citron2021harms}.
+    harm.
   \item[LQ2] \textit{Communication.} How has the privacy communication of health
-    tracking apps (policies, labels, store listings, notices, settings and
-    consent interfaces, marketing) been analysed, and what was found? It informs
-    the sampling, material and coding decisions and tests the gap for RQ1--RQ4;
-    work on the large-scale analysis of policies is its methodological
-    background~\parencite{wilson2016creation,zimmeck2019maps}.
+    tracking apps been analysed, and what was found? It informs
+    the sampling, material and coding decisions and tests the gap for RQ1--RQ4.
   \item[LQ3] \textit{Language models.} How have large language models been used
     to annotate, classify, extract from or assess privacy text, and how were
     they validated? It informs the LLM-assisted coding.
@@ -69,62 +73,46 @@ protection?} It has four sub-questions, each tied to a part of this study.
     (RQ2, RQ3).
 \end{description}
 
-\begin{table}[tbp]
-\centering
-\begin{singlespace}
-\caption[Choices of the reference procedure and how they are applied]{Choices of
-the reference procedure of Baumann et al.\ (App.~A) and how they are applied in
-this review.}
-\label{tab:lit-adaptation}
-\small
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Choice} & \textbf{Baumann et al.} & \textbf{This review, and why} \\
-\midrule
-Query & One query of four term groups joined by AND & Kept as a structure; four queries, one per sub-question, because the review serves four parts of the study. The terms are derived from the RQ, not copied. \\
-\addlinespace
-Sources & Scopus, Web of Science, Semantic Scholar, ACL Anthology, Google Scholar & The supervisor's venues are listed in full; PubMed, IEEE Xplore, arXiv and the ACL Anthology are searched as databases. Scopus, Web of Science and Google Scholar could not be queried (see Sources). \\
-\addlinespace
-Period & 2022 to the search date & 2014 to the search date, because the policy studies this study builds on start in 2014--2015~\parencite{sunyaev2015availability}; 2022 for LQ3 only, as in the source. \\
-\addlinespace
-Works added by hand & Reported as a row of their own & Kept: thesis citations, Methods Digest papers and citation searching are routes of their own, recorded per record. \\
-\addlinespace
-Citation filter & Fewer than 3 citations per year removed & Not kept. The closest precedents date from 2024--2026, and a citation rate is no criterion of relevance or quality. \\
-\addlinespace
-Screening & Title and abstract; two inclusion criteria, one exclusion & Kept and extended: four criteria, eight ordered exclusion rules with one primary reason, and a full-text stage. \\
-\addlinespace
-Extraction & Fixed fields per paper & Kept, with fields for the harm trees and the evidence map. \\
-\addlinespace
-Stage 3 & Selection of datasets & Replaced by the capability table that feeds the harm trees. \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
+\paragraph{Search concepts.} The search is built from concept blocks. Each
+concept of the review question becomes a term group whose alternative terms are
+joined with OR, and the groups of a query are joined with AND, so that a record
+must contain at least one term of every group. Eight groups cover the concepts
+(Table~\ref{tab:lit-groups}). The domain group (D) names health tracking apps
+and their wearables, with the domains of the sample in
+Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and mental health,
+cycle, fertility and pregnancy) and the generic terms under which such apps are
+studied (mHealth, wearable, self-tracking). The privacy group (P) restricts the
+domain to privacy. The harm group (H) names harms and the threats and inferences
+through which capabilities are described. The communication group (C) names the
+surfaces the study codes. The privacy-text group (T) names policies, labels and
+notices in any domain; the model group (L) and the task group (A) select
+language-model studies that annotate or assess such text; the framing group (F)
+names the wording strategies that the stance axis codes.
+% Precedent for concept blocks (OR within a concept, AND across concepts):
+% Lefebvre et al., Cochrane Handbook for Systematic Reviews of Interventions,
+% v6.5.1 (2025), ch. 4, Sec. 4.4.2 "Structure of a search strategy",
+% https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-04 ;
+% baumann2025llm, App. A, pp. 56--57 (four term groups joined by AND).
 
-\paragraph{Search concepts.} Eight term groups translate the concepts of the
-review question into search terms (Table~\ref{tab:lit-groups}). The domain group
-(D) names health tracking apps and their wearables, with the domains of the
-sample in Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and
-mental health, cycle, fertility and pregnancy) and the generic terms under which
-such apps are studied (mHealth, wearable, self-tracking). The privacy group (P)
-keeps the domain searches to privacy. The harm group (H) names harms and the
-threats and inferences through which capabilities are described. The
-communication group (C) names the surfaces the study codes. The privacy-text
-group (T) names policies, labels and notices in any domain; the model group (L)
-and the task group (A) select language-model studies that annotate or assess
-such text; the framing group (F) names the wording strategies that the stance
-axis codes. Groups are joined with AND into five strands: S1~=~D AND P AND H
-for LQ1, S2~=~D AND P AND C for LQ2, S3~=~T AND L AND A for LQ3, S4~=~T AND F
-for LQ4, and S5, the German terms for health apps and data protection, searched
-in PubMed only to reach German-language studies of the German market.
+Four strands combine the groups, one for each sub-question
+(Table~\ref{tab:lit-strands}). S1 and S2 search the domain together with
+privacy and add either harms (LQ1) or communication surfaces (LQ2). S3 and S4
+search privacy text in any domain, together with language models and analysis
+tasks (LQ3) or with framing (LQ4). The strands cover 1~January 2014 to the
+search date, which includes the first studies of health-app privacy
+policies~\parencite{sunyaev2015availability}; S3 starts in 2022, as in the
+review of language-model studies by Baumann et al.
+% Period: baumann2025llm searched 2022 to the search date (App. A); D14 sets
+% 2014 for S1, S2 and S4 because the policy studies this thesis builds on start
+% in 2014--2015 (sunyaev2015availability, doi:10.1136/amiajnl-2013-002605).
 
 \begin{table}[tbp]
 \centering
 \begin{singlespace}
 \caption[Term groups of the literature search]{Term groups of the literature
-search. A trailing * truncates; phrases are searched as phrases. The strands join
-the groups with AND: S1~=~D, P, H; S2~=~D, P, C; S3~=~T, L, A (from 2022);
-S4~=~T, F.}
+search. The terms of a group are joined with OR. A trailing * truncates, and
+terms of several words are searched as phrases. Table~\ref{tab:lit-strands}
+shows how the groups are combined.}
 \label{tab:lit-groups}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X@{}}
@@ -136,29 +124,82 @@ S4~=~T, F.}
 \end{singlespace}
 \end{table}
 
-\paragraph{Sources.} Venues, where studies are published, are distinguished from
-the platforms through which they are searched (Table~\ref{tab:lit-sources-method}).
-The venues are those named in the supervisor meeting of 13~October 2026, read
-as PoPETs, CCS, USENIX Security, IEEE S\&P and CSCW, together with CHI, where
-the supervisor's three example papers appeared, and SOUPS, the venue for usable
-privacy; NDSS is added as a reading of the unresolved name \enquote{mdmp}, to be
-confirmed. Each venue is listed completely for 2014 to the search date, and the
-strands are applied to the listed titles and abstracts. At the security and
-privacy venues, privacy is the subject of the venue, so the domain group alone
-selects candidates for S1 and S2; at CHI and CSCW the full strands are applied.
-Where the platform holds no abstract, titles are matched with two groups
-instead of three (for example D AND P), because a title rarely names three
-concepts. Four databases add the literature that these venues do not hold:
-PubMed for health informatics and medicine, IEEE Xplore for engineering
-venues, arXiv for preprints and the ACL Anthology for language processing.
-The ACM Digital Library and dblp answered the project's browser and scripts with a
-bot verification, which was not completed; Scopus and Web of Science require an
-institutional login; Google Scholar offers no export and blocks automated
-queries. These sources were therefore not searched, and the ACM venues were
-listed through their DOI metadata in Crossref instead. An earlier run of this
-review in OpenAlex and Semantic
-Scholar~\parencite{priem2022openalex,kinney2023semantic}, on 26 October 2026,
-is superseded and not used.
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Search strands and their application to the sources]{Search strands
+and their application to the sources. (a)~A dot marks a group that the strand
+requires; the marked groups are joined with AND. (b)~The databases receive each
+strand as a separate query; the venues are listed completely and the rule shown
+is applied to every listed paper.}
+\label{tab:lit-strands}
+\small
+\textit{(a) Strands}\par\smallskip
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll*{8}{c}lr@{}}
+\toprule
+ & & \multicolumn{8}{c}{\textbf{Term group}} & & \\
+\cmidrule(lr){3-10}
+\textbf{Strand} & \textbf{Sub-question} & D & P & H & C & T & L & A & F & \textbf{Query} & \textbf{From} \\
+\midrule
+S1 & LQ1 Harms and capabilities & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & D AND P AND H & 2014 \\
+S2 & LQ2 Communication & $\bullet$ & $\bullet$ & & $\bullet$ & & & & & D AND P AND C & 2014 \\
+S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L AND A & 2022 \\
+S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
+\bottomrule
+\end{tabular*}
+
+\bigskip
+\textit{(b) Application to the sources}\par\smallskip
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Sources} & \textbf{Fields} & \textbf{Selection} \\
+\midrule
+PubMed, IEEE Xplore, arXiv, ACL Anthology & title, abstract & S1, S2, S3 and S4, each on its own \\
+PoPETs, USENIX Security, SOUPS & title, abstract & D OR S3 OR S4 \\
+CCS, IEEE S\&P, NDSS & title & D OR S3 OR S4 \\
+CSCW from 2017 & title, abstract & S1 OR S2 OR S3 OR S4 \\
+CHI; CSCW to 2016 & title & \mbox{(D AND P)} OR \mbox{(D AND H)} OR \mbox{(D AND C)} OR \mbox{(T AND L)} OR \mbox{(T AND F)} \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Sources.} Two kinds of source are searched
+(Table~\ref{tab:lit-sources-method}). The first are eight venues of security,
+privacy and human--computer interaction research, each listed completely from
+2014 to the search date: the four main security conferences (CCS, IEEE S\&P,
+NDSS and USENIX Security), the venues for privacy-enhancing technologies
+(PoPETs) and for usable privacy and security (SOUPS), and CHI and CSCW, where
+user studies of privacy in health tracking appear; three of the four seed
+papers of the citation search were published at CHI. The strands are applied to
+the titles and abstracts of the listed papers (Table~\ref{tab:lit-strands}b).
+At the security and privacy venues, privacy is the subject of the venue itself,
+so the domain group alone selects the candidates for LQ1 and LQ2, while S3 and
+S4 are applied in full. Where a venue list holds titles only, CHI and CSCW
+papers are selected with pairs of groups instead of the full strands, because a
+title rarely names three concepts. The second kind are four bibliographic
+databases, which add the literature published elsewhere: PubMed for health
+informatics and medicine, IEEE Xplore for engineering, arXiv for preprints and
+the ACL Anthology for language processing.
+% Precedents:
+% - Complete output of selected top venues, filtered with keyword groups on
+%   title and abstract: Distler et al. 2021, "A Systematic Literature Review of
+%   Empirical Methods and Risk Representation in Usable Privacy and Security
+%   Research", ACM TOCHI 28(6), doi:10.1145/3469845 (papers of 2014--2018 at
+%   CCS, IEEE S&P, USENIX Security, SOUPS and CHI, kept when title or abstract
+%   named security or privacy and a user-related term). Section and page of
+%   the method not yet checked: the open-access PDF is copy-protected.
+% - Handsearching journals and conference proceedings beside databases:
+%   Cochrane Handbook v6.5.1 (2025), ch. 4, Sec. 4.3.5 "Other sources".
+% - Fewer concept groups where a field is sparse: Cochrane Handbook ch. 4,
+%   Sec. 4.4.2 (not every concept of the question must be searched); wording
+%   to be checked. The rule that the domain group alone selects S1/S2
+%   candidates at security and privacy venues is a project rule (D14;
+%   config.json "venue_rules") with no direct published precedent found;
+%   Distler et al. still required a security or privacy term at such venues.
+% - Choice of search systems: Gusenbauer and Haddaway 2020, Res. Synth.
+%   Methods 11(2):181--217, doi:10.1002/jrsm.1378 (retrieval qualities of 28
+%   academic search systems; check which of the four databases they assessed).
 
 \begin{table}[tbp]
 \centering
@@ -170,13 +211,13 @@ databases are searched with the strands.}
 \small
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
-\textbf{Source} & \textbf{Searched through} & \textbf{Fields and coverage} \\
+\textbf{Source} & \textbf{Listed or searched through} & \textbf{Fields and coverage} \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Venues}} \\
 PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 \\
-USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; SOUPS 2015 has no page there \\
-CCS, IEEE S\&P, NDSS, CHI & Crossref, exact proceedings titles & Title only; Crossref holds no abstracts for them \\
-CSCW & Crossref: proceedings to 2017, then PACM HCI & Title, abstract from 2017 \\
+USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; 2014 to 2026, except SOUPS 2015, which has no programme page there \\
+CCS, IEEE S\&P, NDSS, CHI & Crossref, exact proceedings titles & Title; 2014 to 2026 \\
+CSCW & Crossref: proceedings to 2017, then PACM HCI & Title to 2016, title and abstract from 2017 \\
 \addlinespace
 \multicolumn{3}{@{}l}{\textit{Databases}} \\
 PubMed & E-utilities & Title and abstract [tiab]; publication date \\
@@ -184,63 +225,151 @@ IEEE Xplore & Web search interface & Document title and abstract; year range \\
 arXiv & API & Title and abstract; submission date \\
 ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year \\
 \addlinespace
-\multicolumn{3}{@{}l}{\textit{Other methods}} \\
-Citation searching & OpenCitations Index, Crossref & References and citing works of four seed papers \\
-Thesis citations & \texttt{\_shared/references.bib} & Every work cited in the thesis \\
-Methods Digest & Its registry of 116 papers & Every paper of the digest \\
+\multicolumn{3}{@{}l}{\textit{Citation searching}} \\
+Four seed papers & OpenCitations Index, Crossref & References and citing works \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
 \end{table}
 
-\paragraph{Platform strings.} Each strand is translated for each platform, and
-the exact strings, fields, filters and search times are given in
-Appendix~\ref{app:literature}. PubMed searches titles and abstracts with
-truncation inside phrases. IEEE Xplore does not stem, so its strings keep the
-truncation and name the title and abstract fields for every term. The arXiv
-interface stems words but cannot truncate inside a phrase, and in a test it
-returned 34 records for the full S3 string but 62 for \emph{privacy policy} AND
-\emph{LLM} alone. Its records are therefore retrieved with short pairs of words
-(for example \emph{privacy} AND \emph{fitness}), and the strands are applied to
-the retrieved titles and abstracts, as for the venue lists and the ACL
-Anthology. No language or publication-type filter is set; both are screening
-rules.
+\paragraph{Platform strings.} The strands are the shared search logic; each
+platform receives them in its own syntax (Table~\ref{tab:lit-syntax}). The
+complete strings, fields, date limits and search times are given in
+Appendix~\ref{app:lit-strings}. PubMed and IEEE Xplore receive each strand as
+one query. Every term is searched in the title and the abstract, terms of
+several words are enclosed in quotation marks as phrases, and a trailing
+asterisk truncates; PubMed also accepts truncation inside a quoted phrase.
+IEEE Xplore requires the field to be named for each term, so every term occurs
+twice, once for the document title and once for the abstract. The arXiv
+interface returned fewer records for long nested queries than for their parts,
+so arXiv receives short anchor queries instead: each pairs one domain word with
+one privacy term, or joins the words of one privacy-text term, in the title or
+abstract. The records of all anchor queries form a pool. The ACL Anthology is
+taken as its complete bibliography file with abstracts. The strands are applied
+locally to the arXiv pool, to the ACL Anthology file and to the venue lists,
+with one matching rule: titles, abstracts and terms are reduced to lower-case
+letters and digits, a term matches whole words only, and a trailing asterisk
+matches any word ending. Date limits are set at the platform (publication date
+in PubMed, year in IEEE Xplore, submission date in arXiv) or applied locally
+(publication year in the ACL Anthology file and the venue lists). No language
+or publication-type filter is set; both are screening rules.
+% Precedents and documentation:
+% - Full strategy per source, with fields, limits and dates: PRISMA-S
+%   (rethlefsen2021prisma) items 8, 9 and 13.
+% - Search systems differ in Boolean, phrase and truncation support, so the
+%   strategy is translated per system: Gusenbauer and Haddaway 2020,
+%   doi:10.1002/jrsm.1378; Cochrane Handbook v6.5.1, ch. 4, Sec. 4.4.
+% - PubMed: wildcards inside quoted phrases are supported (e.g. "breast
+%   feed*"); at least four characters must precede the wildcard, and wildcards
+%   switch off Automatic Term Mapping. PubMed User Guide,
+%   https://pubmed.ncbi.nlm.nih.gov/help/ (read 30 October 2026). The S3 term
+%   gpt* has three characters before the wildcard; check how PubMed handled it.
+% - arXiv test on 28 October 2026: full S3 string 34 records, "privacy policy"
+%   AND LLM alone 62 (D14; config.json "arxiv_anchors").
+% - Local matching rules: scripts/literature-search/v002/lit.py (norm_text,
+%   term_regex); Appendix F, Sec. "Search Strings".
 
-\paragraph{Citation searching.} One round of backward and forward citation
-searching starts from the four health-tracker papers the supervisor sent on
-5~September 2026~\parencite{malki2024exploring,hudig2025intimate,cao2024deleted,niksirat2024wearable}.
-Their references and the works citing them are taken from the OpenCitations
-Index and their metadata from Crossref.
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Translation of a strand into platform syntax]{Translation of the shared
+search logic into the syntax of each platform, shown for the first term of each
+group of S4. An ellipsis stands for the remaining terms of the group; the
+complete strings are in Appendix~\ref{app:lit-strings}.}
+\label{tab:lit-syntax}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash\ttfamily\footnotesize}X>{\raggedright\arraybackslash}p{2.9cm}@{}}
+\toprule
+\textbf{Platform} & \normalfont\small\textbf{Query form} & \textbf{Date limit} \\
+\midrule
+Shared logic & (privacy polic* OR \dots) AND (vague* OR \dots) & 2014 to search date \\
+\addlinespace
+PubMed & ("privacy polic*"[tiab] OR \dots) AND ("vague*"[tiab] OR \dots) & Publication date \\
+\addlinespace
+IEEE Xplore & ("Document Title":"privacy polic*" OR "Abstract":"privacy polic*" OR \dots) AND ("Document Title":vague* OR "Abstract":vague* OR \dots) & Year range \\
+\addlinespace
+arXiv & (ti:privacy OR abs:privacy) AND (ti:polic* OR abs:polic*)\newline{\normalfont\small one of the anchor queries; S4 is applied locally to the pool} & Submission date \\
+\addlinespace
+ACL Anthology, venue lists & {\normalfont\small No query; S4 is applied locally to title and abstract, or to the title where no abstract is held} & Publication year, applied locally \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
 
-\paragraph{Existing literature.} Every work cited in the thesis and every paper
-of the Methods Digest, the reading collection compiled before the search,
-enters the corpus and is screened with the same rules. A thesis citation that
-fails a rule is kept in a \emph{contextual collection} with the rule that
-excluded it; it may still be cited, for example for a definition or a
-statistic, but it is not counted as review evidence.
+\paragraph{Citation searching.} Citation searching adds studies that the term
+groups miss. It starts from a seed set of four studies that address the core
+topic of the review directly: three CHI papers on privacy in period, fertility
+and other female health
+apps~\parencite{malki2024exploring,hudig2025intimate,cao2024deleted} and a
+survey of the utility, privacy and security of wearable activity
+trackers~\parencite{niksirat2024wearable}. One round of backward searching (the
+references of the seed papers) and forward searching (the works that cite them)
+is run. References and citing works are taken from the OpenCitations Index and
+their metadata from Crossref. The records found enter the same deduplication
+and screening as the search results.
+% Precedents:
+% - Backward and forward snowballing from a start set: Wohlin 2014, "Guidelines
+%   for snowballing in systematic literature studies and a replication in
+%   software engineering", Proc. EASE 2014, pp. 1--10,
+%   doi:10.1145/2601248.2601268 (Wohlin iterates until no new papers are found;
+%   this review runs one round).
+% - Citation tracking as a supplementary search method: Hirt et al. 2023,
+%   "Citation tracking for systematic literature searching: A scoping review",
+%   Res. Synth. Methods, doi:10.1002/jrsm.1635.
+% - Reporting: PRISMA-S (rethlefsen2021prisma) item 5.
+% - OpenCitations: Peroni and Shotton 2020, Quantitative Science Studies,
+%   doi:10.1162/qss_a_00023.
+% - Seeds: config.json "citation_seeds" (DOIs 10.1145/3613904.3642521,
+%   10.1145/3706598.3714089, 10.1145/3613904.3642042, 10.1145/3645091).
 
-\paragraph{Deduplication and provenance.} Records that share a DOI, an arXiv
-identifier, or a normalised title with publication years at most one year
-apart (three years when one of them is an arXiv preprint, which may precede its
-paper) are merged into one record. A fuzzy comparison of all titles then
-lists near-identical pairs, which are merged by hand when they are the same
-work. Each record keeps every route that found it: database, venue, citation
-searching, thesis citation or Methods Digest.
+\paragraph{Deduplication.} The records of all sources are merged automatically
+by a script of this project. Two records are taken to be the same work when
+they share a DOI or an arXiv identifier, or when their normalised titles
+(lower-case letters and digits) are identical and their publication years
+differ by at most one; three years are allowed when one of the two is an arXiv
+preprint, which may precede the published paper by years. The merged record
+keeps every source that found it, so that the yield of each source can be
+reported.
+% Implementation: scripts/literature-search/v002/merge.py (merge(), keys_of(),
+% lit.norm_title; titles shorter than 12 characters are not matched).
+% Precedents:
+% - Automated deduplication on DOI, title and year: Hair et al. 2023, "The
+%   Automated Systematic Search Deduplicator (ASySD)", BMC Biology 21:189,
+%   doi:10.1186/s12915-023-01686-z.
+% - Field-based matching of records from several databases: Bramer et al.
+%   2016, J. Med. Libr. Assoc. 104(3):240--243, doi:10.3163/1536-5050.104.3.014.
+% - Reporting: PRISMA-S (rethlefsen2021prisma) item 16.
 
 \paragraph{Eligibility and screening.} The criteria and the exclusion rules of
 Table~\ref{tab:lit-criteria} were fixed before screening. A record is eligible
-if it meets C1--C4. Rules R1--R6 are applied to the title, and to the abstract
-where the title does not decide; R7--R8 to the full text of the records that
-pass. The rules are applied in their order, and an excluded record receives one
-primary reason: the first rule that applies. The results therefore report, for
-each rule, how many records it assessed and excluded and how many remained.
-Every decision and its reason are recorded in a screening log. Where neither
-the platform nor Crossref holds an abstract, the abstract is looked up by DOI
-in OpenAlex for screening only; OpenAlex is not a search source here. Two
-conventions keep the rules apart: systems for hospitals, health records,
-telemedicine or the Internet of Things in general fall under R3, and systems
-for wearables, body-area networks or health apps under R5; adoption, attitude
-and concern studies fall under R4 unless they name specific harms or actors.
+if it meets C1--C4. Screening has two stages: rules R1--R6 are applied to the
+title, and to the abstract where the title does not decide; R7 and R8 are
+applied to the full text of the records that pass. The rules are applied in
+their order, and an excluded record receives one primary reason, the first rule
+that applies. Every decision and its reason are recorded in a screening log.
+Where no source holds an abstract, the abstract of the same DOI is taken from
+OpenAlex~\parencite{priem2022openalex}. Two conventions keep the rules apart:
+systems for hospitals, health records, telemedicine or the Internet of Things
+in general fall under R3, and systems for wearables, body-area networks or
+health apps under R5; adoption, attitude and concern studies fall under R4
+unless they name specific harms or actors. A paper whose full text requires
+payment is excluded under R7 when it is available neither through the
+university's institutional access or network nor as a publicly accessible
+version, such as an arXiv preprint. The review maps evidence, so no quality
+score decides inclusion, as PRISMA-ScR allows for scoping
+reviews~\parencite{tricco2018prisma}; the peer-review status of each study is
+recorded instead, and preprints are marked as such.
+% Precedents:
+% - Two stages (titles and abstracts, then full texts): Cochrane Handbook
+%   v6.5.1 (2025), ch. 4, Sec. 4.6.3 "A typical process for selecting studies".
+% - Criteria assessed in order of importance, the first failed criterion being
+%   the primary reason for exclusion: Cochrane Handbook ch. 4, Sec. 4.6.4.
+% - Reports sought but not retrieved, and full-text exclusions with reasons,
+%   as separate boxes: page2021prisma, Fig. 1 (flow diagram); item 16a.
+% - Critical appraisal optional in scoping reviews: tricco2018prisma
+%   (PRISMA-ScR, doi:10.7326/M18-0850), item 12.
+% - Abstract lookup: scripts/literature-search/v002/enrich.py (OpenAlex by
+%   DOI, used for screening only; OpenAlex is not a search source).
 \highlight[orange!25]{The screening decisions were prepared by an AI assistant
 from titles, abstracts and full texts.}\todo{Check every decision in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv before this section states who screened.}
 
@@ -257,7 +386,7 @@ record is excluded under the first rule that applies.}
  & \textbf{Criterion or rule} & \textbf{Stage} \\
 \midrule
 C1 & A research article (journal, conference or workshop paper, archival preprint) reporting original empirical or analytical work, or a systematic or scoping review & \\
-C2 & Written in English or German & \\
+C2 & Written in English & \\
 C3 & Published from 1 January 2014 (LQ3: 2022) to 28 October 2026 & \\
 C4 & Answers at least one of LQ1--LQ4 & \\
 \midrule
@@ -267,39 +396,50 @@ R3 & Outside the domain: neither health tracking apps or wearables nor privacy t
 R4 & Health tracking without a privacy focus (quality, usability, clinical effect, adoption, features) & title, abstract \\
 R5 & A technical system or protocol whose evaluation documents neither harms or capabilities nor communication & title, abstract \\
 R6 & Privacy text or language models outside health tracking, answering neither LQ3 nor LQ4 (for example models as a privacy risk, readability, compliance or label accuracy without risk wording) & title, abstract \\
-R7 & Full text not retrievable & full text \\
+R7 & Full text requires payment and is available neither through the university's institutional access or network nor as a publicly accessible version (for example an arXiv preprint) & full text \\
 R8 & On the full text, C1 or C4 does not hold & full text \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
 \end{table}
 
-\paragraph{Full texts and appraisal.} Full texts are taken from the project's
-collection, then from open access, tried in a fixed order (arXiv, Europe PMC,
-usenix.org, the PoPETs site and the open-access locations OpenAlex lists for the
-DOI), and finally from the university library. A record stays \emph{awaiting
-full text} until the library has been tried; only a record that none of these
-provides is excluded under R7. The review maps
-evidence, so no quality score decides inclusion, as PRISMA-ScR allows for
-scoping reviews~\parencite{tricco2018prisma}; the peer-review status of each
-study is recorded instead, and preprints are marked as such.
-
-\paragraph{Extraction and synthesis.} For every included study, the
-sub-questions it answers, the app domain, the surfaces or material studied,
-the parts of the RQ it bears on and the harms and capabilities it names are
-coded. An evidence map crosses the app domains with the surfaces and with the
-parts of the RQ, and shows where evidence is missing. As the counterpart of
-Baumann et al.'s Stage~3, the capabilities named in LQ1 studies are collected
-in a table that links each capability to its source, the data it needs and the
-actor that could use it; this table is the input to the harm trees.
-
-\paragraph{Limits.} One person screens, so no agreement between screeners can
-be reported. The ACM Digital Library, Scopus, Web of Science and Google Scholar
-were not searched, and five venues could be filtered on titles only, which
-lowers recall there; citation searching and the thesis and digest routes
-compensate in part. The strands are in English. Later literature is added
-through the change log, with a reason, and does not alter the frozen
-instruments without a logged revision.
+\paragraph{Extraction and synthesis.} Each study that passes
+title-and-abstract screening receives one row in an extraction table. The row
+records the sub-question the study answers, assigned at screening, and three
+fields coded from its title, abstract and venue with fixed keyword lists: the
+app domain (for example reproductive health, mental health, or activity and
+fitness), the material studied (for example privacy policies, privacy labels,
+app traffic or interviews with users) and the type of venue. For the studies
+included after full-text screening, three fields are coded by hand from the
+full text: the parts of the research question the study informs (RQ1 to RQ4, or
+a methodological precedent), the harms it names and, for LQ1 studies, the
+capabilities it documents. The capabilities are grouped into a small set of
+categories, each recorded with the data it needs and the actor who could use
+it, for example the re-identification of individuals from de-identified sensor
+data by whoever holds the data. This capability table is the input to the
+reference harm trees, as the counterpart of the third stage of Baumann et al.
+The synthesis is descriptive. The studies are counted by year and venue; an
+evidence map crosses the app domains with the materials studied and with the
+parts of the research question, which shows where evidence is concentrated and
+where it is missing; and the findings are summarised in prose for each
+sub-question.
+% Precedents:
+% - Charting the data and collating, summarising and reporting the results:
+%   arksey2005scoping, stages 4 and 5; tricco2018prisma (PRISMA-ScR) items 10
+%   (data charting process), 11 (data items) and 13 (synthesis of results).
+% - Evidence map as a matrix of topics against study characteristics that
+%   shows gaps: Miake-Lye et al. 2016, "What is an evidence map? A systematic
+%   review of published evidence maps and their definitions, methods, and
+%   products", Systematic Reviews 5:28, doi:10.1186/s13643-016-0204-x.
+% - Coding with fixed keyword lists (dictionary-based coding):
+%   krippendorff2019content (computer-aided text analysis; chapter and page to
+%   be checked).
+% - Capability table as counterpart of Stage 3: baumann2025llm, Sec. 3 (Stage 3,
+%   dataset selection), checked in the PDF for D14.
+% - Implementation: scripts/literature-search/v002/extract.py; keyword lists
+%   in config.json "extraction_rules"; hand coding in
+%   01_Literature/Literature-Review/decisions/extraction-hand.csv; capability
+%   categories K1--K8 in config.json "extraction" > "capability".
 
 \begin{figure}[t]
 \centering
