@@ -60,3 +60,6 @@ output/
 # Archived web pages and store records behind the identity register (raw data).
 04_Study/App-Sample/identity-evidence/*.html
 04_Study/App-Sample/identity-evidence/*.json
+
+# Standalone HTML decks (presentation copies of thesis content, not sources)
+06_Presentation/*.html

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harm Trees for Health Trackers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400..700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ink:#172033;--ink2:#22304A;--paper:#F6F4EE;--paper2:#EAEEF2;--card:#FBFAF6;
+  --body:#3E4A5C;--muted:#5D6878;--line:#CBD3DC;--edge:#8C96A3;
+  --orange:#B4532A;--orange-l:#E9A46B;--orange-bg:#F7E6DA;
+  --blue:#2C64A3;--blue-l:#7FB0E6;--blue-bg:#DCE7F4;
+  --serif:'Source Serif 4',Georgia,serif;--sans:'IBM Plex Sans','Segoe UI',Arial,sans-serif;--mono:'JetBrains Mono',Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0E1524;overflow:hidden;font-family:var(--sans)}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1920px;height:1080px;flex:none;transform-origin:center center;overflow:hidden;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.slide{position:absolute;inset:0;padding:112px 128px 150px;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;gap:30px;opacity:0;visibility:hidden;transform:translateX(60px);transition:opacity .55s ease,transform .7s cubic-bezier(.2,.7,.2,1),visibility 0s .7s}
+.slide.prev{transform:translateX(-60px)}
+.slide.active{opacity:1;visibility:visible;transform:none;transition:opacity .55s ease,transform .7s cubic-bezier(.2,.7,.2,1),visibility 0s}
+.slide.alt{background:var(--paper2)}
+.slide.dark{background:var(--ink);color:var(--paper)}
+h1,h2,h3,p{margin:0}
+.eyebrow{font-size:24px;letter-spacing:3px;text-transform:uppercase;color:var(--orange);font-weight:600}
+.dark .eyebrow{color:var(--orange-l)}
+h2.title{font-family:var(--serif);font-size:64px;font-weight:600;line-height:1.1;letter-spacing:-.5px;max-width:1660px}
+.dark h2.title{color:var(--paper)}
+.lead{font-size:30px;line-height:1.45;color:var(--body)}
+.dark .lead{color:#C9D3DF}
+.row{display:flex;gap:30px}
+.col{display:flex;flex-direction:column;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:34px 38px;display:flex;flex-direction:column;gap:14px;flex:1}
+.card h3{font-size:36px;font-weight:600;line-height:1.2}
+.card p,.card li{font-size:28px;line-height:1.45;color:var(--body)}
+.card.dk{background:var(--ink);border-color:var(--ink)}
+.card.dk h3{color:var(--paper)}.card.dk p{color:#C9D3DF}
+.dark .card{background:var(--ink2);border-color:#33435F}
+.dark .card h3{color:var(--orange-l)}.dark .card p,.dark .card li{color:var(--paper)}
+.band{display:flex;gap:26px;align-items:center;background:var(--ink);color:var(--paper);border-radius:18px;padding:28px 38px;font-size:30px;line-height:1.4}
+.band .ic{flex:none;width:58px;height:58px;border-radius:50%;background:rgba(233,164,107,.16);display:flex;align-items:center;justify-content:center;font-size:30px;color:var(--orange-l)}
+.foot{position:absolute;left:128px;right:128px;bottom:52px;font-size:22px;color:var(--muted);line-height:1.35}
+.dark .foot{color:#9FB0C6}
+.tag{display:inline-block;font-size:22px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 12px;border-radius:999px}
+.t-or{background:var(--orange-bg);color:#8A3B1A}.t-bl{background:var(--blue-bg);color:#1F4E85}.t-gr{background:#E3E6EA;color:var(--body)}
+b{font-weight:650}
+ul.clean{margin:0;padding-left:30px}
+ul.clean li{margin:6px 0}
+table.grid{width:100%;border-collapse:collapse;font-size:25px;color:var(--ink)}
+table.grid th{text-align:left;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:600;padding:12px 16px;border-bottom:2px solid var(--ink)}
+table.grid td{padding:16px 16px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.38}
+table.grid tr.zebra td{background:rgba(23,32,51,.035)}
+.pill{display:inline-block;padding:2px 12px;border-radius:8px;font-weight:700;font-size:22px}
+.p-app{background:#DDEEDF;color:#245B2E}.p-unc{background:#FFF1CC;color:#7A5600}.p-mis{background:var(--orange-bg);color:#8A3B1A}.p-no{background:#E3E6EA;color:var(--body)}
+
+/* step reveals */
+[data-s]{opacity:0;transition:opacity .55s ease,transform .65s cubic-bezier(.2,.7,.2,1),filter .5s}
+[data-s]:not([data-a]),[data-a=rise]{transform:translateY(26px)}
+[data-a=pop]{transform:scale(.82)}
+[data-a=left]{transform:translateX(-40px)}
+[data-a=right]{transform:translateX(40px)}
+[data-a=blur]{filter:blur(8px)}
+[data-s].in{opacity:1;transform:none;filter:none}
+tr[data-s]{transform:none}
+path[data-a=draw]{opacity:1;transition:stroke-dashoffset .9s ease, opacity .4s}
+
+/* tree */
+.tree{position:absolute}
+.tree svg{position:absolute;left:0;top:0;overflow:visible}
+.tree path.edge{fill:none;stroke:var(--edge);stroke-width:3.2;stroke-linecap:round}
+.node{position:absolute;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px 14px;font-size:24px;line-height:1.25;transition:opacity .45s,transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .3s,filter .3s}
+.node.harm{background:var(--ink);color:var(--paper);font-size:26px;font-weight:600;box-shadow:0 8px 20px rgba(23,32,51,.18)}
+.node.cap{background:#E3E8EE;border:2px solid #7F8A99;color:var(--ink)}
+.node.comp{background:var(--card);border:4px solid var(--ink);color:var(--ink)}
+.node.comp.ctx{border-color:var(--blue)}
+.node.comp.imp{border-color:var(--orange)}
+.node.comp.ext{border:3px dashed var(--muted)}
+.node.comp.nil{border-color:#7F8A99;border-width:3px}
+.node small{display:block;font-size:20px;opacity:.75;margin-top:2px}
+.op{position:absolute;font-size:22px;font-weight:700;padding:2px 10px;border-radius:8px;background:var(--paper);border:2px solid var(--orange);color:var(--orange);white-space:nowrap;transform:translate(-50%,-50%) scale(.6)}
+.op.and{border-color:var(--blue);color:var(--blue)}
+.op.in{transform:translate(-50%,-50%)}
+.alt .op{background:var(--paper2)}
+.tree.focus .node:not(.hot),.tree.focus .op:not(.hot){opacity:.14!important;filter:grayscale(1)}
+.tree.focus path.edge:not(.hot){opacity:.1!important}
+.tree.focus path.edge.hot{stroke:var(--orange);stroke-width:5}
+.tree.focus .node.hot{box-shadow:0 0 0 5px rgba(180,83,42,.35),0 10px 26px rgba(23,32,51,.2)}
+.chips{display:flex;gap:14px;flex-wrap:wrap}
+.chip{font-size:24px;font-weight:600;padding:8px 18px;border-radius:999px;background:var(--card);border:2px solid var(--line);cursor:pointer;transition:all .25s;user-select:none}
+.chip:hover,.chip.on{border-color:var(--orange);background:var(--orange-bg);color:#8A3B1A}
+.cap-line{font-size:28px;line-height:1.4;color:var(--body);min-height:40px;transition:opacity .3s}
+
+/* chrome */
+#bar{position:fixed;left:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--orange),var(--orange-l));width:0;transition:width .5s ease;z-index:20}
+#hud{position:fixed;right:22px;bottom:16px;color:#AAB6C6;font:600 15px var(--sans);z-index:20;display:flex;gap:16px;align-items:center}
+#hud .sec{opacity:.8}
+#hud .dots span{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3A4A66;margin-left:5px;transition:background .3s}
+#hud .dots span.on{background:var(--orange-l)}
+#hint{position:fixed;left:22px;bottom:14px;color:#77859A;font:13px var(--sans);z-index:20}
+#notes{position:fixed;right:20px;top:20px;width:520px;max-height:70vh;overflow:auto;background:rgba(14,21,36,.94);color:#E7ECF3;border:1px solid #33435F;border-radius:14px;padding:22px 24px;font:16px/1.55 var(--sans);z-index:30;display:none}
+#notes h4{margin:0 0 8px;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--orange-l)}
+#overview{position:fixed;inset:0;background:rgba(10,15,26,.96);z-index:40;display:none;overflow:auto;padding:40px 60px}
+#overview h3{color:#E7ECF3;font:600 22px var(--sans);margin:0 0 20px}
+#overview .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+#overview .it{background:#1A2438;border:1px solid #2E3D58;border-radius:10px;padding:14px 16px;color:#DDE5F0;cursor:pointer;font:15px/1.4 var(--sans);transition:all .2s}
+#overview .it:hover,#overview .it.cur{border-color:var(--orange-l);background:#24314B}
+#overview .it i{display:block;font-style:normal;color:var(--orange-l);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.notes{display:none}
+
+/* misc components */
+.num{font-family:var(--serif);font-size:110px;font-weight:600;line-height:1;color:var(--ink)}
+.code{background:var(--ink);border-radius:18px;padding:30px 34px;font-family:var(--mono);font-size:24px;line-height:1.5;color:#E8EDF4;white-space:pre}
+.code .k{color:#9CC3F0}.code .s{color:#F4C7A2}.code .c{color:#7E8BA0}
+.box{position:absolute;border-radius:16px;background:var(--card);border:3px solid var(--line);padding:18px 20px;transition:all .45s cubic-bezier(.2,.7,.2,1);opacity:.45}
+.box.on{opacity:1;transform:translateY(-8px);box-shadow:0 14px 30px rgba(23,32,51,.18)}
+.box.done{opacity:1}
+.box.llm.on{border-color:var(--orange);background:#FFF6EF}.box.hum.on{border-color:var(--blue);background:#F2F7FD}.box.scr.on{border-color:var(--muted)}
+.box .bt{font-size:26px;font-weight:700;line-height:1.22}
+.box .who{position:absolute;left:20px;bottom:16px}
+.box .lt{position:absolute;right:16px;top:12px;font-size:26px;font-weight:800;color:var(--orange)}
+#tok{position:absolute;width:28px;height:28px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 8px rgba(180,83,42,.22);transition:left .7s cubic-bezier(.2,.7,.2,1),top .7s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.glow{animation:glow 1.6s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 0 10px rgba(180,83,42,.12)}}
+.cursor::after{content:'▍';color:var(--orange-l);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.legend{display:flex;gap:30px;align-items:center;font-size:24px;color:var(--body)}
+.legend span{display:inline-flex;align-items:center;gap:10px}
+.sw{display:inline-block;width:30px;height:22px;border-radius:6px;background:var(--card)}
+.agenda{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.agenda .card{cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s}
+.agenda .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(23,32,51,.14);border-color:var(--orange)}
+.agenda .n{font-family:var(--serif);font-size:56px;color:var(--orange);font-weight:600;line-height:1}
+.bg-tree{position:absolute;right:-40px;top:120px;opacity:.16}
+.bg-tree path{fill:none;stroke:var(--orange-l);stroke-width:3;stroke-dasharray:1400;stroke-dashoffset:1400;animation:dr 4s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.bg-tree circle{fill:var(--orange-l);opacity:0;animation:fi 1s ease forwards 2.4s}
+@keyframes fi{to{opacity:1}}
+.quote{font-family:var(--serif);font-size:44px;line-height:1.3;color:var(--paper)}
+.mapcol{position:absolute;display:flex;flex-direction:column;gap:14px}
+.mapcol div{height:66px;border-radius:12px;display:flex;align-items:center;padding:0 22px;font-size:26px;font-weight:600}
+.mapL div{background:var(--card);border:2px solid var(--line)}
+.mapR div{background:var(--ink);color:var(--paper)}
+.mapR div.new{background:var(--orange)}
+.mapL div.miss{border:2px dashed var(--orange);color:var(--orange)}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+
+<!-- 1 COVER -->
+<section class="slide dark" data-title="Harm trees for health-tracking apps" data-sec="Introduction" style="justify-content:space-between">
+  <svg class="bg-tree" width="900" height="760" viewBox="0 0 900 760">
+    <path d="M450 80 C450 180 220 160 220 300 M450 80 C450 180 680 160 680 300 M220 300 C220 420 100 420 100 560 M220 300 C220 420 340 420 340 560 M680 300 C680 420 560 420 560 560 M680 300 C680 420 800 420 800 560"/>
+    <circle cx="450" cy="80" r="16"/><circle cx="220" cy="300" r="13"/><circle cx="680" cy="300" r="13"/><circle cx="100" cy="560" r="11"/><circle cx="340" cy="560" r="11"/><circle cx="560" cy="560" r="11"/><circle cx="800" cy="560" r="11"/>
+  </svg>
+  <p class="eyebrow">Bachelor thesis · method briefing</p>
+  <div class="col" style="gap:30px;max-width:1350px">
+    <h1 style="font-family:var(--serif);font-size:112px;font-weight:600;line-height:1.03;letter-spacing:-1px">Harm trees for health&#8209;tracking apps</h1>
+    <p class="lead" style="font-size:38px;max-width:1250px">From attack trees to Knabenhans et al.’s harm analysis, a worked example on a constructed period tracker, and where a language model can help</p>
+  </div>
+  <div class="legend" style="color:#C9D3DF">
+    <span><i class="sw" style="background:var(--paper)"></i>core functionality</span>
+    <span><i class="sw" style="background:var(--blue-l)"></i>digital context</span>
+    <span><i class="sw" style="background:var(--orange-l)"></i>implementation choice</span>
+    <span style="margin-left:auto;color:#9FB0C6">→ / space to step · O overview · N notes</span>
+  </div>
+  <aside class="notes">This deck explains the harm-tree method the thesis borrows from Knabenhans et al. (2026), traces it to attack trees (Schneier 1999) and privacy harm trees (De and Le Métayer 2016, 2017), shows the harm definitions it rests on (CyberPeace Institute 2024; Citron and Solove 2022), transfers it to health trackers, works through the constructed app CycleMate from Appendix A, and proposes where a language model can help. The three colours are the origins of a system component in Knabenhans et al.’s trees (§4.1). Nothing here is a study result; CycleMate is constructed.</aside>
+</section>
+
+<!-- 2 AGENDA -->
+<section class="slide" data-title="Overview" data-sec="Introduction">
+  <p class="eyebrow">Overview</p>
+  <h2 class="title">Six steps from the question to a result</h2>
+  <div class="agenda">
+    <div class="card" data-s="1" data-go="question"><span class="n">01</span><h3>The problem</h3><p>Why “missing” harms need a reference</p></div>
+    <div class="card" data-s="1" data-go="attack"><span class="n">02</span><h3>Foundations</h3><p>Attack trees, harm trees, what harm is</p></div>
+    <div class="card" data-s="1" data-go="eudif"><span class="n">03</span><h3>Knabenhans et al.</h3><p>The method on the EU digital identity</p></div>
+    <div class="card" data-s="2" data-go="transfer"><span class="n">04</span><h3>Transfer</h3><p>From an ID system to health apps</p></div>
+    <div class="card" data-s="2" data-go="cyclemate"><span class="n">05</span><h3>Worked example</h3><p>CycleMate, from tree to result</p></div>
+    <div class="card" data-s="2" data-go="pipeline"><span class="n">06</span><h3>Language models</h3><p>Where a model helps, where you decide</p></div>
+  </div>
+  <p class="foot">Click a card to jump. Every slide has speaker notes (N) with the full citations.</p>
+  <aside class="notes">Navigation: arrow keys or space step through reveals and slides; O opens an overview; N shows notes; F toggles full screen; Home/End jump.</aside>
+</section>
+
+<!-- 3 QUESTION -->
+<section class="slide alt" id="question" data-title="The problem" data-sec="Introduction">
+  <p class="eyebrow">The problem</p>
+  <h2 class="title">To call a harm “missing”, you first need the harms that could happen</h2>
+  <div class="row">
+    <div class="card" data-s="1"><h3>The question</h3><p>What harms do providers of health-tracking apps communicate, and how do they present them?</p></div>
+    <div class="card" data-s="2"><h3>The gap in it</h3><p>Silence says nothing by itself. It only counts if the harm could arise from the app’s features.</p></div>
+    <div class="card dk" data-s="3"><h3>The tool</h3><p>Reference harm trees: data and features → capabilities → harms, written before any policy is read.</p></div>
+  </div>
+  <div class="band" data-s="4"><div class="ic">✎</div><div><b>Supervisor, 13 October:</b> identify capabilities through the literature review; synthesise a harm tree for the “best app” (what “best” means is still open, D12).</div></div>
+  <p class="foot">Thesis Sections 4.1 and “Reference Harm Trees”; supervisor meeting notes, 13 October 2026, §3 and “Harm tree”</p>
+  <aside class="notes">RQ1 asks which harms that apply to an app are named or missing. A missing harm is only meaningful if it is possible for that app, so the study needs a reference model of possible harms first. The organised notes of 13 October (lines 40, 97–101) say to use the literature review to identify capabilities for the harm tree and to synthesise a harm tree for the “best app”; the definition of “best” is open (D12).</aside>
+</section>
+
+<!-- 4 ATTACK TREES -->
+<section class="slide" id="attack" data-title="Attack trees" data-sec="Foundations">
+  <p class="eyebrow">Foundations · 1 · the ancestor</p>
+  <h2 class="title" style="max-width:780px">Attack trees: a goal, broken into ways to reach it</h2>
+  <div class="col" style="max-width:760px;gap:22px">
+    <p class="lead" data-s="1">Schneier (1999) puts the attacker’s goal at the root. Each child is one way to reach its parent.</p>
+    <p class="lead" data-s="3"><span class="tag t-or">OR</span> any one child is enough.</p>
+    <p class="lead" data-s="4"><span class="tag t-bl">AND</span> every child is needed.</p>
+    <p class="lead" data-s="5">Leaves can carry values (possible, cost) that pass up to the root. A defence helps when it cuts <b>every</b> branch.</p>
+  </div>
+  <div class="tree" id="t-attack" style="left:960px;top:250px;width:840px;height:600px"></div>
+  <p class="foot">Schneier, “Attack Trees”, Dr. Dobb’s Journal 24(12), 1999 · not yet in the project corpus: check before citing · tree constructed for this deck</p>
+  <aside class="notes">Attack trees are the notation harm trees borrow: a goal at the root, refined into alternatives (OR) and steps that are all needed (AND); leaf values propagate upward and show which defence removes which attack. The example goal is from the health-tracker domain and constructed. Schneier’s article is not in the corpus; check it before citing.</aside>
+</section>
+
+<!-- 5 DLM -->
+<section class="slide" id="dlm" data-title="Privacy harm trees" data-sec="Foundations">
+  <p class="eyebrow">Foundations · 2 · from attacks to harms</p>
+  <h2 class="title">Privacy harm trees move the root from the attacker to the person</h2>
+  <div class="row" style="align-items:stretch">
+    <div class="card" data-s="1" data-a="left"><span class="tag t-gr" style="align-self:flex-start">Security</span><h3>Attack tree</h3><p><b>Root:</b> what an attacker wants<br><b>Asks:</b> how can the system be attacked?<br><b>Source:</b> Schneier 1999</p></div>
+    <div data-s="2" data-a="pop" style="display:flex;align-items:center;font-size:80px;color:var(--orange)">➜</div>
+    <div class="card" data-s="2" data-a="right"><span class="tag t-or" style="align-self:flex-start">Privacy</span><h3>Privacy harm tree</h3><p><b>Root:</b> a harm to people<br><b>Asks:</b> how can the system lead to it?<br><b>Source:</b> De and Le Métayer 2016 (smart grids), refined for reuse in 2017</p></div>
+  </div>
+  <div class="band" data-s="3"><div class="ic">⤷</div><div>Knabenhans et al. build on these trees [16, 17]: they show the pathways to a harm and the root cause of each pathway, in any system (§1, §4.1).</div></div>
+  <p class="foot">De and Le Métayer, IEEE S&amp;P Workshops 2016, 58–65; APF 2017, 52–83 · cited as [16, 17] in Knabenhans et al. 2026 · originals not yet in the corpus</p>
+  <aside class="notes">De and Le Métayer introduced privacy harm trees in a smart-grid case study (IEEE SPW 2016, 58–65) and described the reuse of risk-analysis results (APF 2017, 52–83). Knabenhans et al. cite both as the basis of their methodology (refs 16, 17; §1, §4.1). The originals are not in the corpus, so their internal node types are not described here.</aside>
+</section>
+
+<!-- 6 HARM DEFINITION -->
+<section class="slide" id="harmdef" data-title="What counts as harm" data-sec="Foundations">
+  <p class="eyebrow">Foundations · 3 · what counts as a harm</p>
+  <h2 class="title">A harm is measured against how life would otherwise go</h2>
+  <div class="row">
+    <div class="card dk" style="flex:1.25;padding:44px" data-s="1" data-a="blur">
+      <span class="tag" style="background:rgba(233,164,107,.18);color:var(--orange-l);align-self:flex-start">CyberPeace Institute 2024, via Knabenhans et al.</span>
+      <p class="quote">An “impairment or disruption of an entity’s capacity or ability to function”, compared with its usual context.</p>
+      <p style="font-size:28px">Individuals, groups or society; well-being, reputation, dignity, freedom or any other fundamental right.</p>
+    </div>
+    <div class="col" style="flex:1;gap:24px">
+      <div class="card" data-s="2" data-a="right"><h3>Baseline in the paper</h3><p>Current practice in the EU, where the digital identity is not yet widely used.</p></div>
+      <div class="card" data-s="3" data-a="right"><h3>Baseline in the thesis</h3><p>The user’s situation without the modelled pathway: the same person, without that flow of data.</p></div>
+    </div>
+  </div>
+  <p class="foot">Knabenhans et al. 2026, §4.1 (p. 6) and §4.2, citing CyberPeace Institute 2024 [14] and Citron and Solove 2022 [11] · thesis, “Harm Categories”</p>
+  <aside class="notes">Knabenhans et al. (§4.1, p. 6) adopt the CyberPeace Institute’s definition: an impairment or disruption of an entity’s capacity or ability to function and exist as it otherwise would in its usual context. Any negative impact counts, on individuals, groups or society. Their baseline is current EU practice (§4.2). The thesis sets the baseline to the user’s situation without the modelled pathway.</aside>
+</section>
+
+<!-- 7 TYPOLOGY -->
+<section class="slide" id="typology" data-title="Citron and Solove" data-sec="Foundations">
+  <p class="eyebrow">Foundations · 4 · kinds of privacy harm</p>
+  <h2 class="title">Citron and Solove: seven kinds of privacy harm</h2>
+  <table class="grid">
+    <tr><th style="width:20%">Kind</th><th style="width:13%">Pages</th><th>What it covers (subtypes named in the article)</th></tr>
+    <tr data-s="1"><td><b>Physical</b></td><td>831–834</td><td>Bodily injury or death made possible by personal data</td></tr>
+    <tr data-s="1" class="zebra"><td><b>Economic</b></td><td>834–837</td><td>Monetary losses and loss of value</td></tr>
+    <tr data-s="2"><td><b>Reputational</b></td><td>837–841</td><td>Injury to a person’s reputation and standing</td></tr>
+    <tr data-s="2" class="zebra"><td><b>Psychological</b></td><td>841–845</td><td>Emotional distress · disturbance</td></tr>
+    <tr data-s="3"><td><b>Autonomy</b></td><td>845–855</td><td>Coercion · manipulation · failure to inform · thwarted expectations · lack of control · chilling effects</td></tr>
+    <tr data-s="4" class="zebra"><td><b>Discrimination</b></td><td>855–859</td><td>Disadvantaging people on the basis of their characteristics</td></tr>
+    <tr data-s="4"><td><b>Relationship</b></td><td>859 ff.</td><td>Damage to relationships of trust, personal and professional</td></tr>
+  </table>
+  <p class="foot">Citron and Solove, “Privacy Harms”, Boston University Law Review 102 (2022) 793, Part V, pp. 830 ff. (pages from the PDF’s table of contents; descriptions paraphrased)</p>
+  <aside class="notes">Part V, “A Typology of Privacy Harms” (p. 830): A physical (831), B economic (834), C reputational (837), D psychological: emotional distress, disturbance (841), E autonomy: coercion, manipulation, failure to inform, thwarted expectations, lack of control, chilling effects (845), F discrimination (855), G relationship (859). Descriptions are paraphrases; check before quoting.</aside>
+</section>
+
+<!-- 8 MAPPING -->
+<section class="slide alt" id="mapping" data-title="Two harm lists side by side" data-sec="Foundations">
+  <p class="eyebrow">Foundations · 5 · two lists side by side</p>
+  <h2 class="title">Knabenhans et al. keep six kinds, add one, drop one</h2>
+  <svg id="mapsvg" style="position:absolute;left:0;top:0" width="1920" height="1080"></svg>
+  <div class="mapcol mapL" style="left:200px;top:300px;width:470px">
+    <div data-s="1" data-a="left" id="mL1">Physical</div><div data-s="1" data-a="left" id="mL2">Economic</div><div data-s="1" data-a="left" id="mL3">Reputational</div><div data-s="1" data-a="left" id="mL4">Psychological</div><div data-s="1" data-a="left" id="mL5">Autonomy</div><div data-s="1" data-a="left" id="mL6">Discrimination</div><div data-s="1" data-a="left" id="mL7">Relationship</div><div class="miss" data-s="3" data-a="left" id="mL8">— not in the article —</div>
+  </div>
+  <div class="mapcol mapR" style="left:1250px;top:300px;width:470px">
+    <div data-s="2" data-a="right" id="mR1">Physical</div><div data-s="2" data-a="right" id="mR2">Economic</div><div data-s="2" data-a="right" id="mR3">Reputational</div><div data-s="2" data-a="right" id="mR4">Psychological</div><div data-s="2" data-a="right" id="mR5">Autonomy / deprivation</div><div data-s="2" data-a="right" id="mR6">Discrimination</div><div class="new" data-s="3" data-a="right" id="mR7">Thesis: relationship tag</div><div data-s="3" data-a="right" id="mR8">Societal</div>
+  </div>
+  <p data-s="1" style="position:absolute;left:200px;top:250px;font-size:24px;font-weight:700;letter-spacing:2px;color:var(--muted)">CITRON AND SOLOVE 2022</p>
+  <p data-s="2" style="position:absolute;left:1250px;top:250px;font-size:24px;font-weight:700;letter-spacing:2px;color:var(--muted)">KNABENHANS ET AL., APP. A</p>
+  <p class="foot">Matched by name for this deck · Citron and Solove 2022, Part V · Knabenhans et al. 2026, App. A (p. 14, version in the corpus) · thesis, “Harm Categories”</p>
+  <aside class="notes">Matching by category name: physical, economic, reputational, psychological, autonomy (autonomy/deprivation in App. A) and discrimination appear in both. App. A adds societal harms; Citron and Solove’s relationship harms are not in App. A, and the thesis adds them back as a relationship tag (T-REL). The matching is this deck’s reading; Knabenhans et al. say their categories follow Citron and Solove and the CyberPeace methodology.</aside>
+</section>
+
+<!-- 9 EUDIF -->
+<section class="slide alt" id="eudif" data-title="The EU digital identity" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. 2026 · the setting</p>
+  <h2 class="title">Is privacy technology enough to make the EU digital identity safe?</h2>
+  <div class="row">
+    <div class="card" data-s="1"><h3>The system</h3><p>Regulation (EU) 2024/1183 sets up a digital identity wallet: issuers give credentials, users show attributes such as “over 18” to relying parties. The promised safeguard is privacy by design, with PETs such as anonymous credentials.</p></div>
+    <div class="card" data-s="2"><h3>What the paper does</h3><p><b>§3</b> formal model of the best privacy-by-design version<br><b>§4</b> harm trees: age verification, driving licence<br><b>§5</b> three capabilities every such system has</p></div>
+  </div>
+  <div class="band" data-s="3"><div class="ic">⌕</div><div><b>Finding:</b> PETs reduce what flows, but many harms stay, because they come from the functionality or its digital context.</div></div>
+  <p class="foot">Knabenhans, Veitch, Raynal, Stadler, Chatel, Lueks, Troncoso, “On the (Privacy) Harms of the European Digital Identity Framework”, Cryptology ePrint 2026/867, abstract and §1</p>
+  <aside class="notes">The EUDIF is introduced by Regulation (EU) 2024/1183 amending eIDAS 910/2014. Contributions (§1): a formal model of the core functionality from regulations and specifications (§3); harm trees for age verification and mobile driving licences (§4); three fundamental capabilities (§5). The abstract concludes that PETs reduce information flows but fall short in mitigating the harms. Section numbers follow the PDF in the corpus; a revision of 16 September exists.</aside>
+</section>
+
+<!-- 10 LEVELS -->
+<section class="slide" id="levels" data-title="Three levels" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. §4.1 · the tree</p>
+  <h2 class="title">Three levels: harm, capability, component</h2>
+  <div class="tree" id="t-levels" style="left:128px;top:270px;width:1250px;height:560px"></div>
+  <div class="col" style="position:absolute;left:1420px;top:280px;width:372px;gap:22px">
+    <div data-s="1" data-a="right"><span class="tag t-gr">Level 1</span><p class="lead" style="font-size:26px;margin-top:8px">The <b>harm</b>, at the top.</p></div>
+    <div data-s="2" data-a="right"><span class="tag t-gr">Level 2</span><p class="lead" style="font-size:26px;margin-top:8px"><b>Capabilities</b> that enable it, including incapabilities.</p></div>
+    <div data-s="3" data-a="right"><span class="tag t-gr">Level 3</span><p class="lead" style="font-size:26px;margin-top:8px"><b>System components</b>: leakage, interactions, requirements.</p></div>
+    <div data-s="4" data-a="right"><span class="tag t-or">OR+</span><p class="lead" style="font-size:26px;margin-top:8px">One or several components, possibly together.</p></div>
+  </div>
+  <p class="foot">Knabenhans et al. 2026, §4.1 “Tree elements”, “Constructing trees” and Fig. 4 (p. 6) · generic tree drawn for this deck</p>
+  <aside class="notes">System components are what the system leaks, what entities do when interacting with it, and what it requires. Components combine into a capability or the lack of one (tracking users; a provider unable to serve a region; a user unable to access a service). Capabilities lead to harms. A pathway is found when components enable capabilities that result in a harm; pathways combine into a tree: harm at the top, capabilities second, components at the leaves. AND and OR show how components combine; OR+ is written when more than one component might be needed.</aside>
+</section>
+
+<!-- 11 ORIGINS -->
+<section class="slide" id="origins" data-title="Harm origins" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. §4.1 · harm origins</p>
+  <h2 class="title">Each leaf says where a pathway comes from, and who could cut it</h2>
+  <div class="col" style="gap:16px">
+    <div class="card" data-s="1" data-a="left" style="flex-direction:row;align-items:center;gap:30px;border-left:14px solid var(--ink);padding:24px 34px"><p style="font-size:30px;font-weight:600;color:var(--ink);width:430px;flex:none">Core functionality <span style="color:var(--muted)">· black</span></p><p>What the minimal function leaks or requires, such as the relying party learning a function of the age. Not removable without the function.</p></div>
+    <div class="card" data-s="2" data-a="left" style="flex-direction:row;align-items:center;gap:30px;border-left:14px solid var(--blue);padding:24px 34px"><p style="font-size:30px;font-weight:600;color:var(--ink);width:430px;flex:none">Digital context <span style="color:var(--blue)">· blue</span></p><p>What comes from using the function online: cookies, fingerprinting, advertising identifiers.</p></div>
+    <div class="card" data-s="3" data-a="left" style="flex-direction:row;align-items:center;gap:30px;border-left:14px solid var(--orange);padding:24px 34px"><p style="font-size:30px;font-weight:600;color:var(--ink);width:430px;flex:none">Implementation <span style="color:var(--orange)">· red</span></p><p>A design decision, such as a persistent identifier in a naive implementation. Here PETs and design changes can act.</p></div>
+  </div>
+  <div class="band" data-s="4"><div class="ic">!</div><div>Mobile driving licence: no pathway depends on a red component, so privacy technology cannot cut any of them (§4.3).</div></div>
+  <p class="foot">Knabenhans et al. 2026, §4.1 “Harm origins”, §4.2 and §4.3; dark-red deployment requirements in §4.4</p>
+  <aside class="notes">Black components are inherent to the core functionality and cannot be eliminated without giving up the function. Blue components come from the digital context, e.g. cookies, fingerprinting, advertising IDs (§4.2). Red components are implementation choices, e.g. persistent identifiers in a naive implementation; §4.4 adds deployment requirements in dark red. For the mobile driving licence, no pathway depends on a design decision, so privacy technologies cannot mitigate them (§4.3). The thesis uses the same three origins: core, context, implementation.</aside>
+</section>
+
+<!-- 12 SOURCES -->
+<section class="slide alt" id="sources" data-title="Where the content comes from" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. §4.2 · where the content comes from</p>
+  <h2 class="title">Harms come from the literature; components come from the system</h2>
+  <div class="row">
+    <div class="card" data-s="1" data-a="left"><h3>Harms</h3><p>From studies of age verification (EDRi 2023; EFF 2023; Koning et al. 2014), extended with Citron and Solove and CyberPeace.</p><p>Seven harms, e.g. discrimination, structural exclusion, targeted advertising, censorship.</p></div>
+    <div class="card" data-s="2" data-a="right"><h3>Capabilities and components</h3><p>From the formal model of the functionality, the Commission’s use-case documents and the deployment requirements.</p><p>No completeness claimed: more harms only add evidence.</p></div>
+  </div>
+  <div class="band" data-s="3"><div class="ic">💡</div><div>A health tracker has no specification: its components come from studies and from the app itself. The harms side is where the supervisor’s literature-review advice has a direct precedent.</div></div>
+  <p class="foot">Knabenhans et al. 2026, §3, §4.1–4.2 (p. 7) and §4.4; references [11, 14, 24, 34, 46, 47]</p>
+  <aside class="notes">§4.2: harms extracted from existing literature (refs 34, 46, 47: EDRi 2023, Kelley and Schwartz/EFF 2023, Koning et al. 2014), expanded with Citron and Solove (11) and CyberPeace (14). Seven harms: discrimination, exacerbation of structural exclusion, targeted advertising harms, reduced availability of resources, censorship, diminished Internet safety, increased cybersecurity risk. Components come from the formal model (§3) and deployment requirements (§4.4). No completeness claimed.</aside>
+</section>
+
+<!-- 13 AGE VERIFICATION TREES -->
+<section class="slide" id="agever" data-title="Two trees from the paper" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. §4.2–4.3 · two of their trees</p>
+  <h2 class="title">Two trees from the paper, simplified</h2>
+  <div class="tree" id="t-agever" style="left:128px;top:270px;width:1664px;height:560px"></div>
+  <p class="cap-line" data-s="7" style="position:absolute;left:128px;top:850px;width:1664px;font-size:25px">Redrawn without origin colours. Left: Fig. 6b. Right: Fig. 6c, with the tracking sub-tree as drawn for the driving licence (Fig. 7a). Check the figures before reuse.</p>
+  <p class="foot">Knabenhans et al. 2026, Figs. 5–7 and §4.2–4.3 (pp. 7–8) · simplified redrawing</p>
+  <aside class="notes">Structural exclusion (Fig. 6b) arises when the provider stops the service (common sub-tree, Fig. 5a) or the user cannot access it; components under the latter include issuance by a government entity and required digital literacy. Targeted advertising (Fig. 6c) arises from tracking/profiling (sub-tree Fig. 5b) or data brokerage enabled by digitised records; the tracking sub-tree shown is the simplified mDL version (Fig. 7a): repeated observations OR+ identity revealed. Origin colours are omitted because the extraction did not show them reliably.</aside>
+</section>
+
+<!-- 14 FUNDAMENTAL -->
+<section class="slide" id="fundamental" data-title="Fundamental capabilities" data-sec="Knabenhans et al.">
+  <p class="eyebrow">Knabenhans et al. §5 · fundamental capabilities</p>
+  <h2 class="title">Three capabilities come with the function itself</h2>
+  <div class="row">
+    <div class="card" data-s="1"><span class="tag t-gr" style="align-self:flex-start">§5.1</span><h3>Distinguishing</h3><p>Telling users apart by what they show, e.g. their nationality.</p><p data-s="4" style="color:var(--blue)"><b>Tracker:</b> separating users who log a pregnancy from those who do not.</p></div>
+    <div class="card" data-s="2"><span class="tag t-gr" style="align-self:flex-start">§5.2</span><h3>Trackability</h3><p>Linking the same user across different events.</p><p data-s="4" style="color:var(--blue)"><b>Tracker:</b> one device identifier sent with every analytics event.</p></div>
+    <div class="card" data-s="3"><span class="tag t-gr" style="align-self:flex-start">§5.3</span><h3>Inference</h3><p>Learning attributes that were never shown.</p><p data-s="4" style="color:var(--blue)"><b>Tracker:</b> a late period suggesting a pregnancy.</p></div>
+  </div>
+  <div class="band" data-s="5"><div class="ic">⚿</div><div>Defined as security games. The paper argues they follow from the functionality, so a PET can only limit them, e.g. by restricting what may be asked.</div></div>
+  <p class="foot">Knabenhans et al. 2026, §5.1–5.3 · blue tracker examples are this deck’s reading, not the paper’s</p>
+  <aside class="notes">§5 analyses three harm-enabling capabilities with security games: distinguishing (keeping the case where users have different attribute values, e.g. nationality), trackability (linking a user between events) and inference (inferring attributes; argued to be inherent, restrictable only by limiting which functions and attributes relying parties may ask for). The blue tracker examples correspond to the thesis codes K-INF and K-TRK.</aside>
+</section>
+
+<!-- 15 TRANSFER -->
+<section class="slide" id="transfer" data-title="Transfer to apps" data-sec="Transfer">
+  <p class="eyebrow">Transfer · from an ID system to apps</p>
+  <h2 class="title">What changes when the system is an app</h2>
+  <table class="grid" style="font-size:24px">
+    <tr><th style="width:16%"></th><th style="width:40%">Knabenhans et al.</th><th>This thesis</th></tr>
+    <tr data-s="1"><td><b>System</b></td><td>EU digital identity, two use cases</td><td>50 health-tracking apps, one shared set of trees</td></tr>
+    <tr data-s="2" class="zebra"><td><b>Harms</b></td><td>Use-case literature, Citron and Solove, CyberPeace</td><td>Literature review (LQ1), App. A list, relationship tag</td></tr>
+    <tr data-s="3"><td><b>Capabilities</b></td><td>From a formal model of the functionality</td><td>From health-tracker studies (capability table K1–K8)</td></tr>
+    <tr data-s="4" class="zebra"><td><b>Components</b></td><td>Leakage, interactions, requirements of the model</td><td>Data, features, access in studies and in each app’s texts</td></tr>
+    <tr data-s="5"><td><b>Baseline</b></td><td>Current practice in the EU</td><td>The user without the modelled pathway</td></tr>
+    <tr data-s="6" class="zebra"><td><b>Output</b></td><td>Which pathways PETs can cut</td><td>Which applicable harms the provider names, plays down or omits</td></tr>
+  </table>
+  <div class="band" data-s="7" style="font-size:27px;padding:22px 34px"><div class="ic">!</div><div>The thesis’s own additions: pathway fields for data, adversary and access, and per-app applicability records. The paper has neither; justify them in the Decision Log.</div></div>
+  <p class="foot">Capability sources: Salehzadeh Niksirat et al. 2024; Gabriele and Chiasson 2020; Shipp and Blasco 2020; Malki et al. 2024; Hudig and Singh 2025; Cao et al. 2024; Dhondt et al. 2022; Hassan et al. 2018</p>
+  <aside class="notes">The thesis builds the reference trees for health trackers from prior research (Methodology, “Reference Harm Trees”): a survey of tracker inferences, threats and vulnerabilities (Salehzadeh Niksirat et al. 2024), users’ harm scenarios (Gabriele and Chiasson 2020), analyses of policies, data flows and interfaces (Shipp and Blasco 2020; Malki et al. 2024; Hudig and Singh 2025) and post-Roe concerns (Cao et al. 2024); LQ1 adds e.g. Dhondt et al. 2022 and Hassan et al. 2018. The capability table has K1–K8 with data and actor. The pathway fields and applicability records have no counterpart in the paper and need a Decision Log justification.</aside>
+</section>
+
+<!-- 16 STEPS -->
+<section class="slide alt" id="steps" data-title="Building a reference tree" data-sec="Transfer">
+  <p class="eyebrow">Transfer · the procedure</p>
+  <h2 class="title">Building a reference tree, one step at a time</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">
+    <div class="card" data-s="1"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange)">1</span><h3>Harms</h3><p>From the literature review (LQ1) and the App. A categories.</p></div>
+    <div class="card" data-s="2"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange)">2</span><h3>Capabilities</h3><p>For each harm, what health-tracker studies document.</p></div>
+    <div class="card" data-s="3"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange)">3</span><h3>Components</h3><p>The data, feature and access each capability needs.</p></div>
+    <div class="card" data-s="4"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange)">4</span><h3>Operators</h3><p>AND, OR or OR+, with the reason written down.</p></div>
+    <div class="card" data-s="5"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange)">5</span><h3>Origins</h3><p>Core, context or implementation, argued from studies.</p></div>
+    <div class="card dk" data-s="6"><span class="n" style="font-family:var(--serif);font-size:46px;color:var(--orange-l)">6</span><h3>Per app</h3><p>Applicability record: feature, evidence, assumption, decision.</p></div>
+  </div>
+  <p class="foot">Steps 1–5 follow Knabenhans et al. §4.1; step 6 is the thesis’s addition (Methodology, “Reference Harm Trees”; Appendix A, Steps 0–1)</p>
+  <aside class="notes">Steps 1–5 build a shared reference tree before any policy is read; step 2 is what the supervisor asked for on 13 October. Step 6: for each app, an applicability record states the required feature, the evidence (listing, policy or walkthrough), the assumptions and a decision (applicable, not applicable, uncertain). A harm category applies when at least one pathway does.</aside>
+</section>
+
+<!-- 17 CYCLEMATE -->
+<section class="slide dark" id="cyclemate" data-title="CycleMate" data-sec="Worked example">
+  <p class="eyebrow">Worked example · constructed app</p>
+  <h2 class="title">CycleMate: a period tracker built for the example</h2>
+  <div class="row">
+    <div class="card" style="flex:.8" data-s="1" data-a="left"><h3>What it does</h3><ul class="clean" style="font-size:28px;line-height:1.5"><li>Logs periods, symptoms, sexual activity, mood</li><li>Predicts the cycle and fertile window</li><li>Optional cloud backup</li><li>Shares identifiers and usage with analytics</li><li>Listing advertises “premium predictions”</li></ul></div>
+    <div class="col" style="flex:1.2;gap:16px">
+      <div class="card" data-s="2" data-a="right" style="background:var(--paper);padding:22px 28px;gap:6px"><span class="tag t-or" style="align-self:flex-start">U2</span><p style="color:var(--ink);font-size:26px">“We share device identifiers and usage data with analytics partners to improve our services. We never sell your health data.”</p></div>
+      <div class="card" data-s="3" data-a="right" style="background:var(--paper);padding:22px 28px;gap:6px"><span class="tag t-or" style="align-self:flex-start">U3</span><p style="color:var(--ink);font-size:26px">“Your health data stays on your device unless you turn on backup. This keeps your reproductive health private and protects you from anyone using it against you.”</p></div>
+      <div class="card" data-s="4" data-a="right" style="background:var(--paper);padding:22px 28px;gap:6px"><span class="tag t-or" style="align-self:flex-start">U9</span><p style="color:var(--ink);font-size:26px">“Because all predictions are calculated with encryption, no one can ever use your data to discriminate against you.”</p></div>
+    </div>
+  </div>
+  <p class="foot">Thesis Appendix A, “Worked Example” (codebook v4): app and policy are constructed and describe no real app · 3 of its 10 policy units shown</p>
+  <aside class="notes">CycleMate and its ten-unit policy are constructed so that every important coding decision occurs once. U1: what is collected and the cycle/fertile-window prediction. U2: identifier and usage sharing, no-sale pledge. U3: on-device storage unless backup, protection claim against “anyone”. U9: encryption claim against discrimination. U4–U8, U10: breach notice, legal risk, unwanted contact, partner reading entries, embarrassment after sharing, generic reassurance.</aside>
+</section>
+
+<!-- 18 PATHWAYS -->
+<section class="slide" id="pathways" data-title="Five reference pathways" data-sec="Worked example">
+  <p class="eyebrow">Worked example · Step 0</p>
+  <h2 class="title">Five reference pathways for CycleMate</h2>
+  <table class="grid" style="font-size:24px">
+    <tr><th style="width:6%">ID</th><th style="width:40%">Conditions (origin)</th><th style="width:26%">Capability</th><th>Harm</th></tr>
+    <tr data-s="1"><td><b>F1</b></td><td>Logged cycles <i>(core)</i> AND another person opens the unlocked phone <i>(context)</i></td><td>Partner infers a possible pregnancy</td><td>Distress from unwanted disclosure; relationship tag</td></tr>
+    <tr data-s="2" class="zebra"><td><b>F2</b></td><td>Logged cycles <i>(core)</i> AND [cloud backup <i>(impl.)</i> OR seized phone <i>(context)</i>]</td><td>Authorities infer a pregnancy or a loss</td><td>Legal pressure, restricted choices (autonomy)</td></tr>
+    <tr data-s="3"><td><b>F3</b></td><td>Device identifier <i>(context)</i> AND analytics or ad SDK <i>(impl.)</i></td><td>Profiling; sorted as “trying to conceive”</td><td>Different prices or offers (discrimination)</td></tr>
+    <tr data-s="4" class="zebra"><td><b>F4</b></td><td>Predictions only if the user agrees to sharing <i>(impl.)</i></td><td>Core feature unusable without sharing</td><td>Restricted choice (autonomy)</td></tr>
+    <tr data-s="5"><td><b>F5</b></td><td>Cloud backup <i>(impl.)</i> AND an attacker gains access</td><td>Attacker reads the cycle history</td><td>Reputational damage or distress</td></tr>
+  </table>
+  <p class="lead" data-s="6">A measure blocks a pathway only if it removes a <b>necessary</b> condition: an app lock cuts F1; turning off backup cuts only one branch of F2.</p>
+  <p class="foot">Thesis Appendix A, Step 0, “Constructed reference pathways relevant to the CycleMate example” · illustrative, not yet from the literature review</p>
+  <aside class="notes">Read each row left to right: if all conditions hold, someone gains a capability, which can lead to the harm. Origins: core (app cannot work without it), context (phone and network), implementation (provider’s choice). The appendix stresses that origins are argued from the literature, not proven, and that the tree describes possible harms, not what CycleMate does.</aside>
+</section>
+
+<!-- 19 TREE -->
+<section class="slide" id="tree" data-title="CycleMate’s harm tree" data-sec="Worked example">
+  <p class="eyebrow">Worked example · the tree</p>
+  <h2 class="title">CycleMate’s harm tree, read from the top</h2>
+  <div class="tree" id="t-cycle" style="left:128px;top:250px;width:1680px;height:560px"></div>
+  <div style="position:absolute;left:128px;top:834px;width:1664px;display:flex;align-items:center;gap:30px" data-s="4">
+    <div class="chips" id="chips"><span class="chip" data-p="F1">F1</span><span class="chip" data-p="F2">F2</span><span class="chip" data-p="F3">F3</span><span class="chip" data-p="F4">F4</span><span class="chip" data-p="F5">F5</span></div>
+    <p class="cap-line" id="treecap" style="flex:1">Step through, or hover a pathway to trace it.</p>
+  </div>
+  <p class="foot">Drawn from thesis Appendix A, Step 0, in Knabenhans et al.’s three-level notation (§4.1, Fig. 4) · leaf border: black core · blue context · orange implementation · dashed attack event</p>
+  <aside class="notes">Harms at the top, capabilities (with pathway IDs) second, components at the leaves with origin borders. F1: logged cycles AND another person at the unlocked phone → partner infers pregnancy → psychological harm with relationship tag. F2: logged cycles AND (backup OR seized phone) → authorities infer pregnancy → autonomy. F5: backup AND attacker → reads history → reputational or psychological. F3: device identifier AND SDK → profiling → discrimination. F4: predictions only with sharing → restricted choice → autonomy. The attack event in F5 has no origin in the appendix, so it is dashed. After the build, each step highlights one pathway.</aside>
+</section>
+
+<!-- 20 APPLICABILITY -->
+<section class="slide alt" id="applicability" data-title="Applicability" data-sec="Worked example">
+  <p class="eyebrow">Worked example · Step 1</p>
+  <h2 class="title">Which pathways apply to CycleMate?</h2>
+  <table class="grid" style="font-size:24px">
+    <tr><th style="width:5%">ID</th><th style="width:27%">Required feature</th><th style="width:12%">Evidence</th><th>Assumption</th><th style="width:15%">Decision</th></tr>
+    <tr data-s="1"><td><b>F1</b></td><td>Cycle records on the phone</td><td>U1, U3</td><td>Another person sometimes uses the unlocked phone</td><td><span class="pill p-app">applicable</span></td></tr>
+    <tr data-s="2" class="zebra"><td><b>F2</b></td><td>Records, plus backup or the phone</td><td>U1, U3</td><td>Prosecution of reproductive choices: not the German baseline</td><td><span class="pill p-unc">uncertain</span></td></tr>
+    <tr data-s="3"><td><b>F3</b></td><td>Identifiers shared with analytics</td><td>U2</td><td>The partner can link the identifier across apps</td><td><span class="pill p-app">applicable</span></td></tr>
+    <tr data-s="4" class="zebra"><td><b>F4</b></td><td>Predictions only with sharing</td><td>listing</td><td>Not confirmed: the walkthrough is not done yet</td><td><span class="pill p-unc">uncertain</span></td></tr>
+    <tr data-s="5"><td><b>F5</b></td><td>Server copy of the cycle history</td><td>U3</td><td>An attacker could reach the server</td><td><span class="pill p-app">applicable</span></td></tr>
+  </table>
+  <div class="band" data-s="6"><div class="ic">✓</div><div>A category applies if at least one pathway does: psychological, discrimination, reputational and the relationship tag apply. Autonomy rests on F2 and F4 only: uncertain, reported apart.</div></div>
+  <p class="foot">Thesis Appendix A, Step 1, “Applicability records for CycleMate” · decisions are the author’s, never the model’s</p>
+  <aside class="notes">Before coding, the author records for each pathway the feature it needs, where it is documented, the assumptions and a decision. F2 assumes prosecution of reproductive decisions, not the German baseline; F4 depends on a walkthrough not yet done. Rule: a category applies if at least one pathway does; uncertain cases are counted and reported, never silently dropped.</aside>
+</section>
+
+<!-- 21 CODING -->
+<section class="slide" id="coding" data-title="Coding the policy" data-sec="Worked example">
+  <p class="eyebrow">Worked example · Steps 2–3</p>
+  <h2 class="title">Coding what each policy unit says</h2>
+  <div class="row" style="gap:16px" data-s="1"><span class="tag t-gr">A · what is mentioned</span><span class="tag t-gr">B · how a named harm is presented</span><span class="tag t-gr">C · what protection is promised</span></div>
+  <table class="grid" style="font-size:24px">
+    <tr><th style="width:6%">Unit</th><th style="width:33%">The text says</th><th style="width:22%">A</th><th style="width:19%">B</th><th>C</th></tr>
+    <tr data-s="2"><td><b>U6</b></td><td>“…accessed your backup, you might experience unwanted contact.”</td><td>Psychological harm, possible</td><td>Acknowledged + qualified</td><td>—</td></tr>
+    <tr data-s="3" class="zebra"><td><b>U7</b></td><td>A partner could read entries… “There is no reason for such concern.”</td><td>Psychological; relationship tag</td><td>Minimised</td><td>—</td></tr>
+    <tr data-s="4"><td><b>U8</b></td><td>“…you alone are responsible for any embarrassment…”</td><td>Psychological harm, possible</td><td>Responsibility shifted</td><td>—</td></tr>
+    <tr data-s="5" class="zebra"><td><b>U9</b></td><td>“…no one can ever use your data to discriminate…”</td><td>Discrimination, denied</td><td>Denied</td><td>Encryption; absolute</td></tr>
+    <tr data-s="6"><td><b>U10</b></td><td>“Your data is safe with us.”</td><td>—</td><td>—</td><td>Reassurance, no measure</td></tr>
+  </table>
+  <p class="foot">Thesis Appendix A, Steps 2–3, “Unit-level codes for the CycleMate policy (codebook v4)” · 5 of 10 units</p>
+  <aside class="notes">U6: the qualification (“unlikely”) targets the breach, not the harm, so two stances. U7: dismissed without a reason: minimised. U8: responsibility placed on the user. U9: discrimination named only to be ruled out; encryption claimed with harm framing and absolute strength. U10: reassurance without a checkable mechanism.</aside>
+</section>
+
+<!-- 22 MISMATCH -->
+<section class="slide alt" id="mismatch" data-title="Claims against the tree" data-sec="Worked example">
+  <p class="eyebrow">Worked example · Step 4</p>
+  <h2 class="title">Does the promised measure cut the pathway?</h2>
+  <table class="grid" style="font-size:24px">
+    <tr><th style="width:6%">Unit</th><th style="width:22%">The claim covers</th><th>Reasoning against the tree</th><th style="width:20%">Decision</th></tr>
+    <tr data-s="1"><td><b>U2</b></td><td>Sale of health data</td><td>F3 runs through shared identifiers and usage data, not a sale. Outside the claim.</td><td><span class="pill p-no">no mismatch</span></td></tr>
+    <tr data-s="2" class="zebra"><td><b>U3</b></td><td>Protection from “anyone”, backup off</td><td>F1 is in scope: a person at the unlocked phone is “anyone”; on-device storage does not remove that access.</td><td><span class="pill p-mis">potential mismatch · F1</span></td></tr>
+    <tr data-s="3"><td><b>U9</b></td><td>No one can use “your data” to discriminate</td><td>F3 reaches discrimination through identifiers U2 says are shared. Encrypting predictions does not remove them.</td><td><span class="pill p-mis">potential mismatch · F3</span></td></tr>
+    <tr data-s="4" class="zebra"><td><b>U10</b></td><td>Nothing specific</td><td>No measure named, nothing to compare.</td><td><span class="pill p-no">not assessable</span></td></tr>
+  </table>
+  <div class="band" data-s="5"><div class="ic">!</div><div>A potential mismatch is about the text, what it promises against what the named measure can do. It says nothing about the app’s real security.</div></div>
+  <p class="foot">Thesis Appendix A, Step 4, “The author’s review of CycleMate’s protection claims”</p>
+  <aside class="notes">A potential mismatch needs a pathway the claim itself covers and a written reason why the measure does not remove a necessary condition. F2’s seized-phone branch is in U3’s scope but F2 is uncertain, so noted, not counted; F5 is outside scope because the claim excludes backup. Only the author decides.</aside>
+</section>
+
+<!-- 23 RESULT -->
+<section class="slide" id="result" data-title="What one policy contributes" data-sec="Worked example">
+  <p class="eyebrow">Worked example · Step 5</p>
+  <h2 class="title">What one policy contributes to the research questions</h2>
+  <div class="row">
+    <div class="card" data-s="1"><span class="tag t-or" style="align-self:flex-start">RQ1 · coverage</span><div><span class="num" data-count="2">0</span><span class="num" style="font-size:60px;color:var(--muted)"> of 4</span></div><p>applicable harms named as possible. Discrimination only denied; reputational not mentioned; autonomy uncertain.</p></div>
+    <div class="card" data-s="2"><span class="tag t-or" style="align-self:flex-start">RQ2 · stance</span><span class="num" data-count="5">0</span><p>stances on named harms: acknowledged; acknowledged and qualified; minimised; responsibility shifted; denied.</p></div>
+    <div class="card" data-s="3"><span class="tag t-or" style="align-self:flex-start">RQ3 · protection</span><div><span class="num" data-count="2">0</span><span class="num" style="font-size:60px;color:var(--muted)"> of 3</span></div><p>claims flagged as potential mismatches (storage, encryption). One unit is reassurance only.</p></div>
+  </div>
+  <p class="foot">Thesis Appendix A, Step 5, “CycleMate’s privacy policy against the reference tree” · constructed example, not a result of the study</p>
+  <aside class="notes">RQ1: four categories including the tag apply; two named as possible; discrimination only denied (U9); reputational has no mention in the captured policy; autonomy named (U5) but uncertain, so reported apart. RQ2: five stances (U5–U9). RQ3: three claims (no-sale pledge, on-device storage, encryption); the two technical ones flagged; U10 reassurance without substance. RQ4 repeats the steps for listing, website and screens.</aside>
+</section>
+
+<!-- 24 PIPELINE -->
+<section class="slide" id="pipeline" data-title="The whole pipeline" data-sec="Language models">
+  <p class="eyebrow">Language models · the whole pipeline</p>
+  <h2 class="title">Where a model helps, and where the author decides</h2>
+  <div id="pipe" style="position:absolute;left:128px;top:280px;width:1664px;height:520px"></div>
+  <p class="cap-line" id="pipecap" style="position:absolute;left:128px;top:792px;width:1664px;text-align:center">Step through the pipeline.</p>
+  <div class="legend" style="position:absolute;left:128px;top:850px"><span class="tag t-or">model proposes</span><span class="tag t-bl">author decides</span><span class="tag t-gr">script counts</span><span style="color:var(--muted)">A, C: proposals · B: in the thesis method</span></div>
+  <p class="foot">B follows “LLM-Assisted Coding” and Appendix A, Step 6; A and C are proposals and need a Decision Log entry with precedent before use</p>
+  <aside class="notes">Orange: the model proposes; blue: the author decides; grey: a script counts. A (proposal): the model drafts component–capability–harm triples with spans from LQ1 papers; the author checks each against the PDF. B (thesis method): three-stage coding with quoted spans, every harm mention checked by hand. Applicability and mismatch decisions are the author’s. C (proposal): the model lists pathways inside a claim’s scope and whether the measure removes a condition. Ten validation apps are coded blind first.</aside>
+</section>
+
+<!-- 25 LLM LIT -->
+<section class="slide alt" id="llmlit" data-title="Proposal A" data-sec="Language models">
+  <p class="eyebrow">Proposal A · tree synthesis</p>
+  <h2 class="title">From papers to pathways: the model drafts, the author verifies</h2>
+  <div class="col" style="position:absolute;left:128px;top:330px;width:330px;gap:20px">
+    <div class="card" data-s="1" data-a="left" style="padding:20px 24px;gap:4px"><h3 style="font-size:28px">Study A</h3><p style="font-size:24px">fitness platform, shared routes</p></div>
+    <div class="card" data-s="6" data-a="left" style="padding:20px 24px;gap:4px"><h3 style="font-size:28px">Study B</h3><p style="font-size:24px">wearable sensor data</p></div>
+    <div class="card" data-s="6" data-a="left" style="padding:20px 24px;gap:4px"><h3 style="font-size:28px">Study C</h3><p style="font-size:24px">de-identified datasets</p></div>
+  </div>
+  <div class="code" style="position:absolute;left:500px;top:330px;width:700px;height:470px;font-size:23px"><span class="c">// model output, one triple per finding</span>
+<span data-s="2">{<span class="k">"component"</span>: <span class="s">"GPS routes, elevation"</span>,</span>
+<span data-s="2"> <span class="k">"capability"</span>: <span class="s">"K1 locate homes, routes"</span>,</span>
+<span data-s="3"> <span class="k">"actor"</span>: <span class="s">"other platform users"</span>,</span>
+<span data-s="3"> <span class="k">"harm"</span>: <span class="s">"physical / psychological"</span>,</span>
+<span data-s="4"> <span class="k">"origin"</span>: <span class="s">"to argue"</span>,</span>
+<span data-s="4"> <span class="k">"span"</span>: <span class="s">"…quoted…"</span>, <span class="k">"page"</span>: <span class="s">"…"</span>}</span>
+<span data-s="6"><span class="k">"capability"</span>: <span class="s">"K2 infer attributes"</span> …</span>
+<span data-s="6"><span class="k">"capability"</span>: <span class="s">"K4 re-identify people"</span> …</span></div>
+  <div class="tree" id="t-lit" style="left:1250px;top:330px;width:540px;height:440px"></div>
+  <div data-s="7" data-a="pop" class="band" style="position:absolute;left:1250px;top:790px;width:540px;padding:16px 22px;font-size:24px"><div class="ic" style="width:44px;height:44px;font-size:22px">✓</div><div>Author checks span and page in the PDF, then merges.</div></div>
+  <p class="foot">Illustrative: K1, K2, K4 from the thesis’s capability table; studies anonymised · precedents for span-grounded LLM annotation: Chanenson et al. 2025; Xie et al. 2025</p>
+  <aside class="notes">Proposal, not yet in the method. For each finding in an LQ1 study the model returns a triple (component, capability, harm) with actor, suggested origin, quoted span and page; the author checks each against the PDF and merges duplicates by hand. K1 locate homes and routes from GPS routes and elevation profiles (other platform users); K2 infer attributes from activity or sensor data; K4 re-identify from de-identified activity, gait, ECG or PPG data. Studies are anonymous because the mapping of papers to categories must come from the extraction table. Precedents: Chanenson, Pickering and Apthorpe (PoPETs 2025); Xie, Ramakrishnan and Li (USENIX Security 2025). Record in the Decision Log first.</aside>
+</section>
+
+<!-- 26 LLM CODE -->
+<section class="slide" id="llmcode" data-title="Proposal B" data-sec="Language models">
+  <p class="eyebrow">B · coding policies (in the thesis method)</p>
+  <h2 class="title">Every code must quote its evidence</h2>
+  <div class="code" style="position:absolute;left:128px;top:290px;width:900px;height:540px">{<span class="k">"unit"</span>: <span class="s">"U6"</span>,
+<span data-s="1"> <span class="k">"harm"</span>: {<span class="k">"code"</span>: <span class="s">"H-PSY"</span>,
+   <span class="k">"span"</span>: <span class="s">"you might experience unwanted contact"</span>},</span>
+<span data-s="2"> <span class="k">"stances"</span>: [
+  {<span class="k">"code"</span>: <span class="s">"S-ACK"</span>,
+   <span class="k">"reason"</span>: <span class="s">"the harm is presented as possible"</span>},</span>
+<span data-s="3">  {<span class="k">"code"</span>: <span class="s">"S-QUA"</span>,
+   <span class="k">"span"</span>: <span class="s">"In the unlikely event that …"</span>,
+   <span class="k">"target"</span>: <span class="s">"likelihood of the breach"</span>}]}</span></div>
+  <div class="col" style="position:absolute;left:1076px;top:290px;width:716px;gap:22px">
+    <div class="card" data-s="4" data-a="right" style="border-left:12px solid var(--orange);padding:24px 30px;gap:6px"><h3 style="font-size:30px">Three stages</h3><p style="font-size:26px">Find spans → stance per named harm → protection claim</p></div>
+    <div class="card" data-s="5" data-a="right" style="border-left:12px solid var(--blue);padding:24px 30px;gap:6px"><h3 style="font-size:30px">A screener, not a judge</h3><p style="font-size:26px">No span, no code. The author checks every harm mention; repeated runs measure stability.</p></div>
+    <div class="card" data-s="6" data-a="right" style="border-left:12px solid var(--ink);padding:24px 30px;gap:6px"><h3 style="font-size:30px">Validated blind</h3><p style="font-size:26px">Ten apps coded by hand first. A hit needs label, unit and span to match.</p></div>
+  </div>
+  <p class="foot">Thesis Appendix A, Step 6; Methodology “LLM-Assisted Coding”, “Validation and Missed Mentions” · precedents: Wilson et al. 2016; Harkous et al. 2018; Rodriguez et al. 2024</p>
+  <aside class="notes">Already in the method. The stance stage for U6 returns the harm with its span and two stances; S-QUA targets the breach’s likelihood. Three stages; a code without a span is discarded; every harm mention checked by hand; triple runs measure stability, not validity. Ten validation apps are coded by hand before viewing model output; a detection is correct only if label, unit and span match. The model never decides applicability or mismatches.</aside>
+</section>
+
+<!-- 27 LLM CHECK -->
+<section class="slide" id="llmcheck" data-title="Proposal C" data-sec="Language models">
+  <p class="eyebrow">Proposal C · checking a claim against the tree</p>
+  <h2 class="title">Does encryption cut the discrimination pathway?</h2>
+  <div class="row" style="gap:22px;align-items:stretch;margin-top:10px">
+    <div class="card" data-s="1" style="padding:26px"><span class="tag t-gr" style="align-self:flex-start">policy unit</span><h3 style="font-size:30px">U9</h3><p style="font-size:25px">“Because all predictions are calculated with encryption, no one can ever use your data to discriminate against you.”</p></div>
+    <div class="card" data-s="2" style="padding:26px;border-color:var(--orange)"><span class="tag t-or" style="align-self:flex-start">model · 1</span><h3 style="font-size:30px">The claim</h3><p style="font-size:25px"><b>Measure</b> encryption of predictions<br><b>Harm</b> discrimination, denied<br><b>Scope</b> “no one”, “your data”<br><b>Strength</b> absolute</p></div>
+    <div class="card" data-s="3" style="padding:26px;border-color:var(--orange)"><span class="tag t-or" style="align-self:flex-start">model · 2</span><h3 style="font-size:30px">Pathways in scope</h3><p style="font-size:25px"><b>F3</b> device identifier AND SDK → profiling → discrimination</p><p data-s="4" style="font-size:25px">Removes identifier? <b style="color:#A33B1E">no</b></p><p data-s="5" style="font-size:25px">Removes SDK flow? <b style="color:#A33B1E">no</b></p><p data-s="6" style="font-size:25px;color:var(--orange)"><b>→ candidate mismatch</b></p></div>
+    <div class="card dk" data-s="7" style="padding:26px"><span class="tag" style="align-self:flex-start;background:rgba(127,176,230,.2);color:var(--blue-l)">author · 3</span><h3 style="font-size:30px">Decision</h3><p style="font-size:25px">U2 says identifiers <i>are</i> shared; encrypting predictions leaves F3 open.</p><p style="font-size:25px;color:var(--orange-l)"><b>Potential mismatch for F3</b>, reasoning logged.</p></div>
+  </div>
+  <p class="foot">Reasoning from thesis Appendix A, Step 4 (U9, F3) · the model’s role is a proposal; in the method the author alone decides mismatches</p>
+  <aside class="notes">Proposal, not yet in the method. Stage 1 describes the claim: measure, harm, scope, strength. Stage 2 lists pathways inside the scope (F3) and asks for each necessary condition whether the measure removes it: neither is removed, so a candidate mismatch. The author decides, as in Step 4, and logs the reasoning. A potential mismatch remains a statement about the text. A precedent for model-assisted consistency checks must be found and recorded first.</aside>
+</section>
+
+<!-- 28 CONCLUDE -->
+<section class="slide alt" id="conclude" data-title="From codes to conclusions" data-sec="Language models">
+  <p class="eyebrow">From codes to conclusions</p>
+  <h2 class="title">How a harm ends up in the results</h2>
+  <div class="row" style="align-items:stretch">
+    <div class="col" style="flex:1;gap:16px">
+      <div class="card" data-s="1" style="padding:20px 28px;gap:4px"><h3 style="font-size:28px">1 · Applies</h3><p style="font-size:25px">At least one pathway to the harm is applicable. Only uncertain ones: uncertain.</p></div>
+      <div class="card" data-s="2" style="padding:20px 28px;gap:4px"><h3 style="font-size:28px">2 · Named</h3><p style="font-size:25px">A checked code in the captured texts, with status and stance.</p></div>
+      <div class="card" data-s="3" style="padding:20px 28px;gap:4px"><h3 style="font-size:28px">3 · Sorted</h3><p style="font-size:25px">Named as possible · only denied · no mention identified · uncertain.</p></div>
+      <div class="card" data-s="4" style="padding:20px 28px;gap:4px"><h3 style="font-size:28px">4 · Counted</h3><p style="font-size:25px">Across apps, per category and surface: descriptive shares.</p></div>
+    </div>
+    <div class="card dk" data-s="5" style="flex:1;padding:36px;gap:16px">
+      <span class="tag" style="align-self:flex-start;background:rgba(233,164,107,.18);color:var(--orange-l)">CycleMate, constructed</span>
+      <p style="font-size:27px;color:var(--paper)"><b>Named as possible:</b> psychological; relationship tag</p>
+      <p style="font-size:27px;color:var(--paper)"><b>Only denied:</b> discrimination</p>
+      <p style="font-size:27px;color:var(--paper)"><b>No mention identified:</b> reputational</p>
+      <p style="font-size:27px;color:var(--paper)"><b>Uncertain, apart:</b> autonomy</p>
+      <p data-s="6" style="font-size:27px;color:var(--orange-l);border-top:2px solid #3A4A66;padding-top:16px">The policy names distress, denies discrimination, is silent on reputational harm, and two protection claims reach further than their measures.</p>
+    </div>
+  </div>
+  <p class="foot">Thesis Appendix A, Steps 1 and 5; Methodology “Analysis and Reporting” · “no mention identified” refers to the captured material only</p>
+  <aside class="notes">Applicability first (a category applies if one pathway is applicable; only uncertain ones make it uncertain), then mention through checked codes with status and stance, then sorting into four bins, then descriptive counting across apps, categories and surfaces (no significance tests). The CycleMate values are a constructed example.</aside>
+</section>
+
+<!-- 29 GUARDRAILS -->
+<section class="slide dark" id="guardrails" data-title="Guardrails and open points" data-sec="Language models">
+  <p class="eyebrow">Guardrails and open points</p>
+  <h2 class="title">What stays with the author, and what is still open</h2>
+  <div class="row">
+    <div class="card" data-s="1" data-a="left"><h3>Rules for the model</h3><ul class="clean" style="font-size:28px;line-height:1.55"><li>Never decides applicability or mismatches</li><li>No quoted span, no code</li><li>Every harm mention checked by hand</li><li>Model, prompt and run logged</li><li>Trusted only after the blind ten-app test</li></ul></div>
+    <div class="card" data-s="2" data-a="right"><h3>Still open</h3><ul class="clean" style="font-size:28px;line-height:1.55"><li>What the “best app” is (D12)</li><li>Read De and Le Métayer, Schneier</li><li>Check the Knabenhans version</li><li>Justify pathway fields, applicability</li><li>Record proposals A and C first</li></ul></div>
+  </div>
+  <p class="foot">Methodology “LLM-Assisted Coding”, “Validation and Missed Mentions”; 04_Study/Prompts/run_log.md; Decision Log D12; AGENTS.md</p>
+  <aside class="notes">Rules from the method: the model never decides applicability or mismatches; codes need quoted spans; every harm mention is checked; runs are logged in 04_Study/Prompts/run_log.md; the model is trusted only as far as the blind validation shows. Open: D12; reading the original harm-tree and attack-tree papers; the Knabenhans version (May or 16 September); Decision Log justification for pathway fields and applicability records; Decision Log entries with precedent for proposals A and C.</aside>
+</section>
+
+<!-- 30 REFERENCES -->
+<section class="slide" id="references" data-title="References 1" data-sec="Sources">
+  <p class="eyebrow">References · 1 of 2 · method and harm</p>
+  <h2 class="title">Sources of the harm-tree method</h2>
+  <div class="row" style="gap:50px;font-size:24px;line-height:1.42;color:var(--body)">
+    <div class="col" style="flex:1;gap:16px">
+      <p><b>Knabenhans, C., Veitch, S., Raynal, M., Stadler, T., Chatel, S., Lueks, W., Troncoso, C.</b> (2026). On the (Privacy) Harms of the European Digital Identity Framework. Cryptology ePrint Archive, 2026/867.</p>
+      <p><b>De, S. J., Le Métayer, D.</b> (2016). Privacy harm analysis: A case study on smart grids. IEEE Security and Privacy Workshops, 58–65.</p>
+      <p><b>De, S. J., Le Métayer, D.</b> (2017). A refinement approach for the reuse of privacy risk analysis results. Annual Privacy Forum, Springer, 52–83.</p>
+      <p><b>Schneier, B.</b> (1999). Attack trees. Dr. Dobb’s Journal 24(12). <i>Not yet in the corpus; verify.</i></p>
+      <p><b>Citron, D. K., Solove, D. J.</b> (2022). Privacy harms. Boston University Law Review 102, 793.</p>
+    </div>
+    <div class="col" style="flex:1;gap:16px">
+      <p><b>CyberPeace Institute</b> (2024). Report of the Second Expert Meeting on Harms Methodology.</p>
+      <p><b>European Parliament and Council</b> (2024). Regulation (EU) 2024/1183 amending Regulation (EU) No 910/2014 (European Digital Identity Framework). OJ L 2024/1183.</p>
+      <p><b>EDRi</b> (2023). Online age verification and children’s rights. Position paper.</p>
+      <p><b>Kelley, J., Schwartz, A.</b> (2023). Age verification mandates would undermine anonymity online. EFF.</p>
+      <p><b>Koning, M., Korenhof, P., Alpár, G., Hoepman, J.-H.</b> (2014). The ABCs of ABCs: an analysis of attribute-based credentials in the light of data protection, privacy and identity.</p>
+    </div>
+  </div>
+  <p class="foot">De and Le Métayer, CyberPeace, the regulation, EDRi, EFF and Koning et al. as listed in Knabenhans et al.’s bibliography; check against the originals before citing</p>
+  <aside class="notes">knabenhans2026harms and citron2021harms are in the project bibliography; the others are not yet, and AGENTS.md requires new entries to be checked against the PDF or a DOI record. Schneier 1999 is cited from general knowledge.</aside>
+</section>
+
+<!-- 31 REFERENCES 2 -->
+<section class="slide" id="references2" data-title="References 2" data-sec="Sources">
+  <p class="eyebrow">References · 2 of 2 · health trackers and language models</p>
+  <h2 class="title">Sources for the domain and the model</h2>
+  <div class="row" style="gap:50px;font-size:24px;line-height:1.42;color:var(--body)">
+    <div class="col" style="flex:1;gap:14px">
+      <p><b>Salehzadeh Niksirat, K. et al.</b> (2024). Wearable activity trackers: A survey on utility, privacy, and security. ACM Computing Surveys 56(7).</p>
+      <p><b>Gabriele, S., Chiasson, S.</b> (2020). Understanding fitness tracker users’ security and privacy knowledge, attitudes and behaviours. CHI 2020.</p>
+      <p><b>Shipp, L., Blasco, J.</b> (2020). How private is your period? PoPETs 2020(4), 491–510.</p>
+      <p><b>Malki, L. M. et al.</b> (2024). Exploring privacy practices of female mHealth apps in a post-Roe world. CHI 2024.</p>
+      <p><b>Hudig, A. I., Singh, J.</b> (2025). Intimate data sharing: Enhancing transparency and control in fertility tracking. CHI 2025.</p>
+      <p><b>Cao, J. et al.</b> (2024). “I deleted it after the overturn of Roe v. Wade”. CHI 2024.</p>
+    </div>
+    <div class="col" style="flex:1;gap:14px">
+      <p><b>Dhondt, K. et al.</b> (2022). A run a day won’t keep the hacker away: Inference attacks on endpoint privacy zones in fitness tracking social networks.</p>
+      <p><b>Hassan, W. U. et al.</b> (2018). Analysis of privacy protections in fitness tracking social networks.</p>
+      <p><b>Wilson, S. et al.</b> (2016). The creation and analysis of a website privacy policy corpus. ACL 2016. · <b>Harkous, H. et al.</b> (2018). Polisis. USENIX Security, 531–548.</p>
+      <p><b>Rodriguez, D. et al.</b> (2024). Large language models: A new approach for privacy policy analysis at scale. Computing 106(12), 3879–3903.</p>
+      <p><b>Chanenson, J., Pickering, M., Apthorpe, N.</b> (2025). Automating GKC-CI privacy policy annotations with LLMs. PoPETs 2025(2). · <b>Xie et al.</b> (2025). USENIX Security.</p>
+      <p><b>This thesis:</b> Methodology Section 4; Appendix A (CycleMate); Decision Log D12, D14.</p>
+    </div>
+  </div>
+  <p class="foot">Entries from _shared/references.bib where present; Dhondt, Hassan, Chanenson and Xie from the literature gap search of 23 October (venues to confirm)</p>
+  <aside class="notes">Dhondt et al. 2022 and Hassan et al. 2018 are in the reading corpus and Methods Digest (nos. 113, 112); confirm venues (CCS 2022 and USENIX Security 2018 by file name). Chanenson et al. and Xie et al. are digest nos. 102 and 101, marked read in the gap search.</aside>
+</section>
+
+</div></div>
+
+<div id="bar"></div>
+<div id="hud"><span class="sec" id="hsec"></span><span class="dots" id="hdots"></span><span id="hnum"></span></div>
+<div id="hint">← → step · O overview · N notes · F full screen</div>
+<div id="notes"><h4>Speaker notes</h4><div id="ntext"></div></div>
+<div id="overview"><h3>All slides</h3><div class="grid" id="ogrid"></div></div>
+
+<script>
+/* ---------- tree renderer ---------- */
+function renderTree(host, spec){
+  var W=host.offsetWidth||parseInt(host.style.width), H=parseInt(host.style.height);
+  var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('width',W);svg.setAttribute('height',H);host.appendChild(svg);
+  var N={};
+  spec.nodes.forEach(function(n){N[n.id]=n;});
+  spec.edges.forEach(function(e){
+    var c=N[e[0]],p=N[e[1]];
+    var x1=c.x+c.w/2,y1=c.y,x2=p.x+p.w/2,y2=p.y+p.h,dy=(y1-y2)/2;
+    var path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d','M'+x1+','+y1+' C'+x1+','+(y1-dy)+' '+x2+','+(y2+dy)+' '+x2+','+y2);
+    path.setAttribute('class','edge');path.setAttribute('data-s',e[2]);path.setAttribute('data-a','draw');
+    path.dataset.paths=(e[3]||'');svg.appendChild(path);
+  });
+  spec.nodes.forEach(function(n){
+    var d=document.createElement('div');d.className='node '+n.k;
+    d.style.left=n.x+'px';d.style.top=n.y+'px';d.style.width=n.w+'px';d.style.height=n.h+'px';
+    d.innerHTML=n.t;d.setAttribute('data-s',n.s);d.setAttribute('data-a','pop');d.dataset.paths=n.p||'';
+    host.appendChild(d);
+  });
+  (spec.ops||[]).forEach(function(o){
+    var d=document.createElement('div');d.className='op'+(o.and?' and':'');d.textContent=o.t;
+    d.style.left=o.x+'px';d.style.top=o.y+'px';d.setAttribute('data-s',o.s);d.setAttribute('data-a','op');d.dataset.paths=o.p||'';
+    host.appendChild(d);
+  });
+}
+function focusPaths(host,key){
+  if(!key){host.classList.remove('focus');host.querySelectorAll('.hot').forEach(function(e){e.classList.remove('hot')});return;}
+  host.classList.add('focus');
+  host.querySelectorAll('[data-paths]').forEach(function(e){
+    var on=(' '+e.dataset.paths+' ').indexOf(' '+key+' ')>=0;
+    e.classList.toggle('hot',on);
+  });
+}
+
+/* Schneier-style example */
+renderTree(document.getElementById('t-attack'),{nodes:[
+ {id:'g',k:'harm',x:170,y:0,w:500,h:86,s:2,t:'Goal: read a user’s cycle history'},
+ {id:'a',k:'cap',x:0,y:220,w:250,h:110,s:3,t:'Use the unlocked phone'},
+ {id:'b',k:'cap',x:295,y:220,w:250,h:110,s:3,t:'Break into the backup account'},
+ {id:'c',k:'cap',x:590,y:220,w:250,h:110,s:3,t:'Seize the phone'},
+ {id:'b1',k:'comp nil',x:200,y:440,w:210,h:110,s:4,t:'Backup is switched on'},
+ {id:'b2',k:'comp nil',x:430,y:440,w:210,h:110,s:4,t:'Obtain the password'}],
+ edges:[['a','g',3],['b','g',3],['c','g',3],['b1','b',4],['b2','b',4]],
+ ops:[{t:'OR',x:420,y:150,s:3},{t:'AND',x:420,y:385,s:4,and:1}]});
+
+/* generic levels */
+renderTree(document.getElementById('t-levels'),{nodes:[
+ {id:'h',k:'harm',x:400,y:0,w:450,h:90,s:1,t:'Harm'},
+ {id:'c1',k:'cap',x:110,y:200,w:400,h:100,s:2,t:'Capability'},
+ {id:'c2',k:'cap',x:740,y:200,w:400,h:100,s:2,t:'Incapability'},
+ {id:'m1',k:'comp',x:0,y:420,w:280,h:100,s:3,t:'Component<small>core</small>'},
+ {id:'m2',k:'comp ctx',x:310,y:420,w:280,h:100,s:3,t:'Component<small>context</small>'},
+ {id:'m3',k:'comp',x:660,y:420,w:280,h:100,s:3,t:'Component<small>core</small>'},
+ {id:'m4',k:'comp imp',x:970,y:420,w:280,h:100,s:3,t:'Component<small>implementation</small>'}],
+ edges:[['c1','h',2],['c2','h',2],['m1','c1',3],['m2','c1',3],['m3','c2',3],['m4','c2',3]],
+ ops:[{t:'OR',x:625,y:145,s:2},{t:'OR+',x:310,y:360,s:4},{t:'AND',x:940,y:360,s:3,and:1}]});
+
+/* age verification */
+renderTree(document.getElementById('t-agever'),{nodes:[
+ {id:'h1',k:'harm',x:120,y:0,w:520,h:80,s:1,t:'Exacerbated structural exclusion'},
+ {id:'a1',k:'cap',x:0,y:200,w:360,h:110,s:2,t:'Provider stops the service<small>sub-tree, Fig. 5a</small>'},
+ {id:'a2',k:'cap',x:400,y:200,w:360,h:110,s:2,t:'User cannot access the service'},
+ {id:'l1',k:'comp nil',x:310,y:420,w:230,h:110,s:3,t:'Issued by a government body'},
+ {id:'l2',k:'comp nil',x:560,y:420,w:220,h:110,s:3,t:'Requires digital literacy'},
+ {id:'h2',k:'harm',x:1040,y:0,w:520,h:80,s:4,t:'Targeted advertising'},
+ {id:'b1',k:'cap',x:880,y:200,w:380,h:110,s:5,t:'Tracking / profiling<small>sub-tree</small>'},
+ {id:'b2',k:'cap',x:1300,y:200,w:364,h:110,s:5,t:'Data brokerage'},
+ {id:'k1',k:'comp nil',x:860,y:420,w:200,h:110,s:6,t:'Repeated observations'},
+ {id:'k2',k:'comp nil',x:1080,y:420,w:200,h:110,s:6,t:'Identity revealed'},
+ {id:'k3',k:'comp nil',x:1370,y:420,w:230,h:110,s:6,t:'Digitised data records'}],
+ edges:[['a1','h1',2],['a2','h1',2],['l1','a2',3],['l2','a2',3],['b1','h2',5],['b2','h2',5],['k1','b1',6],['k2','b1',6],['k3','b2',6]],
+ ops:[{t:'OR',x:380,y:140,s:2},{t:'OR',x:1300,y:140,s:5},{t:'OR+',x:1070,y:360,s:6}]});
+
+/* CycleMate */
+renderTree(document.getElementById('t-cycle'),{nodes:[
+ {id:'PSY',k:'harm',x:200,y:0,w:300,h:84,s:1,p:'F1 F5',t:'Psychological<small>+ relationship tag</small>'},
+ {id:'REP',k:'harm',x:640,y:0,w:300,h:84,s:1,p:'F5',t:'Reputational'},
+ {id:'AUT',k:'harm',x:1010,y:0,w:300,h:84,s:1,p:'F2 F4',t:'Autonomy'},
+ {id:'DSC',k:'harm',x:1370,y:0,w:300,h:84,s:1,p:'F3',t:'Discrimination'},
+ {id:'F1',k:'cap',x:71,y:195,w:260,h:104,s:2,p:'F1',t:'<b>F1</b>&nbsp;partner infers a pregnancy'},
+ {id:'F2',k:'cap',x:389,y:195,w:260,h:104,s:2,p:'F2',t:'<b>F2</b>&nbsp;authorities infer a pregnancy'},
+ {id:'F5',k:'cap',x:707,y:195,w:260,h:104,s:2,p:'F5',t:'<b>F5</b>&nbsp;attacker reads the history'},
+ {id:'F3',k:'cap',x:1131,y:195,w:260,h:104,s:2,p:'F3',t:'<b>F3</b>&nbsp;profiling across apps'},
+ {id:'F4',k:'cap',x:1420,y:195,w:260,h:104,s:2,p:'F4',t:'<b>F4</b>&nbsp;feature only with sharing'},
+ {id:'c2',k:'comp ctx',x:0,y:420,w:190,h:124,s:3,p:'F1',t:'Another person, unlocked phone'},
+ {id:'c1',k:'comp',x:212,y:420,w:190,h:124,s:3,p:'F1 F2',t:'Logged cycles'},
+ {id:'c4',k:'comp ctx',x:424,y:420,w:190,h:124,s:3,p:'F2',t:'Seized phone'},
+ {id:'c3',k:'comp imp',x:636,y:420,w:190,h:124,s:3,p:'F2 F5',t:'Cloud backup copy'},
+ {id:'c8',k:'comp ext',x:848,y:420,w:190,h:124,s:3,p:'F5',t:'Attacker reaches it'},
+ {id:'c5',k:'comp ctx',x:1060,y:420,w:190,h:124,s:3,p:'F3',t:'Device identifier'},
+ {id:'c6',k:'comp imp',x:1272,y:420,w:190,h:124,s:3,p:'F3',t:'Analytics or ad SDK'},
+ {id:'c7',k:'comp imp',x:1484,y:420,w:190,h:124,s:3,p:'F4',t:'Predictions only with sharing'}],
+ edges:[['F1','PSY',2,'F1'],['F5','PSY',2,'F5'],['F5','REP',2,'F5'],['F2','AUT',2,'F2'],['F4','AUT',2,'F4'],['F3','DSC',2,'F3'],
+  ['c2','F1',3,'F1'],['c1','F1',3,'F1'],['c1','F2',3,'F2'],['c4','F2',3,'F2'],['c3','F2',3,'F2'],['c3','F5',3,'F5'],['c8','F5',3,'F5'],['c5','F3',3,'F3'],['c6','F3',3,'F3'],['c7','F4',3,'F4']],
+ ops:[{t:'OR',x:350,y:130,s:2,p:'F1 F5'},{t:'OR',x:1160,y:130,s:2,p:'F2 F4'},{t:'AND',x:201,y:360,s:3,and:1,p:'F1'},{t:'AND · OR',x:519,y:360,s:3,and:1,p:'F2'},{t:'AND',x:837,y:360,s:3,and:1,p:'F5'},{t:'AND',x:1261,y:360,s:3,and:1,p:'F3'}]});
+
+/* literature mini tree */
+renderTree(document.getElementById('t-lit'),{nodes:[
+ {id:'h',k:'harm',x:60,y:0,w:420,h:80,s:5,t:'Harm: physical or psychological'},
+ {id:'c',k:'cap',x:60,y:170,w:420,h:90,s:4,t:'K1: locate homes and routes'},
+ {id:'m',k:'comp imp',x:60,y:340,w:420,h:90,s:3,t:'GPS routes, elevation profiles'}],
+ edges:[['m','c',4],['c','h',5]]});
+
+/* pipeline boxes */
+var PIPE=[
+ ['Literature → reference tree','llm','A','Model drafts component, capability and harm with a quoted span; the author checks each against the PDF.'],
+ ['Capture policy, listing, screens','scr','','Texts are saved with date and source; walkthroughs record the in-app screens.'],
+ ['Split into units','scr','','One paragraph or one coherent block of interface text per unit.'],
+ ['Code spans, stance, protection','llm','B','Three stages; every code quotes its span and gives a reason, or it is discarded.'],
+ ['Review every harm mention','hum','','The model is a recall-oriented screener; the author confirms or rejects each code.'],
+ ['Applicability records','hum','','For each app and pathway: feature, evidence, assumption, decision.'],
+ ['Flag candidate mismatches','llm','C','Model lists pathways inside a claim’s scope and whether the measure removes a condition.'],
+ ['Decide mismatches','hum','','Only the author records a potential mismatch, with written reasoning.'],
+ ['Aggregate per app','scr','','Coverage, stances and claims per app; uncertain cases counted apart.'],
+ ['Results RQ1–RQ4','scr','','Descriptive counts across the sample; ten apps coded blind for validation.']];
+(function(){
+  var host=document.getElementById('pipe'),pos=[];
+  PIPE.forEach(function(p,i){
+    var row=i<5?0:1,col=i%5,x=col*342,y=row*250+20;pos.push([x,y]);
+    var d=document.createElement('div');d.className='box '+p[1];d.style.left=x+'px';d.style.top=y+'px';d.style.width='300px';d.style.height='180px';
+    d.innerHTML='<div class="bt">'+p[0]+'</div>'+(p[2]?'<div class="lt">'+p[2]+'</div>':'')+'<span class="tag who '+(p[1]=='llm'?'t-or':p[1]=='hum'?'t-bl':'t-gr')+'">'+(p[1]=='llm'?'model':p[1]=='hum'?'author':'script')+'</span>';
+    host.appendChild(d);
+    if(col<4){var a=document.createElement('div');a.textContent='→';a.style.cssText='position:absolute;font-size:34px;color:#9AA4B1;left:'+(x+306)+'px;top:'+(y+70)+'px';host.appendChild(a);}
+  });
+  var t=document.createElement('div');t.id='tok';t.style.opacity=0;host.appendChild(t);
+  host._pos=pos;
+})();
+
+/* ---------- deck engine ---------- */
+var slides=[].slice.call(document.querySelectorAll('.slide')),cur=0,step=0;
+slides.forEach(function(s){var m=0;s.querySelectorAll('[data-s]').forEach(function(e){m=Math.max(m,+e.getAttribute('data-s'))});s._max=m;});
+var hooks={
+  tree:{extra:9,fn:function(s,k){var host=document.getElementById('t-cycle'),cap=document.getElementById('treecap');
+    var T={4:['F1','F1: logged cycles AND another person at the unlocked phone → partner infers a pregnancy → distress, relationship tag.'],
+      5:['F2','F2: logged cycles AND (backup OR seized phone) → authorities infer a pregnancy → autonomy.'],
+      6:['F3','F3: device identifier AND analytics SDK → profiling → discrimination.'],
+      7:['F4','F4: predictions only with sharing → feature unusable without sharing → autonomy.'],
+      8:['F5','F5: backup AND an attacker → reads the history → reputational harm or distress.'],
+      9:[null,'Logged cycles and the backup copy each feed two pathways: cutting one component can matter twice.']};
+    if(T[k]){focusPaths(host,T[k][0]);cap.textContent=T[k][1];setChip(T[k][0]);}else{focusPaths(host,null);cap.textContent='Step through, or hover a pathway to trace it.';setChip(null);}}},
+  pipeline:{extra:11,fn:function(s,k){var host=document.getElementById('pipe'),bx=host.querySelectorAll('.box'),tok=document.getElementById('tok'),cap=document.getElementById('pipecap');
+    bx.forEach(function(b,i){b.classList.toggle('on',i==k-1);b.classList.toggle('done',i<k-1||k>PIPE.length);});
+    if(k>=1&&k<=PIPE.length){var p=host._pos[k-1];tok.style.opacity=1;tok.style.left=(p[0]+136)+'px';tok.style.top=(p[1]-40)+'px';cap.textContent=PIPE[k-1][3];}
+    else if(k>PIPE.length){tok.style.opacity=0;cap.textContent='A and C are proposals for this deck; B is the coding step already in the thesis method.';}
+    else{tok.style.opacity=0;cap.textContent='Step through the pipeline.';}}},
+  mapping:{fn:function(s,k){drawMap(k);}}
+};
+slides.forEach(function(s){var h=hooks[s.id];if(h&&h.extra)s._max=Math.max(s._max,h.extra);});
+function setChip(p){document.querySelectorAll('#chips .chip').forEach(function(c){c.classList.toggle('on',c.dataset.p==p);});}
+document.querySelectorAll('#chips .chip').forEach(function(c){
+  c.addEventListener('mouseenter',function(){focusPaths(document.getElementById('t-cycle'),c.dataset.p);setChip(c.dataset.p);});
+  c.addEventListener('mouseleave',function(){hooks.tree.fn(null,step);});
+});
+function drawMap(k){
+  var svg=document.getElementById('mapsvg');svg.innerHTML='';if(k<2)return;
+  function c(id,side){var e=document.getElementById(id),p=e.offsetParent;var x=p.offsetLeft+e.offsetLeft+(side?0:e.offsetWidth),y=p.offsetTop+e.offsetTop+e.offsetHeight/2;return [x,y];}
+  var pairs=[[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]];if(k>=3)pairs.push([7,7],[8,8]);
+  pairs.forEach(function(p,i){var a=c('mL'+p[0],0),b=c('mR'+p[1],1);
+    var path=document.createElementNS('http://www.w3.org/2000/svg','path');var mx=(a[0]+b[0])/2;
+    path.setAttribute('d','M'+a[0]+','+a[1]+' C'+mx+','+a[1]+' '+mx+','+b[1]+' '+b[0]+','+b[1]);
+    var dashed=(p[0]>=7);path.setAttribute('fill','none');path.setAttribute('stroke',dashed?'#B4532A':'#8C96A3');path.setAttribute('stroke-width',3);
+    if(dashed)path.setAttribute('stroke-dasharray','8 8');
+    svg.appendChild(path);var L=path.getTotalLength();
+    if(!dashed){path.style.strokeDasharray=L;path.style.strokeDashoffset=L;path.style.transition='stroke-dashoffset .8s ease '+(i*0.08)+'s';requestAnimationFrame(function(){requestAnimationFrame(function(){path.style.strokeDashoffset=0;});});}
+  });
+}
+function reveal(el,on){
+  if(el.classList.contains('in')===on)return;
+  el.classList.toggle('in',on);
+  if(el.tagName.toLowerCase()==='path'&&el.getAttribute('data-a')==='draw'){
+    var L=el.getTotalLength();el.style.strokeDasharray=L;
+    if(on){el.style.transition='none';el.style.strokeDashoffset=L;el.getBoundingClientRect();el.style.transition='stroke-dashoffset .9s ease';el.style.strokeDashoffset=0;}
+    else{el.style.strokeDashoffset=L;}
+  }
+  if(on&&el.querySelectorAll){el.querySelectorAll('[data-count]').forEach(countUp);}
+}
+function countUp(el){var t=+el.dataset.count,i=0,st=performance.now();(function f(n){var p=Math.min(1,(n-st)/900);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);})(st);}
+function apply(){
+  var s=slides[cur];
+  s.querySelectorAll('[data-s]').forEach(function(e){reveal(e,+e.getAttribute('data-s')<=step);});
+  if(hooks[s.id])hooks[s.id].fn(s,step);
+}
+function show(i,st){
+  i=Math.max(0,Math.min(slides.length-1,i));
+  slides.forEach(function(s,j){s.classList.toggle('active',j===i);s.classList.toggle('prev',j<i);});
+  if(i!==cur){slides[cur].querySelectorAll('.in').forEach(function(e){if(st!=='keep')reveal(e,false);});}
+  cur=i;step=(st==='max')?slides[i]._max:0;apply();hud();
+  history.replaceState(null,'','#'+(i+1));
+}
+function next(){if(step<slides[cur]._max){step++;apply();hud();}else if(cur<slides.length-1)show(cur+1);}
+function prev(){if(step>0){step--;apply();hud();}else if(cur>0)show(cur-1,'max');}
+function hud(){
+  var s=slides[cur];document.getElementById('hsec').textContent=s.dataset.sec||'';
+  document.getElementById('hnum').textContent=(cur+1)+' / '+slides.length;
+  var d='';for(var k=1;k<=s._max;k++)d+='<span class="'+(k<=step?'on':'')+'"></span>';document.getElementById('hdots').innerHTML=d;
+  document.getElementById('bar').style.width=((cur+ (s._max?step/s._max:1))/slides.length*100)+'%';
+  var n=s.querySelector('.notes');document.getElementById('ntext').textContent=n?n.textContent:'';
+  [].forEach.call(document.querySelectorAll('#ogrid .it'),function(it,j){it.classList.toggle('cur',j===cur);});
+}
+function fit(){var sc=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform='scale('+sc+')';}
+addEventListener('resize',fit);
+addEventListener('keydown',function(e){
+  var k=e.key;
+  if(document.getElementById('overview').style.display==='block'&&k!=='o'&&k!=='O'&&k!=='Escape')return;
+  if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='Enter'){e.preventDefault();next();}
+  else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'){e.preventDefault();prev();}
+  else if(k==='ArrowDown'){show(cur+1);} else if(k==='ArrowUp'){show(cur-1);}
+  else if(k==='Home')show(0);else if(k==='End')show(slides.length-1);
+  else if(k==='n'||k==='N'){var n=document.getElementById('notes');n.style.display=n.style.display==='block'?'none':'block';}
+  else if(k==='o'||k==='O'||(k==='Escape'&&document.getElementById('overview').style.display==='block')){var o=document.getElementById('overview');o.style.display=o.style.display==='block'?'none':'block';}
+  else if(k==='f'||k==='F'){if(!document.fullscreenElement)document.documentElement.requestFullscreen();else document.exitFullscreen();}
+});
+document.getElementById('stage').addEventListener('click',function(e){
+  var go=e.target.closest('[data-go]');if(go){show(slides.indexOf(document.getElementById(go.dataset.go)));return;}
+  if(e.target.closest('.chip'))return;
+  var r=this.getBoundingClientRect();if(e.clientX-r.left<r.width*0.3)prev();else next();
+});
+(function(){var g=document.getElementById('ogrid');slides.forEach(function(s,j){var d=document.createElement('div');d.className='it';d.innerHTML='<i>'+(j+1)+' · '+(s.dataset.sec||'')+'</i>'+(s.dataset.title||'');d.onclick=function(){document.getElementById('overview').style.display='none';show(j);};g.appendChild(d);});})();
+fit();
+var h=parseInt((location.hash||'#1').slice(1),10);show(isNaN(h)?0:h-1);
+</script>
+</body>
+</html>
