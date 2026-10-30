@@ -31,7 +31,16 @@
   in TeXstudio inside `03_Thesis/`, so test builds go to a copy of the tree
   elsewhere: two builds writing the same `thesis.aux` corrupt it.
 - Edit LaTeX with exact-text edits. Never pass it through non-raw Python or
-  shell strings: `\todo` and `\ref` turn into control characters.
+  shell strings: `\todo` and `\ref` turn into control characters. TeXstudio may
+  save its stale buffer over an edit while it has the file open: wait a few
+  seconds, search the file for the new text, and re-apply the edit if it is
+  gone, before building or committing.
+- A table sits directly after the paragraph that introduces it, pinned with
+  `[H]`, with its caption and label; never collect tables at the end of a
+  section. If it does not fit the rest of the page, give each paragraph its own
+  table, or keep a short table in the body (counts, examples) and the complete
+  one in an appendix. Look at the rendered pages for large gaps. The body keeps
+  the rules and choices; the appendix keeps exact strings and complete lists.
 - Organizational files (`00_Admin/`, `01_Literature/`, `04_Study/`) never add
   thesis content.
 
