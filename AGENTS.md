@@ -39,7 +39,9 @@
   `[H]`, with its caption and label; never collect tables at the end of a
   section. If it does not fit the rest of the page, give each paragraph its own
   table, or keep a short table in the body (counts, examples) and the complete
-  one in an appendix. Look at the rendered pages for large gaps. The body keeps
+  one in an appendix. If its content must stay as it is, place it after its
+  paragraph as a top float (`[!t]`) so it opens the next page in the same
+  section. Look at the rendered pages for large gaps. The body keeps
   the rules and choices; the appendix keeps exact strings and complete lists.
 - Organizational files (`00_Admin/`, `01_Literature/`, `04_Study/`) never add
   thesis content.
