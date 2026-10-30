@@ -10,6 +10,22 @@ version's `output/` folder (outside Git).
 - `v002/`: the search of 28 October 2026 ([D14](../../00_Admin/Decisions/D14_literature-review-v2.md)),
   frozen in `05_Data/Literature Search/28. Oct/`; screening protocol and log in
   [`01_Literature/Literature-Review/`](../../01_Literature/Literature-Review/README.md).
+- `v003/`: the v002 method as revised in the thesis on 30 October 2026, without the
+  German-language strand S5 (groups DE and DEP). The search is not repeated: `report.py`
+  reads the frozen search of 28 October. So far only the search strings of Appendix F
+  come from v003; the other tables and figures are still those of v002 until the results
+  are revised.
+
+## v003
+
+```powershell
+python scripts/literature-search/v003/report.py strings   # -> 03_Thesis/tables/literature-strings.tex
+python -I -m unittest discover -s scripts/literature-search/v003/tests
+```
+
+`report.py` without an argument writes every table and figure, as in v002; it needs
+`output/merge.json` and `output/screening.json` of v003, which exist only once the
+remaining steps have been rerun for the revised method.
 
 ## v002
 
