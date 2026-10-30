@@ -1,10 +1,10 @@
 # Graph Report - bachelor-thesis  (2026-10-30)
 
 ## Corpus Check
-- Large corpus: 205 files · ~4,027,311 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 206 files · ~4,032,987 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 2035 nodes · 3133 edges · 225 communities (104 shown, 121 thin omitted)
+- 2031 nodes · 3111 edges · 227 communities (104 shown, 123 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 53 edges (avg confidence: 0.85)
 - Token cost: host semantic extraction unmeasured; local refresh makes no model calls
 
@@ -14,51 +14,51 @@
 - Graphify Integration 2
 - Graphify Integration 3
 - Supervisor Decisions 4
-- Study Instruments 5
-- Supervisor Decisions 6
+- Supervisor Decisions 5
+- Study Instruments 6
 - Supervisor Decisions 7
-- Graphify Integration 8
-- Supervisor Decisions 9
-- Literature and Evidence 10
-- Graphify Integration 11
-- Supervisor Decisions 12
-- Project Navigation 13
+- Supervisor Decisions 8
+- Graphify Integration 9
+- Supervisor Decisions 10
+- Literature and Evidence 11
+- Graphify Integration 12
+- Graphify Integration 13
 - Graphify Integration 14
 - Graphify Integration 15
 - Graphify Integration 16
-- Graphify Integration 17
-- Study Instruments 18
+- Study Instruments 17
+- Graphify Integration 18
 - Graphify Integration 19
-- Graphify Integration 20
-- Supervisor Decisions 21
-- Study Instruments 22
-- Bibliography 23
+- Study Instruments 20
+- Bibliography 21
+- Graphify Integration 22
+- Supervisor Decisions 23
 - Graphify Integration 24
 - Graphify Integration 25
 - Graphify Integration 26
 - Graphify Integration 27
 - Graphify Integration 28
 - Graphify Integration 29
-- Graphify Integration 30
-- Bibliography 31
+- Bibliography 30
+- Graphify Integration 31
 - Graphify Integration 32
-- Graphify Integration 33
-- Study Instruments 34
-- Literature and Evidence 35
-- Study Instruments 36
-- Literature and Evidence 37
-- Graphify Integration 38
-- Thesis Writing and Methods 39
-- Supervisor Decisions 40
-- Literature and Evidence 41
+- Study Instruments 33
+- Literature and Evidence 34
+- Study Instruments 35
+- Literature and Evidence 36
+- Graphify Integration 37
+- Thesis Writing and Methods 38
+- Supervisor Decisions 39
+- Literature and Evidence 40
+- Project Navigation 41
 - Thesis Writing and Methods 42
-- Bibliography 43
-- Graphify Integration 44
-- Supervisor Decisions 45
-- Graphify Integration 46
-- Thesis Writing and Methods 47
-- Study Instruments 48
-- Supervisor Decisions 49
+- Supervisor Decisions 43
+- Bibliography 44
+- Graphify Integration 45
+- Supervisor Decisions 46
+- Graphify Integration 47
+- Thesis Writing and Methods 48
+- Study Instruments 49
 - Literature and Evidence 50
 - Literature and Evidence 51
 - Graphify Integration 52
@@ -68,9 +68,9 @@
 - Literature and Evidence 56
 - Thesis Writing and Methods 57
 - Thesis Writing and Methods 58
-- Bibliography 59
-- Graphify Integration 60
-- Supervisor Decisions 61
+- Literature and Evidence 59
+- Bibliography 60
+- Graphify Integration 61
 - Project Navigation 62
 - Graphify Integration 63
 - Supervisor Decisions 64
@@ -82,9 +82,9 @@
 - Thesis Writing and Methods 70
 - Study Instruments 71
 - Project Navigation 72
-- Graphify Integration 73
+- Project Navigation 73
 - Graphify Integration 74
-- Supervisor Decisions 75
+- Graphify Integration 75
 - Supervisor Decisions 76
 - Supervisor Decisions 77
 - Supervisor Decisions 78
@@ -127,11 +127,11 @@
 - Graphify Integration 115
 - Supervisor Decisions 117
 - Supervisor Decisions 118
-- Literature and Evidence 119
-- Thesis Writing and Methods 120
+- Supervisor Decisions 119
+- Literature and Evidence 120
 - Thesis Writing and Methods 121
-- Graphify Integration 122
-- Thesis Writing and Methods 129
+- Thesis Writing and Methods 122
+- Graphify Integration 123
 - Thesis Writing and Methods 130
 - Thesis Writing and Methods 131
 - Thesis Writing and Methods 132
@@ -145,18 +145,20 @@
 - Thesis Writing and Methods 140
 - Thesis Writing and Methods 141
 - Thesis Writing and Methods 142
-- Supervisor Decisions 143
-- Project Navigation 144
-- Graphify Integration 145
-- Graphify Integration 146
+- Thesis Writing and Methods 143
+- Supervisor Decisions 144
+- Supervisor Decisions 145
+- Project Navigation 146
 - Graphify Integration 147
 - Graphify Integration 148
+- Graphify Integration 149
 - Graphify Integration 150
-- Literature and Evidence 198
-- Literature and Evidence 199
+- Graphify Integration 152
 - Literature and Evidence 200
 - Literature and Evidence 201
 - Literature and Evidence 202
+- Literature and Evidence 203
+- Literature and Evidence 204
 
 ## God Nodes (most connected - your core abstractions)
 1. `Shared bibliography` - 69 edges
@@ -190,7 +192,7 @@
 - **Coverage, stance and protection analysis** — 04_study_codebook_codebook_v3_coverage, 04_study_codebook_codebook_v3_stance, 04_study_codebook_codebook_v3_measures, 00_admin_supervisor_input_2026_09_05_supervisor_input_research_question [EXTRACTED 1.00]
 - **Applicability and recall guard absence claims** — 04_study_codebook_codebook_v3_applicability, 04_study_codebook_codebook_v3_coverage, 04_study_codebook_codebook_v3_blind_validation, 04_study_codebook_codebook_v3_missed_mentions [INFERRED 0.95]
 
-## Communities (225 total, 121 thin omitted)
+## Communities (227 total, 123 thin omitted)
 
 ### Community 0 - "Graphify Integration 0"
 Cohesion: 0.08
@@ -209,184 +211,184 @@ Cohesion: 0.09
 Nodes (17): check_storefront(), Client, collect(), enrich_app(), FetchError, main(), normalize_app(), PageParser (+9 more)
 
 ### Community 4 - "Supervisor Decisions 4"
+Cohesion: 0.07
+Nodes (42): 5 October proposal submission email, Historical German-primary language rule, Proposal LLM screening with manual evidence checks, Historical 50-app quota: 30 fitness / 20 fertility, Unresolved payment, trial and access eligibility, Apps only; connected-device analysis excluded, Unresolved best-app harm-tree synthesis, German and English app-search keywords (+34 more)
+
+### Community 5 - "Supervisor Decisions 5"
 Cohesion: 0.05
 Nodes (44): Detailed sampling peer review with scope amendment, Remaining findings retain original audit scope and evidence date, Identity, missingness, extraction and screening evidence require correction, Repeatable calculations and preserved bytes do not establish scientific validity, Historical raw hashes and isolated output replay pass, Detailed findings, Evidence package and reproduction, F01 | CRITICAL | Selected cross-store identities are wrong (+36 more)
 
-### Community 5 - "Study Instruments 5"
+### Community 6 - "Study Instruments 6"
 Cohesion: 0.05
-Nodes (43): Historical asymmetric recall validation, Codebook v1: historical coding scheme, Superseded blanket PET-origin limitation, Codebook v2: superseded coding scheme, A.1 Harm type — Citron & Solove (2022), pp. 830–861, A.2 Probe codes — the four silences, A.3 Pathway stage — Knabenhans et al. (2026), Axis A — Harm type and pathway (RQ1) (+35 more)
-
-### Community 6 - "Supervisor Decisions 6"
-Cohesion: 0.07
-Nodes (41): 5 October proposal submission email, Historical German-primary language rule, Proposal LLM screening with manual evidence checks, Historical 50-app quota: 30 fitness / 20 fertility, Unresolved payment, trial and access eligibility, Apps only; connected-device analysis excluded, Unresolved best-app harm-tree synthesis, German and English app-search keywords (+33 more)
+Nodes (42): Historical asymmetric recall validation, Codebook v1: historical coding scheme, Codebook v2: superseded coding scheme, A.1 Harm type — Citron & Solove (2022), pp. 830–861, A.2 Probe codes — the four silences, A.3 Pathway stage — Knabenhans et al. (2026), Axis A — Harm type and pathway (RQ1), Axis B — Stance (RQ2) (+34 more)
 
 ### Community 7 - "Supervisor Decisions 7"
+Cohesion: 0.06
+Nodes (39): Brief sampling peer review with scope amendment, Remaining findings retain original audit scope and evidence date, Wrong product pairings and missing-count zero substitution remain open, Repeatable calculations and preserved bytes do not establish scientific validity, F18 and F19 resolved by the single-domain scope amendment, All findings (same IDs as the detailed report), F01 | CRITICAL | Selected cross-store identities are wrong, F02 | MAJOR | Unobserved Play feedback is silently treated as zero (+31 more)
+
+### Community 8 - "Supervisor Decisions 8"
 Cohesion: 0.09
 Nodes (28): All screening remains an AI-prepared first pass awaiting author review, Archived v003 calibration: 114 positive pairs, c=0.08958070788703418, Cache supports 100 captures on 24 October and 545 on 25 October, Oviva Direkt E5 classification plausible, exact registry evidence still missing, Sampling audit - 25 October 2026, Identity review, missing-count policy, screening adjudication, rerun and documentation before freeze, Nike, BabyCenter and gender-specific Leap reference mismatches, Headspace versus Calm, 7Mind and Insight Timer requires a consistent mood/meditation boundary (+20 more)
 
-### Community 8 - "Graphify Integration 8"
+### Community 9 - "Graphify Integration 9"
 Cohesion: 0.10
 Nodes (27): account_conflicts(), calibration(), candidates(), decision(), domain(), identity_errors(), listings_of(), load() (+19 more)
 
-### Community 9 - "Supervisor Decisions 9"
+### Community 10 - "Supervisor Decisions 10"
 Cohesion: 0.08
 Nodes (33): D2: store search, ranking, rating floor, provider and product identity, Same app in both stores only on recorded product-specific evidence (I1-I5), v005 run: 946 proposals, 308 same apps, 2 unresolved; 1,301 candidates, c = 0.0906, Simple Design, ABISHKKING and Leap Fitness count as one provider, Title rule paired Nike Run Club with Nike Training Club, BabyCenter with What to Expect, men with women, Archived official pages and store records behind identity decisions, As run, Cross-store product identity (28 October 2026) (+25 more)
 
-### Community 10 - "Literature and Evidence 10"
+### Community 11 - "Literature and Evidence 11"
 Cohesion: 0.10
 Nodes (24): anchor_hash(), apply_page_fixes(), collect_citations(), collect_plain_refs(), compile_pdf(), detect_headings(), detok(), fmt() (+16 more)
 
-### Community 11 - "Graphify Integration 11"
+### Community 12 - "Graphify Integration 12"
 Cohesion: 0.09
 Nodes (19): creators(), clean_title(), label(), polished(), surname(), load_items(), match(), norm() (+11 more)
 
-### Community 12 - "Supervisor Decisions 12"
-Cohesion: 0.06
-Nodes (34): All findings (same IDs as the detailed report), F01 | CRITICAL | Selected cross-store identities are wrong, F02 | MAJOR | Unobserved Play feedback is silently treated as zero, F03 | MAJOR | The reported 0.95 correlation is inflated by imputed zero pairs, F04 | MAJOR | The documented current ranking command cannot run unchanged, F05 | MAJOR | Freeze documentation and the current data layout have separated, F06 | MAJOR | Original HTTP evidence is incomplete, F07 | MAJOR | Country-sensitive review counts are not fully semantically validated (+26 more)
-
-### Community 13 - "Project Navigation 13"
-Cohesion: 0.09
-Nodes (30): 13 October meeting outranks preserved proposal, Project check and graph refresh required, App sample reads the frozen 05_Data dataset, not script outputs, Repository agent workflow rules, Commit and push complete logical edits, Graph-first exploration and freshness discipline, Exact LaTeX edits and isolated Biber compilation, Decision evidence precedes methodology (+22 more)
-
-### Community 14 - "Graphify Integration 14"
+### Community 13 - "Graphify Integration 13"
 Cohesion: 0.10
 Nodes (28): App Store v007 iTunes Search API collector, Collector JSON input fields, Scraping scripts appendix, Collector output geography and limits, Shortened Google Play v005 collector, same results as the v004 sample run, App Store Collector, Google Play Collector, Input Format (+20 more)
 
-### Community 15 - "Graphify Integration 15"
+### Community 14 - "Graphify Integration 14"
 Cohesion: 0.11
 Nodes (22): account_conflicts(), calibration(), candidates(), decision(), domain(), load(), main(), build() (+14 more)
 
-### Community 16 - "Graphify Integration 16"
+### Community 15 - "Graphify Integration 15"
 Cohesion: 0.19
 Nodes (26): capability_table(), exclusion_figure(), flow_figure(), groups_table(), hbar(), heatmap(), inventory(), line() (+18 more)
 
-### Community 17 - "Graphify Integration 17"
+### Community 16 - "Graphify Integration 16"
 Cohesion: 0.20
 Nodes (25): capability_table(), exclusion_figure(), flow_figure(), groups_table(), hbar(), heatmap(), inventory(), line() (+17 more)
 
-### Community 18 - "Study Instruments 18"
+### Community 17 - "Study Instruments 17"
 Cohesion: 0.08
 Nodes (27): Shared reference framework with app-by-pathway applicability, Sample-wide pilot and blind independent ten-app validation, Coverage, named-harm stance and protection axes, Codebook v4: one health-tracker study domain, Paragraph or coherent UI units require located evidence spans, Knabenhans harm model and component origins, 0. The harm model, A.1 Nodes mentioned (+19 more)
 
-### Community 19 - "Graphify Integration 19"
+### Community 18 - "Graphify Integration 18"
 Cohesion: 0.12
 Nodes (17): counterpart(), lists_reached(), load(), main(), blend(), run(), name_key(), pool() (+9 more)
 
-### Community 20 - "Graphify Integration 20"
+### Community 19 - "Graphify Integration 19"
 Cohesion: 0.11
 Nodes (7): IdentityTests, listing(), nike(), pairs(), RankTests, RegisterTests, row()
 
-### Community 21 - "Supervisor Decisions 21"
-Cohesion: 0.10
-Nodes (24): Citron and Solove 2022 Privacy Harms, 5 September supervisor input, Hudig and Singh 2025 fertility transparency, Malki et al. 2024 female mHealth privacy, Martin et al. 2025 No Cookies For You, Salehzadeh Niksirat et al. 2024 wearable survey, Provider communication of harms, stance and PET protection, Wharton et al. 1994 cognitive walkthrough (+16 more)
-
-### Community 22 - "Study Instruments 22"
+### Community 20 - "Study Instruments 20"
 Cohesion: 0.09
 Nodes (24): Per-code precision, recall, Cohen kappa and Gwet AC1, Ten-app blind validation and leakage prevention, Lexical and outside-hit missed-mention audit, 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis] (+16 more)
 
-### Community 23 - "Bibliography 23"
+### Community 21 - "Bibliography 21"
 Cohesion: 0.15
 Nodes (25): LLM-Assisted Coding, What the Literature Shows, brackin2026privacy: Privacy Washing: Detecting Internal Contradictions in Privacy Policies, chanenson2025automating: Automating Governing Knowledge Commons and Contextual Integrity ( GKC-CI ) Privacy Policy Annotations with Large Language Models, dhondt2022run: A Run a Day Won't Keep the Hacker Away: Inference Attacks on Endpoint Privacy Zones in Fitness Tracking Social Networks, doan2024transparency: Analysis of Transparency and User-Relevancy of  DTC  Company Policies, grundy2019data: Data Sharing Practices of Medicines Related Apps and the Mobile Ecosystem: Traffic, Content, and Network Analysis, harkous2018polisis: Polisis: Automated Analysis and Presentation of Privacy                Policies Using Deep Learning (+17 more)
 
-### Community 24 - "Graphify Integration 24"
+### Community 22 - "Graphify Integration 22"
 Cohesion: 0.14
 Nodes (19): calibration(), candidates(), decision(), load(), main(), build(), german(), ranked() (+11 more)
 
-### Community 25 - "Graphify Integration 25"
+### Community 23 - "Supervisor Decisions 23"
+Cohesion: 0.11
+Nodes (22): Citron and Solove 2022 Privacy Harms, 5 September supervisor input, Hudig and Singh 2025 fertility transparency, Malki et al. 2024 female mHealth privacy, Martin et al. 2025 No Cookies For You, Salehzadeh Niksirat et al. 2024 wearable survey, Provider communication of harms, stance and PET protection, Wharton et al. 1994 cognitive walkthrough (+14 more)
+
+### Community 24 - "Graphify Integration 24"
 Cohesion: 0.16
 Nodes (18): abstract_from_index(), citations_per_year(), expand(), get_json(), main(), manual_hits(), merge(), find() (+10 more)
+
+### Community 25 - "Graphify Integration 25"
+Cohesion: 0.18
+Nodes (18): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+10 more)
 
 ### Community 26 - "Graphify Integration 26"
 Cohesion: 0.18
 Nodes (18): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+10 more)
 
 ### Community 27 - "Graphify Integration 27"
-Cohesion: 0.18
-Nodes (18): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+10 more)
+Cohesion: 0.17
+Nodes (18): Data available per app, Interpretation for sampling, iPhone App Store keyword collector, Verification, Complete API metadata retention, Checkpointing and explicit partial collection status, Interrupted checkpoint recovery and Windows lock retries, CLI, importable collect function and offline reparse (+10 more)
 
 ### Community 28 - "Graphify Integration 28"
 Cohesion: 0.17
-Nodes (18): Data available per app, Interpretation for sampling, iPhone App Store keyword collector, Verification, Complete API metadata retention, Checkpointing and explicit partial collection status, Interrupted checkpoint recovery and Windows lock retries, CLI, importable collect function and offline reparse (+10 more)
+Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
 
 ### Community 29 - "Graphify Integration 29"
 Cohesion: 0.17
 Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
 
-### Community 30 - "Graphify Integration 30"
-Cohesion: 0.17
-Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
-
-### Community 31 - "Bibliography 31"
+### Community 30 - "Bibliography 30"
 Cohesion: 0.14
 Nodes (20): Corpus inventory rows: review, contextual and pending records, Literature Review, Validation and Missed Mentions, Search and Screening, arksey2005scoping: Scoping Studies: Towards a Methodological Framework, aydin2024assessing: Assessing Privacy Policies with  AI : Ethical, Legal, and Technical Challenges, baumann2025llm: Large Language Model Hacking: Quantifying the Hidden Risks                   of Using  LLMs  for Text Annotation, calo2011boundaries: The Boundaries of Privacy Harm (+12 more)
+
+### Community 31 - "Graphify Integration 31"
+Cohesion: 0.19
+Nodes (16): arxiv_id(), load_config(), norm_doi(), norm_title(), bib_entries(), cited_keys(), identifiers(), keys_of() (+8 more)
 
 ### Community 32 - "Graphify Integration 32"
 Cohesion: 0.19
 Nodes (16): arxiv_id(), load_config(), norm_doi(), norm_title(), bib_entries(), cited_keys(), identifiers(), keys_of() (+8 more)
 
-### Community 33 - "Graphify Integration 33"
-Cohesion: 0.19
-Nodes (16): arxiv_id(), load_config(), norm_doi(), norm_title(), bib_entries(), cited_keys(), identifiers(), keys_of() (+8 more)
-
-### Community 34 - "Study Instruments 34"
+### Community 33 - "Study Instruments 33"
 Cohesion: 0.17
-Nodes (20): Knabenhans et al. 2026 harm model, App-by-pathway applicability records, P-BRC, P-INC and P-NOT breach/incident details, K-DIS, K-TRK, K-INF and K-INC capabilities, Paragraph or coherent UI block with evidence spans, RQ1 coverage: all mentioned nodes and modalities, Codebook v3: 5 October draft instruments, L-GEN generic misuse risk (+12 more)
+Nodes (20): Knabenhans et al. 2026 harm model, Superseded blanket PET-origin limitation, App-by-pathway applicability records, P-BRC, P-INC and P-NOT breach/incident details, K-DIS, K-TRK, K-INF and K-INC capabilities, Paragraph or coherent UI block with evidence spans, RQ1 coverage: all mentioned nodes and modalities, Codebook v3: 5 October draft instruments (+12 more)
 
-### Community 35 - "Literature and Evidence 35"
+### Community 34 - "Literature and Evidence 34"
 Cohesion: 0.13
 Nodes (19): Every cited paper needs a PDF, a reading-list row and a bibliography entry, Core literature: harm theory, health trackers, walkthrough method, Core reading list distinct from the methodology corpus, Literature collections, reading tracker and citation rule, Generated catalogue, abstract index, download checklist and literature map, reading-status.csv is the reading tracker, <Author> (<Year>) — <Title>, Findings (+11 more)
 
-### Community 36 - "Study Instruments 36"
+### Community 35 - "Study Instruments 35"
 Cohesion: 0.12
 Nodes (19): Health-tracker pathway applicability follows app features and context, Sampling protocol v3: current health-tracker scope amendment, Preserved v1 sampling draft is superseded for current work, Five pilot, ten validation and twelve walkthrough apps across the sample, One health-tracker domain without category strata, Categories considered, Change log, Exclusion criteria (+11 more)
 
-### Community 37 - "Literature and Evidence 37"
+### Community 36 - "Literature and Evidence 36"
 Cohesion: 0.10
 Nodes (19): Agreement, App appraisal, App-review comparison sheet, App reviews, Coding, Context/harm, First reading route, Full ranked catalogue by methodological use (+11 more)
 
-### Community 38 - "Graphify Integration 38"
+### Community 37 - "Graphify Integration 37"
 Cohesion: 0.17
 Nodes (13): avg_ranks(), collect(), compare(), exposure(), load_csv(), load_json(), main(), parse_date() (+5 more)
 
-### Community 39 - "Thesis Writing and Methods 39"
+### Community 38 - "Thesis Writing and Methods 38"
 Cohesion: 0.14
 Nodes (13): Developer-rule evidence: trial top 47, selection without the rule, aliases with evidence, App sample appendix with developer-rule evidence, Longtable imports script-generated sample rows, Same apps under two developer names, from the identity register, Wide appendix tables on landscape pages, Sample table numbering and observed German feedback counts, Generated rows: the 47 ranked apps and three preinstalled apps (v005), Generated rows: developer names matched by hand (P3) (+5 more)
 
-### Community 40 - "Supervisor Decisions 40"
+### Community 39 - "Supervisor Decisions 39"
 Cohesion: 0.14
 Nodes (16): App-selection evaluation of 23 October 2026, Repeated personal health recording as an eligibility boundary, Historical category-allocation objection superseded by D15, Pilot provider concentration motivates one app per developer, 1. Provider clustering (high), 2. Historical category-allocation concern — superseded by D15, 3. Search frame and keywords (medium to high), 4. Functional tracking rule (medium) (+8 more)
 
-### Community 41 - "Literature and Evidence 41"
+### Community 40 - "Literature and Evidence 40"
 Cohesion: 0.15
 Nodes (16): Methods Digest handout: evidence resource rather than decisions, Offline rebuild: check, compile, package, Digest full-text volumes are private-use copies, Links jump to highlighted passages in the appended copies, Nine digest stages mapped to decisions D1-D12, 1. check citations, write all generated files (about 80 s), 2. compile one volume (fast recipe: two draft passes, one real pass), 3. collect into build/deliverables/ with an index (+8 more)
+
+### Community 41 - "Project Navigation 41"
+Cohesion: 0.19
+Nodes (16): 13 October meeting outranks preserved proposal, Project check and graph refresh required, App sample reads the frozen 05_Data dataset, not script outputs, Repository agent workflow rules, Commit and push complete logical edits, Graph-first exploration and freshness discipline, Exact LaTeX edits and isolated Biber compilation, Decision evidence precedes methodology (+8 more)
 
 ### Community 42 - "Thesis Writing and Methods 42"
 Cohesion: 0.12
 Nodes (16): Analysis and Reporting, App Walkthroughs, Axis A: Coverage, Axis B: Stance, Axis C: Protection, Coding Units and Axes, Draft Status and Study Design, Ethics and Feasibility (+8 more)
 
-### Community 43 - "Bibliography 43"
+### Community 43 - "Supervisor Decisions 43"
+Cohesion: 0.15
+Nodes (15): Action plan after the 13 October supervisor meeting, Evidence and protocols before pilot and instrument freeze, Health trackers as one study domain; allocations across the sample, Open coder, walkthrough and best-app decisions, D15 single health-tracker study domain, F18 and F19 resolved by the single-domain scope amendment, 1 · Clarify and define (by 10-20), 2 · Gather evidence (by 10-24) (+7 more)
+
+### Community 44 - "Bibliography 44"
 Cohesion: 0.16
 Nodes (16): Related Work, Reference Harm Trees, arkalakis2024abandon: Abandon All Hope Ye Who Enter Here: A Dynamic,                Longitudinal Investigation of  Android 's Data Safety                Section, cao2024deleted: \mkbibquote I Deleted It After the Overturn of Roe v. Wade :                Understanding Women's Privacy Concerns Toward Period-Tracking                Apps in the Post Roe v. Wade Era, gabriele2020understanding: Understanding Fitness Tracker Users' Security and Privacy                Knowledge, Attitudes and Behaviours, huckvale2019assessment: Assessment of the Data Sharing and Privacy Practices of              Smartphone Apps for Depression and Smoking Cessation, hudig2025intimate: Intimate Data Sharing: Enhancing Transparency and Control in                Fertility Tracking, li2022ios: Understanding  iOS  Privacy Nutrition Labels: An                Exploratory Large-Scale Analysis of App Store Data (+8 more)
 
-### Community 45 - "Supervisor Decisions 45"
+### Community 46 - "Supervisor Decisions 46"
 Cohesion: 0.14
 Nodes (14): 4 September proposal scoping meeting, Manual walkthroughs with versioned LLM prompts, 1. Scope, 2. Core research angle, 3. Methodology (as discussed), 4. Data collection and analysis, 5. Reading, 6. Proposal — required structure (+6 more)
 
-### Community 46 - "Graphify Integration 46"
+### Community 47 - "Graphify Integration 47"
 Cohesion: 0.24
 Nodes (10): info(), main(), check_citations(), check_links(), check_reading(), check_review_copy(), check_todos(), main() (+2 more)
 
-### Community 47 - "Thesis Writing and Methods 47"
+### Community 48 - "Thesis Writing and Methods 48"
 Cohesion: 0.17
 Nodes (14): Blind validation of staged model coding, Constructed CycleMate worked example, Codebook appendix using codebook v4, Feature-based reference-pathway applicability, Human scope-specific protection mismatch review, Codebook, How to read this example, Step 1: Which pathways apply to CycleMate? (+6 more)
 
-### Community 48 - "Study Instruments 48"
+### Community 49 - "Study Instruments 49"
 Cohesion: 0.17
 Nodes (14): Walkthrough protocol v3: health trackers overall, Fixed walkthrough sequence and source evidence capture, Seven ordered privacy tasks and four cognitive walkthrough questions, Twelve distinct apps with six Android and six iOS places, Synthetic accounts and data; device OS language setup still open, Ethics rules that bind every session, Fixed session sequence, Notes discipline (+6 more)
-
-### Community 49 - "Supervisor Decisions 49"
-Cohesion: 0.18
-Nodes (13): Action plan after the 13 October supervisor meeting, Evidence and protocols before pilot and instrument freeze, Health trackers as one study domain; allocations across the sample, Open coder, walkthrough and best-app decisions, 1 · Clarify and define (by 10-20), 2 · Gather evidence (by 10-24), 3 · Decide (by 10-26) · register: [Decision-Log.md](Decision-Log.md), 4 · Protocols (by 10-28) (+5 more)
 
 ### Community 50 - "Literature and Evidence 50"
 Cohesion: 0.19
@@ -424,13 +426,13 @@ Nodes (11): RQ1 Coverage, Introduction and research questions, RQ3 Protection, P
 Cohesion: 0.24
 Nodes (9): Background chapter, deferred: earlier draft on GDPR, harms and harm trees commented out, Lists and bibliography, six lettered appendices (A-F) and the AI Appendix, Thesis PDFLaTeX and Biber build workflow, Main thesis document, RUB thesis template class bossthesis (two-sided, IT Security), adapted for MPI-SP, Cover, title page and declaration from the template; abstract, acknowledgements, contents (Kurzfassung removed), Seven thesis chapters with Arabic page numbering, Abstract (+1 more)
 
-### Community 59 - "Bibliography 59"
+### Community 59 - "Literature and Evidence 59"
+Cohesion: 0.17
+Nodes (11): 10. Second round: recent preprints, the advisor's network and context, 1. Where the corpus is thin, 2. LLM coding and analysis of privacy policies (priority area), 3. Using LLM labels validly (method sources for D8 and D9), 4. Stance (RQ2): the language of policies, 5. Protection claims (RQ3) and surfaces (RQ4), 6. Domains, German context and harm, 7. App search and selection (+3 more)
+
+### Community 60 - "Bibliography 60"
 Cohesion: 0.18
 Nodes (12): App Sampling, Sample, apple2022itunessearch: iTunes  Search  API, apple2026acquisition: Acquisition, apple2026ratingsoverview: Ratings and Reviews Overview, google2026playstatistics: View App Statistics, grinsted2021making: Making Ratings and Reviews Better for Users and Developers, hu2018studying: Studying the Consistency of Star Ratings and the Complaints in 1 \& 2-Star User              Reviews for Top Free Cross-Platform  Android  and  iOS  Apps (+4 more)
-
-### Community 61 - "Supervisor Decisions 61"
-Cohesion: 0.35
-Nodes (7): Staged procedure of Baumann et al. 2025 App. A (search, duplicates, citation filter, screening, extraction), Stage 3 collects capabilities from I1 works for the harm trees, replacing dataset selection, Duplicates merged by DOI, arXiv ID or title; fewer than 3 citations per year removed, no exemption for recent works, Screening criteria I1 harms, I2 communication analyses, I3 LLM policy annotation, I4 presentation and wording; exclusions E1-E5, D13: how the literature is searched, filtered and screened, One Boolean query per review question Q1-Q4; period 2014 to search date, Q3 from 2022, D13 — How is the literature searched, filtered and screened?
 
 ### Community 62 - "Project Navigation 62"
 Cohesion: 0.27
@@ -472,21 +474,21 @@ Nodes (6): Study ethics and safe walkthrough rules, Written ethics scope confirm
 Cohesion: 0.36
 Nodes (7): literature_new, Notes, Zotero, Tidy literature copy and Zotero linkage record, Literature copies preserve original paths and contents, Only LLM stage volume reflects 116-paper digest state, One linked PDF per Zotero item after v002 repair
 
-### Community 73 - "Graphify Integration 73"
+### Community 73 - "Project Navigation 73"
+Cohesion: 0.25
+Nodes (7): Bachelor's thesis — Privacy Harm Communication in Health Tracking Apps, Cleanup recovery, Folder map, Graphify, Main document, Review copy for the supervisor, Working routine
+
+### Community 74 - "Graphify Integration 74"
 Cohesion: 0.36
 Nodes (4): at(), details_id(), fetch(), search()
 
-### Community 74 - "Graphify Integration 74"
+### Community 75 - "Graphify Integration 75"
 Cohesion: 0.39
 Nodes (5): depth(), domain(), main(), one_per_developer(), pool()
 
-### Community 75 - "Supervisor Decisions 75"
+### Community 76 - "Supervisor Decisions 76"
 Cohesion: 0.48
 Nodes (6): D3 tracker scope and sourced keyword space, Health trackers overall with categories as descriptors, Forty-nine English and German queries from Hutton and Malki, Known first-word title matching weakness affects a sensitivity variant, E1 requires recording personal health or body data over time, D3 — Which apps count as health trackers, and which keywords find them?
-
-### Community 76 - "Supervisor Decisions 76"
-Cohesion: 0.29
-Nodes (7): D15 single health-tracker study domain, Brief sampling peer review with scope amendment, Remaining findings retain original audit scope and evidence date, Wrong product pairings and missing-count zero substitution remain open, Repeatable calculations and preserved bytes do not establish scientific validity, F18 and F19 resolved by the single-domain scope amendment, F18 and F19 resolved by the single-domain scope amendment
 
 ### Community 77 - "Supervisor Decisions 77"
 Cohesion: 0.29
@@ -604,7 +606,7 @@ Nodes (3): Corpus Inventory, Literature Review Records, Search Strings
 Cohesion: 0.83
 Nodes (3): at(), fetch(), search()
 
-### Community 119 - "Literature and Evidence 119"
+### Community 120 - "Literature and Evidence 120"
 Cohesion: 0.67
 Nodes (3): Status: 99 cards by 21 October; nos. 101-116 from the gap search added 23 October, only stage L rebuilt, 115 papers with cards; Parker 2019 without PDF; OCR and version caveats, Gap search of 23 October: about 75 candidates, 16 priority-A papers registered in the digest
 
@@ -613,24 +615,24 @@ Nodes (3): Status: 99 cards by 21 October; nos. 101-116 from the gap search adde
   00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **526 isolated node(s):** `Supervisor meeting record template`, `Presentation build conventions`, `LLM prompt appendix placeholder`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+521 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 870 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **121 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **537 isolated node(s):** `Supervisor meeting record template`, `Presentation build conventions`, `LLM prompt appendix placeholder`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+532 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 882 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **123 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `D15 single health-tracker study domain` connect `Supervisor Decisions 76` to `Supervisor Decisions 1`, `Supervisor Decisions 40`, `Supervisor Decisions 75`, `Supervisor Decisions 77`, `Supervisor Decisions 49`, `Supervisor Decisions 88`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `D15 single health-tracker study domain` connect `Supervisor Decisions 43` to `Supervisor Decisions 1`, `Supervisor Decisions 7`, `Supervisor Decisions 39`, `Supervisor Decisions 76`, `Supervisor Decisions 77`, `Supervisor Decisions 88`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `Supervisor meeting record template`, `Presentation build conventions`, `LLM prompt appendix placeholder` to the rest of the system?**
-  _526 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _537 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Graphify Integration 0` be split into smaller, more focused modules?**
   _Cohesion score 0.08392156862745098 - nodes in this community are weakly interconnected._
-- **Why does `Current methodology and instruments supersede historical domain allocations` connect `Supervisor Decisions 1` to `Supervisor Decisions 76`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `F18 and F19 resolved by the single-domain scope amendment` connect `Supervisor Decisions 43` to `Supervisor Decisions 5`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Should `Supervisor Decisions 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05877551020408163 - nodes in this community are weakly interconnected._
-- **Why does `F18 and F19 resolved by the single-domain scope amendment` connect `Supervisor Decisions 76` to `Supervisor Decisions 4`?**
+- **Why does `Codebook v3: 5 October draft instruments` connect `Study Instruments 33` to `Study Instruments 20`, `Supervisor Decisions 4`, `Study Instruments 6`, `Supervisor Decisions 23`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 
 ### Low-confidence Hints
@@ -644,7 +646,7 @@ AST and structure refreshes are local and make no model calls. Semantic extracti
 
 LaTeX sections, inputs, citations and bibliography entries are indexed by the project adapter. PDF nodes describe file inventory only; full paper text, archives and raw/processed data are excluded.
 
-Fresh semantic sources: 94. Sources needing semantic extraction: 11. Local structure remains available for changed files.
+Fresh semantic sources: 92. Sources needing semantic extraction: 12. Local structure remains available for changed files.
 
 Graph health warning: 63 parallel relation variants are simplified by Graphify's simple graph during clustering/traversal. All original relation links and their source evidence are preserved in graph.json via original_links; consult health.json for details. No dangling or missing endpoints are permitted.
 
@@ -657,5 +659,6 @@ Graph health warning: 63 parallel relation variants are simplified by Graphify's
 - `03_Thesis/chapters/04_methodology.tex`
 - `03_Thesis/chapters/05_results.tex`
 - `03_Thesis/tables/literature-strings.tex`
+- `README.md`
 - `requirements-graphify.txt`
 - `scripts/literature-search/README.md`

@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-10-30T10:17:20.381627+00:00",
+  "built_at_utc": "2026-10-30T10:36:33.427950+00:00",
   "fresh_semantic_files": [
     "00_Admin/Action-Plan_2026-10-13.md",
     "00_Admin/App-Selection-Evaluation_2026-10-23.md",
@@ -12,7 +12,6 @@
     "00_Admin/Decisions/D05_apps-without-policy.md",
     "00_Admin/Decisions/D06_preinstalled-apps.md",
     "00_Admin/Decisions/D07_language.md",
-    "00_Admin/Decisions/D13_literature-review.md",
     "00_Admin/Decisions/D15_health-tracker-domain.md",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md",
@@ -82,7 +81,6 @@
     "06_Presentation/README.md",
     "06_Presentation/slides.tex",
     "AGENTS.md",
-    "README.md",
     "graphify-out/memory/query_20261025_162228_cd74d353_how_was_the_thesis_layout_revised_on_25_october_20.md",
     "literature_new/README.md",
     "scripts/app-ranking/README.md",
@@ -106,6 +104,7 @@
     "03_Thesis/chapters/04_methodology.tex",
     "03_Thesis/chapters/05_results.tex",
     "03_Thesis/tables/literature-strings.tex",
+    "README.md",
     "requirements-graphify.txt",
     "scripts/literature-search/README.md"
   ],
@@ -184,7 +183,7 @@
     "scripts/appstore-scraper/v007/input.json": "accdc31d0d87ec588190d57e21dd363b246bff5844cd6a0022481a228ae63607",
     "scripts/appstore-scraper/v007/scraper.py": "d788221dcd0e96af8754e832a1c5e1384bc7a3ededf05ba3d527416c03b7f536",
     "scripts/build_review_docx.py": "d1a555c459013d6df39bdfdc4b70097b72810c438fc5eaa1a59cb3a7f01cee24",
-    "scripts/check_project.py": "88ac8cbb485528726db280b7e49daaf1f8051120ffe750f7d3d10d061224319a",
+    "scripts/check_project.py": "672944718e48bb53d365c57edb302f098ebe66abcffb2a02665841f636492cc1",
     "scripts/googleplay-scraper/v001/scraper.py": "d840ccb4bd3a985b681f516a35e8f084954449888d4e3cf13ddd3cc25fd023c0",
     "scripts/googleplay-scraper/v002/input.json": "a0e2332f26c7420992b0421bfd66b48ca6b2d42d7b3413f9fa9ae502107dafdb",
     "scripts/googleplay-scraper/v002/scraper.py": "39f55259b9f2042969562da0d79b535b8c30d0edb3430e6672a95f86c2e9c051",
@@ -298,7 +297,7 @@
     "05_Data/Literature Search/28. Oct/README.md": "ff98a4d3b1e63c62c2cbcb1e816e45b6b28e08acaf278de80048511994fbd25f",
     "06_Presentation/README.md": "0788c9757c7f5a4fcef78795fd1f94869e1d69d5205a87a2cbd4f1bc44045468",
     "AGENTS.md": "b237ca109e8d29002ab0792f7b2e1153cce3d0692bb43aeb5ce8cabff6f6d673",
-    "README.md": "a79d6e8733797baa85c3e03e00eef65eaddf68f161c88c4860bf5e3b07333a48",
+    "README.md": "90b7ab7f7b4c57cc2eb56487f85547d2ffcdc1f901f179862d54499823a0ed78",
     "graphify-out/memory/query_20261025_162228_cd74d353_how_was_the_thesis_layout_revised_on_25_october_20.md": "3739c500549c3d81dacbfb8c1c933a8a7c026dcceb7d5853d9214433517aa524",
     "literature_new/README.md": "a714282481f245b1ade7867412b62f8183056ebcfaf25b136bd26a9a8881db09",
     "requirements-graphify.txt": "427a88bf25523d73590f6b9a01e733747dcaeb176686d46815e3602a6818f7d4",
@@ -352,13 +351,14 @@
     "03_Thesis/tables/sensitivity.tex": "5eb0dd1b9ffc57e20374f007c4dd4c6e79feaed7d21b289d9b086d3fe8a39dad",
     "03_Thesis/thesis.tex": "afe77dc50f0429d7f15a73f2f5e69d3f1165cca13b069cfc453162edca7238dd",
     "06_Presentation/slides.tex": "ef09a73f56dbfb932ccb69e3c02ab4435b9eaa694522f8879c2b2bffa298be32",
-    "00_Admin/Decisions/D13_literature-review.md": "115aeb4e701503d7883550045e64c956cc19ab6c4f3bbeee2afd29ea6d1a6463",
+    "00_Admin/Decisions/D13_literature-review.md": "cc00ebfa1c8a35f7dd0db8e7af3c4b0a0c0fbf8aada88bf728182e3ff4fe1201",
+    "01_Literature/Literature-Gap-Search_2026-10-23.md": "e802a71d9086b754355deef13a3324ef17c3e8ea5c700235168ff108289795b0",
     "01_Literature/Literature-Review/README.md": "db5d6db6b0cb90035b3ff5f7a2a3a1b665a75b39b134eb66387c971c1695833b"
   },
   "literature_corpus": null,
-  "nodes": 2035,
-  "edges": 3133,
-  "communities": 225,
+  "nodes": 2031,
+  "edges": 3111,
+  "communities": 227,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
