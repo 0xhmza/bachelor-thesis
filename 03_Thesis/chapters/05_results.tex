@@ -551,6 +551,242 @@ of their store listings, that are not selected when one rule changes.}
 \end{singlespace}
 \end{table}
 
+\section{Reference Model}
+\label{sec:results-model}
+The procedure of Sections~\ref{sec:generic-model} and~\ref{sec:harm-trees} yields a model with
+22 components: 3 core, 3 from the digital context, 13 implementation choices and 3 events
+outside the app. They enable 12 capabilities, which lead to the 7 harm categories along 21
+pathways. For 14 pathways a source states the link; 7 are argued from their sources. One
+capability of the review's table stays out (K3, keystrokes from smartwatch sensors), because it
+needs the connected device. Appendix~\ref{app:reference-model} lists the complete model. A tested
+script checks that every node a tree uses exists and that every component is used.
+
+\section{Instrument Test: One App}
+\label{sec:results-test}
+This section reports the instrument test of Section~\ref{sec:instrument-test}.
+\highlight[orange!25]{It rests on records prepared by an AI assistant.}\todo{The applicability record, the
+review and the stand-in coding were prepared by an AI assistant. Check or redo every decision before this
+section states who coded.} It checks whether the steps connect. It gives no estimate for the sample. All results below come
+from the real policy, except those tagged \synthtag, which rest on the invented walkthrough and are
+no finding about the real app. Appendix~\ref{app:instrument-test} holds the complete records.
+
+\subsection{Test Case and Material}
+The test app is Clue, a cycle tracker by BioWink GmbH in Berlin, at rank 12 of the sample
+(Appendix~\ref{app:app-sample}). Its English privacy policy, which states that the English version
+prevails, was captured on 1 November 2026 at 22:11~UTC. Its own date is 29 September 2026. The script
+split it into 178 units of 9{,}427 words. The policy links to a supplement for US residents, which was
+not coded under the rule of Section~\ref{sec:material}. \highlight[orange!25]{No German version was
+captured for this test.}\todo{The language rule asks for both versions where they exist. None was
+found at the URLs tried; look in the app or on the website before the pilot.}
+
+\subsection{Which Harms Apply}
+Of the 22 components, the policy shows 17 as present and 1 as absent; 4 stay uncertain
+(Table~\ref{tab:test-applicability}). Evaluating the trees gives 13 pathways that apply, 7 that stay
+uncertain and 1 that does not apply. All 7 harm categories apply. The one closed pathway is P03,
+stalking or burglary from known places: the policy states that precise location is not collected, so
+K1 lacks its necessary condition. The tree can therefore close a pathway, and it does so from the
+provider's own text, which the study does not verify. The uncertain pathways run through K7 and K8,
+which depend on outside events, and through I1 and I2, which only the app can show.
+Figure~\ref{fig:test-tree} shows one tree with these states.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\input{figures/test-tree-dsc}}
+\caption[The discrimination tree evaluated for the test app]{The discrimination tree evaluated for
+the test app, from the policy alone. Fill: dark, applies; amber, uncertain. Leaves: \checkmark{}
+present, ? uncertain. Border colours as in Figure~\ref{fig:generic-app}. Either K2 or K10 is enough
+for the harm to apply, although K8 stays uncertain. The tree says that the harm is possible, not that
+it occurs.}
+\Description{A three-level tree. Harm discrimination at the top, applies. Capabilities K2 and K10 apply,
+K8 is uncertain because the insurer or employer event is uncertain. Leaves are the components of each
+capability, all present except EX3.}
+\label{fig:test-tree}
+\end{figure}
+
+\subsection{How Far the Policy Goes (RQ1)}
+Table~\ref{tab:test-coverage} gives the coverage level of every pathway. \textbf{No pathway reaches
+level~3: the policy names no concrete harm.} All three model runs, the paraphrased prompt and the
+stand-in coding agree on this. Of the 13 applicable pathways, 12 stop at the capability and 1 at the
+component. The capabilities are named in plain terms: the policy says that public authorities abroad
+may access transferred data (U064, U135), that someone the user knows may gain access to the device
+(U153), and that four essential services have no opt-out (U019, U021, U023, U025). In two units it
+speaks of risk or misuse in general terms (U064, U148). None of these goes on to say what could
+then happen to the user. No unit describes the consequences of a breach (\texttt{P-BRC}), an incident
+procedure (\texttt{P-INC}) or even a promise of notification (\texttt{P-NOT}).
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Coverage of each pathway in the test]{Coverage of each pathway in the test. \emph{State}: from
+the policy alone. \emph{Policy}: highest level the policy reaches. \emph{Interface}: the same for the
+invented interface \synthtag. --: pathway not applicable. $^{\mathrm{d}}$: a node of the pathway is
+also denied in at least one unit.}
+\label{tab:test-coverage}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}llc>{\raggedright\arraybackslash}Xccc@{}}
+\toprule
+\textbf{Harm} & \textbf{ID} & \textbf{Cap.} & \textbf{Possible consequence} & \textbf{State} & \textbf{Policy} & \textbf{Interface} \\
+\midrule
+\input{tables/test-coverage}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\subsection{Stance (RQ2)}
+The policy names no harm, so it carries no stance under the codebook: stance attaches only to a named
+harm. Dismissive wording appears without one. On a legal basis for processing, the policy says:
+\enquote{We do not believe there is anything you could have against
+this}~\parencite[\S3.5]{clue2026privacy}. Under the rule of Section~\ref{sec:axes} this is reassurance,
+not minimisation. The one named harm of the test lies in the invented interface \synthtag: unit W05
+says that a shared calendar could reveal a pregnancy, and leaves the choice to the user. All three
+runs code it as acknowledged and as responsibility shifted. Two also return qualified, which the
+review rejects, as \enquote{could} says nothing about likelihood. The stance stage thus ran, but on
+one invented sentence, so this test says nothing about how well it works.
+
+\subsection{Protection Claims (RQ3)}
+The review examined eight groups of claims (Table~\ref{tab:test-claims}). It reads all of them as framing
+protection as data flow, and none as preventing a specific bad outcome, which fits a policy that names no
+harm. Two are proposed as potential mismatches. C2 says researchers can never identify the user, as
+names and e-mail addresses are erased and a random ID assigned. Figure~\ref{fig:test-cut} shows why this
+leaves the pathway open: K4 needs the shared record and its length, and the measure removes neither.
+Studies re-identify individuals from de-identified activity and heart data
+(Table~\ref{tab:lit-capabilities}); none tests cycle data, so the claim may still hold in practice. C3
+says there is no profiling, while the same policy describes recommendations from tracked data and an
+advertising partner reporting age groups. The policy does not define the term. It may have a narrower
+legal meaning, on which the study makes no judgement.
+
+C1 is the instructive non-mismatch. The pledge that tracked health data never reaches advertisers is
+narrow, and device IDs and app events still do. A partner that learns that a device has a cycle app
+installed can sort its user into a class (K10). This is a real pathway, but it lies outside what the
+pledge promises, so the rule of Section~\ref{sec:apply} does not count it. It appears under RQ1 instead:
+the pathway applies, and the policy states the flow but no consequence.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Protection claims in the test]{Protection claims in the test, in the study's own wording.
+\emph{Open}: pathways in the claim's scope that stay open after the check of necessary conditions. The
+decisions are proposals for the author. Appendix~\ref{app:instrument-test} gives the reasons.}
+\label{tab:test-claims}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{1.8cm}>{\raggedright\arraybackslash}p{1.9cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Claim} & \textbf{Code; strength} & \textbf{Open} & \textbf{Decision} \\
+\midrule
+\input{tables/test-claims-short}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize,
+  harm/.style={draw=primary,fill=primary,text=white,rounded corners=2pt,align=center,text width=33mm,minimum height=9mm},
+  capab/.style={draw=muted,fill=muted!8,rounded corners=2pt,align=center,text width=33mm,minimum height=9mm},
+  leaf/.style={draw=#1,line width=1pt,fill=white,rounded corners=2pt,align=center,text width=31mm,minimum height=10mm},
+  arr/.style={semithick,draw=muted}]
+  \node[leaf=originimp] (a) at (0,1.5) {\oimp{IM6} De-identified data leaves the provider};
+  \node[leaf=origincore] (b) at (0,0) {\ocore{CO3} A long history is kept};
+  \node[capab] (k) at (4.6,0.75) {\textbf{K4} Re-identify or link individuals};
+  \node[harm] (h) at (9.4,0.75) {\textbf{P17} Exposure of a re-identified person (\texttt{H-REP})};
+  \draw[arr] (a.east) -- node[above,font=\scriptsize\bfseries,pos=0.8] {AND} (k.west);
+  \draw[arr] (b.east) -- (k.west);
+  \draw[arr] (k) -- (h);
+  \node[draw=todoline,fill=todofill,rounded corners=2pt,align=center,text width=48mm,font=\scriptsize] (m) at (2.6,-1.5)
+    {\textbf{C2:} erases name and e-mail, assigns a random ID. Neither condition is removed.};
+  \draw[-{Stealth[length=1.5mm]},semithick,draw=todoline,dashed] (m.north) -- (2.6,0.72);
+  \node[font=\scriptsize,text=muted] at (4.6,-0.1) {stays open};
+\end{tikzpicture}
+\caption[A claim set against its pathway]{Claim C2 set against its pathway. A measure blocks a pathway
+only if it removes a necessary condition. Here neither condition goes, so the pathway stays open and
+the claim becomes a candidate for the author's decision.}
+\Description{Two components, de-identified data leaving and a long history, join with AND into
+capability K4, which leads to exposure of a re-identified person. The claim points at the join but
+removes neither component.}
+\label{fig:test-cut}
+\end{figure}
+
+\subsection[Policy and Interface (RQ4)]{Policy and Interface (RQ4) \synthtag}
+\emph{All of this subsection rests on the invented record.} Three invented tasks end completed (T1,
+T4, T7), two with information not found (T2, T3), one as unsupported (T5) and one with an access barrier
+(T6). In the procedure, this record does three things. It settles two uncertain components: I1 closes,
+because no function is tied to extra sharing, and I2 opens, because the app offers no export. This moves
+the counts to 14 pathways that apply, 5 uncertain and 2 not applicable. It feeds nine interface units into
+the same codes. And it allows the comparison of Table~\ref{tab:test-coverage}: the invented interface names
+one harm that the policy does not, while the policy names capabilities that the interface does not, such
+as the missing opt-outs. The test shows that this comparison can be made. It shows nothing about what the
+real interface says.
+
+\subsection{What the Language Model Did}
+The instrument test used claude-sonnet-5-5 through fresh Claude Code subagents, as the command-line tool
+was not logged in. This is a test configuration, not the selection the pilot will make. Temperature and seed
+cannot be set in it. Every span returned (656 at stage~1, 242 at stage~3) was found in its unit by the script.
+Table~\ref{tab:test-llm} and Figure~\ref{fig:test-llm} show the behaviour of the three runs.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Behaviour of the language model in the test]{Behaviour of the language model in the test. A label is
+a unit and a code. \emph{Overlap}: Jaccard index between pairs of runs. The last two columns compare the labels
+of at least two runs with the stand-in coding. They exercise the script and are not precision and recall: the
+stand-in is not an independent human reference.}
+\label{tab:test-llm}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xccccccc c@{}}
+\toprule
+ & \textbf{Per run} & \textbf{Union} & \textbf{3 runs} & \textbf{2 runs} & \textbf{1 run} & \textbf{Overlap} & \textbf{In stand-in} & \textbf{Of stand-in} \\
+\midrule
+\input{tables/test-llm}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\input{figures/test-llm}
+\caption[How many runs returned each label]{How many of the three runs returned each label. A label returned
+by one run is reviewed, not discarded.}
+\Description{Two stacked bars. Stage 1 has 128 labels in all three runs, 28 in two and 47 in one. Stage 3 has 57,
+17 and 17.}
+\label{fig:test-llm}
+\end{figure}
+
+\paragraph{Where it was stable.} On the central question all runs agree: no named harm in the policy, one in the
+invented unit. The paraphrased prompt returned a similar number of labels (163, against 156 to 175) and the same
+harm, with an overlap of 0.74 with the labels of at least two runs.
+
+\paragraph{Where it was not.} About a quarter of the stage~1 labels in the union were returned by one run only (47
+of 203), and 113 of the 487 labels were marked as unsure. Status differed between runs for the same label: for
+U140, one run read K6 as denied and two as possible. At stage~3, the share of claims framed as preventing harm ranged
+from 6 to 20 per run, and absolute strength from 24 to 36. Practice commitments dominated (41 to 46 per run), as
+many routine retention sentences were coded as commitments.
+
+\paragraph{What it missed and over-read.} The model mapped some capabilities to the wrong node. It read a chat profile
+and a contract term on IP addresses as K4, which the review rejected because they do not concern the data of that
+pathway. It returned no K10 for the recommendation example in U093. Six of its capability and component labels were rejected
+in review, so its output cannot be used without that review. The validation asks for 20 positives per code. This policy
+has no positive for harms, so recall on harms cannot be estimated from it. The review trigger therefore fires: a person has
+to read the whole policy. In this test the stand-in did so, and the author still has to. All runs together used about one
+million tokens, an upper bound that includes the overhead of the agents.
+
+\subsection{Assessment of the Case}
+\label{sec:results-assessment}
+For this one policy, the procedure gives a clear answer to each question that the real material can answer:
+\begin{itemize}[itemsep=1pt,topsep=3pt]
+  \item \textbf{RQ1.} All seven harm categories apply, along 13 pathways. The policy is detailed about data flows and
+    often names what someone could do. It names no consequence for the user.
+  \item \textbf{RQ2.} No stance can be coded, as no harm is named. One dismissive sentence is coded as reassurance.
+  \item \textbf{RQ3.} Claims are framed as data flow. Two of eight groups are proposed as potential mismatches, and three
+    as not assessable.
+  \item \textbf{RQ4.} Not answered: the only interface in the test is invented \synthtag.
+\end{itemize}
+The case also challenges the expected gap. This policy is more open about limits than the gap suggests: it states that
+surveillance powers abroad are not bound by the contract clauses, that some flows have no opt-out, and that security
+cannot be guaranteed. Its silence begins one step later, at what these limits could mean for the person.
+
 \section{What Privacy Communication Covers}
 \todo[inline]{To be written.}
 

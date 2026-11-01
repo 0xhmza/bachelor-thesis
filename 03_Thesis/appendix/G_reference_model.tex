@@ -1,0 +1,68 @@
+\chapter{Reference Model}
+\label{app:reference-model}
+
+This appendix gives the complete model of Sections~\ref{sec:generic-model}
+and~\ref{sec:harm-trees}. Its source is the file
+\texttt{04\_Study/Reference-Model/reference\_model\_v1.yaml}; the tables are generated from it.
+
+\section{Components}
+Each component is a feature that can be checked on an app. The colour of its ID shows its origin:
+\ocore{core functionality}, \octx{digital context}, \oimp{implementation choice} or \oext{an event
+outside the app}.
+
+{\footnotesize
+\begin{longtable}{@{}lp{4.1cm}p{1.9cm}p{6.1cm}@{}}
+\caption[Components of the generic health tracker]{Components of the generic health tracker.}
+\label{tab:reference-components}\\
+\toprule
+\textbf{ID} & \textbf{Component} & \textbf{Origin} & \textbf{Feature to check} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Component} & \textbf{Origin} & \textbf{Feature to check} \\
+\midrule
+\endhead
+\input{tables/reference-components}% the generated rows end with \bottomrule
+\end{longtable}}
+
+\section{Capabilities}
+K1 to K8 keep the numbers of the capability table of the literature review
+(Table~\ref{tab:lit-capabilities}). K3 is excluded (Section~\ref{sec:harm-trees}). K9, K10 and
+I1 to I3 are added. The last column gives the components each capability needs, with the operators
+of Section~\ref{sec:harm-trees}.
+
+{\footnotesize
+\begin{longtable}{@{}lp{3.5cm}p{2.5cm}lp{4.7cm}@{}}
+\caption[Capabilities of the reference model]{Capabilities of the reference model.
+\texttt{K-ACC}: access to the data, added in codebook version 5.}
+\label{tab:reference-capabilities}\\
+\toprule
+\textbf{ID} & \textbf{Capability} & \textbf{Actor} & \textbf{Type} & \textbf{Needs} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Capability} & \textbf{Actor} & \textbf{Type} & \textbf{Needs} \\
+\midrule
+\endhead
+\input{tables/reference-capabilities}% the generated rows end with \bottomrule
+\end{longtable}}
+
+\section{Pathways}
+Each row is one pathway: a capability that can lead to a harm. All pathways of one harm form its
+tree. \emph{Basis}: \emph{documented} if a source states the link, \emph{argued} if the study argues it
+from its sources.
+
+{\footnotesize
+\begin{longtable}{@{}lllp{5.2cm}lp{3.5cm}@{}}
+\caption[Pathways of the reference harm trees]{Pathways of the reference harm trees.}
+\label{tab:reference-pathways}\\
+\toprule
+\textbf{Harm} & \textbf{ID} & \textbf{Cap.} & \textbf{Possible consequence} & \textbf{Basis} & \textbf{Sources} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Harm} & \textbf{ID} & \textbf{Cap.} & \textbf{Possible consequence} & \textbf{Basis} & \textbf{Sources} \\
+\midrule
+\endhead
+\input{tables/reference-pathways}% the generated rows end with \bottomrule
+\end{longtable}}

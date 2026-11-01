@@ -1,0 +1,101 @@
+\chapter{Instrument Test Records}
+\label{app:instrument-test}
+
+These are the complete records of the test of Section~\ref{sec:results-test}. They were prepared by an AI
+assistant and are for the author to check. Policy units are located by ID and heading. The study's own wording
+is used here; the exact evidence spans stay with the raw model output in
+\texttt{05\_Data/raw/policy-test\_2026-11-01/}, together with the archived policy
+(SHA-256 \texttt{09d9b479\ldots{}1321}).
+
+\section{Applicability Record}
+
+{\footnotesize
+\begin{longtable}{@{}lp{2.9cm}p{2.3cm}p{7cm}@{}}
+\caption[Applicability record of the test app]{Applicability record of the test app. An arrow shows the state
+after the invented walkthrough \synthtag.}
+\label{tab:test-applicability}\\
+\toprule
+\textbf{ID} & \textbf{State} & \textbf{Units} & \textbf{Reason} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{State} & \textbf{Units} & \textbf{Reason} \\
+\midrule
+\endhead
+\input{tables/test-applicability}% the generated rows end with \bottomrule
+\end{longtable}}
+
+\section{Review of the Protection Claims}
+
+\begin{landscape}
+{\footnotesize
+\begin{longtable}{@{}lp{1.3cm}p{1.4cm}p{4.3cm}p{1.2cm}p{1.2cm}p{1.6cm}p{5.6cm}@{}}
+\caption[Protection claims with their reasons]{Protection claims with their reasons. \emph{Removes}: the components
+the measure would remove if it worked as claimed. \emph{Open}: pathways in scope that stay open.}
+\label{tab:test-claims-full}\\
+\toprule
+\textbf{ID} & \textbf{Units} & \textbf{Code} & \textbf{Claim} & \textbf{Removes} & \textbf{Open} & \textbf{Decision} & \textbf{Reason} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Units} & \textbf{Code} & \textbf{Claim} & \textbf{Removes} & \textbf{Open} & \textbf{Decision} & \textbf{Reason} \\
+\midrule
+\endhead
+\input{tables/test-claims}% the generated rows end with \bottomrule
+\end{longtable}}
+\end{landscape}
+
+\section{Labels per Policy Unit}
+A label counts if the stand-in or at least two of the three model runs returned it and the review did not
+reject it. $^{\mathrm{d}}$: denied in the text. The 76 units not listed carry no label.
+
+{\footnotesize
+\begin{longtable}{@{}lp{6.2cm}p{6.6cm}@{}}
+\caption[Labels per policy unit in the test]{Labels per policy unit in the test.}
+\label{tab:test-units}\\
+\toprule
+\textbf{Unit} & \textbf{Heading} & \textbf{Labels} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Unit} & \textbf{Heading} & \textbf{Labels} \\
+\midrule
+\endhead
+\input{tables/test-units}% the generated rows end with \bottomrule
+\end{longtable}}
+
+\section[The Invented Walkthrough]{The Invented Walkthrough \synthtag}
+\textbf{Nothing in this section is a record of a real session.} Nobody opened the app. The tasks follow the
+protocol, but the screens, wordings, taps and outcomes were written by hand to exercise the procedure. They do not
+describe the real interface of Clue or of any other app.
+
+{\footnotesize
+\begin{longtable}{@{}lp{4.0cm}lrp{1.9cm}p{4.5cm}@{}}
+\caption[Invented walkthrough record]{Invented walkthrough record \synthtag. Q1--Q4: the four questions; y, yes;
+n, no.}
+\label{tab:test-walkthrough}\\
+\toprule
+\textbf{Task} & \textbf{Goal} & \textbf{Q1--4} & \textbf{Taps} & \textbf{Outcome} & \textbf{Where it stopped} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Task} & \textbf{Goal} & \textbf{Q1--4} & \textbf{Taps} & \textbf{Outcome} & \textbf{Where it stopped} \\
+\midrule
+\endhead
+\input{tables/test-walkthrough}% the generated rows end with \bottomrule
+\end{longtable}}
+
+{\footnotesize
+\begin{longtable}{@{}lp{3.2cm}p{6.6cm}p{2.5cm}@{}}
+\caption[Invented interface units]{Invented interface units \synthtag, with the labels they received.}
+\label{tab:test-interface}\\
+\toprule
+\textbf{Unit} & \textbf{Screen} & \textbf{Invented text} & \textbf{Labels} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Unit} & \textbf{Screen} & \textbf{Invented text} & \textbf{Labels} \\
+\midrule
+\endhead
+\input{tables/test-interface}% the generated rows end with \bottomrule
+\end{longtable}}

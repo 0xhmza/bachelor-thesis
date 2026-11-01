@@ -142,6 +142,24 @@
 \makeatother
 \usepackage{soul}
 
+% Harm trees. Origin of a component, after Knabenhans et al. (their Fig. 4):
+% black core, blue digital context, red implementation; grey for an event
+% outside the app. State of a node in the applicability record.
+\definecolor{origincore}{HTML}{1A1A1A}
+\colorlet{originctx}{linkblue}
+\definecolor{originimp}{HTML}{A33B3B}
+\colorlet{originext}{muted}
+\newcommand{\ocore}[1]{\textcolor{origincore}{\textbf{#1}}}
+\newcommand{\octx}[1]{\textcolor{originctx}{\textbf{#1}}}
+\newcommand{\oimp}[1]{\textcolor{originimp}{\textbf{#1}}}
+\newcommand{\oext}[1]{\textcolor{originext}{\textbf{#1}}}
+\colorlet{stateopen}{primary}
+\definecolor{stateunsure}{HTML}{F0C987}
+\colorlet{stateclosed}{black!10}
+% Anything invented for the instrument test carries this tag and this fill.
+\definecolor{synthfill}{HTML}{FFF1D6}
+\DeclareRobustCommand{\synthtag}{\colorbox{synthfill}{\textcolor{todotext}{\scriptsize\textbf{SYNTHETIC}}}}
+
 \newif\ifshowhighlights
 \showhighlightstrue % Change to \showhighlightsfalse to hide highlights
 
