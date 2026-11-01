@@ -106,3 +106,9 @@ caches and the scratch folder `tmp/` were removed. Everything tracked is in
 Git up to commit `f50e097`; what Git did not hold and was not provably a duplicate
 went to the adjacent `../bachelor-thesis-cleanup-20261030/` (`manifest.json` lists
 every file moved or deleted).
+
+On 2 November 2026 the same folders were back, most likely through Syncthing, which also
+syncs `.git`, along with 190 new conflict copies. They, Git's interrupted leftovers,
+`tmp/`, unused literature tables and LaTeX intermediates went to the adjacent
+`../bachelor-thesis-cleanup-20261102/` (`manifest.json` lists every item). Nothing
+was deleted. `digest - Copy.pdf` stays, as `01_Literature/Methods-Digest/HANDOFF.md` asks.
