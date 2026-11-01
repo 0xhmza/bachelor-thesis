@@ -1,0 +1,93 @@
+# Reference model v1: a generic health tracker and its harm trees.
+# Method: Knabenhans et al. 2026, s4.1; see 00_Admin/Decisions/D12_reference-model.md.
+# Read by scripts/instrument-test/v001/ (evaluate.py, build_tables.py).
+# origin: core | context | implementation | external
+version: 1
+date: 2026-11-01
+
+components:
+  CO1: {origin: core, label: "Health records are logged or sensed", feature: "The app records the user's own health or body data (eligibility rule E1)."}
+  CO2: {origin: core, label: "Insights are derived from the records", feature: "The app computes predictions, scores or insights from the records."}
+  CO3: {origin: core, label: "A long history is kept", feature: "Records accumulate over time, on the phone or on a server."}
+  CX1: {origin: context, label: "Another person can use the phone", feature: "The records can be read in the app, so anyone who can open the phone can read them."}
+  CX2: {origin: context, label: "Device and network data reach servers", feature: "IP address and device data reach a server when the app is online."}
+  CX3: {origin: context, label: "Device or advertising identifier exists", feature: "The app can read or receive a persistent device, push or advertising identifier."}
+  IM1: {origin: implementation, label: "Account links records to a person", feature: "An account holds a name, e-mail address or similar next to the records."}
+  IM2: {origin: implementation, label: "Copy on the provider's servers", feature: "Records are stored or synchronised on servers."}
+  IM3: {origin: implementation, label: "Analytics or monitoring service", feature: "A third-party analytics or monitoring service receives usage data or identifiers."}
+  IM4: {origin: implementation, label: "Advertising or attribution partner", feature: "An advertising or attribution partner receives identifiers or app events."}
+  IM5: {origin: implementation, label: "Processor receives health data", feature: "A messaging, support, AI or other processor receives tracked health data."}
+  IM6: {origin: implementation, label: "De-identified data leaves the provider", feature: "De-identified or pseudonymised records go to research or other partners."}
+  IM7: {origin: implementation, label: "Commercial use of tracked data", feature: "Tracked data is sold or drives offers, recommendations or partner products."}
+  IM8: {origin: implementation, label: "Precise location or routes recorded", feature: "The app records GPS positions or routes."}
+  IM9: {origin: implementation, label: "Sharing with other people", feature: "Records or profiles can be shared with other people (partner sharing, feeds, community)."}
+  IM10: {origin: implementation, label: "Transfer outside the EU/EEA", feature: "Personal data can be transferred outside the EU or EEA."}
+  IM11: {origin: implementation, label: "Function tied to agreement", feature: "A function is available only if the user agrees to data sharing beyond what it needs."}
+  IM12: {origin: implementation, label: "No usable way to delete or export", feature: "The user has no working in-app way to delete or export the data."}
+  IM13: {origin: implementation, label: "Flow without opt-out", feature: "A data flow to a third party has no opt-out while the app is in use."}
+  EX1: {origin: external, label: "An attacker gains access", feature: "Assumed possible for any stored data; the study does not test security."}
+  EX2: {origin: external, label: "An authority demands or seizes data", feature: "Depends on the legal setting; uncertain unless the evidence shows it."}
+  EX3: {origin: external, label: "An insurer, employer or other party obtains data", feature: "Depends on recipients and context; uncertain unless the evidence shows it."}
+
+# K1-K8 keep the numbers of the capability table of the literature review.
+capabilities:
+  K1: {label: "Locate homes, routes and places", actor: "Other users, attackers", type: K-INF, needs: {and: [IM8, {or: [IM9, EX1]}]}}
+  K2: {label: "Infer personal attributes", actor: "Recipients of health data", type: K-INF, needs: {and: [{or: [CO1, CO2]}, {or: [IM5, IM6, IM7]}]}}
+  K4: {label: "Re-identify or link individuals", actor: "Holders of de-identified data", type: K-TRK, needs: {and: [IM6, CO3]}}
+  K5: {label: "Profile users across services", actor: "Advertising and analytics partners", type: K-TRK, needs: {and: [{or: [IM3, IM4]}, {or: [CX2, CX3]}]}}
+  K6: {label: "Read stored or intercepted data", actor: "Attackers", type: K-ACC, needs: {and: [EX1, {or: [IM1, IM2, IM3, IM5, IM10]}]}}
+  K7: {label: "Obtain records for proceedings", actor: "Law enforcement, courts", type: K-ACC, needs: {and: [EX2, {or: [IM2, CX1]}]}}
+  K8: {label: "Use data against users in insurance, work or relationships", actor: "Insurers, employers", type: K-ACC, needs: {and: [EX3, {or: [IM6, IM7, IM9]}]}}
+  K9: {label: "Read entries through the phone or a share", actor: "Partner, family, people nearby", type: K-ACC, needs: {and: [CO1, {or: [CX1, IM9]}]}}
+  K10: {label: "Sort users into classes", actor: "Provider, advertising partners", type: K-DIS, needs: {orplus: [IM4, IM7, CO2]}}
+  I1: {label: "Cannot use a function without agreeing", actor: "User", type: K-INC, needs: IM11}
+  I2: {label: "Cannot delete or take out the data", actor: "User", type: K-INC, needs: IM12}
+  I3: {label: "Cannot stop a data flow", actor: "User", type: K-INC, needs: IM13}
+
+excluded_capabilities:
+  K3: "Keystrokes or PINs from motion sensors of smartwatches: needs analysis of the connected device, which the supervisor meeting of 13 October excludes."
+
+# basis: documented = a source states the link; argued = the study argues it from its sources.
+harms:
+  H-ECO:
+    label: Economic
+    pathways:
+      - {id: P01, capability: K6, consequence: "Fraud or extortion after exposed data", basis: documented, sources: ["knabenhans2026harms App. A", "gabriele2020understanding p. 5"]}
+      - {id: P02, capability: K8, consequence: "Higher premiums, lost cover or lost job", basis: documented, sources: ["gabriele2020understanding p. 5", "hudig2025intimate p. 3"]}
+  H-PHY:
+    label: Physical
+    pathways:
+      - {id: P03, capability: K1, consequence: "Stalking or burglary from known places", basis: documented, sources: ["niksirat2024wearable p. 14", "knabenhans2026harms App. A"]}
+      - {id: P04, capability: K9, consequence: "Violence or stalking by a partner", basis: documented, sources: ["niksirat2024wearable p. 14", "malki2024exploring p. 2"]}
+  H-PSY:
+    label: Psychological
+    pathways:
+      - {id: P05, capability: K5, consequence: "Fear of being watched", basis: documented, sources: ["knabenhans2026harms App. A"]}
+      - {id: P06, capability: K6, consequence: "Distress after exposure or identity theft", basis: documented, sources: ["knabenhans2026harms App. A"]}
+      - {id: P07, capability: K7, consequence: "Fear of legal consequences", basis: documented, sources: ["cao2024deleted pp. 1-2"]}
+      - {id: P08, capability: K9, consequence: "Threats or harassment by someone close", basis: documented, sources: ["niksirat2024wearable p. 14"]}
+  H-AUT:
+    label: Autonomy
+    pathways:
+      - {id: P09, capability: I1, consequence: "Coerced agreement", basis: argued, sources: ["knabenhans2026harms App. A", "malki2024exploring p. 10"]}
+      - {id: P10, capability: I2, consequence: "Locked into the service", basis: argued, sources: ["malki2024exploring p. 10"]}
+      - {id: P11, capability: I3, consequence: "No choice over a data flow", basis: argued, sources: ["malki2024exploring p. 10"]}
+      - {id: P12, capability: K7, consequence: "Restricted reproductive or health choices", basis: documented, sources: ["hudig2025intimate p. 2", "cao2024deleted p. 1"]}
+      - {id: P13, capability: K10, consequence: "Manipulation through tailored offers", basis: argued, sources: ["knabenhans2026harms App. A"]}
+  H-DSC:
+    label: Discrimination
+    pathways:
+      - {id: P14, capability: K2, consequence: "Unequal treatment from inferred traits", basis: documented, sources: ["niksirat2024wearable p. 12"]}
+      - {id: P15, capability: K8, consequence: "Unfair decisions on cover or hiring", basis: documented, sources: ["hudig2025intimate p. 3", "malki2024exploring p. 2"]}
+      - {id: P16, capability: K10, consequence: "Profile-based prices or offers", basis: documented, sources: ["knabenhans2026harms App. A"]}
+  H-REP:
+    label: Reputational
+    pathways:
+      - {id: P17, capability: K4, consequence: "Exposure of a re-identified person", basis: argued, sources: ["citron2021harms Part V.C"]}
+      - {id: P18, capability: K6, consequence: "Exposure of leaked records", basis: argued, sources: ["citron2021harms Part V.C"]}
+      - {id: P19, capability: K9, consequence: "Exposure to family or partners", basis: documented, sources: ["hudig2025intimate p. 3"], tag: T-REL}
+  H-SOC:
+    label: Societal
+    pathways:
+      - {id: P20, capability: K5, consequence: "Monitoring of groups of users", basis: argued, sources: ["knabenhans2026harms App. A"]}
+      - {id: P21, capability: K7, consequence: "Chilling effect of state access", basis: documented, sources: ["knabenhans2026harms App. A", "cao2024deleted p. 2"]}

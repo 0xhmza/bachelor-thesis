@@ -1,0 +1,128 @@
+# Stand-in reference coding of the instrument test. Written BEFORE any model output
+# existed. It takes the place of the author's blind manual coding only so that the
+# comparison script can run. It was prepared by the AI assistant, is not independent
+# of the model (same vendor) and is NOT a validation reference. The author must code
+# the policy by hand before any measure may be reported as performance.
+# Own wording; evidence is located by unit, no quotes.
+# Keys: n = tree nodes mentioned, as node:status (a = asserted, p = possible, d = denied)
+#       g = generic risk, h = named harm, s = stances, m = measures (code:framing:strength)
+#       r = reassurance, inc = P-BRC/P-INC/P-NOT
+U002: {n: [CO1:a, CO2:a]}
+U003: {r: true}
+U004: {n: []}
+U007: {n: [IM2:a], m: [T-OTH:F-FLW:scoped]}
+U008: {n: [IM1:a]}
+U009: {n: [CX2:a, CX3:a, IM8:d]}
+U010: {n: [CO1:a]}
+U011: {n: [IM3:a]}
+U013: {n: [CO1:a, CX2:a, IM1:a, CO2:a]}
+U016: {n: [IM2:a], m: [T-ENC:F-FLW:scoped]}
+U017: {n: [IM5:a, IM10:a], m: [T-ANO:F-FLW:scoped]}
+U018: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U019: {n: [IM13:a, I3:a]}
+U020: {n: [IM3:a, IM10:a]}
+U021: {n: [IM13:a, I3:a]}
+U022: {n: [CX3:a]}
+U023: {n: [IM13:a, I3:a]}
+U024: {n: [IM10:a]}
+U025: {n: [IM13:a, I3:a]}
+U027: {n: [CO1:a]}
+U028: {n: [IM10:p]}
+U031: {n: [IM10:p]}
+U033: {n: [CO1:a]}
+U036: {n: [IM1:a]}
+U037: {n: [IM10:p], m: [N-COM:F-FLW:scoped]}
+U039: {n: [CX2:a, IM10:p], m: [N-COM:F-FLW:scoped]}
+U040: {n: [IM1:a]}
+U041: {n: [IM10:p], m: [N-COM:F-FLW:scoped]}
+U044: {n: [], m: [N-COM:F-FLW:scoped]}
+U048: {n: [], m: [N-COM:F-FLW:scoped]}
+U049: {n: [], m: [N-COM:F-FLW:scoped]}
+U050: {n: [CO2:a]}
+U051: {n: [CO2:a, K2:a]}
+U052: {n: [CO1:a, CO2:a]}
+U053: {n: [CO3:a]}
+U054: {n: [CO2:a]}
+U056: {n: [IM5:a], m: [T-3RD:F-FLW:scoped]}
+U057: {n: [IM5:d], m: [T-3RD:F-FLW:scoped]}
+U058: {n: [IM5:p]}
+U060: {n: [IM5:p]}
+U063: {n: [CO1:a, IM5:a]}
+U064: {n: [IM5:a, IM10:a, K7:p], g: true}
+U065: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U066: {n: [IM5:p]}
+U070: {n: [IM6:a]}
+U072: {n: [IM6:a], m: [T-ANO:F-FLW:absolute]}
+U074: {n: [IM6:a, IM10:a]}
+U075: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U077: {n: [IM6:a, IM10:a]}
+U079: {n: [CO1:a, CO2:a]}
+U080: {n: [CO2:a]}
+U081: {n: [IM2:a], m: [T-ANO:F-FLW:absolute]}
+U082: {n: [IM3:d]}
+U084: {n: [CO2:a]}
+U086: {n: [CX2:a, CX3:a]}
+U089: {n: [IM3:d]}
+U090: {r: true}
+U093: {n: [IM7:a, CO2:a, K10:a]}
+U094: {n: [IM5:a], m: [N-COM:F-FLW:scoped]}
+U095: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U096: {n: [IM7:d], m: [N-COM:F-FLW:scoped]}
+U098: {n: [IM7:a, IM10:a]}
+U100: {n: [IM4:a, CX2:a, CX3:a]}
+U101: {n: [K5:a]}
+U102: {n: [IM4:a, CX3:a, K5:a, K10:a], m: [N-COM:F-FLW:scoped]}
+U104: {n: [IM4:a, IM10:a]}
+U106: {n: [IM4:a, CX3:a, K5:a], m: [N-COM:F-FLW:scoped]}
+U108: {n: [K5:p]}
+U110: {n: [CX2:a, IM3:a]}
+U111: {n: [IM3:a, K5:p]}
+U113: {n: [IM3:a, K5:p]}
+U116: {n: [IM1:a]}
+U117: {n: [IM1:a]}
+U118: {n: [IM7:a]}
+U119: {n: [CO1:a]}
+U120: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U125: {n: [], m: [N-COM:F-FLW:scoped]}
+U126: {n: [IM10:a]}
+U129: {n: [IM9:a], m: [T-ANO:F-FLW:scoped]}
+U130: {n: [IM9:a]}
+U131: {n: [IM9:a]}
+U132: {n: [IM9:a]}
+U133: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U134: {n: [IM10:a], m: [N-COM:F-FLW:scoped]}
+U135: {n: [IM10:a, K7:p]}
+U136: {n: [], m: [N-COM:F-FLW:scoped]}
+U137: {r: true}
+U139: {n: [], m: [N-COM:F-FLW:scoped]}
+U140: {n: [], m: [T-SEC:F-FLW:scoped]}
+U141: {n: [], m: [N-COM:F-FLW:scoped]}
+U142: {n: [K5:d, K10:d], m: [N-COM:F-FLW:absolute]}
+U145: {n: [IM12:d]}
+U147: {n: [IM12:d]}
+U148: {g: true, m: [T-SEC:F-FLW:partial]}
+U149: {n: [IM2:a], m: [T-SEC:F-FLW:partial]}
+U150: {n: [], m: [T-ENC:F-FLW:scoped]}
+U151: {n: [], m: [T-ENC:F-FLW:partial]}
+U152: {n: [], m: [T-3RD:F-FLW:scoped]}
+U153: {n: [CX1:p, K9:p, IM9:p]}
+U154: {n: [], m: [T-SEC:F-FLW:partial]}
+U156: {n: [CX1:p], m: [T-SEC:F-FLW:absolute]}
+U157: {n: [], m: [T-SEC:F-FLW:partial]}
+U159: {n: [IM3:a]}
+U160: {n: [IM3:a, K5:p]}
+U161: {n: [IM3:a, IM4:a], m: [N-COM:F-FLW:scoped]}
+U163: {n: [IM3:a, IM10:a]}
+U164: {n: [K5:a]}
+U165: {n: [IM3:a], m: [N-COM:F-FLW:scoped]}
+U167: {n: [K5:a]}
+U176: {r: true}
+W01: {n: [CO1:a]}
+W02: {n: [IM6:p]}
+W03: {n: [IM7:d], m: [N-COM:F-FLW:scoped]}
+W04: {r: true}
+W05: {n: [IM9:a, K9:a], h: [H-PSY:p], tag: T-REL, s: [H-PSY:S-ACK, H-PSY:S-RSP]}
+W06: {n: [IM4:p, CX3:p]}
+W07: {n: [IM3:p]}
+W08: {n: [IM2:a, IM12:d]}
+W09: {inc: [P-NOT]}

@@ -1,0 +1,102 @@
+# Review of the model output in the instrument test. Prepared by the AI assistant
+# after comparing model and stand-in; the author must check every line.
+# Own wording; evidence is located by unit, no quotes.
+
+# A mention counts if the stand-in or at least two of three model runs returned it,
+# unless it is rejected here.
+rejected_mentions:
+  - {unit: U129, node: K4, reason: "About a chat profile being separate; not re-identification of shared records."}
+  - {unit: U131, node: K4, reason: "About what the user posts in the chat; not the data of the K4 pathway."}
+  - {unit: U165, node: K4, reason: "A contract term between provider and analytics firm on linking IP addresses."}
+  - {unit: U157, node: K6, reason: "Advice on erasing a lost phone; no one is said to read the data."}
+  - {unit: W01, node: I1, reason: "Agreement for the core function, not for extra sharing, which is what I1 needs."}
+  - {unit: U051, node: K2, reason: "A feature on the user's own data; no recipient and nothing beyond what was entered."}
+  - {unit: U097, node: IM11, reason: "An optional toggle; no function is said to depend on it."}
+
+# Added by the review: returned neither by the stand-in nor by two runs.
+added_mentions: []
+
+# Protection claims. removes = the components the measure would remove if it worked as
+# claimed. in_scope = the pathways the claim itself covers. decision: mismatch (potential,
+# for the author to confirm), none, or unclear.
+claims:
+  - id: C1
+    units: [U096, U106, U161]
+    code: N-COM
+    claim: "Tracked health data is never sold to or shared with advertisers or recommended partners."
+    framing: F-FLW
+    strength: scoped
+    removes: [IM7]
+    in_scope: [P14]
+    decision: none
+    reason: "The claim is scoped to advertisers and tracked health data. P14 stays open through processors and research partners, and K5 and K10 through device IDs and app events (IM4). All of this lies outside the claim."
+  - id: C2
+    units: [U072]
+    code: T-ANO
+    claim: "Names and e-mail addresses are erased and a random ID assigned, so researchers can never identify the user."
+    framing: F-FLW
+    strength: absolute
+    removes: []
+    in_scope: [P17]
+    decision: mismatch
+    reason: "The claim is absolute for researchers. Erasing direct identifiers removes neither condition of K4: a long individual record still goes out under one ID. Studies re-identify such records from activity and heart data; none tests cycle data."
+  - id: C3
+    units: [U142]
+    code: N-COM
+    claim: "The provider does not engage in automated decision-making or profiling."
+    framing: F-FLW
+    strength: absolute
+    removes: [IM4, IM7]
+    in_scope: [P05, P13, P16, P20]
+    decision: mismatch
+    reason: "The same policy describes recommendations from tracked data and an advertising partner told the user's age group (U093, U102). The term is not defined; it may have a narrower legal meaning, on which the study makes no judgement."
+  - id: C4
+    units: [U016, U151]
+    code: T-ENC
+    claim: "Stored data is encrypted, and data in transit uses HTTPS."
+    framing: F-FLW
+    strength: scoped
+    removes: [IM2]
+    in_scope: [P01, P06, P18]
+    decision: none
+    reason: "An accurate partial claim. K6 stays open through processors and accounts, but the claim does not promise otherwise."
+  - id: C5
+    units: [U017]
+    code: T-ANO
+    claim: "A messaging service always handles the data it receives in masked form."
+    framing: F-FLW
+    strength: absolute
+    removes: [IM5]
+    in_scope: [P14]
+    decision: unclear
+    reason: "The same unit lists e-mail address and name among the data. The text does not say what is masked or from whom."
+  - id: C6
+    units: [U156]
+    code: T-SEC
+    claim: "A device lock prevents any person from using the device without the user's permission."
+    framing: F-FLW
+    strength: absolute
+    removes: [CX1]
+    in_scope: [P04, P08, P19]
+    decision: none
+    reason: "The measure does cut the phone branch of K9. A share the user set up stays open but lies outside the claim. The measure is left to the user; no harm is named, so no stance is coded."
+  - id: C7
+    units: [U081]
+    code: T-ANO
+    claim: "De-identifying the analytics data ensures the user's privacy."
+    framing: F-FLW
+    strength: absolute
+    removes: []
+    in_scope: []
+    decision: unclear
+    reason: "The claim names no actor or outcome that could be set against a pathway."
+  - id: C8
+    units: [U003, U090, U137, U176]
+    code: C-REA
+    claim: "Broad safety language, including a sentence that doubts the user could object to a processing."
+    framing: ""
+    strength: ""
+    removes: []
+    in_scope: []
+    decision: unclear
+    reason: "No measure is named, so there is nothing to compare."

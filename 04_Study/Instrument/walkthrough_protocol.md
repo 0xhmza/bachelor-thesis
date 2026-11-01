@@ -1,7 +1,7 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 3 · **Date:** 2026-10-28 · Operational version of the current
-methodology's Walkthroughs paragraph and D15's single health-tracker domain.
+**Version:** 4 · **Date:** 2026-11-01 · Operational version of the methodology's
+App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
 *Usability Inspection Methods*, pp. 105–140. The four questions below are from
@@ -42,13 +42,13 @@ action sequence and ask Wharton et al.'s four questions at every step:
 
 | # | Task | Why it is here |
 |---|---|---|
-| T1 | Find out what data the app collects | baseline: this is what communication normally covers |
-| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v4) |
-| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v4) |
+| T1 | Find out what data the app collects | baseline: this is what communication normally covers; nodes CO1, CX2, IM1, IM2 |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF`; nodes CO2, K2, K10 (codebook v5) |
+| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC`, `P-NOT`; node K6 (codebook v5) |
 | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
-| T5 | Turn off sharing with third parties | control, and how it is framed |
-| T6 | Export the data | control |
-| T7 | Delete the account and the data | control |
+| T5 | Turn off sharing with third parties | control, and how it is framed; nodes IM3, IM4, IM13, I3 |
+| T6 | Export the data | control; nodes IM12, I2 |
+| T7 | Delete the account and the data | control; nodes IM12, CO3, I2 |
 
 **Do not anticipate outcomes.** Record every task in one of four neutral
 categories — **completed**, **information not found**, **task unsupported**,
@@ -124,3 +124,4 @@ the document sample but are skipped here. See
 | 1 | 2026-09-18 | Added the seven privacy tasks, the four Wharton et al. questions, and the per-task record fields | Aligns the instrument with §4.4 of the proposal |
 | 2 | 2026-10-05 | "Expected to fail" removed; four neutral outcome categories; alternating Android/iOS slot filling; payment/ID-verification apps skipped here, not excluded from the sample; codebook v3 codes | Anticipated outcomes risk steering an analyst-based inspection; alignment with the current proposal |
 | 3 | 2026-10-28 | Twelve apps across the health-tracker sample, six per platform without category slots; descriptive feature metadata; codebook v4 | Author's clarification of one study domain, D15; totals and task procedures retained |
+| 4 | 2026-11-01 | Each task tied to nodes of the reference model; count of taps kept for every task; codebook v5 | D10, D12: walkthrough outcomes must attach to tree nodes |

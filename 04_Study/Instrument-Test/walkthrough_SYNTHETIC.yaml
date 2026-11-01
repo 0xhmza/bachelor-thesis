@@ -1,0 +1,72 @@
+# SYNTHETIC. INVENTED FOR THE INSTRUMENT TEST. NOT A RECORD OF ANY REAL SESSION.
+# Nobody opened the app. These screens, wordings, taps and outcomes were written
+# by hand to exercise the walkthrough protocol and the coding of interface text.
+# They do not describe the real interface of Clue or of any other app, and no
+# finding about a real app may rest on them. Replace or delete before submission.
+synthetic: true
+protocol: 04_Study/Instrument/walkthrough_protocol.md (version 3)
+target_user: First-time user of a cycle tracker on a phone, no technical training.
+tasks:
+  T1:
+    goal: Find out what data the app collects
+    steps: [Open the menu, Open Privacy, Open What we collect]
+    questions: {Q1: yes, Q2: yes, Q3: yes, Q4: yes}
+    outcome: completed
+    stopped_at: null
+    taps: 3
+  T2:
+    goal: Find out what the app derives from the data
+    steps: [Open the menu, Open Privacy, Read What we collect, Search the help pages]
+    questions: {Q1: yes, Q2: no, Q3: no, Q4: no}
+    outcome: information not found
+    stopped_at: Step 4. Predictions appear as a feature; no screen says what else they reveal.
+    taps: 6
+  T3:
+    goal: Find out what happens if the data is exposed, and how incidents are handled
+    steps: [Open the menu, Open Help, Open Privacy and security]
+    questions: {Q1: no, Q2: yes, Q3: no, Q4: no}
+    outcome: information not found
+    stopped_at: Step 3. One sentence promises notice as required by law (W09); no consequence and no procedure.
+    taps: 4
+  T4:
+    goal: Reach the privacy policy from inside the app
+    steps: [Open the menu, Open Privacy, Open Privacy Policy]
+    questions: {Q1: yes, Q2: yes, Q3: yes, Q4: yes}
+    outcome: completed
+    stopped_at: null
+    taps: 3
+  T5:
+    goal: Turn off sharing with third parties
+    steps: [Open the menu, Open Privacy, Switch off the optional toggles, Look for messaging and monitoring services]
+    questions: {Q1: yes, Q2: yes, Q3: yes, Q4: no}
+    outcome: task unsupported
+    stopped_at: Step 4. Optional toggles work; no control exists for the essential services.
+    taps: 5
+  T6:
+    goal: Export the data
+    steps: [Open the menu, Open Privacy, Open Your rights, Write an e-mail]
+    questions: {Q1: yes, Q2: no, Q3: no, Q4: no}
+    outcome: access barrier
+    stopped_at: Step 4. Export only by e-mail request; the app offers no button.
+    taps: 4
+  T7:
+    goal: Delete the account and the data
+    steps: [Open the menu, Open Account, Open Delete account, Confirm]
+    questions: {Q1: yes, Q2: yes, Q3: yes, Q4: yes}
+    outcome: completed
+    stopped_at: null
+    taps: 4
+interface_units:
+  - {unit: W01, screen: "Onboarding, consent", text: "To track your cycle, we need your agreement to process the health data you enter."}
+  - {unit: W02, screen: "Onboarding, optional choices", text: "Help research: share de-identified data with our research partners. This is optional."}
+  - {unit: W03, screen: "Settings, Privacy, header", text: "Your health data is never sold."}
+  - {unit: W04, screen: "Settings, Privacy, header", text: "We keep your data safe."}
+  - {unit: W05, screen: "Sharing, before connecting a person", text: "People you connect with can see your cycle calendar. This could reveal a pregnancy or a loss before you are ready to tell them, which can be hurtful. You choose who you connect with."}
+  - {unit: W06, screen: "Settings, Privacy, advertising toggle", text: "Let us measure our ads using your device ID."}
+  - {unit: W07, screen: "Settings, Privacy, analytics toggle", text: "Turning this off will not change how the app works."}
+  - {unit: W08, screen: "Account, delete account", text: "Deleting your account removes your data from our servers within 30 days. This cannot be undone."}
+  - {unit: W09, screen: "Help, Privacy and security", text: "If we ever have a security incident, we will tell you as the law requires."}
+# Component evidence this record would give (see applicability_clue.yaml).
+component_evidence:
+  IM11: {state: absent, reason: "Optional choices do not block a function (W02, T5)."}
+  IM12: {state: present, reason: "No in-app export (T6)."}
