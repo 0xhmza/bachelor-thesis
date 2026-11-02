@@ -13,4 +13,5 @@
   - Habib et al. 2020, p. 4: minimum number of user actions per privacy control.
   - Meeting 2026-10-13, §6: use a checklist and explain the data it produces.
 - **Choice:** the four questions at every step of tasks T1–T7, four neutral outcomes, and a count of taps. Each task is tied to tree nodes, so the walkthrough gives three outputs: evidence for applicability, interface text for the codebook, and findability. The author inspects; a second inspection of a subset is open (D8).
+- **Update 2026-11-02 (author's instruction):** the walkthrough covers all 50 apps, not a subsample of 12. The six-and-six platform balance and the rank-order slots fall away. Access exclusions stay. Open for the pilot: the platform for the 36 apps listed in both stores, and the time one session takes.
 - **Would change if:** the pilot shows that the tasks do not reach the tree nodes; the supervisor clarifies the "post-harm reaction" point of the meeting.

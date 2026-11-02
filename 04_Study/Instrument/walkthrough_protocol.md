@@ -1,6 +1,6 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 4 · **Date:** 2026-11-01 · Operational version of the methodology's
+**Version:** 5 · **Date:** 2026-11-02 · Operational version of the methodology's
 App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
@@ -11,11 +11,11 @@ Walkthroughs are done **manually** — this is the part of the study that is not
 automated. The point is to make every walkthrough identical, so differences you
 find are differences between apps and not between sessions.
 
-**Subsample:** 12 health-tracking apps, six on Android and six on iOS. Fill
-the slots in rank order, **alternating** Android and
-iOS, without reusing an app. The balance serves coverage, not platform
-comparison. Apps that need an unavailable paired device, payment, or identity
-verification are skipped with a recorded reason; unfilled slots are reported.
+**Apps:** every app of the 50-app sample, on a platform where it is available.
+An app that needs an unavailable paired device, payment, or identity
+verification cannot be inspected; it stays in the document sample, the reason is
+recorded and the number of such apps is reported. Open for the pilot: the
+platform for apps listed in both stores, and the time one session takes.
 
 ## Setup
 
@@ -125,3 +125,4 @@ the document sample but are skipped here. See
 | 2 | 2026-10-05 | "Expected to fail" removed; four neutral outcome categories; alternating Android/iOS slot filling; payment/ID-verification apps skipped here, not excluded from the sample; codebook v3 codes | Anticipated outcomes risk steering an analyst-based inspection; alignment with the current proposal |
 | 3 | 2026-10-28 | Twelve apps across the health-tracker sample, six per platform without category slots; descriptive feature metadata; codebook v4 | Author's clarification of one study domain, D15; totals and task procedures retained |
 | 4 | 2026-11-01 | Each task tied to nodes of the reference model; count of taps kept for every task; codebook v5 | D10, D12: walkthrough outcomes must attach to tree nodes |
+| 5 | 2026-11-02 | Walkthroughs cover all 50 apps, not 12; no platform slots | Author's instruction of 2 November 2026; D10 |

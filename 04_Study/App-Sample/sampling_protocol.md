@@ -7,7 +7,7 @@ The study domain is health trackers overall. Categories from the source papers e
 - Sampling remains one combined ranking of eligible health trackers, with no category quotas; the present target is 47 ranked plus three preinstalled apps (D1/D2/D6).
 - The pilot draws five apps at random from the whole sample, with a recorded seed and no category allocation.
 - Validation draws ten apps at random from providers and documents not used in the pilot, with a recorded seed and policy-language stratification where both languages occur. Pilot apps do not enter validation.
-- Walkthroughs inspect twelve distinct apps across the sample, six on Android and six on iOS, alternating platform slots in rank order. Existing access exclusions and reporting of unfilled slots remain.
+- Walkthroughs inspect every app of the sample (changed from twelve on 2 November 2026, D10). Existing access exclusions remain: an app that cannot be inspected is reported with its reason.
 - The reference harm trees concern health trackers; applicability follows each app's features and the pathway's data, access and context conditions.
 - Codebook v4 and walkthrough protocol v3 implement this scope. This amendment changes no collected query, raw record, eligibility judgment, ranking or selected app. It does not settle other open methodological decisions.
 

@@ -21,7 +21,23 @@ ranked together by a German-market popularity score based on ratings and reviews
 come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
 with five of these apps will refine the instruments before the main study.
 For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
-pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done} \todo[inline]{Summary of literature review} Figure~\ref{fig:pipeline} summarises this workflow.
+pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done}
+
+The study rests on a literature review (Section~\ref{sec:lit-review}). It is a scoping review
+that follows the staged procedure of Baumann et al.~\parencite{baumann2025llm} and is
+reported with PRISMA-S and PRISMA~2020~\parencite{rethlefsen2021prisma,page2021prisma}. Four
+sub-questions ask which harms and capabilities concern the users of health tracking apps, how
+the privacy communication of such apps has been analysed, how language models have been used
+and validated for coding privacy text, and how privacy texts frame risk and protection.
+Searches built from term groups run in four databases (PubMed, IEEE Xplore, arXiv and the ACL
+Anthology) and in eight venues of security, privacy and human--computer interaction research.
+One round of citation searching from four seed papers follows. After automatic deduplication,
+the records are screened against fixed criteria, first on title and abstract and then on the
+full text, and the studies that remain are charted in a fixed table. The review supplies the
+capabilities and harms from which the reference harm trees are built, and the evidence for the
+methodological decisions of this chapter.
+
+Figure~\ref{fig:pipeline} summarises the workflow.
 
 \section{Study Design}
 \label{sec:design}
@@ -64,7 +80,7 @@ material, method and precedent.
   \node[bx=accent] (pilot) at (6,1.45) {\textbf{Pilot}\\tests, then freezes the instruments};
   \node[lab] at (-7.75,0.1) {For each app};
   \node[bx=linkblue,minimum height=10mm] (pol) at (-6,-0.7) {\textbf{Privacy policy}\\and store listing};
-  \node[bx=linkblue,minimum height=10mm] (wt) at (-6,-2.1) {\textbf{Walkthrough}\\12 of the 50 apps};
+  \node[bx=linkblue,minimum height=10mm] (wt) at (-6,-2.1) {\textbf{Walkthrough}\\all 50 apps};
   \node[bx=originimp] (app) at (-2,-1.4) {\textbf{Applicability}\\which parts and harms does this app have?};
   \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\the model proposes, people decide};
   \node[bx=originimp] (gap) at (6,-1.4) {\textbf{Comparison}\\RQ1--RQ4, with source evidence};
@@ -112,7 +128,7 @@ RQ3 & Claimed measures, their scope and strength, and whether they cut a pathway
   & \cite{knabenhans2026harms,martin2025cookies} \\
 \cmidrule[0.3pt]{2-5}
 RQ4 & Differences between policy and interface; whether the information can be found
-  & Policy, 12 walkthroughs
+  & Policy, walkthroughs
   & Same codes on both surfaces; cognitive walkthrough
   & \cite{wharton1994cognitive,malki2024exploring,habib2020scavenger} \\
 \midrule
@@ -1423,9 +1439,12 @@ category.
 A privacy policy says what a provider has written down. The interface shows what a user
 meets, and whether the user can find it. To inspect it, the study uses a cognitive
 walkthrough: an analyst steps through a task and asks at each step whether a user would
-succeed~\parencite{wharton1994cognitive}. Twelve apps are inspected, six on Android and
-six on iOS, filled in rank order without reusing an app. Apps that need an unavailable
-paired device, payment or identity verification are skipped with a recorded reason.
+succeed~\parencite{wharton1994cognitive}. Every app of the sample is inspected, on a
+platform where it is available. An app that needs an unavailable paired device, payment or
+identity verification cannot be inspected: it stays in the document sample, and the reason is
+recorded.\todo{Open for the pilot: the platform for the 36 apps listed in both stores, and the
+time one session takes, since 50 apps with seven tasks each is the largest part of the
+fieldwork.}
 
 \paragraph{Inputs.} Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
@@ -1802,9 +1821,9 @@ RQ2 will report harm--stance combinations and their denominators. RQ3 will
 summarise measures, scope, claim strength and manually reviewed mismatches.
 Examples that support and challenge the expected gap will both be retained.
 
-For RQ4, the principal policy--interface comparison will use the same 12
-inspected apps; the 50-app document analysis gives the broader overview, and
-other surface pairs report how many apps have both surfaces. At the fixed
+For RQ4, the principal policy--interface comparison will use every app that was
+inspected, and the number of apps that could not be inspected will be reported. Other
+surface pairs report how many apps have both surfaces. At the fixed
 decision points, onboarding before consent and the privacy-settings screen,
 text shown directly, behind a visible link or not found within the task limit
 will be distinguished. Inconsistent claims will be reported apart from mere

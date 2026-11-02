@@ -4,7 +4,7 @@
 # They do not describe the real interface of Clue or of any other app, and no
 # finding about a real app may rest on them. Replace or delete before submission.
 synthetic: true
-protocol: 04_Study/Instrument/walkthrough_protocol.md (version 3)
+protocol: 04_Study/Instrument/walkthrough_protocol.md (version 5)
 target_user: First-time user of a cycle tracker on a phone, no technical training.
 tasks:
   T1:
