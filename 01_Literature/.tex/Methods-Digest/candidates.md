@@ -2,7 +2,7 @@
 
 A wider search on 23 October 2026 (LLM coding of privacy policies, stance and
 protection-claim language, domains, app selection) is in
-[`../Literature-Gap-Search_2026-10-23.md`](../Literature-Gap-Search_2026-10-23.md).
+[`../Literature-Gap-Search_2026-10-23.md`](../../Literature-Gap-Search_2026-10-23.md).
 Its priority-A items are the next candidates for `add_paper.py` and cards.
 
 | Candidate | Found in | Why | Priority |

@@ -2,13 +2,13 @@
 
 The literature review of the thesis (Methodology, Literature Review; Results,
 Literature Search; Appendix F), run with the staged procedure of Baumann et al.
-(2025, App. A) as adapted in [D13](../../00_Admin/Decisions/D13_literature-review.md).
+(2025, App. A) as adapted in [D13](../../../00_Admin/Decisions/D13_literature-review.md).
 
 | Stage | What | Where |
 |---|---|---|
-| 0 | Queries Q1–Q4 in OpenAlex and Semantic Scholar (titles and abstracts), 15 works added by hand, duplicates merged, ≥ 3 citations per year | [`scripts/literature-search/v001`](../../scripts/literature-search/README.md); frozen results in `05_Data/raw/literature-search_2026-10-26/` (hashes in [`05_Data/raw/README.md`](../../05_Data/raw/README.md)) |
+| 0 | Queries Q1–Q4 in OpenAlex and Semantic Scholar (titles and abstracts), 15 works added by hand, duplicates merged, ≥ 3 citations per year | [`scripts/literature-search/v001`](../../../scripts/literature-search/README.md); frozen results in `05_Data/raw/literature-search_2026-10-26/` (historical hash reference: `05_Data/raw/README.md`, no longer present after the data reorganisation) |
 | 1 | Title and abstract screening of 953 records, one code each | [`screening.csv`](screening.csv) |
-| 2 | Extraction cards for the included works that are used | [`../Methods-Digest/cards/`](../Methods-Digest/cards/) (to be written) |
+| 2 | Extraction cards for the included works that are used | [`../Methods-Digest/cards/`](../../Methods-Digest/cards) (to be written) |
 | 3 | Capabilities from the I1 works, for the harm trees | to be written |
 
 **Status:** the screening decisions were prepared by an AI assistant (Claude)

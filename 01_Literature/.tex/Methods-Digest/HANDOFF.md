@@ -17,7 +17,7 @@ Deliverable: `build/Methods-Digest.pdf` (generated; about 150 MB, thousands of p
 
 ## 2. Constraints
 
-- Project rules in [AGENTS.md](../../AGENTS.md) apply (review copy, single
+- Project rules in [AGENTS.md](../../../AGENTS.md) apply (review copy, single
   bibliography, graphify refresh, `check_project.py`, commit and push).
 - The digest is organisational and adds no thesis content; it decides nothing.
 - Krippendorff 2019 (key `krippendorff2019`, no. 22) is a shadow-library copy and
@@ -97,7 +97,7 @@ the OCR copy, match its text including errors.
   `00_front.tex` and the intros are written. `--check`: 2,111 passages, 99 papers,
   0 problems.
 - **23 October:** registry nos. 101–116 are the priority-A papers of the
-  [gap search](../Literature-Gap-Search_2026-10-23.md) (PDFs in
+  [gap search](../../Literature-Gap-Search_2026-10-23.md) (PDFs in
   `PDFs/Methods-Reading/13_Search-2026-10-23/`, cards `101_xie2025` …
   `116_mehrnezhad2024`). Chapter L has two new sections (recent LLM policy studies;
   from model labels to conclusions) and extended table, notebox, checklist and

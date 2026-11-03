@@ -17,24 +17,24 @@ tied to the bibliography rule; the **methodology corpus** is reading material.
 
 ## Methodology reading guide — 13 October meeting
 
-Start with [Methods-Reading-List.md](Methods-Reading-List.md): 83 verified DOI
+Start with [Methods-Reading-List.md](../Methods-Reading-List.md): 83 verified DOI
 records ranked by their usefulness for app reviews, sampling, walkthroughs,
 coding, two-coder comparison, LLM validation and harm modelling. Every entry
 identifies the work point it helps with and its adaptation limits.
 
-- [Searchable reading view](Methods-Reading-List.html) — filter by priority,
+- [Searchable reading view](../Methods-Reading-List.html) — filter by priority,
   category or keyword.
-- [Ranked DOI list](ranked-dois.txt) — one DOI per line for reference-manager import.
+- [Ranked DOI list](../ranked-dois.txt) — one DOI per line for reference-manager import.
 - [Structured catalogue](methodology-literature.json) — titles, provenance,
   rank, methodological use and version notes.
 - [Download checklist](Download-Checklist.md) — ticks and local links for all
   available copies, with a specific obstacle and a direct link (open-access page or
   DOI) for every missing item.
-- [Organized reading copies](PDFs/Methods-Reading/README.md) — folders by topic;
+- [Organized reading copies](../PDFs/Methods-Reading/README.md) — folders by topic;
   89 of the 93 works are held as PDFs. Downloaded is not read. Still missing:
   Parker 2019, the books by Krippendorff 2019 and Nissenbaum 2009, and the APA
   App Evaluation Model web page.
-- [Hand-saved PDFs](PDFs/Methods-Reading/_Inbox/README.md) — drop a PDF you obtained
+- [Hand-saved PDFs](../PDFs/Methods-Reading/_Inbox/README.md) — drop a PDF you obtained
   yourself (browser, library login) into `_Inbox/` and run `import_manual.py`; it
   matches title, first-author surname and DOI before filing and rebuilding the checklist.
 - Graphify indexes this corpus from the catalogue and download manifest (topic,
