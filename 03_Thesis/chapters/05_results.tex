@@ -570,6 +570,14 @@ section states who coded.} It checks whether the steps connect. It gives no esti
 from the real policy, except those tagged \synthtag, which rest on the invented walkthrough and are
 no finding about the real app. Appendix~\ref{app:instrument-test} holds the complete records.
 
+\highlight[orange!25]{The invented walkthrough uses protocol version~5. Its task
+classifications and changes to applicability are historical test inputs, not an
+application of the corrected walkthrough rules.}\todo{Re-evaluate
+the synthetic classifications and dependent generated tables under the frozen protocol.
+In particular, a missing export button does not establish IM12 or I2, and an email
+request alone is not an access barrier. Preserve the original fixture for audit.}
+The corrected rules are stated in Section~\ref{sec:walkthroughs}.
+
 \subsection{Test Case and Material}
 The test app is Clue, a cycle tracker by BioWink GmbH in Berlin, at rank 12 of the sample
 (Appendix~\ref{app:app-sample}). Its English privacy policy, which states that the English version
@@ -711,9 +719,10 @@ removes neither component.}
 \subsection[Policy and Interface (RQ4)]{Policy and Interface (RQ4) \synthtag}
 \emph{All of this subsection rests on the invented record.} Three invented tasks end completed (T1,
 T4, T7), two with information not found (T2, T3), one as unsupported (T5) and one with an access barrier
-(T6). In the procedure, this record does three things. It settles two uncertain components: I1 closes,
-because no function is tied to extra sharing, and I2 opens, because the app offers no export. This moves
-the counts to 14 pathways that apply, 5 uncertain and 2 not applicable. It feeds nine interface units into
+(T6). These are the original fixture's classifications, pending the re-evaluation noted above.
+The fixture assigns IM11 absent and IM12 present, so the original script closes I1 and opens I2,
+returning 14 pathways that apply, 5 uncertain and 2 not applicable. These input assignments are not
+established by failing to find an export button. The record also feeds nine interface units into
 the same codes. And it allows the comparison of Table~\ref{tab:test-coverage}: the invented interface names
 one harm that the policy does not, while the policy names capabilities that the interface does not, such
 as the missing opt-outs. The test shows that this comparison can be made. It shows nothing about what the
