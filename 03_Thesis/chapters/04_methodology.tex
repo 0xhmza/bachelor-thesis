@@ -1434,51 +1434,40 @@ Solove's relationship harms~\parencite{citron2021harms}, which the list omits.
 New harms found in the pilot will be documented rather than forced into a
 category.
 
-\section{App Walkthroughs} \todo[inline]{TBD}
+\section{App Walkthroughs}
 \label{sec:walkthroughs}
 A privacy policy says what a provider has written down. The interface shows what a user
 meets, and whether the user can find it. To inspect it, the study uses a cognitive
 walkthrough: an analyst steps through a task and asks at each step whether a user would
-succeed~\parencite{wharton1994cognitive}. Every app of the sample is inspected, on a
-platform where it is available. An app that needs an unavailable paired device, payment or
-identity verification cannot be inspected: it stays in the document sample, and the reason is
-recorded.\todo{Open for the pilot: the platform for the 36 apps listed in both stores, and the
-time one session takes, since 50 apps with seven tasks each is the largest part of the
-fieldwork.}
+succeed~\parencite{wharton1994cognitive}. The walkthrough is the second source of each app,
+next to the policy, and it feeds the same procedure. Its tasks are tied to nodes of the
+reference harm trees, its interface text is coded with the same codebook and the same
+model-assisted stages as the policy, and what it shows about the app enters the same
+applicability record. The walkthrough itself is done by hand. The language model plays no
+part in it: it does not operate the app, answer the four questions or judge an outcome.
+
+Every app of the sample is inspected, on a platform where it is available. An app that needs
+an unavailable paired device, payment or identity verification cannot be inspected: it stays
+in the document sample, and the reason is recorded.\todo{Open for the pilot: the platform for
+the 36 apps listed in both stores, and the time one session takes, since 50 apps with seven
+tasks each is the largest part of the fieldwork.}
 
 \paragraph{Inputs.} Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
 is a first-time user with no technical training, as in the walkthrough of Malki et
-al.~\parencite[p.~5]{malki2024exploring}. The tasks are the seven privacy tasks of
-Table~\ref{tab:wt-tasks}. The action sequence is the shortest path the analyst finds,
-recorded screen by screen. The interface is the current store version, freshly installed
-with no earlier account, as Malki et al.\ did by wiping and reinstalling the
-apps~\parencite[p.~5]{malki2024exploring}.
+al.~\parencite[p.~5]{malki2024exploring}. The tasks are the seven privacy tasks described
+below. The action sequence is the shortest path the analyst finds, recorded screen by screen.
+The interface is the current store version, freshly installed with no earlier account, as
+Malki et al.\ did by wiping and reinstalling the apps~\parencite[p.~5]{malki2024exploring}.
 
-\paragraph{Checklist.} At each step the analyst answers the four questions of Wharton et
-al.~\parencite[Table~5.1, p.~106]{wharton1994cognitive}:
-\begin{enumerate}[label=Q\arabic*,leftmargin=2.2em,itemsep=0pt,topsep=3pt]
-  \item Will the user try to achieve the right effect?
-  \item Will the user notice that the correct action is available?
-  \item Will the user associate the correct action with the effect they want?
-  \item After the action, will the user see that progress is being made?
-\end{enumerate}
-A task ends in one of four neutral outcomes: \emph{completed}, \emph{information not
-found}, \emph{task unsupported} or \emph{access barrier}. The record states where it
-stopped and at which question. The number of taps is counted, as Habib et al.\ counted
-the user actions a privacy control needs~\parencite[p.~4]{habib2020scavenger}.
-
-\paragraph{Adaptation.} The method was made to test whether users can learn an interface.
-Here it tests whether they can find privacy information and use privacy controls. All
-variants of the method ask about goals, actions, feedback and completion, but they are
-thinly validated, so an adaptation has to be stated
-openly~\parencite{mahatody2010state}. The study keeps the four questions and changes only
-the tasks. It does not add Nielsen's heuristics, as Malki et al.\ did, because each
-outcome has to attach to a tree node and not to a design
-problem~\parencite[p.~5]{malki2024exploring}. One analyst can carry out the method
-alone~\parencite[p.~109]{wharton1994cognitive}, but results depend on the analyst's
-expertise, and recording is advised~\parencite{mahatody2010state}. The sessions are
-therefore recorded and the analyst's background reported.
+\paragraph{Tasks.} The tasks come from the harm trees, not from the app's own functions.
+Each asks for a piece of information or a control that the trees name: what data is
+collected (components), what is derived from it (capabilities), what an exposure would mean
+and how incidents are handled (harm details), where the policy is, and the controls that
+would remove a component or reveal an incapability (sharing, export and deletion).
+Table~\ref{tab:wt-tasks} lists the nodes each task tests. The tasks are fixed before
+collection and run in the same order for every app, so that differences between records are
+differences between apps and not between sessions.
 
 \begin{table}[H]
 \centering
@@ -1503,15 +1492,123 @@ T7 & Delete the account and the data & \oimp{IM12}, \ocore{CO3}; incapability I2
 \end{singlespace}
 \end{table}
 
-\paragraph{Outputs.} A walkthrough gives three things. It gives \emph{evidence for
-applicability}: for example, a consent screen shows whether a function depends on data
-sharing (\oimp{IM11}). It gives \emph{interface text}, which is coded with the same
-codebook as the policy. And it gives \emph{findability}: whether a user can reach the
-information or the control at all. Screens record what the app said; the analyst's
-conclusions are marked as interpretation. Synthetic data and throwaway accounts are used
-throughout. \highlight[orange!25]{The supervisor's point on a user's reaction after a harm
-is covered for now by T3 and T5 to T7.}\todo{The meeting notes leave this point open.
-Clarify which mechanisms it means before it becomes a criterion.}
+\paragraph{Checklist.} At each step the analyst answers the four questions of Wharton et
+al.~\parencite[Table~5.1, p.~106]{wharton1994cognitive}:
+\begin{enumerate}[label=Q\arabic*,leftmargin=2.2em,itemsep=0pt,topsep=3pt]
+  \item Will the user try to achieve the right effect?
+  \item Will the user notice that the correct action is available?
+  \item Will the user associate the correct action with the effect they want?
+  \item After the action, will the user see that progress is being made?
+\end{enumerate}
+A task ends in one of four neutral outcomes: \emph{completed}, \emph{information not
+found}, \emph{task unsupported} or \emph{access barrier}. The record states where it
+stopped and at which question. The number of taps is counted, as Habib et al.\ counted
+the user actions a privacy control needs~\parencite[p.~4]{habib2020scavenger}. The pilot
+fixes each task's starting point and time limit (Section~\ref{sec:pilot}); \emph{information
+not found} means not found within that limit. Outcomes are not anticipated: the record says
+what happened, not what was expected.
+
+\paragraph{Session.} Every session follows the same sequence:
+\begin{enumerate}[itemsep=1pt,topsep=3pt]
+  \item \textbf{Store page.} The page is opened on the device and the version is recorded.
+    It fixes which version was inspected; the listing itself is evidence only, as in the
+    frozen collection.
+  \item \textbf{First launch and onboarding.} Every screen before an account exists is
+    captured, with each consent, permission request and pre-ticked option.
+  \item \textbf{Account creation.} Which fields are mandatory and which optional is noted.
+    Only synthetic data and a throwaway account are used.
+  \item \textbf{Permission prompts.} Each prompt is recorded word for word, with the purpose
+    the app gives for it.
+  \item \textbf{Tasks T1 to T7}, in that order, each step answered against Q1--Q4.
+  \item \textbf{Privacy settings.} The defaults are recorded before anything is changed,
+    with the number of taps from the home screen.
+  \item \textbf{Advertising.} Any advertisement shown during the session is noted, with
+    anything it says about privacy.
+\end{enumerate}
+The first screens and the privacy settings are the fixed decision points of the RQ4 analysis
+(Section~\ref{sec:analysis}). Each app is installed fresh, without a restored backup, with the
+region set to Germany and the screen recorded for the whole session. The device language
+follows the language rule of Section~\ref{sec:material}: English, or German where the app has
+no English version. \highlight[orange!25]{The device and operating-system version are
+reported with the results.}\todo{Device or emulator and OS version are still TODO in the
+protocol; fix them before the pilot.}
+
+\paragraph{Adaptation.} The method was made to test whether users can learn an interface.
+Here it tests whether they can find privacy information and use privacy controls. All
+variants of the method ask about goals, actions, feedback and completion, but they are
+thinly validated, so an adaptation has to be stated
+openly~\parencite{mahatody2010state}. The study keeps the four questions and changes only
+the tasks. It does not add Nielsen's heuristics, as Malki et al.\ did, because each
+outcome has to attach to a tree node and not to a design
+problem~\parencite[p.~5]{malki2024exploring}. One analyst can carry out the method
+alone~\parencite[p.~109]{wharton1994cognitive}, but results depend on the analyst's
+expertise, and recording is advised~\parencite{mahatody2010state}. The sessions are
+therefore recorded and the analyst's background reported. \highlight[orange!25]{Whether a
+second analyst inspects a subset independently is decided with the second
+coder.}\todo{D10 leaves a second inspection open; it depends on D8.}
+
+\paragraph{Outputs.} A walkthrough gives three outputs, and each one enters a step that the
+policy also passes through (Table~\ref{tab:wt-outputs}). Screens record what the app said;
+the analyst's conclusions are marked as interpretation, and only the first counts as data.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Walkthrough outputs and where they enter the study]{Walkthrough outputs, what is
+recorded for each app and the step of the study that uses them.}
+\label{tab:wt-outputs}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.3cm}@{}}
+\toprule
+\textbf{Output} & \textbf{Recorded} & \textbf{Enters} & \textbf{RQ} \\
+\midrule
+Findability & Outcome, stopping point and question, and taps for T1--T7
+  & Task record, read through the nodes of Table~\ref{tab:wt-tasks} (Section~\ref{sec:analysis})
+  & RQ4 \\
+\rowrule
+Interface text & Text copied word for word per screen, with the screen and the language
+  & Coding units; the three model-assisted stages and human review, as for the policy
+    (Sections~\ref{sec:axes} and~\ref{sec:llm})
+  & RQ1--RQ4 \\
+\rowrule
+Applicability evidence & Screens that show whether a component exists or a condition holds
+  & Applicability record, Step~1; controls offered in the app, Step~3 (Section~\ref{sec:apply})
+  & RQ1, RQ3 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\emph{Findability} says whether a user can reach the information or the control at all.
+Because every task is tied to nodes, a failed task names the part of the tree that a user
+cannot learn about or act on, for example inference (T2) or deletion (T7).
+
+\emph{Interface text} enters the corpus as a source of its own. The same script cuts it into
+units by the same rule as the policy, one coherent block of interface text, before any coding.
+The units then pass the three stages of Section~\ref{sec:llm}: the model proposes nodes, harms,
+stances and protection claims, each with its quoted span, and the script checks the span.
+People decide every retained code. The interface units of the validation apps are coded blind
+by the author, like their policy units, so the model is validated on both surfaces. Because
+both surfaces carry the same codes, the comparison for RQ4 is made node by node: what the
+policy says about a component, capability or harm is set against what the screens say about
+the same node.
+
+\emph{Applicability evidence} settles what only the app can show. A consent screen shows
+whether a function is blocked without agreement (\oimp{IM11}); a missing export button shows
+the incapability I2. The screen is entered in the applicability record as the location of the
+evidence, and the analyst sets the component's state with a reason, as for every other
+source (Section~\ref{sec:apply}). Where the screens and the policy disagree about a node, both
+locations are kept and the case is reported as an inconsistency (Section~\ref{sec:analysis}).
+For Step~3, the walkthrough shows whether a control that the policy claims is offered in the
+app. It does not test whether the control works, so the claim is still evaluated as written.
+\highlight[orange!25]{Each app is walked through before the model's codes for its policy are
+reviewed, so that the policy does not steer the search.}\todo{Proposal, not yet in D10:
+confirm or drop this order.}
+
+The instrument test runs these outputs through the procedure once, with an invented record
+(Section~\ref{sec:instrument-test}). \highlight[orange!25]{The supervisor's point on a user's
+reaction after a harm is covered for now by T3 and T5 to T7.}\todo{The meeting notes leave this
+point open. Clarify which mechanisms it means before it becomes a criterion.}
 % Operational version: 04_Study/Instrument/walkthrough_protocol.md. Decision D10.
 % Light et al. 2018 (doi:10.1177/1461444816675438) structure entry, everyday use and
 % leaving; used for the order of capture only, so not cited as the method.
@@ -1577,7 +1674,9 @@ open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates. A
 risk outside the claim's scope is not a mismatch, and no system is judged safe or unsafe.
 % De and Le Metayer on counter-measures: talk slides, slide 19.
 
-\section{Pilot} The pilot takes place after sampling and after the reference
+\section{Pilot}
+\label{sec:pilot}
+The pilot takes place after sampling and after the reference
 harm trees have been built. Five apps will be drawn at random from the full
 health-tracker sample with a recorded seed, without category quotas. The pilot will
 test the boundaries of collection and coding and estimate capture time, coding
@@ -1810,7 +1909,9 @@ The test is evaluated twice, on the policy alone and with the invented walkthrou
 a walkthrough adds.
 % Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
 
-\section{Analysis and Reporting} Results will be descriptive. For RQ1, each harm's denominator
+\section{Analysis and Reporting}
+\label{sec:analysis}
+Results will be descriptive. For RQ1, each harm's denominator
 will include only applicable apps with the required core sources captured. A
 source the provider does not offer is recorded as such; only sources that
 exist but cannot be retrieved reduce the denominator. Inapplicable pathways

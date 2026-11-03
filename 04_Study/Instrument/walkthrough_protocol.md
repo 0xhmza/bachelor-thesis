@@ -1,6 +1,6 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 5 · **Date:** 2026-11-02 · Operational version of the methodology's
+**Version:** 6 · **Date:** 2026-11-03 · Operational version of the methodology's
 App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
@@ -110,6 +110,21 @@ data.
 Any privacy-relevant text captured here enters the corpus as source
 `in_app_ui` and is coded with the same codebook as the documents.
 
+## Where the record goes
+
+The walkthrough is done by hand; the language model never operates the app,
+answers the four questions or judges an outcome. Its three outputs enter the
+same steps as the policy:
+
+| Output | Enters |
+|---|---|
+| Findability (outcome, stopping point and question, taps per task) | task record, read through the tree nodes of each task (RQ4) |
+| Interface text (verbatim per screen, with screen and language) | unit script → LLM stages 1–3 with span check → human decision; validation apps coded blind on both surfaces |
+| Applicability evidence (screens showing a component or condition) | applicability record (Step 1), with the screen as location; offered controls for Step 3 |
+
+Where the screens and the policy disagree about a node, keep both locations
+and report the case as an inconsistency.
+
 ## Ethics rules that bind every session
 
 Throwaway accounts and synthetic data only. No real name, address, health data,
@@ -126,3 +141,4 @@ the document sample but are skipped here. See
 | 3 | 2026-10-28 | Twelve apps across the health-tracker sample, six per platform without category slots; descriptive feature metadata; codebook v4 | Author's clarification of one study domain, D15; totals and task procedures retained |
 | 4 | 2026-11-01 | Each task tied to nodes of the reference model; count of taps kept for every task; codebook v5 | D10, D12: walkthrough outcomes must attach to tree nodes |
 | 5 | 2026-11-02 | Walkthroughs cover all 50 apps, not 12; no platform slots | Author's instruction of 2 November 2026; D10 |
+| 6 | 2026-11-03 | "Where the record goes": outputs routed into the applicability record and the LLM-assisted coding; procedure unchanged | Coherence with the policy analysis; D10 update of 3 November 2026 |
