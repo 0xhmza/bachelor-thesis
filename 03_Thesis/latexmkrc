@@ -1,16 +1,15 @@
 # ----------------------------------------------------------------------
-#  latexmkrc — the single definition of the thesis build chain.
+#  latexmkrc — full thesis build; automatic previews use PDFLaTeX directly.
 # ----------------------------------------------------------------------
 #  latexmk reads this file automatically when it runs in this directory,
-#  which means TeXstudio (F5, via the magic comment in thesis.tex), the
+#  which means TeXstudio (F5, configured as latexmk + PDF viewer), the
 #  LaTeX Workshop recipe, a bare `latexmk` in a terminal and ../build.ps1
 #  all compile the thesis the same way. Run only one of them at a time:
 #  two builds in this folder overwrite each other's thesis.aux.
 #
-#      pdflatex -> biber -> pdflatex -> pdflatex
+#      pdflatex -> bibtex -> pdflatex -> pdflatex
 #
-#  biber is not listed anywhere: latexmk sees thesis.bcf in the log and
-#  inserts the bibliography pass by itself.
+#  latexmk detects bibliography changes and runs BibTeX only when needed.
 #
 #  Everything is built in place, so thesis.pdf stays here next to
 #  thesis.tex (this repository tracks that PDF).
@@ -23,13 +22,3 @@ $file_line_error_style = 1;                # parseable "file:line: message"
 
 # A bare `latexmk` builds the thesis, not every *.tex in the folder.
 @default_files = ('thesis.tex');
-
-# biblatex leaves .bcf / .run.xml behind; let `latexmk -c` remove those as
-# well. The PDF and the sources are never touched by -c.
-$clean_ext = '%R.bcf %R.run.xml';
-
-# biblatex switches its request flags (active="1"/"0") in thesis.run.xml
-# after the last pass it needs; that change alone made latexmk run an
-# extra, unchanged pdflatex pass. Real rerun requests still reach latexmk
-# through the "Please rerun LaTeX" message in the log.
-$hash_calc_ignore_pattern{'xml'} = 'active="[01]"';

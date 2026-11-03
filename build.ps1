@@ -11,9 +11,9 @@
     check that everything still compiles before committing.
 
     Each document folder carries a `latexmkrc` with the tool chain
-    (pdflatex -> biber -> pdflatex x2, built in place), so this script and
+    (PDFLaTeX and the required bibliography passes, built in place), so this script and
     LaTeX Workshop only have to say *which file* to build, never *how*.
-    latexmk re-runs the passes the .aux/.bcf files ask for, which is why
+    latexmk re-runs the passes the auxiliary files ask for, which is why
     there is no hard-coded pass count below.
 #>
 param(

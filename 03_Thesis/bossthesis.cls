@@ -10,7 +10,7 @@
 %
 % Adapted for this thesis (26 October 2026), from the template at
 % https://ai.ini.rub.de/de/studierende/planung-des-studiums/abschlussarbeiten :
-% - bibliography with Biber and numeric citations (the repository builds with Biber);
+% - bibliography with BibTeX and numeric citations;
 % - \paragraph kept as a run-in heading instead of being renamed;
 % - English title page for the Max Planck Institute for Security and Privacy
 %   (MPI-SP), with \institute, \instituteaddress and \examiners in place of the
@@ -227,7 +227,7 @@
 \RequirePackage[font=small, labelfont=bf, labelsep=endash, margin=1cm]{caption}
 
 % Citations
-\RequirePackage[backend=biber,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
+\RequirePackage[backend=bibtex,style=numeric-comp,sorting=nyt,maxbibnames=99,urldate=long]{biblatex}
 \defbibheading{bibliography}[\refname]{\chapter*{#1}\chaptermark{#1}}
 
 % Commands for beautiful tables
