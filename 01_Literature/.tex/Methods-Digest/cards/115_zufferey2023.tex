@@ -1,0 +1,13 @@
+\begin{papercard}{zufferey2023}
+\cf{Stages} \stagetag{H} (an inference capability from ordinary fitness data, with named interested parties), \stagetag{S} (inference as part of what ``health tracker data'' can reveal). USENIX Security 2023 paper (University of Lausanne, University of Rennes), from the Lausanne group that also co-authored the advisor's work on fitness trackers. Added from the second search round of 23 October 2026.
+
+\cf{Design} More than 200 volunteers wore a Fitbit Inspire HR for four months; personality ground truth from the NEO-PI-3 questionnaire \pc{zufferey2023}{2}{We conduct an experiment with 200+ participants. The ground truth was established by using the NEO-PI-3 questionnaire}; step count, heart rate, battery level, activities and sleep time were collected \pc{zufferey2023}{2}{step count, heart rate, battery level, activities, sleep time, etc. were collected for four months}.
+
+\cf{Findings} The data carry information about three of the Big Five traits \pc{zufferey2023}{2}{WATs data brings valuable information to infer the openness, extraversion, and neuroticism personality traits}; step counts matter most for extraversion and neuroticism, heart rate for openness \pc{zufferey2023}{2}{step counts play a key role in the inference of extraversion and neuroticism, while openness is more related to heart rate}.
+
+\cf{Who could use it} The authors name advertisers, marketers, health insurers, employers and governments \pc{zufferey2023}{2}{third-party entities like adver- tisers, marketers, health insurers, employers, and governments might have an interest in learning sensitive information de- rived from the data collected by wearables}, and point to manipulation through targeted messages as the ethical concern \pc{zufferey2023}{3}{enables others to manipulate this individual more efficiently by sending them appropriate signals (e.g., targeted advertise- ments)}.
+
+\cf{Limits (card)} One device model, volunteers, moderate inference performance; shows feasibility, not that any provider does it.
+
+\cf{Use for this thesis} (1) Fitness harm tree: a published capability (personality inference from steps and heart rate) linking routine tracker data to manipulation and discrimination harms, with the adversaries named; supports the methodology's rule that inference capabilities are coded even when a feature description mentions them without risk. (2) Coding example for Axis A: a policy that names ``insights'' or ``personalised coaching'' derived from activity data mentions an inference capability. (3) Complements Velykoivanenko et al.\ (IMWUT 2021, not yet in the corpus), where users missed non-physiological inferences.
+\end{papercard}
