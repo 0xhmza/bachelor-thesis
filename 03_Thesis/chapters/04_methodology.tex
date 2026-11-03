@@ -17,11 +17,12 @@ This chapter describes how the study will be carried out. The study combines
 a structured content analysis~\parencite{krippendorff2019content} with an
 adapted cognitive walkthrough~\parencite{wharton1994cognitive}. The sample comprises 50
 apps: eligible apps from the German market of Google Play and the App Store,
-ranked together by a German-market popularity score based on ratings and reviews, and the health apps that
-come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
-with five of these apps will refine the instruments before the main study.
-For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
-pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done}
+ranked together by a German-market popularity score based on ratings and reviews, and the
+health apps that come preinstalled on the phones of the leading vendor of each platform in
+Germany. For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
+pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the app
+itself is inspected in a cognitive walkthrough. A pilot with five of these apps refines the
+instruments before the main study.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done}
 
 The study rests on a literature review (Section~\ref{sec:lit-review}). It is a scoping review
 that follows the staged procedure of Baumann et al.~\parencite{baumann2025llm} and is
@@ -37,9 +38,17 @@ full text, and the studies that remain are charted in a fixed table. The review 
 capabilities and harms from which the reference harm trees are built, and the evidence for the
 methodological decisions of this chapter.
 
+The chapter follows the order in which the study is built and then carried out.
+Section~\ref{sec:design} sets out the design, its scope and its ethical safeguards.
+Section~\ref{sec:lit-review} describes the literature review, and Section~\ref{sec:framework}
+the analytical framework derived from it: the harm concepts, a generic health-tracker model,
+the reference harm trees and the coding scheme. Section~\ref{sec:app-sampling} selects the apps
+and captures their materials. Section~\ref{sec:instruments} explains how the instruments are
+tested, frozen and validated, and Section~\ref{sec:analysis} how interface inspection,
+applicability assessment and coding answer the research questions.
 Figure~\ref{fig:pipeline} summarises the workflow.
 
-\section{Study Design}
+\section{Study Design and Ethics}
 \label{sec:design}
 The study asks which harms providers communicate. A harm can only be called
 missing if the app could cause it, so the study first fixes what is possible and
@@ -55,13 +64,8 @@ then reads what is said. It has three parts:
     coded and set against the applicable pathways. A language model proposes codes;
     people decide (Sections~\ref{sec:axes} and~\ref{sec:llm}).
 \end{enumerate}
-The coding is a directed content analysis: it starts from prior research, which
-supplies the initial codes, and adds what the text shows beyond
-them~\parencite{hsieh2005three,krippendorff2019content}. Comparing several surfaces
-of the same app follows Malki et al., who set store disclosures, policies and app
-interfaces against each other~\parencite[p.~4]{malki2024exploring}. Figure~\ref{fig:pipeline}
-shows the workflow, and Table~\ref{tab:rq-method} ties each research question to its
-material, method and precedent.
+Figure~\ref{fig:pipeline} shows how the three parts form one workflow: the framework is
+built once for all apps, and the steps that apply it are repeated for each app.
 
 \begin{figure}[H]
 \centering
@@ -101,6 +105,23 @@ the coding instruments.}
 \label{fig:pipeline}
 \end{figure}
 
+\subsection{Research Scope and Methodological Approach}
+\label{sec:scope}
+The study analyses what health-tracking apps communicate, not how they behave. Its objects
+are the apps of one domain, health trackers (Section~\ref{sec:app-search}), offered on the
+German market, together with their privacy policies, store listings and interfaces.
+Connected devices lie outside the scope: a wearable's companion app can enter the sample, but
+the device itself is not analysed. No user study is conducted. The interface is inspected by
+the analyst (Section~\ref{sec:walkthroughs}), and the study tests neither the apps' behaviour
+nor their security.
+
+The coding is a directed content analysis: it starts from prior research, which
+supplies the initial codes, and adds what the text shows beyond
+them~\parencite{hsieh2005three,krippendorff2019content}. Comparing several surfaces
+of the same app follows Malki et al., who set store disclosures, policies and app
+interfaces against each other~\parencite[p.~4]{malki2024exploring}. Table~\ref{tab:rq-method}
+ties each research question to what is measured, the material, the method and its precedent.
+
 \begin{table}[H]
 \centering
 \begin{singlespace}
@@ -114,7 +135,7 @@ measured, the material and the method, with the precedent for each method.}
 \midrule
 RQ1 & Applicable pathways, and how far up the tree the text goes for each
   & Policy, interface
-  & Applicability record; Axis~A; coverage level (Section~\ref{sec:apply})
+  & Applicability record; Axis~A; coverage level (Sections~\ref{sec:apply} and~\ref{sec:comparison})
   & \cite{knabenhans2026harms,de2016privacy,hsieh2005three,shipp2020period} \\
 \cmidrule[0.3pt]{2-5}
 RQ2 & Stance toward each named harm
@@ -141,7 +162,22 @@ All & Whether a language model can assist
 \end{singlespace}
 \end{table}
 
-\section{Literature Review}
+\subsection{Ethics and Feasibility}
+\label{sec:ethics}
+No human participants are involved: the material consists of public documents and the
+researcher's own use of publicly available apps. Store terms are checked before any automated
+retrieval, and any review requirements are confirmed before collection begins. Walkthroughs
+use throwaway study accounts and synthetic data only; no real name, address, health data or
+payment details are entered. Paid features, identity verification and paired devices are
+therefore not obtained for the study. Where they block a task or the whole inspection, the
+barrier is recorded, and the app stays in the document sample
+(Section~\ref{sec:walkthroughs}).
+
+The pilot's estimates fix a minimum feasible study (core documents, the blind validation set,
+the walkthroughs) before collection. If time runs short, supplementary marketing collection is
+reduced first, and other changes are agreed with the supervisor.
+
+\section{Literature Review Procedure}
 \label{sec:lit-review}
 The literature review has two tasks in this study. It collects the harms and
 capabilities from which the reference harm trees are built, and it supplies the
@@ -167,6 +203,8 @@ of Arksey and O'Malley~\parencite{arksey2005scoping}.
 % - arksey2005scoping, doi:10.1080/1364557032000119616: scoping review,
 %   stages 1--5.
 
+\subsection{Search Scope, Sources, and Strategy}
+\label{sec:lit-search}
 \paragraph{Review question.} The review asks one question, derived from the RQ \enquote{what harms service providers
 communicate}: \emph{What is known about the privacy harms and capabilities
 associated with health tracking apps, about how their privacy communication has
@@ -443,6 +481,8 @@ and screening as the search results.
 % - Seeds: config.json "citation_seeds" (DOIs 10.1145/3613904.3642521,
 %   10.1145/3706598.3714089, 10.1145/3613904.3642042, 10.1145/3645091).
 
+\subsection{Eligibility, Deduplication, and Screening}
+\label{sec:lit-screening}
 \paragraph{Deduplication.} The records of all sources are merged automatically
 by a script of this project. Two records are taken to be the same work when
 they share a DOI or an arXiv identifier, or when their normalised titles
@@ -540,7 +580,9 @@ R8 & On the full text, C1 or C4 does not hold & full text \\
 \end{singlespace}
 \end{table}
 
-\paragraph{Extraction and synthesis.} Each study that passes
+\subsection{Extraction and Synthesis}
+\label{sec:lit-synthesis}
+Each study that passes
 title-and-abstract screening receives one row in an extraction table. The row
 records the sub-question the study answers, assigned at screening, and three
 fields coded from its title, abstract and venue with fixed keyword lists: the
@@ -560,6 +602,9 @@ evidence map crosses the app domains with the materials studied and with the
 parts of the research question, which shows where evidence is concentrated and
 where it is missing; and the findings are summarised in prose for each
 sub-question.
+The capability table and the harms it records feed the analytical framework
+(Section~\ref{sec:framework}); the methodological precedents are cited where each decision of
+this chapter is stated.
 % Precedents:
 % - Charting the data and collating, summarising and reporting the results:
 %   arksey2005scoping, stages 4 and 5; tricco2018prisma (PRISMA-ScR) items 10
@@ -578,7 +623,510 @@ sub-question.
 %   01_Literature/Literature-Review/decisions/extraction-hand.csv; capability
 %   categories K1--K8 in config.json "extraction" > "capability".
 
-\section{App Sampling}
+\section{Analytical Framework}
+\label{sec:framework}
+A harm can only be called missing from an app's privacy communication if the app could cause
+it. The analytical framework therefore fixes, before any app is coded, what is possible and how
+it is recognised in text. It has four parts, built in sequence: the harm concepts and
+categories (Section~\ref{sec:harm-categories}); a generic health tracker that holds every
+function such an app can have (Section~\ref{sec:generic-model}); reference harm trees that
+trace how these functions can lead to harms (Section~\ref{sec:harm-trees}); and the coding
+scheme that ties each unit of text to the nodes of the trees (Section~\ref{sec:axes}). The same
+framework is applied to every app and to every communication surface.
+
+\subsection{Harm Concepts and Categories}
+\label{sec:harm-categories}
+The framework adopts the vocabulary of Knabenhans et al., who trace harms through three kinds
+of elements: system components, capabilities and
+harms~\parencite[\S4.1]{knabenhans2026harms}. This section defines capabilities, harms and the
+categories into which harms are sorted. Components, the leaves of the harm trees, are defined
+with the trees (Section~\ref{sec:harm-trees}).
+
+\paragraph{Capabilities.} System components, that is, the data a system leaks, the results of
+interacting with it and the requirements it imposes, combine to give someone a capability, or
+to take one away~\parencite[\S4.1]{knabenhans2026harms}. In a health tracker,
+an analytics partner may be able to profile users across apps, and a partner
+with access to the phone may be able to infer a pregnancy from the logged
+cycles. An incapability counts as well: a user who cannot use the cycle
+predictions without agreeing to data sharing has lost a choice. Each
+capability names the actor who holds it, because the same data leads to
+different harms in the hands of a partner, a provider, an attacker or an
+authority. De and Le Métayer make the same distinction with their risk
+sources, the entities whose actions lead to privacy
+harms~\parencite{de2016privacy}.
+
+\paragraph{Harms.} Capabilities, alone or together, can lead to harms. The
+study adopts the definition Knabenhans et al.\ take from the CyberPeace
+Institute: a harm is an \enquote{impairment or disruption of an entity's
+capacity or ability to function}, measured against the entity's usual
+context~\parencite[\S4.1]{knabenhans2026harms}. Knabenhans et al.\ take
+current practice in the EU as that context. Here, the usual context is the
+user's situation without the modelled pathway: the same person, using the same
+kind of app, without that flow of data or that requirement. Any negative
+impact counts, on the user, on a group of users or on society, whether
+physical, psychological, financial or affecting reputation, dignity, freedom,
+domestic life or another fundamental
+right~\parencite[\S4.1]{knabenhans2026harms}.
+
+\paragraph{Categories.} The starting categories are Knabenhans et al.'s physical, economic,
+psychological, autonomy/\allowbreak deprivation, discrimination, reputational
+and societal harms~\parencite[App.~A]{knabenhans2026harms}, drawn from Citron
+and Solove and the CyberPeace Institute. A relationship tag retains Citron and
+Solove's relationship harms~\parencite{citron2021harms}, which the list omits.
+New harms found in the pilot will be documented rather than forced into a
+category.
+
+\subsection{Generic Health-Tracker Reference Model}
+\label{sec:generic-model}
+The supervisor asked for a harm tree based on the \enquote{best app}. No criterion
+says which real app is best, and any real app lacks functions that others have. The
+study therefore builds the tree on a \emph{generic health tracker}: a model that holds
+every function a health tracker can have. A real app is a subset of it. If the model
+has a function that an app lacks, the pathways through that function do not apply to
+that app. The harms are thus judged against one model, and all 50 apps are treated
+alike.
+
+\paragraph{Precedents.} Knabenhans et al.\ model one functionality that covers many
+applications, and then show that harms can only be judged once concrete uses are
+known~\parencite[\S4]{knabenhans2026harms}. They reuse sub-trees across harms and across
+use cases~\parencite[\S4.2--4.3]{knabenhans2026harms}. De and Le Métayer separate a
+generic analysis, which yields generic harm trees from the system's specification,
+from its later refinement for a concrete
+system~\parencite{de2017refinement}.\todo{Only a summary of this paper's method was
+seen: the full text refused automated access. Read it and add section numbers, or drop
+this sentence.} In threat modelling, LINDDUN likewise first models a system as data
+flows, data stores, processes and external entities, and then asks what can go wrong at
+each~\parencite[Sec.~2]{deng2011privacy}; Iwaya et al.\ used its threat categories for
+mental health apps~\parencite[Sec.~2.3]{iwaya2023privacy}.
+
+\paragraph{Building the model.} The model is built in three steps. First, its
+\emph{functions} are listed: logging and sensing, deriving insights, accounts and
+server copies, analytics, advertising, processors, research sharing, commercial use,
+location, sharing with people and transfers abroad. Second, each function is drawn with
+its data stores and flows (Figure~\ref{fig:generic-app}). Third, the \emph{actors} who
+can reach each store or flow are added. A function enters the model if the review
+evidence (Section~\ref{sec:lit-review}) or another cited source documents it for health
+trackers. Every part of the model is written as a feature that can be checked on a real
+app, because this is what makes the model applicable. Connected devices are outside the
+scope set by the supervisor, so the model stops at the app and its data.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\footnotesize,
+  zone/.style={draw=#1,fill=#1!5,rounded corners=3pt,inner sep=5pt},
+  el/.style={draw=#1,line width=0.9pt,fill=white,rounded corners=2pt,align=center,
+             text width=25mm,minimum height=9mm,inner sep=2pt},
+  ext/.style={draw=originext,dashed,line width=0.8pt,fill=white,rounded corners=2pt,
+              align=center,text width=25mm,minimum height=9mm,inner sep=2pt},
+  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted},
+  lb/.style={font=\scriptsize\bfseries,text=muted}]
+  % Zones first, so that they lie behind the parts
+  \node[zone=black,minimum width=31mm,minimum height=50mm] (zp) at (-5.2,-0.65) {};
+  \node[lb,above] at (zp.north) {Phone};
+  \node[zone=primary,minimum width=31mm,minimum height=50mm] (zv) at (-0.9,-0.65) {};
+  \node[lb,above] at (zv.north) {Provider};
+  \node[zone=originimp,minimum width=31mm,minimum height=63mm] (zt) at (3.4,0) {};
+  \node[lb,above] at (zt.north) {Third parties (\oimp{IM10}: possibly abroad)};
+  \node[zone=originext,minimum width=31mm,minimum height=37mm] (zo) at (7.6,0) {};
+  \node[lb,above] at (zo.north) {Outside};
+  % Phone
+  \node[el=origincore] (log) at (-5.2,1.3) {Logging, sensing\\\ocore{CO1}};
+  \node[el=origincore] (der) at (-5.2,0) {Predictions, insights\\\ocore{CO2}};
+  \node[el=origincore] (hist) at (-5.2,-1.3) {Long history\\\ocore{CO3}};
+  \node[el=originctx] (phone) at (-5.2,-2.6) {Others can use the phone\\\octx{CX1}};
+  % Provider
+  \node[el=originimp] (acc) at (-0.9,1.3) {Account\\\oimp{IM1}};
+  \node[el=originimp] (cloud) at (-0.9,0) {Server copy\\\oimp{IM2}};
+  \node[el=originctx] (net) at (-0.9,-1.3) {Device, network data\\\octx{CX2}};
+  \node[el=originctx] (ids) at (-0.9,-2.6) {Identifiers\\\octx{CX3}};
+  % Third parties
+  \node[el=originimp] (ana) at (3.4,2.6) {Analytics, monitoring\\\oimp{IM3}};
+  \node[el=originimp] (ads) at (3.4,1.3) {Advertising, attribution\\\oimp{IM4}};
+  \node[el=originimp] (pro) at (3.4,0) {Processors\\\oimp{IM5}};
+  \node[el=originimp] (res) at (3.4,-1.3) {Research partners\\\oimp{IM6}};
+  \node[el=originimp] (com) at (3.4,-2.6) {Commercial use\\\oimp{IM7}};
+  % Actors outside
+  \node[ext] (att) at (7.6,1.3) {Attacker\\\oext{EX1}};
+  \node[ext] (aut) at (7.6,0) {Authority\\\oext{EX2}};
+  \node[ext] (ins) at (7.6,-1.3) {Insurer, employer\\\oext{EX3}};
+  % Other parts
+  \node[el=originimp] (loc) at (-5.2,-4.4) {Location, routes\\\oimp{IM8}};
+  \node[el=originimp] (sha) at (-0.9,-4.4) {Sharing with people\\\oimp{IM9}};
+  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}};
+  \draw[arr] (zp.east|-acc) -- (acc.west);
+  \draw[arr] (zp.east|-cloud) -- (cloud.west);
+  \draw[arr] (zp.east|-net) -- (net.west);
+  \draw[arr] (zp.east|-ids) -- (ids.west);
+  \draw[arr] (zv.east|-ads) -- (ads.west);
+  \draw[arr] (zv.east|-pro) -- (pro.west);
+  \draw[arr] (zv.east|-res) -- (res.west);
+  \draw[arr] (zv.east|-com) -- (com.west);
+  \draw[arr,dashed,draw=originext] (zt.east|-att) -- (att.west);
+  \draw[arr,dashed,draw=originext] (zt.east|-aut) -- (aut.west);
+  \draw[arr,dashed,draw=originext] (zt.east|-ins) -- (ins.west);
+  \draw[arr] (zp.south-|loc) -- (loc.north);
+  \draw[arr] (zv.south-|sha) -- (sha.north);
+  \draw[arr] (zt.south-|cons) -- (cons.north);
+\end{tikzpicture}}
+\caption[The generic health tracker]{The generic health tracker. Each box is a checkable
+part of the model with its component ID (Appendix~\ref{app:reference-model}). Border and
+ID: black, core functionality; blue, digital context; red, implementation choice; grey and
+dashed, an event outside the app. Arrows show where data can go.}
+\Description{Four zones from left to right. Phone: logging, predictions, long history, others
+can use the phone. Provider: account, server copy, device and network data, identifiers. Third
+parties: analytics, advertising, processors, research partners, commercial use, possibly abroad.
+Outside: attacker, authority, insurer or employer. Below: location and routes, sharing with
+people, and tied consent or no way out.}
+\label{fig:generic-app}
+\end{figure}
+
+\subsection{Reference Harm-Tree Construction}
+\label{sec:harm-trees}
+The reference harm trees fix which harms are possible for health trackers, and how, before any
+text is coded. They follow the method that Knabenhans et al.\ developed to trace the harms of
+the European Digital Identity
+Framework~\parencite[\S4.1]{knabenhans2026harms}. A harm tree shows how parts
+of a system combine into something that someone can do with it, and how that
+in turn leads to a harm. Harm trees were introduced by De and Le Métayer, who
+used them to link the weaknesses of smart-grid systems, the actors who exploit
+them and the events they cause to the resulting privacy
+harms~\parencite{de2016privacy}. Here the system is a health-tracking app
+together with its provider, its servers and the partners that receive its
+data. The trees are built once on the generic model
+(Section~\ref{sec:generic-model}) and then checked against each app
+(Section~\ref{sec:apply}).
+% De and Le Métayer: content checked in their talk slides (01_Literature/
+% Harm Tree sS3-P2-SouryaJoyeeDe.pdf, slides 7, 9, 11, 13, 14, 16, 17, 19) and their
+% poster abstract (IEEE S&P 2016); the paper itself is not yet in the corpus, so no
+% page numbers are given.
+%
+% ---------------------------------------------------------------------------
+% HANDOUT: HARM TREES, ON ONE PAGE (for the author; not printed)
+% ---------------------------------------------------------------------------
+% WHERE THE IDEA COMES FROM
+%   Knabenhans et al. 2026, s4.1 (PDF pp. 6-7), say their method is "based on harm
+%   trees [16, 17]". Both are by De and Le Metayer:
+%     [16] Privacy Harm Analysis: A Case Study on Smart Grids (IEEE SPW 2016).
+%     [17] A Refinement Approach for the Reuse of Privacy Risk Analysis Results
+%          (APF 2017). Not read yet: the full text refused automated access.
+%   De and Le Metayer: root = harm; below it feared events; leaves = privacy
+%   weaknesses exploited by risk sources. They compute likelihoods over the tree.
+%   Harm definition and categories come from elsewhere: CyberPeace Institute and
+%   Citron and Solove.
+%
+% WHAT KNABENHANS ET AL. DO, STEP BY STEP
+%   0. Take concrete use cases: harms cannot be judged from the abstract system.
+%   1. List the harms: from the literature on the use case, plus Citron and Solove
+%      and CyberPeace. The baseline ("usual context") is current EU practice.
+%   2. Name three kinds of elements:
+%        system components = leaked information, results of interaction, requirements
+%        capabilities      = what components enable, or prevent (incapabilities)
+%        harms             = impairment against the usual context
+%   3. Pathway to harm = components -> capability -> harm.
+%   4. Combine all pathways to one harm into a tree of three levels:
+%        harm (top), capabilities (middle), components (leaves).
+%        AND = all needed; OR = any one; OR+ = more than one may be needed.
+%   5. Colour each component by origin: black core, blue digital context, red
+%      implementation. PETs can at most remove the red ones (s4.5).
+%   6. Reuse: common sub-trees (Fig. 5); trees apply verbatim to other use cases (s4.3).
+%   7. No claim of completeness: more pathways only add evidence (s4.1).
+%
+% WHAT THIS THESIS DOES THE SAME WAY
+%   Same three levels, same operators, same three origins, same harm definition, same
+%   reuse of sub-trees, same refusal to claim completeness.
+%
+% WHAT THIS THESIS CHANGES, AND WHY
+%   - Use case -> one generic health tracker; a real app is a subset (D12).
+%   - Formal model -> literature. So origins are argued, not derived.
+%   - Baseline: EU practice -> the user without the modelled pathway.
+%   - Grey dashed leaves: events outside the app (attacker, authority, insurer).
+%   - Every pathway says "documented" or "argued", with its source.
+%   - Three states per node: present, absent, uncertain. A script evaluates the trees.
+%   - No likelihoods: which harms are possible, not how probable.
+%   - Measures are judged per claim (does it remove a necessary condition?), not by
+%     the blanket rule "PETs only remove red", since an app lock can cut an access
+%     condition even though the data is core.
+%
+% HOW IT TIES TO THE RQs
+%   RQ1: applicable pathway + no mention  = the gap.    How high up the tree does the text go?
+%   RQ2: stance is attached to a named harm from a tree category.
+%   RQ3: protection claim -> remove the component -> does the pathway stay open?
+%   RQ4: same nodes, compared across policy and interface.
+%
+% FILES
+%   04_Study/Reference-Model/reference_model_v1.yaml     the trees
+%   scripts/instrument-test/v001/evaluate.py             the evaluation, with tests
+%   Decisions: D12 (generic model), D16 (instrument test)
+% ---------------------------------------------------------------------------
+
+\paragraph{Tree elements.} A tree combines the three kinds of elements of
+Section~\ref{sec:harm-categories}: system components, capabilities and harms
+(Figure~\ref{fig:harm-tree})~\parencite[\S4.1, Fig.~4]{knabenhans2026harms}.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\footnotesize,
+  harm/.style={draw=primary,fill=primary,text=white,rounded corners=2pt,align=center,
+               text width=64mm,minimum height=10mm,inner sep=3pt},
+  capab/.style={draw=muted,fill=muted!8,rounded corners=2pt,align=center,
+              text width=46mm,minimum height=11mm,inner sep=3pt},
+  comp/.style={draw=#1,line width=1.2pt,fill=white,rounded corners=2pt,align=center,
+               text width=30mm,minimum height=12mm,inner sep=3pt},
+  op/.style={font=\scriptsize\bfseries,fill=white,inner sep=1.5pt},
+  edge/.style={semithick,draw=muted}]
+  \node[harm] (h) at (0,3.7) {\textbf{Harm:} distress after an unwanted
+    disclosure (psychological)};
+  \node[capab] (k1) at (-3.6,1.85) {\textbf{Capability:} a partner infers a
+    possible pregnancy};
+  \node[capab] (k2) at (3.6,1.85) {\textbf{Capability:} an attacker reads the
+    cycle history};
+  \node[comp=black] (c1) at (-5.4,0) {Logged cycles\\(core)};
+  \node[comp=linkblue] (c2) at (-1.8,0) {Another person opens the unlocked
+    phone (context)};
+  \node[comp=red!65!black] (c3) at (1.8,0) {Cloud backup copy\\(implementation)};
+  \node[comp=muted,dashed] (c4) at (5.4,0) {An attacker gains access\\(outside
+    the app)};
+  \draw[edge] (c1.north) -- (k1.south);
+  \draw[edge] (c2.north) -- (k1.south);
+  \draw[edge] (c3.north) -- (k2.south);
+  \draw[edge] (c4.north) -- (k2.south);
+  \draw[edge] (k1.north) -- (h.south);
+  \draw[edge] (k2.north) -- (h.south);
+  \node[op] at (-3.6,0.95) {AND};
+  \node[op] at (3.6,0.95) {AND};
+  \node[op] at (0,2.8) {OR};
+\end{tikzpicture}}
+\caption[A harm tree for one harm of a health tracker]{A harm tree for one
+harm of the constructed period tracker of Appendix~\ref{app:worked-example},
+in the notation of Knabenhans et al.\ (their Fig.~4). Read from the bottom:
+the components combine into capabilities, and either capability can lead to
+the harm. Border of a component: black, core functionality; blue, digital
+context; red, implementation choice; grey and dashed, an event outside the
+app.}
+\Description{A three-level tree. Logged cycles (core) and another person
+opening the unlocked phone (context) together let a partner infer a possible
+pregnancy. A cloud backup copy (implementation) and an attacker gaining access
+together let an attacker read the cycle history. Either capability can lead to
+distress after an unwanted disclosure, a psychological harm.}
+\label{fig:harm-tree}
+\end{figure}
+
+\paragraph{System components.} Knabenhans et al.\ define system components as
+the information that the use of a system leaks, the results of an entity's
+interaction with it, and the requirements it imposes on the
+entities~\parencite[\S4.1]{knabenhans2026harms}. For an app, these are three
+things: the data the app collects, derives or sends, such as logged cycle
+dates or a device identifier passed to an analytics partner; what the user and
+others do with the app, such as switching on a cloud backup or opening an
+unlocked phone; and what the app requires, such as an account, or consent to
+data sharing before a feature can be used. In the study, components are taken
+from prior research and confirmed for each app from its store listing, its
+policy or the walkthrough.
+
+\paragraph{Constructing trees.} When components enable a capability that
+results in a harm, they form a \emph{pathway to harm}. All pathways to the
+same harm are combined into one harm tree with three
+levels~\parencite[\S4.1]{knabenhans2026harms}: the harm at the top, the
+capabilities that enable it in the middle, and the components that enable
+each capability at the leaves. Operators state how the elements combine.
+AND means that every component is needed, as in the left branch of
+Figure~\ref{fig:harm-tree}: the cycles must be logged and another person must
+reach the unlocked phone. OR means that any one branch is enough: either
+capability leads to the harm. OR+ means that one or several components may be
+needed together, without a fixed combination~\parencite[\S4.1]{knabenhans2026harms}.
+Because the operators make every required condition explicit, a tree also
+shows how a pathway can be cut: a measure blocks it only if it removes one of
+its necessary conditions. De and Le Métayer use the same operators to compute
+how likely each harm is~\parencite{de2016privacy}. The trees in this study are
+not used for that: they record which harms are possible, not how probable they
+are.
+
+\paragraph{Harm origins.} Each component is marked with its origin, the root
+cause of the pathways it belongs
+to~\parencite[\S4.1]{knabenhans2026harms}. A component belongs to the
+\emph{core functionality} when the app cannot do its job without it, such as
+the logged cycle dates of a period tracker. It comes from the \emph{digital
+context} when it follows from running on a phone and a network or from the
+setting of use, such as a device identifier or another person with access to
+the phone. It is an \emph{implementation choice} when the provider decided it
+and could decide otherwise, such as a cloud backup, an analytics library, or
+predictions offered only in exchange for data sharing. The origin shows who
+can cut a pathway: a provider can change its own choices, but cannot remove
+core components without giving up the function. This is what the study needs
+when it compares a provider's protection claims with the pathways they are
+meant to block (Section~\ref{sec:axes}). The origins are argued from the
+literature, not proven.
+
+\paragraph{Sources of the trees.} The trees are built from prior research on
+health trackers: a survey of tracker inferences, threats and
+vulnerabilities~\parencite{niksirat2024wearable}, users' harm
+scenarios~\parencite{gabriele2020understanding}, analyses of policies, data
+flows and interfaces
+\parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
+user concerns~\parencite{cao2024deleted}, together with the capabilities that
+the literature review collects (Section~\ref{sec:lit-review}). Sources found in
+the logged search are added with a recorded reason. Each pathway names the
+data, the actor, the access conditions, the capability and the possible
+consequence. A prediction made for the user does not by itself establish
+access by a third party (Appendix~\ref{app:example}).
+
+\paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets each step of
+Knabenhans et al.\ next to what this study does. Three rules keep the steps honest.
+Each pathway records its source and whether that source states the link
+(\emph{documented}) or the study argues it (\emph{argued}). Trees are stored in a
+machine-readable file, and a tested script checks that every node they use exists.
+Like Knabenhans et al., the study does not claim to be complete: another pathway only
+adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[From the method of Knabenhans et al.\ to this study]{From the method of
+Knabenhans et al.~\parencite[\S4.1--4.3]{knabenhans2026harms} to this study.}
+\label{tab:tree-steps}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Step} & \textbf{Knabenhans et al.} & \textbf{This study} \\
+\midrule
+System & Concrete use cases of one functionality
+  & The generic health tracker (Section~\ref{sec:generic-model}) \\
+\cmidrule[0.3pt]{2-3}
+Harms & From the literature on the use case, plus Citron and Solove and the CyberPeace Institute
+  & Same categories (Section~\ref{sec:harm-categories}), filled with harms named for health trackers \\
+\cmidrule[0.3pt]{2-3}
+Capabilities & Found while analysing the use cases
+  & The capability table of the review (K1--K8), plus those the method and other sources add \\
+\cmidrule[0.3pt]{2-3}
+Components & Leakage, interaction results, requirements
+  & The same, written as features that can be checked on an app \\
+\cmidrule[0.3pt]{2-3}
+Trees & Three levels; AND, OR, OR+
+  & The same \\
+\cmidrule[0.3pt]{2-3}
+Origins & Black, blue, red; derived from a formal model
+  & The same colours, argued from the literature; grey for events outside the app \\
+\cmidrule[0.3pt]{2-3}
+Reuse & Common sub-trees; trees applying verbatim to other use cases
+  & A capability is defined once and used by every harm it leads to \\
+\cmidrule[0.3pt]{2-3}
+Baseline & Current practice in the EU
+  & The user without the modelled pathway \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Capabilities outside the review's table.} The review's table covers what
+studies of health trackers document. Three kinds of capabilities are added. A person
+close to the user who reads the entries comes from studies of intimate-partner abuse
+and of what users hide from family and
+partners~\parencite[p.~14]{niksirat2024wearable}\parencite[p.~3]{hudig2025intimate}.
+Sorting users into classes comes from the distinguishing capability of Knabenhans et
+al.~\parencite[\S5.1]{knabenhans2026harms}. Incapabilities (no function without
+agreement, no way to delete or take out data, no way to stop a flow) come from their
+definition of capabilities~\parencite[\S4.1]{knabenhans2026harms} and from the deletion,
+export and control problems that Malki et al.\ found~\parencite[pp.~10--12]{malki2024exploring}.
+Reading keystrokes from smartwatch motion sensors stays out, because it needs an analysis
+of the connected device. The complete model is in Appendix~\ref{app:reference-model}.
+
+\subsection{Coding Units and Axes}
+\label{sec:axes}
+To code a text is to attach labels that record what it says. A unit is one paragraph of a
+policy or one coherent block of interface text, fixed by a script before coding
+(Section~\ref{sec:two-coders}). Adjacent text is available for context, but supporting
+quotations must be identified precisely. The codebook defines each label with a fitting
+example and a counter-example. Table~\ref{tab:axes} summarises the three axes, and
+Appendix~\ref{app:example} shows the procedure on a constructed example.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
+Several labels may apply to one unit.}
+\label{tab:axes}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.8cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
+\midrule
+A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
+  & \enquote{We store your cycle dates.} \\
+\rowrule
+ & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
+  & \enquote{We estimate your fertile window.} \\
+\rowrule
+ & Concrete harm & A named negative consequence and its category
+  & \enquote{Disclosure could cause distress.} \\
+\rowrule
+ & Generic risk & Possible misuse without a concrete consequence
+  & \enquote{Your data could be used against you.} \\
+\rowrule
+ & No relevant content & None of the coverage labels applies
+  & A contact address alone \\
+\rowrule
+ & Additional details & Breach consequences, incident response and relationship impacts
+  & Code concrete response steps separately from a general legal-notice promise \\
+\midrule
+B: Stance & Acknowledged & A named harm presented as possible
+  & \enquote{A disclosure could cause distress.} \\
+\rowrule
+ & Qualified & Uncertainty or likelihood language, with its target recorded
+  & \enquote{A leak is unlikely, but could cause distress.} \\
+\rowrule
+ & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
+  & \enquote{Such distress is no cause for concern.} \\
+\rowrule
+ & Responsibility shifted & Responsibility for a named harm placed on the user
+  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
+\rowrule
+ & Denied/prevented & A named harm presented as impossible or prevented
+  & \enquote{This makes harassment impossible.} \\
+\midrule
+C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
+  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
+\rowrule
+ & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
+  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
+\rowrule
+ & Reassurance & Broad safety language without a specific measure
+  & \enquote{Your data is safe with us.} \\
+\rowrule
+ & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
+  & A residual risk outside the claim's scope is not sufficient \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Axis A: Coverage.} All explicitly mentioned nodes are recorded, including whether
+each is asserted, presented as possible or denied. The highest level reached is kept as a
+separate summary, so that a harm mention does not erase accompanying data-flow information.
+Feature descriptions can mention inference without presenting it as a risk.
+
+\paragraph{Axis B: Stance.} Stance labels are linked to the particular harm and its
+supporting span, not assigned to the paragraph as a whole. A statement may acknowledge a harm
+and qualify its likelihood, and the coder distinguishes uncertainty about a breach from
+uncertainty about its consequences. Minimisation is judged from wording in the unit or
+adjacent text, never from inferred intent; qualification alone does not establish it. RQ2
+thus covers stance toward named harms; dismissive language without a named harm is coded as
+reassurance. These distinctions adapt Zou et al.~\parencite{zou2019might} and are refined in
+the pilot.
+
+\paragraph{Axis C: Protection.} The coder records the measure and its claimed benefit, with
+actor, data and conditions where specified. Any technical measure claimed to limit exposure or
+misuse counts, whether or not it is labelled a privacy-enhancing technology, including ordinary
+security controls; non-technical commitments are kept separate. A \emph{potential mismatch}
+requires a pathway within the claim's scope and an explanation of why the measure misses one of
+its necessary conditions; partial protection is not rejected merely because other risks remain.
+Vague scope is recorded as unclear, and no deployed system is judged safe or unsafe.
+
+\section{App Sampling and Material Collection}
 \label{sec:app-sampling}
 The target sample consists of 50 apps. Previous studies that examined both
 app documents and the apps themselves used samples of 20 to 64 apps:
@@ -589,13 +1137,18 @@ Hutton et al.\ evaluated 64~\parencite{hutton2018assessing}.
 The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
 by major device manufacturers; \textcolor{accent}{(ii)} apps listed on
 Google Play; and \textcolor{accent}{(iii)} apps listed on the Apple App Store.
-Preinstalled apps are selected based on the popularity of each manufacturer's
-devices. The remaining places are filled with apps from Google Play and the
-Apple App Store using defined collection and ranking rules. No quotas are set for the three source groups \textcolor{accent}{(i)}-\textcolor{accent}{(iii)}. The search frame and eligibility rules were
-recorded before collection. The resulting sample composition is reported
-in Section~\ref{sec:results-sample}.
+Preinstalled apps are selected by the popularity of each manufacturer's devices; the
+remaining places are filled from Google Play and the Apple App Store under defined collection
+and ranking rules. No quotas are set for the three groups
+\textcolor{accent}{(i)}--\textcolor{accent}{(iii)}. The search frame and eligibility rules
+were recorded before collection, and the resulting composition is reported in
+Section~\ref{sec:results-sample}. Section~\ref{sec:app-search} defines the search and
+eligibility, Section~\ref{sec:ranking} the ranking and selection, and
+Section~\ref{sec:material} the capture of each app's materials.
 \todo[inline, color=green]{done}
 
+\subsection{App Search and Eligibility}
+\label{sec:app-search}
 \paragraph{Domain.} The study concerns health trackers overall. Its operational
 scope and search vocabulary draw on two published app studies. Hutton et
 al.~\parencite{hutton2018assessing} derived their search categories from the
@@ -737,6 +1290,8 @@ without one stays in the sample, and the absence is reported. In-app purchases
 and subscriptions are recorded but do not exclude an app. Screening follows the
 rank order, and each decision is logged with its reason.
 
+\subsection{Ranking and Selection}
+\label{sec:ranking}
 \paragraph{Same app in both stores.} An app listed in both stores is one
 candidate, so its two listings have to be found. Names are not enough for this:
 one developer can offer several similar products, and one product can carry
@@ -847,12 +1402,11 @@ Search result order & Endpoint order per storefront; not verified as the
 \end{singlespace}
 \end{table}
 
-Thus, a listing supplies one of the two inputs. The unit being ranked is the
-\emph{app}, the same app could be present in both stores, or just in one of both. The scoring formula changes accordingly.
- however: its listings are matched across stores before scoring.
-An app found only in Google Play has an observed $v_i$ contribution; one found
-only in the App Store has an observed $r_i$ contribution. A matched app found
-in both stores has both.
+A listing thus supplies one of the two inputs. The unit being ranked, however, is the
+\emph{app}, which may be listed in one store or in both; its listings are therefore matched
+across stores before scoring. An app found only on Google Play has an observed $v_i$
+contribution, one found only in the App Store an observed $r_i$ contribution, and a matched
+app found in both stores has both.
 
 A rating and a written review are different feedback actions. They cannot be
 treated as interchangeable counts without a conversion. Google Play reviews
@@ -899,7 +1453,7 @@ All candidates are ranked by descending $P_i$, with ties broken by the stable
 
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
-trial collection on 22 October 2026\footnote{Collected with the same collection scripts as in Section~\ref{sec:app-sampling} (Search).}, one developer held 10 of the 47 most-rated
+trial collection on 22 October 2026\footnote{Collected with the same collection scripts as in Section~\ref{sec:app-search}.}, one developer held 10 of the 47 most-rated
 Google Play apps under a single privacy policy (Table~\ref{tab:developer-pilot});
 RQ1--RQ3 concern what providers
 communicate, so further apps of one provider add little new communication and
@@ -985,7 +1539,7 @@ the sample with a different app or a different listing.
 %fields behave and does not enter the sample. The two stores therefore count
 %ratings on different bases.
 
-\section{Material and Language}
+\subsection{Materials, Capture, and Language}
 \todo[color=orange]{
 Privacy Policy \\
 Application's interface -> Cognitive 
@@ -1032,409 +1586,132 @@ reported~\parencite{sunyaev2015availability,robillard2019availability}. A docume
 shared by several apps is coded once and linked to each. A supplement for another
 region is recorded but not coded, because the study concerns the German market.
 
+\paragraph{Interface text and listings.} Interface text is captured during the walkthrough
+(Section~\ref{sec:walkthroughs}). Each transcript is checked against its screen and linked to
+the app version, capture date, language, screen identifier and recording timestamp. A current
+store listing captured in a session is dated evidence; it does not replace the frozen listing
+or change sample membership.
+
 \paragraph{Language.} English text is primary for every source, including the
 interface. German is used when no English version exists. Where both exist, both are
 captured and their differences logged. Language is recorded per source, and the
 original wording is coded. Search keywords and storefronts are not affected by this
 rule (Section~\ref{sec:app-sampling}).
 
-\section{Reference Model: A Generic Health Tracker}
-\label{sec:generic-model}
-The supervisor asked for a harm tree based on the \enquote{best app}. No criterion
-says which real app is best, and any real app lacks functions that others have. The
-study therefore builds the tree on a \emph{generic health tracker}: a model that holds
-every function a health tracker can have. A real app is a subset of it. If the model
-has a function that an app lacks, the pathways through that function do not apply to
-that app. The harms are thus judged against one model, and all 50 apps are treated
-alike.
+\section{Instrument Development and Validation}
+\label{sec:instruments}
+The instruments (the reference model and trees, the codebook, the walkthrough protocol and the
+prompts) are developed in two rounds before the main study and then checked independently of
+their development. A preliminary test on one app shows whether the steps connect
+(Section~\ref{sec:instrument-test}). A pilot on five apps tests them in practice and ends with
+their freeze (Section~\ref{sec:pilot}). A second human coder (Section~\ref{sec:two-coders})
+and a withheld validation set (Section~\ref{sec:validation}) then assess the frozen procedure.
 
-\paragraph{Precedents.} Knabenhans et al.\ model one functionality that covers many
-applications, and then show that harms can only be judged once concrete uses are
-known~\parencite[\S4]{knabenhans2026harms}. They reuse sub-trees across harms and across
-use cases~\parencite[\S4.2--4.3]{knabenhans2026harms}. De and Le Métayer separate a
-generic analysis, which yields generic harm trees from the system's specification,
-from its later refinement for a concrete
-system~\parencite{de2017refinement}.\todo{Only a summary of this paper's method was
-seen: the full text refused automated access. Read it and add section numbers, or drop
-this sentence.} In threat modelling, LINDDUN likewise first models a system as data
-flows, data stores, processes and external entities, and then asks what can go wrong at
-each~\parencite[Sec.~2]{deng2011privacy}; Iwaya et al.\ used its threat categories for
-mental health apps~\parencite[Sec.~2.3]{iwaya2023privacy}.
+\subsection{Preliminary Instrument Test}
+\label{sec:instrument-test}
+Before the pilot, the whole procedure is run once on one app. The test asks one thing: do
+the steps connect, from the generic model through the trees to a conclusion about one app?
+It gives no estimate for the sample, and it does not validate the model. It follows the
+advice to try a coding procedure on a small set of texts before the
+instruments are fixed~\parencite{tornberg2024best}, as Malki et al.\ did with a first set of
+policies~\parencite[p.~4]{malki2024exploring}.
 
-\paragraph{Building the model.} The model is built in three steps. First, its
-\emph{functions} are listed: logging and sensing, deriving insights, accounts and
-server copies, analytics, advertising, processors, research sharing, commercial use,
-location, sharing with people and transfers abroad. Second, each function is drawn with
-its data stores and flows (Figure~\ref{fig:generic-app}). Third, the \emph{actors} who
-can reach each store or flow are added. A function enters the model if the review
-evidence (Section~\ref{sec:lit-review}) or another cited source documents it for health
-trackers. Every part of the model is written as a feature that can be checked on a real
-app, because this is what makes the model applicable. Connected devices are outside the
-scope set by the supervisor, so the model stops at the app and its data.
+\paragraph{Test case.} The test app is chosen on purpose from the sample, not at random, for
+how much of the instrument it exercises: sensitive data, many pathways, and a long policy in
+English from a provider in Germany. It stays in the sample and is recoded with the frozen
+instruments, and like the pilot apps it does not enter the validation set.
 
-\begin{figure}[H]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[
-  font=\footnotesize,
-  zone/.style={draw=#1,fill=#1!5,rounded corners=3pt,inner sep=5pt},
-  el/.style={draw=#1,line width=0.9pt,fill=white,rounded corners=2pt,align=center,
-             text width=25mm,minimum height=9mm,inner sep=2pt},
-  ext/.style={draw=originext,dashed,line width=0.8pt,fill=white,rounded corners=2pt,
-              align=center,text width=25mm,minimum height=9mm,inner sep=2pt},
-  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted},
-  lb/.style={font=\scriptsize\bfseries,text=muted}]
-  % Zones first, so that they lie behind the parts
-  \node[zone=black,minimum width=31mm,minimum height=50mm] (zp) at (-5.2,-0.65) {};
-  \node[lb,above] at (zp.north) {Phone};
-  \node[zone=primary,minimum width=31mm,minimum height=50mm] (zv) at (-0.9,-0.65) {};
-  \node[lb,above] at (zv.north) {Provider};
-  \node[zone=originimp,minimum width=31mm,minimum height=63mm] (zt) at (3.4,0) {};
-  \node[lb,above] at (zt.north) {Third parties (\oimp{IM10}: possibly abroad)};
-  \node[zone=originext,minimum width=31mm,minimum height=37mm] (zo) at (7.6,0) {};
-  \node[lb,above] at (zo.north) {Outside};
-  % Phone
-  \node[el=origincore] (log) at (-5.2,1.3) {Logging, sensing\\\ocore{CO1}};
-  \node[el=origincore] (der) at (-5.2,0) {Predictions, insights\\\ocore{CO2}};
-  \node[el=origincore] (hist) at (-5.2,-1.3) {Long history\\\ocore{CO3}};
-  \node[el=originctx] (phone) at (-5.2,-2.6) {Others can use the phone\\\octx{CX1}};
-  % Provider
-  \node[el=originimp] (acc) at (-0.9,1.3) {Account\\\oimp{IM1}};
-  \node[el=originimp] (cloud) at (-0.9,0) {Server copy\\\oimp{IM2}};
-  \node[el=originctx] (net) at (-0.9,-1.3) {Device, network data\\\octx{CX2}};
-  \node[el=originctx] (ids) at (-0.9,-2.6) {Identifiers\\\octx{CX3}};
-  % Third parties
-  \node[el=originimp] (ana) at (3.4,2.6) {Analytics, monitoring\\\oimp{IM3}};
-  \node[el=originimp] (ads) at (3.4,1.3) {Advertising, attribution\\\oimp{IM4}};
-  \node[el=originimp] (pro) at (3.4,0) {Processors\\\oimp{IM5}};
-  \node[el=originimp] (res) at (3.4,-1.3) {Research partners\\\oimp{IM6}};
-  \node[el=originimp] (com) at (3.4,-2.6) {Commercial use\\\oimp{IM7}};
-  % Actors outside
-  \node[ext] (att) at (7.6,1.3) {Attacker\\\oext{EX1}};
-  \node[ext] (aut) at (7.6,0) {Authority\\\oext{EX2}};
-  \node[ext] (ins) at (7.6,-1.3) {Insurer, employer\\\oext{EX3}};
-  % Other parts
-  \node[el=originimp] (loc) at (-5.2,-4.4) {Location, routes\\\oimp{IM8}};
-  \node[el=originimp] (sha) at (-0.9,-4.4) {Sharing with people\\\oimp{IM9}};
-  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}};
-  \draw[arr] (zp.east|-acc) -- (acc.west);
-  \draw[arr] (zp.east|-cloud) -- (cloud.west);
-  \draw[arr] (zp.east|-net) -- (net.west);
-  \draw[arr] (zp.east|-ids) -- (ids.west);
-  \draw[arr] (zv.east|-ads) -- (ads.west);
-  \draw[arr] (zv.east|-pro) -- (pro.west);
-  \draw[arr] (zv.east|-res) -- (res.west);
-  \draw[arr] (zv.east|-com) -- (com.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-att) -- (att.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-aut) -- (aut.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-ins) -- (ins.west);
-  \draw[arr] (zp.south-|loc) -- (loc.north);
-  \draw[arr] (zv.south-|sha) -- (sha.north);
-  \draw[arr] (zt.south-|cons) -- (cons.north);
-\end{tikzpicture}}
-\caption[The generic health tracker]{The generic health tracker. Each box is a checkable
-part of the model with its component ID (Appendix~\ref{app:reference-model}). Border and
-ID: black, core functionality; blue, digital context; red, implementation choice; grey and
-dashed, an event outside the app. Arrows show where data can go.}
-\Description{Four zones from left to right. Phone: logging, predictions, long history, others
-can use the phone. Provider: account, server copy, device and network data, identifiers. Third
-parties: analytics, advertising, processors, research partners, commercial use, possibly abroad.
-Outside: attacker, authority, insurer or employer. Below: location and routes, sharing with
-people, and tied consent or no way out.}
-\label{fig:generic-app}
-\end{figure}
+\paragraph{What is real and what is not.} The policy is real and archived with its hash.
+The reference model, the evaluation and the model's output are real. Two inputs are not final:
+\begin{itemize}[itemsep=1pt,topsep=3pt]
+  \item The walkthrough record is \textbf{invented for this test} \synthtag. Nobody opened the
+    app. Its only purpose is to run the walkthrough's outputs through the procedure. Every
+    result that rests on it carries the same tag, and none is a finding about the real app.
+  \item The manual coding and the applicability record were \textbf{prepared by an AI assistant}
+    as stand-ins, before any model output existed. The author has to check or redo them.
+    Comparing them with the model exercises the script. It is not validation, since both come
+    from one vendor.
+\end{itemize}
+The test is evaluated twice, on the policy alone and with the invented walkthrough, to show what
+a walkthrough adds.
+% Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
 
-\section{Reference Harm Trees}
-\label{sec:harm-trees}
-A harm can only be called missing from an app's privacy communication if the
-app could cause it. Before any text is coded, the study therefore fixes which
-harms are possible for health trackers, and how. It does so with harm trees,
-following the method that Knabenhans et al.\ developed to trace the harms of
-the European Digital Identity
-Framework~\parencite[\S4.1]{knabenhans2026harms}. A harm tree shows how parts
-of a system combine into something that someone can do with it, and how that
-in turn leads to a harm. Harm trees were introduced by De and Le Métayer, who
-used them to link the weaknesses of smart-grid systems, the actors who exploit
-them and the events they cause to the resulting privacy
-harms~\parencite{de2016privacy}. Here the system is a health-tracking app
-together with its provider, its servers and the partners that receive its
-data. The trees are built once on the generic model
-(Section~\ref{sec:generic-model}) and then checked against each app
-(Section~\ref{sec:apply}).
-% De and Le Métayer: content checked in their talk slides (01_Literature/
-% Harm Tree sS3-P2-SouryaJoyeeDe.pdf, slides 7, 9, 11, 13, 14, 16, 17, 19) and their
-% poster abstract (IEEE S&P 2016); the paper itself is not yet in the corpus, so no
-% page numbers are given.
-%
-% ---------------------------------------------------------------------------
-% HANDOUT: HARM TREES, ON ONE PAGE (for the author; not printed)
-% ---------------------------------------------------------------------------
-% WHERE THE IDEA COMES FROM
-%   Knabenhans et al. 2026, s4.1 (PDF pp. 6-7), say their method is "based on harm
-%   trees [16, 17]". Both are by De and Le Metayer:
-%     [16] Privacy Harm Analysis: A Case Study on Smart Grids (IEEE SPW 2016).
-%     [17] A Refinement Approach for the Reuse of Privacy Risk Analysis Results
-%          (APF 2017). Not read yet: the full text refused automated access.
-%   De and Le Metayer: root = harm; below it feared events; leaves = privacy
-%   weaknesses exploited by risk sources. They compute likelihoods over the tree.
-%   Harm definition and categories come from elsewhere: CyberPeace Institute and
-%   Citron and Solove.
-%
-% WHAT KNABENHANS ET AL. DO, STEP BY STEP
-%   0. Take concrete use cases: harms cannot be judged from the abstract system.
-%   1. List the harms: from the literature on the use case, plus Citron and Solove
-%      and CyberPeace. The baseline ("usual context") is current EU practice.
-%   2. Name three kinds of elements:
-%        system components = leaked information, results of interaction, requirements
-%        capabilities      = what components enable, or prevent (incapabilities)
-%        harms             = impairment against the usual context
-%   3. Pathway to harm = components -> capability -> harm.
-%   4. Combine all pathways to one harm into a tree of three levels:
-%        harm (top), capabilities (middle), components (leaves).
-%        AND = all needed; OR = any one; OR+ = more than one may be needed.
-%   5. Colour each component by origin: black core, blue digital context, red
-%      implementation. PETs can at most remove the red ones (s4.5).
-%   6. Reuse: common sub-trees (Fig. 5); trees apply verbatim to other use cases (s4.3).
-%   7. No claim of completeness: more pathways only add evidence (s4.1).
-%
-% WHAT THIS THESIS DOES THE SAME WAY
-%   Same three levels, same operators, same three origins, same harm definition, same
-%   reuse of sub-trees, same refusal to claim completeness.
-%
-% WHAT THIS THESIS CHANGES, AND WHY
-%   - Use case -> one generic health tracker; a real app is a subset (D12).
-%   - Formal model -> literature. So origins are argued, not derived.
-%   - Baseline: EU practice -> the user without the modelled pathway.
-%   - Grey dashed leaves: events outside the app (attacker, authority, insurer).
-%   - Every pathway says "documented" or "argued", with its source.
-%   - Three states per node: present, absent, uncertain. A script evaluates the trees.
-%   - No likelihoods: which harms are possible, not how probable.
-%   - Measures are judged per claim (does it remove a necessary condition?), not by
-%     the blanket rule "PETs only remove red", since an app lock can cut an access
-%     condition even though the data is core.
-%
-% HOW IT TIES TO THE RQs
-%   RQ1: applicable pathway + no mention  = the gap.    How high up the tree does the text go?
-%   RQ2: stance is attached to a named harm from a tree category.
-%   RQ3: protection claim -> remove the component -> does the pathway stay open?
-%   RQ4: same nodes, compared across policy and interface.
-%
-% FILES
-%   04_Study/Reference-Model/reference_model_v1.yaml     the trees
-%   scripts/instrument-test/v001/evaluate.py             the evaluation, with tests
-%   Decisions: D12 (generic model), D16 (instrument test)
-% ---------------------------------------------------------------------------
+\subsection{Pilot, Refinement, and Instrument Freeze}
+\label{sec:pilot}
+The pilot takes place after sampling and after the reference harm trees have been built. Five
+apps are drawn at random from the full health-tracker sample with a recorded seed, without
+category quotas. The pilot tests the boundaries of collection and coding and estimates capture
+time, coding units, manual effort and model cost. It also settles the choices left open in this
+chapter: for the walkthroughs, the platform rule, starting states, route-preparation and
+stopping rules, time limits, synthetic inputs and the consent and permission profile; for the
+coding, the stance definitions and the handling of new harms; and the language model and its
+prompts. The instruments are then frozen; later changes are logged, and the affected material
+is recoded. The pilot apps are recoded with the final instruments and remain in the sample, but
+they do not enter the validation set.
 
-\paragraph{Tree elements.} A tree is built from three kinds of elements:
-system components, capabilities and harms
-(Figure~\ref{fig:harm-tree})~\parencite[\S4.1, Fig.~4]{knabenhans2026harms}.
+\subsection{Independent Human Coding and Agreement}
+\label{sec:two-coders}
+The supervisor asked for two coders. Coding all material twice is not feasible in this
+thesis, and double-coding a subset is common when resources are
+limited~\parencite{oconnor2020intercoder}. The author therefore codes everything, and a second
+coder independently codes the validation set (Section~\ref{sec:validation}) under the frozen
+codebook.
+\highlight[orange!25]{The second coder also reviews applicability, minimisation and mismatch
+decisions; failing a second coder, the supervisor reviews a sample, including judged
+non-mismatches.}\todo{Who is the second coder? Decision D8 needs the supervisor.}
+Both coders work on the same units, which a script fixes before coding, because unclear units
+are a main source of false disagreement~\parencite{campbell2013coding}. Agreement is computed
+before any discussion; disagreements are then settled and recorded. To estimate intra-coder
+consistency, the author recodes two apps after at least two weeks, before drafting.
+Reliability supports the reproducibility of labels; it does not show that they are
+true~\parencite{mcdonald2019reliability}.
 
-\begin{figure}[H]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[
-  font=\footnotesize,
-  harm/.style={draw=primary,fill=primary,text=white,rounded corners=2pt,align=center,
-               text width=64mm,minimum height=10mm,inner sep=3pt},
-  capab/.style={draw=muted,fill=muted!8,rounded corners=2pt,align=center,
-              text width=46mm,minimum height=11mm,inner sep=3pt},
-  comp/.style={draw=#1,line width=1.2pt,fill=white,rounded corners=2pt,align=center,
-               text width=30mm,minimum height=12mm,inner sep=3pt},
-  op/.style={font=\scriptsize\bfseries,fill=white,inner sep=1.5pt},
-  edge/.style={semithick,draw=muted}]
-  \node[harm] (h) at (0,3.7) {\textbf{Harm:} distress after an unwanted
-    disclosure (psychological)};
-  \node[capab] (k1) at (-3.6,1.85) {\textbf{Capability:} a partner infers a
-    possible pregnancy};
-  \node[capab] (k2) at (3.6,1.85) {\textbf{Capability:} an attacker reads the
-    cycle history};
-  \node[comp=black] (c1) at (-5.4,0) {Logged cycles\\(core)};
-  \node[comp=linkblue] (c2) at (-1.8,0) {Another person opens the unlocked
-    phone (context)};
-  \node[comp=red!65!black] (c3) at (1.8,0) {Cloud backup copy\\(implementation)};
-  \node[comp=muted,dashed] (c4) at (5.4,0) {An attacker gains access\\(outside
-    the app)};
-  \draw[edge] (c1.north) -- (k1.south);
-  \draw[edge] (c2.north) -- (k1.south);
-  \draw[edge] (c3.north) -- (k2.south);
-  \draw[edge] (c4.north) -- (k2.south);
-  \draw[edge] (k1.north) -- (h.south);
-  \draw[edge] (k2.north) -- (h.south);
-  \node[op] at (-3.6,0.95) {AND};
-  \node[op] at (3.6,0.95) {AND};
-  \node[op] at (0,2.8) {OR};
-\end{tikzpicture}}
-\caption[A harm tree for one harm of a health tracker]{A harm tree for one
-harm of the constructed period tracker of Appendix~\ref{app:worked-example},
-in the notation of Knabenhans et al.\ (their Fig.~4). Read from the bottom:
-the components combine into capabilities, and either capability can lead to
-the harm. Border of a component: black, core functionality; blue, digital
-context; red, implementation choice; grey and dashed, an event outside the
-app.}
-\Description{A three-level tree. Logged cycles (core) and another person
-opening the unlocked phone (context) together let a partner infer a possible
-pregnancy. A cloud backup copy (implementation) and an attacker gaining access
-together let an attacker read the cycle history. Either capability can lead to
-distress after an unwanted disclosure, a psychological harm.}
-\label{fig:harm-tree}
-\end{figure}
+\subsection{LLM Validation and Missed-Mention Audit}
+\label{sec:validation}
+Ten apps are drawn at random from the health-tracker sample, with a recorded seed, from
+providers and documents not used in the pilot, stratified by the language of the coded policy
+where both languages occur; the numbers of independent providers and unique documents are
+reported. The author codes their captured policy and interface units fully before seeing model
+output, and they are not used to tune prompts. Because prompt wording alone can change
+conclusions~\parencite{baumann2025llm}, two paraphrased prompts are also run and the headline
+counts compared. Disagreements are adjudicated with each label's source hidden.
 
-\paragraph{System components.} Knabenhans et al.\ define system components as
-the information that the use of a system leaks, the results of an entity's
-interaction with it, and the requirements it imposes on the
-entities~\parencite[\S4.1]{knabenhans2026harms}. For an app, these are three
-things: the data the app collects, derives or sends, such as logged cycle
-dates or a device identifier passed to an analytics partner; what the user and
-others do with the app, such as switching on a cloud backup or opening an
-unlocked phone; and what the app requires, such as an account, or consent to
-data sharing before a feature can be used. In the study, components are taken
-from prior research and confirmed for each app from its store listing, its
-policy or the walkthrough.
+\paragraph{Performance measures.} A detection is correct only with the right label, unit and
+evidence span, and the staged pipeline is scored end to end, so that first-stage misses count.
+Reported are per-code precision (the share of model labels supported), recall (the share of
+manual mentions found) and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient},
+with counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$ despite high
+agreement~\parencite{feinstein1990high,gwet2008computing}. App-level detection is also reported
+for the validation set as a whole and, where counts allow, by source and language. Exploratory
+95\,\% intervals resample providers to respect shared sources; with ten apps they will be wide.
 
-\paragraph{Capabilities.} Components combine to give someone a capability, or
-to take one away~\parencite[\S4.1]{knabenhans2026harms}. In a health tracker,
-an analytics partner may be able to profile users across apps, and a partner
-with access to the phone may be able to infer a pregnancy from the logged
-cycles. An incapability counts as well: a user who cannot use the cycle
-predictions without agreeing to data sharing has lost a choice. Each
-capability names the actor who holds it, because the same data leads to
-different harms in the hands of a partner, a provider, an attacker or an
-authority. De and Le Métayer make the same distinction with their risk
-sources, the entities whose actions lead to privacy
-harms~\parencite{de2016privacy}.
+\paragraph{Missed-mention audit.} A separate audit, reported apart from validation, searches
+the remaining corpus for harm-related vocabulary in both languages and checks every unlabelled
+hit manually. To expose the vocabulary's blind spots, 100 units outside the hits (or all, if
+fewer), allocated across languages and sources in advance, are also read. Recall is reported
+as unestimable where manual positives are too few.
 
-\paragraph{Harms.} Capabilities, alone or together, can lead to harms. The
-study adopts the definition Knabenhans et al.\ take from the CyberPeace
-Institute: a harm is an \enquote{impairment or disruption of an entity's
-capacity or ability to function}, measured against the entity's usual
-context~\parencite[\S4.1]{knabenhans2026harms}. Knabenhans et al.\ take
-current practice in the EU as that context. Here, the usual context is the
-user's situation without the modelled pathway: the same person, using the same
-kind of app, without that flow of data or that requirement. Any negative
-impact counts, on the user, on a group of users or on society, whether
-physical, psychological, financial or affecting reputation, dignity, freedom,
-domestic life or another fundamental
-right~\parencite[\S4.1]{knabenhans2026harms}. Section~\ref{sec:harm-categories}
-lists the categories used.
+\paragraph{Review triggers.} For any code with fewer than 20 validation positives or recall
+below 0.90, all relevant material is checked manually, or corpus-wide absence claims are
+withheld; these are review triggers, not proof of accuracy. The available apps, units and
+positives are also reported for each surface. Claims about interface text require interface
+evidence: where its positives are too few or its recall is inadequate, the same manual-review or
+withheld-claim rule applies. A validation app with blocked interface access contributes
+document evidence only.
 
-\paragraph{Constructing trees.} When components enable a capability that
-results in a harm, they form a \emph{pathway to harm}. All pathways to the
-same harm are combined into one harm tree with three
-levels~\parencite[\S4.1]{knabenhans2026harms}: the harm at the top, the
-capabilities that enable it in the middle, and the components that enable
-each capability at the leaves. Operators state how the elements combine.
-AND means that every component is needed, as in the left branch of
-Figure~\ref{fig:harm-tree}: the cycles must be logged and another person must
-reach the unlocked phone. OR means that any one branch is enough: either
-capability leads to the harm. OR+ means that one or several components may be
-needed together, without a fixed combination~\parencite[\S4.1]{knabenhans2026harms}.
-Because the operators make every required condition explicit, a tree also
-shows how a pathway can be cut: a measure blocks it only if it removes one of
-its necessary conditions. De and Le Métayer use the same operators to compute
-how likely each harm is~\parencite{de2016privacy}. The trees in this study are
-not used for that: they record which harms are possible, not how probable they
-are.
+\section{Analysis and Reporting}
+\label{sec:analysis}
+The trees say what is possible for health trackers in general; the analysis asks what holds for
+each app. The cognitive walkthrough first inspects the interface and captures its text
+(Section~\ref{sec:walkthroughs}). Three questions then follow in a fixed order. Step~1 asks
+which parts of the reference model the app has (Section~\ref{sec:apply}). Step~2 asks how far
+the app's policy and interface text reach up the applicable pathways, and Step~3 whether its
+protection claims would cut them (Section~\ref{sec:comparison}); both rest on the
+model-assisted, human-reviewed coding of Section~\ref{sec:llm}. The first two steps are
+answered before any comparison of protection claims, so that a claim cannot shape what counts
+as applicable.
 
-\paragraph{Harm origins.} Each component is marked with its origin, the root
-cause of the pathways it belongs
-to~\parencite[\S4.1]{knabenhans2026harms}. A component belongs to the
-\emph{core functionality} when the app cannot do its job without it, such as
-the logged cycle dates of a period tracker. It comes from the \emph{digital
-context} when it follows from running on a phone and a network or from the
-setting of use, such as a device identifier or another person with access to
-the phone. It is an \emph{implementation choice} when the provider decided it
-and could decide otherwise, such as a cloud backup, an analytics library, or
-predictions offered only in exchange for data sharing. The origin shows who
-can cut a pathway: a provider can change its own choices, but cannot remove
-core components without giving up the function. This is what the study needs
-when it compares a provider's protection claims with the pathways they are
-meant to block (Section~\ref{sec:axes}). The origins are argued from the
-literature, not proven.
-
-\paragraph{Sources of the trees.} The trees are built from prior research on
-health trackers: a survey of tracker inferences, threats and
-vulnerabilities~\parencite{niksirat2024wearable}, users' harm
-scenarios~\parencite{gabriele2020understanding}, analyses of policies, data
-flows and interfaces
-\parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
-user concerns~\parencite{cao2024deleted}, together with the capabilities that
-the literature review collects (Section~\ref{sec:lit-review}). Sources found in
-the logged search are added with a recorded reason. Each pathway names the
-data, the actor, the access conditions, the capability and the possible
-consequence. A prediction made for the user does not by itself establish
-access by a third party (Appendix~\ref{app:example}).
-
-\paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets each step of
-Knabenhans et al.\ next to what this study does. Three rules keep the steps honest.
-Each pathway records its source and whether that source states the link
-(\emph{documented}) or the study argues it (\emph{argued}). Trees are stored in a
-machine-readable file, and a tested script checks that every node they use exists.
-Like Knabenhans et al., the study does not claim to be complete: another pathway only
-adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[From the method of Knabenhans et al.\ to this study]{From the method of
-Knabenhans et al.~\parencite[\S4.1--4.3]{knabenhans2026harms} to this study.}
-\label{tab:tree-steps}
-\footnotesize
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Step} & \textbf{Knabenhans et al.} & \textbf{This study} \\
-\midrule
-System & Concrete use cases of one functionality
-  & The generic health tracker (Section~\ref{sec:generic-model}) \\
-\cmidrule[0.3pt]{2-3}
-Harms & From the literature on the use case, plus Citron and Solove and the CyberPeace Institute
-  & Same categories (Section~\ref{sec:harm-categories}), filled with harms named for health trackers \\
-\cmidrule[0.3pt]{2-3}
-Capabilities & Found while analysing the use cases
-  & The capability table of the review (K1--K8), plus those the method and other sources add \\
-\cmidrule[0.3pt]{2-3}
-Components & Leakage, interaction results, requirements
-  & The same, written as features that can be checked on an app \\
-\cmidrule[0.3pt]{2-3}
-Trees & Three levels; AND, OR, OR+
-  & The same \\
-\cmidrule[0.3pt]{2-3}
-Origins & Black, blue, red; derived from a formal model
-  & The same colours, argued from the literature; grey for events outside the app \\
-\cmidrule[0.3pt]{2-3}
-Reuse & Common sub-trees; trees applying verbatim to other use cases
-  & A capability is defined once and used by every harm it leads to \\
-\cmidrule[0.3pt]{2-3}
-Baseline & Current practice in the EU
-  & The user without the modelled pathway \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-\paragraph{Capabilities outside the review's table.} The review's table covers what
-studies of health trackers document. Three kinds of capabilities are added. A person
-close to the user who reads the entries comes from studies of intimate-partner abuse
-and of what users hide from family and
-partners~\parencite[p.~14]{niksirat2024wearable}\parencite[p.~3]{hudig2025intimate}.
-Sorting users into classes comes from the distinguishing capability of Knabenhans et
-al.~\parencite[\S5.1]{knabenhans2026harms}. Incapabilities (no function without
-agreement, no way to delete or take out data, no way to stop a flow) come from their
-definition of capabilities~\parencite[\S4.1]{knabenhans2026harms} and from the deletion,
-export and control problems that Malki et al.\ found~\parencite[pp.~10--12]{malki2024exploring}.
-Reading keystrokes from smartwatch motion sensors stays out, because it needs an analysis
-of the connected device. The complete model is in Appendix~\ref{app:reference-model}.
-
-\section{Harm Categories}
-\label{sec:harm-categories}
-The starting categories are Knabenhans et al.'s physical, economic,
-psychological, autonomy/\allowbreak deprivation, discrimination, reputational
-and societal harms~\parencite[App.~A]{knabenhans2026harms}, drawn from Citron
-and Solove and the CyberPeace Institute. A relationship tag retains Citron and
-Solove's relationship harms~\parencite{citron2021harms}, which the list omits.
-New harms found in the pilot will be documented rather than forced into a
-category.
-
-\section{App Walkthroughs}
+\subsection{Cognitive Walkthrough}
 \label{sec:walkthroughs}
 A privacy policy says what a provider has written down. The interface shows what a user
 meets, and whether the user can find it. To inspect it, the study uses a cognitive
@@ -1446,13 +1723,29 @@ model-assisted stages as the policy, and what it shows about the app enters the 
 applicability record. The walkthrough itself is done by hand. The language model plays no
 part in it: it does not operate the app, answer the four questions or judge an outcome.
 
-Inspection is attempted for every sampled app, on one platform where it is available.
+The method examines how an interface supports learning by
+exploration. Here it assesses the steps for finding privacy information and using controls. All
+variants of the method ask about goals, actions, feedback and completion, but they are
+thinly validated, so an adaptation has to be stated
+openly~\parencite[pp.~15, 20--22]{mahatody2010state}. The study keeps the four questions
+and applies them to the privacy tasks, with bounded search and the outcome categories
+stated above. It does not add Nielsen's heuristics: the focus is access to tree-related
+information and controls, rather than a general design audit. Malki et al.\ combined
+both methods and used two independent inspectors~\parencite[p.~5]{malki2024exploring}.
+One analyst can carry out the method
+alone~\parencite[p.~109]{wharton1994cognitive}, but results depend on the analyst's
+expertise, and recording is advised~\parencite{mahatody2010state}. The sessions are
+therefore recorded and the analyst's background reported. \highlight[orange!25]{Whether a
+second analyst inspects a subset independently is decided with the second
+coder.}\todo{D10 leaves a second inspection open; it depends on D8.}
+
+\paragraph{Preparation.} Inspection is attempted for every sampled app, on one platform where it is available.
 An unavailable paired device, payment or identity verification can block a task or the
 whole inspection. Accessible screens are retained, each barrier is recorded at the task
 where it occurs, and the app stays in the document sample.\todo{Open for the pilot:
 the platform rule for apps listed in both stores, and the time one session takes.}
 
-\paragraph{Inputs.} Wharton et al.\ name four inputs: the users, the tasks, the action
+Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
 is a first-time user with no technical training, as in the walkthrough of Malki et
 al.~\parencite[p.~5]{malki2024exploring}. The user can operate the platform's basic
@@ -1466,7 +1759,7 @@ freshly installed with no earlier account, following Malki et
 al.~\parencite[p.~5]{malki2024exploring}. If a preinstalled app cannot be reinstalled or
 reset, its initial state and the deviation are recorded.
 
-\paragraph{Tasks.} The tasks operationalise privacy goals in the reference harm trees.
+The tasks operationalise privacy goals of the reference harm trees.
 Each asks for a piece of information or a control that the trees name: what data is
 collected (components), what is derived from it (capabilities), what an exposure would mean
 and how incidents are handled (harm details), where the policy is, and the controls that
@@ -1499,7 +1792,38 @@ T7 & Delete the account and the data & \oimp{IM12}, \ocore{CO3}; incapability I2
 \end{singlespace}
 \end{table}
 
-\paragraph{Checklist.} At each step the analyst answers the four questions of Wharton et
+Each app is installed fresh, without a restored backup, with the region set to Germany and the
+screen recorded for the whole session. The device language follows
+Section~\ref{sec:material}: English first, German as fallback. Where both versions exist,
+counterparts are captured and differences logged in a separate pass; their routes and counts
+are not pooled with the primary session. \highlight[orange!25]{The device and operating-system version are
+reported with the results.}\todo{Device or emulator and OS version are still TODO in the
+protocol; fix them before the pilot.}
+
+\paragraph{Procedure.} Every session follows the same sequence:
+\begin{enumerate}[itemsep=1pt,topsep=3pt]
+  \item \textbf{Identity and setup.} The app identifier, platform, installed version,
+    collection date, device, OS, region, language and account state are recorded. The
+    current listing is captured as dated evidence; it does not replace the frozen
+    listing or change sample membership.
+  \item \textbf{First launch and onboarding.} Every screen before an account exists is
+    captured, with each consent, permission request and pre-ticked option.
+  \item \textbf{Account and baseline.} Where needed, an account is created with synthetic
+    data; mandatory and optional fields are distinguished. Consent and permission choices
+    and synthetic inputs follow the profile fixed in the pilot and are logged. Before
+    changing privacy settings, their initial states and the route from the home screen
+    are captured, distinguishing untouched defaults from earlier choices.
+  \item \textbf{Tasks T1 to T7}, in that order, with the action sequence and Q1--Q4 record.
+    The starting state is recorded for each task; changes during T5 and T6 are logged.
+    T7 is the final account action, after all other evidence has been captured.
+\end{enumerate}
+Permission prompts and advertisements are captured when they appear throughout the
+session, with their wording, purpose where given, and origin. App text, OS prompts,
+linked documents and third-party advertisements remain distinguishable.
+Onboarding before consent and the initial privacy-settings screen are the fixed decision
+points of the RQ4 analysis (Section~\ref{sec:comparison}).
+
+At each step of a task, the analyst answers the four questions of Wharton et
 al.~\parencite[Table~5.1, p.~106]{wharton1994cognitive}:
 \begin{enumerate}[label=Q\arabic*,leftmargin=2.2em,itemsep=0pt,topsep=3pt]
   \item Will the user try to achieve the right effect?
@@ -1525,53 +1849,8 @@ steps are recorded separately. The pilot fixes starting states, search boundarie
 limits and completion criteria (Section~\ref{sec:pilot}). A limit reached is a bounded
 non-finding, not evidence that a feature is absent.
 
-\paragraph{Session.} Every session follows the same sequence:
-\begin{enumerate}[itemsep=1pt,topsep=3pt]
-  \item \textbf{Identity and setup.} The app identifier, platform, installed version,
-    collection date, device, OS, region, language and account state are recorded. The
-    current listing is captured as dated evidence; it does not replace the frozen
-    listing or change sample membership.
-  \item \textbf{First launch and onboarding.} Every screen before an account exists is
-    captured, with each consent, permission request and pre-ticked option.
-  \item \textbf{Account and baseline.} Where needed, an account is created with synthetic
-    data; mandatory and optional fields are distinguished. Consent and permission choices
-    and synthetic inputs follow the profile fixed in the pilot and are logged. Before
-    changing privacy settings, their initial states and the route from the home screen
-    are captured, distinguishing untouched defaults from earlier choices.
-  \item \textbf{Tasks T1 to T7}, in that order, with the action sequence and Q1--Q4 record.
-    The starting state is recorded for each task; changes during T5 and T6 are logged.
-    T7 is the final account action, after all other evidence has been captured.
-\end{enumerate}
-Permission prompts and advertisements are captured when they appear throughout the
-session, with their wording, purpose where given, and origin. App text, OS prompts,
-linked documents and third-party advertisements remain distinguishable.
-Onboarding before consent and the initial privacy-settings screen are the fixed decision
-points of the RQ4 analysis
-(Section~\ref{sec:analysis}). Each app is installed fresh, without a restored backup, with the
-region set to Germany and the screen recorded for the whole session. The device language
-follows Section~\ref{sec:material}: English first, German as fallback. Where both versions
-exist, counterparts are captured and differences logged in a separate pass; their routes
-and counts are not pooled with the primary session. \highlight[orange!25]{The device and operating-system version are
-reported with the results.}\todo{Device or emulator and OS version are still TODO in the
-protocol; fix them before the pilot.}
-
-\paragraph{Adaptation.} The method examines how an interface supports learning by
-exploration. Here it assesses the steps for finding privacy information and using controls. All
-variants of the method ask about goals, actions, feedback and completion, but they are
-thinly validated, so an adaptation has to be stated
-openly~\parencite[pp.~15, 20--22]{mahatody2010state}. The study keeps the four questions
-and applies them to the privacy tasks, with bounded search and the outcome categories
-stated above. It does not add Nielsen's heuristics: the focus is access to tree-related
-information and controls, rather than a general design audit. Malki et al.\ combined
-both methods and used two independent inspectors~\parencite[p.~5]{malki2024exploring}.
-One analyst can carry out the method
-alone~\parencite[p.~109]{wharton1994cognitive}, but results depend on the analyst's
-expertise, and recording is advised~\parencite{mahatody2010state}. The sessions are
-therefore recorded and the analyst's background reported. \highlight[orange!25]{Whether a
-second analyst inspects a subset independently is decided with the second
-coder.}\todo{D10 leaves a second inspection open; it depends on D8.}
-
-\paragraph{Outputs.} The three outputs have distinct roles (Table~\ref{tab:wt-outputs}).
+\paragraph{Outputs and Their Use.} The walkthrough yields three outputs with distinct roles
+(Table~\ref{tab:wt-outputs}).
 Verbatim text, observable actions and interface states, and analyst judgments are retained
 separately. Only the verbatim text enters the text-coding pipeline; task judgments and
 applicability decisions keep their evidence and reasoning.
@@ -1588,7 +1867,7 @@ recorded for each app and the step of the study that uses them.}
 \textbf{Output} & \textbf{Recorded} & \textbf{Enters} & \textbf{RQ} \\
 \midrule
 Findability & Outcome, endpoint, Q1--Q4 judgments, route taps and search record for T1--T7
-  & Task record, read through the nodes of Table~\ref{tab:wt-tasks} (Section~\ref{sec:analysis})
+  & Task record, read through the nodes of Table~\ref{tab:wt-tasks} (Section~\ref{sec:comparison})
   & RQ4 \\
 \rowrule
 Interface text & Checked transcript, screen locator, source origin and language
@@ -1597,7 +1876,7 @@ Interface text & Checked transcript, screen locator, source origin and language
   & RQ1--RQ4 \\
 \rowrule
 Applicability evidence & Observable states and actions, with screen evidence and limits
-  & Applicability record, Step~1; controls offered in the app, Step~3 (Section~\ref{sec:apply})
+  & Applicability record, Step~1 (Section~\ref{sec:apply}); controls offered in the app, Step~3 (Section~\ref{sec:comparison})
   & RQ1, RQ3 \\
 \bottomrule
 \end{tabularx}
@@ -1655,13 +1934,9 @@ point open. Clarify which mechanisms it means before it becomes a criterion.}
 % Light et al. 2018 (doi:10.1177/1461444816675438) structure entry, everyday use and
 % leaving; used for the order of capture only, so not cited as the method.
 
-\section{Applying the Trees to an App}
+\subsection{App-Specific Applicability Assessment}
 \label{sec:apply}
-The trees say what is possible for health trackers in general. For each app, three
-questions follow in a fixed order. The first two are answered before any comparison of
-protection claims, so that a claim cannot shape what counts as applicable.
-
-\paragraph{Step 1: Which parts does this app have?} An \emph{applicability record} gives
+Step~1 asks which parts of the reference model an app has. An \emph{applicability record} gives
 every component one of three states: \emph{present}, \emph{absent} or \emph{uncertain},
 with its evidence (policy, listing or walkthrough, with location) and a reason. Text can
 show that a feature exists; it cannot show that a feature works, so what only the app can
@@ -1671,6 +1946,7 @@ Events outside the app are not
 observed. An attacker gaining access is assumed possible for stored data. An authority's
 demand and an insurer's or employer's use stay uncertain unless the evidence shows them,
 because the study does not assume the legal setting of another country for German users.
+
 A script then evaluates the trees. AND is absent if any part is absent, and present only
 if all parts are present. OR is present if any part is present, and absent only if all
 parts are absent. Everything else stays uncertain. OR+ is read like OR, since the study
@@ -1679,155 +1955,7 @@ its pathways does. Uncertain cases are counted and reported, not silently droppe
 sparsely documented providers do not vanish from the gap analysis. The trees are reference
 models of possible harms, not complete descriptions of the apps' actual systems.
 
-\paragraph{Step 2: How far does the text go?} Each coded mention is tied to a node of the
-tree. For each applicable pathway and each surface, the \emph{coverage level} is the
-highest level the text reaches (Figure~\ref{fig:coverage-levels}): nothing, the component,
-the capability, or the harm. A named harm counts for the pathways of its category. A
-denied node is reported as denied and does not count as coverage. This turns RQ1 into a
-question with a clear denominator: of the pathways that apply, how many stop at the data
-flow, and how many reach the consequence for the user?
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[
-  font=\footnotesize,
-  lv/.style={draw=primary,rounded corners=1.5pt,minimum height=8mm,text width=30mm,
-             align=center,inner sep=2pt},
-  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted}]
-  \node[lv,fill=white] (a) at (0,0) {\textbf{0 Silent}\\no node mentioned};
-  \node[lv,fill=primary!15,right=5mm of a] (b) {\textbf{1 Component}\\\enquote{we share IDs}};
-  \node[lv,fill=primary!40,right=5mm of b] (c) {\textbf{2 Capability}\\\enquote{a partner can profile}};
-  \node[lv,fill=primary,text=white,right=5mm of c] (d) {\textbf{3 Harm}\\\enquote{prices may differ}};
-  \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d);
-\end{tikzpicture}
-\caption[Coverage levels of a pathway]{Coverage levels of an applicable pathway on one
-surface, with constructed examples. Only level~3 can carry a stance (Axis~B).}
-\Description{Four boxes in a row with rising shades: level 0 silent, level 1 component,
-level 2 capability, level 3 harm.}
-\label{fig:coverage-levels}
-\end{figure}
-
-\paragraph{Step 3: Would the claimed measure cut the pathway?} A measure blocks a pathway
-only if it removes a necessary condition. For each protection claim, the author names the
-component the measure would remove if it worked as claimed. The script sets that component
-to absent and evaluates the trees again. If a pathway within the claim's scope stays open,
-this is a candidate for a \emph{potential mismatch}. The author then decides and writes down
-why. De and Le Métayer note that harm trees show the effect of counter-measures, and
-Knabenhans et al.\ show that many privacy technologies leave a pathway to harm
-open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates. A residual
-risk outside the claim's scope is not a mismatch, and no system is judged safe or unsafe.
-% De and Le Metayer on counter-measures: talk slides, slide 19.
-
-\section{Pilot}
-\label{sec:pilot}
-The pilot takes place after sampling and after the reference
-harm trees have been built. Five apps will be drawn at random from the full
-health-tracker sample with a recorded seed, without category quotas. The pilot will
-test the boundaries of collection and coding and estimate capture time, coding
-units, manual effort and model cost. It will also settle the choices left open
-in the previous sections: the platform rule, starting states, route-preparation and
-stopping rules, time limits, synthetic inputs and consent/permission profile of the
-walkthroughs, the stance definitions, the handling of new harms, and the LLM
-and its prompts. The instruments will then be frozen. The pilot apps will be
-recoded with the final instruments and remain in the sample, but will not
-enter the validation set.
-
-\section{Coding Units and Axes}
-\label{sec:axes}
-To code a text is to attach labels that
-record what it says. A unit will be one paragraph or one coherent block of
-interface text. Adjacent text will be available for context, but supporting quotations must
-be identified precisely. The codebook will define each label, a fitting
-example and a counter-example. Table~\ref{tab:axes} summarises the three axes.
-Appendix~\ref{app:example} shows the procedure on a constructed example.
-
-\begin{table}[t]
-\centering
-\begin{singlespace}
-\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
-Several labels may apply to one unit.}
-\label{tab:axes}
-\small
-\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
-\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.8cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
-\midrule
-A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
-  & \enquote{We store your cycle dates.} \\
-\rowrule
- & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
-  & \enquote{We estimate your fertile window.} \\
-\rowrule
- & Concrete harm & A named negative consequence and its category
-  & \enquote{Disclosure could cause distress.} \\
-\rowrule
- & Generic risk & Possible misuse without a concrete consequence
-  & \enquote{Your data could be used against you.} \\
-\rowrule
- & No relevant content & None of the coverage labels applies
-  & A contact address alone \\
-\rowrule
- & Additional details & Breach consequences, incident response and relationship impacts
-  & Code concrete response steps separately from a general legal-notice promise \\
-\midrule
-B: Stance & Acknowledged & A named harm presented as possible
-  & \enquote{A disclosure could cause distress.} \\
-\rowrule
- & Qualified & Uncertainty or likelihood language, with its target recorded
-  & \enquote{A leak is unlikely, but could cause distress.} \\
-\rowrule
- & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
-  & \enquote{Such distress is no cause for concern.} \\
-\rowrule
- & Responsibility shifted & Responsibility for a named harm placed on the user
-  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
-\rowrule
- & Denied/prevented & A named harm presented as impossible or prevented
-  & \enquote{This makes harassment impossible.} \\
-\midrule
-C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
-  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
-\rowrule
- & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
-  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
-\rowrule
- & Reassurance & Broad safety language without a specific measure
-  & \enquote{Your data is safe with us.} \\
-\rowrule
- & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
-  & A residual risk outside the claim's scope is not sufficient \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-\subsection{Axis A: Coverage} All explicitly mentioned nodes will be
-recorded, including whether each is asserted, presented as possible or denied.
-The highest level reached will be a separate summary, so a harm
-mention does not erase accompanying data-flow information. Feature descriptions can mention inference without presenting it as a risk.
-
-\subsection{Axis B: Stance} Stance labels will be linked to the
-particular harm and supporting span, rather than assigned to the paragraph
-as a whole. A statement may acknowledge a harm and qualify its likelihood,
-and the coder will distinguish uncertainty about a breach from uncertainty
-about its consequences. Minimisation will be judged from wording in the unit
-or adjacent text, never from inferred intent; qualification alone does not
-establish it. RQ2 thus covers stance toward named harms; dismissive language
-without one is coded as reassurance. These distinctions adapt Zou et
-al.~\parencite{zou2019might} and will be refined in the pilot.
-
-\subsection{Axis C: Protection} The coder will record the measure
-and claimed benefit, with actor, data and conditions where specified. Any
-technical measure claimed to limit exposure or misuse counts, PET-labelled or
-not, including ordinary security controls; non-technical commitments are kept
-separate. A \emph{potential mismatch} requires a pathway within the claim's
-scope and an explanation of why the measure misses its necessary conditions;
-partial protection is not rejected merely because other risks remain. Vague
-scope will be recorded as unclear, and no deployed system judged safe or
-unsafe.
-
-\section{LLM-Assisted Coding}
+\subsection{LLM-Assisted Coding and Human Review}
 \label{sec:llm}
 Polisis and recent LLM approaches are precedents for
 data-practice analysis~\parencite{harkous2018polisis,rodriguez2024llm}, and large language
@@ -1840,7 +1968,7 @@ labels~\parencite{pangakis2023automated}. The model therefore acts as a screener
 prompts favour recall, and people decide. Table~\ref{tab:llm-steps} gives each rule with its
 precedent.
 
-\begin{table}[!t]
+\begin{table}[H]
 \centering
 \begin{singlespace}
 \caption[Rules of the LLM-assisted coding and their precedents]{Rules of the LLM-assisted
@@ -1882,133 +2010,99 @@ Human role & All retained harm mentions are read by a person. Applicability and 
 \end{singlespace}
 \end{table}
 
-\section{Validation and Missed Mentions} Ten apps will be drawn at random from
-the health-tracker sample, with a recorded seed, from providers and documents not used in
-the pilot, stratified by the language of the coded policy where both occur;
-the numbers of independent providers and unique documents will be reported.
-The author will code their captured policy and interface units fully before seeing
-model output, and they will not
-be used to tune prompts. Because prompt wording alone can change
-conclusions~\parencite{baumann2025llm}, two paraphrased prompts will also be
-run and headline counts compared. Disagreements will be adjudicated with each
-label's source hidden; two apps will be recoded after at least two weeks,
-before drafting, to estimate intra-coder consistency. A detection is correct only with
-the right label, unit and evidence span, and the staged pipeline is scored end
-to end, so first-stage misses count. Reported will be per-code precision
-(share of model labels supported), recall (share of manual mentions found)
-and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient}, with
-counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$
-despite high agreement~\parencite{feinstein1990high,gwet2008computing}.
-App-level detection is also reported for the validation set as a whole and,
-where counts allow, by source and language. Exploratory 95\,\% intervals will resample providers to
-respect shared sources; with ten apps they will be wide.
+In practice, the units of each app pass the three stages in turn. The model proposes labels,
+each with its quoted span; a script discards any label whose span does not occur in its unit;
+and uncertain answers and missing spans go to manual review. People decide every retained
+code, and every retained harm mention is read by a person. Raw model output is stored apart
+from the adjudicated labels, and only the adjudicated labels enter the comparison of
+Section~\ref{sec:comparison}.
 
-A separate missed-mention audit, reported apart from validation, will search
-the remaining corpus for harm-related vocabulary in both languages and check
-every unlabelled hit manually. To expose the vocabulary's blind spots, 100
-units outside the hits (or all, if fewer), allocated across languages and
-sources in advance, will also be read. Recall will be reported as
-unestimable where manual positives are too few. For any code with fewer than
-20 validation positives or recall below 0.90, all relevant material will be
-checked manually or corpus-wide absence claims withheld; these are review
-triggers, not proof of accuracy. The available apps, units and positives are also
-reported for each surface. Claims about interface text require interface evidence:
-where its positives are too few or recall is inadequate, the same manual-review
-or withheld-claim rule applies. A validation app with blocked interface access
-contributes document evidence only.
+\subsection{Comparison and Research-Question Reporting}
+\label{sec:comparison}
+\paragraph{Coverage (Step~2).} Step~2 asks how far the text goes. Each coded mention is tied to a node of the
+tree. For each applicable pathway and each surface, the \emph{coverage level} is the
+highest level the text reaches (Figure~\ref{fig:coverage-levels}): nothing, the component,
+the capability, or the harm. A named harm counts for the pathways of its category. A
+denied node is reported as denied and does not count as coverage. This turns RQ1 into a
+question with a clear denominator: of the pathways that apply, how many stop at the data
+flow, and how many reach the consequence for the user?
 
-\paragraph{Two coders.} The supervisor asked for two coders. Coding all material twice is
-not feasible in this thesis, and double-coding a subset is common when resources are
-limited~\parencite{oconnor2020intercoder}. The author therefore codes everything, and a
-second coder independently codes the validation set under the frozen codebook.
-\highlight[orange!25]{The second coder also reviews applicability, minimisation and mismatch
-decisions; failing a second coder, the supervisor reviews a sample, including judged
-non-mismatches.}\todo{Who is the second coder? Decision D8 needs the supervisor.}
-Agreement is computed before any discussion, and disagreements are then settled and
-recorded. Units are fixed by a script before coding, because unclear units are a main source
-of false disagreement~\parencite{campbell2013coding}. Reliability supports the
-reproducibility of labels; it does not show that they are
-true~\parencite{mcdonald2019reliability}.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize,
+  lv/.style={draw=primary,rounded corners=1.5pt,minimum height=8mm,text width=30mm,
+             align=center,inner sep=2pt},
+  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted}]
+  \node[lv,fill=white] (a) at (0,0) {\textbf{0 Silent}\\no node mentioned};
+  \node[lv,fill=primary!15,right=5mm of a] (b) {\textbf{1 Component}\\\enquote{we share IDs}};
+  \node[lv,fill=primary!40,right=5mm of b] (c) {\textbf{2 Capability}\\\enquote{a partner can profile}};
+  \node[lv,fill=primary,text=white,right=5mm of c] (d) {\textbf{3 Harm}\\\enquote{prices may differ}};
+  \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d);
+\end{tikzpicture}
+\caption[Coverage levels of a pathway]{Coverage levels of an applicable pathway on one
+surface, with constructed examples. Only level~3 can carry a stance (Axis~B).}
+\Description{Four boxes in a row with rising shades: level 0 silent, level 1 component,
+level 2 capability, level 3 harm.}
+\label{fig:coverage-levels}
+\end{figure}
 
-\section{Instrument Test}
-\label{sec:instrument-test}
-Before the pilot, the whole procedure is run once on one app. The test asks one thing: do
-the steps connect, from the generic model through the trees to a conclusion about one app?
-It gives no estimate for the sample, and it does not validate the model. It follows the
-advice to try a coding procedure on a small set of texts before the
-instruments are fixed~\parencite{tornberg2024best}, as Malki et al.\ did with a first set of
-policies~\parencite[p.~4]{malki2024exploring}.
+\paragraph{Protection claims (Step~3).} Step~3 asks whether a claimed measure would cut the
+pathway. A measure blocks a pathway
+only if it removes a necessary condition. For each protection claim, the author names the
+component the measure would remove if it worked as claimed. The script sets that component
+to absent and evaluates the trees again. If a pathway within the claim's scope stays open,
+this is a candidate for a \emph{potential mismatch}. The author then decides and writes down
+why. De and Le Métayer note that harm trees show the effect of counter-measures, and
+Knabenhans et al.\ show that many privacy technologies leave a pathway to harm
+open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates. A residual
+risk outside the claim's scope is not a mismatch, and no system is judged safe or unsafe.
+% De and Le Metayer on counter-measures: talk slides, slide 19.
 
-\paragraph{Test case.} The test app is chosen on purpose from the sample, not at random, for
-how much of the instrument it exercises: sensitive data, many pathways, and a long policy in
-English from a provider in Germany. It stays in the sample and is recoded with the frozen
-instruments, and like the pilot apps it does not enter the validation set.
+\paragraph{Reporting by research question.} Results are descriptive. For RQ1, each harm's
+denominator includes only applicable apps with the required core sources captured. A source the
+provider does not offer is recorded as such; only sources that exist but cannot be retrieved
+reduce the denominator. Inapplicable pathways and text with no identified mention carry
+different labels. Counts are given per app and surface, with shared-provider results also shown
+after grouping repeated providers, and coverage levels (Figure~\ref{fig:coverage-levels}) are
+reported per harm category. RQ2 reports harm--stance combinations and their denominators. RQ3
+summarises measures, scope, claim strength and the manually reviewed mismatches. Examples that
+support and examples that challenge the expected gap are both retained.
 
-\paragraph{What is real and what is not.} The policy is real and archived with its hash.
-The reference model, the evaluation and the model's output are real. Two inputs are not final:
-\begin{itemize}[itemsep=1pt,topsep=3pt]
-  \item The walkthrough record is \textbf{invented for this test} \synthtag. Nobody opened the
-    app. Its only purpose is to run the walkthrough's outputs through the procedure. Every
-    result that rests on it carries the same tag, and none is a finding about the real app.
-  \item The manual coding and the applicability record were \textbf{prepared by an AI assistant}
-    as stand-ins, before any model output existed. The author has to check or redo them.
-    Comparing them with the model exercises the script. It is not validation, since both come
-    from one vendor.
-\end{itemize}
-The test is evaluated twice, on the policy alone and with the invented walkthrough, to show what
-a walkthrough adds.
-% Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
+\paragraph{Policy--interface comparison (RQ4).} The principal policy--interface comparison
+uses inspected apps with the relevant material available; missing policies, retrieval failures
+and partial or fully blocked inspections are reported separately. Task outcomes use
+task-specific denominators; access barriers do not count as completed inspections with silent
+text. Other surface pairs report how many apps have both surfaces. At the fixed decision points,
+onboarding before consent and the privacy-settings screen, text shown directly, behind a
+visible link or not found within the task limit is distinguished for each relevant node or
+claim. Linked policy wording stays on the policy surface. Inconsistent claims require a human
+check of scope, version, date and language and are reported apart from mere differences in
+detail or findability. Absence means \enquote{no mention was identified in the captured
+material}, with the instrument's measured limitations stated.
 
-\section{Analysis and Reporting}
-\label{sec:analysis}
-Results will be descriptive. For RQ1, each harm's denominator
-will include only applicable apps with the required core sources captured. A
-source the provider does not offer is recorded as such; only sources that
-exist but cannot be retrieved reduce the denominator. Inapplicable pathways
-and text with no identified mention will have different labels. Counts will be per app and surface, with
-shared-provider results also shown after grouping repeated providers, and coverage
-levels (Figure~\ref{fig:coverage-levels}) will be reported per harm category.
-RQ2 will report harm--stance combinations and their denominators. RQ3 will
-summarise measures, scope, claim strength and manually reviewed mismatches.
-Examples that support and challenge the expected gap will both be retained.
+\subsection{Methodological Limitations}
+\label{sec:limitations}
+\paragraph{Sampling.} The sample favours free apps with high German-market popularity scores
+found by the chosen keywords and does not represent all health-tracking apps or their users in
+Germany; one app per provider also leaves out further apps of large providers. Feedback counts
+accumulate over different app lifetimes and depend on prompts to rate or review. The common
+scale assumes a typical platform distribution and approximately stable platform-specific
+feedback rates across apps. StatCounter's page-view shares are an approximation of the user
+distribution, and a listing not found in one store contributes no count from that store. These
+limits prevent interpreting the score as a count of users or communication encounters.
 
-For RQ4, the principal policy--interface comparison will use inspected apps with the
-relevant material available, with missing policies, retrieval failures and partial or
-fully blocked inspections reported separately. Task outcomes use task-specific
-denominators; access barriers do not count as completed inspections with silent text.
-Other surface pairs report how many apps have both surfaces. At the fixed
-decision points, onboarding before consent and the privacy-settings screen,
-text shown directly, behind a visible link or not found within the task limit
-will be distinguished for each relevant node or claim. Linked policy wording stays
-on the policy surface. Inconsistent claims require a human check of scope, version,
-date and language and are reported apart from mere differences in detail or
-findability. Absence will mean \enquote{no mention was identified
-in the captured material}, with the instrument's measured limitations stated.
+\paragraph{Captured material and paths.} The corpus is a dated snapshot, and the walkthroughs
+cover selected paths; a bounded non-finding is not evidence that a feature is absent.
 
-\section{Ethics and Feasibility} No human participants are planned.
-Walkthroughs use synthetic data, store terms will be checked before automated
-retrieval, and any review requirements confirmed before collection. The
-pilot's estimates will fix a minimum feasible study (core documents, the blind
-validation set, the walkthroughs) before collection; if time runs short,
-supplementary marketing collection is reduced first and other changes are
-agreed with the supervisor.
+\paragraph{Framework.} The reference trees depend on the chosen literature. The generic model
+errs towards listing more than an app has, which the applicability record corrects; it cannot
+list what the literature has not documented, and argued links are weaker than documented ones.
 
-\section{Limitations} The sample favours free apps with high German-market
-popularity scores found by the chosen keywords and does not represent all
-health-tracking apps or their users in Germany; one app per provider also
-leaves out further apps of large providers. Feedback counts accumulate over
-different app lifetimes and depend on prompts to rate or review. The common
-scale assumes a typical platform distribution and approximately stable
-platform-specific feedback rates across apps. StatCounter's page-view shares
-are an approximation of the user distribution, and a listing not found in one
-store contributes no count from that store. These limits prevent interpreting
-the score as a count of users or communication encounters. The corpus is a
-dated snapshot, walkthroughs cover selected paths, and reference trees depend
-on the chosen literature. The generic model errs towards listing more than an app has,
-which the applicability record corrects; it cannot list what the literature has not
-documented, and argued links are weaker than documented ones. A provider's text can
-show that a feature exists, but not that the text is true, since the study tests neither
-behaviour nor security. Unless a second coder joins, one person provides the
-reference labels, so model agreement is not independent human-coder
+\paragraph{Coding.} Unless a second coder joins, one person provides the reference labels, so
+model agreement is not independent human-coder
 reliability~\parencite{mcdonald2019reliability}. Missed mentions may remain.
-The study cannot establish provider intent, actual harms or effects on users.
+
+\paragraph{Permissible conclusions.} A provider's text can show that a feature exists, but not
+that the text is true, since the study tests neither behaviour nor security. The study cannot
+establish provider intent, actual harms or effects on users.
