@@ -38,17 +38,19 @@ full text, and the studies that remain are charted in a fixed table. The review 
 capabilities and harms from which the reference harm trees are built, and the evidence for the
 methodological decisions of this chapter.
 
-The chapter follows the order in which the study is built and then carried out.
-Section~\ref{sec:design} sets out the design, its scope and its ethical safeguards.
-Section~\ref{sec:lit-review} describes the literature review, and Section~\ref{sec:framework}
-the analytical framework derived from it: the harm concepts, a generic health-tracker model,
-the reference harm trees and the coding scheme. Section~\ref{sec:app-sampling} selects the apps
-and captures their materials. Section~\ref{sec:instruments} explains how the instruments are
-tested, frozen and validated, and Section~\ref{sec:analysis} how interface inspection,
-applicability assessment and coding answer the research questions.
-Figure~\ref{fig:pipeline} summarises the workflow.
+The chapter is ordered for exposition rather than by time. Section~\ref{sec:design} states the
+research questions, the approach, the scope and the key terms. Section~\ref{sec:lit-review}
+describes the literature review, and Section~\ref{sec:framework} the analytical framework built
+from it: the harm concepts, a generic health-tracker model and the reference harm trees.
+Section~\ref{sec:app-sampling} selects the apps, and Section~\ref{sec:collection} describes what
+is collected from each of them: its documents and, in a cognitive walkthrough, its interface.
+Section~\ref{sec:analysis} explains how this material is coded and assessed to answer the
+research questions, and Section~\ref{sec:instruments} how the instruments are tested, frozen and
+validated. Section~\ref{sec:closing} closes with the ethical considerations, the availability of
+data and artifacts, and the limitations of the design. Figure~\ref{fig:pipeline} shows the same
+steps in the order in which they are carried out.
 
-\section{Study Design and Ethics}
+\section{Study Design}
 \label{sec:design}
 The study asks which harms providers communicate. A harm can only be called
 missing if the app could cause it, so the study first fixes what is possible and
@@ -65,7 +67,10 @@ then reads what is said. It has three parts:
     people decide (Sections~\ref{sec:axes} and~\ref{sec:llm}).
 \end{enumerate}
 Figure~\ref{fig:pipeline} shows how the three parts form one workflow: the framework is
-built once for all apps, and the steps that apply it are repeated for each app.
+built once for all apps, and the steps that apply it are repeated for each app. The figure gives
+the order in time. In particular, the instruments are tested and frozen
+(Section~\ref{sec:instruments}) before the main collection and coding, although this chapter
+describes them afterwards.
 
 \begin{figure}[H]
 \centering
@@ -105,15 +110,25 @@ the coding instruments.}
 \label{fig:pipeline}
 \end{figure}
 
-\subsection{Research Scope and Methodological Approach}
-\label{sec:scope}
-The study analyses what health-tracking apps communicate, not how they behave. Its objects
-are the apps of one domain, health trackers (Section~\ref{sec:app-search}), offered on the
-German market, together with their privacy policies, store listings and interfaces.
-Connected devices lie outside the scope: a wearable's companion app can enter the sample, but
-the device itself is not analysed. No user study is conducted. The interface is inspected by
-the analyst (Section~\ref{sec:walkthroughs}), and the study tests neither the apps' behaviour
-nor their security.
+\subsection{Research Questions and Approach}
+\label{sec:rq-approach}
+The study answers the research question of Chapter~\ref{ch:introduction}: \emph{What types of
+downstream privacy harms do health tracker service providers explicitly acknowledge or downplay
+when describing their privacy practices or PETs, and how do they frame the protection these
+technologies offer?} It is divided into four sub-questions:
+\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,
+                    labelindent=0pt,font=\normalfont\bfseries]
+  \item[RQ1] \textit{Coverage.} Which data flows, capabilities and harms are
+    mentioned in the captured communication, and which applicable harms
+    in the reference model are not found?
+  \item[RQ2] \textit{Stance.} How are named harms acknowledged, qualified,
+    minimised, denied or presented as the user's responsibility?
+  \item[RQ3] \textit{Protection.} What measures and benefits are claimed,
+    and how do the scope and strength of these claims relate to the
+    reference model?
+  \item[RQ4] \textit{Surfaces.} How do coverage, stance and protection claims
+    differ between policies, listings, marketing and inspected interfaces?
+\end{description}
 
 The coding is a directed content analysis: it starts from prior research, which
 supplies the initial codes, and adds what the text shows beyond
@@ -135,7 +150,7 @@ measured, the material and the method, with the precedent for each method.}
 \midrule
 RQ1 & Applicable pathways, and how far up the tree the text goes for each
   & Policy, interface
-  & Applicability record; Axis~A; coverage level (Sections~\ref{sec:apply} and~\ref{sec:comparison})
+  & Applicability record; Axis~A; coverage level (Sections~\ref{sec:apply} and~\ref{sec:assessment})
   & \cite{knabenhans2026harms,de2016privacy,hsieh2005three,shipp2020period} \\
 \cmidrule[0.3pt]{2-5}
 RQ2 & Stance toward each named harm
@@ -162,20 +177,38 @@ All & Whether a language model can assist
 \end{singlespace}
 \end{table}
 
-\subsection{Ethics and Feasibility}
-\label{sec:ethics}
-No human participants are involved: the material consists of public documents and the
-researcher's own use of publicly available apps. Store terms are checked before any automated
-retrieval, and any review requirements are confirmed before collection begins. Walkthroughs
-use throwaway study accounts and synthetic data only; no real name, address, health data or
-payment details are entered. Paid features, identity verification and paired devices are
-therefore not obtained for the study. Where they block a task or the whole inspection, the
-barrier is recorded, and the app stays in the document sample
-(Section~\ref{sec:walkthroughs}).
+\subsection{Scope and Key Terms}
+\label{sec:scope}
+The study analyses what health-tracking apps communicate, not how they behave. Its objects
+are the apps of one domain, health trackers (Section~\ref{sec:app-search}), offered on the
+German market, together with their privacy policies, store listings and interfaces.
+Connected devices lie outside the scope: a wearable's companion app can enter the sample, but
+the device itself is not analysed. No user study is conducted. The interface is inspected by
+the analyst (Section~\ref{sec:walkthroughs}), and the study tests neither the apps' behaviour
+nor their security.
 
-The pilot's estimates fix a minimum feasible study (core documents, the blind validation set,
-the walkthroughs) before collection. If time runs short, supplementary marketing collection is
-reduced first, and other changes are agreed with the supervisor.
+The chapter uses seven terms throughout; each is developed in the section named.
+\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,
+                    labelindent=0pt,font=\normalfont\bfseries]
+  \item[Health tracker] An app that lets users record their own health or body data over
+    time, such as activity, nutrition, sleep, heart rate, mood or reproductive health; the
+    operational criteria are in Section~\ref{sec:app-search}.
+  \item[System component] Data the app collects, derives or sends, what the user and others do
+    with the app, or a requirement it imposes (Section~\ref{sec:harm-trees}).
+  \item[Capability] What components enable a named actor to do, or what they take away from the
+    user, an incapability (Section~\ref{sec:harm-categories}).
+  \item[Harm] An impairment or disruption of an entity's capacity or ability to function,
+    measured against the user's situation without the modelled pathway
+    (Section~\ref{sec:harm-categories}).
+  \item[Pathway to harm] Components that together enable a capability that results in a harm;
+    a harm tree combines all pathways to one harm (Section~\ref{sec:harm-trees}).
+  \item[Surface] A place where a provider communicates about privacy; the coded surfaces are
+    the privacy policy and the interface text (Section~\ref{sec:material}).
+  \item[Applicability] Whether a pathway is possible for a given app, judged from the
+    components the app has (Section~\ref{sec:apply}).
+\end{description}
+No human participants are involved; the safeguards for the walkthroughs are set out in
+Section~\ref{sec:ethics}.
 
 \section{Literature Review Procedure}
 \label{sec:lit-review}
@@ -203,7 +236,7 @@ of Arksey and O'Malley~\parencite{arksey2005scoping}.
 % - arksey2005scoping, doi:10.1080/1364557032000119616: scoping review,
 %   stages 1--5.
 
-\subsection{Search Scope, Sources, and Strategy}
+\subsection{Review Questions and Search Concepts}
 \label{sec:lit-search}
 \paragraph{Review question.} The review asks one question, derived from the RQ \enquote{what harms service providers
 communicate}: \emph{What is known about the privacy harms and capabilities
@@ -304,9 +337,13 @@ S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
 \end{singlespace}
 \end{table}
 
+\subsection{Sources, Search Execution, and Citation Searching}
+\label{sec:lit-sources}
 \paragraph{Sources.} Two kinds of source are searched: eight venues, which are
 listed completely, and four bibliographic databases, which are searched with
-the strands. Citation searching adds a third route, described below.
+the strands. Citation searching adds a third route, described below. The venues, the
+databases and the translation of the strands into each platform's syntax are tabulated in
+Appendix~\ref{app:lit-sources}.
 
 \paragraph{Venues.} The eight venues of security, privacy and human--computer
 interaction research are each listed completely from 2014 to the search date
@@ -341,55 +378,12 @@ instead of the full strands, because a title rarely names three concepts.
 %   Methods 11(2):181--217, doi:10.1002/jrsm.1378 (retrieval qualities of 28
 %   academic search systems; check which of the four databases they assessed).
 
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Venues of the literature search]{Venues of the literature search, all
-listed on 28 October 2026 and filtered locally. $^a$~Titles only:
-\mbox{(D AND P)} OR \mbox{(D AND H)} OR \mbox{(D AND C)} OR \mbox{(T AND L)} OR
-\mbox{(T AND F)}, because a title rarely names three concepts.}
-\label{tab:lit-venues}
-\small
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Venue} & \textbf{Listed through} & \textbf{Fields and period} & \textbf{Selection rule} \\
-\midrule
-PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 & D OR S3 OR S4 \\
-USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; 2014 to 2026, except SOUPS 2015, which has no programme page there & D OR S3 OR S4 \\
-CCS, IEEE S\&P, NDSS & Crossref, exact proceedings titles & Title; 2014 to 2026 & D OR S3 OR S4 \\
-CHI & Crossref, exact proceedings titles & Title; 2014 to 2026 & Title pairs$^a$ \\
-CSCW & Crossref: proceedings to 2017, then PACM HCI & Title to 2016, title and abstract from 2017 & Title pairs$^a$ to 2016; S1 OR S2 OR S3 OR S4 from 2017 \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
 \paragraph{Databases.} Four bibliographic databases add the literature published
 elsewhere (Table~\ref{tab:lit-databases}): PubMed for health informatics and
 medicine, IEEE Xplore for engineering, arXiv for preprints and the ACL Anthology
 for language processing. Each strand is run against every database, either as a
 query of its own or locally on the retrieved records, as the next paragraph
 explains.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Databases of the literature search]{Databases of the literature
-search, all searched on 28 October 2026.}
-\label{tab:lit-databases}
-\small
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Database} & \textbf{Searched through} & \textbf{Fields and limit} & \textbf{Strands} \\
-\midrule
-PubMed & E-utilities & Title and abstract [tiab]; publication date & S1 to S4, each as its own query \\
-IEEE Xplore & Web search interface & Document title and abstract; year range & S1 to S4, each as its own query \\
-arXiv & API & Title and abstract; submission date & S1 to S4 applied locally to the anchor pool \\
-ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year & S1 to S4 applied locally \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
 
 \paragraph{Platform strings.} The strands are the shared search logic; each
 platform receives them in its own syntax (Table~\ref{tab:lit-syntax}). The
@@ -428,33 +422,6 @@ or publication-type filter is set; both are screening rules.
 % - Local matching rules: scripts/literature-search/v002/lit.py (norm_text,
 %   term_regex); Appendix F, Sec. "Search Strings".
 
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Translation of a strand into platform syntax]{Translation of the shared
-search logic into the syntax of each platform, shown for the first term of each
-group of S4. An ellipsis stands for the remaining terms of the group; the
-complete strings are in Appendix~\ref{app:lit-strings}.}
-\label{tab:lit-syntax}
-\small
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash\ttfamily\footnotesize}X>{\raggedright\arraybackslash}p{2.9cm}@{}}
-\toprule
-\textbf{Platform} & \normalfont\small\textbf{Query form} & \textbf{Date limit} \\
-\midrule
-Shared logic & (privacy polic* OR \dots) AND (vague* OR \dots) & 2014 to search date \\
-\addlinespace
-PubMed & ("privacy polic*"[tiab] OR \dots) AND ("vague*"[tiab] OR \dots) & Publication date \\
-\addlinespace
-IEEE Xplore & ("Document Title":"privacy polic*" OR "Abstract":"privacy polic*" OR \dots) AND ("Document Title":vague* OR "Abstract":vague* OR \dots) & Year range \\
-\addlinespace
-arXiv & (ti:privacy OR abs:privacy) AND (ti:polic* OR abs:polic*)\newline{\normalfont\small one of the anchor queries; S4 is applied locally to the pool} & Submission date \\
-\addlinespace
-ACL Anthology, venue lists & {\normalfont\small No query; S4 is applied locally to title and abstract, or to the title where no abstract is held} & Publication year, applied locally \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
 \paragraph{Citation searching.} Citation searching adds studies that the term
 groups miss. It starts from a seed set of four studies that address the core
 topic of the review directly: three CHI papers on privacy in period, fertility
@@ -481,7 +448,7 @@ and screening as the search results.
 % - Seeds: config.json "citation_seeds" (DOIs 10.1145/3613904.3642521,
 %   10.1145/3706598.3714089, 10.1145/3613904.3642042, 10.1145/3645091).
 
-\subsection{Eligibility, Deduplication, and Screening}
+\subsection{Screening and Deduplication}
 \label{sec:lit-screening}
 \paragraph{Deduplication.} The records of all sources are merged automatically
 by a script of this project. Two records are taken to be the same work when
@@ -626,13 +593,13 @@ this chapter is stated.
 \section{Analytical Framework}
 \label{sec:framework}
 A harm can only be called missing from an app's privacy communication if the app could cause
-it. The analytical framework therefore fixes, before any app is coded, what is possible and how
-it is recognised in text. It has four parts, built in sequence: the harm concepts and
-categories (Section~\ref{sec:harm-categories}); a generic health tracker that holds every
-function such an app can have (Section~\ref{sec:generic-model}); reference harm trees that
-trace how these functions can lead to harms (Section~\ref{sec:harm-trees}); and the coding
-scheme that ties each unit of text to the nodes of the trees (Section~\ref{sec:axes}). The same
-framework is applied to every app and to every communication surface.
+it. The analytical framework therefore fixes, before any app is coded, what is possible. It has
+three parts, built in sequence: the harm concepts and categories
+(Section~\ref{sec:harm-categories}); a generic health tracker that holds every function such an
+app can have (Section~\ref{sec:generic-model}); and reference harm trees that trace how these
+functions can lead to harms (Section~\ref{sec:harm-trees}). The same framework is applied to
+every app and to every communication surface. The coding scheme that ties each unit of text to
+the nodes of the trees belongs to the coding procedure (Section~\ref{sec:axes}).
 
 \subsection{Harm Concepts and Categories}
 \label{sec:harm-categories}
@@ -1034,99 +1001,7 @@ export and control problems that Malki et al.\ found~\parencite[pp.~10--12]{malk
 Reading keystrokes from smartwatch motion sensors stays out, because it needs an analysis
 of the connected device. The complete model is in Appendix~\ref{app:reference-model}.
 
-\subsection{Coding Units and Axes}
-\label{sec:axes}
-To code a text is to attach labels that record what it says. A unit is one paragraph of a
-policy or one coherent block of interface text, fixed by a script before coding
-(Section~\ref{sec:two-coders}). Adjacent text is available for context, but supporting
-quotations must be identified precisely. The codebook defines each label with a fitting
-example and a counter-example. Table~\ref{tab:axes} summarises the three axes, and
-Appendix~\ref{app:example} shows the procedure on a constructed example.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
-Several labels may apply to one unit.}
-\label{tab:axes}
-\small
-\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
-\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.8cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
-\midrule
-A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
-  & \enquote{We store your cycle dates.} \\
-\rowrule
- & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
-  & \enquote{We estimate your fertile window.} \\
-\rowrule
- & Concrete harm & A named negative consequence and its category
-  & \enquote{Disclosure could cause distress.} \\
-\rowrule
- & Generic risk & Possible misuse without a concrete consequence
-  & \enquote{Your data could be used against you.} \\
-\rowrule
- & No relevant content & None of the coverage labels applies
-  & A contact address alone \\
-\rowrule
- & Additional details & Breach consequences, incident response and relationship impacts
-  & Code concrete response steps separately from a general legal-notice promise \\
-\midrule
-B: Stance & Acknowledged & A named harm presented as possible
-  & \enquote{A disclosure could cause distress.} \\
-\rowrule
- & Qualified & Uncertainty or likelihood language, with its target recorded
-  & \enquote{A leak is unlikely, but could cause distress.} \\
-\rowrule
- & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
-  & \enquote{Such distress is no cause for concern.} \\
-\rowrule
- & Responsibility shifted & Responsibility for a named harm placed on the user
-  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
-\rowrule
- & Denied/prevented & A named harm presented as impossible or prevented
-  & \enquote{This makes harassment impossible.} \\
-\midrule
-C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
-  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
-\rowrule
- & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
-  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
-\rowrule
- & Reassurance & Broad safety language without a specific measure
-  & \enquote{Your data is safe with us.} \\
-\rowrule
- & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
-  & A residual risk outside the claim's scope is not sufficient \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-\paragraph{Axis A: Coverage.} All explicitly mentioned nodes are recorded, including whether
-each is asserted, presented as possible or denied. The highest level reached is kept as a
-separate summary, so that a harm mention does not erase accompanying data-flow information.
-Feature descriptions can mention inference without presenting it as a risk.
-
-\paragraph{Axis B: Stance.} Stance labels are linked to the particular harm and its
-supporting span, not assigned to the paragraph as a whole. A statement may acknowledge a harm
-and qualify its likelihood, and the coder distinguishes uncertainty about a breach from
-uncertainty about its consequences. Minimisation is judged from wording in the unit or
-adjacent text, never from inferred intent; qualification alone does not establish it. RQ2
-thus covers stance toward named harms; dismissive language without a named harm is coded as
-reassurance. These distinctions adapt Zou et al.~\parencite{zou2019might} and are refined in
-the pilot.
-
-\paragraph{Axis C: Protection.} The coder records the measure and its claimed benefit, with
-actor, data and conditions where specified. Any technical measure claimed to limit exposure or
-misuse counts, whether or not it is labelled a privacy-enhancing technology, including ordinary
-security controls; non-technical commitments are kept separate. A \emph{potential mismatch}
-requires a pathway within the claim's scope and an explanation of why the measure misses one of
-its necessary conditions; partial protection is not rejected merely because other risks remain.
-Vague scope is recorded as unclear, and no deployed system is judged safe or unsafe.
-
-\section{App Sampling and Material Collection}
+\section{App Sampling}
 \label{sec:app-sampling}
 The target sample consists of 50 apps. Previous studies that examined both
 app documents and the apps themselves used samples of 20 to 64 apps:
@@ -1143,8 +1018,8 @@ and ranking rules. No quotas are set for the three groups
 \textcolor{accent}{(i)}--\textcolor{accent}{(iii)}. The search frame and eligibility rules
 were recorded before collection, and the resulting composition is reported in
 Section~\ref{sec:results-sample}. Section~\ref{sec:app-search} defines the search and
-eligibility, Section~\ref{sec:ranking} the ranking and selection, and
-Section~\ref{sec:material} the capture of each app's materials.
+eligibility, Section~\ref{sec:ranking} the cross-store matching and the popularity ranking, and
+Section~\ref{sec:selection} the provider rules, the preinstalled apps and the sensitivity checks.
 \todo[inline, color=green]{done}
 
 \subsection{App Search and Eligibility}
@@ -1290,7 +1165,7 @@ without one stays in the sample, and the absence is reported. In-app purchases
 and subscriptions are recorded but do not exclude an app. Screening follows the
 rank order, and each decision is logged with its reason.
 
-\subsection{Ranking and Selection}
+\subsection{Cross-Store Matching and Popularity Ranking}
 \label{sec:ranking}
 \paragraph{Same app in both stores.} An app listed in both stores is one
 candidate, so its two listings have to be found. Names are not enough for this:
@@ -1451,6 +1326,8 @@ are sufficiently similar across apps.
 All candidates are ranked by descending $P_i$, with ties broken by the stable
 \emph{candidate key} used by the ranking script.
 
+\subsection{Provider Rules, Preinstalled Apps, and Sensitivity Checks}
+\label{sec:selection}
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
 is already in the sample, through either store or the preinstalled group. In a
 trial collection on 22 October 2026\footnote{Collected with the same collection scripts as in Section~\ref{sec:app-search}.}, one developer held 10 of the 47 most-rated
@@ -1539,7 +1416,15 @@ the sample with a different app or a different listing.
 %fields behave and does not enter the sample. The two stores therefore count
 %ratings on different bases.
 
-\subsection{Materials, Capture, and Language}
+\section{Data Collection}
+\label{sec:collection}
+Two kinds of evidence are collected for each sampled app. Its documents, the privacy policy and
+the store listing, are captured and archived (Section~\ref{sec:material}). Its interface is
+inspected in a cognitive walkthrough, which captures the interface text and records what a user
+can find and do (Section~\ref{sec:walkthroughs}). This section states what is collected and
+how; Section~\ref{sec:analysis} states how the material is coded and assessed.
+
+\subsection{Policies, Listings, and Language}
 \todo[color=orange]{
 Privacy Policy \\
 Application's interface -> Cognitive 
@@ -1597,119 +1482,6 @@ interface. German is used when no English version exists. Where both exist, both
 captured and their differences logged. Language is recorded per source, and the
 original wording is coded. Search keywords and storefronts are not affected by this
 rule (Section~\ref{sec:app-sampling}).
-
-\section{Instrument Development and Validation}
-\label{sec:instruments}
-The instruments (the reference model and trees, the codebook, the walkthrough protocol and the
-prompts) are developed in two rounds before the main study and then checked independently of
-their development. A preliminary test on one app shows whether the steps connect
-(Section~\ref{sec:instrument-test}). A pilot on five apps tests them in practice and ends with
-their freeze (Section~\ref{sec:pilot}). A second human coder (Section~\ref{sec:two-coders})
-and a withheld validation set (Section~\ref{sec:validation}) then assess the frozen procedure.
-
-\subsection{Preliminary Instrument Test}
-\label{sec:instrument-test}
-Before the pilot, the whole procedure is run once on one app. The test asks one thing: do
-the steps connect, from the generic model through the trees to a conclusion about one app?
-It gives no estimate for the sample, and it does not validate the model. It follows the
-advice to try a coding procedure on a small set of texts before the
-instruments are fixed~\parencite{tornberg2024best}, as Malki et al.\ did with a first set of
-policies~\parencite[p.~4]{malki2024exploring}.
-
-\paragraph{Test case.} The test app is chosen on purpose from the sample, not at random, for
-how much of the instrument it exercises: sensitive data, many pathways, and a long policy in
-English from a provider in Germany. It stays in the sample and is recoded with the frozen
-instruments, and like the pilot apps it does not enter the validation set.
-
-\paragraph{What is real and what is not.} The policy is real and archived with its hash.
-The reference model, the evaluation and the model's output are real. Two inputs are not final:
-\begin{itemize}[itemsep=1pt,topsep=3pt]
-  \item The walkthrough record is \textbf{invented for this test} \synthtag. Nobody opened the
-    app. Its only purpose is to run the walkthrough's outputs through the procedure. Every
-    result that rests on it carries the same tag, and none is a finding about the real app.
-  \item The manual coding and the applicability record were \textbf{prepared by an AI assistant}
-    as stand-ins, before any model output existed. The author has to check or redo them.
-    Comparing them with the model exercises the script. It is not validation, since both come
-    from one vendor.
-\end{itemize}
-The test is evaluated twice, on the policy alone and with the invented walkthrough, to show what
-a walkthrough adds.
-% Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
-
-\subsection{Pilot, Refinement, and Instrument Freeze}
-\label{sec:pilot}
-The pilot takes place after sampling and after the reference harm trees have been built. Five
-apps are drawn at random from the full health-tracker sample with a recorded seed, without
-category quotas. The pilot tests the boundaries of collection and coding and estimates capture
-time, coding units, manual effort and model cost. It also settles the choices left open in this
-chapter: for the walkthroughs, the platform rule, starting states, route-preparation and
-stopping rules, time limits, synthetic inputs and the consent and permission profile; for the
-coding, the stance definitions and the handling of new harms; and the language model and its
-prompts. The instruments are then frozen; later changes are logged, and the affected material
-is recoded. The pilot apps are recoded with the final instruments and remain in the sample, but
-they do not enter the validation set.
-
-\subsection{Independent Human Coding and Agreement}
-\label{sec:two-coders}
-The supervisor asked for two coders. Coding all material twice is not feasible in this
-thesis, and double-coding a subset is common when resources are
-limited~\parencite{oconnor2020intercoder}. The author therefore codes everything, and a second
-coder independently codes the validation set (Section~\ref{sec:validation}) under the frozen
-codebook.
-\highlight[orange!25]{The second coder also reviews applicability, minimisation and mismatch
-decisions; failing a second coder, the supervisor reviews a sample, including judged
-non-mismatches.}\todo{Who is the second coder? Decision D8 needs the supervisor.}
-Both coders work on the same units, which a script fixes before coding, because unclear units
-are a main source of false disagreement~\parencite{campbell2013coding}. Agreement is computed
-before any discussion; disagreements are then settled and recorded. To estimate intra-coder
-consistency, the author recodes two apps after at least two weeks, before drafting.
-Reliability supports the reproducibility of labels; it does not show that they are
-true~\parencite{mcdonald2019reliability}.
-
-\subsection{LLM Validation and Missed-Mention Audit}
-\label{sec:validation}
-Ten apps are drawn at random from the health-tracker sample, with a recorded seed, from
-providers and documents not used in the pilot, stratified by the language of the coded policy
-where both languages occur; the numbers of independent providers and unique documents are
-reported. The author codes their captured policy and interface units fully before seeing model
-output, and they are not used to tune prompts. Because prompt wording alone can change
-conclusions~\parencite{baumann2025llm}, two paraphrased prompts are also run and the headline
-counts compared. Disagreements are adjudicated with each label's source hidden.
-
-\paragraph{Performance measures.} A detection is correct only with the right label, unit and
-evidence span, and the staged pipeline is scored end to end, so that first-stage misses count.
-Reported are per-code precision (the share of model labels supported), recall (the share of
-manual mentions found) and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient},
-with counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$ despite high
-agreement~\parencite{feinstein1990high,gwet2008computing}. App-level detection is also reported
-for the validation set as a whole and, where counts allow, by source and language. Exploratory
-95\,\% intervals resample providers to respect shared sources; with ten apps they will be wide.
-
-\paragraph{Missed-mention audit.} A separate audit, reported apart from validation, searches
-the remaining corpus for harm-related vocabulary in both languages and checks every unlabelled
-hit manually. To expose the vocabulary's blind spots, 100 units outside the hits (or all, if
-fewer), allocated across languages and sources in advance, are also read. Recall is reported
-as unestimable where manual positives are too few.
-
-\paragraph{Review triggers.} For any code with fewer than 20 validation positives or recall
-below 0.90, all relevant material is checked manually, or corpus-wide absence claims are
-withheld; these are review triggers, not proof of accuracy. The available apps, units and
-positives are also reported for each surface. Claims about interface text require interface
-evidence: where its positives are too few or its recall is inadequate, the same manual-review or
-withheld-claim rule applies. A validation app with blocked interface access contributes
-document evidence only.
-
-\section{Analysis and Reporting}
-\label{sec:analysis}
-The trees say what is possible for health trackers in general; the analysis asks what holds for
-each app. The cognitive walkthrough first inspects the interface and captures its text
-(Section~\ref{sec:walkthroughs}). Three questions then follow in a fixed order. Step~1 asks
-which parts of the reference model the app has (Section~\ref{sec:apply}). Step~2 asks how far
-the app's policy and interface text reach up the applicable pathways, and Step~3 whether its
-protection claims would cut them (Section~\ref{sec:comparison}); both rest on the
-model-assisted, human-reviewed coding of Section~\ref{sec:llm}. The first two steps are
-answered before any comparison of protection claims, so that a claim cannot shape what counts
-as applicable.
 
 \subsection{Cognitive Walkthrough}
 \label{sec:walkthroughs}
@@ -1876,7 +1648,7 @@ Interface text & Checked transcript, screen locator, source origin and language
   & RQ1--RQ4 \\
 \rowrule
 Applicability evidence & Observable states and actions, with screen evidence and limits
-  & Applicability record, Step~1 (Section~\ref{sec:apply}); controls offered in the app, Step~3 (Section~\ref{sec:comparison})
+  & Applicability record, Step~1 (Section~\ref{sec:apply}); controls offered in the app, Step~3 (Section~\ref{sec:assessment})
   & RQ1, RQ3 \\
 \bottomrule
 \end{tabularx}
@@ -1934,26 +1706,109 @@ point open. Clarify which mechanisms it means before it becomes a criterion.}
 % Light et al. 2018 (doi:10.1177/1461444816675438) structure entry, everyday use and
 % leaving; used for the order of capture only, so not cited as the method.
 
-\subsection{App-Specific Applicability Assessment}
-\label{sec:apply}
-Step~1 asks which parts of the reference model an app has. An \emph{applicability record} gives
-every component one of three states: \emph{present}, \emph{absent} or \emph{uncertain},
-with its evidence (policy, listing or walkthrough, with location) and a reason. Text can
-show that a feature exists; it cannot show that a feature works, so what only the app can
-show stays uncertain unless the walkthrough supplies sufficient evidence about an
-observable condition. A non-finding alone does not establish absence or incapability.
-Events outside the app are not
-observed. An attacker gaining access is assumed possible for stored data. An authority's
-demand and an insurer's or employer's use stay uncertain unless the evidence shows them,
-because the study does not assume the legal setting of another country for German users.
+\section{Coding and Assessment}
+\label{sec:analysis}
+The trees say what is possible for health trackers in general; the analysis asks what holds for
+each app. The captured text is first cut into units and coded on three axes
+(Section~\ref{sec:axes}), with a language model that proposes labels and people who decide them
+(Section~\ref{sec:llm}). Three questions then follow in a fixed order. Step~1 asks which parts
+of the reference model the app has (Section~\ref{sec:apply}). Step~2 asks how far the app's
+policy and interface text reach up the applicable pathways, and Step~3 whether its protection
+claims would cut them (Section~\ref{sec:assessment}). The first two steps are answered before
+any comparison of protection claims, so that a claim cannot shape what counts as applicable.
+Section~\ref{sec:comparison} sets out how the results are reported for each research question.
 
-A script then evaluates the trees. AND is absent if any part is absent, and present only
-if all parts are present. OR is present if any part is present, and absent only if all
-parts are absent. Everything else stays uncertain. OR+ is read like OR, since the study
-asks whether a pathway is possible at all. A harm category applies when at least one of
-its pathways does. Uncertain cases are counted and reported, not silently dropped, so that
-sparsely documented providers do not vanish from the gap analysis. The trees are reference
-models of possible harms, not complete descriptions of the apps' actual systems.
+\subsection{Coding Units and Axes}
+\label{sec:axes}
+To code a text is to attach labels that record what it says. A unit is one paragraph of a
+policy or one coherent block of interface text, fixed by a script before coding
+(Section~\ref{sec:two-coders}). Adjacent text is available for context, but supporting
+quotations must be identified precisely. The codebook defines each label with a fitting
+example and a counter-example. Table~\ref{tab:axes} summarises the three axes, and
+Appendix~\ref{app:example} shows the procedure on a constructed example.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
+Several labels may apply to one unit.}
+\label{tab:axes}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.8cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
+\midrule
+A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
+  & \enquote{We store your cycle dates.} \\
+\rowrule
+ & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
+  & \enquote{We estimate your fertile window.} \\
+\rowrule
+ & Concrete harm & A named negative consequence and its category
+  & \enquote{Disclosure could cause distress.} \\
+\rowrule
+ & Generic risk & Possible misuse without a concrete consequence
+  & \enquote{Your data could be used against you.} \\
+\rowrule
+ & No relevant content & None of the coverage labels applies
+  & A contact address alone \\
+\rowrule
+ & Additional details & Breach consequences, incident response and relationship impacts
+  & Code concrete response steps separately from a general legal-notice promise \\
+\midrule
+B: Stance & Acknowledged & A named harm presented as possible
+  & \enquote{A disclosure could cause distress.} \\
+\rowrule
+ & Qualified & Uncertainty or likelihood language, with its target recorded
+  & \enquote{A leak is unlikely, but could cause distress.} \\
+\rowrule
+ & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
+  & \enquote{Such distress is no cause for concern.} \\
+\rowrule
+ & Responsibility shifted & Responsibility for a named harm placed on the user
+  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
+\rowrule
+ & Denied/prevented & A named harm presented as impossible or prevented
+  & \enquote{This makes harassment impossible.} \\
+\midrule
+C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
+  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
+\rowrule
+ & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
+  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
+\rowrule
+ & Reassurance & Broad safety language without a specific measure
+  & \enquote{Your data is safe with us.} \\
+\rowrule
+ & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
+  & A residual risk outside the claim's scope is not sufficient \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Axis A: Coverage.} All explicitly mentioned nodes are recorded, including whether
+each is asserted, presented as possible or denied. The highest level reached is kept as a
+separate summary, so that a harm mention does not erase accompanying data-flow information.
+Feature descriptions can mention inference without presenting it as a risk.
+
+\paragraph{Axis B: Stance.} Stance labels are linked to the particular harm and its
+supporting span, not assigned to the paragraph as a whole. A statement may acknowledge a harm
+and qualify its likelihood, and the coder distinguishes uncertainty about a breach from
+uncertainty about its consequences. Minimisation is judged from wording in the unit or
+adjacent text, never from inferred intent; qualification alone does not establish it. RQ2
+thus covers stance toward named harms; dismissive language without a named harm is coded as
+reassurance. These distinctions adapt Zou et al.~\parencite{zou2019might} and are refined in
+the pilot.
+
+\paragraph{Axis C: Protection.} The coder records the measure and its claimed benefit, with
+actor, data and conditions where specified. Any technical measure claimed to limit exposure or
+misuse counts, whether or not it is labelled a privacy-enhancing technology, including ordinary
+security controls; non-technical commitments are kept separate. A \emph{potential mismatch}
+requires a pathway within the claim's scope and an explanation of why the measure misses one of
+its necessary conditions; partial protection is not rejected merely because other risks remain.
+Vague scope is recorded as unclear, and no deployed system is judged safe or unsafe.
 
 \subsection{LLM-Assisted Coding and Human Review}
 \label{sec:llm}
@@ -2014,11 +1869,32 @@ In practice, the units of each app pass the three stages in turn. The model prop
 each with its quoted span; a script discards any label whose span does not occur in its unit;
 and uncertain answers and missing spans go to manual review. People decide every retained
 code, and every retained harm mention is read by a person. Raw model output is stored apart
-from the adjudicated labels, and only the adjudicated labels enter the comparison of
-Section~\ref{sec:comparison}.
+from the adjudicated labels, and only the adjudicated labels enter the assessment and
+comparison of Sections~\ref{sec:assessment} and~\ref{sec:comparison}.
 
-\subsection{Comparison and Research-Question Reporting}
-\label{sec:comparison}
+\subsection{Applicability Assessment (Step~1)}
+\label{sec:apply}
+Step~1 asks which parts of the reference model an app has. An \emph{applicability record} gives
+every component one of three states: \emph{present}, \emph{absent} or \emph{uncertain},
+with its evidence (policy, listing or walkthrough, with location) and a reason. Text can
+show that a feature exists; it cannot show that a feature works, so what only the app can
+show stays uncertain unless the walkthrough supplies sufficient evidence about an
+observable condition. A non-finding alone does not establish absence or incapability.
+Events outside the app are not
+observed. An attacker gaining access is assumed possible for stored data. An authority's
+demand and an insurer's or employer's use stay uncertain unless the evidence shows them,
+because the study does not assume the legal setting of another country for German users.
+
+A script then evaluates the trees. AND is absent if any part is absent, and present only
+if all parts are present. OR is present if any part is present, and absent only if all
+parts are absent. Everything else stays uncertain. OR+ is read like OR, since the study
+asks whether a pathway is possible at all. A harm category applies when at least one of
+its pathways does. Uncertain cases are counted and reported, not silently dropped, so that
+sparsely documented providers do not vanish from the gap analysis. The trees are reference
+models of possible harms, not complete descriptions of the apps' actual systems.
+
+\subsection{Coverage and Protection Assessment (Steps~2 and~3)}
+\label{sec:assessment}
 \paragraph{Coverage (Step~2).} Step~2 asks how far the text goes. Each coded mention is tied to a node of the
 tree. For each applicable pathway and each surface, the \emph{coverage level} is the
 highest level the text reaches (Figure~\ref{fig:coverage-levels}): nothing, the component,
@@ -2059,6 +1935,8 @@ open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates. A
 risk outside the claim's scope is not a mismatch, and no system is judged safe or unsafe.
 % De and Le Metayer on counter-measures: talk slides, slide 19.
 
+\subsection{Comparison and Reporting by Research Question}
+\label{sec:comparison}
 \paragraph{Reporting by research question.} Results are descriptive. For RQ1, each harm's
 denominator includes only applicable apps with the required core sources captured. A source the
 provider does not offer is recorded as such; only sources that exist but cannot be retrieved
@@ -2080,6 +1958,150 @@ claim. Linked policy wording stays on the policy surface. Inconsistent claims re
 check of scope, version, date and language and are reported apart from mere differences in
 detail or findability. Absence means \enquote{no mention was identified in the captured
 material}, with the instrument's measured limitations stated.
+
+\section{Instrument Validation}
+\label{sec:instruments}
+The instruments (the reference model and trees, the codebook, the walkthrough protocol and the
+prompts) are developed in two rounds before the main study and then checked independently of
+their development. These checks precede the main collection in time
+(Figure~\ref{fig:pipeline}), but they are described here, after the procedures they test. A
+preliminary test on one app shows whether the steps connect (Section~\ref{sec:instrument-test}).
+A pilot on five apps tests them in practice and ends with their freeze (Section~\ref{sec:pilot}).
+A withheld validation set, coded independently by a second human coder, then assesses the frozen
+procedure (Section~\ref{sec:validation}).
+
+\subsection{Preliminary Instrument Test}
+\label{sec:instrument-test}
+Before the pilot, the whole procedure is run once on one app. The test asks one thing: do
+the steps connect, from the generic model through the trees to a conclusion about one app?
+It gives no estimate for the sample, and it does not validate the model. It follows the
+advice to try a coding procedure on a small set of texts before the
+instruments are fixed~\parencite{tornberg2024best}, as Malki et al.\ did with a first set of
+policies~\parencite[p.~4]{malki2024exploring}.
+
+\paragraph{Test case.} The test app is chosen on purpose from the sample, not at random, for
+how much of the instrument it exercises: sensitive data, many pathways, and a long policy in
+English from a provider in Germany. It stays in the sample and is recoded with the frozen
+instruments, and like the pilot apps it does not enter the validation set.
+
+\paragraph{What is real and what is not.} The policy is real and archived with its hash.
+The reference model, the evaluation and the model's output are real. Two inputs are not final:
+\begin{itemize}[itemsep=1pt,topsep=3pt]
+  \item The walkthrough record is \textbf{invented for this test} \synthtag. Nobody opened the
+    app. Its only purpose is to run the walkthrough's outputs through the procedure. Every
+    result that rests on it carries the same tag, and none is a finding about the real app.
+  \item The manual coding and the applicability record were \textbf{prepared by an AI assistant}
+    as stand-ins, before any model output existed. The author has to check or redo them.
+    Comparing them with the model exercises the script. It is not validation, since both come
+    from one vendor.
+\end{itemize}
+The test is evaluated twice, on the policy alone and with the invented walkthrough, to show what
+a walkthrough adds.
+% Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
+
+\subsection{Pilot, Refinement, and Instrument Freeze}
+\label{sec:pilot}
+The pilot takes place after sampling and after the reference harm trees have been built. Five
+apps are drawn at random from the full health-tracker sample with a recorded seed, without
+category quotas. The pilot tests the boundaries of collection and coding and estimates capture
+time, coding units, manual effort and model cost. It also settles the choices left open in this
+chapter: for the walkthroughs, the platform rule, starting states, route-preparation and
+stopping rules, time limits, synthetic inputs and the consent and permission profile; for the
+coding, the stance definitions and the handling of new harms; and the language model and its
+prompts. The instruments are then frozen; later changes are logged, and the affected material
+is recoded. The pilot apps are recoded with the final instruments and remain in the sample, but
+they do not enter the validation set.
+
+\subsection{Human Coding, Agreement, and LLM Validation}
+\label{sec:validation}
+\paragraph{Validation set.} Ten apps are drawn at random from the health-tracker sample, with a recorded seed, from
+providers and documents not used in the pilot, stratified by the language of the coded policy
+where both languages occur; the numbers of independent providers and unique documents are
+reported. The author codes their captured policy and interface units fully before seeing model
+output, and they are not used to tune prompts. Because prompt wording alone can change
+conclusions~\parencite{baumann2025llm}, two paraphrased prompts are also run and the headline
+counts compared. Disagreements are adjudicated with each label's source hidden.
+
+\paragraph{Second coder.}\label{sec:two-coders} The supervisor asked for two coders. Coding all
+material twice is not feasible in this thesis, and double-coding a subset is common when
+resources are limited~\parencite{oconnor2020intercoder}. The author therefore codes everything,
+and a second coder independently codes the validation set under the frozen codebook.
+\highlight[orange!25]{The second coder also reviews applicability, minimisation and mismatch
+decisions; failing a second coder, the supervisor reviews a sample, including judged
+non-mismatches.}\todo{Who is the second coder? Decision D8 needs the supervisor.}
+Both coders work on the same units, which a script fixes before coding, because unclear units
+are a main source of false disagreement~\parencite{campbell2013coding}. Agreement is computed
+before any discussion; disagreements are then settled and recorded. To estimate intra-coder
+consistency, the author recodes two apps after at least two weeks, before drafting.
+Reliability supports the reproducibility of labels; it does not show that they are
+true~\parencite{mcdonald2019reliability}.
+
+\paragraph{Performance measures.} A detection is correct only with the right label, unit and
+evidence span, and the staged pipeline is scored end to end, so that first-stage misses count.
+Reported are per-code precision (the share of model labels supported), recall (the share of
+manual mentions found) and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient},
+with counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$ despite high
+agreement~\parencite{feinstein1990high,gwet2008computing}. App-level detection is also reported
+for the validation set as a whole and, where counts allow, by source and language. Exploratory
+95\,\% intervals resample providers to respect shared sources; with ten apps they will be wide.
+
+\paragraph{Missed-mention audit.} A separate audit, reported apart from validation, searches
+the remaining corpus for harm-related vocabulary in both languages and checks every unlabelled
+hit manually. To expose the vocabulary's blind spots, 100 units outside the hits (or all, if
+fewer), allocated across languages and sources in advance, are also read. Recall is reported
+as unestimable where manual positives are too few.
+
+\paragraph{Review triggers.} For any code with fewer than 20 validation positives or recall
+below 0.90, all relevant material is checked manually, or corpus-wide absence claims are
+withheld; these are review triggers, not proof of accuracy. The available apps, units and
+positives are also reported for each surface. Claims about interface text require interface
+evidence: where its positives are too few or its recall is inadequate, the same manual-review or
+withheld-claim rule applies. A validation app with blocked interface access contributes
+document evidence only.
+
+\section{Ethics, Availability, and Limitations}
+\label{sec:closing}
+The last section gathers what applies to the design as a whole: its ethical safeguards and
+feasibility limits, where its data and instruments are kept, and the limits on what it can show.
+
+\subsection{Ethical Considerations and Feasibility}
+\label{sec:ethics}
+No human participants are involved: the material consists of public documents and the
+researcher's own use of publicly available apps. Store terms are checked before any automated
+retrieval, and any review requirements are confirmed before collection begins. Walkthroughs
+use throwaway study accounts and synthetic data only; no real name, address, health data or
+payment details are entered. Paid features, identity verification and paired devices are
+therefore not obtained for the study. Where they block a task or the whole inspection, the
+barrier is recorded, and the app stays in the document sample
+(Section~\ref{sec:walkthroughs}).
+
+The pilot's estimates fix a minimum feasible study (core documents, the blind validation set,
+the walkthroughs) before collection. If time runs short, supplementary marketing collection is
+reduced first, and other changes are agreed with the supervisor.
+
+\subsection{Data and Artifact Availability}
+\label{sec:availability}
+The study keeps a record of each of its steps:
+\begin{itemize}[itemsep=1pt,topsep=3pt]
+  \item \textbf{Literature review.} The search strings, platforms and search times
+    (Appendix~\ref{app:lit-strings}), the unchanged search results and the screening log with
+    every decision and its reason (Appendix~\ref{app:literature}).
+  \item \textbf{Sample.} The frozen store collections from which the sample is drawn
+    (Section~\ref{sec:app-sampling}), the collection scripts (Appendix~\ref{app:scripts}) and
+    the sample itself (Appendix~\ref{app:app-sample}).
+  \item \textbf{Documents.} Each policy, saved with its SHA-256 hash, its capture date and the
+    date it states (Section~\ref{sec:material}).
+  \item \textbf{Interface.} The screen recordings and the checked transcripts, each linked to
+    the app version, capture date, language and screen (Section~\ref{sec:walkthroughs}).
+  \item \textbf{Instruments.} The reference model and trees as a machine-readable file checked by
+    a tested script (Appendix~\ref{app:reference-model}), the codebook
+    (Appendix~\ref{app:codebook}) and the prompts (Appendix~\ref{app:prompts}).
+  \item \textbf{Coding.} The raw model output, kept apart from the adjudicated labels, and the
+    frozen model version and parameters (Section~\ref{sec:llm}).
+\end{itemize}
+\highlight[orange!25]{Which of these records are released with the thesis, and under what terms,
+is not yet decided.}\todo{Decide what is published (scripts, model file, codebook, prompts) and
+what stays private (recordings may show third-party content and advertisements).}
 
 \subsection{Methodological Limitations}
 \label{sec:limitations}

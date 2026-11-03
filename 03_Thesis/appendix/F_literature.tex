@@ -27,6 +27,87 @@ the literature search.}
 \end{singlespace}
 \end{table}
 
+\section{Search Sources}
+\label{app:lit-sources}
+The eight venues of Section~\ref{sec:lit-sources} were listed completely and filtered
+locally, with the selection rule of each venue given in Table~\ref{tab:lit-venues}.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Venues of the literature search]{Venues of the literature search, all
+listed on 28 October 2026 and filtered locally. $^a$~Titles only:
+\mbox{(D AND P)} OR \mbox{(D AND H)} OR \mbox{(D AND C)} OR \mbox{(T AND L)} OR
+\mbox{(T AND F)}, because a title rarely names three concepts.}
+\label{tab:lit-venues}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Venue} & \textbf{Listed through} & \textbf{Fields and period} & \textbf{Selection rule} \\
+\midrule
+PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 & D OR S3 OR S4 \\
+USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; 2014 to 2026, except SOUPS 2015, which has no programme page there & D OR S3 OR S4 \\
+CCS, IEEE S\&P, NDSS & Crossref, exact proceedings titles & Title; 2014 to 2026 & D OR S3 OR S4 \\
+CHI & Crossref, exact proceedings titles & Title; 2014 to 2026 & Title pairs$^a$ \\
+CSCW & Crossref: proceedings to 2017, then PACM HCI & Title to 2016, title and abstract from 2017 & Title pairs$^a$ to 2016; S1 OR S2 OR S3 OR S4 from 2017 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+Table~\ref{tab:lit-syntax} shows how the shared search logic of Table~\ref{tab:lit-strands} is
+translated into the syntax of each platform.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Translation of a strand into platform syntax]{Translation of the shared
+search logic into the syntax of each platform, shown for the first term of each
+group of S4. An ellipsis stands for the remaining terms of the group; the
+complete strings are in Appendix~\ref{app:lit-strings}.}
+\label{tab:lit-syntax}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash\ttfamily\footnotesize}X>{\raggedright\arraybackslash}p{2.9cm}@{}}
+\toprule
+\textbf{Platform} & \normalfont\small\textbf{Query form} & \textbf{Date limit} \\
+\midrule
+Shared logic & (privacy polic* OR \dots) AND (vague* OR \dots) & 2014 to search date \\
+\addlinespace
+PubMed & ("privacy polic*"[tiab] OR \dots) AND ("vague*"[tiab] OR \dots) & Publication date \\
+\addlinespace
+IEEE Xplore & ("Document Title":"privacy polic*" OR "Abstract":"privacy polic*" OR \dots) AND ("Document Title":vague* OR "Abstract":vague* OR \dots) & Year range \\
+\addlinespace
+arXiv & (ti:privacy OR abs:privacy) AND (ti:polic* OR abs:polic*)\newline{\normalfont\small one of the anchor queries; S4 is applied locally to the pool} & Submission date \\
+\addlinespace
+ACL Anthology, venue lists & {\normalfont\small No query; S4 is applied locally to title and abstract, or to the title where no abstract is held} & Publication year, applied locally \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+The four databases were searched through the interfaces, fields and limits of
+Table~\ref{tab:lit-databases}.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Databases of the literature search]{Databases of the literature
+search, all searched on 28 October 2026.}
+\label{tab:lit-databases}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Database} & \textbf{Searched through} & \textbf{Fields and limit} & \textbf{Strands} \\
+\midrule
+PubMed & E-utilities & Title and abstract [tiab]; publication date & S1 to S4, each as its own query \\
+IEEE Xplore & Web search interface & Document title and abstract; year range & S1 to S4, each as its own query \\
+arXiv & API & Title and abstract; submission date & S1 to S4 applied locally to the anchor pool \\
+ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year & S1 to S4 applied locally \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
 \section{Search Strings}
 \label{app:lit-strings}
 The strings below were sent to each platform on 28 October 2026 (times in
