@@ -1,1 +1,0 @@
-("gesundheits-app*"[tiab] OR "gesundheitsapp*"[tiab] OR "gesundheitsanwendung*"[tiab] OR "fitness-app*"[tiab] OR "fitnesstracker*"[tiab] OR "zyklus-app*"[tiab] OR "zyklusapp*"[tiab] OR "diga"[tiab]) AND ("datenschutz*"[tiab] OR "privatsphare"[tiab] OR "privatsph~re"[tiab])

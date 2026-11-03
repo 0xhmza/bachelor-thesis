@@ -1,5 +1,0 @@
-{
-  // LaTeX Workshop reads .vscode/settings.json in this folder, which holds
-  // the recipe/tool definitions for pdflatex + biber.
-  "recommendations": ["james-yu.latex-workshop"]
-}
