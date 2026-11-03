@@ -1,0 +1,5 @@
+{
+  "scope": "Current edited sampling/methodology and Appendix A with other existing thesis sources; unrelated in-progress literature section/appendix omitted only in the copied build tree.",
+  "full_build_blocker": "Missing tables/literature-groups.tex, already referenced in the pre-edit working-tree methodology; tables/literature-strings.tex is also absent.",
+  "source_thesis_modified_by_test": false
+}

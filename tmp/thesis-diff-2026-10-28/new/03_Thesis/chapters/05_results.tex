@@ -1,0 +1,517 @@
+\chapter{Results}
+\label{ch:results}
+
+% Report findings only. Interpretation belongs in the discussion.
+
+\section{Literature Review}
+\label{sec:results-lit}
+This section reports the search and screening of Section~\ref{sec:lit-review}
+and then what the screened literature says about the review question. All
+counts come from the search scripts and the screening log; the corpus is listed
+in Appendix~\ref{app:lit-inventory}.
+\todo{The screening decisions in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv
+were prepared by an AI assistant. Check every decision before this section
+states who screened, and obtain the 244 full texts still missing.}
+
+\subsection{Search and Screening}
+
+\paragraph{Identification.} The searches ran on 28 October 2026; the final runs
+started between 14:46 and 15:10~UTC (Appendix~\ref{app:lit-strings}).
+Table~\ref{tab:lit-sources} gives the hits and records of every source. The four
+databases returned 2{,}583 hits over the strands, which were 2{,}421 records
+once each database's own repeats were merged; IEEE Xplore contributed most of
+them (1{,}240), and its S1 query alone returned 1{,}004 hits. The eight venues
+were listed completely: 25{,}196 papers, from 372 at SOUPS to 10{,}718 at CHI.
+The venue rules selected 85 of them. The German PubMed strand (S5) returned no
+record. Merging the database and venue records removed 111 duplicates across
+sources and left 2{,}395 records from the searches. The other routes added 585
+records that no search had found: 483 from citation searching alone, 64 from the
+Methods Digest alone and 38 from the thesis citations alone or from more than
+one of these routes.
+In total, 2{,}980 records were screened. For 105 of them no abstract was
+available, and 371 were screened with an abstract looked up by DOI.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Sources of the literature search and their yield]{Sources of the
+literature search and their yield. Hits are counted per strand and include
+repeats; records are counted after merging repeats within the source.
+\emph{Only here}: records no other source found. \emph{Passed}: records that
+passed title-and-abstract screening (Table~\ref{tab:lit-screening}).
+$^a$~Strands applied locally. $^b$~Titles only.}
+\label{tab:lit-sources}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.2cm}l>{\raggedright\arraybackslash}p{1.9cm}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+\textbf{Source} & \textbf{Kind} & \textbf{Fields} & \textbf{Hits} & \textbf{Records} & \textbf{Only here} & \textbf{Passed} \\
+\midrule
+\input{tables/literature-sources}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+Figure~\ref{fig:lit-sources} shows how much each source contributed beyond the
+others. Most records of the three large databases were found by that database
+alone:
+1{,}154 of IEEE Xplore's 1{,}240, 850 of PubMed's 911 and 173 of arXiv's 253.
+The overlap is larger where it matters for screening: of the 47 studies that
+form the review evidence, 36 are in the Methods Digest and 17 were also found
+on arXiv. Citation searching found the most records that passed screening
+(90), followed by IEEE Xplore (84), arXiv (69) and PubMed (61). The venue lists
+added few records, because the databases and citation searching had already
+found most of their papers: CHI contributed 11 records that passed, PoPETs 10,
+USENIX Security, SOUPS and IEEE S\&P together 7, CSCW 1, and CCS and NDSS none.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-sources}
+\caption[Records contributed by each source]{Records contributed by each
+source, after merging repeats within the source (n~=~2{,}980 records; a record
+found by several sources counts for each). Dark: found by this source only;
+light: also found by another source. Numbers at the bars: records that passed
+title-and-abstract screening (n~=~292).}
+\Description{Horizontal stacked bars for 15 sources. IEEE Xplore and PubMed
+have the longest bars, mostly unique records; citation searching follows.
+Venue bars are short.}
+\label{fig:lit-sources}
+\end{figure}
+
+\paragraph{Screening.} Table~\ref{tab:lit-screening} and
+Figure~\ref{fig:lit-exclusions} give the screening by rule, and
+Figure~\ref{fig:lit-flow} the whole flow. Each excluded record counts once,
+under the first rule that applied, so each rule's denominator is the number of
+records left after the rules before it. R3 excluded the most records (1{,}243
+of 2{,}502, 49.7\,\%), for example security systems for hospitals, health
+records or the Internet of Things in general. R4 removed 585 of 1{,}259 (46.5\,\%) studies of
+health apps or wearables without a privacy question, R5 276 of 674 (40.9\,\%)
+privacy-preserving systems for wearables and health apps, and R6 106 of 398
+(26.6\,\%) studies of privacy text that neither used language models nor
+analysed the wording of risk. R1 removed 423 records (14.2\,\%) that were not
+research articles, among them 30 chapters and front or back matter of one
+edited volume and eight retracted papers or retraction notices; R2 removed 55
+works published before 2014. After R1--R6, 292 records passed to full text.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Screening of the literature review by rule]{Screening of the
+literature review by rule, in the order applied. Each excluded record has one
+primary reason. \emph{Assessed}: records that reached the rule; \emph{\%}:
+excluded as a share of assessed. Records awaiting their full text leave the
+count before R7 without being excluded.}
+\label{tab:lit-screening}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+\textbf{Rule} & \textbf{Excludes} & \textbf{Assessed} & \textbf{Excluded} & \textbf{Remaining} & \textbf{\%} \\
+\midrule
+\input{tables/literature-screening}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-exclusions}
+\caption[Exclusions by rule]{Records excluded by each rule, with the number
+the rule assessed and the share excluded (n~=~2{,}980 screened; 2{,}689
+excluded in total). R1--R6: title and abstract; R7--R8: full text (48
+assessed).}
+\Description{Horizontal bars for rules R1 to R8. R3 is the longest bar
+(1,243), followed by R4 (585), R1 (423), R5 (276), R6 (106), R2 (55), R8 (1)
+and R7 (0).}
+\label{fig:lit-exclusions}
+\end{figure}
+
+\begin{figure}[tbp]
+\centering
+\resizebox{\textwidth}{!}{\input{figures/literature-flow}}
+\caption[Flow of records through the literature review]{Flow of records
+through the literature review, after PRISMA~2020~\parencite{page2021prisma}.
+$^{*}$~Records found by no search; several routes can share a record.
+$^{\dagger}$~A study can answer several sub-questions. The dashed arrow marks
+the 32 cited works that the rules excluded; they form the contextual
+collection.}
+\Description{Flow diagram from identification (database searches 2,421 and venue
+searches 85 records) through the removal of 111 duplicates to 2,980 screened
+records, 2,688 exclusions at title and abstract, 292 records passed to full
+text, of which 244 await their full text and 48 were assessed; 47 studies are
+review evidence. A side box lists the contextual collection of 32 cited
+works.}
+\label{fig:lit-flow}
+\end{figure}
+
+\paragraph{Full texts.} Full texts were assessed for the 48 records whose PDF
+the project already holds. One was excluded under R8: it discusses the use of
+language models for assessing policies without evaluating
+them~\parencite{aydin2024assessing}. The other 47 are the review
+evidence: 19 answer LQ1, 21 LQ2, 14 LQ3 and 6 LQ4. The full texts of the other
+244 records have not been obtained yet; they are open access in most cases
+(arXiv, PubMed Central, USENIX, PoPETs) but were not downloaded for this draft.
+They remain in the corpus as \emph{awaiting full text}, with the sub-questions
+assigned at title and abstract (154 LQ1, 67 LQ2, 37 LQ3, 21 LQ4), and no
+statement below rests on them alone.
+
+\paragraph{Existing literature.} All 43 works cited in the thesis before this
+review entered the corpus. Sixteen meet the criteria and are review evidence.
+The other 27 are in the contextual collection: 10 are not research articles
+(R1; web pages, official statistics, a book, a book chapter and software), 5
+predate 2014 (R2; among them Solove's taxonomy and Calo's boundaries of privacy
+harm), 7 lie outside the domain (R3; among them Citron and Solove's typology,
+the harm model of Knabenhans et al.\ and the work on annotation with language
+models), and 5 analyse privacy text without language models or risk wording
+(R6; OPP-115, Polisis, MAPS, the Data Safety study of Arkalakis et al.\ and the
+analysis of Apple's privacy labels by Li et~al.). Five works cited since join
+them: the four reporting and review guidelines of
+Section~\ref{sec:lit-review} and the paper excluded at full text. Of the 116 Methods Digest
+papers, 36 are review evidence, 19 are contextual (cited in the thesis), 60
+were excluded and 1 awaits its full text. Citation searching from the four seed
+papers yielded 529 DOIs, of which 4 had no metadata; 81 of its 525 records
+passed screening, 61 of them found by no other route.
+
+\subsection{What the Literature Shows}
+
+\paragraph{Years and venues.} Figure~\ref{fig:lit-years} shows that the field
+is young: of the 291 records that passed screening and were not excluded at full
+text, 146 (50\,\%) were published from 2023 onwards, and although S3 searched
+from 2022, the first LQ3 records date from 2023. The records come from a wide
+range of venues
+(Figure~\ref{fig:lit-venues}): 57 from health or medical journals, 51 from
+security and privacy venues, 28 from HCI venues and 40 still only as
+preprints. Of the 47 studies of the review evidence, 13 appeared in health or
+medical journals, 11 at security and privacy venues and 6 at HCI venues; 10
+are preprints.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-years}
+\par\smallskip
+{\scriptsize\setlength{\tabcolsep}{3.1pt}
+\begin{tabular}{@{}l*{13}{r}@{}}
+Year & 2014 & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 & 2024 & 2025 & 2026 \\
+Review evidence & \input{tables/literature-years-review}
+\end{tabular}}
+\caption[Publication years of the screened literature]{Publication years of the
+records that passed title-and-abstract screening and were not excluded at full
+text (n~=~291: 47 review evidence and 244 awaiting full text), by first
+sub-question. The row below gives the 47 studies of the review evidence. 2026
+covers January to 28 October.}
+\Description{Stacked bars per year from 2014 to 2026. Counts rise from 4 in 2014
+to 42 in 2024 and 45 in 2025; LQ1 dominates every year, LQ3 appears from 2023.}
+\label{fig:lit-years}
+\end{figure}
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-venues}
+\caption[Venue types of the screened literature]{Venue types of the records that
+passed screening (n~=~291), coded from the venue name with fixed keyword
+rules (\texttt{extraction\_rules} in the search configuration). Dark: review
+evidence (n~=~47); light: awaiting full text (n~=~244).}
+\Description{Horizontal stacked bars for seven venue types; other computing
+venues, health journals and security venues are the largest groups.}
+\label{fig:lit-venues}
+\end{figure}
+
+\paragraph{Evidence map.} Figure~\ref{fig:lit-map-surfaces} crosses the app
+domain with the material each study analysed, coded from titles and abstracts
+with fixed keyword rules for all 291 records. Wearables in general (90) and
+activity and fitness (85) dominate; reproductive health follows with 44,
+mental health with 23, and sleep and diet with 9 and 10. Privacy policies are
+the most analysed surface (139 records), followed by traffic or code (68) and
+interfaces (54). Store listings appear in two records only, one on mental
+health apps and one on medical apps, and privacy labels in ten. Of the 88
+records answering LQ2, 43 analyse one surface only. The communication of health
+tracking apps is thus studied mostly through one document, the policy, and its
+relation to app behaviour; the store listing, which every user sees before
+installing, is almost unstudied.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-map-surfaces}
+\caption[Evidence map: app domain and material studied]{Evidence map of the
+records that passed screening (n~=~291): number of records per app domain and
+material or surface, coded from title and abstract with fixed keyword rules;
+a record can fall in several cells. \emph{Outside health}: LQ3 and LQ4 studies
+of privacy text in other domains.}
+\Description{Heat map with eight app domains as rows and ten surfaces as
+columns. The darkest cells are privacy policies in studies outside health,
+sensor data of wearables and traffic of activity apps; the store-listing column
+is almost empty.}
+\label{fig:lit-map-surfaces}
+\end{figure}
+
+Figure~\ref{fig:lit-map-rq} shows, for the 47 studies of the review evidence,
+which part of the thesis RQ each bears on, coded by hand from the full text.
+Twenty-six name or test harms (RQ1), ten examine protection claims (RQ3) and
+eleven compare several surfaces (RQ4); only five address how harms are worded
+or downplayed (RQ2), and of these only the work on privacy
+washing~\parencite{brackin2026privacy} also examines protection claims. No study of the review evidence
+addresses all four parts, and none codes stance or the framing of PETs in
+the communication of health tracking apps. Thirty-five serve as method
+precedents.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/literature-map-rq}
+\caption[Evidence map: parts of the RQ and app domain]{Evidence map of the
+review evidence (n~=~47): number of studies per part of the thesis RQ and app
+domain, coded by hand from the full text; a study can fall in several cells.}
+\Description{Heat map with five rows (RQ1 to RQ4 and method precedent) and eight
+domains. RQ1 and method precedent are filled across most domains; the RQ2 row
+has entries only for studies outside health and in reproductive health.}
+\label{fig:lit-map-rq}
+\end{figure}
+
+\paragraph{LQ1: harms and capabilities.} The review evidence documents
+capabilities rather than harms as such: what data an adversary or a recipient
+can obtain or infer, and from what. Table~\ref{tab:lit-capabilities} collects
+them as the input to the harm trees. Location is inferable from shared activity
+routes even when users hide their homes behind the privacy zones that fitness
+platforms offer~\parencite{hassan2018analysis,dhondt2022run}; personality traits
+are inferable from tracker data~\parencite{zufferey2023watch}; and health and
+fitness apps pass data to third parties, often without saying so in their
+policies~\parencite{huckvale2015unaddressed,huckvale2019assessment,grundy2019data,tangari2021mobile}.
+For reproductive health, studies after the overturn of Roe v.~Wade add law
+enforcement as a recipient: users were concerned about access by law
+enforcement and third parties~\parencite{cao2024deleted}, and the policies of
+female health apps named the possible disclosure of personal data to law
+enforcement~\parencite{malki2024exploring}. Mental health apps showed
+unnecessary permissions, insecure cryptography and leaks of personal data and
+credentials~\parencite{iwaya2023privacy}. The survey of wearable activity
+trackers~\parencite{niksirat2024wearable} systematises such risks for
+trackers in general. The 154 LQ1 records still awaiting their full text
+include many inference attacks from wrist-worn sensors (keystrokes, PINs,
+handwriting) and studies of re-identification from activity and heart data;
+once assessed, they will extend the table.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Capabilities documented in the review evidence]{Capabilities
+documented in the review evidence (LQ1, full text assessed), with the data they
+need and the actor who can use them. Input to the reference harm trees.}
+\label{tab:lit-capabilities}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{2.4cm}@{}}
+\toprule
+\textbf{Capability} & \textbf{Data needed} & \textbf{Actor} & \textbf{Studies} \\
+\midrule
+Locate sensitive places despite privacy zones & Shared activity routes & Other platform users & \cite{hassan2018analysis,dhondt2022run} \\
+Infer personality traits & Tracker activity data & Recipients of the data & \cite{zufferey2023watch} \\
+Profile users across apps & Identifiers and health data in app traffic & Third parties (advertising, analytics) & \cite{huckvale2015unaddressed,huckvale2019assessment,grundy2019data,tangari2021mobile} \\
+Obtain reproductive data for prosecution & Cycle and pregnancy records & Law enforcement & \cite{cao2024deleted,malki2024exploring} \\
+Read leaked personal data and credentials & Logs, web requests & Attackers & \cite{iwaya2023privacy} \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{LQ2: communication.} The 21 LQ2 studies of the review evidence
+analyse policies above all: their availability and
+quality~\parencite{sunyaev2015availability,robillard2019availability,oloughlin2019reviewing},
+their content for menstrual and female health apps~\parencite{shipp2020period,malki2024exploring}
+and their match with app behaviour~\parencite{huckvale2019assessment,tangari2021mobile}.
+Few go beyond the policy: Hutton et al.\ evaluated apps and policies against
+heuristics~\parencite{hutton2018assessing}, Malki et al.\ combined policies
+with an inspection of the apps~\parencite{malki2024exploring} and Hudig and
+Singh studied the data flows of fertility trackers and users'
+preferences~\parencite{hudig2025intimate}. One study rated apps' potential
+damage from the information in their store listings; none analyses marketing,
+and none codes which harms the communication names. Among the records awaiting
+their full text, a discourse analysis of how period- and fertility-tracking
+companies describe privacy and an analysis of store description and policy of
+mental health apps come closest to this thesis; they must be assessed before
+the gap can be stated as confirmed.
+
+\paragraph{LQ3: language models.} The 14 LQ3 studies use language models to
+annotate or assess privacy policies, for data practices, contextual
+integrity, compliance with privacy law or GDPR transparency, and contradictions
+within policies or with labels~\parencite{rodriguez2024llm,chanenson2025automating,xie2025evaluating}.
+Each reports an empirical evaluation of the models, as LQ3 required; none of
+them annotates harms or stance, which is the coding task of this thesis. Their validation designs are the precedents for the
+LLM-assisted coding; the cautions of Baumann et al.\ and Törnberg on
+configuration choices and validation remain in the contextual
+collection~\parencite{baumann2025llm,tornberg2024best}.
+
+\paragraph{LQ4: framing.} Six studies analyse how texts present risk or
+protection: vagueness in policies~\parencite{lebanoff2018automatic}, hedging and
+the downplaying of risk in breach notifications~\parencite{zou2019might}, the
+transparency of genetic-testing policies~\parencite{doan2024transparency}, the
+promises made for privacy-enhancing techniques~\parencite{martin2025cookies},
+risk communication in intimate health technologies~\parencite{moniz2025toward}
+and privacy washing~\parencite{brackin2026privacy}. Two concern health
+(genetic testing and intimate health technologies), and none analyses the texts
+of health tracking apps.
+
+\paragraph{Answer to the review question and gaps.} The confirmed evidence
+documents capabilities and harms for health tracking apps well, especially
+location and attribute inference and third-party sharing, and it shows how
+policies of such apps have been sampled and coded. It does not show how
+providers word the harms they acknowledge, whether they downplay them, or how
+they frame the protection of PETs: no study of the review evidence combines
+harm coverage, stance and protection framing across several surfaces of health
+tracking apps. The language-model studies validate data-practice annotation,
+not the coding of harms. Three limits qualify this answer. First, the 47
+studies come disproportionately from the Methods Digest (36), because only
+their full texts were at hand; the 244 records awaiting their full text are the
+larger and more recent part of the corpus. Second, the domain and surface codes
+of the evidence map come from keyword rules on titles and abstracts and are
+coarse. Third, the ACM Digital Library, Scopus, Web of Science and Google
+Scholar were not searched, and five venues were filtered on titles only.
+\section{Sample}
+\label{sec:results-sample}
+This section reports how the sample of Section~\ref{sec:app-sampling} was
+drawn. All figures come from the collector outputs and the ranking script
+(Appendix~\ref{app:scripts}); the sample is listed in
+Appendix~\ref{app:app-sample}.
+\todo{The screening decisions in 04\_Study/\allowbreak App-Sample/\allowbreak screening.csv were
+prepared by an AI assistant from the store listings. Check every decision
+before this section states who screened.}
+
+\paragraph{Collection.} The App Store was searched on 23 October 2026 between
+19:46 and 19:53~UTC\@. Of the 49 queries, 48 returned between 64 and 190 results;
+\emph{reproduktive Gesundheit} returned none. The first 30 positions held 1{,}440
+hits and 848 distinct listings. Google Play was searched on 24 October 2026
+between 15:07 and 15:29~UTC\@. Each query returned between 8 and 50 results, 1{,}178
+in total; the first 30 positions held 1{,}138 hits and 645 distinct apps, and
+every hit carried an app ID\@. The product pages of all 645 apps were read on
+24 and 25 October 2026; one page that timed out was read again, so none is
+missing.
+
+\paragraph{Preinstalled apps.} The vendor shares for September 2026, read on
+22 October 2026, give Samsung 39.3\,\%, Apple 27.6\,\% and Xiaomi 21.4\,\% of
+German mobile page views, and Huawei and Google about 1.5\,\% each
+\parencite{statcounter2026vendor}. Apple is the only vendor of iOS (27.7\,\% of
+page views). On Android (72.3\,\%), Samsung leads with 54\,\% of the
+platform's page views, followed by Xiaomi with 30\,\%
+\parencite{statcounter2026os}. The leading vendors are therefore Apple and
+Samsung. Their qualifying apps are Apple Health and Apple Fitness on the iPhone
+and Samsung Health on Samsung phones. The rule therefore yields three
+preinstalled apps, which leaves 47 places for the ranking. A threshold of 10\,\%
+of all page views would admit Xiaomi as well, but no preinstalled tracker could
+be identified on Xiaomi's international software, so the three apps are the same
+under that rule and under a rule that covers 80\,\% of Android. All three have store listings, which
+were removed from the ranking; Apple Health, for instance, has 2{,}134 ratings
+in the German App Store.
+
+\paragraph{German-market popularity score.} Of the candidates, 125 apps were
+found in both stores. The calibration used the 116 with positive rating and
+review counts in both stores. Their counts correlated at Spearman 0.79, and
+the median ratio was $m = 0.233815$. With the German platform shares of
+September 2026, Android 72.3\,\% and iOS
+27.7\,\%~\parencite{statcounter2026os}, the conversion factor was
+\[
+  c = 0.233815\times\frac{0.277}{0.723}\approx 0.089581.
+\]
+Thus, one App Store rating contributed approximately 0.09 score units and one
+Play review contributed one unit. For example, komoot had 417{,}443 German App
+Store ratings and 99{,}884 German Play reviews. Using the unrounded factor,
+its score was $P_{\mathrm{komoot}}\approx137{,}279$. This is a combined feedback
+score, not a user count; the script ranked candidates with unrounded scores.
+Across all 644 Google Play candidates, the German review count and the
+worldwide rating count correlated at 0.95, yet they rank the leading apps
+differently: among the 100 apps with the most installs worldwide, the German
+review count ranged from 5 to 99{,}884.
+
+\paragraph{Screening and selection.} Table~\ref{tab:sample-flow} gives the
+cascade. Merging the two stores' listings gave 1{,}365 candidates. In descending
+order of German-market popularity score, 70 candidates were reached before
+the 47 places were filled.
+Of these, 11 were excluded at screening because the app records no health or
+body data over time (E1), and 12 were skipped because their developer was
+already in the sample. Developer names that differ between the two stores were
+matched by hand for 13 providers, among them Clue, Pregnancy+, Fddb and
+Headspace, each on the evidence listed in Table~\ref{tab:developer-aliases};
+no store account was found under two providers, and no two providers among the
+70 candidates reached named the same web domain. Three apps whose titles were
+translated between the stores were paired by hand. Across the main selection and all sensitivity checks, 275
+listings were screened: 156 were eligible and 119 excluded (E1~114, E2~1,
+E3~2, E4~1, E5~1).
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption[From search hits to the 47 ranked apps]{From search hits to the 47 ranked apps. Positions are the first 30 per
+query; the same app in both stores is one candidate.}
+\label{tab:sample-flow}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Queries & 49 & 49 \\
+Hits within the first 30 positions & 1{,}440 & 1{,}138 \\
+Distinct listings & 848 & 645 \\
+Listings of preinstalled apps removed & 2 & 1 \\
+Listings ranked & 846 & 644 \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{Candidates after merging the stores}} \\
+\quad in both stores & \multicolumn{2}{r}{125} \\
+\quad App Store only & \multicolumn{2}{r}{721} \\
+\quad Google Play only & \multicolumn{2}{r}{519} \\
+Reached in descending score order & \multicolumn{2}{r}{70} \\
+\quad excluded at screening (E1) & \multicolumn{2}{r}{11} \\
+\quad skipped: developer already in the sample & \multicolumn{2}{r}{12} \\
+\quad selected & \multicolumn{2}{r}{47} \\
+\bottomrule
+\end{tabular}
+\end{singlespace}
+\end{table}
+
+\paragraph{The sample.} The 47 ranked apps come from 47 providers; 33 are listed
+in both stores, 8 only on Google Play and 6 only on the App Store. With Apple
+Health, Apple Fitness and Samsung Health, the sample holds 50 apps. By primary
+category, the ranked apps comprise 22 activity apps, 12 diet and weight apps, 4
+cycle trackers, 2 pregnancy apps, 3 sleep apps, 2 mood apps, 1 heart-rate app and
+1 wearable companion. The selected apps have between 648 and 447{,}096 German App
+Store ratings (39 apps with an App Store listing) and between 1{,}486 and
+99{,}884 German Google Play reviews (41 apps with a Google Play listing). All are
+free to install, and all 41 Google Play listings name a privacy policy. Of the
+47 apps, 42 were found within the first ten positions of at least one query and
+5 within positions 11 to 20.
+
+\paragraph{Sensitivity.} Table~\ref{tab:sensitivity} shows how many of the 47
+selected providers change when one rule is changed at a time. Without the
+developer rule, Leap Fitness Group would take 7 of the 47 places, Simple Design
+3, and Google and Nike 2 each (Table~\ref{tab:developer-rule}).
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption[Sensitivity of the selection]{Sensitivity of the selection. Number of the 47 selected providers that
+are not selected when one rule changes.}
+\label{tab:sensitivity}
+\small
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\toprule
+\textbf{Variant} & \textbf{Providers changed} \\
+\midrule
+No developer rule (the 47 places go to 37 providers) & 10 \\
+Equal weights for iOS and Android & 5 \\
+Alternative scale (share of each store's total count) & 0 \\
+Worldwide Google Play rating count instead of German reviews & 11 \\
+Earlier selection: store alternation with the worldwide Google Play count & 10 \\
+Depth 20 instead of 30 & 1 \\
+App Store searched to depth 200 & 2 \\
+English keywords only & 2 \\
+German keywords only & 3 \\
+One keyword left out (49 runs; largest change) & 1 \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\section{What Privacy Communication Covers}
+\todo[inline]{To be written.}
+
+\section{What Privacy Communication Omits}
+\todo[inline]{Inference, breaches, incident handling.}
+
+\section{Differences Across Platforms and Categories}
+\todo[inline]{To be written.}
+
+\section{Privacy Content in Advertising}
+\todo[inline]{To be written.}

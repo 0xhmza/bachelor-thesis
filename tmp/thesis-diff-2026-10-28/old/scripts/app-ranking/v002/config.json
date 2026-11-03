@@ -1,0 +1,47 @@
+{
+ "apple": "scripts/appstore-scraper/v007/output/run-2026-10-23.json",
+ "play": "scripts/googleplay-scraper/v004/output/run-2026-10-24.json",
+ "keywords": "04_Study/App-Sample/keywords.csv",
+ "screening": "04_Study/App-Sample/screening.csv",
+ "out": "scripts/app-ranking/v002/output",
+ "n": 47,
+ "floor": 1000,
+ "depth": 30,
+ "start": "play",
+ "preinstalled": {
+  "apple": [
+   "1242545199",
+   "1208224953",
+   "1224541484"
+  ],
+  "play": [
+   "com.sec.android.app.shealth"
+  ]
+ },
+ "preinstalled_providers": [
+  "Apple",
+  "Samsung Electronics Co., Ltd."
+ ],
+ "preinstalled_table": {
+  "apple": {
+   "1242545199": "multiple",
+   "1208224953": "activity"
+  },
+  "play": {
+   "com.sec.android.app.shealth": "multiple"
+  }
+ },
+ "table": "03_Thesis/tables/app-sample.tex",
+ "aliases": {
+  "clue period tracker by biowink": "biowink",
+  "philips electronics": "philips",
+  "philips digital": "philips",
+  "sleep tracker and alarm clock by delightroom": "delight room",
+  "leap health": "leap fitness",
+  "outside television": "mapmyfitness",
+  "relaxio s r o": "habitics",
+  "hangzhou youzijie information technology": "meetyou pte",
+  "everyday health": "babycenter"
+ },
+ "aliases_note": "Same app under different developer names in the two stores, matched by hand on 24 October 2026 (Clue, Pregnancy+, Alarmy, Leap Fitness, Map My Run, Daylio, MeetYou, BabyCenter); accents are removed by the code."
+}

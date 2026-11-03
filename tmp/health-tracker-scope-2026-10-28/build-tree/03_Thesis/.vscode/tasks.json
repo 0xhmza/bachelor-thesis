@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Wraps ../build.ps1, which adds TeX Live to PATH for the session and
+      // builds every document in the repository (proposal, thesis, slides).
+      "label": "LaTeX: build all documents",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/../build.ps1",
+        "-Target",
+        "all"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/.."
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "LaTeX: build thesis",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/../build.ps1",
+        "-Target",
+        "thesis"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/.."
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      // Same cleanup as "LaTeX Workshop: Clean up auxiliary files".
+      // latexmk -c keeps thesis.pdf.
+      "label": "LaTeX: clean thesis (latexmk -c)",
+      "type": "shell",
+      "command": "latexmk",
+      "args": ["-c", "thesis.tex"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

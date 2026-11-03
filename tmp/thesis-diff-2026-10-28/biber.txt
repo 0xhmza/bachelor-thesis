@@ -1,0 +1,14 @@
+INFO - This is Biber 2.22
+INFO - Logfile is 'thesis-diff.blg'
+INFO - Reading 'thesis-diff.bcf'
+INFO - Found 59 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Looking for bibtex file '../_shared/references.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source '../_shared/references.bib'
+INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+INFO - No sort tailoring available for locale 'en-US'
+INFO - Writing 'thesis-diff.bbl' with encoding 'UTF-8'
+INFO - Output to thesis-diff.bbl

@@ -1,0 +1,963 @@
+% Migrated from proposal/proposal.tex (5 October 2026) on 14 October 2026.
+\chapter{Methodology}
+\label{ch:methodology}
+
+%	\section{Draft Status and Study Design}
+%	The study plan below is transferred from the proposal dated 5 October 2026.
+%	It describes intended work; it does not report a completed study.
+%	\todo{Revise this plan against the supervisor meeting of 13 October 2026:
+%	remove category quotas; use English primarily with German as fallback;
+%	include apps without a privacy policy; extend the keyword space to mental
+%	health trackers; exclude connected-device analysis; specify two-coder
+%	procedures and justify the sampling and access rules. The ordering and
+%	remaining thresholds require a documented decision.}
+
+%%%% Methodology Section Introduction %%%%
+This chapter describes how the study will be carried out. The study combines
+a structured content analysis~\parencite{krippendorff2019content} with an
+adapted cognitive walkthrough~\parencite{wharton1994cognitive}. The sample comprises 50
+apps: eligible apps from the German market of Google Play and the App Store,
+ranked together by a German-market popularity score based on ratings and reviews, and the health apps that
+come preinstalled on the phones of the leading vendor of each platform in Germany. A pilot
+with five of these apps will refine the instruments before the main study.
+For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
+pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the apps will additionally be inspected in the cognitive walkthroughs.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done} \todo[inline]{Summary of literature review} Figure~\ref{fig:pipeline} summarises this workflow.
+
+\section{Literature Review}
+\label{sec:lit-review}
+\todo[inline]{Rewritten on 28 October 2026 (Decision D14, which supersedes D13): the search no longer rests on OpenAlex and Semantic Scholar. Check the procedure, and the screening log in 01\_Literature/\allowbreak Literature-Review/, before the supervisor sees it.}
+The literature review has three tasks in this study. It collects the harms and
+capabilities from which the reference harm trees are built, it supplies the
+evidence for the methodological decisions of this chapter, and it tests the
+research gap stated in Section~\ref{ch:introduction}. Its procedure follows the
+staged review of Baumann et al.~\parencite[App.~A, pp.~56--57]{baumann2025llm}:
+fixed Boolean queries built from term groups, the exact string and hit count
+reported for every source, works added by hand reported as a source of their
+own, removal of duplicates, screening against explicit criteria and the
+extraction of fixed fields. Table~\ref{tab:lit-adaptation} lists which of their
+choices are kept and which are changed. The search and the screening are reported
+with the items of PRISMA~2020 and its search extension
+PRISMA-S~\parencite{page2021prisma,rethlefsen2021prisma}. Because the review
+maps evidence rather than pooling effects, it is a scoping
+review in the sense of Arksey and O'Malley~\parencite{arksey2005scoping}.
+
+\paragraph{Review question.} The review asks one question, derived from the RQ
+and the supervisor's statement of the gap, \enquote{what harms service providers
+communicate}: \emph{What is known about the privacy harms and capabilities
+associated with health tracking apps, about how their privacy communication has
+been analysed and what it says, about how language models have been used and
+validated for coding privacy text, and about how privacy texts frame risk and
+protection?} It has four sub-questions, each tied to a part of this study.
+\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,labelindent=0pt,font=\normalfont\bfseries]
+  \item[LQ1] \textit{Harms and capabilities.} Which privacy harms, risks, threats
+    and inference capabilities concern the users of health tracking apps and
+    their wearables? It supplies the nodes of the harm trees and the reference
+    model of RQ1 and RQ3, and starts from general accounts of privacy
+    harm~\parencite{solove2006taxonomy,calo2011boundaries,citron2021harms}.
+  \item[LQ2] \textit{Communication.} How has the privacy communication of health
+    tracking apps (policies, labels, store listings, notices, settings and
+    consent interfaces, marketing) been analysed, and what was found? It informs
+    the sampling, material and coding decisions and tests the gap for RQ1--RQ4;
+    work on the large-scale analysis of policies is its methodological
+    background~\parencite{wilson2016creation,zimmeck2019maps}.
+  \item[LQ3] \textit{Language models.} How have large language models been used
+    to annotate, classify, extract from or assess privacy text, and how were
+    they validated? It informs the LLM-assisted coding.
+  \item[LQ4] \textit{Framing.} How do privacy texts in any domain word or present
+    risks, harms and protections, for example through vagueness, hedging,
+    reassurance or misleading claims? It informs the stance and protection axes
+    (RQ2, RQ3).
+\end{description}
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Choices of the reference procedure and how they are applied]{Choices of
+the reference procedure of Baumann et al.\ (App.~A) and how they are applied in
+this review.}
+\label{tab:lit-adaptation}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Choice} & \textbf{Baumann et al.} & \textbf{This review, and why} \\
+\midrule
+Query & One query of four term groups joined by AND & Kept as a structure; four queries, one per sub-question, because the review serves four parts of the study. The terms are derived from the RQ, not copied. \\
+\addlinespace
+Sources & Scopus, Web of Science, Semantic Scholar, ACL Anthology, Google Scholar & The supervisor's venues are listed in full; PubMed, IEEE Xplore, arXiv and the ACL Anthology are searched as databases. Scopus, Web of Science and Google Scholar could not be queried (see Sources). \\
+\addlinespace
+Period & 2022 to the search date & 2014 to the search date, because the policy studies this study builds on start in 2014--2015~\parencite{sunyaev2015availability}; 2022 for LQ3 only, as in the source. \\
+\addlinespace
+Works added by hand & Reported as a row of their own & Kept: thesis citations, Methods Digest papers and citation searching are routes of their own, recorded per record. \\
+\addlinespace
+Citation filter & Fewer than 3 citations per year removed & Not kept. The closest precedents date from 2024--2026, and a citation rate is no criterion of relevance or quality. \\
+\addlinespace
+Screening & Title and abstract; two inclusion criteria, one exclusion & Kept and extended: four criteria, eight ordered exclusion rules with one primary reason, and a full-text stage. \\
+\addlinespace
+Extraction & Fixed fields per paper & Kept, with fields for the harm trees and the evidence map. \\
+\addlinespace
+Stage 3 & Selection of datasets & Replaced by the capability table that feeds the harm trees. \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Search concepts.} Eight term groups translate the concepts of the
+review question into search terms (Table~\ref{tab:lit-groups}). The domain group
+(D) names health tracking apps and their wearables, with the domains of the
+sample in Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and
+mental health, cycle, fertility and pregnancy) and the generic terms under which
+such apps are studied (mHealth, wearable, self-tracking). The privacy group (P)
+keeps the domain searches to privacy. The harm group (H) names harms and the
+threats and inferences through which capabilities are described. The
+communication group (C) names the surfaces the study codes. The privacy-text
+group (T) names policies, labels and notices in any domain; the model group (L)
+and the task group (A) select language-model studies that annotate or assess
+such text; the framing group (F) names the wording strategies that the stance
+axis codes. Groups are joined with AND into five strands: S1~=~D AND P AND H
+for LQ1, S2~=~D AND P AND C for LQ2, S3~=~T AND L AND A for LQ3, S4~=~T AND F
+for LQ4, and S5, the German terms for health apps and data protection, searched
+in PubMed only to reach German-language studies of the German market.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Term groups of the literature search]{Term groups of the literature
+search. A trailing * truncates; phrases are searched as phrases. The strands join
+the groups with AND: S1~=~D, P, H; S2~=~D, P, C; S3~=~T, L, A (from 2022);
+S4~=~T, F.}
+\label{tab:lit-groups}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Group} & \textbf{Concept} & \textbf{Terms (joined with OR)} \\
+\midrule
+\input{tables/literature-groups}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Sources.} Venues, where studies are published, are distinguished from
+the platforms through which they are searched (Table~\ref{tab:lit-sources-method}).
+The venues are those named in the supervisor meeting of 13~October 2026, read
+as PoPETs, CCS, USENIX Security, IEEE S\&P and CSCW, together with CHI, where
+the supervisor's three example papers appeared, and SOUPS, the venue for usable
+privacy; NDSS is added as a reading of the unresolved name \enquote{mdmp}, to be
+confirmed. Each venue is listed completely for 2014 to the search date, and the
+strands are applied to the listed titles and abstracts. At the security and
+privacy venues, privacy is the subject of the venue, so the domain group alone
+selects candidates for S1 and S2; at CHI and CSCW the full strands are applied.
+Where the platform holds no abstract, titles are matched with two groups
+instead of three (for example D AND P), because a title rarely names three
+concepts. Four databases add the literature that these venues do not hold:
+PubMed for health informatics and medicine, IEEE Xplore for engineering
+venues, arXiv for preprints and the ACL Anthology for language processing.
+The ACM Digital Library and dblp answered the project's browser and scripts with a
+bot verification, which was not completed; Scopus and Web of Science require an
+institutional login; Google Scholar offers no export and blocks automated
+queries. These sources were therefore not searched, and the ACM venues were
+listed through their DOI metadata in Crossref instead. An earlier run of this
+review in OpenAlex and Semantic
+Scholar~\parencite{priem2022openalex,kinney2023semantic}, on 26 October 2026,
+is superseded and not used.
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Sources of the literature search]{Sources of the literature search, all
+searched on 28 October 2026. Venues are listed in full and filtered locally;
+databases are searched with the strands.}
+\label{tab:lit-sources-method}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{3.9cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Source} & \textbf{Searched through} & \textbf{Fields and coverage} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Venues}} \\
+PoPETs & Crossref, ISSN 2299-0984 & Title, abstract; 2015 (first volume) to 2026 \\
+USENIX Security, SOUPS & Programme pages on usenix.org & Title, abstract; SOUPS 2015 has no page there \\
+CCS, IEEE S\&P, NDSS, CHI & Crossref, exact proceedings titles & Title only; Crossref holds no abstracts for them \\
+CSCW & Crossref: proceedings to 2017, then PACM HCI & Title, abstract from 2017 \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{Databases}} \\
+PubMed & E-utilities & Title and abstract [tiab]; publication date \\
+IEEE Xplore & Web search interface & Document title and abstract; year range \\
+arXiv & API & Title and abstract; submission date \\
+ACL Anthology & Its BibTeX file with abstracts & Title and abstract; year \\
+\addlinespace
+\multicolumn{3}{@{}l}{\textit{Other methods}} \\
+Citation searching & OpenCitations Index, Crossref & References and citing works of four seed papers \\
+Thesis citations & \texttt{\_shared/references.bib} & Every work cited in the thesis \\
+Methods Digest & Its registry of 116 papers & Every paper of the digest \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Platform strings.} Each strand is translated for each platform, and
+the exact strings, fields, filters and search times are given in
+Appendix~\ref{app:literature}. PubMed searches titles and abstracts with
+truncation inside phrases. IEEE Xplore does not stem, so its strings keep the
+truncation and name the title and abstract fields for every term. The arXiv
+interface stems words but cannot truncate inside a phrase, and in a test it
+returned 34 records for the full S3 string but 62 for \emph{privacy policy} AND
+\emph{LLM} alone. Its records are therefore retrieved with short pairs of words
+(for example \emph{privacy} AND \emph{fitness}), and the strands are applied to
+the retrieved titles and abstracts, as for the venue lists and the ACL
+Anthology. No language or publication-type filter is set; both are screening
+rules.
+
+\paragraph{Citation searching.} One round of backward and forward citation
+searching starts from the four health-tracker papers the supervisor sent on
+5~September 2026~\parencite{malki2024exploring,hudig2025intimate,cao2024deleted,niksirat2024wearable}.
+Their references and the works citing them are taken from the OpenCitations
+Index and their metadata from Crossref.
+
+\paragraph{Existing literature.} Every work cited in the thesis and every paper
+of the Methods Digest, the reading collection compiled before the search,
+enters the corpus and is screened with the same rules. A thesis citation that
+fails a rule is kept in a \emph{contextual collection} with the rule that
+excluded it; it may still be cited, for example for a definition or a
+statistic, but it is not counted as review evidence.
+
+\paragraph{Deduplication and provenance.} Records that share a DOI, an arXiv
+identifier, or a normalised title with publication years at most one year
+apart (three years when one of them is an arXiv preprint, which may precede its
+paper) are merged into one record. A fuzzy comparison of all titles then
+lists near-identical pairs, which are merged by hand when they are the same
+work. Each record keeps every route that found it: database, venue, citation
+searching, thesis citation or Methods Digest.
+
+\paragraph{Eligibility and screening.} The criteria and the exclusion rules of
+Table~\ref{tab:lit-criteria} were fixed before screening. A record is eligible
+if it meets C1--C4. Rules R1--R6 are applied to the title, and to the abstract
+where the title does not decide; R7--R8 to the full text of the records that
+pass. The rules are applied in their order, and an excluded record receives one
+primary reason: the first rule that applies. The results therefore report, for
+each rule, how many records it assessed and excluded and how many remained.
+Every decision and its reason are recorded in a screening log. Where neither
+the platform nor Crossref holds an abstract, the abstract is looked up by DOI
+in OpenAlex for screening only; OpenAlex is not a search source here. Two
+conventions keep the rules apart: systems for hospitals, health records,
+telemedicine or the Internet of Things in general fall under R3, and systems
+for wearables, body-area networks or health apps under R5; adoption, attitude
+and concern studies fall under R4 unless they name specific harms or actors.
+\highlight[orange!25]{The screening decisions were prepared by an AI assistant
+from titles, abstracts and full texts.}\todo{Check every decision in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv before this section states who screened.}
+
+\begin{table}[tbp]
+\centering
+\begin{singlespace}
+\caption[Eligibility criteria and exclusion rules of the literature
+review]{Eligibility criteria and exclusion rules of the literature review. A
+record is excluded under the first rule that applies.}
+\label{tab:lit-criteria}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}@{}}
+\toprule
+ & \textbf{Criterion or rule} & \textbf{Stage} \\
+\midrule
+C1 & A research article (journal, conference or workshop paper, archival preprint) reporting original empirical or analytical work, or a systematic or scoping review & \\
+C2 & Written in English or German & \\
+C3 & Published from 1 January 2014 (LQ3: 2022) to 28 October 2026 & \\
+C4 & Answers at least one of LQ1--LQ4 & \\
+\midrule
+R1 & Not a research article: editorial, commentary, letter, erratum, abstract, poster, keynote, book or chapter, thesis, front matter, narrative overview, position paper & title, abstract \\
+R2 & Outside the language or period of C2--C3 & title, abstract \\
+R3 & Outside the domain: neither health tracking apps or wearables nor privacy text (for example hospital systems, health records, telemedicine, clinical sensor networks) & title, abstract \\
+R4 & Health tracking without a privacy focus (quality, usability, clinical effect, adoption, features) & title, abstract \\
+R5 & A technical system or protocol whose evaluation documents neither harms or capabilities nor communication & title, abstract \\
+R6 & Privacy text or language models outside health tracking, answering neither LQ3 nor LQ4 (for example models as a privacy risk, readability, compliance or label accuracy without risk wording) & title, abstract \\
+R7 & Full text not retrievable & full text \\
+R8 & On the full text, C1 or C4 does not hold & full text \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Full texts and appraisal.} Full texts are taken from the project's
+collection, from open access (publisher, arXiv, PubMed Central) or from the
+university library; a record without one is excluded under R7. The review maps
+evidence, so no quality score decides inclusion, as PRISMA-ScR allows for
+scoping reviews~\parencite{tricco2018prisma}; the peer-review status of each
+study is recorded instead, and preprints are marked as such.
+
+\paragraph{Extraction and synthesis.} For every included study, the
+sub-questions it answers, the app domain, the surfaces or material studied,
+the parts of the RQ it bears on and the harms and capabilities it names are
+coded. An evidence map crosses the app domains with the surfaces and with the
+parts of the RQ, and shows where evidence is missing. As the counterpart of
+Baumann et al.'s Stage~3, the capabilities named in LQ1 studies are collected
+in a table that links each capability to its source, the data it needs and the
+actor that could use it; this table is the input to the harm trees.
+
+\paragraph{Limits.} One person screens, so no agreement between screeners can
+be reported. The ACM Digital Library, Scopus, Web of Science and Google Scholar
+were not searched, and five venues could be filtered on titles only, which
+lowers recall there; citation searching and the thesis and digest routes
+compensate in part. The strands are in English. Later literature is added
+through the change log, with a reason, and does not alter the frozen
+instruments without a logged revision.
+
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  font=\footnotesize,
+  bx/.style={draw=primary,fill=primary!6,rounded corners=2pt,align=center,
+             text width=29mm,minimum height=13mm,inner sep=2.5pt},
+  arr/.style={-{Stealth[length=1.6mm]},semithick,accentdark}]
+  \node[bx] (a) at (-7.2,0) {\textbf{Pilot and sample}\\store rankings\\preinstalled apps};
+  \node[bx] (b) at (-3.6,0) {\textbf{Capture}\\documents for 50 apps\\walkthroughs};
+  \node[bx] (c) at (0,0) {\textbf{Code}\\coverage, stance\\protection claims};
+  \node[bx] (d) at (3.6,0) {\textbf{Check}\\blind manual coding\\audit missed mentions};
+  \node[bx] (e) at (7.2,0) {\textbf{Compare}\\RQ1--RQ4\\with source evidence};
+  \draw[arr] (a)--(b); \draw[arr] (b)--(c);
+  \draw[arr] (c)--(d); \draw[arr] (d)--(e);
+\end{tikzpicture}}
+\todo[inline, color=pink]{Draft!}% a margin \todo cannot go inside a float
+\caption[Planned workflow]{Planned workflow. The pilot will refine the instruments before they
+		are frozen. Later changes will be logged and affected material recoded.}
+\Description{Five boxes connected by arrows: pilot and sample, capture,
+code, check, compare. Documents cover 50 apps.}
+\label{fig:pipeline}
+\end{figure}
+
+\section{App Sampling}
+\label{sec:app-sampling}
+The target sample consists of 50 apps. Previous studies that examined both
+app documents and the apps themselves used samples of 20 to 64 apps:
+Malki et al.\ installed and inspected 20~\parencite{malki2024exploring},
+Huckvale et al.\ analysed 36~\parencite{huckvale2019assessment}, and
+Hutton et al.\ evaluated 64~\parencite{hutton2018assessing}.
+
+The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
+by major device manufacturers; \textcolor{accent}{(ii)} apps listed on
+Google Play; and \textcolor{accent}{(iii)} apps listed on the Apple App Store.
+Preinstalled apps are selected based on the popularity of each manufacturer's
+devices. The remaining places are filled with apps from Google Play and the
+Apple App Store using defined collection and ranking rules. No quotas are set for the three source groups \textcolor{accent}{(i)}-\textcolor{accent}{(iii)}. The search frame and eligibility rules were
+recorded before collection. The resulting sample composition is reported
+in Section~\ref{sec:results-sample}.
+\todo[inline, color=green]{done}
+
+\paragraph{Domain.} The study concerns health trackers overall. Its operational
+scope and search vocabulary draw on two published app studies. Hutton et
+al.~\parencite{hutton2018assessing} derived their search categories from the
+data types most often reported by 105 members of a Quantified Self group;
+their health categories are cycling, diet, exercise, heart, mood, running,
+sleep, step count and weight. Malki et
+al.~\parencite{malki2024exploring} supply the reproductive-health scope,
+including pregnancy tracking, absent from that list. Together these sources
+inform the definition and keyword collection for activity, diet and weight,
+heart rate, sleep, mood and reproductive health within one health-tracker
+domain. Categories describe apps and their features; they do not define
+separate sampling, pilot, validation or analysis groups.
+
+\paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
+terms of Malki et al.\ are searched in the original English and in one German
+translation each (Table~\ref{tab:keywords}). A translation names the tracked
+data type rather than the word (\emph{eating} becomes \emph{Ernährung}).
+Identical spellings and repeated translations are searched once, which gives
+49 queries.
+
+% Tables 4.1 and 4.2 share one float on a page of their own ([p]).
+\begin{table}[p]
+\centering
+\begin{singlespace}
+% The short form keeps citations out of the List of Tables, where they force
+% an extra Biber run.
+\caption[Search keywords]{Search keywords. English terms from Hutton et
+al.~\parencite[Table~2]{hutton2018assessing} (health categories) and Malki et
+al.~\parencite[\S3.1]{malki2024exploring}, each with the German query used.
+\emph{workouts} and \emph{menstruation} are spelled alike in both languages and
+were searched once.}
+\label{tab:keywords}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Keywords}} \\
+\cmidrule(lr){2-3}
+\textbf{Category} & \textbf{English} & \textbf{German} \\
+\midrule
+Cycling & cycling & Radfahren \\
+\addlinespace
+Diet & diet & Diät \\
+ & eating & Ernährung \\
+\addlinespace
+Exercise & exercise & Training \\
+ & workouts & workouts \\
+\addlinespace
+Heart rate & heartrate & Herzfrequenz \\
+ & heart rate & Puls \\
+\addlinespace
+Mood & mood & Stimmung \\
+ & happiness & Glück \\
+\addlinespace
+Running & walking & Gehen \\
+ & running & Laufen \\
+\addlinespace
+Sleep & sleep & Schlaf \\
+\addlinespace
+Steps & steps & Schritte \\
+\addlinespace
+Weight & weight & Gewicht \\
+ & body fat & Körperfett \\
+\midrule
+Reproductive health & female health, women's health & Frauengesundheit \\
+ & reproductive health & reproduktive Gesundheit \\
+ & fertility & Fruchtbarkeit \\
+ & ovulation & Eisprung \\
+ & menstrual, menstruation & menstruation \\
+ & period & Periode \\
+ & contraception, birth control & Verhütung \\
+ & pregnancy & Schwangerschaft \\
+ & pregnant & schwanger \\
+\bottomrule
+\end{tabularx}
+
+\vspace{3\baselineskip}
+\caption{Eligibility criteria and how each is checked on the store listing in
+the German storefront.}
+\label{tab:eligibility}
+\setlength{\aboverulesep}{0.4ex}\setlength{\belowrulesep}{0.65ex}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \textbf{Criterion} & \textbf{Check on the listing} \\
+\midrule
+E1 & Records the user's own health or body data over time, in a category of the
+  domain~\parencite{robillard2019availability,malki2024exploring}
+  & The description states that the app records, logs or stores the user's own
+  measurements or activities, entered by the user or recorded by a sensor or
+  paired device. Excluded: instructional and content apps without recording, as
+  in Hutton et al.~\parencite{hutton2018assessing}; apps that track a child;
+  games, shops and general-purpose apps. A wearable's companion app is eligible
+  when the app records or displays the data; the device itself is not analysed. \\
+\addlinespace
+E2 & Consumer app for the general public
+  & The listing offers the app to anyone. Excluded: apps whose listing limits use
+  to the members, patients, employees or professional users of an organisation,
+  such as a health insurer's service app for its members. \\
+\addlinespace
+E3 & Free to install
+  & App Store: price 0~EUR in the German storefront (Search API field
+  \texttt{price}). Google Play: price 0 and marked as free on the product page
+  (fields \texttt{price} and \texttt{free}). \\
+\addlinespace
+E4 & Listing in German or English
+  & The listing text in the German storefront is in German or English. \\
+\addlinespace
+E5 & Not a DiGA, Germany's reimbursable digital health applications
+  & A listing that describes prescription by a doctor or reimbursement by
+  statutory health insurance is checked against the DiGA directory of the
+  Federal Institute for Drugs and Medical Devices (BfArM). \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Search.} Each store is searched in a single session, logged out, in
+its German storefront: the App Store through Apple's Search
+API~\parencite{apple2022itunessearch} and the Google Play store through its
+search page, with the collectors in Appendix~\ref{app:scripts}. For each query,
+the first 30 results are kept in both stores. A Google Play search page shows
+a single page of results, and deeper results need an interface that the store's
+\texttt{robots.txt} disallows. Using the same depth for the App Store follows
+O'Loughlin et al., who capped both stores at the number of results Google Play
+shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
+App Store is also searched to 200 results, which serves only to check whether
+a deeper search would change the sample. On Google Play, the German count used
+for the ranking appears only on an app's product page, so the product page of
+every Google Play candidate is opened.
+
+\paragraph{Eligibility.} A listing is eligible if it meets the five criteria
+of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
+in the German storefront: title, developer, genre, price and description. An
+app listed in both stores is decided on one screened listing. If both of its
+listings are screened, the app is excluded when either listing fails a
+criterion; in the collection, this never happened. A privacy policy is not
+required: an app
+without one stays in the sample, and the absence is reported. In-app purchases
+and subscriptions are recorded but do not exclude an app. Screening follows the
+rank order, and each decision is logged with its reason.
+
+\paragraph{Ranking by German-market popularity.} Candidates are ordered by a
+\emph{German-market popularity score}, $P_i$, calculated from the feedback
+counts of app~$i$ in the German storefronts: ratings count in the App Store and
+written reviews count on Google Play. Feedback counts are used because they are the
+only count-based measure that is available for the German market. Download and
+install counts are either reported worldwide only or not published at all.
+%whereas rating and review counts are shown for each storefront.
+The score is
+therefore a proxy for popularity used to select the sample; it does not measure
+users or downloads. Count-based selection has precedent: Sunyaev et
+al.\ selected frequently rated health apps and reported a Spearman correlation
+of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availability}.
+Their finding supports the use of feedback counts as a proxy.
+
+The available German-market feedback count differs between stores
+(Table~\ref{tab:storefront-fields}):
+\begin{itemize}
+  \item A \textbf{Google Play listing} contributes its German written-review
+    count, denoted $v_i$.
+  \item An \textbf{App Store listing} contributes its German rating count,
+    denoted $r_i$.
+\end{itemize}
+Thus, a listing supplies one of the two inputs. The unit being ranked is the
+\emph{app}, the same app could be present in both stores, or just in one of both. The scoring formula changes accordingly.
+ however: its listings are matched across stores before scoring.
+An app found only in Google Play has an observed $v_i$ contribution; one found
+only in the App Store has an observed $r_i$ contribution. A matched app found
+in both stores has both.
+
+A rating and a written review are different feedback actions. They cannot be
+treated as interchangeable counts without a conversion. Google Play reviews
+serve as the reference unit: one contributes one score unit. Each App Store
+rating contributes $c$ units, where the same conversion factor $c$ is applied
+to all candidates. The three cases are therefore
+\[
+  P_i =
+  \begin{cases}
+    v_i, & \text{Google Play listing only},\\
+    c\,r_i, & \text{App Store listing only},\\
+    v_i+c\,r_i, & \text{matched listings in both stores}.
+  \end{cases}
+\]
+The three cases can then be written compactly as
+$P_i=v_i+c\,r_i$. The addition combines the converted contributions of the two
+listings of a matched app; it does not require every app to have both inputs
+or imply that an unobserved store count is actually zero.
+
+The conversion is calculated from the matched candidates found in both stores,
+before eligibility screening. Let $M$ contain those candidates with positive
+counts in both stores. First, calculate the median ratio of Play reviews to
+App Store ratings. Then adjust that ratio using the German platform shares:
+
+\[
+  m = \operatorname{median}_{j\in M}\!\left(\frac{v_j}{r_j}\right),
+  \qquad
+  c = m\,\frac{s_{\mathrm{iOS}}}{s_{\mathrm{Android}}}.
+\]
+
+Here, $s_{\mathrm{iOS}}$ and $s_{\mathrm{Android}}$ are the platforms' shares of
+German mobile web page views in the month preceding collection, taken from
+StatCounter~\parencite{statcounter2026os}. These shares approximate the
+platform distribution of users. The observed ratio $m$ reflects both the
+different platform sizes and the different rates at which users leave ratings
+or reviews. Multiplication by the inverse platform-share ratio aims to remove
+the platform-size component, so that $c$ converts App Store ratings into Play
+review-equivalent units. This assumes that the typical user split of matched
+apps follows the platform shares and that platform-specific feedback rates
+are sufficiently similar across apps. 
+
+All candidates are ranked by descending $P_i$, with ties broken by the stable
+\emph{candidate key} used by the ranking script.
+
+\paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its developer
+is already in the sample, through either store or the preinstalled group. In a
+trial collection on 22 October 2026\footnote{Collected with the same collection scripts as in Section~\ref{sec:app-sampling} (Search).}, one developer held 10 of the 47 most-rated
+Google Play apps under a single privacy policy (Table~\ref{tab:developer-pilot});
+RQ1--RQ3 concern what providers
+communicate, so further apps of one provider add little new communication and
+reduce the number of independent providers. The rule also means that each app
+counts once, and both of its listings are captured.
+
+Two listings belong to the same provider if one of three conditions holds.
+(P1) They belong to the same developer account of a store, which both stores
+identify by a developer ID\@. (P2) Their developer names agree after case,
+accents, punctuation, legal forms and regional entity words are removed, as
+\enquote{WW International, Inc.} on the App Store and \enquote{WW
+INTERNATIONAL, INC} on Google Play do.
+(P3) The names differ, but the listings document one provider: the legal entity
+that the App Store shows as seller carries the other developer name, or
+listings of the two developer accounts link to the same registered web domain,
+as seller or developer website, privacy policy or a link in the description.
+Daylio, for example, is published by
+\enquote{Relaxio s.r.o.} on the App Store and by \enquote{Habitics} on Google
+Play; the App Store seller website, daylio.net, is the domain of the Play
+privacy policy. P3 matches are made by hand and recorded with their evidence
+(Table~\ref{tab:developer-aliases}). A similar name is no evidence:
+\enquote{Leap Health} and \enquote{Leapjoy Games} are different developers.
+\todo[inline,color=green]{done!}
+
+\paragraph{Preinstalled apps.} Health apps that ship with the phone reach
+users without a download, so their rating counts understate their reach and
+they cannot be ranked like the store apps. They form a separate group, and
+its members follow from a rule with three steps.
+\emph{Vendors:} on each platform, the vendor with the largest share of the
+platform's mobile page views in Germany is included. The shares come from the
+vendor statistics of StatCounter~\parencite{statcounter2026vendor}, read at the
+time of the collection and recorded with their date. A vendor's share of its
+platform is its share of all mobile page views divided by the platform's share
+of all mobile page views~\parencite{statcounter2026os}, so that each vendor is
+compared within its own platform. The rule has no threshold and treats iOS and
+Android alike, as the ranking does: a German user of either platform most often
+meets the configuration of its leading vendor, the same logic as taking the
+most widely used apps. Page views approximate the installed base, not sales.
+Rules that admit more vendors, such as a minimum share of all page views or
+vendors that together cover most of a platform, are reported as checks.
+\emph{Apps:} for each leading vendor, the preinstalled apps are identified from
+its documentation and the store listings. An app qualifies if the vendor itself
+provides it, if it is installed on the vendor's current phones without a
+download, and if it meets the eligibility criteria E1 to E5, in particular E1
+(it records the user's own health or body data over time). A vendor that ships
+no such app contributes none, and this is recorded.
+\emph{Treatment:} the store listing of a qualifying app, if it has one, is
+removed from the store rankings, and its vendor counts as a provider already in
+the sample, so that the vendor's other apps are skipped by the developer rule.
+The vendors and apps found are reported in Section~\ref{sec:results-sample}.
+
+\paragraph{Sensitivity checks.} The selection is repeated with one rule changed
+at a time: without the developer rule; with equal weights for the two
+platforms; on the alternative scale; with the worldwide Google Play rating count
+in place of the German review count; at depth 20; with the App Store at depth
+200; with each keyword left out; and with English or German keywords only. It
+is also compared with an earlier selection that took apps alternately from a
+German App Store ranking and a worldwide Google Play ranking. For each variant,
+the number of selected providers that change is reported.
+
+Neither store publishes German figures for every listing field, and the two
+stores split their fields differently. Apple shows one summary rating per
+country or region, tied to the storefront where the customer bought the
+app~\parencite{apple2026ratingsoverview}. Google Play has shown phone users
+ratings from their registered country since November
+2021~\parencite{grinsted2021making}. Download counts are reported only to an
+app's developer, in App Store Connect~\parencite{apple2026acquisition} and in the
+Play Console~\parencite{google2026playstatistics}. These sources do not say
+which public field follows which rule, so Table~\ref{tab:storefront-fields}
+rests on a field check. On 22 October 2026 it requested the same listings from
+the German, US and British storefronts and compared the values from Apple's
+search and lookup endpoint~\parencite{apple2022itunessearch}, the App Store
+product pages, and the Google Play product pages read with an open-source
+parser~\parencite{jomingyu2024googleplayscraper}. On the App Store, every rating
+figure describes the requested storefront and no worldwide total is published.
+On Google Play, the rating count and the install figures were the same in every
+storefront, while the average rating and the one-to-five-star breakdown
+changed: the breakdown is the country's distribution scaled to the worldwide
+count. Both stores show an app's position in a category chart of the
+storefront. The check covered few apps in one session, so it shows how the
+fields behave and does not enter the sample. The two stores therefore count
+ratings on different bases.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption[Public listing data by geographic basis]{Public listing data by geographic basis. Observed on 22 October 2026
+for up to six App Store and five Google Play listings in the German (DE), US
+and British (GB) storefronts; fields shown only on product pages were checked
+for one app per store in DE and US\@. \emph{Market-specific}: the value changed
+with the storefront. \emph{Worldwide}: it was identical across storefronts.
+}
+\label{tab:storefront-fields}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Field} & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Rating count & \textbf{Market-specific}, also for the current version; no
+  worldwide total. Yazio: 446{,}768 (DE), 51{,}379 (US), 12{,}351 (GB)
+  & \textbf{Worldwide}, labelled \enquote{reviews} on the page; no country
+  count. Home Workout: 4{,}045{,}258 (DE, US), 4{,}045{,}260 (GB) \\
+\midrule
+Average rating & \textbf{Market-specific}, also for the current version.
+  Yazio: 4.62 (DE), 4.70 (US)
+  & \textbf{Market-specific}. MyFitnessPal: 3.94 (DE), 4.41 (US) \\
+\midrule
+One-to-five-star breakdown & \textbf{Market-specific}, on the product page
+  only. Yazio five-star: 349{,}509 (DE), 42{,}759 (US)
+  & \textbf{Mixed}: the country's distribution scaled to the worldwide count.
+  MyFitnessPal one-star: 428{,}497 (DE), 205{,}443 (US) \\
+\midrule
+Written reviews & A few review texts on the product page; \textbf{no public
+  count}
+  & Undocumented embedded count, not displayed, \textbf{market-specific}: it
+  follows the storefront country, not the interface language (25 October).
+  MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
+\midrule
+Downloads or installs & \textbf{Not public}; reported to the developer
+  only~\parencite{apple2026acquisition}
+  & \textbf{Worldwide} band on the page (\enquote{100M+}) and an
+  undocumented exact count (Home Workout: 303{,}142{,}208 in all three);
+  country figures to the developer only~\parencite{google2026playstatistics} \\
+\midrule
+Chart position & \textbf{Market-specific} badge on the product page (Yazio:
+  no.~3 in Health \& Fitness, DE) and public category chart pages
+  & \textbf{Market-specific} badge when ranked (MyFitnessPal: no.~2 top
+  grossing in Health \& Fitness, US; none in DE) \\
+\midrule
+Search result order & Endpoint order per storefront; not verified as the
+  native store rank
+  & Page order per storefront; not verified as the native store rank \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\section{Material and Language} For each app, the core corpus will include
+the policy, store descriptions, structured store disclosures, the main product
+page, and privacy/security pages linked directly from it or the policy. A
+fixed supplementary search will capture provider-hosted privacy blog posts
+from the preceding 12 months. Ads encountered during collection will form an
+opportunistic supplement. The absence of ads or blog posts will not count as
+absence of a harm in the core corpus.
+
+Language is recorded per source. English text will be primary for every
+captured source, including interface text, and German will be used when no
+English version is available; results describe this English-first corpus. If
+both versions exist, both will be captured and their differences logged.
+Original wording will be coded. The rule does not apply to the search:
+keywords combine German and English terms, and the storefronts remain German.
+Each source will be archived with URL, date, language, file hash and app
+version where applicable. Shared policies will be coded
+once and linked to all relevant apps.
+
+\section{App Walkthroughs} Twelve distinct health-tracking apps will be inspected,
+six on Android and six on iOS. Selection will follow the
+ranking, alternating Android and iOS slots without reusing an app; the balance
+serves coverage, not platform comparison. Apps requiring an unavailable paired
+device, payment or identity verification will be skipped with a recorded
+reason, and unfilled slots reported. Each session will use a fresh install,
+synthetic data and a study account where required.
+
+Tasks will cover finding collected data, inferred data, breach consequences
+and incident responses, reaching the policy, stopping optional third-party
+sharing, exporting data and deleting the account. At each step the researcher
+will ask Wharton et al.'s four questions: would the user pursue the intended
+goal, notice the action, connect it to that goal and recognise progress
+\parencite{wharton1994cognitive}? The pilot will fix starting points and
+time limits. Outcomes will distinguish completion, information not found,
+unsupported tasks and access barriers. Screen recordings will preserve the
+text encountered. This is an expert inspection, not a test of real users.
+
+\section{Reference Harm Trees} Before main coding, reference harm trees will be
+built for health trackers from prior research. Sources include a survey of
+tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable},
+users' harm scenarios~\parencite{gabriele2020understanding}, analyses of policies,
+data flows and interfaces
+\parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
+user concerns~\parencite{cao2024deleted}. Sources found in the logged search
+will be added with a recorded reason. Each pathway will name the data, potential
+adversary, access conditions, capability and possible consequence. Required
+conditions will be connected explicitly, following Knabenhans et al.'s
+AND/OR approach. A prediction made for the user will not itself establish
+third-party access (Appendix~\ref{app:example}). As in Knabenhans et al., capabilities include incapabilities, such as a user
+being unable to use a feature without agreeing to data sharing.
+
+The component origins will distinguish core functionality, digital context
+and implementation choices within the stated model. For every app and
+pathway, an applicability record will note the required feature, its
+evidence (listing, policy or walkthrough), the access and context
+assumptions, the decision (applicable, not applicable or uncertain) and the
+reason. A harm category applies to an app when at least one of its pathways
+does. The trees are reference models of possible harms, not complete
+descriptions of the apps' actual systems. Uncertain cases will be counted and
+reported, not silently dropped, so that sparsely documented providers do not
+vanish from the gap analysis.
+
+\section{Harm Categories} The starting categories are Knabenhans et al.'s
+physical, economic, psychological, autonomy/\allowbreak deprivation, discrimination,
+reputational and societal harms~\parencite[App.~A]{knabenhans2026harms},
+drawn from Citron and Solove and the CyberPeace Institute. Following them, a
+harm is an impairment of the ability to function as one otherwise would in
+one's usual context~\parencite[\S4.1]{knabenhans2026harms}; here, the baseline
+is the user's situation without the modelled pathway. A relationship tag will
+retain Citron and Solove's relationship harms~\parencite{citron2021harms},
+which the list omits. New harms found in the pilot will be documented rather
+than forced into a category.
+
+
+\section{Pilot} The pilot takes place after sampling and after the reference
+harm trees have been built. Five apps will be drawn at random from the full
+health-tracker sample with a recorded seed, without category quotas. The pilot will
+test the boundaries of collection and coding and estimate capture time, coding
+units, manual effort and model cost. It will also settle the choices left open
+in the previous sections: the starting points and time limits of the
+walkthroughs, the stance definitions, the handling of new harms, and the LLM
+and its prompts. The instruments will then be frozen. The pilot apps will be
+recoded with the final instruments and remain in the sample, but will not
+enter the validation set.
+
+\section{Coding Units and Axes} To code a text is to attach labels that
+record what it says. A unit will be one paragraph or one coherent block of
+interface text. Adjacent text will be available for context, but supporting quotations must
+be identified precisely. The codebook will define each label, a fitting
+example and a counter-example. Table~\ref{tab:axes} summarises the three axes.
+Appendix~\ref{app:example} shows the procedure on a constructed example.
+
+\begin{table}[t]
+\centering
+\begin{singlespace}
+\caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
+Several labels may apply to one unit.}
+\label{tab:axes}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}L{1.6cm}L{2.8cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Axis} & \textbf{Label} & \textbf{What it records} & \textbf{Example or boundary} \\
+\midrule
+A: Coverage & Component & Data collected, stored or disclosed, or a system requirement
+  & \enquote{We store your cycle dates.} \\
+\rowrule
+ & Capability & Distinguishing users, tracking/profiling, inferring an attribute, or an incapability
+  & \enquote{We estimate your fertile window.} \\
+\rowrule
+ & Concrete harm & A named negative consequence and its category
+  & \enquote{Disclosure could cause distress.} \\
+\rowrule
+ & Generic risk & Possible misuse without a concrete consequence
+  & \enquote{Your data could be used against you.} \\
+\rowrule
+ & No relevant content & None of the coverage labels applies
+  & A contact address alone \\
+\rowrule
+ & Additional details & Breach consequences, incident response and relationship impacts
+  & Code concrete response steps separately from a general legal-notice promise \\
+\midrule
+B: Stance & Acknowledged & A named harm presented as possible
+  & \enquote{A disclosure could cause distress.} \\
+\rowrule
+ & Qualified & Uncertainty or likelihood language, with its target recorded
+  & \enquote{A leak is unlikely, but could cause distress.} \\
+\rowrule
+ & Minimised & A named harm dismissed without supporting reasons in the unit or adjacent text
+  & \enquote{Such distress is no cause for concern.} \\
+\rowrule
+ & Responsibility shifted & Responsibility for a named harm placed on the user
+  & \enquote{You alone must prevent harassment caused by sharing your location.} \\
+\rowrule
+ & Denied/prevented & A named harm presented as impossible or prevented
+  & \enquote{This makes harassment impossible.} \\
+\midrule
+C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
+  & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
+\rowrule
+ & Framing and strength & Data-flow or harm framing, with partial, scoped or absolute protection
+  & \enquote{This reduces exposure} differs from \enquote{No one can harm you.} \\
+\rowrule
+ & Reassurance & Broad safety language without a specific measure
+  & \enquote{Your data is safe with us.} \\
+\rowrule
+ & Potential mismatch & Human-reviewed tension between the claim and a pathway within its scope
+  & A residual risk outside the claim's scope is not sufficient \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\subsection{Axis A: Coverage} All explicitly mentioned nodes will be
+recorded, including whether each is asserted, presented as possible or denied.
+The highest level reached will be a separate summary, so a harm
+mention does not erase accompanying data-flow information. Feature descriptions can mention inference without presenting it as a risk.
+
+\subsection{Axis B: Stance} Stance labels will be linked to the
+particular harm and supporting span, rather than assigned to the paragraph
+as a whole. A statement may acknowledge a harm and qualify its likelihood,
+and the coder will distinguish uncertainty about a breach from uncertainty
+about its consequences. Minimisation will be judged from wording in the unit
+or adjacent text, never from inferred intent; qualification alone does not
+establish it. RQ2 thus covers stance toward named harms; dismissive language
+without one is coded as reassurance. These distinctions adapt Zou et
+al.~\parencite{zou2019might} and will be refined in the pilot.
+
+\subsection{Axis C: Protection} The coder will record the measure
+and claimed benefit, with actor, data and conditions where specified. Any
+technical measure claimed to limit exposure or misuse counts, PET-labelled or
+not, including ordinary security controls; non-technical commitments are kept
+separate. A \emph{potential mismatch} requires a pathway within the claim's
+scope and an explanation of why the measure misses its necessary conditions;
+partial protection is not rejected merely because other risks remain. Vague
+scope will be recorded as unclear, and no deployed system judged safe or
+unsafe.
+
+\section{LLM-Assisted Coding} Polisis and recent LLM approaches are precedents for
+data-practice analysis~\parencite{harkous2018polisis,rodriguez2024llm}. The
+harm-focused scheme will use prompts and a model selected on the pilot, then
+frozen~\parencite{tornberg2024best}; an open-weight model will be preferred if
+it performs close to a hosted one, keeping the run repeatable. Prompts will
+work in stages: relevant spans, then stance for detected harms, then
+protection details. All retained harm mentions and potential mismatches will
+be reviewed manually, so the model acts as a screener whose prompts favour
+recall. The author will decide tree applicability and mismatches, logging
+evidence and reasoning; uncertain outputs or missing spans enter manual
+review rather than becoming negative codes. Each unit will run three times;
+agreement is a stability check, not validation, and labels returned once are
+reviewed rather than discarded. Raw output is kept apart from adjudicated
+labels, so performance is not measured after correction.
+
+\section{Validation and Missed Mentions} Ten apps will be drawn at random from
+the health-tracker sample, with a recorded seed, from providers and documents not used in
+the pilot, stratified by the language of the coded policy where both occur;
+the numbers of independent providers and unique documents will be reported.
+The author will code them fully before seeing model output, and they will not
+be used to tune prompts. Because prompt wording alone can change
+conclusions~\parencite{baumann2025llm}, two paraphrased prompts will also be
+run and headline counts compared. Disagreements will be adjudicated with each
+label's source hidden; two apps will be recoded after at least two weeks,
+before drafting, to estimate intra-coder consistency. A second coder will be
+sought for applicability, minimisation and mismatch decisions; failing that,
+the supervisor will review a sample, including judged non-mismatches, with
+disagreements recorded before discussion. A detection is correct only with
+the right label, unit and evidence span, and the staged pipeline is scored end
+to end, so first-stage misses count. Reported will be per-code precision
+(share of model labels supported), recall (share of manual mentions found)
+and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient}, with
+counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$
+despite high agreement~\parencite{feinstein1990high,gwet2008computing}.
+App-level detection is also reported for the validation set as a whole and,
+where counts allow, by source and language. Exploratory 95\,\% intervals will resample providers to
+respect shared sources; with ten apps they will be wide.
+
+A separate missed-mention audit, reported apart from validation, will search
+the remaining corpus for harm-related vocabulary in both languages and check
+every unlabelled hit manually. To expose the vocabulary's blind spots, 100
+units outside the hits (or all, if fewer), allocated across languages and
+sources in advance, will also be read. Recall will be reported as
+unestimable where manual positives are too few. For any code with fewer than
+20 validation positives or recall below 0.90, all relevant material will be
+checked manually or corpus-wide absence claims withheld; these are review
+triggers, not proof of accuracy.
+
+\section{Analysis and Reporting} Results will be descriptive. For RQ1, each harm's denominator
+will include only applicable apps with the required core sources captured. A
+source the provider does not offer is recorded as such; only sources that
+exist but cannot be retrieved reduce the denominator. Inapplicable pathways
+and text with no identified mention will have different labels. Counts will be per app and surface, with
+shared-provider results also shown after grouping repeated providers.
+RQ2 will report harm--stance combinations and their denominators. RQ3 will
+summarise measures, scope, claim strength and manually reviewed mismatches.
+Examples that support and challenge the expected gap will both be retained.
+
+For RQ4, the principal policy--interface comparison will use the same 12
+inspected apps; the 50-app document analysis gives the broader overview, and
+other surface pairs report how many apps have both surfaces. At the fixed
+decision points, onboarding before consent and the privacy-settings screen,
+text shown directly, behind a visible link or not found within the task limit
+will be distinguished. Inconsistent claims will be reported apart from mere
+differences in detail. Absence will mean \enquote{no mention was identified
+in the captured material}, with the instrument's measured limitations stated.
+
+\section{Ethics and Feasibility} No human participants are planned.
+Walkthroughs use synthetic data, store terms will be checked before automated
+retrieval, and any review requirements confirmed before collection. The
+pilot's estimates will fix a minimum feasible study (core documents, the blind
+validation set, the walkthroughs) before collection; if time runs short,
+supplementary marketing collection is reduced first and other changes are
+agreed with the supervisor.
+
+\section{Limitations} The sample favours free apps with high German-market
+popularity scores found by the chosen keywords and does not represent all
+health-tracking apps or their users in Germany; one app per provider also
+leaves out further apps of large providers. Feedback counts accumulate over
+different app lifetimes and depend on prompts to rate or review. The common
+scale assumes a typical platform distribution and approximately stable
+platform-specific feedback rates across apps. StatCounter's page-view shares
+are an approximation of the user distribution, and a listing not found in one
+store contributes no count from that store. These limits prevent interpreting
+the score as a count of users or communication encounters. The corpus is a
+dated snapshot, walkthroughs cover selected paths, and reference trees depend
+on the chosen literature. Unless a second coder joins, one person provides the
+reference labels, so model agreement is not independent human-coder
+reliability~\parencite{mcdonald2019reliability}. Missed mentions may remain.
+The study cannot establish provider intent, actual harms or effects on users.

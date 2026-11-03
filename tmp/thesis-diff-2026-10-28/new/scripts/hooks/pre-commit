@@ -1,0 +1,21 @@
+#!/bin/sh
+# Rebuild the supervisor's review copy (03_Thesis/Thesis_Review-Copy.docx)
+# whenever a commit changes the thesis sources, and add it to the same commit.
+# Installed by scripts/hooks/install.sh. It never blocks a commit: if Python
+# is missing or the build fails, the commit goes ahead with the old copy.
+
+SOURCES='^(03_Thesis/(thesis\.tex|chapters/|appendix/|config/)|_shared/references\.bib|scripts/build_review_docx\.py)'
+git diff --cached --name-only --diff-filter=ACMRD | grep -Eq "$SOURCES" || exit 0
+
+PY=$(command -v python || command -v python3 || command -v py)
+if [ -z "$PY" ]; then
+    echo "pre-commit: Python not found; review copy not rebuilt." >&2
+    exit 0
+fi
+
+if "$PY" -I scripts/build_review_docx.py --staged; then
+    git add 03_Thesis/Thesis_Review-Copy.docx
+else
+    echo "pre-commit: review copy build failed; committing without it." >&2
+fi
+exit 0

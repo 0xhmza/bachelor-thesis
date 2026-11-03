@@ -1,0 +1,852 @@
+{
+  "_comment": "Literature review v002 (D14). Concept groups derived from the thesis RQ and the four review sub-questions. Each strand joins groups with AND; terms within a group are joined with OR. A trailing * truncates. The same groups are translated for each platform by lit.py; the exact strings sent are written to output/run.json.",
+  "searched_on": "2026-10-28",
+  "period": {
+    "from": "2014-01-01",
+    "until": "2026-10-28"
+  },
+  "mailto": "shamza5568@gmail.com",
+  "groups": {
+    "D": {
+      "name": "Health tracking apps and wearables",
+      "terms": [
+        "health app*",
+        "health application*",
+        "mhealth",
+        "m-health",
+        "mobile health",
+        "digital health app*",
+        "health track*",
+        "fitness app*",
+        "fitness track*",
+        "activity track*",
+        "wearable*",
+        "smartwatch*",
+        "smart watch*",
+        "self-track*",
+        "quantified self",
+        "menstrual app*",
+        "menstrual track*",
+        "menstruation app*",
+        "menstruation track*",
+        "period app*",
+        "period track*",
+        "cycle track*",
+        "fertility app*",
+        "fertility track*",
+        "femtech",
+        "pregnancy app*",
+        "mental health app*",
+        "sleep app*",
+        "sleep track*",
+        "diet app*",
+        "nutrition app*",
+        "calorie track*"
+      ]
+    },
+    "P": {
+      "name": "Privacy",
+      "terms": [
+        "privacy",
+        "data protection",
+        "data sharing",
+        "personal data",
+        "personal information"
+      ]
+    },
+    "H": {
+      "name": "Harms, threats and capabilities",
+      "terms": [
+        "harm*",
+        "threat*",
+        "attack*",
+        "inference*",
+        "infer",
+        "inferred",
+        "inferring",
+        "re-identif*",
+        "reidentif*",
+        "deanonymi*",
+        "de-anonymi*",
+        "privacy risk*",
+        "surveillance",
+        "data breach*",
+        "leak*",
+        "discriminat*"
+      ]
+    },
+    "C": {
+      "name": "Communication surfaces",
+      "terms": [
+        "privacy polic*",
+        "privacy notice*",
+        "privacy label*",
+        "nutrition label*",
+        "data safety",
+        "privacy disclosure*",
+        "privacy setting*",
+        "privacy control*",
+        "privacy communication",
+        "terms of service",
+        "terms of use",
+        "terms and conditions",
+        "store listing*",
+        "app description*",
+        "transparency",
+        "consent notice*",
+        "consent dialog*",
+        "risk communication"
+      ]
+    },
+    "T": {
+      "name": "Privacy text",
+      "terms": [
+        "privacy polic*",
+        "privacy notice*",
+        "privacy label*",
+        "privacy nutrition label*",
+        "data safety",
+        "breach notification*",
+        "terms of service",
+        "cookie polic*",
+        "privacy disclosure*",
+        "privacy statement*"
+      ]
+    },
+    "L": {
+      "name": "Large language models",
+      "terms": [
+        "large language model*",
+        "llm",
+        "llms",
+        "gpt*",
+        "chatgpt",
+        "generative ai",
+        "generative artificial intelligence",
+        "foundation model*",
+        "llama"
+      ]
+    },
+    "A": {
+      "name": "Annotation and analysis tasks",
+      "terms": [
+        "annotat*",
+        "classif*",
+        "extract*",
+        "coding",
+        "content analysis",
+        "label*",
+        "analys*",
+        "analyz*",
+        "assess*",
+        "evaluat*",
+        "question answering",
+        "summari*"
+      ]
+    },
+    "F": {
+      "name": "Framing of risk and protection",
+      "terms": [
+        "vague*",
+        "ambigu*",
+        "hedg*",
+        "downplay*",
+        "reassur*",
+        "framing",
+        "framed",
+        "risk communication",
+        "privacy washing",
+        "persuas*",
+        "rhetoric*",
+        "mislead*",
+        "deceptiv*",
+        "dark pattern*",
+        "euphemis*"
+      ]
+    },
+    "DE": {
+      "name": "German-language domain and privacy (PubMed supplement)",
+      "terms": [
+        "gesundheits-app*",
+        "gesundheitsapp*",
+        "gesundheitsanwendung*",
+        "fitness-app*",
+        "fitnesstracker*",
+        "zyklus-app*",
+        "zyklusapp*",
+        "diga"
+      ]
+    },
+    "DEP": {
+      "name": "German-language privacy",
+      "terms": [
+        "datenschutz*",
+        "privatsphare",
+        "privatsphäre"
+      ]
+    }
+  },
+  "strands": [
+    {
+      "id": "S1",
+      "question": "LQ1 harms and capabilities",
+      "groups": [
+        "D",
+        "P",
+        "H"
+      ],
+      "from": "2014-01-01"
+    },
+    {
+      "id": "S2",
+      "question": "LQ2 privacy communication of health tracking apps",
+      "groups": [
+        "D",
+        "P",
+        "C"
+      ],
+      "from": "2014-01-01"
+    },
+    {
+      "id": "S3",
+      "question": "LQ3 language models annotating privacy text",
+      "groups": [
+        "T",
+        "L",
+        "A"
+      ],
+      "from": "2022-01-01"
+    },
+    {
+      "id": "S4",
+      "question": "LQ4 framing of risk and protection in privacy text",
+      "groups": [
+        "T",
+        "F"
+      ],
+      "from": "2014-01-01"
+    },
+    {
+      "id": "S5",
+      "question": "German-language supplement (PubMed only)",
+      "groups": [
+        "DE",
+        "DEP"
+      ],
+      "from": "2014-01-01",
+      "platforms": [
+        "PubMed"
+      ]
+    }
+  ],
+  "extraction": {
+    "_comment": "Codes of decisions/extraction.csv (several per study, separated by ;). Fixed before coding.",
+    "domain": [
+      "Activity and fitness",
+      "Reproductive health",
+      "Mental health",
+      "Sleep",
+      "Diet and weight",
+      "Wearables in general",
+      "Health apps in general",
+      "Outside health"
+    ],
+    "surface": [
+      "Privacy policy",
+      "Privacy label",
+      "Store listing",
+      "App interface",
+      "Marketing or website",
+      "Traffic or code",
+      "Sensor data",
+      "Users' accounts",
+      "Other notice"
+    ],
+    "rq": [
+      "RQ1 harms named or missing",
+      "RQ2 stance on harms",
+      "RQ3 protection claims",
+      "RQ4 several surfaces",
+      "Method precedent"
+    ],
+    "venue_type": [
+      "Security and privacy venue",
+      "HCI venue",
+      "Health or medical journal",
+      "Other computing venue",
+      "NLP venue",
+      "Preprint",
+      "Law or social science"
+    ]
+  },
+  "thesis_citations_before_d14": {
+    "_comment": "The 43 keys cited in 03_Thesis at commit 78dcf9f (28 October 2026), before this review was written. merge.py adds every key cited now.",
+    "keys": [
+      "apple2022itunessearch",
+      "apple2026acquisition",
+      "apple2026ratingsoverview",
+      "arkalakis2024abandon",
+      "baumann2025llm",
+      "calo2011boundaries",
+      "cao2024deleted",
+      "citron2021harms",
+      "cohen1960coefficient",
+      "doan2024transparency",
+      "feinstein1990high",
+      "gabriele2020understanding",
+      "google2026playstatistics",
+      "grinsted2021making",
+      "gwet2008computing",
+      "harkous2018polisis",
+      "huckvale2019assessment",
+      "hudig2025intimate",
+      "hutton2018assessing",
+      "jomingyu2024googleplayscraper",
+      "kinney2023semantic",
+      "knabenhans2026harms",
+      "krippendorff2019content",
+      "li2022ios",
+      "malki2024exploring",
+      "martin2025cookies",
+      "mcdonald2019reliability",
+      "moniz2025toward",
+      "niksirat2024wearable",
+      "oloughlin2019reviewing",
+      "priem2022openalex",
+      "robillard2019availability",
+      "rodriguez2024llm",
+      "shipp2020period",
+      "solove2006taxonomy",
+      "statcounter2026os",
+      "statcounter2026vendor",
+      "sunyaev2015availability",
+      "tornberg2024best",
+      "wharton1994cognitive",
+      "wilson2016creation",
+      "zimmeck2019maps",
+      "zou2019might"
+    ]
+  },
+  "citation_seeds": [
+    {
+      "label": "Malki 2024",
+      "doi": "10.1145/3613904.3642521"
+    },
+    {
+      "label": "Hudig 2025",
+      "doi": "10.1145/3706598.3714089"
+    },
+    {
+      "label": "Cao 2024",
+      "doi": "10.1145/3613904.3642042"
+    },
+    {
+      "label": "Salehzadeh Niksirat 2024",
+      "doi": "10.1145/3645091"
+    }
+  ],
+  "arxiv_anchors": {
+    "_comment": "arXiv cannot truncate inside phrases and loses results on long nested queries, so the pool is retrieved with short pairs of single words (or untruncated phrases) and every strand Boolean is applied locally to the pool.",
+    "domain_words": [
+      "health",
+      "mhealth",
+      "m-health",
+      "fitness",
+      "wearable*",
+      "smartwatch*",
+      "watch*",
+      "tracker*",
+      "tracking",
+      "self-tracking",
+      "quantified",
+      "menstrua*",
+      "period",
+      "cycle",
+      "fertility",
+      "femtech",
+      "pregnan*",
+      "mental",
+      "sleep",
+      "diet",
+      "nutrition",
+      "calorie*"
+    ],
+    "privacy": [
+      "privacy",
+      "data protection",
+      "data sharing",
+      "personal data",
+      "personal information"
+    ],
+    "privacy_text": [
+      [
+        "privacy",
+        "polic*"
+      ],
+      [
+        "privacy",
+        "notice*"
+      ],
+      [
+        "privacy",
+        "label*"
+      ],
+      [
+        "privacy",
+        "disclosure*"
+      ],
+      [
+        "privacy",
+        "statement*"
+      ],
+      [
+        "data safety"
+      ],
+      [
+        "breach",
+        "notification*"
+      ],
+      [
+        "terms of service"
+      ],
+      [
+        "cookie",
+        "polic*"
+      ]
+    ]
+  },
+  "venue_rules": {
+    "_comment": "Venue enumeration: every paper of the venue in the period is listed, then the rules below are applied locally to title and abstract (title only where the platform holds no abstract). At security and privacy venues privacy is the venue's subject, so the domain group alone selects S1/S2 candidates.",
+    "security": {
+      "abstract": [
+        "D",
+        "S3",
+        "S4"
+      ],
+      "title_only": [
+        "D",
+        "S3",
+        "S4"
+      ]
+    },
+    "hci": {
+      "abstract": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "title_only": [
+        "D&P",
+        "D&H",
+        "D&C",
+        "T&L",
+        "T&F"
+      ]
+    }
+  },
+  "venues": [
+    {
+      "id": "PoPETs",
+      "name": "Proceedings on Privacy Enhancing Technologies",
+      "kind": "security",
+      "platform": "Crossref",
+      "issn": "2299-0984"
+    },
+    {
+      "id": "USENIX Security",
+      "name": "USENIX Security Symposium",
+      "kind": "security",
+      "platform": "usenix.org",
+      "slug": "usenixsecurity{yy}",
+      "years": [
+        2014,
+        2026
+      ]
+    },
+    {
+      "id": "SOUPS",
+      "name": "Symposium on Usable Privacy and Security",
+      "kind": "security",
+      "platform": "usenix.org",
+      "slug": "soups{yyyy}",
+      "years": [
+        2014,
+        2026
+      ]
+    },
+    {
+      "id": "CCS",
+      "name": "ACM Conference on Computer and Communications Security",
+      "kind": "security",
+      "platform": "Crossref",
+      "prefix": "10.1145",
+      "query": "SIGSAC Conference on Computer and Communications Security",
+      "pattern": "acm sigsac conference on computer and communications security",
+      "exclude": [
+        "asia",
+        "companion"
+      ]
+    },
+    {
+      "id": "IEEE S&P",
+      "name": "IEEE Symposium on Security and Privacy",
+      "kind": "security",
+      "platform": "Crossref",
+      "prefix": "10.1109",
+      "query": "IEEE Symposium on Security and Privacy",
+      "pattern": "^\\d{4} ieee symposium on security and privacy( sp)?$",
+      "exclude": [
+        "workshop",
+        "european"
+      ]
+    },
+    {
+      "id": "NDSS",
+      "name": "Network and Distributed System Security Symposium",
+      "kind": "security",
+      "platform": "Crossref",
+      "prefix": "10.14722",
+      "query": "Network and Distributed System Security Symposium",
+      "pattern": "^proceedings \\d{4} network and distributed system security symposium$",
+      "exclude": []
+    },
+    {
+      "id": "CHI",
+      "name": "ACM CHI Conference on Human Factors in Computing Systems",
+      "kind": "hci",
+      "platform": "Crossref",
+      "prefix": "10.1145",
+      "query": "Human Factors in Computing Systems",
+      "pattern": "(chi conference on human factors in computing systems|sigchi conference on human factors in computing systems|annual acm conference on human factors in computing systems)$",
+      "exclude": [
+        "extended abstracts",
+        "companion"
+      ]
+    },
+    {
+      "id": "CSCW",
+      "name": "ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+      "kind": "hci",
+      "platform": "Crossref",
+      "prefix": "10.1145",
+      "query": "Computer Supported Cooperative Work and Social Computing",
+      "pattern": "acm conference on computer.supported cooperative work",
+      "exclude": [
+        "companion",
+        "chinese"
+      ],
+      "pacm_issn": "2573-0142",
+      "pacm_issue": "CSCW",
+      "_pacm_comment": "From 2025 PACM HCI numbers its issues instead of naming them CSCW; all numbered 2025-2026 issues are enumerated."
+    }
+  ],
+  "manual_duplicates": {
+    "_comment": "Pairs of titles of the same work that the automatic rules did not merge (different spellings, a preprint and its paper more than one year apart, a garbled bibliography title). Found by a fuzzy title comparison on 28 October 2026 and checked by hand.",
+    "titles": [
+      [
+        "Computing Inter-Rater Reliability and Its Variance in the Presence of High Agreement",
+        "Computing inter‐rater reliability and its variance in the presence of high agreement"
+      ],
+      [
+        "Reliability and Inter-Rater Reliability in Qualitative Research: Norms and Guidelines for CSCW and HCI",
+        "Reliability and Inter-rater Reliability in Qualitative Research: Norms and Guidelines for CSCW and HCI Practice"
+      ],
+      [
+        "Health advertising on Facebook: Privacy and policy considerations.",
+        "Health Advertising on Facebook: Privacy & Policy Considerations"
+      ],
+      [
+        "Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels at Scale",
+        "Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels"
+      ],
+      [
+        "No Cookies For You!: Evaluating The Promises Of Big Tech’s ‘Privacy-Enhancing’ Techniques.",
+        "No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques"
+      ],
+      [
+        "\"I Deleted It After the Overturn of Roe v. Wade\": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era",
+        "mkbibquoteI Deleted It After the Overturn of Roe v. Wade: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era"
+      ],
+      [
+        "Non-traditional data in pandemic preparedness and response: identifying and addressing first and last-mile challenges",
+        "Nontraditional Data in Pandemic Preparedness and Response: Identifying and Addressing First- and Last-Mile Challenges."
+      ],
+      [
+        "Person Re-identification Attack on Wearable Sensing",
+        "PhysioGait: Context-Aware Physiological Context Modeling for Person Re-identification Attack on Wearable Sensing"
+      ],
+      [
+        "Dynamic User-controllable Privacy-preserving Few-shot Sensing Framework",
+        "PrivCLIP: Dynamic User-Controllable Privacy-Preserving Few-Shot Sensing Framework"
+      ]
+    ]
+  },
+  "extraction_rules": {
+    "_comment": "Keyword rules of extract.py, fixed before coding. A study receives every label whose terms occur in its title or abstract (venue type: the first matching label, in this order, on venue and source names).",
+    "domain": {
+      "Reproductive health": [
+        "menstrua*",
+        "period track*",
+        "period app*",
+        "fertility",
+        "femtech",
+        "fem-tech",
+        "pregnan*",
+        "ovulation",
+        "contracept*",
+        "reproductive",
+        "menopaus*",
+        "abortion",
+        "roe v wade",
+        "post-roe",
+        "intimate health"
+      ],
+      "Mental health": [
+        "mental health",
+        "mental-health",
+        "depress*",
+        "anxiety",
+        "mood",
+        "bipolar",
+        "psychiatr*",
+        "psycholog*",
+        "stress",
+        "smoking cessation"
+      ],
+      "Activity and fitness": [
+        "fitness",
+        "activity track*",
+        "physical activity",
+        "step count*",
+        "steps",
+        "running",
+        "exercise",
+        "strava",
+        "fitbit",
+        "garmin",
+        "sport*",
+        "athlet*",
+        "workout*"
+      ],
+      "Sleep": [
+        "sleep*"
+      ],
+      "Diet and weight": [
+        "diet*",
+        "nutrition*",
+        "calorie*",
+        "food",
+        "weight",
+        "eating"
+      ],
+      "Wearables in general": [
+        "wearable*",
+        "smartwatch*",
+        "smart watch*",
+        "wristband*",
+        "wrist-worn",
+        "wrist worn",
+        "smart ring*",
+        "earable*",
+        "hearable*",
+        "body area network*"
+      ]
+    },
+    "surface": {
+      "Privacy policy": [
+        "privacy polic*",
+        "terms of service",
+        "terms of use",
+        "terms and conditions",
+        "user agreement*",
+        "policy",
+        "policies"
+      ],
+      "Privacy label": [
+        "privacy label*",
+        "nutrition label*",
+        "data safety",
+        "app privacy details",
+        "privacy report"
+      ],
+      "Store listing": [
+        "app store description*",
+        "store listing*",
+        "app description*",
+        "store page*",
+        "app store data"
+      ],
+      "App interface": [
+        "interface*",
+        "privacy setting*",
+        "settings",
+        "permission*",
+        "consent dialog*",
+        "consent flow*",
+        "walkthrough",
+        "dark pattern*",
+        "privacy feature*",
+        "privacy zone*",
+        "privacy control*",
+        "ux"
+      ],
+      "Marketing or website": [
+        "marketing",
+        "advertis*",
+        "website*",
+        "promotional",
+        "claims"
+      ],
+      "Traffic or code": [
+        "traffic",
+        "network analysis",
+        "static analysis",
+        "dynamic analysis",
+        "sdk*",
+        "third-party librar*",
+        "vulnerabilit*",
+        "bluetooth",
+        "ble",
+        "reverse engineer*",
+        "penetration",
+        "firmware",
+        "source code",
+        "apk*",
+        "third-party tracker*",
+        "third party tracker*",
+        "ad tracker*",
+        "tracking librar*",
+        "trackers in",
+        "data flow*",
+        "data transmission*"
+      ],
+      "Sensor data": [
+        "sensor*",
+        "accelerometer*",
+        "imu",
+        "inertial",
+        "motion data",
+        "gyroscope",
+        "ppg",
+        "ecg",
+        "biosignal*",
+        "side-channel",
+        "side channel",
+        "keystroke*",
+        "gait",
+        "elevation",
+        "heart rate data"
+      ],
+      "Users' accounts": [
+        "interview*",
+        "survey*",
+        "focus group*",
+        "participants",
+        "user study",
+        "user studies",
+        "questionnaire*",
+        "respondents"
+      ],
+      "Other notice": [
+        "breach notification*",
+        "notice*",
+        "cookie*",
+        "consent notice*",
+        "privacy notification*"
+      ]
+    },
+    "venue_type": {
+      "Preprint": [
+        "arxiv",
+        "ssrn",
+        "eprint",
+        "medrxiv"
+      ],
+      "NLP venue": [
+        "association for computational linguistics",
+        "acl anthology",
+        "emnlp",
+        "naacl",
+        "computational linguistics",
+        "lrec",
+        "coling",
+        "language resources"
+      ],
+      "Security and privacy venue": [
+        "privacy enhancing technologies",
+        "popets",
+        "usenix security",
+        "soups",
+        "usable privacy",
+        "sigsac",
+        "computer and communications security",
+        "symposium on security and privacy",
+        "european symposium on security",
+        "network and distributed system",
+        "privacy symposium",
+        "security",
+        "privacy",
+        "trustcom",
+        "wpes",
+        "cybersecurity",
+        "forensic*",
+        "ccs",
+        "acm ccs"
+      ],
+      "HCI venue": [
+        "human factors in computing",
+        "chi conference",
+        "cscw",
+        "human-computer",
+        "human computer",
+        "pacm hci",
+        "interactive mobile wearable",
+        "ubiquitous",
+        "mobilehci",
+        "nordichi",
+        "designing interactive",
+        "interacting with computers",
+        "acm transactions on computer-human",
+        "social computing",
+        "personal and ubiquitous"
+      ],
+      "Health or medical journal": [
+        "jmir",
+        "bmj",
+        "jama",
+        "medic*",
+        "health",
+        "nursing",
+        "internet interventions",
+        "psychiatr*",
+        "clinical",
+        "contraception",
+        "reproductive",
+        "epidemiol*",
+        "biomedical"
+      ],
+      "Law or social science": [
+        "law",
+        "legal",
+        "society",
+        "gender",
+        "economy",
+        "social",
+        "sociolog*",
+        "ethic*",
+        "policy review",
+        "feminist",
+        "anthropolog*",
+        "communication"
+      ],
+      "Other computing venue": [
+        "computing",
+        "software",
+        "internet of things",
+        "ieee",
+        "acm"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "stage": "pdflatex-1",
+    "returncode": 0
+  },
+  {
+    "stage": "biber",
+    "returncode": 0
+  },
+  {
+    "stage": "pdflatex-2",
+    "returncode": 0
+  },
+  {
+    "stage": "pdflatex-3",
+    "returncode": 0
+  }
+]

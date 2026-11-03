@@ -1,0 +1,59 @@
+variant,selected,providers,differ_from_main,pending
+no developer rule,47,37,10,0
+equal platform weights,47,47,5,0
+pool-sum scale (first formula),47,47,0,0
+worldwide Play rating count instead of German reviews,47,47,11,0
+depth 20,47,47,1,0
+App Store depth 200,47,47,2,0
+English keywords only,47,47,2,0
+German keywords only,47,47,3,0
+"without ""Diät""",47,47,0,0
+"without ""Eisprung""",47,47,0,0
+"without ""Ernährung""",47,47,1,0
+"without ""Frauengesundheit""",47,47,0,0
+"without ""Fruchtbarkeit""",47,47,0,0
+"without ""Gehen""",47,47,0,0
+"without ""Gewicht""",47,47,0,0
+"without ""Glück""",47,47,0,0
+"without ""Herzfrequenz""",47,47,0,0
+"without ""Körperfett""",47,47,0,0
+"without ""Laufen""",47,47,0,0
+"without ""Periode""",47,47,0,0
+"without ""Puls""",47,47,0,0
+"without ""Radfahren""",47,47,1,0
+"without ""Schlaf""",47,47,0,0
+"without ""Schritte""",47,47,0,0
+"without ""Schwangerschaft""",47,47,0,0
+"without ""Stimmung""",47,47,0,0
+"without ""Training""",47,47,0,0
+"without ""Verhütung""",47,47,0,0
+"without ""birth control""",47,47,0,0
+"without ""body fat""",47,47,0,0
+"without ""contraception""",47,47,0,0
+"without ""cycling""",47,47,0,0
+"without ""diet""",47,47,0,0
+"without ""eating""",47,47,0,0
+"without ""exercise""",47,47,1,0
+"without ""female health""",47,47,0,0
+"without ""fertility""",47,47,0,0
+"without ""happiness""",47,47,0,0
+"without ""heart rate""",47,47,0,0
+"without ""heartrate""",47,47,0,0
+"without ""menstrual""",47,47,0,0
+"without ""menstruation""",47,47,0,0
+"without ""mood""",47,47,0,0
+"without ""ovulation""",47,47,0,0
+"without ""period""",47,47,0,0
+"without ""pregnancy""",47,47,0,0
+"without ""pregnant""",47,47,0,0
+"without ""reproductive health""",47,47,0,0
+"without ""reproduktive Gesundheit""",47,47,0,0
+"without ""running""",47,47,1,0
+"without ""schwanger""",47,47,0,0
+"without ""sleep""",47,47,0,0
+"without ""steps""",47,47,0,0
+"without ""walking""",47,47,0,0
+"without ""weight""",47,47,1,0
+"without ""women's health""",47,47,0,0
+"without ""workouts""",47,47,0,0
+"previous method (store alternation, worldwide Play count)",47,47,10,0

@@ -1,0 +1,362 @@
+--- a/00_Admin/Action-Plan_2026-10-13.md
++++ b/00_Admin/Action-Plan_2026-10-13.md
+@@ -7,11 +7,13 @@
+ freeze → rewrite the methodology. ❓ = needs the supervisor.
+ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
+ 
++**Scope update, 28 October 2026:** [D15](Decisions/D15_health-tracker-domain.md) confirms health trackers as the single study domain. Source-paper categories support scope and keyword collection only. Pilot, validation and walkthrough totals apply across the sample without category allocations; the older category-specific planning concern is resolved.
++
+ ## 1 · Clarify and define (by 10-20)
+ - ☐ ❓ One email with the open questions: "post-harm reaction" and "accessible
+   mechanisms"; the venue names ("pets, css, useix, ieee smp, …"); "best app" for the
+   harm tree; which decisions the pilot settles; the second coder; the three
+-  app-selection questions of §7 (domain in the sample, one app per provider,
++  app-selection questions of §7 (one app per provider,
+   pregnancy and workout-plan apps); the German exposure ranking (D2) and the vendor
+   rule (D6).
+ - ☐ Glossary with sources: capability, harm, health tracker, PET, harm tree,
+@@ -66,13 +68,7 @@
+ 
+ 1. ☑ App Store collection with the same keywords and depth: 23 October, 49 queries
+    (`appstore-scraper/v007`).
+-2. ☐ ❓ How domain enters the sample (D1, D3). Pilot, Play: the 24 Play places held 3
+-   period trackers and 2 pregnancy apps, the top 47 held 7 and 3. The per-domain
+-   plans (6 walkthroughs and 5 validation apps per domain, separate reporting) need
+-   at least 7 fertility apps besides the 2 pilot apps. Options: (a) descriptor only;
+-   (b) a minimum per domain, e.g. 10; (c) places in proportion to each domain's share
+-   of ratings (on Play about 10 fertility, 4 pregnancy, 33 fitness). The drawn sample
+-   has 4 cycle, 2 pregnancy and 2 mood apps among 47.
++2. ☑ Study domain clarified by the author on 28 October 2026 ([D15](Decisions/D15_health-tracker-domain.md)): health trackers overall. Categories describe the sample and supply scope/keyword vocabulary; they impose no separate sampling, pilot, validation, walkthrough or analysis allocations.
+ 3. ☑ One app per developer (D2, 23 October). Pilot: Leap Fitness Group held 10 of the
+    Play top 47 under one policy URL, Simple Design Ltd. 3; the rule changed 6 of the
+    24 Play places.
+@@ -109,4 +105,4 @@
+   both exist (Arora et al. 2022: 14 of 59 apps acknowledged the GDPR only in their
+   German policy; 13 English–German pairs differed substantially).
+ 
+-**Next:** the email (§1), the glossary (§1), the domain question (§7.2).
++**Next:** the email (§1) and the glossary (§1). The study-domain question is resolved by D15 (§7.2).
+--- a/00_Admin/App-Selection-Evaluation_2026-10-23.md
++++ b/00_Admin/App-Selection-Evaluation_2026-10-23.md
+@@ -47,7 +47,9 @@
+ as sensitivity check. In the pilot this changes 6 of the 24 Play places and 13 of
+ the top 47 and raises period trackers in the Play half from 3 to 4.
+ 
+-### 2. Domain mix against the per-domain design (high, supervisor)
++### 2. Historical category-allocation concern — superseded by D15
++
++**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
+ 
+ | Pilot, Play | Top 24 | Top 47 |
+ |---|---|---|
+@@ -114,7 +116,6 @@
+ 
+ ## Questions for the supervisor
+ 
+-1. Should domain shape the sample, or be a descriptor without per-domain
+-   walkthrough and validation slots?
++1. Resolved by the author on 28 October 2026 (D15): health trackers form one study domain; categories are descriptors and source-paper vocabulary, with no category-specific walkthrough or validation slots.
+ 2. Is one app per provider acceptable as the selection unit?
+ 3. Are pregnancy apps and workout-plan apps inside "health tracker"?
+--- a/00_Admin/Decision-Log.md
++++ b/00_Admin/Decision-Log.md
+@@ -25,6 +25,7 @@
+ | D11 | Device scope (apps only) | proposed (10-23, in D3): companion apps eligible if the app records or displays tracking data; devices not analysed | Meeting 10-13 | [D03](Decisions/D03_scope-keywords-function.md) |
+ | D12 | Basis of the harm tree ("best app") | open — needs supervisor | Meeting 10-13, wording ambiguous | — |
+ | D13 | Literature search, filter and screening | proposed (10-26): staged procedure of Baumann et al. 2025 (App. A) on OpenAlex and Semantic Scholar, one query per review question, ≥ 3 citations per year, criteria I1–I4 / E1–E5 | Baumann 2025 App. A pp. 56–57; meeting 10-13 §3; API access test 10-26 | [D13](Decisions/D13_literature-review.md) |
++| D15 | Study domain and category allocations | confirmed by author (10-28): one domain, health trackers; source categories inform scope and keywords only; pilot, validation and walkthrough totals apply across the sample | Author's explicit clarification in chat, 28 October 2026; meeting 10-13: no category quotas and include mental-health trackers | [D15](Decisions/D15_health-tracker-domain.md) |
+ 
+ The reading that supports each decision is mapped in
+ [`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)
+--- a/00_Admin/Project-Handoff_2026-10-25.md
++++ b/00_Admin/Project-Handoff_2026-10-25.md
+@@ -1,4 +1,6 @@
+ # Project handoff — 25 October 2026
++
++**Scope update, 28 October 2026:** the author confirmed one study domain, health trackers ([D15](Decisions/D15_health-tracker-domain.md)). The current methodology, codebook v4 and walkthrough protocol v3 remove category allocations from the pilot, validation and walkthroughs. Categories remain scope/keyword sources and descriptive metadata. References to separate domains in this dated handoff describe the earlier draft and no longer govern current work.
+ 
+ For the author or whoever continues. State of the whole project; the graph
+ (`graphify-out/`, 1,278 nodes, 112 communities) was queried and refreshed for this
+--- a/04_Study/README.md
++++ b/04_Study/README.md
+@@ -2,6 +2,8 @@
+ 
+ Everything needed to make the empirical part reproducible. If someone else could
+ not rerun the study from this folder alone, something is missing.
++
++The study domain is health trackers overall ([D15](../00_Admin/Decisions/D15_health-tracker-domain.md)). Categories from the source papers explain the scope and keywords and describe the apps; they impose no allocations on the pilot, validation, walkthroughs or analysis. The current codebook is [v4](Codebook/codebook_v4.md), and the walkthrough protocol is version 3. Earlier codebook versions preserve the historical design.
+ 
+ | Folder | Contents |
+ |---|---|
+--- a/04_Study/App-Sample/sampling_protocol.md
++++ b/04_Study/App-Sample/sampling_protocol.md
+@@ -1,3 +1,20 @@
++# Sampling Protocol — current scope amendment
++
++**Version:** 3 (scope amendment) · **Date:** 2026-10-28 · **Authority:** author's confirmed clarification in [D15](../../00_Admin/Decisions/D15_health-tracker-domain.md), read with the current thesis methodology and D1–D7.
++
++The study domain is health trackers overall. Categories from the source papers explain the domain definition and the [49 search queries](keywords.csv) and describe the apps; they do not define separate study strata or analysis groups.
++
++- Sampling remains one combined ranking of eligible health trackers, with no category quotas; the present target is 47 ranked plus three preinstalled apps (D1/D2/D6).
++- The pilot draws five apps at random from the whole sample, with a recorded seed and no category allocation.
++- Validation draws ten apps at random from providers and documents not used in the pilot, with a recorded seed and policy-language stratification where both languages occur. Pilot apps do not enter validation.
++- Walkthroughs inspect twelve distinct apps across the sample, six on Android and six on iOS, alternating platform slots in rank order. Existing access exclusions and reporting of unfilled slots remain.
++- The reference harm trees concern health trackers; applicability follows each app's features and the pathway's data, access and context conditions.
++- Codebook v4 and walkthrough protocol v3 implement this scope. This amendment changes no collected query, raw record, eligibility judgment, ranking or selected app. It does not settle other open methodological decisions.
++
++The text below is the preserved version-1 historical draft. Its sampling/ranking rules and category-specific allocations do not govern current work. Use the current methodology and decision records for the operative procedure.
++
++---
++
+ # Sampling Protocol
+ 
+ **Version:** 1 (draft) · **Date:** 2026-09-18 · **Status:** awaiting supervisor
+--- a/04_Study/Instrument/walkthrough_protocol.md
++++ b/04_Study/Instrument/walkthrough_protocol.md
+@@ -1,7 +1,8 @@
+ # Privacy-Focused Cognitive Walkthrough Protocol
+ 
+-**Version:** 2 · **Date:** 2026-10-05 · Operational version of the
+-Walkthroughs paragraph of the proposal. Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
++**Version:** 3 · **Date:** 2026-10-28 · Operational version of the current
++methodology's Walkthroughs paragraph and D15's single health-tracker domain.
++Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
+ Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
+ *Usability Inspection Methods*, pp. 105–140. The four questions below are from
+ Table 5.1, p. 106.
+@@ -10,8 +11,8 @@
+ automated. The point is to make every walkthrough identical, so differences you
+ find are differences between apps and not between sessions.
+ 
+-**Subsample:** 12 apps, balanced 6 fitness / 6 fertility, each domain split
+-3 Android / 3 iOS. Fill the slots in rank order, **alternating** Android and
++**Subsample:** 12 health-tracking apps, six on Android and six on iOS. Fill
++the slots in rank order, **alternating** Android and
+ iOS, without reusing an app. The balance serves coverage, not platform
+ comparison. Apps that need an unavailable paired device, payment, or identity
+ verification are skipped with a recorded reason; unfilled slots are reported.
+@@ -42,8 +43,8 @@
+ | # | Task | Why it is here |
+ |---|---|---|
+ | T1 | Find out what data the app collects | baseline: this is what communication normally covers |
+-| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v3) |
+-| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v3) |
++| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF` (codebook v4) |
++| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC` (codebook v4) |
+ | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
+ | T5 | Turn off sharing with third parties | control, and how it is framed |
+ | T6 | Export the data | control |
+@@ -83,7 +84,7 @@
+ | App | |
+ | Version | |
+ | Platform | |
+-| Domain stratum | fitness / fertility |
++| App category / relevant features | descriptive metadata; no category stratum |
+ | Date of walkthrough | |
+ | T1 outcome | completed / not found / unsupported / access barrier; where it stopped |
+ | T2 outcome | completed / not found / unsupported / access barrier; where it stopped |
+@@ -122,3 +123,4 @@
+ |---|---|---|---|
+ | 1 | 2026-09-18 | Added the seven privacy tasks, the four Wharton et al. questions, and the per-task record fields | Aligns the instrument with §4.4 of the proposal |
+ | 2 | 2026-10-05 | "Expected to fail" removed; four neutral outcome categories; alternating Android/iOS slot filling; payment/ID-verification apps skipped here, not excluded from the sample; codebook v3 codes | Anticipated outcomes risk steering an analyst-based inspection; alignment with the current proposal |
++| 3 | 2026-10-28 | Twelve apps across the health-tracker sample, six per platform without category slots; descriptive feature metadata; codebook v4 | Author's clarification of one study domain, D15; totals and task procedures retained |
+--- a/03_Thesis/appendix/A_codebook.tex
++++ b/03_Thesis/appendix/A_codebook.tex
+@@ -1,13 +1,13 @@
+ \chapter{Codebook}
+ \label{app:codebook}
+-\todo{Full coding scheme with definitions and examples, from codebook v3.}
++\todo{Full coding scheme with definitions and examples, from codebook v4.}
+ 
+ %----------------------------------------------------------------------
+ \section{Worked Example}
+ \label{app:worked-example}
+ 
+ This section walks through the whole procedure once, on one privacy policy,
+-using codebook version~3. The app, \enquote{CycleMate}, and its policy are
++using codebook version~4. The app, \enquote{CycleMate}, and its policy are
+ constructed: the text is written so that every important coding decision
+ occurs at least once. Real policies are expected to stay mostly at the level
+ of data practices and to name few harms.
+@@ -25,7 +25,7 @@
+     a harm is named, how is it presented? \textbf{C}: What protection is
+     promised?
+   \item[Reference tree.] A list of the ways harm \emph{could} happen with a
+-    fertility tracker, written down before any policy is read. Each way is a
++    health tracker, written down before any policy is read. Each way is a
+     \emph{pathway}: data and access conditions, then something an actor
+     can do with them (a \emph{capability}), then the harm.
+   \item[Applicable.] A pathway is applicable to an app if the app has the
+@@ -38,10 +38,12 @@
+ 
+ \subsection*{Step 0: The reference tree}
+ 
+-The tree is built once for the fertility domain, from the tracker
+-literature, following the harm-tree method of Knabenhans et
+-al.~\parencite{knabenhans2026harms}. \Cref{tab:we-tree} shows five of its
+-pathways. In the \emph{Conditions} column, AND means that every condition is
++The reference trees are built for health trackers from the literature,
++following the harm-tree method of Knabenhans et
++al.~\parencite{knabenhans2026harms}. \Cref{tab:we-tree} shows five constructed
++pathways relevant to CycleMate's features from this shared framework. These
++illustrate app-specific applicability rather than a separate study domain. In the
++\emph{Conditions} column, AND means that every condition is
+ needed; OR means that any one of them is enough. Each condition carries its
+ origin: \emph{core} (the app cannot work without it), \emph{context} (it comes
+ from running on a phone and network), or \emph{implementation} (the provider
+@@ -49,7 +51,7 @@
+ 
+ \begin{table}[H]
+ \centering
+-\caption{Excerpt of the reference tree for fertility trackers.}
++\caption{Constructed reference pathways relevant to the CycleMate example.}
+ \label{tab:we-tree}
+ \small
+ \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
+@@ -188,7 +190,7 @@
+ 
+ \begin{table}[H]
+ \centering
+-\caption{Unit-level codes for the CycleMate policy (codebook v3).}
++\caption{Unit-level codes for the CycleMate policy (codebook v4).}
+ \label{tab:we-units}
+ \small
+ \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X
+--- a/03_Thesis/chapters/04_methodology.tex
++++ b/03_Thesis/chapters/04_methodology.tex
+@@ -325,15 +325,18 @@
+ in Section~\ref{sec:results-sample}.
+ \todo[inline, color=green]{done}
+ 
+-\paragraph{Domain.} The study adopts the domain of two published app studies
+-on health trackers. The first domain is of Hutton et
+-al.~\parencite{hutton2018assessing}, search categories are derived from the
+-data types that 105 apps reported most often, because no taxonomy of tracking existed; their health categories are cycling, diet,
+-exercise, heart, mood, running, sleep, step count and weight. This
+-survey-based list has no reproductive/fertility category, so the domain of Malki et
+-al.~\parencite{malki2024exploring} is added, since the paper is about \emph{female health apps}: female reproductive health,
+-including pregnancy apps. The domain thus covers activity, diet and weight,
+-heart rate, sleep, mood and reproductive health.
++\paragraph{Domain.} The study concerns health trackers overall. Its operational
++scope and search vocabulary draw on two published app studies. Hutton et
++al.~\parencite{hutton2018assessing} derived their search categories from the
++data types most often reported by 105 members of a Quantified Self group;
++their health categories are cycling, diet, exercise, heart, mood, running,
++sleep, step count and weight. Malki et
++al.~\parencite{malki2024exploring} supply the reproductive-health scope,
++including pregnancy tracking, absent from that list. Together these sources
++inform the definition and keyword collection for activity, diet and weight,
++heart rate, sleep, mood and reproductive health within one health-tracker
++domain. Categories describe apps and their features; they do not define
++separate sampling, pilot, validation or analysis groups.
+ 
+ \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
+ terms of Malki et al.\ are searched in the original English and in one German
+@@ -694,8 +697,8 @@
+ version where applicable. Shared policies will be coded
+ once and linked to all relevant apps.
+ 
+-\section{App Walkthroughs} Twelve distinct apps will be inspected, six per domain
+-with three Android and three iOS apps in each. Selection will follow the
++\section{App Walkthroughs} Twelve distinct health-tracking apps will be inspected,
++six on Android and six on iOS. Selection will follow the
+ ranking, alternating Android and iOS slots without reusing an app; the balance
+ serves coverage, not platform comparison. Apps requiring an unavailable paired
+ device, payment or identity verification will be skipped with a recorded
+@@ -712,11 +715,11 @@
+ unsupported tasks and access barriers. Screen recordings will preserve the
+ text encountered. This is an expert inspection, not a test of real users.
+ 
+-\section{Reference Harm Trees} Before main coding, a tree will be built for
+-each domain from prior tracker research. For fitness, sources are a survey of
+-tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable}
+-and users' harm scenarios~\parencite{gabriele2020understanding}. For fertility,
+-sources are analyses of policies, data flows and interfaces
++\section{Reference Harm Trees} Before main coding, reference harm trees will be
++built for health trackers from prior research. Sources include a survey of
++tracker inferences, threats and vulnerabilities~\parencite{niksirat2024wearable},
++users' harm scenarios~\parencite{gabriele2020understanding}, analyses of policies,
++data flows and interfaces
+ \parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
+ user concerns~\parencite{cao2024deleted}. Sources found in the logged search
+ will be added with a recorded reason. Each pathway will name the data, potential
+@@ -750,8 +753,8 @@
+ 
+ 
+ \section{Pilot} The pilot takes place after sampling and after the reference
+-harm trees have been built. Five apps, three fitness and two fertility apps,
+-will be drawn at random from the sample with a recorded seed. The pilot will
++harm trees have been built. Five apps will be drawn at random from the full
++health-tracker sample with a recorded seed, without category quotas. The pilot will
+ test the boundaries of collection and coding and estimate capture time, coding
+ units, manual effort and model cost. It will also settle the choices left open
+ in the previous sections: the starting points and time limits of the
+@@ -868,8 +871,8 @@
+ reviewed rather than discarded. Raw output is kept apart from adjudicated
+ labels, so performance is not measured after correction.
+ 
+-\section{Validation and Missed Mentions} Ten apps, five per domain, will be
+-drawn at random with a recorded seed from providers and documents not used in
++\section{Validation and Missed Mentions} Ten apps will be drawn at random from
++the health-tracker sample, with a recorded seed, from providers and documents not used in
+ the pilot, stratified by the language of the coded policy where both occur;
+ the numbers of independent providers and unique documents will be reported.
+ The author will code them fully before seeing model output, and they will not
+@@ -887,15 +890,15 @@
+ and model--human Cohen's $\kappa$~\parencite{cohen1960coefficient}, with
+ counts, prevalence and Gwet's AC1, since rare codes can depress $\kappa$
+ despite high agreement~\parencite{feinstein1990high,gwet2008computing}.
+-App-level detection is also reported, by domain and, where counts allow, by
+-source and language. Exploratory 95\,\% intervals will resample providers to
++App-level detection is also reported for the validation set as a whole and,
++where counts allow, by source and language. Exploratory 95\,\% intervals will resample providers to
+ respect shared sources; with ten apps they will be wide.
+ 
+ A separate missed-mention audit, reported apart from validation, will search
+ the remaining corpus for harm-related vocabulary in both languages and check
+ every unlabelled hit manually. To expose the vocabulary's blind spots, 100
+-units outside the hits (or all, if fewer), allocated across domains, languages
+-and sources in advance, will also be read. Recall will be reported as
++units outside the hits (or all, if fewer), allocated across languages and
++sources in advance, will also be read. Recall will be reported as
+ unestimable where manual positives are too few. For any code with fewer than
+ 20 validation positives or recall below 0.90, all relevant material will be
+ checked manually or corpus-wide absence claims withheld; these are review
+--- a/00_Admin/Decisions/D01_sample-size.md
++++ b/00_Admin/Decisions/D01_sample-size.md
+@@ -12,6 +12,6 @@
+   - The same meeting asked how Apple Health, Samsung Health and Huawei Health could enter the sample ([organized notes](../Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md)). Preinstalled apps have no download step, so their rating counts understate their exposure (Apple Health: 2,134 German App Store ratings; an earlier version said it had no listing, corrected 23 October), and they need their own places.
+   - The vendor rule in [D6](D06_preinstalled-apps.md) yields exactly three preinstalled apps. A fourth or fifth place would have to admit vendors that do not lead their platform (Xiaomi 30 % of Android, Huawei 2 %, Google 2 %), which the exposure argument does not support.
+   - Comparable studies that analyse the documents *and* inspect the apps themselves worked with 20 to 64 apps: Malki et al. (2024) 20 apps, all installed and inspected (card `malki2024`, p. 4); Huckvale et al. (2019) 36 apps with traffic and policy analysis (card `huckvale2019`, p. 3); Hutton et al. (2018) 64 apps with a heuristic evaluation of interface, terms and policy (card `hutton2018`, p. 5). Document-only reviews go higher (O'Loughlin et al. 2019: 116 eligible apps). A target of 50 lies inside the range of the in-depth designs. Added 2026-10-25.
+-- **Choice (proposed):** a target of 50 apps; 3 places for the preinstalled apps from D6 and 47 for the store ranking in D2. No domain quotas: fitness and fertility apps compete in one ranking, and the resulting mix is reported. If fewer than 47 eligible store apps are found, all are kept and the shortfall reported.
++- **Choice (proposed):** a target of 50 apps; 3 places for the preinstalled apps from D6 and 47 for the store ranking in D2. All eligible health trackers compete in one ranking; categories describe the resulting sample and impose no quotas. The author confirmed this single study domain on 28 October 2026 ([D15](D15_health-tracker-domain.md)). If fewer than 47 eligible store apps are found, all are kept and the shortfall reported.
+ - **Reason:** The total of 50 comes from the proposal and the supervisor. The number of preinstalled places is set by a rule, not chosen to fill a round number, and the ranking fills the rest. Dropping quotas follows the supervisor's instruction.
+ - **Would change if:** the supervisor wants quotas back; D6 yields a different number of preinstalled apps; the eligible pool is smaller than 47.
+--- a/00_Admin/Decisions/D03_scope-keywords-function.md
++++ b/00_Admin/Decisions/D03_scope-keywords-function.md
+@@ -1,7 +1,7 @@
+ # D3 — Which apps count as health trackers, and which keywords find them?
+ 
+ - **Status:** proposed (author's choice 2026-10-23: "use the domain of any paper that made a research on health trackers"; awaiting supervisor). Fixed before the 23 October collection. The methodology states this choice.
+-- **Affects:** Methodology, App Sampling; [sampling protocol](../../04_Study/App-Sample/sampling_protocol.md) v2; [keywords.csv](../../04_Study/App-Sample/keywords.csv); harm trees and per-domain reporting (see "Consequences")
++- **Affects:** Methodology, App Sampling; [sampling protocol](../../04_Study/App-Sample/sampling_protocol.md), current amendment; [keywords.csv](../../04_Study/App-Sample/keywords.csv); reference-model applicability and reporting across health trackers ([D15](D15_health-tracker-domain.md))
+ - **Options considered:**
+   1. The proposal's 19 author-chosen fitness and fertility keywords (used in the 22 October trial). Rejected: no stated source, which the [app-selection evaluation](../App-Selection-Evaluation_2026-10-23.md) §3 criticised.
+   2. A domain defined by store category (Health & Fitness, Medical). Rejected: categories mix trackers with content and shopping apps, and the digest recommends a functional definition (stage A, implication 3).
+@@ -12,7 +12,7 @@
+   - Robillard et al. (2019) required that an app "requires the input of personal information ... over time" (§2.1), the functional tracking rule the digest recommends (stage A, approach 4).
+   - Supervisor meeting of 13 October: search with German and English keywords; include mental-health trackers; explain the place of fertility and sleep tracking among health trackers ([organized notes](../Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md) §1). Hutton et al.'s mood and sleep categories and Malki et al.'s reproductive terms cover these.
+ - **Choice (proposed):**
+-  - **Domain.** Health self-tracking apps in the mHealth categories of Hutton et al. (2018) and the female reproductive-health domain of Malki et al. (2024), including pregnancy apps, as Malki et al. did.
++  - **Domain.** Health trackers overall, as confirmed by the author on 28 October 2026 ([D15](D15_health-tracker-domain.md)). The mHealth categories of Hutton et al. (2018) and the reproductive-health scope of Malki et al. (2024), including pregnancy tracking, supply the operational scope definition and keywords. They do not divide the study into separate populations or analysis strata.
+   - **Keywords.** The 15 mHealth keywords of Hutton et al. and the 12 terms of Malki et al., each searched in the original English and in one German translation of the same data type; identical spellings (`workouts`, `menstruation`) and repeated translations are searched once: 49 queries ([keywords.csv](../../04_Study/App-Sample/keywords.csv)). Translations follow the tracked data type rather than the word (`eating` → `Ernährung`).
+   - **Function rule (eligibility E1).** The app lets the user record personal health or body data over time, by input or sensor, in at least one of these categories (Robillard et al. 2019; Malki et al. 2024). Instructional or content-only apps, one-off calculators, shops, games without such recording and general-purpose apps are excluded (Hutton et al. 2018).
+   - **Boundary cases.** Companion apps of wearables are eligible when the app itself records or displays the tracking data; the device is not analysed (D11, meeting: apps only). Consumer apps for the general public only (Robillard et al.; Malki et al.). Chronic-disease, snoring and other specialised trackers are inside the domain only where they record data in one of the categories; they are not searched for separately, because neither source lists them.
+@@ -25,5 +25,5 @@
+   - E4: the listing text in the German storefront is in German or English (screening log: an Arabic-only pregnancy calculator).
+   - E5: the listing describes prescription by a doctor or reimbursement by statutory health insurance; such an app is checked against the BfArM DiGA directory (sampling protocol v2).
+   - An app listed in both stores is decided on one screened listing; where both listings were screened, an exclusion in either excludes the app (`app-ranking/v004`, `decision`). Corrected 26 October: an earlier wording said every criterion had to hold in both stores, but 38 of the 125 both-store candidates were decided on one listing. In the main selection, 27 had both listings screened and the decisions never differed, so the rule excluded no app. In the App Store depth-200 sensitivity variant the title matcher paired Fitbit (Play) with the Google search app and Google Fit with Chrome (same provider, same first word), and the excluded App Store listings excluded both; the variant's provider count did not change (Google stays in through another listing), but the matcher's first-word rule is a known weakness.
+-- **Consequences (open, not decided here):** mood trackers form a third group beside fitness and reproductive apps. The methodology's per-domain plans (two harm trees, six walkthroughs and five validation apps per domain, separate reporting) assume two domains and must be revised once the sample's mix is known (supervisor question, [evaluation](../App-Selection-Evaluation_2026-10-23.md) §2).
+-- **Would change if:** the supervisor wants a narrower domain (fitness and fertility only) or a separate mental-health search; the screening log shows that the function rule cannot be applied consistently from store pages.
++- **Consequences (confirmed by author, 28 October 2026):** one study domain, health trackers. The pilot, validation, walkthroughs and reporting operate across that sample without category allocations. Pathway applicability depends on each app's features and context. The former open concern about category-specific allocations is superseded by [D15](D15_health-tracker-domain.md); keyword sources and descriptive categories remain documented.
++- **Would change if:** the agreed health-tracker scope or search coverage changes, or the screening log shows that the function rule cannot be applied consistently from store pages. Any change needs a dated decision and an assessment of the existing sample.

@@ -1,0 +1,7 @@
+S1 = D AND P AND H (from 2014-01-01)
+S2 = D AND P AND C (from 2014-01-01)
+S3 = T AND L AND A (from 2022-01-01)
+S4 = T AND F (from 2014-01-01)
+Security and privacy venues: D OR S3 OR S4
+CHI and CSCW, with abstract: S1 OR S2 OR S3 OR S4
+CHI and CSCW, title only: (D AND P) OR (D AND H) OR (D AND C) OR (T AND L) OR (T AND F)
