@@ -1,0 +1,173 @@
+\section{Background}
+\label{sec:background}
+
+\subsection{Self-tracking has become an ordinary data practice}
+
+Health and fitness tracking is no longer a niche activity. In Germany,
+73\,\% of smartphone users report using health apps to support fitness,
+nutrition, or general wellbeing~\parencite{bitkom2025health}. The category is
+broad: step and activity counters, sleep and heart-rate monitors, workout and
+nutrition apps, and menstrual and fertility trackers. A wearable device may or
+may not be involved. What is always involved is an app --- it is where data is
+entered, displayed, stored, and transmitted. This is why the unit of analysis
+in this thesis is the app and the communication surrounding it rather than the
+hardware.
+
+Three kinds of data accumulate. Users supply attributes directly: age, weight,
+goals, symptoms, mood, sexual activity. Sensors produce continuous streams:
+steps, heart rate, sleep phases, GPS traces. The system adds its own context:
+timestamps, device identifiers, usage patterns~\parencite{gabriele2020understanding}.
+What distinguishes tracking data from most other consumer data is that it is
+longitudinal and involuntary in character --- once the app is installed, the
+record keeps growing whether or not the user is thinking about privacy. Under
+Article~9(1) of the General Data Protection Regulation, data concerning health
+is a special category of personal data; menstrual and fertility data falls
+squarely within it~\parencite{gdpr2016}.
+
+\subsection{From data practices to privacy harms}
+
+A \emph{privacy violation} and a \emph{privacy harm} are not the same thing.
+Solove's taxonomy classifies the harmful \emph{activities} --- information
+collection, processing, dissemination, and
+invasion~\parencite{solove2006taxonomy}. Citron and Solove later classify the
+\emph{injuries} those activities produce, and it is this second typology that
+the present work builds on: physical, economic, reputational, psychological,
+autonomy, discrimination, and relationship
+harms~\parencite[830--861]{citron2021harms}. Calo had earlier drawn a related
+line between the \emph{subjective} harm of perceived unwanted observation and
+the \emph{objective} harm of information being used against a
+person~\parencite{calo2011boundaries}.
+
+What these typologies do not supply is the route from a system property to an
+injury. Knabenhans et al.\ close that gap with \emph{harm
+trees}~\parencite{knabenhans2026harms}. A tree links system components ---
+information the functionality necessarily leaks, requirements the system
+imposes on users --- to adversarial capabilities, and those capabilities to
+harms. Their analysis of the European Digital Identity Framework isolates three
+capabilities that follow from the core functionality itself: distinguishing
+between users, tracking users, and inferring attributes about them. Crucially,
+they separate pathways that are inherent to the functionality, pathways that
+arise from deploying it in a digital context, and pathways that come from
+concrete implementation choices --- and show that privacy-enhancing
+technologies (PETs) can only close the last of the three. The same three
+capabilities describe a health tracker well, which makes the model transferable
+to this domain even though the original object of study is different.
+
+That inference capability is not hypothetical here. Salehzadeh Niksirat et al.\
+reviewed 236 studies of wearable activity trackers and report that tracker data
+can be mined to infer private attributes, personality traits among
+them~\parencite{niksirat2024wearable}.
+
+\subsection{Modern risk is inference-centric, and so is PET marketing}
+
+Martin, Nissenbaum, and Shmatikov examine three principles that underlie the
+privacy techniques large technology companies have recently deployed:
+limiting third-party access to personal data, minimising the use and retention
+of raw data in favour of inferences drawn from it, and keeping personal data on
+the user's device~\parencite{martin2025cookies}. Their objection is not that the
+techniques fail on their own terms. It is that a technique can satisfy all
+three principles while the privacy-violating behaviour continues untouched,
+because the sensitive object is the inference, not the raw record. Their
+vignette studies show that users' expectations do not follow the first
+party\,/\,third party or raw data\,/\,inference distinctions that the principles
+are built on.
+
+For a health tracker this is the central point. Cycle length and symptom entries
+support pregnancy inference; location and activity traces support inferences
+about routine, workplace, and health status. Prior work on period trackers has
+documented both the technical basis for such inferences and the concrete fears
+users attach to them~\parencite{cao2024deleted,shipp2020period}.
+
+\subsection{Where privacy is communicated}
+
+Providers communicate privacy on several surfaces at once, and the surfaces
+differ in audience, length, and legal weight:
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+  \item the \textbf{privacy policy}, the only surface with a direct legal
+        mandate;
+  \item the \textbf{store listing} --- the description text plus the structured
+        disclosure that each platform requires (Google Play's Data Safety
+        section, Apple's Privacy Nutrition Labels);
+  \item the \textbf{provider's website and marketing material}, including
+        advertisements and company privacy blog posts;
+  \item the \textbf{app interface itself} --- onboarding screens, consent and
+        permission dialogues, privacy settings, and the paths that lead to
+        export or deletion.
+\end{enumerate}
+
+Each surface has known weaknesses. Policies are long enough that reading them is
+economically irrational~\parencite{mcdonald2008cost}. Structured store
+disclosures are self-reported and frequently wrong: a dynamic study of almost
+5{,}000 Android apps found that 81\,\% misrepresented their data collection or
+sharing practices in the Data Safety
+section~\parencite{arkalakis2024abandon}, and a large-scale longitudinal study of
+Apple's labels documents how unevenly they are created and
+maintained~\parencite{li2022ios}.
+
+\subsection{What the law asks providers to say}
+\label{sec:law}
+
+The transparency regime is built around describing \emph{what will be done with
+data}. Articles 13 and 14 GDPR enumerate the controller's identity, the purposes
+and legal basis of processing, recipients, third-country transfers, retention
+periods, and data-subject rights~\parencite{gdpr2016}. Consequences appear in
+exactly one narrow place: for automated decision-making within the meaning of
+Article 22(1) and (4), Article 13(2)(f) requires \enquote{meaningful information
+about the logic involved, as well as the significance and the envisaged
+consequences of such processing for the data subject}. Breaches are addressed
+reactively --- Article 34 obliges the controller to communicate a breach to
+affected individuals, but only once it has occurred and only where it is likely
+to result in a high risk to their rights and freedoms.
+
+Nothing in the regime requires a provider to state what can be \emph{derived}
+from the data it collects, or what would \emph{follow for the user} if that data
+were exposed. This is the structural reason to expect silence on inference,
+breach consequences, and incident handling --- and the reason that silence is
+worth measuring rather than assuming.
+
+\subsection{What prior work establishes, and where it stops}
+
+Three strands of work bear on the question, and each stops short of it.
+
+\paragraph{Stated practice versus actual practice.}
+A substantial measurement literature compares what apps say with what they do.
+Huckvale et al.\ found that 29 of 36 depression and smoking-cessation apps
+transmitted data to services run by Google or Facebook while only 12 disclosed
+this in a policy~\parencite{huckvale2019assessment}. Shipp and Blasco
+systematically analysed the privacy policies of 30 Android menstrual
+apps~\parencite{shipp2020period}. Malki et al.\ combined a thematic analysis of
+Data Safety sections and privacy policies with a privacy-focused usability
+inspection across 20 popular female mHealth apps and found inconsistencies
+between policy text and in-app features, flawed consent and deletion mechanisms,
+and covert collection of sensitive data~\parencite{malki2024exploring}. Hudig and
+Singh analysed the network transmissions of eight fertility tracker products and
+found data flowing to endpoints associated with organisations across several
+countries~\parencite{hudig2025intimate}. At scale, MAPS audited
+compliance across roughly a million apps~\parencite{zimmeck2019maps}. All of
+these ask whether the disclosure is \emph{true}. None asks which \emph{harms} it
+names.
+
+\paragraph{What users know and expect.}
+Gabriele and Chiasson surveyed 212 fitness tracker users: participants were
+reasonably confident about \emph{what} data was collected but unsure \emph{how}
+it was used, and when presented with scenarios carrying security and privacy
+implications they judged them plausible yet
+unlikely~\parencite{gabriele2020understanding}. Cao et al.\ surveyed 183 US
+women after the overturn of Roe v.\ Wade and found high concern about period
+tracker data practices combined with a feeling of being uninformed and powerless
+about mitigation~\parencite{cao2024deleted}. These studies measure the belief;
+they do not analyse the material that shapes it.
+
+\paragraph{Methods for reading this material.}
+Privacy policies have been a corpus-analysis object for a decade. The OPP-115
+corpus established an annotation scheme for data practices in
+policies~\parencite{wilson2016creation}; Polisis showed that those categories can
+be predicted automatically~\parencite{harkous2018polisis}; and large language
+models have since been evaluated for policy analysis at
+scale~\parencite{rodriguez2024llm}. On the interface side, the cognitive
+walkthrough offers a structured, task-based inspection
+procedure~\parencite{wharton1994cognitive}, complementing heuristic
+evaluation~\parencite{nielsen1994heuristic}. The annotation schemes these methods
+carry, however, are schemes of \emph{data practices} --- collection, sharing,
+retention, choice. None of them has a category for harm.

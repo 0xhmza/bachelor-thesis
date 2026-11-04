@@ -1,0 +1,517 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Overview}
+
+The study is a structured content analysis of privacy communication, combined
+with a task-based inspection of the interfaces that carry part of that
+communication. It proceeds in four steps: build a frozen sample of apps; collect
+every privacy-relevant text those apps put in front of a German user; walk
+through a stratified subsample of the apps manually to capture what the
+interface says in use; then code the resulting corpus against a harm-oriented
+framework, with LLM assistance for volume and manual double-coding for
+validation. Figure~\ref{fig:method} shows the pipeline.
+
+Three design commitments run through all four steps. First, \textbf{every code
+must be anchored to a verbatim quote} with its source, location, and capture
+date; a code without a quote does not enter the results. Second, \textbf{every
+instrument is versioned} --- the sampling protocol, the codebook, and each LLM
+prompt --- so that the analysis is reproducible from the repository alone.
+Third, because the headline findings are findings of \emph{absence},
+\textbf{recall is measured, not assumed}: an instrument that quietly misses a
+mention would manufacture the very silence the thesis claims to observe
+(Section~\ref{sec:validation}).
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize,
+  src/.style ={draw, rounded corners=2pt, align=center, text width=34mm,
+               minimum height=13mm, inner sep=3pt},
+  proc/.style={draw, rounded corners=2pt, align=center, text width=48mm,
+               minimum height=16mm, inner sep=3pt},
+  wide/.style={draw, rounded corners=2pt, align=center, text width=112mm,
+               minimum height=9mm, inner sep=3pt},
+  arr/.style ={-{Stealth[length=2mm]}, semithick}
+]
+  \node[src] (s1) at (-4.0, 2.3)
+    {\textbf{Step 2}\\Privacy policies,\\store listings and labels};
+  \node[src] (s2) at ( 0.0, 2.3)
+    {\textbf{Step 2}\\Provider websites,\\ads, privacy blogs};
+  \node[src] (s3) at ( 4.0, 2.3)
+    {\textbf{Step 3}\\Manual privacy\\walkthrough (in-app)};
+
+  \node[wide] (corpus) at (0,0)
+    {\textbf{Frozen corpus} --- segmented units, each with source, language,
+     app version and capture date};
+
+  \node[proc] (llm) at (-3.0,-2.2)
+    {\textbf{Step 4a}\\LLM-assisted coding,\\versioned prompts,
+     JSON $+$ verbatim span};
+  \node[proc] (man) at ( 3.0,-2.2)
+    {\textbf{Step 4b}\\Manual coding of a stratified 20\,\% subsample,
+     \emph{plus} a lexical sweep of the whole corpus};
+
+  \node[wide] (adj) at (0,-4.3)
+    {\textbf{Adjudicated codings} $+$ per-category $\kappa$ (with prevalence),
+     precision \emph{and} recall};
+  \node[wide] (ana) at (0,-5.8)
+    {\textbf{Analysis:} harm coverage (RQ1) $\cdot$ stance (RQ2) $\cdot$
+     PET framing (RQ3) $\cdot$ cross-surface consistency (RQ4)};
+
+  \draw[arr] (s1) -- (corpus);
+  \draw[arr] (s2) -- (corpus);
+  \draw[arr] (s3) -- (corpus);
+  \draw[arr] (corpus) -- (llm);
+  \draw[arr] (corpus) -- (man);
+  \draw[arr] (llm) -- (adj);
+  \draw[arr] (man) -- (adj);
+  \draw[arr] (adj) -- (ana);
+\end{tikzpicture}
+\caption{Overview of the study design. Step~1 (sampling) determines which apps
+enter the three collection streams at the top. The lexical sweep in Step~4b runs
+over the whole corpus, independently of the model, so that the claims of absence
+rest on measured recall rather than on the model's silence.}
+\label{fig:method}
+\end{figure}
+
+\subsection{Step 1: App Sampling}
+\label{sec:sampling}
+
+\paragraph{Platforms and market.}
+Google Play and the Apple App Store, German storefront, German device locale.
+Both platforms are covered because their structured disclosures differ (Data
+Safety section versus Privacy Nutrition Labels) and RQ4 depends on that
+difference.
+
+\paragraph{Search.}
+A fixed, pre-registered keyword list is used on both stores, in German and
+English, because German listings routinely use English terms. The seed list
+covers the two domains and their common synonyms: \emph{Fitness, Fitness
+Tracker, Schrittz\"ahler, Aktivit\"atstracker, Schlaf-Tracker, Herzfrequenz,
+Kalorienz\"ahler, Ern\"ahrungstagebuch, Workout} for the fitness domain, and
+\emph{Periode, Zyklus, Zyklustracker, Menstruation, Eisprung, Fruchtbarkeit,
+Kinderwunsch, period tracker, ovulation, fertility} for the fertility domain.
+The list is frozen before collection; any addition is recorded in the change log
+of the sampling protocol with its date and reason. Store categories considered
+are \emph{Health \& Fitness} and \emph{Medical}.
+
+\paragraph{Operationalising \enquote{highest rated}.}
+\enquote{Highest rated} is ambiguous and is therefore fixed in advance. For each
+keyword, the first 20 results in the store's default ordering are recorded
+together with their average rating and rating count. The pooled, de-duplicated
+candidate set is then filtered to apps with at least 1{,}000 ratings on the
+platform in question --- below that, the average rating is noise --- and ranked
+by average rating, with rating count as the tie-break. This makes the sample
+\emph{highly rated among widely used apps} rather than \emph{rated highly by a
+handful of people}, which is the intended reading.
+
+\paragraph{Inclusion criteria.} An app is included if all of the following hold:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item it is available in the German storefront of at least one of the two
+        platforms;
+  \item it collects health, fitness, or body-related self-tracking data from the
+        user or a paired device;
+  \item it is free to install, so that the walkthrough can reach onboarding
+        without a purchase;
+  \item a privacy policy is reachable from the store listing;
+  \item its interface is available in German or English.
+\end{enumerate}
+
+\paragraph{Exclusion criteria.} An app is excluded if any of the following hold:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item no privacy policy is reachable, or the link is dead at capture time
+        (recorded as a finding, then excluded from text coding);
+  \item it is a prescription DiGA or is marketed as a regulated medical device;
+  \item it is a pure device companion with no tracking function of its own;
+  \item account creation requires identity verification or payment, which the
+        ethics rules in Section~\ref{sec:ethics} forbid;
+  \item it duplicates an app already in the sample from the same provider under
+        a different name.
+\end{enumerate}
+
+\paragraph{Sample size and stratification.}
+The target is \textbf{50 apps} for document analysis, stratified as 30 fitness
+and activity apps and 20 fertility and period apps. The fertility stratum is
+deliberately over-represented relative to its market share: it is the domain
+where the harm literature is most developed and where the consequences are most
+concrete~\parencite{cao2024deleted,malki2024exploring,shipp2020period}, which
+makes it the more informative half of a comparison. A \textbf{pilot of five
+apps} (three fitness, two fertility) is run first to test the collection
+protocol, the codebook, and the prompts; pilot apps are re-coded with the final
+instruments and retained in the sample.
+
+\paragraph{Freezing.}
+Everything is recorded with a capture date and app version, and the corpus is
+frozen on a stated date. Policies change; a moving corpus cannot be analysed.
+The full record per app is specified in
+\pathname{04_Study/App-Sample/sampling_protocol.md}.
+
+\subsection{Step 2: Material Collection}
+
+For every app in the sample, the following are collected, archived as both the
+original file and extracted plain text, and given a stable document identifier:
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+  \item \textbf{Privacy policy}, in German if one is offered to a German user and
+        in English otherwise; both if both exist, with the difference recorded.
+  \item \textbf{Store listing}: full description text, plus the structured
+        disclosure (Play Data Safety section, App Store Privacy Nutrition Label)
+        captured as text and screenshot.
+  \item \textbf{Provider website}: the service description, any dedicated privacy
+        or security page, and any privacy-related blog or newsroom post.
+  \item \textbf{Advertisements}, where encountered --- in-app ads shown during
+        the walkthrough, and any ad creative reachable from the provider's own
+        channels. Advertising is treated as a \emph{secondary} corpus: it is
+        coded when found, but its absence for a given app is not itself a
+        finding, because ad delivery cannot be systematically reproduced.
+  \item \textbf{In-app privacy text}, from the walkthrough (Step~3).
+\end{enumerate}
+
+Each document is recorded with source type, language, URL, capture date,
+SHA-256 hash of the archived file, and the app version it belongs to. Collection
+is manual or uses officially permitted access; each store's terms are checked
+before any automated retrieval, and manual capture is preferred where the terms
+are restrictive.
+
+\paragraph{Segmentation.}
+Documents are split into coding units at heading and paragraph boundaries, with
+list items as their own units. Units, not documents, are the unit of coding;
+document-level counts are derived afterwards. This keeps a 40-page policy and a
+three-line store blurb commensurable.
+
+\subsection{Step 3: Privacy-Focused Cognitive Walkthrough}
+\label{sec:walkthrough}
+
+Walkthroughs are manual and are run on a \textbf{stratified subsample of 12
+apps}, drawn from the top of the ranked sample so that the most-used apps are
+covered. Unlike the document sample, the subsample is \emph{balanced}: six
+fitness and six fertility apps, each domain split three on Android and three on
+iOS. Balance is deliberate here, because RQ4 compares domains and platforms
+against each other and an unequal subsample would confound that comparison with
+sample size. Twelve is what a single analyst can walk through consistently
+within the schedule while covering both platforms and both domains.
+
+The method follows the cognitive walkthrough~\parencite{wharton1994cognitive},
+with one adaptation: the tasks are \emph{privacy} tasks. For each task the
+analyst walks the action sequence and asks Wharton et al.'s four questions ---
+will the user try to achieve the right effect; will they notice that the correct
+action is available; will they associate the correct action with the effect they
+want; and, once the action is performed, will they see that progress is being
+made. The tasks are:
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item find out what data the app collects;
+  \item find out what the app or provider \emph{derives} from that data;
+  \item find out what happens if the data is exposed, and how incidents are
+        handled;
+  \item reach the privacy policy from inside the app;
+  \item turn off sharing with third parties;
+  \item export the data;
+  \item delete the account and the data.
+\end{enumerate}
+
+Tasks 2 and 3 are the ones that matter for RQ1: they are expected to fail, and
+the walkthrough records \emph{where} they fail. Each session follows the fixed
+sequence in \pathname{04_Study/Instrument/walkthrough_protocol.md} --- store
+listing captured before install, fresh install, no restored backup, screen
+recording throughout, every consent and permission dialogue recorded verbatim,
+taps-to-target counted from the home screen. Observation and interpretation are
+written separately in the notes; only the observation is data.
+
+Walkthroughs are run by a single analyst, which is a known weakness of
+inspection methods~\parencite{nielsen1994heuristic}. It is mitigated by the
+fixed protocol, the screen recordings (which make a second pass possible), and
+by double-coding the walkthrough notes as part of the validation subsample.
+
+\subsection{Step 4: Coding Framework}
+\label{sec:framework}
+
+Every coding unit is coded on three axes. The axes are independent: a unit can
+carry codes on all three, or on none.
+
+\paragraph{Axis A --- harm type and pathway (RQ1).}
+The backbone is the Citron and Solove typology: physical, economic,
+reputational, psychological, autonomy, discrimination, and relationship
+harm~\parencite{citron2021harms}. Its seven categories were built for
+adjudication, not for content analysis, so each is given an operational
+definition, a positive example, and a counter-example in the codebook; a
+category that cannot be given a counter-example is not codable and is merged or
+dropped. On top of this, four \textbf{probe codes} capture the specific silences
+identified in Section~\ref{sec:problem}: \textsc{inference},
+\textsc{breach-consequence}, \textsc{incident-handling}, and
+\textsc{concrete-consequence}. Finally, where a unit does describe a route to
+harm, it is annotated with the stage of the Knabenhans et al.\ harm
+pathway~\parencite{knabenhans2026harms} it refers to --- system component,
+adversarial capability (distinguishing, tracking, inferring), or harm --- which
+records whether providers describe mechanisms, capabilities, or outcomes.
+
+\paragraph{Axis B --- stance (RQ2).}
+For each harm code, one stance is assigned: \textsc{acknowledged} (the harm is
+named as a real possibility), \textsc{hedged} (named but qualified into
+improbability), \textsc{minimised} (named alongside a claim that defuses it
+without substantiation), \textsc{deflected} (named but made the user's
+responsibility), or \textsc{absent} (recorded at document level, not unit
+level). \textsc{Absent} is a document-level and app-level judgement: it can only
+be asserted after the whole corpus for that app has been coded.
+
+\paragraph{Axis C --- PET framing (RQ3).}
+Where a protective technology or practice is described, the unit is coded for
+which of the three principles of Martin et al.\ it invokes --- limiting
+third-party access, minimising raw data in favour of inferences, or on-device
+processing~\parencite{martin2025cookies} --- and for whether the protection is
+framed as \textbf{secrecy} (nobody else sees the data) or as \textbf{harm
+prevention} (a specific bad outcome is prevented). A separate code marks
+\textsc{reassurance-without-substance}: claims such as \enquote{your data is
+safe with us} that carry no verifiable commitment.
+
+The framework is deductive at the start and inductive at the edges: codes that
+the corpus demands but the framework does not anticipate are added through
+thematic analysis~\parencite{braun2006using}, each one triggering a new codebook
+version with its rationale recorded.
+
+\subsection{Codebook and Coding Procedure}
+
+The codebook lives in \pathname{04_Study/Codebook/} and is versioned. Every
+category carries a definition, a positive example, and an explicit
+counter-example; the counter-example is mandatory because without it neither a
+human coder nor a model has a boundary, and both drift. The standing rules are:
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item Code the text as written, never what the provider is assumed to mean.
+  \item A unit may carry several codes; codes are not mutually exclusive across
+        axes.
+  \item Every code records source, verbatim quote, and location.
+  \item When unsure, code it and flag it --- never silently drop it.
+  \item Any change to a category produces a new codebook version with date,
+        change, and reason in the version history.
+\end{enumerate}
+
+The same codebook binds both coders --- the model in
+Section~\ref{sec:llmcoding} and the human in Section~\ref{sec:validation}. Where
+the two disagree, the author adjudicates against the verbatim span and the
+codebook; each adjudication is logged with the rule that resolved it, and a
+pattern of adjudications against the same category is treated as evidence that
+the category needs revision rather than that one coder was careless.
+
+\subsection{Step 4a: LLM-Assisted Coding}
+\label{sec:llmcoding}
+
+The corpus is too large to code entirely by hand --- 50 apps across four or five
+source types, with individual policies commonly running to several thousand
+words~\parencite{mcdonald2008cost} --- and LLMs have been evaluated for exactly
+this kind of policy analysis at scale~\parencite{rodriguez2024llm}. Existing tooling is not reused directly:
+the OPP-115 scheme and Polisis classify \emph{data
+practices}~\parencite{wilson2016creation,harkous2018polisis}, and have no harm
+categories, so a purpose-built prompt pipeline over the codebook of
+Section~\ref{sec:framework} is required. Their category sets are, however, used
+as a cross-check that the corpus was segmented and parsed correctly.
+
+The pipeline is constrained as follows:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item \textbf{One prompt per axis}, not one prompt for everything. Each prompt
+        file carries the header specified in
+        \pathname{04_Study/Prompts/README.md}: task, version, date, exact model
+        name and version, input, output schema, and what changed since the
+        previous version.
+  \item \textbf{Structured output.} The model returns JSON: unit identifier,
+        codes assigned, and for each code a \emph{verbatim span} copied from the
+        unit plus a confidence flag. A code without a span is discarded
+        automatically.
+  \item \textbf{Determinism and stability.} A single pinned model version,
+        temperature 0, three independent runs per unit, majority vote across
+        runs. The rate of disagreement between runs is itself reported as a
+        measure of instrument stability.
+  \item \textbf{No inference beyond the text.} The prompt instructs the model to
+        code what is written, never what the provider presumably means --- the
+        same rule that binds the human coder.
+  \item \textbf{Logging.} Every run is entered in
+        \pathname{04_Study/Prompts/run_log.md} with date, prompt version, model,
+        document count, and anything that went wrong.
+\end{itemize}
+
+\subsection{Step 4b: Validation}
+\label{sec:validation}
+
+LLM output is treated as a measurement instrument that must be calibrated, not
+as ground truth. The calibration has to be asymmetric, because the study's
+central claims are claims of \emph{absence}. A false positive inflates a count
+that is reported with its quote attached and can be checked by any reader. A
+false negative does something worse: it manufactures silence, which is exactly
+the finding this thesis sets out to establish. The design below therefore spends
+more effort on recall than on precision.
+
+\begin{enumerate}[leftmargin=*,itemsep=3pt]
+  \item \textbf{Agreement.} A stratified 20\,\% subsample of coding units ---
+        drawn across both domains, both platforms, and all source types --- is
+        coded manually by the author, blind to the model output. Agreement is
+        computed per code with Cohen's $\kappa$~\parencite{cohen1960coefficient}
+        and reported per category, not as a single pooled figure, because the
+        rare categories are the interesting ones and a pooled figure hides them.
+  \item \textbf{Prevalence reported with every $\kappa$.} Cohen's $\kappa$
+        becomes unstable when one category is rare: with a skewed marginal
+        distribution, coders can agree on almost every unit and still produce a
+        low $\kappa$. This study expects precisely that situation, since the
+        harm codes are hypothesised to be rare. Every $\kappa$ is therefore
+        reported alongside the prevalence of the code, the raw percentage
+        agreement, and the positive specific agreement (the proportion of
+        agreement on the units where either coder applied the code). Where the
+        three disagree, the interpretation is argued in the text rather than
+        settled by the single number.
+  \item \textbf{Threshold and remedy.} The target is $\kappa \geq 0.70$ per
+        code. Where a code falls below it, the failure is diagnosed as either a
+        codebook problem (ambiguous definition, missing counter-example), a
+        prompt problem, or a prevalence artefact of the kind just described; the
+        relevant instrument is revised, its version incremented, and a fresh
+        subsample drawn. Codes that cannot be brought above the threshold after
+        two revisions, and whose low $\kappa$ is not explained by prevalence,
+        are reported as unreliable and excluded from quantitative claims, with
+        the reason stated.
+  \item \textbf{Precision audit.} Every code that enters the results is checked
+        against its verbatim span; a span that does not support the code is
+        discarded and counted. The resulting false positive rate is reported per
+        code.
+  \item \textbf{Recall audit.} This is the one that licenses the absence claims,
+        and it has two parts.
+        \begin{itemize}[leftmargin=1.2em,topsep=3pt,itemsep=2pt]
+          \item \emph{On the subsample:} every code the human coder applied and
+                the model did not is a measured miss. Recall per code is
+                reported next to precision, and no absence claim is made for a
+                code whose recall was not measured.
+          \item \emph{Across the whole corpus:} a lexical sweep independent of
+                the model searches every unit for harm-adjacent vocabulary in
+                both languages --- \emph{infer, derive, predict, estimate,
+                profile, ableiten, Rückschluss}; \emph{breach, leak,
+                unauthorised, Datenpanne, Sicherheitsvorfall}; \emph{incident,
+                notify, melden, benachrichtigen}; \emph{discriminate, insurance,
+                employer, prosecute, Versicherung, Arbeitgeber}. Every hit that
+                the model did not code is read by hand. The sweep has poor
+                precision by design; its job is to catch what the model missed,
+                not to code.
+        \end{itemize}
+        An absence is consequently never reported as \enquote{the provider does
+        not mention X}. It is reported as \enquote{no mention of X was found by
+        an instrument whose measured recall for X is $r$, and which was
+        additionally swept lexically}, with $r$ given.
+  \item \textbf{Second coder.} A second coder on a portion of the subsample
+        would strengthen the design considerably; whether one can be arranged
+        through the supervisor is one of the open points in
+        Section~\ref{sec:openpoints}. If none is available, this is stated
+        plainly as a limitation and reporting follows the norms for
+        single-coder qualitative work in HCI, which require the reliability
+        procedure to be described rather than a number to be
+        claimed~\parencite{mcdonald2019reliability}.
+\end{enumerate}
+
+\subsection{From Codes to Answers}
+\label{sec:analysis}
+
+Coding produces a dataset; the following turns it into answers. With 50 apps and
+codes expected to be rare, the analysis is \textbf{descriptive}. No inferential
+claim is made from this sample.
+
+\begin{description}[leftmargin=1.5cm,style=nextline,itemsep=3pt]
+  \item[\textbf{RQ1}] Prevalence of each harm code and each probe code, reported
+    at two levels: the proportion of the 50 apps whose corpus contains at least
+    one unit carrying the code, and the share of units carrying it. Broken down
+    by domain. The four probe codes --- \textsc{inference},
+    \textsc{breach-consequence}, \textsc{incident-handling},
+    \textsc{concrete-consequence} --- are the headline figures.
+  \item[\textbf{RQ2}] The distribution of stances within each harm code,
+    reported as counts rather than percentages wherever the denominator is small
+    enough that a percentage would mislead.
+  \item[\textbf{RQ3}] A cross-tabulation of PET principle against framing
+    (secrecy versus harm prevention), plus the rate of
+    \textsc{reassurance-without-substance} per app and per surface.
+  \item[\textbf{RQ4}] Per app, the code set of each surface, compared pairwise.
+    The headline is the policy-to-interface direction: how often a code present
+    in the privacy policy is absent from the store listing and from the screens
+    a user actually passes through. Where a difference looks systematic, an
+    exact paired test is reported as \emph{exploratory only}, with the number of
+    comparisons made stated so the reader can discount accordingly.
+\end{description}
+
+Every quantitative claim is accompanied by at least one illustrative verbatim
+quote with its app identifier, source, and location, so that a reader can judge
+the coding rather than take it on trust.
+
+\subsection{Ethics and Data Handling}
+\label{sec:ethics}
+
+The study involves \textbf{no human subjects}. The material is public documents
+and the researcher's own interaction with publicly available apps, so no ethics
+approval is expected to be required. This will nevertheless be confirmed in
+writing with the supervisor and the relevant RUB\,/\,MPI-SP contact before
+collection starts, and the answer filed in \pathname{04_Study/Ethics/}. If the
+scenario-based survey is later added as a second phase, it does require review,
+and an application would have to be filed well in advance.
+
+The practical rules for the walkthroughs are binding regardless of that answer:
+throwaway accounts and synthetic data only; no real name, address, health data,
+or payment details entered into any studied app; no account that requires
+identity verification (such apps are excluded by
+Section~\ref{sec:sampling}); each store's terms checked before any automated
+collection. Screen recordings and archived documents are stored locally in
+\pathname{05_Data/raw/}, which is excluded from version control; only derived,
+non-identifying data is committed. Use of an LLM in the analysis is part of the
+method and is declared as such, both in the methodology chapter and in the
+statutory declaration on AI use.
+
+\subsection{Limitations and Threats to Validity}
+
+\paragraph{Absence is not intent.}
+The study can establish that a harm type is not mentioned. It cannot establish
+why. Silence may be a drafting convention, a legal risk decision, or a
+deliberate omission, and the thesis will not attribute motive. This is a
+boundary on the claims, not a flaw in the measurement.
+
+\paragraph{A snapshot, not a trend.}
+Policies, labels, and interfaces change continuously. The corpus is frozen on a
+stated date and every claim is indexed to it. Longitudinal comparison is out of
+scope.
+
+\paragraph{Market and language.}
+The German storefront determines the sample. Many providers operate
+internationally and serve near-identical policies everywhere, but jurisdiction
+shapes the text, and findings should not be read as global without
+qualification. Where a policy exists in both German and English, the pair is
+recorded, and any divergence between them is itself reportable.
+
+\paragraph{Measurement error in the instrument, and why it is asymmetric.}
+LLM coding is sensitive to prompt wording and is not perfectly reproducible even
+at temperature 0. The mitigations are in Section~\ref{sec:validation}: pinned
+model version, repeated runs with a reported disagreement rate, per-category
+$\kappa$ reported with prevalence, mandatory verbatim spans, and precision and
+recall audits. The agreement figures are reported whatever they turn out to be.
+
+The asymmetry is worth stating plainly as a limitation and not only as a design
+feature. A study whose headline is \enquote{providers do not say X} is a study
+that can be wrong in one particularly damaging way: by using an instrument that
+failed to see X. The recall audit and the lexical sweep bound that risk; they do
+not eliminate it. Any harm vocabulary that neither the codebook anticipated nor
+the sweep's term list contains could still pass unseen, and the absence claims
+should be read with that residual in mind.
+
+\paragraph{Single analyst.}
+One person builds the sample, runs the walkthroughs, and does the manual coding.
+Fixed protocols, screen recordings, versioned instruments, and a committed audit
+trail are the compensating controls; a second coder, if one can be arranged,
+would be better and is requested in Section~\ref{sec:openpoints}.
+
+\paragraph{Coverage of the interface.}
+Walkthroughs cover 12 of 50 apps and only the free tier. Privacy-relevant
+content behind a paywall or a rarely used flow may be missed. The subsample is
+drawn from the top of the ranking so that the apps most people actually use are
+the ones inspected.
+
+\paragraph{Advertising is opportunistic.}
+Ad delivery is personalised and cannot be reproduced systematically, so the
+advertising corpus is a secondary source. Presence of privacy claims in ads is
+reportable; their absence is not.
+
+\paragraph{The text is not the practice.}
+Coding communication says nothing about whether the communication is true.
+That question is answered by traffic and code analysis in existing
+work~\parencite{arkalakis2024abandon,hudig2025intimate,huckvale2019assessment},
+and the findings here should be read alongside it, not as a substitute for it.
