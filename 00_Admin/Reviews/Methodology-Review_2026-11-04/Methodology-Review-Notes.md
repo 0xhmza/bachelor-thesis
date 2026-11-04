@@ -222,7 +222,7 @@ Using the instrument test as the yardstick (178 units for one long policy), the 
 **Decision:** major revision of the methods plan. Do these before the pilot, because the pilot freezes the instruments.
 
 **Critical, fix before the pilot**
-1. M-L1 and M-L2: replace the LLM-screener with the 10-app validation (Part 4), or at least apply Fallback B.
+1. M-L1 and M-L2: replace the LLM-screener and the 10-app validation with the human-first design of Part 4, or at least apply Fallback B.
 2. M-L6 and D8: name the second coder, or fix the fallback precisely.
 
 **Major, fix before the freeze**
