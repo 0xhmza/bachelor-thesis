@@ -31,3 +31,7 @@
 - **Status:** proposed (2026-11-04, methodology review M6). Replaces the open "second inspection" question.
 - **Choice:** a second analyst (the D8 second coder) rates the recorded sessions of ten randomly drawn apps on Q1–Q4 per action and the task outcome, blind to the first record; no repeat inspection. Subset size to be confirmed.
 - **Reason:** tests the analyst's judgments without needing the same device, accounts and versions; fits the existing recording protocol (Mahatody et al. 2010 on recording).
+
+## Update 2026-11-04 (evening) — subgoals, persona, matched states
+
+- **Status:** proposed (submission review R9, W3–W5). T5–T7 recorded as subgoals (recipient/purpose, local/account/server scope, offered action, confirmed endpoint, remainder; account deletion not applicable for apps without accounts); outcomes per subgoal. A short lay scenario and assumed privacy knowledge per task; persona limits stated. "Task unsupported" requires that no other route (e.g., a provider request) offers the function. Language counterparts captured in the same account/consent/settings state before T5–T7. Re-rating tests interpretation of recorded routes only. Evidence: Habib et al. 2019 (SOUPS); Schaffner et al. 2022 (CSCW); Wharton et al. 1994. Platform, device, OS, time limits still fixed in the pilot.

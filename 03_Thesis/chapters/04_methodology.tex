@@ -32,8 +32,8 @@ The study asks which harms providers communicate. A harm can only be called
 missing if the app could cause it, so the study first fixes what is possible and
 then reads what is said. It has three parts:
 \begin{enumerate}[itemsep=1pt,topsep=3pt]
-  \item \textbf{A reference model.} A generic health tracker holds every function
-    such an app can have. Harm trees show how these functions can lead to harms
+  \item \textbf{A reference model.} A generic health tracker holds the functions that the
+    included evidence documents for health trackers. Harm trees show how these functions can lead to harms
     (Sections~\ref{sec:generic-model} and~\ref{sec:harm-trees}).
   \item \textbf{Applying the model to each app.} The privacy policy, the store
     listing and the walkthrough show which parts of the model an app has. This
@@ -62,7 +62,7 @@ describes them afterwards.
   lab/.style={font=\scriptsize\bfseries,text=muted,anchor=west}]
   \node[lab] at (-7.75,2.45) {Once, for all apps};
   \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\capabilities, harms, precedents};
-  \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\every function a tracker can have};
+  \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\documented tracker functions};
   \node[bx] (tree) at (2,1.45) {\textbf{Harm trees}\\pathways from components to harms};
   \node[bx=accent] (pilot) at (6,1.45) {\textbf{Pilot}\\tests, then freezes the instruments};
   \node[lab] at (-7.75,0.1) {For each app};
@@ -114,6 +114,9 @@ them~\parencite{hsieh2005three,krippendorff2019content}. Comparing several surfa
 of the same app follows Malki et al., who set store disclosures, policies and app
 interfaces against each other~\parencite[p.~4]{malki2024exploring}. Table~\ref{tab:rq-method}
 ties each research question to what is measured, the material, the method and its precedent.
+The precedents supply the concepts and the general approach; the applicability record, the
+coverage levels, the stance labels and the rules for combining model labels are this study's
+own operationalisations, defined in this chapter and tested in the pilot.
 
 \begin{table}[H]
 \centering
@@ -573,8 +576,8 @@ this chapter is stated.
 A harm can only be called missing from an app's privacy communication if the app could cause
 it. The analytical framework therefore fixes, before any app is coded, what is possible. It has
 three parts, built in sequence: the harm concepts and categories
-(Section~\ref{sec:harm-categories}); a generic health tracker that holds every function such an
-app can have (Section~\ref{sec:generic-model}); and reference harm trees that trace how these
+(Section~\ref{sec:harm-categories}); a generic health tracker that holds the functions the
+included evidence documents for such apps (Section~\ref{sec:generic-model}); and reference harm trees that trace how these
 functions can lead to harms (Section~\ref{sec:harm-trees}). The same framework is applied to
 every app and to every communication surface. The coding scheme that ties each unit of text to
 the nodes of the trees belongs to the coding procedure (Section~\ref{sec:axes}).
@@ -626,10 +629,13 @@ category.
 The supervisor asked for a harm tree based on the \enquote{best app}. No criterion
 says which real app is best, and any real app lacks functions that others have. The
 study therefore builds the tree on a \emph{generic health tracker}: a model that holds
-every function a health tracker can have. A real app is a subset of it. If the model
+the functions that the included evidence documents for health trackers. It is not a claim to
+list every function a tracker could have; a function the evidence does not document is missing
+from it. A real app is compared with it function by function. If the model
 has a function that an app lacks, the pathways through that function do not apply to
 that app. The harms are thus judged against one model, and all 50 apps are treated
-alike.
+alike. What the comparison yields is a dated distance between an app's communication and this
+reference, not a judgement that a provider was obliged to describe each pathway.
 
 \paragraph{Precedents.} Knabenhans et al.\ model one functionality that covers many
 applications, and then show that harms can only be judged once concrete uses are
@@ -637,11 +643,13 @@ known~\parencite[\S4]{knabenhans2026harms}. They reuse sub-trees across harms an
 use cases~\parencite[\S4.2--4.3]{knabenhans2026harms}. De and Le Métayer separate a
 generic analysis, which yields generic harm trees from the system's specification,
 from its later refinement for a concrete
-system~\parencite{de2017refinement}.\todo{Only a summary of this paper's method was
-seen: the full text refused automated access. Read it and add section numbers, or drop
-this sentence.} In threat modelling, LINDDUN likewise first models a system as data
-flows, data stores, processes and external entities, and then asks what can go wrong at
-each~\parencite[Sec.~2]{deng2011privacy}; Iwaya et al.\ used its threat categories for
+system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}; the refinement adds the actors' access
+rights and prunes paths that the concrete architecture and context rule out.\todo{Checked in the
+HAL author manuscript (hal-01671345v1) by the citation audit of 4 November 2026; the final
+Springer pagination is unverified. Confirm the version or cite the manuscript.} In threat
+modelling, LINDDUN likewise models a system as data flows, data stores, processes and external
+entities~\parencite[Sec.~2]{deng2011privacy}, and then asks what can go wrong at
+each~\parencite[Sec.~3]{deng2011privacy}; Iwaya et al.\ used its threat categories for
 mental health apps~\parencite[Sec.~2.3]{iwaya2023privacy}.
 
 \paragraph{Building the model.} The model is built in three steps. First, its
@@ -882,11 +890,23 @@ AND means that every component is needed, as in the left branch of
 Figure~\ref{fig:harm-tree}: the cycles must be logged and another person must
 reach the unlocked phone. OR means that any one branch is enough: either
 capability leads to the harm. OR+ means that one or several components may be
-needed together, without a fixed combination~\parencite[\S4.1]{knabenhans2026harms}.
+needed together, without a fixed combination~\parencite[\S4.1]{knabenhans2026harms}. An OR+
+cannot be evaluated as it stands, because it does not say which inputs suffice. Each OR+ of
+the trees is therefore rewritten before evaluation as an OR of explicitly sufficient
+combinations, each an AND of components, as in the set semantics of attack trees, where a tree
+denotes the alternative bundles of components that together achieve its
+goal~\parencite{mauw2005foundations}. Each combination states the actor who gains the
+capability and the component that gives that actor access to the data; a combination the
+sources do not establish is not added, and the capability then stays uncertain. A prediction
+computed on the phone, for example, gives no partner a capability unless a component shows that
+the partner receives it.
+\todo{Reference model v1 still holds K10 as an OR+ over IM4, IM7 and CO2. Rewrite it as
+sufficient combinations in v2 (D12), re-run the evaluator and the instrument test, and record
+the change.}
 Because the operators make every required condition explicit, a tree also
 shows how a pathway can be cut: a measure blocks it only if it removes one of
-its necessary conditions. De and Le Métayer use the same operators to compute
-how likely each harm is~\parencite{de2016privacy}. The trees in this study are
+its necessary conditions. De and Le Métayer combine AND and OR nodes to compute
+how likely each harm is~\parencite[Sec.~IV-B]{de2016privacy}. The trees in this study are
 not used for that: they record which harms are possible, not how probable they
 are.
 
@@ -908,8 +928,8 @@ literature, not proven.
 
 \paragraph{Sources of the trees.} The trees are built from prior research on
 health trackers: a survey of tracker inferences, threats and
-vulnerabilities~\parencite{niksirat2024wearable}, users' harm
-scenarios~\parencite{gabriele2020understanding}, analyses of policies, data
+vulnerabilities~\parencite{niksirat2024wearable}, users' judgements of harm scenarios
+that the researchers constructed~\parencite{gabriele2020understanding}, analyses of policies, data
 flows and interfaces
 \parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
 user concerns~\parencite{cao2024deleted}, together with the capabilities that
@@ -1138,7 +1158,9 @@ therefore a proxy for popularity used to select the sample; it does not measure
 users or downloads. Count-based selection has precedent: Sunyaev et
 al.\ selected frequently rated health apps and reported a Spearman correlation
 of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availability}.
-Their finding supports the use of feedback counts as a proxy.
+Their finding concerns Android rating counts; using German review and rating counts, and the
+conversion between them, is an assumption of this study, tested by the sensitivity checks
+below.
 
 The available German-market feedback count differs between stores; a field check of the
 public listing data is in Table~\ref{tab:storefront-fields} (Appendix~\ref{app:sampling-details}):
@@ -1253,10 +1275,13 @@ keyword set (the complete list of variants is in Table~\ref{tab:sensitivity-vari
 Appendix~\ref{app:sampling-details}). For each variant, the number of selected providers that
 change is reported, and separately the number of selected store listings that change, since a
 provider can stay in the sample with a different app or a different listing.
-\highlight[orange!25]{A variant counts as material when it changes more than five of the
-50 selected providers; material variants are discussed in the results, the others are only
+The checks concern the ranked store selection, so their denominator is the 47 ranked
+providers; the preinstalled group (three apps of two vendors, making 50 apps from 49 providers)
+is fixed by its own rule.
+\highlight[orange!25]{A variant counts as material when it changes more than five of the 47
+ranked providers; material variants are discussed in the results, the others are only
 tabulated.}\todo{New threshold proposed by the methodology review of 4 November 2026 (D2).
-Confirm or change five providers (10\,\%).}
+Confirm or change five providers (about 10\,\%).}
 %
 %Neither store publishes German figures for every listing field, and the two
 %stores split their fields differently. Apple shows one summary rating per
@@ -1333,7 +1358,10 @@ store listing and then on the developer's website~\parencite[p.~5]{malki2024expl
 An app without a policy stays in the sample, and the absence is
 reported~\parencite{sunyaev2015availability,robillard2019availability}. A document
 shared by several apps is coded once and linked to each. A supplement for another
-region is recorded but not coded, because the study concerns the German market.
+region is recorded but not coded, because the study concerns the German market. For every
+captured policy the record states the product it covers, its territorial scope and any regional
+sections, so that a document written only for users elsewhere is not taken for the
+communication that reaches users in Germany.
 
 \paragraph{Interface text and listings.} Interface text is captured during the walkthrough
 (Section~\ref{sec:walkthroughs}). Each transcript is checked against its screen and linked to
@@ -1342,17 +1370,28 @@ store listing captured in a session is dated evidence; it does not replace the f
 or change sample membership.
 
 \paragraph{Language.} English text is primary for every source, including the
-interface. German is used when no English version exists. Where both exist, both are
-captured and their differences logged. Language is recorded per source, and the
+interface, among the versions that apply to users in Germany: an English policy written for
+another jurisdiction does not count as the English version, because language versions are often
+jurisdiction versions~\parencite{arora2022tale,linden2020privacy}. German is used when no
+applicable English version exists. Where both exist, both are captured and their differences
+logged. Language is recorded per source, and the
 original wording is coded. Search keywords and storefronts are not affected by this
 rule (Section~\ref{sec:app-sampling}). The rule was set at the supervisor meeting of
 13 October 2026 (Decision D7). It has a cost that the study states rather than hides:
 German users may meet the German version, and English and German policies of the same app
 can differ in substance, as Arora et al.\ found for 59 English--German policy
 pairs~\parencite{arora2022tale}. The difference log keeps such
-differences visible. If the pilot shows that a German version carries harm or protection
-content that the English version lacks, the German version of that source is coded as well,
-and the change is logged with the instruments (Section~\ref{sec:pilot}).
+differences visible. Each entry of the log records the source or screen pair, the version
+and jurisdiction of each side, the account, consent and settings state in which both were
+captured, the differing English and German spans, the node or claim scope that differs, and the
+reviewer's judgement whether the difference is material, that is, whether it adds, removes or
+changes a node, a stance or the scope of a protection claim. The log reports how many pairs
+were compared, how many counterparts were unavailable and how many differences were material.
+Whenever a material difference is found, in the pilot or later, the German version of that
+source is coded as well, the change is logged with the instruments
+(Section~\ref{sec:pilot}), and already coded sources of the same kind are rechecked. The log
+documents the differences that were observed; it does not measure every effect of the language
+rule.
 
 \subsection{Cognitive Walkthrough}
 \label{sec:walkthroughs}
@@ -1382,7 +1421,9 @@ therefore recorded and the analyst's background reported. A second analyst then 
 recorded sessions of a random subset of apps on their own: for each action, the answers to
 Q1--Q4 and each task's outcome, without seeing the first analyst's record. This tests the
 judgments without repeating the inspection, which would need the same device, accounts and
-app versions. The second analyst is the second coder of Section~\ref{sec:validation}.
+app versions. It tests the interpretation of the recorded routes, not whether the first
+analyst missed a route that was never recorded. The second analyst is the second coder of
+Section~\ref{sec:validation}.
 \highlight[orange!25]{The subset is ten apps, drawn with a recorded seed.}\todo{D8 and D10: who
 the second person is still needs the supervisor; confirm the subset size.}
 
@@ -1394,16 +1435,23 @@ the platform rule for apps listed in both stores, and the time one session takes
 
 Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
-is a first-time user with no technical training, as in the walkthrough of Malki et
-al.~\parencite[p.~5]{malki2024exploring}. The user can operate the platform's basic
-navigation but has no prior knowledge of this app or its privacy policy. The tasks are the
+is a first-time user of the app, as in the walkthrough of Malki et
+al.~\parencite[p.~5]{malki2024exploring}; that the user also has no technical training is this
+study's assumption. The user can operate the platform's basic
+navigation but has no prior knowledge of this app or its privacy policy. Because the tasks come
+from an expert harm model, each task is given a short lay scenario that states the goal in
+everyday words and the privacy knowledge the user is assumed to have, for example that apps can
+pass data to other companies but not which ones. The user is assumed to have been given that
+goal, and Q1--Q4 are answered under these assumptions; the findings describe likely obstacles
+for this persona, not whether real users would pursue the goal or find it. Users with low
+literacy, disabilities or a partner who monitors them lie outside the tested persona. The tasks are the
 seven privacy tasks described below. For each app, the analyst first documents the action
 sequence, then evaluates it from this user's perspective, as Wharton et al.\ require
 \parencite[pp.~109--111]{wharton1994cognitive}. The route is the shortest one located
 within the recorded search, not a proven minimum; exploration and backtracking are kept
 apart from route taps. The interface is the installed version at the collection date,
-freshly installed with no earlier account, following Malki et
-al.~\parencite[p.~5]{malki2024exploring}. If a preinstalled app cannot be reinstalled or
+freshly installed after a wipe, following Malki et al.~\parencite[p.~5]{malki2024exploring};
+starting without an earlier account is this study's rule. If a preinstalled app cannot be reinstalled or
 reset, its initial state and the deviation are recorded.
 
 The tasks operationalise privacy goals of the reference harm trees.
@@ -1414,7 +1462,14 @@ could address a component or incapability (sharing, export and deletion).
 Table~\ref{tab:wt-tasks} lists the nodes to which each task can contribute evidence; these
 tasks do not test every pathway. Tasks and their order are fixed before main collection.
 This reduces procedural variation, while platform differences, access and the analyst's
-growing familiarity remain limitations.
+growing familiarity remain limitations. T5 to T7 combine goals that apps can treat
+separately: turning off one advertising partner is not stopping all sharing, and deleting a
+local history, an account and a server copy are different
+actions~\parencite[pp.~10--12]{malki2024exploring}\parencite{habib2019empirical,schaffner2022understanding}. These tasks are therefore
+recorded as subgoals, each with the recipient or purpose, the scope (on the phone, account or
+server), the action offered, the endpoint the interface confirms and any part left undone; for
+an app without an account, account deletion is marked as not applicable rather than failed.
+The four outcomes below are assigned per subgoal.
 
 \begin{table}[H]
 \centering
@@ -1443,7 +1498,9 @@ Each app is installed fresh, without a restored backup, with the region set to G
 screen recorded for the whole session. The device language follows
 Section~\ref{sec:material}: English first, German as fallback. Where both versions exist,
 counterparts are captured and differences logged in a separate pass; their routes and counts
-are not pooled with the primary session. \highlight[orange!25]{The device and operating-system version are
+are not pooled with the primary session. The counterpart pass takes place in the same account,
+consent and settings state as the primary capture and before any action that changes that state
+(T5 to T7), so that a difference reflects the language and not a changed state. \highlight[orange!25]{The device and operating-system version are
 reported with the results.}\todo{Device or emulator and OS version are still TODO in the
 protocol; fix them before the pilot.}
 
@@ -1486,7 +1543,8 @@ the analyst can continue and complete the task.
 A task ends in one of four outcomes: \emph{completed} when the information is reached or
 the interface confirms the requested action; \emph{information not found} when the bounded
 search does not locate the information or control; \emph{task unsupported} only when
-explicit evidence establishes that the requested function is not offered; or \emph{access
+explicit evidence establishes that the requested function is not offered, in the app or by
+another route such as a request to the provider; or \emph{access
 barrier} when access requirements or a technical failure prevent inspection. The record
 keeps the endpoint, evidence, elapsed time and any problematic questions. A displayed
 confirmation does not verify downstream deletion, export completeness or cessation of
@@ -1647,6 +1705,9 @@ B: Stance & Acknowledged & A named harm presented as possible
 \rowrule
  & Denied/prevented & A named harm presented as impossible or prevented
   & \enquote{This makes harassment impossible.} \\
+\rowrule
+ & Generic responsibility & Responsibility for privacy or safety placed on the user without a named harm (secondary analysis)
+  & \enquote{You are responsible for keeping your login secure.} \\
 \midrule
 C: Protection & Measure and scope & Claimed measure, actor, data, outcome and conditions
   & On-device storage is a measure. A no-sale pledge is a practice commitment. \\
@@ -1665,18 +1726,30 @@ C: Protection & Measure and scope & Claimed measure, actor, data, outcome and co
 \end{table}
 
 \paragraph{Axis A: Coverage.} All explicitly mentioned nodes are recorded, including whether
-each is asserted, presented as possible or denied. The highest level reached is kept as a
-separate summary, so that a harm mention does not erase accompanying data-flow information.
-Feature descriptions can mention inference without presenting it as a risk.
+each is asserted, presented as possible or denied. A denial is a mention with negative
+polarity, not an absence: a statement that a provider does not share data says something
+different from silence about sharing, which is why automated policy analysis models negative
+statements explicitly~\parencite[\S1]{andow2019policylint}. Polarity is therefore kept as an
+attribute of the mention and is never folded into whether a node was mentioned. The highest
+level reached is kept as a separate summary, so that a harm mention does not erase accompanying
+data-flow information. Feature descriptions can mention inference without presenting it as a
+risk.
 
 \paragraph{Axis B: Stance.} Stance labels are linked to the particular harm and its
 supporting span, not assigned to the paragraph as a whole. A statement may acknowledge a harm
 and qualify its likelihood, and the coder distinguishes uncertainty about a breach from
 uncertainty about its consequences. Minimisation is judged from wording in the unit or
-adjacent text, never from inferred intent; qualification alone does not establish it. RQ2
-thus covers stance toward named harms; dismissive language without a named harm is coded as
-reassurance. These distinctions adapt Zou et al.~\parencite{zou2019might} and are refined in
-the pilot.
+adjacent text, never from inferred intent; qualification alone does not establish it. The
+label therefore measures an explicit dismissal that the local text does not support; it does
+not measure whether the provider understates an actual risk, which the study cannot know. A
+\enquote{no evidence} statement (\enquote{there is no evidence that your data was affected}) is
+coded as qualification when it reports the basis of the judgement and as minimisation when it
+dismisses the harm itself. RQ2 thus covers stance toward named harms; dismissive language
+without a named harm is coded as reassurance, and responsibility placed on the user without a
+named harm as generic responsibility, both for the secondary analysis
+(Section~\ref{sec:comparison}). The five stance labels are this study's adaptation of the risk
+communication that Zou et al.\ examined~\parencite[pp.~7, 10]{zou2019might}; they are not a
+validated scale, and their boundaries are refined in the pilot.
 
 \paragraph{Axis C: Protection.} The coder records the measure and its claimed benefit, with
 actor, data and conditions where specified. Any technical measure claimed to limit exposure or
@@ -1690,16 +1763,19 @@ Vague scope is recorded as unclear, and no deployed system is judged safe or uns
 \label{sec:llm}
 The corpus is too large for a person to read and code in full within this study: the one
 policy of the instrument test alone has 178 units (Section~\ref{sec:results-test}). Language
-models therefore do the coding. Polisis and recent LLM approaches are precedents for
-data-practice analysis~\parencite{harkous2018polisis,rodriguez2024llm}, and large language
-models have annotated privacy policies with results close to those of
-experts~\parencite{chanenson2025automating,xie2025evaluating}. They have not been shown to
+models therefore do the coding. Polisis, a hierarchy of deep-learning classifiers, and recent
+LLM approaches are precedents for data-practice
+analysis~\parencite{harkous2018polisis,rodriguez2024llm}. Large language models have annotated
+privacy policies with results close to those of
+experts~\parencite{chanenson2025automating}, and have extracted and assessed legally required
+policy content with high performance against human-labelled
+benchmarks~\parencite[\S\S4.1--4.3]{xie2025evaluating}. They have not been shown to
 code named harms or stance, and a field report on qualitative content analysis found only
 rough approximations with gross errors~\parencite{mayring2025qualitative}. Performance
 depends on the task, so it has to be validated against human
 labels~\parencite{pangakis2023automated}, and model labels used directly as data bias the
 estimates built on them and make their intervals invalid, even when the model is accurate
-on most units~\parencite{egami2023using}. The design therefore has three parts: two models
+on most units~\parencite[\S2]{egami2023using}. The design therefore has three parts: two models
 code all the text; people check the labels on which the findings depend most; and a
 human-coded validation sample measures the models' errors and corrects the reported figures
 (Section~\ref{sec:validation}).
@@ -1708,24 +1784,33 @@ human-coded validation sample measures the models' errors and corrects the repor
 independently, with the same codebook, stages and prompts. Both are selected in the pilot and
 then frozen, with versions and parameters reported; an open-weight model is preferred for one
 of them if it performs close to a hosted one~\parencite{tornberg2024best}. The second family
-is there because the errors of language models are correlated, most strongly between models of
-the same provider~\parencite{kim2025correlated}: a model of another family misses some of
-what the first misses, but not all of it, and where the two disagree the text is likely to be
-ambiguous or one of them wrong. For the same reason, agreement between the two models is
+is there because the errors of language models are correlated; in the datasets Kim et al.\
+studied, the correlation was higher between models of the same provider or
+architecture~\parencite[\S\S3--4]{kim2025correlated}. A model of another family can therefore
+be expected to catch some of what the first misses, and where the two disagree the text is
+likely to be ambiguous or one of them wrong. How much the second model actually adds is
+measured on this corpus (Section~\ref{sec:validation}), not assumed. For the same reason, agreement between the two models is
 reported as a robustness check and never as reliability: two models can agree on the same
 error.
 
 \paragraph{Stages and evidence.} Each model codes in three stages. Stage~1 codes tree
 nodes, named harms and generic risks; Stage~2 codes the stance toward each named harm; Stage~3
-codes the details of each protection claim~\parencite{harkous2018polisis}. Every label quotes
-its span, as a decision and the supporting text; a script checks that the span occurs in the
-unit, and a label without a span is discarded~\parencite{xie2025evaluating}. An uncertain
+codes the details of each protection claim. The stages adapt the hierarchical decomposition
+of Polisis, which classifies broad categories before their
+attributes~\parencite[\S4.3]{harkous2018polisis}; the three stages themselves are this study's
+design. Every label quotes its span, as a decision and the supporting text, as in the exact-text
+extraction of Xie et al.~\parencite[App.~B]{xie2025evaluating}. A script checks that the span
+occurs in the unit; a label without a valid span is discarded from the data but counted as a
+failure of the model, so that it still lowers measured performance. An uncertain
 answer is kept as uncertain and never becomes a negative code~\parencite{tornberg2024best}.
-The prompts follow the order context, codebook definitions, output format, with two
-constructed examples and no persona~\parencite[pp.~4--7]{rodriguez2024llm}. Repeated runs
-in the pilot measure each model's stability~\parencite[pp.~4--6]{rodriguez2024llm}, and a
-paraphrased prompt run on the validation sample measures how much the wording changes the
-labels~\parencite{baumann2025llm}. The complete rules, each with its precedent, are in
+The prompts give the context, then the codebook definitions, then the output format, as
+Rodriguez et al.\ tested~\parencite[\S4.2, pp.~3886--3888]{rodriguez2024llm}; the two
+constructed examples, the absence of a persona and the use of one prompt for both model families
+are this study's choices. Repeated runs in the pilot measure each model's
+stability, following the repeated runs of Rodriguez et
+al.~\parencite[\S4.3, pp.~3888--3889]{rodriguez2024llm}; the number of repetitions is fixed in
+the pilot. A paraphrased prompt run on the validation sample measures how much the wording
+changes the labels~\parencite{baumann2025llm}. The complete rules, each with its precedent, are in
 Table~\ref{tab:llm-steps} (Appendix~\ref{app:prompts}).
 
 \paragraph{Combining the two models.} The labels of the two models are combined by the rules
@@ -1770,12 +1855,13 @@ adjacent text and the axis on which the unit was flagged, for example \enquote{p
 harm}, but not the models' labels, stances or explanations, and assigns the label as if coding
 afresh. Showing model labels draws human labels toward them, and this raises the model's
 measured accuracy without making it more
-accurate~\parencite{schroeder2025just}; when the model was wrong, showing its label lowered
-human accuracy~\parencite{wang2024human}. The checked label is final, and whether it agrees
-with each model is recorded. Raw model output is stored apart from the checked labels, so that
-performance is measured on what the models returned, not after
-correction~\parencite[p.~18]{baumann2025llm}, and every tested model, prompt and setting is
-reported.
+accurate~\parencite{schroeder2025just}. The checked label is final, and whether it agrees
+with each model is recorded. It remains the judgement of one person: it is reported as a
+checked label, and only the double-coded and settled labels of the validation sample serve as
+reference labels (Section~\ref{sec:validation}). Raw model output is stored apart from the
+checked labels, a rule of this study, so that performance is measured on what the models
+returned and not after correction. Every tested model, prompt and setting is
+reported~\parencite[p.~18]{baumann2025llm}.
 
 \subsection{Applicability Assessment (Step~1)}
 \label{sec:apply}
@@ -1789,11 +1875,20 @@ Events outside the app are not
 observed. An attacker gaining access is assumed possible for stored data. An authority's
 demand and an insurer's or employer's use stay uncertain unless the evidence shows them,
 because the study does not assume the legal setting of another country for German users.
+Each state records whether it rests on the app's evidence or on one of these assumptions, so
+that the reader can see which applicable pathways the assumptions create. An incapability is
+set from the absence of any usable route, not from a missing button: the component that no
+usable way exists to delete or export the data (\oimp{IM12}) is present only if neither the app
+nor another route, such as a request to the provider, offers it, and deletion and export are
+judged separately. A missing in-app control is reported as a walkthrough finding.
+\todo{Reference model v1 defines IM12 by the in-app route only; align it with this rule in v2
+(D12).}
 
 A script then evaluates the trees. AND is absent if any part is absent, and present only
 if all parts are present. OR is present if any part is present, and absent only if all
-parts are absent. Everything else stays uncertain. OR+ is read like OR, since the study
-asks whether a pathway is possible at all. A harm category applies when at least one of
+parts are absent. Everything else stays uncertain. An OR+ is evaluated only in its rewritten
+form, as an OR of sufficient combinations (Section~\ref{sec:harm-trees}); asking whether a
+pathway is possible at all does not make a single input sufficient. A harm category applies when at least one of
 its pathways does. Uncertain cases are counted and reported, not silently dropped, so that
 sparsely documented providers do not vanish from the gap analysis. The trees are reference
 models of possible harms, not complete descriptions of the apps' actual systems.
@@ -1803,8 +1898,16 @@ models of possible harms, not complete descriptions of the apps' actual systems.
 \paragraph{Coverage (Step~2).} Step~2 asks how far the text goes. Each coded mention is tied to a node of the
 tree. For each applicable pathway and each surface, the \emph{coverage level} is the
 highest level the text reaches (Figure~\ref{fig:coverage-levels}): nothing, the component,
-the capability, or the harm. A named harm counts for the pathways of its category. A
-denied node is reported as denied and does not count as coverage. This turns RQ1 into a
+the capability, or the harm. Coverage records what is mentioned, whatever its polarity: a
+denied node counts as mentioned, and its denial is reported beside the level, so that an
+explicit \enquote{this cannot happen} is never shown as silence. Where a measure of affirmative
+coverage is wanted, it is reported separately and under that name. A named harm counts for a
+pathway only if the text matches the pathway's consequence and is compatible with its data,
+actor and access, the parameters that a description of an information flow needs to be
+complete~\parencite{shvartzshnaider2019going}: a warning about distress after account theft
+covers the pathway of exposure through an attacker, not that of harassment by a partner. A harm
+mention whose scope fits no single pathway is kept as a category-level mention, reported per
+harm category, and gives no pathway level~3. This turns RQ1 into a
 question with a clear denominator: of the pathways that apply, how many stop at the data
 flow, and how many reach the consequence for the user?
 
@@ -1815,14 +1918,15 @@ flow, and how many reach the consequence for the user?
   lv/.style={draw=primary,rounded corners=1.5pt,minimum height=8mm,text width=30mm,
              align=center,inner sep=2pt},
   arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted}]
-  \node[lv,fill=white] (a) at (0,0) {\textbf{0 Silent}\\no node mentioned};
+  \node[lv,fill=white] (a) at (0,0) {\textbf{0 Silent}\\no node mentioned, in any polarity};
   \node[lv,fill=primary!15,right=5mm of a] (b) {\textbf{1 Component}\\\enquote{we share IDs}};
   \node[lv,fill=primary!40,right=5mm of b] (c) {\textbf{2 Capability}\\\enquote{a partner can profile}};
   \node[lv,fill=primary,text=white,right=5mm of c] (d) {\textbf{3 Harm}\\\enquote{prices may differ}};
   \draw[arr] (a)--(b); \draw[arr] (b)--(c); \draw[arr] (c)--(d);
 \end{tikzpicture}
 \caption[Coverage levels of a pathway]{Coverage levels of an applicable pathway on one
-surface, with constructed examples. Only level~3 can carry a stance (Axis~B).}
+surface, with constructed examples. A denied node counts as mentioned; its denial is
+reported beside the level. Only level~3 can carry a stance (Axis~B).}
 \Description{Four boxes in a row with rising shades: level 0 silent, level 1 component,
 level 2 capability, level 3 harm.}
 \label{fig:coverage-levels}
@@ -1846,18 +1950,27 @@ risk outside the claim's scope is not a mismatch, and no system is judged safe o
 denominator includes only applicable apps with the required core sources captured. A source the
 provider does not offer is recorded as such; only sources that exist but cannot be retrieved
 reduce the denominator. Inapplicable pathways and text with no identified mention carry
-different labels. Uncertain pathways are neither counted as applicable nor dropped: every RQ1
-proportion is given twice, over the applicable pathways alone and over the applicable and
-uncertain pathways together, so that the reader sees how far sparse documentation moves the
-result. Counts are given per app and surface, with shared-provider results also shown
+different labels. \highlight[orange!25]{The primary unit is the app: each RQ1 proportion is
+computed per app and then averaged with equal weight for every app, so that a provider who
+documents many pathways does not dominate the result; proportions pooled over all pathways
+are reported as a secondary view.}\todo{Proposed weighting (submission review R8): confirm with
+the supervisor.} Uncertain pathways are neither counted as applicable nor dropped. Every RQ1
+proportion is given in two sensitivity scenarios, which are not bounds: in scenario~A the
+numerator and the denominator are the applicable pathways and those of them at a given level;
+in scenario~B the uncertain pathways join both, with their coverage level coded in the same
+way, so that the reader sees how far sparse documentation moves the result. The
+pathways that are applicable only because of an assumption about outside events, and those
+whose link is argued rather than documented, are reported separately. Counts are given per app and surface, with shared-provider results also shown
 after grouping repeated providers, and coverage levels (Figure~\ref{fig:coverage-levels}) are
-reported per harm category. Figures that rest on routine labels are reported as corrected
-estimates with intervals (Section~\ref{sec:validation}); figures that rest on checked
-high-stakes labels are reported as counts, together with the estimated share of mentions that
-both models missed. RQ2 reports harm--stance combinations and their denominators. Stance
+reported per harm category. Unit-level figures that rest on routine labels are reported as
+corrected estimates with intervals (Section~\ref{sec:validation}). App- and pathway-level
+figures, such as whether an app ever mentions a harm or the highest level a pathway reaches,
+are reported as what the models detected and people checked, together with the estimated share
+of unit-level mentions that both models missed; they are not corrected estimates. RQ2 reports harm--stance combinations and their denominators. Stance
 attaches only to named harms, and named harms may be rare (Section~\ref{sec:results-test}); RQ2
 therefore also reports, as a secondary analysis fixed before coding, the reassurance,
-generic-risk and responsibility wording that occurs without a named harm. RQ3
+generic-risk and generic-responsibility wording that occurs without a named harm, kept apart
+from the harm--stance results. RQ3
 summarises measures, scope, claim strength and the reviewed mismatches. Examples that
 support and examples that challenge the expected gap are both retained.
 
@@ -1871,7 +1984,10 @@ visible link or not found within the task limit is distinguished for each releva
 claim. Linked policy wording stays on the policy surface. Inconsistent claims require a human
 check of scope, version, date and language and are reported apart from mere differences in
 detail or findability. Absence means \enquote{no mention was identified in the captured
-material}, with the instrument's measured recall stated (Section~\ref{sec:validation}).
+material}, with the instrument's measured recall stated (Section~\ref{sec:validation}); a
+unit-level recall does not certify that a particular app contains no mention. A difference
+between the surfaces describes the captured material, which is a full policy on one side and
+bounded routes on the other; it is not a measured difference in what users see or understand.
 
 \section{Instrument Validation}
 \label{sec:instruments}
@@ -1918,50 +2034,70 @@ a walkthrough adds.
 \label{sec:pilot}
 The pilot takes place after sampling and after the reference harm trees have been built. Five
 apps are drawn at random from the full health-tracker sample with a recorded seed, without
-category quotas. The pilot tests the boundaries of collection and coding and estimates capture
-time, coding units, manual effort and model cost. It also settles the choices left open in this
-chapter: for the walkthroughs, the platform rule, starting states, route-preparation and
-stopping rules, time limits, synthetic inputs and the consent and permission profile; for the
+category quotas. The pilot tests the boundaries of collection and coding and measures capture
+and transcript-checking time, coding units, coding and settling time per unit, and model cost.
+It also settles the choices left open in this
+chapter: for the walkthroughs, the platform rule, device and operating system, starting states,
+route-preparation and stopping rules, time limits, synthetic inputs, the consent and permission
+profile, and the lay scenario and completion criteria of each task and subgoal; for the
 coding, the stance definitions and the handling of new harms; and the two language models and
-their prompts, chosen by comparing candidate models with the author's coding of the pilot units.
+their prompts, chosen by comparing candidate models with the author's complete coding of the
+pilot units.
 Because the yardstick should not be judged only by the person who built it, the second person of
-Section~\ref{sec:validation} checks every pathway of the reference trees against its source
-before the freeze, and each objection and its resolution is logged. The pilot's counts of
-labels, disagreements and uncertain answers per code fix the allocation of the validation
-sample before it is drawn. The instruments are then frozen; later changes are logged, and the
-affected material is recoded. The pilot apps are recoded with the final instruments and remain
-in the sample, but their units do not enter the validation sample.
+Section~\ref{sec:validation} checks every pathway of the reference trees before the freeze:
+whether its source supports the link, whether each combination of components suffices for the
+named actor in the health-tracker context, and whether the actor has access to the data. Each
+objection and its resolution is logged, and the trees are evaluated again after any change.
+The pilot's counts of labels, disagreements and uncertain answers per code, and its time per
+unit, fix the size and allocation of the validation sample and the vocabulary of stratum~V3
+before the sample is drawn. The instruments are then frozen as one versioned bundle: codebook,
+prompts and output schemas, the human coding sheets, the sampling manifest, the walkthrough
+protocol and the forms for applicability and mismatch decisions.
+\todo{The current codebook (v5), prompts and walkthrough protocol still describe the earlier
+validation design; bring them into line with this chapter before the pilot (submission review
+R5).}
+Later changes are logged, and the affected material is recoded. The pilot apps are recoded with
+the final instruments and remain in the sample. Because the models were chosen and the prompts
+tuned on them, the pilot and test apps are development material: their units do not enter the
+validation sample, their results rest on the author's complete coding, and they are reported
+separately and never as independent evidence of model performance.
 
 \subsection{Validation Sample, Agreement, and Error Estimates}
 \label{sec:validation}
 \label{sec:two-coders}
 The validation measures how often the frozen models are wrong, so that the reported figures can
-be corrected for it. Its unit is the coding unit, not the app: the errors that matter are rare
-and concentrated in few units, and ten whole apps would hold too few of them to estimate
-anything. The instrument test illustrates this: its policy of 178 units names no harm at all
-(Section~\ref{sec:results-test}).
+be corrected for it. Its target is the \emph{independent corpus}: all coding units of the apps
+outside the pilot and the instrument test. Its unit is the coding unit, not the app: the errors
+that matter are rare and concentrated in few units, and ten whole apps would hold too few of
+them to estimate anything. The instrument test illustrates this: its policy of 178 units names
+no harm at all (Section~\ref{sec:results-test}).
 
-\paragraph{Validation sample.} After both models have coded the corpus, a sample of units is
-drawn with a recorded seed from the units not used in the pilot or in prompt development. It is
-stratified by what the models returned, so that the human effort lands where errors are
-likely:
+\paragraph{Validation sample.} After both models have coded the independent corpus, every unit
+is assigned to exactly one stratum, the first of the following that it meets:
 \begin{enumerate}[label=V\arabic*,leftmargin=2.2em,itemsep=1pt,topsep=3pt]
-  \item units on which the two models disagree on any code;
-  \item units with an uncertain label;
-  \item units without a high-stakes label that contain harm-related vocabulary in either
-    language, where missed mentions are most likely;
-  \item interface units, so that performance is measured on interface text and not only on
-    policies;
-  \item a plain random sample of all remaining units.
+  \item the two models disagree on any code;
+  \item a model returned an uncertain label;
+  \item no high-stakes label, but harm-related vocabulary in either language, where missed
+    mentions are most likely;
+  \item an interface unit not assigned above, so that performance is measured on interface
+    text and not only on policies;
+  \item every remaining unit.
 \end{enumerate}
-Each unit's probability of selection is known and recorded, so that every estimate can be
-weighted back to the whole corpus~\parencite{egami2023using}. Stratum~V3 replaces a separate
-missed-mention audit: its hits are read as part of the sample rather than apart from it, and
-stratum~V5 exposes the blind spots of the vocabulary. The numbers of units, independent
-providers and unique documents in each stratum are reported. \highlight[orange!25]{The sample
-holds at least 500 units, at least 150 of them in stratum~V5; the pilot fixes the allocation to
-the other strata.}\todo{Proposed size (methodology review of 4 November 2026, D9): confirm after
-the pilot's estimate of coding time per unit.}
+Within each stratum, units are drawn by simple random sampling without replacement with a
+recorded seed; a stratum smaller than its allocation is taken whole. The strata are disjoint,
+so each unit's probability of selection is exactly the share of its stratum that is
+sampled~\parencite[chs.~3, 6]{lohr2021sampling}, and every unit of the independent corpus has a
+positive probability, as the correction requires~\parencite[\S2]{egami2023using}. Stratum~V3
+replaces a separate missed-mention audit, and stratum~V5 exposes the blind spots of the
+vocabulary. Oversampling the units on which the models disagree or are unsure follows the
+principle of active and confidence-driven inference, which spends human labels where the model
+is least reliable and keeps estimates valid through the selection
+weights~\parencite{zrnic2024active,gligoric2025unconfident}; stratification also narrows the
+intervals when model accuracy differs across strata~\parencite{fisch2024stratified}. The
+numbers of units, independent providers and unique documents in each stratum are reported.
+\highlight[orange!25]{The sample holds at least 500 units, at least 150 of them in stratum~V5;
+the pilot fixes the allocation to the other strata.}\todo{Proposed size (methodology review of
+4 November 2026, D9): confirm after the pilot's prevalence and time per unit.}
 
 \paragraph{Two human coders.} The supervisor asked for two coders. The author and a second coder
 code every unit of the validation sample independently, under the frozen codebook and without
@@ -1969,48 +2105,83 @@ model output. Both work on the same units, which the script fixes before coding,
 units are a main source of false disagreement~\parencite{campbell2013coding}; double-coding a
 subset rather than all material is common when resources are
 limited~\parencite{oconnor2020intercoder}. Agreement is computed before any discussion, as
-Krippendorff's $\alpha$ per axis and for each code with enough
-positives~\parencite{krippendorff2019content}, with prevalence and raw counts beside it, since
-rare codes can depress chance-corrected agreement despite high raw
-agreement~\parencite{feinstein1990high,gwet2008computing}. A code is taken as reliable with
-$\alpha\geq0.800$ and as tentative with $0.667\leq\alpha<0.800$; a code below $0.667$ is merged
-into a broader code or reported only qualitatively~\parencite{krippendorff2019content}.
-Disagreements are then settled, and the settled labels are the reference labels of the sample.
-To estimate intra-coder consistency, the author recodes a random tenth of the sample after at
-least two weeks. Reliability supports the reproducibility of labels; it does not show that they
-are true~\parencite{mcdonald2019reliability}.
-\highlight[orange!25]{The second coder also checks the applicability, minimisation and mismatch
-decisions of the sampled apps and rates the recorded walkthroughs; failing a second coder,
-the supervisor codes strata V1 and V2 only.}\todo{Who is the second coder? Decision D8 needs the supervisor.}
+Krippendorff's $\alpha$ for each code on binary unit indicators (the code applies to the unit
+or not), unweighted over the sample; because the sample is enriched with difficult units, the
+values describe this sample and not the corpus. A code without variation in the sample is
+reported as undefined, not as reliable. Prevalence and raw counts are reported beside $\alpha$,
+since rare codes can depress chance-corrected agreement despite high raw agreement, as shown for
+$\kappa$~\parencite[pp.~543, 545--546]{feinstein1990high}. Following Krippendorff's guidelines,
+a code is taken as reliable with $\alpha\geq0.800$ and as tentative with
+$0.667\leq\alpha<0.800$~\parencite[pp.~356--357]{krippendorff2019content}; these are cautious
+conventions, not proof that labels are true~\parencite{mcdonald2019reliability}. A code below
+$0.667$ is reported only qualitatively; if it is redefined or merged instead, that is a new
+instrument version, the affected material is recoded, and its evaluation on this sample is
+labelled exploratory. Disagreements are then settled, and the settled labels are the reference
+labels of the sample. To estimate intra-coder consistency, the author recodes a random tenth of
+the sample after at least two weeks.
+\highlight[orange!25]{The second coder also checks the reference trees before the freeze, a
+random sample of applicability, minimisation and mismatch decisions that includes decisions
+judged negative, and the recorded walkthroughs of ten apps. If no second coder is available,
+the double coding is reduced to a smaller probability sample drawn across all strata, and the
+claims are narrowed accordingly; coding only the hard strata would not measure reliability
+across the corpus.}\todo{Who is the second coder, and how much time do they have? D8 needs the
+supervisor; the pilot measures the time each task takes.}
 
 \paragraph{Model performance.} A model label is correct when its code and unit match the
-reference label and its span overlaps the reference span. For each code, each model and the
-combination rule of Table~\ref{tab:llm-routing}, precision (the share of model labels that the
-reference supports) and recall (the share of reference mentions that the models found) are
-estimated with the selection weights. Intervals resample providers, to respect shared documents.
-The stages are scored end to end, so that a miss at Stage~1 counts at Stage~2. Agreement
-between the two models, and between the main and the paraphrased prompt, is reported beside
-these figures as a robustness check.
+reference label and its span overlaps the reference span; a label dropped for an invalid span
+counts as a miss. For each code, each model and the combination rule of
+Table~\ref{tab:llm-routing}, precision (the share of model labels that the reference supports)
+and recall (the share of reference mentions that the models found) are estimated with the
+selection weights. Where counts are small, intervals use the beta distribution rather than the
+normal approximation, which covers recall poorly~\parencite{webber2013approximate}. The stages
+are scored end to end, so that a miss at Stage~1 counts at Stage~2. What the second model adds
+is reported as the share of reference mentions that only it found. Agreement between the two
+models, and between the main and the paraphrased prompt, is reported beside these figures as a
+robustness check.
 
-\paragraph{Corrected estimates.} The figures of RQ1 to RQ3 that rest on routine labels, such as
-how many applicable pathways stop at the component, are not taken from the model labels
-directly. They are estimated from the model labels of all units together with the reference
-labels of the sample, using the selection weights, so that the estimate corrects for the
-models' measured errors and its interval stays valid even where the models are
-biased~\parencite{egami2023using,angelopoulos2023prediction}. High-stakes labels are all
-checked by a person, so their remaining error is the mentions that both models missed; strata
-V3 and V5 estimate that share, and it is reported with each count.
+\paragraph{Corrected estimates.} Unit-level figures of RQ1 to RQ3, such as the number of units
+that name a component or a capability, are additive totals over the independent corpus. For a
+code, let $g_i$ be the mean of the two models' indicators for unit~$i$ (0, $\tfrac12$ or 1, an
+uncertain answer counting as $\tfrac12$), $y_i$ the reference label and $\pi_i$ the unit's
+selection probability. The total is estimated as
+\[
+  \hat T \;=\; \sum_{i\in U} g_i \;+\; \sum_{i\in S}\frac{y_i-g_i}{\pi_i},
+\]
+the model total over the corpus~$U$ corrected by the weighted errors in the sample~$S$, the
+form shared by design-based supervised learning and prediction-powered
+inference~\parencite[\S4]{egami2023using}\parencite{angelopoulos2023prediction}. It is the
+Horvitz--Thompson estimator applied to the model's errors, unbiased under the sampling design
+whatever the quality of the models~\parencite{horvitz1952generalization}. Its variance is the
+stratified variance of the errors $y_i-g_i$ within the strata~\parencite[ch.~3]{lohr2021sampling}.
+The resulting intervals describe the uncertainty of the audit within this fixed corpus; they say
+nothing about apps outside the sample, which was selected by popularity, not drawn at random. The
+estimator is checked before use on constructed corpora with repeated and single mentions,
+correlated errors within a policy and unequal selection probabilities. High-stakes labels are
+all checked by a person, so their remaining error is the mentions that both models missed. Their
+number is estimated in the same way from every stratum, not from V3 and V5 alone, since a unit
+selected for a routine disagreement or as interface text can also hold a missed harm.
+
+\paragraph{App- and pathway-level figures.} Whether an app ever mentions a harm, and the highest
+level a pathway reaches, are not sums of unit labels: ten mentions in one app and one mention in
+each of ten apps can give the same unit total and different app counts. The unit sample
+therefore does not correct these figures, and they are reported as detection summaries with the
+estimated unit-level miss rate beside them (Section~\ref{sec:comparison}).
+\highlight[orange!25]{Where capacity allows, a random sample of apps from the independent corpus
+is read in full for the high-stakes codes only, which estimates how often an app reported as
+silent on a harm in fact mentions it.}\todo{Optional whole-app audit (submission review R1):
+decide after the pilot whether its reading time fits; it is the only design that measures
+app-level misses.}
 
 \paragraph{Absence claims.} A claim that a harm or a measure is not mentioned is stated with the
 estimated recall of the code it depends on. Where the sample holds fewer than 20 reference
 positives for that code, recall is reported as not estimable, and the claim is worded as
-\enquote{not found by the two models or in the vocabulary sample} rather than as absence.
-Claims about interface text require interface evidence: where the interface stratum holds too
-few positives, the same wording applies. A validation app with blocked interface access
-contributes document evidence only. \highlight[orange!25]{A routine code whose estimated
-precision has a lower interval bound below 0.80 is reported only as a corrected estimate, never
-as a raw count.}\todo{Proposed threshold (methodology review of 4 November 2026, D9): confirm or
-change.}
+\enquote{not found by the two models or in the vocabulary sample} rather than as absence. No
+unit-level recall certifies that a particular app is silent. Claims about interface text require
+interface evidence: where the interface stratum holds too few positives, the same wording
+applies. An app with blocked interface access contributes document evidence only.
+\highlight[orange!25]{A routine code whose estimated precision has a lower interval bound below
+0.80 is reported only as a corrected estimate, never as a raw count.}\todo{Proposed threshold
+(methodology review of 4 November 2026, D9): confirm or change.}
 
 \section{Ethics, Availability, and Limitations}
 \label{sec:closing}
@@ -2055,8 +2226,8 @@ The study keeps a record of each of its steps:
     (Appendix~\ref{app:codebook}) and the prompts (Appendix~\ref{app:prompts}).
   \item \textbf{Coding.} The raw output of both models, kept apart from the checked labels; the
     frozen model versions and parameters (Section~\ref{sec:llm}); and the validation sample
-    with each unit's selection probability and both coders' labels
-    (Section~\ref{sec:validation}).
+    with each unit's stratum, seed, selection probability and both coders' unsettled and
+    settled labels (Section~\ref{sec:validation}).
 \end{itemize}
 \highlight[orange!25]{Which of these records are released with the thesis, and under what terms,
 is not yet decided.}\todo{Decide what is published (scripts, model file, codebook, prompts) and
@@ -2079,11 +2250,16 @@ cover selected paths; a bounded non-finding is not evidence that a feature is ab
 \paragraph{Framework.} The reference trees depend on the chosen literature. The generic model
 errs towards listing more than an app has, which the applicability record corrects; it cannot
 list what the literature has not documented, and argued links are weaker than documented ones.
+A provider who documents more of its data flows makes more pathways applicable, so applicability
+partly reflects disclosure; the separate reporting of evidence-based and assumption-based
+pathways shows how much.
 
 \paragraph{Coding.} Two language models code the corpus, and people read only the high-stakes
-labels and the validation sample. The reported figures are therefore estimates, corrected for
+labels and the validation sample. Unit-level figures are therefore estimates, corrected for
 the models' measured errors; their intervals are wide for rare codes, and recall for the rarest
-codes may not be estimable at all. The two models' errors are correlated, so their agreement is
+codes may not be estimable at all. App- and pathway-level figures are detection summaries and
+are not corrected, unless the optional whole-app audit is run. A human check of a high-stakes
+label is the judgement of one person. The two models' errors are correlated, so their agreement is
 no evidence of accuracy~\parencite{kim2025correlated}. Unless a second coder joins, one person
 provides the reference labels, so model agreement is not independent human-coder
 reliability~\parencite{mcdonald2019reliability}. The stand-in coding of the instrument test was
@@ -2091,9 +2267,12 @@ prepared by an assistant of the same vendor as the tested model, so it validates
 (Section~\ref{sec:instrument-test}).
 
 \paragraph{Language.} English text is coded first, as set with the supervisor, although German
-users may meet the German version; the difference log measures how much this matters but
-cannot remove it (Section~\ref{sec:material}).
+users may meet the German version; the difference log documents the differences it finds
+but does not measure every effect of this choice (Section~\ref{sec:material}).
 
 \paragraph{Permissible conclusions.} A provider's text can show that a feature exists, but not
 that the text is true, since the study tests neither behaviour nor security. The study cannot
-establish provider intent, actual harms or effects on users.
+establish provider intent, actual harms or effects on users. A difference between a provider's
+communication and the reference model is a dated, framework-conditional finding; it does not
+show that the provider was obliged to describe the pathway, concealed it or understated its
+risk.

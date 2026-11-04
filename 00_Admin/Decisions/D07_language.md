@@ -17,3 +17,7 @@
 ## Note 2026-11-04 — rule kept, justification stated
 
 - The author kept English first (chat, 2026-11-04) after the methodology review raised German-market validity (M2). The methodology now states the cost (German users may meet German text; Arora et al. 2022, LREC, 59 semi-parallel pairs differ), keeps the difference log, and applies the existing "would change if": where the pilot shows German-only harm or protection content, the German version of that source is coded as well. A language limitation is added to the methodology.
+
+## Note 2026-11-04 (evening) — audience check and log rule
+
+- English first among the versions that apply to users in Germany (an English policy for another jurisdiction is not the English version; Arora et al. 2022; Linden et al. 2020). The capture record states product, territorial scope and regional sections. The difference log has a fixed record (pair, versions, matched state, spans, changed node or scope, materiality judgement) and reports compared/unavailable/material counts; any material difference, in the pilot or later, triggers coding of the German version and a recheck. The log documents observed differences; it does not measure every effect of the rule.

@@ -164,3 +164,7 @@ Every interface known to give store data on ratings, reviews, downloads or popul
 ## Update 2026-11-04 — materiality rule for sensitivity checks
 
 - **Status:** proposed (2026-11-04, methodology review M8). A sensitivity variant counts as material when it changes more than five of the 50 selected providers (10 %); material variants are discussed in the results, others tabulated (Appendix C). Threshold to be confirmed by the author.
+
+## Note 2026-11-04 (evening) — denominator of the materiality rule
+
+- The sensitivity checks concern the 47 ranked providers (50 apps from 49 providers including the preinstalled group of Apple, two apps, and Samsung). The proposed rule now reads "more than five of the 47 ranked providers" (submission review R8).

@@ -20,3 +20,9 @@
 
 - **Status:** proposed (2026-11-04, methodology review M5).
 - **Choice:** before the instrument freeze, the D8 second coder checks every pathway against its cited source; objections and resolutions are logged. Reason: "missing harm" is measured against a model built by the author, so the yardstick needs a check by someone else.
+
+## Update 2026-11-04 (evening) — OR+, actor access, coverage matching, wording
+
+- **Status:** proposed (submission review R3, R4; privacy card W1–W5).
+- **Choice:** (1) OR+ is not evaluated as OR; each OR+ is rewritten as an OR of explicitly sufficient AND-combinations (attack-tree set semantics, Mauw & Oostdijk 2005); unsupported combinations stay uncertain. Each combination names the actor and the access component. (2) Proposed rewrite of K10 for v2, to be argued from sources and checked by the second person: OR( AND(CO2, IM2) provider holds derived scores; AND(IM4, CX3) advertising partner receives identifiers or events; IM7 tracked data drives offers ). (3) IM12 defined by the absence of any usable route (in app or by request), deletion and export judged separately. (4) A named harm credits a pathway only if consequence and data/actor/access match (contextual-integrity parameters, Shvartzshnaider et al. 2019); otherwise a category-level mention. (5) Denials count as mentions with negative polarity (PolicyLint, Andow et al. 2019). (6) "Every function a tracker can have" replaced by "functions the included evidence documents". (7) De 2017 anchored to §§3, 4.6, 5.4 of the HAL author manuscript.
+- **Needs:** reference model v2, re-run of the evaluator and the instrument test.

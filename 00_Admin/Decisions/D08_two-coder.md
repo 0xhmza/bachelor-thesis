@@ -15,3 +15,7 @@
 - **Status:** proposed (2026-11-04, follows D9 update). Who the second coder is remains open and needs the supervisor.
 - **Choice:** the author and the second coder code every unit of the D9 validation sample independently, without model output; agreement as Krippendorff's α before discussion (reliable ≥ .800, tentative ≥ .667, below .667 merged or reported qualitatively); settled labels are the reference labels. The second coder also checks applicability, minimisation and mismatch decisions of the sampled apps, checks the reference trees before the freeze (D12) and rates recorded walkthroughs of ten apps (D10). Intra-coder: the author recodes a random tenth of the sample after two weeks. Fallback without a second coder: the supervisor codes strata V1 and V2.
 - **Evidence:** Krippendorff 2019; O'Connor & Joffe 2020; Campbell et al. 2013; McDonald et al. 2019; methodology review 2026-11-04 (M-L2, M-L6).
+
+## Update 2026-11-04 (evening) — fallback and workload
+
+- **Status:** proposed (submission review R6). If no second coder is available, the double coding is reduced to a smaller probability sample across all strata (not V1/V2 only), with narrower claims. The second coder's tasks are separated: validation units; tree check; a random sample of applicability, minimisation and mismatch decisions including negative ones; re-rating of ten recorded walkthroughs. The pilot measures the time for each. Identity and capacity still need the supervisor.
