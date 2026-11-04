@@ -102,6 +102,12 @@ def bib_clean(s):
     s = re.sub(r'\{\\([\'"`])(\w)\}', lambda m: ACCENTS.get((m.group(1), m.group(2)), m.group(2)), s)
     s = re.sub(r'\\([\'"`])\{?(\w)\}?', lambda m: ACCENTS.get((m.group(1), m.group(2)), m.group(2)), s)
     s = re.sub(r'\{\\u (\w)\}', lambda m: 'ğ' if m.group(1) == 'g' else m.group(1), s)
+    CED = {'s': 'ş', 'S': 'Ş', 'c': 'ç', 'C': 'Ç'}
+    BRE = {'g': 'ğ', 'G': 'Ğ', 'a': 'ă', 'u': 'ŭ'}
+    s = re.sub(r'\\c\{(\w)\}|\\c (\w)', lambda m: CED.get(m.group(1) or m.group(2), m.group(1) or m.group(2)), s)
+    s = re.sub(r'\\u\{(\w)\}|\\u (\w)', lambda m: BRE.get(m.group(1) or m.group(2), m.group(1) or m.group(2)), s)
+    s = s.replace(BS + ',', '\u202f')
+    s = s.replace(BS + '_', '_').replace(BS + '%', '%').replace(BS + '#', '#')
     s = s.replace(BS + '&', '&').replace('---', '\u2014').replace('--', '\u2013')
     s = s.replace('``', '\u201c').replace("''", '\u201d').replace('`', '\u2018').replace("'", '\u2019')
     s = s.replace('~', '\u00a0')
@@ -238,11 +244,98 @@ SIMPLE = [('---', '\u2014'), ('--', '\u2013'), ('``', '\u201c'), ("''", '\u201d'
           (BS + ',', '\u202f'), (BS + '%', '%'), (BS + '&', '&'), (BS + '_', '_'), (BS + '#', '#'),
           (BS + '$', '$'), (BS + ' ', ' '), ('{,}', ',')]
 MATH = {'kappa': 'κ', 'alpha': 'α', 'times': '×', 'leq': '≤', 'geq': '≥', 'approx': '≈', 'rightarrow': '→',
-        'to': '→', 'ge': '≥', 'le': '≤', 'pm': '±', 'cdot': '·'}
+        'to': '→', 'ge': '≥', 'le': '≤', 'pm': '±', 'cdot': '·', 'bullet': '•', 'circ': '∘', 'checkmark': '✓'}
 DROP_WITH_ARG = {'label', 'Description', 'addcontentsline', 'setlength', 'vspace', 'hspace', 'arrayrulecolor',
-                 'cmidrule', 'phantomsection', 'index'}
+                 'cmidrule', 'phantomsection', 'index', 'cellcolor', 'rowcolor', 'color'}
 FORMAT = {'textbf': 'b', 'emph': 'i', 'textit': 'i', 'texttt': 'mono', 'path': 'mono', 'textsc': '', 'textrm': '', 'mbox': '',
           'text': '', 'textsf': '', 'underline': 'u', 'textcolor': ''}
+
+
+SUB = dict(zip('0123456789aehijklmnoprstuvx+-=()', '₀₁₂₃₄₅₆₇₈₉ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ₊₋₌₍₎'))
+SUP = dict(zip('0123456789abdeghijklmnoprstuvwxyz+-=(),', '⁰¹²³⁴⁵⁶⁷⁸⁹ᵃᵇᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻ⁺⁻⁼⁽⁾,'))
+MATH_EXTRA = {'in': '∈', 'dagger': '†', 'qquad': '; ', 'quad': ' ', 'left': '', 'right': '', 'cdots': '⋯',
+              'ldots': '…', 'sum': 'Σ', 'neq': '≠', 'infty': '∞'}
+
+
+def _group(s, i):
+    """Return (content, end) of the {group} or single character starting at s[i]."""
+    if i < len(s) and s[i] == '{':
+        k = find_close(s, i)
+        return s[i + 1:k], k + 1
+    if s.startswith(BS, i):
+        m = re.match(r'\\[a-zA-Z]+', s[i:])
+        if m:
+            return s[i:i + m.end()], i + m.end()
+    return s[i:i + 1], i + 1
+
+
+def math2u(s):
+    """Render a LaTeX math fragment as readable Unicode text (for the review copy only)."""
+    s = s.strip()
+    m = re.search(r'\\begin\{cases\}(.*?)\\end\{cases\}', s, re.S)
+    if m:
+        rows = [r.strip() for r in re.split(r'\\\\', m.group(1)) if r.strip()]
+        parts = []
+        for r in rows:
+            cells = [c.strip().rstrip(',.') for c in r.split('&')]
+            val = math2u(cells[0]).rstrip(',')
+            parts.append(val + (' (' + math2u(cells[1]).rstrip(',.') + ')' if len(cells) > 1 else ''))
+        s = s[:m.start()] + '\x00' + '; '.join(parts) + '\x00' + s[m.end():]
+    out, i = '', 0
+    while i < len(s):
+        c = s[i]
+        if c == '\x00':
+            k = s.index('\x00', i + 1)
+            out += s[i + 1:k]
+            i = k + 1
+            continue
+        if c in '_^':
+            g, i = _group(s, i + 1)
+            g = math2u(g)
+            table = SUB if c == '_' else SUP
+            if g and (len(g) <= 2 or c == '^') and all(ch in table for ch in g):
+                out += ''.join(table[ch] for ch in g)
+            elif c == '^' and g in ('*', '†'):
+                out += g
+            else:
+                out += ('_' if c == '_' else '^') + (g if len(g) <= 8 and ' ' not in g else '(' + g + ')')
+            continue
+        if s.startswith(BS, i):
+            m2 = re.match(r'\\([a-zA-Z]+)\*?', s[i:])
+            if not m2:
+                nxt = s[i + 1:i + 2]
+                out += '\x01' if nxt == ',' else (' ' if nxt in ';: ' else ('' if nxt in '!' else nxt))
+                i += 2
+                continue
+            name, j = m2.group(1), i + m2.end()
+            if name in ('mathrm', 'text', 'operatorname', 'mathit', 'mathbf', 'textrm', 'mbox'):
+                g, i = _group(s, j)
+                out += math2u(g) if name not in ('text', 'mbox', 'textrm') else g
+                continue
+            if name == 'frac':
+                a, j = _group(s, j)
+                b, i = _group(s, j)
+                a, b = math2u(a), math2u(b)
+                wrap = lambda x: x if re.fullmatch(r'[\w.,\u2080-\u209c\u1d62-\u1d6a\u2c7c]+', x) else '(' + x + ')'
+                out += wrap(a) + '/' + wrap(b)
+                continue
+            out += MATH.get(name, MATH_EXTRA.get(name, name))
+            i = j
+            continue
+        if c in '{}':
+            if s.startswith('{,}', i):
+                out += ','
+                i += 3
+                continue
+            i += 1
+            continue
+        out += c
+        i += 1
+    out = re.sub(r'(?<=\w)\x01(?=\w)', '·', out).replace('\x01', ' ')
+    out = re.sub(r'\s*([=+≈≤≥×<>∈])\s*', r' \1 ', out)
+    out = re.sub(r',\s*;', ';', out)
+    out = re.sub(r'^ ([+−-]) ', r'\1', out)
+    return re.sub(r'\s+', ' ', out).strip()
 
 
 def inline(s, ctx, fmt=frozenset()):
@@ -266,8 +359,7 @@ def inline(s, ctx, fmt=frozenset()):
         if c == '$':
             j = s.find('$', i + 1)
             j = len(s) if j < 0 else j
-            math = re.sub(r'\\(\w+)', lambda m: MATH.get(m.group(1), m.group(1)), s[i + 1:j])
-            buf += re.sub(r'[{}^_]', '', math)
+            buf += math2u(s[i + 1:j])
             i = j + 1
             continue
         if c in '{}':
@@ -279,9 +371,16 @@ def inline(s, ctx, fmt=frozenset()):
                 runs.append(('\n', fmt, None))
                 i += 2
                 continue
+            if s.startswith(BS + '[', i):  # display math \[ ... \]
+                k = s.find(BS + ']', i + 2)
+                k = len(s) if k < 0 else k
+                buf += ' ' + math2u(s[i + 2:k]) + ' '
+                i = k + 2
+                continue
             m = re.match(r'\\([a-zA-Z]+)\*?', s[i:])
             if not m:
-                buf += s[i + 1:i + 2]
+                if s[i + 1:i + 2] != '@':
+                    buf += s[i + 1:i + 2]
                 i += 2
                 continue
             name = m.group(1)
@@ -347,6 +446,11 @@ def inline(s, ctx, fmt=frozenset()):
                 runs.append(('\u201c', fmt, None))
                 runs.extend(inline(arg, ctx, fmt))
                 runs.append(('\u201d', fmt, None))
+                i = j
+                continue
+            if name == 'footnote' and arg is not None:
+                flush()
+                runs.extend(inline(' [Footnote: ' + arg + ']', ctx, fmt))
                 i = j
                 continue
             if name == 'todo' and arg is not None:
@@ -457,11 +561,15 @@ def labels_in(s):
 
 
 def parse_tabular(body):
-    m = re.search(r'\\begin\{(tabularx|tabular)\}', body)
+    def rows_file(f):
+        path = os.path.join(THESIS_DIR, f.group(1) + ('' if f.group(1).endswith('.tex') else '.tex'))
+        return strip_comments(read(path)) if exists(path) else ''
+    body = re.sub(r'\\input\{([^}]*)\}', rows_file, body)   # generated row files
+    m = re.search(r'\\begin\{(tabularx|tabular\*|tabular)\}', body)
     if not m:
         return []
     i = m.end()
-    if m.group(1) == 'tabularx':
+    if m.group(1) in ('tabularx', 'tabular*'):   # width argument first
         _, i = group_arg(body, body.index('{', i))
     _, i = group_arg(body, body.index('{', i))
     end = body.index(BS + 'end{' + m.group(1) + '}', i)

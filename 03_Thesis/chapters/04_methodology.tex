@@ -13,42 +13,7 @@
 %	remaining thresholds require a documented decision.}
 
 %%%% Methodology Section Introduction %%%%
-This chapter describes how the study will be carried out. The study combines
-a structured content analysis~\parencite{krippendorff2019content} with an
-adapted cognitive walkthrough~\parencite{wharton1994cognitive}. The sample comprises 50
-apps: eligible apps from the German market of Google Play and the App Store,
-ranked together by a German-market popularity score based on ratings and reviews, and the
-health apps that come preinstalled on the phones of the leading vendor of each platform in
-Germany. For each app, the privacy policy, the store listings and \highlight[orange!25]{related provider
-pages}\todo{Not sure if the providers pages will be collected.} will be collected, and the app
-itself is inspected in a cognitive walkthrough. A pilot with five of these apps refines the
-instruments before the main study.\todo[inline]{Summary of Coding, Analysis, Conclusions, .. after relevant subsections are done}
-
-The study rests on a literature review (Section~\ref{sec:lit-review}). It is a scoping review
-that follows the staged procedure of Baumann et al.~\parencite{baumann2025llm} and is
-reported with PRISMA-S and PRISMA~2020~\parencite{rethlefsen2021prisma,page2021prisma}. Four
-sub-questions ask which harms and capabilities concern the users of health tracking apps, how
-the privacy communication of such apps has been analysed, how language models have been used
-and validated for coding privacy text, and how privacy texts frame risk and protection.
-Searches built from term groups run in four databases (PubMed, IEEE Xplore, arXiv and the ACL
-Anthology) and in eight venues of security, privacy and human--computer interaction research.
-One round of citation searching from four seed papers follows. After automatic deduplication,
-the records are screened against fixed criteria, first on title and abstract and then on the
-full text, and the studies that remain are charted in a fixed table. The review supplies the
-capabilities and harms from which the reference harm trees are built, and the evidence for the
-methodological decisions of this chapter.
-
-The chapter is ordered for exposition rather than by time. Section~\ref{sec:design} states the
-research questions, the approach, the scope and the key terms. Section~\ref{sec:lit-review}
-describes the literature review, and Section~\ref{sec:framework} the analytical framework built
-from it: the harm concepts, a generic health-tracker model and the reference harm trees.
-Section~\ref{sec:app-sampling} selects the apps, and Section~\ref{sec:collection} describes what
-is collected from each of them: its documents and, in a cognitive walkthrough, its interface.
-Section~\ref{sec:analysis} explains how this material is coded and assessed to answer the
-research questions, and Section~\ref{sec:instruments} how the instruments are tested, frozen and
-validated. Section~\ref{sec:closing} closes with the ethical considerations, the availability of
-data and artifacts, and the limitations of the design. Figure~\ref{fig:pipeline} shows the same
-steps in the order in which they are carried out.
+\todo[inline]{Methodology Introduction after completing all the methodology subsections, check the writing style of literature}
 
 \section{Study Design}
 \label{sec:design}
@@ -1425,13 +1390,13 @@ can find and do (Section~\ref{sec:walkthroughs}). This section states what is co
 how; Section~\ref{sec:analysis} states how the material is coded and assessed.
 
 \subsection{Policies, Listings, and Language}
+\label{sec:material}
 \todo[color=orange]{
 Privacy Policy \\
 Application's interface -> Cognitive 
 Walkthrough \\
 Primary English, german as a fallback
 }
-\label{sec:material}
 Two materials are coded for each app: its privacy policy and the text of its
 interface. The store listing is read for evidence of features and is not coded
 (Table~\ref{tab:material}). \highlight[orange!25]{This limits RQ4 to the policy and
@@ -2014,6 +1979,7 @@ they do not enter the validation set.
 
 \subsection{Human Coding, Agreement, and LLM Validation}
 \label{sec:validation}
+\label{sec:two-coders}
 \paragraph{Validation set.} Ten apps are drawn at random from the health-tracker sample, with a recorded seed, from
 providers and documents not used in the pilot, stratified by the language of the coded policy
 where both languages occur; the numbers of independent providers and unique documents are
@@ -2022,7 +1988,7 @@ output, and they are not used to tune prompts. Because prompt wording alone can 
 conclusions~\parencite{baumann2025llm}, two paraphrased prompts are also run and the headline
 counts compared. Disagreements are adjudicated with each label's source hidden.
 
-\paragraph{Second coder.}\label{sec:two-coders} The supervisor asked for two coders. Coding all
+\paragraph{Second coder.} The supervisor asked for two coders. Coding all
 material twice is not feasible in this thesis, and double-coding a subset is common when
 resources are limited~\parencite{oconnor2020intercoder}. The author therefore codes everything,
 and a second coder independently codes the validation set under the frozen codebook.

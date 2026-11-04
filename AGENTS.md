@@ -89,3 +89,14 @@ literature files.
   `GRAPH_REPORT.md` only for architecture reviews.
 - `.graphifyignore` excludes archives, raw and processed data, PDFs and
   generated outputs from semantic extraction.
+
+## Google Doc
+
+Use this section only when the user asks to edit or fill the thesis Google Doc.
+
+- Doc: https://docs.google.com/document/d/1fELLbYwvK3y7zVNSAnoT-YuxuFBhaOBzzzX3LyB4Ykw/edit (editing link: `?usp=sharing`).
+- Connector: Google Docs (`read_doc`, `update_doc`) works and was verified on 2026-11-03 (full thesis written and checked).
+- Structure: tab `Paper` (index with linked contents) with child tabs Abstract, 1 Introduction, 2 Background, 3 Related Work, 4 Methodology (child tabs 4.1 to 4.8, one per section, no deeper nesting), 5 Results, 6 Discussion, 7 Conclusion, References; the proposal of 5 October 2026 is archived in its own tab. Tab IDs: `scripts/gdocs-export/v001/tabids.json`. Appendices are not included.
+- Source: the doc is generated from `03_Thesis/Thesis_Review-Copy.docx` (`python scripts/build_review_docx.py`), never typed by hand; LaTeX stays authoritative.
+- Method: `pandoc` the review copy to JSON, build call files with `scripts/gdocs-export/v001/gdocs_export.py` (README there), send each with `update_doc` guarded by `requiredRevisionId` from a fresh `read_doc` (or the previous reply), insert blocks at index 1 from the last block to the first, then verify each tab's text and headings against a new read and run `runin.py` for bold run-in headings. `read_doc` output is about 4 MB: parse the saved file with scripts, never read it into context. Normalize NBSP and invisible characters.
+- Replace a tab by deleting its content range first; tab titles must be unique.
