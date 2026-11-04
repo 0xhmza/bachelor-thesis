@@ -5,6 +5,59 @@
 These prompts were used in the instrument test (Section~\ref{sec:results-test}). All examples in them are
 constructed. The pilot will revise them, and each new version will be added here.
 
+\section{Rules of the LLM Coding}
+\label{app:llm-rules}
+Table~\ref{tab:llm-steps} gives each rule of the LLM coding of Section~\ref{sec:llm} with its
+precedent.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Rules of the LLM-assisted coding and their precedents]{Rules of the LLM-assisted
+coding and their precedents.}
+\label{tab:llm-steps}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.6cm}@{}}
+\toprule
+\textbf{Step} & \textbf{Rule} & \textbf{Precedent} \\
+\midrule
+Models & Two models of different families, selected on the pilot, then frozen, with versions and parameters reported; an open-weight model is preferred for one of them if it performs close to a hosted one
+  & \parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Prompt & Context, then codebook definitions, then output format; two constructed examples; no persona
+  & \parencite[pp.~4--7]{rodriguez2024llm}\parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Stages & Stage~1: tree nodes, harms and risks. Stage~2: stance for each named harm. Stage~3: protection details
+  & \parencite{harkous2018polisis} \\
+\cmidrule[0.3pt]{2-3}
+Evidence & Every code quotes its span, as a decision and the supporting text; a script checks that the span occurs in the unit; a code without a span is discarded
+  & \parencite{xie2025evaluating} \\
+\cmidrule[0.3pt]{2-3}
+Doubt & An uncertain answer is kept as uncertain and never becomes a negative code; uncertain routine labels form a validation stratum, uncertain high-stakes labels are checked
+  & \parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Stability & Repeated runs of each model in the pilot; agreement between runs and between the two models is a stability and robustness check, not validation
+  & \parencite[pp.~4--6]{rodriguez2024llm} \\
+\cmidrule[0.3pt]{2-3}
+Wording & A paraphrased prompt is run on the validation sample, and the labels are compared
+  & \parencite{tornberg2024best}\parencite{baumann2025llm} \\
+\cmidrule[0.3pt]{2-3}
+Reporting & Every tested model, prompt and setting is reported; prompts are archived in Appendix~\ref{app:prompts}; raw output is kept apart from adjudicated labels, so performance is not measured after correction
+  & \parencite[p.~18]{baumann2025llm} \\
+\cmidrule[0.3pt]{2-3}
+Combination & Routine labels: kept when both models return them, otherwise uncertain. High-stakes labels: union of both models
+  & \parencite{kim2025correlated} \\
+\cmidrule[0.3pt]{2-3}
+Human role & Every high-stakes label is checked by a person who does not see the models' labels. Applicability and potential mismatches are decided by people only, with evidence and reasoning logged
+  & \parencite{schroeder2025just,wang2024human}\parencite{pangakis2023automated} \\
+\cmidrule[0.3pt]{2-3}
+Estimates & Reported figures combine the model labels of all units with the human labels of a validation sample drawn with known probabilities
+  & \parencite{egami2023using,angelopoulos2023prediction} \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
 \section{Stage 1: Coverage}
 \lstinputlisting[style=thesiscode,numbers=none,caption={[Stage 1 prompt, version 1]Stage 1 prompt, version 1.},label={lst:stage1}]{../04_Study/Prompts/stage1_coverage_v1.md}
 

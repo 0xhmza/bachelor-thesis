@@ -3,8 +3,9 @@
 This appendix lists the sample and the evidence for the developer rule
 (Section~\ref{sec:app-sampling}). Tables~\ref{tab:app-sample}
 to~\ref{tab:developer-rule} follow on landscape pages, and
-Tables~\ref{tab:developer-aliases} and~\ref{tab:identity-providers} close the
-appendix.
+Tables~\ref{tab:developer-aliases} and~\ref{tab:identity-providers} follow. The
+appendix closes with the search and ranking details
+(Section~\ref{app:sampling-details}).
 
 \section{Sample}
 Table~\ref{tab:app-sample} lists the 50 apps of the sample
@@ -159,3 +160,166 @@ October 2026).}\label{tab:developer-rule}\\
 \input{tables/identity-providers}
 \end{longtable}
 \end{singlespace}
+
+\section{Search and Ranking Details}
+\label{app:sampling-details}
+This section holds the complete lists and worked details behind the sampling rules of
+Section~\ref{sec:app-sampling}; the rules themselves are stated there.
+
+\paragraph{Search keywords.} Table~\ref{tab:keywords} lists the English keywords and the German
+query used for each.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+% The short form keeps citations out of the List of Tables, where they force
+% an extra Biber run.
+\caption[Search keywords]{Search keywords. English terms from Hutton et
+al.~\parencite[Table~2]{hutton2018assessing} (health categories) and Malki et
+al.~\parencite[\S3.1]{malki2024exploring}, each with the German query used.
+\emph{workouts} and \emph{menstruation} are spelled alike in both languages and
+were searched once.}
+\label{tab:keywords}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Keywords}} \\
+\cmidrule(lr){2-3}
+\textbf{Category} & \textbf{English} & \textbf{German} \\
+\midrule
+Cycling & cycling & Radfahren \\
+\addlinespace
+Diet & diet & Diät \\
+ & eating & Ernährung \\
+\addlinespace
+Exercise & exercise & Training \\
+ & workouts & workouts \\
+\addlinespace
+Heart rate & heartrate & Herzfrequenz \\
+ & heart rate & Puls \\
+\addlinespace
+Mood & mood & Stimmung \\
+ & happiness & Glück \\
+\addlinespace
+Running & walking & Gehen \\
+ & running & Laufen \\
+\addlinespace
+Sleep & sleep & Schlaf \\
+\addlinespace
+Steps & steps & Schritte \\
+\addlinespace
+Weight & weight & Gewicht \\
+ & body fat & Körperfett \\
+\midrule
+Reproductive health & female health, women's health & Frauengesundheit \\
+ & reproductive health & reproduktive Gesundheit \\
+ & fertility & Fruchtbarkeit \\
+ & ovulation & Eisprung \\
+ & menstrual, menstruation & menstruation \\
+ & period & Periode \\
+ & contraception, birth control & Verhütung \\
+ & pregnancy & Schwangerschaft \\
+ & pregnant & schwanger \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Public listing data.} Table~\ref{tab:storefront-fields} records which listing fields
+are specific to the German market. It rests on a field check of 22 October 2026, which
+requested the same listings from the German, US and British storefronts. The check covered few
+apps in one session, so it shows how the fields behave and does not enter the sample.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Public listing data by geographic basis]{Public listing data by geographic basis. Observed on 22 October 2026
+for up to six App Store and five Google Play listings in the German (DE), US
+and British (GB) storefronts; fields shown only on product pages were checked
+for one app per store in DE and US\@. \emph{Market-specific}: the value changed
+with the storefront. \emph{Worldwide}: it was identical across storefronts.
+}
+\label{tab:storefront-fields}
+\small
+\setlength{\aboverulesep}{0.25ex}\setlength{\belowrulesep}{0.35ex}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Field} & \textbf{App Store} & \textbf{Google Play} \\
+\midrule
+Rating count & \textbf{Market-specific}, also for the current version; no
+  worldwide total. Yazio: 446{,}768 (DE), 51{,}379 (US), 12{,}351 (GB)
+  & \textbf{Worldwide}, labelled \enquote{reviews} on the page; no country
+  count. Home Workout: 4{,}045{,}258 (DE, US), 4{,}045{,}260 (GB) \\
+\midrule
+Average rating & \textbf{Market-specific}, also for the current version.
+  Yazio: 4.62 (DE), 4.70 (US)
+  & \textbf{Market-specific}. MyFitnessPal: 3.94 (DE), 4.41 (US) \\
+\midrule
+One-to-five-star breakdown & \textbf{Market-specific}, on the product page
+  only. Yazio five-star: 349{,}509 (DE), 42{,}759 (US)
+  & \textbf{Mixed}: the country's distribution scaled to the worldwide count.
+  MyFitnessPal one-star: 428{,}497 (DE), 205{,}443 (US) \\
+\midrule
+Written reviews & A few review texts on the product page; \textbf{no public
+  count}
+  & Undocumented embedded count, not displayed, \textbf{market-specific}: it
+  follows the storefront country, not the interface language (25 October).
+  MyFitnessPal: 32{,}560 (DE), 454{,}136 (US) \\
+\midrule
+Downloads or installs & \textbf{Not public}; reported to the developer
+  only~\parencite{apple2026acquisition}
+  & \textbf{Worldwide} band on the page (\enquote{100M+}) and an
+  undocumented exact count (Home Workout: 303{,}142{,}208 in all three);
+  country figures to the developer only~\parencite{google2026playstatistics} \\
+\midrule
+Chart position & \textbf{Market-specific} badge on the product page (Yazio:
+  no.~3 in Health \& Fitness, DE) and public category chart pages
+  & \textbf{Market-specific} badge when ranked (MyFitnessPal: no.~2 top
+  grossing in Health \& Fitness, US; none in DE) \\
+\midrule
+Search result order & Endpoint order per storefront; not verified as the
+  native store rank
+  & Page order per storefront; not verified as the native store rank \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+
+\paragraph{Provider conditions: examples.} Condition P2 matches \enquote{WW International,
+Inc.} on the App Store and \enquote{WW INTERNATIONAL, INC} on Google Play. Condition P3 matches
+Daylio, published by \enquote{Relaxio s.r.o.} on the App Store and by \enquote{Habitics} on
+Google Play: the App Store seller website, daylio.net, is the domain of the Play privacy policy.
+A similar name is no evidence: \enquote{Leap Health} and \enquote{Leapjoy Games} are different
+developers.
+
+\paragraph{Vendor shares.} A vendor's share of its platform is its share of all mobile page
+views in Germany~\parencite{statcounter2026vendor} divided by the platform's share of all mobile
+page views~\parencite{statcounter2026os}, so that each vendor is compared within its own
+platform.
+
+\paragraph{Sensitivity variants.} Table~\ref{tab:sensitivity-variants} lists the variants of
+the selection; each changes one rule of the main selection.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption{Sensitivity variants of the selection. Each variant changes one rule of the main
+selection.}
+\label{tab:sensitivity-variants}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Rule changed} & \textbf{Variant} \\
+\midrule
+Developer rule & Selection without the developer rule \\
+Platform weights & Equal weights for the two platforms \\
+Score & The alternative scale; the worldwide Google Play rating count in place of the German review count \\
+Search depth & Depth 20; App Store at depth 200 \\
+Keywords & Each keyword left out in turn; English keywords only; German keywords only \\
+Earlier procedure & Apps taken alternately from a German App Store ranking and a worldwide Google Play ranking \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}

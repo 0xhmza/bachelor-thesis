@@ -160,3 +160,7 @@ Every interface known to give store data on ratings, reviews, downloads or popul
 **Developer only:** App Store Connect Analytics (total, first-time and redownloads by territory, bulk export through the analytics reports API; ratings and reviews per country or region); Play Console (installs and uninstalls by country; all reviews). **Third party** (modelled estimates): Sensor Tower, Appfigures, AppMagic, AppTweak, 42matters; Sensor Tower rate-limited after 15 of 169 apps, Appfigures required an account for German data.
 
 **Conclusion.** No public interface gives German download counts. The public market-specific signals are the App Store storefront rating count and histogram, the Play country average, histogram shape and embedded review count, and the chart positions in both stores.
+
+## Update 2026-11-04 — materiality rule for sensitivity checks
+
+- **Status:** proposed (2026-11-04, methodology review M8). A sensitivity variant counts as material when it changes more than five of the 50 selected providers (10 %); material variants are discussed in the results, others tabulated (Appendix C). Threshold to be confirmed by the author.

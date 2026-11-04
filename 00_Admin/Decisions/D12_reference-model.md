@@ -15,3 +15,8 @@
 - **Choice:** one reference model. A function enters it if the review evidence or a cited source documents it for health trackers. Components are stated as features that can be checked on a real app. Capabilities K1–K8 keep the numbers of the review's capability table; K3 is excluded (connected device). K9, K10 and I1–I3 are added, each with a source. Every pathway states whether its link is documented or argued. No completeness is claimed (Knabenhans et al. §4.1, p. 7).
 - **Reason:** A generic model needs no criterion for "best", treats all 50 apps alike, and turns "does this harm apply?" into a checkable question about features. A superset errs towards listing a pathway that an app lacks, which the applicability record then closes; a single real app would err towards missing harms silently.
 - **Would change if:** the supervisor meant a specific app; the pilot shows components that cannot be checked from the available material; De & Le Métayer 2017, once read, contradicts this use.
+
+## Update 2026-11-04 — independent check of the trees
+
+- **Status:** proposed (2026-11-04, methodology review M5).
+- **Choice:** before the instrument freeze, the D8 second coder checks every pathway against its cited source; objections and resolutions are logged. Reason: "missing harm" is measured against a model built by the author, so the yardstick needs a check by someone else.

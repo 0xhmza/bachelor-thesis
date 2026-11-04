@@ -13,3 +13,7 @@
 - **Choice:** English text is primary for every captured source, including interface text; German is used when no English version is available. Where both versions exist, both are captured and their differences logged. Language is recorded per source, and the original wording is coded. Search keywords combine German and English terms, and the storefronts remain German.
 - **Reason:** The supervisor set the rule. Capturing both versions where they exist keeps German-only content, such as the differences Arora et al. found, visible in the difference log instead of losing it.
 - **Would change if:** the difference log shows that German versions often carry harm or protection content that the English version lacks; the supervisor revises the rule.
+
+## Note 2026-11-04 — rule kept, justification stated
+
+- The author kept English first (chat, 2026-11-04) after the methodology review raised German-market validity (M2). The methodology now states the cost (German users may meet German text; Arora et al. 2022, LREC, 59 semi-parallel pairs differ), keeps the difference log, and applies the existing "would change if": where the pilot shows German-only harm or protection content, the German version of that source is coded as well. A language limitation is added to the methodology.

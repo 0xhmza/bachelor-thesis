@@ -25,3 +25,9 @@
   - The proposed policy-coding order remains unresolved. Any prior familiarity from sampling, policy capture or route preparation is recorded; delaying model-code review alone cannot remove it.
   - D16's synthetic test uses protocol v5 and contains the same missing-export inference. Mark its dependent classifications/counts as historical and pending re-evaluation rather than silently rewriting the fixture or presenting it as an application of v7.
 - **Would change if:** the pilot shows that the tasks do not reach the tree nodes; the supervisor clarifies the "post-harm reaction" point of the meeting.
+
+## Update 2026-11-04 — second rating of recorded sessions
+
+- **Status:** proposed (2026-11-04, methodology review M6). Replaces the open "second inspection" question.
+- **Choice:** a second analyst (the D8 second coder) rates the recorded sessions of ten randomly drawn apps on Q1–Q4 per action and the task outcome, blind to the first record; no repeat inspection. Subset size to be confirmed.
+- **Reason:** tests the analyst's judgments without needing the same device, accounts and versions; fits the existing recording protocol (Mahatody et al. 2010 on recording).
