@@ -127,7 +127,7 @@ doi:10.1080/00346764.2021.2018027,pending,,no open-access PDF obtained (tried: n
 doi:10.1016/j.invent.2021.100433,in,LQ2,full text read (Europe PMC): readability of depression-app policies
 doi:10.1109/ispa-bdcloud-socialcom-sustaincom52081.2021.00201,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.1145/3460120.3484799,pending,,no open-access PDF obtained (tried: Europe PMC); library access pending
-doi:10.1145/3548606.3560616,in,LQ1,full text read: Dhondt et al. 2022 - A Run a Day Won't Keep the Hacker Away - Inference Attacks on Endpoint Privacy Zones in Fitness Tracking Social Networks.pdf
+doi:10.1145/3548606.3560616,in,LQ1,full text read: Dhondt et al. 2022 - Inference Attacks on Fitness Tracking Privacy Zones.pdf
 doi:10.1016/j.pecinn.2022.100022,in,LQ1,full text read (Europe PMC): interviews naming insurer access to sensor data
 arxiv:2211.07585,in,LQ1,full text read (arXiv): attack simulation with mHealth app users
 doi:10.46586/tches.v2022.i3.330-366,in,LQ1,full text read (OpenAlex OA location): reversing and exploiting the Xiaomi fitness ecosystem
@@ -146,7 +146,7 @@ doi:10.1145/3549015.3554204,pending,,no open-access PDF obtained (tried: OpenAle
 doi:10.1109/tts.2022.3160928,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.1055/a-2155-2021,in,LQ2,full text read (Europe PMC): GDPR-based scale for mHealth policies
 doi:10.1177/02537176221142046,in,LQ2,full text read (Europe PMC): store descriptions and policies of depression apps
-doi:10.56553/popets-2025-0062,in,LQ3,full text read: Chanenson et al. 2025 - Automating Governing Knowledge Commons and Contextual Integrity (GKC-CI) Privacy Policy Annotations with Large Language Models.pdf
+doi:10.56553/popets-2025-0062,in,LQ3,full text read: Chanenson et al. 2025 - GKC-CI Privacy Policy Annotation with LLMs.pdf
 doi:10.1109/smartnets58706.2023.10215903,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.1016/s2589-7500(22)00234-5,pending,,no open-access PDF obtained (tried: Europe PMC; OpenAlex OA location); library access pending
 doi:10.1007/s11257-022-09353-8,in,LQ1;LQ2,full text read (Europe PMC): inferences from fitness-tracker data and policies
@@ -188,7 +188,7 @@ doi:10.1109/buildsec64048.2024.00010,in,LQ3,full text read (arXiv): entailment-b
 doi:10.1145/3613904.3642521,in,LQ1;LQ2,full text read: Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf
 doi:10.1093/medlaw/fwae035,in,LQ1,full text read (Europe PMC): legal analysis of femtech surveillance by private and state actors
 arxiv:2409.02375,in,LQ3,full text read (arXiv): LLMs in privacy compliance and technical review
-doi:10.1145/3613904.3642042,in,LQ1,full text read: Cao et al. 2024 - I Deleted It After the Overturn of Roe v. Wade - Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era.pdf
+doi:10.1145/3613904.3642042,in,LQ1,full text read: Cao et al. 2024 - Period-Tracking Privacy After Roe v. Wade.pdf
 doi:10.1109/spw63631.2024.00032,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.1007/s12553-024-00885-0,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.1007/s00607-024-01331-9,in,LQ3,full text read: Rodriguez et al. 2024 - Large language models - a new approach for privacy policy analysis at scale.pdf
@@ -254,7 +254,7 @@ doi:10.56553/popets-2025-0121,in,LQ1,full text read (arXiv): reverse engineering
 doi:10.1145/3701716.3715287,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
 doi:10.1109/icdabi67967.2025.11547790,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
 doi:10.56553/popets-2026-0026,in,LQ3,full text read: Cory et al. 2026 - Word-level Annotation of GDPR Transparency Compliance in Privacy Policies using Large Language Models.pdf
-arxiv:2503.03587,in,LQ3,full text read: Freiberger et al. 2025 - You Don't Need a University Degree to Comprehend Data Protection This Way - LLM-Powered Interactive Privacy Policy Assessment.pdf
+arxiv:2503.03587,in,LQ3,full text read: Freiberger et al. 2025 - Interactive Privacy Policy Assessment with LLMs.pdf
 doi:10.1109/buildsec68439.2025.00021,in,LQ1;LQ2,full text read (arXiv): audit of 272 mHealth apps (permissions code reviews)
 arxiv:2607.17075,in,LQ3,full text read: Aryal et al. 2026 - A Systematic Evaluation of Traditional Privacy Policy Analysis Tools Against LLMs.pdf
 arxiv:2610.23851,in,LQ1;LQ2,full text read (arXiv): consent and data collection of more than 10000 mHealth apps
@@ -274,7 +274,7 @@ arxiv:2601.20792,in,LQ4,full text read (arXiv): policy organisation hides disclo
 arxiv:2601.10413,in,LQ3,full text read (arXiv): LLM and RAG data-flow analysis of policies
 doi:10.3390/s26030870,in,LQ2,full text read (Europe PMC): privacy metadata of mHealth apps
 doi:10.1109/jiot.2026.3697293,in,LQ3,full text read (OpenAlex OA location): multi-agent LLM compliance checking of IoT companion-app policies
-arxiv:2604.16128,in,LQ3,full text read: Ferrari et al. 2026 - PolicyGapper - Automated Detection of Inconsistencies Between Google Play Data Safety Sections and Privacy Policies Using LLMs.pdf
+arxiv:2604.16128,in,LQ3,full text read: Ferrari et al. 2026 - PolicyGapper - Data Safety vs Privacy Policies.pdf
 doi:10.3389/fpubh.2026.1901627,in,LQ2,full text read (Europe PMC): readability of digital-therapeutics policies
 doi:10.2196/73651,in,LQ2,full text read (Europe PMC): policy compliance of sports and health apps in China
 arxiv:2609.02055,in,LQ3;LQ4,full text read: Brackin 2026 - Privacy Washing - Detecting Internal Contradictions in Privacy Policies.pdf
