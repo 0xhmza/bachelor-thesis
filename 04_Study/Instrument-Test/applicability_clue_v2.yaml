@@ -1,0 +1,34 @@
+# Applicability record for the instrument test under reference model v2 (codebook v6, section 0).
+# Re-evaluation of applicability_clue.yaml, which stays unchanged as the original fixture.
+# Prepared by the AI assistant from the archived policy on 2026-11-04; the author must check it.
+# Evidence: U = unit of the policy captured on 2026-11-01. Own wording, no quotes.
+# state = from the policy and the store listing only. The states of the SYNTHETIC
+# walkthrough are dropped: invented screens are no evidence, and a missing in-app button
+# alone sets neither IM12 nor IM14 (methodology, Step 1).
+reference_model: reference_model_v2.yaml
+app: Clue Period Tracker (BioWink GmbH), sample rank 12
+policy_sha256: 09d9b47967cbd91323afea152892fd8d415e7ec059713ddda1a9d91a95dc1321
+components:
+  CO1: {state: present, evidence: [U010, U013], reason: "The user tracks cycle and other health data."}
+  CO2: {state: present, evidence: [U051, U080, U093], reason: "Predictions and personal insights are derived."}
+  CO3: {state: present, evidence: [U013, U079], reason: "Tracking over time is the service; the policy gives no fixed retention period."}
+  CX1: {state: present, evidence: [U153], reason: "The policy itself names someone gaining access to the user's device."}
+  CX2: {state: present, evidence: [U009], reason: "IP address and device data are collected."}
+  CX3: {state: present, evidence: [U009, U022, U102], reason: "Device identifiers, a push token and the advertising identifier are used."}
+  IM1: {state: present, evidence: [U008], reason: "The account holds username, date of birth and e-mail address."}
+  IM2: {state: present, evidence: [U007, U016], reason: "Data is stored on servers in the EU."}
+  IM3: {state: present, evidence: [U020, U163], reason: "A monitoring service in the app, and web analytics on the website."}
+  IM4: {state: present, evidence: [U102, U106], reason: "An attribution partner and advertising networks receive identifiers and app events."}
+  IM5: {state: present, evidence: [U017, U063, U066], reason: "A messaging service and support tools can receive tracked health data."}
+  IM6: {state: present, evidence: [U070, U072], reason: "De-identified health data goes to research partners, if the user opts in."}
+  IM7: {state: present, evidence: [U093, U098, U118], reason: "Tracked data drives recommendations of products from partnerships, if the user opts in."}
+  IM8: {state: absent, evidence: [U009], reason: "The policy states that precise location is not collected."}
+  IM9: {state: present, evidence: [U132, U153], reason: "Data sharing with connections and a community chat exist."}
+  IM10: {state: present, evidence: [U017, U064, U135], reason: "Processors outside the EEA can receive data."}
+  IM11: {state: uncertain, evidence: [U046, U083], reason: "Consent toggles exist; the policy does not say whether a function depends on one."}
+  IM12: {state: absent, evidence: [U145, U147], reason: "The policy offers deletion on request to the provider, which is a route; whether it works is not tested."}
+  IM13: {state: present, evidence: [U019, U021, U023, U025], reason: "The policy states that four essential services have no opt-out."}
+  IM14: {state: absent, evidence: [U145, U147], reason: "The policy offers a copy of the data on request to the provider, which is a route; whether it works is not tested."}
+  EX1: {state: present, evidence: [U148], reason: "Assumed for any stored data; the policy does not rule it out."}
+  EX2: {state: uncertain, evidence: [U064, U135], reason: "The policy names access by public authorities abroad; no evidence for the German baseline."}
+  EX3: {state: uncertain, evidence: [], reason: "No evidence that an insurer or employer obtains data."}

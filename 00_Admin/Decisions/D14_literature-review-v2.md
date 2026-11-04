@@ -39,3 +39,10 @@
   - Nine pairs of the same work that the automatic rules did not merge were found by a fuzzy title comparison and merged by hand (`config.json`, `manual_duplicates`); Section 4.1 describes the automatic rules only.
   - Results Section 5.1 and the corpus inventory of Appendix F carry a notice that they are not yet consistent with this record.
 - **Would change if:** the supervisor names other venues; institutional access to Scopus or Web of Science, or a working ACM DL session, becomes available (run the prepared strings and add the records through the same rules); the author's check changes more than a few screening decisions.
+
+## Decision 2026-11-04 (night) — taken at the author's instruction
+
+- **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
+- **Choice (verification of the AI-prepared screening):** the author checks every inclusion and every full-text exclusion, and a random fifth of the title-and-abstract exclusions (recorded seed); one eligible record in that fifth triggers a check of all title-and-abstract exclusions.
+- **Evidence:** Waffenschmidt et al. 2019 (BMC Med Res Methodol 19:132): single screening missed a median of 5 % of relevant studies, 13 % for less experienced reviewers.
+- **Still to do by the author:** the check itself, in `01_Literature/Literature-Review/screening.csv`.

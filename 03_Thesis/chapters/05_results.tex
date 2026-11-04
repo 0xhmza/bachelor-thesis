@@ -572,10 +572,15 @@ no finding about the real app. Appendix~\ref{app:instrument-test} holds the comp
 
 \highlight[orange!25]{The invented walkthrough uses protocol version~5. Its task
 classifications and changes to applicability are historical test inputs, not an
-application of the corrected walkthrough rules.}\todo{Re-evaluate
-the synthetic classifications and dependent generated tables under the frozen protocol.
-In particular, a missing export button does not establish IM12 or I2, and an email
-request alone is not an access barrier. Preserve the original fixture for audit.}
+application of the corrected walkthrough rules. Re-evaluated under reference model~v2 from the
+policy alone, without the invented screens, the deletion and export components are absent,
+because the policy offers both on request; incapability I2 and pathway P10, uncertain under
+model~v1, then no longer apply, and every other capability keeps its state.}\todo[inline]{Decision
+of 4 November 2026 (D12, D16). The tables of this test stay those of model~v1 and the original
+fixture, which is kept for audit; the re-evaluation is in scripts/instrument-test/v002/output
+and in applicability\_clue\_v2.yaml. A re-run of the invented walkthrough under the frozen
+protocol would again rest on invented screens, so it is not done: the pilot, with real sessions
+under protocol version~8, is the evidence for the frozen instruments.}
 The corrected rules are stated in Section~\ref{sec:walkthroughs}.
 
 \subsection{Test Case and Material}

@@ -1,6 +1,6 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 7 · **Date:** 2026-11-03 · Operational version of the methodology's
+**Version:** 8 · **Date:** 2026-11-04 · Operational version of the methodology's
 App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
@@ -15,13 +15,25 @@ Record familiarity and deviations; a fixed order cannot eliminate learning effec
 **Apps:** attempt every sampled app on one available platform.
 Unavailable paired devices, payment, identity verification or technical failures
 may block one task or the entire inspection. Retain accessible screens and record
-each task's barrier; the app stays in the document sample. Open for the pilot: the
-platform for apps listed in both stores, and the time one session takes.
+each task's barrier; the app stays in the document sample.
+
+**Platform rule (D10, 2026-11-04):** an app listed in both stores is inspected on
+Android; an app listed only in the App Store, including Apple's preinstalled apps,
+on iOS. Android carries 72.3 % of mobile page views in Germany (StatCounter,
+September 2026), and the emulator gives every app the same clean starting state.
 
 ## Setup
 
-- Device / emulator: TODO
-- OS version: TODO
+- Android: Android Studio emulator, Pixel device profile, Google Play system image of
+  the newest stable Android release offered on the first pilot day; the same image
+  (API level and build) for every app. Before each app, the clean snapshot is
+  restored (the "wipe"). An app that refuses to run on the emulator is inspected on a
+  physical Android phone, reset to factory state, and the deviation is recorded.
+- iOS: a physical iPhone on the iOS version installed on the first pilot day,
+  automatic updates off for the collection period; the app is deleted after its
+  session and its study account removed.
+- Record the exact image, device, OS version and security patch level once, and
+  again whenever one changes.
 - Fresh install for every app, no restored backup, no existing account
 - Region: Germany. Primary interface language: English; German only if English
   is unavailable (D7). Where both exist, capture counterparts and log differences
@@ -29,16 +41,26 @@ platform for apps listed in both stores, and the time one session takes.
 - Screen recording on for the whole session
 - Record installed version, date/time, platform, app ID, device/OS, account state,
   and any reset/reinstall limitation of a preinstalled app.
-- Before main collection, freeze in the pilot: platform rule, task scenarios and
-  starting states, route preparation, search boundaries, time limits, completion
-  criteria, synthetic inputs and consent/permission choices. Log deviations.
+- **Time limits:** the route search of each task (or subgoal) stops after
+  5 minutes; the evaluation of a located route is not timed. A session should take
+  about 60–75 minutes. If the pilot finds a route only after the limit, the limit is
+  raised before the freeze and applies to every app.
+- **Order:** each app is walked through before the model codes of its policy are
+  reviewed. Prior familiarity from sampling, capture and route preparation is
+  logged.
+- Before main collection, freeze in the pilot: task scenarios and starting states,
+  route preparation, search boundaries, completion criteria per subgoal, synthetic
+  inputs and consent/permission choices. Log deviations.
 
 ## The adaptation: the tasks are privacy tasks
 
 A standard cognitive walkthrough asks whether a user can complete the app's own
 tasks. Here the tasks operationalise the user's **privacy** goals in the harm
-trees. The user is a first-time app user with basic platform-navigation knowledge,
-no technical training and no prior app/policy knowledge. Document the action
+trees. The user is a first-time app user with basic platform-navigation knowledge
+and no prior app/policy knowledge; no technical training is this study's
+assumption. Each task has a lay scenario (below): the goal in everyday words and
+the privacy knowledge assumed. Q1–Q4 are answered for this persona; users with
+low literacy, disabilities or a monitoring partner lie outside it. Document the action
 sequence before evaluating it (Wharton et al., pp. 109–111). Evaluate the shortest
 route located within the recorded search, without claiming a global minimum.
 Keep discovery/backtracking separate from route taps. For deletion, prepare the
@@ -57,12 +79,36 @@ For each action, ask Wharton et al.'s four questions:
 | # | Task | Why it is here |
 |---|---|---|
 | T1 | Find out what data the app collects | baseline: this is what communication normally covers; nodes CO1, CX2, IM1, IM2 |
-| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF`; nodes CO2, K2, K10 (codebook v5) |
-| T3 | Find out what happens if the data is exposed, and how incidents are handled | RQ1 details `P-BRC`, `P-INC`, `P-NOT`; node K6 (codebook v5) |
+| T2 | Find out what the app or provider **derives** from that data | RQ1 capability `K-INF`; nodes CO2, K2, K10 (codebook v6) |
+| T3 | Find out what happens if the data is exposed, how incidents are handled, and **where to turn after a problem** | RQ1 details `P-BRC`, `P-INC`, `P-NOT`; node K6; subgoal T3c below (codebook v6) |
 | T4 | Reach the privacy policy from inside the app | cross-surface link (RQ4) |
-| T5 | Turn off sharing with third parties | control, and how it is framed; nodes IM3, IM4, IM13, I3 |
-| T6 | Export the data | control; nodes IM12, I2 |
-| T7 | Delete the account and the data | control; nodes IM12, CO3, I2 |
+| T5 | Turn off sharing with third parties | control, and how it is framed; nodes IM3, IM4, IM13, I3; subgoals below |
+| T6 | Export the data | control; nodes IM14, I2 |
+| T7 | Delete the account and the data | control; nodes IM12, CO3, I2; subgoals below |
+
+**Lay scenarios** (read before each task; the user is assumed to know that apps can
+pass data to other companies, but not which ones):
+
+| Task | Scenario |
+|---|---|
+| T1 | "You wonder what this app keeps about you." |
+| T2 | "You wonder what the app concludes about you from your entries." |
+| T3 | "You read that a health app was hacked and wonder what would happen to your data here, and whom you would contact." |
+| T4 | "You want to read the rules the app follows with your data." |
+| T5 | "You do not want other companies to get your data from this app." |
+| T6 | "You want to move to another app and take your history with you." |
+| T7 | "You want to stop using the app and leave nothing behind." |
+
+**Subgoals** (outcomes are assigned per subgoal; each records the recipient or
+purpose, the scope — phone, account or server — the action offered, the endpoint
+the interface confirms and any part left undone):
+
+| Task | Subgoals |
+|---|---|
+| T3 | T3a consequences of exposure; T3b incident handling and notification; T3c **after a problem**: how to report it to the provider, how to reach its data protection officer, and that a complaint to a supervisory authority is possible (GDPR Art. 13(1)(b), 13(2)(d), 77) |
+| T5 | T5a one named recipient or purpose; T5b all optional third-party sharing |
+| T6 | T6a a copy of the records in a usable form, in the app or by request |
+| T7 | T7a local history on the phone; T7b the account; T7c the copy on the provider's servers (in the app or by request). For an app without an account, T7b is "not applicable", not failed |
 
 The node column maps potential evidence; these tasks do not test every pathway.
 Answer each question **yes / no / uncertain**, with a screen locator and reason.
@@ -75,14 +121,20 @@ completion does not establish novice success.
 |---|---|
 | completed | Information reached or requested action confirmed by the interface; record the exact endpoint (e.g. request submitted versus file received) |
 | information not found | Information/control not located within the frozen search and time limit; record the routes searched |
-| task unsupported | Explicit evidence that this function is not offered in the relevant scope; a missing button alone is insufficient |
+| task unsupported | Explicit evidence that this function is not offered in the relevant scope, in the app **or by another route such as a request to the provider**; a missing button alone is insufficient |
 | access barrier | Access requirement or technical failure blocks inspection; record the requirement/error and screens still accessible |
 
 Record elapsed time, stopping reason, route taps and other actions (scrolling,
 text entry, external steps) separately. A confirmation does not verify backend
 deletion, complete export or cessation of sharing. Non-finding does not establish
-I2, IM12 or any other incapability: use Step 1's uncertain state when evidence
+I2, IM12, IM14 or any other incapability: use Step 1's uncertain state when evidence
 cannot settle a condition.
+
+**Language counterparts:** where both versions exist, the counterpart pass is run in
+the same account, consent and settings state as the primary capture and before T5;
+each difference is logged with the pair, versions and jurisdictions, the state, the
+differing spans, the node or claim scope and whether it is material (adds, removes
+or changes a node, a stance or the scope of a protection claim; D7).
 
 ## Fixed session sequence
 
@@ -190,15 +242,19 @@ study with distinct roles:
 | Applicability evidence (screens showing a component or condition) | applicability record (Step 1), with the screen as location; offered controls for Step 3 |
 
 D8's second coder independently codes captured text; this does not establish
-independent inspection of the app. A second inspection remains open. Report
+independent inspection of the app. The second coder also re-rates the recorded
+sessions of **ten apps** drawn with a recorded seed (Q1–Q4 per action and each
+subgoal's outcome, blind to the first record); this tests the interpretation of the
+recorded routes, not whether a route was missed. Report
 available UI validation apps/units/positives and performance where estimable;
 apply D9's manual-review/withheld-absence-claim rule to interface claims too.
 
 Where screens and policy appear to disagree, retain both locations and check
 scope, version, date and language before reporting inconsistent claims. For RQ4,
 keep task-specific denominators, partial access and missing/retrieval-failed
-policies separate from silence. The proposed order (walkthrough before policy
-model-code review) is **not adopted**; record prior policy exposure in any case.
+policies separate from silence. Each app is walked through **before** the model
+codes of its policy are reviewed (adopted 2026-11-04, D10); record prior policy
+exposure in any case.
 
 ## Ethics rules that bind every session
 
@@ -218,3 +274,4 @@ the document sample; do not cross those barriers, but keep accessible evidence. 
 | 5 | 2026-11-02 | Walkthroughs cover all 50 apps, not 12; no platform slots | Author's instruction of 2 November 2026; D10 |
 | 6 | 2026-11-03 | "Where the record goes": outputs routed into the applicability record and the LLM-assisted coding; procedure unchanged | Coherence with the policy analysis; D10 update of 3 November 2026 |
 | 7 | 2026-11-03 | Defaults captured before control changes, T7 last; explicit outcomes and Q1–Q4 reasons; route/search distinction; evidence/transcript fields; policy/UI separation; partial access, D7 language capture and surface-specific validation limits | Review correction in D10; repairs unsupported inferences and makes the proposed procedure reproducible |
+| 8 | 2026-11-04 | Platform rule; emulator/iPhone setup and versions frozen at the first pilot day; 5-minute search limit per task; lay scenarios and persona limits; T3c after-a-problem subgoal; T5–T7 subgoals; IM14 for export; other-route rule for "task unsupported"; matched-state language pass; ten-app re-rating; walkthrough before policy model-code review | D10 update of 4 November 2026 (submission review R9, usable-privacy card W1–W5; supervisor's post-harm point of 13 October) |

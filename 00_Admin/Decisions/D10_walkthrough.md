@@ -35,3 +35,15 @@
 ## Update 2026-11-04 (evening) — subgoals, persona, matched states
 
 - **Status:** proposed (submission review R9, W3–W5). T5–T7 recorded as subgoals (recipient/purpose, local/account/server scope, offered action, confirmed endpoint, remainder; account deletion not applicable for apps without accounts); outcomes per subgoal. A short lay scenario and assumed privacy knowledge per task; persona limits stated. "Task unsupported" requires that no other route (e.g., a provider request) offers the function. Language counterparts captured in the same account/consent/settings state before T5–T7. Re-rating tests interpretation of recorded routes only. Evidence: Habib et al. 2019 (SOUPS); Schaffner et al. 2022 (CSCW); Wharton et al. 1994. Platform, device, OS, time limits still fixed in the pilot.
+
+## Decision 2026-11-04 (night) — taken at the author's instruction
+
+- **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
+- **Choices:**
+  - Platform: an app listed in both stores is inspected on Android, an App-Store-only app (including Apple's preinstalled apps) on iOS. Android has 72.3 % of mobile page views in Germany (StatCounter, September 2026).
+  - Device: Android Studio emulator, Pixel profile, Google Play system image of the newest stable Android release on the first pilot day, one image for all apps, clean snapshot restored per app; fallback a factory-reset Android phone if an app refuses the emulator (recorded). iOS: a physical iPhone on the iOS version of the first pilot day, updates off.
+  - Time: route search stops after 5 minutes per task or subgoal; the evaluation of a located route is not timed; a session takes about 60–75 minutes. If the pilot finds a route only after the limit, the limit is raised before the freeze for all apps.
+  - Second rating of recorded sessions: ten apps (a fifth; O'Connor & Joffe 2020, p. 5: 10–25 % typical).
+  - Order adopted: each app is walked through before its policy's model codes are reviewed (same mechanism as the label-hidden check, Schroeder et al. 2025).
+  - Supervisor's "post-harm reaction" point read as the mechanisms a user needs after something went wrong: T3 (what happened), T5 (stop flows), T6/T7 (take out, remove), and a new subgoal T3c: how to report a problem to the provider, reach the data protection officer, and that a complaint to a supervisory authority is possible (GDPR Art. 13(1)(b), 13(2)(d), 77). The supervisor can narrow this reading.
+- **Protocol:** walkthrough protocol version 8.

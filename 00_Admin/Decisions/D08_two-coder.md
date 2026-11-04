@@ -19,3 +19,10 @@
 ## Update 2026-11-04 (evening) — fallback and workload
 
 - **Status:** proposed (submission review R6). If no second coder is available, the double coding is reduced to a smaller probability sample across all strata (not V1/V2 only), with narrower claims. The second coder's tasks are separated: validation units; tree check; a random sample of applicability, minimisation and mismatch decisions including negative ones; re-rating of ten recorded walkthroughs. The pilot measures the time for each. Identity and capacity still need the supervisor.
+
+## Decision 2026-11-04 (night) — taken at the author's instruction
+
+- **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
+- **Choice:** the second coder is a student of a computing programme with no other part in the thesis, trained on 20 pilot units (development material) before coding blind. Budget about 22 hours: 500 units at about one minute (9 h), tree check of 21 pathways (2 h), about 40 sampled applicability/minimisation/mismatch decisions (2 h), ten recorded sessions at about 45 minutes (7.5 h), training (2 h). With fewer hours the fallback applies (smaller probability sample across all strata, units reduced first). The name is entered here by the author.
+- **Evidence:** O'Connor & Joffe 2020, p. 5 (double-coding 10–25 % of data units is typical); D9 sample size; walkthrough protocol v8.
+- **Would change if:** the supervisor names another person or asks for a larger overlap.

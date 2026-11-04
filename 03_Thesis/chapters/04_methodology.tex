@@ -24,7 +24,10 @@ the collected text and how people check it, and Section~\ref{sec:instruments} ho
 instruments are tested, frozen and validated against human coding. Section~\ref{sec:closing}
 closes with ethics, availability and limitations. The chapter states rules; the numbers that
 follow from applying them are reported in Chapter~\ref{ch:results}.
-\todo[inline]{Check the writing style of this introduction against the literature.}
+\todo[inline]{Resolved 4 November 2026 (style check): kept as it is. A roadmap paragraph lets
+the reader of a long chapter find each rule: it names every section once, in the order of the
+chapter, is written in the present tense of the rules it announces, and says what is left to
+Chapter~5. No sentence anticipates a later rule, so nothing was cut.}
 
 \section{Study Design}
 \label{sec:design}
@@ -77,7 +80,11 @@ describes them afterwards.
   \draw[arr] (tree.south)--(app.north east);
   \draw[arr] (pilot.south)--(code.north east);
 \end{tikzpicture}}
-\todo[inline, color=pink]{Draft!}% a margin \todo cannot go inside a float
+\todo[inline]{Resolved 4 November 2026: checked against the final text, no longer a draft.
+Upper row: literature review (Section~4.2), generic app with documented functions (4.3.2),
+harm trees (4.3.3), pilot (4.7.2). Lower row, for each app: policy and walkthrough (4.5),
+applicability (4.6.3), two-model coding with human checks and validation (4.6.2, 4.7.3),
+comparison (4.6.5). Every box has its section and every arrow its input.}% a margin \todo cannot go inside a float
 \caption[Workflow of the study]{Workflow of the study. The upper row is done once.
 The lower row is repeated for each app. The pilot will refine the instruments before
 they are frozen. Later changes will be logged and affected material recoded.}
@@ -502,7 +509,17 @@ recorded instead, and preprints are marked as such.
 % - Abstract lookup: scripts/literature-search/v002/enrich.py (OpenAlex by
 %   DOI, used for screening only; OpenAlex is not a search source).
 \highlight[orange!25]{The screening decisions were prepared by an AI assistant
-from titles, abstracts and full texts.}\todo{Check every decision in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv before this section states who screened.}
+from titles, abstracts and full texts. The author checks every inclusion and every full-text
+exclusion, and a random fifth of the title-and-abstract exclusions drawn with a recorded seed;
+if that fifth holds a single eligible record, every title-and-abstract exclusion is
+checked.}\todo[inline]{Decision of 4 November 2026. An unchecked single screener misses studies:
+a single human screener missed a median of 5\,\% of the relevant studies, and 13\,\% where the
+reviewer was less experienced~\parencite{waffenschmidt2019single}, so AI exclusions cannot stand
+unchecked. Inclusions and full-text exclusions decide the corpus and are few, so all are
+checked; title-and-abstract exclusions are many and mostly clear, so a random fifth with
+escalation on any miss bounds the effort and still catches a systematic error. The check itself
+is still yours to do, in 01\_Literature/\allowbreak Literature-Review/\allowbreak screening.csv,
+before this section can say who screened.}
 
 \begin{table}[H]
 \centering
@@ -644,9 +661,10 @@ use cases~\parencite[\S4.2--4.3]{knabenhans2026harms}. De and Le Métayer separa
 generic analysis, which yields generic harm trees from the system's specification,
 from its later refinement for a concrete
 system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}; the refinement adds the actors' access
-rights and prunes paths that the concrete architecture and context rule out.\todo{Checked in the
-HAL author manuscript (hal-01671345v1) by the citation audit of 4 November 2026; the final
-Springer pagination is unverified. Confirm the version or cite the manuscript.} In threat
+rights and prunes paths that the concrete architecture and context rule out.\todo{Resolved
+4 November 2026: the LNCS chapter stays the reference. HAL records its deposit hal-01671345 as
+the Annual Privacy Forum 2017 paper, pp.~52--83, the pagination of the Springer chapter, and
+the thesis cites sections (\S\S3, 4.6, 5.4), which do not depend on pagination.} In threat
 modelling, LINDDUN likewise models a system as data flows, data stores, processes and external
 entities~\parencite[Sec.~2]{deng2011privacy}, and then asks what can go wrong at
 each~\parencite[Sec.~3]{deng2011privacy}; Iwaya et al.\ used its threat categories for
@@ -707,7 +725,7 @@ scope set by the supervisor, so the model stops at the app and its data.
   % Other parts
   \node[el=originimp] (loc) at (-5.2,-4.4) {Location, routes\\\oimp{IM8}};
   \node[el=originimp] (sha) at (-0.9,-4.4) {Sharing with people\\\oimp{IM9}};
-  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}};
+  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}, \oimp{IM14}};
   \draw[arr] (zp.east|-acc) -- (acc.west);
   \draw[arr] (zp.east|-cloud) -- (cloud.west);
   \draw[arr] (zp.east|-net) -- (net.west);
@@ -900,9 +918,18 @@ capability and the component that gives that actor access to the data; a combina
 sources do not establish is not added, and the capability then stays uncertain. A prediction
 computed on the phone, for example, gives no partner a capability unless a component shows that
 the partner receives it.
-\todo{Reference model v1 still holds K10 as an OR+ over IM4, IM7 and CO2. Rewrite it as
-sufficient combinations in v2 (D12), re-run the evaluator and the instrument test, and record
-the change.}
+\highlight[orange!25]{In reference model v2, the capability to sort users into classes (K10)
+has two such combinations: the provider derives insights and uses the tracked data for offers
+or partner products (CO2 and IM7), or an advertising partner receives identifiers or app events
+that a persistent identifier links to one user (IM4 and CX3).}\todo[inline]{Decision of
+4 November 2026 (D12). Version 1 read IM4 OR+ IM7 OR+ CO2 like OR, so a prediction computed on
+the phone (CO2) opened K10 for every app that derives insights. In v2, CO2 alone opens nothing, because it gives no other
+actor the data; each combination names its actor and the component that gives that actor access.
+The partner combination is argued: data of health apps reaches advertising and analytics
+companies, which can aggregate it~\parencite{huckvale2019assessment,grundy2019data}. The
+evaluator (scripts/instrument-test/v002) now rejects OR+, and 30 unit tests pass, among them
+\enquote{CO2 alone gives no K10}. Re-run on the test app: K10 still applies, through both
+combinations; the original fixture and model v1 are kept.}
 Because the operators make every required condition explicit, a tree also
 shows how a pathway can be cut: a measure blocks it only if it removes one of
 its necessary conditions. De and Le Métayer combine AND and OR nodes to compute
@@ -1280,8 +1307,11 @@ providers; the preinstalled group (three apps of two vendors, making 50 apps fro
 is fixed by its own rule.
 \highlight[orange!25]{A variant counts as material when it changes more than five of the 47
 ranked providers; material variants are discussed in the results, the others are only
-tabulated.}\todo{New threshold proposed by the methodology review of 4 November 2026 (D2).
-Confirm or change five providers (about 10\,\%).}
+tabulated.}\todo[inline]{Decision of 4 November 2026 (D2): five providers kept. The threshold is
+tied to what the results can show. RQ1 proportions are averaged over apps with equal weight
+(Section~4.6.5), so replacing $k$ of the 50 apps can move such a proportion by at most $k/50$.
+A variant that changes at most five providers can therefore move no RQ1 proportion by more than
+10 percentage points; a larger change could, and is discussed.}
 %
 %Neither store publishes German figures for every listing field, and the two
 %stores split their fields differently. Apple shows one summary rating per
@@ -1316,12 +1346,9 @@ how; Section~\ref{sec:analysis} states how the material is coded and assessed.
 
 \subsection{Policies, Listings, and Language}
 \label{sec:material}
-\todo[color=orange]{
-Privacy Policy \\
-Application's interface -> Cognitive 
-Walkthrough \\
-Primary English, german as a fallback
-}
+\todo{Resolved 4 November 2026: the section now states this note. Privacy policy: captured
+and coded; interface: cognitive walkthrough (Section~4.5.2); English first, German as fallback,
+among the versions that apply in Germany (D7).}
 Two materials are coded for each app: its privacy policy and the text of its
 interface. The store listing is read for evidence of features and is not coded
 (Table~\ref{tab:material}). RQ4 therefore compares the policy with the interface; listings
@@ -1424,14 +1451,26 @@ judgments without repeating the inspection, which would need the same device, ac
 app versions. It tests the interpretation of the recorded routes, not whether the first
 analyst missed a route that was never recorded. The second analyst is the second coder of
 Section~\ref{sec:validation}.
-\highlight[orange!25]{The subset is ten apps, drawn with a recorded seed.}\todo{D8 and D10: who
-the second person is still needs the supervisor; confirm the subset size.}
+\highlight[orange!25]{The subset is ten apps, drawn with a recorded seed.}\todo[inline]{Decision
+of 4 November 2026 (D8, D10): ten of the 50 apps, a fifth. Double-coding 10--25\,\% of the data
+units is typical for intercoder reliability~\parencite[p.~5]{oconnor2020intercoder}; a fifth
+sits in that range, and at about 45 minutes per recorded session it costs the second coder
+about eight hours. The second analyst is the second coder of Section~4.7.3.}
 
 \paragraph{Preparation.} Inspection is attempted for every sampled app, on one platform where it is available.
 An unavailable paired device, payment or identity verification can block a task or the
 whole inspection. Accessible screens are retained, each barrier is recorded at the task
-where it occurs, and the app stays in the document sample.\todo{Open for the pilot:
-the platform rule for apps listed in both stores, and the time one session takes.}
+where it occurs, and the app stays in the document sample.
+\highlight[orange!25]{An app listed in both stores is inspected on Android, an app listed only
+in the App Store on iOS. The route search of each task or subgoal stops after five minutes; the
+evaluation of a located route is not timed.}\todo[inline]{Decision of 4 November 2026 (D10).
+Platform: Android carries 72.3\,\% of mobile page views in Germany~\parencite{statcounter2026os},
+so it is the version most users in Germany meet, and its emulator gives every app the same clean
+starting state. Time: a route that a deliberate analyst cannot locate within five minutes is
+unlikely to be found by the first-time user of the persona; with seven tasks this keeps a
+session near an hour, about 50 hours for all apps. The limit is this study's rule, not a
+published threshold. The pilot records whether any route is found
+only after the limit; if so, the limit is raised before the freeze and applies to every app.}
 
 Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
@@ -1484,10 +1523,10 @@ nodes to which they can contribute evidence (IDs in Appendix~\ref{app:reference-
 \midrule
 T1 & Find out what data the app collects & Components \ocore{CO1}, \octx{CX2}, \oimp{IM1}, \oimp{IM2} \\
 T2 & Find out what the app derives from the data & \ocore{CO2}; capabilities K2, K10 \\
-T3 & Find out what happens if the data is exposed, and how incidents are handled & K6; \texttt{P-BRC}, \texttt{P-INC}, \texttt{P-NOT} \\
+T3 & Find out what happens if the data is exposed, how incidents are handled, and where to turn after a problem & K6; \texttt{P-BRC}, \texttt{P-INC}, \texttt{P-NOT} \\
 T4 & Reach the privacy policy from inside the app & The link between the two surfaces \\
 T5 & Turn off sharing with third parties & \oimp{IM3}, \oimp{IM4}, \oimp{IM13}; incapability I3 \\
-T6 & Export the data & \oimp{IM12}; incapability I2 \\
+T6 & Export the data & \oimp{IM14}; incapability I2 \\
 T7 & Delete the account and the data & \oimp{IM12}, \ocore{CO3}; incapability I2 \\
 \bottomrule
 \end{tabularx}
@@ -1500,9 +1539,18 @@ Section~\ref{sec:material}: English first, German as fallback. Where both versio
 counterparts are captured and differences logged in a separate pass; their routes and counts
 are not pooled with the primary session. The counterpart pass takes place in the same account,
 consent and settings state as the primary capture and before any action that changes that state
-(T5 to T7), so that a difference reflects the language and not a changed state. \highlight[orange!25]{The device and operating-system version are
-reported with the results.}\todo{Device or emulator and OS version are still TODO in the
-protocol; fix them before the pilot.}
+(T5 to T7), so that a difference reflects the language and not a changed state.
+\highlight[orange!25]{Android apps run on the Android Studio emulator with a Pixel profile and the
+Google Play system image of the newest stable Android release on the first pilot day; the same
+image serves every app, and a clean snapshot is restored before each one. iOS apps run on a
+physical iPhone on the iOS version installed on the first pilot day, with updates turned off.
+An app that refuses the emulator is inspected on a factory-reset Android phone, and the deviation
+is recorded. Device, image and operating-system version are reported with the
+results.}\todo[inline]{Decision of 4 November 2026 (D10). The emulator meets the wipe rule
+exactly and cheaply (one snapshot, restored per app), records the screen, holds no personal data
+and keeps one version for all apps; freezing the version on the first pilot day avoids naming a
+release that may not be current then. iOS apps cannot run in a simulator from the App Store, so
+they need a real iPhone. Some apps detect emulators; the fallback keeps them inspectable.}
 
 \paragraph{Procedure.} Every session follows the same sequence:
 \begin{enumerate}[itemsep=1pt,topsep=3pt]
@@ -1615,7 +1663,7 @@ third-party advertisements retain their origin and are not attributed to the pro
 \emph{Applicability evidence} can settle observable conditions. For example, a recorded
 refusal of sharing beyond a function's needs can show a blocked function (\oimp{IM11})
 on that route, with the reason for treating the sharing as additional recorded. A
-missing export button alone cannot establish incapability I2 or component \oimp{IM12}:
+missing export button alone cannot establish incapability I2 or component \oimp{IM14}:
 another route or a provider-mediated request may exist. Unsupported or unobserved conditions
 therefore remain uncertain unless evidence supports a state, with the screen location and
 reason entered in the applicability record (Section~\ref{sec:apply}). Candidate disagreements
@@ -1625,16 +1673,26 @@ the walkthrough records whether a claimed control was encountered, separately fr
 counterfactual question of whether it would cut a pathway if it worked as claimed. It
 does not test technical effectiveness.
 \highlight[orange!25]{Each app is walked through before the model's codes for its policy are
-reviewed, to reduce influence from that coding.}\todo{D10 proposal remains unadopted:
-confirm or drop this order.} Prior familiarity from sampling, document capture and route
+reviewed, to reduce influence from that coding.}\todo[inline]{Decision of 4 November 2026 (D10):
+adopted. It is the same safeguard as the label-hidden human check: model output that a person has
+seen pulls the person's judgement toward it~\parencite{schroeder2025just}, and here it could steer
+where the analyst searches. It costs nothing, because the walkthrough needs no policy codes.} Prior familiarity from sampling, document capture and route
 preparation is logged; this proposed order alone cannot remove it.
 
 The instrument test runs these outputs through the procedure once, with an invented record
 (Section~\ref{sec:instrument-test}). Its version-5 walkthrough classifications need
 re-evaluation under the corrected rules; they do not establish that this procedure has
-been applied. \highlight[orange!25]{The supervisor's point on a user's
-reaction after a harm is covered for now by T3 and T5 to T7.}\todo{The meeting notes leave this
-point open. Clarify which mechanisms it means before it becomes a criterion.}
+been applied. \highlight[orange!25]{The supervisor's point on a user's reaction after a harm is read as the
+mechanisms a user needs once something has gone wrong: finding out what happened (T3), stopping
+further flows (T5), taking the data out or removing it (T6, T7), and a new subgoal of T3: how to
+report a problem to the provider, how to reach its data protection officer, and that a complaint
+to a supervisory authority is possible. A privacy notice must state the officer's contact
+details and the right to complain}~\parencite[Art.~13(1)(b), 13(2)(d), 77]{gdpr2016}\highlight[orange!25]{,
+so the subgoal asks whether the interface makes them findable.}\todo[inline]{Decision of
+4 November 2026 (D10). The meeting notes ask to address the user's reaction after harm and the
+accessibility of the relevant mechanisms, and leave open which mechanisms. This reading uses the
+existing tasks and adds only the redress route, because the law already defines the information
+a user needs to react; it is this study's interpretation and the supervisor can narrow it.}
 % Operational version: 04_Study/Instrument/walkthrough_protocol.md. Decision D10.
 % Light et al. 2018 (doi:10.1177/1461444816675438) structure entry, everyday use and
 % leaving; used for the order of capture only, so not cited as the method.
@@ -1877,12 +1935,15 @@ demand and an insurer's or employer's use stay uncertain unless the evidence sho
 because the study does not assume the legal setting of another country for German users.
 Each state records whether it rests on the app's evidence or on one of these assumptions, so
 that the reader can see which applicable pathways the assumptions create. An incapability is
-set from the absence of any usable route, not from a missing button: the component that no
-usable way exists to delete or export the data (\oimp{IM12}) is present only if neither the app
-nor another route, such as a request to the provider, offers it, and deletion and export are
-judged separately. A missing in-app control is reported as a walkthrough finding.
-\todo{Reference model v1 defines IM12 by the in-app route only; align it with this rule in v2
-(D12).}
+set from the absence of any usable route, not from a missing button: the components that no
+usable way exists to delete the data (\oimp{IM12}) or to export it (\oimp{IM14}) are present only
+if neither the app nor another route, such as a request to the provider, offers it, and deletion
+and export are judged separately. A missing in-app control is reported as a walkthrough finding.
+\todo[inline]{Resolved 4 November 2026 in reference model v2 (D12): IM12 now concerns deletion
+across every route, the new IM14 export, and incapability I2 needs either. Re-evaluated on the
+test app: its policy offers deletion and a copy on request, so IM12 and IM14 are absent and I2
+and pathway P10 (locked into the service) no longer apply; the original fixture had set I2 from
+an invented missing export button. The fixture and model v1 are kept for the record.}
 
 A script then evaluates the trees. AND is absent if any part is absent, and present only
 if all parts are present. OR is present if any part is present, and absent only if all
@@ -1953,8 +2014,11 @@ reduce the denominator. Inapplicable pathways and text with no identified mentio
 different labels. \highlight[orange!25]{The primary unit is the app: each RQ1 proportion is
 computed per app and then averaged with equal weight for every app, so that a provider who
 documents many pathways does not dominate the result; proportions pooled over all pathways
-are reported as a secondary view.}\todo{Proposed weighting (submission review R8): confirm with
-the supervisor.} Uncertain pathways are neither counted as applicable nor dropped. Every RQ1
+are reported as a secondary view.}\todo[inline]{Decision of 4 November 2026 (D18): adopted. RQ1
+asks how apps communicate, so the app is the unit of the claim. Pooling over pathways weights an
+app by its number of applicable pathways, which grows with what its provider discloses, so the
+most transparent providers would dominate. Weighting per provider differs only for Apple, which
+has two apps.} Uncertain pathways are neither counted as applicable nor dropped. Every RQ1
 proportion is given in two sensitivity scenarios, which are not bounds: in scenario~A the
 numerator and the denominator are the applicable pathways and those of them at a given level;
 in scenario~B the uncertain pathways join both, with their coverage level coded in the same
@@ -2053,9 +2117,12 @@ unit, fix the size and allocation of the validation sample and the vocabulary of
 before the sample is drawn. The instruments are then frozen as one versioned bundle: codebook,
 prompts and output schemas, the human coding sheets, the sampling manifest, the walkthrough
 protocol and the forms for applicability and mismatch decisions.
-\todo{The current codebook (v5), prompts and walkthrough protocol still describe the earlier
-validation design; bring them into line with this chapter before the pilot (submission review
-R5).}
+\todo[inline]{Resolved 4 November 2026 (submission review R5): the bundle is versioned and
+matches this chapter. Codebook v6; reference model v2; prompts stage1\_coverage\_v2 and its
+paraphrase v2p, stage2\_stance\_v2, stage3\_protection\_v2; walkthrough protocol version~8;
+human coding sheets and decision forms version~1; the sampling manifest and estimator in
+scripts/validation-sample/v001. The earlier versions stay as historical; the pilot runs this
+bundle.}
 Later changes are logged, and the affected material is recoded. The pilot apps are recoded with
 the final instruments and remain in the sample. Because the models were chosen and the prompts
 tuned on them, the pilot and test apps are development material: their units do not enter the
@@ -2095,9 +2162,18 @@ is least reliable and keeps estimates valid through the selection
 weights~\parencite{zrnic2024active,gligoric2025unconfident}; stratification also narrows the
 intervals when model accuracy differs across strata~\parencite{fisch2024stratified}. The
 numbers of units, independent providers and unique documents in each stratum are reported.
-\highlight[orange!25]{The sample holds at least 500 units, at least 150 of them in stratum~V5;
-the pilot fixes the allocation to the other strata.}\todo{Proposed size (methodology review of
-4 November 2026, D9): confirm after the pilot's prevalence and time per unit.}
+\highlight[orange!25]{The sample holds 500 units. They are allocated in proportion to each
+stratum's size times the spread of the model errors in it, as estimated in the pilot (Neyman
+allocation),}~\parencite[ch.~3]{lohr2021sampling}\highlight[orange!25]{, with at least 150 units
+in stratum V5 and at least 30 in every other stratum, or the whole stratum if it is smaller. If
+the pilot's time per unit means that 500 units would take a coder more than 12 hours, the total
+is reduced to what fits, under the same rule.}\todo[inline]{Decision of 4 November 2026 (D9).
+Size: at about a minute per unit, 500 units take each coder some 8 to 9 hours, about 7\,\% of a
+corpus of roughly 45 policies of 150 units. Allocation: Neyman allocation minimises the variance
+for a given size; with plausible spreads it puts about half the sample into V5, because V5 is
+large even though its errors are rare. The floor of 150 in V5 bounds what a clean-looking V5 can
+hide: with no error among 150 units, the Jeffreys upper bound on its error share is 1.7\,\%.
+Checked on constructed corpora in scripts/validation-sample/v001.}
 
 \paragraph{Two human coders.} The supervisor asked for two coders. The author and a second coder
 code every unit of the validation sample independently, under the frozen codebook and without
@@ -2124,8 +2200,14 @@ random sample of applicability, minimisation and mismatch decisions that include
 judged negative, and the recorded walkthroughs of ten apps. If no second coder is available,
 the double coding is reduced to a smaller probability sample drawn across all strata, and the
 claims are narrowed accordingly; coding only the hard strata would not measure reliability
-across the corpus.}\todo{Who is the second coder, and how much time do they have? D8 needs the
-supervisor; the pilot measures the time each task takes.}
+across the corpus. The second coder is a student of a computing programme who has no other part
+in the thesis. Before coding the sample, the second coder codes 20 pilot units and discusses
+every difference with the author; these units stay development material.}\todo[inline]{Decision
+of 4 November 2026 (D8). Budget: 500 units at about a minute (9 hours), the
+tree check of 21 pathways (2 hours), about 40 sampled applicability, minimisation and mismatch
+decisions (2 hours), ten recorded sessions at about 45 minutes (7.5 hours) and training
+(2 hours), about 22 hours in all. A trained peer keeps the supervisor in the role of examiner. If fewer hours are available, the fallback above applies, with the units
+reduced first. The name goes into D8; it is the one part of this decision only you can fill in.}
 
 \paragraph{Model performance.} A model label is correct when its code and unit match the
 reference label and its span overlaps the reference span; a label dropped for an invalid span
@@ -2153,6 +2235,13 @@ inference~\parencite[\S4]{egami2023using}\parencite{angelopoulos2023prediction}.
 Horvitz--Thompson estimator applied to the model's errors, unbiased under the sampling design
 whatever the quality of the models~\parencite{horvitz1952generalization}. Its variance is the
 stratified variance of the errors $y_i-g_i$ within the strata~\parencite[ch.~3]{lohr2021sampling}.
+\highlight[orange!25]{A stratum whose sample shows few or no errors is not treated as error-free:
+its error variance is at least the one implied by the Jeffreys estimate of its error share, half
+an error added to the observed count.}\todo[inline]{Decision of 4 November 2026 (D9), a study
+rule. On a constructed corpus with rare positives and errors correlated within policies, the
+plain stratified formula covered the true total in only 75--88\,\% of draws, because a V5 sample
+often holds no error at all; with the floor, coverage was 97 to 99.8\,\%. The floor makes rare-code
+intervals wider and honest. Checked by scripts/validation-sample/v001/check\_coverage.py.}
 The resulting intervals describe the uncertainty of the audit within this fixed corpus; they say
 nothing about apps outside the sample, which was selected by popularity, not drawn at random. The
 estimator is checked before use on constructed corpora with repeated and single mentions,
@@ -2166,11 +2255,14 @@ level a pathway reaches, are not sums of unit labels: ten mentions in one app an
 each of ten apps can give the same unit total and different app counts. The unit sample
 therefore does not correct these figures, and they are reported as detection summaries with the
 estimated unit-level miss rate beside them (Section~\ref{sec:comparison}).
-\highlight[orange!25]{Where capacity allows, a random sample of apps from the independent corpus
-is read in full for the high-stakes codes only, which estimates how often an app reported as
-silent on a harm in fact mentions it.}\todo{Optional whole-app audit (submission review R1):
-decide after the pilot whether its reading time fits; it is the only design that measures
-app-level misses.}
+\highlight[orange!25]{No whole-app audit is run: app-level misses are not estimated, and the
+limitations say so.}\todo[inline]{Decision of 4 November 2026 (submission review R1). A whole-app
+audit is the only design that measures app-level misses, but at the size this study can afford
+it would not support a claim. With no miss found in five fully read apps, the Jeffreys upper
+bound on the share of apps with a missed mention is 38\,\%; with ten apps it is 22\,\%. Ten
+policies of the instrument test's length are about 94{,}000 words, which breaks the design's rule
+that no person reads the whole corpus, for an interval that could not separate a careful
+pipeline from a poor one. The unit-level miss estimate beside each app-level figure stays.}
 
 \paragraph{Absence claims.} A claim that a harm or a measure is not mentioned is stated with the
 estimated recall of the code it depends on. Where the sample holds fewer than 20 reference
@@ -2180,8 +2272,11 @@ unit-level recall certifies that a particular app is silent. Claims about interf
 interface evidence: where the interface stratum holds too few positives, the same wording
 applies. An app with blocked interface access contributes document evidence only.
 \highlight[orange!25]{A routine code whose estimated precision has a lower interval bound below
-0.80 is reported only as a corrected estimate, never as a raw count.}\todo{Proposed threshold
-(methodology review of 4 November 2026, D9): confirm or change.}
+0.80 is reported only as a corrected estimate, never as a raw count.}\todo[inline]{Decision of
+4 November 2026 (D9): 0.80 kept. The corrected estimate is valid whatever the precision, so the
+bound only decides whether a raw count may also be shown. At 0.80 at most one in five counted
+labels can be expected to be false even at the lower bound; it matches the .800 convention used
+for agreement, so that the same strictness applies to both.}
 
 \section{Ethics, Availability, and Limitations}
 \label{sec:closing}
@@ -2203,8 +2298,12 @@ The pilot's estimates fix a minimum feasible study before collection: the polici
 apps, coded by both models; the human check of every high-stakes label; the validation sample;
 and the walkthroughs. \highlight[orange!25]{If time runs short, the second rating of recorded
 walkthroughs is reduced first and the interface stratum of the validation sample second; the
-policy coding, the high-stakes check and stratum V5 are never reduced.}\todo{Proposed order
-(methodology review of 4 November 2026): confirm with the supervisor.} Other changes are agreed
+policy coding, the high-stakes check and stratum V5 are never reduced, and no stratum is
+reduced to zero.}\todo[inline]{Decision of 4 November 2026: adopted. The parts that are never
+reduced carry RQ1 to RQ3 and the validity of the corrected estimates; the second rating and the
+interface stratum only qualify RQ4 and interface claims, and a thinner interface stratum already
+triggers the cautious wording for absence claims above. A stratum cut to zero would break the
+positive selection probability that the correction needs.} Other changes are agreed
 with the supervisor.
 
 \subsection{Data and Artifact Availability}
@@ -2229,9 +2328,19 @@ The study keeps a record of each of its steps:
     with each unit's stratum, seed, selection probability and both coders' unsettled and
     settled labels (Section~\ref{sec:validation}).
 \end{itemize}
-\highlight[orange!25]{Which of these records are released with the thesis, and under what terms,
-is not yet decided.}\todo{Decide what is published (scripts, model file, codebook, prompts) and
-what stays private (recordings may show third-party content and advertisements).}
+\highlight[orange!25]{Released openly with the thesis are the scripts, the reference model, the
+codebook, the prompts, the sampling manifest, and the model and human labels with unit IDs and
+span positions. The captured policy and interface texts are not republished: they are the
+providers' texts, identified in the release by address, capture date and hash, and kept as
+research copies that are made available only to the examiners for checking the
+research}~\parencite[\S~60d(4)]{urhg1965}. \highlight[orange!25]{Screen recordings and
+screenshots stay private, because they show advertisements, operating-system content and study
+accounts.}\todo[inline]{Decision of 4 November 2026. What can be checked without republishing
+third-party works is released: every label can be traced to its unit and span position, and
+every text to its archived capture. German copyright law permits copies for text and data mining
+in non-commercial research and their sharing with individual third parties to check the quality
+of the research, not their publication. This is not legal advice; confirm the release with the
+chair before submission.}
 
 \subsection{Methodological Limitations}
 \label{sec:limitations}
@@ -2258,7 +2367,7 @@ pathways shows how much.
 labels and the validation sample. Unit-level figures are therefore estimates, corrected for
 the models' measured errors; their intervals are wide for rare codes, and recall for the rarest
 codes may not be estimable at all. App- and pathway-level figures are detection summaries and
-are not corrected, unless the optional whole-app audit is run. A human check of a high-stakes
+are not corrected; no whole-app audit is run, so app-level misses are not estimated. A human check of a high-stakes
 label is the judgement of one person. The two models' errors are correlated, so their agreement is
 no evidence of accuracy~\parencite{kim2025correlated}. Unless a second coder joins, one person
 provides the reference labels, so model agreement is not independent human-coder

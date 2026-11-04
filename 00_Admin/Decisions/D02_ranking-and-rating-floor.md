@@ -168,3 +168,9 @@ Every interface known to give store data on ratings, reviews, downloads or popul
 ## Note 2026-11-04 (evening) — denominator of the materiality rule
 
 - The sensitivity checks concern the 47 ranked providers (50 apps from 49 providers including the preinstalled group of Apple, two apps, and Samsung). The proposed rule now reads "more than five of the 47 ranked providers" (submission review R8).
+
+## Decision 2026-11-04 (night) — taken at the author's instruction
+
+- **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
+- **Choice:** the materiality threshold of the sensitivity checks stays at more than five of the 47 ranked providers.
+- **Reason:** RQ1 proportions are averaged with equal weight per app (D18), so replacing k of the 50 apps moves such a proportion by at most k/50. Five or fewer changed providers can therefore move no RQ1 proportion by more than 10 percentage points.

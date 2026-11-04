@@ -26,3 +26,13 @@
 - **Status:** proposed (submission review R3, R4; privacy card W1–W5).
 - **Choice:** (1) OR+ is not evaluated as OR; each OR+ is rewritten as an OR of explicitly sufficient AND-combinations (attack-tree set semantics, Mauw & Oostdijk 2005); unsupported combinations stay uncertain. Each combination names the actor and the access component. (2) Proposed rewrite of K10 for v2, to be argued from sources and checked by the second person: OR( AND(CO2, IM2) provider holds derived scores; AND(IM4, CX3) advertising partner receives identifiers or events; IM7 tracked data drives offers ). (3) IM12 defined by the absence of any usable route (in app or by request), deletion and export judged separately. (4) A named harm credits a pathway only if consequence and data/actor/access match (contextual-integrity parameters, Shvartzshnaider et al. 2019); otherwise a category-level mention. (5) Denials count as mentions with negative polarity (PolicyLint, Andow et al. 2019). (6) "Every function a tracker can have" replaced by "functions the included evidence documents". (7) De 2017 anchored to §§3, 4.6, 5.4 of the HAL author manuscript.
 - **Needs:** reference model v2, re-run of the evaluator and the instrument test.
+
+## Decision 2026-11-04 (night) — taken at the author's instruction
+
+- **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
+- **Choice:** reference model v2 (`04_Study/Reference-Model/reference_model_v2.yaml`); v1 kept as the model of the instrument test.
+  - K10 = (CO2 AND IM7) for the provider OR (IM4 AND CX3) for advertising partners; no OR+ remains. CO2 alone gives no other actor the data. The partner combination is argued from evidence that health-app data reaches advertising and analytics companies that can aggregate it (Huckvale et al. 2019; Grundy et al. 2019).
+  - IM12 = no usable way to delete (any route); new IM14 = no usable way to export (any route); I2 = IM12 OR IM14.
+- **Evaluator:** `scripts/instrument-test/v002/` rejects OR+; 30 tests pass (among them "CO2 alone gives no K10", each combination opens K10, deletion and export judged separately). Appendix G tables regenerated from v2.
+- **Re-evaluation of the test app** (`applicability_clue_v2.yaml`, policy only): K10 still applies; IM12 and IM14 absent (deletion and a copy offered on request), so I2 and P10 no longer apply. The original fixture is kept unchanged.
+- **Version of De & Le Métayer 2017:** the LNCS chapter stays the reference; HAL records hal-01671345 as the APF 2017 paper, pp. 52–83, and the thesis cites sections only.
