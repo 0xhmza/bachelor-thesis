@@ -142,8 +142,8 @@
 \makeatother
 
 % Status notes: \todo[status=<s>]{text}. A status makes the note inline,
-% colours it by status and prints the status as a bold label before the
-% text; an empty text leaves the label alone. A note without status keeps
+% colours it by status and prints "Status --- Notes: text", the status as a
+% bold label; an empty text leaves the label alone. A note without status keeps
 % the amber margin style above. One status per note; the colour is never the
 % only signal, the label always names the status. Each status has one
 % meaning and one next step:
@@ -173,9 +173,8 @@
       linecolor=tdstatus-#1-line, textcolor=tdstatus-#1-text}%
     \let\todostatus@body\@todonotes@text
     \renewcommand{\@todonotes@text}{%
-      {\bfseries\csname todostatus@#1@label\endcsname
-        \ifdefempty{\todostatus@body}{}{:}}%
-      \ifdefempty{\todostatus@body}{}{\ \todostatus@body}}%
+      {\bfseries\csname todostatus@#1@label\endcsname}%
+      \ifdefempty{\todostatus@body}{}{\ ---\ Notes:\ \todostatus@body}}%
   \else
     \PackageError{preamble}{Unknown todo status `#1'}%
       {Use final, pending, unreviewed, revise or missing.}%

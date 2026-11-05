@@ -460,7 +460,10 @@ def inline(s, ctx, fmt=frozenset()):
                 st = re.search(r'status\s*=\s*([A-Za-z]+)', opt or '')
                 label = st.group(1).capitalize() if st else 'TODO'
                 flags = {'b'} if st and st.group(1) == 'final' else {'todo', 'b'}
-                text = '[' + label + (': ' + arg if arg.strip() else '') + ']'
+                if st:
+                    text = '[' + label + (' — Notes: ' + arg if arg.strip() else '') + ']'
+                else:
+                    text = '[' + label + ': ' + arg + ']'
                 runs.extend((t, f | flags, l) for t, f, l in inline(text, ctx, fmt))
                 i = j
                 continue
