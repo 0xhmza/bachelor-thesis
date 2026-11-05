@@ -131,11 +131,10 @@ An app is excluded if **any** of the following hold:
 - **Unit:** the app, not the listing. An app on both stores is one sample
   member with two listings, ranked by the rating-count-weighted mean of its two
   average ratings.
-- **Walkthrough subsample:** 12 apps, **balanced** 6 fitness / 6 fertility, each
-  domain split 3 Android / 3 iOS, filled in rank order **alternating** Android
-  and iOS slots, no app twice. The balance serves coverage, not platform
-  comparison. Apps that cannot be set up without a paired device, or that need
-  payment or identity verification, are skipped with a recorded reason.
+- **Walkthrough scope:** all 50 apps of the sample (closed 5 November 2026, D10).
+  There is no subsample, no platform balance and no rank-order slots. Apps that
+  cannot be set up without a paired device, or that need payment or identity
+  verification, are recorded with the barrier per task and stay in the document sample.
 - **Validation set:** 10 apps, 5 per domain, drawn at random with a recorded
   seed from providers and documents **not used in the pilot**, stratified by
   the language of the coded policy where both languages occur.

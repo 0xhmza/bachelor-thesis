@@ -1,6 +1,6 @@
 # D10 — Which walkthrough, with which checklist and outputs?
 
-- **Status:** proposed (2026-11-01). Starting points and time limits stay open until the pilot.
+- **Status:** **closed (2026-11-05, author's instruction).** The walkthrough covers all 50 apps; no subsample. See "Closure 2026-11-05" at the end.
 - **Affects:** RQ1–RQ4, applicability · [`walkthrough_protocol.md`](../../04_Study/Instrument/walkthrough_protocol.md) · Methodology, App Walkthroughs
 - **Options considered:**
   1. Heuristic walkthrough (cognitive walkthrough plus Nielsen's heuristics), as Malki et al. 2024, p. 5. Yields design problems, not outcomes that attach to tree nodes.
@@ -47,3 +47,11 @@
   - Order adopted: each app is walked through before its policy's model codes are reviewed (same mechanism as the label-hidden check, Schroeder et al. 2025).
   - Supervisor's "post-harm reaction" point read as the mechanisms a user needs after something went wrong: T3 (what happened), T5 (stop flows), T6/T7 (take out, remove), and a new subgoal T3c: how to report a problem to the provider, reach the data protection officer, and that a complaint to a supervisory authority is possible (GDPR Art. 13(1)(b), 13(2)(d), 77). The supervisor can narrow this reading.
 - **Protocol:** walkthrough protocol version 8.
+
+## Closure 2026-11-05 — author's instruction
+
+- **Status:** closed. The author instructed that the walkthrough is applied to all 50 apps, not to 10 or 12, and that every decision about it is closed so it is not reopened.
+- **Final scope:** all 50 apps of the sample are walked through. No walkthrough subsample, no six-and-six platform balance, no rank-order slots (D1, sampling protocol). The only exclusions are access barriers recorded per task (payment, identity verification, paired device); the app stays in the document sample.
+- **Closed with it:** the platform rule (Android for apps listed in both stores, iOS for App-Store-only apps), device, time limit and session sequence of the 2026-11-04 (night) decision, protocol v8; the walkthrough-before-model-code order; the T3c redress subgoal; the matched-state language capture; and the second rating of recorded sessions of ten apps. The second rating is a validation step on recorded sessions, not a walkthrough scope; the question of who the second coder is stays in D8.
+- **Not decisions:** the exact emulator image, iOS version and patch level are recorded once on the first pilot day (protocol), as measurements. The pilot may report that a task does not reach a tree node, but that would be a finding, not a reason to reopen the scope.
+- **Removed:** the open items "platform for the 36 apps listed in both stores", "time one session takes", "device and OS version" and "second inspection of a subset"; the "would change if" clause on the supervisor.

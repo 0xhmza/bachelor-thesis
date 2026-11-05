@@ -17,6 +17,21 @@
   `03_Thesis/proposal/` is the preserved 5 October snapshot; do not edit it.
 - The 13 October supervisor meeting notes supersede conflicting proposal plans.
   Do not invent results or resolve open decisions without evidence.
+- **The thesis never mentions the supervisor.** Write the thesis text (chapters,
+  appendices, tables, captions, `\todo` and `\highlight` notes, LaTeX comments)
+  as if no supervisor, advisor, chair, meeting or request from one existed. Do
+  not write "the supervisor asked/set/can narrow", "agreed with the
+  supervisor", "supervisor meeting of …" or "as set at the meeting". State the
+  rule or choice and its evidence (literature, law, the study's own reasoning)
+  and cite a decision as "Decision Dnn" only. Supervisor input may stay in
+  `00_Admin/` (meeting notes, decision records, correspondence), never in
+  `03_Thesis/`. Before finishing any thesis edit, run
+  `grep -rniE "supervis|advis|meeting|chair" 03_Thesis/chapters 03_Thesis/appendix 03_Thesis/tables`
+  and rewrite hits other than GDPR "supervisory authority", "supervised
+  learning" and the title-page advisor field.
+- **The walkthrough covers all 50 apps.** Never write or restore a walkthrough
+  subsample (12 apps, 6/6 by platform, rank-order slots). A second rating of a
+  subset of recorded sessions is a validation step, not the walkthrough scope.
 - Record each methodological choice, with its evidence, in
   `00_Admin/Decision-Log.md` (and its `Decisions/Dnn_*.md` record) before the
   methodology states it. The methodology states rules; numbers that follow from

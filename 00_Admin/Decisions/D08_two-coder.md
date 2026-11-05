@@ -26,3 +26,7 @@
 - **Choice:** the second coder is a student of a computing programme with no other part in the thesis, trained on 20 pilot units (development material) before coding blind. Budget about 22 hours: 500 units at about one minute (9 h), tree check of 21 pathways (2 h), about 40 sampled applicability/minimisation/mismatch decisions (2 h), ten recorded sessions at about 45 minutes (7.5 h), training (2 h). With fewer hours the fallback applies (smaller probability sample across all strata, units reduced first). The name is entered here by the author.
 - **Evidence:** O'Connor & Joffe 2020, p. 5 (double-coding 10–25 % of data units is typical); D9 sample size; walkthrough protocol v8.
 - **Would change if:** the supervisor names another person or asks for a larger overlap.
+
+## Note 2026-11-05 — walkthrough part closed
+
+- The walkthrough covers all 50 apps (D10, closed). The second rating of recorded sessions of ten apps is part of this decision's validation work and is fixed at ten; only the identity of the second coder remains open here.
