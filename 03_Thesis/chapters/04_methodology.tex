@@ -69,9 +69,7 @@ Upper row: literature review (Section~4.2), generic app with documented function
 harm trees (4.3.3), instrument freeze (4.7.1). Lower row, for each app: policy and walkthrough (4.5),
 applicability (4.6.3), two-model coding with human checks and validation (4.6.2, 4.7.2),
 comparison (4.6.5). Every box has its section and every arrow its input.}% a margin \todo cannot go inside a float
-\caption[Workflow of the study]{Workflow of the study. The upper row is done once.
-The lower row is repeated for each app. The instruments are frozen before collection
-and coding. Later changes will be logged and affected material recoded.}
+\caption[Workflow of the study]{Workflow of the study, in order of time.}
 \Description{Upper row: literature review, generic app, harm trees, instrument freeze. Lower row:
 privacy policy with store listing and walkthrough feed applicability, then coding by two
 models with human checks and validation, then comparison for RQ1 to RQ4. The harm trees
@@ -196,12 +194,8 @@ of Arksey and O'Malley~\parencite{arksey2005scoping}.
 
 \subsection{Review Questions and Search Concepts}
 \label{sec:lit-search}
-\paragraph{Review question.} The review asks one question, derived from the RQ \enquote{what harms service providers
-communicate}: \emph{What is known about the privacy harms and capabilities
-associated with health tracking apps, about how their privacy communication has
-been analysed and what it says, about how language models have been used and
-validated for coding privacy text, and about how privacy texts frame risk and
-protection?} It has four sub-questions, each tied to a part of this study.
+\paragraph{Review questions.} The review has four sub-questions, derived from the RQ
+\enquote{what harms service providers communicate}, each tied to a part of this study.
 \begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,labelindent=0pt,font=\normalfont\bfseries]
   \item[LQ1] \textit{Harms and capabilities.} Which privacy harms, risks, threats
     and inference capabilities concern the users of health tracking apps and
@@ -221,21 +215,11 @@ protection?} It has four sub-questions, each tied to a part of this study.
 \end{description}
 
 \paragraph{Search concepts.} The search is built from concept blocks. Each
-concept of the review question becomes a term group whose alternative terms are
+concept of the sub-questions becomes a term group whose alternative terms are
 joined with OR, and the groups of a query are joined with AND, so that a record
 must contain at least one term of every group. Eight groups cover the concepts
 (Table~\ref{tab:lit-groups}; the complete term lists are in
-Appendix~\ref{app:lit-groups}). The domain group (D) names health tracking apps
-and their wearables, with the domains of the sample in
-Section~\ref{sec:app-sampling} (activity, diet, sleep, mood and mental health,
-cycle, fertility and pregnancy) and the generic terms under which such apps are
-studied (mHealth, wearable, self-tracking). The privacy group (P) restricts the
-domain to privacy. The harm group (H) names harms and the threats and inferences
-through which capabilities are described. The communication group (C) names the
-surfaces the study codes. The privacy-text group (T) names policies, labels and
-notices in any domain; the model group (L) and the task group (A) select
-language-model studies that annotate or assess such text; the framing group (F)
-names the wording strategies that the stance axis codes.
+Appendix~\ref{app:lit-groups}).
 % Precedent for concept blocks (OR within a concept, AND across concepts):
 % Lefebvre et al., Cochrane Handbook for Systematic Reviews of Interventions,
 % v6.5.1 (2025), ch. 4, Sec. 4.4.2 "Structure of a search strategy",
@@ -262,10 +246,7 @@ Table~\ref{tab:lit-strands} shows how the groups are combined.}
 \end{table}
 
 Four strands combine the groups, one for each sub-question
-(Table~\ref{tab:lit-strands}). S1 and S2 search the domain together with
-privacy and add either harms (LQ1) or communication surfaces (LQ2). S3 and S4
-search privacy text in any domain, together with language models and analysis
-tasks (LQ3) or with framing (LQ4). The strands cover 1~January 2014 to the
+(Table~\ref{tab:lit-strands}). The strands cover 1~January 2014 to the
 search date, which includes the first studies of health-app privacy
 policies~\parencite{sunyaev2015availability}; S3 starts in 2022, as in the
 review of language-model studies by Baumann et al.
@@ -297,25 +278,16 @@ S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
 
 \subsection{Sources, Search Execution, and Citation Searching}
 \label{sec:lit-sources}
-\paragraph{Sources.} Two kinds of source are searched: eight venues, which are
-listed completely, and four bibliographic databases, which are searched with
-the strands. Citation searching adds a third route, described below. The venues, the
-databases and the translation of the strands into each platform's syntax are tabulated in
-Appendix~\ref{app:lit-sources}.
-
 \paragraph{Venues.} The eight venues of security, privacy and human--computer
 interaction research are each listed completely from 2014 to the search date
 (Table~\ref{tab:lit-venues}): the four main security conferences (CCS, IEEE
 S\&P, NDSS and USENIX Security), the venues for privacy-enhancing technologies
 (PoPETs) and for usable privacy and security (SOUPS), and CHI and CSCW, where
 user studies of privacy in health tracking appear; three of the four seed
-papers of the citation search were published at CHI. The strands are applied to
-the titles and abstracts of the listed papers; the last column of the table
-gives the rule for each venue. At the security and privacy venues, privacy is
+papers of the citation search were published at CHI. The last column of the table
+gives the selection rule of each venue. At the security and privacy venues, privacy is
 the subject of the venue itself, so the domain group alone selects the
-candidates for LQ1 and LQ2, while S3 and S4 are applied in full. Where a venue
-list holds titles only, CHI and CSCW papers are selected with pairs of groups
-instead of the full strands, because a title rarely names three concepts.
+candidates for LQ1 and LQ2.
 % Precedents:
 % - Complete output of selected top venues, filtered with keyword groups on
 %   title and abstract: Distler et al. 2021, "A Systematic Literature Review of
@@ -346,24 +318,13 @@ explains.
 \paragraph{Platform strings.} The strands are the shared search logic; each
 platform receives them in its own syntax (Table~\ref{tab:lit-syntax}). The
 complete strings, fields, date limits and search times are given in
-Appendix~\ref{app:lit-strings}. PubMed and IEEE Xplore receive each strand as
-one query. Every term is searched in the title and the abstract, terms of
-several words are enclosed in quotation marks as phrases, and a trailing
-asterisk truncates; PubMed also accepts truncation inside a quoted phrase.
-IEEE Xplore requires the field to be named for each term, so every term occurs
-twice, once for the document title and once for the abstract. The arXiv
+Appendix~\ref{app:lit-strings}. The arXiv
 interface returned fewer records for long nested queries than for their parts,
 so arXiv receives short anchor queries instead: each pairs one domain word with
 one privacy term, or joins the words of one privacy-text term, in the title or
-abstract. The records of all anchor queries form a pool. The ACL Anthology is
-taken as its complete bibliography file with abstracts. The strands are applied
-locally to the arXiv pool, to the ACL Anthology file and to the venue lists,
-with one matching rule: titles, abstracts and terms are reduced to lower-case
-letters and digits, a term matches whole words only, and a trailing asterisk
-matches any word ending. Date limits are set at the platform (publication date
-in PubMed, year in IEEE Xplore, submission date in arXiv) or applied locally
-(publication year in the ACL Anthology file and the venue lists). No language
-or publication-type filter is set; both are screening rules.
+abstract. The records of all anchor queries form a pool. The strands are applied
+locally to the arXiv pool, to the ACL Anthology file and to the venue lists.
+No language or publication-type filter is set; both are screening rules.
 % Precedents and documentation:
 % - Full strategy per source, with fields, limits and dates: PRISMA-S
 %   (rethlefsen2021prisma) items 8, 9 and 13.
@@ -450,20 +411,15 @@ C4 & Answers at least one of LQ1--LQ4 \\
 \end{table}
 
 \paragraph{Screening.} The exclusion rules of Table~\ref{tab:lit-criteria} were
-fixed before screening, which has two stages: rules R1--R6 are applied to the
-title, and to the abstract where the title does not decide; R7 and R8 are
-applied to the full text of the records that pass. The rules are applied in
-their order, and an excluded record receives one primary reason, the first rule
-that applies. Every decision and its reason are recorded in a screening log.
+fixed before screening and are applied in their order, at the stage the table
+gives; the abstract is read where the title does not decide. Every decision and
+its reason are recorded in a screening log.
 Where no source holds an abstract, the abstract of the same DOI is taken from
 OpenAlex~\parencite{priem2022openalex}. Two conventions keep the rules apart:
 systems for hospitals, health records, telemedicine or the Internet of Things
 in general fall under R3, and systems for wearables, body-area networks or
 health apps under R5; adoption, attitude and concern studies fall under R4
-unless they name specific harms or actors. A paper whose full text requires
-payment is excluded under R7 when it is available neither through the
-university's institutional access or network nor as a publicly accessible
-version, such as an arXiv preprint. The review maps evidence, so no quality
+unless they name specific harms or actors. The review maps evidence, so no quality
 score decides inclusion, as PRISMA-ScR allows for scoping
 reviews~\parencite{tricco2018prisma}; the peer-review status of each study is
 recorded instead, and preprints are marked as such.
@@ -537,9 +493,6 @@ evidence map crosses the app domains with the materials studied and with the
 parts of the research question, which shows where evidence is concentrated and
 where it is missing; and the findings are summarised in prose for each
 sub-question.
-The capability table and the harms it records feed the analytical framework
-(Section~\ref{sec:framework}); the methodological precedents are cited where each decision of
-this chapter is stated.
 % Precedents:
 % - Charting the data and collating, summarising and reporting the results:
 %   arksey2005scoping, stages 4 and 5; tricco2018prisma (PRISMA-ScR) items 10
@@ -566,8 +519,7 @@ three parts, built in sequence: the harm concepts and categories
 (Section~\ref{sec:harm-categories}); a generic health tracker that holds the functions the
 included evidence documents for such apps (Section~\ref{sec:generic-model}); and reference harm trees that trace how these
 functions can lead to harms (Section~\ref{sec:harm-trees}). The same framework is applied to
-every app and to every communication surface. The coding scheme that ties each unit of text to
-the nodes of the trees belongs to the coding procedure (Section~\ref{sec:axes}).
+every app and to every communication surface.
 
 \subsection{Harm Concepts and Categories}
 \label{sec:harm-categories}
@@ -577,8 +529,7 @@ harms~\parencite[\S4.1]{knabenhans2026harms}. This section defines capabilities,
 categories into which harms are sorted. Components, the leaves of the harm trees, are defined
 with the trees (Section~\ref{sec:harm-trees}).
 
-\paragraph{Capabilities.} System components, that is, the data a system leaks, the results of
-interacting with it and the requirements it imposes, combine to give someone a capability, or
+\paragraph{Capabilities.} System components combine to give someone a capability, or
 to take one away~\parencite[\S4.1]{knabenhans2026harms}. In a health tracker,
 an analytics partner may be able to profile users across apps, and a partner
 with access to the phone may be able to infer a pregnancy from the logged
@@ -725,12 +676,9 @@ people, and tied consent or no way out.}
 
 \subsection{Reference Harm-Tree Construction}
 \label{sec:harm-trees}
-The reference harm trees fix which harms are possible for health trackers, and how, before any
-text is coded. They follow the method that Knabenhans et al.\ developed to trace the harms of
+The reference harm trees follow the method that Knabenhans et al.\ developed to trace the harms of
 the European Digital Identity
-Framework~\parencite[\S4.1]{knabenhans2026harms}. A harm tree shows how parts
-of a system combine into something that someone can do with it, and how that
-in turn leads to a harm. Harm trees were introduced by De and Le Métayer, who
+Framework~\parencite[\S4.1]{knabenhans2026harms}. Harm trees were introduced by De and Le Métayer, who
 used them to link the weaknesses of smart-grid systems, the actors who exploit
 them and the events they cause to the resulting privacy
 harms~\parencite{de2016privacy}. Here the system is a health-tracking app
@@ -935,16 +883,14 @@ data, the actor, the access conditions, the capability and the possible
 consequence. A prediction made for the user does not by itself establish
 access by a third party (Appendix~\ref{app:example}).
 
-\paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets each step of
-Knabenhans et al.\ next to what this study does. Three rules keep the steps honest.
+\paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets the steps of
+Knabenhans et al.\ that this study adapts next to what it does. Three rules keep the steps honest.
 Each pathway records its source and whether that source states the link
 (\emph{documented}) or the study argues it (\emph{argued}). Trees are stored in a
 machine-readable file, and a tested script checks that every node they use exists.
 Like Knabenhans et al., the study does not claim to be complete: another pathway only
-adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}. Because the trees are the
-yardstick against which a harm is called missing, they are not judged by their author alone:
-before the instruments are frozen, a second person checks every pathway against its source
-(Section~\ref{sec:freeze}).
+adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}. A second person checks every
+pathway before the freeze (Section~\ref{sec:freeze}).
 
 \begin{table}[H]
 \centering
@@ -965,12 +911,6 @@ Harms & From the literature on the use case, plus Citron and Solove and the Cybe
 \cmidrule[0.3pt]{2-3}
 Capabilities & Found while analysing the use cases
   & The capability table of the review (K1--K8), plus those the method and other sources add \\
-\cmidrule[0.3pt]{2-3}
-Components & Leakage, interaction results, requirements
-  & The same, written as features that can be checked on an app \\
-\cmidrule[0.3pt]{2-3}
-Trees & Three levels; AND, OR, OR+
-  & The same \\
 \cmidrule[0.3pt]{2-3}
 Origins & Black, blue, red; derived from a formal model
   & The same colours, argued from the literature; grey for events outside the app \\
@@ -1009,14 +949,10 @@ Hutton et al.\ evaluated 64~\parencite{hutton2018assessing}.
 The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
 by major device manufacturers; \textcolor{accent}{(ii)} apps listed on
 Google Play; and \textcolor{accent}{(iii)} apps listed on the Apple App Store.
-Preinstalled apps are selected by the popularity of each manufacturer's devices; the
-remaining places are filled from Google Play and the Apple App Store under defined collection
-and ranking rules. No quotas are set for the three groups
+No quotas are set for the three groups
 \textcolor{accent}{(i)}--\textcolor{accent}{(iii)}. The search frame and eligibility rules
 were recorded before collection, and the resulting composition is reported in
-Section~\ref{sec:results-sample}. Section~\ref{sec:app-search} defines the search and
-eligibility, Section~\ref{sec:ranking} the cross-store matching and the popularity ranking, and
-Section~\ref{sec:selection} the provider rules, the preinstalled apps and the sensitivity checks.
+Section~\ref{sec:results-sample}.
 \todo[inline, color=green]{done}
 
 \subsection{App Search and Eligibility}
@@ -1038,8 +974,7 @@ separate sampling, validation or analysis groups.
 terms of Malki et al.\ are searched in the original English and in one German
 translation each (Table~\ref{tab:keywords} in Appendix~\ref{app:app-sample}). A translation names the tracked
 data type rather than the word (\emph{eating} becomes \emph{Ernährung}).
-Identical spellings and repeated translations are searched once, which gives
-49 queries.
+Identical spellings and repeated translations are searched once.
 
 \paragraph{Search.} Each store is searched in a single session, logged out, in
 its German storefront: the App Store through Apple's Search
@@ -1060,9 +995,7 @@ of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
 in the German storefront: title, developer, genre, price and description. An
 app listed in both stores is decided on one screened listing. If both of its
 listings are screened, the app is excluded when either listing fails a
-criterion; in the collection, this never happened. A privacy policy is not
-required: an app
-without one stays in the sample, and the absence is reported. In-app purchases
+criterion; in the collection, this never happened. In-app purchases
 and subscriptions are recorded but do not exclude an app. Screening follows the
 rank order, and each decision is logged with its reason.
 
@@ -1144,10 +1077,11 @@ of the selected listings, in the main selection or in any check.
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
-counts of app~$i$ in the German storefronts: ratings count in the App Store and
-written reviews count on Google Play. Feedback counts are used because they are the
+counts of app~$i$ in the German storefronts: the written-review count $v_i$ of its Google Play
+listing and the rating count $r_i$ of its App Store listing. Feedback counts are used because they are the
 only count-based measure that is available for the German market. Download and
-install counts are either reported worldwide only or not published at all.
+install counts are either reported worldwide only or not published at all
+(Table~\ref{tab:storefront-fields}, Appendix~\ref{app:sampling-details}).
 %whereas rating and review counts are shown for each storefront.
 The score is
 therefore a proxy for popularity used to select the sample; it does not measure
@@ -1157,21 +1091,6 @@ of 0.89 between Android rating counts and downloads~\parencite{sunyaev2015availa
 Their finding concerns Android rating counts; using German review and rating counts, and the
 conversion between them, is an assumption of this study, tested by the sensitivity checks
 below.
-
-The available German-market feedback count differs between stores; a field check of the
-public listing data is in Table~\ref{tab:storefront-fields} (Appendix~\ref{app:sampling-details}):
-\begin{itemize}
-  \item A \textbf{Google Play listing} contributes its German written-review
-    count, denoted $v_i$.
-  \item An \textbf{App Store listing} contributes its German rating count,
-    denoted $r_i$.
-\end{itemize}
-
-A listing thus supplies one of the two inputs. The unit being ranked, however, is the
-\emph{app}, which may be listed in one store or in both; its listings are therefore matched
-across stores before scoring. An app found only on Google Play has an observed $v_i$
-contribution, one found only in the App Store an observed $r_i$ contribution, and a matched
-app found in both stores has both.
 
 A rating and a written review are different feedback actions. They cannot be
 treated as interchangeable counts without a conversion. Google Play reviews
@@ -1186,10 +1105,6 @@ to all candidates. The three cases are therefore
     v_i+c\,r_i, & \text{matched listings in both stores}.
   \end{cases}
 \]
-The three cases can then be written compactly as
-$P_i=v_i+c\,r_i$. The addition combines the converted contributions of the two
-listings of a matched app; it does not require every app to have both inputs
-or imply that an unobserved store count is actually zero.
 
 The conversion is calculated from the matched candidates found in both stores,
 before eligibility screening. Let $M$ contain those candidates with positive
@@ -1271,9 +1186,7 @@ keyword set (the complete list of variants is in Table~\ref{tab:sensitivity-vari
 Appendix~\ref{app:sampling-details}). For each variant, the number of selected providers that
 change is reported, and separately the number of selected store listings that change, since a
 provider can stay in the sample with a different app or a different listing.
-The checks concern the ranked store selection, so their denominator is the 47 ranked
-providers; the preinstalled group (three apps of two vendors, making 50 apps from 49 providers)
-is fixed by its own rule.
+The checks concern the ranked store selection; the preinstalled group is fixed by its own rule.
 \highlight[orange!25]{A variant counts as material when it changes more than five of the 47
 ranked providers; material variants are discussed in the results, the others are only
 tabulated.}\todo[inline]{Decision of 4 November 2026 (D2): five providers kept. The threshold is
@@ -1310,8 +1223,7 @@ A variant that changes at most five providers can therefore move no RQ1 proporti
 Two kinds of evidence are collected for each sampled app. Its documents, the privacy policy and
 the store listing, are captured and archived (Section~\ref{sec:material}). Its interface is
 inspected in a cognitive walkthrough, which captures the interface text and records what a user
-can find and do (Section~\ref{sec:walkthroughs}). This section states what is collected and
-how; Section~\ref{sec:analysis} states how the material is coded and assessed.
+can find and do (Section~\ref{sec:walkthroughs}).
 
 \subsection{Policies, Listings, and Language}
 \label{sec:material}
@@ -1359,12 +1271,6 @@ captured policy the record states the product it covers, its territorial scope a
 sections, so that a document written only for users elsewhere is not taken for the
 communication that reaches users in Germany.
 
-\paragraph{Interface text and listings.} Interface text is captured during the walkthrough
-(Section~\ref{sec:walkthroughs}). Each transcript is checked against its screen and linked to
-the app version, capture date, language, screen identifier and recording timestamp. A current
-store listing captured in a session is dated evidence; it does not replace the frozen listing
-or change sample membership.
-
 \paragraph{Language.} English text is primary for every source, including the
 interface, among the versions that apply to users in Germany: an English policy written for
 another jurisdiction does not count as the English version, because language versions are often
@@ -1385,20 +1291,14 @@ changes a node, a stance or the scope of a protection claim. The log reports how
 were compared, how many counterparts were unavailable and how many differences were material.
 Whenever a material difference is found, the German version of that
 source is coded as well, the change is logged with the instruments
-(Section~\ref{sec:freeze}), and already coded sources of the same kind are rechecked. The log
-documents the differences that were observed; it does not measure every effect of the language
-rule.
+(Section~\ref{sec:freeze}), and already coded sources of the same kind are rechecked.
 
 \subsection{Cognitive Walkthrough}
 \label{sec:walkthroughs}
 A privacy policy says what a provider has written down. The interface shows what a user
 meets, and whether the user can find it. To inspect it, the study uses a cognitive
 walkthrough: an analyst steps through a task and asks at each step whether a user would
-succeed~\parencite{wharton1994cognitive}. The walkthrough supplies interface evidence
-alongside the policy and store listing. Its tasks are tied to nodes of the
-reference harm trees, its interface text is coded with the same codebook and the same
-model-assisted stages as the policy, and what it shows about the app enters the same
-applicability record. The walkthrough itself is done by hand. The language model plays no
+succeed~\parencite{wharton1994cognitive}. The walkthrough itself is done by hand. The language model plays no
 part in it: it does not operate the app, answer the four questions or judge an outcome.
 
 The method examines how an interface supports learning by
@@ -1462,10 +1362,6 @@ starting without an earlier account is this study's rule. If a preinstalled app 
 reset, its initial state and the deviation are recorded.
 
 The tasks operationalise privacy goals of the reference harm trees.
-Each asks for a piece of information or a control that the trees name: what data is
-collected (components), what is derived from it (capabilities), what an exposure would mean
-and how incidents are handled (harm details), where the policy is, and the controls that
-could address a component or incapability (sharing, export and deletion).
 Table~\ref{tab:wt-tasks} lists the nodes to which each task can contribute evidence; these
 tasks do not test every pathway. Tasks and their order are fixed before main collection.
 This reduces procedural variation, while platform differences, access and the analyst's
@@ -1501,8 +1397,8 @@ T7 & Delete the account and the data & \oimp{IM12}, \ocore{CO3}; incapability I2
 \end{singlespace}
 \end{table}
 
-Each app is installed fresh, without a restored backup, with the region set to Germany and the
-screen recorded for the whole session. The device language follows
+No backup is restored, the region is set to Germany and the screen is recorded for the whole
+session. The device language follows
 Section~\ref{sec:material}: English first, German as fallback. Where both versions exist,
 counterparts are captured and differences logged in a separate pass; their routes and counts
 are not pooled with the primary session. The counterpart pass takes place in the same account,
@@ -1611,32 +1507,18 @@ that inference is absent, that no other route exists or that every user would fa
 
 \emph{Interface text} enters the corpus as a source of its own. Each transcript is checked
 against the screen and linked to the app version, capture date, language, screen ID and
-recording timestamp. The unit-preparation script fixes unit IDs before coding: one
-paragraph for a policy, one coherent block for interface text (Section~\ref{sec:axes}).
-The script supports the same unit rule for both coders; it does not establish semantic
-boundaries or transcription accuracy by itself.
-The units then pass the three stages of Section~\ref{sec:llm}: both models code nodes, harms,
-stances and protection claims, each with its quoted span, the script checks the span, and
-people check the high-stakes labels. Interface units are a stratum of their own in the
-validation sample (Section~\ref{sec:validation}), so that the models' errors are measured on
-interface text and not only on policies; policy performance alone does not establish
-interface recall.
+recording timestamp. The unit-preparation script (Section~\ref{sec:axes}) does not establish
+semantic boundaries or transcription accuracy by itself.
 Because both surfaces carry the same codes, the comparison for RQ4 is made node by node: what the
 policy says about a component, capability or harm is set against what the screens say about
-the same node. A policy opened through an in-app link remains policy text: the link,
-path and document version are recorded, without counting the policy again as interface
-communication. A different linked version is archived separately. OS prompts and
-third-party advertisements retain their origin and are not attributed to the provider.
+the same node. A policy opened through an in-app link remains policy text, with the link,
+path and document version recorded; a different linked version is archived separately. OS
+prompts and third-party advertisements are not attributed to the provider.
 
 \emph{Applicability evidence} can settle observable conditions. For example, a recorded
 refusal of sharing beyond a function's needs can show a blocked function (\oimp{IM11})
-on that route, with the reason for treating the sharing as additional recorded. A
-missing export button alone cannot establish incapability I2 or component \oimp{IM14}:
-another route or a provider-mediated request may exist. Unsupported or unobserved conditions
-therefore remain uncertain unless evidence supports a state, with the screen location and
-reason entered in the applicability record (Section~\ref{sec:apply}). Candidate disagreements
-between policy and interface retain both locations and are reviewed for matching scope,
-version, date and language before they are reported as inconsistent claims. For Step~3,
+on that route, with the reason for treating the sharing as additional recorded. Unsupported
+or unobserved conditions remain uncertain (Section~\ref{sec:apply}). For Step~3,
 the walkthrough records whether a claimed control was encountered, separately from the
 counterfactual question of whether it would cut a pathway if it worked as claimed. It
 does not test technical effectiveness.
@@ -1684,7 +1566,7 @@ counted, and agreement is computed, per unit and code. The codebook defines each
 example and a counter-example. Table~\ref{tab:axes} summarises the three axes, and
 Appendix~\ref{app:example} shows the procedure on a constructed example.
 
-\begin{table}[H]
+\begin{table}[!t]
 \centering
 \begin{singlespace}
 \caption[Coding axes and boundaries]{Coding axes and boundaries. All example wording is constructed.
@@ -1780,7 +1662,7 @@ misuse counts, whether or not it is labelled a privacy-enhancing technology, inc
 security controls; non-technical commitments are kept separate. A \emph{potential mismatch}
 requires a pathway within the claim's scope and an explanation of why the measure misses one of
 its necessary conditions; partial protection is not rejected merely because other risks remain.
-Vague scope is recorded as unclear, and no deployed system is judged safe or unsafe.
+Vague scope is recorded as unclear.
 
 \subsection{LLM Coding with Two Models and Human Checks}
 \label{sec:llm}
@@ -1798,10 +1680,8 @@ rough approximations with gross errors~\parencite{mayring2025qualitative}. Perfo
 depends on the task, so it has to be validated against human
 labels~\parencite{pangakis2023automated}, and model labels used directly as data bias the
 estimates built on them and make their intervals invalid, even when the model is accurate
-on most units~\parencite[\S2]{egami2023using}. The design therefore has three parts: two models
-code all the text; people check the labels on which the findings depend most; and a
-human-coded validation sample measures the models' errors and corrects the reported figures
-(Section~\ref{sec:validation}).
+on most units~\parencite[\S2]{egami2023using}. Hence the two models, the human check and the
+validation sample (Section~\ref{sec:validation}).
 
 \paragraph{Two models.} Two models from different model families code every unit
 independently, with the same codebook, stages and prompts. \highlight[orange!25]{Both are fixed
@@ -1820,16 +1700,12 @@ error.
 
 \paragraph{Stages and evidence.} Each model codes in three stages. Stage~1 codes tree
 nodes, named harms and generic risks; Stage~2 codes the stance toward each named harm; Stage~3
-codes the details of each protection claim. The stages adapt the hierarchical decomposition
-of Polisis, which classifies broad categories before their
-attributes~\parencite[\S4.3]{harkous2018polisis}; the three stages themselves are this study's
-design. Every label quotes its span, as a decision and the supporting text, as in the exact-text
-extraction of Xie et al.~\parencite[App.~B]{xie2025evaluating}. A script checks that the span
+codes the details of each protection claim. The three stages are this study's
+design. Every label quotes its span, as a decision and the supporting text. A script checks that the span
 occurs in the unit; a label without a valid span is discarded from the data but counted as a
 failure of the model, so that it still lowers measured performance. An uncertain
-answer is kept as uncertain and never becomes a negative code~\parencite{tornberg2024best}.
-The prompts give the context, then the codebook definitions, then the output format, as
-Rodriguez et al.\ tested~\parencite[\S4.2, pp.~3886--3888]{rodriguez2024llm}; the two
+answer is kept as uncertain and never becomes a negative code.
+The prompts give the context, then the codebook definitions, then the output format; the two
 constructed examples, the absence of a persona and the use of one prompt for both model families
 are this study's choices. \highlight[orange!25]{Each model codes the validation sample three
 times, which measures its stability,} following the repeated runs of Rodriguez et
@@ -1845,9 +1721,7 @@ of Table~\ref{tab:llm-routing}. They distinguish \emph{routine} labels from
 and measures: they are frequent, mostly factual, and each one weighs little in the results.
 High-stakes labels are named harms, generic risks, stances and the framing and strength of
 protection claims: they are rare, interpretive, and carry RQ2, RQ3 and the top level of RQ1.
-For high-stakes labels the union of the two models is taken, which favours recall, and a
-person checks every one. Routine labels are not checked one by one; their errors are measured
-in the validation sample and corrected in the estimates.
+Taking the union for high-stakes labels favours recall.
 
 \begin{table}[H]
 \centering
@@ -1914,8 +1788,7 @@ the record.}
 A script then evaluates the trees. AND is absent if any part is absent, and present only
 if all parts are present. OR is present if any part is present, and absent only if all
 parts are absent. Everything else stays uncertain. An OR+ is evaluated only in its rewritten
-form, as an OR of sufficient combinations (Section~\ref{sec:harm-trees}); asking whether a
-pathway is possible at all does not make a single input sufficient. A harm category applies when at least one of
+form (Section~\ref{sec:harm-trees}). A harm category applies when at least one of
 its pathways does. Uncertain cases are counted and reported, not silently dropped, so that
 sparsely documented providers do not vanish from the gap analysis. The trees are reference
 models of possible harms, not complete descriptions of the apps' actual systems.
@@ -1960,15 +1833,14 @@ level 2 capability, level 3 harm.}
 \end{figure}
 
 \paragraph{Protection claims (Step~3).} Step~3 asks whether a claimed measure would cut the
-pathway. A measure blocks a pathway
-only if it removes a necessary condition. For each protection claim, the author names the
+pathway. For each protection claim, the author names the
 component the measure would remove if it worked as claimed. The script sets that component
 to absent and evaluates the trees again. If a pathway within the claim's scope stays open,
 this is a candidate for a \emph{potential mismatch}. The author then decides and writes down
 why. De and Le Métayer note that harm trees show the effect of counter-measures, and
 Knabenhans et al.\ show that many privacy technologies leave a pathway to harm
-open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates. A residual
-risk outside the claim's scope is not a mismatch, and no system is judged safe or unsafe.
+open~\parencite[\S4.5]{knabenhans2026harms}. The script only finds candidates, and no system is
+judged safe or unsafe.
 % De and Le Metayer on counter-measures: talk slides, slide 19.
 
 \subsection{Comparison and Reporting by Research Question}
@@ -1993,10 +1865,8 @@ pathways that are applicable only because of an assumption about outside events,
 whose link is argued rather than documented, are reported separately. Counts are given per app and surface, with shared-provider results also shown
 after grouping repeated providers, and coverage levels (Figure~\ref{fig:coverage-levels}) are
 reported per harm category. Unit-level figures that rest on routine labels are reported as
-corrected estimates with intervals (Section~\ref{sec:validation}). App- and pathway-level
-figures, such as whether an app ever mentions a harm or the highest level a pathway reaches,
-are reported as what the models detected and people checked, together with the estimated share
-of unit-level mentions that both models missed; they are not corrected estimates. RQ2 reports harm--stance combinations and their denominators. Stance
+corrected estimates with intervals, app- and pathway-level figures as detection summaries
+(Section~\ref{sec:validation}). RQ2 reports harm--stance combinations and their denominators. Stance
 attaches only to named harms, and named harms may be rare; RQ2
 therefore also reports, as a secondary analysis fixed before coding, the reassurance,
 generic-risk and generic-responsibility wording that occurs without a named harm, kept apart
@@ -2014,19 +1884,12 @@ visible link or not found within the task limit is distinguished for each releva
 claim. Linked policy wording stays on the policy surface. Inconsistent claims require a human
 check of scope, version, date and language and are reported apart from mere differences in
 detail or findability. Absence means \enquote{no mention was identified in the captured
-material}, with the instrument's measured recall stated (Section~\ref{sec:validation}); a
-unit-level recall does not certify that a particular app contains no mention. A difference
+material} and is worded by the rule of Section~\ref{sec:validation}. A difference
 between the surfaces describes the captured material, which is a full policy on one side and
 bounded routes on the other; it is not a measured difference in what users see or understand.
 
 \section{Instrument Freeze and Validation}
 \label{sec:instruments}
-The instruments (the reference model and trees, the codebook, the walkthrough protocol and the
-prompts) are frozen before the main collection and coding (Figure~\ref{fig:pipeline}), but they
-are described here, after the procedures that use them. A second person checks the reference
-trees before the freeze (Section~\ref{sec:freeze}). A validation sample of coding units, coded
-independently by the author and a second coder, then measures the errors of the frozen models
-and corrects the reported figures (Section~\ref{sec:validation}).
 
 \subsection{Reference-Tree Check and Instrument Freeze}
 \label{sec:freeze}
@@ -2035,7 +1898,7 @@ Section~\ref{sec:validation} checks every pathway of the reference trees before 
 whether its source supports the link, whether each combination of components suffices for the
 named actor in the health-tracker context, and whether the actor has access to the data. Each
 objection and its resolution is logged, and the trees are evaluated again after any change.
-The instruments are then frozen as one versioned bundle: codebook,
+The instruments are then frozen as one versioned bundle: the reference model and trees, codebook,
 prompts and output schemas, the human coding sheets, the sampling manifest, the walkthrough
 protocol and the forms for applicability and mismatch decisions.
 \todo[inline]{Resolved 4 November 2026 (submission review R5), updated 5 November 2026 (D20): the
@@ -2136,9 +1999,7 @@ and recall (the share of reference mentions that the models found) are estimated
 selection weights. Where counts are small, intervals use the beta distribution rather than the
 normal approximation, which covers recall poorly~\parencite{webber2013approximate}. The stages
 are scored end to end, so that a miss at Stage~1 counts at Stage~2. What the second model adds
-is reported as the share of reference mentions that only it found. Agreement between the two
-models, and between the main and the paraphrased prompt, is reported beside these figures as a
-robustness check.
+is reported as the share of reference mentions that only it found.
 
 \paragraph{Corrected estimates.} Unit-level figures of RQ1 to RQ3, such as the number of units
 that name a component or a capability, are additive totals over the corpus. For a
@@ -2172,8 +2033,8 @@ selected for a routine disagreement or as interface text can also hold a missed 
 \paragraph{App- and pathway-level figures.} Whether an app ever mentions a harm, and the highest
 level a pathway reaches, are not sums of unit labels: ten mentions in one app and one mention in
 each of ten apps can give the same unit total and different app counts. The unit sample
-therefore does not correct these figures, and they are reported as detection summaries with the
-estimated unit-level miss rate beside them (Section~\ref{sec:comparison}).
+therefore does not correct these figures. They are reported as detection summaries, what the
+models detected and people checked, with the estimated unit-level miss rate beside them.
 \highlight[orange!25]{No whole-app audit is run: app-level misses are not estimated, and the
 limitations say so.}\todo[inline]{Decision of 4 November 2026 (submission review R1). A whole-app
 audit is the only design that measures app-level misses, but at the size this study can afford
@@ -2199,8 +2060,6 @@ for agreement, so that the same strictness applies to both.}
 
 \section{Ethics, Availability, and Limitations}
 \label{sec:closing}
-The last section gathers what applies to the design as a whole: its ethical safeguards and
-feasibility limits, where its data and instruments are kept, and the limits on what it can show.
 
 \subsection{Ethical Considerations and Feasibility}
 \label{sec:ethics}
@@ -2209,9 +2068,7 @@ researcher's own use of publicly available apps. Store terms are checked before 
 retrieval, and any review requirements are confirmed before collection begins. Walkthroughs
 use throwaway study accounts and synthetic data only; no real name, address, health data or
 payment details are entered. Paid features, identity verification and paired devices are
-therefore not obtained for the study. Where they block a task or the whole inspection, the
-barrier is recorded, and the app stays in the document sample
-(Section~\ref{sec:walkthroughs}).
+therefore not obtained for the study (Section~\ref{sec:walkthroughs}).
 
 The minimum feasible study is the policies of all
 apps, coded by both models; the human check of every high-stakes label; the validation sample;
@@ -2227,26 +2084,15 @@ in the thesis.
 
 \subsection{Data and Artifact Availability}
 \label{sec:availability}
-The study keeps a record of each of its steps:
-\begin{itemize}[itemsep=1pt,topsep=3pt]
-  \item \textbf{Literature review.} The search strings, platforms and search times
-    (Appendix~\ref{app:lit-strings}), the unchanged search results and the screening log with
-    every decision and its reason (Appendix~\ref{app:literature}).
-  \item \textbf{Sample.} The frozen store collections from which the sample is drawn
-    (Section~\ref{sec:app-sampling}), the collection scripts (Appendix~\ref{app:scripts}) and
-    the sample itself (Appendix~\ref{app:app-sample}).
-  \item \textbf{Documents.} Each policy, saved with its SHA-256 hash, its capture date and the
-    date it states (Section~\ref{sec:material}).
-  \item \textbf{Interface.} The screen recordings and the checked transcripts, each linked to
-    the app version, capture date, language and screen (Section~\ref{sec:walkthroughs}).
-  \item \textbf{Instruments.} The reference model and trees as a machine-readable file checked by
-    a tested script (Appendix~\ref{app:reference-model}), the codebook
-    (Appendix~\ref{app:codebook}) and the prompts (Appendix~\ref{app:prompts}).
-  \item \textbf{Coding.} The raw output of both models, kept apart from the checked labels; the
-    frozen model versions and parameters (Section~\ref{sec:llm}); and the validation sample
-    with each unit's stratum, seed, selection probability and both coders' unsettled and
-    settled labels (Section~\ref{sec:validation}).
-\end{itemize}
+The study keeps a record of each of its steps: the search strings, unchanged search results and
+screening log (Appendices~\ref{app:lit-strings} and~\ref{app:literature}); the frozen store
+collections, collection scripts and sample (Section~\ref{sec:app-sampling},
+Appendices~\ref{app:scripts} and~\ref{app:app-sample}); the captured policies, screen recordings
+and checked transcripts (Sections~\ref{sec:material} and~\ref{sec:walkthroughs}); the instruments
+(Appendices~\ref{app:reference-model}, \ref{app:codebook} and~\ref{app:prompts}); the raw model
+output, kept apart from the checked labels, with the frozen model versions and parameters
+(Section~\ref{sec:llm}); and the validation sample with each unit's stratum, seed, selection
+probability and both coders' unsettled and settled labels (Section~\ref{sec:validation}).
 \highlight[orange!25]{Released openly with the thesis are the scripts, the reference model, the
 codebook, the prompts, the sampling manifest, and the model and human labels with unit IDs and
 span positions. The captured policy and interface texts are not republished: they are the
@@ -2266,10 +2112,9 @@ submission.}
 \paragraph{Sampling.} The sample favours free apps with high German-market popularity scores
 found by the chosen keywords and does not represent all health-tracking apps or their users in
 Germany; one app per provider also leaves out further apps of large providers. Feedback counts
-accumulate over different app lifetimes and depend on prompts to rate or review. The common
-scale assumes a typical platform distribution and approximately stable platform-specific
-feedback rates across apps. StatCounter's page-view shares are an approximation of the user
-distribution, and a listing not found in one store contributes no count from that store. These
+accumulate over different app lifetimes and depend on prompts to rate or review, the common
+scale rests on the assumptions stated in Section~\ref{sec:ranking}, and a listing not found in
+one store contributes no count from that store. These
 limits prevent interpreting the score as a count of users or communication encounters.
 
 \paragraph{Captured material and paths.} The corpus is a dated snapshot, and the walkthroughs
