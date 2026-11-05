@@ -1,10 +1,10 @@
-# Graph Report - bachelor-thesis  (2026-11-05)
+# Graph Report - bachelor-thesis  (2026-11-06)
 
 ## Corpus Check
-- Large corpus: 301 files · ~4,292,840 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 302 files · ~4,294,388 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 2980 nodes · 4175 edges · 410 communities (154 shown, 256 thin omitted)
+- 2987 nodes · 4181 edges · 411 communities (155 shown, 256 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 129 edges (avg confidence: 0.85)
 - Token cost: host semantic extraction unmeasured; local refresh makes no model calls
 
@@ -44,15 +44,15 @@
 - Graphify Integration 32
 - Graphify Integration 33
 - Graphify Integration 34
-- Graphify Integration 35
+- Supervisor Decisions 35
 - Supervisor Decisions 36
-- Supervisor Decisions 37
+- Study Instruments 37
 - Study Instruments 38
 - Study Instruments 39
 - Study Instruments 40
 - Study Instruments 41
 - Study Instruments 42
-- Study Instruments 43
+- Graphify Integration 43
 - Study Instruments 44
 - Graphify Integration 45
 - Graphify Integration 46
@@ -129,25 +129,25 @@
 - Supervisor Decisions 117
 - Supervisor Decisions 118
 - Supervisor Decisions 119
-- Literature and Evidence 120
-- Thesis Writing and Methods 121
-- Project Navigation 122
-- Graphify Integration 123
+- Supervisor Decisions 120
+- Literature and Evidence 121
+- Thesis Writing and Methods 122
+- Project Navigation 123
 - Graphify Integration 124
 - Graphify Integration 125
 - Graphify Integration 126
 - Graphify Integration 127
 - Graphify Integration 128
 - Graphify Integration 129
-- Supervisor Decisions 130
-- Thesis Writing and Methods 131
+- Graphify Integration 130
+- Supervisor Decisions 131
 - Thesis Writing and Methods 132
-- Supervisor Decisions 133
+- Thesis Writing and Methods 133
 - Supervisor Decisions 134
-- Thesis Writing and Methods 135
+- Supervisor Decisions 135
 - Thesis Writing and Methods 136
 - Thesis Writing and Methods 137
-- Graphify Integration 138
+- Thesis Writing and Methods 138
 - Graphify Integration 139
 - Graphify Integration 140
 - Graphify Integration 141
@@ -155,44 +155,44 @@
 - Graphify Integration 143
 - Graphify Integration 144
 - Graphify Integration 145
-- Thesis Writing and Methods 146
+- Graphify Integration 146
 - Thesis Writing and Methods 147
 - Thesis Writing and Methods 148
-- Presentation 149
-- Supervisor Decisions 150
+- Thesis Writing and Methods 149
+- Presentation 150
 - Supervisor Decisions 151
 - Supervisor Decisions 152
-- Thesis Writing and Methods 153
-- Study Instruments 154
+- Supervisor Decisions 153
+- Thesis Writing and Methods 154
 - Study Instruments 155
-- Graphify Integration 156
+- Study Instruments 156
 - Graphify Integration 157
 - Graphify Integration 158
 - Graphify Integration 159
 - Graphify Integration 160
-- Supervisor Decisions 162
-- Study Instruments 163
-- Project Navigation 164
-- Supervisor Decisions 165
+- Graphify Integration 161
+- Supervisor Decisions 163
+- Study Instruments 164
+- Project Navigation 165
 - Supervisor Decisions 166
-- Study Instruments 167
-- Graphify Integration 168
+- Supervisor Decisions 167
+- Study Instruments 168
 - Graphify Integration 169
 - Graphify Integration 170
 - Graphify Integration 171
 - Graphify Integration 172
-- Supervisor Decisions 174
+- Graphify Integration 173
 - Supervisor Decisions 175
 - Supervisor Decisions 176
-- Study Instruments 177
-- Supervisor Decisions 178
+- Supervisor Decisions 177
+- Study Instruments 178
 - Supervisor Decisions 179
 - Supervisor Decisions 180
-- Study Instruments 181
+- Supervisor Decisions 181
 - Study Instruments 182
-- Project Navigation 183
-- Graphify Integration 184
-- Thesis Writing and Methods 199
+- Study Instruments 183
+- Project Navigation 184
+- Graphify Integration 185
 - Thesis Writing and Methods 200
 - Thesis Writing and Methods 201
 - Thesis Writing and Methods 202
@@ -212,14 +212,14 @@
 - Thesis Writing and Methods 216
 - Thesis Writing and Methods 217
 - Thesis Writing and Methods 218
-- Supervisor Decisions 219
+- Thesis Writing and Methods 219
 - Supervisor Decisions 220
 - Supervisor Decisions 221
-- Literature and Evidence 222
+- Supervisor Decisions 222
 - Literature and Evidence 223
-- Project Navigation 224
+- Literature and Evidence 224
 - Project Navigation 225
-- Graphify Integration 226
+- Project Navigation 226
 - Graphify Integration 227
 - Graphify Integration 228
 - Graphify Integration 229
@@ -227,8 +227,8 @@
 - Graphify Integration 231
 - Graphify Integration 232
 - Graphify Integration 233
-- Graphify Integration 237
-- Literature and Evidence 300
+- Graphify Integration 234
+- Graphify Integration 238
 - Literature and Evidence 301
 - Literature and Evidence 302
 - Literature and Evidence 303
@@ -315,6 +315,7 @@
 - Literature and Evidence 384
 - Literature and Evidence 385
 - Literature and Evidence 386
+- Literature and Evidence 387
 
 ## God Nodes (most connected - your core abstractions)
 1. `Shared bibliography` - 100 edges
@@ -346,7 +347,7 @@
 ## Hyperedges (group relationships)
 - **Audit findings requiring resolution before sample freeze** — 00_admin_sampling_audit_2026_10_25_identity_errors, 00_admin_sampling_audit_2026_10_25_missing_counts, 00_admin_sampling_audit_2026_10_25_author_review, 00_admin_sampling_audit_2026_10_25_freeze_order [EXTRACTED 1.00]
 
-## Communities (410 total, 256 thin omitted)
+## Communities (411 total, 256 thin omitted)
 
 ### Community 0 - "Supervisor Decisions 0"
 Cohesion: 0.03
@@ -358,7 +359,7 @@ Nodes (34): cite(), coverage(), expression(), main(), mentions(), node(), refere
 
 ### Community 2 - "Graphify Integration 2"
 Cohesion: 0.08
-Nodes (34): bib_clean(), build(), caption_of(), Ctx, Doc, env_body(), esc(), exists() (+26 more)
+Nodes (33): bib_clean(), build(), caption_of(), Ctx, Doc, env_body(), esc(), exists() (+25 more)
 
 ### Community 3 - "Graphify Integration 3"
 Cohesion: 0.09
@@ -398,7 +399,7 @@ Nodes (27): account_conflicts(), calibration(), candidates(), decision(), domain
 
 ### Community 12 - "Literature and Evidence 12"
 Cohesion: 0.10
-Nodes (24): anchor_hash(), apply_page_fixes(), collect_citations(), collect_plain_refs(), compile_pdf(), detect_headings(), detok(), fmt() (+16 more)
+Nodes (25): anchor_hash(), apply_page_fixes(), collect_citations(), collect_plain_refs(), compile_pdf(), detect_headings(), detok(), fmt() (+17 more)
 
 ### Community 13 - "Graphify Integration 13"
 Cohesion: 0.10
@@ -465,16 +466,16 @@ Cohesion: 0.14
 Nodes (19): calibration(), candidates(), decision(), load(), main(), build(), german(), ranked() (+11 more)
 
 ### Community 29 - "Graphify Integration 29"
+Cohesion: 0.15
+Nodes (16): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+8 more)
+
+### Community 30 - "Graphify Integration 30"
 Cohesion: 0.13
 Nodes (14): load_items(), match(), norm(), words(), abstract_for(), attach(), bib_authors(), clean() (+6 more)
 
-### Community 30 - "Graphify Integration 30"
+### Community 31 - "Graphify Integration 31"
 Cohesion: 0.16
 Nodes (18): abstract_from_index(), citations_per_year(), expand(), get_json(), main(), manual_hits(), merge(), find() (+10 more)
-
-### Community 31 - "Graphify Integration 31"
-Cohesion: 0.18
-Nodes (18): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+10 more)
 
 ### Community 32 - "Graphify Integration 32"
 Cohesion: 0.18
@@ -488,21 +489,21 @@ Nodes (18): Data available per app, Interpretation for sampling, iPhone App Stor
 Cohesion: 0.17
 Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
 
-### Community 35 - "Graphify Integration 35"
-Cohesion: 0.17
-Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
-
-### Community 36 - "Supervisor Decisions 36"
+### Community 35 - "Supervisor Decisions 35"
 Cohesion: 0.12
 Nodes (14): Devil’s Advocate Stress-Test — current methodology, Calibration Status, Criterion-Bound Judgements, CRITICAL, Ignored or competing alternative explanations, Issue List, MAJOR, MINOR (+6 more)
 
-### Community 37 - "Supervisor Decisions 37"
+### Community 36 - "Supervisor Decisions 36"
 Cohesion: 0.09
 Nodes (21): All 20 Knabenhans occurrences, Assessment, Claim boundaries for the eventual thesis, Domain/privacy review — current methodology, Exact source identities and excerpt bank, Final De2016 published-paper replacement and De2017 version gate, Final Iwaya edition check, Findings and minimum repairs (+13 more)
 
-### Community 38 - "Study Instruments 38"
+### Community 37 - "Study Instruments 37"
 Cohesion: 0.09
 Nodes (21): 0. The harm model, A.1 Highest level reached, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Probes [not Knabenhans — from the GDPR gap analysis, proposal §1], Axis A — Pathway (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019], Axis C — Protection (RQ3) (+13 more)
+
+### Community 38 - "Study Instruments 38"
+Cohesion: 0.09
+Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
 
 ### Community 39 - "Study Instruments 39"
 Cohesion: 0.09
@@ -520,9 +521,9 @@ Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhan
 Cohesion: 0.09
 Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
 
-### Community 43 - "Study Instruments 43"
-Cohesion: 0.09
-Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
+### Community 43 - "Graphify Integration 43"
+Cohesion: 0.19
+Nodes (17): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+9 more)
 
 ### Community 44 - "Study Instruments 44"
 Cohesion: 0.10
@@ -804,169 +805,173 @@ Nodes (6): Closure 2026-11-05 — author's instruction, D10 — Which walkthroug
 Cohesion: 0.29
 Nodes (6): Choice, D20 — The method is applied to all apps without a pilot or instrument test, Kept, because they are not piloting, Removal from the thesis, and what stays outside it, Rules that used to be settled by the pilot, Would change if
 
-### Community 120 - "Literature and Evidence 120"
+### Community 120 - "Supervisor Decisions 120"
+Cohesion: 0.29
+Nodes (6): A. Broken references left by the trimming (must fix), B. Content changed in the Google Doc that is now wrong, C. Language (ChatGPT edits), D. Appendices: only the tables the chapter cites (second version, 6 November 2026), E. Open points I did not change (your decision), Review of the shared methodology (Google Doc PDF, "HCS Thesis Proposal.pdf")
+
+### Community 121 - "Literature and Evidence 121"
 Cohesion: 0.29
 Nodes (6): Eligibility criteria, Exclusion rules, in the order applied, Files, Literature review v002 — screening protocol and log, Provenance, Review question
 
-### Community 121 - "Thesis Writing and Methods 121"
+### Community 122 - "Thesis Writing and Methods 122"
 Cohesion: 0.29
 Nodes (6): Answering the Research Questions, Discussion, Implications for Providers and Designers, Implications for Regulation, Implications for Users, Threats to Validity
 
-### Community 122 - "Project Navigation 122"
+### Community 123 - "Project Navigation 123"
 Cohesion: 0.29
 Nodes (6): Google Doc, graphify, Literature, Scripts and data, Thesis, Workflow
 
-### Community 123 - "Graphify Integration 123"
+### Community 124 - "Graphify Integration 124"
 Cohesion: 0.38
 Nodes (3): fix(), new_of(), old_of()
 
-### Community 124 - "Graphify Integration 124"
+### Community 125 - "Graphify Integration 125"
 Cohesion: 0.62
 Nodes (5): candidates(), get(), main(), openalex_locations(), pmcid()
 
-### Community 126 - "Graphify Integration 126"
+### Community 127 - "Graphify Integration 127"
 Cohesion: 0.62
 Nodes (5): candidates(), get(), main(), openalex_locations(), pmcid()
 
-### Community 128 - "Graphify Integration 128"
+### Community 129 - "Graphify Integration 129"
 Cohesion: 0.48
 Nodes (5): main(), num(), policy(), rows(), tex()
 
-### Community 129 - "Graphify Integration 129"
+### Community 130 - "Graphify Integration 130"
 Cohesion: 0.38
 Nodes (5): _camel(), entry_pdfs(), fold(), parse_pdf_name(), _words()
 
-### Community 130 - "Supervisor Decisions 130"
+### Community 131 - "Supervisor Decisions 131"
 Cohesion: 0.60
 Nodes (4): Proposed first examiner: Prof. Troncoso, Proposed title: Understanding Privacy Harm Communication in Health Tracking Apps, 19 October 2026 registration email, Unsigned registration form draft
 
-### Community 131 - "Thesis Writing and Methods 131"
+### Community 132 - "Thesis Writing and Methods 132"
 Cohesion: 0.53
 Nodes (3): Statutory declaration placeholder, Place date and author signature fields, Statutory Declaration
 
-### Community 132 - "Thesis Writing and Methods 132"
+### Community 133 - "Thesis Writing and Methods 133"
 Cohesion: 0.60
 Nodes (5): Author and matriculation fields, Parameterized thesis title page, First examiner second examiner advisor and submission-date fields, University faculty and chair fields, Thesis title type and degree-program fields
 
-### Community 133 - "Supervisor Decisions 133"
+### Community 134 - "Supervisor Decisions 134"
 Cohesion: 0.33
 Nodes (5): Collector development — 20 October 2026, Decision log, Dnn — <question>, Record template, Register
 
-### Community 134 - "Supervisor Decisions 134"
+### Community 135 - "Supervisor Decisions 135"
 Cohesion: 0.33
 Nodes (5): D9 — What does the language model do, and when is it accepted?, Decision 2026-11-04 (night) — taken at the author's instruction, Update 2026-11-04 (evening) — estimator, sampling frame and reporting level, Update 2026-11-04 — two models, human check of high-stakes labels, sampling validation, Update 2026-11-05
 
-### Community 135 - "Thesis Writing and Methods 135"
+### Community 136 - "Thesis Writing and Methods 136"
 Cohesion: 0.33
 Nodes (5): LLM Prompts, Stage 1: Coverage, Stage 1: Paraphrased Wording, Stage 2: Stance, Stage 3: Protection
 
-### Community 136 - "Thesis Writing and Methods 136"
+### Community 137 - "Thesis Writing and Methods 137"
 Cohesion: 0.33
 Nodes (5): Corpus Inventory, Literature Review Records, Search Sources, Search Strings, Term Groups
 
-### Community 137 - "Thesis Writing and Methods 137"
+### Community 138 - "Thesis Writing and Methods 138"
 Cohesion: 0.33
 Nodes (5): Introduction, Problem Statement and Research Gap, Research Questions and Scope, Significance and Expected Contributions, Structure of this Thesis
 
-### Community 138 - "Graphify Integration 138"
+### Community 139 - "Graphify Integration 139"
 Cohesion: 0.33
 Nodes (5): IEEE Xplore: the four strings of output/run-*.json were run in its web interface; results in output/ieee-raw.json, Literature search, v001, v002, v003
 
-### Community 139 - "Graphify Integration 139"
+### Community 140 - "Graphify Integration 140"
 Cohesion: 0.33
 Nodes (5): Import into Zotero, Regenerate (every time `references.bib` changes), Tests, What an item holds, Zotero library file
 
-### Community 140 - "Graphify Integration 140"
+### Community 141 - "Graphify Integration 141"
 Cohesion: 0.60
 Nodes (4): at(), fetch(), main(), search()
 
-### Community 141 - "Graphify Integration 141"
+### Community 142 - "Graphify Integration 142"
 Cohesion: 0.47
 Nodes (4): clean_title(), label(), polished(), surname()
-
-### Community 143 - "Graphify Integration 143"
-Cohesion: 0.53
-Nodes (4): crossref(), dois_in(), main(), neighbours()
 
 ### Community 144 - "Graphify Integration 144"
 Cohesion: 0.53
 Nodes (4): crossref(), dois_in(), main(), neighbours()
 
-### Community 146 - "Thesis Writing and Methods 146"
+### Community 145 - "Graphify Integration 145"
+Cohesion: 0.53
+Nodes (4): crossref(), dois_in(), main(), neighbours()
+
+### Community 147 - "Thesis Writing and Methods 147"
 Cohesion: 0.70
 Nodes (4): Related work and unfinished literature review, Observed-practice disclosure precedents, Literature Review section to be extended, Risk communication literature
 
-### Community 147 - "Thesis Writing and Methods 147"
+### Community 148 - "Thesis Writing and Methods 148"
 Cohesion: 0.40
 Nodes (4): Conclusion chapter placeholder, Conclusion, Future Work, Summary
 
-### Community 148 - "Thesis Writing and Methods 148"
+### Community 149 - "Thesis Writing and Methods 149"
 Cohesion: 0.70
 Nodes (4): AI-tools list for the declaration box reduced to a placeholder item, Thesis metadata, Understanding Privacy Harm Communication in Health Tracking Apps; MPI-SP, RUB IT Security, Open title-page facts: second examiner, start and submission dates
 
-### Community 149 - "Presentation 149"
+### Community 150 - "Presentation 150"
 Cohesion: 0.40
 Nodes (4): Presentation build conventions, Presentation, Rules, The two talks
 
-### Community 150 - "Supervisor Decisions 150"
+### Community 151 - "Supervisor Decisions 151"
 Cohesion: 0.40
 Nodes (4): D12 — What is the harm tree built on (the supervisor's "best app")?, Decision 2026-11-04 (night) — taken at the author's instruction, Update 2026-11-04 (evening) — OR+, actor access, coverage matching, wording, Update 2026-11-04 — independent check of the trees
 
-### Community 151 - "Supervisor Decisions 151"
+### Community 152 - "Supervisor Decisions 152"
 Cohesion: 0.40
 Nodes (4): Administrative checklist, Standing rhythm, Timeline and Milestones, Twelve-week plan
 
-### Community 152 - "Supervisor Decisions 152"
+### Community 153 - "Supervisor Decisions 153"
 Cohesion: 0.40
 Nodes (4): Template, Week of 2026-10-12, Week of YYYY-MM-DD, Weekly log
 
-### Community 153 - "Thesis Writing and Methods 153"
+### Community 154 - "Thesis Writing and Methods 154"
 Cohesion: 0.40
 Nodes (4): Capabilities, Components, Pathways, Reference Model
-
-### Community 154 - "Study Instruments 154"
-Cohesion: 0.40
-Nodes (4): Human coding sheets, Sheet A — checking a high-stakes label (`human:check`), Sheet B — validation sample (`human:reference`), Training of the second coder
 
 ### Community 155 - "Study Instruments 155"
 Cohesion: 0.40
 Nodes (4): Human coding sheets, Sheet A — checking a high-stakes label (`human:check`), Sheet B — validation sample (`human:reference`), Training of the second coder
 
-### Community 156 - "Graphify Integration 156"
-Cohesion: 0.60
-Nodes (4): Google Docs export (v001), Google Docs export v001 from the generated thesis review copy, tabids.json maps export keys to live document tabs, Pandoc JSON, export plans, bounded batch requests, text checks and bold run-in headings
+### Community 156 - "Study Instruments 156"
+Cohesion: 0.40
+Nodes (4): Human coding sheets, Sheet A — checking a high-stakes label (`human:check`), Sheet B — validation sample (`human:reference`), Training of the second coder
 
 ### Community 157 - "Graphify Integration 157"
 Cohesion: 0.60
-Nodes (3): at(), fetch(), search()
+Nodes (4): Google Docs export (v001), Google Docs export v001 from the generated thesis review copy, tabids.json maps export keys to live document tabs, Pandoc JSON, export plans, bounded batch requests, text checks and bold run-in headings
 
 ### Community 158 - "Graphify Integration 158"
 Cohesion: 0.60
 Nodes (3): at(), fetch(), search()
 
-### Community 164 - "Project Navigation 164"
+### Community 159 - "Graphify Integration 159"
+Cohesion: 0.60
+Nodes (3): at(), fetch(), search()
+
+### Community 165 - "Project Navigation 165"
 Cohesion: 0.83
 Nodes (3): Job: project checks and review copy, CI workflow, Job: compile thesis PDF with latexmk
 
-### Community 165 - "Supervisor Decisions 165"
+### Community 166 - "Supervisor Decisions 166"
 Cohesion: 0.50
 Nodes (3): D7 — Which language version of a source is captured and coded?, Note 2026-11-04 (evening) — audience check and log rule, Note 2026-11-04 — rule kept, justification stated
 
-### Community 166 - "Supervisor Decisions 166"
+### Community 167 - "Supervisor Decisions 167"
 Cohesion: 0.50
 Nodes (3): D16 — Instrument test on one app before the pilot, Decision 2026-11-04 (night) — taken at the author's instruction, Update 2026-11-05
 
-### Community 167 - "Study Instruments 167"
+### Community 168 - "Study Instruments 168"
 Cohesion: 0.50
 Nodes (3): Applicability (one row per app and component), Decision forms: applicability and potential mismatch, Potential mismatch (`C-MIS`, one row per claim and pathway in its scope)
 
-### Community 168 - "Graphify Integration 168"
+### Community 169 - "Graphify Integration 169"
 Cohesion: 0.83
 Nodes (3): at(), fetch(), search()
 
 ## Knowledge Gaps
-- **1018 isolated node(s):** `Supervisor meeting record template`, `Supervisor input storage conventions`, `Presentation build conventions`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+1013 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1538 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **1024 isolated node(s):** `Supervisor meeting record template`, `Supervisor input storage conventions`, `Presentation build conventions`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+1019 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1544 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **256 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -975,7 +980,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `x()` connect `Graphify Integration 77` to `Graphify Integration 2`, `Graphify Integration 45`, `Graphify Integration 46`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `Supervisor meeting record template`, `Supervisor input storage conventions`, `Presentation build conventions` to the rest of the system?**
-  _1018 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1024 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Supervisor Decisions 0` be split into smaller, more focused modules?**
   _Cohesion score 0.03389830508474576 - nodes in this community are weakly interconnected._
 - **Why does `identifiers()` connect `Graphify Integration 46` to `Graphify Integration 77`?**
@@ -985,14 +990,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `math2u()` connect `Graphify Integration 2` to `Graphify Integration 77`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Should `Graphify Integration 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07727272727272727 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07946127946127945 - nodes in this community are weakly interconnected._
 ## Project extraction scope and cost
 
 AST and structure refreshes are local and make no model calls. Semantic extraction used host agents; their token usage is unavailable, so displayed upstream zero counters are placeholders, not measured costs. No actual session token saving has been measured.
 
 LaTeX sections, inputs, citations and bibliography entries are indexed by the project adapter. PDF nodes describe file inventory only; full paper text, archives and raw/processed data are excluded.
 
-Fresh semantic sources: 89. Sources needing semantic extraction: 77. Local structure remains available for changed files.
+Fresh semantic sources: 89. Sources needing semantic extraction: 78. Local structure remains available for changed files.
 
 Graph health warning: 74 parallel relation variants are simplified by Graphify's simple graph during clustering/traversal. All original relation links and their source evidence are preserved in graph.json via original_links; consult health.json for details. No dangling or missing endpoints are permitted.
 
@@ -1011,6 +1016,7 @@ Graph health warning: 74 parallel relation variants are simplified by Graphify's
 - `00_Admin/Decisions/D19_data-release.md`
 - `00_Admin/Decisions/D20_no-pilot.md`
 - `00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md`
+- `00_Admin/Methodology-Share/Review_shared-methodology.md`
 - `00_Admin/Open-Points.md`
 - `00_Admin/Project-Handoff_2026-10-25.md`
 - `00_Admin/Reviews/Methodology-Deep-Research_2026-11-04/Methodology-Comparison_ad8e02d-vs-final_2026-11-04.html`

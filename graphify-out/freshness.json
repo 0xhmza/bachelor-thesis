@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-05T21:55:29.761052+00:00",
+  "built_at_utc": "2026-11-05T23:19:50.048826+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -107,6 +107,7 @@
     "00_Admin/Decisions/D19_data-release.md",
     "00_Admin/Decisions/D20_no-pilot.md",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md",
+    "00_Admin/Methodology-Share/Review_shared-methodology.md",
     "00_Admin/Open-Points.md",
     "00_Admin/Project-Handoff_2026-10-25.md",
     "00_Admin/Reviews/Methodology-Deep-Research_2026-11-04/Methodology-Comparison_ad8e02d-vs-final_2026-11-04.html",
@@ -373,6 +374,7 @@
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md": "54040706ddf4d41cce8418b3f3b9c3f55b8e526b9d11d9618821ded94e858cdd",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md": "02fb72d5bb4dd805d2e44c5e9893d7ca91e927bbd80ce2928af6f8d0b4e94ff1",
     "00_Admin/Meeting-Notes/TEMPLATE.md": "7eb543b606ac7fa4c707bead98ec47cd3e999ccb3df1986145ca914b78c0186e",
+    "00_Admin/Methodology-Share/Review_shared-methodology.md": "1f0ad93c3aeeb474f62304de684901ea437b19b985c22a1bef777aaf71592973",
     "00_Admin/Open-Points.md": "ddbb147477824e05411041f240fa90cfc03c67742ea1b85e48bed184ea07826c",
     "00_Admin/Project-Handoff_2026-10-25.md": "24e93deb77eff67e7bfdf86279aed2526c6c72ad7ebd9b491b91aac6d916b290",
     "00_Admin/README.md": "896189f0059175f63178feaf4296354ed12a937b574a938fb4582853ab87e761",
@@ -522,9 +524,9 @@
     "scripts/zotero-library/README.md": "eef8bca0480c84047d6059149d0f5bb746145c87d8da2adca0e475c990ab265e"
   },
   "literature_corpus": null,
-  "nodes": 2980,
-  "edges": 4175,
-  "communities": 410,
+  "nodes": 2987,
+  "edges": 4181,
+  "communities": 411,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

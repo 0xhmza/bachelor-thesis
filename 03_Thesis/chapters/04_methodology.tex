@@ -16,6 +16,7 @@ instruments are frozen and validated against human coding. Section~\ref{sec:clos
 closes with ethics, availability and limitations.
 
 \section{Study Design}
+\todo[status=final]{None}
 \label{sec:design}
 The study examines which harms providers communicate in their privacy policies. A harm can only be classified as missing, that is, not communicated, if the app is capable of causing it and the policy does not mention it. The study therefore proceeds in two steps. It first determines which harms are possible, that is, which harms the app’s data practices make it capable of causing. It then analyzes what the policy communicates and compares the two, which identifies the harms that are missing. It has three parts:
 \begin{enumerate}[itemsep=1pt,topsep=3pt]
@@ -64,11 +65,6 @@ describes them afterwards.
   \draw[arr] (tree.south)--(app.north east);
   \draw[arr] (freeze.south)--(code.north east);
 \end{tikzpicture}}
-\todo[inline]{Resolved 4 November 2026: checked against the final text, no longer a draft.
-Upper row: literature review (Section~4.2), generic app with documented functions (4.3.2),
-harm trees (4.3.3), instrument freeze (4.7.1). Lower row, for each app: policy and walkthrough (4.5),
-applicability (4.6.3), two-model coding with human checks and validation (4.6.2, 4.7.2),
-comparison (4.6.5). Every box has its section and every arrow its input.}% a margin \todo cannot go inside a float
 \caption[Workflow of the study]{Workflow of the study, in order of time.}
 \Description{Upper row: literature review, generic app, harm trees, instrument freeze. Lower row:
 privacy policy with store listing and walkthrough feed applicability, then coding by two
@@ -163,8 +159,7 @@ The chapter uses seven terms throughout; each is developed in the section named.
   \item[Applicability] Whether a pathway is possible for a given app, judged from the
     components the app has (Section~\ref{sec:apply}).
 \end{description}
-No human participants are involved; the safeguards for the walkthroughs are set out in
-Section~\ref{sec:ethics}.
+
 
 \section{Literature Review Procedure}
 \label{sec:lit-review}
@@ -265,12 +260,12 @@ a group that the strand requires; the marked groups are joined with AND.}
 \toprule
  & & \multicolumn{8}{c}{\textbf{Term group}} & & \\
 \cmidrule(lr){3-10}
-\textbf{Strand} & \textbf{Sub-question} & D & P & H & C & T & L & A & F & \textbf{Query} & \textbf{From} \\
+\textbf{Strand} & \textbf{Sub-question} & D & P & H & C & T & L & A & F & \textbf{Query} & \textbf{Time Frame} \\
 \midrule
-S1 & LQ1 Harms and capabilities & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & D AND P AND H & 2014 \\
-S2 & LQ2 Communication & $\bullet$ & $\bullet$ & & $\bullet$ & & & & & D AND P AND C & 2014 \\
-S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L AND A & 2022 \\
-S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
+S1 & LQ1 Harms and capabilities & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & D AND P AND H & 2014-2026 \\
+S2 & LQ2 Communication & $\bullet$ & $\bullet$ & & $\bullet$ & & & & & D AND P AND C & 2014-2026 \\
+S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L AND A & 2022-2026 \\
+S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014-2026 \\
 \bottomrule
 \end{tabular*}
 \end{singlespace}
@@ -555,9 +550,8 @@ category.
 
 \subsection{Generic Health-Tracker Reference Model}
 \label{sec:generic-model}
-A harm tree could be based on the \enquote{best app}. No criterion
-says which real app is best, and any real app lacks functions that others have. The
-study therefore builds the tree on a \emph{generic health tracker}: a model that holds
+
+The study builds the tree on a \emph{generic health tracker}: a model that holds
 the functions that the included evidence documents for health trackers. It is not a claim to
 list every function a tracker could have; a function the evidence does not document is missing
 from it. A real app is compared with it function by function. If the model
@@ -593,77 +587,77 @@ trackers. Every part of the model is written as a feature that can be checked on
 app, because this is what makes the model applicable. Connected devices are outside the
 scope of the study, so the model stops at the app and its data.
 
-\begin{figure}[H]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[
-  font=\footnotesize,
-  zone/.style={draw=#1,fill=#1!5,rounded corners=3pt,inner sep=5pt},
-  el/.style={draw=#1,line width=0.9pt,fill=white,rounded corners=2pt,align=center,
-             text width=25mm,minimum height=9mm,inner sep=2pt},
-  ext/.style={draw=originext,dashed,line width=0.8pt,fill=white,rounded corners=2pt,
-              align=center,text width=25mm,minimum height=9mm,inner sep=2pt},
-  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted},
-  lb/.style={font=\scriptsize\bfseries,text=muted}]
-  % Zones first, so that they lie behind the parts
-  \node[zone=black,minimum width=31mm,minimum height=50mm] (zp) at (-5.2,-0.65) {};
-  \node[lb,above] at (zp.north) {Phone};
-  \node[zone=primary,minimum width=31mm,minimum height=50mm] (zv) at (-0.9,-0.65) {};
-  \node[lb,above] at (zv.north) {Provider};
-  \node[zone=originimp,minimum width=31mm,minimum height=63mm] (zt) at (3.4,0) {};
-  \node[lb,above] at (zt.north) {Third parties (\oimp{IM10}: possibly abroad)};
-  \node[zone=originext,minimum width=31mm,minimum height=37mm] (zo) at (7.6,0) {};
-  \node[lb,above] at (zo.north) {Outside};
-  % Phone
-  \node[el=origincore] (log) at (-5.2,1.3) {Logging, sensing\\\ocore{CO1}};
-  \node[el=origincore] (der) at (-5.2,0) {Predictions, insights\\\ocore{CO2}};
-  \node[el=origincore] (hist) at (-5.2,-1.3) {Long history\\\ocore{CO3}};
-  \node[el=originctx] (phone) at (-5.2,-2.6) {Others can use the phone\\\octx{CX1}};
-  % Provider
-  \node[el=originimp] (acc) at (-0.9,1.3) {Account\\\oimp{IM1}};
-  \node[el=originimp] (cloud) at (-0.9,0) {Server copy\\\oimp{IM2}};
-  \node[el=originctx] (net) at (-0.9,-1.3) {Device, network data\\\octx{CX2}};
-  \node[el=originctx] (ids) at (-0.9,-2.6) {Identifiers\\\octx{CX3}};
-  % Third parties
-  \node[el=originimp] (ana) at (3.4,2.6) {Analytics, monitoring\\\oimp{IM3}};
-  \node[el=originimp] (ads) at (3.4,1.3) {Advertising, attribution\\\oimp{IM4}};
-  \node[el=originimp] (pro) at (3.4,0) {Processors\\\oimp{IM5}};
-  \node[el=originimp] (res) at (3.4,-1.3) {Research partners\\\oimp{IM6}};
-  \node[el=originimp] (com) at (3.4,-2.6) {Commercial use\\\oimp{IM7}};
-  % Actors outside
-  \node[ext] (att) at (7.6,1.3) {Attacker\\\oext{EX1}};
-  \node[ext] (aut) at (7.6,0) {Authority\\\oext{EX2}};
-  \node[ext] (ins) at (7.6,-1.3) {Insurer, employer\\\oext{EX3}};
-  % Other parts
-  \node[el=originimp] (loc) at (-5.2,-4.4) {Location, routes\\\oimp{IM8}};
-  \node[el=originimp] (sha) at (-0.9,-4.4) {Sharing with people\\\oimp{IM9}};
-  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}, \oimp{IM14}};
-  \draw[arr] (zp.east|-acc) -- (acc.west);
-  \draw[arr] (zp.east|-cloud) -- (cloud.west);
-  \draw[arr] (zp.east|-net) -- (net.west);
-  \draw[arr] (zp.east|-ids) -- (ids.west);
-  \draw[arr] (zv.east|-ads) -- (ads.west);
-  \draw[arr] (zv.east|-pro) -- (pro.west);
-  \draw[arr] (zv.east|-res) -- (res.west);
-  \draw[arr] (zv.east|-com) -- (com.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-att) -- (att.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-aut) -- (aut.west);
-  \draw[arr,dashed,draw=originext] (zt.east|-ins) -- (ins.west);
-  \draw[arr] (zp.south-|loc) -- (loc.north);
-  \draw[arr] (zv.south-|sha) -- (sha.north);
-  \draw[arr] (zt.south-|cons) -- (cons.north);
-\end{tikzpicture}}
-\caption[The generic health tracker]{The generic health tracker. Each box is a checkable
-part of the model with its component ID (Appendix~\ref{app:reference-model}). Border and
-ID: black, core functionality; blue, digital context; red, implementation choice; grey and
-dashed, an event outside the app. Arrows show where data can go.}
-\Description{Four zones from left to right. Phone: logging, predictions, long history, others
-can use the phone. Provider: account, server copy, device and network data, identifiers. Third
-parties: analytics, advertising, processors, research partners, commercial use, possibly abroad.
-Outside: attacker, authority, insurer or employer. Below: location and routes, sharing with
-people, and tied consent or no way out.}
-\label{fig:generic-app}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\resizebox{\textwidth}{!}{%
+%\begin{tikzpicture}[
+%  font=\footnotesize,
+%  zone/.style={draw=#1,fill=#1!5,rounded corners=3pt,inner sep=5pt},
+%  el/.style={draw=#1,line width=0.9pt,fill=white,rounded corners=2pt,align=center,
+%             text width=25mm,minimum height=9mm,inner sep=2pt},
+%  ext/.style={draw=originext,dashed,line width=0.8pt,fill=white,rounded corners=2pt,
+%              align=center,text width=25mm,minimum height=9mm,inner sep=2pt},
+%  arr/.style={-{Stealth[length=1.5mm]},semithick,draw=muted},
+%  lb/.style={font=\scriptsize\bfseries,text=muted}]
+%  % Zones first, so that they lie behind the parts
+%  \node[zone=black,minimum width=31mm,minimum height=50mm] (zp) at (-5.2,-0.65) {};
+%  \node[lb,above] at (zp.north) {Phone};
+%  \node[zone=primary,minimum width=31mm,minimum height=50mm] (zv) at (-0.9,-0.65) {};
+%  \node[lb,above] at (zv.north) {Provider};
+%  \node[zone=originimp,minimum width=31mm,minimum height=63mm] (zt) at (3.4,0) {};
+%  \node[lb,above] at (zt.north) {Third parties (\oimp{IM10}: possibly abroad)};
+%  \node[zone=originext,minimum width=31mm,minimum height=37mm] (zo) at (7.6,0) {};
+%  \node[lb,above] at (zo.north) {Outside};
+%  % Phone
+%  \node[el=origincore] (log) at (-5.2,1.3) {Logging, sensing\\\ocore{CO1}};
+%  \node[el=origincore] (der) at (-5.2,0) {Predictions, insights\\\ocore{CO2}};
+%  \node[el=origincore] (hist) at (-5.2,-1.3) {Long history\\\ocore{CO3}};
+%  \node[el=originctx] (phone) at (-5.2,-2.6) {Others can use the phone\\\octx{CX1}};
+%  % Provider
+%  \node[el=originimp] (acc) at (-0.9,1.3) {Account\\\oimp{IM1}};
+%  \node[el=originimp] (cloud) at (-0.9,0) {Server copy\\\oimp{IM2}};
+%  \node[el=originctx] (net) at (-0.9,-1.3) {Device, network data\\\octx{CX2}};
+%  \node[el=originctx] (ids) at (-0.9,-2.6) {Identifiers\\\octx{CX3}};
+%  % Third parties
+%  \node[el=originimp] (ana) at (3.4,2.6) {Analytics, monitoring\\\oimp{IM3}};
+%  \node[el=originimp] (ads) at (3.4,1.3) {Advertising, attribution\\\oimp{IM4}};
+%  \node[el=originimp] (pro) at (3.4,0) {Processors\\\oimp{IM5}};
+%  \node[el=originimp] (res) at (3.4,-1.3) {Research partners\\\oimp{IM6}};
+%  \node[el=originimp] (com) at (3.4,-2.6) {Commercial use\\\oimp{IM7}};
+%  % Actors outside
+%  \node[ext] (att) at (7.6,1.3) {Attacker\\\oext{EX1}};
+%  \node[ext] (aut) at (7.6,0) {Authority\\\oext{EX2}};
+%  \node[ext] (ins) at (7.6,-1.3) {Insurer, employer\\\oext{EX3}};
+%  % Other parts
+%  \node[el=originimp] (loc) at (-5.2,-4.4) {Location, routes\\\oimp{IM8}};
+%  \node[el=originimp] (sha) at (-0.9,-4.4) {Sharing with people\\\oimp{IM9}};
+%  \node[el=originimp,text width=32mm] (cons) at (3.4,-4.4) {Tied consent, no way out\\\oimp{IM11}, \oimp{IM12}, \oimp{IM13}, \oimp{IM14}};
+%  \draw[arr] (zp.east|-acc) -- (acc.west);
+%  \draw[arr] (zp.east|-cloud) -- (cloud.west);
+%  \draw[arr] (zp.east|-net) -- (net.west);
+%  \draw[arr] (zp.east|-ids) -- (ids.west);
+%  \draw[arr] (zv.east|-ads) -- (ads.west);
+%  \draw[arr] (zv.east|-pro) -- (pro.west);
+%  \draw[arr] (zv.east|-res) -- (res.west);
+%  \draw[arr] (zv.east|-com) -- (com.west);
+%  \draw[arr,dashed,draw=originext] (zt.east|-att) -- (att.west);
+%  \draw[arr,dashed,draw=originext] (zt.east|-aut) -- (aut.west);
+%  \draw[arr,dashed,draw=originext] (zt.east|-ins) -- (ins.west);
+%  \draw[arr] (zp.south-|loc) -- (loc.north);
+%  \draw[arr] (zv.south-|sha) -- (sha.north);
+%  \draw[arr] (zt.south-|cons) -- (cons.north);
+%\end{tikzpicture}}
+%\caption[The generic health tracker]{The generic health tracker. Each box is a checkable
+%part of the model with its component ID (Appendix~\ref{app:reference-model}). Border and
+%ID: black, core functionality; blue, digital context; red, implementation choice; grey and
+%dashed, an event outside the app. Arrows show where data can go.}
+%\Description{Four zones from left to right. Phone: logging, predictions, long history, others
+%can use the phone. Provider: account, server copy, device and network data, identifiers. Third
+%parties: analytics, advertising, processors, research partners, commercial use, possibly abroad.
+%Outside: attacker, authority, insurer or employer. Below: location and routes, sharing with
+%people, and tied consent or no way out.}
+%\label{fig:generic-app}
+%\end{figure}
 
 \subsection{Reference Harm-Tree Construction}
 \label{sec:harm-trees}
