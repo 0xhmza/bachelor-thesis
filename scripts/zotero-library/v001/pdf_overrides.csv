@@ -1,0 +1,7 @@
+# Bib entries whose PDF cannot be found by author, year and title words.
+# key,file   (one row per file; a file named here belongs to this entry only; file "-" means: no PDF)
+key,file
+wharton1994cognitive,Nielsen_1994_UsabilityInspectionMethods-Book.pdf
+wp292018transparency,Article29WP_2018_TransparencyGuidelinesWP260.pdf
+statcounter2026vendor,StatCounter_2026_MobileVendorGermany_web-capture.pdf
+statcounter2026os,StatCounter_2026_MobileOSGermany_web-capture.pdf

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Import test",
+  "version": "1.0",
+  "description": "throwaway",
+  "applications": {
+    "zotero": {
+      "id": "importtest@example.org",
+      "update_url": "https://example.org/update.json",
+      "strict_min_version": "6.999",
+      "strict_max_version": "99.*"
+    }
+  }
+}

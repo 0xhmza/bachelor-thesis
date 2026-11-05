@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-05T12:08:45.662316+00:00",
+  "built_at_utc": "2026-11-05T12:41:52.354800+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -91,7 +91,6 @@
     "scripts/googleplay-scraper/v004/requirements.txt",
     "scripts/googleplay-scraper/v005/requirements.txt",
     "scripts/instrument-test/v001/README.md",
-    "scripts/project-check/README.md",
     "scripts/sampling-audit/v001/README.md"
   ],
   "needs_semantic_extraction": [
@@ -166,6 +165,7 @@
     "scripts/instrument-test/v002/README.md",
     "scripts/literature-reorg/v001/README.md",
     "scripts/literature-search/README.md",
+    "scripts/project-check/README.md",
     "scripts/validation-sample/v001/README.md"
   ],
   "source_hashes": {
@@ -246,7 +246,7 @@
     "scripts/appstore-scraper/v007/input.json": "accdc31d0d87ec588190d57e21dd363b246bff5844cd6a0022481a228ae63607",
     "scripts/appstore-scraper/v007/scraper.py": "d788221dcd0e96af8754e832a1c5e1384bc7a3ededf05ba3d527416c03b7f536",
     "scripts/build_review_docx.py": "aa3094771a82f6c85e84d2501da3379697ca9fe00d3aec71c937b86f8729dca7",
-    "scripts/check_project.py": "72f46826e0941dc27cd8b7ab6ce3a7c970ec9a3d515994ab3e9d4ec579e40a85",
+    "scripts/check_project.py": "86c29902b35bd23d2f5e6cec005e7b0d2ba1aee2553359b7992066b81e3c87c3",
     "scripts/gdocs-export/v001/gdocs_export.py": "a6bc00a331794fe63bcbbbbea3539a313b25847e9e97a81117a262439511b2e3",
     "scripts/gdocs-export/v001/runin.py": "41f3eb2fb10efe105f44297e1a0a7fd30da562d3f56cd3761974328431e915be",
     "scripts/gdocs-export/v001/tabids.json": "ac96100f8c78c20139fa984977b7bab37697be40ab8592a482d97f21ff5fdadb",
@@ -324,6 +324,9 @@
     "scripts/project-check/v001/check_project.py": "03a8bf9d74c3cfc4c58fa90100aa01aaca8a3f3e0093bbf48ce8f654c349cd35",
     "scripts/project-check/v002/check_project.py": "35f686e5ed5162b38eaaa9ade1ca001f0317c27dd297574cc37f5f62bd697356",
     "scripts/project-check/v002/tests/test_links.py": "cf83f61c5fe167737a0f54de8d7f5e44055892a9978a28c0c28a1ff521013f02",
+    "scripts/project-check/v003/check_project.py": "80d23faae681298a4d199e225124c75d149d4fb9676da3610b014c057d01abbc",
+    "scripts/project-check/v003/tests/test_links.py": "cf83f61c5fe167737a0f54de8d7f5e44055892a9978a28c0c28a1ff521013f02",
+    "scripts/project-check/v003/tests/test_zotero_library.py": "444c236d6316d4a76df3d2606e82145bafe8e20e29648fbf4fe038bec8daae21",
     "scripts/sampling-audit/v001/audit.py": "23918435e86e96561f189b5e3898e943041a2019f5a36238063fb22f5c3e6848",
     "scripts/sampling-checks/v001/check_pool.py": "daf7b6a62243e8ac574a306fc0f84a722280c298886adb6f99426ff7696e9a02",
     "scripts/sampling-checks/v002/pilot_table.py": "2d07b499e2b78117c9f96c753f4cffee170493cb6929953680051a113258acd3",
@@ -331,6 +334,11 @@
     "scripts/validation-sample/v001/check_coverage.py": "874e2fc21343653e7c2d18e4ca968eef8ded948f88838b05ac47fbb0a9b0a4ba",
     "scripts/validation-sample/v001/design.py": "023d35c58ef0de1a0db6173bf5e94be400143f3ee1819a727dcb6f7b75c8246b",
     "scripts/validation-sample/v001/tests/test_design.py": "8ec250513b753ec4b3004b6d5317c72bdb29de3ce6afd8923a1b0d4de23b44b0",
+    "scripts/zotero-library/v001/build_zotero_library.py": "266c5f62c52214960732be9fc3fa7eed9439f9b5c90ee93961ba030671598d7c",
+    "scripts/zotero-library/v001/tests/test_build.py": "0d5a39f364aee495f853cd6623f29965f41f0ec330ce167ec943b1ca71921eea",
+    "scripts/zotero-library/v001/verify/plugin/bootstrap.js": "cb3e3abebbe7c5484fa8de4e3faa1fd129706876838cb50cc8754ce0fb1de11d",
+    "scripts/zotero-library/v001/verify/plugin/manifest.json": "9e75b42d3be35bde5528a22461e7505c72b2373a7e330df11256361aa2927104",
+    "scripts/zotero-library/v001/verify/verify_in_zotero.py": "d823ec1052e31d4f76486ab471b3017b29434e52e5fa0e0ed06dfcaa349624ee",
     "scripts/zotero-pin-keys/v001/apply_pins.py": "142517fa082b6b7f430c8572d93058a9768d865686ad411af721996ad755b40b",
     "scripts/zotero-pin-keys/v001/make_pin_script.py": "cfb52e8dfeddb77475003e691202c4ae3c63210499a82c20d4d688a08dd2c23c",
     ".github/workflows/ci.yml": "7e9c16efe828f34d7ef6eb4c0725b1bb236d31451f0188405b90029a3353cbf2",
@@ -422,7 +430,7 @@
     "05_Data/Literature Search/28. Oct/README.md": "dac9f0c1c7a0ea6ccd7ca4a904c373ccba395c9cc026104d5f84f55add8dde03",
     "05_Data/README.md": "d4c6e982753390047b5e217ff54d3ecb9683396fb9e4bfd0a3ead3cdf29cf47f",
     "06_Presentation/README.md": "0788c9757c7f5a4fcef78795fd1f94869e1d69d5205a87a2cbd4f1bc44045468",
-    "AGENTS.md": "8e3655a2ae65d19e274ca9955d60de506724ecb21db093692d1caa3b71142de6",
+    "AGENTS.md": "23fa43cba85c71f679b2867ea9833c9ec6ffe9f124e14f178951266a0f642ac6",
     "Claude outputs/Methodology-Comparison_ad8e02d-vs-final_2026-11-04.html": "5dc6604a5a998f769d2753c77b07183a9f5703a22a859be0e22c843c69143ec4",
     "Claude outputs/Methodology-Review-Notes.md": "c6586b73831fb255e27b1eec0f27f966ab58070d5ad66cfe2f56c428d1c4553c",
     "Claude outputs/Methodology_Chapter4_2026-11-04.txt": "b679a89f1b98886d65aeb3defb45097ddbb5a928973ea00faf39822b8b569de3",
@@ -446,7 +454,7 @@
     "scripts/instrument-test/v002/README.md": "17f12eec7996fa5b7262e43d202630df536cb77958fec076f58cf70fdfc5edea",
     "scripts/literature-reorg/v001/README.md": "6f4f0adb0ac8c6c77c87894c3d4261448730158593f0692f695f446aecf25a3e",
     "scripts/literature-search/README.md": "8e3caf7f9ee65f262da3ef8597c0f1b6fca13acb5a43ea6eed456f5a8dc9d604",
-    "scripts/project-check/README.md": "ba2305ae307ff18cfd9c4070c7a40a806f61c2598c7440b7c8e83f4bc52242a0",
+    "scripts/project-check/README.md": "b4fafa036c0bf1613a9c7dfeee910cf143961f72cfebeb98cea0a592595beeb4",
     "scripts/sampling-audit/v001/README.md": "604f73aa190f6d117ec62c1d4b579eed8061445cea6950f679c6857b0a83a953",
     "scripts/validation-sample/v001/README.md": "2dfbf6c7fffbf5cf5f3c6d47aa3c135b8cd0a17dab054674a6741c43cba257d8",
     "03_Thesis/appendix/A_codebook.tex": "e0ac267190fd9783f464d30ffc75802412bfec9c7ff421445c8da261b1adc854",
@@ -503,12 +511,13 @@
     "00_Admin/Reviews/Methodology-Submission-Review_2026-11-04/Citation-Audit.md": "f560dd5620fe7a9b813f6af6286ab7c3d1b87caac5a72a184286ad3eaea0634c",
     "01_Literature/review/Gap-Search_2026-10-23.md": "991ac71aa868b5e941c6dc21373892e474ed791c15c15ae537168486b32404ef",
     "01_Literature/review/README.md": "786e542b5cc6e862b7647f2cf1d1156041165d48b3fd68dff647378624317682",
-    "Claude outputs/Methodology-Deep-Research-Report_2026-11-04.md": "16ee16aea1e20c70c3e1d88d20bdb41635944b57378e94e8097dae2d8adda3db"
+    "Claude outputs/Methodology-Deep-Research-Report_2026-11-04.md": "16ee16aea1e20c70c3e1d88d20bdb41635944b57378e94e8097dae2d8adda3db",
+    "scripts/zotero-library/README.md": "38dc54e1e8db615968fce53b85f85d318c5e171c0564475d000f05ce466f4580"
   },
   "literature_corpus": null,
-  "nodes": 2838,
-  "edges": 3954,
-  "communities": 392,
+  "nodes": 2982,
+  "edges": 4193,
+  "communities": 405,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

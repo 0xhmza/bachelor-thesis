@@ -10,6 +10,15 @@
 - The pre-commit hook rebuilds and stages `03_Thesis/Thesis_Review-Copy.docx`
   (the supervisor's copy, made by `scripts/build_review_docx.py`). Never edit
   it by hand.
+- **Keep the Zotero library file in step with the bibliography.** Each time
+  `_shared/references.bib` changes, regenerate `_shared/references-zotero.rdf`
+  with `python scripts/zotero-library/v001/build_zotero_library.py` and commit
+  it in the same commit as the `.bib` change. Compile the thesis first: the
+  `[n]` reference numbers in the file come from `03_Thesis/thesis.bbl`, so
+  regenerate it after citation changes in the thesis too. Never edit it by
+  hand (see `scripts/zotero-library/README.md`); `scripts/check_project.py`
+  warns when it is out of date. Name the newest script version here when a
+  `v002/` appears.
 
 ## Thesis
 
