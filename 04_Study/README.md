@@ -12,6 +12,7 @@ The study domain is health trackers overall ([D15](../00_Admin/Decisions/D15_hea
 | `Ethics/` | Ethics application, approval, consent and information sheets. |
 | `Codebook/` | The coding scheme: every category with definition, examples, and counter-examples. Version it. |
 | `Prompts/` | Every LLM prompt, versioned. See `Prompts/README.md`. |
+| `Methodology-Overview/` | One-page flowchart of the whole method, from the sources to the conclusions (`methodology-overview.html`, rendered to `.pdf` by `scripts/methodology-overview/v001/render_pdf.py`). A summary of Chapter 4; the thesis is authoritative. |
 
 ## Non-negotiables
 

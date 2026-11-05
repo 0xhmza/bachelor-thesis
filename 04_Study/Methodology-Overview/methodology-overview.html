@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Methodology overview: from sources to conclusions</title>
+<!--
+  Overview of the study's method, from the sources to the results and conclusions.
+  Source: 03_Thesis/chapters/04_methodology.tex as of 5 November 2026 (section numbers from that build).
+  It summarises the thesis and adds nothing to it; where the two differ, the thesis is right.
+  PDF: python scripts/methodology-overview/v001/render_pdf.py
+-->
+<style>
+  :root {
+    --lit: #233F5B; --smp: #496D91; --app: #A33B3B; --val: #37665D; --rep: #535B63;
+    --ink: #1d2329; --soft: #5b636b; --line: #7d858d; --gap: 34px; --gut: 34px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink);
+    font: 12px/1.38 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { width: 1720px; padding: 36px 44px 40px; position: relative; }
+  h1 { font-size: 27px; margin: 0 0 4px; letter-spacing: -0.2px; }
+  .sub { color: var(--soft); font-size: 13px; margin-bottom: 16px; max-width: 1350px; }
+  .legend { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; font-size: 12px;
+    margin-bottom: 22px; color: var(--soft); }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .ln { width: 34px; height: 0; border-top: 2px solid var(--line); display: inline-block; }
+  .ln.dash { border-top-style: dashed; }
+
+  .grid { position: relative; display: grid; grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--gut); row-gap: var(--gap); }
+  .lane { position: relative; z-index: 2; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px;
+    padding: 7px 10px; border-radius: 5px; color: #fff; }
+  .phase { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px;
+    color: var(--soft); font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.7px; margin: -8px 0 -18px; }
+  .phase::after { content: ""; flex: 1; border-top: 1px solid #d5d9dd; }
+
+  .card { position: relative; z-index: 2; background: #fff; border: 1.6px solid var(--c);
+    border-left-width: 7px; border-radius: 7px; padding: 9px 11px 10px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04); }
+  .card .hd { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .card h3 { margin: 0 0 5px; font-size: 14.5px; color: var(--c); line-height: 1.22; }
+  .card .sec { font-size: 11px; color: var(--soft); white-space: nowrap; font-weight: 600; }
+  .card ul { margin: 0; padding-left: 15px; }
+  .card li { margin: 1.5px 0; }
+  .card .out { margin-top: 7px; padding-top: 6px; border-top: 1px dashed #cfd4d9; font-size: 11.5px; }
+  .card .out b { color: var(--c); }
+  .card .note { color: var(--soft); font-size: 11px; margin-top: 4px; }
+  .lit { --c: var(--lit); } .smp { --c: var(--smp); } .app { --c: var(--app); }
+  .val { --c: var(--val); } .rep { --c: var(--rep); }
+  .wide { background: #fafbfc; }
+  .tag { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 0 5px; border-radius: 3px;
+    background: var(--c); color: #fff; margin-right: 3px; }
+  .mono { font-family: Consolas, "Courier New", monospace; font-size: 11.5px; }
+  .levels { display: flex; gap: 4px; margin: 5px 0 2px; }
+  .levels div { flex: 1; text-align: center; font-size: 10.5px; padding: 3px 2px; border-radius: 3px;
+    border: 1px solid var(--c); }
+  svg#wires { position: absolute; left: 0; top: 0; z-index: 1; pointer-events: none; overflow: visible; }
+  .foot { margin-top: 26px; color: var(--soft); font-size: 11px; }
+  @page { margin: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Methodology overview: from the sources to the conclusions</h1>
+  <div class="sub">How the thesis answers its research question: which privacy harms health-tracker providers
+  communicate, which they leave out, and how they frame protection. The framework is built once for all apps;
+  the evidence, coding and assessment steps are repeated for each app; the validation covers all coded text.
+  Section numbers refer to Chapter 4 of the thesis, unless a card names another chapter.</div>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--lit)"></i>Literature and analytical framework</span>
+    <span><i class="sw" style="background:var(--smp)"></i>App sample</span>
+    <span><i class="sw" style="background:var(--app)"></i>Evidence, coding and assessment for each app</span>
+    <span><i class="sw" style="background:var(--val)"></i>Validation and error estimates</span>
+    <span><i class="sw" style="background:var(--rep)"></i>Reporting</span>
+    <span><i class="ln"></i>main flow</span>
+    <span><i class="ln dash"></i>input used by a later step</span>
+  </div>
+
+  <div class="grid" id="grid">
+    <!-- Question -->
+    <div class="card rep wide" id="rq" style="grid-column:1/-1">
+      <div class="hd"><h3>Research question and scope</h3><span class="sec">§1.2, §4.1</span></div>
+      <div style="display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px">
+        <div><b>RQ.</b> What types of downstream privacy harms do health-tracker service providers explicitly
+          acknowledge or downplay when describing their privacy practices or PETs, and how do they frame the
+          protection these technologies offer?</div>
+        <ul>
+          <li><b>RQ1 Coverage:</b> which data flows, capabilities and harms are mentioned; which applicable harms are not</li>
+          <li><b>RQ2 Stance:</b> acknowledged, qualified, minimised, denied, or shifted to the user</li>
+          <li><b>RQ3 Protection:</b> claimed measures, their scope and strength, against the reference model</li>
+          <li><b>RQ4 Surfaces:</b> differences between privacy policy and inspected interface</li>
+        </ul>
+        <ul>
+          <li><b>Logic:</b> a harm can be called <i>missing</i> only if the app could cause it, so the study first
+            fixes what is possible, then what is said, then compares the two</li>
+          <li><b>Scope:</b> health trackers on the German market; what apps communicate, not how they behave;
+            companion apps of wearables, not the devices; no user study</li>
+          <li><b>Approach:</b> directed content analysis; surfaces compared as in Malki et al.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lane" style="background:var(--lit)">Literature and framework</div>
+    <div class="lane" style="background:var(--smp)">App sample</div>
+    <div class="lane" style="background:var(--app)">Evidence for each app</div>
+    <div class="lane" style="background:var(--val)">Validation</div>
+
+    <div class="phase">1 · Sources</div>
+    <div class="card lit" id="litsrc" style="grid-column:1">
+      <div class="hd"><h3>Literature search</h3><span class="sec">§4.2.1–4.2.2</span></div>
+      <ul>
+        <li>Four sub-questions LQ1–LQ4: harms and capabilities, communication, language models, framing</li>
+        <li>Eight term groups (D, P, H, C, T, L, A, F) form four strands S1–S4; 2014 (LQ3: 2022) to search date</li>
+        <li><b>Venues</b> listed completely: CCS, IEEE S&amp;P, NDSS, USENIX Security, PoPETs, SOUPS, CHI, CSCW</li>
+        <li><b>Databases:</b> PubMed, IEEE Xplore, arXiv (short anchor queries, strands applied locally), ACL Anthology</li>
+        <li><b>Citation searching:</b> one round backward and forward from four seed papers (OpenCitations, Crossref)</li>
+      </ul>
+      <div class="out"><b>Gives:</b> records with exact strings and hit counts per source (PRISMA-S)</div>
+    </div>
+    <div class="card smp" id="stores" style="grid-column:2">
+      <div class="hd"><h3>Store search</h3><span class="sec">§4.4.1</span></div>
+      <ul>
+        <li><b>Domain:</b> health trackers; scope from Hutton et al. (Quantified Self data types) and Malki et al. (reproductive health)</li>
+        <li><b>Keywords:</b> 15 of Hutton et al. and 12 of Malki et al., each in English and one German translation of the data type</li>
+        <li><b>Stores:</b> Google Play and Apple App Store, German storefronts, one logged-out session each</li>
+      </ul>
+      <div class="out"><b>Gives:</b> frozen store collections with listing fields (read-only, hashed)</div>
+    </div>
+    <div class="card app" id="vendors" style="grid-column:3">
+      <div class="hd"><h3>Device vendors</h3><span class="sec">§4.4.3</span></div>
+      <ul>
+        <li>Preinstalled health apps reach users without a download, so ratings understate them</li>
+        <li><b>Vendor rule:</b> on each platform, the vendor with the largest share of mobile page views in Germany (StatCounter, dated)</li>
+        <li><b>App rule:</b> health apps the vendor provides and installs on its current phones</li>
+      </ul>
+      <div class="out"><b>Gives:</b> the preinstalled group, fixed by its own rule</div>
+    </div>
+    <div class="card val" id="precedent" style="grid-column:4">
+      <div class="hd"><h3>Design principles</h3><span class="sec">§4.1, §4.7</span></div>
+      <ul>
+        <li>Instruments are fixed and frozen <b>before</b> collection and coding</li>
+        <li>Language models code everything; people check every high-stakes label</li>
+        <li>A stratified human-coded sample measures the models' errors and corrects the reported totals</li>
+        <li>Every step leaves a record: strings, logs, frozen collections, versioned bundle (§4.8.2)</li>
+      </ul>
+    </div>
+
+    <div class="phase">2 · Selection</div>
+    <div class="card lit" id="screen" style="grid-column:1">
+      <div class="hd"><h3>Deduplication and screening</h3><span class="sec">§4.2.3</span></div>
+      <ul>
+        <li><b>Merge</b> by DOI or arXiv ID, or same normalised title with years ≤ 1 apart (≤ 3 for arXiv preprints)</li>
+        <li><b>Eligibility C1–C4:</b> research article or review; English; in the period; answers an LQ</li>
+        <li><b>Exclusion rules R1–R8</b> in fixed order (title, abstract, full text); the first that applies is the reason</li>
+        <li>Every decision logged; missing abstracts taken from OpenAlex by DOI</li>
+      </ul>
+      <div class="out"><b>Gives:</b> included studies and a PRISMA 2020 flow</div>
+    </div>
+    <div class="card smp" id="elig" style="grid-column:2">
+      <div class="hd"><h3>Eligibility of listings</h3><span class="sec">§4.4.1</span></div>
+      <ul>
+        <li><b>E1</b> records the user's own health or body data over time</li>
+        <li><b>E2</b> consumer app for the general public</li>
+        <li><b>E3</b> free to install &nbsp; <b>E4</b> listing in German or English</li>
+        <li><b>E5</b> not a DiGA (checked against the BfArM directory)</li>
+        <li>Checked on the German listing, in rank order; each decision logged with its reason</li>
+      </ul>
+    </div>
+    <div class="card smp" id="rank" style="grid-column:3">
+      <div class="hd"><h3>Cross-store matching and ranking</h3><span class="sec">§4.4.2</span></div>
+      <ul>
+        <li><b>Same app:</b> same branded product for the same use (Steinböck et al.), proposed from several signals, decided by hand</li>
+        <li><b>Popularity score <span class="mono">P<sub>i</sub></span>:</b> Google Play written reviews <span class="mono">v<sub>i</sub></span>
+          and App Store ratings <span class="mono">r<sub>i</sub></span>, converted by one factor <span class="mono">c</span></li>
+        <li>German feedback counts are the only count available for the German market; a proxy, tested by sensitivity checks</li>
+      </ul>
+    </div>
+    <div class="card smp" id="select" style="grid-column:4">
+      <div class="hd"><h3>Provider rule and sensitivity checks</h3><span class="sec">§4.4.3</span></div>
+      <ul>
+        <li><b>One app per provider:</b> a listing is skipped if its developer is already in the sample</li>
+        <li>Preinstalled group added by its own rule</li>
+        <li><b>Sensitivity:</b> rerun with one rule changed at a time (developer rule, platform weights, score, search depth, keywords); changed providers and listings reported</li>
+      </ul>
+    </div>
+
+    <div class="phase">3 · Instruments, built once</div>
+    <div class="card lit" id="extract" style="grid-column:1">
+      <div class="hd"><h3>Extraction and synthesis</h3><span class="sec">§4.2.4</span></div>
+      <ul>
+        <li>Per study: sub-question, app domain, material studied, venue type (fixed keyword rules)</li>
+        <li>From full texts: parts of the RQ informed, harms named, and for LQ1 the <b>capabilities</b> with the data they need and the actor</li>
+        <li>Counts by year and venue, evidence map, prose summary per LQ</li>
+      </ul>
+      <div class="out"><b>Gives:</b> capability table (K1–K8), harms, method precedents</div>
+    </div>
+    <div class="card lit" id="model" style="grid-column:2">
+      <div class="hd"><h3>Harm concepts and generic tracker</h3><span class="sec">§4.3.1–4.3.2</span></div>
+      <ul>
+        <li><b>Vocabulary</b> of Knabenhans et al.: system components → capabilities → harms</li>
+        <li><b>Harm:</b> impairment of an entity's ability to function, against the user without the modelled pathway</li>
+        <li><b>Categories:</b> physical, economic, psychological, autonomy, discrimination, reputational, societal; relationship tag</li>
+        <li><b>Generic health tracker:</b> functions (logging, insights, accounts, analytics, advertising, processors, research, sale, location, sharing, transfers), their data stores and flows, and the actors who reach them</li>
+      </ul>
+    </div>
+    <div class="card lit" id="trees" style="grid-column:3">
+      <div class="hd"><h3>Reference harm trees</h3><span class="sec">§4.3.3</span></div>
+      <ul>
+        <li><b>Pathway:</b> components that together enable a capability that results in a harm; AND / OR operators</li>
+        <li><b>Origins:</b> core functionality, digital context, implementation choice; grey for events outside the app</li>
+        <li>Sources: tracker literature plus the review's capabilities; each link <i>documented</i> or <i>argued</i></li>
+        <li>Added capabilities: a person close to the user, sorting into classes, incapabilities (no delete, export or stop)</li>
+        <li>Machine-readable; a tested script checks every node</li>
+      </ul>
+    </div>
+    <div class="card val" id="freeze" style="grid-column:4">
+      <div class="hd"><h3>Tree check and instrument freeze</h3><span class="sec">§4.7.1</span></div>
+      <ul>
+        <li><b>Second person</b> checks every pathway: source supports the link; components suffice; the actor has access</li>
+        <li><b>One versioned bundle:</b> reference model and trees, codebook, prompts and schemas, human coding sheets, sampling manifest, walkthrough protocol, decision forms</li>
+        <li>Later changes logged; affected material recoded</li>
+      </ul>
+      <div class="out"><b>Gives:</b> the frozen yardstick used for every app</div>
+    </div>
+
+    <div class="phase">4 · Evidence for each app</div>
+    <div class="card smp" id="sample" style="grid-column:1">
+      <div class="hd"><h3>The sample</h3><span class="sec">§4.4</span></div>
+      <ul>
+        <li><b>Target: 50 apps</b>, in line with 20–64 in comparable studies</li>
+        <li>Three groups: preinstalled by major vendors, Google Play, Apple App Store</li>
+        <li>Frozen collections and sampling manifest; later work reads these</li>
+      </ul>
+    </div>
+    <div class="card app" id="policy" style="grid-column:2">
+      <div class="hd"><h3>Privacy policy and store listing</h3><span class="sec">§4.5.1</span></div>
+      <ul>
+        <li>Policy sought through the listing, then the provider's website; saved with SHA-256, capture date and stated date</li>
+        <li>No policy: the app stays and the absence is reported; a shared policy is coded once</li>
+        <li><b>Language:</b> English version that applies in Germany first, else German; both captured and differences logged</li>
+        <li>Store listing: evidence for applicability only</li>
+      </ul>
+    </div>
+    <div class="card app" id="walk" style="grid-column:3">
+      <div class="hd"><h3>Cognitive walkthrough</h3><span class="sec">§4.5.2</span></div>
+      <ul>
+        <li>By hand, for every app; throwaway account, synthetic data only; Android if the app is in both stores (proposed)</li>
+        <li>Setup → onboarding before consent → account → <b>tasks T1–T7</b>: what is collected, what is derived,
+          what if exposed, reach the policy, turn off sharing, export, delete</li>
+        <li>Each step asks Q1–Q4 (Wharton et al.); route search stops after five minutes; barriers recorded</li>
+      </ul>
+      <div class="out"><b>Gives:</b> interface text · findability per task · applicability evidence</div>
+    </div>
+    <div class="card app" id="units" style="grid-column:4">
+      <div class="hd"><h3>Coding units</h3><span class="sec">§4.6.1</span></div>
+      <ul>
+        <li>One policy paragraph or one coherent block of interface text, fixed by a script before coding</li>
+        <li>Adjacent text for context; every label quotes its exact span</li>
+        <li>Policy and interface text form one corpus of units</li>
+      </ul>
+    </div>
+
+    <div class="phase">5 · Coding</div>
+    <div class="card app" id="axes" style="grid-column:1/3">
+      <div class="hd"><h3>Three coding axes (codebook)</h3><span class="sec">§4.6.1</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+        <div><span class="tag">A</span><b>Coverage</b><ul><li>component, capability, concrete harm, generic risk, additional details</li><li>polarity kept: asserted, possible or denied</li></ul></div>
+        <div><span class="tag">B</span><b>Stance</b> toward a named harm<ul><li>acknowledged, qualified, minimised, responsibility shifted, denied or prevented</li><li>judged from wording, never from intent</li></ul></div>
+        <div><span class="tag">C</span><b>Protection</b><ul><li>measure and scope; framing and strength</li><li>reassurance; potential mismatch (human-reviewed)</li></ul></div>
+      </div>
+    </div>
+    <div class="card app" id="llm" style="grid-column:3/5">
+      <div class="hd"><h3>Two language models and the human check</h3><span class="sec">§4.6.2</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <ul>
+          <li>Two models from <b>different families</b>, same codebook and prompts, every unit; fixed and frozen before coding (proposed)</li>
+          <li>Stage 1 nodes, harms and risks · Stage 2 stance · Stage 3 protection details</li>
+          <li>A script checks each quoted span; an invalid span counts as a model failure; <i>uncertain</i> never becomes negative</li>
+        </ul>
+        <ul>
+          <li><b>Routine labels</b> (components, capabilities, measures): kept if both agree, else kept as uncertain</li>
+          <li><b>High-stakes labels</b> (harms, risks, stance, framing, reassurance): union of both, and a person checks every one without seeing the models' labels</li>
+          <li>Applicability, minimisation and mismatch: decided by people only</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">6 · Assessment for each app</div>
+    <div class="card app" id="step1" style="grid-column:1">
+      <div class="hd"><h3>Step 1 · Applicability</h3><span class="sec">§4.6.3</span></div>
+      <ul>
+        <li>Each component of the model: <b>present</b>, <b>absent</b> or <b>uncertain</b>, with evidence (policy, listing, walkthrough) and a reason</li>
+        <li>Text shows a feature exists, not that it works; a non-finding does not prove absence</li>
+      </ul>
+      <div class="out"><b>Gives:</b> the app's applicable pathways</div>
+    </div>
+    <div class="card app" id="step2" style="grid-column:2">
+      <div class="hd"><h3>Step 2 · Coverage</h3><span class="sec">§4.6.4</span></div>
+      <ul><li>For each applicable pathway and surface, the highest level the text reaches:</li></ul>
+      <div class="levels"><div>0 silent</div><div>1 component</div><div>2 capability</div><div style="background:var(--c);color:#fff">3 harm</div></div>
+      <ul><li>Denied nodes count as mentioned; the denial is shown beside the level</li><li>Only level 3 carries a stance (Axis B)</li></ul>
+    </div>
+    <div class="card app" id="step3" style="grid-column:3">
+      <div class="hd"><h3>Step 3 · Protection claims</h3><span class="sec">§4.6.4</span></div>
+      <ul>
+        <li>The author names the component a claimed measure would remove</li>
+        <li>A script sets it to absent and evaluates the trees again</li>
+        <li>A pathway within the claim's scope that stays open is a <b>potential mismatch</b> candidate; the author decides and writes down why</li>
+      </ul>
+    </div>
+    <div class="card val" id="vsample" style="grid-column:4">
+      <div class="hd"><h3>Validation sample</h3><span class="sec">§4.7.2</span></div>
+      <ul>
+        <li>Target: all coding units of all apps; after the models have coded</li>
+        <li>Strata in order: <b>V1</b> models disagree · <b>V2</b> uncertain label · <b>V3</b> harm vocabulary, no high-stakes label · <b>V4</b> interface unit · <b>V5</b> the rest</li>
+        <li>Simple random draw per stratum with a recorded seed</li>
+        <li><b>Two human coders</b> (author and second coder), blind to model output; Krippendorff's α before discussion</li>
+      </ul>
+    </div>
+
+    <div class="phase">7 · Figures for each research question</div>
+    <div class="card rep" id="compare" style="grid-column:1/4">
+      <div class="hd"><h3>Comparison and reporting by research question</h3><span class="sec">§4.6.5</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <ul>
+          <li><b>RQ1:</b> per harm, only applicable apps with their core sources captured; the app is the primary unit, each app weighted equally</li>
+          <li><b>RQ2:</b> stance of each named harm, with its evidence</li>
+          <li><b>RQ3:</b> claimed measures, scope, strength and potential mismatches</li>
+        </ul>
+        <ul>
+          <li><b>RQ4:</b> same codes on policy and interface; at onboarding and the privacy settings, text shown directly, behind a link or not found</li>
+          <li>Missing policies, retrieval failures and blocked inspections reported apart; task-specific denominators</li>
+          <li>Results are descriptive</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card val" id="estimate" style="grid-column:4">
+      <div class="hd"><h3>Error estimates and corrections</h3><span class="sec">§4.7.2</span></div>
+      <ul>
+        <li>Precision and recall per code, model and combination rule; beta intervals for small counts</li>
+        <li><b>Corrected totals:</b> <span class="mono">T̂ = Σ<sub>U</sub> g<sub>i</sub> + Σ<sub>S</sub> (y<sub>i</sub> − g<sub>i</sub>)/π<sub>i</sub></span></li>
+        <li>App and pathway figures: detection summaries with the unit miss rate beside them</li>
+        <li><b>Absence claims</b> stated with recall; under 20 reference positives: "not found", not "absent"</li>
+      </ul>
+    </div>
+
+    <div class="phase">8 · Results (Chapter 5)</div>
+    <div class="card rep" id="r1" style="grid-column:1">
+      <div class="hd"><h3>5.1 Literature review</h3><span class="sec">Ch. 5</span></div>
+      <ul><li>Search and screening flow</li><li>What the literature shows: years, venues, evidence maps, capabilities</li></ul>
+    </div>
+    <div class="card rep" id="r2" style="grid-column:2">
+      <div class="hd"><h3>5.2 Sample · 5.3 Reference model</h3><span class="sec">Ch. 5</span></div>
+      <ul><li>How the sample was drawn; sensitivity checks</li><li>The generic tracker and harm trees as built and checked</li></ul>
+    </div>
+    <div class="card rep" id="r3" style="grid-column:3/5">
+      <div class="hd"><h3>5.4–5.6 What privacy communication covers, what it omits, and differences</h3><span class="sec">Ch. 5</span></div>
+      <ul>
+        <li>Coverage levels and named harms (RQ1), stance (RQ2), protection claims (RQ3), with corrected estimates and stated recall</li>
+        <li>Harms applicable but not reached; policy versus interface (RQ4); differences across platforms and categories</li>
+      </ul>
+    </div>
+
+    <div class="phase">9 · Interpretation</div>
+    <div class="card rep" id="disc" style="grid-column:1/3">
+      <div class="hd"><h3>Discussion</h3><span class="sec">Ch. 6</span></div>
+      <ul>
+        <li>Answering the research questions</li>
+        <li>Implications for users, for providers and designers, and for regulation</li>
+        <li>Within the permissible conclusions of §4.8.3: text shows that a feature is claimed, not that it is true; no claims about intent, actual harms or effects on users</li>
+      </ul>
+    </div>
+    <div class="card rep" id="concl" style="grid-column:3/5">
+      <div class="hd"><h3>Conclusion</h3><span class="sec">Ch. 7</span></div>
+      <ul><li>Summary of the findings</li><li>Future work</li></ul>
+    </div>
+
+    <div class="card rep wide" id="frame" style="grid-column:1/-1">
+      <div class="hd"><h3>Throughout: ethics, availability and limitations</h3><span class="sec">§4.8</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px">
+        <div><b>Ethics.</b> No human participants: public documents and the researcher's own use of public apps; store terms checked; throwaway accounts and synthetic data only.</div>
+        <div><b>Availability.</b> Search strings, screening log, frozen store collections and scripts, captured policies, recordings and transcripts, the instrument bundle and raw model output are kept.</div>
+        <div><b>Limitations.</b> Sample favours free, popular apps; dated snapshot and selected paths; trees depend on the literature; unit figures are estimates; English first.</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Summary of Chapter 4 of the thesis as of 5 November 2026; the thesis text is authoritative.</div>
+</div>
+
+<script>
+// Arrows: [from, to, style]. Routed orthogonally through the row and column gaps.
+const EDGES = [
+  ["rq", "litsrc"], ["rq", "stores"], ["rq", "vendors"],
+  ["litsrc", "screen"], ["screen", "extract"], ["extract", "model"], ["model", "trees"], ["trees", "freeze"],
+  ["stores", "elig"], ["elig", "rank"], ["rank", "select"], ["vendors", "select", "dash"],
+  ["select", "sample"], ["sample", "policy"], ["policy", "walk"], ["walk", "units"],
+  ["policy", "units", "dash"],
+  ["units", "llm"], ["freeze", "llm", "dash"], ["axes", "llm", "dash"],
+  ["trees", "step1", "dash"], ["walk", "step1", "dash"],
+  ["step1", "step2"], ["llm", "step2"], ["step2", "step3"],
+  ["llm", "vsample"], ["vsample", "estimate"],
+  ["step3", "compare"], ["estimate", "compare"], ["walk", "compare", "dash"],
+  ["extract", "r1", "dash"], ["sample", "r2", "dash"], ["trees", "r2", "dash"],
+  ["compare", "r3"], ["r1", "disc"], ["r2", "disc"], ["r3", "disc"], ["disc", "concl"]
+];
+
+function draw() {
+  const grid = document.getElementById("grid");
+  const g = grid.getBoundingClientRect();
+  const svgNS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(svgNS, "svg");
+  svg.id = "wires";
+  svg.setAttribute("width", g.width);
+  svg.setAttribute("height", g.height);
+  const defs = document.createElementNS(svgNS, "defs");
+  defs.innerHTML = '<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5f676f"/></marker>';
+  svg.appendChild(defs);
+  const box = id => {
+    const r = document.getElementById(id).getBoundingClientRect();
+    return { l: r.left - g.left, r: r.right - g.left, t: r.top - g.top, b: r.bottom - g.top,
+             cx: (r.left + r.right) / 2 - g.left, cy: (r.top + r.bottom) / 2 - g.top };
+  };
+  const used = {};
+  const lane = (key) => { used[key] = (used[key] || 0) + 1; return (used[key] - 1) * 6; };
+  const gut = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--gut"));
+  EDGES.forEach(([a, b, style], idx) => {
+    const A = box(a), B = box(b);
+    let d;
+    const sameRow = Math.abs(A.t - B.t) < 4;
+    if (sameRow) {
+      // side to side through the column gap
+      const y = Math.min(A.b, B.b, A.cy + 18, B.cy + 18) - 22 + lane("row" + Math.round(A.t)) ;
+      const yA = Math.min(Math.max(A.t + 26, A.cy - 10 + lane("ys" + a)), A.b - 10);
+      if (A.r < B.l) d = `M${A.r},${yA} H${B.l - 2}`;
+      else d = `M${A.l},${yA} H${B.r + 2}`;
+    } else if (A.l <= B.l + 1 && A.r >= B.r - 1 && A.r - A.l > B.r - B.l + 40) {
+      // a card that spans the target's column: straight down
+      d = `M${B.cx},${A.b} V${B.t - 2}`;
+    } else {
+      // down: leave from the bottom, run in the gap above the target
+      const off = lane("out" + a) - 6;
+      const x0 = Math.min(Math.max(A.cx + off * 2, A.l + 14), A.r - 14);
+      const x1 = Math.min(Math.max(B.cx + lane("in" + b) * 2 - 6, B.l + 14), B.r - 14);
+      const gapBelowA = A.b + 10 + lane("gb" + Math.round(A.b));
+      const gapAboveB = B.t - 12 - lane("ga" + Math.round(B.t));
+      if (Math.abs(gapAboveB - A.b) < 40) {
+        const ym = (A.b + B.t) / 2 + lane("mid" + Math.round(A.b)) - 4;
+        d = `M${x0},${A.b} V${ym} H${x1} V${B.t - 2}`;
+      } else {
+        // route through the gutter right of the source card, or left of the grid edge
+        let xg = A.r + gut / 2 + lane("gut" + Math.round(A.r)) - 4;
+        if (xg > g.width - 4) xg = A.l - gut / 2 - lane("gutl" + Math.round(A.l));
+        d = `M${x0},${A.b} V${gapBelowA} H${xg} V${gapAboveB} H${x1} V${B.t - 2}`;
+      }
+    }
+    const p = document.createElementNS(svgNS, "path");
+    p.setAttribute("d", d);
+    p.setAttribute("fill", "none");
+    p.setAttribute("stroke", style === "dash" ? "#8a9299" : "#5f676f");
+    p.setAttribute("stroke-width", style === "dash" ? "1.4" : "1.8");
+    if (style === "dash") p.setAttribute("stroke-dasharray", "5 4");
+    p.setAttribute("marker-end", "url(#ah)");
+    svg.appendChild(p);
+  });
+  grid.appendChild(svg);
+  document.body.setAttribute("data-drawn", "1");
+}
+window.addEventListener("load", () => requestAnimationFrame(draw));
+</script>
+</body>
+</html>
