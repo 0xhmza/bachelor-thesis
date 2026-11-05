@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-05T18:09:50.509232+00:00",
+  "built_at_utc": "2026-11-05T18:38:13.844338+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -369,7 +369,7 @@
     "00_Admin/Decisions/D19_data-release.md": "33d29b341f3ca18743905a486472b46652257a342ede3da9a53fab18b676f553",
     "00_Admin/Decisions/D20_no-pilot.md": "4445e0746ddcbade0b9f66eec47485096b858aff77bc582aed489d9da0db477c",
     "00_Admin/Decisions/D21_search-term-check.md": "c166d12bbe8b113997a0284f7a3df632532892c20f51c51a62994fdb7aa1b1c6",
-    "00_Admin/Decisions/D22_search-term-development.md": "48b8f27e375e652a70f90d0329eae4dcd87abfad4fde73624588d3fbc057b216",
+    "00_Admin/Decisions/D22_search-term-development.md": "98db2ac1c4d980603508a43fd07f3cac0ba14b2c6e7d7da9dd60f531658a662f",
     "00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md": "547687cc5ad5918680130ab9fedf2d971ab9ba2ea4e5c02c5a58a68aa3782b2b",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md": "54040706ddf4d41cce8418b3f3b9c3f55b8e526b9d11d9618821ded94e858cdd",
     "00_Admin/Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md": "02fb72d5bb4dd805d2e44c5e9893d7ca91e927bbd80ce2928af6f8d0b4e94ff1",
@@ -475,7 +475,7 @@
     "03_Thesis/chapters/01_introduction.tex": "6f758c4870985242198935a69c4c7544169fdcf9bac74c4175edfb03bf6f1134",
     "03_Thesis/chapters/02_background.tex": "d6fb35df8df1f6411376835a386edcc112ffacf88bdc18b11b6af45775acfbbb",
     "03_Thesis/chapters/03_related_work.tex": "9e54a1da15740a4a44a6bc918a48de20a11e5501fe1114e6fb2b818b9bd44f2b",
-    "03_Thesis/chapters/04_methodology.tex": "4988ebd06554f2a946721393b203c95877c0cbf2bc7d8fd05f984eca9ee4fc27",
+    "03_Thesis/chapters/04_methodology.tex": "e755711c47e3ae1195b1d605248646a2931d87c081eaf61857e2c17c49d85e3c",
     "03_Thesis/chapters/05_results.tex": "d59e749da281a95f1147465d391498f20cc9847c3e2cccd7219fc56b782d8221",
     "03_Thesis/chapters/06_discussion.tex": "aa8c654de0ff7c83d68659d12b0c5d707fc369014e46de3a55dca65bbc9f1f67",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
@@ -519,7 +519,7 @@
     "01_Literature/review/Gap-Search_2026-10-23.md": "991ac71aa868b5e941c6dc21373892e474ed791c15c15ae537168486b32404ef",
     "01_Literature/review/README.md": "786e542b5cc6e862b7647f2cf1d1156041165d48b3fd68dff647378624317682",
     "Claude outputs/Methodology-Deep-Research-Report_2026-11-04.md": "16ee16aea1e20c70c3e1d88d20bdb41635944b57378e94e8097dae2d8adda3db",
-    "scripts/zotero-library/README.md": "38dc54e1e8db615968fce53b85f85d318c5e171c0564475d000f05ce466f4580"
+    "scripts/zotero-library/README.md": "2c9e11dd04ac2766809defd31a93ae78501e8cbfe83546afbef7cace2d0b4b0f"
   },
   "literature_corpus": null,
   "nodes": 3003,
