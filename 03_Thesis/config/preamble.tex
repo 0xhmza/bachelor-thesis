@@ -140,6 +140,47 @@
 \xpatchcmd{\@todo}{thick,}{line width=0.4pt,}{}{%
   \PackageWarning{preamble}{todonotes leader line not restyled}}
 \makeatother
+
+% Status notes: \todo[status=<s>]{text}. A status makes the note inline,
+% colours it by status and prints the status as a bold label before the
+% text; an empty text leaves the label alone. A note without status keeps
+% the amber margin style above. One status per note; the colour is never the
+% only signal, the label always names the status. Each status has one
+% meaning and one next step:
+%   final       checked and closed; nothing more is planned
+%   pending     waits for a decision or confirmation by the author
+%   unreviewed  written, but not yet checked (for example by an assistant)
+%   revise      a known fault or gap to repair before submission
+%   missing     not written yet
+% To add a status, add one \todostatus@new line below (key, label, border,
+% fill and text colour as HTML); scripts/build_review_docx.py and
+% scripts/project-check read the same word after status=.
+\makeatletter
+\newcommand{\todostatus@new}[5]{%
+  \definecolor{tdstatus-#1-line}{HTML}{#3}%
+  \definecolor{tdstatus-#1-fill}{HTML}{#4}%
+  \definecolor{tdstatus-#1-text}{HTML}{#5}%
+  \expandafter\def\csname todostatus@#1@label\endcsname{#2}}
+\todostatus@new{final}{Final}{2E7D5B}{E4F3EB}{17402D}
+\todostatus@new{pending}{Pending}{D9952E}{FFF5E1}{4A3410}
+\todostatus@new{unreviewed}{Unreviewed}{496D91}{E8EFF6}{1F3750}
+\todostatus@new{revise}{Revise}{C0502D}{FBE8E0}{5A1F10}
+\todostatus@new{missing}{Missing}{6B7280}{EEEFF1}{33383F}
+\define@key{todonotes}{status}{%
+  \ifcsname todostatus@#1@label\endcsname
+    \setkeys{todonotes}{inline,
+      backgroundcolor=tdstatus-#1-fill, bordercolor=tdstatus-#1-line,
+      linecolor=tdstatus-#1-line, textcolor=tdstatus-#1-text}%
+    \let\todostatus@body\@todonotes@text
+    \renewcommand{\@todonotes@text}{%
+      {\bfseries\csname todostatus@#1@label\endcsname
+        \ifdefempty{\todostatus@body}{}{:}}%
+      \ifdefempty{\todostatus@body}{}{\ \todostatus@body}}%
+  \else
+    \PackageError{preamble}{Unknown todo status `#1'}%
+      {Use final, pending, unreviewed, revise or missing.}%
+  \fi}
+\makeatother
 \usepackage{soul}
 
 % Harm trees. Origin of a component, after Knabenhans et al. (their Fig. 4):

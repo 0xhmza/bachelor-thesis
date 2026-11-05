@@ -455,7 +455,13 @@ def inline(s, ctx, fmt=frozenset()):
                 continue
             if name == 'todo' and arg is not None:
                 flush()
-                runs.extend((t, f | {'todo', 'b'}, l) for t, f, l in inline('[TODO: ' + arg + ']', ctx, fmt))
+                # \todo[status=pending]{...} is shown as [Pending: ...]; a closed note
+                # (final) is bold only, not red on yellow, so it does not read as open.
+                st = re.search(r'status\s*=\s*([A-Za-z]+)', opt or '')
+                label = st.group(1).capitalize() if st else 'TODO'
+                flags = {'b'} if st and st.group(1) == 'final' else {'todo', 'b'}
+                text = '[' + label + (': ' + arg if arg.strip() else '') + ']'
+                runs.extend((t, f | flags, l) for t, f, l in inline(text, ctx, fmt))
                 i = j
                 continue
             if name == 'href' and arg is not None:

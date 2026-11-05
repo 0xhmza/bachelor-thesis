@@ -108,15 +108,27 @@ def check_reading(keys):
         info.append(f'reading: {len(done)} of {len(rows)} works read or noted')
 
 
+TODO_STATUSES = ('final', 'pending', 'unreviewed', 'revise', 'missing')  # keep in step with config/preamble.tex
+
+
 def check_todos():
     total = 0
     parts = []
+    by_status = {}
     for f in tex_files():
-        n = len(re.findall(r'\\todo(?:\[[^\]]*\])?\{', strip_comments(f.read_text(encoding='utf-8'))))
-        if n:
-            parts.append(f'{f.stem} {n}')
-            total += n
+        found = re.findall(r'\\todo(?:\[([^\]]*)\])?\{', strip_comments(f.read_text(encoding='utf-8')))
+        for opts in found:
+            m = re.search(r'status\s*=\s*([A-Za-z]+)', opts)
+            key = m.group(1) if m else 'no status'
+            by_status[key] = by_status.get(key, 0) + 1
+            if m and key not in TODO_STATUSES:
+                errors.append(f'{f.name}: unknown todo status "{key}" (use {", ".join(TODO_STATUSES)})')
+        if found:
+            parts.append(f'{f.stem} {len(found)}')
+            total += len(found)
     info.append(f'TODO markers: {total} ({", ".join(parts)})' if total else 'TODO markers: none')
+    if any(k != 'no status' for k in by_status):
+        info.append('TODO statuses: ' + ', '.join(f'{k} {n}' for k, n in sorted(by_status.items())))
 
 
 def check_review_copy():
