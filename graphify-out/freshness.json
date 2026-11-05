@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-05T21:49:10.701115+00:00",
+  "built_at_utc": "2026-11-05T21:52:27.087278+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -148,6 +148,7 @@
     "04_Study/Instrument/human_coding_sheet_v1.md",
     "04_Study/Instrument/human_coding_sheet_v2.md",
     "04_Study/Instrument/walkthrough_protocol.md",
+    "04_Study/Methodology-Overview/methodology-overview-simple.html",
     "04_Study/Methodology-Overview/methodology-overview.html",
     "04_Study/Prompts/README.md",
     "04_Study/Prompts/stage1_coverage_v2.md",
@@ -323,6 +324,7 @@
     "scripts/literature-search/v003/tests/test_report.py": "5fe0107e06757fc7302fcdae62e9cbf6ab91af03064bd38f0eaa6618257c1456",
     "scripts/literature_index.py": "395d759b4e6e29d4f165b8e2ad6de2e73e37f3e9634175a6c6a8f07b48d06f98",
     "scripts/methodology-overview/v001/render_pdf.py": "55f144496e378a88ec33d79c442db6288291f9a372c7a5b2080d565912ea39da",
+    "scripts/methodology-overview/v002/render_pdf.py": "0d2f033dde2c2591fe6cafd4725d89d7f72d6f26b9158e49236d20fa3b98c1c2",
     "scripts/project-check/v001/check_project.py": "03a8bf9d74c3cfc4c58fa90100aa01aaca8a3f3e0093bbf48ce8f654c349cd35",
     "scripts/project-check/v002/check_project.py": "35f686e5ed5162b38eaaa9ade1ca001f0317c27dd297574cc37f5f62bd697356",
     "scripts/project-check/v002/tests/test_links.py": "cf83f61c5fe167737a0f54de8d7f5e44055892a9978a28c0c28a1ff521013f02",
@@ -416,7 +418,8 @@
     "04_Study/Instrument/human_coding_sheet_v1.md": "cf137780de39ec6ea6273b8278216101ed267be9261391351fbcd8f689f6ebc8",
     "04_Study/Instrument/human_coding_sheet_v2.md": "e09bffa3b6758654b887be95e7c75ffd60ceed6ab4778cc3cbf99c2ea062d512",
     "04_Study/Instrument/walkthrough_protocol.md": "33c28c02e84f9896d3549712daec2e17b626c78c4aaaabac42fbeccbab503400",
-    "04_Study/Methodology-Overview/methodology-overview.html": "0bc3a26946b71538d0b1e79daceb268c321d727a2920830f32beac084ca8f73a",
+    "04_Study/Methodology-Overview/methodology-overview-simple.html": "69cd1fa46d8eb1a1ee9b93dc2edf14c184244afd22cdea3d48f1dd9e72059bf4",
+    "04_Study/Methodology-Overview/methodology-overview.html": "e90aee4f465cf54a41a5c1699259848847d186c0a45084c51b66e423a0234d77",
     "04_Study/Prompts/README.md": "c6784cc238766d6010cfba385fce586a9fe4d4af4f8352fec4410cc353e6ca07",
     "04_Study/Prompts/run_log.md": "7b65cdb9ba9e207f8ee0662f6f2c168387c7d27a665130e292543b2db8198382",
     "04_Study/Prompts/stage1_coverage_v1.md": "8bcd7e93ae22d3c080857b14d60481871e70c0cdbae520181f62edd84bf52d91",
@@ -427,7 +430,7 @@
     "04_Study/Prompts/stage2_stance_v2.md": "bad03a77427474fb7a1d210129c3d6829381086edcf4624b2dd2c29146c1ddb0",
     "04_Study/Prompts/stage3_protection_v1.md": "09e27db99df425f859f16a9a258c7a7c3e4cb9a11eb356135b0d2795b4ecf8fe",
     "04_Study/Prompts/stage3_protection_v2.md": "fa9b5c542b4acd9ea57b166ec8232397b658b242781041b920ccff1553dce4cd",
-    "04_Study/README.md": "089c86bf9dcff3d0bbab0ba543481b5821915257d513aff1bd2cad6bc2dd2441",
+    "04_Study/README.md": "1c151922072e73a4c408faa528a3e0cca5d3a0ec6d994a725b6cdfe0a0c695f9",
     "04_Study/Reference-Model/reference_model_v1.yaml": "57578876603413103b676e67d7b52e8d392b121a372eecd6bf4635e3d283065c",
     "04_Study/Reference-Model/reference_model_v2.yaml": "9e1e930450e56457539ab5466f4cfdec867978d0602d60291f91e5ab36fc447a",
     "05_Data/Literature Search/28. Oct/README.md": "dac9f0c1c7a0ea6ccd7ca4a904c373ccba395c9cc026104d5f84f55add8dde03",
@@ -518,9 +521,9 @@
     "scripts/zotero-library/README.md": "eef8bca0480c84047d6059149d0f5bb746145c87d8da2adca0e475c990ab265e"
   },
   "literature_corpus": null,
-  "nodes": 2973,
-  "edges": 4171,
-  "communities": 407,
+  "nodes": 2977,
+  "edges": 4173,
+  "communities": 409,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

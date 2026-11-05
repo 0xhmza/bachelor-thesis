@@ -1,10 +1,10 @@
 # Graph Report - bachelor-thesis  (2026-11-05)
 
 ## Corpus Check
-- Large corpus: 298 files · ~4,291,624 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 300 files · ~4,292,611 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 2973 nodes · 4171 edges · 407 communities (154 shown, 253 thin omitted)
+- 2977 nodes · 4173 edges · 409 communities (154 shown, 255 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 129 edges (avg confidence: 0.85)
 - Token cost: host semantic extraction unmeasured; local refresh makes no model calls
 
@@ -43,15 +43,15 @@
 - Graphify Integration 31
 - Graphify Integration 32
 - Graphify Integration 33
-- Supervisor Decisions 34
+- Graphify Integration 34
 - Supervisor Decisions 35
-- Study Instruments 36
+- Supervisor Decisions 36
 - Study Instruments 37
 - Study Instruments 38
 - Study Instruments 39
 - Study Instruments 40
 - Study Instruments 41
-- Graphify Integration 42
+- Study Instruments 42
 - Graphify Integration 43
 - Study Instruments 44
 - Graphify Integration 45
@@ -192,7 +192,6 @@
 - Study Instruments 182
 - Project Navigation 183
 - Graphify Integration 184
-- Thesis Writing and Methods 197
 - Thesis Writing and Methods 198
 - Thesis Writing and Methods 199
 - Thesis Writing and Methods 200
@@ -212,14 +211,14 @@
 - Thesis Writing and Methods 214
 - Thesis Writing and Methods 215
 - Thesis Writing and Methods 216
-- Supervisor Decisions 217
+- Thesis Writing and Methods 217
 - Supervisor Decisions 218
 - Supervisor Decisions 219
-- Literature and Evidence 220
+- Supervisor Decisions 220
 - Literature and Evidence 221
-- Project Navigation 222
+- Literature and Evidence 222
 - Project Navigation 223
-- Graphify Integration 224
+- Project Navigation 224
 - Graphify Integration 225
 - Graphify Integration 226
 - Graphify Integration 227
@@ -227,9 +226,8 @@
 - Graphify Integration 229
 - Graphify Integration 230
 - Graphify Integration 231
-- Graphify Integration 235
-- Literature and Evidence 297
-- Literature and Evidence 298
+- Graphify Integration 232
+- Graphify Integration 236
 - Literature and Evidence 299
 - Literature and Evidence 300
 - Literature and Evidence 301
@@ -315,6 +313,8 @@
 - Literature and Evidence 381
 - Literature and Evidence 382
 - Literature and Evidence 383
+- Literature and Evidence 384
+- Literature and Evidence 385
 
 ## God Nodes (most connected - your core abstractions)
 1. `Shared bibliography` - 100 edges
@@ -346,7 +346,7 @@
 ## Hyperedges (group relationships)
 - **Audit findings requiring resolution before sample freeze** — 00_admin_sampling_audit_2026_10_25_identity_errors, 00_admin_sampling_audit_2026_10_25_missing_counts, 00_admin_sampling_audit_2026_10_25_author_review, 00_admin_sampling_audit_2026_10_25_freeze_order [EXTRACTED 1.00]
 
-## Communities (407 total, 253 thin omitted)
+## Communities (409 total, 255 thin omitted)
 
 ### Community 0 - "Supervisor Decisions 0"
 Cohesion: 0.03
@@ -358,7 +358,7 @@ Nodes (34): cite(), coverage(), expression(), main(), mentions(), node(), refere
 
 ### Community 2 - "Graphify Integration 2"
 Cohesion: 0.08
-Nodes (34): bib_clean(), build(), caption_of(), Ctx, Doc, env_body(), esc(), exists() (+26 more)
+Nodes (33): bib_clean(), build(), caption_of(), Ctx, Doc, env_body(), esc(), exists() (+25 more)
 
 ### Community 3 - "Graphify Integration 3"
 Cohesion: 0.09
@@ -398,7 +398,7 @@ Nodes (27): account_conflicts(), calibration(), candidates(), decision(), domain
 
 ### Community 12 - "Literature and Evidence 12"
 Cohesion: 0.10
-Nodes (24): anchor_hash(), apply_page_fixes(), collect_citations(), collect_plain_refs(), compile_pdf(), detect_headings(), detok(), fmt() (+16 more)
+Nodes (25): anchor_hash(), apply_page_fixes(), collect_citations(), collect_plain_refs(), compile_pdf(), detect_headings(), detok(), fmt() (+17 more)
 
 ### Community 13 - "Graphify Integration 13"
 Cohesion: 0.10
@@ -469,36 +469,36 @@ Cohesion: 0.15
 Nodes (16): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+8 more)
 
 ### Community 30 - "Graphify Integration 30"
-Cohesion: 0.15
-Nodes (16): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+8 more)
-
-### Community 31 - "Graphify Integration 31"
 Cohesion: 0.13
 Nodes (14): load_items(), match(), norm(), words(), abstract_for(), attach(), bib_authors(), clean() (+6 more)
 
-### Community 32 - "Graphify Integration 32"
+### Community 31 - "Graphify Integration 31"
 Cohesion: 0.16
 Nodes (18): abstract_from_index(), citations_per_year(), expand(), get_json(), main(), manual_hits(), merge(), find() (+10 more)
+
+### Community 32 - "Graphify Integration 32"
+Cohesion: 0.18
+Nodes (18): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+10 more)
 
 ### Community 33 - "Graphify Integration 33"
 Cohesion: 0.17
 Nodes (18): Data available per app, Interpretation for sampling, iPhone App Store keyword collector, Verification, Complete API metadata retention, Checkpointing and explicit partial collection status, Interrupted checkpoint recovery and Windows lock retries, CLI, importable collect function and offline reparse (+10 more)
 
-### Community 34 - "Supervisor Decisions 34"
+### Community 34 - "Graphify Integration 34"
+Cohesion: 0.17
+Nodes (15): codes(), main(), arxiv_query(), arxiv_term(), group_match(), group_regexes(), ieee_query(), ieee_term() (+7 more)
+
+### Community 35 - "Supervisor Decisions 35"
 Cohesion: 0.12
 Nodes (14): Devil’s Advocate Stress-Test — current methodology, Calibration Status, Criterion-Bound Judgements, CRITICAL, Ignored or competing alternative explanations, Issue List, MAJOR, MINOR (+6 more)
 
-### Community 35 - "Supervisor Decisions 35"
+### Community 36 - "Supervisor Decisions 36"
 Cohesion: 0.09
 Nodes (21): All 20 Knabenhans occurrences, Assessment, Claim boundaries for the eventual thesis, Domain/privacy review — current methodology, Exact source identities and excerpt bank, Final De2016 published-paper replacement and De2017 version gate, Final Iwaya edition check, Findings and minimum repairs (+13 more)
 
-### Community 36 - "Study Instruments 36"
-Cohesion: 0.09
-Nodes (21): 0. The harm model, A.1 Highest level reached, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Probes [not Knabenhans — from the GDPR gap analysis, proposal §1], Axis A — Pathway (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019], Axis C — Protection (RQ3) (+13 more)
-
 ### Community 37 - "Study Instruments 37"
 Cohesion: 0.09
-Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
+Nodes (21): 0. The harm model, A.1 Highest level reached, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Probes [not Knabenhans — from the GDPR gap analysis, proposal §1], Axis A — Pathway (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019], Axis C — Protection (RQ3) (+13 more)
 
 ### Community 38 - "Study Instruments 38"
 Cohesion: 0.09
@@ -516,9 +516,9 @@ Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhan
 Cohesion: 0.09
 Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
 
-### Community 42 - "Graphify Integration 42"
-Cohesion: 0.19
-Nodes (17): acl_entries(), arxiv_fetch(), container_titles(), crossref_all(), crossref_paper(), enumerate_crossref(), enumerate_usenix(), fetch() (+9 more)
+### Community 42 - "Study Instruments 42"
+Cohesion: 0.09
+Nodes (21): 0. The harm model, A.1 Nodes mentioned, A.2 Capability — Knabenhans et al. §5, A.3 Harm type — Knabenhans et al. Appendix A, A.4 Breach and incident details [not Knabenhans — from the GDPR gap analysis], Applicability record (one row per app × pathway), Axis A — Coverage (RQ1), Axis B — Stance (RQ2) [not Knabenhans — adapted from Zou et al. 2019] (+13 more)
 
 ### Community 43 - "Graphify Integration 43"
 Cohesion: 0.19
@@ -966,8 +966,8 @@ Nodes (3): at(), fetch(), search()
 
 ## Knowledge Gaps
 - **1018 isolated node(s):** `Supervisor meeting record template`, `Supervisor input storage conventions`, `Presentation build conventions`, `Pinned google-play-scraper 1.2.7`, `Pinned google-play-scraper 1.2.7 (v003)` (+1013 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1533 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **253 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1536 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **255 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -985,14 +985,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `math2u()` connect `Graphify Integration 2` to `Graphify Integration 77`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Should `Graphify Integration 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07727272727272727 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07946127946127945 - nodes in this community are weakly interconnected._
 ## Project extraction scope and cost
 
 AST and structure refreshes are local and make no model calls. Semantic extraction used host agents; their token usage is unavailable, so displayed upstream zero counters are placeholders, not measured costs. No actual session token saving has been measured.
 
 LaTeX sections, inputs, citations and bibliography entries are indexed by the project adapter. PDF nodes describe file inventory only; full paper text, archives and raw/processed data are excluded.
 
-Fresh semantic sources: 89. Sources needing semantic extraction: 76. Local structure remains available for changed files.
+Fresh semantic sources: 89. Sources needing semantic extraction: 77. Local structure remains available for changed files.
 
 Graph health warning: 74 parallel relation variants are simplified by Graphify's simple graph during clustering/traversal. All original relation links and their source evidence are preserved in graph.json via original_links; consult health.json for details. No dangling or missing endpoints are permitted.
 
@@ -1052,6 +1052,7 @@ Graph health warning: 74 parallel relation variants are simplified by Graphify's
 - `04_Study/Instrument/human_coding_sheet_v1.md`
 - `04_Study/Instrument/human_coding_sheet_v2.md`
 - `04_Study/Instrument/walkthrough_protocol.md`
+- `04_Study/Methodology-Overview/methodology-overview-simple.html`
 - `04_Study/Methodology-Overview/methodology-overview.html`
 - `04_Study/Prompts/README.md`
 - `04_Study/Prompts/stage1_coverage_v2.md`

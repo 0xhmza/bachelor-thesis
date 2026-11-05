@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Methodology at a glance</title>
+<!--
+  Simple overview of the study's method: one column, one step per box.
+  The detailed version is methodology-overview.html. Source: 03_Thesis/chapters/04_methodology.tex,
+  5 November 2026; the thesis is authoritative.
+  PDF: python scripts/methodology-overview/v002/render_pdf.py
+-->
+<style>
+  :root { --once: #233F5B; --each: #A33B3B; --all: #37665D; --rep: #535B63; --ink: #1d2329; --soft: #5b636b; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink);
+    font: 13px/1.42 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { width: 820px; padding: 34px 40px 30px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--soft); margin-bottom: 22px; }
+  .flow { display: grid; grid-template-columns: 120px 1fr; column-gap: 18px; }
+  .phase { grid-column: 1; display: flex; align-items: center; justify-content: flex-end;
+    text-align: right; font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--c); border-right: 3px solid var(--c); padding-right: 12px; }
+  .steps { grid-column: 2; display: flex; flex-direction: column; }
+  .step { border: 1.6px solid var(--c); border-left-width: 8px; border-radius: 7px; padding: 10px 14px 11px;
+    background: #fff; position: relative; }
+  .step + .step, .arrow + .step { margin-top: 0; }
+  .arrow { height: 26px; position: relative; }
+  .arrow::before { content: ""; position: absolute; left: 50%; top: 2px; bottom: 9px; border-left: 2px solid #6b737b; }
+  .arrow::after { content: ""; position: absolute; left: calc(50% - 6px); bottom: 2px;
+    border: 6px solid transparent; border-top: 8px solid #6b737b; border-bottom: 0; }
+  .step h2 { margin: 0 0 3px; font-size: 15.5px; color: var(--c); display: flex; justify-content: space-between; gap: 10px; }
+  .step h2 .n { display: inline-block; min-width: 22px; height: 22px; line-height: 22px; text-align: center;
+    border-radius: 50%; background: var(--c); color: #fff; font-size: 12px; margin-right: 7px; }
+  .step h2 small { font-size: 11px; color: var(--soft); font-weight: 600; white-space: nowrap; }
+  .step p { margin: 0; }
+  .step .gives { margin-top: 5px; font-size: 12px; color: var(--soft); }
+  .step .gives b { color: var(--c); }
+  .once { --c: var(--once); } .each { --c: var(--each); } .all { --c: var(--all); } .rep { --c: var(--rep); }
+  .group { display: contents; }
+  .foot { margin-top: 18px; color: var(--soft); font-size: 11px; }
+  @page { size: A4; margin: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Methodology at a glance</h1>
+  <div class="sub">A harm can only be called <i>missing</i> from what a provider says if the app could cause it.
+  So the study first fixes which harms are possible, then reads what each app says, and compares the two.
+  Section numbers refer to Chapter 4 of the thesis.</div>
+
+  <div class="flow">
+    <div class="phase rep" style="grid-row:1">Question</div>
+    <div class="steps" style="grid-row:1">
+      <div class="step rep">
+        <h2><span><span class="n">1</span>Research question</span><small>§1.2</small></h2>
+        <p>Which privacy harms do health-tracker providers acknowledge or downplay, and how do they frame protection?
+          RQ1 coverage, RQ2 stance, RQ3 protection, RQ4 policy versus interface.</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+
+    <div class="phase once" style="grid-row:2">Once,<br>for all apps</div>
+    <div class="steps" style="grid-row:2">
+      <div class="step once">
+        <h2><span><span class="n">2</span>Literature review</span><small>§4.2</small></h2>
+        <p>Search security, privacy and HCI venues and four databases, screen by fixed rules, extract what each study reports.</p>
+        <div class="gives"><b>Gives:</b> the harms and capabilities known for health trackers, and method precedents</div>
+      </div>
+      <div class="arrow"></div>
+      <div class="step once">
+        <h2><span><span class="n">3</span>Reference model</span><small>§4.3, §4.7.1</small></h2>
+        <p>A generic health tracker and harm trees: which data and functions enable which capabilities, and which harms
+          these lead to. A second person checks every pathway; then all instruments are frozen.</p>
+        <div class="gives"><b>Gives:</b> the yardstick of what is possible</div>
+      </div>
+      <div class="arrow"></div>
+      <div class="step once">
+        <h2><span><span class="n">4</span>App sample</span><small>§4.4</small></h2>
+        <p>About 50 health trackers on the German market: the most popular eligible apps of Google Play and the
+          App Store, one per provider, plus the health apps preinstalled by the leading phone vendors.</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+
+    <div class="phase each" style="grid-row:3">For each<br>app</div>
+    <div class="steps" style="grid-row:3">
+      <div class="step each">
+        <h2><span><span class="n">5</span>Collect what the app says</span><small>§4.5</small></h2>
+        <p>Capture the privacy policy and store listing. Walk through the app by hand: can a user find what is
+          collected, turn sharing off, export and delete?</p>
+      </div>
+      <div class="arrow"></div>
+      <div class="step each">
+        <h2><span><span class="n">6</span>Code the text</span><small>§4.6.1–4.6.2</small></h2>
+        <p>Two language models label every passage of policy and interface text: what is mentioned, the stance toward each harm, and the
+          protection claimed. A person checks every label that names a harm, a stance or how protection is framed.</p>
+      </div>
+      <div class="arrow"></div>
+      <div class="step each">
+        <h2><span><span class="n">7</span>Compare with the model</span><small>§4.6.3–4.6.5</small></h2>
+        <p><b>Which harms apply</b> to this app? <b>How far</b> does its text go for each: silent, data, capability
+          or harm? <b>Would</b> its protection claims actually block the harm?</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+
+    <div class="phase all" style="grid-row:4">Across<br>all apps</div>
+    <div class="steps" style="grid-row:4">
+      <div class="step all">
+        <h2><span><span class="n">8</span>Check the models</span><small>§4.7.2</small></h2>
+        <p>Two people code a sample of the text by hand. The models' errors are measured on it, and the reported
+          figures are corrected for them.</p>
+      </div>
+      <div class="arrow"></div>
+    </div>
+
+    <div class="phase rep" style="grid-row:5">Answer</div>
+    <div class="steps" style="grid-row:5">
+      <div class="step rep">
+        <h2><span><span class="n">9</span>Results, discussion, conclusion</span><small>Ch. 5–7</small></h2>
+        <p>What providers say and leave out, per research question; what it means for users, providers and
+          regulation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Simple version. The detailed flowchart is methodology-overview.pdf; the thesis text is authoritative.</div>
+</div>
+<script>document.body.setAttribute("data-drawn", "1");</script>
+</body>
+</html>
