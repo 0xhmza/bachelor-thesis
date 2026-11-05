@@ -7,25 +7,25 @@
   Simple overview of the study's method: one column, one step per box.
   The detailed version is methodology-overview.html. Source: 03_Thesis/chapters/04_methodology.tex,
   5 November 2026; the thesis is authoritative.
-  PDF: python scripts/methodology-overview/v002/render_pdf.py
+  PDF: python scripts/methodology-overview/v003/render_pdf.py (one A4 page)
 -->
 <style>
   :root { --once: #233F5B; --each: #A33B3B; --all: #37665D; --rep: #535B63; --ink: #1d2329; --soft: #5b636b; }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: #fff; color: var(--ink);
-    font: 13px/1.42 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
-  .page { width: 820px; padding: 34px 40px 30px; }
+    font: 12.5px/1.38 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .page { width: 794px; padding: 30px 36px 22px; }
   h1 { font-size: 24px; margin: 0 0 4px; }
-  .sub { color: var(--soft); margin-bottom: 22px; }
+  .sub { color: var(--soft); margin-bottom: 16px; }
   .flow { display: grid; grid-template-columns: 120px 1fr; column-gap: 18px; }
   .phase { grid-column: 1; display: flex; align-items: center; justify-content: flex-end;
     text-align: right; font-size: 11.5px; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.5px; color: var(--c); border-right: 3px solid var(--c); padding-right: 12px; }
   .steps { grid-column: 2; display: flex; flex-direction: column; }
-  .step { border: 1.6px solid var(--c); border-left-width: 8px; border-radius: 7px; padding: 10px 14px 11px;
+  .step { border: 1.6px solid var(--c); border-left-width: 8px; border-radius: 7px; padding: 8px 13px 9px;
     background: #fff; position: relative; }
   .step + .step, .arrow + .step { margin-top: 0; }
-  .arrow { height: 26px; position: relative; }
+  .arrow { height: 19px; position: relative; }
   .arrow::before { content: ""; position: absolute; left: 50%; top: 2px; bottom: 9px; border-left: 2px solid #6b737b; }
   .arrow::after { content: ""; position: absolute; left: calc(50% - 6px); bottom: 2px;
     border: 6px solid transparent; border-top: 8px solid #6b737b; border-bottom: 0; }
@@ -38,12 +38,12 @@
   .step .gives b { color: var(--c); }
   .once { --c: var(--once); } .each { --c: var(--each); } .all { --c: var(--all); } .rep { --c: var(--rep); }
   .group { display: contents; }
-  .foot { margin-top: 18px; color: var(--soft); font-size: 11px; }
+  .foot { margin-top: 12px; color: var(--soft); font-size: 11px; }
   @page { size: A4; margin: 0; }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="page" data-paper="A4">
   <h1>Methodology at a glance</h1>
   <div class="sub">A harm can only be called <i>missing</i> from what a provider says if the app could cause it.
   So the study first fixes which harms are possible, then reads what each app says, and compares the two.
