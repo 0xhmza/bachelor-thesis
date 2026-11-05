@@ -24,7 +24,7 @@ settled. The argued schedule with slip points is archived in
 | 7 | Keywords and inclusion/exclusion criteria fixed | 2026-09-18 | ☑ sampling protocol v2 (2026-10-23; ranking revised 2026-10-25) |
 | 8 | App sample collected and frozen | | ◐ drawn 2026-10-25 (47 + 3 apps); frozen after the author checks the screening |
 | 9 | Codebook | 2026-09-18 | ◐ v7 in `04_Study/Codebook/`; examples to be filled before the freeze |
-| 10 | LLM prompts v1 + validation on a subsample | | ☐ |
+| 10 | LLM prompts + validation sample of coding units | | ◐ prompts v2 in `04_Study/Prompts/`; models not yet named; sample not yet drawn |
 | 11 | Data collection complete | | ☐ |
 | 12 | Analysis complete | | ☐ |
 | 13 | Full thesis draft to advisor | | ☐ |
@@ -45,7 +45,7 @@ background and related work are drafted alongside collection.
 | Weeks 1–4 | 2026-11-02 – 11-29 | Sample frozen (n = 50); corpus collected, hashed, segmented |
 | Weeks 5–6 | 2026-11-30 – 12-13 | Privacy walkthroughs |
 | Weeks 7–8 | 2026-12-14 – 12-27 | LLM coding runs; manual validation subsample |
-| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Re-code two validation apps (≥ 2 weeks after first coding); agreement, precision and recall; results |
+| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Author recodes a random tenth of the validation sample (≥ 2 weeks after first coding); agreement, precision and recall; results |
 | Weeks 11–12 | 2027-01-11 – 01-24 | Full draft to supervisor; revisions |
 | Buffer | to 2027-02-02 | Final checks and submission |
 

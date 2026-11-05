@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-05T11:48:44.115681+00:00",
+  "built_at_utc": "2026-11-05T11:50:24.702775+00:00",
   "fresh_semantic_files": [
     ".github/workflows/ci.yml",
     "00_Admin/Correspondence/2026-10-05_Proposal-Email.md",
@@ -375,11 +375,11 @@
     "00_Admin/Reviews/Sampling-Peer-Review_2026-10-28/Brief-Review.txt": "8317277486fd34b2f1ff2ad897ad71cfe8ee8c15bebd8ba3795d9e9c804a7d75",
     "00_Admin/Reviews/Sampling-Peer-Review_2026-10-28/Detailed-Review.txt": "9520d06178c9bc3820933cf238225da89becbbe36e72bb39a5f9537221d9a454",
     "00_Admin/Reviews/Walkthrough-Review_2026-11-03.md": "d968634cae84d1778e34ad33a088d7529d79a29221fb3160a5d69d2dc117b238",
-    "00_Admin/Risk-Register.md": "76a1b33c4014643eb0ab65ac2c6492820aa6474723edc956b982cec55fc87bba",
+    "00_Admin/Risk-Register.md": "e0b8cdfd81603584a5241d3f345eb8a20b7e1c0425b958c727c54f3deb8de2ef",
     "00_Admin/Sampling-Audit_2026-10-25.md": "6784b826de4c5b4686a64263ed57d9bf665e6c598f4fe3c8ea5a4b2c8c59580e",
     "00_Admin/Supervisor-Input/2026-09-05_Supervisor-Input.md": "571ec75439a659c53a148115bd11b4f3f6e9d35ef5499869b1abb05c33b5a106",
     "00_Admin/Supervisor-Input/README.md": "e5134cc2bfb7545cb21a6c000cdb2a9fcdbe4d7391074b3660787c94e5c4310c",
-    "00_Admin/Timeline.md": "4c02919b41aacf850fcb29549707cfd8483a9c7a1c02508a858944f1fb6ecb0a",
+    "00_Admin/Timeline.md": "abfe3e3f556604d154c1894594c552635f60c7251c17cfd2c7935af5e8d46f9d",
     "00_Admin/Weekly-Log.md": "4530d816ee0b76f524fe7649e5af77478fa80ca74a49ac3b85ab78da899b5897",
     "01_Literature/README.md": "8fe1027aec774fd9ec1ed2c2435934f3c609984e44dc9cf8095f837df1bb5fb8",
     "01_Literature/catalog/Audit-Sources_2026-11-04.md": "6de9f5b66ef46e9ca4ebf7095cdebe433152d4c0f67e92ca91c9cc936b350ad3",
