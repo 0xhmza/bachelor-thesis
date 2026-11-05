@@ -27,6 +27,38 @@ the literature search.}
 \end{singlespace}
 \end{table}
 
+Table~\ref{tab:lit-term-check} sorts the terms by a comparison made after the
+search. A term counts as listed when it, with its truncation, is an entry of a
+published term list or a phrase within an entry. The lists are those reported by
+works cited in this thesis: Baumann et
+al.~\parencite[App.~A, Table~6]{baumann2025llm}, Hutton et
+al.~\parencite[Table~2]{hutton2018assessing}, Malki et
+al.~\parencite[Sec.~3.1]{malki2024exploring}, Salehzadeh Niksirat et
+al.~\parencite[Sec.~1.2]{niksirat2024wearable} and Shipp and
+Blasco~\parencite[Sec.~3.1]{shipp2020period} searched apps or literature with
+theirs, and Doan et al.~\parencite[Sec.~4.5]{doan2024transparency} searched policy
+text. Any other term is checked against the titles and abstracts of the 128 works
+held before the search, 45 of which have no abstract in the records; these are the
+works that entered through the citations of the thesis or the Methods Digest. A spelling or
+inflection of another term takes that term's result.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Comparison of the search terms with published vocabularies]{Search terms
+by the result of the comparison made after the search. $^a$~A published single word
+followed by app* or track*.}
+\label{tab:lit-term-check}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Group} & \textbf{In a published list} & \textbf{Only in works held before} & \textbf{In neither} \\
+\midrule
+\input{tables/literature-term-check}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
 \section{Search Sources}
 \label{app:lit-sources}
 The eight venues of Section~\ref{sec:lit-sources} were listed completely and filtered
