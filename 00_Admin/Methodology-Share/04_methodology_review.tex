@@ -264,8 +264,7 @@ candidates for LQ1 and LQ2.
 elsewhere (Table~\ref{tab:lit-databases}): PubMed for health informatics and
 medicine, IEEE Xplore for engineering, arXiv for preprints and the ACL Anthology
 for language processing. Each strand is run against every database, as a query
-of its own or locally on the retrieved records; the strings, fields and limits are in
-Appendix~\ref{app:lit-strings}.
+of its own or locally on the retrieved records.
 
 \paragraph{Citation searching.} Citation searching adds studies that the term
 groups miss. It starts from a seed set of four studies that address the core
@@ -519,7 +518,7 @@ the literature review collects (Section~\ref{sec:lit-review}). Sources found in
 the logged search are added with a recorded reason. Each pathway names the
 data, the actor, the access conditions, the capability and the possible
 consequence. A prediction made for the user does not by itself establish
-access by a third party (Appendix~\ref{app:example}).
+access by a third party.
 
 \paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets the steps of
 Knabenhans et al.\ that this study adapts next to what it does. Three rules keep the steps honest.
@@ -606,7 +605,7 @@ Identical spellings and repeated translations are searched once.
 \paragraph{Search.} Each store is searched in a single session, logged out, in
 its German storefront: the App Store through Apple's Search
 API~\parencite{apple2022itunessearch} and the Google Play store through its
-search page, with the collectors in Appendix~\ref{app:scripts}. For each query,
+search page, with collection scripts of this project. For each query,
 the first 30 results are kept in both stores. A Google Play search page shows
 a single page of results, and deeper results need an interface that the store's
 \texttt{robots.txt} disallows. Using the same depth for the App Store follows
@@ -763,8 +762,7 @@ that the App Store shows as seller carries the other developer name, or
 listings of the two developer accounts link to the same registered web domain,
 as seller or developer website, privacy policy or a link in the description.
 P3 matches are made by hand and recorded with their evidence
-(Table~\ref{tab:developer-aliases}); a similar name alone is no evidence. Examples of each
-condition are in Appendix~\ref{app:sampling-details}.
+(Table~\ref{tab:developer-aliases}); a similar name alone is no evidence.
 
 \paragraph{Preinstalled apps.} Health apps that ship with the phone reach
 users without a download, so their rating counts understate their reach and
@@ -985,7 +983,6 @@ A unit is one policy paragraph or one coherent block of interface text. A script
 before any coding, so that the models and the human coders label the same units. Coders can
 consult adjacent text and must identify the exact supporting span. A unit may carry multiple
 labels. Counts and agreement are calculated per unit and code (Table~\ref{tab:axes}).
-Appendices~\ref{app:codebook} and~\ref{app:example} apply the labels to two constructed examples.
 
 \paragraph{Axis A: Coverage.} Each explicitly mentioned node is coded with its polarity:
 asserted, possible or denied~\parencite[\S1]{andow2019policylint}. The highest level reached is
@@ -1072,7 +1069,7 @@ C: Protection & Measure and scope & Claimed measure, actor, data, outcome and co
 \subsection{LLM Coding with Two Models and Human Checks}
 \label{sec:llm}
 Two models from different families independently code every unit with the same codebook, stages
-and prompts (Appendix~\ref{app:prompts}). Versions and settings are frozen before coding and
+and prompts. Versions and settings are frozen before coding and
 reported. An open-weight model is preferred for one of the two~\parencite{tornberg2024best}.
 Model agreement is reported only as a robustness check, because the errors of language models
 are correlated~\parencite{kim2025correlated}; accuracy is assessed against human reference labels

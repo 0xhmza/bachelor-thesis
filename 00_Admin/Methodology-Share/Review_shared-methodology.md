@@ -2,7 +2,14 @@
 
 Reviewed on 6 November 2026 against `03_Thesis/chapters/04_methodology.tex`, Appendices A–F
 and the scripts. The corrected PDF is `Methodology_corrected.pdf` in this folder (built from
-`04_methodology_review.tex`). No paragraphs were added; the fixes are sentence-level.
+`04_methodology_review.tex` and `appendix_share/`). No paragraphs were added; the fixes are
+sentence-level.
+
+**Appendix numbering changed in the second version (see D).** The PDF now has three appendices:
+A Literature Search (old F), B App Sampling Details (old C), C Rules of the LLM Coding (old B).
+Table and appendix numbers named in A–C below are those of the Google Doc; in the PDF they are
+renumbered automatically, so the Google Doc's "Table C.6", "Table F.4", "Table B.1" and so on no
+longer match it.
 
 ## A. Broken references left by the trimming (must fix)
 
@@ -45,17 +52,44 @@ and the scripts. The corrected PDF is `Methodology_corrected.pdf` in this folder
 - Missing full stop after "[20]" in 4.3.2; "builds the tree" → "builds the harm trees"; "the extraction table" (never introduced) → "an extraction table"; list item 1 of 4.1 was not bold.
 - Citations now carry the page and section pinpoints that the LaTeX already had (lost in the Google Doc).
 
-## D. Appendices (A–F, Corpus Inventory left out)
+## D. Appendices: only the tables the chapter cites (second version, 6 November 2026)
 
-- A: Step 6 talked about one language model, "tuned to miss as little as possible" → two models, "the combination favours recall". The RQ4 bullet coded "the store listing, the website": contradicts 4.5.1 → interface text only.
-- C: The pointer to the results chapter is now plain text. The data path `05_Data/App Sampling/26. Oct/Raw/` did not match Appendix E and the frozen collection → `05_Data/raw/app-sample_2026-10-25/`.
-- F: Section F.4 "Corpus Inventory" left out. Its own note says it is inconsistent with the revised method, the doc does not cite it, and it lists results. F.1–F.3 (cited) are kept, so Table F.1/F.2/F.4 numbering still matches the doc.
-- Appendix G (reference model) is not cited in the shared text and is not included.
+No worked examples, prompts, search strings, scripts or results. The PDF keeps:
+
+| New | Content | Old number |
+|---|---|---|
+| A.1 | Complete term groups | F.1 |
+| A.2 | Venues and selection rules | F.2 |
+| A.3 | Databases, fields and limits | F.4 |
+| B.1 | Search keywords | C.6 |
+| B.2 | Public listing data by geographic basis | C.7 |
+| B.3 | Google Play trial collection (developer rule) | C.2 |
+| B.4 | Developer names matched by hand (P3) | C.4 |
+| B.5 | Sensitivity variants | C.8 |
+| C.1 | Rules of the LLM coding | B.1 |
+
+Removed: Appendix A (codebook worked example, CycleMate), B's prompt listings, C's sample table,
+the selection without the developer rule and the identity register (results), the provider
+examples, D (worked example), E (scraping scripts), F's syntax table, search strings and corpus
+inventory, and G (reference model). The vendor-share calculation stays as one paragraph in B.4.
+
+Matching changes in the chapter:
+- The references to Appendix D, to "Appendices A and D … constructed examples", to the
+  collectors in Appendix E ("with collection scripts of this project"), to the search strings,
+  to the provider examples and to the prompts appendix were removed.
+- The Reporting row of Table C.1 no longer says that the prompts are archived in an appendix.
+- Table A.3 now says "records of short anchor queries" instead of "the anchor pool", which was
+  defined only in the removed search strings.
+
+Still worth a look: B.3 (trial collection) and B.4 (hand-matched developers) are cited by the
+chapter, but both are records of the collection rather than rules. If you want no collected
+data at all, remove them and their two references in 4.4.3.
 
 ## E. Open points I did not change (your decision)
 
 1. **Who screens the literature?** The cut removed the only sentence that said who made the screening decisions. A reader will ask. I did not add anything, because the true answer (AI-prepared screening, checked by the author) is what you chose to leave out. A neutral option: "Every inclusion and full-text exclusion is checked by the author", but only if that check is done.
 2. **Minimisation:** Table 4.12 says minimisation is "decided by people only", but the Stage 2 prompt (`stage2_stance_v2.md`) does return `S-MIN`, and Axis B says it is coded. Consistent if read as "models propose, people decide"; consider saying so.
-3. **Appendix A says "codebook version 4"**; the frozen bundle is v7. All codes used in the example still exist in v7, but I did not change the version number without checking the definitions.
+3. **The thesis's Appendix A says "codebook version 4"** (no longer in the shared PDF); the frozen bundle is v7.
 4. **Sunyaev et al., Spearman 0.89:** kept as in the LaTeX; not re-checked against the PDF.
-5. **Length:** the text is about as long as the Google Doc (a few added clauses, one removed sentence). The thesis layout makes the chapter about 20 pages instead of 15.
+5. **Length:** the text is about as long as the Google Doc (a few added clauses, one removed sentence). The thesis layout makes the chapter about 20 pages instead of 15; with bibliography and appendices the PDF has 36 pages.
+6. **The Google Doc still cites the old appendix numbers** (Table B.1, C.2, C.4, C.6–C.8, F.1, F.2, F.4, Appendices A, D, E). Update them if you keep sharing the doc.

@@ -1,0 +1,55 @@
+\chapter{Rules of the LLM Coding}
+\label{app:prompts}
+\label{app:llm-rules}
+Table~\ref{tab:llm-steps} gives each rule of the LLM coding of Section~\ref{sec:llm} with its
+precedent.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Rules of the LLM coding and their precedents]{Rules of the LLM coding and their
+precedents. A precedent supports the principle of a rule; where the rule goes beyond it, the
+rule is this study's design (marked \emph{study rule}).}
+\label{tab:llm-steps}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.6cm}@{}}
+\toprule
+\textbf{Step} & \textbf{Rule} & \textbf{Precedent} \\
+\midrule
+Models & Two models of different families, fixed before coding and then frozen, with versions and parameters reported; an open-weight model is preferred for one of them
+  & \parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Prompt & Context, then codebook definitions, then output format. Two constructed examples, no persona and one prompt for both families are study rules
+  & \parencite[\S4.2, pp.~3886--3888]{rodriguez2024llm}\parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Stages & Stage~1: tree nodes, harms and risks. Stage~2: stance for each named harm. Stage~3: protection details. The stages are a study rule adapting a hierarchical decomposition
+  & \parencite[\S4.3]{harkous2018polisis} \\
+\cmidrule[0.3pt]{2-3}
+Evidence & Every code quotes its span, as a decision and the supporting text. The substring check, and counting a dropped code as a model failure, are study rules
+  & \parencite[App.~B]{xie2025evaluating} \\
+\cmidrule[0.3pt]{2-3}
+Doubt & An uncertain answer is kept as uncertain and never becomes a negative code; uncertain routine labels form a validation stratum, uncertain high-stakes labels are checked
+  & \parencite{tornberg2024best} \\
+\cmidrule[0.3pt]{2-3}
+Stability & Each model codes the validation sample three times, a number that is a study rule; agreement between runs and between the two models is a stability and robustness check, not validation
+  & \parencite[\S4.3, pp.~3888--3889]{rodriguez2024llm} \\
+\cmidrule[0.3pt]{2-3}
+Wording & A paraphrased prompt is run on the validation sample, and the labels are compared
+  & \parencite{tornberg2024best}\parencite{baumann2025llm} \\
+\cmidrule[0.3pt]{2-3}
+Reporting & Every model, prompt and setting used is reported. Keeping raw output apart from checked labels, so that performance is not measured after correction, is a study rule
+  & \parencite[p.~18]{baumann2025llm} \\
+\cmidrule[0.3pt]{2-3}
+Combination & Routine labels: kept when both models return them, otherwise uncertain. High-stakes labels: union of both models. A study rule motivated by correlated but not identical model errors
+  & \parencite{kim2025correlated} \\
+\cmidrule[0.3pt]{2-3}
+Human role & Every high-stakes label is checked by a person who does not see the models' labels. Applicability and potential mismatches are decided by people only, with evidence and reasoning logged
+  & \parencite{schroeder2025just}\parencite{pangakis2023automated} \\
+\cmidrule[0.3pt]{2-3}
+Estimates & Unit-level figures combine the model labels of all units with the reference labels of a stratified validation sample drawn with known probabilities (difference estimator); app- and pathway-level maxima are detection summaries
+  & \parencite[\S4]{egami2023using}\parencite{angelopoulos2023prediction,fisch2024stratified} \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
