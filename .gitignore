@@ -87,3 +87,10 @@ graphify-out/reflections/
 *.conflict-thispc
 *.synctex(busy)
 *.conflict-cloud
+
+# Oversized digest PDFs (GitHub rejects files over 100 MB); volumes/ holds the shareable parts
+*_complete.pdf
+*Complete.pdf
+*- Copy.pdf
+/01_Literature/AI Literature Analysis/
+/literature_new/
