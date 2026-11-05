@@ -10,3 +10,7 @@
 - **Supersedes:** the category-specific allocations and reference-tree/reporting split in the current methodology, codebook v3 and walkthrough protocol v2; D3's open "Consequences" paragraph; the corresponding open concern in the 23 October evaluation and action plan; findings F18 and F19 of the sampling peer review as prospective design objections.
 - **Implementation:** methodology and Appendix A; codebook v4; walkthrough protocol v3; current sampling-protocol amendment; study README; D1/D3 and the decision register; both review reports. Historical proposal, meeting notes, correspondence and earlier codebook versions remain records of their original dates.
 - **Current walkthrough amendment (2 November, made explicit in the 3 November review):** D10 supersedes both the twelve-app total and the six/six platform balance in the historical Consequences paragraph above. Attempt all 50 apps; the platform rule stays open for the pilot. The current instruments are codebook v5 and walkthrough protocol v7. The Implementation paragraph records the versions used for the 28 October scope change, not today's versions.
+
+## Update 2026-11-05
+
+The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).

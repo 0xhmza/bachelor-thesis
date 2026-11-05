@@ -12,7 +12,7 @@ Section~\ref{sec:framework} builds from it the reference model of what is possib
 tracker. Sections~\ref{sec:app-sampling} and~\ref{sec:collection} state which apps are studied
 and what is collected from each. Section~\ref{sec:analysis} states how two language models code
 the collected text and how people check it, and Section~\ref{sec:instruments} how the
-instruments are tested, frozen and validated against human coding. Section~\ref{sec:closing}
+instruments are frozen and validated against human coding. Section~\ref{sec:closing}
 closes with ethics, availability and limitations.
 
 \section{Study Design}
@@ -33,7 +33,7 @@ The study examines which harms providers communicate in their privacy policies. 
 \end{enumerate}
 Figure~\ref{fig:pipeline} shows how the three parts form one workflow: the framework is
 built once for all apps, and the steps that apply it are repeated for each app. The figure gives
-the order in time. In particular, the instruments are tested and frozen
+the order in time. In particular, the instruments are frozen
 (Section~\ref{sec:instruments}) before the main collection and coding, although this chapter
 describes them afterwards.
 
@@ -51,31 +51,31 @@ describes them afterwards.
   \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\capabilities, harms, precedents};
   \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\documented tracker functions};
   \node[bx] (tree) at (2,1.45) {\textbf{Harm trees}\\pathways from components to harms};
-  \node[bx=accent] (pilot) at (6,1.45) {\textbf{Pilot}\\tests, then freezes the instruments};
+  \node[bx=accent] (freeze) at (6,1.45) {\textbf{Instrument freeze}\\tree check, then one versioned bundle};
   \node[lab] at (-7.75,0.1) {For each app};
   \node[bx=linkblue,minimum height=10mm] (pol) at (-6,-0.7) {\textbf{Privacy policy}\\and store listing};
   \node[bx=linkblue,minimum height=10mm] (wt) at (-6,-2.1) {\textbf{Walkthrough}\\attempted for every app};
   \node[bx=originimp] (app) at (-2,-1.4) {\textbf{Applicability}\\which parts and harms does this app have?};
   \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\two models code, people check and validate};
   \node[bx=originimp] (gap) at (6,-1.4) {\textbf{Comparison}\\RQ1--RQ4, with source evidence};
-  \draw[arr] (lit)--(gen); \draw[arr] (gen)--(tree); \draw[arr] (tree)--(pilot);
+  \draw[arr] (lit)--(gen); \draw[arr] (gen)--(tree); \draw[arr] (tree)--(freeze);
   \draw[arr] (pol.east)--(app.west); \draw[arr] (wt.east)--(app.west);
   \draw[arr] (app)--(code); \draw[arr] (code)--(gap);
   \draw[arr] (tree.south)--(app.north east);
-  \draw[arr] (pilot.south)--(code.north east);
+  \draw[arr] (freeze.south)--(code.north east);
 \end{tikzpicture}}
 \todo[inline]{Resolved 4 November 2026: checked against the final text, no longer a draft.
 Upper row: literature review (Section~4.2), generic app with documented functions (4.3.2),
-harm trees (4.3.3), pilot (4.7.2). Lower row, for each app: policy and walkthrough (4.5),
-applicability (4.6.3), two-model coding with human checks and validation (4.6.2, 4.7.3),
+harm trees (4.3.3), instrument freeze (4.7.1). Lower row, for each app: policy and walkthrough (4.5),
+applicability (4.6.3), two-model coding with human checks and validation (4.6.2, 4.7.2),
 comparison (4.6.5). Every box has its section and every arrow its input.}% a margin \todo cannot go inside a float
 \caption[Workflow of the study]{Workflow of the study. The upper row is done once.
-The lower row is repeated for each app. The pilot will refine the instruments before
-they are frozen. Later changes will be logged and affected material recoded.}
-\Description{Upper row: literature review, generic app, harm trees, pilot. Lower row:
+The lower row is repeated for each app. The instruments are frozen before collection
+and coding. Later changes will be logged and affected material recoded.}
+\Description{Upper row: literature review, generic app, harm trees, instrument freeze. Lower row:
 privacy policy with store listing and walkthrough feed applicability, then coding by two
 models with human checks and validation, then comparison for RQ1 to RQ4. The harm trees
-feed applicability; the pilot freezes the coding instruments.}
+feed applicability; the frozen instruments feed the coding.}
 \label{fig:pipeline}
 \end{figure}
 
@@ -107,7 +107,7 @@ interfaces against each other~\parencite[p.~4]{malki2024exploring}. Table~\ref{t
 ties each research question to what is measured, the material, the method and its precedent.
 The precedents supply the concepts and the general approach; the applicability record, the
 coverage levels, the stance labels and the rules for combining model labels are this study's
-own operationalisations, defined in this chapter and tested in the pilot.
+own operationalisations, defined in this chapter.
 
 \begin{table}[H]
 \centering
@@ -622,7 +622,7 @@ psychological, autonomy/\allowbreak deprivation, discrimination, reputational
 and societal harms~\parencite[App.~A]{knabenhans2026harms}, drawn from Citron
 and Solove and the CyberPeace Institute. A relationship tag retains Citron and
 Solove's relationship harms~\parencite{citron2021harms}, which the list omits.
-New harms found in the pilot will be documented rather than forced into a
+New harms found during coding are documented rather than forced into a
 category.
 
 \subsection{Generic Health-Tracker Reference Model}
@@ -812,8 +812,8 @@ data. The trees are built once on the generic model
 %
 % FILES
 %   04_Study/Reference-Model/reference_model_v1.yaml     the trees
-%   scripts/instrument-test/v001/evaluate.py             the evaluation, with tests
-%   Decisions: D12 (generic model), D16 (instrument test)
+%   scripts/instrument-test/v002/evaluate.py             the evaluation, with tests
+%   Decisions: D12 (generic model)
 % ---------------------------------------------------------------------------
 
 \paragraph{Tree elements.} A tree combines the three kinds of elements of
@@ -911,9 +911,8 @@ the phone (CO2) opened K10 for every app that derives insights. In v2, CO2 alone
 actor the data; each combination names its actor and the component that gives that actor access.
 The partner combination is argued: data of health apps reaches advertising and analytics
 companies, which can aggregate it~\parencite{huckvale2019assessment,grundy2019data}. The
-evaluator (scripts/instrument-test/v002) now rejects OR+, and 30 unit tests pass, among them
-\enquote{CO2 alone gives no K10}. Re-run on the test app: K10 still applies, through both
-combinations; the original fixture and model v1 are kept.}
+evaluator now rejects OR+, and 30 unit tests pass, among them \enquote{CO2 alone gives no K10}.
+Model v1 is kept.}
 Because the operators make every required condition explicit, a tree also
 shows how a pathway can be cut: a measure blocks it only if it removes one of
 its necessary conditions. De and Le Métayer combine AND and OR nodes to compute
@@ -959,7 +958,7 @@ Like Knabenhans et al., the study does not claim to be complete: another pathway
 adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}. Because the trees are the
 yardstick against which a harm is called missing, they are not judged by their author alone:
 before the instruments are frozen, a second person checks every pathway against its source
-(Section~\ref{sec:pilot}).
+(Section~\ref{sec:freeze}).
 
 \begin{table}[H]
 \centering
@@ -1047,7 +1046,7 @@ including pregnancy tracking, absent from that list. Together these sources
 inform the definition and keyword collection for activity, diet and weight,
 heart rate, sleep, mood and reproductive health within one health-tracker
 domain. Categories describe apps and their features; they do not define
-separate sampling, pilot, validation or analysis groups.
+separate sampling, validation or analysis groups.
 
 \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
 terms of Malki et al.\ are searched in the original English and in one German
@@ -1398,9 +1397,9 @@ captured, the differing English and German spans, the node or claim scope that d
 reviewer's judgement whether the difference is material, that is, whether it adds, removes or
 changes a node, a stance or the scope of a protection claim. The log reports how many pairs
 were compared, how many counterparts were unavailable and how many differences were material.
-Whenever a material difference is found, in the pilot or later, the German version of that
+Whenever a material difference is found, the German version of that
 source is coded as well, the change is logged with the instruments
-(Section~\ref{sec:pilot}), and already coded sources of the same kind are rechecked. The log
+(Section~\ref{sec:freeze}), and already coded sources of the same kind are rechecked. The log
 documents the differences that were observed; it does not measure every effect of the language
 rule.
 
@@ -1439,7 +1438,7 @@ Section~\ref{sec:validation}.
 of 4 November 2026 (D8, D10): ten of the 50 apps, a fifth. Double-coding 10--25\,\% of the data
 units is typical for intercoder reliability~\parencite[p.~5]{oconnor2020intercoder}; a fifth
 sits in that range, and at about 45 minutes per recorded session it costs the second coder
-about eight hours. The second analyst is the second coder of Section~4.7.3.}
+about eight hours. The second analyst is the second coder of Section~4.7.2.}
 
 \paragraph{Preparation.} Inspection is attempted for every sampled app, on one platform where it is available.
 An unavailable paired device, payment or identity verification can block a task or the
@@ -1453,8 +1452,7 @@ so it is the version most users in Germany meet, and its emulator gives every ap
 starting state. Time: a route that a deliberate analyst cannot locate within five minutes is
 unlikely to be found by the first-time user of the persona; with seven tasks this keeps a
 session near an hour, about 50 hours for all apps. The limit is this study's rule, not a
-published threshold. The pilot records whether any route is found
-only after the limit; if so, the limit is raised before the freeze and applies to every app.}
+published threshold, and it applies to every app.}
 
 Wharton et al.\ name four inputs: the users, the tasks, the action
 sequences and the interface~\parencite[Table~5.1, p.~106]{wharton1994cognitive}. The user
@@ -1525,14 +1523,14 @@ are not pooled with the primary session. The counterpart pass takes place in the
 consent and settings state as the primary capture and before any action that changes that state
 (T5 to T7), so that a difference reflects the language and not a changed state.
 \highlight[orange!25]{Android apps run on the Android Studio emulator with a Pixel profile and the
-Google Play system image of the newest stable Android release on the first pilot day; the same
+Google Play system image of the newest stable Android release on the first collection day; the same
 image serves every app, and a clean snapshot is restored before each one. iOS apps run on a
-physical iPhone on the iOS version installed on the first pilot day, with updates turned off.
+physical iPhone on the iOS version installed on the first collection day, with updates turned off.
 An app that refuses the emulator is inspected on a factory-reset Android phone, and the deviation
 is recorded. Device, image and operating-system version are reported with the
 results.}\todo[inline]{Decision of 4 November 2026 (D10). The emulator meets the wipe rule
 exactly and cheaply (one snapshot, restored per app), records the screen, holds no personal data
-and keeps one version for all apps; freezing the version on the first pilot day avoids naming a
+and keeps one version for all apps; freezing the version on the first collection day avoids naming a
 release that may not be current then. iOS apps cannot run in a simulator from the App Store, so
 they need a real iPhone. Some apps detect emulators; the fallback keeps them inspectable.}
 
@@ -1546,7 +1544,7 @@ they need a real iPhone. Some apps detect emulators; the fallback keeps them ins
     captured, with each consent, permission request and pre-ticked option.
   \item \textbf{Account and baseline.} Where needed, an account is created with synthetic
     data; mandatory and optional fields are distinguished. Consent and permission choices
-    and synthetic inputs follow the profile fixed in the pilot and are logged. Before
+    and synthetic inputs follow the profile fixed in the walkthrough protocol and are logged. Before
     changing privacy settings, their initial states and the route from the home screen
     are captured, distinguishing untouched defaults from earlier choices.
   \item \textbf{Tasks T1 to T7}, in that order, with the action sequence and Q1--Q4 record.
@@ -1582,8 +1580,8 @@ keeps the endpoint, evidence, elapsed time and any problematic questions. A disp
 confirmation does not verify downstream deletion, export completeness or cessation of
 sharing. Taps on the documented route are counted, following Habib et al.'s use of action
 counts~\parencite[Table~1, p.~4]{habib2020scavenger}; scrolling, text entry and external
-steps are recorded separately. The pilot fixes starting states, search boundaries, time
-limits and completion criteria (Section~\ref{sec:pilot}). A limit reached is a bounded
+steps are recorded separately. The walkthrough protocol fixes starting states, search boundaries, time
+limits and completion criteria before main collection, for every app (Section~\ref{sec:freeze}). A limit reached is a bounded
 non-finding, not evidence that a feature is absent.
 
 \paragraph{Outputs and Their Use.} The walkthrough yields three outputs with distinct roles
@@ -1663,10 +1661,7 @@ seen pulls the person's judgement toward it~\parencite{schroeder2025just}, and h
 where the analyst searches. It costs nothing, because the walkthrough needs no policy codes.} Prior familiarity from sampling, document capture and route
 preparation is logged; this proposed order alone cannot remove it.
 
-The instrument test runs these outputs through the procedure once, with an invented record
-(Section~\ref{sec:instrument-test}). Its version-5 walkthrough classifications need
-re-evaluation under the corrected rules; they do not establish that this procedure has
-been applied. \highlight[orange!25]{A user's reaction after a harm is read as the
+\highlight[orange!25]{A user's reaction after a harm is read as the
 mechanisms a user needs once something has gone wrong: finding out what happened (T3), stopping
 further flows (T5), taking the data out or removing it (T6, T7), and a new subgoal of T3: how to
 report a problem to the provider, how to reach its data protection officer, and that a complaint
@@ -1791,7 +1786,7 @@ without a named harm is coded as reassurance, and responsibility placed on the u
 named harm as generic responsibility, both for the secondary analysis
 (Section~\ref{sec:comparison}). The five stance labels are this study's adaptation of the risk
 communication that Zou et al.\ examined~\parencite[pp.~7, 10]{zou2019might}; they are not a
-validated scale, and their boundaries are refined in the pilot.
+validated scale.
 
 \paragraph{Axis C: Protection.} The coder records the measure and its claimed benefit, with
 actor, data and conditions where specified. Any technical measure claimed to limit exposure or
@@ -1803,8 +1798,8 @@ Vague scope is recorded as unclear, and no deployed system is judged safe or uns
 
 \subsection{LLM Coding with Two Models and Human Checks}
 \label{sec:llm}
-The corpus is too large for a person to read and code in full within this study: the one
-policy of the instrument test alone has 178 units (Section~\ref{sec:results-test}). Language
+The corpus is too large for a person to read and code in full within this study: it holds the
+policy and the interface text of every sampled app. Language
 models therefore do the coding. Polisis, a hierarchy of deep-learning classifiers, and recent
 LLM approaches are precedents for data-practice
 analysis~\parencite{harkous2018polisis,rodriguez2024llm}. Large language models have annotated
@@ -1823,9 +1818,11 @@ human-coded validation sample measures the models' errors and corrects the repor
 (Section~\ref{sec:validation}).
 
 \paragraph{Two models.} Two models from different model families code every unit
-independently, with the same codebook, stages and prompts. Both are selected in the pilot and
-then frozen, with versions and parameters reported; an open-weight model is preferred for one
-of them if it performs close to a hosted one~\parencite{tornberg2024best}. The second family
+independently, with the same codebook, stages and prompts. \highlight[orange!25]{Both are fixed
+before coding and then frozen, with versions and parameters reported; an open-weight model is
+preferred for one of them}~\parencite{tornberg2024best}.\todo[inline]{Decision of 5 November 2026
+(D20). Without a comparison of candidates, the open-weight preference carries no performance
+condition. The two model names still have to be entered.} The second family
 is there because the errors of language models are correlated; in the datasets Kim et al.\
 studied, the correlation was higher between models of the same provider or
 architecture~\parencite[\S\S3--4]{kim2025correlated}. A model of another family can therefore
@@ -1848,10 +1845,11 @@ answer is kept as uncertain and never becomes a negative code~\parencite{tornber
 The prompts give the context, then the codebook definitions, then the output format, as
 Rodriguez et al.\ tested~\parencite[\S4.2, pp.~3886--3888]{rodriguez2024llm}; the two
 constructed examples, the absence of a persona and the use of one prompt for both model families
-are this study's choices. Repeated runs in the pilot measure each model's
-stability, following the repeated runs of Rodriguez et
-al.~\parencite[\S4.3, pp.~3888--3889]{rodriguez2024llm}; the number of repetitions is fixed in
-the pilot. A paraphrased prompt run on the validation sample measures how much the wording
+are this study's choices. \highlight[orange!25]{Each model codes the validation sample three
+times, which measures its stability,} following the repeated runs of Rodriguez et
+al.~\parencite[\S4.3, pp.~3888--3889]{rodriguez2024llm}\highlight[orange!25]{; the number of runs
+is this study's choice.}\todo[inline]{Decision of 5 November 2026 (D20). Each model still codes
+the corpus once; three runs on 500 units show whether a label is stable at little cost.} A paraphrased prompt run on the validation sample measures how much the wording
 changes the labels~\parencite{baumann2025llm}. The complete rules, each with its precedent, are in
 Table~\ref{tab:llm-steps} (Appendix~\ref{app:prompts}).
 
@@ -1902,7 +1900,7 @@ with each model is recorded. It remains the judgement of one person: it is repor
 checked label, and only the double-coded and settled labels of the validation sample serve as
 reference labels (Section~\ref{sec:validation}). Raw model output is stored apart from the
 checked labels, a rule of this study, so that performance is measured on what the models
-returned and not after correction. Every tested model, prompt and setting is
+returned and not after correction. Every model, prompt and setting used is
 reported~\parencite[p.~18]{baumann2025llm}.
 
 \subsection{Applicability Assessment (Step~1)}
@@ -1924,10 +1922,8 @@ usable way exists to delete the data (\oimp{IM12}) or to export it (\oimp{IM14})
 if neither the app nor another route, such as a request to the provider, offers it, and deletion
 and export are judged separately. A missing in-app control is reported as a walkthrough finding.
 \todo[inline]{Resolved 4 November 2026 in reference model v2 (D12): IM12 now concerns deletion
-across every route, the new IM14 export, and incapability I2 needs either. Re-evaluated on the
-test app: its policy offers deletion and a copy on request, so IM12 and IM14 are absent and I2
-and pathway P10 (locked into the service) no longer apply; the original fixture had set I2 from
-an invented missing export button. The fixture and model v1 are kept for the record.}
+across every route, the new IM14 export, and incapability I2 needs either. Model v1 is kept for
+the record.}
 
 A script then evaluates the trees. AND is absent if any part is absent, and present only
 if all parts are present. OR is present if any part is present, and absent only if all
@@ -2015,7 +2011,7 @@ corrected estimates with intervals (Section~\ref{sec:validation}). App- and path
 figures, such as whether an app ever mentions a harm or the highest level a pathway reaches,
 are reported as what the models detected and people checked, together with the estimated share
 of unit-level mentions that both models missed; they are not corrected estimates. RQ2 reports harm--stance combinations and their denominators. Stance
-attaches only to named harms, and named harms may be rare (Section~\ref{sec:results-test}); RQ2
+attaches only to named harms, and named harms may be rare; RQ2
 therefore also reports, as a secondary analysis fixed before coding, the reassurance,
 generic-risk and generic-responsibility wording that occurs without a named harm, kept apart
 from the harm--stance results. RQ3
@@ -2037,99 +2033,48 @@ unit-level recall does not certify that a particular app contains no mention. A 
 between the surfaces describes the captured material, which is a full policy on one side and
 bounded routes on the other; it is not a measured difference in what users see or understand.
 
-\section{Instrument Validation}
+\section{Instrument Freeze and Validation}
 \label{sec:instruments}
 The instruments (the reference model and trees, the codebook, the walkthrough protocol and the
-prompts) are developed in two rounds before the main study and then checked independently of
-their development. These checks precede the main collection in time
-(Figure~\ref{fig:pipeline}), but they are described here, after the procedures they test. A
-preliminary test on one app shows whether the steps connect (Section~\ref{sec:instrument-test}).
-A pilot on five apps tests them in practice, has the reference trees checked by a second person
-and ends with their freeze (Section~\ref{sec:pilot}). A validation sample of coding units, coded
+prompts) are frozen before the main collection and coding (Figure~\ref{fig:pipeline}), but they
+are described here, after the procedures that use them. A second person checks the reference
+trees before the freeze (Section~\ref{sec:freeze}). A validation sample of coding units, coded
 independently by the author and a second coder, then measures the errors of the frozen models
 and corrects the reported figures (Section~\ref{sec:validation}).
 
-\subsection{Preliminary Instrument Test}
-\label{sec:instrument-test}
-Before the pilot, the whole procedure is run once on one app. The test asks one thing: do
-the steps connect, from the generic model through the trees to a conclusion about one app?
-It gives no estimate for the sample, and it does not validate the model. It follows the
-advice to try a coding procedure on a small set of texts before the
-instruments are fixed~\parencite{tornberg2024best}, as Malki et al.\ did with a first set of
-policies~\parencite[p.~4]{malki2024exploring}.
-
-\paragraph{Test case.} The test app is chosen on purpose from the sample, not at random, for
-how much of the instrument it exercises: sensitive data, many pathways, and a long policy in
-English from a provider in Germany. It stays in the sample and is recoded with the frozen
-instruments, and like the pilot apps it does not enter the validation set.
-
-\paragraph{What is real and what is not.} The policy is real and archived with its hash.
-The reference model, the evaluation and the model's output are real. Two inputs are not final:
-\begin{itemize}[itemsep=1pt,topsep=3pt]
-  \item The walkthrough record is \textbf{invented for this test} \synthtag. Nobody opened the
-    app. Its only purpose is to run the walkthrough's outputs through the procedure. Every
-    result that rests on it carries the same tag, and none is a finding about the real app.
-  \item The manual coding and the applicability record were \textbf{prepared by an AI assistant}
-    as stand-ins, before any model output existed. The author has to check or redo them.
-    Comparing them with the model exercises the script. It is not validation, since both come
-    from one vendor.
-\end{itemize}
-The test is evaluated twice, on the policy alone and with the invented walkthrough, to show what
-a walkthrough adds.
-% Decision D16. Files: 04_Study/Instrument-Test/, scripts/instrument-test/v001/.
-
-\subsection{Pilot, Refinement, and Instrument Freeze}
-\label{sec:pilot}
-The pilot takes place after sampling and after the reference harm trees have been built. Five
-apps are drawn at random from the full health-tracker sample with a recorded seed, without
-category quotas. The pilot tests the boundaries of collection and coding and measures capture
-and transcript-checking time, coding units, coding and settling time per unit, and model cost.
-It also settles the choices left open in this
-chapter: for the walkthroughs, the platform rule, device and operating system, starting states,
-route-preparation and stopping rules, time limits, synthetic inputs, the consent and permission
-profile, and the lay scenario and completion criteria of each task and subgoal; for the
-coding, the stance definitions and the handling of new harms; and the two language models and
-their prompts, chosen by comparing candidate models with the author's complete coding of the
-pilot units.
+\subsection{Reference-Tree Check and Instrument Freeze}
+\label{sec:freeze}
 Because the yardstick should not be judged only by the person who built it, the second person of
 Section~\ref{sec:validation} checks every pathway of the reference trees before the freeze:
 whether its source supports the link, whether each combination of components suffices for the
 named actor in the health-tracker context, and whether the actor has access to the data. Each
 objection and its resolution is logged, and the trees are evaluated again after any change.
-The pilot's counts of labels, disagreements and uncertain answers per code, and its time per
-unit, fix the size and allocation of the validation sample and the vocabulary of stratum~V3
-before the sample is drawn. The instruments are then frozen as one versioned bundle: codebook,
+The instruments are then frozen as one versioned bundle: codebook,
 prompts and output schemas, the human coding sheets, the sampling manifest, the walkthrough
 protocol and the forms for applicability and mismatch decisions.
 \todo[inline]{Resolved 4 November 2026 (submission review R5): the bundle is versioned and
 matches this chapter. Codebook v6; reference model v2; prompts stage1\_coverage\_v2 and its
 paraphrase v2p, stage2\_stance\_v2, stage3\_protection\_v2; walkthrough protocol version~8;
 human coding sheets and decision forms version~1; the sampling manifest and estimator in
-scripts/validation-sample/v001. The earlier versions stay as historical; the pilot runs this
-bundle.}
-Later changes are logged, and the affected material is recoded. The pilot apps are recoded with
-the final instruments and remain in the sample. Because the models were chosen and the prompts
-tuned on them, the pilot and test apps are development material: their units do not enter the
-validation sample, their results rest on the author's complete coding, and they are reported
-separately and never as independent evidence of model performance.
+scripts/validation-sample/v001. The earlier versions stay as historical.}
+Later changes are logged, and the affected material is recoded.
 
 \subsection{Validation Sample, Agreement, and Error Estimates}
 \label{sec:validation}
 \label{sec:two-coders}
 The validation measures how often the frozen models are wrong, so that the reported figures can
-be corrected for it. Its target is the \emph{independent corpus}: all coding units of the apps
-outside the pilot and the instrument test. Its unit is the coding unit, not the app: the errors
+be corrected for it. Its target is the \emph{corpus}: all coding units of all sampled apps. Its
+unit is the coding unit, not the app: the errors
 that matter are rare and concentrated in few units, and ten whole apps would hold too few of
-them to estimate anything. The instrument test illustrates this: its policy of 178 units names
-no harm at all (Section~\ref{sec:results-test}).
+them to estimate anything.
 
-\paragraph{Validation sample.} After both models have coded the independent corpus, every unit
+\paragraph{Validation sample.} After both models have coded the corpus, every unit
 is assigned to exactly one stratum, the first of the following that it meets:
 \begin{enumerate}[label=V\arabic*,leftmargin=2.2em,itemsep=1pt,topsep=3pt]
   \item the two models disagree on any code;
   \item a model returned an uncertain label;
-  \item no high-stakes label, but harm-related vocabulary in either language, where missed
-    mentions are most likely;
+  \item no high-stakes label, but harm-related vocabulary in either language, from a list fixed
+    in the codebook before the draw, where missed mentions are most likely;
   \item an interface unit not assigned above, so that performance is measured on interface
     text and not only on policies;
   \item every remaining unit.
@@ -2137,7 +2082,7 @@ is assigned to exactly one stratum, the first of the following that it meets:
 Within each stratum, units are drawn by simple random sampling without replacement with a
 recorded seed; a stratum smaller than its allocation is taken whole. The strata are disjoint,
 so each unit's probability of selection is exactly the share of its stratum that is
-sampled~\parencite[chs.~3, 6]{lohr2021sampling}, and every unit of the independent corpus has a
+sampled~\parencite[chs.~3, 6]{lohr2021sampling}, and every unit of the corpus has a
 positive probability, as the correction requires~\parencite[\S2]{egami2023using}. Stratum~V3
 replaces a separate missed-mention audit, and stratum~V5 exposes the blind spots of the
 vocabulary. Oversampling the units on which the models disagree or are unsure follows the
@@ -2147,16 +2092,19 @@ weights~\parencite{zrnic2024active,gligoric2025unconfident}; stratification also
 intervals when model accuracy differs across strata~\parencite{fisch2024stratified}. The
 numbers of units, independent providers and unique documents in each stratum are reported.
 \highlight[orange!25]{The sample holds 500 units. They are allocated in proportion to each
-stratum's size times the spread of the model errors in it, as estimated in the pilot (Neyman
-allocation),}~\parencite[ch.~3]{lohr2021sampling}\highlight[orange!25]{, with at least 150 units
+stratum's size times an assumed spread of the model errors in it (Neyman
+allocation),}~\parencite[ch.~3]{lohr2021sampling}\highlight[orange!25]{ with assumed spreads of
+0.5 in V1 and V2, 0.4 in V3, 0.1 in V4 and 0.07 in V5, and with at least 150 units
 in stratum V5 and at least 30 in every other stratum, or the whole stratum if it is smaller. If
-the pilot's time per unit means that 500 units would take a coder more than 12 hours, the total
-is reduced to what fits, under the same rule.}\todo[inline]{Decision of 4 November 2026 (D9).
-Size: at about a minute per unit, 500 units take each coder some 8 to 9 hours, about 7\,\% of a
-corpus of roughly 45 policies of 150 units. Allocation: Neyman allocation minimises the variance
-for a given size; with plausible spreads it puts about half the sample into V5, because V5 is
-large even though its errors are rare. The floor of 150 in V5 bounds what a clean-looking V5 can
-hide: with no error among 150 units, the Jeffreys upper bound on its error share is 1.7\,\%.
+the time per unit measured in the second coder's training means that 500 units would take a coder
+more than 12 hours, the total is reduced to what fits, under the same rule.}\todo[inline]{Decision
+of 4 November 2026 (D9), revised 5 November 2026 (D20). Size: at about a minute per unit, 500 units
+take each coder some 8 to 9 hours, about 7\,\% of a corpus of roughly 50 policies of 150 units.
+Allocation: Neyman allocation minimises the variance for a given size; with these spreads it puts
+about half the sample into V5, because V5 is large even though its errors are rare. The spreads are
+assumptions, not measurements: a wrong spread costs efficiency, not validity, because the estimates
+use the selection weights whatever the allocation. The floor of 150 in V5 bounds what a clean-looking
+V5 can hide: with no error among 150 units, the Jeffreys upper bound on its error share is 1.7\,\%.
 Checked on constructed corpora in scripts/validation-sample/v001.}
 
 \paragraph{Two human coders.} The author and a second coder
@@ -2185,9 +2133,10 @@ judged negative, and the recorded walkthroughs of ten apps. If no second coder i
 the double coding is reduced to a smaller probability sample drawn across all strata, and the
 claims are narrowed accordingly; coding only the hard strata would not measure reliability
 across the corpus. The second coder is a student of a computing programme who has no other part
-in the thesis. Before coding the sample, the second coder codes 20 pilot units and discusses
-every difference with the author; these units stay development material.}\todo[inline]{Decision
-of 4 November 2026 (D8). Budget: 500 units at about a minute (9 hours), the
+in the thesis. Before the sample is drawn, the second coder codes 20 units from the policy of an
+app outside the sample and discusses every difference with the author; these units are not part
+of the corpus.}\todo[inline]{Decision of 4 November 2026 (D8), training units revised 5 November
+2026 (D20). Units of the corpus would have been seen before the blind coding. Budget: 500 units at about a minute (9 hours), the
 tree check of 21 pathways (2 hours), about 40 sampled applicability, minimisation and mismatch
 decisions (2 hours), ten recorded sessions at about 45 minutes (7.5 hours) and training
 (2 hours), about 22 hours in all. If fewer hours are available, the fallback above applies, with the units
@@ -2206,7 +2155,7 @@ models, and between the main and the paraphrased prompt, is reported beside thes
 robustness check.
 
 \paragraph{Corrected estimates.} Unit-level figures of RQ1 to RQ3, such as the number of units
-that name a component or a capability, are additive totals over the independent corpus. For a
+that name a component or a capability, are additive totals over the corpus. For a
 code, let $g_i$ be the mean of the two models' indicators for unit~$i$ (0, $\tfrac12$ or 1, an
 uncertain answer counting as $\tfrac12$), $y_i$ the reference label and $\pi_i$ the unit's
 selection probability. The total is estimated as
@@ -2244,7 +2193,7 @@ limitations say so.}\todo[inline]{Decision of 4 November 2026 (submission review
 audit is the only design that measures app-level misses, but at the size this study can afford
 it would not support a claim. With no miss found in five fully read apps, the Jeffreys upper
 bound on the share of apps with a missed mention is 38\,\%; with ten apps it is 22\,\%. Ten
-policies of the instrument test's length are about 94{,}000 words, which breaks the design's rule
+long policies are about 94{,}000 words, which breaks the design's rule
 that no person reads the whole corpus, for an interval that could not separate a careful
 pipeline from a poor one. The unit-level miss estimate beside each app-level figure stays.}
 
@@ -2278,7 +2227,7 @@ therefore not obtained for the study. Where they block a task or the whole inspe
 barrier is recorded, and the app stays in the document sample
 (Section~\ref{sec:walkthroughs}).
 
-The pilot's estimates fix a minimum feasible study before collection: the policies of all
+The minimum feasible study is the policies of all
 apps, coded by both models; the human check of every high-stakes label; the validation sample;
 and the walkthroughs. \highlight[orange!25]{If time runs short, the second rating of recorded
 walkthroughs is reduced first and the interface stratum of the validation sample second; the
@@ -2355,9 +2304,7 @@ are not corrected; no whole-app audit is run, so app-level misses are not estima
 label is the judgement of one person. The two models' errors are correlated, so their agreement is
 no evidence of accuracy~\parencite{kim2025correlated}. Unless a second coder joins, one person
 provides the reference labels, so model agreement is not independent human-coder
-reliability~\parencite{mcdonald2019reliability}. The stand-in coding of the instrument test was
-prepared by an assistant of the same vendor as the tested model, so it validates nothing
-(Section~\ref{sec:instrument-test}).
+reliability~\parencite{mcdonald2019reliability}.
 
 \paragraph{Language.} English text is coded first, although German
 users may meet the German version; the difference log documents the differences it finds

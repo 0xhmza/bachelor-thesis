@@ -55,3 +55,7 @@
 - **Closed with it:** the platform rule (Android for apps listed in both stores, iOS for App-Store-only apps), device, time limit and session sequence of the 2026-11-04 (night) decision, protocol v8; the walkthrough-before-model-code order; the T3c redress subgoal; the matched-state language capture; and the second rating of recorded sessions of ten apps. The second rating is a validation step on recorded sessions, not a walkthrough scope; the question of who the second coder is stays in D8.
 - **Not decisions:** the exact emulator image, iOS version and patch level are recorded once on the first pilot day (protocol), as measurements. The pilot may report that a task does not reach a tree node, but that would be a finding, not a reason to reopen the scope.
 - **Removed:** the open items "platform for the 36 apps listed in both stores", "time one session takes", "device and OS version" and "second inspection of a subset"; the "would change if" clause on the supervisor.
+
+## Update 2026-11-05
+
+The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).

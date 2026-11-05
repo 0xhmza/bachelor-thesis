@@ -18,3 +18,7 @@
 
 - **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
 - **Choice:** the instrument test stays a historical record of protocol v5 and reference model v1, with its tables unchanged. Its re-evaluation under model v2 from the policy alone is recorded (`04_Study/Instrument-Test/applicability_clue_v2.yaml`, `scripts/instrument-test/v002/output/`): I2 and P10 no longer apply. No synthetic re-run under the frozen protocol: it would again rest on invented screens; the pilot under protocol v8 is the evidence for the frozen instruments.
+
+## Update 2026-11-05
+
+The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).

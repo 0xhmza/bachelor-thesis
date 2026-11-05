@@ -2,8 +2,7 @@
 \label{app:prompts}
 \todo{Every prompt version used, verbatim, with its version number and date.}
 
-These prompts were used in the instrument test (Section~\ref{sec:results-test}). All examples in them are
-constructed. The pilot will revise them, and each new version will be added here.
+All examples in these prompts are constructed. Each version used is added here.
 
 \section{Rules of the LLM Coding}
 \label{app:llm-rules}
@@ -22,7 +21,7 @@ rule is this study's design (marked \emph{study rule}).}
 \toprule
 \textbf{Step} & \textbf{Rule} & \textbf{Precedent} \\
 \midrule
-Models & Two models of different families, selected on the pilot, then frozen, with versions and parameters reported; an open-weight model is preferred for one of them if it performs close to a hosted one
+Models & Two models of different families, fixed before coding and then frozen, with versions and parameters reported; an open-weight model is preferred for one of them
   & \parencite{tornberg2024best} \\
 \cmidrule[0.3pt]{2-3}
 Prompt & Context, then codebook definitions, then output format. Two constructed examples, no persona and one prompt for both families are study rules
@@ -37,13 +36,13 @@ Evidence & Every code quotes its span, as a decision and the supporting text. Th
 Doubt & An uncertain answer is kept as uncertain and never becomes a negative code; uncertain routine labels form a validation stratum, uncertain high-stakes labels are checked
   & \parencite{tornberg2024best} \\
 \cmidrule[0.3pt]{2-3}
-Stability & Repeated runs of each model in the pilot, their number fixed in the pilot; agreement between runs and between the two models is a stability and robustness check, not validation
+Stability & Each model codes the validation sample three times, a number that is a study rule; agreement between runs and between the two models is a stability and robustness check, not validation
   & \parencite[\S4.3, pp.~3888--3889]{rodriguez2024llm} \\
 \cmidrule[0.3pt]{2-3}
 Wording & A paraphrased prompt is run on the validation sample, and the labels are compared
   & \parencite{tornberg2024best}\parencite{baumann2025llm} \\
 \cmidrule[0.3pt]{2-3}
-Reporting & Every tested model, prompt and setting is reported; prompts are archived in Appendix~\ref{app:prompts}. Keeping raw output apart from checked labels, so that performance is not measured after correction, is a study rule
+Reporting & Every model, prompt and setting used is reported; prompts are archived in Appendix~\ref{app:prompts}. Keeping raw output apart from checked labels, so that performance is not measured after correction, is a study rule
   & \parencite[p.~18]{baumann2025llm} \\
 \cmidrule[0.3pt]{2-3}
 Combination & Routine labels: kept when both models return them, otherwise uncertain. High-stakes labels: union of both models. A study rule motivated by correlated but not identical model errors

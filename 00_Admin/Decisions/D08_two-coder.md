@@ -30,3 +30,7 @@
 ## Note 2026-11-05 — walkthrough part closed
 
 - The walkthrough covers all 50 apps (D10, closed). The second rating of recorded sessions of ten apps is part of this decision's validation work and is fixed at ten; only the identity of the second coder remains open here.
+
+## Update 2026-11-05
+
+The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).

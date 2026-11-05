@@ -47,3 +47,7 @@
   - Cut order kept: second walkthrough rating first, interface stratum second, never to zero (positivity); policy coding, high-stakes check and V5 never reduced.
 - **Implementation:** `scripts/validation-sample/v001/` (priority partition, draw and manifest, difference estimator, joint misses from every stratum, Jeffreys intervals, Neyman allocation; 9 tests on constructed corpora).
 - **Would change if:** the pilot's time per unit or error spreads differ strongly from the assumptions above; the supervisor asks for a whole-app audit.
+
+## Update 2026-11-05
+
+The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).
