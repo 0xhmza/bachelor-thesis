@@ -219,12 +219,11 @@ concept of the sub-questions becomes a term group whose alternative terms are
 joined with OR, and the groups of a query are joined with AND, so that a record
 must contain at least one term of every group. Eight groups cover the concepts
 (Table~\ref{tab:lit-groups}; the complete term lists are in
-Appendix~\ref{app:lit-groups}). The terms were chosen for this review. After the
-search, each was compared with the term lists reported by studies this thesis
-cites and with the titles and abstracts of the works held before the search
-(Appendix~\ref{app:lit-groups}). The comparison shows how far the terms overlap
-with published vocabularies; it changed no term and does not show their origin
-(Decision D21).
+Appendix~\ref{app:lit-groups}). The groups follow from the concepts; the terms
+within them are developed and tested as the end of this subsection states.
+\todo[status=revise]{Table~\ref{tab:lit-groups}, Table~\ref{tab:lit-strands} and
+Appendix~\ref{app:literature} still show the terms of the search of 28 October 2026,
+which were not developed by this procedure. Replace them once it has been applied.}
 % Precedent for concept blocks (OR within a concept, AND across concepts):
 % Lefebvre et al., Cochrane Handbook for Systematic Reviews of Interventions,
 % v6.5.1 (2025), ch. 4, Sec. 4.4.2 "Structure of a search strategy",
@@ -276,6 +275,58 @@ S1 & LQ1 Harms and capabilities & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & 
 S2 & LQ2 Communication & $\bullet$ & $\bullet$ & & $\bullet$ & & & & & D AND P AND C & 2014 \\
 S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L AND A & 2022 \\
 S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014 \\
+\paragraph{Reference set.} The terms are developed from, and tested against,
+studies known to be relevant, following the objective approach of Hausner et
+al.~\parencite{hausner2012routine} (Decision D22). For each sub-question, the
+reference set holds the studies included in published reviews of that question;
+where no such review exists, it holds the studies selected from a precise search
+of one database. All of them meet the eligibility criteria of
+Section~\ref{sec:lit-screening}. Each set is split at random, with a recorded
+seed, into two thirds for development and one third for validation.
+
+\paragraph{Candidate terms.} Candidates come from three sources. The first is the
+frequency of words and phrases in the titles and abstracts of the development
+set: one becomes a candidate when it occurs in at least 20\% of the development
+studies and in at most 2\% of a random sample of PubMed records and venue papers,
+so that it marks the topic rather than the literature at large. These cut-offs,
+set by Hausner et al.\ for a medical topic, change only with a logged reason. The
+second source is the term lists that published studies report for the same
+concept, and the third, for PubMed, the MeSH headings of the development records.
+Each term kept is assigned to one group and widened with spelling variants,
+synonyms, acronyms and truncation~\parencite[Sec.~4.4.4]{lefebvre2025searching}.
+A term log records the source and group of every term and why it was kept or
+dropped.
+
+\paragraph{Assembly and validation.} The terms are combined by trial until each
+strand retrieves its development studies at a precision that stays screenable, as
+the aim is high sensitivity with reasonable
+precision~\parencite[Sec.~4.4.3]{lefebvre2025searching}. Each strand is then run
+against its validation set, compared by identifier and counting only studies the
+database holds. No pass mark is set. The share retrieved is reported with its
+counts and every missed study is examined. A term that a missed study shows to be
+absent is added and the strand retested, and the first and the final value are
+both reported.
+
+\paragraph{Review and freeze.} Before the search runs, \highlight[orange!25]{a second person with search
+experience}\todo{Name who reviews the search strings; Decision D22 leaves this open.
+Read the PRESS checklist before it is applied.} reviews the strings with the PRESS
+checklist~\parencite{mcgowan2016press}, and the review is
+reported~\parencite{rethlefsen2021prisma}. The terms are then frozen
+for the run. Included studies found only by citation searching are checked for
+missing terms; a term found this way is added, the search rerun and the change
+logged. Since a search that finds only known studies may be biased towards
+them~\parencite[Sec.~4.4.11]{lefebvre2025searching}, the results also report how
+many included studies lie outside the reference set.
+% Precedents and limits (Decision D22):
+% - hausner2012routine, Methods: test set from reviews or a precise search; random
+%   split 2/3 and 1/3; terms in at least 20% of the development set and at most 2%
+%   of a random sample from the database; MeSH by frequency and relevance; validation
+%   by accession number. No numeric target and no rule for a missed reference.
+% - The sample across PubMed and venue papers, the retest rule and the absence of a
+%   pass mark are project rules, recorded in D22.
+% - lefebvre2025searching, Sec. 4.4.8 and rethlefsen2021prisma, Item 14: peer review
+%   before the run and its reporting.
+
 \bottomrule
 \end{tabular*}
 \end{singlespace}
@@ -2080,7 +2131,7 @@ in the thesis.
 
 \subsection{Data and Artifact Availability}
 \label{sec:availability}
-The study keeps a record of each of its steps: the search strings, unchanged search results and
+The study keeps a record of each of its steps: the term log, search strings, unchanged search results and
 screening log (Appendices~\ref{app:lit-strings} and~\ref{app:literature}); the frozen store
 collections, collection scripts and sample (Section~\ref{sec:app-sampling},
 Appendices~\ref{app:scripts} and~\ref{app:app-sample}); the captured policies, screen recordings

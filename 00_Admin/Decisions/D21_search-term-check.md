@@ -1,6 +1,6 @@
 # D21 — The search terms are compared with published vocabularies after the search
 
-- **Status:** proposed (author's instruction, 2026-11-05, chat: the comparison option for search terms whose source is not recorded). The search of 28 October is frozen and does not change.
+- **Status:** superseded by [D22](D22_search-term-development.md) (2026-11-05). Was: proposed (author's instruction, 2026-11-05, chat: the comparison option for search terms whose source is not recorded). The search of 28 October is frozen and does not change. The comparison stays as a record of that search.
 - **Affects:** Methodology, Section 4.2 (Search concepts); Results (Search terms); Appendix F.1; [`term_check.py`](../../scripts/literature-term-check/v001/term_check.py); [D14](D14_literature-review-v2.md).
 
 ## Problem
