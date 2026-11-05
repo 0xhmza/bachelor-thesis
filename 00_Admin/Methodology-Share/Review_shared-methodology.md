@@ -63,15 +63,14 @@ No worked examples, prompts, search strings, scripts or results. The PDF keeps:
 | A.3 | Databases, fields and limits | F.4 |
 | B.1 | Search keywords | C.6 |
 | B.2 | Public listing data by geographic basis | C.7 |
-| B.3 | Google Play trial collection (developer rule) | C.2 |
-| B.4 | Developer names matched by hand (P3) | C.4 |
-| B.5 | Sensitivity variants | C.8 |
+| B.3 | Sensitivity variants | C.8 |
 | C.1 | Rules of the LLM coding | B.1 |
 
 Removed: Appendix A (codebook worked example, CycleMate), B's prompt listings, C's sample table,
-the selection without the developer rule and the identity register (results), the provider
+the selection without the developer rule, the identity register, the Google Play trial
+collection and the hand-matched developer names (records of the collection), the provider
 examples, D (worked example), E (scraping scripts), F's syntax table, search strings and corpus
-inventory, and G (reference model). The vendor-share calculation stays as one paragraph in B.4.
+inventory, and G (reference model). The vendor-share calculation stays as one paragraph in B.3.
 
 Matching changes in the chapter:
 - The references to Appendix D, to "Appendices A and D … constructed examples", to the
@@ -80,10 +79,9 @@ Matching changes in the chapter:
 - The Reporting row of Table C.1 no longer says that the prompts are archived in an appendix.
 - Table A.3 now says "records of short anchor queries" instead of "the anchor pool", which was
   defined only in the removed search strings.
-
-Still worth a look: B.3 (trial collection) and B.4 (hand-matched developers) are cited by the
-chapter, but both are records of the collection rather than rules. If you want no collected
-data at all, remove them and their two references in 4.4.3.
+- 4.4.3 Selection keeps the trial finding (one developer held 10 of the 47 most-rated apps) but
+  no longer points to a table; the footnote states the trial's settings, including that it was
+  ranked by the worldwide rating count. The P3 sentence no longer points to a table either.
 
 ## E. Open points I did not change (your decision)
 
@@ -91,5 +89,5 @@ data at all, remove them and their two references in 4.4.3.
 2. **Minimisation:** Table 4.12 says minimisation is "decided by people only", but the Stage 2 prompt (`stage2_stance_v2.md`) does return `S-MIN`, and Axis B says it is coded. Consistent if read as "models propose, people decide"; consider saying so.
 3. **The thesis's Appendix A says "codebook version 4"** (no longer in the shared PDF); the frozen bundle is v7.
 4. **Sunyaev et al., Spearman 0.89:** kept as in the LaTeX; not re-checked against the PDF.
-5. **Length:** the text is about as long as the Google Doc (a few added clauses, one removed sentence). The thesis layout makes the chapter about 20 pages instead of 15; with bibliography and appendices the PDF has 36 pages.
+5. **Length:** the text is about as long as the Google Doc (a few added clauses, one removed sentence). The thesis layout makes the chapter about 20 pages instead of 15; with bibliography and appendices the PDF has 32 pages.
 6. **The Google Doc still cites the old appendix numbers** (Table B.1, C.2, C.4, C.6–C.8, F.1, F.2, F.4, Appendices A, D, E). Update them if you keep sharing the doc.
