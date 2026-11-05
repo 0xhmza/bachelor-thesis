@@ -1,0 +1,35 @@
+%======================================================================
+%  Methodology chapter only, with its bibliography and Appendices A-F,
+%  for sharing. Same class and preamble as thesis.tex; revision notes and
+%  highlights are switched off.
+%======================================================================
+\documentclass[its]{bossthesis}
+
+\input{config/metadata}
+\input{config/preamble}
+
+\showhighlightsfalse
+\renewcommand{\todo}[2][]{}
+
+\begin{document}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+\setcounter{chapter}{3}
+\input{chapters/04_methodology_review}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}%
+\printbibliography[title={\bibname}]
+
+\clearpage
+\appendix
+\input{appendix/A_codebook}
+\input{appendix/B_prompts}
+\input{appendix/C_app_sample}
+\input{appendix/D_proposal_example}
+\input{appendix/E_scraping_scripts}
+\input{appendix/F_literature}
+
+\end{document}
