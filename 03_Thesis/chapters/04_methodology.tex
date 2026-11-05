@@ -311,20 +311,11 @@ candidates for LQ1 and LQ2.
 \paragraph{Databases.} Four bibliographic databases add the literature published
 elsewhere (Table~\ref{tab:lit-databases}): PubMed for health informatics and
 medicine, IEEE Xplore for engineering, arXiv for preprints and the ACL Anthology
-for language processing. Each strand is run against every database, either as a
-query of its own or locally on the retrieved records, as the next paragraph
-explains.
-
-\paragraph{Platform strings.} The strands are the shared search logic; each
-platform receives them in its own syntax (Table~\ref{tab:lit-syntax}). The
-complete strings, fields, date limits and search times are given in
-Appendix~\ref{app:lit-strings}. The arXiv
-interface returned fewer records for long nested queries than for their parts,
-so arXiv receives short anchor queries instead: each pairs one domain word with
-one privacy term, or joins the words of one privacy-text term, in the title or
-abstract. The records of all anchor queries form a pool. The strands are applied
-locally to the arXiv pool, to the ACL Anthology file and to the venue lists.
-No language or publication-type filter is set; both are screening rules.
+for language processing. Each strand is run against every database, as a query
+of its own or locally on the retrieved records. arXiv returned fewer records for
+long nested queries than for their parts, so it receives short anchor queries,
+and the strands are applied locally to the pool of their records. The strings,
+fields and limits are in Appendix~\ref{app:lit-strings}.
 % Precedents and documentation:
 % - Full strategy per source, with fields, limits and dates: PRISMA-S
 %   (rethlefsen2021prisma) items 8, 9 and 13.
