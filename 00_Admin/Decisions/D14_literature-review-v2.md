@@ -1,7 +1,6 @@
 # D14 — How is the literature searched, screened and reported? (supersedes D13)
 
 - **Status:** proposed (2026-10-28, requested by the author); revised by the author on 2026-10-30 (see *Revision of 30 October*); not yet discussed with the supervisor. Supersedes [D13](D13_literature-review.md). The methodology (Section 4.1) states this procedure; the results report its outcome.
-- **Revised by [D22](D22_search-term-development.md) (2026-11-05):** the terms of the groups are developed and tested anew; the results of the 28 October search are discarded, kept and marked.
 - **Affects:** Methodology, Literature Review; Results, Literature Review (not yet revised; it carries a notice); Appendix F; [`scripts/literature-search/v002`](../../scripts/literature-search/v002/) (the search run of 28 October) and [`v003`](../../scripts/literature-search/v003/) (the revised method; so far it writes the search strings of Appendix F); [`01_Literature/review/`](../../01_Literature/review/README.md); frozen collection `05_Data/Literature Search/28. Oct/`
 - **Options considered:**
   1. D13: the staged procedure of Baumann et al. on OpenAlex and Semantic Scholar, with a filter of at least three citations per year.
