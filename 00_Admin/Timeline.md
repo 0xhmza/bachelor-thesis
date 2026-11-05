@@ -23,7 +23,7 @@ settled. The argued schedule with slip points is archived in
 | 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting first and second examiner |
 | 7 | Keywords and inclusion/exclusion criteria fixed | 2026-09-18 | ☑ sampling protocol v2 (2026-10-23; ranking revised 2026-10-25) |
 | 8 | App sample collected and frozen | | ◐ drawn 2026-10-25 (47 + 3 apps); frozen after the author checks the screening |
-| 9 | Codebook | 2026-09-18 | ◐ v3 in `04_Study/Codebook/`; examples come from the pilot |
+| 9 | Codebook | 2026-09-18 | ◐ v7 in `04_Study/Codebook/`; examples to be filled before the freeze |
 | 10 | LLM prompts v1 + validation on a subsample | | ☐ |
 | 11 | Data collection complete | | ☐ |
 | 12 | Analysis complete | | ☐ |
@@ -41,7 +41,7 @@ background and related work are drafted alongside collection.
 
 | Phase | Period | Deliverable |
 |---|---|---|
-| Preparation | to 2026-10-30 | Proposal approved; five-app pilot; instruments v1 frozen |
+| Preparation | to 2026-10-30 | Proposal approved; instruments frozen (no pilot, D20) |
 | Weeks 1–4 | 2026-11-02 – 11-29 | Sample frozen (n = 50); corpus collected, hashed, segmented |
 | Weeks 5–6 | 2026-11-30 – 12-13 | Privacy walkthroughs |
 | Weeks 7–8 | 2026-12-14 – 12-27 | LLM coding runs; manual validation subsample |
