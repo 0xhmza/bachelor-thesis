@@ -79,9 +79,11 @@ graphify-out/.build_*
 graphify-out/memory/
 graphify-out/reflections/
 
-# Over GitHub's 100 MB limit (117 MB); back up separately
-/01_Literature/AI Literature Analysis/00_Methods-Digest_complete.pdf
-/01_Literature/PDFs/AI Literature Analysis/00_Methods-Digest_complete.pdf
+# Over GitHub's 100 MB limit (122 MB); back up separately
+/01_Literature/digest/volumes/MethodsDigest_Complete.pdf
+# Shadow-library copy, private use only (see 01_Literature/digest/HANDOFF.md)
+/01_Literature/library/Krippendorff_2019_*.pdf
 /tmp
 *.conflict-thispc
 *.synctex(busy)
+*.conflict-cloud

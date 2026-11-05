@@ -15,7 +15,7 @@ import lit
 
 ROOT = lit.HERE.parents[2]
 RECORDS = lit.HERE / 'output' / 'records.csv'
-DEC = ROOT / '01_Literature' / 'Literature-Review' / 'decisions'
+DEC = ROOT / '01_Literature' / 'review' / 'decisions'
 
 
 def records():

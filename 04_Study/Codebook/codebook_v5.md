@@ -10,7 +10,7 @@ supersedes: codebook_v4.md
 
 The harm model is taken from Knabenhans et al. (2026), *On the (Privacy) Harms
 of the European Digital Identity Framework*, §4.1, §5 and Appendix A
-(`01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf`, the
+(`01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf`, the
 version of 4 May 2026; the paper was revised on 16 September 2026). Elements
 that do not come from that paper are marked **[not Knabenhans]** with their
 source.

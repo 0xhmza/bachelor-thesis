@@ -1,0 +1,293 @@
+# full-text decisions: in (sub-questions) or ex (R7/R8) after reading the PDF in 01_Literature/library; pending = full text not yet obtained
+doi:10.1109/embc.2014.6944736,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2139/ssrn.2418297,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/2659651.2659683,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1080/13691058.2014.920528,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/cns.2015.7346806,ex,R8,full text read (OpenAlex OA location): activity inference in location-based services; not health tracking (C4)
+doi:10.1136/amiajnl-2013-002605,in,LQ2,full text read: Sunyaev et al. 2015 - Availability and quality of mobile health app privacy policies.pdf
+arxiv:1512.05616,ex,R8,full text read (arXiv): master's thesis (C1)
+doi:10.2196/mhealth.3672,in,LQ1;LQ2,full text read: Dehling et al. 2015 - Exploring the Far Side of Mobile Health - Information Security and Privacy of Mobile Health Apps on iOS and Android.pdf
+doi:10.1109/icstw.2015.7107459,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1186/s12916-015-0444-y,in,LQ1;LQ2,full text read: Huckvale et al. 2015 - Unaddressed privacy risks in accredited health and wellness apps - a cross-sectional systematic assessment.pdf
+doi:10.1109/re.2016.20,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/ithings-greencom-cpscom-smartdata.2016.112,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+pmid:27071873,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/mobserv.2016.15,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/lcn.2016.048,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+url:https://www.usenix.org/conference/soups2016/technical-sessions/presentation/gluck,in,LQ2;LQ4,full text read (usenix.org): length and framing of privacy notices for fitness wearables
+doi:10.1145/2906388.2906407,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/2896338.2896341,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/2851613.2851685,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/tetc.2015.2478003,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1515/popets-2016-0042,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/percomw.2016.7457172,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/tmc.2015.2418774,in,LQ1,full text read (OpenAlex OA location): attacks on fitness-tracker communication
+doi:10.1109/icce-asia.2016.7804766,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/mcom.2016.1600553cm,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/2897845.2897905,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/2873587.2873594,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/issa.2017.8251776,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1007/978-3-319-66332-6_3,in,LQ1,full text read (OpenAlex OA location): reverse engineering and spoofing of Fitbit
+doi:10.2196/mhealth.7791,in,LQ1,full text read (Europe PMC): transport security of mHealth apps
+doi:10.1016/j.jagp.2017.04.009,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/chase.2017.54,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+url:https://www.usenix.org/conference/soups2017/technical-sessions/presentation/samat-disclosure,in,LQ4,full text read (usenix.org): risk and framing of privacy notices in experiments
+doi:10.1109/percomw.2017.7917646,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/lsp.2016.2642300,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/icfst.2017.8210548,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1007/978-3-319-58700-4_5,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/jmir.7347,in,LQ1;LQ2,full text read (Europe PMC): promotion material and data flows of health and fitness apps
+doi:10.1145/3137616.3137617,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/ichi.2017.29,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/tnnls.2018.2829223,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/infocom.2018.8485958,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+url:https://www.usenix.org/conference/usenixsecurity18/presentation/hassan,in,LQ1,"full text read: Hassan et al. 2018 - Analysis of Privacy Protections in Fitness Tracking Social Networks -or- You can run, but can you hide.pdf"
+doi:10.1145/3191737,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/compsac.2018.10253,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/mhealth.9217,in,LQ2,full text read: Hutton et al. 2018 - Assessing the Privacy of mHealth Apps for Self-Tracking - Heuristic Evaluation Approach.pdf
+doi:10.3390/proceedings2191235,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.18653/v1/d18-1387,in,LQ4,full text read: Lebanoff & Liu 2018 - Automatic Detection of Vague Words and Sentences in Privacy Policies.pdf
+doi:10.1007/s10916-018-1002-x,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1001/jamanetworkopen.2018.6040,in,LQ1,full text read (Europe PMC): re-identification of physical-activity data
+doi:10.1145/3211960.3211973,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:1805.10393,in,LQ4,full text read (arXiv): vagueness in privacy policies
+doi:10.1109/infcomw.2018.8406879,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/trustcom/bigdatase.2018.00081,in,LQ1,full text read (OpenAlex OA location): over-privileged third-party fitness apps
+doi:10.1109/tmc.2017.2737533,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1111/head.13341,pending,,no open-access PDF obtained (tried: Europe PMC); library access pending
+doi:10.1007/978-3-319-91521-0_31,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/ains.2018.8631464,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/tmc.2018.2794984,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3161196,in,LQ1,full text read (OpenAlex OA location): password inference from smartwatch motion
+doi:10.2196/mhealth.9871,in,LQ2,full text read (Europe PMC): complexity of mental-health app policies
+doi:10.1145/3212480.3212498,in,LQ1,full text read (OpenAlex OA location): lock combinations from wrist-wearables
+doi:10.1007/978-3-030-05345-1_5,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/sp.2018.00053,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1145/3299815.3314468,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.3390/s19132945,in,LQ1,full text read (Europe PMC): age and gender from gait traces
+doi:10.1001/jamanetworkopen.2019.2542,in,LQ1;LQ2,full text read: Huckvale et al. 2019 - Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation.pdf
+doi:10.1016/j.invent.2019.100243,in,LQ2,"full text read: Robillard et al. 2019 - Availability, readability, and content of privacy policies and terms of agreements of mental health apps.pdf"
+doi:10.1136/bmj.l920,in,LQ1;LQ2,"full text read: Grundy et al. 2019 - Data sharing practices of medicines related apps and the mobile ecosystem - traffic, content, and network analysis.pdf"
+doi:10.1145/3317549.3319722,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+digest:114,in,LQ2,"full text read: Mulder 2019 - Health Apps, their Privacy Policies and the GDPR.pdf"
+doi:10.1016/j.ijlp.2019.04.002,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3339252.3340515,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1080/03085147.2019.1570707,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/cbms.2019.00131,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1016/j.invent.2018.12.001,in,LQ2,full text read: O'Loughlin et al. 2019 - Reviewing the data security and privacy policies of mobile apps for depression.pdf
+doi:10.2196/jmir.9818,in,LQ1,full text read (Europe PMC): server security of mHealth apps
+doi:10.1109/access.2019.2946081,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:1910.09041,in,LQ1,full text read (arXiv): location from elevation profiles
+doi:10.1145/3290605.3300424,in,LQ4,full text read: Zou et al. 2019 - You Might Be Affected - An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications.pdf
+doi:10.1109/tmc.2019.2917659,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/issre5003.2020.00032,in,LQ1;LQ2,full text read (arXiv): GDPR violations of Android mHealth apps (policy and code)
+doi:10.2196/17134,in,LQ2,full text read (Europe PMC): fairness of privacy policies of cancer apps
+doi:10.1145/3313831.3376573,pending,,no open-access PDF obtained (tried: Europe PMC); library access pending
+doi:10.1145/3386901.3389025,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1055/s-0040-1701987,in,LQ1,full text read (Europe PMC): literature review of mHealth privacy and data ownership
+doi:10.1109/cscloud-edgecom49738.2020.00017,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.3390/electronics9091431,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/eurospw51379.2020.00073,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2478/popets-2020-0083,in,LQ2,full text read: Shipp & Blasco 2020 - How private is your period- - A systematic analysis of menstrual app privacy policies.pdf
+doi:10.2196/16444,in,LQ1,full text read (Europe PMC): scoping review of risks of health apps in the German statutory system
+doi:10.2196/18868,in,LQ2,full text read: Benjumea et al. 2020 - Privacy Assessment in Mobile Health Apps - Scoping Review.pdf
+doi:10.1109/cits49457.2020.9232503,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/icosst51357.2020.9332991,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1177/1524839919899924,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/trustcom50675.2020.00257,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/compsac48688.2020.00044,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/access.2020.3015962,in,LQ1,full text read (arXiv): systematic mapping of mHealth security and privacy research
+doi:10.1109/access.2020.2999934,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/icecce49384.2020.9179431,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1176/appi.ps.202000098,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/sp40000.2020.00088,in,LQ4,full text read (arXiv): communicating differential privacy in a health app
+doi:10.1145/3313831.3376651,in,LQ1,"full text read: Gabriele & Chiasson 2020 - Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours.pdf"
+doi:10.1109/icdcs47774.2020.00063,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/cloud49709.2020.00023,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/re51729.2021.00014,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/16146,in,LQ1,full text read (Europe PMC): privacy-related permissions of diabetes apps
+doi:10.1145/3494960,in,LQ1,full text read (OpenAlex OA location): perceived inference risks of tracker users
+doi:10.14763/2021.4.1599,in,LQ1;LQ2,full text read (OpenAlex OA location): data processing of fertility and menstruation apps under law
+doi:10.1145/3411764.3445132,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.5220/0010520106650673,in,LQ1;LQ2,full text read (arXiv): security and privacy of symptom-checker apps
+doi:10.1145/3463512,in,LQ1,full text read (arXiv): Bluetooth traffic of wearables reveals devices and activities
+doi:10.1145/3463676.3485,in,LQ4,full text read (arXiv): clarity of CCPA disclosures
+doi:10.24251/hicss.2021.469,pending,,no open-access PDF obtained (tried: OpenAlex OA location; OpenAlex OA location); library access pending
+doi:10.17351/ests2021.655,ex,R8,full text read (Europe PMC): interviews on period-tracking practices; no privacy harm or communication analysed (C4)
+doi:10.5220/0010233103690376,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1136/bmj.n1248,in,LQ1;LQ2,full text read: Tangari et al. 2021 - Mobile health and privacy - cross sectional study.pdf
+doi:10.52214/cjgl.v41i1.8824,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/msn57253.2022.00062,in,LQ1,full text read (arXiv): re-identification from PPG and gesture data
+doi:10.1109/ethics53270.2021.9632745,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/23409,in,LQ2,full text read (Europe PMC): policy compliance of chronic-disease apps in China
+doi:10.2196/26317,in,LQ2,full text read: LaMonica et al. 2021 - Privacy Practices of Health Information Technologies - Privacy Policy Risk Assessment Study and Proposed Guidelines.pdf
+doi:10.1109/cic52973.2021.00022,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1016/j.pmcj.2021.101480,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1080/00346764.2021.2018027,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1016/j.invent.2021.100433,in,LQ2,full text read (Europe PMC): readability of depression-app policies
+doi:10.1109/ispa-bdcloud-socialcom-sustaincom52081.2021.00201,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3460120.3484799,pending,,no open-access PDF obtained (tried: Europe PMC); library access pending
+doi:10.1145/3548606.3560616,in,LQ1,full text read: Dhondt et al. 2022 - Inference Attacks on Fitness Tracking Privacy Zones.pdf
+doi:10.1016/j.pecinn.2022.100022,in,LQ1,full text read (Europe PMC): interviews naming insurer access to sensor data
+arxiv:2211.07585,in,LQ1,full text read (arXiv): attack simulation with mHealth app users
+doi:10.46586/tches.v2022.i3.330-366,in,LQ1,full text read (OpenAlex OA location): reversing and exploiting the Xiaomi fitness ecosystem
+doi:10.1109/percomworkshops53856.2022.9767287,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/tmc.2022.3218148,in,LQ1,full text read (arXiv): location from shared elevation profiles
+doi:10.1109/pst55820.2022.9851975,in,LQ1;LQ2,full text read (arXiv): policies permissions and code of mental-health apps
+doi:10.1007/s10664-022-10236-0,in,LQ1;LQ2,full text read: Iwaya et al. 2023 - On the privacy of mental health apps - An empirical investigation and its implications for app development.pdf
+doi:10.3390/s22030988,in,LQ1,full text read (Europe PMC): Bluetooth security of two heart-rate wearables
+doi:10.1109/ichi54592.2022.00052,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3551349.3561343,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.2196/33735,in,LQ2,"full text read: Alfawzan et al. 2022 - Privacy, Data Sharing, and Data Security Policies of Women's mHealth Apps - Scoping Review and Content Analysis.pdf"
+doi:10.2196/30361,in,LQ2,full text read (Europe PMC): privacy policies of pulse-oximeter apps
+doi:10.1109/seeda-cecnsm57760.2022.9932957,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3491102.3502136,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3549015.3554204,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/tts.2022.3160928,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1055/a-2155-2021,in,LQ2,full text read (Europe PMC): GDPR-based scale for mHealth policies
+doi:10.1177/02537176221142046,in,LQ2,full text read (Europe PMC): store descriptions and policies of depression apps
+doi:10.56553/popets-2025-0062,in,LQ3,full text read: Chanenson et al. 2025 - GKC-CI Privacy Policy Annotation with LLMs.pdf
+doi:10.1109/smartnets58706.2023.10215903,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1016/s2589-7500(22)00234-5,pending,,no open-access PDF obtained (tried: Europe PMC; OpenAlex OA location); library access pending
+doi:10.1007/s11257-022-09353-8,in,LQ1;LQ2,full text read (Europe PMC): inferences from fitness-tracker data and policies
+doi:10.1109/tps-isa58951.2023.00039,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.56553/popets-2024-0081,in,LQ3,full text read: Hamid et al. 2024 - GenAIPABench - A Benchmark for Generative AI-Based Privacy Assistants.pdf
+doi:10.1145/3589960,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/icccn58024.2023.10230156,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3617072.3617100,in,LQ1,full text read (arXiv): femtech users' perceptions of harms and risks
+doi:10.2139/ssrn.4655228,in,LQ4,full text read: Martin et al. 2023 - No Cookies For You! - Evaluating The Promises Of Big Tech's 'Privacy-Enhancing' Techniques.pdf
+arxiv:2309.10238,in,LQ3,full text read: Tang et al. 2023 - PolicyGPT - Automated Analysis of Privacy Policies with Large Language Models.pdf
+doi:10.1109/imip57114.2023.00021,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1177/20552076231152162,in,LQ2,full text read (Europe PMC): cognitive accessibility of health-app policies in three European countries
+doi:10.56553/popets-2023-0004,in,LQ1,full text read: Zufferey et al. 2023 - Revoked Just Now! Users' Behaviors Toward Fitness-Data Sharing with Third-Party Applications.pdf
+doi:10.1145/3708821.3710834,in,LQ1,full text read (arXiv): re-identification in smartwatch health data
+doi:10.1093/jlb/lsad021,in,LQ2,full text read (Europe PMC): ethical framework for the risks in mHealth user agreements
+doi:10.1109/bsn58485.2023.10331378,pending,,no open-access PDF obtained (tried: Europe PMC; OpenAlex OA location); library access pending
+url:https://www.usenix.org/conference/usenixsecurity23/presentation/zufferey,in,LQ1,full text read: Zufferey et al. 2023 - Watch your Watch - Inferring Personality Traits from Wearable Activity Trackers.pdf
+doi:10.23919/icmu58504.2023.10412218,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2310.14490,ex,R8,full text read (arXiv): extended abstract (CHI EA 2024) (C1)
+arxiv:2308.04933,in,LQ1,full text read (arXiv): attribute inference from step counts
+doi:10.2139/ssrn.4396029,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/saner60148.2024.00016,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/eurospw61312.2024.00010,in,LQ2,full text read (arXiv): qualitative framework for mHealth privacy practices
+doi:10.1109/ccis63231.2024.10932131,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1007/978-3-031-76265-9_9,in,LQ4,full text read: Doan et al. 2025 - Analysis of Transparency and User-Relevancy of DTC Company Policies.pdf
+arxiv:2410.08381,ex,R8,"conceptual paper on LLM assessment of policies, no empirical evaluation; full text read"
+doi:10.15439/2024f3979,in,LQ3,full text read (OpenAlex OA location): LLM question answering on EdTech privacy policies
+doi:10.1109/tpc.2024.3361328,pending,,no open-access PDF obtained (tried: OpenAlex OA location; OpenAlex OA location); library access pending
+doi:10.1007/s10207-024-00883-3,pending,,no open-access PDF obtained (tried: OpenAlex OA location; OpenAlex OA location); library access pending
+arxiv:2410.13387,in,LQ3,full text read (arXiv): LLM analysis of policies of LLM applications
+doi:10.1145/3641000,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/icced64257.2024.10983384,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/eurospw61312.2024.00009,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/pst62714.2024.10788072,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/bsn63547.2024.10780752,in,LQ1,full text read (arXiv): re-identification in ECG datasets
+arxiv:2410.11906,in,LQ3,full text read (arXiv): LLM agents for privacy-policy tasks
+doi:10.1109/trustcom63139.2024.00094,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/buildsec64048.2024.00010,in,LQ3,full text read (arXiv): entailment-based policy classification with LLMs
+doi:10.1145/3613904.3642521,in,LQ1;LQ2,full text read: Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf
+doi:10.1093/medlaw/fwae035,in,LQ1,full text read (Europe PMC): legal analysis of femtech surveillance by private and state actors
+arxiv:2409.02375,in,LQ3,full text read (arXiv): LLMs in privacy compliance and technical review
+doi:10.1145/3613904.3642042,in,LQ1,full text read: Cao et al. 2024 - Period-Tracking Privacy After Roe v. Wade.pdf
+doi:10.1109/spw63631.2024.00032,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1007/s12553-024-00885-0,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1007/s00607-024-01331-9,in,LQ3,full text read: Rodriguez et al. 2024 - Large language models - a new approach for privacy policy analysis at scale.pdf
+doi:10.3389/friot.2024.1296599,in,LQ1;LQ2,full text read: Mehrnezhad et al. 2024 - Mind the FemTech gap - regulation failings and exploitative systems.pdf
+doi:10.1145/3613904.3642384,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/50715,in,LQ1,full text read (Europe PMC): systematic review of patients' privacy perspectives on mHealth apps
+arxiv:2408.14830,in,LQ3,full text read (arXiv): logic representation of policies built with LLMs
+arxiv:2404.05876,in,LQ1;LQ2,full text read: Saini & Saxena 2024 - Privacy and Security of Women's Reproductive Health Apps in a Changing Legal Landscape.pdf
+arxiv:2409.14879,in,LQ3,full text read: Göknil et al. 2024 - Privacy Policy Analysis through Prompt Engineering for LLMs.pdf
+arxiv:2405.10979,in,LQ1,full text read (arXiv): data leakage in federated activity recognition on wearables
+doi:10.1109/tps-isa62245.2024.00021,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2404.19744,in,LQ3,full text read (arXiv): knowledge graph and LLMs for policy compliance
+doi:10.1007/978-3-031-79007-2_19,in,LQ1,full text read (arXiv): security of top-ranked fitness apps
+doi:10.1109/spw63631.2024.00033,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3688459.3688462,in,LQ1,full text read (OpenAlex OA location): shadow health-related data
+doi:10.1145/3613904.3642705,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/acsacw65225.2024.00027,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/icmla61862.2024.00078,ex,R8,full text read (arXiv): BERT classifier rather than a large language model (C4)
+arxiv:2410.00277,in,LQ1,full text read (arXiv): personal-information leaks of mobile health apps
+doi:10.1109/mapr63514.2024.10660854,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3645091,in,LQ1,"full text read: Salehzadeh Niksirat et al. 2024 - Wearable Activity Trackers - A Survey on Utility, Privacy, and Security.pdf"
+doi:10.1109/sp54263.2024.00077,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/aiot66900.2025.00149,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.18653/v1/2025.acl-long.1554,in,LQ3,full text read (arXiv): multi-agent LLM question answering on policies
+doi:10.26599/tst.2024.9010089,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3743736,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2509.01716,in,LQ3,full text read (arXiv): LLM framework for consuming policies
+doi:10.1109/icecet63943.2025.11472262,in,LQ1;LQ2,full text read (OpenAlex OA location): privacy and security compliance of incontinence wearables
+doi:10.1109/hri61500.2025.10973904,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/wimob66857.2025.11257567,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/aiccsa66935.2025.11315465,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1093/jamia/ocaf130,pending,,no open-access PDF obtained (tried: Europe PMC); library access pending
+url:https://www.usenix.org/conference/usenixsecurity25/presentation/xie,in,LQ3,full text read: Xie et al. 2025 - Evaluating Privacy Policies under Modern Privacy Laws At Scale - An LLM-Based Automated Approach.pdf
+doi:10.2196/51517,in,LQ1;LQ2,full text read (Europe PMC): policies of four reproductive-health apps and risks to users
+doi:10.36740/merkur202506120,pending,,full text read (OpenAlex OA location): downloaded file is a journal issue without the article
+doi:10.1145/3772318.3791465,in,LQ3,full text read (arXiv): LLM policy assessment in a browser extension
+doi:10.1145/3706598.3713702,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/qrs-c65679.2025.00101,ex,R8,full text read (arXiv): two-page short paper (C1)
+doi:10.1145/3706598.3713941,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1080/1177083x.2025.2508258,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1145/3706598.3714089,in,LQ1;LQ2,full text read: Hudig & Singh 2025 - Intimate Data Sharing - Enhancing Transparency and Control in Fertility Tracking.pdf
+doi:10.1145/3757488,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/mapr67746.2025.11133869,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3749385.3749387,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/caibda65784.2025.11183049,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2511.12377,in,LQ1;LQ2,full text read (arXiv): security and privacy of AI-based mHealth chatbots
+doi:10.56553/popets-2026-0141,in,LQ3,full text read (arXiv): multilingual LLM analysis of Swiss privacy policies
+arxiv:2505.05214,in,LQ2,full text read (arXiv): conceptual model of smartwatch privacy policies
+doi:10.1109/ase63991.2025.00232,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.2196/66762,in,LQ2,full text read: Lin et al. 2025 - Quality and Privacy Policy Compliance of Mental Health Care Apps in China - Cross-Sectional Evaluation Study.pdf
+doi:10.1109/wetice67341.2025.11092196,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1145/3715275.3732154,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/icftic68075.2025.11325092,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2505.11672,in,LQ3,full text read (arXiv): LLM agents auditing terms of service
+arxiv:2510.22531,in,LQ3,full text read (arXiv): fine-tuned and zero-shot LLMs detecting unfair terms
+doi:10.1080/10572252.2025.2533411,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1080/10447318.2025.2597502,in,LQ1;LQ4,full text read: Moniz & Almeida 2026 - Toward Risk Communication in Intimate Health Technologies.pdf
+doi:10.1007/978-3-032-07901-5_1,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2502.02749,in,LQ1;LQ2,full text read (arXiv): privacy and security gaps of female health apps
+arxiv:2503.16516,in,LQ3,"full text read: Chen et al. 2025 - Using LLMs for Automated Privacy Policy Analysis - Prompt Engineering, Fine-Tuning and Explainability.pdf"
+doi:10.1109/tits.2025.3576220,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.56553/popets-2025-0121,in,LQ1,full text read (arXiv): reverse engineering Apple Watch protocols
+doi:10.1145/3701716.3715287,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1109/icdabi67967.2025.11547790,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.56553/popets-2026-0026,in,LQ3,full text read: Cory et al. 2026 - Word-level Annotation of GDPR Transparency Compliance in Privacy Policies using Large Language Models.pdf
+arxiv:2503.03587,in,LQ3,full text read: Freiberger et al. 2025 - Interactive Privacy Policy Assessment with LLMs.pdf
+doi:10.1109/buildsec68439.2025.00021,in,LQ1;LQ2,full text read (arXiv): audit of 272 mHealth apps (permissions code reviews)
+arxiv:2607.17075,in,LQ3,full text read: Aryal et al. 2026 - A Systematic Evaluation of Traditional Privacy Policy Analysis Tools Against LLMs.pdf
+arxiv:2610.23851,in,LQ1;LQ2,full text read (arXiv): consent and data collection of more than 10000 mHealth apps
+doi:10.1177/20552076261483385,in,LQ2;LQ4,full text read (Europe PMC): discourse analysis of Apple Health privacy text and user interviews
+doi:10.1016/j.ijmedinf.2026.106384,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.3390/s26196298,in,LQ1,full text read (Europe PMC): threat model of smart sensing insoles
+arxiv:2609.26680,in,LQ3,full text read: Tang et al. 2026 - Decoding the Legalese - A Scalable and Quantitative Framework for Analyzing Corporate Privacy Policies.pdf
+doi:10.56553/popets-2026-0117,in,LQ3,full text read: Khatun et al. 2026 - Disclosure Divergence - Measuring Privacy Policy and Data Safety Misalignment at Scale.pdf
+arxiv:2607.18424,in,LQ3,full text read (arXiv): multilingual LLM audits of Spanish app policies
+doi:10.1109/access.2026.3730247,in,LQ3,full text read (arXiv): human and LLM analysis of e-commerce policies
+arxiv:2606.26276,in,LQ1;LQ2,full text read (arXiv): network analysis of fertility apps and health-data leakage to advertisers
+doi:10.1016/j.contraception.2025.111235,in,LQ2,full text read (OpenAlex OA location): experiential audit of three period trackers
+doi:10.1145/3772318.3791408,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.56553/popets-2026-0060,in,LQ1,full text read (PoPETs): privacy experiences and concerns of FemHealth users
+doi:10.1145/3788682,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2601.20792,in,LQ4,full text read (arXiv): policy organisation hides disclosures
+arxiv:2601.10413,in,LQ3,full text read (arXiv): LLM and RAG data-flow analysis of policies
+doi:10.3390/s26030870,in,LQ2,full text read (Europe PMC): privacy metadata of mHealth apps
+doi:10.1109/jiot.2026.3697293,in,LQ3,full text read (OpenAlex OA location): multi-agent LLM compliance checking of IoT companion-app policies
+arxiv:2604.16128,in,LQ3,full text read: Ferrari et al. 2026 - PolicyGapper - Data Safety vs Privacy Policies.pdf
+doi:10.3389/fpubh.2026.1901627,in,LQ2,full text read (Europe PMC): readability of digital-therapeutics policies
+doi:10.2196/73651,in,LQ2,full text read (Europe PMC): policy compliance of sports and health apps in China
+arxiv:2609.02055,in,LQ3;LQ4,full text read: Brackin 2026 - Privacy Washing - Detecting Internal Contradictions in Privacy Policies.pdf
+arxiv:2609.09697,in,LQ3,full text read (arXiv): LLM audit of CCPA disclosures
+arxiv:2603.09214,in,LQ3,full text read (arXiv): language models detecting label-policy discrepancies
+arxiv:2605.02005,in,LQ3,full text read (arXiv): LLM extraction of privacy rights from policies
+doi:10.1080/08870446.2024.2445518,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1038/s41746-026-02917-7,in,LQ2,full text read (Europe PMC): policies of 100 health apps under the EHDS
+arxiv:2601.06357,in,LQ3;LQ4,full text read (arXiv): LLM assistant extracting clauses and risk levels
+arxiv:2608.12511,in,LQ3;LQ4,full text read (arXiv): systematisation of privacy-document research
+doi:10.1016/j.pec.2026.109755,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1109/sp63933.2026.00023,pending,,no open-access PDF obtained (tried: OpenAlex OA location); library access pending
+doi:10.1145/3797822,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+doi:10.1093/jamia/ocag154,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending
+arxiv:2605.02016,in,LQ1;LQ2,full text read: Georgiou et al. 2026 - What's on Your Mind - Exploring Privacy of Mental Health Apps.pdf
+doi:10.1109/chase69719.2026.00030,pending,,no open-access PDF obtained (tried: no open-access location listed); library access pending

@@ -72,7 +72,7 @@ For each app in the sample, collect and analyse:
 > *On the (Privacy) Harms of the European Digital Identity Framework*
 > (`knabenhans2026harms`), which is the one to read for the **harm model**.
 > Citron & Solove (`citron2021harms`) is the separate US law-review article that
-> supplies the **seven-category taxonomy**. Both are now in `01_Literature/PDFs/`.
+> supplies the **seven-category taxonomy**. Both are now in `01_Literature/library/`.
 > See [`../Supervisor-Input/2026-09-05_Supervisor-Input.md`](../Supervisor-Input/2026-09-05_Supervisor-Input.md).
 
 ## 6. Proposal — required structure

@@ -2,9 +2,9 @@
 
     python scripts/literature-search/v003/screening.py
 
-Reads output/records.csv and 01_Literature/Literature-Review/decisions/*.csv (id,decision,code,note; `title.csv`
+Reads output/records.csv and 01_Literature/review/decisions/*.csv (id,decision,code,note; `title.csv`
 for the title-and-abstract stage, `fulltext.csv` for the full-text stage, `extraction.csv` for the coding of the
-included studies). Writes 01_Literature/Literature-Review/screening.csv (every record) and corpus.csv (review
+included studies). Writes 01_Literature/review/screening.csv (every record) and corpus.csv (review
 evidence and the contextual collection), and output/screening.json with the counts per rule in the order of the
 protocol. Fails if a record lacks a decision or a decision names an unknown record or rule. Standard library only.
 """
@@ -14,7 +14,7 @@ from pathlib import Path
 import lit
 
 ROOT = lit.HERE.parents[2]
-LR = ROOT / '01_Literature' / 'Literature-Review'
+LR = ROOT / '01_Literature' / 'review'
 OUT = lit.HERE / 'output'
 RULES = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8']
 RULE_TEXT = {'R1': 'not a research article', 'R2': 'outside language or period', 'R3': 'outside the domain',

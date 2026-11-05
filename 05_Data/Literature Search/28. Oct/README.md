@@ -15,6 +15,6 @@ copied unchanged from `scripts/literature-search/v002/output/` after the run. Re
 | `abstracts-openalex.json` | Abstracts looked up by DOI for screening only |
 | `records.csv`, `merge.json` | Merged records with provenance; counts per source |
 | `fulltexts.json` | Open-access locations tried for each record awaiting its full text, and the one used |
-| `screening.json` | Counts per rule of the screening log (`01_Literature/Literature-Review/screening.csv`) |
+| `screening.json` | Counts per rule of the screening log (`01_Literature/review/screening.csv`) |
 
 The downloaded full texts are not kept here (copyright); `fulltexts.json` names their sources.

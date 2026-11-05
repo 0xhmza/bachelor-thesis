@@ -1,0 +1,369 @@
+old,new
+01_Literature/.tex/Methods-Digest/pdf-cache/012_Polson_1991_OCR.pdf,
+01_Literature/.tex/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf,
+01_Literature/AI Literature Analysis/00_Methods-Digest_complete.pdf,01_Literature/digest/volumes/MethodsDigest_Complete.pdf
+01_Literature/AI Literature Analysis/README.md,
+01_Literature/AI Literature Analysis/by-stage/1_S_Scope-and-definitions.pdf,01_Literature/digest/volumes/MethodsDigest_Stage1S_ScopeAndDefinitions.pdf
+01_Literature/AI Literature Analysis/by-stage/2_A_App-search-and-selection.pdf,01_Literature/digest/volumes/MethodsDigest_Stage2A_AppSearchAndSelection.pdf
+01_Literature/AI Literature Analysis/by-stage/3_D_Material-capture.pdf,01_Literature/digest/volumes/MethodsDigest_Stage3D_MaterialCapture.pdf
+01_Literature/AI Literature Analysis/by-stage/4_W_Walkthrough.pdf,01_Literature/digest/volumes/MethodsDigest_Stage4W_Walkthrough.pdf
+01_Literature/AI Literature Analysis/by-stage/5_C_Codebook-and-pilot.pdf,01_Literature/digest/volumes/MethodsDigest_Stage5C_CodebookAndPilot.pdf
+01_Literature/AI Literature Analysis/by-stage/6_I_Two-coder-comparison.pdf,01_Literature/digest/volumes/MethodsDigest_Stage6I_TwoCoderComparison.pdf
+01_Literature/AI Literature Analysis/by-stage/7_L_LLM-feasibility.pdf,01_Literature/digest/volumes/MethodsDigest_Stage7L_LlmFeasibility.pdf
+01_Literature/AI Literature Analysis/by-stage/8_H_Harm-tree.pdf,01_Literature/digest/volumes/MethodsDigest_Stage8H_HarmTree.pdf
+01_Literature/AI Literature Analysis/by-stage/9_R_Reporting.pdf,01_Literature/digest/volumes/MethodsDigest_Stage9R_Reporting.pdf
+01_Literature/Download-Checklist.md,
+01_Literature/Harm Tree sS3-P2-SouryaJoyeeDe.pdf,01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids_manuscript.pdf
+01_Literature/Literature-Gap-Search_2026-10-23.md,01_Literature/review/Gap-Search_2026-10-23.md
+01_Literature/Literature-Map.html,01_Literature/catalog/Literature-Map.html
+01_Literature/Methods-Digest/pdf-cache/012_Polson_1991_OCR.pdf,01_Literature/digest/pdf-cache/012_Polson_1991_OCR.pdf
+01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf,01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf
+01_Literature/Methods-Reading-List.html,
+01_Literature/Methods-Reading-List.md,01_Literature/catalog/Methods-Reading-List.md
+01_Literature/Notes/.gitkeep,01_Literature/notes/.gitkeep
+01_Literature/PDFs/AI Literature Analysis/00_Methods-Digest_complete.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/1_S_Scope-and-definitions.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/2_A_App-search-and-selection.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/3_D_Material-capture.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/4_W_Walkthrough.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/5_C_Codebook-and-pilot.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/6_I_Two-coder-comparison.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/7_L_LLM-feasibility.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/8_H_Harm-tree.pdf,
+01_Literature/PDFs/AI Literature Analysis/by-stage/9_R_Reporting.pdf,
+01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf,01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf
+01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf,01_Literature/library/Citron_2022_PrivacyHarms.pdf
+01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf,01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf
+01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf,01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf
+01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf,01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf
+01_Literature/PDFs/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf,01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf
+01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf,01_Literature/library/Martin_2025_NoCookiesForYou.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/README.md,01_Literature/catalog/Audit-Sources_2026-11-04.md
+01_Literature/PDFs/Methodology-Audit_2026-11-04/angelopoulos2023prediction.pdf,01_Literature/library/Angelopoulos_2023_PredictionPoweredInference.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/apple2022itunessearch_web-capture_2026-11-04.pdf,01_Literature/library/Apple_2022_ITunesSearchAPI_web-capture.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf,01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/de2017refinement_author_manuscript.pdf,01_Literature/library/De_2017_RefinementApproachPrivacyRiskAnalysis_manuscript.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/hu2018studying_author_manuscript.pdf,01_Literature/library/Hu_2018_ConsistencyStarRatingsComplaints_manuscript.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/iwaya2023privacy_published.pdf,01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps_published.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf,01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/priem2022openalex.pdf,01_Literature/library/Priem_2022_OpenAlex.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf,01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just.pdf,01_Literature/library/Schroeder_2025_JustPutHumanInLoop_preprint.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just_published.pdf,01_Literature/library/Schroeder_2025_JustPutHumanInLoop_published.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026os_web-capture_2026-11-04.pdf,01_Literature/library/StatCounter_2026_MobileOSGermany_web-capture.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026vendor_web-capture_2026-11-04.pdf,01_Literature/library/StatCounter_2026_MobileVendorGermany_web-capture.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter_methodology_supplement_web-capture_2026-11-04.pdf,01_Literature/library/StatCounter_2026_Methodology_web-capture.pdf
+01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf,01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/01_Malki_2024_Exploring-Privacy-Practices-of-Female-mHealth-Apps-in-a-Post-Roe-World.pdf,01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf,01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf,01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/04_Alfawzan_2022_Privacy-Data-Sharing-and-Data-Security-Policies-of-Women-s-mHealth-Apps-Scoping-Review-and.pdf,01_Literature/library/Alfawzan_2022_PrivacyDataSharingDataSecurity.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf,01_Literature/library/OLoughlin_2019_ReviewingDataSecurityPrivacyPolicies.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf,01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf,01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/16_LaMonica_2021_Privacy-Practices-of-Health-Information-Technologies-Privacy-Policy-Risk-Assessment-Study-.pdf,01_Literature/library/LaMonica_2021_PrivacyPracticesHealthInformation.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/17_Schultchen_2021_Stay-Present-with-Your-Phone-A-Systematic-Review-and-Standardized-Rating-of-Mindfulness-Ap.pdf,01_Literature/library/Schultchen_2021_StayPresentYourPhoneSystematic.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/19_Benjumea_2020_Privacy-Assessment-in-Mobile-Health-Apps-Scoping-Review.pdf,01_Literature/library/Benjumea_2020_PrivacyAssessmentMobileHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/20_Tangari_2021_Mobile-health-and-privacy-cross-sectional-study.pdf,01_Literature/library/Tangari_2021_MobileHealthPrivacyCrossSectional.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/25_Huckvale_2015_Unaddressed-privacy-risks-in-accredited-health-and-wellness-apps-a-cross-sectional-systema.pdf,01_Literature/library/Huckvale_2015_UnaddressedPrivacyRisksAccreditedHealth.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf,01_Literature/library/Huckvale_2019_AssessmentDataSharingPrivacyPractices.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/27_Grundy_2019_Data-sharing-practices-of-medicines-related-apps-and-the-mobile-ecosystem-traffic-content-.pdf,01_Literature/library/Grundy_2019_DataSharingPracticesMedicinesRelated.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/28_Iwaya_2023_On-the-privacy-of-mental-health-apps-An-empirical-investigation-and-its-implications-for-a.pdf,01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/35_Hudig_2025_Intimate-Data-Sharing-Enhancing-Transparency-and-Control-in-Fertility-Tracking.pdf,01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/37_Simon_2023_Help-for-insomnia-from-the-app-store-A-standardized-rating-of-mobile-health-applications-c.pdf,01_Literature/library/Simon_2023_HelpInsomniaAppStoreStandardized.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/38_Lin_2025_Quality-and-Privacy-Policy-Compliance-of-Mental-Health-Care-Apps-in-China-Cross-Sectional-.pdf,01_Literature/library/Lin_2025_QualityPrivacyPolicyComplianceMental.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/39_Zych_2026_The-Quality-and-Characteristics-of-Digital-Mental-Health-Apps-Mixed-Methods-Study.pdf,01_Literature/library/Zych_2026_QualityCharacteristicsDigitalMentalHealth.pdf
+01_Literature/PDFs/Methods-Reading/01_App-Reviews/40_Dehling_2015_Exploring-the-Far-Side-of-Mobile-Health-Information-Security-and-Privacy-of-Mobile-Health-.pdf,01_Literature/library/Dehling_2015_ExploringFarSideMobileHealth.pdf
+01_Literature/PDFs/Methods-Reading/02_App-Appraisal/18_Messner_2020_The-German-Version-of-the-Mobile-App-Rating-Scale-MARS-G-Development-and-Validation-Study.pdf,01_Literature/library/Messner_2020_GermanVersionMobileAppRating.pdf
+01_Literature/PDFs/Methods-Reading/02_App-Appraisal/36_Stoyanov_2015_Mobile-App-Rating-Scale-A-New-Tool-for-Assessing-the-Quality-of-Health-Mobile-Apps.pdf,01_Literature/library/Stoyanov_2015_MobileAppRatingScaleTool.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/11_Mahatody_2010_State-of-the-Art-on-the-Cognitive-Walkthrough-Method-Its-Variants-and-Evolutions.pdf,01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/12_Polson_1992_Cognitive-walkthroughs-a-method-for-theory-based-evaluation-of-user-interfaces.pdf,01_Literature/library/Polson_1992_CognitiveWalkthroughsMethodTheoryBased.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/21_Light_2018_The-walkthrough-method-An-approach-to-the-study-of-apps.pdf,01_Literature/library/Light_2018_WalkthroughMethodApproachStudyApps.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/29_Spencer_2000_The-streamlined-cognitive-walkthrough-method-working-around-social-constraints-encountered.pdf,01_Literature/library/Spencer_2000_StreamlinedCognitiveWalkthroughMethodWorking.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/44_Duguay_2023_Stumbling-Blocks-and-Alternative-Paths-Reconsidering-the-Walkthrough-Method-for-Analyzing-.pdf,01_Literature/library/Duguay_2023_StumblingBlocksAlternativePathsReconsidering.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/45_Nielsen_1990_Heuristic-evaluation-of-user-interfaces.pdf,01_Literature/library/Nielsen_1990_HeuristicEvaluationUserInterfaces.pdf
+01_Literature/PDFs/Methods-Reading/03_Walkthroughs/46_Wharton_1992_Applying-cognitive-walkthroughs-to-more-complex-user-interfaces-experiences-issues-and-rec.pdf,01_Literature/library/Wharton_1992_ApplyingCognitiveWalkthroughsMoreComplex.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/08_O-Connor_2020_Intercoder-Reliability-in-Qualitative-Research-Debates-and-Practical-Guidelines.pdf,01_Literature/library/OConnor_2020_IntercoderReliabilityQualitativeResearch.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf,01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf,01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/13_Campbell_2013_Coding-In-depth-Semistructured-Interviews-Problems-of-Unitization-and-Intercoder-Reliabili.pdf,01_Literature/library/Campbell_2013_CodingDepthSemistructuredInterviewsProblems.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/47_MacQueen_1998_Codebook-Development-for-Team-Based-Qualitative-Analysis.pdf,01_Literature/library/MacQueen_1998_CodebookDevelopmentTeamBasedQualitative.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/48_Hruschka_2004_Reliability-in-Coding-Open-Ended-Data-Lessons-Learned-from-HIV-Behavioral-Research.pdf,01_Literature/library/Hruschka_2004_ReliabilityCodingOpenEndedData.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/49_Fereday_2006_Demonstrating-Rigor-Using-Thematic-Analysis-A-Hybrid-Approach-of-Inductive-and-Deductive-C.pdf,01_Literature/library/Fereday_2006_DemonstratingRigorThematicAnalysisHybrid.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/50_Mayring_2000_Qualitative-Content-Analysis.pdf,01_Literature/library/Mayring_2000_QualitativeContentAnalysis.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/52_Nowell_2017_Thematic-Analysis-Striving-to-Meet-the-Trustworthiness-Criteria.pdf,01_Literature/library/Nowell_2017_ThematicAnalysisStrivingMeetTrustworthiness.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/55_Braun_2021_One-size-fits-all-What-counts-as-quality-practice-in-reflexive-thematic-analysis.pdf,01_Literature/library/Braun_2021_OneSizeFitsAllCounts.pdf
+01_Literature/PDFs/Methods-Reading/04_Coding/74_Braun_2006_Using-thematic-analysis-in-psychology.pdf,
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/14_Hayes_2007_Answering-the-Call-for-a-Standard-Reliability-Measure-for-Coding-Data.pdf,01_Literature/library/Hayes_2007_AnsweringCallStandardReliabilityMeasure.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/30_Hallgren_2012_Computing-Inter-Rater-Reliability-for-Observational-Data-An-Overview-and-Tutorial.pdf,01_Literature/library/Hallgren_2012_ComputingInterRaterReliabilityObservational.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/31_Cohen_1960_A-Coefficient-of-Agreement-for-Nominal-Scales.pdf,01_Literature/library/Cohen_1960_CoefficientAgreementNominalScales.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/32_Krippendorff_2004_Reliability-in-Content-Analysis-Some-Common-Misconceptions-and-Recommendations.pdf,01_Literature/library/Krippendorff_2004_ReliabilityContentAnalysisSomeCommon.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf,01_Literature/library/Gwet_2008_ComputingInterRaterReliabilityVariance.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf,01_Literature/library/Feinstein_1990_HighAgreementButLowKappa.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/51_Lombard_2002_Content-Analysis-in-Mass-Communication-Assessment-and-Reporting-of-Intercoder-Reliability.pdf,01_Literature/library/Lombard_2002_ContentAnalysisMassCommunicationAssessment.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/53_Artstein_2008_Inter-Coder-Agreement-for-Computational-Linguistics.pdf,01_Literature/library/Artstein_2008_InterCoderAgreementComputationalLinguistics.pdf
+01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/54_McHugh_2012_Interrater-reliability-the-kappa-statistic.pdf,01_Literature/library/McHugh_2012_InterraterReliabilityKappaStatistic.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/56_Page_2021_The-PRISMA-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf,01_Literature/library/Page_2021_PRISMA2020.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/57_Rethlefsen_2021_PRISMA-S-an-extension-to-the-PRISMA-Statement-for-Reporting-Literature-Searches-in-Systema.pdf,01_Literature/library/Rethlefsen_2021_PRISMA-S.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/58_Tricco_2018_PRISMA-Extension-for-Scoping-Reviews-PRISMA-ScR-Checklist-and-Explanation.pdf,01_Literature/library/Tricco_2018_PRISMA-ScR.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/59_O-Brien_2014_Standards-for-Reporting-Qualitative-Research-A-Synthesis-of-Recommendations.pdf,01_Literature/library/OBrien_2014_StandardsReportingQualitativeResearch.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/75_Arksey_2005_Scoping-studies-towards-a-methodological-framework.pdf,01_Literature/library/Arksey_2005_ScopingStudiesMethodologicalFramework.pdf
+01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/76_von-Elm_2007_The-Strengthening-the-Reporting-of-Observational-Studies-in-Epidemiology-STROBE-Statement-.pdf,01_Literature/library/VonElm_2007_StrengtheningReportingObservationalStudies.pdf
+01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/15_Wilson_2016_The-Creation-and-Analysis-of-a-Website-Privacy-Policy-Corpus.pdf,01_Literature/library/Wilson_2016_CreationAnalysisWebsitePrivacyPolicy.pdf
+01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/42_Magoulas_2026_Mobile-App-Privacy-Disclosures-on-Google-Play-in-the-Post-GDPR-Context-A-Large-Scale-Analy.pdf,01_Literature/library/Magoulas_2026_MobileAppPrivacyDisclosuresGoogle.pdf
+01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/61_Li_2022_Understanding-iOS-Privacy-Nutrition-Labels-An-Exploratory-Large-Scale-Analysis-of-App-Stor.pdf,01_Literature/library/Li_2022_UnderstandingiOSPrivacyNutritionLabels.pdf
+01_Literature/PDFs/Methods-Reading/07_Policy-Annotation/83_Doan_2025_Analysis-of-Transparency-and-User-Relevancy-of-DTC-Company-Policies.pdf,01_Literature/library/Doan_2025_AnalysisTransparencyUserRelevancyDTC.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/43_Habib_2020_It-s-a-scavenger-hunt-Usability-of-Websites-Opt-Out-and-Data-Deletion-Choices.pdf,01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/60_Kelley_2009_A-nutrition-label-for-privacy.pdf,01_Literature/library/Kelley_2009_NutritionLabelPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf,01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/77_Nouwens_2020_Dark-Patterns-after-the-GDPR-Scraping-Consent-Pop-ups-and-Demonstrating-their-Influence.pdf,01_Literature/library/Nouwens_2020_DarkPatternsAfterGDPRScraping.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/78_Mathur_2019_Dark-Patterns-at-Scale-Findings-from-a-Crawl-of-11K-Shopping-Websites.pdf,01_Literature/library/Mathur_2019_DarkPatternsScaleFindingsCrawl.pdf
+01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/79_Gray_2018_The-Dark-Patterns-Side-of-UX-Design.pdf,01_Literature/library/Gray_2018_DarkPatternsSideUXDesign.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/63_Rodriguez_2024_Large-language-models-a-new-approach-for-privacy-policy-analysis-at-scale.pdf,01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf,01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/65_Gilardi_2023_ChatGPT-outperforms-crowd-workers-for-text-annotation-tasks.pdf,01_Literature/library/Gilardi_2023_ChatGPTOutperformsCrowdWorkersText.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf,01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/67_Pangakis_2023_Automated-Annotation-with-Generative-AI-Requires-Validation.pdf,01_Literature/library/Pangakis_2023_AutomatedAnnotationGenerativeAIRequires.pdf
+01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/73_Mayring_2025_Qualitative-Content-Analysis-With-ChatGPT-Pitfalls-Rough-Approximations-and-Gross-Errors-A.pdf,01_Literature/library/Mayring_2025_QualitativeContentAnalysisChatGPTPitfalls.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/23_Citron_2021_Privacy-Harms.pdf,01_Literature/library/Citron_2022_PrivacyHarms.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/24_Martin_2023_No-Cookies-For-You-Evaluating-The-Promises-Of-Big-Tech-s-Privacy-Enhancing-Techniques.pdf,01_Literature/library/Martin_2025_NoCookiesForYou.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/68_Moniz_2026_Toward-Risk-Communication-in-Intimate-Health-Technologies.pdf,01_Literature/library/Moniz_2026_RiskCommunicationIntimateHealthTechnologies.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/69_Solove_2006_A-Taxonomy-of-Privacy.pdf,01_Literature/library/Solove_2006_TaxonomyPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf,01_Literature/library/Deng_2011_PrivacyThreatAnalysisFrameworkSupporting.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/72_Brooks_2017_An-introduction-to-privacy-engineering-and-risk-management-in-federal-systems.pdf,01_Literature/library/Brooks_2017_IntroductionPrivacyEngineeringRiskManagement.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/80_Gabriele_2020_Understanding-Fitness-Tracker-Users-Security-and-Privacy-Knowledge-Attitudes-and-Behaviour.pdf,01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/81_Cao_2024_I-Deleted-It-After-the-Overturn-of-Roe-v-Wade-Understanding-Women-s-Privacy-Concerns-Towar.pdf,01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf
+01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf,01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N10_BfArM__BfArM-The-Fast-Track-Process-for-Digital-Health-Applications-DiGA.pdf,01_Literature/library/BfArM_2023_DiGAFastTrackGuide.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N1_Knabenhans__Knabenhans-et-al-2026-On-the-Privacy-Harms-of-the-European-Digital-Identity-Framework.pdf,01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N2_Wharton__Wharton-et-al-1994-The-Cognitive-Walkthrough-Method-A-Practitioner-s-Guide.pdf,01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N3_Schaub__Schaub-et-al-2015-A-Design-Space-for-Effective-Privacy-Notices.pdf,01_Literature/library/Schaub_2015_DesignSpaceEffectivePrivacyNotices.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N4_Habib__Habib-et-al-2019-An-Empirical-Analysis-of-Data-Deletion-and-Opt-Out-Choices-on-150-Website.pdf,01_Literature/library/Habib_2019_EmpiricalAnalysisDataDeletionOpt.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N5_Arkalakis__Arkalakis-et-al-2024-Abandon-All-Hope-Ye-Who-Enter-Here-A-Dynamic-Longitudinal-Investigati.pdf,01_Literature/library/Arkalakis_2024_AbandonAllHopeYeWho.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf,01_Literature/library/Harkous_2018_Polisis.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N8_Article-29-Working-Party-EDPB__Article-29-Working-Party-EDPB-Guidelines-on-transparency-under-Regulation-2016-679.pdf,01_Literature/library/Article29WP_2018_TransparencyGuidelinesWP260.pdf
+01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N9_Association-of-Internet-Researchers__Association-of-Internet-Researchers-Internet-Research-Ethical-Guidelines-3-0.pdf,01_Literature/library/Franzke_2020_InternetResearchEthics-AoIRGuidelines3.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/70_Nissenbaum_2009_Privacy-in-Context_open-front-matter-and-introduction.pdf,01_Literature/library/Nissenbaum_2009_PrivacyInContext_excerpt.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/74_Braun_2006_Using-thematic-analysis-in-psychology_UWE-accepted-manuscript.pdf,01_Literature/library/Braun_2006_ThematicAnalysisPsychology_manuscript.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/N7_APA_App-Evaluation-Model_web-capture-2026-10-20.pdf,01_Literature/library/APA_2026_AppEvaluationModelWebCapture.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Huckvale_2015_Additional-file-1_coding-schemas-and-app-tables.pdf,01_Literature/library/Huckvale_2015_AdditionalFile1_supplement.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Hutton_2017_Popular-Apps-Evaluated_app-list.pdf,01_Literature/library/Hutton_2017_PopularAppsEvaluated_supplement.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Hutton_2017_Quantified-Self-Privacy-Heuristics-v1_scoring-criteria.pdf,01_Literature/library/Hutton_2017_QuantifiedSelfPrivacyHeuristicsV1_supplement.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_LaMonica_2021_Privacy-Policy-Risk-Assessment-Tool_Multimedia-Appendix-1.pdf,01_Literature/library/LaMonica_2021_PrivacyPolicyRiskAssessmentTool_supplement.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Messner_2020_MARS-G-instrument_Multimedia-Appendix-2.pdf,01_Literature/library/Messner_2020_MARSGInstrument_supplement.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Nissenbaum_2004_Privacy-as-Contextual-Integrity.pdf,01_Literature/library/Nissenbaum_2004_PrivacyContextualIntegrity.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Nissenbaum_2010_Privacy-in-Context_TOC-and-Introduction_OCR.pdf,01_Literature/library/Nissenbaum_2010_PrivacyInContext_toc-excerpt.pdf
+01_Literature/PDFs/Methods-Reading/12_Additions/X_Stoyanov_2015_MARS-rating-form_Multimedia-Appendix-2.pdf,01_Literature/library/Stoyanov_2015_MARSRatingForm_supplement.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Albrecht_2016_CHARISMHA-Gesamtbericht_BMG.pdf,01_Literature/library/Albrecht_2016_CHARISMHAGesamtbericht.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Amaral_2021_Completeness-checking-of-privacy-policies-GDPR.pdf,01_Literature/library/Amaral_2021_CompletenessCheckingPrivacyPoliciesGDPR.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Arora_2022_Bilingual-EN-DE-app-privacy-policy-corpus_LREC.pdf,01_Literature/library/Arora_2022_BilingualENDEAppPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Aryal_2026_Traditional-policy-analysis-tools-vs-LLMs.pdf,01_Literature/library/Aryal_2026_TraditionalPolicyAnalysisToolsVs.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Atil_2025_Non-determinism-of-deterministic-LLM-settings.pdf,01_Literature/library/Atil_2025_NonDeterminismDeterministicLLMSettings.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Aydin_2024_Assessing-privacy-policies-with-AI-ethical-legal-technical.pdf,01_Literature/library/Aydin_2024_AssessingPrivacyPoliciesAIEthical.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Brackin_2026_Privacy-washing-internal-contradictions-in-policies.pdf,01_Literature/library/Brackin_2026_PrivacyWashingInternalContradictionsPolicies.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Calderon_2025_Alternative-annotator-test_ACL.pdf,01_Literature/library/Calderon_2025_AlternativeAnnotatorTest.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Carlo_2019_Ratings-and-utilization-of-behavioral-health-apps_npjDM.pdf,01_Literature/library/Carlo_2019_RatingsUtilizationBehavioralHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chanenson_2025_Automating-GKC-CI-policy-annotations-with-LLMs_PoPETs.pdf,01_Literature/library/Chanenson_2025_AutomatingGKCCIPolicyAnnotations.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chen_2025_LLMs-for-privacy-policy-analysis-prompting-fine-tuning-explainability.pdf,01_Literature/library/Chen_2025_LLMsPrivacyPolicyAnalysisPrompting.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chew_2023_LLM-assisted-content-analysis-deductive-coding.pdf,01_Literature/library/Chew_2023_LLMAssistedContentAnalysisDeductive.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Cory_2026_Word-level-LLM-annotation-GDPR-transparency_PoPETs.pdf,01_Literature/library/Cory_2026_WordLevelLLMAnnotationGDPR.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Cui_2025_PoliGraph-journal-version-with-PoliGrapher-LM.pdf,01_Literature/library/Cui_2025_PoliGraphJournalVersionPoliGrapherLM.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Cummings_2021_User-expectations-for-differential-privacy_CCS.pdf,01_Literature/library/Cummings_2021_UserExpectationsDifferentialPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Dhondt_2022_Inference-attacks-on-endpoint-privacy-zones_CCS.pdf,01_Literature/library/Dhondt_2022_InferenceAttacksEndpointPrivacyZones.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf,01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Ferrari_2026_PolicyGapper-Data-Safety-vs-policy-LLM.pdf,01_Literature/library/Ferrari_2026_PolicyGapperDataSafetyVsPolicy.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Freiberger_2025_LLM-powered-interactive-privacy-policy-assessment.pdf,01_Literature/library/Freiberger_2025_LLMPoweredInteractivePrivacyPolicy.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Gajavalli_2025_Measuring-privacy-as-shield-from-harms.pdf,01_Literature/library/Gajavalli_2025_MeasuringPrivacyShieldHarms.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Georgiou_2026_Privacy-of-mental-health-apps.pdf,01_Literature/library/Georgiou_2026_PrivacyMentalHealthApps.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Gligoric_2025_Unconfident-LLM-annotations-confident-conclusions_NAACL.pdf,01_Literature/library/Gligoric_2025_UnconfidentLLMAnnotationsConfident.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Goknil_2024_Privacy-policy-analysis-through-prompt-engineering-PAPEL.pdf,01_Literature/library/Goknil_2024_PrivacyPolicyAnalysisThroughPrompt.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Halterman_2025_Codebook-LLMs-measurement-tools.pdf,01_Literature/library/Halterman_2025_CodebookLLMsMeasurementTools.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Hamid_2024_GenAIPABench_PoPETs.pdf,01_Literature/library/Hamid_2024_GenAIPABench.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Hassan_2018_Privacy-protections-fitness-tracking-social-networks_USENIX.pdf,01_Literature/library/Hassan_2018_PrivacyProtectionsFitnessTrackingSocial.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Khatun_2026_Disclosure-divergence-policy-vs-Data-Safety.pdf,01_Literature/library/Khatun_2026_DisclosureDivergencePolicyVsData.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Lebanoff_2018_Vague-words-in-privacy-policies_EMNLP.pdf,01_Literature/library/Lebanoff_2018_VagueWordsPrivacyPolicies.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Leitner_2025_Limits-of-LLMs-for-German-text-classification_JLCL.pdf,01_Literature/library/Leitner_2025_LimitsLLMsGermanTextClassification.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Lin_2024_Data-Safety-vs-App-Privacy-labels_PoPETs.pdf,01_Literature/library/Lin_2024_DataSafetyVsAppPrivacy.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Mehrnezhad_2024_Mind-the-FemTech-gap_FrontiersIoT.pdf,01_Literature/library/Mehrnezhad_2024_MindFemTechGap.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Mori_2025_LLMs-assessing-privacy-policy-understandability_USEC.pdf,01_Literature/library/Mori_2025_LLMsAssessingPrivacyPolicyUnderstandability.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Mulder_2019_Health-apps-privacy-policies-and-the-GDPR_EJLT.pdf,01_Literature/library/Mulder_2019_HealthAppsPrivacyPoliciesGDPR.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Saini_2024_Reproductive-health-apps-privacy-security.pdf,01_Literature/library/Saini_2024_ReproductiveHealthAppsPrivacySecurity.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Schroeder_2025_LLMs-in-qualitative-research_CHI.pdf,01_Literature/library/Schroeder_2025_LLMsQualitativeResearch.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Shvartzshnaider_2019_Contextual-integrity-privacy-policy-analysis_HCOMP.pdf,01_Literature/library/Shvartzshnaider_2019_ContextualIntegrityPrivacyPolicyAnalysis.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Tang_2023_PolicyGPT.pdf,01_Literature/library/Tang_2023_PolicyGPT.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Tang_2026_Decoding-the-legalese-corporate-privacy-policies.pdf,01_Literature/library/Tang_2026_DecodingLegaleseCorporatePrivacyPolicies.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Theis_2023_Fitness-tracker-privacy-information-requirements_CHI-EA.pdf,01_Literature/library/Theis_2023_FitnessTrackerPrivacyInformationRequirements.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xiang_2025_Google-Play-privacy-transparency-channels.pdf,01_Literature/library/Xiang_2025_GooglePlayPrivacyTransparencyChannels.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xiao_2023_Codebook-plus-GPT-3-deductive-coding.pdf,01_Literature/library/Xiao_2023_CodebookPlusGPT3Deductive.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xie_2025_LLM-privacy-policies-under-modern-privacy-laws_USENIX.pdf,01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Zhang_2022_How-usable-are-iOS-privacy-labels_PoPETs.pdf,01_Literature/library/Zhang_2022_UsableiOSPrivacyLabels.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Ziems_2024_Can-LLMs-transform-computational-social-science.pdf,01_Literature/library/Ziems_2024_LLMsTransformComputationalSocialScience.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Zufferey_2023_Revoked-just-now-fitness-data-sharing-third-party-apps_PoPETs.pdf,01_Literature/library/Zufferey_2023_RevokedJustNowFitnessData.pdf
+01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Zufferey_2023_Watch-your-Watch-personality-from-activity-trackers_USENIX.pdf,01_Literature/library/Zufferey_2023_WatchYourWatchPersonalityActivity.pdf
+01_Literature/PDFs/Methods-Reading/README.md,
+01_Literature/PDFs/Methods-Reading/_Inbox/README.md,
+01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf,01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf
+01_Literature/PDFs/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf,01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf
+01_Literature/PDFs/The Boundaries of Privacy Harm.pdf,01_Literature/library/Calo_2011_BoundariesOfPrivacyHarm.pdf
+01_Literature/PDFs/popets-2019-0037.pdf,01_Literature/library/Zimmeck_2019_MAPS-ScalingPrivacyCompliance.pdf
+01_Literature/README.md,01_Literature/README.md
+01_Literature/literature-index.json,01_Literature/catalog/literature-index.json
+01_Literature/methodology-literature.json,01_Literature/catalog/methods-corpus.json
+01_Literature/ranked-dois.txt,
+01_Literature/reading-status.csv,01_Literature/catalog/reading-status.csv
+literature_new/literature methodology analysis/Methods Digest - Complete.pdf,
+literature_new/literature methodology analysis/by stage/Stage 1 - Scope and Definitions.pdf,
+literature_new/literature methodology analysis/by stage/Stage 2 - App Search and Selection.pdf,
+literature_new/literature methodology analysis/by stage/Stage 3 - Material Capture.pdf,
+literature_new/literature methodology analysis/by stage/Stage 4 - Walkthrough.pdf,
+literature_new/literature methodology analysis/by stage/Stage 5 - Codebook and Pilot.pdf,
+literature_new/literature methodology analysis/by stage/Stage 6 - Two-Coder Comparison.pdf,
+literature_new/literature methodology analysis/by stage/Stage 7 - LLM Feasibility.pdf,
+literature_new/literature methodology analysis/by stage/Stage 8 - Harm Tree.pdf,
+literature_new/literature methodology analysis/by stage/Stage 9 - Reporting.pdf,
+"literature_new/references/APA 2026 - The App Evaluation Model (web capture, 20 October 2026).pdf",01_Literature/library/APA_2026_AppEvaluationModelWebCapture.pdf
+literature_new/references/Albrecht 2016 - Chancen und Risiken von Gesundheits-Apps (CHARISMHA) - Gesamtbericht.pdf,01_Literature/library/Albrecht_2016_CHARISMHAGesamtbericht.pdf
+"literature_new/references/Alfawzan et al. 2022 - Privacy, Data Sharing, and Data Security Policies of Women's mHealth Apps - Scoping Review and Content Analysis.pdf",01_Literature/library/Alfawzan_2022_PrivacyDataSharingDataSecurity.pdf
+literature_new/references/Amaral et al. 2021 - AI-Enabled Automation for Completeness Checking of Privacy Policies.pdf,01_Literature/library/Amaral_2021_CompletenessCheckingPrivacyPoliciesGDPR.pdf
+"literature_new/references/Arkalakis et al. 2024 - Abandon All Hope Ye Who Enter Here - A Dynamic, Longitudinal Investigation of Android's Data Safety Section.pdf",01_Literature/library/Arkalakis_2024_AbandonAllHopeYeWho.pdf
+literature_new/references/Arksey & O'Malley 2005 - Scoping studies - towards a methodological framework.pdf,01_Literature/library/Arksey_2005_ScopingStudiesMethodologicalFramework.pdf
+literature_new/references/Arora et al. 2022 - A Tale of Two Regulatory Regimes - Creation and Analysis of a Bilingual Privacy Policy Corpus.pdf,01_Literature/library/Arora_2022_BilingualENDEAppPrivacy.pdf
+literature_new/references/Article 29 Working Party 2018 - Guidelines on Transparency under Regulation 2016-679 (WP260 rev.01).pdf,01_Literature/library/Article29WP_2018_TransparencyGuidelinesWP260.pdf
+literature_new/references/Artstein & Poesio 2008 - Inter-Coder Agreement for Computational Linguistics.pdf,01_Literature/library/Artstein_2008_InterCoderAgreementComputationalLinguistics.pdf
+literature_new/references/Aryal et al. 2026 - A Systematic Evaluation of Traditional Privacy Policy Analysis Tools Against LLMs.pdf,01_Literature/library/Aryal_2026_TraditionalPolicyAnalysisToolsVs.pdf
+literature_new/references/Atil et al. 2025 - Non-Determinism of Deterministic LLM Settings.pdf,01_Literature/library/Atil_2025_NonDeterminismDeterministicLLMSettings.pdf
+"literature_new/references/Aydin et al. 2024 - Assessing Privacy Policies with AI - Ethical, Legal, and Technical Challenges.pdf",01_Literature/library/Aydin_2024_AssessingPrivacyPoliciesAIEthical.pdf
+literature_new/references/Baumann et al. 2025 - Large Language Model Hacking - Quantifying the Hidden Risks of Using LLMs for Text Annotation.pdf,01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf
+literature_new/references/Benjumea et al. 2020 - Privacy Assessment in Mobile Health Apps - Scoping Review.pdf,01_Literature/library/Benjumea_2020_PrivacyAssessmentMobileHealthApps.pdf
+literature_new/references/BfArM - The Fast-Track Process for Digital Health Applications (DiGA).pdf,01_Literature/library/BfArM_2023_DiGAFastTrackGuide.pdf
+literature_new/references/Brackin 2026 - Privacy Washing - Detecting Internal Contradictions in Privacy Policies.pdf,01_Literature/library/Brackin_2026_PrivacyWashingInternalContradictionsPolicies.pdf
+literature_new/references/Braun & Clarke 2006 - Using thematic analysis in psychology.pdf,01_Literature/library/Braun_2006_ThematicAnalysisPsychology_manuscript.pdf
+literature_new/references/Braun & Clarke 2021 - One size fits all - What counts as quality practice in (reflexive) thematic analysis.pdf,01_Literature/library/Braun_2021_OneSizeFitsAllCounts.pdf
+literature_new/references/Brooks et al. 2017 - An introduction to privacy engineering and risk management in federal systems.pdf,01_Literature/library/Brooks_2017_IntroductionPrivacyEngineeringRiskManagement.pdf
+literature_new/references/Calderon et al. 2025 - Alternative Annotator Test for LLM-as-a-Judge.pdf,01_Literature/library/Calderon_2025_AlternativeAnnotatorTest.pdf
+literature_new/references/Campbell et al. 2013 - Coding In-depth Semistructured Interviews - Problems of Unitization and Intercoder Reliability and Agreement.pdf,01_Literature/library/Campbell_2013_CodingDepthSemistructuredInterviewsProblems.pdf
+literature_new/references/Cao et al. 2024 - Period-Tracking Privacy After Roe v. Wade.pdf,01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf
+literature_new/references/Carlo et al. 2019 - By the Numbers - Ratings and Utilization of Behavioral Health Mobile Applications.pdf,01_Literature/library/Carlo_2019_RatingsUtilizationBehavioralHealthApps.pdf
+literature_new/references/Chanenson et al. 2025 - GKC-CI Privacy Policy Annotation with LLMs.pdf,01_Literature/library/Chanenson_2025_AutomatingGKCCIPolicyAnnotations.pdf
+"literature_new/references/Chen et al. 2025 - Using LLMs for Automated Privacy Policy Analysis - Prompt Engineering, Fine-Tuning and Explainability.pdf",01_Literature/library/Chen_2025_LLMsPrivacyPolicyAnalysisPrompting.pdf
+literature_new/references/Chew et al. 2023 - LLM-Assisted Content Analysis - Using Large Language Models to Support Deductive Coding.pdf,01_Literature/library/Chew_2023_LLMAssistedContentAnalysisDeductive.pdf
+literature_new/references/Citron & Solove 2021 - Privacy Harms.pdf,01_Literature/library/Citron_2022_PrivacyHarms.pdf
+literature_new/references/Cohen 1960 - A Coefficient of Agreement for Nominal Scales.pdf,01_Literature/library/Cohen_1960_CoefficientAgreementNominalScales.pdf
+literature_new/references/Cory et al. 2026 - Word-level Annotation of GDPR Transparency Compliance in Privacy Policies using Large Language Models.pdf,01_Literature/library/Cory_2026_WordLevelLLMAnnotationGDPR.pdf
+literature_new/references/Cui et al. 2025 - PoliGraph - Automated Privacy Policy Analysis Using Knowledge Graphs (journal version).pdf,01_Literature/library/Cui_2025_PoliGraphJournalVersionPoliGrapherLM.pdf
+literature_new/references/Cummings et al. 2021 - I Need a Better Description - An Investigation Into User Expectations for Differential Privacy.pdf,01_Literature/library/Cummings_2021_UserExpectationsDifferentialPrivacy.pdf
+literature_new/references/Dehling et al. 2015 - Exploring the Far Side of Mobile Health - Information Security and Privacy of Mobile Health Apps on iOS and Android.pdf,01_Literature/library/Dehling_2015_ExploringFarSideMobileHealth.pdf
+literature_new/references/Deng et al. 2011 - A privacy threat analysis framework - supporting the elicitation and fulfillment of privacy requirements.pdf,01_Literature/library/Deng_2011_PrivacyThreatAnalysisFrameworkSupporting.pdf
+literature_new/references/Dhondt et al. 2022 - Inference Attacks on Fitness Tracking Privacy Zones.pdf,01_Literature/library/Dhondt_2022_InferenceAttacksEndpointPrivacyZones.pdf
+literature_new/references/Doan et al. 2025 - Analysis of Transparency and User-Relevancy of DTC Company Policies.pdf,01_Literature/library/Doan_2025_AnalysisTransparencyUserRelevancyDTC.pdf
+literature_new/references/Duguay & Gold-Apel 2023 - Stumbling Blocks and Alternative Paths - Reconsidering the Walkthrough Method for Analyzing Apps.pdf,01_Literature/library/Duguay_2023_StumblingBlocksAlternativePathsReconsidering.pdf
+literature_new/references/Egami et al. 2023 - Imperfect Surrogates and Design-Based Supervised Learning.pdf,01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf
+literature_new/references/Feinstein & Cicchetti 1990 - High agreement but low Kappa - I. the problems of two paradoxes.pdf,01_Literature/library/Feinstein_1990_HighAgreementButLowKappa.pdf
+literature_new/references/Fereday & Muir-Cochrane 2006 - Hybrid Thematic Analysis and Coding.pdf,01_Literature/library/Fereday_2006_DemonstratingRigorThematicAnalysisHybrid.pdf
+literature_new/references/Ferrari et al. 2026 - PolicyGapper - Data Safety vs Privacy Policies.pdf,01_Literature/library/Ferrari_2026_PolicyGapperDataSafetyVsPolicy.pdf
+literature_new/references/Freiberger et al. 2025 - Interactive Privacy Policy Assessment with LLMs.pdf,01_Literature/library/Freiberger_2025_LLMPoweredInteractivePrivacyPolicy.pdf
+"literature_new/references/Gabriele & Chiasson 2020 - Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours.pdf",01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf
+literature_new/references/Gajavalli et al. 2025 - What's Privacy Good For - Measuring Privacy as a Shield from Harms Due to Personal Data Use.pdf,01_Literature/library/Gajavalli_2025_MeasuringPrivacyShieldHarms.pdf
+literature_new/references/Georgiou et al. 2026 - What's on Your Mind - Exploring Privacy of Mental Health Apps.pdf,01_Literature/library/Georgiou_2026_PrivacyMentalHealthApps.pdf
+literature_new/references/Gilardi et al. 2023 - ChatGPT outperforms crowd workers for text-annotation tasks.pdf,01_Literature/library/Gilardi_2023_ChatGPTOutperformsCrowdWorkersText.pdf
+literature_new/references/Gligorić et al. 2025 - Can Unconfident LLM Annotations Be Used for Confident Conclusions.pdf,01_Literature/library/Gligoric_2025_UnconfidentLLMAnnotationsConfident.pdf
+literature_new/references/Gray et al. 2018 - The Dark (Patterns) Side of UX Design.pdf,01_Literature/library/Gray_2018_DarkPatternsSideUXDesign.pdf
+"literature_new/references/Grundy et al. 2019 - Data sharing practices of medicines related apps and the mobile ecosystem - traffic, content, and network analysis.pdf",01_Literature/library/Grundy_2019_DataSharingPracticesMedicinesRelated.pdf
+literature_new/references/Gwet 2008 - Computing inter‐rater reliability and its variance in the presence of high agreement.pdf,01_Literature/library/Gwet_2008_ComputingInterRaterReliabilityVariance.pdf
+literature_new/references/Göknil et al. 2024 - Privacy Policy Analysis through Prompt Engineering for LLMs.pdf,01_Literature/library/Goknil_2024_PrivacyPolicyAnalysisThroughPrompt.pdf
+literature_new/references/Habib et al. 2019 - An Empirical Analysis of Data Deletion and Opt-Out Choices on 150 Websites.pdf,01_Literature/library/Habib_2019_EmpiricalAnalysisDataDeletionOpt.pdf
+literature_new/references/Habib et al. 2020 - It's a scavenger hunt - Usability of Websites' Opt-Out and Data Deletion Choices.pdf,01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf
+literature_new/references/Hallgren 2012 - Computing Inter-Rater Reliability for Observational Data - An Overview and Tutorial.pdf,01_Literature/library/Hallgren_2012_ComputingInterRaterReliabilityObservational.pdf
+literature_new/references/Halterman and Keith 2025 - Codebook LLMs - Evaluating LLMs as Measurement Tools for Political Science Concepts.pdf,01_Literature/library/Halterman_2025_CodebookLLMsMeasurementTools.pdf
+literature_new/references/Hamid et al. 2024 - GenAIPABench - A Benchmark for Generative AI-Based Privacy Assistants.pdf,01_Literature/library/Hamid_2024_GenAIPABench.pdf
+literature_new/references/Harkous et al. 2018 - Polisis - Automated Analysis and Presentation of Privacy Policies Using Deep Learning.pdf,01_Literature/library/Harkous_2018_Polisis.pdf
+"literature_new/references/Hassan et al. 2018 - Analysis of Privacy Protections in Fitness Tracking Social Networks -or- You can run, but can you hide.pdf",01_Literature/library/Hassan_2018_PrivacyProtectionsFitnessTrackingSocial.pdf
+literature_new/references/Hayes & Krippendorff 2007 - Answering the Call for a Standard Reliability Measure for Coding Data.pdf,01_Literature/library/Hayes_2007_AnsweringCallStandardReliabilityMeasure.pdf
+literature_new/references/Hruschka et al. 2004 - Reliability in Coding Open-Ended Data - Lessons Learned from HIV Behavioral Research.pdf,01_Literature/library/Hruschka_2004_ReliabilityCodingOpenEndedData.pdf
+literature_new/references/Hsieh & Shannon 2005 - Three Approaches to Qualitative Content Analysis.pdf,01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf
+literature_new/references/Huckvale et al. 2015 - NHS Health App Privacy - Supplement 1.pdf,01_Literature/library/Huckvale_2015_AdditionalFile1_supplement.pdf
+literature_new/references/Huckvale et al. 2015 - Unaddressed privacy risks in accredited health and wellness apps - a cross-sectional systematic assessment.pdf,01_Literature/library/Huckvale_2015_UnaddressedPrivacyRisksAccreditedHealth.pdf
+literature_new/references/Huckvale et al. 2019 - Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation.pdf,01_Literature/library/Huckvale_2019_AssessmentDataSharingPrivacyPractices.pdf
+literature_new/references/Hudig & Singh 2025 - Intimate Data Sharing - Enhancing Transparency and Control in Fertility Tracking.pdf,01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf
+literature_new/references/Hutton 2017 - Quantified Self Privacy Heuristics v1 (scoring criteria; Multimedia Appendix 1 of Hutton et al. 2018).pdf,01_Literature/library/Hutton_2017_QuantifiedSelfPrivacyHeuristicsV1_supplement.pdf
+literature_new/references/Hutton et al. 2017 - Popular Apps Evaluated - App List (Appendix 2 of the heuristic evaluation).pdf,01_Literature/library/Hutton_2017_PopularAppsEvaluated_supplement.pdf
+literature_new/references/Hutton et al. 2018 - Assessing the Privacy of mHealth Apps for Self-Tracking - Heuristic Evaluation Approach.pdf,01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf
+literature_new/references/Iwaya et al. 2023 - On the privacy of mental health apps - An empirical investigation and its implications for app development.pdf,01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps.pdf
+literature_new/references/Kelley et al. 2009 - A nutrition label for privacy.pdf,01_Literature/library/Kelley_2009_NutritionLabelPrivacy.pdf
+literature_new/references/Khatun et al. 2026 - Disclosure Divergence - Measuring Privacy Policy and Data Safety Misalignment at Scale.pdf,01_Literature/library/Khatun_2026_DisclosureDivergencePolicyVsData.pdf
+literature_new/references/Knabenhans et al. 2026 - On the (Privacy) Harms of the European Digital Identity Framework.pdf,01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf
+literature_new/references/Krippendorff 2004 - Reliability in Content Analysis - Some Common Misconceptions and Recommendations.pdf,01_Literature/library/Krippendorff_2004_ReliabilityContentAnalysisSomeCommon.pdf
+literature_new/references/Krippendorff 2019 - Content Analysis - An Introduction to Its Methodology (4th ed.).pdf,01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf
+literature_new/references/LaMonica et al. 2021 - Privacy Practices of Health Information Technologies - Privacy Policy Risk Assessment Study and Proposed Guidelines.pdf,01_Literature/library/LaMonica_2021_PrivacyPracticesHealthInformation.pdf
+"literature_new/references/LaMonica et al. 2021, tool - Privacy Policy Risk Assessment Tool (Multimedia Appendix 1 of LaMonica et al. 2021).pdf",01_Literature/library/LaMonica_2021_PrivacyPolicyRiskAssessmentTool_supplement.pdf
+literature_new/references/Lebanoff & Liu 2018 - Automatic Detection of Vague Words and Sentences in Privacy Policies.pdf,01_Literature/library/Lebanoff_2018_VagueWordsPrivacyPolicies.pdf
+literature_new/references/Leitner & Rehm 2025 - German Text Classification with LLMs.pdf,01_Literature/library/Leitner_2025_LimitsLLMsGermanTextClassification.pdf
+literature_new/references/Li et al. 2022 - Understanding iOS Privacy Nutrition Labels - An Exploratory Large-Scale Analysis of App Store Data.pdf,01_Literature/library/Li_2022_UnderstandingiOSPrivacyNutritionLabels.pdf
+literature_new/references/Light et al. 2018 - The walkthrough method - An approach to the study of apps.pdf,01_Literature/library/Light_2018_WalkthroughMethodApproachStudyApps.pdf
+literature_new/references/Lin et al. 2024 - Data Safety vs. App Privacy - Comparing the Usability of Android and iOS Privacy Labels.pdf,01_Literature/library/Lin_2024_DataSafetyVsAppPrivacy.pdf
+literature_new/references/Lin et al. 2025 - Quality and Privacy Policy Compliance of Mental Health Care Apps in China - Cross-Sectional Evaluation Study.pdf,01_Literature/library/Lin_2025_QualityPrivacyPolicyComplianceMental.pdf
+literature_new/references/Lombard et al. 2002 - Content Analysis in Mass Communication - Assessment and Reporting of Intercoder Reliability.pdf,01_Literature/library/Lombard_2002_ContentAnalysisMassCommunicationAssessment.pdf
+literature_new/references/MacQueen et al. 1998 - Codebook Development for Team-Based Qualitative Analysis.pdf,01_Literature/library/MacQueen_1998_CodebookDevelopmentTeamBasedQualitative.pdf
+literature_new/references/Magoulas & Polykalas 2026 - Google Play Privacy Disclosures After GDPR.pdf,01_Literature/library/Magoulas_2026_MobileAppPrivacyDisclosuresGoogle.pdf
+"literature_new/references/Mahatody et al. 2010 - State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions.pdf",01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf
+literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf,01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf
+literature_new/references/Martin et al. 2023 - No Cookies For You! - Evaluating The Promises Of Big Tech's 'Privacy-Enhancing' Techniques.pdf,01_Literature/library/Martin_2025_NoCookiesForYou.pdf
+literature_new/references/Mathur et al. 2019 - Dark Patterns at Scale - Findings from a Crawl of 11K Shopping Websites.pdf,01_Literature/library/Mathur_2019_DarkPatternsScaleFindingsCrawl.pdf
+literature_new/references/Mayring 2000 - Qualitative Content Analysis.pdf,01_Literature/library/Mayring_2000_QualitativeContentAnalysis.pdf
+"literature_new/references/Mayring 2025 - Qualitative Content Analysis With ChatGPT - Pitfalls, Rough Approximations and Gross Errors. A Field Report.pdf",01_Literature/library/Mayring_2025_QualitativeContentAnalysisChatGPTPitfalls.pdf
+literature_new/references/McDonald et al. 2019 - Reliability and Inter-rater Reliability in Qualitative Research - Norms and Guidelines for CSCW and HCI Practice.pdf,01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf
+literature_new/references/McHugh 2012 - Interrater reliability - the kappa statistic.pdf,01_Literature/library/McHugh_2012_InterraterReliabilityKappaStatistic.pdf
+literature_new/references/Mehrnezhad et al. 2024 - Mind the FemTech gap - regulation failings and exploitative systems.pdf,01_Literature/library/Mehrnezhad_2024_MindFemTechGap.pdf
+literature_new/references/Messner et al. 2020 - The German Version of the Mobile App Rating Scale (MARS-G) - Development and Validation Study.pdf,01_Literature/library/Messner_2020_GermanVersionMobileAppRating.pdf
+"literature_new/references/Messner et al. 2020, MARS-G form - Mobile Anwendungen Rating Skala (MARS-German) - rating form (Multimedia Appendix 2).pdf",01_Literature/library/Messner_2020_MARSGInstrument_supplement.pdf
+literature_new/references/Moniz & Almeida 2026 - Toward Risk Communication in Intimate Health Technologies.pdf,01_Literature/library/Moniz_2026_RiskCommunicationIntimateHealthTechnologies.pdf
+literature_new/references/Mori et al. 2025 - Evaluating LLMs Towards Automated Assessment of Privacy Policy Understandability.pdf,01_Literature/library/Mori_2025_LLMsAssessingPrivacyPolicyUnderstandability.pdf
+"literature_new/references/Mulder 2019 - Health Apps, their Privacy Policies and the GDPR.pdf",01_Literature/library/Mulder_2019_HealthAppsPrivacyPoliciesGDPR.pdf
+literature_new/references/Nielsen & Molich 1990 - Heuristic evaluation of user interfaces.pdf,01_Literature/library/Nielsen_1990_HeuristicEvaluationUserInterfaces.pdf
+literature_new/references/Nissenbaum 2004 - Privacy as Contextual Integrity.pdf,01_Literature/library/Nissenbaum_2004_PrivacyContextualIntegrity.pdf
+"literature_new/references/Nissenbaum 2009 - Privacy in Context - Technology, Policy, and the Integrity of Social Life (contents and introduction, OCR).pdf",01_Literature/library/Nissenbaum_2010_PrivacyInContext_toc-excerpt.pdf
+"literature_new/references/Nissenbaum 2009 - Privacy in Context - Technology, Policy, and the Integrity of Social Life (front matter and introduction).pdf",01_Literature/library/Nissenbaum_2009_PrivacyInContext_excerpt.pdf
+literature_new/references/Nouwens et al. 2020 - Dark Patterns after the GDPR - Scraping Consent Pop-ups and Demonstrating their Influence.pdf,01_Literature/library/Nouwens_2020_DarkPatternsAfterGDPRScraping.pdf
+literature_new/references/Nowell et al. 2017 - Thematic Analysis - Striving to Meet the Trustworthiness Criteria.pdf,01_Literature/library/Nowell_2017_ThematicAnalysisStrivingMeetTrustworthiness.pdf
+literature_new/references/O'Brien et al. 2014 - Standards for Reporting Qualitative Research - A Synthesis of Recommendations.pdf,01_Literature/library/OBrien_2014_StandardsReportingQualitativeResearch.pdf
+literature_new/references/O'Connor & Joffe 2020 - Intercoder Reliability in Qualitative Research - Debates and Practical Guidelines.pdf,01_Literature/library/OConnor_2020_IntercoderReliabilityQualitativeResearch.pdf
+literature_new/references/O'Loughlin et al. 2019 - Reviewing the data security and privacy policies of mobile apps for depression.pdf,01_Literature/library/OLoughlin_2019_ReviewingDataSecurityPrivacyPolicies.pdf
+literature_new/references/Page et al. 2021 - The PRISMA 2020 statement - an updated guideline for reporting systematic reviews.pdf,01_Literature/library/Page_2021_PRISMA2020.pdf
+literature_new/references/Pangakis et al. 2023 - Automated Annotation with Generative AI Requires Validation.pdf,01_Literature/library/Pangakis_2023_AutomatedAnnotationGenerativeAIRequires.pdf
+literature_new/references/Polson et al. 1992 - Cognitive Walkthroughs - A Method for Theory-Based Evaluation of User Interfaces.pdf,01_Literature/library/Polson_1992_CognitiveWalkthroughsMethodTheoryBased.pdf
+literature_new/references/Rethlefsen et al. 2021 - PRISMA-S - an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews.pdf,01_Literature/library/Rethlefsen_2021_PRISMA-S.pdf
+"literature_new/references/Robillard et al. 2019 - Availability, readability, and content of privacy policies and terms of agreements of mental health apps.pdf",01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf
+literature_new/references/Rodriguez et al. 2024 - Large language models - a new approach for privacy policy analysis at scale.pdf,01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy.pdf
+literature_new/references/Saini & Saxena 2024 - Privacy and Security of Women's Reproductive Health Apps in a Changing Legal Landscape.pdf,01_Literature/library/Saini_2024_ReproductiveHealthAppsPrivacySecurity.pdf
+"literature_new/references/Salehzadeh Niksirat et al. 2024 - Wearable Activity Trackers - A Survey on Utility, Privacy, and Security.pdf",01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf
+literature_new/references/Schaub et al. 2015 - A Design Space for Effective Privacy Notices.pdf,01_Literature/library/Schaub_2015_DesignSpaceEffectivePrivacyNotices.pdf
+"literature_new/references/Schroeder et al. 2025 - Large Language Models in Qualitative Research - Uses, Tensions, and Intentions.pdf",01_Literature/library/Schroeder_2025_LLMsQualitativeResearch.pdf
+literature_new/references/Schultchen et al. 2021 - Stay Present - Mindfulness App Review.pdf,01_Literature/library/Schultchen_2021_StayPresentYourPhoneSystematic.pdf
+literature_new/references/Shipp & Blasco 2020 - How private is your period- - A systematic analysis of menstrual app privacy policies.pdf,01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf
+literature_new/references/Shvartzshnaider et al. 2019 - Going against the (Appropriate) Flow - A Contextual Integrity Approach to Privacy Policy Analysis.pdf,01_Literature/library/Shvartzshnaider_2019_ContextualIntegrityPrivacyPolicyAnalysis.pdf
+literature_new/references/Simon et al. 2023 - Help for insomnia from the app store - A standardized rating of mobile health applications claiming to target insomnia.pdf,01_Literature/library/Simon_2023_HelpInsomniaAppStoreStandardized.pdf
+literature_new/references/Solove 2006 - A Taxonomy of Privacy.pdf,01_Literature/library/Solove_2006_TaxonomyPrivacy.pdf
+literature_new/references/Spencer 2000 - Streamlined Cognitive Walkthrough.pdf,01_Literature/library/Spencer_2000_StreamlinedCognitiveWalkthroughMethodWorking.pdf
+literature_new/references/Stoyanov et al. 2015 - Mobile App Rating Scale - A New Tool for Assessing the Quality of Health Mobile Apps.pdf,01_Literature/library/Stoyanov_2015_MobileAppRatingScaleTool.pdf
+"literature_new/references/Stoyanov et al. 2015, MARS form - Mobile Application Rating Scale (MARS) - rating form (Multimedia Appendix 2).pdf",01_Literature/library/Stoyanov_2015_MARSRatingForm_supplement.pdf
+literature_new/references/Sunyaev et al. 2015 - Availability and quality of mobile health app privacy policies.pdf,01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf
+literature_new/references/Tang et al. 2023 - PolicyGPT - Automated Analysis of Privacy Policies with Large Language Models.pdf,01_Literature/library/Tang_2023_PolicyGPT.pdf
+literature_new/references/Tang et al. 2026 - Decoding the Legalese - A Scalable and Quantitative Framework for Analyzing Corporate Privacy Policies.pdf,01_Literature/library/Tang_2026_DecodingLegaleseCorporatePrivacyPolicies.pdf
+literature_new/references/Tangari et al. 2021 - Mobile health and privacy - cross sectional study.pdf,01_Literature/library/Tangari_2021_MobileHealthPrivacyCrossSectional.pdf
+literature_new/references/Theis et al. 2023 - Understanding Fitness Tracker Users' and Non-Users' Privacy Information Requirements.pdf,01_Literature/library/Theis_2023_FitnessTrackerPrivacyInformationRequirements.pdf
+literature_new/references/Tricco et al. 2018 - PRISMA Extension for Scoping Reviews (PRISMA-ScR) - Checklist and Explanation.pdf,01_Literature/library/Tricco_2018_PRISMA-ScR.pdf
+literature_new/references/Törnberg 2024 - Best Practices for Text Annotation with Large Language Models.pdf,01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf
+"literature_new/references/Wharton et al. 1992 - Applying cognitive walkthroughs to more complex user interfaces - experiences, issues, and recommendations.pdf",01_Literature/library/Wharton_1992_ApplyingCognitiveWalkthroughsMoreComplex.pdf
+"literature_new/references/Wharton et al. 1994 - The Cognitive Walkthrough Method - A Practitioner's Guide (chapter in Usability Inspection Methods, complete book).pdf",01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf
+literature_new/references/Wilson et al. 2016 - The Creation and Analysis of a Website Privacy Policy Corpus.pdf,01_Literature/library/Wilson_2016_CreationAnalysisWebsitePrivacyPolicy.pdf
+literature_new/references/Xiang et al. 2025 - Exploring the Effectiveness of Google Play Store's Privacy Transparency Channels.pdf,01_Literature/library/Xiang_2025_GooglePlayPrivacyTransparencyChannels.pdf
+literature_new/references/Xiao et al. 2023 - Supporting Qualitative Analysis with Large Language Models - Combining Codebook with GPT-3 for Deductive Coding.pdf,01_Literature/library/Xiao_2023_CodebookPlusGPT3Deductive.pdf
+literature_new/references/Xie et al. 2025 - Evaluating Privacy Policies under Modern Privacy Laws At Scale - An LLM-Based Automated Approach.pdf,01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf
+literature_new/references/Zhang et al. 2022 - How Usable Are iOS App Privacy Labels.pdf,01_Literature/library/Zhang_2022_UsableiOSPrivacyLabels.pdf
+literature_new/references/Ziems et al. 2024 - Can Large Language Models Transform Computational Social Science.pdf,01_Literature/library/Ziems_2024_LLMsTransformComputationalSocialScience.pdf
+literature_new/references/Zou et al. 2019 - You Might Be Affected - An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications.pdf,01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf
+literature_new/references/Zufferey et al. 2023 - Revoked Just Now! Users' Behaviors Toward Fitness-Data Sharing with Third-Party Applications.pdf,01_Literature/library/Zufferey_2023_RevokedJustNowFitnessData.pdf
+literature_new/references/Zufferey et al. 2023 - Watch your Watch - Inferring Personality Traits from Wearable Activity Trackers.pdf,01_Literature/library/Zufferey_2023_WatchYourWatchPersonalityActivity.pdf
+literature_new/references/Zych et al. 2026 - The Quality and Characteristics of Digital Mental Health Apps - Mixed Methods Study.pdf,01_Literature/library/Zych_2026_QualityCharacteristicsDigitalMentalHealth.pdf
+literature_new/references/franzke et al. 2020 - Internet Research - Ethical Guidelines 3.0 (AoIR).pdf,01_Literature/library/Franzke_2020_InternetResearchEthics-AoIRGuidelines3.pdf
+literature_new/references/von Elm et al. 2007 - STROBE - Reporting Observational Studies.pdf,01_Literature/library/VonElm_2007_StrengtheningReportingObservationalStudies.pdf

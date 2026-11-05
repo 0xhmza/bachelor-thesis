@@ -11,7 +11,7 @@ changes and decides nothing. Outcomes: §1 and §3–§6 were adopted in D2 and 
 keywords, German storefront, first 20 results), re-analysed with
 [`scripts/sampling-checks/v001/check_pool.py`](../scripts/sampling-checks/v001/check_pool.py).
 (2) App Store ranking trial of 22 October (`scripts/app-ranking/v001/output/`,
-2 keywords). (3) The [gap search](../01_Literature/Literature-Gap-Search_2026-10-23.md)
+2 keywords). (3) The [gap search](../01_Literature/review/Gap-Search_2026-10-23.md)
 and the digest's stage A. **Not checked:** no App Store run with all 19 keywords
 existed; eligibility was not applied, so counts are for the ranked pool before
 screening.

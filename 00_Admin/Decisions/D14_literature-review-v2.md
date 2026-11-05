@@ -1,7 +1,7 @@
 # D14 — How is the literature searched, screened and reported? (supersedes D13)
 
 - **Status:** proposed (2026-10-28, requested by the author); revised by the author on 2026-10-30 (see *Revision of 30 October*); not yet discussed with the supervisor. Supersedes [D13](D13_literature-review.md). The methodology (Section 4.1) states this procedure; the results report its outcome.
-- **Affects:** Methodology, Literature Review; Results, Literature Review (not yet revised; it carries a notice); Appendix F; [`scripts/literature-search/v002`](../../scripts/literature-search/v002/) (the search run of 28 October) and [`v003`](../../scripts/literature-search/v003/) (the revised method; so far it writes the search strings of Appendix F); [`01_Literature/Literature-Review/`](../../01_Literature/Literature-Review/README.md); frozen collection `05_Data/Literature Search/28. Oct/`
+- **Affects:** Methodology, Literature Review; Results, Literature Review (not yet revised; it carries a notice); Appendix F; [`scripts/literature-search/v002`](../../scripts/literature-search/v002/) (the search run of 28 October) and [`v003`](../../scripts/literature-search/v003/) (the revised method; so far it writes the search strings of Appendix F); [`01_Literature/review/`](../../01_Literature/review/README.md); frozen collection `05_Data/Literature Search/28. Oct/`
 - **Options considered:**
   1. D13: the staged procedure of Baumann et al. on OpenAlex and Semantic Scholar, with a filter of at least three citations per year.
   2. **Venue-anchored search: eight venues of security, privacy and HCI research listed in full, four bibliographic databases searched with one Boolean strand per review sub-question, and one round of citation searching from four seed papers (chosen).**
@@ -35,7 +35,7 @@
 - **Revision of 30 October:** The search of 28 October and the screening log were produced under the earlier version of this record. They differ from the choice above in these points, which the results revision has to resolve:
   - S5 (German terms for health apps and data protection, PubMed only) was run and returned 0 records; it stays in the frozen `run-pubmed.json` and in `v002/config.json`.
   - The 43 works cited in the thesis before the review and the 116 Methods Digest papers entered the corpus as routes of their own, with a *contextual collection* for cited works outside the criteria; the frozen records and the screening log still contain them.
-  - Screening applied C2 "English or German" and R7 "full text not retrievable through open access, the repository or the university library"; 145 records still await their full text. [`01_Literature/Literature-Review/README.md`](../../01_Literature/Literature-Review/README.md) still states that protocol.
+  - Screening applied C2 "English or German" and R7 "full text not retrievable through open access, the repository or the university library"; 145 records still await their full text. [`01_Literature/review/README.md`](../../01_Literature/review/README.md) still states that protocol.
   - Nine pairs of the same work that the automatic rules did not merge were found by a fuzzy title comparison and merged by hand (`config.json`, `manual_duplicates`); Section 4.1 describes the automatic rules only.
   - Results Section 5.1 and the corpus inventory of Appendix F carry a notice that they are not yet consistent with this record.
 - **Would change if:** the supervisor names other venues; institutional access to Scopus or Web of Science, or a working ACM DL session, becomes available (run the prepared strings and add the records through the same rules); the author's check changes more than a few screening decisions.
@@ -45,4 +45,4 @@
 - **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
 - **Choice (verification of the AI-prepared screening):** the author checks every inclusion and every full-text exclusion, and a random fifth of the title-and-abstract exclusions (recorded seed); one eligible record in that fifth triggers a check of all title-and-abstract exclusions.
 - **Evidence:** Waffenschmidt et al. 2019 (BMC Med Res Methodol 19:132): single screening missed a median of 5 % of relevant studies, 13 % for less experienced reviewers.
-- **Still to do by the author:** the check itself, in `01_Literature/Literature-Review/screening.csv`.
+- **Still to do by the author:** the check itself, in `01_Literature/review/screening.csv`.

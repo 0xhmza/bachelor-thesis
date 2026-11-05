@@ -17,7 +17,7 @@ settled. The argued schedule with slip points is archived in
 | 2 | Review copy `03_Thesis/Thesis_Review-Copy.docx`, rebuilt with every thesis commit (replaces the Google Doc) | 2026-10-17 | ◐ generated; share it with the advisor |
 | 3 | Scope: document and interface analysis, not a survey (`Open-Points.md` item 1) | 2026-09-18 | ◐ decided in the proposal; awaiting confirmation |
 | 3b | Own literature search: privacy harms, tracker S&P, methods | 2026-09-18 | ☑ first pass: 17 verified entries in `_shared/references.bib` |
-| 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources | 2026-10-16 | ◐ 89 of 93 held as PDFs (`01_Literature/Download-Checklist.md`); missing Parker 2019, two books, the APA web page; none read yet |
+| 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources | 2026-10-16 | ◐ 89 of 93 held as PDFs (`01_Literature/catalog/methods-corpus.json`); missing Parker 2019, two books, the APA web page; none read yet |
 | 4 | Proposal sent to the supervisor | 2026-09-30 | ☑ sent 2026-10-05 ([email](Correspondence/2026-10-05_Proposal-Email.md)); snapshot in `03_Thesis/proposal/` |
 | 5 | Proposal approved | | ☐ |
 | 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting first and second examiner |

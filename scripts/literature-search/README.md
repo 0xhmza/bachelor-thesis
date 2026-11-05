@@ -9,7 +9,7 @@ version's `output/` folder (outside Git).
   `05_Data/Literature Search/26. Oct/`.
 - `v002/`: the search of 28 October 2026 ([D14](../../00_Admin/Decisions/D14_literature-review-v2.md)),
   frozen in `05_Data/Literature Search/28. Oct/`; screening protocol and log in
-  [`01_Literature/Literature-Review/`](../../01_Literature/Literature-Review/README.md).
+  [`01_Literature/review/`](../../01_Literature/review/README.md).
 - `v003/`: the v002 method as revised in the thesis on 30 October 2026, without the
   German-language strand S5 (groups DE and DEP). The search is not repeated: `report.py`
   reads the frozen search of 28 October. So far only the search strings of Appendix F
@@ -41,8 +41,8 @@ python scripts/literature-search/v002/merge.py
 python scripts/literature-search/v002/show.py batch NAME [SOURCE] [N]   # reading aid; decisions go to decisions/raw/NAME.txt
 python scripts/literature-search/v002/show.py expand                    # -> decisions/title.csv
 python scripts/literature-search/v002/fulltext.py    # open-access full texts of the records that passed
-python scripts/literature-search/v002/screening.py   # -> 01_Literature/Literature-Review/screening.csv, counts per rule
-python scripts/literature-search/v002/extract.py     # evidence-map codes -> 01_Literature/Literature-Review/extraction.csv
+python scripts/literature-search/v002/screening.py   # -> 01_Literature/review/screening.csv, counts per rule
+python scripts/literature-search/v002/extract.py     # evidence-map codes -> 01_Literature/review/extraction.csv
 python scripts/literature-search/v002/report.py      # -> 03_Thesis/tables/literature-*.tex, figures/literature-*.tex
 python -I -m unittest discover -s scripts/literature-search/v002/tests
 ```

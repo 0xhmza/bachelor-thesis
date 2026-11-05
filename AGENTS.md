@@ -64,11 +64,17 @@
 
 ## Literature
 
-- Reading status lives in `01_Literature/reading-status.csv`;
+- Layout of `01_Literature/`: `library/` (every PDF, flat, no sub-folders),
+  `notes/`, `catalog/`, `review/`, `digest/`. Topic, stage, priority and status
+  are catalogue columns, never folders or file-name prefixes.
+- Name a PDF `Author_Year_ShortTitle.pdf` (rules in `01_Literature/README.md`)
+  when you save it; there is no inbox. Never keep a second copy of a PDF
+  anywhere in the repository.
+- Reading status lives in `01_Literature/catalog/reading-status.csv`;
   `literature-index.json`, `Literature-Map.html` and the README status column
   are generated from it by `.\graphify.ps1 refresh`.
 - Cite page and section after checking the PDF; digest cards in
-  `01_Literature/Methods-Digest/cards/` are summaries and can be wrong.
+  `01_Literature/digest/cards/` are summaries and can be wrong.
 
 ## Scripts and data
 

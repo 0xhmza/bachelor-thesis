@@ -92,19 +92,19 @@ def check_reading(keys):
             # surname anywhere in the file name (double surnames), plus the year
             author = re.match(r'[a-z]+', key).group(0)
             year = re.search(r'\d{4}', key)
-            found = (LIT / 'PDFs' / named.group(1)).exists() if named else any(
+            found = (LIT / 'library' / named.group(1)).exists() if named else any(
                 author in p.stem.lower() and (not year or year.group(0)[:3] in p.stem)
-                for p in (LIT / 'PDFs').glob('*.pdf'))
+                for p in (LIT / 'library').glob('*.pdf'))
             if not found:
-                errors.append(f'core reading list: "{key}" is marked ☑ PDF but no matching file is in 01_Literature/PDFs/')
-    status_file = LIT / 'reading-status.csv'
+                errors.append(f'core reading list: "{key}" is marked ☑ PDF but no matching file is in 01_Literature/library/')
+    status_file = LIT / 'catalog' / 'reading-status.csv'
     if status_file.exists():
         with status_file.open(encoding='utf-8', newline='') as fh:
             rows = list(csv.DictReader(fh))
         done = [r for r in rows if r['status'] in ('read', 'noted')]
         for r in done:
             if not r.get('note_file'):
-                warnings.append(f'reading: "{r["id"]}" is marked {r["status"]} but has no note in 01_Literature/Notes/')
+                warnings.append(f'reading: "{r["id"]}" is marked {r["status"]} but has no note in 01_Literature/notes/')
         info.append(f'reading: {len(done)} of {len(rows)} works read or noted')
 
 

@@ -6,14 +6,14 @@ For every record that passed title-and-abstract screening (review evidence and r
 the app domain, the surfaces or material studied and the venue type are coded from title, abstract and venue with
 the fixed keyword rules of config.json ("extraction_rules"). The parts of the thesis RQ a study bears on are coded by
 hand, from the full text, for the review evidence only (decisions/extraction-hand.csv). Writes
-01_Literature/Literature-Review/extraction.csv. Standard library only.
+01_Literature/review/extraction.csv. Standard library only.
 """
 import csv
 
 import lit
 
 ROOT = lit.HERE.parents[2]
-LR = ROOT / '01_Literature' / 'Literature-Review'
+LR = ROOT / '01_Literature' / 'review'
 
 
 def codes(rules, text):

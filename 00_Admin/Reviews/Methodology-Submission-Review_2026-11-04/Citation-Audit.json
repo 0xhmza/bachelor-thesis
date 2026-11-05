@@ -30,7 +30,7 @@
       "line": 113,
       "claim_summary": "Directed content analysis begins from prior research and develops additional codes",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf",
+      "source_path": "01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf",
       "version": "SAGE Version of Record 4October2005; Qualitative Health Research15(9):1277-1288;13PDFpages including download cover; DOI10.1177/1049732305276687",
       "pdf_pages": [
         6,
@@ -51,7 +51,7 @@
       "line": 113,
       "claim_summary": "Content-analysis methodology accompanying Hsieh’s directed initial-and-new-code approach.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf",
+      "source_path": "01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf",
       "version": "Existing private complete fourth-edition SAGE book, 468 PDF pages, copyright2019; ISBN9781506395661.",
       "pdf_pages": [
         36,
@@ -75,7 +75,7 @@
       "line": 115,
       "claim_summary": "Comparison of store disclosures, privacy policies and app interfaces.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -94,7 +94,7 @@
       "line": 132,
       "claim_summary": "Harm-tree method is precedent for coverage assessment",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+      "source_path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
       "version": "Published IEEE SPW2016 proceedings paper,8PDFpages/printed58-65, DOI10.1109/SPW.2016.21; actual arnumber7527754; final source inspected, supersedes presentation-only checks",
       "pdf_pages": [
         1,
@@ -116,7 +116,7 @@
       "line": 132,
       "claim_summary": "Directed analysis is precedent for applicability and ordinal pathway coverage",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf",
+      "source_path": "01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf",
       "version": "SAGE Version of Record 4October2005; Qualitative Health Research15(9):1277-1288;13PDFpages including download cover; DOI10.1177/1049732305276687",
       "pdf_pages": [
         6,
@@ -137,7 +137,7 @@
       "line": 132,
       "claim_summary": "Reference harm trees are a precedent for applicable-pathway communication coverage",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6,
@@ -157,7 +157,7 @@
       "line": 132,
       "claim_summary": "Menstrual policy analysis is a precedent for RQ1 coverage coding.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf",
+      "source_path": "01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf",
       "version": "PoPETs2020(4):491–510 published article, DOI10.2478/popets-2020-0083.",
       "pdf_pages": [
         3,
@@ -178,7 +178,7 @@
       "line": 137,
       "claim_summary": "Named-harm stance coding has a precedent in breach-notice wording analysis",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf",
+      "source_path": "01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf",
       "version": "CHI2019 Paper194, 14-page conference PDF; printed PageN equals PDFN",
       "pdf_pages": [
         7,
@@ -199,7 +199,7 @@
       "line": 142,
       "claim_summary": "PET claims can be assessed by whether they cut harm pathways",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         10
@@ -218,7 +218,7 @@
       "line": 142,
       "claim_summary": "PET communication analysis distinguishes flow principles from privacy protection",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf",
+      "source_path": "01_Literature/library/Martin_2025_NoCookiesForYou.pdf",
       "version": "64-page Georgetown Law Technology Review9(1), 2025 published-style copy; not the2023-named Methods-Reading candidate",
       "pdf_pages": [
         8,
@@ -239,7 +239,7 @@
       "line": 147,
       "claim_summary": "Privacy-control findability/action-cost precedent in the composite RQ4 table.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Habib et al. 2020 - It's a scavenger hunt - Usability of Websites' Opt-Out and Data Deletion Choices.pdf",
+      "source_path": "01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf",
       "version": "CHI 2020 published 12-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         3,
@@ -259,7 +259,7 @@
       "line": 147,
       "claim_summary": "Precedent for policy/interface comparison and cognitive walkthrough within the RQ4 methods table.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4,
@@ -279,7 +279,7 @@
       "line": 147,
       "claim_summary": "Cognitive walkthrough as the RQ4 method precedent.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         131,
@@ -301,7 +301,7 @@
       "line": 152,
       "claim_summary": "Precedent for the combined two-model, high-stakes human-check, double-coded unit-validation and corrected-estimation design.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+      "source_path": "01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf",
       "version": "Observed local arXiv:2509.08825v2, 6 October 2025, 97-page PDF; bibliography does not pin an arXiv version.",
       "pdf_pages": [
         14,
@@ -322,7 +322,7 @@
       "line": 152,
       "claim_summary": "Precedent for corrected estimates using human reference samples and model outputs.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf",
+      "source_path": "01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf",
       "version": "NeurIPS 2023 conference paper, 13 PDF pages, conference footer on PDF1; local page numbering is 1–13.",
       "pdf_pages": [
         3,
@@ -344,7 +344,7 @@
       "line": 152,
       "claim_summary": "Precedent for a full combined two-model/human-check/corrected-estimate pipeline.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+      "source_path": "01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf",
       "version": "Published Sociologica 18(2), 2024, pp.67–85; DOI 10.6092/issn.1971-8853/19461; 19 PDF pages.",
       "pdf_pages": [
         6,
@@ -365,7 +365,7 @@
       "line": 196,
       "claim_summary": "Staged literature review using Boolean groups, source strings/hit counts, deduplication, screening and fixed extraction fields.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+      "source_path": "01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf",
       "version": "Observed local arXiv:2509.08825v2, 6 October 2025, 97-page PDF; bibliography does not pin an arXiv version.",
       "pdf_pages": [
         7,
@@ -386,7 +386,7 @@
       "line": 201,
       "claim_summary": "PRISMA2020 supplies record-flow diagram",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/56_Page_2021_The-PRISMA-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf",
+      "source_path": "01_Literature/library/Page_2021_PRISMA2020.pdf",
       "version": "WhiteRose eprint173287 explicitly Published Version; Journal of Clinical Epidemiology article-in-press March2021,13PDFpages including repository cover; DOI10.1016/j.jclinepi.2021.03.001; internal provisional pagination, not final178-189",
       "pdf_pages": [
         1,
@@ -407,7 +407,7 @@
       "line": 201,
       "claim_summary": "PRISMA-S supplies items for reporting literature searches",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/57_Rethlefsen_2021_PRISMA-S-an-extension-to-the-PRISMA-Statement-for-Reporting-Literature-Searches-in-Systema.pdf",
+      "source_path": "01_Literature/library/Rethlefsen_2021_PRISMA-S.pdf",
       "version": "Published Systematic Reviews2021 10:39,19pages; DOI10.1186/s13643-020-01542-z",
       "pdf_pages": [
         1,
@@ -427,7 +427,7 @@
       "line": 203,
       "claim_summary": "Mapping breadth and characteristics of evidence motivates a scoping review",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/75_Arksey_2005_Scoping-studies-towards-a-methodological-framework.pdf",
+      "source_path": "01_Literature/library/Arksey_2005_ScopingStudiesMethodologicalFramework.pdf",
       "version": "WhiteRose eprint1618 author manuscript,31PDFpages including covers; final cited2005 journal8(1):19-32 not inspected; internal manuscript page numbers differ",
       "pdf_pages": [
         7,
@@ -450,7 +450,7 @@
       "line": 290,
       "claim_summary": "2014search start includes first health-app privacy-policy studies",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf",
+      "source_path": "01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf",
       "version": "Published JAMIA2015;22:e28-e33,6PDFpages; online-first21August2014; DOI10.1136/amiajnl-2013-002605",
       "pdf_pages": [
         1
@@ -469,7 +469,7 @@
       "line": 407,
       "claim_summary": "Seed is CHI paper on period-tracking privacy after Roe overturn",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
+      "source_path": "01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
       "version": "CHI2024 22-page conference copy, DOI10.1145/3613904.3642042",
       "pdf_pages": [
         1
@@ -488,7 +488,7 @@
       "line": 407,
       "claim_summary": "Seed is CHI paper about privacy in fertility tracking",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
+      "source_path": "01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
       "version": "CHI2025 24-page conference copy; DOI10.1145/3706598.3714089",
       "pdf_pages": [
         1
@@ -507,7 +507,7 @@
       "line": 407,
       "claim_summary": "CHI study of period, fertility and other female-health apps used as a citation-search seed.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -526,7 +526,7 @@
       "line": 409,
       "claim_summary": "Seed source is survey of wearable tracker utility, privacy and security",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf",
+      "source_path": "01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf",
       "version": "ACM Computing Surveys56(7) Article183, April2024, 40-page typeset copy; DOI10.1145/3645091",
       "pdf_pages": [
         1
@@ -545,7 +545,7 @@
       "line": 479,
       "claim_summary": "Use OpenAlex by DOI to obtain missing abstracts.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/priem2022openalex.pdf",
+      "source_path": "01_Literature/library/Priem_2022_OpenAlex.pdf",
       "version": "Downloaded 5-page source from arXiv2205.01833; document is STI Conference2022 paper. Bibliography unversioned.",
       "pdf_pages": [
         1,
@@ -565,7 +565,7 @@
       "line": 488,
       "claim_summary": "Scoping reviews may omit quality-score selection/critical appraisal",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/58_Tricco_2018_PRISMA-Extension-for-Scoping-Reviews-PRISMA-ScR-Checklist-and-Explanation.pdf",
+      "source_path": "01_Literature/library/Tricco_2018_PRISMA-ScR.pdf",
       "version": "WhiteRose eprint136633 explicitly Accepted Version,29PDFpages including repository cover; M18-0850; final Annals typeset467-473 edition not inspected",
       "pdf_pages": [
         16,
@@ -586,7 +586,7 @@
       "line": 586,
       "claim_summary": "Framework has three element types: components, capabilities, harms",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -605,7 +605,7 @@
       "line": 592,
       "claim_summary": "Leakage, interactions and requirements enable capabilities or incapabilities",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -624,7 +624,7 @@
       "line": 601,
       "claim_summary": "Risk sources are entities whose actions lead to privacy harms",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+      "source_path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
       "version": "Published IEEE SPW2016 proceedings paper,8PDFpages/printed58-65, DOI10.1109/SPW.2016.21; actual arnumber7527754; final source inspected, supersedes presentation-only checks",
       "pdf_pages": [
         3
@@ -643,7 +643,7 @@
       "line": 607,
       "claim_summary": "Harm definition uses usual context and source baseline is current EU practice",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -662,7 +662,7 @@
       "line": 614,
       "claim_summary": "Negative impacts include individuals, groups, society, wellbeing and rights",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -681,7 +681,7 @@
       "line": 618,
       "claim_summary": "Seven harm categories come from source Appendix A",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         14,
@@ -701,7 +701,7 @@
       "line": 620,
       "claim_summary": "Relationship harms omitted from seven-category tree list are retained as tag",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf",
+      "source_path": "01_Literature/library/Citron_2022_PrivacyHarms.pdf",
       "version": "Boston University Law Review102:793-863, 2022 published copy, 71PDFpages; bibliography key retains2021 posting year",
       "pdf_pages": [
         67,
@@ -721,7 +721,7 @@
       "line": 636,
       "claim_summary": "Abstract functionality requires concrete uses for meaningful harm analysis",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -740,7 +740,7 @@
       "line": 637,
       "claim_summary": "Subtrees can be reused across harms and matching use cases",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         7,
@@ -760,7 +760,7 @@
       "line": 640,
       "claim_summary": "Generic specification-based harm trees are refined for concrete systems",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2017refinement_author_manuscript.pdf",
+      "source_path": "01_Literature/library/De_2017_RefinementApproachPrivacyRiskAnalysis_manuscript.pdf",
       "version": "HAL hal-01671345v1 author manuscript, deposited22December2017,38PDFpages including cover; identifies APF2017 LNCS10518 pp52-83. Exact cited Springer typeset version not inspected.",
       "pdf_pages": [
         2,
@@ -785,7 +785,7 @@
       "line": 644,
       "claim_summary": "LINDDUN begins with system DFD and elicits threats on its elements",
       "verdict": "MISLOCATED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf",
+      "source_path": "01_Literature/library/Deng_2011_PrivacyThreatAnalysisFrameworkSupporting.pdf",
       "version": "Typeset Requirements Engineering16:3-32 (2011), online16November2010; DOI10.1007/s00766-010-0115-7",
       "pdf_pages": [
         2,
@@ -807,7 +807,7 @@
       "line": 645,
       "claim_summary": "Iwaya used LINDDUN threat categories for mental health apps",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/iwaya2023privacy_published.pdf",
+      "source_path": "01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps_published.pdf",
       "version": "Published Empirical Software Engineering(2023)28:2,42pages; DOI10.1007/s10664-022-10236-0; online8November2022; distinct from earlier40-page manuscript",
       "pdf_pages": [
         1,
@@ -827,7 +827,7 @@
       "line": 735,
       "claim_summary": "Health-tracker harm-tree method adapts EUDIF analysis",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -846,7 +846,7 @@
       "line": 740,
       "claim_summary": "Smart-grid harm trees link weaknesses, actors, events and harms",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+      "source_path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
       "version": "Published IEEE SPW2016 proceedings paper,8PDFpages/printed58-65, DOI10.1109/SPW.2016.21; actual arnumber7527754; final source inspected, supersedes presentation-only checks",
       "pdf_pages": [
         1,
@@ -868,7 +868,7 @@
       "line": 811,
       "claim_summary": "Three-level tree shown in source Fig4",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -887,7 +887,7 @@
       "line": 866,
       "claim_summary": "Components are information leakage, interaction results, requirements",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -906,7 +906,7 @@
       "line": 878,
       "claim_summary": "Pathways to one harm form a three-level harm tree",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -925,7 +925,7 @@
       "line": 885,
       "claim_summary": "OR+ denotes that several components might be needed",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -944,7 +944,7 @@
       "line": 889,
       "claim_summary": "The same tree operators compute harm likelihood",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+      "source_path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
       "version": "Published IEEE SPW2016 proceedings paper,8PDFpages/printed58-65, DOI10.1109/SPW.2016.21; actual arnumber7527754; final source inspected, supersedes presentation-only checks",
       "pdf_pages": [
         6,
@@ -964,7 +964,7 @@
       "line": 895,
       "claim_summary": "Origins identify core functionality, digital context, implementation choice",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6,
@@ -984,7 +984,7 @@
       "line": 911,
       "claim_summary": "Tracker inference, threat and vulnerability survey contributes tree evidence",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf",
+      "source_path": "01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf",
       "version": "ACM Computing Surveys56(7) Article183, April2024, 40-page typeset copy; DOI10.1145/3645091",
       "pdf_pages": [
         1,
@@ -1005,7 +1005,7 @@
       "line": 912,
       "claim_summary": "Users harm scenarios inform reference trees",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf",
+      "source_path": "01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf",
       "version": "CHI2020 Paper522, 12-page local camera-ready/OCR copy; printed footer DOI differs from bibliography record and was not re-resolved here",
       "pdf_pages": [
         1,
@@ -1026,7 +1026,7 @@
       "line": 914,
       "claim_summary": "Prior data-flow/interface research supplies tracker tree evidence",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
+      "source_path": "01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
       "version": "CHI2025 24-page conference copy; DOI10.1145/3706598.3714089",
       "pdf_pages": [
         1,
@@ -1047,7 +1047,7 @@
       "line": 914,
       "claim_summary": "Source of evidence on health-tracker policies, reported data practices and interfaces.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4,
@@ -1069,7 +1069,7 @@
       "line": 914,
       "claim_summary": "Source on policies, data flows and interfaces for reference-model construction.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf",
+      "source_path": "01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf",
       "version": "PoPETs2020(4):491–510 published article, DOI10.2478/popets-2020-0083.",
       "pdf_pages": [
         3,
@@ -1091,7 +1091,7 @@
       "line": 915,
       "claim_summary": "Post-Roe user concerns supply possible harm evidence",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
+      "source_path": "01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
       "version": "CHI2024 22-page conference copy, DOI10.1145/3613904.3642042",
       "pdf_pages": [
         1,
@@ -1112,7 +1112,7 @@
       "line": 928,
       "claim_summary": "The method disclaims completeness and additional pathways add evidence",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         7
@@ -1131,7 +1131,7 @@
       "line": 937,
       "claim_summary": "Comparison table accurately describes source model, operators, origins, reuse, baseline",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6,
@@ -1152,7 +1152,7 @@
       "line": 976,
       "claim_summary": "Users may hide intimate tracker data from family and partners",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
+      "source_path": "01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
       "version": "CHI2025 24-page conference copy; DOI10.1145/3706598.3714089",
       "pdf_pages": [
         3
@@ -1171,7 +1171,7 @@
       "line": 976,
       "claim_summary": "Intimate-partner abuse provides rationale for close-person access capability",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf",
+      "source_path": "01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf",
       "version": "ACM Computing Surveys56(7) Article183, April2024, 40-page typeset copy; DOI10.1145/3645091",
       "pdf_pages": [
         14
@@ -1190,7 +1190,7 @@
       "line": 978,
       "claim_summary": "Distinguishing means sorting users into classes",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         11
@@ -1209,7 +1209,7 @@
       "line": 980,
       "claim_summary": "Incapabilities justify adding deletion/export/opt-out/control capabilities",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         6
@@ -1228,7 +1228,7 @@
       "line": 981,
       "claim_summary": "Deletion, export and control problems as grounds for including incapabilities in the model.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         10,
@@ -1249,7 +1249,7 @@
       "line": 989,
       "claim_summary": "Sample-size precedent: Malki installed and inspected 20 apps.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         5
@@ -1268,7 +1268,7 @@
       "line": 990,
       "claim_summary": "Previous document-plus-app study analysed36apps",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf",
+      "source_path": "01_Literature/library/Huckvale_2019_AssessmentDataSharingPrivacyPractices.pdf",
       "version": "Published JAMA Network Open2019;2(4):e192542,10PDFpages, DOI10.1001/jamanetworkopen.2019.2542",
       "pdf_pages": [
         1,
@@ -1288,7 +1288,7 @@
       "line": 991,
       "claim_summary": "Previous app/document heuristic evaluation used64apps",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf",
+      "source_path": "01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf",
       "version": "Published JMIR Mhealth Uhealth2018;6(10):e185,16PDFpages; DOI10.2196/mhealth.9217; page numbers are PDF renderer numbers marked not for citation purposes",
       "pdf_pages": [
         5,
@@ -1308,7 +1308,7 @@
       "line": 1010,
       "claim_summary": "Search categories derived from105QuantifiedSelf members and include named health categories",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf",
+      "source_path": "01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf",
       "version": "Published JMIR Mhealth Uhealth2018;6(10):e185,16PDFpages; DOI10.2196/mhealth.9217; page numbers are PDF renderer numbers marked not for citation purposes",
       "pdf_pages": [
         5
@@ -1327,7 +1327,7 @@
       "line": 1014,
       "claim_summary": "Reproductive-health domain including pregnancy tracking.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -1346,7 +1346,7 @@
       "line": 1030,
       "claim_summary": "The App Store is searched through Apple Search API in the German storefront.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/apple2022itunessearch_web-capture_2026-11-04.pdf",
+      "source_path": "01_Literature/library/Apple_2022_ITunesSearchAPI_web-capture.pdf",
       "version": "Official live Apple documentation, extracted-text web capture 4 November 2026; not a paper.",
       "pdf_pages": [
         1,
@@ -1367,7 +1367,7 @@
       "line": 1036,
       "claim_summary": "Both stores capped at GooglePlay search-result depth to avoid favouring iTunes",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf",
+      "source_path": "01_Literature/library/OLoughlin_2019_ReviewingDataSecurityPrivacyPolicies.pdf",
       "version": "Published Internet Interventions15(2019):110-115,6PDFpages; DOI10.1016/j.invent.2018.12.001",
       "pdf_pages": [
         3
@@ -1386,7 +1386,7 @@
       "line": 1066,
       "claim_summary": "Precedent for eligibility requiring own-health tracking or recording.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -1405,7 +1405,7 @@
       "line": 1066,
       "claim_summary": "Eligible apps require personal-data input over time and a tracking feature",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf",
+      "source_path": "01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf",
       "version": "Published Internet Interventions17(2019)100243,8PDFpages; DOI10.1016/j.invent.2019.100243",
       "pdf_pages": [
         2
@@ -1424,7 +1424,7 @@
       "line": 1070,
       "claim_summary": "Instructional apps without data recording excluded as in Hutton",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf",
+      "source_path": "01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf",
       "version": "Published JMIR Mhealth Uhealth2018;6(10):e185,16PDFpages; DOI10.2196/mhealth.9217; page numbers are PDF renderer numbers marked not for citation purposes",
       "pdf_pages": [
         5
@@ -1443,7 +1443,7 @@
       "line": 1102,
       "claim_summary": "Titles/developer names alone may not identify same cross-platform app",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf",
+      "source_path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf",
       "version": "Published MSR2024 proceedings348-360,13PDFpages; DOI10.1145/3643991.3644896",
       "pdf_pages": [
         5
@@ -1462,7 +1462,7 @@
       "line": 1104,
       "claim_summary": "Apps were matched manually because platform names differ",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/hu2018studying_author_manuscript.pdf",
+      "source_path": "01_Literature/library/Hu_2018_ConsistencyStarRatingsComplaints_manuscript.pdf",
       "version": "27-page author manuscript of cited Empirical Software Engineering2018 work; final journal23(6):3442-3475 not inspected; manuscript section3.1 page5",
       "pdf_pages": [
         5
@@ -1482,7 +1482,7 @@
       "line": 1106,
       "claim_summary": "Same-app criterion follows human-equivalent use/corefunction/provider across platforms",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf",
+      "source_path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf",
       "version": "Published MSR2024 proceedings348-360,13PDFpages; DOI10.1145/3643991.3644896",
       "pdf_pages": [
         5
@@ -1501,7 +1501,7 @@
       "line": 1108,
       "claim_summary": "Several matching signals inspire candidate proposals including description-overlap rule",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf",
+      "source_path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf",
       "version": "Published MSR2024 proceedings348-360,13PDFpages; DOI10.1145/3643991.3644896",
       "pdf_pages": [
         5,
@@ -1521,7 +1521,7 @@
       "line": 1125,
       "claim_summary": "Some cross-platform matches remain unclassified after manual work",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf",
+      "source_path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf",
       "version": "Published MSR2024 proceedings348-360,13PDFpages; DOI10.1145/3643991.3644896",
       "pdf_pages": [
         9
@@ -1540,7 +1540,7 @@
       "line": 1140,
       "claim_summary": "Rating counts used for selection and Androidrating/downloadSpearmanrho0.89 supports feedback proxy",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf",
+      "source_path": "01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf",
       "version": "Published JAMIA2015;22:e28-e33,6PDFpages; online-first21August2014; DOI10.1136/amiajnl-2013-002605",
       "pdf_pages": [
         1,
@@ -1560,7 +1560,7 @@
       "line": 1189,
       "claim_summary": "StatCounter German mobile OS page-view shares supply the platform-share inputs.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026os_web-capture_2026-11-04.pdf",
+      "source_path": "01_Literature/library/StatCounter_2026_MobileOSGermany_web-capture.pdf",
       "version": "Official live StatCounter page, extracted-text capture 4 November 2026; supplemental official methodology FAQ archived separately.",
       "pdf_pages": [
         1,
@@ -1580,7 +1580,7 @@
       "line": 1231,
       "claim_summary": "StatCounter German mobile vendor shares supply the leading-vendor selection input.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026vendor_web-capture_2026-11-04.pdf",
+      "source_path": "01_Literature/library/StatCounter_2026_MobileVendorGermany_web-capture.pdf",
       "version": "Official live StatCounter page, extracted-text capture 4 November 2026; supplemental official methodology FAQ archived separately.",
       "pdf_pages": [
         1,
@@ -1600,7 +1600,7 @@
       "line": 1332,
       "claim_summary": "Privacy policy sought first in the store listing and then on the developer website.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         5
@@ -1619,7 +1619,7 @@
       "line": 1334,
       "claim_summary": "Apps without policies remain in sample and their absence is reported",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf",
+      "source_path": "01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf",
       "version": "Published Internet Interventions17(2019)100243,8PDFpages; DOI10.1016/j.invent.2019.100243",
       "pdf_pages": [
         2
@@ -1638,7 +1638,7 @@
       "line": 1334,
       "claim_summary": "Policy absence is retained and reported in app sample",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf",
+      "source_path": "01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf",
       "version": "Published JAMIA2015;22:e28-e33,6PDFpages; online-first21August2014; DOI10.1136/amiajnl-2013-002605",
       "pdf_pages": [
         1,
@@ -1658,7 +1658,7 @@
       "line": 1352,
       "claim_summary": "English and German policy pairs can differ substantively.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Arora et al. 2022 - A Tale of Two Regulatory Regimes - Creation and Analysis of a Bilingual Privacy Policy Corpus.pdf",
+      "source_path": "01_Literature/library/Arora_2022_BilingualENDEAppPrivacy.pdf",
       "version": "LREC 2022 published 13-page article, proceedings pp.5460-5472",
       "pdf_pages": [
         1,
@@ -1679,7 +1679,7 @@
       "line": 1362,
       "claim_summary": "Analyst steps through a task and judges likely user success.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         131,
@@ -1699,7 +1699,7 @@
       "line": 1373,
       "claim_summary": "Variants address goals, actions, feedback and completion; validation is limited.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "literature_new/references/Mahatody et al. 2010 - State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions.pdf",
+      "source_path": "01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf",
       "version": "40-page numbered manuscript; cited journal version has pp.741-785 (45 pages); identity of relevant wording and mapping to journal pagination not verified",
       "pdf_pages": [
         15,
@@ -1721,7 +1721,7 @@
       "line": 1377,
       "claim_summary": "Hybrid cognitive/heuristic inspection conducted by two independent analysts.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         5
@@ -1740,7 +1740,7 @@
       "line": 1379,
       "claim_summary": "A cognitive walkthrough may be conducted by one analyst.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         134
@@ -1759,7 +1759,7 @@
       "line": 1380,
       "claim_summary": "Evaluator expertise affects results and recording is advised.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "literature_new/references/Mahatody et al. 2010 - State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions.pdf",
+      "source_path": "01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf",
       "version": "40-page numbered manuscript; cited journal version has pp.741-785 (45 pages); identity of relevant wording and mapping to journal pagination not verified",
       "pdf_pages": [
         20,
@@ -1779,7 +1779,7 @@
       "line": 1396,
       "claim_summary": "Four walkthrough inputs: users, tasks, action sequences, interface.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         131
@@ -1798,7 +1798,7 @@
       "line": 1398,
       "claim_summary": "Target user is first-time or novice with no technical training.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         5
@@ -1817,7 +1817,7 @@
       "line": 1402,
       "claim_summary": "Document task/action sequence before cognitive evaluation.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         134,
@@ -1838,7 +1838,7 @@
       "line": 1406,
       "claim_summary": "Fresh installation without an earlier account following Malki.",
       "verdict": "PARTIAL",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         5
@@ -1857,7 +1857,7 @@
       "line": 1474,
       "claim_summary": "Wharton four cognitive-walkthrough questions.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+      "source_path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
       "version": "1994 published book, Usability Inspection Methods, chapter 5 pp.105-140, in complete 439-page scanned volume; NOT a technical-report variant; byte-identical SHA-256 56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5 to inspected literature_new copy",
       "pdf_pages": [
         131
@@ -1876,7 +1876,7 @@
       "line": 1494,
       "claim_summary": "Counting route taps follows Habib action counts.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Habib et al. 2020 - It's a scavenger hunt - Usability of Websites' Opt-Out and Data Deletion Choices.pdf",
+      "source_path": "01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf",
       "version": "CHI 2020 published 12-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -1895,7 +1895,7 @@
       "line": 1678,
       "claim_summary": "AxisB distinctions adapt Zou and avoid inferring intent",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf",
+      "source_path": "01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf",
       "version": "CHI2019 Paper194, 14-page conference PDF; printed PageN equals PDFN",
       "pdf_pages": [
         7,
@@ -1916,7 +1916,7 @@
       "line": 1694,
       "claim_summary": "Polisis precedes automated privacy data-practice analysis.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf",
+      "source_path": "01_Literature/library/Harkous_2018_Polisis.pdf",
       "version": "Published USENIX Security2018, pp.531–548; local PDF includes a cover page, so PDF2=printed531.",
       "pdf_pages": [
         2,
@@ -1938,7 +1938,7 @@
       "line": 1694,
       "claim_summary": "LLMs are a precedent for extracting privacy data practices at scale.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf",
+      "source_path": "01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf",
       "version": "Published Computing 106 (2024), pp.3879–3903; DOI 10.1007/s00607-024-01331-9; online 22 August 2024; 25 PDF pages. Earlier local 16-page arXiv v1 is not used for definitive journal locators.",
       "pdf_pages": [
         1,
@@ -1959,7 +1959,7 @@
       "line": 1696,
       "claim_summary": "LLM privacy-policy annotations can approach expert performance.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chanenson_2025_Automating-GKC-CI-policy-annotations-with-LLMs_PoPETs.pdf",
+      "source_path": "01_Literature/library/Chanenson_2025_AutomatingGKCCIPolicyAnnotations.pdf",
       "version": "Published PoPETs2025(2), pp.280–308; DOI10.56553/popets-2025-0062; PDF1=printed280.",
       "pdf_pages": [
         1,
@@ -1980,7 +1980,7 @@
       "line": 1696,
       "claim_summary": "LLM policy annotations are close to expert performance.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xie_2025_LLM-privacy-policies-under-modern-privacy-laws_USENIX.pdf",
+      "source_path": "01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf",
       "version": "Published USENIX Security2025; local PDF includes a cover page; PDF2=printed5797, PDF21=printed5816.",
       "pdf_pages": [
         7,
@@ -2001,7 +2001,7 @@
       "line": 1698,
       "claim_summary": "A field report found rough approximations and gross errors in ChatGPT qualitative analysis.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/73_Mayring_2025_Qualitative-Content-Analysis-With-ChatGPT-Pitfalls-Rough-Approximations-and-Gross-Errors-A.pdf",
+      "source_path": "01_Literature/library/Mayring_2025_QualitativeContentAnalysisChatGPTPitfalls.pdf",
       "version": "Published FQS26(1), Article4, January2025; numbered paragraphs and sections, rather than journal page range.",
       "pdf_pages": [
         1,
@@ -2021,7 +2021,7 @@
       "line": 1700,
       "claim_summary": "LLM annotation performance depends on task and needs validation against human labels.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/67_Pangakis_2023_Automated-Annotation-with-Generative-AI-Requires-Validation.pdf",
+      "source_path": "01_Literature/library/Pangakis_2023_AutomatedAnnotationGenerativeAIRequires.pdf",
       "version": "Observed arXiv:2306.00176v1, 31 May 2023 (title-page manuscript date 2 June 2023), 20-page PDF; bibliography has unversioned arXiv DOI.",
       "pdf_pages": [
         1,
@@ -2042,7 +2042,7 @@
       "line": 1702,
       "claim_summary": "Directly using surrogate labels can bias downstream estimates and invalidate intervals despite high annotation accuracy.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf",
+      "source_path": "01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf",
       "version": "NeurIPS 2023 conference paper, 13 PDF pages, conference footer on PDF1; local page numbering is 1–13.",
       "pdf_pages": [
         1,
@@ -2064,7 +2064,7 @@
       "line": 1710,
       "claim_summary": "Freeze/report model versions and prefer an open-weight model if its performance is close.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+      "source_path": "01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf",
       "version": "Published Sociologica 18(2), 2024, pp.67–85; DOI 10.6092/issn.1971-8853/19461; 19 PDF pages.",
       "pdf_pages": [
         3,
@@ -2084,7 +2084,7 @@
       "line": 1712,
       "claim_summary": "Model errors correlate most strongly within one provider; a different family will recover some missed mentions.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf",
+      "source_path": "01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf",
       "version": "Published ICML 2025 / PMLR 267, pp.30038–30066; 29-page PDF with internal page numbers1–29.",
       "pdf_pages": [
         1,
@@ -2106,7 +2106,7 @@
       "line": 1720,
       "claim_summary": "Precedent for the exact three stages: nodes/harms/generic risk, then harm stance, then protection details.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf",
+      "source_path": "01_Literature/library/Harkous_2018_Polisis.pdf",
       "version": "Published USENIX Security2018, pp.531–548; local PDF includes a cover page, so PDF2=printed531.",
       "pdf_pages": [
         5,
@@ -2126,7 +2126,7 @@
       "line": 1722,
       "claim_summary": "Every label quotes a span; a script verifies it occurs and discards spanless labels.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xie_2025_LLM-privacy-policies-under-modern-privacy-laws_USENIX.pdf",
+      "source_path": "01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf",
       "version": "Published USENIX Security2025; local PDF includes a cover page; PDF2=printed5797, PDF21=printed5816.",
       "pdf_pages": [
         7,
@@ -2146,7 +2146,7 @@
       "line": 1723,
       "claim_summary": "Keep an uncertain response rather than translating it to a negative code.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+      "source_path": "01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf",
       "version": "Published Sociologica 18(2), 2024, pp.67–85; DOI 10.6092/issn.1971-8853/19461; 19 PDF pages.",
       "pdf_pages": [
         8,
@@ -2166,7 +2166,7 @@
       "line": 1725,
       "claim_summary": "Prompt order context/codebook/output, two constructed examples, and no persona; cited pp.4–7.",
       "verdict": "MISLOCATED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf",
+      "source_path": "01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf",
       "version": "Published Computing 106 (2024), pp.3879–3903; DOI 10.1007/s00607-024-01331-9; online 22 August 2024; 25 PDF pages. Earlier local 16-page arXiv v1 is not used for definitive journal locators.",
       "pdf_pages": [
         8,
@@ -2188,7 +2188,7 @@
       "line": 1726,
       "claim_summary": "Repeated runs measure model stability; cited pp.4–6.",
       "verdict": "MISLOCATED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf",
+      "source_path": "01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf",
       "version": "Published Computing 106 (2024), pp.3879–3903; DOI 10.1007/s00607-024-01331-9; online 22 August 2024; 25 PDF pages. Earlier local 16-page arXiv v1 is not used for definitive journal locators.",
       "pdf_pages": [
         10,
@@ -2208,7 +2208,7 @@
       "line": 1728,
       "claim_summary": "A paraphrased prompt on the validation set measures sensitivity to wording.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+      "source_path": "01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf",
       "version": "Observed local arXiv:2509.08825v2, 6 October 2025, 97-page PDF; bibliography does not pin an arXiv version.",
       "pdf_pages": [
         11
@@ -2227,7 +2227,7 @@
       "line": 1773,
       "claim_summary": "Showing model suggestions shifts human labels toward them and inflates reported model performance without changing the model.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just.pdf",
+      "source_path": "01_Literature/library/Schroeder_2025_JustPutHumanInLoop_preprint.pdf",
       "version": "Observed arXiv:2507.15821v1, 21 July 2025, 25-page PDF; bibliography names arXiv but no version. Published ACL Findings 2025 pp.25771–25795 also inspected for corroboration, not substituted silently.",
       "pdf_pages": [
         1,
@@ -2265,7 +2265,7 @@
       "line": 1777,
       "claim_summary": "Raw model outputs must be kept separate so accuracy is measured before human correction; citation specifically p.18.",
       "verdict": "MISLOCATED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+      "source_path": "01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf",
       "version": "Observed local arXiv:2509.08825v2, 6 October 2025, 97-page PDF; bibliography does not pin an arXiv version.",
       "pdf_pages": [
         18,
@@ -2285,7 +2285,7 @@
       "line": 1839,
       "claim_summary": "PETs can leave pathways to harm open",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+      "source_path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
       "version": "23-page local May 2026 PDF; metadata creation/modification 2026-05-04; SHA256 c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac; archive revision history not independently checked",
       "pdf_pages": [
         10
@@ -2304,7 +2304,7 @@
       "line": 1894,
       "claim_summary": "Try coding on a small set before freezing instruments.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+      "source_path": "01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf",
       "version": "Published Sociologica 18(2), 2024, pp.67–85; DOI 10.6092/issn.1971-8853/19461; 19 PDF pages.",
       "pdf_pages": [
         6,
@@ -2325,7 +2325,7 @@
       "line": 1895,
       "claim_summary": "Small preliminary policy-codebook test before final coding.",
       "verdict": "SUPPORTED",
-      "source_path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+      "source_path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
       "version": "CHI 2024 published 24-page article; PDF and article page numbers coincide",
       "pdf_pages": [
         4
@@ -2344,7 +2344,7 @@
       "line": 1958,
       "claim_summary": "Known unit selection probabilities allow weighting every estimate back to the whole corpus.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf",
+      "source_path": "01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf",
       "version": "NeurIPS 2023 conference paper, 13 PDF pages, conference footer on PDF1; local page numbering is 1–13.",
       "pdf_pages": [
         4,
@@ -2365,7 +2365,7 @@
       "line": 1969,
       "claim_summary": "Common predetermined units prevent spurious coder disagreement caused by unitization.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/13_Campbell_2013_Coding-In-depth-Semistructured-Interviews-Problems-of-Unitization-and-Intercoder-Reliabili.pdf",
+      "source_path": "01_Literature/library/Campbell_2013_CodingDepthSemistructuredInterviewsProblems.pdf",
       "version": "Published Sociological Methods & Research42(3), pp.294–320, DOI10.1177/0049124113500475; PDF1=printed294.",
       "pdf_pages": [
         9,
@@ -2386,7 +2386,7 @@
       "line": 1971,
       "claim_summary": "Double-coding a subset is common under resource constraints.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/08_O-Connor_2020_Intercoder-Reliability-in-Qualitative-Research-Debates-and-Practical-Guidelines.pdf",
+      "source_path": "01_Literature/library/OConnor_2020_IntercoderReliabilityQualitativeResearch.pdf",
       "version": "Published International Journal of Qualitative Methods19 (2020), DOI10.1177/1609406919899220; article PDF page numbers1–13.",
       "pdf_pages": [
         5,
@@ -2406,7 +2406,7 @@
       "line": 1973,
       "claim_summary": "Use Krippendorff alpha before reconciliation and per axis/code where informative.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf",
+      "source_path": "01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf",
       "version": "Existing private complete SAGE fourth-edition book, copyright2019.",
       "pdf_pages": [
         300,
@@ -2432,7 +2432,7 @@
       "line": 1975,
       "claim_summary": "Rare codes can lower chance-corrected agreement despite high raw agreement.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf",
+      "source_path": "01_Literature/library/Feinstein_1990_HighAgreementButLowKappa.pdf",
       "version": "Published Journal of Clinical Epidemiology43(6), pp.543–549 (1990); PDF1=printed543.",
       "pdf_pages": [
         1,
@@ -2453,7 +2453,7 @@
       "line": 1975,
       "claim_summary": "Rare-code prevalence can depress chance-corrected reliability despite high raw agreement.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf",
+      "source_path": "01_Literature/library/Gwet_2008_ComputingInterRaterReliabilityVariance.pdf",
       "version": "Published British Journal of Mathematical and Statistical Psychology61(1), pp.29–48 (2008); PDF1=printed29.",
       "pdf_pages": [
         5,
@@ -2474,7 +2474,7 @@
       "line": 1977,
       "claim_summary": "Reliability alpha≥.800; tentative .667–.800; unreliable codes merged or qualitative.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf",
+      "source_path": "01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf",
       "version": "Existing private complete SAGE fourth-edition book, copyright2019.",
       "pdf_pages": [
         371,
@@ -2494,7 +2494,7 @@
       "line": 1981,
       "claim_summary": "Reliability supports reproducibility rather than proving label truth.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf",
+      "source_path": "01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf",
       "version": "Local 23-page author manuscript with ACM Trans. Graph., Vol.X/ArticleX placeholder headers, November2019. Bibliography cites published PACM HCI3(CSCW), DOI10.1145/3359174; equivalence to final published version not independently established.",
       "pdf_pages": [
         4,
@@ -2515,7 +2515,7 @@
       "line": 2000,
       "claim_summary": "A human reference sample corrects model bias and preserves valid intervals for the thesis routine-label outcomes.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/angelopoulos2023prediction.pdf",
+      "source_path": "01_Literature/library/Angelopoulos_2023_PredictionPoweredInference.pdf",
       "version": "Published Science 382 (2023), pp.669–674 plus supplementary materials; combined 37-page PDF. Supplement starts after six article pages; SM printed21–22 = combined PDF27–28.",
       "pdf_pages": [
         1,
@@ -2540,7 +2540,7 @@
       "line": 2000,
       "claim_summary": "Selection-weighted gold labels plus full model labels make RQ1–RQ3 estimates/intervals valid even with biased models.",
       "verdict": "PARTIAL",
-      "source_path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf",
+      "source_path": "01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf",
       "version": "NeurIPS 2023 conference paper, 13 PDF pages, conference footer on PDF1; local page numbering is 1–13.",
       "pdf_pages": [
         4,
@@ -2561,7 +2561,7 @@
       "line": 2087,
       "claim_summary": "Correlated model errors mean model-model agreement is not evidence of ground-truth accuracy.",
       "verdict": "SUPPORTED",
-      "source_path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf",
+      "source_path": "01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf",
       "version": "Published ICML 2025 / PMLR 267, pp.30038–30066; 29-page PDF with internal page numbers1–29.",
       "pdf_pages": [
         4,
@@ -2581,7 +2581,7 @@
       "line": 2089,
       "claim_summary": "One human reference coder plus model agreement does not establish independent human inter-coder reliability.",
       "verdict": "VERSION_UNVERIFIED",
-      "source_path": "01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf",
+      "source_path": "01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf",
       "version": "Local 23-page author manuscript with ACM Trans. Graph., Vol.X/ArticleX placeholder headers, November2019. Bibliography cites published PACM HCI3(CSCW), DOI10.1145/3359174; equivalence to final published version not independently established.",
       "pdf_pages": [
         2,

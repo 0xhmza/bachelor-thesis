@@ -33,7 +33,7 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | D19 | Release of study records | proposed (11-04, night): instruments, scripts and labels open; captured third-party texts as research copies for examiners (§ 60d UrhG); recordings private | § 60d UrhG; walkthrough protocol v8 | [D19](Decisions/D19_data-release.md) |
 
 The reading that supports each decision is mapped in
-[`01_Literature/Methods-Reading-List.md`](../01_Literature/Methods-Reading-List.md)
+[`01_Literature/catalog/Methods-Reading-List.md`](../01_Literature/catalog/Methods-Reading-List.md)
 ("Meeting decision → reading → extraction target") and in the literature map.
 
 ## Collector development — 20 October 2026

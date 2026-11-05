@@ -36,7 +36,7 @@ The PDFs themselves were inspected at the listed passages; digest cards were not
 | Krippendorff4th edition | Complete private local book already exists and was inspected | No new login needed; private ignored file was not staged or republished. |
 | De & Le Métayer2016; Rodriguez2024; Iwaya2023 | Actual published PDFs successfully retrieved and read | No institutional login used. |
 
-Public web references have labelled PDF text captures. Existing usable PDFs were reused rather than downloaded again. New papers and captures are in [the audit PDF folder](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/README.md).
+Public web references have labelled PDF text captures. Existing usable PDFs were reused rather than downloaded again. New papers and captures are in [the audit PDF folder](../../../01_Literature/catalog/Audit-Sources_2026-11-04.md).
 
 ## Complete reference-by-reference checks
 
@@ -44,7 +44,7 @@ Public web references have labelled PDF text captures. Existing usable PDFs were
 
 Prediction-Powered Inference
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/angelopoulos2023prediction.pdf)
+Source: [PDF](../../../01_Literature/library/Angelopoulos_2023_PredictionPoweredInference.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -56,7 +56,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 {iTunes} Search {API}
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/apple2022itunessearch_web-capture_2026-11-04.pdf)
+Source: [PDF](../../../01_Literature/library/Apple_2022_ITunesSearchAPI_web-capture.pdf)
 
 Official web source archived as clearly labelled extracted-text PDF, not a native scholarly PDF. Public access.
 
@@ -68,7 +68,7 @@ Official web source archived as clearly labelled extracted-text PDF, not a nativ
 
 Scoping Studies: Towards a Methodological Framework
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/75_Arksey_2005_Scoping-studies-towards-a-methodological-framework.pdf)
+Source: [PDF](../../../01_Literature/library/Arksey_2005_ScopingStudiesMethodologicalFramework.pdf)
 
 Existing local manuscript/accepted version checked; exact cited journal-version verification remains a version task.
 
@@ -80,7 +80,7 @@ Existing local manuscript/accepted version checked; exact cited journal-version 
 
 A Tale of Two Regulatory Regimes: Creation and Analysis of a Bilingual Privacy Policy Corpus
 
-Source: [PDF](../../../literature_new/references/Arora%20et%20al.%202022%20-%20A%20Tale%20of%20Two%20Regulatory%20Regimes%20-%20Creation%20and%20Analysis%20of%20a%20Bilingual%20Privacy%20Policy%20Corpus.pdf)
+Source: [PDF](../../../01_Literature/library/Arora_2022_BilingualENDEAppPrivacy.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -92,7 +92,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Large Language Model Hacking: Quantifying the Hidden Risks of Using {LLMs} for Text Annotation
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf)
+Source: [PDF](../../../01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -107,7 +107,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Coding In-depth Semistructured Interviews: Problems of Unitization and Intercoder Reliability and Agreement
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/04_Coding/13_Campbell_2013_Coding-In-depth-Semistructured-Interviews-Problems-of-Unitization-and-Intercoder-Reliabili.pdf)
+Source: [PDF](../../../01_Literature/library/Campbell_2013_CodingDepthSemistructuredInterviewsProblems.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -119,7 +119,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 \mkbibquote{I Deleted It After the Overturn of Roe v. Wade}: Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era
 
-Source: [PDF](../../../01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf)
+Source: [PDF](../../../01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -132,7 +132,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Automating Governing Knowledge Commons and Contextual Integrity ({GKC-CI}) Privacy Policy Annotations with Large Language Models
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chanenson_2025_Automating-GKC-CI-policy-annotations-with-LLMs_PoPETs.pdf)
+Source: [PDF](../../../01_Literature/library/Chanenson_2025_AutomatingGKCCIPolicyAnnotations.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -144,7 +144,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Privacy Harms
 
-Source: [PDF](../../../01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf)
+Source: [PDF](../../../01_Literature/library/Citron_2022_PrivacyHarms.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -156,7 +156,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Privacy Harm Analysis: A Case Study on Smart Grids
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf)
+Source: [PDF](../../../01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -171,7 +171,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 A Refinement Approach for the Reuse of Privacy Risk Analysis Results
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/de2017refinement_author_manuscript.pdf)
+Source: [PDF](../../../01_Literature/library/De_2017_RefinementApproachPrivacyRiskAnalysis_manuscript.pdf)
 
 Free author manuscript saved; exact publisher PDF not retrieved. Publisher route shows subscription/access option.
 
@@ -183,7 +183,7 @@ Free author manuscript saved; exact publisher PDF not retrieved. Publisher route
 
 A Privacy Threat Analysis Framework: Supporting the Elicitation and Fulfillment of Privacy Requirements
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf)
+Source: [PDF](../../../01_Literature/library/Deng_2011_PrivacyThreatAnalysisFrameworkSupporting.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -195,7 +195,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Using Imperfect Surrogates for Downstream Inference: Design-Based Supervised Learning for Social Science Applications of Large Language Models
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf)
+Source: [PDF](../../../01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -210,7 +210,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 High Agreement but Low Kappa: {I}. The Problems of Two Paradoxes
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf)
+Source: [PDF](../../../01_Literature/library/Feinstein_1990_HighAgreementButLowKappa.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -222,7 +222,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Understanding Fitness Tracker Users' Security and Privacy Knowledge, Attitudes and Behaviours
 
-Source: [PDF](../../../01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf)
+Source: [PDF](../../../01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -234,7 +234,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Computing Inter-Rater Reliability and Its Variance in the Presence of High Agreement
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf)
+Source: [PDF](../../../01_Literature/library/Gwet_2008_ComputingInterRaterReliabilityVariance.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -246,7 +246,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 {"It's a Scavenger Hunt"}: Usability of Websites' Opt-Out and Data Deletion Choices
 
-Source: [PDF](../../../literature_new/references/Habib%20et%20al.%202020%20-%20It's%20a%20scavenger%20hunt%20-%20Usability%20of%20Websites'%20Opt-Out%20and%20Data%20Deletion%20Choices.pdf)
+Source: [PDF](../../../01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -259,7 +259,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Polisis: Automated Analysis and Presentation of Privacy Policies Using Deep Learning
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf)
+Source: [PDF](../../../01_Literature/library/Harkous_2018_Polisis.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -272,7 +272,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Three Approaches to Qualitative Content Analysis
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf)
+Source: [PDF](../../../01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -285,7 +285,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Studying the Consistency of Star Ratings and the Complaints in 1 \& 2-Star User Reviews for Top Free Cross-Platform {Android} and {iOS} Apps
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/hu2018studying_author_manuscript.pdf)
+Source: [PDF](../../../01_Literature/library/Hu_2018_ConsistencyStarRatingsComplaints_manuscript.pdf)
 
 Free author manuscript saved; exact publisher PDF not retrieved. Publisher route shows subscription/access option.
 
@@ -297,7 +297,7 @@ Free author manuscript saved; exact publisher PDF not retrieved. Publisher route
 
 Assessment of the Data Sharing and Privacy Practices of Smartphone Apps for Depression and Smoking Cessation
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf)
+Source: [PDF](../../../01_Literature/library/Huckvale_2019_AssessmentDataSharingPrivacyPractices.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -309,7 +309,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking
 
-Source: [PDF](../../../01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf)
+Source: [PDF](../../../01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -323,7 +323,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Assessing the Privacy of {mHealth} Apps for Self-Tracking: Heuristic Evaluation Approach
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf)
+Source: [PDF](../../../01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -337,7 +337,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 On the Privacy of Mental Health Apps: An Empirical Investigation and Its Implications for App Development
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/iwaya2023privacy_published.pdf)
+Source: [PDF](../../../01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps_published.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -349,7 +349,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Correlated Errors in Large Language Models
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf)
+Source: [PDF](../../../01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -362,7 +362,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 On the (Privacy) Harms of the European Digital Identity Framework
 
-Source: [PDF](../../../01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf)
+Source: [PDF](../../../01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -393,7 +393,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Content Analysis: An Introduction to Its Methodology
 
-Source: [PDF (private local book)](../../../01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf)
+Source: [PDF (private local book)](../../../01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf)
 
 Complete fourth-edition book already held in private ignored local folder. No new login needed for this audit; book not newly published or staged.
 
@@ -407,7 +407,7 @@ Complete fourth-edition book already held in private ignored local folder. No ne
 
 State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions
 
-Source: [PDF](../../../literature_new/references/Mahatody%20et%20al.%202010%20-%20State%20of%20the%20Art%20on%20the%20Cognitive%20Walkthrough%20Method,%20Its%20Variants%20and%20Evolutions.pdf)
+Source: [PDF](../../../01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf)
 
 Existing local manuscript/accepted version checked; exact cited journal-version verification remains a version task.
 
@@ -420,7 +420,7 @@ Existing local manuscript/accepted version checked; exact cited journal-version 
 
 Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World
 
-Source: [PDF](../../../literature_new/references/Malki%20et%20al.%202024%20-%20Exploring%20Privacy%20Practices%20of%20Female%20mHealth%20Apps%20in%20a%20Post-Roe%20World.pdf)
+Source: [PDF](../../../01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -444,7 +444,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 No Cookies For You!: Evaluating the Promises of Big Tech's `Privacy-Enhancing' Techniques
 
-Source: [PDF](../../../01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf)
+Source: [PDF](../../../01_Literature/library/Martin_2025_NoCookiesForYou.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -456,7 +456,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Qualitative Content Analysis With {ChatGPT}: Pitfalls, Rough Approximations and Gross Errors. {A} Field Report
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/73_Mayring_2025_Qualitative-Content-Analysis-With-ChatGPT-Pitfalls-Rough-Approximations-and-Gross-Errors-A.pdf)
+Source: [PDF](../../../01_Literature/library/Mayring_2025_QualitativeContentAnalysisChatGPTPitfalls.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -468,7 +468,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Reliability and Inter-Rater Reliability in Qualitative Research: Norms and Guidelines for {CSCW} and {HCI} Practice
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf)
+Source: [PDF](../../../01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf)
 
 Existing local manuscript/accepted version checked; exact cited journal-version verification remains a version task.
 
@@ -481,7 +481,7 @@ Existing local manuscript/accepted version checked; exact cited journal-version 
 
 Wearable Activity Trackers: A Survey on Utility, Privacy, and Security
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf)
+Source: [PDF](../../../01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -495,7 +495,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Intercoder Reliability in Qualitative Research: Debates and Practical Guidelines
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/04_Coding/08_O-Connor_2020_Intercoder-Reliability-in-Qualitative-Research-Debates-and-Practical-Guidelines.pdf)
+Source: [PDF](../../../01_Literature/library/OConnor_2020_IntercoderReliabilityQualitativeResearch.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -507,7 +507,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Reviewing the Data Security and Privacy Policies of Mobile Apps for Depression
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf)
+Source: [PDF](../../../01_Literature/library/OLoughlin_2019_ReviewingDataSecurityPrivacyPolicies.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -519,7 +519,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 The {PRISMA} 2020 Statement: An Updated Guideline for Reporting Systematic Reviews
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/56_Page_2021_The-PRISMA-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf)
+Source: [PDF](../../../01_Literature/library/Page_2021_PRISMA2020.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -531,7 +531,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Automated Annotation with Generative {AI} Requires Validation
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/67_Pangakis_2023_Automated-Annotation-with-Generative-AI-Requires-Validation.pdf)
+Source: [PDF](../../../01_Literature/library/Pangakis_2023_AutomatedAnnotationGenerativeAIRequires.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -543,7 +543,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 {OpenAlex}: A Fully-Open Index of Scholarly Works, Authors, Venues, Institutions, and Concepts
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/priem2022openalex.pdf)
+Source: [PDF](../../../01_Literature/library/Priem_2022_OpenAlex.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -555,7 +555,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 {PRISMA-S}: An Extension to the {PRISMA} Statement for Reporting Literature Searches in Systematic Reviews
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/57_Rethlefsen_2021_PRISMA-S-an-extension-to-the-PRISMA-Statement-for-Reporting-Literature-Searches-in-Systema.pdf)
+Source: [PDF](../../../01_Literature/library/Rethlefsen_2021_PRISMA-S.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -567,7 +567,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Availability, Readability, and Content of Privacy Policies and Terms of Agreements of Mental Health Apps
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf)
+Source: [PDF](../../../01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -580,7 +580,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Large Language Models: A New Approach for Privacy Policy Analysis at Scale
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf)
+Source: [PDF](../../../01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -594,7 +594,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Just Put a Human in the Loop? Investigating {LLM}-Assisted Annotation for Subjective Tasks
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just.pdf)
+Source: [PDF](../../../01_Literature/library/Schroeder_2025_JustPutHumanInLoop_preprint.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -606,7 +606,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 How Private Is Your Period?: A Systematic Analysis of Menstrual App Privacy Policies
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf)
+Source: [PDF](../../../01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -619,7 +619,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Mobile Operating System Market Share Germany
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026os_web-capture_2026-11-04.pdf)
+Source: [PDF](../../../01_Literature/library/StatCounter_2026_MobileOSGermany_web-capture.pdf)
 
 Official web source archived as clearly labelled extracted-text PDF, not a native scholarly PDF. Public access.
 
@@ -631,7 +631,7 @@ Official web source archived as clearly labelled extracted-text PDF, not a nativ
 
 Mobile Vendor Market Share Germany
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026vendor_web-capture_2026-11-04.pdf)
+Source: [PDF](../../../01_Literature/library/StatCounter_2026_MobileVendorGermany_web-capture.pdf)
 
 Official web source archived as clearly labelled extracted-text PDF, not a native scholarly PDF. Public access.
 
@@ -643,7 +643,7 @@ Official web source archived as clearly labelled extracted-text PDF, not a nativ
 
 Comparing Apples to Androids: Discovery, Retrieval, and Matching of {iOS} and {Android} Apps for Cross-Platform Analyses
 
-Source: [PDF](../../../01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf)
+Source: [PDF](../../../01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -658,7 +658,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Availability and Quality of Mobile Health App Privacy Policies
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf)
+Source: [PDF](../../../01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -672,7 +672,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Best Practices for Text Annotation with Large Language Models
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf)
+Source: [PDF](../../../01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -687,7 +687,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 {PRISMA} Extension for Scoping Reviews ({PRISMA-ScR}): Checklist and Explanation
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/58_Tricco_2018_PRISMA-Extension-for-Scoping-Reviews-PRISMA-ScR-Checklist-and-Explanation.pdf)
+Source: [PDF](../../../01_Literature/library/Tricco_2018_PRISMA-ScR.pdf)
 
 Existing local manuscript/accepted version checked; exact cited journal-version verification remains a version task.
 
@@ -711,7 +711,7 @@ Publisher browser verification blocked CLI and IAB; full text not read. Institut
 
 The Cognitive Walkthrough Method: A Practitioner's Guide
 
-Source: [PDF](../../../01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf)
+Source: [PDF](../../../01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -728,7 +728,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 Evaluating Privacy Policies under Modern Privacy Laws at Scale: An {LLM}-Based Automated Approach
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xie_2025_LLM-privacy-policies-under-modern-privacy-laws_USENIX.pdf)
+Source: [PDF](../../../01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 
@@ -741,7 +741,7 @@ Actual local full text inspected; source identity and observed version recorded 
 
 You `Might' Be Affected: An Empirical Analysis of Readability and Usability Issues in Data Breach Notifications
 
-Source: [PDF](../../../01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf)
+Source: [PDF](../../../01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf)
 
 Actual local full text inspected; source identity and observed version recorded per occurrence.
 

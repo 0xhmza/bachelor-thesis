@@ -18,14 +18,14 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
   rule (D6).
 - ☐ Glossary with sources: capability, harm, health tracker, PET, harm tree,
   surface, stance, protection claim. CHARISMHA (2016) gives the German government's
-  definitions of health apps ([gap search](../01_Literature/Literature-Gap-Search_2026-10-23.md) §6).
+  definitions of health apps ([gap search](../01_Literature/review/Gap-Search_2026-10-23.md) §6).
 
 ## 2 · Gather evidence (by 10-24)
 - ◐ Search log (database, query, date, hits, inclusion) for PETS, CCS, USENIX Sec.,
   IEEE S&P, CHI/CSCW, arXiv: queries and dates of 23 October are in the gap search
   §9; hits and inclusion per query are not.
 - ☐ Extraction sheet over the app-analysis papers, one column per decision; the
-  digest's stage A table (`Methods-Digest/sections/A.tex`) covers 15 selection designs.
+  digest's stage A table (`01_Literature/digest/sections/A.tex`) covers 15 selection designs.
 - ☐ Capability table for the harm tree (capability → source → data → adversary). New
   inputs: personality inference from activity data (Zufferey et al. 2023), location
   leaks through privacy zones (Hassan et al. 2018; Dhondt et al. 2022), FemTech
@@ -85,10 +85,10 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
    (Martin et al. 2015); rating counts respond to in-app prompts (Google's Babbel
    case: +64 % rating volume).
 
-## 8 · Literature follow-ups from the [23 October gap search](../01_Literature/Literature-Gap-Search_2026-10-23.md)
+## 8 · Literature follow-ups from the [23 October gap search](../01_Literature/review/Gap-Search_2026-10-23.md)
 
 - ☐ Save the open-access PDFs that block scripted download into
-  `01_Literature/PDFs/Methods-Reading/_Inbox/` and run `import_manual.py`: Velykoivanenko
+  `01_Literature/library/` under the final name `Author_Year_ShortTitle.pdf`: Velykoivanenko
   et al. 2021 (advisor co-author; iris.unil.ch, CC BY-ND), Mehrnezhad & Almeida 2021
   (ACM, CC BY), Doherty et al. 2025 (npj Digital Medicine), Gasteiger et al. 2023
   (BMJ Open), Wang et al. 2024 (CHI), Bijker et al. 2024 (JMIR).

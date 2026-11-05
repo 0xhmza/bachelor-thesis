@@ -8,7 +8,7 @@
 - **Follows:** [`2026-09-04_Proposal-Meeting.md`](../Meeting-Notes/2026-09-04_Proposal-Meeting.md)
 
 Verbatim content is reorganised below, not rewritten. The PDF gave bare URLs;
-every reference has since been resolved, downloaded to `01_Literature/PDFs/`,
+every reference has since been resolved, downloaded to `01_Literature/library/`,
 and entered in `_shared/references.bib`.
 
 ---
@@ -17,9 +17,9 @@ and entered in `_shared/references.bib`.
 
 | # | Reference | PDF | Why the supervisor sent it |
 |---|---|---|---|
-| P1 | Knabenhans, C., Veitch, S., Raynal, M., Stadler, T., Chatel, S., Lueks, W., & Troncoso, C. (2026). *On the (Privacy) Harms of the European Digital Identity Framework.* Cryptology ePrint Archive, Paper [2026/867](https://eprint.iacr.org/2026/867). Key `knabenhans2026harms` | [`Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf`](../../01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf) | From colleagues at MPI-SP. The paper itself is technical, but its **definition of harm** and its **harm model** are useful for understanding privacy harms. |
-| P2 | Martin, K., Nissenbaum, H., & Shmatikov, V. (2025). *No Cookies For You!: Evaluating the Promises of Big Tech's 'Privacy-Enhancing' Techniques.* Georgetown Law Technology Review, 9(1). [SSRN 4655228](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4655228). Key `martin2025cookies` | [`Martin_2025_NoCookiesForYou.pdf`](../../01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf) | Shows that modern privacy risks are **inference-centric rather than collection-centric**: even when companies claim not to share raw data, avoid third-party access, or keep processing on-device, they can still derive and use sensitive inferences about individuals — violating privacy and creating harms. |
-| P3 | Citron, D. K., & Solove, D. J. (2022). *Privacy Harms.* Boston University Law Review, 102, 793. [SSRN 3782222](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222). Key `citron2021harms` | [`Citron_2022_PrivacyHarms.pdf`](../../01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf) | "The famous taxonomy with seven categories of harm." |
+| P1 | Knabenhans, C., Veitch, S., Raynal, M., Stadler, T., Chatel, S., Lueks, W., & Troncoso, C. (2026). *On the (Privacy) Harms of the European Digital Identity Framework.* Cryptology ePrint Archive, Paper [2026/867](https://eprint.iacr.org/2026/867). Key `knabenhans2026harms` | [`Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf`](../../01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf) | From colleagues at MPI-SP. The paper itself is technical, but its **definition of harm** and its **harm model** are useful for understanding privacy harms. |
+| P2 | Martin, K., Nissenbaum, H., & Shmatikov, V. (2025). *No Cookies For You!: Evaluating the Promises of Big Tech's 'Privacy-Enhancing' Techniques.* Georgetown Law Technology Review, 9(1). [SSRN 4655228](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4655228). Key `martin2025cookies` | [`Martin_2025_NoCookiesForYou.pdf`](../../01_Literature/library/Martin_2025_NoCookiesForYou.pdf) | Shows that modern privacy risks are **inference-centric rather than collection-centric**: even when companies claim not to share raw data, avoid third-party access, or keep processing on-device, they can still derive and use sensitive inferences about individuals — violating privacy and creating harms. |
+| P3 | Citron, D. K., & Solove, D. J. (2022). *Privacy Harms.* Boston University Law Review, 102, 793. [SSRN 3782222](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3782222). Key `citron2021harms` | [`Citron_2022_PrivacyHarms.pdf`](../../01_Literature/library/Citron_2022_PrivacyHarms.pdf) | "The famous taxonomy with seven categories of harm." |
 
 > **Confirmed:** P3 *is* the Citron & Solove paper already listed as action item 1
 > from the 2026-09-04 meeting. Note the year: SSRN posting 2021, published 2022.
@@ -30,17 +30,17 @@ and entered in `_shared/references.bib`.
 
 | # | Reference | PDF |
 |---|---|---|
-| F1 | Hudig, A. I., & Singh, J. (2025). *Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking.* CHI '25. [doi:10.1145/3706598.3714089](https://dl.acm.org/doi/full/10.1145/3706598.3714089). Key `hudig2025intimate` | [`Hudig_2025_IntimateDataSharing-FertilityTracking.pdf`](../../01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf) |
-| F2 | Malki, L. M., Kaleva, I., Patel, D., Warner, M., & Abu-Salma, R. (2024). *Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.* CHI '24. [doi:10.1145/3613904.3642521](https://dl.acm.org/doi/abs/10.1145/3613904.3642521). Key `malki2024exploring` | [`Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf`](../../01_Literature/PDFs/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf) |
-| F3 | Cao, J., Laabadli, H., Mathis, C. H., Stern, R. D., & Emami-Naeini, P. (2024). *"I Deleted It After the Overturn of Roe v. Wade": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era.* CHI '24. [doi:10.1145/3613904.3642042](https://dl.acm.org/doi/full/10.1145/3613904.3642042). Key `cao2024deleted` | [`Cao_2024_PeriodTrackingApps-PostRoe.pdf`](../../01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf) |
+| F1 | Hudig, A. I., & Singh, J. (2025). *Intimate Data Sharing: Enhancing Transparency and Control in Fertility Tracking.* CHI '25. [doi:10.1145/3706598.3714089](https://dl.acm.org/doi/full/10.1145/3706598.3714089). Key `hudig2025intimate` | [`Hudig_2025_IntimateDataSharing-FertilityTracking.pdf`](../../01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf) |
+| F2 | Malki, L. M., Kaleva, I., Patel, D., Warner, M., & Abu-Salma, R. (2024). *Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.* CHI '24. [doi:10.1145/3613904.3642521](https://dl.acm.org/doi/abs/10.1145/3613904.3642521). Key `malki2024exploring` | [`Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf`](../../01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf) |
+| F3 | Cao, J., Laabadli, H., Mathis, C. H., Stern, R. D., & Emami-Naeini, P. (2024). *"I Deleted It After the Overturn of Roe v. Wade": Understanding Women's Privacy Concerns Toward Period-Tracking Apps in the Post Roe v. Wade Era.* CHI '24. [doi:10.1145/3613904.3642042](https://dl.acm.org/doi/full/10.1145/3613904.3642042). Key `cao2024deleted` | [`Cao_2024_PeriodTrackingApps-PostRoe.pdf`](../../01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf) |
 
 ## 3. Fitness trackers — collected literature
 
 | # | Reference | PDF |
 |---|---|---|
-| T1 | Salehzadeh Niksirat, K., Velykoivanenko, L., Zufferey, N., Cherubini, M., Huguenin, K., & Humbert, M. (2024). *Wearable Activity Trackers: A Survey on Utility, Privacy, and Security.* ACM Computing Surveys, 56(7), 1–40. [doi:10.1145/3645091](https://dl.acm.org/doi/10.1145/3645091). Key `niksirat2024wearable` | [`SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf`](../../01_Literature/PDFs/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf) |
+| T1 | Salehzadeh Niksirat, K., Velykoivanenko, L., Zufferey, N., Cherubini, M., Huguenin, K., & Humbert, M. (2024). *Wearable Activity Trackers: A Survey on Utility, Privacy, and Security.* ACM Computing Surveys, 56(7), 1–40. [doi:10.1145/3645091](https://dl.acm.org/doi/10.1145/3645091). Key `niksirat2024wearable` | [`SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf`](../../01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf) |
 
-**Confirmed:** the DOI matches the survey that was already in `01_Literature/PDFs/` —
+**Confirmed:** the DOI matches the survey that was already in `01_Literature/library/` —
 the advisor's own paper. Nothing new to download.
 
 ## 4. Methodology reference
@@ -50,7 +50,7 @@ the advisor's own paper. Nothing new to download.
   **Usability Inspection Methods** (pp. 105–140). John Wiley & Sons.
   Key `wharton1994cognitive`. No DOI (predates DOI registration); ISBN
   0-471-01877-5. PDF: the full volume is at
-  [`Nielsen_1994_UsabilityInspectionMethods-Book.pdf`](../../01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf),
+  [`Nielsen_1994_UsabilityInspectionMethods-Book.pdf`](../../01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf),
   chapter at pp. 105–140.
 
 ---
@@ -116,7 +116,7 @@ sources listed, not a user survey.
 
 | # | Action | Owner | Status |
 |---|--------|-------|--------|
-| 1 | ~~Retrieve P1–P3, F1–F3, T1 and resolve their bibliographic details~~ — done 2026-09-05; PDFs in `01_Literature/PDFs/`, entries in `_shared/references.bib` | Hamza | done |
+| 1 | ~~Retrieve P1–P3, F1–F3, T1 and resolve their bibliographic details~~ — done 2026-09-05; PDFs in `01_Literature/library/`, entries in `_shared/references.bib` | Hamza | done |
 | 2 | ~~Add Wharton et al. (1994) to `_shared/references.bib`~~ — done; **PDF still needed** via RUB library | Hamza | partly done |
 | 3 | Run own literature search on **privacy harms** beyond the three sent | Hamza | done 2026-09-18 — Solove 2006 taxonomy, Calo 2011 subjective/objective harm added |
 | 4 | Run own literature search on **health tracker security and privacy** | Hamza | done 2026-09-18 — Shipp & Blasco 2020, Huckvale et al. 2019, Arkalakis et al. 2024, Li et al. 2022 added |

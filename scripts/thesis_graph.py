@@ -147,12 +147,12 @@ def import_semantic():
 
 
 LITERATURE = ROOT / '01_Literature'
-CATALOGUE = LITERATURE / 'methodology-literature.json'
-DOWNLOADS = ROOT / '01_Literature/download-status.json'
-GUIDE = LITERATURE / 'Methods-Reading-List.md'
+CATALOGUE = LITERATURE / 'catalog' / 'methods-corpus.json'
+DOWNLOADS = ROOT / '01_Literature/catalog/download-status.json'
+GUIDE = LITERATURE / 'catalog' / 'Methods-Reading-List.md'
 # Generated from the catalogue and parsed by `literature()`; semantic extraction
 # would only duplicate those nodes, so these are never queued or reused.
-CATALOGUE_DRIVEN = {'01_Literature/Methods-Reading-List.md', '01_Literature/Download-Checklist.md'}
+CATALOGUE_DRIVEN = {'01_Literature/catalog/Methods-Reading-List.md'}
 LIT_STATS = {}
 LIT_INDEX = {}   # filled by refresh(): abstracts and reading status per work
 
@@ -173,7 +173,7 @@ def status_nodes(node, edge, root):
     for status in literature_index.STATUSES:
         ids[status] = node('index_lit_status_' + slug(status), f'Reading status: {status}',
                            literature_index.STATUS, 1, file_type='concept',
-                           description=f'Works marked "{status}" in 01_Literature/reading-status.csv.')
+                           description=f'Works marked "{status}" in 01_Literature/catalog/reading-status.csv.')
         edge(root, ids[status], 'contains', literature_index.STATUS)
     return ids
 
@@ -245,7 +245,7 @@ def literature(node, edge, file_ids, bib_nodes, bib_dois):
     root = node('index_lit_corpus', f'Methodology literature corpus ({len(works)} works)', CATALOGUE, 1,
                 file_type='paper', description='Ranked methodology reading list with local reading copies and '
                 'download gaps. Catalogue-driven; paper full text is not indexed.')
-    for name in ('Methods-Reading-List.md', 'Download-Checklist.md', 'README.md'):
+    for name in ('catalog/Methods-Reading-List.md', 'README.md'):
         owner = file_ids.get(f'01_Literature/{name}')
         if owner:
             edge(owner, root, 'indexes', LITERATURE / name)
@@ -253,7 +253,7 @@ def literature(node, edge, file_ids, bib_nodes, bib_dois):
         'open_access_blocked': node('index_lit_gap_open_access_blocked',
             'Literature gap: free to read but blocked for scripts (save by hand)', DOWNLOADS, 1, file_type='concept',
             description='Open-access copy exists; the publisher or repository refuses automated downloads. '
-                        'Save it from a browser into 01_Literature/PDFs/Methods-Reading/_Inbox and run import_manual.py.'),
+                        'Save it from a browser into 01_Literature/library/, named Author_Year_ShortTitle.pdf.'),
         'paywalled': node('index_lit_gap_paywalled', 'Literature gap: paywalled, no open-access copy found',
             DOWNLOADS, 1, file_type='concept',
             description='No open-access copy located in Unpaywall, OpenAlex, Europe PMC or repository checks; '
@@ -409,7 +409,7 @@ def structural(files):
                 if target_rel in file_ids:
                     edge(file_id, file_ids[target_rel], 'inputs', p, number)
     # PDF inventory only: no text content or paper conclusions claimed here.
-    for p in sorted((ROOT / '01_Literature/PDFs').glob('*.pdf')):
+    for p in sorted((ROOT / '01_Literature/library').glob('*.pdf')):
         pdf_id = node('index_pdf_' + slug(p.stem), p.stem, p, file_type='paper',
                       description='Original PDF file, inventory only; read the paper for evidence.')
         name = slug(p.stem)

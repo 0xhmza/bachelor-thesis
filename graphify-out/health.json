@@ -1,26 +1,26 @@
 {
-  "node_count": 3024,
+  "node_count": 2986,
   "unverified_node_count": 0,
-  "raw_edge_count": 4465,
+  "raw_edge_count": 4086,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 4465,
+  "valid_candidate_edges": 4086,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 4394,
+  "directed_unique_endpoint_pairs": 4015,
   "directed_same_endpoint_collapsed_edges": 71,
-  "undirected_unique_endpoint_pairs": 4392,
-  "undirected_same_endpoint_collapsed_edges": 73,
+  "undirected_unique_endpoint_pairs": 4014,
+  "undirected_same_endpoint_collapsed_edges": 72,
   "same_endpoint_group_count": 71,
   "relation_variant_groups": 71,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 2882,
-  "post_build_edge_count": 4350,
+  "post_build_node_count": 2857,
+  "post_build_edge_count": 3990,
   "post_build_error": "",
   "producer_suppression": {
     "path": "/tmp/gv/lib/python3.10/site-packages/graphify/extract.py",
@@ -103,15 +103,15 @@
   },
   "examples": [
     {
-      "source": "01_literature_methods_digest_build_digest_locate",
-      "target": "01_literature_methods_digest_build_digest_locate_idx",
+      "source": "01_literature_digest_build_digest_locate",
+      "target": "01_literature_digest_build_digest_locate_idx",
       "edge_count": 2,
       "relations": [
         "calls",
         "contains"
       ],
       "source_files": [
-        "01_Literature/Methods-Digest/build_digest.py"
+        "01_Literature/digest/build_digest.py"
       ],
       "source_locations": [
         "L203",

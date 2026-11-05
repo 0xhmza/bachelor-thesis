@@ -41,7 +41,7 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 
 Decisions go into `00_Admin/Decision-Log.md` before the methodology states them;
 progress into `00_Admin/Weekly-Log.md`, risks into `00_Admin/Risk-Register.md`;
-reading status into `01_Literature/reading-status.csv`. CI
+reading status into `01_Literature/catalog/reading-status.csv`. CI
 (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles the
 thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md).
 
@@ -50,7 +50,7 @@ thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md)
 | Folder | Content |
 |---|---|
 | `00_Admin/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
-| `01_Literature/` | Core reading list (PDFs, notes), the ranked methodology corpus (89 of 93 works as PDFs), the Methods Digest, the reading tracker, abstract index and literature map; start at its `README.md` |
+| `01_Literature/` | `library/` (every full text, flat, `Author_Year_ShortTitle.pdf`), `notes/`, `catalog/` (reading tracker, methods corpus, generated index and map), `review/` (literature review) and `digest/` (Methods Digest); start at its `README.md` |
 | `03_Thesis/` | Main thesis, chapters, appendices, review copy, proposal snapshot |
 | `04_Study/` | Sampling protocol and app sample, codebook versions, walkthrough protocol, LLM prompts, ethics |
 | `05_Data/` | Raw, processed and analysis material; raw data is git-ignored |
@@ -84,8 +84,8 @@ while their source hash matches; changed sources are listed for re-extraction wi
 the Graphify skill. The 93 corpus works are indexed on every refresh from the
 catalogue and download manifest (topic, stage, research question, PDF, download
 gap, reading status) plus the abstract and keywords from each PDF's title page
-(`scripts/literature_index.py`, cached in `01_Literature/literature-index.json`);
-full text is not indexed. The refresh also writes `01_Literature/Literature-Map.html`.
+(`scripts/literature_index.py`, cached in `01_Literature/catalog/literature-index.json`);
+full text is not indexed. The refresh also writes `01_Literature/catalog/Literature-Map.html`.
 `.graphifyignore` excludes generated files, archives, duplicate proposal content,
 raw/processed data and PDF text. Token savings were not measured.
 
@@ -111,4 +111,9 @@ On 2 November 2026 the same folders were back, most likely through Syncthing, wh
 syncs `.git`, along with 190 new conflict copies. They, Git's interrupted leftovers,
 `tmp/`, unused literature tables and LaTeX intermediates went to the adjacent
 `../bachelor-thesis-cleanup-20261102/` (`manifest.json` lists every item). Nothing
-was deleted. `digest - Copy.pdf` stays, as `01_Literature/Methods-Digest/HANDOFF.md` asks.
+was deleted. `digest - Copy.pdf` stays, as `01_Literature/digest/HANDOFF.md` asks.
+
+On 5 November 2026 `01_Literature/` was reorganised into `library/`, `notes/`, `catalog/`, `review/` and `digest/`;
+the 761 MB `literature_new/` copy, all byte-identical duplicate PDFs and the generated checklist, HTML and DOI list were
+removed (old -> new table: `scripts/literature-reorg/v001/mapping.csv`). If Syncthing brings an old folder back, delete it
+on the other device first.

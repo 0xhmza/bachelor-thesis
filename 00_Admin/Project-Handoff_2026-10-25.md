@@ -84,8 +84,8 @@ German exposure ranking; preinstalled rule; the mood apps against the two-domain
 ## 6. Literature and tooling
 
 - Core reading list and 93-work methodology corpus (89 PDFs; missing Parker 2019, two books, the APA web page): [01_Literature/README.md](../01_Literature/README.md). Only 1 of 93 works is marked read in `reading-status.csv`; edit statuses there, `.\graphify.ps1 refresh` regenerates the index, map and README column.
-- Methods Digest (115 papers with cards, one PDF per stage): [HANDOFF](../01_Literature/Methods-Digest/HANDOFF.md); only stage L was rebuilt after the 23 October additions.
-- Gap search with 75 candidates: [Literature-Gap-Search](../01_Literature/Literature-Gap-Search_2026-10-23.md); action plan §8 lists the PDFs still to be saved by hand.
+- Methods Digest (115 papers with cards, one PDF per stage): [HANDOFF](../01_Literature/digest/HANDOFF.md); only stage L was rebuilt after the 23 October additions.
+- Gap search with 75 candidates: [Literature-Gap-Search](../01_Literature/review/Gap-Search_2026-10-23.md); action plan §8 lists the PDFs still to be saved by hand.
 - Checks: `python scripts/check_project.py` (0 errors required); graph: `.\graphify.ps1 refresh`. 31 files await semantic re-extraction (`graphify-out/freshness.json`) through the installed graphify skill.
 - CI: `.github/workflows/ci.yml`. Zotero key pinning is a separate script project, `scripts/zotero-pin-keys/` (kept unstaged).
 

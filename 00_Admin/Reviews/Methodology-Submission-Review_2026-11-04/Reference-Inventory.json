@@ -44,7 +44,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/angelopoulos2023prediction.pdf",
+          "path": "01_Literature/library/Angelopoulos_2023_PredictionPoweredInference.pdf",
           "sha256": "766ffb1240f52819f6955ee3ccc614232c61fb18a5412bab287ec4926dc6bba5"
         }
       ],
@@ -71,7 +71,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/apple2022itunessearch_web-capture_2026-11-04.pdf",
+          "path": "01_Literature/library/Apple_2022_ITunesSearchAPI_web-capture.pdf",
           "sha256": "025882bcb968554114cbfa6f88a41a2abcc2f9d0d98715d2f8adf8ab6acde644"
         }
       ],
@@ -102,7 +102,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/75_Arksey_2005_Scoping-studies-towards-a-methodological-framework.pdf",
+          "path": "01_Literature/library/Arksey_2005_ScopingStudiesMethodologicalFramework.pdf",
           "sha256": "b0fb1cfee5338ca0656f372bd88798c9c304800418bfdc3cd400113f4710bf77"
         }
       ],
@@ -133,7 +133,7 @@
       ],
       "source_files": [
         {
-          "path": "literature_new/references/Arora et al. 2022 - A Tale of Two Regulatory Regimes - Creation and Analysis of a Bilingual Privacy Policy Corpus.pdf",
+          "path": "01_Literature/library/Arora_2022_BilingualENDEAppPrivacy.pdf",
           "sha256": "14066645529c414e183bcaeea84b668f0e3d0169f9e5ee4d8584b2c042ba8414"
         }
       ],
@@ -163,7 +163,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/66_Baumann_2025_Large-Language-Model-Hacking-Quantifying-the-Hidden-Risks-of-Using-LLMs-for-Text-Annotatio.pdf",
+          "path": "01_Literature/library/Baumann_2025_LargeLanguageModelHackingQuantifying.pdf",
           "sha256": "845293eda2d5bd7f524051ecc29b8f73c67753cfb975cedfa4481f28507f0000"
         }
       ],
@@ -194,7 +194,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/04_Coding/13_Campbell_2013_Coding-In-depth-Semistructured-Interviews-Problems-of-Unitization-and-Intercoder-Reliabili.pdf",
+          "path": "01_Literature/library/Campbell_2013_CodingDepthSemistructuredInterviewsProblems.pdf",
           "sha256": "822dce8c0e2403298053958d827d998bc8f2fb15ee4c8acf04d4aabc5b3312fa"
         }
       ],
@@ -225,7 +225,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
+          "path": "01_Literature/library/Cao_2024_PeriodTrackingApps-PostRoe.pdf",
           "sha256": "be6e9a59f6eb64b3f55ab0287390075557478a635bb661371b6e35fb60732e28"
         }
       ],
@@ -255,7 +255,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Chanenson_2025_Automating-GKC-CI-policy-annotations-with-LLMs_PoPETs.pdf",
+          "path": "01_Literature/library/Chanenson_2025_AutomatingGKCCIPolicyAnnotations.pdf",
           "sha256": "46cfe0058c7856773457da814092372036ca12dfdbd3bae1210c25932b930885"
         }
       ],
@@ -284,7 +284,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Citron_2022_PrivacyHarms.pdf",
+          "path": "01_Literature/library/Citron_2022_PrivacyHarms.pdf",
           "sha256": "754d62428a3b0aaf9882ca18a0f7fd4f5d8fcc432e3c1828b49df820e3e1c3ad"
         }
       ],
@@ -317,7 +317,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+          "path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
           "sha256": "7926c8b9c9e119b7d2398beede8ba32a1aa4401c26329a69dc96f313342e3d96"
         }
       ],
@@ -349,7 +349,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2017refinement_author_manuscript.pdf",
+          "path": "01_Literature/library/De_2017_RefinementApproachPrivacyRiskAnalysis_manuscript.pdf",
           "sha256": "4424440cb4c1674218e75aae587f1dd6b0e56a716180489c97e82d8f74578aa9"
         }
       ],
@@ -380,7 +380,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/71_Deng_2011_A-privacy-threat-analysis-framework-supporting-the-elicitation-and-fulfillment-of-privacy-.pdf",
+          "path": "01_Literature/library/Deng_2011_PrivacyThreatAnalysisFrameworkSupporting.pdf",
           "sha256": "f7610138f299c40ecb510aa290f3783c41889fa7b674f4c2ed66201535f5b113"
         }
       ],
@@ -411,7 +411,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Egami_2023_Design-based-supervised-learning-LLM-surrogates_NeurIPS.pdf",
+          "path": "01_Literature/library/Egami_2023_DesignBasedSupervisedLearningLLM.pdf",
           "sha256": "758ff9088d48eeedbee295e9fd25ab0b109334f623bcd116ba2575f443f9f8fa"
         }
       ],
@@ -442,7 +442,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/34_Feinstein_1990_High-agreement-but-low-Kappa-I-the-problems-of-two-paradoxes.pdf",
+          "path": "01_Literature/library/Feinstein_1990_HighAgreementButLowKappa.pdf",
           "sha256": "5e43871b0710cdb9bd8c553c35f301cc48bb54071d98faa99a738d71f3e75de9"
         }
       ],
@@ -472,7 +472,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf",
+          "path": "01_Literature/library/Gabriele_2020_FitnessTrackerUsers-KnowledgeAttitudes.pdf",
           "sha256": "de7700e240623e9707d0df557da38d02c164116d812dbdbd8bb3cbf35c510a4b"
         }
       ],
@@ -502,7 +502,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/05_Coder-Agreement/33_Gwet_2008_Computing-inter-rater-reliability-and-its-variance-in-the-presence-of-high-agreement.pdf",
+          "path": "01_Literature/library/Gwet_2008_ComputingInterRaterReliabilityVariance.pdf",
           "sha256": "447118803d2c30eb983ad3d16364b9cd4fc4bd21d7342300a9a8a1396dfe8eef"
         }
       ],
@@ -532,7 +532,7 @@
       ],
       "source_files": [
         {
-          "path": "literature_new/references/Habib et al. 2020 - It's a scavenger hunt - Usability of Websites' Opt-Out and Data Deletion Choices.pdf",
+          "path": "01_Literature/library/Habib_2020_ScavengerHunt-OptOutDeletionChoices.pdf",
           "sha256": "51455662e0750e20f1d3fadabe05f15010e4ee61136c4740ee5547a9733be2f6"
         }
       ],
@@ -563,7 +563,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/11_Official-and-Methods/N6_Harkous__Harkous-et-al-2018-Polisis-Automated-Analysis-and-Presentation-of-Privacy-Policies-Using-D.pdf",
+          "path": "01_Literature/library/Harkous_2018_Polisis.pdf",
           "sha256": "805b0e28348de8fd75945f35c6be139b7386ea3b9f1ac88df328ec4398637205"
         }
       ],
@@ -595,7 +595,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/04_Coding/10_Hsieh_2005_Three-Approaches-to-Qualitative-Content-Analysis.pdf",
+          "path": "01_Literature/library/Hsieh_2005_ThreeApproachesQualitativeContentAnalysis.pdf",
           "sha256": "bd3a9cf394ed09fb85ab680fea7fedc6273bba59de0995e2e249909403a7a34a"
         }
       ],
@@ -626,7 +626,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/hu2018studying_author_manuscript.pdf",
+          "path": "01_Literature/library/Hu_2018_ConsistencyStarRatingsComplaints_manuscript.pdf",
           "sha256": "8633e130f643bb6f2df98624a4a9d52b168f25d097292f8f6eec030d0e8f2f28"
         }
       ],
@@ -657,7 +657,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/26_Huckvale_2019_Assessment-of-the-Data-Sharing-and-Privacy-Practices-of-Smartphone-Apps-for-Depression-and.pdf",
+          "path": "01_Literature/library/Huckvale_2019_AssessmentDataSharingPrivacyPractices.pdf",
           "sha256": "d11520095a9b6944b4d5e12f3ec2644a333e6b6151ea9ddfd676508b5dde2168"
         }
       ],
@@ -689,7 +689,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
+          "path": "01_Literature/library/Hudig_2025_IntimateDataSharing-FertilityTracking.pdf",
           "sha256": "724cf006c36ebe36311a61532ab7d5cee68450b2b6b2efc4d38711f867e663a9"
         }
       ],
@@ -721,7 +721,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/02_Hutton_2018_Assessing-the-Privacy-of-mHealth-Apps-for-Self-Tracking-Heuristic-Evaluation-Approach.pdf",
+          "path": "01_Literature/library/Hutton_2018_AssessingPrivacyMHealthApps.pdf",
           "sha256": "52be7f752ff43d31a595514b48b092a002fe5eb369d8688e13e3982e8d508be4"
         }
       ],
@@ -751,7 +751,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/iwaya2023privacy_published.pdf",
+          "path": "01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps_published.pdf",
           "sha256": "c7c37dc71d2d9dcee0384f5eeccde7800b53f7022e19eca090b0475e2978f0ec"
         }
       ],
@@ -782,7 +782,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf",
+          "path": "01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf",
           "sha256": "f4891c1f7dae023c63003da27323dfcff0beb1194994166a4c4240eb5a0c93ab"
         }
       ],
@@ -830,7 +830,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
+          "path": "01_Literature/library/Knabenhans_2026_PrivacyHarms-EUDigitalIdentity.pdf",
           "sha256": "c583df6b8adf3da8f5a5517a2f380a36f1baead9a6866323d1a587a64e2a50ac"
         }
       ],
@@ -862,7 +862,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/Methods-Digest/private/22_Krippendorff_2019_Content-Analysis-4e.pdf",
+          "path": "01_Literature/library/Krippendorff_2019_ContentAnalysis.pdf",
           "sha256": "607196c3da8a11dda478a6d5247ad2e3932ffbba8b7efc8b69c7ffd01fc8c97f"
         }
       ],
@@ -895,7 +895,7 @@
       ],
       "source_files": [
         {
-          "path": "literature_new/references/Mahatody et al. 2010 - State of the Art on the Cognitive Walkthrough Method, Its Variants and Evolutions.pdf",
+          "path": "01_Literature/library/Mahatody_2010_StateArtCognitiveWalkthroughMethod.pdf",
           "sha256": "ef8b7f37e079070174c87aa6ef6a724472648bdef906181569f561465d47ef43"
         }
       ],
@@ -938,7 +938,7 @@
       ],
       "source_files": [
         {
-          "path": "literature_new/references/Malki et al. 2024 - Exploring Privacy Practices of Female mHealth Apps in a Post-Roe World.pdf",
+          "path": "01_Literature/library/Malki_2024_PrivacyPractices-FemaleMHealthApps.pdf",
           "sha256": "26ce26dde93e2de244f9420cad7222cf7cfdb0fa2636b1f1dfea3602b172a113"
         }
       ],
@@ -969,7 +969,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Martin_2025_NoCookiesForYou.pdf",
+          "path": "01_Literature/library/Martin_2025_NoCookiesForYou.pdf",
           "sha256": "30e9368c438e8017b4fe6555f029ba4ddc1228f9b74293449736f42b8c766f21"
         }
       ],
@@ -998,7 +998,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/73_Mayring_2025_Qualitative-Content-Analysis-With-ChatGPT-Pitfalls-Rough-Approximations-and-Gross-Errors-A.pdf",
+          "path": "01_Literature/library/Mayring_2025_QualitativeContentAnalysisChatGPTPitfalls.pdf",
           "sha256": "224084ab56a7c51cc9200887186bab484fafeae9d5ec073c1a65258140caa180"
         }
       ],
@@ -1029,7 +1029,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/04_Coding/09_McDonald_2019_Reliability-and-Inter-rater-Reliability-in-Qualitative-Research-Norms-and-Guidelines-for-C.pdf",
+          "path": "01_Literature/library/McDonald_2019_ReliabilityInterRaterReliabilityQualitative.pdf",
           "sha256": "38502f888469b9fc06077c89f187d96dcdfb3f1603f92a0773cd4cf2ed600c86"
         }
       ],
@@ -1065,7 +1065,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/10_Harm-and-Context/82_Salehzadeh-Niksirat_2024_Wearable-Activity-Trackers-A-Survey-on-Utility-Privacy-and-Security.pdf",
+          "path": "01_Literature/library/SalehzadehNiksirat_2024_WearableActivityTrackers-Survey.pdf",
           "sha256": "9f9950a79e995371a955c57a066b526e2003e1047c79df46c89e6f164dd102eb"
         }
       ],
@@ -1093,7 +1093,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/04_Coding/08_O-Connor_2020_Intercoder-Reliability-in-Qualitative-Research-Debates-and-Practical-Guidelines.pdf",
+          "path": "01_Literature/library/OConnor_2020_IntercoderReliabilityQualitativeResearch.pdf",
           "sha256": "1ff859a271acf5ee9f3ca4a09e1da9bff12752d43c472421d3e819a63997a4bb"
         }
       ],
@@ -1122,7 +1122,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/05_O-Loughlin_2019_Reviewing-the-data-security-and-privacy-policies-of-mobile-apps-for-depression.pdf",
+          "path": "01_Literature/library/OLoughlin_2019_ReviewingDataSecurityPrivacyPolicies.pdf",
           "sha256": "3988d4ac6d19ac66eafd0095e15c377edc2f082f5aa282ae05d94fd39ea468e5"
         }
       ],
@@ -1151,7 +1151,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/56_Page_2021_The-PRISMA-2020-statement-an-updated-guideline-for-reporting-systematic-reviews.pdf",
+          "path": "01_Literature/library/Page_2021_PRISMA2020.pdf",
           "sha256": "5eb52bac25fa69985bc8661c9b9364f30ecdf9aefd95f2f2352d23e70c55b04d"
         }
       ],
@@ -1178,7 +1178,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/67_Pangakis_2023_Automated-Annotation-with-Generative-AI-Requires-Validation.pdf",
+          "path": "01_Literature/library/Pangakis_2023_AutomatedAnnotationGenerativeAIRequires.pdf",
           "sha256": "bb82e59025600014ce8d513e7d5cc27c0ead5686ac2b7093dbf2786cc970cb50"
         }
       ],
@@ -1205,7 +1205,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/priem2022openalex.pdf",
+          "path": "01_Literature/library/Priem_2022_OpenAlex.pdf",
           "sha256": "2ab89d6ff786b97e7b8d77f2549c4574484cf4710c93f2fa8181e944be12079e"
         }
       ],
@@ -1234,7 +1234,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/57_Rethlefsen_2021_PRISMA-S-an-extension-to-the-PRISMA-Statement-for-Reporting-Literature-Searches-in-Systema.pdf",
+          "path": "01_Literature/library/Rethlefsen_2021_PRISMA-S.pdf",
           "sha256": "82a893638c69647c3699552f07f13e309648c2921017331aa07b99965a3e9a21"
         }
       ],
@@ -1264,7 +1264,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/06_Robillard_2019_Availability-readability-and-content-of-privacy-policies-and-terms-of-agreements-of-mental.pdf",
+          "path": "01_Literature/library/Robillard_2019_AvailabilityReadabilityContentPrivacy.pdf",
           "sha256": "53aed5d1863ec6271a3ebdf4d9ea101aa48af1e82bac609c1816ea706be79561"
         }
       ],
@@ -1297,7 +1297,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf",
+          "path": "01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf",
           "sha256": "0ccb88d5b5cbc6b6d57c5238380ae6d0196c27d00e218717a952e7fb9cffbafd"
         }
       ],
@@ -1326,7 +1326,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just.pdf",
+          "path": "01_Literature/library/Schroeder_2025_JustPutHumanInLoop_preprint.pdf",
           "sha256": "9297ea0b0ee5abd2b38655be7943ed9c45302008348fa8c7b911a427cafbe4e8"
         }
       ],
@@ -1357,7 +1357,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/03_Shipp_2020_How-private-is-your-period-A-systematic-analysis-of-menstrual-app-privacy-policies.pdf",
+          "path": "01_Literature/library/Shipp_2020_PrivateYourPeriodSystematicAnalysis.pdf",
           "sha256": "c78eb7d6ed9b936984e40e05d388a5349a22dcfacf69782720d6f1cf999de5d0"
         }
       ],
@@ -1385,7 +1385,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026os_web-capture_2026-11-04.pdf",
+          "path": "01_Literature/library/StatCounter_2026_MobileOSGermany_web-capture.pdf",
           "sha256": "16cb329765bb2638f691275d3bb4ac64f932d7c252585c6d90a36f7c973faffa"
         }
       ],
@@ -1414,7 +1414,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026vendor_web-capture_2026-11-04.pdf",
+          "path": "01_Literature/library/StatCounter_2026_MobileVendorGermany_web-capture.pdf",
           "sha256": "09b02ae488a6a84c7938dad18de9033277aa80120cf45e28e1059234b4b1c0ab"
         }
       ],
@@ -1448,7 +1448,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf",
+          "path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf",
           "sha256": "df8904f5158e10c1be1a261bd58d2d4ceba92502a3d1c68557251b450e8f9086"
         }
       ],
@@ -1481,7 +1481,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/01_App-Reviews/07_Sunyaev_2015_Availability-and-quality-of-mobile-health-app-privacy-policies.pdf",
+          "path": "01_Literature/library/Sunyaev_2015_AvailabilityQualityMobileHealthApp.pdf",
           "sha256": "01c3eed59b894af464d30b6fb42e5c76fe25312fa99c6e75fbb5ac4902a72357"
         }
       ],
@@ -1515,7 +1515,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/09_LLM-Annotation/64_T-rnberg_2024_Best-Practices-for-Text-Annotation-with-Large-Language-Models.pdf",
+          "path": "01_Literature/library/Tornberg_2024_BestPracticesTextAnnotationLarge.pdf",
           "sha256": "5be67dd5b3c2aec432fd3bf4a99b788b0c1b438b0306567c623f520f6f69eac6"
         }
       ],
@@ -1546,7 +1546,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/06_Review-and-Reporting/58_Tricco_2018_PRISMA-Extension-for-Scoping-Reviews-PRISMA-ScR-Checklist-and-Explanation.pdf",
+          "path": "01_Literature/library/Tricco_2018_PRISMA-ScR.pdf",
           "sha256": "057c12251d0a531ec7d94ade4b830bef341ea051ef39cc644a8e6dfb070d6113"
         }
       ],
@@ -1607,7 +1607,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
+          "path": "01_Literature/library/Nielsen_1994_UsabilityInspectionMethods-Book.pdf",
           "sha256": "56ff8dc80a21cf55973d351acc7b9995e00fd517a33acbfdec8c5633a34512b5"
         }
       ],
@@ -1636,7 +1636,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/13_Search-2026-10-23/X_Xie_2025_LLM-privacy-policies-under-modern-privacy-laws_USENIX.pdf",
+          "path": "01_Literature/library/Xie_2025_LLMPrivacyPoliciesUnderModern.pdf",
           "sha256": "1af6d752087a45fde654dd906158bc59fafe5a58b33e80a20481de1d1e9a0bb1"
         }
       ],
@@ -1667,7 +1667,7 @@
       ],
       "source_files": [
         {
-          "path": "01_Literature/PDFs/Methods-Reading/08_Privacy-Interfaces/62_Zou_2019_You-Might-Be-Affected-An-Empirical-Analysis-of-Readability-and-Usability-Issues-in-Data-Br.pdf",
+          "path": "01_Literature/library/Zou_2019_YouMightBeAffectedEmpirical.pdf",
           "sha256": "5f9993e2de56b1c3e6c97141dc20442a0264e3067a18a74af890239ab9af9634"
         }
       ],
@@ -1687,7 +1687,7 @@
       "content_type": "application/pdf",
       "pages": 37,
       "sha256": "766ffb1240f52819f6955ee3ccc614232c61fb18a5412bab287ec4926dc6bba5",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/angelopoulos2023prediction.pdf"
+      "path": "01_Literature/library/Angelopoulos_2023_PredictionPoweredInference.pdf"
     },
     {
       "key": "kim2025correlated",
@@ -1697,7 +1697,7 @@
       "content_type": "application/octet-stream",
       "pages": 29,
       "sha256": "f4891c1f7dae023c63003da27323dfcff0beb1194994166a4c4240eb5a0c93ab",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/kim2025correlated.pdf"
+      "path": "01_Literature/library/Kim_2025_CorrelatedErrorsLLMs.pdf"
     },
     {
       "key": "priem2022openalex",
@@ -1707,7 +1707,7 @@
       "content_type": "application/pdf",
       "pages": 5,
       "sha256": "2ab89d6ff786b97e7b8d77f2549c4574484cf4710c93f2fa8181e944be12079e",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/priem2022openalex.pdf"
+      "path": "01_Literature/library/Priem_2022_OpenAlex.pdf"
     },
     {
       "key": "schroeder2025just",
@@ -1717,7 +1717,7 @@
       "content_type": "application/pdf",
       "pages": 25,
       "sha256": "9297ea0b0ee5abd2b38655be7943ed9c45302008348fa8c7b911a427cafbe4e8",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just.pdf"
+      "path": "01_Literature/library/Schroeder_2025_JustPutHumanInLoop_preprint.pdf"
     },
     {
       "key": "schroeder2025just_published",
@@ -1727,7 +1727,7 @@
       "content_type": "application/pdf",
       "pages": 25,
       "sha256": "9e42940b57e2e1734845aedda4cec219b62582c29f0565a832e72cc4b6f33906",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/schroeder2025just_published.pdf"
+      "path": "01_Literature/library/Schroeder_2025_JustPutHumanInLoop_published.pdf"
     },
     {
       "key": "steinboeck2024comparing",
@@ -1737,7 +1737,7 @@
       "content_type": "application/pdf;charset=base64",
       "pages": 13,
       "sha256": "df8904f5158e10c1be1a261bd58d2d4ceba92502a3d1c68557251b450e8f9086",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/steinboeck2024comparing.pdf"
+      "path": "01_Literature/library/Steinboeck_2024_ComparingAppStoreRatings.pdf"
     },
     {
       "key": "hu2018studying_author_manuscript",
@@ -1747,7 +1747,7 @@
       "content_type": "application/pdf",
       "pages": 27,
       "sha256": "8633e130f643bb6f2df98624a4a9d52b168f25d097292f8f6eec030d0e8f2f28",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/hu2018studying_author_manuscript.pdf"
+      "path": "01_Literature/library/Hu_2018_ConsistencyStarRatingsComplaints_manuscript.pdf"
     },
     {
       "key": "de2017refinement_publisher",
@@ -1772,7 +1772,7 @@
       "http_status": 200,
       "final_url": "https://inria.hal.science/hal-01671345/document",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2017refinement_author_manuscript.pdf",
+      "path": "01_Literature/library/De_2017_RefinementApproachPrivacyRiskAnalysis_manuscript.pdf",
       "pages": 38,
       "sha256": "4424440cb4c1674218e75aae587f1dd6b0e56a716180489c97e82d8f74578aa9"
     },
@@ -1790,7 +1790,7 @@
       "http_status": 200,
       "final_url": "https://link.springer.com/content/pdf/10.1007/s10664-022-10236-0.pdf",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/iwaya2023privacy_published.pdf",
+      "path": "01_Literature/library/Iwaya_2023_PrivacyMentalHealthApps_published.pdf",
       "pages": 42,
       "sha256": "c7c37dc71d2d9dcee0384f5eeccde7800b53f7022e19eca090b0475e2978f0ec"
     },
@@ -1800,7 +1800,7 @@
       "http_status": 200,
       "final_url": "https://link.springer.com/content/pdf/10.1007/s00607-024-01331-9.pdf",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/rodriguez2024llm_published.pdf",
+      "path": "01_Literature/library/Rodriguez_2024_LargeLanguageModelsPrivacyPolicy_published.pdf",
       "pages": 25,
       "sha256": "0ccb88d5b5cbc6b6d57c5238380ae6d0196c27d00e218717a952e7fb9cffbafd"
     },
@@ -1828,7 +1828,7 @@
       "http_status": 200,
       "final_url": "https://cmn-cdn-001.sagepub.com/books/titles/258450/att_sb1_93471.pdf",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/krippendorff2019content_chapter1_sample_only.pdf",
+      "path": "01_Literature/library/Methodology-Audit_2026-11-04/krippendorff2019content_chapter1_sample_only.pdf",
       "pages": 12,
       "sha256": "3f6605fb57c7381625146834807192e5b483d822897b7941eed9f524138bb06f",
       "retained": false
@@ -1839,7 +1839,7 @@
       "http_status": 200,
       "final_url": "https://cmn-cdn-001.sagepub.com/books/titles/258450/att_sb1_93472.pdf",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/krippendorff2019content_chapter3_sample_only.pdf",
+      "path": "01_Literature/library/Methodology-Audit_2026-11-04/krippendorff2019content_chapter3_sample_only.pdf",
       "pages": 33,
       "sha256": "a5acd5f324fd6bfc6140ca11296124f7aac4a386fa8393fd4217e8d5e468e4d6",
       "retained": false
@@ -1867,7 +1867,7 @@
       "requested_url": "https://performance-partners.apple.com/search-api",
       "final_url": "https://performance-partners.apple.com/search-api",
       "http_status": 200,
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/apple2022itunessearch_web-capture_2026-11-04.pdf",
+      "path": "01_Literature/library/Apple_2022_ITunesSearchAPI_web-capture.pdf",
       "pages": 7,
       "sha256": "025882bcb968554114cbfa6f88a41a2abcc2f9d0d98715d2f8adf8ab6acde644",
       "kind": "extracted-text web capture",
@@ -1878,7 +1878,7 @@
       "requested_url": "https://gs.statcounter.com/os-market-share/mobile/germany",
       "final_url": "https://gs.statcounter.com/os-market-share/mobile/germany",
       "http_status": 200,
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026os_web-capture_2026-11-04.pdf",
+      "path": "01_Literature/library/StatCounter_2026_MobileOSGermany_web-capture.pdf",
       "pages": 2,
       "sha256": "16cb329765bb2638f691275d3bb4ac64f932d7c252585c6d90a36f7c973faffa",
       "kind": "extracted-text web capture",
@@ -1889,7 +1889,7 @@
       "requested_url": "https://gs.statcounter.com/vendor-market-share/mobile/germany",
       "final_url": "https://gs.statcounter.com/vendor-market-share/mobile/germany",
       "http_status": 200,
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter2026vendor_web-capture_2026-11-04.pdf",
+      "path": "01_Literature/library/StatCounter_2026_MobileVendorGermany_web-capture.pdf",
       "pages": 2,
       "sha256": "09b02ae488a6a84c7938dad18de9033277aa80120cf45e28e1059234b4b1c0ab",
       "kind": "extracted-text web capture",
@@ -1900,7 +1900,7 @@
       "requested_url": "https://gs.statcounter.com/faq",
       "final_url": "https://gs.statcounter.com/faq",
       "http_status": 200,
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/statcounter_methodology_supplement_web-capture_2026-11-04.pdf",
+      "path": "01_Literature/library/StatCounter_2026_Methodology_web-capture.pdf",
       "pages": 17,
       "sha256": "984d77d1badcd4d0c3e95ad87e2433cef15bbad5b40f6dde338f611864049c7f",
       "kind": "extracted-text web capture",
@@ -1912,7 +1912,7 @@
       "http_status": 200,
       "final_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=7527754&ref=",
       "content_type": "application/pdf",
-      "path": "01_Literature/PDFs/Methodology-Audit_2026-11-04/de2016privacy_published.pdf",
+      "path": "01_Literature/library/De_2016_PrivacyHarmAnalysis-SmartGrids.pdf",
       "pages": 8,
       "sha256": "7926c8b9c9e119b7d2398beede8ba32a1aa4401c26329a69dc96f313342e3d96"
     }

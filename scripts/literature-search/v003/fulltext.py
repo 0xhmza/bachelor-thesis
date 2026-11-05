@@ -2,7 +2,7 @@
 
     python scripts/literature-search/v003/fulltext.py
 
-For every record awaiting its full text (01_Literature/Literature-Review/decisions/fulltext.csv, decision `pending`),
+For every record awaiting its full text (01_Literature/review/decisions/fulltext.csv, decision `pending`),
 candidate open-access locations are tried in this order: arXiv (by arXiv ID), Europe PMC full-text XML (PMID ->
 PMCID), the paper page on usenix.org, the PoPETs site (by DOI), and the open-access locations OpenAlex lists for the
 DOI. A file counts only if it is a PDF (or, for Europe PMC, an XML article body). Files are saved to
@@ -14,7 +14,7 @@ import csv, json, re, time, urllib.error, urllib.parse, urllib.request
 import lit
 from search import OUT, UA
 
-LR = lit.HERE.parents[2] / '01_Literature' / 'Literature-Review'
+LR = lit.HERE.parents[2] / '01_Literature' / 'review'
 DIR = OUT / 'fulltexts'
 
 
