@@ -2,7 +2,7 @@
 task: Stage 3. Describe each protection claim (Axis C)
 version: 2
 date: 2026-11-04
-model: two models of different families, selected in the pilot and then frozen (D9); versions and parameters are logged in run_log.md. The same prompt is used for both.
+model: two models of different families, fixed before coding and then frozen (D20); versions and parameters are logged in run_log.md. The same prompt is used for both.
 input: units for which either model set the protection flag in stage 1 (union of both models), with their neighbouring units
 output: JSON, see the end of this prompt
 changes: header only (two models, union of the stage 1 flags); the instructions are those of version 1

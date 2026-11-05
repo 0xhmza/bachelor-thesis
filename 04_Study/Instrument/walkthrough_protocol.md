@@ -1,6 +1,6 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
-**Version:** 8 · **Date:** 2026-11-04 · Operational version of the methodology's
+**Version:** 9 · **Date:** 2026-11-05 · Operational version of the methodology's
 App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
@@ -25,11 +25,11 @@ September 2026), and the emulator gives every app the same clean starting state.
 ## Setup
 
 - Android: Android Studio emulator, Pixel device profile, Google Play system image of
-  the newest stable Android release offered on the first pilot day; the same image
+  the newest stable Android release offered on the first collection day; the same image
   (API level and build) for every app. Before each app, the clean snapshot is
   restored (the "wipe"). An app that refuses to run on the emulator is inspected on a
   physical Android phone, reset to factory state, and the deviation is recorded.
-- iOS: a physical iPhone on the iOS version installed on the first pilot day,
+- iOS: a physical iPhone on the iOS version installed on the first collection day,
   automatic updates off for the collection period; the app is deleted after its
   session and its study account removed.
 - Record the exact image, device, OS version and security patch level once, and
@@ -43,14 +43,35 @@ September 2026), and the emulator gives every app the same clean starting state.
   and any reset/reinstall limitation of a preinstalled app.
 - **Time limits:** the route search of each task (or subgoal) stops after
   5 minutes; the evaluation of a located route is not timed. A session should take
-  about 60–75 minutes. If the pilot finds a route only after the limit, the limit is
-  raised before the freeze and applies to every app.
+  about 60–75 minutes. The limit applies to every app.
 - **Order:** each app is walked through before the model codes of its policy are
   reviewed. Prior familiarity from sampling, capture and route preparation is
   logged.
-- Before main collection, freeze in the pilot: task scenarios and starting states,
-  route preparation, search boundaries, completion criteria per subgoal, synthetic
-  inputs and consent/permission choices. Log deviations.
+- **Fixed before main collection (D20, proposed).** Log every deviation.
+  - *Starting state:* each session starts from a fresh install on the clean device
+    state above. Each task starts from the app's home screen, in the state the
+    previous task left; T1–T4 change no setting.
+  - *Route preparation:* the analyst searches for the route of a task once, within
+    the time limit, documents the action sequence, and then evaluates it against the
+    four questions.
+  - *Search boundaries:* every screen and menu of the app, its help pages, and the
+    documents its own links open. No general web search and no contact with the
+    provider. A route the interface or a linked document states, such as a request by
+    e-mail, is recorded as an external step and not carried out.
+  - *Completion of a subgoal:* the interface shows the information or confirms the
+    action. The search stops at completion, at explicit evidence that the function is
+    not offered, at an access barrier or at the time limit, and the outcome follows
+    the table below.
+  - *Synthetic profile:* name Alex Muster; a new throwaway e-mail address per app;
+    birth date 15 June 1990; country Germany; no street address or phone number; height
+    170 cm, weight 70 kg; gender "not specified" where offered, otherwise the option
+    the app's tracked function needs; invented entries for one week of the app's main
+    function.
+  - *Consent and permissions:* record every option on a consent screen, then take the
+    action the screen presents as primary and leave pre-set choices untouched, so that
+    T5 meets the state of a first-time user who follows the app. Deny an operating-system
+    permission unless the app or the task cannot proceed without it, and record the
+    choice.
 
 ## The adaptation: the tasks are privacy tasks
 
@@ -148,7 +169,7 @@ Do these steps in this order, every time:
 3. **Onboarding** — capture each screen. Note every consent, permission request,
    and pre-ticked checkbox.
 4. **Account creation, where needed** — note mandatory/optional fields. Use the
-   pilot's synthetic profile and record consent/permission choices. Record earlier
+   synthetic profile above and record consent/permission choices. Record earlier
    choices so their effects are not mistaken for untouched defaults.
 5. **Baseline privacy settings** — before changing settings, capture their initial
    states and the route/taps from the home screen. Save the onboarding-before-consent
@@ -274,4 +295,5 @@ the document sample; do not cross those barriers, but keep accessible evidence. 
 | 5 | 2026-11-02 | Walkthroughs cover all 50 apps, not 12; no platform slots | Author's instruction of 2 November 2026; D10 |
 | 6 | 2026-11-03 | "Where the record goes": outputs routed into the applicability record and the LLM-assisted coding; procedure unchanged | Coherence with the policy analysis; D10 update of 3 November 2026 |
 | 7 | 2026-11-03 | Defaults captured before control changes, T7 last; explicit outcomes and Q1–Q4 reasons; route/search distinction; evidence/transcript fields; policy/UI separation; partial access, D7 language capture and surface-specific validation limits | Review correction in D10; repairs unsupported inferences and makes the proposed procedure reproducible |
+| 9 | 2026-11-05 | No pilot: versions frozen on the first collection day; starting states, route preparation, search boundaries, completion, synthetic profile and consent/permission choices written out | D20: the method is applied to all apps without a pilot |
 | 8 | 2026-11-04 | Platform rule; emulator/iPhone setup and versions frozen at the first pilot day; 5-minute search limit per task; lay scenarios and persona limits; T3c after-a-problem subgoal; T5–T7 subgoals; IM14 for export; other-route rule for "task unsupported"; matched-state language pass; ten-app re-rating; walkthrough before policy model-code review | D10 update of 4 November 2026 (submission review R9, usable-privacy card W1–W5; supervisor's post-harm point of 13 October) |

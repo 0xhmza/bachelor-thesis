@@ -1,6 +1,6 @@
 # Decision forms: applicability and potential mismatch
 
-**Version:** 1 · **Date:** 2026-11-04 · Part of the instrument bundle. Codebook v6,
+**Version:** 1 · **Date:** 2026-11-04 · Part of the instrument bundle. Codebook v7,
 reference model v2; D8, D12.
 
 These decisions are made by people only. The second coder re-checks a random sample of

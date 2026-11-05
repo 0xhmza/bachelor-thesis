@@ -2,7 +2,7 @@
 task: Stage 2. Code the stance toward each named harm (Axis B)
 version: 2
 date: 2026-11-04
-model: two models of different families, selected in the pilot and then frozen (D9); versions and parameters are logged in run_log.md. The same prompt is used for both.
+model: two models of different families, fixed before coding and then frozen (D20); versions and parameters are logged in run_log.md. The same prompt is used for both.
 input: units for which either model returned L-HRM in stage 1 (union of both models), with the harm code and span, and their neighbouring units
 output: JSON, see the end of this prompt
 changes: minimisation judged on the local text only; rule for "no evidence" statements (codebook v6, Axis B)

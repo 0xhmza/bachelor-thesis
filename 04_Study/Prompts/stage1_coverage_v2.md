@@ -2,7 +2,7 @@
 task: Stage 1. Find every tree node, harm and risk that each unit mentions (Axis A), and flag units for stages 2 and 3
 version: 2
 date: 2026-11-04
-model: two models of different families, selected in the pilot and then frozen (D9); versions and parameters are logged in run_log.md. The same prompt is used for both.
+model: two models of different families, fixed before coding and then frozen (D20); versions and parameters are logged in run_log.md. The same prompt is used for both.
 input: consecutive coding units of one document, as JSON lines with fields unit, heading, text
 output: JSON, see the end of this prompt
 changes: reference model v2 (IM12 deletion only, new IM14 export, both judged across every route); new code S-GRS for responsibility placed on the user without a named harm (secondary RQ2 analysis); a denied node is still returned as a mention; uncertain answers explained (codebook v6, D9, D12)

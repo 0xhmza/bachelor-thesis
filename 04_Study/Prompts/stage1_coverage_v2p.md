@@ -2,7 +2,7 @@
 task: Stage 1, paraphrased wording, to test whether the wording of the prompt changes the counts
 version: 2p
 date: 2026-11-04
-model: two models of different families, selected in the pilot and then frozen (D9); versions and parameters are logged in run_log.md. The same prompt is used for both.
+model: two models of different families, fixed before coding and then frozen (D20); versions and parameters are logged in run_log.md. The same prompt is used for both.
 input: as stage1_coverage_v2.md
 output: as stage1_coverage_v2.md
 changes: paraphrase of stage1_coverage_v2.md (same codes, examples and output; reworded instructions); run on the validation sample only, to measure how much the wording changes the labels
