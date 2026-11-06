@@ -20,7 +20,7 @@ settled. The argued schedule with slip points is archived in
 | 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources | 2026-10-16 | ◐ 89 of 93 held as PDFs (`01_Literature/catalog/methods-corpus.json`); missing Parker 2019, two books, the APA web page; none read yet |
 | 4 | Proposal sent to the supervisor | 2026-09-30 | ☑ sent 2026-10-05 ([email](Correspondence/2026-10-05_Proposal-Email.md)); snapshot in `03_Thesis/proposal/` |
 | 5 | Proposal approved | | ☐ |
-| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); awaiting first and second examiner |
+| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](Correspondence/2026-10-19_Registration-Email.md), [form](Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); Prof. Troncoso is a professor officially from 2026-11-09 (meeting 2026-11-06), so the first examiner can be entered from then; second examiner still open |
 | 7 | Keywords and inclusion/exclusion criteria fixed | 2026-09-18 | ☑ sampling protocol v2 (2026-10-23; ranking revised 2026-10-25) |
 | 8 | App sample collected and frozen | | ◐ drawn 2026-10-25 (47 + 3 apps); frozen after the author checks the screening |
 | 9 | Codebook | 2026-09-18 | ◐ v7 in `04_Study/Codebook/`; examples to be filled before the freeze |
@@ -57,7 +57,7 @@ background and related work are drafted alongside collection.
 
 ## Administrative checklist
 
-- [ ] Confirm first and second examiner (Erst-/Zweitprüfer\*in)
+- [ ] Confirm first and second examiner (Erst-/Zweitprüfer\*in); Prof. Troncoso is a professor officially from 2026-11-09, so register with her as first examiner from that date
 - [ ] Check the formatting requirements of the Prüfungsordnung (page limits, declaration wording, printed copies)
 - [ ] Check the statutory declaration text, including the AI-use statement
 - [ ] Confirm whether an ethics review is needed

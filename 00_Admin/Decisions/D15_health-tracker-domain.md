@@ -14,3 +14,7 @@
 ## Update 2026-11-05
 
 The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).
+
+## Update 2026-11-06 — no subcategories, only keywords
+
+The supervisor asked whether overlapping categories (exercise and heart rate) are a problem. The paper has no subcategories of health apps: the categories of Hutton et al. and Malki et al. group the search keywords and describe the sample, nothing more. The methodology (Domain paragraph, E1d) and the caption of the keyword table now say so. An app is eligible once it meets E1, whichever keyword found it ([D03](D03_scope-keywords-function.md)). After the 50 apps are picked, the results will say whether any keyword category is not represented.

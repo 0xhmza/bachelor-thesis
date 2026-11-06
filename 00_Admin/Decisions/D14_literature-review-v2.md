@@ -46,3 +46,7 @@
 - **Choice (verification of the AI-prepared screening):** the author checks every inclusion and every full-text exclusion, and a random fifth of the title-and-abstract exclusions (recorded seed); one eligible record in that fifth triggers a check of all title-and-abstract exclusions.
 - **Evidence:** Waffenschmidt et al. 2019 (BMC Med Res Methodol 19:132): single screening missed a median of 5 % of relevant studies, 13 % for less experienced reviewers.
 - **Still to do by the author:** the check itself, in `01_Literature/review/screening.csv`.
+
+## Update 2026-11-06 — superseded by D21
+
+The procedure of this record leaves the thesis: the supervisor meeting of 6 November judged PRISMA, Boolean strings and a screening protocol to belong to review papers. [D21](D21_brief-literature-review.md) replaces it with a brief review of at most ten papers. The run of 28 October, its data and screening log, and the text removed from the thesis ([`99_Archive/2026-11-06_systematic-literature-review/`](../../99_Archive/2026-11-06_systematic-literature-review/README.md)) are kept. The decision of 4 November (night) on verifying the AI screening no longer applies to the thesis.

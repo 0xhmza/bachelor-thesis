@@ -15,3 +15,7 @@
 - **Choice (proposed):** a target of 50 apps; 3 places for the preinstalled apps from D6 and 47 for the store ranking in D2. All eligible health trackers compete in one ranking; categories describe the resulting sample and impose no quotas. The author confirmed this single study domain on 28 October 2026 ([D15](D15_health-tracker-domain.md)). If fewer than 47 eligible store apps are found, all are kept and the shortfall reported.
 - **Reason:** The total of 50 comes from the proposal and the supervisor. The number of preinstalled places is set by a rule, not chosen to fill a round number, and the ranking fills the rest. Dropping quotas follows the supervisor's instruction.
 - **Would change if:** the supervisor wants quotas back; D6 yields a different number of preinstalled apps; the eligible pool is smaller than 47.
+
+## Update 2026-11-06 — meeting note, not applied
+
+The supervisor asked "why 50? it is about all apps in health tracking" ([meeting notes](../Meeting-Notes/2026-11-06_Supervisor-Meeting_Organized.md) §5). The population is all health-tracking apps, so 50 has to be argued as a sample of that population. The methodology cites prior studies of 20 to 64 apps (Malki et al. 20, Huckvale et al. 36, Hutton et al. 64) and has no other argument. Open: a justification text. The number itself is not changed.

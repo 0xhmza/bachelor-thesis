@@ -21,3 +21,23 @@ the proposal's Methodology: advertising is coded where found, its absence is not
 finding; coding in the source language (since 13 October: English first, German
 fallback, D7); the LLM is chosen on the pilot and its identifier frozen before the
 main run (since 5 November: no pilot; two models are fixed before coding and frozen, D20).
+
+## Points from the meeting of 2026-11-06
+
+Applied the same day: [D21](Decisions/D21_brief-literature-review.md) (brief literature review),
+[D22](Decisions/D22_research-questions.md) (wording of the questions), the expansion of E1 and the
+statement that categories are keywords only. Still open, in the order of the
+[meeting notes](Meeting-Notes/2026-11-06_Supervisor-Meeting_Organized.md) §6:
+
+| # | Open point | Affects |
+|---|---|---|
+| 8 | Confirm or replace the ten papers of the literature review. | Methodology 4.2, Results 5.1 |
+| 9 | Related Work: for each topic, the gap and its link to RQ1–RQ4; justify the questions with it. | Chapter 3 |
+| 10 | Additional question on harms the companies do not cover (the omission half of RQ1 already asks it). | Introduction, Methodology 4.1.1 ([D22](Decisions/D22_research-questions.md)) |
+| 11 | RQ2 postponed; RQ1, RQ3, RQ4 through app analysis and the walkthrough. Postponed as removed, or answered later? | Whole study ([D22](Decisions/D22_research-questions.md)) |
+| 12 | "Harm trees for 3 apps": does it replace the generic reference tree, or only relieve per-app tree building? | Methodology 4.3 ([D12](Decisions/D12_reference-model.md)) |
+| 13 | Justification of 50 apps as a sample of all health tracking apps. | Methodology 4.4 ([D01](Decisions/D01_sample-size.md)) |
+| 14 | Reverse engineering to expand keywords; manageable result counts; three apps that must be included; test of keywords and store API. | Sampling protocol ([D03](Decisions/D03_scope-keywords-function.md)) |
+| 15 | After the 50 apps are picked, report which keyword categories (Table B.1) are missed. | Results 5.2 |
+| 16 | Discussion compares findings with earlier literature. | Chapter 6 |
+| 17 | Google Doc: all parts editable; regenerate it from the review copy. | Google Doc |
