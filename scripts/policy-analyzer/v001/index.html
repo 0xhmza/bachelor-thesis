@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Policy Harm Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Policy Harm Analyzer</h1>
+    <p>Codes a health tracker's privacy policy (and, optionally, its interface text) with two or more language models,
+      against the reference harm trees of the thesis, and reports RQ1–RQ4 and how far the models deviate from each other.</p>
+    <p class="muted small" id="instr"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="panel">
+    <h2>1 · Text</h2>
+    <div class="row">
+      <label class="grow">App <input id="app-name" placeholder="App name"></label>
+      <button id="load-example" class="ghost">Load constructed example</button>
+    </div>
+    <label>Privacy policy <span class="muted small">paste text, or open a .txt / .html file</span>
+      <textarea id="policy" rows="10" placeholder="Paste the privacy policy. Paragraphs separated by a blank line become coding units."></textarea></label>
+    <input type="file" id="policy-file" accept=".txt,.md,.html,.htm">
+    <label>Interface text <span class="muted small">optional, from the walkthrough: one block per screen element, blank line between blocks (RQ4)</span>
+      <textarea id="interface" rows="4" placeholder="Onboarding, consent and privacy-settings text copied from the app."></textarea></label>
+    <input type="file" id="interface-file" accept=".txt,.md,.html,.htm">
+    <p class="muted small" id="unit-count"></p>
+  </section>
+
+  <section class="panel">
+    <h2>2 · Models</h2>
+    <p class="small">The method uses two models of different families; prefer an open-weight model for one of them. Keys stay in this page and are sent only to the provider of their model.
+      <label class="inline"><input type="checkbox" id="remember"> remember models and keys in this browser</label></p>
+    <div id="models"></div>
+    <div class="row">
+      <button id="add-model" class="ghost">+ Add model</button>
+      <button id="demo-models" class="ghost">Use two offline demo coders</button>
+    </div>
+    <details class="settings"><summary>Settings</summary>
+      <div class="row">
+        <label>Units per request <input id="chunk" type="number" min="1" max="60" value="15" size="4"></label>
+        <label>Stage 1 runs per model <input id="runs" type="number" min="1" max="3" value="1" size="3"> <span class="muted small">2–3 measure run-to-run stability</span></label>
+        <label class="inline"><input type="checkbox" id="paraphrase"> also run the paraphrased stage 1 prompt (wording sensitivity)</label>
+      </div>
+    </details>
+    <div class="row">
+      <button id="run" class="primary">Run analysis</button>
+      <button id="stop" class="ghost" disabled>Stop</button>
+      <progress id="progress" value="0" max="1"></progress>
+    </div>
+    <ul id="log" class="log"></ul>
+  </section>
+
+  <section class="panel" id="appl-wrap" hidden>
+    <h2>3 · Applicability (Step 1)</h2>
+    <p class="small">The proposal comes from the coded text only. Stored data are assumed accessible to an attacker; authority and insurer use stay uncertain; a component not mentioned stays uncertain.
+      Confirm or change each state using the store listing and the walkthrough; the report updates at once.</p>
+    <div class="row">
+      <label class="inline"><input type="checkbox" id="count-possible" checked> count hedged mentions (“may”) as present</label>
+      <button id="reset-appl" class="ghost">Reset to proposal</button>
+    </div>
+    <div id="applicability"></div>
+  </section>
+
+  <section class="panel" id="report-wrap" hidden>
+    <div class="row noprint">
+      <h2 class="grow">4 · Report</h2>
+      <button id="export-html" class="ghost">Report (.html)</button>
+      <button id="export-json" class="ghost">All data (.json)</button>
+      <button id="export-csv" class="ghost">Labels (.csv)</button>
+      <button id="print" class="ghost">Print / PDF</button>
+    </div>
+    <nav class="toc noprint"><a href="#r-summary">Summary</a><a href="#r-rq1">RQ1</a><a href="#r-rq2">RQ2</a><a href="#r-rq3">RQ3</a><a href="#r-rq4">RQ4</a><a href="#r-agree">Model deviation</a><a href="#r-trees">Trees</a><a href="#r-labels">Labels</a></nav>
+    <div id="report" class="report"></div>
+  </section>
+
+  <section class="panel noprint">
+    <h2>Reference harm trees</h2>
+    <p class="small">The trees every app is judged against: harm, then the capabilities that lead to it, then the components each capability needs.</p>
+    <div id="trees"></div>
+  </section>
+</main>
+
+<footer class="wrap muted small">Built from the frozen instruments of the bachelor's thesis (reference model v2, prompts v2). Automated output: people check every high-stakes label and decide applicability, minimisation and mismatches.</footer>
+
+<script src="output/data.js"></script>
+<script src="js/example.js"></script>
+<script src="js/analysis.js"></script>
+<script src="js/llm.js"></script>
+<script src="js/report.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
