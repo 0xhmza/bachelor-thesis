@@ -1,99 +1,99 @@
 {
-  "node_count": 3127,
+  "node_count": 4153,
   "unverified_node_count": 0,
-  "raw_edge_count": 4279,
+  "raw_edge_count": 5513,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 4279,
+  "valid_candidate_edges": 5513,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 4206,
-  "directed_same_endpoint_collapsed_edges": 73,
-  "undirected_unique_endpoint_pairs": 4205,
-  "undirected_same_endpoint_collapsed_edges": 74,
-  "same_endpoint_group_count": 73,
-  "relation_variant_groups": 73,
+  "directed_unique_endpoint_pairs": 5413,
+  "directed_same_endpoint_collapsed_edges": 100,
+  "undirected_unique_endpoint_pairs": 5412,
+  "undirected_same_endpoint_collapsed_edges": 101,
+  "same_endpoint_group_count": 100,
+  "relation_variant_groups": 100,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 2987,
-  "post_build_edge_count": 4181,
+  "post_build_node_count": 4003,
+  "post_build_edge_count": 5388,
   "post_build_error": "",
   "producer_suppression": {
-    "path": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
+    "path": "C:\\Users\\hamza\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\graphify\\extract.py",
     "total_sites": 12,
     "sites": [
       {
-        "line": 1785,
+        "line": 1830,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 2349,
+        "line": 2393,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 2351,
+        "line": 2395,
         "name": "seen_doc_refs",
         "tuple_arity": 0,
         "sample": "seen_doc_refs: set[str] = set()"
       },
       {
-        "line": 3018,
+        "line": 3062,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 3165,
+        "line": 3209,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n.get(\"id\") for n in nodes}"
       },
       {
-        "line": 4175,
+        "line": 4350,
         "name": "seen_keys",
         "tuple_arity": 0,
         "sample": "seen_keys: set[tuple] = set()"
       },
       {
-        "line": 4361,
+        "line": 4536,
         "name": "seen_keys",
         "tuple_arity": 0,
         "sample": "seen_keys: set[tuple] = set()"
       },
       {
-        "line": 7452,
+        "line": 8160,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 7560,
+        "line": 8268,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 7639,
+        "line": 8347,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8154,
+        "line": 8872,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8155,
+        "line": 8873,
         "name": "seen_edges",
         "tuple_arity": 4,
         "sample": "seen_edges: set[tuple[str, str, str, str | None]] = set()"
