@@ -460,8 +460,12 @@ al.~\parencite{malki2024exploring} supply the reproductive-health scope,
 including pregnancy tracking, absent from that list. Together these sources
 inform the definition and keyword collection for activity, diet and weight,
 heart rate, sleep, mood and reproductive health within one health-tracker
-domain. Categories describe apps and their features; they do not define
-separate sampling, validation or analysis groups.
+domain. The categories are not subcategories of health trackers. They group the
+search keywords (Table~\ref{tab:keywords} in Appendix~\ref{app:app-sample}), and the results use
+them only to describe the sample; no sampling, validation or analysis group is formed from them.
+The categories overlap (an exercise app often records heart rate). This does no harm, because an
+app is eligible once it meets the criteria of Table~\ref{tab:eligibility}, whichever keyword
+found it.
 
 \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
 terms of Malki et al.\ are searched in the original English and in one German
@@ -484,7 +488,8 @@ for the ranking appears only on an app's product page, so the product page of
 every Google Play candidate is opened.
 
 \paragraph{Eligibility.} A listing is eligible if it meets the five criteria
-of Table~\ref{tab:eligibility}. Each criterion is checked on the store listing
+of Table~\ref{tab:eligibility}; criterion E1 has four sub-items (E1a to E1d), and all four
+must hold. Each criterion is checked on the store listing
 in the German storefront: title, developer, genre, price and description. An
 app listed in both stores is decided on one screened listing. If both of its
 listings are screened, the app is excluded when either listing fails a
@@ -492,7 +497,7 @@ criterion. In-app purchases
 and subscriptions are recorded but do not exclude an app. Screening follows the
 rank order, and each decision is logged with its reason.
 
-\begin{table}[H]
+\begin{table}[!t]
 \centering
 \begin{singlespace}
 \small
@@ -504,14 +509,39 @@ the German storefront.}
 \toprule
  & \textbf{Criterion} & \textbf{Check on the listing} \\
 \midrule
-E1 & Records the user's own health or body data over time, in a category of the
-  domain~\parencite{robillard2019availability,malki2024exploring}
-  & The description states that the app records, logs or stores the user's own
-  measurements or activities, entered by the user or recorded by a sensor or
-  paired device. Excluded: instructional and content apps without recording, as
-  in Hutton et al.~\parencite{hutton2018assessing}; apps that track a child;
-  games, shops and general-purpose apps. A wearable's companion app is eligible
-  when the app records or displays the data; the device itself is not analysed. \\
+E1 & Health tracking: meets E1a to E1d
+  & All four sub-items are checked on the description. They follow Hutton et
+  al.~\parencite{hutton2018assessing}, Malki et al.~\parencite{malki2024exploring} and Robillard
+  et al.~\parencite{robillard2019availability}. \\
+\addlinespace[1pt]
+E1a & Records data
+  & The description states that the user can enter, log or store data in the app, or that a sensor
+  or a paired device records it. Excluded: instructional and content apps that show exercises or
+  articles but record nothing, which Hutton et al.\ left out because they \enquote{do not capture
+  data that can permit self-tracking}~\parencite[p.~5]{hutton2018assessing}; games, shops and
+  general-purpose apps. A wearable's companion app is eligible when the app records or displays
+  the data; the device itself is not analysed. \\
+\addlinespace[1pt]
+E1b & The user's own health or body data
+  & The recorded data describe the user's own body, activity or state of health, such as weight,
+  pulse, sleep, mood, cycle days or steps. Excluded: apps that track a child or another person,
+  and apps that record other self-tracking data such as spending or time keeping, which Hutton et
+  al.\ list apart from health~\parencite[Table~2]{hutton2018assessing}. \\
+\addlinespace[1pt]
+E1c & Over time
+  & The description states that entries are saved and can be viewed again across days or weeks, as
+  a history, log, diary, chart, trend or calendar. Excluded: one-off calculators and tests whose
+  result is not kept, that is, apps that ask for input at one time point only, as in Robillard et
+  al.~\parencite[\S2.1]{robillard2019availability}; apps with no tracking or predictive feature, as
+  in Malki et al.~\parencite[\S3.1]{malki2024exploring}. \\
+\addlinespace[1pt]
+E1d & In a category of the domain
+  & The tracked data belong to at least one health category of Hutton et al.\ (cycling, diet,
+  exercise, heart, mood, running, sleep, step count, weight; Table~2) or to the reproductive health
+  of Malki et al.\ (menstruation, ovulation, fertility, contraception, pregnancy; \S3.1).
+  Mental-health trackers qualify through mood and sleep trackers through sleep. The categories are
+  search keywords, not subcategories: they overlap (exercise and heart rate), and an app has to fit
+  at least one, whichever keyword found it. \\
 \addlinespace
 E2 & Consumer app for the general public
   & The listing offers the app to anyone. Excluded: apps whose listing limits use
