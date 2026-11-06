@@ -18,7 +18,7 @@
       leaf: '#141920', edge: '#4a5361', unsure: '#6b5420', closed: '#1b1f25', closedText: '#5d6570', gate: '#0f1318', accent: '#5fb59e', sel: '#6ea8fe' }
   };
 
-  var SIZE = { harm: [250, 46], cap: [214, 66], comp: [150, 50], gate: [40, 18] };
+  var SIZE = { harm: [250, 48], cap: [226, 84], comp: [158, 62], gate: [96, 20] };
   var GAP_X = 18, GAP_Y = 44;
 
   function el(name, attrs, parent) {
@@ -113,66 +113,78 @@
     return { fill: base, text: node.type === 'harm' ? T.harmText : T.text, opacity: 1 };
   }
 
+  // Every node says what it is: a small kind label on top, plain captions
+  // inside, and a hover tooltip with the meaning.
+  var ORIGIN_NAMES = { core: 'core function', context: 'digital context', implementation: 'implementation', external: 'outside the app' };
+  var ORIGIN_LONG = { core: 'core functionality: the app cannot do its job without it',
+    context: 'digital context: follows from running on a phone and a network, or from the setting of use',
+    implementation: 'implementation choice: the provider decided it and could decide otherwise',
+    external: 'an event outside the app, assumed or uncertain' };
+
+  function text(grp, x, y, cls, fill, s, anchor) {
+    var t = el('text', { x: x, y: y, class: cls, fill: fill, 'text-anchor': anchor || null }, grp);
+    t.textContent = s; return t;
+  }
+
   function drawNode(g, node, ctx) {
     var T = ctx.T, model = ctx.model, x = node.left, y = node.top;
     var st = stateOf(node, ctx);
     var grp = el('g', { class: 'tn tn-' + node.type, 'data-key': node.key, transform: 'translate(' + x + ',' + y + ')', tabindex: node.type === 'gate' ? null : 0 }, g);
+    var tip = el('title', {}, grp);
     if (node.type === 'gate') {
-      el('rect', { width: node.w, height: node.h, rx: 9, fill: T.gate, stroke: T.edge }, grp);
-      var t = el('text', { x: node.w / 2, y: 12.5, 'text-anchor': 'middle', class: 'tg', fill: T.text }, grp);
-      t.textContent = node.op.toUpperCase();
+      var and = node.op === 'and';
+      tip.textContent = and ? 'AND gate: every branch below is needed' : 'OR gate: any one branch below is enough';
+      el('rect', { width: node.w, height: node.h, rx: 10, fill: T.gate, stroke: T.edge }, grp);
+      var t = el('text', { x: node.w / 2, y: 13.5, 'text-anchor': 'middle', class: 'tg', fill: T.text }, grp);
+      var b1 = el('tspan', {}, t); b1.textContent = node.op.toUpperCase();
+      var b2 = el('tspan', { class: 'tgs', fill: T.muted, dx: 4 }, t); b2.textContent = and ? 'all needed' : 'any one';
       return;
     }
     var selected = ctx.selected && ctx.selected === node.key;
     if (node.type === 'harm') {
       var f = fills(node, st, T, T.harm);
+      tip.textContent = 'Harm category ' + node.id + ': ' + node.label + '. It applies to the app if any of its pathways (the capabilities below) applies.' + (st ? ' For this app: ' + st + '.' : '');
       el('rect', { width: node.w, height: node.h, rx: 4, fill: f.fill, stroke: selected ? T.sel : f.fill, 'stroke-width': selected ? 2.5 : 1 }, grp);
-      var l1 = el('text', { x: node.w / 2, y: 19, 'text-anchor': 'middle', class: 'th', fill: f.text }, grp);
-      l1.textContent = 'Harm: ' + node.label;
-      var l2 = el('text', { x: node.w / 2, y: 35, 'text-anchor': 'middle', class: 'ts', fill: f.text, opacity: 0.8 }, grp);
-      l2.textContent = node.id + (st ? ' · ' + st : '');
+      text(grp, 10, 15, 'tk', f.text, 'HARM').setAttribute('opacity', 0.75);
+      text(grp, node.w - 10, 15, 'ts', f.text, node.id + (st ? ' · ' + st : ''), 'end').setAttribute('opacity', 0.8);
+      text(grp, 10, 37, 'th', f.text, wrap(node.label, 32, 1)[0]);
       return;
     }
     if (node.type === 'cap') {
       var cap = model.capabilities[node.id] || { label: '(missing capability)', actor: '' };
-      var fc = fills(node, st, T, T.cap);
+      var fc = fills(node, st, T, T.cap), p = node.pathway;
+      tip.textContent = 'Capability ' + node.id + ': ' + cap.label + '. Held by: ' + cap.actor + '. Pathway ' + p.id + ' (' + p.basis + ') leads to: ' + p.consequence + '.' +
+        (st ? ' For this app the pathway is ' + st + '.' : '') + ' The components below enable it.';
       el('rect', { width: node.w, height: node.h, rx: 4, fill: fc.fill, stroke: selected ? T.sel : T.capLine, 'stroke-width': selected ? 2.5 : 1, opacity: fc.opacity }, grp);
-      var p = node.pathway;
-      var head = el('text', { x: 8, y: 14, class: 'ts', fill: T.muted }, grp);
-      head.textContent = wrap(p.id + ' · ' + p.consequence, 36, 1)[0];
-      wrap(node.id + '  ' + cap.label, 33, 2).forEach(function (line, i) {
-        var t = el('text', { x: 8, y: 31 + i * 13, class: i ? 'tl' : 'tb', fill: fc.text }, grp);
-        t.textContent = line;
-      });
-      var act = el('text', { x: 8, y: node.h - 6, class: 'ts', fill: T.muted }, grp);
-      act.textContent = wrap(cap.actor, 38, 1)[0];
-      if (p.basis === 'argued') { var b = el('text', { x: node.w - 6, y: 14, 'text-anchor': 'end', class: 'ts', fill: T.muted }, grp); b.textContent = 'argued'; }
-      if (ctx.levels && ctx.levels[p.id] !== undefined && st === 'present') {
+      text(grp, 8, 13, 'tk', T.muted, 'CAPABILITY');
+      text(grp, node.w - 8, 13, 'ts', T.muted, 'pathway ' + p.id + (p.basis === 'argued' ? ' · argued' : ''), 'end');
+      wrap(node.id + '  ' + cap.label, 34, 2).forEach(function (line, i) { text(grp, 8, 30 + i * 13, i ? 'tl' : 'tb', fc.text, line); });
+      text(grp, 8, 60, 'ts', T.muted, wrap('held by ' + cap.actor, 40, 1)[0]);
+      var hasLevel = ctx.levels && ctx.levels[p.id] !== undefined && st === 'present';
+      text(grp, 8, 75, 'ts', T.muted, wrap('leads to: ' + p.consequence, hasLevel ? 34 : 40, 1)[0]);
+      if (hasLevel) {
         var lv = ctx.levels[p.id].level;
-        el('rect', { x: node.w - 26, y: node.h - 17, width: 20, height: 13, rx: 3, fill: ['#c9ced6', '#bcd0f2', '#7da2e6', '#233F5B'][lv] }, grp);
-        var lt = el('text', { x: node.w - 16, y: node.h - 7, 'text-anchor': 'middle', class: 'tg', fill: lv === 3 ? '#fff' : '#1A1A1A' }, grp);
+        el('rect', { x: node.w - 28, y: node.h - 18, width: 22, height: 13, rx: 3, fill: ['#c9ced6', '#bcd0f2', '#7da2e6', '#233F5B'][lv] }, grp);
+        var lt = el('text', { x: node.w - 17, y: node.h - 8, 'text-anchor': 'middle', class: 'tg', fill: lv === 3 ? '#fff' : '#1A1A1A' }, grp);
         lt.textContent = 'L' + lv;
+        el('title', {}, lt).textContent = 'Policy coverage level ' + lv + ': ' + ['silent', 'a component is mentioned', 'the capability is mentioned', 'a harm of this category is named'][lv];
       }
-      if (node.hidden) {
-        var h2 = el('text', { x: node.w / 2, y: node.h + 14, 'text-anchor': 'middle', class: 'ts', fill: T.muted }, grp);
-        h2.textContent = '+' + node.hidden + ' components';
-      }
+      if (node.hidden) text(grp, node.w / 2, node.h + 14, 'ts', T.muted, '+' + node.hidden + ' components (double-click to unfold)', 'middle');
       if (ctx.edited && ctx.edited[p.id]) el('circle', { cx: node.w - 4, cy: 4, r: 4, fill: T.accent }, grp);
       return;
     }
     // Component
-    var c = model.components[node.id] || { label: '(unknown component)', origin: 'external' };
+    var c = model.components[node.id] || { label: '(unknown component)', origin: 'external', feature: '' };
     var color = T[c.origin] || T.external;
     var fl = fills(node, st, T, T.leaf);
+    tip.textContent = 'Component ' + node.id + ': ' + c.label + '. Origin: ' + (ORIGIN_LONG[c.origin] || c.origin) + '. Feature to check: ' + c.feature + (st ? ' For this app: ' + st + '.' : '');
     el('rect', { width: node.w, height: node.h, rx: 4, fill: fl.fill, stroke: selected ? T.sel : color, 'stroke-width': selected ? 2.6 : 1.6,
       'stroke-dasharray': c.origin === 'external' ? '5 3' : null, opacity: fl.opacity }, grp);
-    var idt = el('text', { x: 8, y: 15, class: 'tb', fill: color }, grp);
-    idt.textContent = node.id;
-    if (st) { var stt = el('text', { x: node.w - 6, y: 15, 'text-anchor': 'end', class: 'ts', fill: fl.text }, grp); stt.textContent = st; }
-    wrap(c.label, 26, 2).forEach(function (line, i) {
-      var t = el('text', { x: 8, y: 29 + i * 12, class: 'tl', fill: fl.text }, grp);
-      t.textContent = line;
-    });
+    text(grp, 8, 12, 'tk', T.muted, 'COMPONENT');
+    text(grp, node.w - 7, 12, 'tk', color, (ORIGIN_NAMES[c.origin] || c.origin).toUpperCase(), 'end');
+    text(grp, 8, 28, 'tb', color, node.id);
+    if (st) text(grp, node.w - 7, 28, 'ts', fl.text, st, 'end');
+    wrap(c.label, 27, 2).forEach(function (line, i) { text(grp, 8, 42 + i * 12, 'tl', fl.text, line); });
     if (ctx.edited && ctx.edited[node.id]) el('circle', { cx: node.w - 4, cy: node.h - 4, r: 3.5, fill: T.accent }, grp);
   }
 
@@ -327,7 +339,7 @@
     clone.setAttribute('viewBox', '0 0 ' + Math.ceil(this.bounds.w + 40) + ' ' + Math.ceil(this.bounds.h + 40));
     clone.removeAttribute('class');
     var style = el('style', {});
-    style.textContent = 'text{font-family:"Segoe UI",Inter,Arial,sans-serif}.th{font-size:12px;font-weight:600}.tb{font-size:11px;font-weight:700}.tl{font-size:10.5px}.ts{font-size:9.5px}.tg{font-size:9px;font-weight:700;letter-spacing:.04em}';
+    style.textContent = 'text{font-family:"Segoe UI",Inter,Arial,sans-serif}.th{font-size:12px;font-weight:600}.tb{font-size:11px;font-weight:700}.tl{font-size:10.5px}.ts{font-size:9.5px}.tg{font-size:9px;font-weight:700;letter-spacing:.04em}.tgs{font-size:8.5px;font-weight:500;letter-spacing:0}.tk{font-size:7.5px;font-weight:700;letter-spacing:.09em}';
     clone.insertBefore(style, clone.firstChild);
     var bg = el('rect', { width: '100%', height: '100%', fill: this.ctx.T.bg });
     clone.insertBefore(bg, style.nextSibling);

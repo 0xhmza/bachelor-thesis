@@ -1,4 +1,4 @@
-// Controller of the Policy Harm Analyzer: the workspace state (saved in this
+// Controller of the Privacy Policy Analyser: the workspace state (saved in this
 // browser), navigation between the views, the coding run, the human
 // decisions, and the YAML record of everything.
 (function (root) {
@@ -380,7 +380,7 @@
     var rec = {
       format: 'policy-harm-analyzer-record/2',
       generated: localTime(),
-      tool: { name: 'Policy Harm Analyzer', version: VERSION, location: 'scripts/policy-analyzer/' + VERSION, method: 'Thesis methodology chapter: Coding and Assessment; Instrument Freeze and Validation' },
+      tool: { name: 'Privacy Policy Analyser', subtitle: 'LLM coding against reference harm trees', version: VERSION, location: 'scripts/policy-analyzer/' + VERSION, method: 'Thesis methodology chapter: Coding and Assessment; Instrument Freeze and Validation' },
       environment: { user_agent: navigator.userAgent, language: navigator.language, time_zone: Intl.DateTimeFormat().resolvedOptions().timeZone },
       project: clone(S.project),
       status: {
@@ -472,7 +472,7 @@
 
   async function exportYAML() {
     var rec = await record();
-    var text = Y.stringify(rec, 'Policy Harm Analyzer record (' + VERSION + ').\nEverything needed to check or repeat this analysis: inputs, instruments, prompts,\nmodels and settings, every call, raw model output, human decisions and results. API keys are never included.');
+    var text = Y.stringify(rec, 'Privacy Policy Analyser record (' + VERSION + ').\nEverything needed to check or repeat this analysis: inputs, instruments, prompts,\nmodels and settings, every call, raw model output, human decisions and results. API keys are never included.');
     download('policy-analysis_' + slug() + '.yaml', 'application/yaml', text);
     toast('Record exported (' + Math.round(text.length / 1024) + ' KB).', 'ok');
     return text;
@@ -481,7 +481,7 @@
   function importRecord(text) {
     var rec;
     try { rec = Y.parse(text); } catch (e) { toast('This file could not be read as a record: ' + e.message, 'bad'); return; }
-    if (!rec || !/^policy-harm-analyzer-record\//.test(rec.format || '')) { toast('This is not a Policy Harm Analyzer record.', 'bad'); return; }
+    if (!rec || !/^policy-harm-analyzer-record\//.test(rec.format || '')) { toast('This is not a Privacy Policy Analyser record.', 'bad'); return; }
     if (S.run && !confirm('Open this record? It replaces the current workspace.')) return;
     var w = defaults();
     w.project = rec.project || w.project;
@@ -625,6 +625,18 @@
     if (!DATA) { document.body.innerHTML = '<p style="padding:2em;font-family:sans-serif">output/data.js is missing. Run <code>python build_data.py</code> in this folder first.</p>'; return; }
     load();
     $('nav').addEventListener('click', function (e) { var b = e.target.closest('button[data-tab]'); if (b) go(b.dataset.tab); });
+    // Light or dark: a per-browser preference, not part of the analysis record.
+    function syncTheme() {
+      var light = document.documentElement.dataset.theme === 'light', label = light ? 'Switch to dark theme' : 'Switch to light theme';
+      $('theme-toggle').setAttribute('aria-label', label); $('theme-toggle').title = label;
+    }
+    $('theme-toggle').addEventListener('click', function () {
+      var light = document.documentElement.dataset.theme !== 'light';
+      if (light) document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme;
+      try { localStorage.setItem('pa.theme', light ? 'light' : 'dark'); } catch (e) { /* storage unavailable */ }
+      syncTheme();
+    });
+    syncTheme();
     document.addEventListener('keydown', function (e) {
       if (e.target.matches('input, textarea, select')) return;
       if (e.altKey && /^[1-9]$/.test(e.key)) {

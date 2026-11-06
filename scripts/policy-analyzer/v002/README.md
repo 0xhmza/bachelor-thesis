@@ -1,6 +1,6 @@
-# Policy analyzer, version 2
+# Privacy Policy Analyser, version 2
 
-A local web workspace that applies the thesis method to one app. It codes a privacy policy
+*LLM coding against reference harm trees.* A local web workspace that applies the thesis method to one app. It codes a privacy policy
 (and, optionally, interface text from the walkthrough) with two or more language models,
 using the frozen stage prompts, checks the labels against the reference harm trees, lets a
 person review every high-stakes label and decide applicability, and reports RQ1 to RQ4 with

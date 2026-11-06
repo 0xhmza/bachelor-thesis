@@ -1,4 +1,4 @@
-// The views (tabs) of the Policy Harm Analyzer. Each view renders HTML from
+// The views (tabs) of the Privacy Policy Analyser. Each view renders HTML from
 // the workspace and the computed results, and binds its own events. Policy
 // text and model output are untrusted: everything from them goes through esc().
 (function (root) {
@@ -416,7 +416,7 @@
       html += '<div class="section"><h3>Inspector</h3><p class="small muted">Select a harm, capability or component in the tree to see and edit it. Add pathways and components with the buttons above the tree.</p>' +
         '<h4>Reading the tree</h4><p class="small muted">From the bottom: components combine (AND, OR) into a capability held by an actor; any capability can lead to the harm. Border colour is the component\'s origin, as in the thesis. After a run, fills show applicability: white present, amber uncertain, grey absent; L0–L3 is the policy coverage level of an applicable pathway.</p></div>';
     }
-    html += '<div class="section"><h3>Model check</h3>' + (problems.length ? '<ul class="editlog" style="color:#f3a29b">' + problems.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' : '<p class="ok-t">Every node exists, every component is used, no OR+ remains, every pathway has a source.</p>') + '</div>';
+    html += '<div class="section"><h3>Model check</h3>' + (problems.length ? '<ul class="editlog" style="color:var(--bad-text)">' + problems.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' : '<p class="ok-t">Every node exists, every component is used, no OR+ remains, every pathway has a source.</p>') + '</div>';
     html += '<div class="section"><h3>Edits</h3>' + (S.modelEdits.length ? '<ol class="editlog">' + S.modelEdits.slice(-12).map(function (e) { return '<li>' + esc(e.at.slice(11, 16)) + ' ' + esc(e.op) + ' ' + esc(e.target) + '</li>'; }).join('') + '</ol>' : '<p class="xs faint">The frozen reference model v' + c.DATA.model.version + ' (' + esc(c.DATA.sources.model.path) + '). Edits are logged and go into the record.</p>') +
       (c.modelEdited() ? '<div class="row" style="margin-top:10px"><button class="btn sm" data-do="export-model">Model as YAML</button><button class="btn sm danger" data-do="reset-model">Reset to frozen v' + c.DATA.model.version + '</button></div>' : '') + '</div>';
     return html;
@@ -870,7 +870,7 @@
         return [esc(cl.unit), '<span class="chip">' + esc(cl.code) + '</span>', '<q>' + esc(cl.span) + '</q>', esc(cl.framing || '–') + '<div class="xs faint">' + esc(cl.strength || '') + '</div>',
           esc(cl.foundBy.join(', ')) + (cl.decision === 'uncertain' ? ' ' + badge('uncertain') : ''), sel,
           cl.removes ? (cl.closes.length ? '<span class="mono xs">' + esc(cl.closes.join(' ')) + '</span>' : '<span class="faint">none</span>') : '<span class="faint">–</span>',
-          cl.removes ? (cl.leftOpen.length ? '<span class="mono xs" style="color:#f3a29b">' + esc(cl.leftOpen.join(' ')) + '</span>' : '<span class="faint">none</span>') : '<span class="faint">–</span>'];
+          cl.removes ? (cl.leftOpen.length ? '<span class="mono xs" style="color:var(--bad-text)">' + esc(cl.leftOpen.join(' ')) + '</span>' : '<span class="faint">none</span>') : '<span class="faint">–</span>'];
       });
       return '<div class="view-inner">' + resultsBanner(c) + '<p class="lead">For each claimed measure, choose the component it would remove if it worked as described. The trees are evaluated again. Of the applicable pathways that contain that component, those that close are cut; those that stay open (another route remains) are candidate mismatches, which a person decides.</p>' +
         table(['Unit', 'Measure', 'Span', 'Framing', 'Found by', 'Would remove', 'Cuts', 'Leaves open'], rows) + '</div>';
