@@ -1,0 +1,34 @@
+%======================================================================
+%  Methodology chapter only, with its bibliography and the appendix
+%  tables the chapter cites, for sharing. Same class and preamble as
+%  thesis.tex; revision notes and highlights are switched off.
+%  Build from a copy of 03_Thesis with chapters/04_methodology_review.tex
+%  and appendix_share/ added.
+%======================================================================
+\documentclass[its]{bossthesis}
+
+\input{config/metadata}
+\input{config/preamble}
+
+\showhighlightsfalse
+\renewcommand{\todo}[2][]{}
+
+\begin{document}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+\setcounter{chapter}{3}
+\input{chapters/04_methodology_review}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}%
+\printbibliography[title={\bibname}]
+
+\clearpage
+\appendix
+\input{appendix_share/A_literature}
+\input{appendix_share/B_sampling}
+\input{appendix_share/C_llm_rules}
+
+\end{document}
