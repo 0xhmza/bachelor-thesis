@@ -7,9 +7,9 @@
 This chapter states how the study answers its research question: which harms health-tracker
 providers communicate, and how they frame protection. Section~\ref{sec:design} sets out the
 design and ties each sub-question to its measure. Section~\ref{sec:lit-review} gives the
-literature review that supplies the harms and the methodological precedents, and
-Section~\ref{sec:framework} explains how the review evidence is used to construct harm
-pathways. Sections~\ref{sec:app-sampling} and~\ref{sec:collection} state which apps are studied
+brief literature review that supplies the harms behind the harm trees, and
+Section~\ref{sec:framework} explains how its papers are used to construct harm
+pathways. Method literature is cited in the section that uses the method. Sections~\ref{sec:app-sampling} and~\ref{sec:collection} state which apps are studied
 and what is collected from each. Section~\ref{sec:analysis} states how two language models code
 the collected text and how people check it, and Section~\ref{sec:instruments} how the
 instruments are frozen and validated against human coding. Section~\ref{sec:closing} closes
@@ -53,7 +53,7 @@ describes them afterwards.
   arr/.style={-{Stealth[length=1.6mm]},semithick,draw=muted},
   lab/.style={font=\scriptsize\bfseries,text=muted,anchor=west}]
   \node[lab] at (-7.75,2.45) {Once, for all apps};
-  \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\capabilities, harms, precedents};
+  \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\ground of the harm trees};
   \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\documented tracker functions};
   \node[bx] (tree) at (2,1.45) {\textbf{Harm trees}\\pathways from components to harms};
   \node[bx=accent] (freeze) at (6,1.45) {\textbf{Instrument freeze}\\tree check, then one versioned bundle};
@@ -160,231 +160,72 @@ The chapter uses seven terms throughout; each is developed in the section named.
     components the app has (Section~\ref{sec:apply}).
 \end{description}
 
-\section{Literature Review Procedure}
+\section{Literature Review}
 \label{sec:lit-review}
-The literature review has two tasks in this study. It collects the harms and capabilities used
-to construct harm pathways, and it supplies the evidence for the methodological decisions of
-this chapter. Its procedure follows the staged review of Baumann et
-al.~\parencite{baumann2025llm}: fixed Boolean queries built from term groups, the exact string
-and hit count recorded for every source (Appendix~\ref{app:lit-strings}), removal of
-duplicates, screening against explicit criteria and the extraction of fixed fields. The search is reported with the items of the
-PRISMA-S extension and the flow of records with the flow diagram of
-PRISMA~2020~\parencite{rethlefsen2021prisma,page2021prisma}. Because the review maps evidence
-rather than pooling effects, it is a scoping review in the sense of Arksey and
-O'Malley~\parencite{arksey2005scoping}. The queries and criteria are fixed before the search.
-\highlight[orange!25]{\textbf{[?]}}\todo{Missing (PRISMA-ScR item 5, PRISMA-S item 14): say
-whether a review protocol is registered and whether a second person reviews the search
-strategies, e.g. \enquote{No protocol is registered, and no second searcher reviews the
-strategies.}}
+This thesis is not a review paper, so it follows no review protocol. PRISMA and its
+extensions are guidelines for reporting systematic reviews~\parencite[p.~178]{page2021prisma}:
+they serve a paper whose result is the claim that its search found the studies there are.
+This study makes no such claim. It needs a brief review of at most ten papers, with two
+purposes:
+\begin{enumerate}[itemsep=1pt,topsep=3pt]
+  \item \textbf{Relevant literature.} What earlier studies found about the harms of health
+    tracking apps and about how their providers communicate privacy
+    (Chapter~\ref{ch:related-work}).
+  \item \textbf{Ground of the reference harm trees.} The harms, capabilities, actors and data
+    flows on which the trees of Section~\ref{sec:framework} rest. Knabenhans et al.\ built
+    their trees in the same way, from the literature on their use
+    cases~\parencite[\S\S4.2--4.3]{knabenhans2026harms}.
+\end{enumerate}
+The review does not collect method literature. A method is cited in the section that uses it:
+sampling in Section~\ref{sec:app-sampling}, material collection and the walkthrough in
+Section~\ref{sec:collection}, coding in Section~\ref{sec:analysis} and validation in
+Section~\ref{sec:instruments}.
 
-\subsection{Review Questions and Search Concepts}
-\label{sec:lit-search}
-\paragraph{Review questions.} The review has four sub-questions, derived from the research
-question \enquote{which harms health-tracker providers communicate}, each tied to a part of
-this study.
-\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,labelindent=0pt,font=\normalfont\bfseries]
-  \item[LQ1] \textit{Harms and capabilities.} Which privacy harms, risks, threats
-    and inference capabilities concern the users of health tracking apps and
-    their wearables? It supplies evidence for constructing the pathways assessed in RQ1
-    and RQ3, and starts from general accounts of privacy harm.
-  \item[LQ2] \textit{Communication.} How has the privacy communication of health
-    tracking apps been analysed, and what was found? It informs
-    the sampling, material and coding decisions and tests the gap for RQ1--RQ4.
-  \item[LQ3] \textit{Language models.} How have large language models been used
-    to annotate, classify, extract from or assess privacy text, and how were
-    they validated? It informs the LLM-assisted coding.
-  \item[LQ4] \textit{Framing.} How do privacy texts in any domain word or present
-    risks, harms and protections, for example through vagueness, hedging,
-    reassurance or misleading claims? It informs the stance and protection axes
-    (RQ2, RQ3).
-\end{description}
-
-\paragraph{Search concepts.} The search is built from concept blocks. Each
-concept of the sub-questions becomes a term group whose alternative terms are
-joined with OR, and the groups of a query are joined with AND, so that a record
-must contain at least one term of every group. Eight groups cover the concepts
-(Table~\ref{tab:lit-groups}; the complete term lists are in
-Appendix~\ref{app:lit-groups}).
+\paragraph{Selection.} A paper is chosen if it meets all three criteria of
+Table~\ref{tab:lit-criteria}. When more than ten papers qualify, the choice falls on those that
+cover a different part of the domain (wearables, reproductive-health apps, other health apps) or
+a different kind of evidence (policy analysis, measurement of app behaviour, users' judgement,
+method), so that the ten do not repeat one another. The papers are chosen by reading, not by a
+database search, and the selection makes no claim to be complete. Like the trees themselves,
+it can be extended by another paper that adds a pathway~\parencite[\S4.1]{knabenhans2026harms}.
+\highlight[orange!25]{The ten papers are a proposal.}\todo{The selection (Table~\ref{tab:lit-papers})
+is proposed from the sources that the pathways of the reference model cite, plus the origin of
+harm trees and two studies of policy and data flows. Confirm or replace it (D21).}
 
 \begin{table}[H]
 \centering
 \begin{singlespace}
-\caption[Term groups of the literature search]{Term groups of the literature
-search, with the number of terms and examples; the complete lists are in
-Table~\ref{tab:lit-groups-full}. The terms of a group are joined with OR. A
-trailing * truncates, and terms of several words are searched as phrases.
-Table~\ref{tab:lit-strands} shows how the groups are combined.}
-\label{tab:lit-groups}
-\small
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}r>{\raggedright\arraybackslash}X@{}}
-\toprule
-\textbf{Group} & \textbf{Concept} & \textbf{Terms} & \textbf{Examples} \\
-\midrule
-\input{tables/literature-groups-short}% the generated rows end with \bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-Four strands combine the groups, one for each sub-question
-(Table~\ref{tab:lit-strands}). The strands cover 1~January 2014 to the
-search date, which includes the first studies of health-app privacy
-policies~\parencite{sunyaev2015availability}; S3 starts in 2022, as in the
-review of language-model studies by Baumann et al.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Search strands]{Search strands, one for each sub-question. A dot marks
-a group that the strand requires; the marked groups are joined with AND.}
-\label{tab:lit-strands}
-\small
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll*{8}{c}lr@{}}
-\toprule
- & & \multicolumn{8}{c}{\textbf{Term group}} & & \\
-\cmidrule(lr){3-10}
-\textbf{Strand} & \textbf{Sub-question} & D & P & H & C & T & L & A & F & \textbf{Query} & \textbf{Time frame} \\
-\midrule
-S1 & LQ1 Harms and capabilities & $\bullet$ & $\bullet$ & $\bullet$ & & & & & & D AND P AND H & 2014--2026 \\
-S2 & LQ2 Communication & $\bullet$ & $\bullet$ & & $\bullet$ & & & & & D AND P AND C & 2014--2026 \\
-S3 & LQ3 Language models & & & & & $\bullet$ & $\bullet$ & $\bullet$ & & T AND L AND A & 2022--2026 \\
-S4 & LQ4 Framing & & & & & $\bullet$ & & & $\bullet$ & T AND F & 2014--2026 \\
-\bottomrule
-\end{tabular*}
-\end{singlespace}
-\end{table}
-
-\subsection{Sources, Search Execution, and Citation Searching}
-\label{sec:lit-sources}
-\paragraph{Venues.} The eight venues of security, privacy and human--computer
-interaction research are each listed completely from 2014 to the search date, apart from the
-gaps that Table~\ref{tab:lit-venues} gives. They are the four main security conferences (CCS, IEEE
-S\&P, NDSS and USENIX Security), the venues for privacy-enhancing technologies
-(PoPETs) and for usable privacy and security (SOUPS), and CHI and CSCW, where
-user studies of privacy in health tracking appear. The last column of the table
-gives the selection rule of each venue. At the security and privacy venues, privacy is
-the subject of the venue itself, so the domain group alone selects the
-candidates for LQ1 and LQ2.
-
-\paragraph{Databases.} Four bibliographic databases add the literature published
-elsewhere (Table~\ref{tab:lit-databases}): PubMed for health informatics and
-medicine, IEEE Xplore for engineering, arXiv for preprints and the ACL Anthology
-for language processing. Each strand is run against every database, as a query
-of its own or locally on the retrieved records.
-
-\paragraph{Citation searching.} Citation searching adds studies that the term
-groups miss. It starts from a seed set of four studies that address the core
-topic of the review directly: three CHI papers on privacy in period, fertility
-and other female health
-apps~\parencite{malki2024exploring,hudig2025intimate,cao2024deleted} and a
-survey of the utility, privacy and security of wearable activity
-trackers~\parencite{niksirat2024wearable}. One round of backward searching (the
-references of the seed papers) and forward searching (the works that cite them)
-is run on \highlight[orange!25]{\textbf{[?]}}\todo{Missing (PRISMA-S item 13): the date of
-the citation search.}. References and citing works are taken from the OpenCitations Index and
-their metadata from Crossref. The records found enter the same deduplication
-and screening as the search results.
-
-\subsection{Screening and Deduplication}
-\label{sec:lit-screening}
-\paragraph{Deduplication.} The records of all sources are merged automatically
-by a script of this project. Two records are taken to be the same work when
-they share a DOI or an arXiv identifier, or when their normalised titles are identical and
-their publication years differ by at most one (three if one of them is an arXiv preprint).
-The merged record keeps every source that found it.
-
-\paragraph{Eligibility.} A record is eligible if it meets all four criteria of
-Table~\ref{tab:lit-eligibility}, which were fixed before screening.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Eligibility criteria of the literature review]{Eligibility criteria of
-the literature review.}
-\label{tab:lit-eligibility}
+\caption[Criteria for the papers of the literature review]{Criteria for the papers of the
+literature review. A paper must meet all three.}
+\label{tab:lit-criteria}
 \small
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
- & \textbf{Criterion} & \textbf{Eligibility requirement} \\
+ & \textbf{Criterion} & \textbf{Requirement} \\
 \midrule
-C1 & Publication type & A journal article, conference paper, workshop paper, or archival preprint that reports original empirical or analytical research or presents a systematic or scoping review. \\
-C2 & Language & Written in English. \\
-C3 & Publication date & Published between 1 January 2014 and 28 October 2026. For LQ3, the publication window begins in 2022. \\
-C4 & Relevance & Addresses at least one of the four literature review questions (LQ1--LQ4). \\
+L1 & Domain & Studies health tracking apps or wearables, or supplies the method or the typology of
+  harm that the harm trees use. \\
+L2 & Content & Names harms, capabilities, the actors who hold them or the data flows behind them,
+  in a place the trees can cite by page or section. \\
+L3 & Type & Original empirical or analytical research in English, peer reviewed or in an
+  archival venue (journal, conference or workshop). \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
 \end{table}
 
-\paragraph{Screening.} The exclusion rules of Table~\ref{tab:lit-criteria} were
-fixed before screening and are applied in their order, at the stage the table
-gives; the abstract is read where the title does not decide. Every decision and
-its reason are recorded in a screening log. The decisions are made by
-\highlight[orange!25]{\textbf{[?]}}.\todo{Missing (PRISMA 2020 item 8, PRISMA-ScR item 9): who
-screens, how many people, and whether an AI assistant (name, version) prepares the decisions.
-The old text read: \enquote{The screening decisions were prepared by an AI assistant from
-titles, abstracts and full texts. The author checks every inclusion and every full-text
-exclusion, and a random fifth of the title-and-abstract exclusions drawn with a recorded seed;
-if that fifth holds a single eligible record, every title-and-abstract exclusion is checked.}
-Use it only once that check is done.}
-Where no source holds an abstract, the abstract of the same DOI is taken from
-OpenAlex~\parencite{priem2022openalex}. Two conventions keep the rules apart:
-systems for hospitals, health records, telemedicine or the Internet of Things
-in general fall under R3, and systems for wearables, body-area networks or
-health apps under R5; adoption, attitude and concern studies fall under R4
-unless they name specific harms or actors. The review maps evidence, so no quality
-score decides inclusion, as PRISMA-ScR allows for scoping
-reviews~\parencite{tricco2018prisma}; the peer-review status of each study is
-recorded instead, and preprints are marked as such.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Exclusion rules of the literature review]{Exclusion rules of the
-literature review. A record is excluded under the first rule that applies.}
-\label{tab:lit-criteria}
-\small
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}@{}}
-\toprule
- & \textbf{Rule} & \textbf{Stage} \\
-\midrule
-R1 & Not a research article: editorial, commentary, letter, erratum, abstract, poster, keynote, book or chapter, thesis, front matter, narrative overview, position paper & title, abstract \\
-R2 & Outside the language or period of C2--C3 & title, abstract \\
-R3 & Outside the domain: neither health tracking apps or wearables nor privacy text (for example hospital systems, health records, telemedicine, clinical sensor networks) & title, abstract \\
-R4 & Health tracking without a privacy focus (quality, usability, clinical effect, adoption, features) & title, abstract \\
-R5 & A technical system or protocol whose evaluation documents neither harms or capabilities nor communication & title, abstract \\
-R6 & Privacy text or language models outside health tracking, answering neither LQ3 nor LQ4 (for example models as a privacy risk, readability, compliance or label accuracy without risk wording) & title, abstract \\
-R7 & Full text requires payment and is available neither through the university's institutional access or network nor as a publicly accessible version (for example an arXiv preprint) & full text \\
-R8 & On the full text, C1 or C4 does not hold & full text \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
-
-\subsection{Extraction and Synthesis}
-\label{sec:lit-synthesis}
-Each study that passes title-and-abstract screening receives one row in an extraction table.
-The row records the review sub-question assigned during screening and three fields coded from
-the title, abstract and venue using fixed keyword lists: app domain, material studied and venue
-type.
-
-For included studies, manual full-text coding by
-\highlight[orange!25]{\textbf{[?]}}\todo{Missing (PRISMA-ScR item 10): who charts the full
-texts, and whether a second person verifies the extraction.} records which of RQ1--RQ4 the study informs or
-whether it provides a methodological precedent, the harms it names and, for LQ1 studies, the
-capabilities it documents. Capabilities are grouped into eight categories (K1--K8), each
-recorded with the data it requires and the actor who could use it. The resulting capability
-table informs the construction of harm pathways, corresponding to Baumann et al.'s third stage.
-
-The descriptive synthesis counts studies by year and venue, maps evidence and gaps across app
-domains, materials and research questions, and summarises findings for each review
-sub-question.
+\paragraph{Extraction.} For each paper, the analyst records the harms it names, the
+capabilities it documents and the actor who holds each, and the data or component each needs.
+Each entry keeps its page or section. The entries become the sources of the pathways of the
+reference trees (Section~\ref{sec:harm-trees} and Appendix~\ref{app:reference-model}); the
+other papers of the thesis, which the trees do not use, are cited where they are discussed.
 
 \section{Analytical Framework}
 \label{sec:framework}
 The analytical framework fixes, before any app is coded, which harms are possible. It has
 three parts, built in sequence: the harm concepts and categories
 (Section~\ref{sec:harm-categories}); a generic health tracker that holds the functions the
-included evidence documents for such apps (Section~\ref{sec:generic-model}); and a procedure for
+papers of the literature review document for such apps (Section~\ref{sec:generic-model}); and a procedure for
 tracing how these functions can lead to harms (Section~\ref{sec:harm-trees}). The same framework
 is applied to every app and to every communication surface.
 
@@ -431,9 +272,9 @@ category.
 \subsection{Generic Health-Tracker Model Construction}
 \label{sec:generic-model}
 The study builds the harm trees on a \emph{generic health tracker}: a model that holds
-the functions that the included evidence documents for health trackers. It is not a claim to
-list every function a tracker could have; a function the evidence does not document is missing
-from it. A real app is compared with it function by function. If the model
+the functions that the papers of the literature review document for health trackers. It is not a
+claim to list every function a tracker could have; a function these papers do not document is
+missing from it. A real app is compared with it function by function. If the model
 has a function that an app lacks, the pathways through that function do not apply to
 that app. The harms are thus judged against one model, and all 50 apps are treated
 alike. What the comparison yields is a dated distance between an app's communication and this
@@ -445,10 +286,10 @@ known~\parencite[\S4]{knabenhans2026harms}. De and Le Métayer likewise refine g
 trees for a concrete system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}.
 
 \paragraph{Building the model.} The model is built in three steps. First, the analyst lists
-the functions documented in the included evidence. Second, the analyst maps each function's
+the functions documented in the papers of the literature review. Second, the analyst maps each function's
 data stores and flows. Third, the analyst identifies the actors who can reach each store or
-flow. A function enters the model if the review
-evidence (Section~\ref{sec:lit-review}) or another cited source documents it for health
+flow. A function enters the model if a paper of the
+literature review (Section~\ref{sec:lit-review}) or another cited source documents it for health
 trackers. Every part of the model is written as a feature that can be checked on a real
 app, because this is what makes the model applicable. Connected devices are outside the
 scope of the study, so the model stops at the app and its data.
@@ -519,9 +360,8 @@ vulnerabilities~\parencite{niksirat2024wearable}, users' judgements of harm scen
 that the researchers constructed~\parencite{gabriele2020understanding}, analyses of policies, data
 flows and interfaces
 \parencite{shipp2020period,malki2024exploring,hudig2025intimate} and post-Roe
-user concerns~\parencite{cao2024deleted}, together with the capabilities that
-the literature review collects (Section~\ref{sec:lit-review}). Sources found in
-the logged search are added with a recorded reason. Each pathway names the
+user concerns~\parencite{cao2024deleted}. These are the papers of the literature review
+(Section~\ref{sec:lit-review}). A source added later is recorded with its reason. Each pathway names the
 data, the actor, the access conditions, the capability and the possible
 consequence.
 
@@ -552,7 +392,7 @@ Harms & From the literature on the use case, plus Citron and Solove and the Cybe
   & Same categories (Section~\ref{sec:harm-categories}), filled with harms named for health trackers \\
 \cmidrule[0.3pt]{2-3}
 Capabilities & Found while analysing the use cases
-  & The capability table of the review (K1--K8), plus those the method and other sources add \\
+  & The capabilities K1--K10 and I1--I3 of the reference model (Appendix~\ref{app:reference-model}), taken from the papers of the review and from the method \\
 \cmidrule[0.3pt]{2-3}
 Origins & Core, context and implementation; derived from a formal model
   & The same three origins, argued from the literature; a fourth mark for events outside the app \\
