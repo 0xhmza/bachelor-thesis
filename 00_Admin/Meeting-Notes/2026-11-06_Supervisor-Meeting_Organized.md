@@ -84,7 +84,7 @@
 | # | Action | Owner | Due | Status |
 |---|---|---|---|---|
 | 1 | Enter Prof. Troncoso on the registration form and send it to the Prüfungsamt | Hamza | from 2026-11-09 | open |
-| 2 | Confirm the ten papers of the literature basis (Methodology 4.2) | Hamza | | proposed, marked orange |
+| 2 | Confirm the ten papers of the literature basis (Methodology 4.2) | Hamza | 2026-11-06 | done (confirmed in chat) |
 | 3 | Decide: separate RQ on uncovered harms? RQ2 postponed? ([D22](../Decisions/D22_research-questions.md)) | Hamza | | open |
 | 4 | Confirm the reading of "harm trees for 3 apps" ([D12](../Decisions/D12_reference-model.md)) | Hamza | | open |
 | 5 | Write the justification for 50 apps | Hamza | | open |

@@ -31,7 +31,7 @@ statement that categories are keywords only. Still open, in the order of the
 
 | # | Open point | Affects |
 |---|---|---|
-| 8 | Confirm or replace the ten papers of the literature review. | Methodology 4.2, Results 5.1 |
+| 8 | ~~Confirm or replace the ten papers of the literature review.~~ Confirmed by the author on 2026-11-06 ([D21](Decisions/D21_brief-literature-review.md)). | Methodology 4.2, Results 5.1 |
 | 9 | Related Work: for each topic, the gap and its link to RQ1–RQ4; justify the questions with it. | Chapter 3 |
 | 10 | Additional question on harms the companies do not cover (the omission half of RQ1 already asks it). | Introduction, Methodology 4.1.1 ([D22](Decisions/D22_research-questions.md)) |
 | 11 | RQ2 postponed; RQ1, RQ3, RQ4 through app analysis and the walkthrough. Postponed as removed, or answered later? | Whole study ([D22](Decisions/D22_research-questions.md)) |
