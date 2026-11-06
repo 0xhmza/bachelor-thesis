@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<title>Policy Harm Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+          <rect x="8" y="2" width="10" height="6" rx="1.5" fill="#233F5B" stroke="#6ea8fe" stroke-width="1.2"/>
+          <path d="M13 8v4M6 12h14M6 12v4M20 12v4" stroke="#6f7a89" stroke-width="1.2" fill="none"/>
+          <rect x="2" y="16" width="8" height="7" rx="1.5" fill="none" stroke="#7fa6cf" stroke-width="1.5"/>
+          <rect x="16" y="16" width="8" height="7" rx="1.5" fill="none" stroke="#e07a7a" stroke-width="1.5"/>
+        </svg>
+        <div><h1>Policy Harm Analyzer</h1><p>Health-tracker privacy communication</p></div>
+      </div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="side-foot" id="side-foot"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div><h2 id="view-title"></h2><div class="crumb" id="view-crumb"></div></div>
+      <div class="spacer"></div>
+      <div id="top-actions" class="row"></div>
+    </header>
+    <section class="view" id="view" tabindex="-1"></section>
+  </div>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="output/data.js"></script>
+<script src="js/example.js"></script>
+<script src="js/analysis.js"></script>
+<script src="js/yaml.js"></script>
+<script src="js/llm.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
