@@ -1,99 +1,99 @@
 {
-  "node_count": 4153,
+  "node_count": 3474,
   "unverified_node_count": 0,
-  "raw_edge_count": 5513,
+  "raw_edge_count": 5048,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 5513,
+  "valid_candidate_edges": 5048,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 5413,
-  "directed_same_endpoint_collapsed_edges": 100,
-  "undirected_unique_endpoint_pairs": 5412,
-  "undirected_same_endpoint_collapsed_edges": 101,
-  "same_endpoint_group_count": 100,
-  "relation_variant_groups": 100,
+  "directed_unique_endpoint_pairs": 4835,
+  "directed_same_endpoint_collapsed_edges": 213,
+  "undirected_unique_endpoint_pairs": 4832,
+  "undirected_same_endpoint_collapsed_edges": 216,
+  "same_endpoint_group_count": 210,
+  "relation_variant_groups": 210,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 4003,
-  "post_build_edge_count": 5388,
+  "post_build_node_count": 3316,
+  "post_build_edge_count": 4808,
   "post_build_error": "",
   "producer_suppression": {
-    "path": "C:\\Users\\hamza\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\graphify\\extract.py",
+    "path": "C:\\Users\\hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
     "total_sites": 12,
     "sites": [
       {
-        "line": 1830,
+        "line": 1785,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 2393,
+        "line": 2349,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 2395,
+        "line": 2351,
         "name": "seen_doc_refs",
         "tuple_arity": 0,
         "sample": "seen_doc_refs: set[str] = set()"
       },
       {
-        "line": 3062,
+        "line": 3018,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = {n[\"id\"] for n in nodes}"
       },
       {
-        "line": 3209,
+        "line": 3165,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids = {n.get(\"id\") for n in nodes}"
       },
       {
-        "line": 4350,
+        "line": 4175,
         "name": "seen_keys",
         "tuple_arity": 0,
         "sample": "seen_keys: set[tuple] = set()"
       },
       {
-        "line": 4536,
+        "line": 4361,
         "name": "seen_keys",
         "tuple_arity": 0,
         "sample": "seen_keys: set[tuple] = set()"
       },
       {
-        "line": 8160,
+        "line": 7452,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8268,
+        "line": 7560,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8347,
+        "line": 7639,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8872,
+        "line": 8154,
         "name": "seen_ids",
         "tuple_arity": 0,
         "sample": "seen_ids: set[str] = set()"
       },
       {
-        "line": 8873,
+        "line": 8155,
         "name": "seen_edges",
         "tuple_arity": 4,
         "sample": "seen_edges: set[tuple[str, str, str, str | None]] = set()"
@@ -102,6 +102,74 @@
     "error": ""
   },
   "examples": [
+    {
+      "source": "scripts_policy_analyzer_v002_js_app",
+      "target": "scripts_policy_analyzer_v002_js_app_changed",
+      "edge_count": 3,
+      "relations": [
+        "calls",
+        "contains",
+        "indirect_call"
+      ],
+      "source_files": [
+        "scripts/policy-analyzer/v002/js/app.js"
+      ],
+      "source_locations": [
+        "L656",
+        "L660",
+        "L71"
+      ],
+      "contexts": [
+        "",
+        "call",
+        "collection"
+      ]
+    },
+    {
+      "source": "scripts_policy_analyzer_v002_js_app",
+      "target": "scripts_policy_analyzer_v002_js_app_renderall",
+      "edge_count": 3,
+      "relations": [
+        "calls",
+        "contains",
+        "indirect_call"
+      ],
+      "source_files": [
+        "scripts/policy-analyzer/v002/js/app.js"
+      ],
+      "source_locations": [
+        "L608",
+        "L656",
+        "L660"
+      ],
+      "contexts": [
+        "",
+        "call",
+        "collection"
+      ]
+    },
+    {
+      "source": "scripts_policy_analyzer_v002_js_views_bindinspector",
+      "target": "scripts_policy_analyzer_v002_js_views_bindinspector_checkterm",
+      "edge_count": 3,
+      "relations": [
+        "calls",
+        "contains",
+        "indirect_call"
+      ],
+      "source_files": [
+        "scripts/policy-analyzer/v002/js/views.js"
+      ],
+      "source_locations": [
+        "L436",
+        "L441"
+      ],
+      "contexts": [
+        "",
+        "argument",
+        "call"
+      ]
+    },
     {
       "source": "01_literature_digest_build_digest_locate",
       "target": "01_literature_digest_build_digest_locate_idx",
@@ -140,66 +208,6 @@
       "contexts": [
         "",
         "call"
-      ]
-    },
-    {
-      "source": "scripts_app_ranking_v002_rank_main",
-      "target": "scripts_app_ranking_v002_rank_main_run",
-      "edge_count": 2,
-      "relations": [
-        "calls",
-        "contains"
-      ],
-      "source_files": [
-        "scripts/app-ranking/v002/rank.py"
-      ],
-      "source_locations": [
-        "L165",
-        "L170"
-      ],
-      "contexts": [
-        "",
-        "call"
-      ]
-    },
-    {
-      "source": "scripts_app_ranking_v002_rank_main",
-      "target": "scripts_app_ranking_v002_rank_main_per_year",
-      "edge_count": 2,
-      "relations": [
-        "contains",
-        "indirect_call"
-      ],
-      "source_files": [
-        "scripts/app-ranking/v002/rank.py"
-      ],
-      "source_locations": [
-        "L177",
-        "L188"
-      ],
-      "contexts": [
-        "",
-        "argument"
-      ]
-    },
-    {
-      "source": "scripts_app_ranking_v002_rank_main",
-      "target": "scripts_app_ranking_v002_rank_main_blend",
-      "edge_count": 2,
-      "relations": [
-        "contains",
-        "indirect_call"
-      ],
-      "source_files": [
-        "scripts/app-ranking/v002/rank.py"
-      ],
-      "source_locations": [
-        "L180",
-        "L189"
-      ],
-      "contexts": [
-        "",
-        "argument"
       ]
     }
   ]
