@@ -14,6 +14,8 @@
       hint: 'generateContent API. Enter the model id, for example from Google AI Studio.' },
     compatible: { name: 'OpenRouter / OpenAI-compatible', model: '', needsKey: false, baseUrl: 'https://openrouter.ai/api/v1',
       hint: 'Any OpenAI-compatible endpoint: OpenRouter, or a local Ollama (http://localhost:11434/v1) or LM Studio server. Prefer an open-weight model for one of the two.' },
+    bridge: { name: 'Local CLI bridge (testing only)', model: 'codex', needsKey: true, baseUrl: 'http://127.0.0.1:8790/v1',
+      hint: 'Runs Claude Code or Codex on this computer through cli_bridge.py (start it, paste the bridge key it prints). Models: codex, codex:<model>, claude-code, claude-code:<model>. For testing the page only: the CLIs add their own behaviour, so this is not a frozen model call for the study.' },
     demo: { name: 'Offline demo coder (no API)', model: 'demo-a', needsKey: false,
       hint: 'Keyword rules in the page, for trying the site. Not a language model; its labels mean nothing. Use demo-a and demo-b to see two coders differ.' }
   };
@@ -100,6 +102,9 @@
     else if (cfg.provider === 'compatible') {
       var base = String(cfg.baseUrl || PROVIDERS.compatible.baseUrl).replace(/\/+$/, '');
       out = await callOpenAICompatible(base + '/chat/completions', cfg, system, user, signal, cfg.jsonMode !== false);
+    } else if (cfg.provider === 'bridge') {
+      var bb = String(cfg.baseUrl || PROVIDERS.bridge.baseUrl).replace(/\/+$/, '');
+      out = await callOpenAICompatible(bb + '/chat/completions', cfg, system, user, signal, false);
     } else if (cfg.provider === 'demo') out = { text: root.PA.demo.code(cfg.model, system, user), usage: null, servedBy: cfg.model };
     else throw new Error('unknown provider ' + cfg.provider);
     out.ms = Date.now() - started;

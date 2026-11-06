@@ -49,6 +49,27 @@ highlighted spans, confirmed or rejected by a person, with provenance).
 Components added in the editor are not in the frozen prompts, so the models cannot code them;
 their applicability is set by hand.
 
+## Testing with Claude Code or Codex (no API key)
+
+`cli_bridge.py` lets the page use the command-line tools you are logged in to, so the
+workspace can be tried without API keys:
+
+```
+python cli_bridge.py            # prints a bridge key; Ctrl+C stops it
+```
+
+In the Models tab choose *Local CLI bridge (testing only)*, paste the bridge key, and use
+the model `codex`, `codex:<model>`, `claude-code` or `claude-code:<model>`. The bridge
+listens on 127.0.0.1 only, accepts requests only from pages on this computer that send the
+key, and runs each request in an empty temporary folder with tools, settings, MCP servers
+and project rules off. Claude Code needs `claude auth login` in a terminal first (the
+desktop app's login is separate).
+
+For testing only. Each CLI adds its own instructions and can change models with an update,
+so its output is not a frozen model call, and Codex reports only a total token count. Use
+API models or a local open-weight model for the study's coding. Check your subscription
+terms before relying on it for anything else.
+
 ## Providers
 
 Anthropic (Messages API, default `claude-opus-5-5`, server-side refusal fallback), OpenAI,

@@ -245,6 +245,7 @@
     if (m.provider === 'openai') return 'https://api.openai.com/v1/chat/completions';
     if (m.provider === 'gemini') return 'https://generativelanguage.googleapis.com/v1beta/models/' + m.model + ':generateContent';
     if (m.provider === 'compatible') return String(m.baseUrl || P.compatible.baseUrl).replace(/\/+$/, '') + '/chat/completions';
+    if (m.provider === 'bridge') return String(m.baseUrl || P.bridge.baseUrl).replace(/\/+$/, '') + '/chat/completions (local CLI bridge, testing only)';
     return 'local demo coder';
   }
 

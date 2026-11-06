@@ -256,7 +256,7 @@
             f('Provider', '<select data-f="provider">' + Object.keys(P).map(function (k) { return '<option value="' + k + '"' + (k === m.provider ? ' selected' : '') + '>' + esc(P[k].name) + '</option>'; }).join('') + '</select>') +
             f('Model id', '<input data-f="model" value="' + esc(m.model || '') + '" placeholder="' + (m.provider === 'demo' ? 'demo-a or demo-b' : 'exact model id') + '">') +
             (m.provider === 'demo' ? '' : f('API key' + (p.needsKey ? '' : ' (optional)'), '<input data-f="key" type="password" autocomplete="off" spellcheck="false" value="' + esc(m.key || '') + '">')) +
-            (m.provider === 'compatible' ? f('Base URL', '<input data-f="baseUrl" value="' + esc(m.baseUrl || p.baseUrl) + '">') : '') +
+            (m.provider === 'compatible' || m.provider === 'bridge' ? f('Base URL', '<input data-f="baseUrl" value="' + esc(m.baseUrl || p.baseUrl) + '">') : '') +
             (m.provider === 'anthropic' ? f('Effort', '<select data-f="effort">' + ['low', 'medium', 'high', 'xhigh', 'max'].map(function (e) { return '<option' + (e === (m.effort || 'high') ? ' selected' : '') + '>' + e + '</option>'; }).join('') + '</select>') : '') +
             (/openai|gemini|compatible/.test(m.provider) ? f('Temperature', '<input data-f="temperature" value="' + esc(m.temperature === undefined ? '' : m.temperature) + '" placeholder="model default">') : '') +
             '</div><div class="hint">' + esc(p.hint) + '</div></div>';
@@ -276,7 +276,7 @@
         if (box && e.target.dataset.f) {
           var m = S.models[+box.dataset.i], f = e.target.dataset.f;
           m[f] = e.target.value;
-          if (f === 'provider') { m.model = c.P[m.provider].model; if (m.provider === 'compatible') m.baseUrl = c.P.compatible.baseUrl; app().changed(false); app().render(); return; }
+          if (f === 'provider') { m.model = c.P[m.provider].model; if (c.P[m.provider].baseUrl) m.baseUrl = c.P[m.provider].baseUrl; app().changed(false); app().render(); return; }
           app().changed(false);
           if (f === 'label') box.querySelector('.model-head strong').textContent = c.modelNames()[+box.dataset.i];
         }
@@ -323,7 +323,7 @@
           stat('Units coded', S.run.units.length, S.run.units.filter(function (u) { return u.surface === 'interface'; }).length + ' interface') +
           stat('Duration', S.run.seconds + ' s', S.run.started.slice(0, 16).replace('T', ' ')) +
           stat('Calls', S.run.results.reduce(function (a, r) { return a + (r.calls || []).filter(function (x) { return x.ok; }).length; }, 0), S.run.results.reduce(function (a, r) { return a + r.errors; }, 0) + ' failed') +
-          stat('Tokens in / out', S.run.results.reduce(function (a, r) { return a + (r.tokensIn || 0); }, 0) + ' / ' + S.run.results.reduce(function (a, r) { return a + (r.tokensOut || 0); }, 0), 'all models') +
+          stat('Tokens in / out', S.run.results.reduce(function (a, r) { return a + (r.tokensIn || 0); }, 0) + ' / ' + S.run.results.reduce(function (a, r) { return a + (r.tokensOut || 0); }, 0), 'models that report them') +
           '</div><div class="row" style="margin-bottom:16px"><button class="btn primary" data-go="review">Review ' + R.reviewStats.pending + ' high-stakes labels</button><button class="btn" data-go="coded">See the coded text</button></div>';
       }
       return '<div class="view-inner">' +
@@ -920,7 +920,7 @@
       });
       var perRows = R.models.map(function (m) {
         var s = R.perModel[m], a = G.adds[m];
-        return [esc(m), esc(s.servedBy || ''), s.labels, a.only + ' <span class="faint xs">(' + pct(a.shareOfUnion) + ')</span>', s.invalidSpans, s.errors, s.calls, (s.ms / 1000).toFixed(1) + ' s', (s.tokensIn || 0) + ' / ' + (s.tokensOut || 0), num(s.stability), num(s.wording)];
+        return [esc(m), esc(s.servedBy || ''), s.labels, a.only + ' <span class="faint xs">(' + pct(a.shareOfUnion) + ')</span>', s.invalidSpans, s.errors, s.calls, (s.ms / 1000).toFixed(1) + ' s', (s.tokensIn || s.tokensOut ? (s.tokensIn || 0) + ' / ' + (s.tokensOut || 0) : '–'), num(s.stability), num(s.wording)];
       });
       var lv = R.levelDeviation.map(function (d) { return [esc(d.id), esc(d.harm)].concat(R.models.map(function (m) { return lvl(d.levels[m]); })); });
       var ap = R.applicabilityDeviation.map(function (d) { return [cmp(R.model, d.id)].concat(R.models.map(function (m) { return badge(d.states[m]); })); });
