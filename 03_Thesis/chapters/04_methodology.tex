@@ -24,9 +24,10 @@ in two steps. It first determines which harms are possible, that is, which harms
 practices make it capable of causing. It then analyses what the text communicates and compares
 the two, which identifies the harms that are missing. The study has three parts:
 \begin{enumerate}[itemsep=1pt,topsep=3pt]
-  \item \textbf{Constructing harm pathways.} The study identifies health-tracker functions
-    documented in the literature, maps who can access the data, and traces how those
-    conditions could lead to harm (Sections~\ref{sec:generic-model} and~\ref{sec:harm-trees}).
+  \item \textbf{Constructing harm pathways.} The study takes the use cases of health trackers
+    documented in the literature one at a time, maps who can access the data in each, and
+    traces how those conditions could lead to harm, building a subtree after each use case
+    (Sections~\ref{sec:generic-model} and~\ref{sec:harm-trees}).
   \item \textbf{Applying the model to each app.} The privacy policy, the store
     listing and the walkthrough show which parts of the model an app has. This
     decides which harms apply to it (Section~\ref{sec:apply}).
@@ -54,7 +55,7 @@ describes them afterwards.
   lab/.style={font=\scriptsize\bfseries,text=muted,anchor=west}]
   \node[lab] at (-7.75,2.45) {Once, for all apps};
   \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\ground of the harm trees};
-  \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\documented tracker functions};
+  \node[bx] (gen) at (-2,1.45) {\textbf{Use cases}\\one card and subtree each};
   \node[bx] (tree) at (2,1.45) {\textbf{Harm trees}\\pathways from components to harms};
   \node[bx=accent] (freeze) at (6,1.45) {\textbf{Instrument freeze}\\tree check, then one versioned bundle};
   \node[lab] at (-7.75,0.1) {For each app};
@@ -291,8 +292,12 @@ category.
 
 \subsection{Generic Health-Tracker Model Construction}
 \label{sec:generic-model}
+\highlight[orange!25]{The model is assembled use case by use case, with one subtree after each
+use case.}\todo{Procedure of D23 (proposed, 7 November 2026). Applied in Section~5.3 and
+Appendix~G; confirm or reject D23 before the freeze.}
 The study builds the harm trees on a \emph{generic health tracker}: a model that holds
-the functions that the papers of the literature review document for health trackers. It is not a
+the functions that the papers of the literature review document for health trackers, assembled
+from their use cases. It is not a
 claim to list every function a tracker could have; a function these papers do not document is
 missing from it. A real app is compared with it function by function. If the model
 has a function that an app lacks, the pathways through that function do not apply to
@@ -301,18 +306,40 @@ alike. What the comparison yields is a dated distance between an app's communica
 reference, not a judgement that a provider was obliged to describe each pathway.
 
 \paragraph{Precedents.} Knabenhans et al.\ model one functionality that covers many
-applications and judge harms once concrete uses are
-known~\parencite[\S4]{knabenhans2026harms}. De and Le Métayer likewise refine generic harm
-trees for a concrete system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}.
+applications, but judge harms only for concrete use cases, because the functionality alone does
+not say who receives which data; they build the trees of a first use case, define the
+capabilities that several harms share as common sub-trees, and reuse these trees for a second use
+case~\parencite[\S\S4, 4.2--4.3]{knabenhans2026harms}. De and Le Métayer likewise refine generic
+harm trees for a concrete system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}.
 
-\paragraph{Building the model.} The model is built in three steps. First, the analyst lists
-the functions documented in the papers of the literature review. Second, the analyst maps each function's
-data stores and flows. Third, the analyst identifies the actors who can reach each store or
-flow. A function enters the model if a paper of the
-literature review (Section~\ref{sec:lit-review}) or another cited source documents it for health
-trackers. Every part of the model is written as a feature that can be checked on a real
-app, because this is what makes the model applicable. Connected devices are outside the
-scope of the study, so the model stops at the app and its data.
+\paragraph{Use cases.} A use case is a function or a condition of use that a paper of the
+literature review (Section~\ref{sec:lit-review}) or another cited source documents for health
+trackers, such as logging cycle days on the phone or sharing records with a partner. For each
+use case, the analyst fills a card that answers six fixed questions:
+\begin{enumerate}[itemsep=1pt,topsep=3pt]
+  \item \textbf{Record.} What does the app record about the person, from the user or from sensors?
+  \item \textbf{Derive.} What does the app compute from the records?
+  \item \textbf{Phone.} Who else can reach the records on the phone itself?
+  \item \textbf{Leaves.} What leaves the phone, to whom, and under which condition?
+  \item \textbf{Asks.} What does the app ask of the user, or deny the user?
+  \item \textbf{Outside.} Which event outside the app does a pathway through this use case assume?
+\end{enumerate}
+Each answer names the components it implies (Section~\ref{sec:harm-trees}), with the page or
+section of its source and its basis: \emph{documented} if the source states it, \emph{argued} if
+the study infers it. A component that an earlier card defined is reused, not defined again.
+Every component is written as a feature that can be checked on a real app, because this is what
+makes the model applicable. Connected devices are outside the scope of the study, so the model
+stops at the app and its data.
+
+\paragraph{Order and stopping rule.} The use cases are taken in a fixed order: first those in
+which nothing leaves the phone, then those that bring in the provider, third parties and other
+people, and last the conditions that the app imposes on the user. The order decides only at
+which step an element first appears, not what the finished model contains
+(Section~\ref{sec:harm-trees}). Construction stops when two further use cases in a row, the
+\emph{check cases}, add no component, capability, route or pathway. The check cases are mapped
+with the same six questions after the model stands. They show whether the questions leave an
+answer that no component covers; because they draw on the same sources, they are not an
+independent test of the model.
 
 \subsection{Harm-Tree Construction}
 \label{sec:harm-trees}
@@ -357,6 +384,18 @@ measure blocks it only if it removes one of its necessary conditions. Unlike De 
 Métayer~\parencite[Sec.~IV-B]{de2016privacy}, the trees record which harms are possible, not
 how probable they are.
 
+\paragraph{Subtrees and the general tree.} After each card, the capabilities whose combinations
+now hold, and the pathways from them to harms, form the \emph{subtree} of that use case. A
+capability is defined once, in the use case that first needs it; every later harm and use case
+refers to the same definition, so a capability that leads to several harms is a common sub-tree
+in the sense of Knabenhans et al.~\parencite[\S4.2]{knabenhans2026harms}. A later use case can
+also add a \emph{route}: a new minimal combination of components that makes an existing
+capability possible. The general harm tree is the union of the subtrees. Because combinations
+use only AND and OR, a further component can add pathways but never removes one: each subtree is
+contained in the general tree, the general tree does not depend on the order of the use cases,
+and the tree of a real app is the part of the general tree that its own components support
+(Section~\ref{sec:apply}).
+
 \paragraph{Harm origins.} Each component is marked with its origin, the root
 cause of the pathways it belongs
 to~\parencite[\S4.1]{knabenhans2026harms}. A component belongs to the
@@ -388,9 +427,13 @@ consequence.
 \paragraph{From the method to the trees.} Table~\ref{tab:tree-steps} sets the steps of
 Knabenhans et al.\ that this study adapts next to what it does. Three rules keep the steps honest.
 Each pathway records its source and whether that source states the link
-(\emph{documented}) or the study argues it (\emph{argued}). Trees are stored in a
-machine-readable file, and a tested script checks that every node they use exists.
-A second person checks every pathway before the freeze (Section~\ref{sec:freeze}).
+(\emph{documented}) or the study argues it (\emph{argued}). The cards and the trees are stored
+in machine-readable files. A tested script derives the capabilities, routes and pathways of each
+use case from the cards, and stops unless every component enters through a card with a page or
+section, every node of a tree exists, the check cases add nothing and the result equals the
+stored trees. The analyst judges only the components, their evidence and the first definition
+of each capability; the rest is computed. A second person checks every card and every pathway
+before the freeze (Section~\ref{sec:freeze}).
 Like Knabenhans et al., the study does not claim to be complete: another pathway only
 adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}.
 
@@ -398,7 +441,7 @@ adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}.
 \centering
 \begin{singlespace}
 \caption[From the method of Knabenhans et al.\ to this study]{From the method of
-Knabenhans et al.~\parencite[\S4.1--4.3]{knabenhans2026harms} to this study.}
+Knabenhans et al.~\parencite[\S\S4.1--4.4]{knabenhans2026harms} to this study.}
 \label{tab:tree-steps}
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{5.2cm}>{\raggedright\arraybackslash}X@{}}
@@ -406,19 +449,22 @@ Knabenhans et al.~\parencite[\S4.1--4.3]{knabenhans2026harms} to this study.}
 \textbf{Step} & \textbf{Knabenhans et al.} & \textbf{This study} \\
 \midrule
 System & Concrete use cases of one functionality
-  & The generic health tracker (Section~\ref{sec:generic-model}) \\
+  & Use cases of the generic health tracker, one card each (Section~\ref{sec:generic-model}) \\
 \cmidrule[0.3pt]{2-3}
 Harms & From the literature on the use case, plus Citron and Solove and the CyberPeace Institute
   & Same categories (Section~\ref{sec:harm-categories}), filled with harms named for health trackers \\
 \cmidrule[0.3pt]{2-3}
 Capabilities & Found while analysing the use cases
-  & The capabilities K1--K10 and I1--I3 of the reference model (Appendix~\ref{app:reference-model}), taken from the papers of the review and from the method \\
+  & Combinations of components (K1--K10, I1--I3; Appendix~\ref{app:reference-model}), defined in the use case that first needs them; which hold after each card is computed \\
 \cmidrule[0.3pt]{2-3}
 Origins & Core, context and implementation; derived from a formal model
   & The same three origins, argued from the literature; a fourth mark for events outside the app \\
 \cmidrule[0.3pt]{2-3}
 Reuse & Common sub-trees; trees applying verbatim to other use cases
-  & A capability is defined once and used by every harm it leads to \\
+  & A capability is defined once and used by every later harm and use case; later use cases add routes \\
+\cmidrule[0.3pt]{2-3}
+Stopping & Two use cases and the deployment requirements; completeness not claimed
+  & Two check cases in a row that add nothing; completeness not claimed \\
 \cmidrule[0.3pt]{2-3}
 Baseline & Current practice in the EU
   & The user without the modelled pathway \\
