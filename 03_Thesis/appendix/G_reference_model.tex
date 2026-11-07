@@ -73,3 +73,60 @@ from its sources.
 \endhead
 \input{tables/reference-pathways}% the generated rows end with \bottomrule
 \end{longtable}}
+
+\section{Use Cases and Subtrees}
+\label{sec:app-use-cases}
+The harm trees of Section~\ref{sec:results-model} were built from the ten use cases below, in this
+order (decision D23). Each card answers six questions: what the app \emph{records}, what it
+\emph{derives}, who can reach the records on the \emph{phone}, what \emph{leaves} the phone and to
+whom, what the app \emph{asks} of the user, and which event \emph{outside} the app a pathway
+assumes. \emph{Basis}: documented if a source states it, argued if the study infers it. UC1 to UC7
+build the trees; UC8 to UC10 are check cases. The table is generated from
+\texttt{04\_Study/Reference-Model/use\_cases\_v1.yaml}.
+
+{\footnotesize
+\begin{longtable}{@{}p{1.1cm}p{5.6cm}p{2.0cm}p{1.5cm}p{3.5cm}@{}}
+\caption[Cards of the use cases]{Cards of the use cases.}
+\label{tab:usecase-cards}\\
+\toprule
+\textbf{Question} & \textbf{Answer} & \textbf{Components} & \textbf{Basis} & \textbf{Evidence} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Question} & \textbf{Answer} & \textbf{Components} & \textbf{Basis} & \textbf{Evidence} \\
+\midrule
+\endhead
+\input{tables/usecase-cards}% the generated rows end with \bottomrule
+\end{longtable}}
+
+\subsection*{Subtrees of UC4 to UC7}
+Drawn as Figure~\ref{fig:usecase-uc1}. A capability that gains only a route and no pathway is not
+drawn.
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC4}
+\caption[Subtree of UC4]{Subtree after UC4, sharing with other people.}
+\label{fig:usecase-uc4}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC5}
+\caption[Subtree of UC5]{Subtree after UC5, recording routes and places.}
+\label{fig:usecase-uc5}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC6}
+\caption[Subtree of UC6]{Subtree after UC6, processors, research partners and commercial use.}
+\label{fig:usecase-uc6}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC7}
+\caption[Subtree of UC7]{Subtree after UC7, terms of use.}
+\label{fig:usecase-uc7}
+\end{figure}

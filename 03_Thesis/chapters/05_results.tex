@@ -208,15 +208,177 @@ of their store listings, that are not selected when one rule changes.}
 \end{singlespace}
 \end{table}
 
-\section{Reference Model}
+\section{Harm Trees}
 \label{sec:results-model}
-The procedure of Sections~\ref{sec:generic-model} and~\ref{sec:harm-trees} yields a model with
-22 components: 3 core, 3 from the digital context, 13 implementation choices and 3 events
-outside the app. They enable 12 capabilities, which lead to the 7 harm categories along 21
-pathways. For 14 pathways a source states the link; 7 are argued from their sources. One
-capability of the review's table stays out (K3, keystrokes from smartwatch sensors), because it
-needs the connected device. Appendix~\ref{app:reference-model} lists the complete model. A tested
-script checks that every node a tree uses exists and that every component is used.
+\highlight[orange!25]{The harm trees were built use case by use case, with one subtree after
+each.}\todo{Procedure of D23 (proposed). The cards were drafted by the AI assistant from the ten
+papers after reference model v2 existed. The run shows that the model can be derived from use
+cases with page evidence, not that it was found this way, and the check cases rest on the same
+ten papers. A second person must check the cards (as D12 asks for the pathways). Move the
+procedure to Section~4.3 once D23 is confirmed.}
+Knabenhans et al.\ built theirs in the same way, from the age-verification and
+driving-licence use cases, because the functionality alone does not say who receives which data
+and under which conditions; a use case does~\parencite[\S4]{knabenhans2026harms}. Each of the first
+seven use cases is a function or a condition of use that a paper of the literature review
+documents for health trackers (Table~\ref{tab:usecase-steps}). For each, a card of six questions maps what the papers document
+to components, and the capabilities and pathways that become possible follow from the formulas of
+the capabilities (Appendix~\ref{sec:app-use-cases}). A subtree is the part of the tree that a use
+case adds. Three further use cases were mapped afterwards, to see whether anything new appears.
+
+\begin{table}[!t]
+\centering
+\begin{singlespace}
+\caption[Use cases in the order of construction]{Use cases in the order of construction and what
+each adds to the harm trees. \emph{Routes} are new minimal sets of components that make an
+existing capability possible (K6\,+1 is one new route to K6). The last column gives the running
+totals of components, capabilities and pathways. UC8 to UC10 are the check cases.}
+\label{tab:usecase-steps}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.2cm}>{\raggedright\arraybackslash}p{1.6cm}>{\raggedright\arraybackslash}p{2.3cm}r@{}}
+\toprule
+\textbf{Use case} & \textbf{New components} & \textbf{New cap.} & \textbf{New routes} & \textbf{New pathways} & \textbf{Total} \\
+\midrule
+\input{tables/usecase-steps}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Logging and predicting on the phone (UC1).} The first card names four components:
+the health records, the insights computed from them and the history that grows (all core), and
+the fact that anyone who can open the phone can read the entries (digital context). Nothing leaves
+the phone, yet one capability is already possible: people near the phone read the entries (K9,
+Figure~\ref{fig:usecase-uc1}). It leads to three harms, physical (P04), psychological (P08) and
+reputational (P19). No component of this subtree is a choice of the provider.
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC1}
+\caption[Subtree of UC1]{Subtree after UC1. Harms at the top, the capability below them, then
+its components. Colour marks the origin of a component (black core, blue digital context, red
+implementation choice, grey event outside the app); shaded components are new in this use case;
+the labels on the lines are pathway identifiers.}
+\label{fig:usecase-uc1}
+\end{figure}
+
+\paragraph{Account and a copy on the provider's servers (UC2).} The second card adds an account, a
+copy of the records that may lie in another country, and two events outside the app, an attacker
+gaining access and an authority demanding data. Two capabilities become possible: attackers read
+stored data (K6), and law enforcement obtains records (K7), either from the server copy or from
+the phone itself (CX1, from UC1). They open six pathways to economic, psychological, autonomy, reputational and
+societal harm (Figure~\ref{fig:usecase-uc2}). After UC2, six of the seven harm categories have
+a tree.
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC2}
+\caption[Subtree of UC2]{Subtree after UC2, drawn as in Figure~\ref{fig:usecase-uc1}.}
+\label{fig:usecase-uc2}
+\end{figure}
+
+\paragraph{Usage analytics and advertising (UC3).} The third card adds analytics and advertising
+services and the identifiers they read. Profiling across services (K5) and the sorting of users
+into classes (K10, through an advertising partner and a persistent identifier) become possible,
+and K6 gains a route through the analytics service. The four new pathways reach psychological
+(P05), autonomy (P13), discrimination (P16) and societal harm (P20) (Figure~\ref{fig:usecase-uc3}).
+Discrimination is the last harm to appear; from UC3 on, all seven harm trees exist.
+
+\begin{figure}[H]
+\centering
+\input{tables/usecase-tree-UC3}
+\caption[Subtree of UC3]{Subtree after UC3, drawn as in Figure~\ref{fig:usecase-uc1}. K6 and K7
+from UC2 gain no pathway here and are not drawn; K6 gains the route through IM3.}
+\label{fig:usecase-uc3}
+\end{figure}
+
+\paragraph{Later build use cases (UC4 to UC7).} The remaining four use cases add pathways to harms
+that already have a tree (Figures~\ref{fig:usecase-uc4} to~\ref{fig:usecase-uc7} in
+Appendix~\ref{sec:app-use-cases}). Sharing with
+other people (UC4) lets insurers and employers use shared or obtained data (K8: P02, P15) and opens
+a second route to K9. Recording routes (UC5) lets others locate homes and places (K1: P03).
+Processors, research partners and commercial use (UC6) make the inference of personal attributes
+(K2: P14) and the re-identification of de-identified records (K4: P17) possible and add three
+routes to K6, K8 and K10. The terms of use (UC7) add three incapabilities of the user, to use a
+function without agreeing, to delete or take out the data and to stop a flow (I1 to I3: P09 to
+P11), all autonomy harms.
+
+\paragraph{Common sub-trees.} Six of the twelve capabilities lead to more than one harm
+(Table~\ref{tab:usecase-common}). They are defined once, in the use case that first needs them,
+and every harm refers to them, as ceasing service and tracking are shared by the harm trees of
+Knabenhans et al.~\parencite[Fig.~5]{knabenhans2026harms}. They carry 15 of the 21 pathways.
+The other six capabilities (K1, K2, K4, I1, I2, I3) lead to one harm each.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Common sub-trees of the harm trees]{Capabilities that lead to more than one harm. The
+harms are economic (ECO), physical (PHY), psychological (PSY), autonomy (AUT), discrimination
+(DSC), reputational (REP) and societal (SOC).}
+\label{tab:usecase-common}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{1.8cm}l>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Capability} & \textbf{Actor} & \textbf{Harms} & \textbf{From} & \textbf{Needs} \\
+\midrule
+\input{tables/usecase-common}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\paragraph{Check cases (UC8 to UC10).} The same six questions were answered for diet and weight
+logging (UC8), mood and smoking-cessation tracking (UC9) and sleep and heart rate synced from a
+wearable (UC10). Every answer found a component that the model already holds. None of the three
+adds a component, a capability, a route or a pathway (the last rows of
+Table~\ref{tab:usecase-steps}), so the construction stopped. Five of the ten answers of the
+check cases are documented by a source and five are argued, and the check cases draw on the
+same ten papers as the build cases. One item of the sources does not
+map: the inference of keystrokes or PINs from the motion sensors of a watch (K3), which needs
+the connected device and is outside the study (Section~\ref{sec:scope}).
+
+\paragraph{The general harm tree.} After the seven build use cases, the tree holds 23
+components (3 core, 3 from the digital context, 14 implementation choices and 3 events outside
+the app), 12 capabilities and 21 pathways to seven harms. It is the reference model of
+Appendix~\ref{app:reference-model}; Figure~\ref{fig:usecase-general} shows how its capabilities
+connect to the harms. Twenty of the 23 components enter through an answer that a source
+documents for health trackers; three are argued: the growing history (CO3), another person
+using the phone (CX1) and an attacker gaining access (EX1). For 14 pathways a source states the
+link; 7 are argued from their sources.
+Reordering the seven build use cases gives the same components, capabilities and pathways (a
+test of the script draws five random orders); only the use case in which an element first appears
+changes. Because every capability is a combination of AND and OR over components, a further
+component can add pathways but never removes one, so each subtree is contained in the general
+tree.
+
+\begin{figure}[!t]
+\centering
+\input{tables/usecase-general-tree}
+\caption[General harm tree]{The general harm tree as harms (grey) and capabilities (green; darker
+where a capability leads to more than one harm). Each line is one of the 21 pathways;
+the components of each capability are in Table~\ref{tab:reference-capabilities}.}
+\label{fig:usecase-general}
+\end{figure}
+
+\paragraph{Pathways without a provider's choice.} Six of the 21 pathways need no implementation
+choice: P04, P08 and P19 through K9 (CO1 and CX1), and P07, P12 and P21 through K7 (EX2 and CX1).
+They reach physical, psychological, autonomy, reputational and societal harm. Economic and
+discrimination harm have no such pathway: every route to them needs at least one implementation
+choice (Table~\ref{tab:usecase-harms}).
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[Pathways of the harm trees by harm]{Pathways of the harm trees by harm, with the use
+case in which each became possible in the order of Table~\ref{tab:usecase-steps}, and the
+pathways that need no implementation choice.}
+\label{tab:usecase-harms}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.2cm}@{}}
+\toprule
+\textbf{Harm} & \textbf{Pathways (use case)} & \textbf{Capabilities} & \textbf{No implementation choice} \\
+\midrule
+\input{tables/usecase-harms}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
 
 \section{What Privacy Communication Covers}
 \todo[inline]{To be written.}
