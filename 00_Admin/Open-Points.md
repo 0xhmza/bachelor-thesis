@@ -32,7 +32,7 @@ statement that categories are keywords only. Still open, in the order of the
 | # | Open point | Affects |
 |---|---|---|
 | 8 | ~~Confirm or replace the ten papers of the literature review.~~ Confirmed by the author on 2026-11-06 ([D21](Decisions/D21_brief-literature-review.md)). | Methodology 4.2, Results 5.1 |
-| 9 | Related Work: for each topic, the gap and its link to RQ1–RQ4; justify the questions with it. | Chapter 3 |
+| 9 | Related Work: for each topic, the gap and its link to RQ1–RQ4; justify the questions with it. *Drafted 2026-11-12 (four strands, each ending in its open question and RQ; Table 3.1), from the search in [RelatedWork-Search_2026-11-12](../01_Literature/review/RelatedWork-Search_2026-11-12.md); awaiting the author's reading.* | Chapter 3 |
 | 10 | Additional question on harms the companies do not cover (the omission half of RQ1 already asks it). | Introduction, Methodology 4.1.1 ([D22](Decisions/D22_research-questions.md)) |
 | 11 | RQ2 postponed; RQ1, RQ3, RQ4 through app analysis and the walkthrough. Postponed as removed, or answered later? | Whole study ([D22](Decisions/D22_research-questions.md)) |
 | 12 | "Harm trees for 3 apps": does it replace the generic reference tree, or only relieve per-app tree building? | Methodology 4.3 ([D12](Decisions/D12_reference-model.md)) |

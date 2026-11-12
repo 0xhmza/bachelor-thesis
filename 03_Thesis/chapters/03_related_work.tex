@@ -1,37 +1,277 @@
 % Migrated from proposal/proposal.tex (5 October 2026) on 14 October 2026.
+% Restructured on 12 November 2026: each section presents the literature, states
+% the open question it leaves and names the research question that takes it up.
 \chapter{Related Work}
 \label{ch:related-work}
 
-Prior studies examine whether disclosed practices match observed behaviour.
-Huckvale et al.\ found that 29 of 36 depression and smoking-cessation apps
-transmitted data to Google or Facebook services. Only 12 of 28 apps sending
-data to Google and 6 of 12 sending data to Facebook named the respective
-company in their policies~\parencite{huckvale2019assessment}. A study of nearly
-5{,}000 Android apps found that 81\,\% misrepresented collection or sharing in
-the Data Safety section~\parencite{arkalakis2024abandon}. Other work analyses
-Apple's privacy labels~\parencite{li2022ios} and fertility trackers through
-policy analysis, interface inspection \todo{the reference interface inspection may be useful for the cognitive walkthrough} and network measurement
-\parencite{shipp2020period,malki2024exploring,hudig2025intimate}.
+Four strands of research bear on the research questions. The first documents
+which privacy harms health tracking can cause (Section~\ref{sec:rw-harms}). The
+second analyses what health apps communicate about privacy
+(Section~\ref{sec:rw-communication}). The third studies how privacy texts word
+risk and protection (Section~\ref{sec:rw-framing}). The fourth uses language
+models to analyse privacy text (Section~\ref{sec:rw-llm}). Each section ends with
+the question the strand leaves open and the research question that takes it up;
+Section~\ref{sec:rw-gap} brings the four together.
 
-User studies offer a complementary view. Fitness tracker users considered
-harmful data-use scenarios plausible but often unlikely
-\parencite{gabriele2020understanding}. US period-tracker users reported privacy
-concerns after Roe v.~Wade was overturned~\parencite{cao2024deleted}.
-Provider risk communication has also been studied. Zou et al.\ analysed 161
-breach notifications drawn at random from those filed with the Maryland
-Attorney General between January and June 2018. Hedge
-terms such as \emph{may} or \emph{likely} appeared in 112 (70\,\%), and 64
-(40\,\%) claimed to have no evidence of misuse, a statement the authors
-consider to downplay the risk, because a lack of evidence is not evidence of
-absence. Only 9 notifications linked the exposed data to concrete misuse
-scenarios, which the authors name as the effective strategy
-\parencite[\S5, p.~7]{zou2019might}. Doan et al.\ examined risk and benefit information in
-six genetic-testing companies' privacy and research-consent policies
-\parencite{doan2024transparency}. Moniz and Almeida gave eight women in
-Portugal a design-probe kit on privacy and consent in intimate health
-technologies. They conclude that a one-size-fits-all notice leads back to
-habituation, and propose that privacy mechanisms should instead inform users
-of the specific risks of the data processing \parencite{moniz2025toward}.
+\section{Privacy Harms of Health Tracking}
+\label{sec:rw-harms}
 
-\todo[inline]{As more literature is being explored, this section will be extended with additional literature}
-\todo[inline, color=red]{Privacy Analysis using LLM works should be added as well.}
+\paragraph{Documented capabilities.} Security and privacy research has shown in
+detail what others can learn from the data of health trackers. A survey of
+wearable activity trackers collects the inferences and threats this data
+allows~\parencite{niksirat2024wearable}. Shared routes reveal home locations
+even behind the privacy zones that fitness platforms
+offer~\parencite{hassan2018analysis,dhondt2022run}, and elevation profiles
+alone can reveal where an activity took place~\parencite{meteriz2024learning}.
+The privacy controls of these platforms are seldom used: an analysis of 197{,}873
+public activity records on Strava and Garmin Connect found a gap between the
+controls available and their adoption~\parencite{ioannou2026options}.
+Personality traits can be inferred from tracker data~\parencite{zufferey2023watch},
+and smartwatch motion sensors reveal what a user types on a
+keyboard~\parencite{liu2015good}. De-identification offers little protection: a
+systematic review of 72 studies found correct re-identification rates from
+wearable data of typically 86 to 100\,\%~\parencite{chikwetu2023deidentification}.
+Beyond inference, health apps pass data to third parties. Of 20{,}991 health
+apps on Google Play, 88\,\% contained code that could collect user
+data~\parencite{tangari2021mobile}, and depression and smoking-cessation apps
+sent data to Google and Facebook services that their policies did not
+name~\parencite{huckvale2019assessment}.
+
+\paragraph{Harms named by users and analysts.} For reproductive health, the
+literature names the actors and consequences more directly. Mehrnezhad and
+Almeida trace the risks of fertility apps to the mismanagement, misuse and
+misappropriation of intimate data~\parencite{mehrnezhad2021caring}, and Erickson
+et al.\ describe the threats that arise from the misuse of femtech data before
+analysing its flows~\parencite{erickson2022expecting}. After the overturn of Roe
+v.~Wade, period-tracker users feared access by law enforcement and third
+parties~\parencite{cao2024deleted}. Interviewed users of female health apps
+named criminalisation, distress from social stigma, third-party sharing and
+targeted advertising~\parencite{kaleva2026political}. Fitness tracker users
+judged harmful data uses plausible but often
+unlikely~\parencite{gabriele2020understanding}. Hammond and Burdon argue that
+menstrual apps cause intimate harms that disrupt users' relationships, beyond the
+loss of control that information privacy law
+addresses~\parencite{hammond2024intimate}.
+
+\paragraph{Harms as a unit of analysis.} Legal scholarship separates a privacy
+violation from the harm that follows from it and sorts harms into
+types~\parencite{solove2006taxonomy,calo2011boundaries,citron2021harms}. Harm
+trees make this distinction usable for a system analysis: they connect system
+components, through the capabilities they give an actor, to the harms that can
+result~\parencite{de2016privacy,de2017refinement}. Knabenhans et al.\ apply harm
+trees to the European Digital Identity Framework and show which harms its
+privacy-enhancing technologies leave possible~\parencite{knabenhans2026harms}.
+Taxonomies of harm are also used to code reported incidents: one study coded 369
+privacy incidents reported by members of the public and found that most of the
+harms were fear and a loss of psychological safety rather than tangible
+damage~\parencite{chapman2025beyond}.
+
+\paragraph{Open question.} This literature establishes what can go wrong. Its
+findings come from attacks, measurements, the analyses of researchers and the
+accounts of users. They have not been assembled into a reference of the harms
+that apply to a health tracking app, and they have not been used to ask which of
+these harms providers themselves tell their users about. Harm trees have been
+applied to a digital identity system, not to consumer health
+apps~\parencite{knabenhans2026harms}. RQ1 builds such a reference for health
+trackers (Section~\ref{sec:framework}) and measures, for each app, which of the
+applicable harms its policy and interface mention and which they leave out.
+
+\section{Privacy Communication of Health Apps}
+\label{sec:rw-communication}
+
+\paragraph{Privacy policies.} The most studied surface is the privacy policy.
+Early studies asked whether health apps had a policy at all and how readable and
+complete it was~\parencite{sunyaev2015availability,robillard2019availability,oloughlin2019reviewing}.
+Of the 23 most popular women's health apps assessed by Alfawzan et al., 70\,\%
+displayed a privacy policy, 87\,\% shared user data with third parties and
+57\,\% informed users about data security~\parencite{alfawzan2022privacy}. Shipp
+and Blasco analysed the policies of 30 Android menstrual apps and found that
+reproductive data was mostly not covered by them, although the apps needed it to
+work~\parencite{shipp2020period}. Mehrnezhad and Almeida evaluated the privacy
+notices and tracking of 30 fertility apps against the
+GDPR~\parencite{mehrnezhad2021caring}. Krumbholz et al.\ followed whether the
+policies of more than 30 period trackers changed their language after the
+\emph{Dobbs} decision~\parencite{krumbholz2024tracking}, and Hammond and Burdon
+examined how the control-based protections of the Australian Privacy Act apply
+to the policies of 20 menstrual apps~\parencite{hammond2024intimate}.
+
+\paragraph{Policies against behaviour and labels.} A second line compares what
+policies say with what apps do. Huckvale et al.\ found that only 12 of 28 apps
+sending data to Google and 6 of 12 sending data to Facebook named the company
+in their policies~\parencite{huckvale2019assessment}; earlier, 38 of 49
+accredited health apps that transmitted information and had a policy did not
+describe the personal information included in the
+transmissions~\parencite{huckvale2015unaddressed}. Similar gaps appear in femtech
+apps~\parencite{erickson2022expecting} and in mental health apps, where each of 25
+apps embedded at least one tracker its policy did not name~\parencite{georgiou2026mind}.
+The store labels introduced by Apple and Google repeat the problem at scale:
+81\,\% of nearly 5{,}000 Android apps misrepresented collection or sharing in the
+Data Safety section~\parencite{arkalakis2024abandon}, 97\,\% of iOS apps labelled
+\emph{Data Not Collected} had a policy indicating otherwise~\parencite{ali2024honesty},
+and across 6{,}051 Android apps, policy and label disagreed most for sensitive
+data and for sharing~\parencite{khatun2026disclosure}. For telehealth apps, the
+Data Safety section raised users' confidence in their expectations without
+making them more accurate, and users overestimated their legal
+protection~\parencite{frik2026bitesize}.
+
+\paragraph{Interfaces and several surfaces.} Fewer studies look at the
+interface. Hutton et al.\ assessed self-tracking apps and their policies against
+privacy heuristics~\parencite{hutton2018assessing}. Malki et al.\ combined a
+thematic analysis of the Data Safety sections and policies of 20 female health
+apps with a privacy-focused usability inspection of the apps, and found
+inconsistencies between policy content and privacy-related app features, flawed
+consent and deletion mechanisms and covert collection of sensitive
+data~\parencite{malki2024exploring}. Pybus et al.\ combined an audit of app
+manifests, a review of policies and Data Safety sections and walkthroughs of the
+interfaces of 14 baby-tracking apps, all of which shared data with third
+parties~\parencite{pybus2026extraction}. Bahrini et al.\ studied the privacy
+policies, data sharing and consent dark patterns of mHealth apps used in
+Germany~\parencite{bahrini2025transparency}. Users' reviews of femtech apps
+describe deceptive interface patterns and the harms these
+cause~\parencite{alsebayel2025ad}. Other studies compare the policy with the
+store description of depression apps~\parencite{singh2023assessment}, audit three
+period trackers as a user would, against data-protection and intimate-privacy
+criteria~\parencite{white2026experiential}, or score four reproductive health
+apps and discuss the risks of IP tracking, advertising partners and possible
+subpoenas~\parencite{zadushlivy2025exploration}.
+
+\paragraph{Risk statements in policies.} Only a few studies record whether a
+policy speaks of risks at all. LaMonica et al.\ assessed the policies of 34
+youth mental-health apps and e-tools: 8 explicitly warned about the privacy risks
+of services outside the provider's control, such as third-party advertisements,
+and 3 gave some detail~\parencite[Table~4]{lamonica2021privacy}. Malki et al.\
+report that 13 of 19 policies stated that law enforcement or regulators might
+access user data, but explained little about when this could happen or what
+rights users would then have; one policy contradicted the in-app FAQ, which
+promised that data would never be shared with the government or law
+enforcement~\parencite[\S4.2.5, p.~8]{malki2024exploring}.
+
+\paragraph{Open question.} These studies code data practices: what is
+collected, who receives it, whether consent is asked, whether the policy is
+available, readable and lawful, and whether it matches the label or the app's
+traffic. Where harms appear, they are the researchers' threat model or the
+users' concerns, not a unit of the provider's text; the closest exception is a
+single checklist item on risk warnings~\parencite{lamonica2021privacy}. Policy
+and interface are compared for consistency of practices and features, mostly
+for female health apps~\parencite{malki2024exploring}, not for what each surface
+says about consequences. RQ1 therefore codes harms, the capabilities that lead to
+them and the data flows they need as the units of the provider's communication,
+across all kinds of health trackers. RQ4 asks whether the policy and the
+interface of the same app differ in these terms, and whether what the policy
+discloses can be found where users act in the interface.
+
+\section{Wording of Risk and Protection in Privacy Texts}
+\label{sec:rw-framing}
+
+\paragraph{Hedging and downplaying.} A body of work shows that privacy texts can
+disclose a practice and still blur its consequences. Pollach described the
+communicative strategies with which online privacy policies present data
+handling~\parencite{pollach2005typology}. Policies use vague
+terms~\parencite{lebanoff2018automatic}, and a corpus study of 350 policies found
+that many controllers continue to use strategic indeterminacy under the
+GDPR~\parencite{green2025strategic}. In breach notifications, hedge terms such as
+\emph{may} or \emph{likely} appeared in 112 of 161 notices (70\,\%), 64 (40\,\%)
+claimed to have no evidence of misuse, and only 9 linked the exposed data to
+concrete misuse scenarios~\parencite[\S5, p.~7]{zou2019might}. The more severe a
+breach, the longer and more complex the notification letter and the fewer
+numbers it contains~\parencite{jackson2019breach}. In health, 9 of 19 policies of
+female health apps disclaimed responsibility for the practices of third parties
+while claiming to vet them, and shifted the review of third-party policies to the
+user; all of them stated that the risk of a breach could not be
+eliminated~\parencite[\S4.2.7, pp.~8--9]{malki2024exploring}. Promotional materials of
+femtech apps frame the apps as empowering their users~\parencite{hendl2022tales},
+and Apple's privacy text for its Health app constructs a bounded form of user
+control~\parencite{serttas2026bounded}.
+
+\paragraph{Protection claims.} A second body of work questions what protective
+measures promise. Martin et al.\ argue that limiting third-party access, using
+inferences instead of raw data and keeping data on the device do not prevent
+privacy violations when the technique does not address the violating
+behaviour~\parencite{martin2025cookies}. An analysis of 257 privacy incidents
+reaches a similar conclusion: privacy-enhancing technologies that enable a
+functionality still permit the harms inherent in that
+functionality~\parencite{veitch2026enhancing}. Descriptions of differential
+privacy set users' expectations haphazardly~\parencite{cummings2021description},
+and explanations of how the technique works do not set accurate expectations,
+whereas explanations of its consequences do better~\parencite{smart2025models}.
+Policies can contradict their own commitments elsewhere in the same
+text~\parencite{brackin2026privacy}, and the de-identification that health apps
+cite as protection is weak against re-identification of wearable
+data~\parencite{chikwetu2023deidentification}. Doan et al.\ found that 81\,\% of 62
+information flows in genetic-testing policies were vague and that the policies
+lacked the collective risks of sharing
+data~\parencite{doan2024transparency}.
+
+\paragraph{Calls for risk communication.} Several authors conclude that notices
+should communicate harms rather than practices. Ebert et al.\ argue that the
+emphasis on disclosing data practices leaves users uncertain about potential
+harms and propose \emph{risk transparency}, modelled on risk communication in
+drug safety and public health~\parencite{ebert2026procedures}. Moniz and Almeida
+gave eight women in Portugal a design-probe kit on privacy and consent in
+intimate health technologies; they conclude that a one-size-fits-all notice leads
+back to habituation and that privacy mechanisms should inform users of the
+specific risks of the processing~\parencite{moniz2025toward}.
+
+\paragraph{Open question.} The wording of risk has been coded for breach
+notifications and for privacy policies in general, and the strength of
+protection claims has been examined for big-technology PETs, differential
+privacy and genetic testing. For health tracking apps, the evidence is
+incidental: findings on responsibility shifting and breach disclaimers in one
+study of female health apps~\parencite{malki2024exploring} and a discourse
+analysis of one provider~\parencite{serttas2026bounded}. No study found here
+codes how health app providers word the harms they name, and none relates a
+claimed protection to the pathways to harm it would have to interrupt. The calls
+for risk transparency~\parencite{ebert2026procedures,moniz2025toward} also lack a
+measure of the current state. RQ2 codes whether a named harm is acknowledged,
+qualified, minimised, denied or presented as the user's responsibility, with
+labels adapted from Zou et al.\ (Section~\ref{sec:axes}). RQ3 records each
+protection claim with its scope and strength and checks it against the
+pathways of the harm trees.
+
+\section{Language Models for Privacy-Text Analysis}
+\label{sec:rw-llm}
+
+Large language models are now used to annotate privacy policies at scale.
+Studies evaluate them for annotating data practices~\parencite{rodriguez2024llm},
+contextual-integrity parameters~\parencite{chanenson2025automating} and the
+transparency requirements of the GDPR at word level~\parencite{cory2026wordlevel},
+for assessing policies under recent regulations~\parencite{xie2025evaluating},
+for comparing policies with store labels~\parencite{ali2024honesty,khatun2026disclosure},
+for extracting the privacy claims of mental health apps~\parencite{georgiou2026mind}
+and for detecting contradictions within a policy~\parencite{brackin2026privacy}.
+Each reports an evaluation against human annotation. Their tasks concern what is
+disclosed, not which harms a text names or how it words them. They inform the
+design and validation of the coding in this study (Section~\ref{sec:llm}) rather
+than a research question.
+
+\section{Research Gap and Research Questions}
+\label{sec:rw-gap}
+
+Taken together, the four strands leave one question open: what health tracking
+providers tell their users about the harms their data can lead to. Harms are
+documented but not compared with providers' statements; communication is coded
+for practices, not harms; the wording of risk and protection is studied outside
+health tracking; and language models are validated for practices, not for harms
+or stance. The closest studies, Malki et al.\ and LaMonica et
+al.~\parencite{malki2024exploring,lamonica2021privacy}, touch on harms in single
+findings or a single item. Table~\ref{tab:rw-gap} links each strand to its gap
+and to the research question that takes it up.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption{Strands of related work, their open questions and research questions.}
+\label{tab:rw-gap}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.2cm}@{}}
+\toprule
+\textbf{Strand} & \textbf{What is known} & \textbf{Open question} & \textbf{RQ} \\
+\midrule
+Harms (\ref{sec:rw-harms}) & Inference, re-identification, third-party sharing, law-enforcement access; harm trees for digital identity & No reference of applicable harms; not compared with providers' statements & RQ1 \\
+Communication (\ref{sec:rw-communication}) & Policy availability, readability and compliance; policy against traffic and labels & Harms not coded as units of the text; surfaces compared for practices only & RQ1, RQ4 \\
+Wording (\ref{sec:rw-framing}) & Hedging in breach notices and policies; limits of PET promises & Stance and protection claims not studied for health trackers & RQ2, RQ3 \\
+Language models (\ref{sec:rw-llm}) & Validated annotation of data practices and compliance & No validated coding of harms or stance & Method \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}

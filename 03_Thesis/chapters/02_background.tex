@@ -1,42 +1,110 @@
 % Migrated from proposal/proposal.tex (5 October 2026) on 14 October 2026.
+% Written out on 12 November 2026 from the commented proposal text; the facts were
+% checked against the sources cited.
 \chapter{Background}
 \label{ch:background}
-\todo{Will be done last.}
-%
-%In Germany, 73\,\% of smartphone users use health apps to support fitness,
-%nutrition or general wellbeing~\parencite{bitkom2025health}. Health trackers can combine information entered by users, such as symptoms
-%and cycle dates, with sensor readings and usage records. Together, these data
-%may reveal more than users directly provide. A review of 236 studies reports
-%that wearable tracker data can support inferences about private attributes,
-%including personality traits~\parencite{niksirat2024wearable}.
-%
-%Data concerning health and a person's sex life are special categories under
-%Article~9(1) of the General Data Protection Regulation (GDPR). Activity data
-%falls within the health-data definition when
-%it reveals information about health status (Article~4(15), Recital~35).
-%Articles~5 and~12 require fair and transparent processing and clear information.
-%Articles~13 and~14 specify information duties, including purposes, recipients
-%and rights~\parencite{gdpr2016}. Guidance allows this information to be layered
-%across a policy and interface notices~\parencite{wp292018transparency}. Misleading commercial claims are also subject to
-%consumer-protection law~\parencite{ucpd2005}. \highlight[orange!25]{The study does not assume that
-%	all communication about harms is voluntary. It asks what providers say about
-%	possible consequences alongside their data-practice disclosures.}
-%
-%A privacy violation and a privacy harm are related but distinct. Citron and
-%Solove describe harms such as financial loss, distress and damage to
-%relationships~\parencite{citron2021harms}. Knabenhans et al.\ use \emph{harm
-%trees} to study the European Digital Identity Framework
-%\parencite[\S4.1]{knabenhans2026harms}. A tree links system components, such as
-%information disclosed to another party, to capabilities, such as tracking or
-%inference, and then to possible harms. Components may arise from the core
-%functionality, its digital context or implementation choices. Their analysis
-%shows limits of privacy-enhancing technologies (PETs) within that specific
-%system and threat model~\parencite{knabenhans2026harms}.
-%
-%This thesis will adapt the method to trackers. It will distinguish an app's
-%intended prediction for its user from an adversary's ability to obtain or use
-%that prediction. Martin et al.\ question whether limiting
-%third-party access, using inferences instead of raw data, or processing data on
-%the device necessarily prevents privacy violations~\parencite{martin2025cookies}.
-%The relevant question is which protection is claimed, against which actor and
-%under which conditions.
+
+This chapter introduces the apps the study analyses, the legal rules on what
+their providers must tell users, the distinction between a privacy violation and
+a privacy harm, and the protective techniques whose claims the study examines.
+
+\section{Health Tracking Apps}
+\label{sec:bg-trackers}
+
+In Germany, 73\,\% of smartphone users use apps to support their fitness,
+nutrition or general wellbeing. In a representative survey of 1{,}145 people
+aged 16 and over, 43\,\% used a central health app such as Apple Health, Google
+Fit or Health Connect, 37\,\% used sport apps that record activities such as
+running or cycling, and 30\,\% used apps that record body data such as heart
+rate, sleep or breathing~\parencite{bitkom2025health}.
+
+Health trackers combine information that users enter, such as symptoms, meals or
+cycle dates, with sensor readings and usage records. Together, these data can
+reveal more than users directly provide. A survey of 236 studies of wearable
+activity trackers reports that their data can be mined to infer private
+information such as the user's personality traits~\parencite{niksirat2024wearable}.
+The study covers such apps on the German market, including the companion apps
+of wearables (Section~\ref{sec:rq-scope}).
+
+\section{Legal Framework}
+\label{sec:bg-law}
+
+\paragraph{Health data.} Data concerning health and data concerning a person's
+sex life are special categories of personal data under Article~9(1) of the
+General Data Protection Regulation (GDPR). Data concerning health are personal
+data that reveal information about a person's health status (Article~4(15) and
+Recital~35)~\parencite{gdpr2016}. The Court of Justice of the European Union
+reads these categories widely. Data that can reveal sensitive information
+\enquote{by means of an intellectual operation involving comparison or
+deduction} fall within Article~9(1)~\parencite[paras.~120, 125]{cjeu2022ot},
+and the data customers enter when ordering pharmacy-only
+medicines online are data concerning health even where it is only probable that
+the medicines are meant for them~\parencite[para.~90]{cjeu2024lindenapotheke}.
+Activity, sleep or cycle records can therefore be health data when they allow
+such conclusions.
+
+\paragraph{Transparency.} Article~5(1)(a) requires that personal data be
+processed lawfully, fairly and transparently, and Article~12 requires that
+information be given in a concise, transparent, intelligible and easily
+accessible form, using clear and plain language. Articles~13 and~14 list what a
+controller must tell data subjects, among them the purposes of processing, the
+recipients and the data subjects' rights~\parencite{gdpr2016}. Guidance of the
+Article~29 Working Party, endorsed by the European Data Protection Board, allows
+this information to be layered across a privacy statement and notices in the
+interface~\parencite{wp292018transparency}. The policy and the interface are
+therefore both places where a provider informs users. Misleading commercial
+claims, including claims about privacy, are also subject to consumer-protection
+law~\parencite{ucpd2005}. \highlight[orange!25]{The study does not assume that
+all communication about harms is voluntary. It asks what providers say about
+possible consequences alongside their data-practice disclosures.}
+
+\paragraph{Wellness applications in the European Health Data Space.} The
+Regulation on the European Health Data Space defines a \emph{wellness
+application} as software intended by its manufacturer to be used by a natural
+person for processing electronic health data, specifically for providing
+information on the health of natural persons or the delivery of care for
+purposes other than the provision of healthcare
+(Article~2(2)(ab))~\parencite{ehds2025}. A wellness application needs a label
+only if its manufacturer claims interoperability with electronic health record
+systems (Article~47), and data from wellness applications are among the
+minimum categories of electronic health data made available for secondary use
+(Article~51(1)(i)). The Regulation applies from 26~March 2027, with later dates
+for some provisions, including Article~47 (Article~105)~\parencite{ehds2025}.
+
+\section{Privacy Violations and Privacy Harms}
+\label{sec:bg-harms}
+
+A privacy violation and a privacy harm are related but distinct. Calo separates
+subjective harm, the perception of unwanted observation, from objective harm,
+the unanticipated or coerced use of information against a
+person~\parencite{calo2011boundaries}. Citron and Solove describe the harms that
+follow from privacy violations, among them physical, economic, reputational,
+psychological, autonomy, discrimination and relationship
+harms~\parencite{citron2021harms}. Knabenhans et al.\ use \emph{harm trees} to
+study the European Digital Identity
+Framework~\parencite[\S4.1]{knabenhans2026harms}. A tree links system
+components, such as information disclosed to another party, to capabilities,
+such as tracking or inference, and then to possible harms. Components may arise
+from the core functionality, its digital context or implementation choices.
+Their analysis distinguishes pathways to harm that are inherent to the core
+functionality from pathways that privacy-enhancing technologies can prevent, and
+shows that these technologies reduce information flows but fall short of
+mitigating the harms of that system~\parencite{knabenhans2026harms}. This study
+adapts the method to health trackers (Section~\ref{sec:framework}). It
+distinguishes an app's intended prediction for its user from an adversary's
+ability to obtain or use that prediction.
+
+\section{Privacy-Enhancing Technologies and Protection Claims}
+\label{sec:bg-pets}
+
+Providers describe measures that protect users' data, such as encryption,
+pseudonymisation or de-identification, aggregation and processing on the device.
+Martin et al.\ examine three principles behind the privacy-enhancing techniques
+of large technology companies: limiting third-party access to personal data,
+using inferences instead of raw data, and keeping data on the user's device.
+They argue that these principles fall short when the technique does not address
+the privacy-violating behaviour, and report a gap between the principles and
+users' privacy expectations~\parencite{martin2025cookies}. A measure can thus do
+what it promises and still leave a harm possible. The relevant question for this
+study is which protection a provider claims, against which actor and under which
+conditions, and which pathways to harm the measure interrupts.
