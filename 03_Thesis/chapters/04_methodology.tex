@@ -76,81 +76,37 @@ describes them afterwards.
 
 \subsection{Research Questions and Approach}
 \label{sec:rq-approach}
-The study answers one research question and four sub-questions, stated here in full and in the
-introduction of the thesis (Section~1.2).
-
-\noindent\textbf{RQ.} \emph{What types of downstream privacy harms do health
-tracker service providers explicitly acknowledge or downplay when describing
-their privacy practices or PETs, and how do they frame the protection these
-technologies offer?}
+The study addresses four main research questions:
 
 \begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,
-                    labelindent=0pt,font=\normalfont\bfseries]
-  \item[RQ1] \textit{Coverage.} Which data flows, capabilities and harms do the
-    privacy policy and the interface of a health tracking app mention, and which of
-    the harms that apply to that app do they leave out?
-  \item[RQ2] \textit{Stance.} When the policy or the interface names a harm, how do
-    they word it: do they acknowledge it, qualify it, minimise it, deny it or
-    present it as the user's responsibility?
-  \item[RQ3] \textit{Protection.} Which protective measures and benefits do the
-    policy and the interface claim, and how do the scope and strength of each
-    claim relate to the pathways to harm that the measure would have to cut?
-  \item[RQ4] \textit{Surfaces.} How do coverage, stance and protection claims
-    differ between the privacy policy and the interface of the same app, and
-    can the information that the policy gives also be found in the interface?
+	labelindent=0pt,font=\normalfont\bfseries]
+	\item[RQ1] \textit{Coverage.} Which data flows, capabilities and harms do
+	the app's privacy policy and interface mention? To what extent do they
+	cover the harms applicable to the app? Which harms remain unmentioned?
+	
+	\item[RQ2] \textit{Stance.} How do the policy and interface describe each
+	harm they mention? Do they acknowledge, qualify, minimise or deny it,
+	or assign responsibility to the user?
+	
+	\item[RQ3] \textit{Protection.} Which protective measures and benefits
+	do the policy and interface claim? What is the scope and strength of
+	each claim? How does each claim relate to the harm pathways that the
+	measure would need to interrupt?
+	
+	\item[RQ4] \textit{Surfaces.} How do coverage, stance and protection
+	claims differ between the privacy policy and interface of the same app?
+	Can the information provided in the policy also be found in the interface?
 \end{description}
-Section~\ref{sec:scope} defines the terms of these questions (health tracker, harm, pathway to
-harm, surface and applicability).
 
-The coding is a directed content analysis: it starts from prior research, which
-supplies the initial codes, and adds what the text shows beyond
-them~\parencite{hsieh2005three,krippendorff2019content}. Comparing several surfaces
-of the same app follows Malki et al., who set store disclosures, policies and app
-interfaces against each other~\parencite[p.~4]{malki2024exploring}. Table~\ref{tab:rq-method}
-ties each research question to what is measured, the material, the method and its precedent.
-The precedents supply the concepts and the general approach; the applicability record, the
-coverage levels, the stance labels and the rules for combining model labels are this study's
-own operationalisations, defined in this chapter.
+Section~\ref{sec:scope} defines the terms health tracker, harm, pathway to
+harm, surface and applicability.
 
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Research questions, methods and precedents]{Research questions, what is
-measured, the material and the method, with the precedent for each method.}
-\label{tab:rq-method}
-\footnotesize
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.4cm}@{}}
-\toprule
-\textbf{RQ} & \textbf{What is measured} & \textbf{Material} & \textbf{Method} & \textbf{Precedent} \\
-\midrule
-RQ1 & Applicable pathways, and how far up the tree the text goes for each
-  & Policy, interface
-  & Applicability record; Axis~A; coverage level (Sections~\ref{sec:apply} and~\ref{sec:assessment})
-  & \cite{knabenhans2026harms,de2016privacy,hsieh2005three,shipp2020period} \\
-\cmidrule[0.3pt]{2-5}
-RQ2 & Stance toward each named harm
-  & Policy, interface
-  & Axis~B, attached to the harm and its evidence
-  & \cite{zou2019might} \\
-\cmidrule[0.3pt]{2-5}
-RQ3 & Claimed measures, their scope and strength, and whether they cut a pathway
-  & Policy, interface
-  & Axis~C; check of the necessary conditions; human review
-  & \cite{knabenhans2026harms,martin2025cookies} \\
-\cmidrule[0.3pt]{2-5}
-RQ4 & Differences between policy and interface; whether the information can be found
-  & Policy, walkthroughs
-  & Same codes on both surfaces; cognitive walkthrough
-  & \cite{wharton1994cognitive,malki2024exploring,habib2020scavenger} \\
-\midrule
-All & How accurately language models code the text, and how the reported figures are corrected for their errors
-  & All coded text
-  & Two models; human check of high-stakes labels; double-coded validation sample; corrected estimates
-  & \cite{tornberg2024best,baumann2025llm,egami2023using} \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
+The study uses directed content analysis. Prior research provides the
+initial codes, which are extended with additional codes identified in the
+material~\parencite{hsieh2005three,krippendorff2019content}.
+The comparison across communication surfaces follows Malki et al., who
+compared app store disclosures, privacy policies and app
+interfaces~\parencite{malki2024exploring}.
 
 \subsection{Scope and Key Terms}
 \label{sec:scope}
@@ -185,54 +141,22 @@ The chapter uses seven terms throughout; each is developed in the section named.
 
 \section{Literature Review}
 \label{sec:lit-review}
-The study uses a non-systematic review of up to ten papers without a formal review
-protocol. PRISMA and its extensions provide reporting guidance for systematic
-reviews~\parencite[p.~178]{page2021prisma}. The review summarises research on harms associated
+
+The review summarises research on harms associated
 with health tracking apps and on how app providers communicate privacy information
 (Chapter~\ref{ch:related-work}). It also identifies harms, capabilities, actors and data flows
 for constructing the reference harm trees (Section~\ref{sec:framework}), following
-Knabenhans et al.~\parencite[\S\S4.2--4.3]{knabenhans2026harms}.
-
-Sources for the study procedures are cited in the sections on sampling
-(Section~\ref{sec:app-sampling}), material collection and the walkthrough
-(Section~\ref{sec:collection}), coding (Section~\ref{sec:analysis}) and validation
-(Section~\ref{sec:instruments}).
+Knabenhans et al.~\parencite{knabenhans2026harms} and exploring used methodologies in
+coding and analysing privacy policies using Large Laguage Models (Section~\ref{sec:analysis}).
 
 \paragraph{Selection.} Papers are selected through targeted reading without a database
-search. The selection is non-exhaustive. If more than ten papers are eligible, selection
-prioritises coverage across application domains (wearables, reproductive-health apps and
-other health apps) and evidence types (policy analysis, measurements of app behaviour,
-user judgements and methodological contributions). Additional papers may be included if they
-identify a new harm pathway~\parencite[\S4.1]{knabenhans2026harms}.
-Table~\ref{tab:lit-papers} lists the selected papers. Eligible papers must meet all three
-criteria in Table~\ref{tab:lit-criteria}.
+search.
 
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption{Eligibility criteria for the literature review.}
-\label{tab:lit-criteria}
-\small
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}X@{}}
-\toprule
- & \textbf{Criterion} & \textbf{Requirement} \\
-\midrule
-L1 & Domain & Examines health tracking apps or wearables, or provides a method or harm
-  typology used in the reference harm trees. \\
-L2 & Content & Documents harms, capabilities, associated actors or data flows, with evidence
-  attributable to a specific page or section. \\
-L3 & Type & Original empirical or analytical research in English that is peer reviewed or
-  published in an archival journal, conference or workshop. \\
-\bottomrule
-\end{tabularx}
-\end{singlespace}
-\end{table}
+\todo[inline]{For all literature cited in this paper, the exploration methods should be noted and later summarized here.}
 
-\paragraph{Extraction.} For each paper, the analyst records the reported harms, documented
-capabilities, actors with those capabilities and the data or components each capability
-requires. Each entry includes the source page or section. The entries provide evidence for
-the pathways in the reference harm trees (Section~\ref{sec:harm-trees} and
-Appendix~\ref{app:reference-model}). Other sources are cited where they are discussed.
+\paragraph{Extraction.}
+
+\todo[inline]{How were the papers used? Which infos is used? I will summarize that here.}
 
 \section{Analytical Framework}
 \label{sec:framework}
