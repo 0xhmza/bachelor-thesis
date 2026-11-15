@@ -1,64 +1,39 @@
-# Timeline and Milestones
+# Timeline
 
-**Registration date:** TODO — planned 2026-11-02. **Official deadline:** TODO — fill
-in after registration; for a 2026-11-02 registration the three-month deadline is
-2027-02-02. Bachelor's theses at RUB Informatik typically run 3 months from
-registration; register only after the proposal is approved and the sampling is
-settled. The argued schedule with slip points is archived in
-`99_Archive/2026-10-14_cleanup-recovery.zip` (member
-`99_Archive/_junk/02_Proposal/sections/05_timeline.tex`); the proposal carries no schedule.
+Registration: not done yet (planned 2026-11-02). Deadline: three months after registration.
 
-| # | Milestone | Target date | Status |
-|---|---|---|---|
-| 0 | Advisor's reading list filed in `01_Literature/` | 2026-09-05 | ☑ |
-| 1 | Read Citron & Solove, *Privacy Harms* | | ☐ |
-| 1b | Read Knabenhans et al., *(Privacy) Harms of the EU Digital Identity Framework* (harm model) | | ☐ |
-| 1c | Read Martin, Nissenbaum & Shmatikov, *No Cookies For You!* (PET framing) | | ☐ |
-| 2 | Review copy `03_Thesis/Thesis_Review-Copy.docx`, rebuilt with every thesis commit (replaces the Google Doc) | 2026-10-17 | ◐ generated; share it with the advisor |
-| 3 | Scope: document and interface analysis, not a survey (`Open-Points.md` item 1) | 2026-09-18 | ◐ decided in the proposal; awaiting confirmation |
-| 3b | Own literature search: privacy harms, tracker S&P, methods | 2026-09-18 | ☑ first pass: 17 verified entries in `03_Thesis/references.bib` |
-| 3c | Ranked methodology literature (13 Oct meeting): 83 DOI records + 10 official resources | 2026-10-16 | ◐ 89 of 93 held as PDFs (`01_Literature/catalog/methods-corpus.json`); missing Parker 2019, two books, the APA web page; none read yet |
-| 4 | Proposal sent to the supervisor | 2026-09-30 | ☑ sent 2026-10-05 ([email](../Documents/Correspondence/2026-10-05_Proposal-Email.md)); snapshot in `03_Thesis/proposal/` |
-| 5 | Proposal approved | | ☐ |
-| 6 | Thesis registered with the Prüfungsamt | | ◐ draft form emailed to the advisor 2026-10-19 ([email](../Documents/Correspondence/2026-10-19_Registration-Email.md), [form](../Documents/Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)); Prof. Troncoso is a professor officially from 2026-11-09 (meeting 2026-11-06), so the first examiner can be entered from then; second examiner still open |
-| 7 | Keywords and inclusion/exclusion criteria fixed | 2026-09-18 | ☑ sampling protocol v2 (2026-10-23; ranking revised 2026-10-25) |
-| 8 | App sample collected and frozen | | ◐ drawn 2026-10-25 (47 + 3 apps); frozen after the author checks the screening |
-| 9 | Codebook | 2026-09-18 | ◐ v7 in `04_Study/4.6_Coding/Codebook/`; examples to be filled before the freeze |
-| 10 | LLM prompts + validation sample of coding units | | ◐ prompts v2 in `04_Study/4.6_Coding/Prompts/`; models not yet named; sample not yet drawn |
-| 11 | Data collection complete | | ☐ |
-| 12 | Analysis complete | | ☐ |
-| 13 | Full thesis draft to advisor | | ☐ |
-| 14 | Revisions incorporated | | ☐ |
-| 15 | Submission | | ☐ |
-| 16 | Colloquium / defence | | ☐ |
-
-Legend: ☐ not started · ◐ in progress · ☑ done. Open decisions: [`Open-Points.md`](Open-Points.md), [`Decision-Log.md`](../Decisions/Decision-Log.md).
-
-## Twelve-week plan
-
-Registration 2026-11-02, deadline 2027-02-02; the last week is slack. Introduction,
-background and related work are drafted alongside collection.
-
-| Phase | Period | Deliverable |
+| # | Milestone | Status |
 |---|---|---|
-| Preparation | to 2026-10-30 | Proposal approved; instruments frozen (no pilot, D20) |
-| Weeks 1–4 | 2026-11-02 – 11-29 | Sample frozen (n = 50); corpus collected, hashed, segmented |
-| Weeks 5–6 | 2026-11-30 – 12-13 | Privacy walkthroughs |
-| Weeks 7–8 | 2026-12-14 – 12-27 | LLM coding runs; manual validation subsample |
-| Weeks 9–10 | 2026-12-28 – 2027-01-10 | Author recodes a random tenth of the validation sample (≥ 2 weeks after first coding); agreement, precision and recall; results |
-| Weeks 11–12 | 2027-01-11 – 01-24 | Full draft to supervisor; revisions |
-| Buffer | to 2027-02-02 | Final checks and submission |
+| 1 | Core reading (Citron & Solove; Knabenhans et al.; Martin et al.) | ☐ |
+| 2 | Proposal sent ([email](../Documents/Correspondence/2026-10-05_Proposal-Email.md)) | ☑ 2026-10-05 |
+| 3 | Proposal approved | ☐ |
+| 4 | Thesis registered with the Prüfungsamt ([draft form](../Documents/Registration/2026-10-19_Anmeldung-Abschlussarbeit_draft.pdf)) | ◐ examiner can be entered since 11-09; second examiner open |
+| 5 | Keywords and eligibility criteria fixed | ☑ sampling protocol v2 |
+| 6 | App sample frozen | ◐ drawn 10-25 (47 + 3); author checks the screening |
+| 7 | Codebook | ◐ v7; examples before the freeze |
+| 8 | Prompts and validation sample | ◐ prompts v2; models not named; sample not drawn |
+| 9 | Data collection | ☐ |
+| 10 | Analysis | ☐ |
+| 11 | Full draft to advisor | ☐ |
+| 12 | Revisions, submission, colloquium | ☐ |
 
-## Standing rhythm
+☐ not started · ◐ in progress · ☑ done
 
-- Weekly: update this file and write one paragraph of the thesis.
-- After every supervisor meeting: `00_Notes/Meetings/YYYY-MM-DD_Topic.md` with an action-item table.
-- Material from the advisor between meetings: `00_Notes/Documents/Supervisor-Input/YYYY-MM-DD_Supervisor-Input.*`.
+## Twelve-week plan (counted from registration)
+
+| Weeks | Deliverable |
+|---|---|
+| 1–4 | Sample frozen (n = 50); corpus collected, hashed, segmented |
+| 5–6 | Privacy walkthroughs |
+| 7–8 | LLM coding runs; manual validation sample |
+| 9–10 | Recode a random tenth; agreement, precision, recall; results |
+| 11–12 | Full draft to advisor; revisions |
+| Buffer | Final checks and submission |
 
 ## Administrative checklist
 
-- [ ] Confirm first and second examiner (Erst-/Zweitprüfer\*in); Prof. Troncoso is a professor officially from 2026-11-09, so register with her as first examiner from that date
-- [ ] Check the formatting requirements of the Prüfungsordnung (page limits, declaration wording, printed copies)
-- [ ] Check the statutory declaration text, including the AI-use statement
-- [ ] Confirm whether an ethics review is needed
-- [ ] Confirm the submission format (print, PDF, both) and where it goes
+- [ ] Enter Prof. Troncoso as first examiner; find the second examiner
+- [ ] Formatting rules of the Prüfungsordnung (page limits, declaration, copies)
+- [ ] Statutory declaration text, including the AI-use statement
+- [ ] Written confirmation that no ethics review is needed
+- [ ] Submission format (print, PDF, both) and place

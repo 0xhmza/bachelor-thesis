@@ -1,6 +1,6 @@
 # Literature search of 28 October 2026 (frozen)
 
-Search results of the literature review v002 ([D14](../../../00_Notes/Decisions/D14_literature-review-v2.md)),
+Search results of the literature review v002 ([D14](../../../00_Notes/Archive/Decisions/D14_literature-review-v2.md)),
 copied unchanged from `scripts/literature-search/v002/output/` after the run. Read-only; hashes in
 `SHA256SUMS` (`sha256sum -c SHA256SUMS`).
 

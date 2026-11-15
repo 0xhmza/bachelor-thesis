@@ -17,11 +17,11 @@
 
 ## 3. Literature review
 
-- [x] Brief review only: no PRISMA, no Boolean search (thesis is not a review paper) — [D21](../Decisions/D21_brief-literature-review.md).
+- [x] Brief review only: no PRISMA, no Boolean search (thesis is not a review paper) — [D21](../Archive/Decisions/D21_brief-literature-review.md).
 - [x] Two topics: relevant literature; ground for the reference harm tree (like Knabenhans et al.).
 - [x] Max 10 papers; ten confirmed 6 Nov.
 
-## 4. Research questions ([D22](../Decisions/D22_research-questions.md))
+## 4. Research questions ([D22](../Archive/Decisions/D22_research-questions.md))
 
 - [x] Write the RQs in full, with question marks, not in a table.
 - [ ] New RQ: "What are the actual harms not covered by these companies?" *(?)* Part of RQ1 already (omissions); decide if it stands alone.
@@ -30,18 +30,18 @@
 ## 5. Study design and sampling
 
 **Harm trees**
-- [x] Trees for 3 apps are enough, not 50 — settled as use cases, not apps ([D23](../Decisions/D23_use-case-subtrees.md), proposed). *(?)* Confirm.
+- [x] Trees for 3 apps are enough, not 50 — settled as use cases, not apps ([D23](../Archive/Decisions/D23_use-case-subtrees.md), proposed). *(?)* Confirm.
 
 **Sample**
-- [ ] Why 50? Justify it as a sample of all health-tracking apps ([D01](../Decisions/D01_sample-size.md)).
-- [x] Overlapping categories (exercise / heart rate) are no problem: categories are search keywords only, no subcategories ([D15](../Decisions/D15_health-tracker-domain.md)).
+- [ ] Why 50? Justify it as a sample of all health-tracking apps ([D01](../Archive/Decisions/D01_sample-size.md)).
+- [x] Overlapping categories (exercise / heart rate) are no problem: categories are search keywords only, no subcategories ([D15](../Archive/Decisions/D15_health-tracker-domain.md)).
 - [ ] After the first 50 are picked, report in the results which Table B.1 category is missed.
 
 **Eligibility**
 - [x] Expand E1 into sub-items E1a–E1d, explain Hutton et al., as clear as E3.
 - [ ] Keep working on the criteria table: one clear check per criterion.
 
-**Keywords** ([D03](../Decisions/D03_scope-keywords-function.md))
+**Keywords** ([D03](../Archive/Decisions/D03_scope-keywords-function.md))
 - [ ] Expand keywords by reverse engineering. *(?)* Start from certain health trackers, read the terms in their store listings.
 - [ ] Manageable result count per query (now: first 30 per store).
 - [ ] Test keywords and the store API.

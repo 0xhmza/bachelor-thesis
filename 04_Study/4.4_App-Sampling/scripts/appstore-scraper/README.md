@@ -30,7 +30,7 @@ python 04_Study/4.4_App-Sampling/scripts/appstore-scraper/v007/scraper.py 04_Stu
   historical counts; the product page's histogram (`ratingCounts`) and chart badge
   need a separate capture. Missing fields are omitted, real zeros kept.
 - All known App Store interfaces, with robots rules and regional behaviour, are
-  listed in [D2](../../../../00_Notes/Decisions/D02_ranking-and-rating-floor.md); Google
+  listed in [D2](../../../../00_Notes/Archive/Decisions/D02_ranking-and-rating-floor.md); Google
   Play behaves differently ([Play README](../googleplay-scraper/README.md)).
 
 ## Download estimates (checked 20 October 2026)

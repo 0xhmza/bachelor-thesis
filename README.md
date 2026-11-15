@@ -39,7 +39,7 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 .\graphify.ps1 refresh                      # graph, literature index, map, reading tracker
 ```
 
-Decisions go into `00_Notes/Decisions/Decision-Log.md` before the methodology states them;
+Decisions go into `00_Notes/Decisions.md` before the methodology states them;
 progress into `00_Notes/Plan/Weekly-Log.md`, risks into `00_Notes/Plan/Risk-Register.md`;
 reading status into `01_Literature/catalog/reading-status.csv`. CI
 (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles the
@@ -49,7 +49,7 @@ thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md)
 
 | Folder | Content |
 |---|---|
-| `00_Notes/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
+| `00_Notes/` | Decision sheet (`Decisions.md`), plan (timeline, open points, risks, weekly log), meeting checklists, reviews, documents, archive |
 | `01_Literature/` | `library/` (every full text, flat, `Author_Year_ShortTitle.pdf`), `notes/`, `catalog/` (reading tracker, methods corpus, generated index and map), `review/` (literature review) and `digest/` (Methods Digest); start at its `README.md` |
 | `03_Thesis/` | Main thesis, chapters, appendices, bibliography (`references.bib`, Zotero file), review copy, proposal snapshot |
 | `04_Study/` | One folder per section of Chapter 4 (`4.1_…` to `4.8_…`): instruments, protocols, samples and the scripts that work on them |

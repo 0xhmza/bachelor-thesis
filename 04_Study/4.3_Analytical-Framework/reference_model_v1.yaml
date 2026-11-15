@@ -1,5 +1,5 @@
 # Reference model v1: a generic health tracker and its harm trees.
-# Method: Knabenhans et al. 2026, s4.1; see 00_Notes/Decisions/D12_reference-model.md.
+# Method: Knabenhans et al. 2026, s4.1; see 00_Notes/Archive/Decisions/D12_reference-model.md.
 # Read by 04_Study/4.7_Validation/scripts/instrument-test/v001/ (evaluate.py, build_tables.py).
 # origin: core | context | implementation | external
 version: 1

@@ -1,8 +1,8 @@
 # App selection and ranking — evaluation, 23 October 2026
 
 Evaluation of the selection rule (methodology, App Sampling) and of
-[D1](../Decisions/D01_sample-size.md), [D2](../Decisions/D02_ranking-and-rating-floor.md)
-and [D6](../Decisions/D06_preinstalled-apps.md) as of 22 October. It proposes
+[D1](../Archive/Decisions/D01_sample-size.md), [D2](../Archive/Decisions/D02_ranking-and-rating-floor.md)
+and [D6](../Archive/Decisions/D06_preinstalled-apps.md) as of 22 October. It proposes
 changes and decides nothing. Outcomes: §1 and §3–§6 were adopted in D2 and D3 on
 23 October; §5 was superseded by the German ranking of 25 October (D2).
 
@@ -49,7 +49,7 @@ the top 47 and raises period trackers in the Play half from 3 to 4.
 
 ### 2. Historical category-allocation concern — superseded by D15
 
-**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](../Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
+**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](../Archive/Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
 
 | Pilot, Play | Top 24 | Top 47 |
 |---|---|---|

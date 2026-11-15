@@ -1,6 +1,6 @@
 # Sampling Protocol — current scope amendment
 
-**Version:** 3 (scope amendment) · **Date:** 2026-10-28 · **Authority:** author's confirmed clarification in [D15](../../00_Notes/Decisions/D15_health-tracker-domain.md), read with the current thesis methodology and D1–D7.
+**Version:** 3 (scope amendment) · **Date:** 2026-10-28 · **Authority:** author's confirmed clarification in [D15](../../00_Notes/Archive/Decisions/D15_health-tracker-domain.md), read with the current thesis methodology and D1–D7.
 
 The study domain is health trackers overall. Categories from the source papers explain the domain definition and the [49 search queries](keywords.csv) and describe the apps; they do not define separate study strata or analysis groups.
 

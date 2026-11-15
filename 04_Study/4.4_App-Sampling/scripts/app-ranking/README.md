@@ -1,7 +1,7 @@
 # App ranking
 
 Selects the ranked apps of the sample as set out in
-[D2](../../../../00_Notes/Decisions/D02_ranking-and-rating-floor.md). Each version lives in
+[D2](../../../../00_Notes/Archive/Decisions/D02_ranking-and-rating-floor.md). Each version lives in
 `vNNN/`; outputs stay in the version's `output/` folder.
 
 - `v001/rank.py`: merges the stores by within-store percentile; replaced, kept for

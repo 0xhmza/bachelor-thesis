@@ -7,7 +7,7 @@ Order: define → gather evidence → decide with a cited reason → protocols �
 freeze → rewrite the methodology. ❓ = needs the supervisor.
 Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 
-**Scope update, 28 October 2026:** [D15](../Decisions/D15_health-tracker-domain.md) confirms health trackers as the single study domain. Source-paper categories support scope and keyword collection only. Pilot, validation and walkthrough totals apply across the sample without category allocations; the older category-specific planning concern is resolved.
+**Scope update, 28 October 2026:** [D15](Decisions/D15_health-tracker-domain.md) confirms health trackers as the single study domain. Source-paper categories support scope and keyword collection only. Pilot, validation and walkthrough totals apply across the sample without category allocations; the older category-specific planning concern is resolved.
 
 ## 1 · Clarify and define (by 10-20)
 - ☐ ❓ One email with the open questions: "post-harm reaction" and "accessible
@@ -33,7 +33,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 - ☐ Finish the three core harm papers (Citron & Solove, Knabenhans et al., Martin et al.).
 - ☐ Read the priority-A papers of the gap search (digest cards are the short version).
 
-## 3 · Decide (by 10-26) · register: [Decision-Log.md](../Decisions/Decision-Log.md)
+## 3 · Decide (by 10-26) · register: [Decision-Log.md](Decisions/Decision-Log.md)
 
 | ID | Decision | Proposal | Meeting | Status |
 |---|---|---|---|---|
@@ -68,7 +68,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 
 1. ☑ App Store collection with the same keywords and depth: 23 October, 49 queries
    (`appstore-scraper/v007`).
-2. ☑ Study domain clarified by the author on 28 October 2026 ([D15](../Decisions/D15_health-tracker-domain.md)): health trackers overall. Categories describe the sample and supply scope/keyword vocabulary; they impose no separate sampling, pilot, validation, walkthrough or analysis allocations.
+2. ☑ Study domain clarified by the author on 28 October 2026 ([D15](Decisions/D15_health-tracker-domain.md)): health trackers overall. Categories describe the sample and supply scope/keyword vocabulary; they impose no separate sampling, pilot, validation, walkthrough or analysis allocations.
 3. ☑ One app per developer (D2, 23 October). Pilot: Leap Fitness Group held 10 of the
    Play top 47 under one policy URL, Simple Design Ltd. 3; the rule changed 6 of the
    24 Play places.

@@ -4,7 +4,7 @@ A targeted search for literature the reading corpus (100 registry papers in the
 [Methods Digest](../digest), 93 catalogue works, 9 core papers) does not yet
 hold. The emphasis is LLM-assisted coding of privacy policies. The other digest
 stages were checked for gaps against the research questions and the open
-decisions in the [Decision Log](../../00_Notes/Decisions/Decision-Log.md).
+decisions in the [Decision Log](../../00_Notes/Decisions.md).
 
 **Status:** reading candidates; none is in `03_Thesis/references.bib`,
 `reading-status.csv` or the catalogue. The 16 priority-A papers with a PDF are

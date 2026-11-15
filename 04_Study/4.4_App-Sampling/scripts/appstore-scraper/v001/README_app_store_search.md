@@ -105,7 +105,7 @@ fields. Privacy disclosures are declarations, not independently tested behavior.
 This collector implements the user's 20 October 2026 request to start with
 `fitness`. It does not freeze a thesis sample, choose a rating floor, replace
 native store search capture, or resolve the open sampling decisions in the
-[decision log](../../../../../00_Notes/Decisions/Decision-Log.md).
+[decision log](../../../../../00_Notes/Decisions.md).
 
 ## Verification
 

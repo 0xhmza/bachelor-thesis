@@ -2,7 +2,7 @@
 
 One folder per section of Chapter 4 (Methodology). A reader who has the thesis can find
 each instrument by its section number. Domain: health trackers overall
-([D15](../00_Notes/Decisions/D15_health-tracker-domain.md)).
+([D15](../00_Notes/Archive/Decisions/D15_health-tracker-domain.md)).
 
 | Folder | Section | Contents |
 |---|---|---|

@@ -37,15 +37,15 @@ Status: `open` · `proposed` (evidence and choice written, awaiting supervisor) 
 | D23 | Harm trees built use case by use case | proposed (11-07, author's instruction; methodology 4.3 rewritten 11-07): one subtree per use case from a six-question card, capabilities and pathways derived by script, stop after two check cases that add nothing; supersedes the one-step build of D12 as the argument and settles "harm trees for 3 apps" as use cases; cards drafted by the AI assistant after model v2, not independent | Knabenhans 2026 §4.1–4.5; Mauw & Oostdijk 2005; ten papers of D21 | [D23](D23_use-case-subtrees.md) |
 
 The reading that supports each decision is mapped in
-[`01_Literature/catalog/Methods-Reading-List.md`](../../01_Literature/catalog/Methods-Reading-List.md)
+[`01_Literature/catalog/Methods-Reading-List.md`](../../../01_Literature/catalog/Methods-Reading-List.md)
 ("Meeting decision → reading → extraction target") and in the literature map.
 
 ## Collector development — 20 October 2026
 
 An iPhone App Store keyword collector (first query `fitness`) was built as a
 development run; settings and limits are in its
-[documentation](../../04_Study/4.4_App-Sampling/scripts/appstore-scraper/v001/README_app_store_search.md).
-Germany is the default storefront (the [13 October meeting](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md)
+[documentation](../../../04_Study/4.4_App-Sampling/scripts/appstore-scraper/v001/README_app_store_search.md).
+Germany is the default storefront (the [13 October meeting](../../Meetings/2026-10-13_Supervisor-Meeting_Organized.md)
 keeps the German market); English text is requested. Apple's
 [Search API](https://performance-partners.apple.com/search-api) takes keyword and
 storefront parameters and a limit of 1–200. The run fixed no search frame,

@@ -42,7 +42,7 @@
   subsample (12 apps, 6/6 by platform, rank-order slots). A second rating of a
   subset of recorded sessions is a validation step, not the walkthrough scope.
 - Record each methodological choice, with its evidence, in
-  `00_Notes/Decisions/Decision-Log.md` (and its `Decisions/Dnn_*.md` record) before the
+  `00_Notes/Decisions.md` (one row per decision; long reasoning in `00_Notes/Archive/Decisions/Dnn_*.md`) before the
   methodology states it. The methodology states rules; numbers that follow from
   applying them belong in the results.
 - `03_Thesis/references.bib` is the only bibliography. Check new entries against

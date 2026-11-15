@@ -1,29 +1,29 @@
 {
-  "node_count": 4580,
+  "node_count": 3199,
   "unverified_node_count": 0,
-  "raw_edge_count": 7460,
+  "raw_edge_count": 4767,
   "non_object_edges": 0,
   "missing_endpoint_edges": 0,
   "dangling_endpoint_edges": 0,
   "external_reference_edges": 0,
   "self_loop_edges": 0,
-  "valid_candidate_edges": 7460,
+  "valid_candidate_edges": 4767,
   "exact_duplicate_edges": 0,
-  "directed_unique_endpoint_pairs": 7247,
+  "directed_unique_endpoint_pairs": 4554,
   "directed_same_endpoint_collapsed_edges": 213,
-  "undirected_unique_endpoint_pairs": 7244,
-  "undirected_same_endpoint_collapsed_edges": 216,
+  "undirected_unique_endpoint_pairs": 4552,
+  "undirected_same_endpoint_collapsed_edges": 215,
   "same_endpoint_group_count": 210,
   "relation_variant_groups": 210,
   "source_file_variant_groups": 0,
   "source_location_variant_groups": 0,
   "context_variant_groups": 0,
   "post_build_graph_type": "Graph",
-  "post_build_node_count": 4395,
-  "post_build_edge_count": 7206,
+  "post_build_node_count": 3056,
+  "post_build_edge_count": 4545,
   "post_build_error": "",
   "producer_suppression": {
-    "path": "C:\\Users\\hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
+    "path": "C:\\Users\\Hamza\\Desktop\\Share\\Projects\\bachelor-thesis\\.venv\\Lib\\site-packages\\graphify\\extract.py",
     "total_sites": 12,
     "sites": [
       {
@@ -103,8 +103,8 @@
   },
   "examples": [
     {
-      "source": "scripts_policy_analyzer_v002_js_app",
-      "target": "scripts_policy_analyzer_v002_js_app_changed",
+      "source": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_app",
+      "target": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_app_changed",
       "edge_count": 3,
       "relations": [
         "calls",
@@ -112,7 +112,7 @@
         "indirect_call"
       ],
       "source_files": [
-        "scripts/policy-analyzer/v002/js/app.js"
+        "04_Study/4.6_Coding/scripts/policy-analyzer/v002/js/app.js"
       ],
       "source_locations": [
         "L656",
@@ -126,8 +126,8 @@
       ]
     },
     {
-      "source": "scripts_policy_analyzer_v002_js_app",
-      "target": "scripts_policy_analyzer_v002_js_app_renderall",
+      "source": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_app",
+      "target": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_app_renderall",
       "edge_count": 3,
       "relations": [
         "calls",
@@ -135,7 +135,7 @@
         "indirect_call"
       ],
       "source_files": [
-        "scripts/policy-analyzer/v002/js/app.js"
+        "04_Study/4.6_Coding/scripts/policy-analyzer/v002/js/app.js"
       ],
       "source_locations": [
         "L608",
@@ -149,8 +149,8 @@
       ]
     },
     {
-      "source": "scripts_policy_analyzer_v002_js_views_bindinspector",
-      "target": "scripts_policy_analyzer_v002_js_views_bindinspector_checkterm",
+      "source": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_views_bindinspector",
+      "target": "04_study_4_6_coding_scripts_policy_analyzer_v002_js_views_bindinspector_checkterm",
       "edge_count": 3,
       "relations": [
         "calls",
@@ -158,7 +158,7 @@
         "indirect_call"
       ],
       "source_files": [
-        "scripts/policy-analyzer/v002/js/views.js"
+        "04_Study/4.6_Coding/scripts/policy-analyzer/v002/js/views.js"
       ],
       "source_locations": [
         "L436",
@@ -191,15 +191,15 @@
       ]
     },
     {
-      "source": "scripts_app_ranking_v002_rank_spearman",
-      "target": "scripts_app_ranking_v002_rank_spearman_ranks",
+      "source": "04_study_4_4_app_sampling_scripts_app_ranking_v002_rank_spearman",
+      "target": "04_study_4_4_app_sampling_scripts_app_ranking_v002_rank_spearman_ranks",
       "edge_count": 2,
       "relations": [
         "calls",
         "contains"
       ],
       "source_files": [
-        "scripts/app-ranking/v002/rank.py"
+        "04_Study/4.4_App-Sampling/scripts/app-ranking/v002/rank.py"
       ],
       "source_locations": [
         "L122",

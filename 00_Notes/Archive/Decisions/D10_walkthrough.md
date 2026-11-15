@@ -1,7 +1,7 @@
 # D10 — Which walkthrough, with which checklist and outputs?
 
 - **Status:** **closed (2026-11-05, author's instruction).** The walkthrough covers all 50 apps; no subsample. See "Closure 2026-11-05" at the end.
-- **Affects:** RQ1–RQ4, applicability · [`walkthrough_protocol.md`](../../04_Study/4.5_Data-Collection/walkthrough_protocol.md) · Methodology, App Walkthroughs
+- **Affects:** RQ1–RQ4, applicability · [`walkthrough_protocol.md`](../../../04_Study/4.5_Data-Collection/walkthrough_protocol.md) · Methodology, App Walkthroughs
 - **Options considered:**
   1. Heuristic walkthrough (cognitive walkthrough plus Nielsen's heuristics), as Malki et al. 2024, p. 5. Yields design problems, not outcomes that attach to tree nodes.
   2. The app-studies walkthrough of Light et al. 2018. Good for capturing screens, but it is a different tradition without task questions.

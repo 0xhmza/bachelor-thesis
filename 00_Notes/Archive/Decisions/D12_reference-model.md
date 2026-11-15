@@ -1,7 +1,7 @@
 # D12 — What is the harm tree built on (the supervisor's "best app")?
 
 - **Status:** proposed (2026-11-01, author's instruction in chat). The supervisor has not confirmed that this reading matches the phrase "best app".
-- **Affects:** RQ1, RQ3 · [`reference_model_v1.yaml`](../../04_Study/4.3_Analytical-Framework/reference_model_v1.yaml) · codebook v5 · Methodology, Reference Model and Reference Harm Trees
+- **Affects:** RQ1, RQ3 · [`reference_model_v1.yaml`](../../../04_Study/4.3_Analytical-Framework/reference_model_v1.yaml) · codebook v5 · Methodology, Reference Model and Reference Harm Trees
 - **Author's instruction:** first make a model of a generic health app that has all the capabilities a health app can have, then apply that tree to apps on the basis of their privacy policy and the cognitive walkthrough.
 - **Options considered:**
   1. Pick one real app as "best" (most popular, most complete policy). Needs a criterion for "best", and misses functions that app lacks.
@@ -39,6 +39,6 @@
 
 ## Update 2026-11-06 — "harm trees for 3 apps", not applied
 
-The supervisor noted that building harm trees for 50 apps could be exhausting and that trees for three apps could be enough ([meeting notes](../Meetings/2026-11-06_Supervisor-Meeting_Organized.md) §5). Under this decision one reference model is built once on a generic health tracker and checked per app for applicability; no tree is built per app. Two readings are open: (a) the note is satisfied already, because only the applicability check runs per app; (b) the reference trees should be grounded in three concrete apps instead of a generic tracker, which would reopen this decision and the K and IM components. Not applied.
+The supervisor noted that building harm trees for 50 apps could be exhausting and that trees for three apps could be enough ([meeting notes](../../Meetings/2026-11-06_Supervisor-Meeting_Organized.md) §5). Under this decision one reference model is built once on a generic health tracker and checked per app for applicability; no tree is built per app. Two readings are open: (a) the note is satisfied already, because only the applicability check runs per app; (b) the reference trees should be grounded in three concrete apps instead of a generic tracker, which would reopen this decision and the K and IM components. Not applied.
 
 Literature ground (applied, [D21](D21_brief-literature-review.md)): "the review evidence" in the Choice above now means the papers of the brief literature review or another cited source. K1–K8 keep their numbers.

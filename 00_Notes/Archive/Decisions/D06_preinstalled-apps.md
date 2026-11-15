@@ -9,7 +9,7 @@
   4. Vendors with at least 10 % of German mobile page views (first proposal, 22 October). Replaced: the 10 % has no source, is a parameter the result depends on, and ignores that the two platforms are treated equally everywhere else (D2).
   5. A fixed list (Apple, Samsung, Huawei, Google). Rejected: no stated reason for the list.
 - **Evidence:**
-  - Supervisor meeting of 13 October asked how Apple Health, Samsung Health and Huawei Health could be included ([organized notes](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md)).
+  - Supervisor meeting of 13 October asked how Apple Health, Samsung Health and Huawei Health could be included ([organized notes](../../Meetings/2026-10-13_Supervisor-Meeting_Organized.md)).
   - German mobile vendor shares, September 2026, by mobile page views: Samsung 39.34 %, Apple 27.63 %, Xiaomi 21.4 %, unknown 3.96 %, Huawei 1.54 %, Google 1.46 % ([StatCounter](https://gs.statcounter.com/vendor-market-share/mobile/germany), checked 2026-10-22). Page views are a proxy for the installed base, not sales.
   - Shares within the platform: iOS, Apple 100 %; Android, Samsung 39.34 / 72.3 = 54 %, Xiaomi 21.4 / 72.3 = 30 %, Huawei 2 %, Google 2 %, unknown 5 %. The leading vendors are Apple and Samsung. Xiaomi would enter under a 10 %-of-all-page-views rule or a rule that covers 80 % of Android (Samsung + Xiaomi = 84 %), but contributes no app (below), so every variant gives the same three apps.
   - Preinstalled trackers of the vendors above 10 % (Apple, Samsung, Xiaomi):
