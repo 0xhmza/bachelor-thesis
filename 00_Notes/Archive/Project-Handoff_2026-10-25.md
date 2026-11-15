@@ -76,7 +76,7 @@ German exposure ranking; preinstalled rule; the mood apps against the two-domain
 
 1. Author checks `screening.csv`; remove the Results `\todo`; freeze the sample.
 2. Send the supervisor email with the open questions (action plan §1).
-3. Settle D8–D12; write the walkthrough checklist, codebook v3 examples and LLM test thresholds in advance; run the five-app pilot (after sampling and harm model), then freeze instruments (target 30 October; registration 2 November, see [Timeline](Timeline.md)).
+3. Settle D8–D12; write the walkthrough checklist, codebook v3 examples and LLM test thresholds in advance; run the five-app pilot (after sampling and harm model), then freeze instruments (target 30 October; registration 2 November, see [Timeline](../Plan/Timeline.md)).
 4. Collect and archive material for the 50 apps (URL, date, hash, language, version).
 5. Code, validate, write Results 5.2–5.5, Discussion, Conclusion.
 6. Fill the front-matter metadata and the declaration.
@@ -91,7 +91,7 @@ German exposure ranking; preinstalled rule; the mood apps against the two-domain
 
 ## 7. Known risks and cautions
 
-- 25 October: deleting the old `output/` folder also removed git-ignored raw data of the 11 October sampling trial and the download-sampling test; recover from Syncthing `.stversions` ([Risk-Register](Risk-Register.md) R9).
+- 25 October: deleting the old `output/` folder also removed git-ignored raw data of the 11 October sampling trial and the download-sampling test; recover from Syncthing `.stversions` ([Risk-Register](../Plan/Risk-Register.md) R9).
 - Syncthing creates `*.conflict-cloud` copies; they are git-ignored (deleted on 25 October).
 - Raw Google Play and App Store collections exist only in git-ignored `output/` folders.
 - Graph descriptions of 31 changed files are stale until re-extracted; structure, citations and literature layers are current.

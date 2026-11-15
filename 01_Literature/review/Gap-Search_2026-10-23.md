@@ -172,5 +172,5 @@ works with the advisor; four of its papers are now in the list.
 **Registered in the digest (23 October 2026):** the 16 priority-A papers with a local PDF are
 nos. 101–116 in `Methods-Digest/registry.json`, cited in the L, H and C chapters (state in
 [HANDOFF.md](../digest/HANDOFF.md) §5). Next steps (reading the A items, the A items without a
-PDF, the rebuild) are tracked in the [action plan](../../00_Notes/Plan/Action-Plan_2026-10-13.md) §8; a
+PDF, the rebuild) are tracked in the [action plan](../../00_Notes/Archive/Action-Plan_2026-10-13.md) §8; a
 work becomes a thesis reference only through the rule in the [README](../README.md) (PDF, row, bib entry).

@@ -5,7 +5,7 @@
 - **Options considered:**
   1. Proposal: German first, English when German is unavailable.
   2. **English first, German when no English version is available (chosen).**
-  3. Capture both versions and code the German one (suggested in the [action plan](../Plan/Action-Plan_2026-10-13.md), §8).
+  3. Capture both versions and code the German one (suggested in the [action plan](../Archive/Action-Plan_2026-10-13.md), §8).
 - **Evidence:**
   - Supervisor meeting of 13 October: "we stick in English. English mainly else german as fallback" ([raw notes](../Meetings/2026-10-13_Supervisor-Meeting_Raw.md)); the organized notes ask to specify which materials the rule covers and when the fallback is used ([organized notes](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md)).
   - The same meeting keeps the German market and asks for German and English search keywords. The language rule therefore concerns the captured text, not the search.

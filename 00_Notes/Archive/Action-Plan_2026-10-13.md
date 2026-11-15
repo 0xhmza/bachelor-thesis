@@ -2,7 +2,7 @@
 
 Source: [organized notes](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md); where
 they differ from the proposal, the meeting wins. Dates work back from
-[Timeline.md](Timeline.md) (instruments frozen 2026-10-30, registration 2026-11-02).
+[Timeline.md](../Plan/Timeline.md) (instruments frozen 2026-10-30, registration 2026-11-02).
 Order: define → gather evidence → decide with a cited reason → protocols → pilot →
 freeze → rewrite the methodology. ❓ = needs the supervisor.
 Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
