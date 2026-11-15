@@ -25,3 +25,10 @@
   - Pages are those of the PDF page. The cards were checked for the figures they quote (for example 13 of 19 policies, 29 of 36 apps), not for every sentence.
 - **Needs:** author's confirmation; second-person check of the cards (as D12 update 2026-11-04 for the pathways); Discussion text on generality.
 - **Would change if:** the second person cannot map a card answer to a component (a new component is then added and the check cases are repeated); a source outside the ten adds a component; the supervisor meant trees for three concrete apps.
+
+## Decision 2026-11-15 — worked trees for five apps
+
+- **Status:** decided by the author, 2026-11-15 ("Harm tree only for 5 apps"; reading confirmed in chat: keep the general tree from the use cases and the scripted applicability for all 50 apps; draw and report the full app-specific harm tree, with the evidence for each node, for five apps only).
+- **Applied:** Methodology, Applicability Assessment (Step 1), marked orange with a note that the number may change depending on feasibility.
+- **Open:** which five apps.
+- **Second-person check:** replaced by D8 (2026-11-15): each of the two models checks every card and pathway, the author decides each objection.

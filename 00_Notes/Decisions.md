@@ -7,14 +7,14 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 
 | ID | Topic | Rule | Status | Record |
 |---|---|---|---|---|
-| D1 | Sample size | 47 ranked + 3 preinstalled apps, no quotas | proposed; "why 50?" justification open | [D01](Archive/Decisions/D01_sample-size.md) |
+| D1 | Sample size | 47 ranked + 3 preinstalled apps, no quotas | proposed; justification by comparison with prior studies added 11-15 | [D01](Archive/Decisions/D01_sample-size.md) |
 | D2 | Ranking | One ranking of both stores by German-market popularity, no rating floor, one app per provider; sensitivity threshold 5 of 47 providers | proposed | [D02](Archive/Decisions/D02_ranking-and-rating-floor.md) |
-| D3 | Scope and keywords | Keywords of Hutton 2018 and Malki 2024, EN + DE; eligibility E1a–E1d to E5 checked on the store listing | proposed; keyword tests and 3 must-include apps open | [D03](Archive/Decisions/D03_scope-keywords-function.md) |
+| D3 | Scope and keywords | Keywords of Hutton 2018 and Malki 2024, EN + DE; eligibility E1a–E1d to E5 checked on the store listing | proposed; keyword reverse engineering, store-API test and must-include apps dropped 11-15 | [D03](Archive/Decisions/D03_scope-keywords-function.md) |
 | D4 | Payment | Free to install; payment is recorded and only limits walkthroughs | proposed | [D04](Archive/Decisions/D04_payment-access.md) |
 | D5 | No privacy policy | App included, absence reported | confirmed 10-13 | [D05](Archive/Decisions/D05_apps-without-policy.md) |
 | D6 | Preinstalled apps | Leading vendor per platform: Apple Health, Apple Fitness, Samsung Health | proposed | [D06](Archive/Decisions/D06_preinstalled-apps.md) |
 | D7 | Language | English first, German fallback | confirmed 10-13 | [D07](Archive/Decisions/D07_language.md) |
-| D8 | Two coders | Author codes all; an independent second coder codes the validation sample; Krippendorff's α | decided 11-04; name open | [D08](Archive/Decisions/D08_two-coder.md) |
+| D8 | Coders | No second coder: two models code, the author is the only human (checks, validation reference); author recodes a tenth after two weeks; Krippendorff's α | decided 11-15 (replaces the 11-04 rule) | [D08](Archive/Decisions/D08_two-coder.md) |
 | D9 | LLM role | Two models code all units; people check high-stakes labels blind; 500-unit stratified validation sample | decided 11-04 | [D09](Archive/Decisions/D09_llm-role.md) |
 | D10 | Walkthrough | All 50 apps; tasks T1–T7; Android for dual-listed apps; ten-app second rating | closed 11-05 | [D10](Archive/Decisions/D10_walkthrough.md) |
 | D11 | Devices | Apps only; companion apps are eligible | proposed (inside D3) | [D03](Archive/Decisions/D03_scope-keywords-function.md) |
@@ -28,8 +28,10 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 | D19 | Data release | Instruments, scripts, labels open; captured texts for examiners only; recordings private | proposed | [D19](Archive/Decisions/D19_data-release.md) |
 | D20 | No pilot | Method applied to all apps as written; no pilot or development apps | confirmed 11-05 | [D20](Archive/Decisions/D20_no-pilot.md) |
 | D21 | Literature review | Brief review, at most ten papers, no PRISMA | confirmed 11-06 | [D21](Archive/Decisions/D21_brief-literature-review.md) |
-| D22 | Research questions | Full questions in the text; extra RQ and "RQ2 postponed" undecided | wording confirmed 11-06; set open | [D22](Archive/Decisions/D22_research-questions.md) |
-| D23 | Harm trees | Built use case by use case; stop after two cases that add nothing | proposed 11-07 | [D23](Archive/Decisions/D23_use-case-subtrees.md) |
+| D22 | Research questions | Full questions in the text; RQ1–RQ4 kept, RQ2 not postponed; no separate RQ on uncovered harms | decided 11-15 | [D22](Archive/Decisions/D22_research-questions.md) |
+| D23 | Harm trees | Built use case by use case; stop after two cases that add nothing; app-specific trees drawn in full for five apps (number may change with feasibility) | proposed 11-07; five apps decided 11-15 | [D23](Archive/Decisions/D23_use-case-subtrees.md) |
+| D24 | Study type | Document and interface analysis; no user study or survey | confirmed 11-15 | — |
+| D25 | Ethics | No ethics review: no human participants, only public documents and the analyst's own use of the apps | decided 11-15 | — |
 
 New decision: add a row; write a record only if the reasoning does not fit the row.
 The earlier long register is kept as [Archive/Decisions/Decision-Log.md](Archive/Decisions/Decision-Log.md).

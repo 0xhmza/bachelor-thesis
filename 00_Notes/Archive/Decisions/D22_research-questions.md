@@ -17,3 +17,10 @@
   - *RQ1, RQ3 and RQ4 through app analysis and the walkthrough; RQ2 postponed.* RQ2 is the stance axis (Axis B) of the same coded text as RQ1 and RQ3. Postponing it changes the coding scheme, the codebook (v7), the stage-2 prompt, the human check of high-stakes labels (D9 lists stance among them) and the results chapter. Not applied without the author's decision and the supervisor's reading ("postponed" as removed, or as answered later).
   - *Justify the questions with the related work.* Needs the Related Work restructuring (literature → gap → question).
 - **Would change if:** the author decides on the two open points.
+
+## Decision 2026-11-15 — set of questions closed
+
+- **Status:** decided by the author, 2026-11-15.
+- **Separate question on uncovered harms:** dropped, together with this open point. The omission half of RQ1 stays as it is.
+- **RQ2:** not postponed. RQ1–RQ4 stay as worded above; the thesis needed no change.
+- **Justify the questions with the related work:** still open (Related Work draft of 12 November).

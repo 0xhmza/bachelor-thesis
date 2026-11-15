@@ -19,3 +19,9 @@
 ## Update 2026-11-06 — meeting note, not applied
 
 The supervisor asked "why 50? it is about all apps in health tracking" ([meeting notes](../../Meetings/2026-11-06_Supervisor-Meeting_Organized.md) §5). The population is all health-tracking apps, so 50 has to be argued as a sample of that population. The methodology cites prior studies of 20 to 64 apps (Malki et al. 20, Huckvale et al. 36, Hutton et al. 64) and has no other argument. Open: a justification text. The number itself is not changed.
+
+## Update 2026-11-15 — justification applied
+
+- **Status:** author's instruction 2026-11-15: justify 50 by comparing with the sample sizes of earlier studies, reusing papers the thesis already cites. Applied in Methodology, App Sampling; the number is unchanged.
+- **Evidence (counts checked in the PDFs, PDF pages):** studies that inspect the apps themselves and not only their documents: Malki et al. 2024, 20 apps (p. 4); Grundy et al. 2019, 24 apps (p. 4); Iwaya et al. 2023, 27 apps (p. 3); Huckvale et al. 2019, 36 apps (p. 1); Hutton et al. 2018, 64 apps (p. 5); Huckvale et al. 2015, 79 apps (p. 1). Studies of documents or of automated analyses: O'Loughlin et al. 2019, 116 apps (p. 1); Sunyaev et al. 2015, 600 apps (p. 1); Tangari et al. 2021, 20,991 apps (p. 1).
+- **Argument:** the study codes every app's policy and walks through every app, so it belongs to the first group, whose samples range from 20 to 79; 50 lies inside it. The 50 apps are not a random sample of all health trackers but the most popular eligible ones in the German market (D2), where exposure concentrates; the limitation section states that they do not represent all health trackers.

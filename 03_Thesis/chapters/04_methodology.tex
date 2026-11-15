@@ -11,7 +11,7 @@ brief literature review that supplies the harms behind the harm trees, and
 Section~\ref{sec:framework} explains how its papers are used to construct harm
 pathways. Method literature is cited in the section that uses the method. Sections~\ref{sec:app-sampling} and~\ref{sec:collection} state which apps are studied
 and what is collected from each. Section~\ref{sec:analysis} states how two language models code
-the collected text and how people check it, and Section~\ref{sec:instruments} how the
+the collected text and how the author checks it, and Section~\ref{sec:instruments} how the
 instruments are frozen and validated against human coding. Section~\ref{sec:closing} closes
 with ethics, availability and limitations.
 
@@ -33,7 +33,7 @@ the two, which identifies the harms that are missing. The study has three parts:
     decides which harms apply to it (Section~\ref{sec:apply}).
   \item \textbf{Comparing text and model.} The app's policy and interface text are
     coded and set against the applicable pathways. Two language models code all the
-    text; people check every high-stakes label and code a validation sample, from
+    text; the author checks every high-stakes label and codes a validation sample, from
     which the models' errors are measured (Sections~\ref{sec:axes}, \ref{sec:llm}
     and~\ref{sec:validation}).
 \end{enumerate}
@@ -62,7 +62,7 @@ describes them afterwards.
   \node[bx=linkblue,minimum height=10mm] (pol) at (-6,-0.7) {\textbf{Privacy policy}\\and store listing};
   \node[bx=linkblue,minimum height=10mm] (wt) at (-6,-2.1) {\textbf{Walkthrough}\\attempted for every app};
   \node[bx=originimp] (app) at (-2,-1.4) {\textbf{Applicability}\\which parts and harms does this app have?};
-  \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\two models code, people check and validate};
+  \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\two models code, the author checks and validates};
   \node[bx=originimp] (gap) at (6,-1.4) {\textbf{Comparison}\\RQ1--RQ4, with source evidence};
   \draw[arr] (lit)--(gen); \draw[arr] (gen)--(tree); \draw[arr] (tree)--(freeze);
   \draw[arr] (pol.east)--(app.west); \draw[arr] (wt.east)--(app.west);
@@ -349,8 +349,8 @@ in machine-readable files. A tested script derives the capabilities, routes and 
 use case from the cards, and stops unless every component enters through a card with a page or
 section, every node of a tree exists, the check cases add nothing and the result equals the
 stored trees. The analyst judges only the components, their evidence and the first definition
-of each capability; the rest is computed. A second person checks every card and every pathway
-before the freeze (Section~\ref{sec:freeze}).
+of each capability; the rest is computed. Both models check every card and every pathway
+before the freeze, and the author decides each objection (Section~\ref{sec:freeze}).
 Like Knabenhans et al., the study does not claim to be complete: another pathway only
 adds to the harms found~\parencite[\S4.1]{knabenhans2026harms}.
 
@@ -392,11 +392,14 @@ Baseline & Current practice in the EU
 
 \section{App Sampling}
 \label{sec:app-sampling}
-The target sample consists of 50 apps. Previous studies that examined both
-app documents and the apps themselves used samples of 20 to 64 apps:
-Malki et al.\ installed and inspected 20~\parencite{malki2024exploring},
-Huckvale et al.\ analysed 36~\parencite{huckvale2019assessment}, and
-Hutton et al.\ evaluated 64~\parencite{hutton2018assessing}.
+The target sample consists of 50 apps. Its size follows the studies that, like this one,
+examine the apps themselves and not only their documents. They used 20 to 64 apps:
+Malki et al.\ inspected 20~\parencite[p.~4]{malki2024exploring}, Shipp and Blasco
+30~\parencite[p.~3]{shipp2020period}, Huckvale et al.\ 36~\parencite{huckvale2019assessment} and
+Hutton et al.\ 64~\parencite[p.~5]{hutton2018assessing}. Reviews of policies alone reach 116 and
+600 apps~\parencite{oloughlin2019reviewing,sunyaev2015availability}, but read no interface. Because every app here is both coded and walked through, 50 lies in the range of the
+in-depth designs. The 50 apps are not a random sample of all health trackers but the most popular
+eligible ones in Germany, where use concentrates (Section~\ref{sec:ranking}).
 
 The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
 by the leading device vendor of each platform; \textcolor{accent}{(ii)} apps listed on
@@ -785,11 +788,12 @@ establish only what the app reports about deletion, export or sharing, not that 
 The protocol fixes starting states, search boundaries and completion criteria before collection
 (Section~\ref{sec:freeze}).
 
-\paragraph{Independent review.} The second coder (Section~\ref{sec:validation}) independently
-rates recordings for ten randomly selected apps using a recorded seed, without seeing the first
-analyst's ratings. The second coder answers Q1--Q4 for each action and assigns each task
-outcome. This checks the interpretation of the recorded routes. The first analyst's background
-and prior familiarity with each app are documented.
+\paragraph{Re-rating.} \highlight[orange!25]{After at least two weeks, the author rates the
+recordings of ten apps again, drawn with a recorded seed, without seeing the first ratings,
+answering Q1--Q4 for each action and assigning each task outcome.}\todo{Follows from D8: no second
+coder. Confirm the re-rating.} This checks how stably the recorded routes are interpreted, not
+whether another rater would agree. The analyst's background and prior familiarity with each app
+are documented.
 
 \paragraph{Outputs and use.} The walkthrough produces three separate outputs
 (Table~\ref{tab:wt-outputs}). Transcripts are checked against the recording and linked to the
@@ -832,7 +836,7 @@ protection claims (Sections~\ref{sec:apply}--\ref{sec:assessment}).
 \subsection{Coding Units and Axes}
 \label{sec:axes}
 A unit is one policy paragraph or one coherent block of interface text. A script fixes the units
-before any coding, so that the models and the human coders label the same units. Coders can
+before any coding, so that the models and the author label the same units. Coders can
 consult adjacent text and must identify the exact supporting span. A unit may carry multiple
 labels. Counts and agreement are calculated per unit and code (Table~\ref{tab:axes}).
 
@@ -954,19 +958,19 @@ Routine: components, capabilities, measures and their scope
   & Validation sample; corrected estimates \\
 \cmidrule[0.3pt]{2-3}
 High-stakes: named harm, generic risk, stance, protection framing and strength, reassurance
-  & The union of both models' labels; a person checks every one, without seeing the models' labels
+  & The union of both models' labels; the author checks every one, without seeing the models' labels
   & Validation sample, for the mentions both models missed \\
 \cmidrule[0.3pt]{2-3}
 Applicability, minimisation, potential mismatch
-  & Decided by people, with evidence and reasoning logged; a model's minimisation label is only a proposal
-  & Second coder (Section~\ref{sec:validation}) \\
+  & Decided by the author, with evidence and reasoning logged; a model's minimisation label is only a proposal
+  & The author's recheck of a sample (Section~\ref{sec:validation}) \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
 \end{table}
 
 \paragraph{Human checks.} The union of high-stakes flags
-goes to a reviewer who sees the unit, adjacent text and flagged axis. The reviewer assigns the
+goes to the author, who sees the unit, adjacent text and flagged axis, and assigns the
 final label independently of the model labels~\parencite{schroeder2025just}. Raw outputs are stored separately from
 checked labels.
 
@@ -985,6 +989,10 @@ A script evaluates the trees. AND is present when all inputs are present and abs
 absent. OR is present when any input is present and absent when all are absent. Other cases are
 uncertain. OR+ is evaluated in its rewritten form (Section~\ref{sec:harm-trees}). A harm
 category applies if at least one pathway applies. Uncertain pathways are reported separately.
+\highlight[orange!25]{For five apps, the harm tree of the app is drawn in full, with the evidence
+for each component; for the others, the script's result is reported.}\todo{Decision D23: worked
+trees for five apps. The number may change depending on feasibility; the five apps are not yet
+chosen.}
 
 \subsection{Coverage and Protection Assessment (Steps~2 and~3)}
 \label{sec:assessment}
@@ -1016,8 +1024,8 @@ reported. Only level~3 carries stance (Axis~B).}
 
 \paragraph{Protection (Step~3).} For each claimed measure, the author identifies the component
 the measure would remove if it worked as described. The script sets that component to absent and
-re-evaluates the trees. An open pathway within the claim's scope is a candidate mismatch. A human
-reviewer decides and documents the reason~\parencite[\S4.5]{knabenhans2026harms}.
+re-evaluates the trees. An open pathway within the claim's scope is a candidate mismatch. The
+author decides and documents the reason~\parencite[\S4.5]{knabenhans2026harms}.
 
 \subsection{Comparison and Reporting by Research Question}
 \label{sec:comparison}
@@ -1042,7 +1050,7 @@ expected gap are retained.
 Missing policies, retrieval failures and blocked or partial walkthroughs are reported
 separately, with task-specific denominators. At onboarding before consent and in the initial
 privacy settings, directly displayed text, visible links and bounded non-findings are
-distinguished. In-app links to policies count as policy evidence. Human reviewers check scope,
+distinguished. In-app links to policies count as policy evidence. The author checks scope,
 version, date and language before classifying inconsistent claims. Differences in detail and
 findability are reported separately. Absence means that no mention was identified in the
 captured material and is worded as Section~\ref{sec:validation} sets out.
@@ -1052,8 +1060,10 @@ captured material and is worded as Section~\ref{sec:validation} sets out.
 
 \subsection{Pathway Review and Instrument Freeze}
 \label{sec:freeze}
-The second person of Section~\ref{sec:validation} checks every constructed pathway before the
-freeze, so that the yardstick is not judged only by its builder. The check asks whether each
+\highlight[orange!25]{Before the freeze, each of the two models checks every card and every
+constructed pathway against its source, and the author decides each objection}\todo{Follows from
+D8: no second coder. Confirm the model check.}, so that the yardstick is not judged only by its
+builder. The check asks whether each
 pathway's source supports the link, whether each combination of components suffices for the named actor in
 the health-tracker context, and whether the actor has access to the data. Each objection and its
 resolution is logged, and the trees are evaluated again after any change. The instruments are
@@ -1105,28 +1115,25 @@ fraction~\parencite[chs.~3, 6]{lohr2021sampling}\parencite{egami2023using}. Neym
 stratum size and assumed error spreads of 0.50, 0.50, 0.40, 0.10 and 0.07,
 respectively~\parencite{fisch2024stratified,gligoric2025unconfident,lohr2021sampling,zrnic2024active}.
 At least 150 units are drawn from V5 and 30 from each other stratum, or the whole stratum if it is
-smaller. The total is reduced under the same rule if training indicates more than 12 hours per
-coder. Units, independent providers and unique documents are reported per stratum.
+smaller. The total is reduced under the same rule if the first units coded indicate more than
+12 hours of coding. Units, independent providers and unique documents are reported per stratum.
 
-\paragraph{Two human coders.} The author and a second coder independently label the same units
-using the frozen codebook and without seeing model
-output~\parencite{campbell2013coding,oconnor2020intercoder}. Before disagreements are resolved,
-unweighted Krippendorff's $\alpha$ is reported for each binary unit-level code, with its
-prevalence and raw counts~\parencite{feinstein1990high}. $\alpha$ is reported as undefined for
-codes without variation. The sample is enriched with difficult units, so these values describe
-the sample, not the corpus. A code is taken as reliable with $\alpha\geq0.800$ and as tentative
-with $0.667\leq\alpha<0.800$~\parencite[pp.~356--357]{krippendorff2019content}\parencite{mcdonald2019reliability}.
+\paragraph{Human reference.} The study has no second human coder: two models code, and the author
+is the only person. The author labels every unit of the validation sample with the frozen
+codebook, without seeing model output~\parencite{campbell2013coding,oconnor2020intercoder}, and
+these labels form the validation reference. To measure their stability, the author recodes a
+random tenth after at least two weeks without seeing the first labels. Unweighted
+Krippendorff's $\alpha$ is reported for each binary unit-level code between the two models,
+between each model and the reference, and between the author's two codings, with its prevalence
+and raw counts~\parencite{feinstein1990high}. $\alpha$ is reported as undefined for codes without
+variation. The sample is enriched with difficult units, so these values describe the sample,
+not the corpus. A code is taken as reliable with $\alpha\geq0.800$ and as tentative with
+$0.667\leq\alpha<0.800$~\parencite[pp.~356--357]{krippendorff2019content}\parencite{mcdonald2019reliability}.
 Below 0.667, a code is reported only qualitatively, or the instrument is revised, the affected
-units are recoded and the evaluation is labelled exploratory.
-
-Disagreements are then settled, and the settled labels form the validation reference. The
-author recodes a random tenth after at least two weeks. The second coder is a student of a
-computing programme who has no other part in the thesis. This coder trains on 20 units outside
-the corpus, checks pathways before
-the freeze, reviews a random sample of applicability, minimisation and mismatch decisions,
-including negative decisions, and rates ten recorded walkthroughs. If a second coder is
-unavailable for the full sample, a smaller probability sample is drawn across all strata and the
-claims are narrowed.
+units are recoded and the evaluation is labelled exploratory. \highlight[orange!25]{In the same way,
+the author decides a random sample of applicability, minimisation and mismatch decisions,
+including negative ones, again after at least two weeks.}\todo{Follows from D8: no second coder.
+Confirm the recheck.}
 
 \section{Ethics, Availability, and Limitations}
 \label{sec:closing}
@@ -1138,9 +1145,10 @@ analyst's own use of publicly available apps. Store terms and \texttt{robots.txt
 before any automated retrieval. Walkthroughs use throwaway study accounts and synthetic data
 only. No real name, address, health data or payment details are entered, so paid features,
 identity verification and paired devices are not obtained (Section~\ref{sec:walkthroughs}).
-\highlight[orange!25]{\textbf{[?]}}\todo{Missing: whether the university's ethics committee was
-consulted or no review is required, and whether any request is sent to a provider during T3, T6
-or T7.}
+Because no person takes part and only public material and the analyst's own app use are
+analysed, no review by an ethics committee is required.
+\highlight[orange!25]{\textbf{[?]}}\todo{Missing: whether any request is sent to a provider during
+T3, T6 or T7.}
 
 \subsection{Data and Artifact Availability}
 \label{sec:availability}
@@ -1160,8 +1168,8 @@ The sample favours free, popular apps found by the chosen keywords and does not 
 health trackers in Germany. The corpus is a dated snapshot, and the walkthroughs cover bounded
 routes. The trees depend on the chosen literature, and argued links are weaker than documented
 ones. A provider who documents more of its data flows makes more pathways applicable, so
-applicability partly reflects disclosure. Two correlated models code the corpus, and people read
-only the high-stakes labels and the validation sample. App-level misses are therefore not
-estimated. The study cannot establish provider intent or actual harm, and a difference from the
+applicability partly reflects disclosure. Two correlated models code the corpus, and one person,
+the author, reads only the high-stakes labels and the validation sample. App-level misses are
+therefore not estimated, and the reference labels rest on one coder's reading. The study cannot establish provider intent or actual harm, and a difference from the
 harm trees does not show that the provider was obliged to describe the pathway
 (Section~\ref{sec:generic-model}).

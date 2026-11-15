@@ -34,3 +34,10 @@
 ## Update 2026-11-05
 
 The pilot clauses above no longer hold: the method has no pilot or instrument test, see [D20](D20_no-pilot.md).
+
+## Decision 2026-11-15 — no second coder (replaces the second-coder rule)
+
+- **Status:** decided by the author, 2026-11-15: "no second coder, just model-model-human; the human is me". Replaces the 11-04 rules above, including the student second coder and the fallback.
+- **Choice:** two language models code every unit (D9); the author is the only human. The author checks every high-stakes label without seeing the model labels, codes the 500-unit validation sample blind to model output (these labels are the validation reference), and decides applicability, minimisation and mismatches. Reliability of the reference: the author recodes a random tenth of the validation sample after at least two weeks (intra-coder α). Krippendorff's α is reported between the two models, between each model and the reference, and between the author's two codings.
+- **Consequences for the other second-coder tasks (derived, marked orange in the thesis until the author confirms):** pathway and card check before the freeze — each of the two models checks every card and pathway against its source, the author decides each objection; walkthrough — the author re-rates the recordings of ten random apps after at least two weeks without seeing the first ratings; applicability, minimisation and mismatch decisions — the author re-decides a random sample after at least two weeks.
+- **Limit (stated in the thesis):** the reference labels rest on one person's reading; agreement with it shows how well the models reproduce the author, not that a second coder would agree.
