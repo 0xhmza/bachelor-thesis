@@ -20,7 +20,7 @@
 ## Update 2026-11-04 — two models, human check of high-stakes labels, sampling validation
 
 - **Status:** proposed (2026-11-04, author's instruction in chat after the methodology review of the same day: "the LLM has to do the coding job (or the most of it) … no human should read through all the text"; "then two LLMs"). Supersedes the "model screens and proposes; people decide every retained code" choice and the review triggers of 11-01.
-- **Options considered (methodology review, 00_Admin/Reviews/Methodology-Review_2026-11-04):**
+- **Options considered (methodology review, 00_Notes/Reviews/Methodology-Review_2026-11-04):**
   1. Human-first coding with the model as second coder. Rejected by the author: a person would read all text.
   2. Keep the single screener, repair the validation. Weaker: misses of one model stay invisible.
   3. No model in the coding. Does not answer the supervisor's request to test model use.
@@ -31,7 +31,7 @@
 
 ## Update 2026-11-04 (evening) — estimator, sampling frame and reporting level
 
-- **Status:** proposed (2026-11-04, after the ChatGPT submission review R1, R2, R7 and the deep research of the same day, `00_Admin/Reviews/Methodology-Deep-Research_2026-11-04/Report.md`).
+- **Status:** proposed (2026-11-04, after the ChatGPT submission review R1, R2, R7 and the deep research of the same day, `00_Notes/Reviews/Methodology-Deep-Research_2026-11-04/Report.md`).
 - **Choice:** (1) target = the independent corpus (all units outside pilot and test apps); pilot/test apps are development material, fully coded by the author and reported separately. (2) Strata V1–V5 form a priority partition (first matching stratum), simple random sampling without replacement within strata, census of small strata; π = n_h/N_h. (3) Unit-level totals use the difference estimator T̂ = Σ_U g + Σ_S (y−g)/π with g = mean of the two models' indicators (uncertain = ½), stratified design variance; intervals describe audit uncertainty within the fixed corpus; provider bootstrap dropped. (4) App/pathway maxima are reported as detection summaries; an optional whole-app audit of high-stakes codes is the only way to measure app-level misses (decision after the pilot). (5) Joint misses estimated from all strata. (6) Single-human checked labels are distinct from double-coded reference labels. (7) α on binary unit×code indicators, unweighted; undefined if no variation; a merged/redefined code is a new version and its evaluation on the same sample is exploratory. (8) Beta-based intervals for small counts. (9) Wang et al. 2024 removed (full text unverified).
 - **Evidence:** Egami et al. 2023 §2, §4; Angelopoulos et al. 2023; Horvitz & Thompson 1952; Lohr 2021 chs. 3, 5, 6; Fisch et al. 2024; Zrnic & Candès 2024; Gligorić et al. 2025; Webber 2013.
 - **Still open:** sample size and allocation (pilot), the optional whole-app audit, precision threshold.

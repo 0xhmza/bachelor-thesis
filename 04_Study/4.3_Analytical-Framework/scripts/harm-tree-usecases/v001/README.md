@@ -1,6 +1,6 @@
 # Harm trees by use case, version 1
 
-Decision D23 (`00_Admin/Decisions/D23_use-case-subtrees.md`). Builds the harm trees of Chapter 5
+Decision D23 (`00_Notes/Decisions/D23_use-case-subtrees.md`). Builds the harm trees of Chapter 5
 the way Knabenhans et al. 2026 (§4) built theirs: use case by use case, one subtree after each,
 common sub-trees defined once.
 

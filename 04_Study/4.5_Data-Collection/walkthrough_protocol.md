@@ -1,7 +1,7 @@
 # Privacy-Focused Cognitive Walkthrough Protocol
 
 **Version:** 9 · **Date:** 2026-11-05 · Operational version of the methodology's
-App Walkthroughs section, of [D10](../../00_Admin/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
+App Walkthroughs section, of [D10](../../00_Notes/Decisions/D10_walkthrough.md) and of D15's single health-tracker domain.
 Method: Wharton, Rieman, Lewis & Polson (1994), *The Cognitive
 Walkthrough Method: A Practitioner's Guide*, in Nielsen & Mack (eds.),
 *Usability Inspection Methods*, pp. 105–140. The four questions below are from

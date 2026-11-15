@@ -5,9 +5,9 @@ thesis tables and figures. Each version lives in `vNNN/`; outputs stay in the
 version's `output/` folder (outside Git).
 
 - `v001/`: the search of 26 October 2026 in OpenAlex and Semantic Scholar
-  ([D13](../../00_Admin/Decisions/D13_literature-review.md), superseded), frozen in
+  ([D13](../../00_Notes/Decisions/D13_literature-review.md), superseded), frozen in
   `05_Data/Literature Search/26. Oct/`.
-- `v002/`: the search of 28 October 2026 ([D14](../../00_Admin/Decisions/D14_literature-review-v2.md)),
+- `v002/`: the search of 28 October 2026 ([D14](../../00_Notes/Decisions/D14_literature-review-v2.md)),
   frozen in `05_Data/Literature Search/28. Oct/`; screening protocol and log in
   [`01_Literature/review/`](../../01_Literature/review/README.md).
 - `v003/`: the v002 method as revised in the thesis on 30 October 2026, without the

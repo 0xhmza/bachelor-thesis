@@ -1,6 +1,6 @@
 # Methodology audit source downloads — 4 November 2026
 
-This folder contains **11 retrieved scholarly PDF files (10 works, including two Schroeder versions)** and **four labelled web-text captures**. Existing references remain in their established literature locations; the complete53-reference map is in [the citation audit](../../00_Admin/Reviews/Methodology-Submission-Review_2026-11-04/Citation-Audit.md).
+This folder contains **11 retrieved scholarly PDF files (10 works, including two Schroeder versions)** and **four labelled web-text captures**. Existing references remain in their established literature locations; the complete53-reference map is in the citation audit (`Reviews/Methodology-Submission-Review_2026-11-04/Citation-Audit.md`, removed from the tree; see git history).
 
 The web captures are archives of extracted official text, not screenshots or publisher articles. Their live values do not replace the dated inputs of the original collection. The fourth-edition Krippendorff book was already available privately and is not copied here. Wang2024 remains unavailable because publisher verification blocked access; no login requirement is inferred from that block.
 

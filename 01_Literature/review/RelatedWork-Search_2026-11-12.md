@@ -3,7 +3,7 @@
 Purpose: find literature for Chapter 3 (Related Work) and Chapter 2 (Background)
 of the thesis. Chapter 3 is organised as literature → open question → research
 question. This was a targeted web search, not a systematic review (see
-[D21](../../00_Admin/Decisions/D21_brief-literature-review.md)). It does not
+[D21](../../00_Notes/Decisions/D21_brief-literature-review.md)). It does not
 change the ten papers of the literature review in Methodology 4.2.
 
 ## How the search was run

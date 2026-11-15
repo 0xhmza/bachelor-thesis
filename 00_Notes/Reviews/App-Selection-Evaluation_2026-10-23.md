@@ -1,17 +1,17 @@
 # App selection and ranking — evaluation, 23 October 2026
 
 Evaluation of the selection rule (methodology, App Sampling) and of
-[D1](Decisions/D01_sample-size.md), [D2](Decisions/D02_ranking-and-rating-floor.md)
-and [D6](Decisions/D06_preinstalled-apps.md) as of 22 October. It proposes
+[D1](../Decisions/D01_sample-size.md), [D2](../Decisions/D02_ranking-and-rating-floor.md)
+and [D6](../Decisions/D06_preinstalled-apps.md) as of 22 October. It proposes
 changes and decides nothing. Outcomes: §1 and §3–§6 were adopted in D2 and D3 on
 23 October; §5 was superseded by the German ranking of 25 October (D2).
 
 **Evidence.** (1) Google Play pilot of 22 October
 (`04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v002/output/pilot-de-19kw.json`, git-ignored; 19
 keywords, German storefront, first 20 results), re-analysed with
-[`04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py`](../04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py).
+[`04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py`](../../04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py).
 (2) App Store ranking trial of 22 October (`04_Study/4.4_App-Sampling/scripts/app-ranking/v001/output/`,
-2 keywords). (3) The [gap search](../01_Literature/review/Gap-Search_2026-10-23.md)
+2 keywords). (3) The [gap search](../../01_Literature/review/Gap-Search_2026-10-23.md)
 and the digest's stage A. **Not checked:** no App Store run with all 19 keywords
 existed; eligibility was not applied, so counts are for the ranked pool before
 screening.
@@ -49,7 +49,7 @@ the top 47 and raises period trackers in the Play half from 3 to 4.
 
 ### 2. Historical category-allocation concern — superseded by D15
 
-**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
+**Update, 28 October 2026:** the author confirmed health trackers as the single study domain ([D15](../Decisions/D15_health-tracker-domain.md)). Categories inform scope and keyword collection only. Pilot, validation and walkthrough totals now apply across the sample. The concern below records the earlier draft and is no longer an open design objection.
 
 | Pilot, Play | Top 24 | Top 47 |
 |---|---|---|

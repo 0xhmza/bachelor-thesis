@@ -1,13 +1,13 @@
 # Action plan after the 2026-10-13 supervisor meeting
 
-Source: [organized notes](Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md); where
+Source: [organized notes](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md); where
 they differ from the proposal, the meeting wins. Dates work back from
 [Timeline.md](Timeline.md) (instruments frozen 2026-10-30, registration 2026-11-02).
 Order: define → gather evidence → decide with a cited reason → protocols → pilot →
 freeze → rewrite the methodology. ❓ = needs the supervisor.
 Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 
-**Scope update, 28 October 2026:** [D15](Decisions/D15_health-tracker-domain.md) confirms health trackers as the single study domain. Source-paper categories support scope and keyword collection only. Pilot, validation and walkthrough totals apply across the sample without category allocations; the older category-specific planning concern is resolved.
+**Scope update, 28 October 2026:** [D15](../Decisions/D15_health-tracker-domain.md) confirms health trackers as the single study domain. Source-paper categories support scope and keyword collection only. Pilot, validation and walkthrough totals apply across the sample without category allocations; the older category-specific planning concern is resolved.
 
 ## 1 · Clarify and define (by 10-20)
 - ☐ ❓ One email with the open questions: "post-harm reaction" and "accessible
@@ -18,7 +18,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
   rule (D6).
 - ☐ Glossary with sources: capability, harm, health tracker, PET, harm tree,
   surface, stance, protection claim. CHARISMHA (2016) gives the German government's
-  definitions of health apps ([gap search](../01_Literature/review/Gap-Search_2026-10-23.md) §6).
+  definitions of health apps ([gap search](../../01_Literature/review/Gap-Search_2026-10-23.md) §6).
 
 ## 2 · Gather evidence (by 10-24)
 - ◐ Search log (database, query, date, hits, inclusion) for PETS, CCS, USENIX Sec.,
@@ -33,7 +33,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
 - ☐ Finish the three core harm papers (Citron & Solove, Knabenhans et al., Martin et al.).
 - ☐ Read the priority-A papers of the gap search (digest cards are the short version).
 
-## 3 · Decide (by 10-26) · register: [Decision-Log.md](Decision-Log.md)
+## 3 · Decide (by 10-26) · register: [Decision-Log.md](../Decisions/Decision-Log.md)
 
 | ID | Decision | Proposal | Meeting | Status |
 |---|---|---|---|---|
@@ -64,16 +64,16 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
   done). The review copy `03_Thesis/Thesis_Review-Copy.docx` updates with each commit.
 - ☐ Update `Open-Points.md` and `Timeline.md`; file the reply under `Meeting-Notes/`.
 
-## 7 · App selection: follow-ups from the [23 October evaluation](App-Selection-Evaluation_2026-10-23.md)
+## 7 · App selection: follow-ups from the [23 October evaluation](../Reviews/App-Selection-Evaluation_2026-10-23.md)
 
 1. ☑ App Store collection with the same keywords and depth: 23 October, 49 queries
    (`appstore-scraper/v007`).
-2. ☑ Study domain clarified by the author on 28 October 2026 ([D15](Decisions/D15_health-tracker-domain.md)): health trackers overall. Categories describe the sample and supply scope/keyword vocabulary; they impose no separate sampling, pilot, validation, walkthrough or analysis allocations.
+2. ☑ Study domain clarified by the author on 28 October 2026 ([D15](../Decisions/D15_health-tracker-domain.md)): health trackers overall. Categories describe the sample and supply scope/keyword vocabulary; they impose no separate sampling, pilot, validation, walkthrough or analysis allocations.
 3. ☑ One app per developer (D2, 23 October). Pilot: Leap Fitness Group held 10 of the
    Play top 47 under one policy URL, Simple Design Ltd. 3; the rule changed 6 of the
    24 Play places.
 4. ☑ Tracking-over-time rule E1 with an exclusion log (D3, 23 October;
-   [screening.csv](../04_Study/4.4_App-Sampling/screening.csv)). Pregnancy apps are inside the
+   [screening.csv](../../04_Study/4.4_App-Sampling/screening.csv)). Pregnancy apps are inside the
    domain, following Malki et al. (2024); ❓ supervisor to confirm.
 5. ☑ Saturation and keyword checks: keyword list from Hutton et al. (2018) and Malki
    et al. (2024), incl. mood (D3); App Store depth 200 and leave-one-keyword-out
@@ -85,7 +85,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
    (Martin et al. 2015); rating counts respond to in-app prompts (Google's Babbel
    case: +64 % rating volume).
 
-## 8 · Literature follow-ups from the [23 October gap search](../01_Literature/review/Gap-Search_2026-10-23.md)
+## 8 · Literature follow-ups from the [23 October gap search](../../01_Literature/review/Gap-Search_2026-10-23.md)
 
 - ☐ Save the open-access PDFs that block scripted download into
   `01_Literature/library/` under the final name `Author_Year_ShortTitle.pdf`: Velykoivanenko

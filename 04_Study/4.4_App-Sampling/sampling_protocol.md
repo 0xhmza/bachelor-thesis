@@ -1,6 +1,6 @@
 # Sampling Protocol — current scope amendment
 
-**Version:** 3 (scope amendment) · **Date:** 2026-10-28 · **Authority:** author's confirmed clarification in [D15](../../00_Admin/Decisions/D15_health-tracker-domain.md), read with the current thesis methodology and D1–D7.
+**Version:** 3 (scope amendment) · **Date:** 2026-10-28 · **Authority:** author's confirmed clarification in [D15](../../00_Notes/Decisions/D15_health-tracker-domain.md), read with the current thesis methodology and D1–D7.
 
 The study domain is health trackers overall. Categories from the source papers explain the domain definition and the [49 search queries](keywords.csv) and describe the apps; they do not define separate study strata or analysis groups.
 
@@ -18,7 +18,7 @@ The text below is the preserved version-1 historical draft. Its sampling/ranking
 
 **Version:** 1 (draft) · **Date:** 2026-09-18 · **Status:** awaiting supervisor
 confirmation of the points marked ⚠ in
-[`00_Admin/Open-Points.md`](../../00_Admin/Open-Points.md)
+[`00_Notes/Plan/Open-Points.md`](../../00_Notes/Plan/Open-Points.md)
 
 This file is the operational version of the Sampling paragraph of the proposal (`03_Thesis/proposal/`; argued in full in `99_Archive/2026-10-14_cleanup-recovery.zip` (legacy member `99_Archive/_junk/02_Proposal/sections/04_methodology.tex`) §4.2). Fill in the empty
 cells **before** collecting anything, and do not change the protocol afterwards

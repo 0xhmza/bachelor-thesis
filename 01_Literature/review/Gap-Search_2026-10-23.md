@@ -4,7 +4,7 @@ A targeted search for literature the reading corpus (100 registry papers in the
 [Methods Digest](../digest), 93 catalogue works, 9 core papers) does not yet
 hold. The emphasis is LLM-assisted coding of privacy policies. The other digest
 stages were checked for gaps against the research questions and the open
-decisions in the [Decision Log](../../00_Admin/Decision-Log.md).
+decisions in the [Decision Log](../../00_Notes/Decisions/Decision-Log.md).
 
 **Status:** reading candidates; none is in `03_Thesis/references.bib`,
 `reading-status.csv` or the catalogue. The 16 priority-A papers with a PDF are
@@ -12,7 +12,7 @@ registered in the Methods Digest (nos. 101–116, with cards; §10). Metadata wa
 checked against the publisher, arXiv, ACL Anthology, PoPETs, USENIX or Crossref
 page. Details marked *(read)* were checked in the full text; all other summaries
 come from the abstract or landing page and must be checked before citing. Used by
-the [app-selection evaluation](../../00_Admin/App-Selection-Evaluation_2026-10-23.md).
+the [app-selection evaluation](../../00_Notes/Reviews/App-Selection-Evaluation_2026-10-23.md).
 
 Downloaded open-access copies (46 PDFs, 37 from the first round and 9 from the second, §10):
 [`library/`](../library/).
@@ -108,7 +108,7 @@ chapter or a specific decision · **C** background.
 
 ## 7. App search and selection
 
-Used in the [app-selection evaluation](../../00_Admin/App-Selection-Evaluation_2026-10-23.md).
+Used in the [app-selection evaluation](../../00_Notes/Reviews/App-Selection-Evaluation_2026-10-23.md).
 
 | Pri. | Work | What it shows | Use for the thesis | Copy |
 |---|---|---|---|---|
@@ -172,5 +172,5 @@ works with the advisor; four of its papers are now in the list.
 **Registered in the digest (23 October 2026):** the 16 priority-A papers with a local PDF are
 nos. 101–116 in `Methods-Digest/registry.json`, cited in the L, H and C chapters (state in
 [HANDOFF.md](../digest/HANDOFF.md) §5). Next steps (reading the A items, the A items without a
-PDF, the rebuild) are tracked in the [action plan](../../00_Admin/Action-Plan_2026-10-13.md) §8; a
+PDF, the rebuild) are tracked in the [action plan](../../00_Notes/Plan/Action-Plan_2026-10-13.md) §8; a
 work becomes a thesis reference only through the rule in the [README](../README.md) (PDF, row, bib entry).

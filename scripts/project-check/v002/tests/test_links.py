@@ -24,10 +24,10 @@ class LinkScopeTests(unittest.TestCase):
 
     def test_raw_vendor_docs_are_untouched_but_project_errors_are_reported(self):
         self.write("05_Data/raw/vendor/README.md", "[upstream](MISSING.md)")
-        self.write("00_Admin/current.md", "[decision](MISSING.md)")
+        self.write("00_Notes/current.md", "[decision](MISSING.md)")
         self.check.check_links()
         self.assertEqual(len(self.check.errors), 1)
-        self.assertIn("00_Admin/current.md", self.check.errors[0])
+        self.assertIn("00_Notes/current.md", self.check.errors[0])
 
     def test_project_links_to_missing_raw_evidence_still_fail(self):
         self.write("README.md", "[evidence](05_Data/raw/missing.csv)")

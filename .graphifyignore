@@ -48,8 +48,8 @@ scripts/zotero-pin-keys/*/output/
 # not current methodological decisions. Keep the active sources indexed.
 01_Literature/review/decisions/raw/
 output/
-00_Admin/Reviews/*/audit-source.txt
-00_Admin/Reviews/*/diagnostics-source.txt
+00_Notes/Reviews/*/audit-source.txt
+00_Notes/Reviews/*/diagnostics-source.txt
 
 # Archived web pages and store records behind the identity register (raw data).
 04_Study/4.4_App-Sampling/identity-evidence/*.html

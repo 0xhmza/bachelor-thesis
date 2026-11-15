@@ -2,7 +2,7 @@
 version: 5
 date: 2026-11-01
 status: draft — tree nodes from reference model v1 (D12); examples to be filled from the pilot
-source: current 03_Thesis/chapters/04_methodology.tex; author clarification recorded in 00_Admin/Decisions/D15_health-tracker-domain.md; harm model from Knabenhans et al. (2026), ePrint 2026/867, version of 4 May 2026
+source: current 03_Thesis/chapters/04_methodology.tex; author clarification recorded in 00_Notes/Decisions/D15_health-tracker-domain.md; harm model from Knabenhans et al. (2026), ePrint 2026/867, version of 4 May 2026
 supersedes: codebook_v4.md
 ---
 

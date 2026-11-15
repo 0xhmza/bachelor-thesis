@@ -59,4 +59,4 @@ Field mappings: the library's [search](https://github.com/JoMingyu/google-play-s
 and [element](https://github.com/JoMingyu/google-play-scraper/blob/ce1df6d67e6d8c39826daac2f668808fc025f284/google_play_scraper/constants/element.py)
 code; positional parsers break when Google changes its pages. All known Play
 interfaces, with robots rules, are listed in
-[D2](../../../../00_Admin/Decisions/D02_ranking-and-rating-floor.md).
+[D2](../../../../00_Notes/Decisions/D02_ranking-and-rating-floor.md).

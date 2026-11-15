@@ -1,7 +1,7 @@
 # Evidence for the identity register
 
 Archived on 28 October 2026 for the decisions in [`../identity.csv`](../identity.csv)
-(rule I1–I5 in [D2](../../../00_Admin/Decisions/D02_ranking-and-rating-floor.md)).
+(rule I1–I5 in [D2](../../../00_Notes/Decisions/D02_ranking-and-rating-floor.md)).
 Every other decision rests on the listing fields of the frozen collections in
 `05_Data/App Sampling/26. Oct/Raw/`.
 

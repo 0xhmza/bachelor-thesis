@@ -4,7 +4,7 @@
 
 Two parts of the project have different answers, and the answer depends on which
 scope is finally agreed (see the open question in
-`00_Admin/Meeting-Notes/2026-09-04_Proposal-Meeting.md`, §8):
+`00_Notes/Meetings/2026-09-04_Proposal-Meeting.md`, §8):
 
 | Part | Human subjects? | Likely needs review |
 |---|---|---|

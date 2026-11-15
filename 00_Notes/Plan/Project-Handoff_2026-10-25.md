@@ -1,10 +1,10 @@
 # Project handoff — 25 October 2026
 
-**Scope update, 28 October 2026:** the author confirmed one study domain, health trackers ([D15](Decisions/D15_health-tracker-domain.md)). The current methodology, codebook v4 and walkthrough protocol v3 remove category allocations from the pilot, validation and walkthroughs. Categories remain scope/keyword sources and descriptive metadata. References to separate domains in this dated handoff describe the earlier draft and no longer govern current work.
+**Scope update, 28 October 2026:** the author confirmed one study domain, health trackers ([D15](../Decisions/D15_health-tracker-domain.md)). The current methodology, codebook v4 and walkthrough protocol v3 remove category allocations from the pilot, validation and walkthroughs. Categories remain scope/keyword sources and descriptive metadata. References to separate domains in this dated handoff describe the earlier draft and no longer govern current work.
 
 For the author or whoever continues. State of the whole project; the graph
 (`graphify-out/`, 1,278 nodes, 112 communities) was queried and refreshed for this
-file. Rules for agents: [AGENTS.md](../AGENTS.md). Start every exploration with
+file. Rules for agents: [AGENTS.md](../../AGENTS.md). Start every exploration with
 `.\graphify.ps1 query "<question>" --budget 1200`, then open the returned passages.
 
 ## 1. The thesis
@@ -20,8 +20,8 @@ walkthrough of 50 apps; LLM-assisted coding checked by blind manual coding.
 - **RQ4 Surfaces:** how coverage, stance and protection differ between policies, listings, marketing and inspected interfaces.
 
 Authority: `03_Thesis/thesis.tex` and its chapters; the 13 October supervisor
-meeting ([organized](Meeting-Notes/2026-10-13_Supervisor-Meeting_Organized.md),
-[raw](Meeting-Notes/2026-10-13_Supervisor-Meeting_Raw.md)) supersedes the proposal
+meeting ([organized](../Meetings/2026-10-13_Supervisor-Meeting_Organized.md),
+[raw](../Meetings/2026-10-13_Supervisor-Meeting_Raw.md)) supersedes the proposal
 (`03_Thesis/proposal/`, frozen 5 October snapshot).
 
 ## 2. State by chapter
@@ -49,14 +49,14 @@ Collected 23 October (App Store, `04_Study/4.4_App-Sampling/scripts/appstore-scr
 `04_Study/4.4_App-Sampling/scripts/app-ranking/v003`.
 
 - **Frame:** 49 queries (Hutton et al. 2018 and Malki et al. 2024 terms, English and German; `04_Study/4.4_App-Sampling/keywords.csv`), first 30 results per query, German storefronts.
-- **Ranking ([D2](Decisions/D02_ranking-and-rating-floor.md)):** one ranking of both stores by German exposure E = v + c·r (r German App Store ratings, v German Google Play reviews, c = 0.090 from 114 apps in both stores and the OS shares Android 72.3 %, iOS 27.7 %); same app in both stores is one candidate; one app per developer; no floor.
-- **Preinstalled ([D6](Decisions/D06_preinstalled-apps.md)):** leading vendor per platform (Apple, Samsung; replaced the 10 % threshold on 25 October, same result): Apple Health, Apple Fitness, Samsung Health.
+- **Ranking ([D2](../Decisions/D02_ranking-and-rating-floor.md)):** one ranking of both stores by German exposure E = v + c·r (r German App Store ratings, v German Google Play reviews, c = 0.090 from 114 apps in both stores and the OS shares Android 72.3 %, iOS 27.7 %); same app in both stores is one candidate; one app per developer; no floor.
+- **Preinstalled ([D6](../Decisions/D06_preinstalled-apps.md)):** leading vendor per platform (Apple, Samsung; replaced the 10 % threshold on 25 October, same result): Apple Health, Apple Fitness, Samsung Health.
 - **Result:** 47 ranked apps from 47 providers (32 in both stores, 9 Google Play only, 6 App Store only) + 3 preinstalled = 50. Categories: activity 22, diet-weight 12, cycle 4, sleep 3, pregnancy 2, mood 2, heart 1, wearable 1. Sensitivity (providers changed of 47): pool-sum scale 0, depth 20 1, App Store depth 200 2, English only 2, German only 3, equal platform weights 5, no developer rule 10, earlier selection 10, worldwide Play count 11.
 - **Screening:** `04_Study/4.4_App-Sampling/screening.csv` (275 listings, 156 eligible, 119 excluded) was **prepared by an AI assistant; the author must check every decision**, then remove the `\todo` in Results 5.1. Borderline calls are listed in the sampling handout (`04_Study/4.4_App-Sampling/HANDOUT_2026-10-25_sampling.md`; historical file no longer present).
 - Rerun: `python 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/rank.py 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/config.json` (rewrites `03_Thesis/tables/app-sample.tex`); tests: `python -I -m unittest discover -s 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/tests`.
 - Raw outputs are git-ignored; back up `scripts/*/v00*/output/` separately.
 
-## 4. Decisions ([register](Decision-Log.md))
+## 4. Decisions ([register](../Decisions/Decision-Log.md))
 
 | ID | State |
 |---|---|
@@ -83,9 +83,9 @@ German exposure ranking; preinstalled rule; the mood apps against the two-domain
 
 ## 6. Literature and tooling
 
-- Core reading list and 93-work methodology corpus (89 PDFs; missing Parker 2019, two books, the APA web page): [01_Literature/README.md](../01_Literature/README.md). Only 1 of 93 works is marked read in `reading-status.csv`; edit statuses there, `.\graphify.ps1 refresh` regenerates the index, map and README column.
-- Methods Digest (115 papers with cards, one PDF per stage): [HANDOFF](../01_Literature/digest/HANDOFF.md); only stage L was rebuilt after the 23 October additions.
-- Gap search with 75 candidates: [Literature-Gap-Search](../01_Literature/review/Gap-Search_2026-10-23.md); action plan §8 lists the PDFs still to be saved by hand.
+- Core reading list and 93-work methodology corpus (89 PDFs; missing Parker 2019, two books, the APA web page): [01_Literature/README.md](../../01_Literature/README.md). Only 1 of 93 works is marked read in `reading-status.csv`; edit statuses there, `.\graphify.ps1 refresh` regenerates the index, map and README column.
+- Methods Digest (115 papers with cards, one PDF per stage): [HANDOFF](../../01_Literature/digest/HANDOFF.md); only stage L was rebuilt after the 23 October additions.
+- Gap search with 75 candidates: [Literature-Gap-Search](../../01_Literature/review/Gap-Search_2026-10-23.md); action plan §8 lists the PDFs still to be saved by hand.
 - Checks: `python scripts/check_project.py` (0 errors required); graph: `.\graphify.ps1 refresh`. 31 files await semantic re-extraction (`graphify-out/freshness.json`) through the installed graphify skill.
 - CI: `.github/workflows/ci.yml`. Zotero key pinning is a separate script project, `scripts/zotero-pin-keys/` (kept unstaged).
 

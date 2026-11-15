@@ -476,7 +476,7 @@ def refresh():
     communities = cluster(graph)
     cohesion = score_all(graph, communities)
     labels = {}
-    names = {'00_Admin': 'Supervisor Decisions', '01_Literature': 'Literature and Evidence',
+    names = {'00_Notes': 'Supervisor Decisions', '01_Literature': 'Literature and Evidence',
              '03_Thesis': 'Thesis Writing and Methods', '04_Study': 'Study Instruments',
              '06_Presentation': 'Presentation', 'output': 'Sampling Research',
              'scripts': 'Graphify Integration'}

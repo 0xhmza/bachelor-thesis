@@ -10,7 +10,7 @@
 | `Weekly-Log.md` | Five-line weekly progress note for the supervisor. |
 | `Open-Points.md` | Decisions the proposal makes on your behalf, to confirm or overturn with the supervisor. |
 | `App-Selection-Evaluation_2026-10-23.md` | Evaluation of the app selection and ranking (D1, D2, D6) against the Play pilot and the literature; most proposed changes were adopted in D2 and D3. |
-| `Meeting-Notes/` | One file per supervisor meeting, `YYYY-MM-DD_Topic.md`, raw notes and an organized record. Use `TEMPLATE.md`. Latest: [2026-11-06](Meeting-Notes/2026-11-06_Supervisor-Meeting_Organized.md). |
+| `Meeting-Notes/` | One file per supervisor meeting, `YYYY-MM-DD_Topic.md`, raw notes and an organized record. Use `TEMPLATE.md`. Latest: [2026-11-06](Meetings/2026-11-06_Supervisor-Meeting_Organized.md). |
 | `Supervisor-Input/` | Material sent by the advisor between meetings: the original attachment plus a `.md` transcription. |
 | `Thesis-Offer/` | The official thesis offer as published by the chair, with the date it was captured. |
 | `Correspondence/` | Emails sent and received, one `.md` transcription per message (`.eml` original where available). |

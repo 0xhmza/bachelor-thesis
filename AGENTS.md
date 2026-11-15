@@ -33,7 +33,7 @@
   supervisor", "supervisor meeting of …" or "as set at the meeting". State the
   rule or choice and its evidence (literature, law, the study's own reasoning)
   and cite a decision as "Decision Dnn" only. Supervisor input may stay in
-  `00_Admin/` (meeting notes, decision records, correspondence), never in
+  `00_Notes/` (meeting notes, decision records, correspondence), never in
   `03_Thesis/`. Before finishing any thesis edit, run
   `grep -rniE "supervis|advis|meeting|chair" 03_Thesis/chapters 03_Thesis/appendix 03_Thesis/tables`
   and rewrite hits other than GDPR "supervisory authority", "supervised
@@ -42,7 +42,7 @@
   subsample (12 apps, 6/6 by platform, rank-order slots). A second rating of a
   subset of recorded sessions is a validation step, not the walkthrough scope.
 - Record each methodological choice, with its evidence, in
-  `00_Admin/Decision-Log.md` (and its `Decisions/Dnn_*.md` record) before the
+  `00_Notes/Decisions/Decision-Log.md` (and its `Decisions/Dnn_*.md` record) before the
   methodology states it. The methodology states rules; numbers that follow from
   applying them belong in the results.
 - `03_Thesis/references.bib` is the only bibliography. Check new entries against
@@ -68,7 +68,7 @@
   paragraph as a top float (`[!t]`) so it opens the next page in the same
   section. Look at the rendered pages for large gaps. The body keeps
   the rules and choices; the appendix keeps exact strings and complete lists.
-- Organizational files (`00_Admin/`, `01_Literature/`, `04_Study/`) never add
+- Organizational files (`00_Notes/`, `01_Literature/`, `04_Study/`) never add
   thesis content.
 
 ## Literature

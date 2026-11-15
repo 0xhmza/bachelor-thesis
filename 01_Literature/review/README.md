@@ -1,6 +1,6 @@
 # Literature review v002 — screening protocol and log
 
-Procedure: [D14](../../00_Admin/Decisions/D14_literature-review-v2.md). Search scripts:
+Procedure: [D14](../../00_Notes/Decisions/D14_literature-review-v2.md). Search scripts:
 [`scripts/literature-search/v002`](../../scripts/literature-search/v002). Frozen search results:
 `05_Data/Literature Search/28. Oct/`.
 

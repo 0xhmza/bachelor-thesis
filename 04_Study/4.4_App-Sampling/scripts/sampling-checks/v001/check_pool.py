@@ -3,7 +3,7 @@
 Reports, for the apps a rating-count ranking would select: the domain mix, how
 many places one developer takes, shared policy URLs, how deep in the search
 results the selected apps were found, and how far the selection depends on
-single keywords. Used for 00_Admin/App-Selection-Evaluation_2026-10-23.md.
+single keywords. Used for 00_Notes/Reviews/App-Selection-Evaluation_2026-10-23.md.
 
     python 04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v002/output/pilot-de-19kw.json
 

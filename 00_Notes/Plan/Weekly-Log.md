@@ -26,7 +26,7 @@ against. Review the [risk register](Risk-Register.md) while writing it.
 - **Done:** supervisor meeting (10-13); methodology literature corpus catalogued and 89/93 works fetched;
   review copy of the thesis for the supervisor (`03_Thesis/Thesis_Review-Copy.docx`, rebuilt with each commit);
   literature knowledge graph and reading tracker.
-- **Decisions moved:** none yet; D1–D12 opened from the meeting (see [Decision-Log.md](Decision-Log.md)).
+- **Decisions moved:** none yet; D1–D12 opened from the meeting (see [Decision-Log.md](../Decisions/Decision-Log.md)).
 - **Reading:** 1 of 93 works read.
 - **Blocked by / need from supervisor:** answers to the open questions in the action plan §1.
 - **Next week:** question email; extraction sheet; glossary.

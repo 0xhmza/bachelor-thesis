@@ -39,8 +39,8 @@ python scripts/build_review_docx.py         # review copy now (the hook does it 
 .\graphify.ps1 refresh                      # graph, literature index, map, reading tracker
 ```
 
-Decisions go into `00_Admin/Decision-Log.md` before the methodology states them;
-progress into `00_Admin/Weekly-Log.md`, risks into `00_Admin/Risk-Register.md`;
+Decisions go into `00_Notes/Decisions/Decision-Log.md` before the methodology states them;
+progress into `00_Notes/Plan/Weekly-Log.md`, risks into `00_Notes/Plan/Risk-Register.md`;
 reading status into `01_Literature/catalog/reading-status.csv`. CI
 (`.github/workflows/ci.yml`) runs the checks, builds the review copy and compiles the
 thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md).
@@ -49,7 +49,7 @@ thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md)
 
 | Folder | Content |
 |---|---|
-| `00_Admin/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
+| `00_Notes/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
 | `01_Literature/` | `library/` (every full text, flat, `Author_Year_ShortTitle.pdf`), `notes/`, `catalog/` (reading tracker, methods corpus, generated index and map), `review/` (literature review) and `digest/` (Methods Digest); start at its `README.md` |
 | `03_Thesis/` | Main thesis, chapters, appendices, bibliography (`references.bib`, Zotero file), review copy, proposal snapshot |
 | `04_Study/` | One folder per section of Chapter 4 (`4.1_…` to `4.8_…`): instruments, protocols, samples and the scripts that work on them |
@@ -95,7 +95,7 @@ The retired `_junk/` folder, sync conflicts and temporary files were removed on
 `99_Archive/2026-10-14_cleanup-recovery.zip`, full removed folders in the adjacent
 `../bachelor-thesis-cleanup-20261014/`. The superseded `output/` research folder
 was removed on 25 October 2026 (in Git history; its git-ignored raw data was lost,
-see `00_Admin/Risk-Register.md` R9) and later restored from Git as the historical
+see `00_Notes/Plan/Risk-Register.md` R9) and later restored from Git as the historical
 evidence it is.
 
 On 30 October 2026 the stale duplicate `01_Literature/.tex/`, the `#_Junk_Backup/`
