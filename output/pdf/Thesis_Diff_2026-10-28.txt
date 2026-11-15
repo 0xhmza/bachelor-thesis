@@ -1,5 +1,0 @@
-Thesis diff, 28 October 2026
-Baseline: 5ec3600ca6a44c216e080df9b93d34565c652685
-Snapshot UTC: 2026-10-28T15:58:09.108166+00:00
-Deleted text: red. Added text: green. Changed tables/figures are shown as intact old/new blocks.
-No source files were edited by this PDF generation.
