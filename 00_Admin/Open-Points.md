@@ -26,8 +26,8 @@ main run (since 5 November: no pilot; two models are fixed before coding and fro
 
 Applied the same day: [D21](Decisions/D21_brief-literature-review.md) (brief literature review),
 [D22](Decisions/D22_research-questions.md) (wording of the questions), the expansion of E1 and the
-statement that categories are keywords only. Still open, in the order of the
-[meeting notes](Meeting-Notes/2026-11-06_Supervisor-Meeting_Organized.md) §6:
+statement that categories are keywords only. Still open (the
+[meeting checklist](Meeting-Notes/2026-11-06_Supervisor-Meeting_Organized.md) shows each item as done or open):
 
 | # | Open point | Affects |
 |---|---|---|
