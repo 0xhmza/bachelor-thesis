@@ -7,7 +7,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 import evaluate as ev  # noqa: E402
 
-MODEL = HERE.parents[3] / '04_Study/Reference-Model/reference_model_v1.yaml'
+MODEL = HERE.parents[3] / '04_Study/4.3_Analytical-Framework/reference_model_v1.yaml'
 P, A, U = ev.PRESENT, ev.ABSENT, ev.UNCERTAIN
 
 

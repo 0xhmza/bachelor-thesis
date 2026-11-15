@@ -282,7 +282,7 @@ exposure in any case.
 Throwaway accounts and synthetic data only. No real name, address, health data,
 or payment details. Apps that require identity verification or payment stay in
 the document sample; do not cross those barriers, but keep accessible evidence. See
-[`../Ethics/README.md`](../Ethics/README.md).
+[`../Ethics/README.md`](../4.8_Ethics/README.md).
 
 ## Version history
 

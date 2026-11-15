@@ -73,7 +73,7 @@ Legend: ☐ open · ◐ started · ☑ done. **Status: 25 October 2026.**
    Play top 47 under one policy URL, Simple Design Ltd. 3; the rule changed 6 of the
    24 Play places.
 4. ☑ Tracking-over-time rule E1 with an exclusion log (D3, 23 October;
-   [screening.csv](../04_Study/App-Sample/screening.csv)). Pregnancy apps are inside the
+   [screening.csv](../04_Study/4.4_App-Sampling/screening.csv)). Pregnancy apps are inside the
    domain, following Malki et al. (2024); ❓ supervisor to confirm.
 5. ☑ Saturation and keyword checks: keyword list from Hutton et al. (2018) and Malki
    et al. (2024), incl. mood (D3); App Store depth 200 and leave-one-keyword-out

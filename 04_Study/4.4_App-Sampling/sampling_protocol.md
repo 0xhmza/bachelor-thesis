@@ -107,7 +107,7 @@ An app is excluded if **any** of the following hold:
 3. It is a pure device companion with no tracking function of its own.
 4. *(Walkthrough eligibility only.)* Account creation requires identity
    verification or payment (forbidden by the ethics rules — see
-   [`../Ethics/README.md`](../Ethics/README.md)). Such apps stay in the
+   [`../Ethics/README.md`](../4.8_Ethics/README.md)). Such apps stay in the
    document sample, which needs no account; they are skipped in walkthroughs
    with a recorded reason.
 5. It duplicates an app already in the sample from the same provider under a

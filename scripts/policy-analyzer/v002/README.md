@@ -13,7 +13,7 @@ not corrected estimates.
 
 | Step | Command | Result |
 |---|---|---|
-| Build the data file | `python build_data.py` | `output/data.js` from `04_Study/Reference-Model/reference_model_v2.yaml` and the v2 prompts |
+| Build the data file | `python build_data.py` | `output/data.js` from `04_Study/4.3_Analytical-Framework/reference_model_v2.yaml` and the v2 prompts |
 | Open the workspace | `python -m http.server 8765 --directory scripts/policy-analyzer/v002` from the repo root, then http://localhost:8765 | Opening `index.html` directly also works in most browsers |
 | Test | `node --test tests` | Tree logic, term parser, model check, combination rules, coverage, κ and α, YAML round trip |
 

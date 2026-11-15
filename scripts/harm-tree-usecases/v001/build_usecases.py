@@ -2,7 +2,7 @@
 
     python build_usecases.py <repo_root>
 
-Reads 04_Study/Reference-Model/use_cases_v1.yaml (the cards) and reference_model_v2.yaml
+Reads 04_Study/4.3_Analytical-Framework/use_cases_v1.yaml (the cards) and reference_model_v2.yaml
 (definitions of components, capabilities and pathways). For each use case, in order, it adds
 the components of the card to those already known, evaluates which capabilities and pathways
 become possible, and records what is new. The final state must equal the reference model
@@ -497,8 +497,8 @@ def basis_counts(steps):
 
 def main(root):
     root = Path(root)
-    model = yaml.safe_load((root / '04_Study/Reference-Model/reference_model_v2.yaml').read_text(encoding='utf-8'))
-    data = yaml.safe_load((root / '04_Study/Reference-Model/use_cases_v1.yaml').read_text(encoding='utf-8'))
+    model = yaml.safe_load((root / '04_Study/4.3_Analytical-Framework/reference_model_v2.yaml').read_text(encoding='utf-8'))
+    data = yaml.safe_load((root / '04_Study/4.3_Analytical-Framework/use_cases_v1.yaml').read_text(encoding='utf-8'))
     cases = data['use_cases']
     steps = accrete(model, cases)
     errors = check(model, cases, steps, bib_keys(root))

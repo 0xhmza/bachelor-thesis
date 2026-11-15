@@ -1,7 +1,7 @@
 # D12 — What is the harm tree built on (the supervisor's "best app")?
 
 - **Status:** proposed (2026-11-01, author's instruction in chat). The supervisor has not confirmed that this reading matches the phrase "best app".
-- **Affects:** RQ1, RQ3 · [`reference_model_v1.yaml`](../../04_Study/Reference-Model/reference_model_v1.yaml) · codebook v5 · Methodology, Reference Model and Reference Harm Trees
+- **Affects:** RQ1, RQ3 · [`reference_model_v1.yaml`](../../04_Study/4.3_Analytical-Framework/reference_model_v1.yaml) · codebook v5 · Methodology, Reference Model and Reference Harm Trees
 - **Author's instruction:** first make a model of a generic health app that has all the capabilities a health app can have, then apply that tree to apps on the basis of their privacy policy and the cognitive walkthrough.
 - **Options considered:**
   1. Pick one real app as "best" (most popular, most complete policy). Needs a criterion for "best", and misses functions that app lacks.
@@ -30,7 +30,7 @@
 ## Decision 2026-11-04 (night) — taken at the author's instruction
 
 - **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
-- **Choice:** reference model v2 (`04_Study/Reference-Model/reference_model_v2.yaml`); v1 kept as the model of the instrument test.
+- **Choice:** reference model v2 (`04_Study/4.3_Analytical-Framework/reference_model_v2.yaml`); v1 kept as the model of the instrument test.
   - K10 = (CO2 AND IM7) for the provider OR (IM4 AND CX3) for advertising partners; no OR+ remains. CO2 alone gives no other actor the data. The partner combination is argued from evidence that health-app data reaches advertising and analytics companies that can aggregate it (Huckvale et al. 2019; Grundy et al. 2019).
   - IM12 = no usable way to delete (any route); new IM14 = no usable way to export (any route); I2 = IM12 OR IM14.
 - **Evaluator:** `scripts/instrument-test/v002/` rejects OR+; 30 tests pass (among them "CO2 alone gives no K10", each combination opens K10, deletion and export judged separately). Appendix G tables regenerated from v2.

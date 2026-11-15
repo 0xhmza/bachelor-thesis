@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import rank  # noqa: E402
 
-REGISTER = Path(__file__).resolve().parents[4] / '04_Study' / 'App-Sample' / 'identity.csv'
+REGISTER = Path(__file__).resolve().parents[4] / '04_Study' / '4.4_App-Sampling' / 'identity.csv'
 
 
 def listing(store, lid, german, developer, name, bundle='', description='', world=0):

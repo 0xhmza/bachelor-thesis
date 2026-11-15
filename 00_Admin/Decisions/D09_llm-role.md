@@ -1,7 +1,7 @@
 # D9 — What does the language model do, and when is it accepted?
 
 - **Status:** proposed (2026-11-01, author's instruction in chat: "the LLM will assist"). Model and final prompts stay open until the pilot.
-- **Affects:** RQ1–RQ4 · [`04_Study/Prompts/`](../../04_Study/Prompts/README.md) · Methodology, LLM-Assisted Coding
+- **Affects:** RQ1–RQ4 · [`04_Study/4.6_Coding/Prompts/`](../../04_Study/4.6_Coding/Prompts/README.md) · Methodology, LLM-Assisted Coding
 - **Options considered:**
   1. The model codes alone. Rejected: performance depends on task and data and needs human validation (Pangakis et al. 2023, p. 1; Törnberg 2024, p. 9); configuration choices can change conclusions (Baumann et al. 2025).
   2. **The model screens and proposes; people decide (chosen).**

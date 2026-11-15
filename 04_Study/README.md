@@ -1,23 +1,32 @@
-# Study Materials
+# Study materials
 
-Everything needed to make the empirical part reproducible. If someone else could
-not rerun the study from this folder alone, something is missing.
+One folder per section of Chapter 4 (Methodology). A reader who has the thesis can find
+each instrument by its section number. Domain: health trackers overall
+([D15](../00_Admin/Decisions/D15_health-tracker-domain.md)).
 
-The study domain is health trackers overall ([D15](../00_Admin/Decisions/D15_health-tracker-domain.md)). Categories from the source papers explain the scope and keywords and describe the apps; they impose no allocations on validation, walkthroughs or analysis. The instrument bundle of 5 November 2026 is: codebook [v7](Codebook/codebook_v7.md); reference model [v2](Reference-Model/reference_model_v2.yaml); prompts `stage1_coverage_v2`, `stage1_coverage_v2p`, `stage2_stance_v2`, `stage3_protection_v2` ([Prompts](Prompts/README.md)); walkthrough protocol version 9; [human coding sheets](Instrument/human_coding_sheet_v2.md); [decision forms](Instrument/decision_forms_v1.md); and the validation draw and estimator in `scripts/validation-sample/v001/`. It is frozen before main collection and applied to all apps (D20). Earlier versions preserve the historical design.
+| Folder | Section | Contents |
+|---|---|---|
+| `4.1_Study-Design/` | 4.1 | One-page method flowcharts (HTML, PDF), full and simple |
+| `4.3_Analytical-Framework/` | 4.3 | Reference model v1, v2 and the use-case cards (YAML) |
+| `4.4_App-Sampling/` | 4.4 | Sampling protocol, keywords, screening, identity register, identity evidence |
+| `4.5_Data-Collection/` | 4.5 | Walkthrough protocol |
+| `4.6_Coding/` | 4.6 | `Codebook/` (v1–v7), `Prompts/` (stages 1–3, run log) |
+| `4.7_Validation/` | 4.7 | Human coding sheets, decision forms, validation manifest template, `Instrument-Test/` (D16, superseded by D20) |
+| `4.8_Ethics/` | 4.8 | Ethics notes |
 
-| Folder | Contents |
-|---|---|
-| `App-Sample/` | Search keywords, inclusion/exclusion criteria, the resulting app list, and the date each app was captured. |
-| `Instrument/` | The data-collection instruments. Currently `walkthrough_protocol.md`; survey drafts go here too if the scenario-based survey is added back to scope. |
-| `Ethics/` | Ethics application, approval, consent and information sheets. |
-| `Codebook/` | The coding scheme: every category with definition, examples, and counter-examples. Version it. |
-| `Prompts/` | Every LLM prompt, versioned. See `Prompts/README.md`. |
-| `Methodology-Overview/` | One-page flowchart of the whole method, from the sources to the conclusions (`methodology-overview.html`, rendered to `.pdf` by `scripts/methodology-overview/v003/render_pdf.py`), and a simple one-column version on one A4 page (`methodology-overview-simple`). A summary of Chapter 4; the thesis is authoritative. |
+4.2 (literature review) lives in `../01_Literature/`.
 
-## Non-negotiables
+**Frozen bundle (D20):** codebook [v7](4.6_Coding/Codebook/codebook_v7.md), reference model
+[v2](4.3_Analytical-Framework/reference_model_v2.yaml), prompts `stage1_coverage_v2`,
+`stage1_coverage_v2p`, `stage2_stance_v2`, `stage3_protection_v2`
+([Prompts](4.6_Coding/Prompts/README.md)), walkthrough protocol v9,
+[coding sheets](4.7_Validation/human_coding_sheet_v2.md),
+[decision forms](4.7_Validation/decision_forms_v1.md). The validation draw is in
+`scripts/validation-sample/v001/`.
 
-1. **Record the capture date and app version** for every piece of material you collect.
-   Store listings and policies change; without a date your data is not verifiable.
-2. **Never edit a collected artefact in place.** Raw goes to `05_Data/raw/`, read-only.
-3. **Version every prompt and every codebook change**, with a one-line reason.
-4. **Validate the LLM.** Hand-code a random subsample and report agreement.
+## Rules
+
+1. Record capture date and app version for every collected item.
+2. Never edit a collected artefact in place; raw data goes to `05_Data/raw/` (read-only).
+3. Version every prompt and codebook change with a one-line reason.
+4. Validate the LLM against a hand-coded random subsample.

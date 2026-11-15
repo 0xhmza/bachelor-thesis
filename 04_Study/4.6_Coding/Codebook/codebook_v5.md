@@ -63,7 +63,7 @@ Appendix A: an app lock against partner access to on-device cycle data).
 ### Reference harm trees
 
 Origin is **not** coded from provider text. It is fixed in advance for each pathway
-in [`reference_model_v1.yaml`](../Reference-Model/reference_model_v1.yaml) (D12) for health trackers overall.
+in [`reference_model_v1.yaml`](../../4.3_Analytical-Framework/reference_model_v1.yaml) (D12) for health trackers overall.
 Sources include Salehzadeh Niksirat et al. 2024, Gabriele & Chiasson 2020,
 Shipp & Blasco 2020, Malki et al. 2024, Hudig & Singh 2025 and Cao et al. 2024,
 extended by the logged literature search with a recorded reason. App categories

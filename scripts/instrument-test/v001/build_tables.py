@@ -132,7 +132,7 @@ def reference_tables(model, out):
 
 
 def test_tables(root, model, out_tables, out_figures, summary):
-    study = root / '04_Study/Instrument-Test'
+    study = root / '04_Study/4.7_Validation/Instrument-Test'
     llm = root / '05_Data/raw/policy-test_2026-11-01/llm'
     record = ev.load(study / 'applicability_clue.yaml')
     review = ev.load(study / 'review_clue.yaml')
@@ -358,7 +358,7 @@ def test_tables(root, model, out_tables, out_figures, summary):
 
 def main(root):
     root = Path(root)
-    model = ev.load(root / '04_Study/Reference-Model/reference_model_v1.yaml')
+    model = ev.load(root / '04_Study/4.3_Analytical-Framework/reference_model_v1.yaml')
     ev.check_model(model)
     tables = root / '03_Thesis/tables'
     figures = root / '03_Thesis/figures'

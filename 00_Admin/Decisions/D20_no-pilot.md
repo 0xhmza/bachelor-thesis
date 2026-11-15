@@ -40,8 +40,8 @@ Each value is the assistant's proposal and a study rule, not a published thresho
 - Results, Discussion and Appendix H no longer report the test on Clue. The generated files `03_Thesis/tables/test-*.tex` and `03_Thesis/figures/test-*.tex`, and the `\synthtag` macro, went with them.
 - Appendix B now prints the current prompts (version 2 and its paraphrase), because version 1 was only used in the test.
 - The AI Appendix keeps the disclosure that Claude drafted the generic model and the methodology text on it; the uses that belonged to the test left with it.
-- Kept as an archive, outside the thesis: `04_Study/Instrument-Test/`, `05_Data/raw/policy-test_2026-11-01/`, `scripts/instrument-test/` (v002 also holds the current evaluator and the generator of the reference-model tables), the version 1 prompts, codebook v6, coding sheet v1.
-- The historical draft in `04_Study/App-Sample/sampling_protocol.md` below the current amendment is left as it is.
+- Kept as an archive, outside the thesis: `04_Study/4.7_Validation/Instrument-Test/`, `05_Data/raw/policy-test_2026-11-01/`, `scripts/instrument-test/` (v002 also holds the current evaluator and the generator of the reference-model tables), the version 1 prompts, codebook v6, coding sheet v1.
+- The historical draft in `04_Study/4.4_App-Sampling/sampling_protocol.md` below the current amendment is left as it is.
 
 ## Would change if
 

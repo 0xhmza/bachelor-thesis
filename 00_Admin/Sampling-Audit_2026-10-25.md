@@ -127,7 +127,7 @@ resolved or bounded by evidence.
 
 ### Kinomap: exclusion reason contradicted by the archived listing
 
-[screening.csv](../04_Study/App-Sample/screening.csv), Apple ID `611177969`,
+[screening.csv](../04_Study/4.4_App-Sampling/screening.csv), Apple ID `611177969`,
 excludes Kinomap under E1 because its listing supposedly states no recording of
 the user's data. Its archived description instead says:
 
@@ -201,7 +201,7 @@ from parsed JSON as if they were hashes of the original HTTP response.
 
 ## 6. P2 — Protocol history and implementation descriptions diverge
 
-- The opening of [sampling_protocol.md](../04_Study/App-Sample/sampling_protocol.md)
+- The opening of [sampling_protocol.md](../04_Study/4.4_App-Sampling/sampling_protocol.md)
   says version 2 was fixed before the collection of 23 October. The same file and
   D2 describe ranking revisions on 25 October after collection. The methodology
   now distinguishes this timing, but the protocol's opening still overstates

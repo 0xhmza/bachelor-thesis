@@ -8,7 +8,7 @@ sys.path.insert(0, str(HERE.parent))
 import evaluate as ev  # noqa: E402
 
 ROOT = HERE.parents[3]
-MODEL = ROOT / '04_Study/Reference-Model/reference_model_v2.yaml'
+MODEL = ROOT / '04_Study/4.3_Analytical-Framework/reference_model_v2.yaml'
 P, A, U = ev.PRESENT, ev.ABSENT, ev.UNCERTAIN
 
 
@@ -105,7 +105,7 @@ def test_one_open_pathway_makes_a_harm_apply():
 
 
 def test_test_app_record_matches_model_v2():
-    record = ev.load(ROOT / '04_Study/Instrument-Test/applicability_clue_v2.yaml')
+    record = ev.load(ROOT / '04_Study/4.7_Validation/Instrument-Test/applicability_clue_v2.yaml')
     assert set(record['components']) == set(model()['components'])
     states = {k: v['state'] for k, v in record['components'].items()}
     caps = ev.capability_states(model(), states)

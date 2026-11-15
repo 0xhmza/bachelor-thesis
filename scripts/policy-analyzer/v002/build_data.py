@@ -14,12 +14,12 @@ import sys
 import yaml
 
 HERE = pathlib.Path(__file__).resolve().parent
-MODEL = '04_Study/Reference-Model/reference_model_v2.yaml'
+MODEL = '04_Study/4.3_Analytical-Framework/reference_model_v2.yaml'
 PROMPTS = {
-    'stage1': '04_Study/Prompts/stage1_coverage_v2.md',
-    'stage1p': '04_Study/Prompts/stage1_coverage_v2p.md',
-    'stage2': '04_Study/Prompts/stage2_stance_v2.md',
-    'stage3': '04_Study/Prompts/stage3_protection_v2.md',
+    'stage1': '04_Study/4.6_Coding/Prompts/stage1_coverage_v2.md',
+    'stage1p': '04_Study/4.6_Coding/Prompts/stage1_coverage_v2p.md',
+    'stage2': '04_Study/4.6_Coding/Prompts/stage2_stance_v2.md',
+    'stage3': '04_Study/4.6_Coding/Prompts/stage3_protection_v2.md',
 }
 
 

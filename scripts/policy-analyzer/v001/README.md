@@ -11,7 +11,7 @@ estimates, and every high-stakes label still needs a person.
 
 | Step | Command | Result |
 |---|---|---|
-| Build the data file | `python build_data.py` | `output/data.js` from `04_Study/Reference-Model/reference_model_v2.yaml` and the v2 prompts in `04_Study/Prompts/` |
+| Build the data file | `python build_data.py` | `output/data.js` from `04_Study/4.3_Analytical-Framework/reference_model_v2.yaml` and the v2 prompts in `04_Study/4.6_Coding/Prompts/` |
 | Open the page | `python -m http.server 8765 --directory scripts/policy-analyzer/v001` from the repo root, then http://localhost:8765 | Opening `index.html` directly also works in most browsers |
 | Test the analysis code | `node --test tests` | Tree logic, combination rules, coverage levels, κ and α |
 

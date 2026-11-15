@@ -11,8 +11,8 @@ sys.path.insert(0, str(HERE.parent))
 import build_usecases as b  # noqa: E402
 
 ROOT = HERE.parents[3]
-MODEL = yaml.safe_load((ROOT / '04_Study/Reference-Model/reference_model_v2.yaml').read_text(encoding='utf-8'))
-CASES = yaml.safe_load((ROOT / '04_Study/Reference-Model/use_cases_v1.yaml').read_text(encoding='utf-8'))['use_cases']
+MODEL = yaml.safe_load((ROOT / '04_Study/4.3_Analytical-Framework/reference_model_v2.yaml').read_text(encoding='utf-8'))
+CASES = yaml.safe_load((ROOT / '04_Study/4.3_Analytical-Framework/use_cases_v1.yaml').read_text(encoding='utf-8'))['use_cases']
 
 
 def run(cases):

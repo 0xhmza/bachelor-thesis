@@ -63,7 +63,7 @@ Appendix A: an app lock against partner access to on-device cycle data).
 ### Reference harm trees
 
 Origin is **not** coded from provider text. It is fixed in advance for each pathway
-in [`reference_model_v2.yaml`](../Reference-Model/reference_model_v2.yaml) (D12) for health trackers overall.
+in [`reference_model_v2.yaml`](../../4.3_Analytical-Framework/reference_model_v2.yaml) (D12) for health trackers overall.
 Every OR+ of the sources is stated there as an OR of sufficient AND-combinations, each
 naming the actor and the component that gives that actor the data; a combination the
 sources do not establish is not added, and the capability stays uncertain.

@@ -1,4 +1,4 @@
-"""Render every methodology overview (HTML) in 04_Study/Methodology-Overview to a one-page PDF.
+"""Render every methodology overview (HTML) in 04_Study/4.1_Study-Design to a one-page PDF.
 
     python scripts/methodology-overview/v002/render_pdf.py [preview-folder]
 
@@ -12,7 +12,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[3]
-FOLDER = ROOT / "04_Study" / "Methodology-Overview"
+FOLDER = ROOT / "04_Study" / "4.1_Study-Design"
 PREVIEW = Path(sys.argv[1]) if len(sys.argv) > 1 else None
 
 

@@ -6,8 +6,8 @@ common sub-trees defined once.
 
 | Input | Content |
 |---|---|
-| `04_Study/Reference-Model/use_cases_v1.yaml` | One card per use case: six questions (record, derive, phone, leaves, asks, outside), each with components, basis and page evidence |
-| `04_Study/Reference-Model/reference_model_v2.yaml` | Definitions of components, capabilities (typed AND/OR formulas) and pathways |
+| `04_Study/4.3_Analytical-Framework/use_cases_v1.yaml` | One card per use case: six questions (record, derive, phone, leaves, asks, outside), each with components, basis and page evidence |
+| `04_Study/4.3_Analytical-Framework/reference_model_v2.yaml` | Definitions of components, capabilities (typed AND/OR formulas) and pathways |
 
 `build_usecases.py` adds the components of each card to those already known, evaluates which
 capabilities and pathways become possible, and records what is new: components, capabilities,

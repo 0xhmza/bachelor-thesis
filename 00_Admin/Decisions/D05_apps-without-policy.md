@@ -1,7 +1,7 @@
 # D5 — Do apps without a reachable privacy policy stay in the sample?
 
 - **Status:** confirmed (2026-10-13, supervisor meeting; adopted by the author 2026-10-23). The methodology states this choice.
-- **Affects:** Methodology, App Sampling (eligibility) and Analysis and Reporting (denominators); [sampling protocol](../../04_Study/App-Sample/sampling_protocol.md) v2, which replaces v1 exclusion criterion 1
+- **Affects:** Methodology, App Sampling (eligibility) and Analysis and Reporting (denominators); [sampling protocol](../../04_Study/4.4_App-Sampling/sampling_protocol.md) v2, which replaces v1 exclusion criterion 1
 - **Options considered:**
   1. Proposal: a reachable policy is an inclusion criterion; absence is logged, then the app is excluded.
   2. **Include the app and report the absence as a finding (chosen).**

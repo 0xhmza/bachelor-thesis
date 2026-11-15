@@ -6,7 +6,7 @@ Runs the method once on one app (Decision D16). Results are in the thesis, Secti
 |---|---|---|
 | Split the policy into units | `python segment_policy.py <policy.html> <units.jsonl>` | `units.jsonl` |
 | Write the model inputs | `python prepare_inputs.py <units.jsonl> <walkthrough.yaml> <llm>/input` | `part1.jsonl`, `part2.jsonl` |
-| Run stage 1 | fresh agents apply `04_Study/Prompts/stage1_*` | `<llm>/stage1/`, `<llm>/stage1p/` |
+| Run stage 1 | fresh agents apply `04_Study/4.6_Coding/Prompts/stage1_*` | `<llm>/stage1/`, `<llm>/stage1p/` |
 | Check spans, write later inputs | `python stage_inputs.py <llm>` | `stage2.jsonl`, `stage3.jsonl` |
 | Run stages 2 and 3 | fresh agents apply `stage2_*`, `stage3_*` | `<llm>/stage2/`, `<llm>/stage3/` |
 | Generate tables and figures | `python build_tables.py <repo root>` | `03_Thesis/tables/{reference,test}-*`, `03_Thesis/figures/test-*`, `output/summary.json` |

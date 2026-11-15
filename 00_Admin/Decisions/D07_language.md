@@ -1,7 +1,7 @@
 # D7 — Which language version of a source is captured and coded?
 
 - **Status:** confirmed (2026-10-13, supervisor meeting; adopted by the author 2026-10-23). The methodology states this choice.
-- **Affects:** Methodology, Material and Language; [sampling protocol](../../04_Study/App-Sample/sampling_protocol.md); LLM prompts (D9); validation stratified by language
+- **Affects:** Methodology, Material and Language; [sampling protocol](../../04_Study/4.4_App-Sampling/sampling_protocol.md); LLM prompts (D9); validation stratified by language
 - **Options considered:**
   1. Proposal: German first, English when German is unavailable.
   2. **English first, German when no English version is available (chosen).**

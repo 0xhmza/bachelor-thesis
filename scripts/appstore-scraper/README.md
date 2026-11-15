@@ -10,7 +10,7 @@ Versions live in `vNNN/`; outputs stay in the version's `output/` folder.
 | `v004/` | As v003 without the unavailable fields (`Average Rating` for the score); optional `--downloads` adds Sensor Tower estimate ranges |
 | `v005/` | Compact collector for sampling metadata: original `API Position` (before iPhone filtering) and per-keyword request URL, time and count |
 | `v006/` | Shortest version: JSON input, JSON on stdout, fewer fields; `Rating Count` names as in v005 |
-| `v007/` | **Sampling collector of 23 October 2026** (D2, D3), shown in Appendix E: v006 plus developer ID, seller, bundle ID, genres, version, content rating, full description and seller URL; logs every request (URL, time, count, SHA-256) under `requests`; backs off on HTTP 403/429/5xx. `input.json` holds the 49 keywords of `04_Study/App-Sample/keywords.csv` with `limit` 200; the ranking uses the first 30 positions, the rest only the saturation check |
+| `v007/` | **Sampling collector of 23 October 2026** (D2, D3), shown in Appendix E: v006 plus developer ID, seller, bundle ID, genres, version, content rating, full description and seller URL; logs every request (URL, time, count, SHA-256) under `requests`; backs off on HTTP 403/429/5xx. `input.json` holds the 49 keywords of `04_Study/4.4_App-Sampling/keywords.csv` with `limit` 200; the ranking uses the first 30 positions, the rest only the saturation check |
 
 ```powershell
 python scripts/appstore-scraper/v007/scraper.py scripts/appstore-scraper/v007/input.json > scripts/appstore-scraper/v007/output/run.json

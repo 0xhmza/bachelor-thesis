@@ -328,7 +328,7 @@
       }
       return '<div class="view-inner">' +
         '<div class="card"><h3>Ready to code</h3><p class="muted small">' + us.length + ' units · models: ' + names.map(esc).join(', ') + ' · ' + S.settings.chunk + ' units per request · ' + S.settings.runs + ' stage 1 run' + (S.settings.runs > 1 ? 's' : '') + (S.settings.paraphrase ? ' + paraphrase' : '') + '</p>' +
-        '<p class="xs faint">Stage 1 codes nodes, harms and risks in every unit; stage 2 codes the stance of each named harm (union of the models); stage 3 describes each protection claim (union). The prompts are the frozen files under 04_Study/Prompts.</p>' + bars + '</div>' + res +
+        '<p class="xs faint">Stage 1 codes nodes, harms and risks in every unit; stage 2 codes the stance of each named harm (union of the models); stage 3 describes each protection claim (union). The prompts are the frozen files under 04_Study/4.6_Coding/Prompts.</p>' + bars + '</div>' + res +
         '<div class="card flush"><div class="card-head"><h3>Log</h3></div><ul class="log">' + (S.runLog || []).map(function (l) {
           return '<li class="' + esc(l.cls) + '">' + esc(l.t) + '  ' + esc(l.msg) + '</li>';
         }).join('') + '</ul></div></div>';

@@ -52,8 +52,8 @@ output/
 00_Admin/Reviews/*/diagnostics-source.txt
 
 # Archived web pages and store records behind the identity register (raw data).
-04_Study/App-Sample/identity-evidence/*.html
-04_Study/App-Sample/identity-evidence/*.json
+04_Study/4.4_App-Sampling/identity-evidence/*.html
+04_Study/4.4_App-Sampling/identity-evidence/*.json
 
 # Standalone HTML decks (presentation copies of thesis content, not sources)
 06_Presentation/*.html

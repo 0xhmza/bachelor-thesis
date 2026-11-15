@@ -2,8 +2,8 @@
 
     python scripts/methodology-overview/v001/render_pdf.py [preview.png]
 
-Reads  04_Study/Methodology-Overview/methodology-overview.html
-Writes 04_Study/Methodology-Overview/methodology-overview.pdf (next to its source, like the
+Reads  04_Study/4.1_Study-Design/methodology-overview.html
+Writes 04_Study/4.1_Study-Design/methodology-overview.pdf (next to its source, like the
 review copy of the thesis), one page as tall as the drawing.
 """
 import sys
@@ -12,7 +12,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[3]
-SRC = ROOT / "04_Study" / "Methodology-Overview" / "methodology-overview.html"
+SRC = ROOT / "04_Study" / "4.1_Study-Design" / "methodology-overview.html"
 OUT = SRC.with_suffix(".pdf")
 PREVIEW = Path(sys.argv[1]) if len(sys.argv) > 1 else None  # optional PNG for checking the layout
 

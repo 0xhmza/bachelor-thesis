@@ -27,7 +27,7 @@ python -I -m unittest discover -s scripts/app-ranking/v005/tests
 Changes from v004. The title rule (same provider and a shared first word, the
 App Store listing with the most ratings taken first) is gone, and so are the
 hand-made `pairs`. A Google Play and an App Store listing are one candidate only
-if `04_Study/App-Sample/identity.csv` records them as `same`; rating counts and
+if `04_Study/4.4_App-Sampling/identity.csv` records them as `same`; rating counts and
 input order play no part. The script proposes pairs for review in the union of
 all frames used (Google Play depth 30, App Store depth 200, all queries): same
 developer key, same app identifier (bundle ID = package name), same normalised
@@ -78,8 +78,8 @@ python -I -m unittest discover -s scripts/app-ranking/v003/tests
 
 **Inputs** (paths in `config.json`): an `appstore-scraper/v007` and a
 `googleplay-scraper/v004` output, the keyword table
-`04_Study/App-Sample/keywords.csv` and the screening decisions
-`04_Study/App-Sample/screening.csv` (one row per screened listing: decision,
+`04_Study/4.4_App-Sampling/keywords.csv` and the screening decisions
+`04_Study/4.4_App-Sampling/screening.csv` (one row per screened listing: decision,
 criterion E1–E5, category, reason).
 
 **Method.** Listings in the first `depth` results of any keyword are pooled per

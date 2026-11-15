@@ -3,7 +3,7 @@
     python build_reference.py <repo_root>
 
 Writes 03_Thesis/tables/reference-*.tex (Appendix G) from
-04_Study/Reference-Model/reference_model_v2.yaml, and output/reevaluation_clue.{json,md}:
+04_Study/4.3_Analytical-Framework/reference_model_v2.yaml, and output/reevaluation_clue.{json,md}:
 the capability and pathway states of the instrument-test app under model v1 with the
 original fixture, and under model v2 with the re-evaluated record. The instrument-test
 tables of Chapter 5 and Appendix H stay those of v001 (they describe the test of
@@ -100,10 +100,10 @@ def v1_capabilities(model, states):
 
 def reevaluate(root):
     study = root / '04_Study'
-    m1 = ev.load(study / 'Reference-Model/reference_model_v1.yaml')
-    m2 = ev.load(study / 'Reference-Model/reference_model_v2.yaml')
-    r1 = ev.load(study / 'Instrument-Test/applicability_clue.yaml')
-    r2 = ev.load(study / 'Instrument-Test/applicability_clue_v2.yaml')
+    m1 = ev.load(study / '4.3_Analytical-Framework/reference_model_v1.yaml')
+    m2 = ev.load(study / '4.3_Analytical-Framework/reference_model_v2.yaml')
+    r1 = ev.load(study / '4.7_Validation/Instrument-Test/applicability_clue.yaml')
+    r2 = ev.load(study / '4.7_Validation/Instrument-Test/applicability_clue_v2.yaml')
     s2 = {k: v['state'] for k, v in r2['components'].items()}
     out = {'capabilities': {}, 'pathways': {}}
     for label, wt in (('policy', False), ('with_walkthrough', True)):
@@ -134,7 +134,7 @@ def reevaluate(root):
 
 def main(root):
     root = Path(root)
-    model = ev.load(root / '04_Study/Reference-Model/reference_model_v2.yaml')
+    model = ev.load(root / '04_Study/4.3_Analytical-Framework/reference_model_v2.yaml')
     ev.check_model(model)
     reference_tables(model, root / '03_Thesis/tables')
     result, md = reevaluate(root)
