@@ -6,7 +6,7 @@ hold. The emphasis is LLM-assisted coding of privacy policies. The other digest
 stages were checked for gaps against the research questions and the open
 decisions in the [Decision Log](../../00_Admin/Decision-Log.md).
 
-**Status:** reading candidates; none is in `_shared/references.bib`,
+**Status:** reading candidates; none is in `03_Thesis/references.bib`,
 `reading-status.csv` or the catalogue. The 16 priority-A papers with a PDF are
 registered in the Methods Digest (nos. 101–116, with cards; §10). Metadata was
 checked against the publisher, arXiv, ACL Anthology, PoPETs, USENIX or Crossref

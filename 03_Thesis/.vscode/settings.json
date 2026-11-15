@@ -3,7 +3,7 @@
   //  LaTeX Workshop — thesis workspace
   // =====================================================================
   //  Engine        : pdflatex + biber (biblatex, see config/preamble.tex)
-  //  Bibliography  : ../_shared/references.bib (lives outside this folder)
+  //  Bibliography  : references.bib (in this folder)
   //  Build output  : in place, next to the sources — the same place
   //                  TeXstudio and ../build.ps1 write it, so the tracked
   //                  thesis.pdf never moves.
@@ -63,10 +63,8 @@
   "latex-workshop.latex.outDir": "%DIR%",
 
   // ------------------------------------------------------- build triggers
-  // "onSave" rebuilds on every .tex save. Files outside a workspace folder
-  // (../_shared/references.bib) cannot be watched by VS Code, so after
-  // editing the bibliography either save any .tex file or build once with
-  // Ctrl+Alt+B.
+  // "onSave" rebuilds on every .tex save. After editing references.bib
+  // either save any .tex file or build once with Ctrl+Alt+B.
   "latex-workshop.latex.autoBuild.run": "onSave",
   // Do not silently wipe aux files and start over when a build fails —
   // a broken .tex should surface as an error, not as a slow rebuild.
@@ -113,10 +111,8 @@
   "latex-workshop.latex.rootFile.useSubFile": false,
 
   // ------------------------------------------------- bibliography support
-  // The single shared .bib sits outside this folder: the editor needs the
-  // absolute path, while pdflatex/biber resolve ../_shared/references.bib
-  // relative to this directory by themselves.
-  "latex-workshop.latex.bibDirs": ["${workspaceFolder}/../_shared"],
+  // The single .bib (references.bib) sits in this folder, next to thesis.tex.
+  "latex-workshop.latex.bibDirs": ["${workspaceFolder}"],
   "latex-workshop.intellisense.citation.backend": "biblatex",
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.citation.format": [

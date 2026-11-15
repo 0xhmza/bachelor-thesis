@@ -4,7 +4,7 @@ Replaces v001/apply_links.py. Zotero MUST be closed; a backup is made first.
   1. Remove what v001 added (items whose key is not in the pre-v001 backup, and its collection rows).
   2. PDFs that match an existing item (match.py) are attached to it as linked files.
   3. Thesis items (collection "Bachelor Thesis References") get the full author list from
-     _shared/references.bib and an abstract where the repo holds one.
+     03_Thesis/references.bib and an abstract where the repo holds one.
   4. PDFs without an existing item become new items in the collection "Methodology literature"
      (never in the thesis collection), with type, venue, DOI, authors and abstract where known.
 Usage: python repair.py <zotero.sqlite> <pre-v001-backup.sqlite> [--dry]
@@ -92,7 +92,7 @@ def bib_authors(body):
                        dict(last=a.replace('{', '').replace('}', ''), first=''))
     return out
 
-bib = (root / '_shared/references.bib').read_text(encoding='utf-8')
+bib = (root / '03_Thesis/references.bib').read_text(encoding='utf-8')
 bib_by_key = {m.group(2).strip(): bib_authors(m.group(3)) for m in re.finditer(r'^@(\w+)\{([^,]+),(.*?)(?=^@|\Z)', bib, re.S | re.M)}
 
 # ---- helpers -------------------------------------------------------------------------------

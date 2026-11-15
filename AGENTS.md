@@ -11,7 +11,7 @@
   (the supervisor's copy, made by `scripts/build_review_docx.py`). Never edit
   it by hand.
 - **Keep the Zotero library file in step with the bibliography.** Each time
-  `_shared/references.bib` changes, regenerate `_shared/references-zotero.rdf`
+  `03_Thesis/references.bib` changes, regenerate `03_Thesis/references-zotero.rdf`
   with `python scripts/zotero-library/v001/build_zotero_library.py` and commit
   it in the same commit as the `.bib` change. Compile the thesis first: the
   `[n]` reference numbers in the file come from `03_Thesis/thesis.bbl`, so
@@ -45,7 +45,7 @@
   `00_Admin/Decision-Log.md` (and its `Decisions/Dnn_*.md` record) before the
   methodology states it. The methodology states rules; numbers that follow from
   applying them belong in the results.
-- `_shared/references.bib` is the only bibliography. Check new entries against
+- `03_Thesis/references.bib` is the only bibliography. Check new entries against
   the PDF or a DOI record.
 - Passages under revision are marked `\highlight[orange!25]{…}\todo{…}`; keep
   the marks until the author resolves them.

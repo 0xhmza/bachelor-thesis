@@ -23,7 +23,7 @@ Not here: the raw search runs of the literature review are data and live in `05_
 
 Every paper you cite must have (a) a PDF in `library/`, (b) a row in the reading list below
 (or in `catalog/methods-corpus.json` for the methods corpus), and (c) an entry in
-`../_shared/references.bib`. No exceptions: that is what stops the bibliography from rotting.
+`../03_Thesis/references.bib`. No exceptions: that is what stops the bibliography from rotting.
 
 ## Naming
 

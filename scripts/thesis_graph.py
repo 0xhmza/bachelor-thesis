@@ -359,7 +359,7 @@ def structural(files):
                       'source_location': f'L{line}' if line else None, 'confidence': confidence,
                       'confidence_score': score, 'weight': 1.0, '_origin': 'semantic'})
 
-    bib = ROOT / '_shared/references.bib'
+    bib = ROOT / '03_Thesis/references.bib'
     body = bib.read_text(encoding='utf-8')
     entries = list(re.finditer(r'@\w+\s*\{\s*([^,]+),', body))
     citations, bib_dois = {}, {}
@@ -479,7 +479,7 @@ def refresh():
     names = {'00_Admin': 'Supervisor Decisions', '01_Literature': 'Literature and Evidence',
              '03_Thesis': 'Thesis Writing and Methods', '04_Study': 'Study Instruments',
              '06_Presentation': 'Presentation', 'output': 'Sampling Research',
-             '_shared': 'Bibliography', 'scripts': 'Graphify Integration'}
+             'scripts': 'Graphify Integration'}
     for cid, members in communities.items():
         family = Counter(str(graph.nodes[n].get('source_file', '')).split('/')[0] for n in members).most_common(1)[0][0]
         labels[cid] = names.get(family, 'Project Navigation') + f' {cid}'

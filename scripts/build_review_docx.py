@@ -6,7 +6,7 @@
 
 Writes 03_Thesis/Thesis_Review-Copy.docx. The LaTeX sources stay authoritative:
 this script reads thesis.tex, the chapter and appendix files it inputs and
-_shared/references.bib, and writes a .docx the supervisor can annotate with
+03_Thesis/references.bib, and writes a .docx the supervisor can annotate with
 Word comments or tracked changes. Citations become numbered [n] links that jump
 to a bookmark on the bibliography entry (numbering as biblatex numeric-comp,
 sorting=nyt); entries link to their DOI or URL. \\ref/\\Cref become internal
@@ -29,7 +29,7 @@ import zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 THESIS_DIR = os.path.join(ROOT, '03_Thesis')
 OUT = os.path.join(THESIS_DIR, 'Thesis_Review-Copy.docx')
-BIB = os.path.join(ROOT, '_shared', 'references.bib')
+BIB = os.path.join(ROOT, '03_Thesis', 'references.bib')
 BS = chr(92)
 
 
@@ -85,7 +85,7 @@ def git_stamp():
     if STAGED:  # the commit being made has no hash yet
         return head, f'Generated automatically from the LaTeX sources of the commit made on {now} (the commit after {head}).'
     sources = ['03_Thesis/thesis.tex', '03_Thesis/chapters', '03_Thesis/appendix', '03_Thesis/config',
-               '_shared/references.bib']
+               '03_Thesis/references.bib']
     dirty = bool(run('status', '--porcelain', '--', *sources))
     date = run('log', '-1', '--format=%cd', '--date=format:%Y-%m-%d %H:%M')
     return head, (f'Generated automatically from the LaTeX sources at commit {head} ({date})'

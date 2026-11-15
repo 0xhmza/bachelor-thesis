@@ -4,7 +4,7 @@
 # Installed by scripts/hooks/install.sh. It never blocks a commit: if Python
 # is missing or the build fails, the commit goes ahead with the old copy.
 
-SOURCES='^(03_Thesis/(thesis\.tex|chapters/|appendix/|config/)|_shared/references\.bib|scripts/build_review_docx\.py)'
+SOURCES='^(03_Thesis/(thesis\.tex|chapters/|appendix/|config/)|03_Thesis/references\.bib|scripts/build_review_docx\.py)'
 git diff --cached --name-only --diff-filter=ACMRD | grep -Eq "$SOURCES" || exit 0
 
 PY=$(command -v python || command -v python3 || command -v py)

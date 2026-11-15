@@ -4,7 +4,7 @@
     python scripts/check_project.py --quiet  # errors and warnings only
 
 Errors (fail CI):
-  - a \\cite key used in the thesis that is missing from _shared/references.bib
+  - a \\cite key used in the thesis that is missing from 03_Thesis/references.bib
   - a relative link in a Markdown file that points to a file that does not exist
   - a core reading-list row without its bibliography entry, or marked ☑ PDF
     while the PDF is missing
@@ -12,7 +12,7 @@ Warnings:
   - bibliography entries never cited (fine while drafting; review before submission)
   - works marked read/noted in reading-status.csv without a note file
   - the supervisor's review copy is older than the thesis sources
-  - the Zotero library file (_shared/references-zotero.rdf) was built from another references.bib
+  - the Zotero library file (03_Thesis/references-zotero.rdf) was built from another references.bib
 Info: TODO markers per chapter, reading progress.
 
 Standard library only.
@@ -26,8 +26,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 THESIS = ROOT / '03_Thesis'
-BIB = ROOT / '_shared/references.bib'
-ZOTERO = ROOT / '_shared/references-zotero.rdf'
+BIB = ROOT / '03_Thesis/references.bib'
+ZOTERO = ROOT / '03_Thesis/references-zotero.rdf'
 LIT = ROOT / '01_Literature'
 SKIP = {'.git', '.venv', 'graphify-out', '99_Archive', 'node_modules', 'tmp'}
 QUIET = '--quiet' in sys.argv
@@ -55,7 +55,7 @@ def check_citations():
                     cited.setdefault(k.strip(), f'{f.relative_to(ROOT).as_posix()}:{n}')
     for k, where in sorted(cited.items()):
         if k not in keys:
-            errors.append(f'citation key "{k}" ({where}) is not in _shared/references.bib')
+            errors.append(f'citation key "{k}" ({where}) is not in 03_Thesis/references.bib')
     unused = sorted(keys - set(cited))
     if unused:
         warnings.append(f'{len(unused)} bibliography entries are not cited in the thesis: ' + ', '.join(unused))
@@ -88,7 +88,7 @@ def check_reading(keys):
     for m in re.finditer(r'\|\s*[☐◐☑]\s*\|\s*([☑☒])\s*\|\s*`([^`]+)`', readme):
         pdf_flag, key = m.group(1), m.group(2)
         if key not in keys:
-            errors.append(f'core reading list: "{key}" has no entry in _shared/references.bib')
+            errors.append(f'core reading list: "{key}" has no entry in 03_Thesis/references.bib')
         if pdf_flag == '☑':
             line = readme[m.start():readme.find('\n', m.start())]
             named = re.search(r'`([^`]+\.pdf)`', line)

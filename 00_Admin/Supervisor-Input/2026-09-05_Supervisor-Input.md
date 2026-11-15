@@ -9,7 +9,7 @@
 
 Verbatim content is reorganised below, not rewritten. The PDF gave bare URLs;
 every reference has since been resolved, downloaded to `01_Literature/library/`,
-and entered in `_shared/references.bib`.
+and entered in `03_Thesis/references.bib`.
 
 ---
 
@@ -116,8 +116,8 @@ sources listed, not a user survey.
 
 | # | Action | Owner | Status |
 |---|--------|-------|--------|
-| 1 | ~~Retrieve P1–P3, F1–F3, T1 and resolve their bibliographic details~~ — done 2026-09-05; PDFs in `01_Literature/library/`, entries in `_shared/references.bib` | Hamza | done |
-| 2 | ~~Add Wharton et al. (1994) to `_shared/references.bib`~~ — done; **PDF still needed** via RUB library | Hamza | partly done |
+| 1 | ~~Retrieve P1–P3, F1–F3, T1 and resolve their bibliographic details~~ — done 2026-09-05; PDFs in `01_Literature/library/`, entries in `03_Thesis/references.bib` | Hamza | done |
+| 2 | ~~Add Wharton et al. (1994) to `03_Thesis/references.bib`~~ — done; **PDF still needed** via RUB library | Hamza | partly done |
 | 3 | Run own literature search on **privacy harms** beyond the three sent | Hamza | done 2026-09-18 — Solove 2006 taxonomy, Calo 2011 subjective/objective harm added |
 | 4 | Run own literature search on **health tracker security and privacy** | Hamza | done 2026-09-18 — Shipp & Blasco 2020, Huckvale et al. 2019, Arkalakis et al. 2024, Li et al. 2022 added |
 | 5 | Run own literature search on **methodologies**: privacy-policy analysis, cognitive walkthrough | Hamza | done 2026-09-18 — OPP-115, Polisis, MAPS, McDonald & Cranor, Nielsen 1994, Braun & Clarke, Cohen, McDonald et al. 2019 added |

@@ -9,7 +9,7 @@ selects v003. Each version can also be run directly from the root.
   Vendored upstream READMEs inside ignored raw collections are not project
   documentation, and missing upstream files must not require editing raw data.
 - **v003:** v002 plus a warning when the Zotero library file
-  (`_shared/references-zotero.rdf`) was built from another `references.bib`
+  (`03_Thesis/references-zotero.rdf`) was built from another `references.bib`
   (compared by the SHA-256 recorded in the file's header, line endings ignored).
 
 Tests: `python -m unittest discover -s scripts/project-check/v003/tests`

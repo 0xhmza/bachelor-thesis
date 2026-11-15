@@ -15,11 +15,11 @@ class ZoteroLibraryCheck(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         root = Path(self.tmp.name)
-        (root / "_shared").mkdir()
+        (root / "03_Thesis").mkdir()
         self.check = importlib.util.module_from_spec(SPEC)
         SPEC.loader.exec_module(self.check)
-        self.check.BIB = root / "_shared/references.bib"
-        self.check.ZOTERO = root / "_shared/references-zotero.rdf"
+        self.check.BIB = root / "03_Thesis/references.bib"
+        self.check.ZOTERO = root / "03_Thesis/references-zotero.rdf"
         self.check.BIB.write_bytes(BIB_TEXT.encode("utf-8"))
 
     def rdf(self, digest):

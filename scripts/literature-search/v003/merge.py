@@ -3,7 +3,7 @@
     python scripts/literature-search/v003/merge.py
 
 Reads the hits of search.py (output/hits-*.jsonl), the IEEE Xplore results (output/ieee-raw.json), the thesis
-citations (_shared/references.bib, keys cited in 03_Thesis), the Methods Digest registry and the citation-searching
+citations (03_Thesis/references.bib, keys cited in 03_Thesis), the Methods Digest registry and the citation-searching
 hits (output/hits-citations.jsonl, if present). Hits are merged when they share a DOI, an arXiv ID or a normalised
 title with publication years at most one apart (the earliest year is kept). Each record lists every route that
 found it. Writes output/records.csv and output/merge.json (counts per source before and after deduplication).
@@ -17,7 +17,7 @@ import lit
 ROOT = lit.HERE.parents[2]
 OUT = lit.HERE / 'output'
 DIGEST = ROOT / 'literature_new' / 'literature methodology analysis' / 'tex' / 'registry.json'
-BIB = ROOT / '_shared' / 'references.bib'
+BIB = ROOT / '03_Thesis' / 'references.bib'
 SOURCES = ['PubMed', 'IEEE Xplore', 'arXiv', 'ACL Anthology', 'PoPETs', 'USENIX Security', 'SOUPS', 'CCS', 'IEEE S&P',
            'NDSS', 'CHI', 'CSCW', 'Citation searching', 'Thesis citation', 'Methods Digest']
 ROUTE = {'PubMed': 'database', 'IEEE Xplore': 'database', 'arXiv': 'database', 'ACL Anthology': 'database',

@@ -13,7 +13,7 @@ common sub-trees defined once.
 capabilities and pathways become possible, and records what is new: components, capabilities,
 routes (new minimal sufficient sets for an existing capability) and pathways. It stops with an
 error unless the final state equals the reference model, every component has evidence with a
-page and a citation key from `_shared/references.bib`, the check cases (role `check`) add
+page and a citation key from `03_Thesis/references.bib`, the check cases (role `check`) add
 nothing, and the last two use cases are check cases.
 
 | Step | Command | Result |

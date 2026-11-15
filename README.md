@@ -19,7 +19,7 @@ conclusions and submission metadata are unfinished.
 
 `build.ps1` adds TeX Live 2025 to the session; each document's `latexmkrc` defines
 its chain. TeXstudio: open `thesis.tex` as root; VS Code: open `03_Thesis/` (LaTeX
-Workshop settings there). Bibliography: `_shared/references.bib`.
+Workshop settings there). Bibliography: `03_Thesis/references.bib`.
 
 ## Review copy for the supervisor
 
@@ -51,11 +51,10 @@ thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md)
 |---|---|
 | `00_Admin/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
 | `01_Literature/` | `library/` (every full text, flat, `Author_Year_ShortTitle.pdf`), `notes/`, `catalog/` (reading tracker, methods corpus, generated index and map), `review/` (literature review) and `digest/` (Methods Digest); start at its `README.md` |
-| `03_Thesis/` | Main thesis, chapters, appendices, review copy, proposal snapshot |
+| `03_Thesis/` | Main thesis, chapters, appendices, bibliography (`references.bib`, Zotero file), review copy, proposal snapshot |
 | `04_Study/` | Sampling protocol and app sample, codebook versions, walkthrough protocol, LLM prompts, ethics |
 | `05_Data/` | Raw, processed and analysis material; raw data is git-ignored |
 | `06_Presentation/` | Beamer presentation |
-| `_shared/` | Single bibliography |
 | `99_Archive/` | Application material and the cleanup recovery archive |
 | `scripts/` | Collectors, ranking, graph integration, review-copy builder, project checks, git hooks |
 | `.github/` | CI |

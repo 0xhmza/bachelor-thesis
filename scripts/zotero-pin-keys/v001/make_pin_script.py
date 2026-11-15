@@ -1,5 +1,5 @@
 """Generate a Zotero 'Run JavaScript' snippet that pins the keys of
-_shared/references.bib into each matched item's Extra field
+03_Thesis/references.bib into each matched item's Extra field
 ("Citation Key: <key>"), which Better BibTeX honours over its own formula.
 
 Usage: python make_pin_script.py <copy-of-zotero.sqlite>
@@ -23,7 +23,7 @@ rows = db.execute(Q).fetchall()
 
 def norm(s): return re.sub(r'[^a-z0-9]+', '', (s or '').lower())
 
-bib = (root / '_shared/references.bib').read_text(encoding='utf-8')
+bib = (root / '03_Thesis/references.bib').read_text(encoding='utf-8')
 mapping, problems = {}, []
 for m in re.finditer(r'^@(\w+)\{([^,]+),(.*?)(?=^@|\Z)', bib, re.S | re.M):
     key, body = m.group(2).strip(), m.group(3)

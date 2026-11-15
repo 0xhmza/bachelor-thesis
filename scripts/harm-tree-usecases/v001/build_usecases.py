@@ -147,7 +147,7 @@ def check(model, cases, steps, bib_keys=None):
 
 
 def bib_keys(root):
-    text = (Path(root) / '_shared/references.bib').read_text(encoding='utf-8')
+    text = (Path(root) / '03_Thesis/references.bib').read_text(encoding='utf-8')
     return set(re.findall(r'@\w+\{([^,\s]+),', text))
 
 

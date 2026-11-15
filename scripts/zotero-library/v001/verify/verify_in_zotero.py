@@ -3,7 +3,7 @@
     python scripts/zotero-library/v001/verify/verify_in_zotero.py [--base-dir] [--copy]
 
 Starts the installed Zotero with its own temporary profile and data folder (under verify/run/, git-ignored), so
-the real library is never touched; a test plugin imports _shared/references-zotero.rdf the way File > Import does
+the real library is never touched; a test plugin imports 03_Thesis/references-zotero.rdf the way File > Import does
 ("Link to files" unless --copy), writes every imported item to result.json and quits. Then every .bib entry is
 compared with its item: title, creators, DOI, URL, pages, volume, issue, date, citation key, reference number,
 unmapped fields (kept in Extra), comment note, and the linked PDFs (present on disk, stored relative to the base
