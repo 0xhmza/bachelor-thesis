@@ -1,0 +1,77 @@
+{
+ "apple": "05_Data/App Sampling/26. Oct/Raw/appstore_2026-10-23.json",
+ "play": "05_Data/App Sampling/26. Oct/Raw/googleplay_2026-10-24.json",
+ "keywords": "04_Study/App-Sample/keywords.csv",
+ "screening": "04_Study/App-Sample/screening.csv",
+ "identity": "04_Study/App-Sample/identity.csv",
+ "out": "04_Study/4.4_App-Sampling/scripts/app-ranking/v005/output",
+ "n": 47,
+ "depth": 30,
+ "preinstalled": {
+  "apple": [
+   "1242545199",
+   "1208224953",
+   "1224541484"
+  ],
+  "play": [
+   "com.sec.android.app.shealth"
+  ]
+ },
+ "preinstalled_providers": [
+  "Apple",
+  "Samsung Electronics Co., Ltd."
+ ],
+ "preinstalled_table": {
+  "apple": {
+   "1242545199": "multiple",
+   "1208224953": "activity"
+  },
+  "play": {
+   "com.sec.android.app.shealth": "multiple"
+  }
+ },
+ "table": "03_Thesis/tables/app-sample.tex",
+ "developer_table": "03_Thesis/tables/developer-rule.tex",
+ "alias_table": "03_Thesis/tables/developer-aliases.tex",
+ "identity_table": "03_Thesis/tables/identity-providers.tex",
+ "sensitivity_table": "03_Thesis/tables/sensitivity.tex",
+ "dataset": "05_Data/App Sampling/26. Oct/Processed/apps.csv",
+ "aliases": {
+  "clue period tracker by biowink": "biowink",
+  "philips electronics": "philips digital",
+  "sleep tracker and alarm clock by delightroom": "delight room",
+  "leap health": "leap fitness",
+  "outside television": "mapmyfitness",
+  "hangzhou youzijie information technology": "meetyou",
+  "everyday health": "babycenter",
+  "fddb": "food database",
+  "headspace for meditation mindfulness and sleep": "headspace",
+  "macadamapp": "macadam technologies",
+  "bettersleep health": "ipnos software",
+  "babelli schwangerschaft and baby": "fabulabs",
+  "relaxio": "habitics"
+ },
+ "alias_evidence": {
+  "clue period tracker by biowink": "App Store developer BioWink GmbH; both stores link helloclue.com",
+  "philips electronics": "Same app (Pregnancy+); the Play policy and website are on philips-digital.com, which the App Store account Philips Digital UK links in the description of its Baby+ listing",
+  "sleep tracker and alarm clock by delightroom": "Same app (Alarmy); App Store developer Delight Room; both link alar.my",
+  "leap health": "App Store seller Leap Health Fitness Limited; seller URL leap.app, the domain of the Play privacy policy",
+  "outside television": "Map My Run, Map My Ride, Map My Walk; App Store seller URLs are the Play developer websites",
+  "relaxio": "Same app (Daylio); App Store seller URL daylio.net is the Play privacy-policy domain",
+  "hangzhou youzijie information technology": "Same app (MeetYou); both link meetyouintl.com",
+  "everyday health": "App Store seller URL babycenter.com is the Play developer website",
+  "fddb": "App Store developer Food Database GmbH; both link fddb.info",
+  "headspace for meditation mindfulness and sleep": "App Store developer Headspace Inc.; both link headspace.com",
+  "macadamapp": "App Store developer MACADAM TECHNOLOGIES; both link macadam.app",
+  "bettersleep health": "App Store seller BetterSleep Health, LLC; both link bettersleep.com",
+  "babelli schwangerschaft and baby": "App Store developer Fabulabs GmbH; both link babelli.de"
+ },
+ "aliases_note": "Same provider under different developer names, matched by hand with the evidence in alias_evidence (24-26 October 2026). Same app in both stores: identity register (28 October 2026), which replaces the title rule and the hand-made pairs of v004. distinct: provider pairs sharing a web domain, judged after review.",
+ "distinct": {},
+ "os_share": {
+  "ios": 0.277,
+  "android": 0.723,
+  "source": "StatCounter mobile OS share, Germany, September 2026, read 2026-10-25"
+ },
+ "compare_selection": "04_Study/4.4_App-Sampling/scripts/app-ranking/v002/output/selection.csv"
+}

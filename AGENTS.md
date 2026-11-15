@@ -87,9 +87,11 @@
 
 ## Scripts and data
 
-- Each scripting project has its own `scripts/<project>/` folder with versions
-  `v001/`, `v002/`, …; a change of behaviour is a new version, and earlier
-  versions stay. No Git branches or tags for script versions.
+- A script belongs to the data it works on: study scripts live in
+  `04_Study/<section>/scripts/<project>/` (for example `4.4_App-Sampling/scripts/app-ranking/`),
+  project-wide tools (checks, graph, review copy, Zotero, literature) in `scripts/<project>/`.
+  Each project has versions `v001/`, `v002/`, …; a change of behaviour is a new version, and
+  earlier versions stay. No Git branches or tags for script versions.
 - Generated files stay in the version's `output/` folder, excluded from Git and
   Graphify; back up raw collections separately.
 - The app sample rests on the frozen collections in

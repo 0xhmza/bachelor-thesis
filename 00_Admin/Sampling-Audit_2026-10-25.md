@@ -14,11 +14,11 @@ responsibility; this is not a certification of all 275 judgments.
 Reproduce with:
 
 ```powershell
-python scripts/sampling-audit/v001/audit.py
-python -I -m unittest discover -s scripts/app-ranking/v003/tests
+python 04_Study/4.4_App-Sampling/scripts/sampling-audit/v001/audit.py
+python -I -m unittest discover -s 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/tests
 ```
 
-The [audit script](../scripts/sampling-audit/v001/audit.py) writes its evidence
+The [audit script](../04_Study/4.4_App-Sampling/scripts/sampling-audit/v001/audit.py) writes its evidence
 to its ignored `output/` folder: `audit.json`, `main-cascade.csv`,
 `matched-listings.csv`, `missing-play-review-counts.csv` and an isolated replay.
 It hashes the production inputs and outputs before and after execution.
@@ -61,7 +61,7 @@ main ranking. Likewise, a provider skip is not an eligibility exclusion.
 
 ## 2. P1 — Different products are merged across stores
 
-The [matching rule](../scripts/app-ranking/v003/rank.py) accepts the same first
+The [matching rule](../04_Study/4.4_App-Sampling/scripts/app-ranking/v003/rank.py) accepts the same first
 word (at least three characters) plus the same normalised provider. It then
 greedily chooses the App Store match with the highest rating count. A shared
 brand or generic first word does not identify an app.
@@ -99,7 +99,7 @@ and the thesis table together after reviewing the pairs.
 
 Of the 645 Play pages, 240 omit both `Review Count` and `Rating Count`. Only five
 other pages contain an explicit review count of zero. These are different data
-states, but `load()` in [v003](../scripts/app-ranking/v003/rank.py) uses `or 0`
+states, but `load()` in [v003](../04_Study/4.4_App-Sampling/scripts/app-ranking/v003/rank.py) uses `or 0`
 and gives both states the same numerical value.
 
 The missing-count group includes Periodenkalender Paula (`com.cittacode.paula`,

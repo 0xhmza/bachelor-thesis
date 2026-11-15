@@ -2,7 +2,7 @@
 # Method: Knabenhans et al. 2026, s4 (one subtree per concrete use case, common sub-trees
 # first, later use cases reuse the earlier trees); procedure of D23
 # (00_Admin/Decisions/D23_use-case-subtrees.md).
-# Read by scripts/harm-tree-usecases/v001/build_usecases.py, together with
+# Read by 04_Study/4.3_Analytical-Framework/scripts/harm-tree-usecases/v001/build_usecases.py, together with
 # reference_model_v2.yaml, which holds the definitions of components, capabilities and pathways.
 #
 # One card per use case. A card answers six fixed questions:

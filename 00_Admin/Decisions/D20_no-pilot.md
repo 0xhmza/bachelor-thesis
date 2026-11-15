@@ -23,7 +23,7 @@ Each value is the assistant's proposal and a study rule, not a published thresho
 |---|---|---|
 | The two language models | Fixed before coding and frozen, versions and parameters reported; an open-weight model is preferred for one of them (Törnberg 2024). The condition "if it performs close to a hosted one" is dropped, because no candidate comparison remains | **Still open: the two model names have to be entered.** |
 | Repeated runs for stability | Each model codes the validation sample three times | D9 already places repeated runs on the validation sample; three runs show whether a label is stable and add little cost on 500 units |
-| Allocation of the validation sample | Neyman allocation with assumed spreads: 0.5 in V1 and V2, 0.4 in V3, 0.1 in V4, 0.07 in V5, under the existing floors | Unbiasedness does not depend on the allocation, only efficiency does (Lohr 2021, ch. 3), so an assumed spread cannot bias the estimate. The values are those of `scripts/validation-sample/v001/tests/test_design.py`; they are assumptions, not measurements |
+| Allocation of the validation sample | Neyman allocation with assumed spreads: 0.5 in V1 and V2, 0.4 in V3, 0.1 in V4, 0.07 in V5, under the existing floors | Unbiasedness does not depend on the allocation, only efficiency does (Lohr 2021, ch. 3), so an assumed spread cannot bias the estimate. The values are those of `04_Study/4.7_Validation/scripts/validation-sample/v001/tests/test_design.py`; they are assumptions, not measurements |
 | Time per unit, for the 12-hour limit | Measured in the second coder's training, which comes before the draw | Training is the remaining occasion to measure it before the size is fixed |
 | Vocabulary of stratum V3 | The list in the codebook, fixed before the draw | The list exists since codebook v6 |
 | Training units of the second coder | 20 units from the policy of an app outside the sample | With no development apps, units of the corpus would have been seen by the coder before the blind coding |
@@ -40,7 +40,7 @@ Each value is the assistant's proposal and a study rule, not a published thresho
 - Results, Discussion and Appendix H no longer report the test on Clue. The generated files `03_Thesis/tables/test-*.tex` and `03_Thesis/figures/test-*.tex`, and the `\synthtag` macro, went with them.
 - Appendix B now prints the current prompts (version 2 and its paraphrase), because version 1 was only used in the test.
 - The AI Appendix keeps the disclosure that Claude drafted the generic model and the methodology text on it; the uses that belonged to the test left with it.
-- Kept as an archive, outside the thesis: `04_Study/4.7_Validation/Instrument-Test/`, `05_Data/raw/policy-test_2026-11-01/`, `scripts/instrument-test/` (v002 also holds the current evaluator and the generator of the reference-model tables), the version 1 prompts, codebook v6, coding sheet v1.
+- Kept as an archive, outside the thesis: `04_Study/4.7_Validation/Instrument-Test/`, `05_Data/raw/policy-test_2026-11-01/`, `04_Study/4.7_Validation/scripts/instrument-test/` (v002 also holds the current evaluator and the generator of the reference-model tables), the version 1 prompts, codebook v6, coding sheet v1.
 - The historical draft in `04_Study/4.4_App-Sampling/sampling_protocol.md` below the current amendment is left as it is.
 
 ## Would change if

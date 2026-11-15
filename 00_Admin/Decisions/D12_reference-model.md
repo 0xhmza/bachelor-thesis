@@ -33,7 +33,7 @@
 - **Choice:** reference model v2 (`04_Study/4.3_Analytical-Framework/reference_model_v2.yaml`); v1 kept as the model of the instrument test.
   - K10 = (CO2 AND IM7) for the provider OR (IM4 AND CX3) for advertising partners; no OR+ remains. CO2 alone gives no other actor the data. The partner combination is argued from evidence that health-app data reaches advertising and analytics companies that can aggregate it (Huckvale et al. 2019; Grundy et al. 2019).
   - IM12 = no usable way to delete (any route); new IM14 = no usable way to export (any route); I2 = IM12 OR IM14.
-- **Evaluator:** `scripts/instrument-test/v002/` rejects OR+; 30 tests pass (among them "CO2 alone gives no K10", each combination opens K10, deletion and export judged separately). Appendix G tables regenerated from v2.
+- **Evaluator:** `04_Study/4.7_Validation/scripts/instrument-test/v002/` rejects OR+; 30 tests pass (among them "CO2 alone gives no K10", each combination opens K10, deletion and export judged separately). Appendix G tables regenerated from v2.
 - **Re-evaluation of the test app** (`applicability_clue_v2.yaml`, policy only): K10 still applies; IM12 and IM14 absent (deletion and a copy offered on request), so I2 and P10 no longer apply. The original fixture is kept unchanged.
 - **Version of De & Le Métayer 2017:** the LNCS chapter stays the reference; HAL records hal-01671345 as the APF 2017 paper, pp. 52–83, and the thesis cites sections only.
 

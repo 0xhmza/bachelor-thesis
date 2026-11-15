@@ -1,7 +1,7 @@
 # D16 — Instrument test on one app before the pilot
 
 - **Status:** proposed (2026-11-01, author's instruction in chat).
-- **Affects:** Methodology, Instrument Test · Results, Instrument Test · Discussion · [`04_Study/4.7_Validation/Instrument-Test/`](../../04_Study/4.7_Validation/Instrument-Test/) · [`scripts/instrument-test/v001/`](../../scripts/instrument-test/v001/evaluate.py)
+- **Affects:** Methodology, Instrument Test · Results, Instrument Test · Discussion · [`04_Study/4.7_Validation/Instrument-Test/`](../../04_Study/4.7_Validation/Instrument-Test/) · [`04_Study/4.7_Validation/scripts/instrument-test/v001/`](../../04_Study/4.7_Validation/scripts/instrument-test/v001/evaluate.py)
 - **Author's instruction:** test the method against one app and its privacy policy, with a made-up walkthrough result for testing, and assess and conclude the case.
 - **Options considered for the app:**
   1. Random draw with a seed. Fair, but one draw may exercise few parts of the instrument.
@@ -17,7 +17,7 @@
 ## Decision 2026-11-04 (night) — taken at the author's instruction
 
 - **Status:** proposed — decided by the AI assistant at the author's instruction of 2026-11-04 ("finish the TODOs depending on reasoning, best practice, literature and context"); marked orange in the thesis until the author or supervisor confirms it.
-- **Choice:** the instrument test stays a historical record of protocol v5 and reference model v1, with its tables unchanged. Its re-evaluation under model v2 from the policy alone is recorded (`04_Study/4.7_Validation/Instrument-Test/applicability_clue_v2.yaml`, `scripts/instrument-test/v002/output/`): I2 and P10 no longer apply. No synthetic re-run under the frozen protocol: it would again rest on invented screens; the pilot under protocol v8 is the evidence for the frozen instruments.
+- **Choice:** the instrument test stays a historical record of protocol v5 and reference model v1, with its tables unchanged. Its re-evaluation under model v2 from the policy alone is recorded (`04_Study/4.7_Validation/Instrument-Test/applicability_clue_v2.yaml`, `04_Study/4.7_Validation/scripts/instrument-test/v002/output/`): I2 and P10 no longer apply. No synthetic re-run under the frozen protocol: it would again rest on invented screens; the pilot under protocol v8 is the evidence for the frozen instruments.
 
 ## Update 2026-11-05
 

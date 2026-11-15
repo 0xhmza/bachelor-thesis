@@ -1,6 +1,6 @@
 % Source of the listings (read from the repository at compile time, not copied):
-%   App Store collector   scripts/appstore-scraper/v007/    scraper.py, input.json
-%   Google Play collector scripts/googleplay-scraper/v005/  scraper.py, input.json, requirements.txt
+%   App Store collector   04_Study/4.4_App-Sampling/scripts/appstore-scraper/v007/    scraper.py, input.json
+%   Google Play collector 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/  scraper.py, input.json, requirements.txt
 % To show a newer version, change the paths below and the two comments above.
 \chapter{Scraping Scripts}
 \label{app:scripts}
@@ -29,13 +29,13 @@ hold the 49 queries of Table~\ref{tab:keywords}.
 
 \par\medskip\noindent
 \begin{minipage}{\linewidth}
-\lstinputlisting[style=jsoncode, caption={Input of the App Store collector; the remaining 46 keywords of Table~\ref{tab:keywords} are left out after line~5.}, label={lst:input-apple}, linerange={1-5,51-55}]{../scripts/appstore-scraper/v007/input.json}
+\lstinputlisting[style=jsoncode, caption={Input of the App Store collector; the remaining 46 keywords of Table~\ref{tab:keywords} are left out after line~5.}, label={lst:input-apple}, linerange={1-5,51-55}]{../04_Study/4.4_App-Sampling/scripts/appstore-scraper/v007/input.json}
 \end{minipage}
 \par\medskip
 
 \noindent
 \begin{minipage}{\linewidth}
-\lstinputlisting[style=jsoncode, caption={Input of the Google Play collector; keywords left out as above.}, label={lst:input-play}, linerange={1-5,51-57}]{../scripts/googleplay-scraper/v005/input.json}
+\lstinputlisting[style=jsoncode, caption={Input of the Google Play collector; keywords left out as above.}, label={lst:input-play}, linerange={1-5,51-57}]{../04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/input.json}
 \end{minipage}
 \par\medskip
 
@@ -46,7 +46,7 @@ position before filtering, logs each request with its URL, time, result count an
 SHA-256 hash, and pauses between requests to respect the rate limit. Rating counts
 and averages describe the requested storefront (Table~\ref{tab:storefront-fields}).
 
-\lstinputlisting[style=pythoncode, caption={App Store collector.}, label={lst:scraper-apple}]{../scripts/appstore-scraper/v007/scraper.py}
+\lstinputlisting[style=pythoncode, caption={App Store collector.}, label={lst:scraper-apple}]{../04_Study/4.4_App-Sampling/scripts/appstore-scraper/v007/scraper.py}
 
 \section{Google Play Collector}
 The script uses the open-source \texttt{google-play-scraper} parser (version
@@ -65,4 +65,4 @@ one-to-five-star breakdown is the country's distribution scaled to the
 worldwide count, and the count of written reviews, which the ranking uses,
 follows the storefront country (Table~\ref{tab:storefront-fields}).
 
-\lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../scripts/googleplay-scraper/v005/scraper.py}
+\lstinputlisting[style=pythoncode, caption={Google Play collector.}, label={lst:scraper-play}]{../04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/scraper.py}

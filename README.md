@@ -52,11 +52,11 @@ thesis on every push (artifacts of the run). Agent rules: [AGENTS.md](AGENTS.md)
 | `00_Admin/` | Supervisor input, meeting notes, correspondence, action plan, decision log, risk register, weekly log, timeline |
 | `01_Literature/` | `library/` (every full text, flat, `Author_Year_ShortTitle.pdf`), `notes/`, `catalog/` (reading tracker, methods corpus, generated index and map), `review/` (literature review) and `digest/` (Methods Digest); start at its `README.md` |
 | `03_Thesis/` | Main thesis, chapters, appendices, bibliography (`references.bib`, Zotero file), review copy, proposal snapshot |
-| `04_Study/` | Sampling protocol and app sample, codebook versions, walkthrough protocol, LLM prompts, ethics |
+| `04_Study/` | One folder per section of Chapter 4 (`4.1_…` to `4.8_…`): instruments, protocols, samples and the scripts that work on them |
 | `05_Data/` | Raw, processed and analysis material; raw data is git-ignored |
 | `06_Presentation/` | Beamer presentation |
 | `99_Archive/` | Application material and the cleanup recovery archive |
-| `scripts/` | Collectors, ranking, graph integration, review-copy builder, project checks, git hooks |
+| `scripts/` | Project-wide tools: checks, graph integration, review-copy builder, Zotero, literature, git hooks |
 | `.github/` | CI |
 | `graphify-out/` | Queryable graph, report, HTML, freshness information |
 

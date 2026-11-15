@@ -17,7 +17,7 @@ them, including decisions judged negative (no mismatch, not applicable).
 | Reason | one sentence |
 | Incapability components only (IM11–IM14) | routes checked: in the app / by request to the provider / other; a missing in-app control alone is no evidence |
 
-Pathway states follow from the components by `scripts/instrument-test/v002/evaluate.py`.
+Pathway states follow from the components by `04_Study/4.7_Validation/scripts/instrument-test/v002/evaluate.py`.
 
 ## Potential mismatch (`C-MIS`, one row per claim and pathway in its scope)
 

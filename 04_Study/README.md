@@ -14,7 +14,7 @@ each instrument by its section number. Domain: health trackers overall
 | `4.7_Validation/` | 4.7 | Human coding sheets, decision forms, validation manifest template, `Instrument-Test/` (D16, superseded by D20) |
 | `4.8_Ethics/` | 4.8 | Ethics notes |
 
-4.2 (literature review) lives in `../01_Literature/`.
+4.2 (literature review) lives in `../01_Literature/`. Each folder keeps the code that works on its data in `scripts/<project>/vNNN/`.
 
 **Frozen bundle (D20):** codebook [v7](4.6_Coding/Codebook/codebook_v7.md), reference model
 [v2](4.3_Analytical-Framework/reference_model_v2.yaml), prompts `stage1_coverage_v2`,
@@ -22,7 +22,7 @@ each instrument by its section number. Domain: health trackers overall
 ([Prompts](4.6_Coding/Prompts/README.md)), walkthrough protocol v9,
 [coding sheets](4.7_Validation/human_coding_sheet_v2.md),
 [decision forms](4.7_Validation/decision_forms_v1.md). The validation draw is in
-`scripts/validation-sample/v001/`.
+`04_Study/4.7_Validation/scripts/validation-sample/v001/`.
 
 ## Rules
 

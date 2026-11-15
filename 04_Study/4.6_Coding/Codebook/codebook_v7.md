@@ -314,7 +314,7 @@ actor or data) · `absolute` ("no one can harm you").
 ## Validation
 
 Aligned with the methodology (Validation Sample, Agreement, and Error Estimates), D8 and D9.
-Script: `scripts/validation-sample/v001/` (draw, manifest, estimator, tests).
+Script: `04_Study/4.7_Validation/scripts/validation-sample/v001/` (draw, manifest, estimator, tests).
 
 - **Target:** the corpus, all units of all sampled apps.
 - **Strata (priority partition):** each unit goes to the first stratum it meets:

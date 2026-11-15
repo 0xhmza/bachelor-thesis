@@ -314,7 +314,7 @@ actor or data) · `absolute` ("no one can harm you").
 ## Validation
 
 Aligned with the methodology (Validation Sample, Agreement, and Error Estimates), D8 and D9.
-Script: `scripts/validation-sample/v001/` (draw, manifest, estimator, tests).
+Script: `04_Study/4.7_Validation/scripts/validation-sample/v001/` (draw, manifest, estimator, tests).
 
 - **Pilot:** five apps drawn at random with a recorded seed; the author codes them
   completely. They choose the two models, tune the prompts and fix the allocation

@@ -44,16 +44,16 @@ builds go to a copy of the tree, see AGENTS.md). Supervisor's Word copy
 
 ## 3. The app sample (done, awaiting the author's check)
 
-Collected 23 October (App Store, `scripts/appstore-scraper/v007`) and 24–25 October
-(Google Play, `scripts/googleplay-scraper/v004`, all 645 product pages), ranked by
-`scripts/app-ranking/v003`.
+Collected 23 October (App Store, `04_Study/4.4_App-Sampling/scripts/appstore-scraper/v007`) and 24–25 October
+(Google Play, `04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v004`, all 645 product pages), ranked by
+`04_Study/4.4_App-Sampling/scripts/app-ranking/v003`.
 
 - **Frame:** 49 queries (Hutton et al. 2018 and Malki et al. 2024 terms, English and German; `04_Study/4.4_App-Sampling/keywords.csv`), first 30 results per query, German storefronts.
 - **Ranking ([D2](Decisions/D02_ranking-and-rating-floor.md)):** one ranking of both stores by German exposure E = v + c·r (r German App Store ratings, v German Google Play reviews, c = 0.090 from 114 apps in both stores and the OS shares Android 72.3 %, iOS 27.7 %); same app in both stores is one candidate; one app per developer; no floor.
 - **Preinstalled ([D6](Decisions/D06_preinstalled-apps.md)):** leading vendor per platform (Apple, Samsung; replaced the 10 % threshold on 25 October, same result): Apple Health, Apple Fitness, Samsung Health.
 - **Result:** 47 ranked apps from 47 providers (32 in both stores, 9 Google Play only, 6 App Store only) + 3 preinstalled = 50. Categories: activity 22, diet-weight 12, cycle 4, sleep 3, pregnancy 2, mood 2, heart 1, wearable 1. Sensitivity (providers changed of 47): pool-sum scale 0, depth 20 1, App Store depth 200 2, English only 2, German only 3, equal platform weights 5, no developer rule 10, earlier selection 10, worldwide Play count 11.
 - **Screening:** `04_Study/4.4_App-Sampling/screening.csv` (275 listings, 156 eligible, 119 excluded) was **prepared by an AI assistant; the author must check every decision**, then remove the `\todo` in Results 5.1. Borderline calls are listed in the sampling handout (`04_Study/4.4_App-Sampling/HANDOUT_2026-10-25_sampling.md`; historical file no longer present).
-- Rerun: `python scripts/app-ranking/v003/rank.py scripts/app-ranking/v003/config.json` (rewrites `03_Thesis/tables/app-sample.tex`); tests: `python -I -m unittest discover -s scripts/app-ranking/v003/tests`.
+- Rerun: `python 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/rank.py 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/config.json` (rewrites `03_Thesis/tables/app-sample.tex`); tests: `python -I -m unittest discover -s 04_Study/4.4_App-Sampling/scripts/app-ranking/v003/tests`.
 - Raw outputs are git-ignored; back up `scripts/*/v00*/output/` separately.
 
 ## 4. Decisions ([register](Decision-Log.md))
