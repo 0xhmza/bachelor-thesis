@@ -1,47 +1,86 @@
 % Migrated from proposal/proposal.tex (5 October 2026) on 14 October 2026.
-% Condensed to one page on 12 November 2026; the full text is in the Git history
-% (commit 40a7ff3 and earlier).
+% Rewritten on 15 November 2026 for readability (about one and a half pages);
+% every factual claim cites a source checked in the PDF or the online record.
+% Earlier versions are in the Git history: the one-page version (commit 1b77d6a)
+% and the full version with sections (commit 04d83db).
 \chapter{Background}
 \label{ch:background}
 
-This chapter introduces the apps the study analyses, the legal rules on what
-their providers must tell users, the distinction between a privacy violation and
-a privacy harm, and the protective techniques whose claims the study examines.
+This chapter gives the context of the study in four steps: what health tracking
+apps know about their users, what the law requires providers to tell them, how a
+privacy harm differs from a privacy violation, and what the protective measures
+that providers describe can and cannot do.
 
-Health trackers combine information that users enter, such as symptoms, meals or
-cycle dates, with sensor readings and usage records. Together, these data reveal
-more than users directly provide. The study covers such apps on the German
-market, including the companion apps of wearables (Section~\ref{sec:rq-scope}).
+\paragraph{Health tracking apps.} A health tracking app, or health tracker, lets
+people record their own health or body data over time: steps and workouts,
+meals, sleep, heart rate, mood or the menstrual cycle. Such apps are widely
+used. In a representative survey of 1{,}145 people in Germany aged 16 and over,
+73\,\% of the smartphone users reported using apps to support their fitness,
+nutrition or general wellbeing~\parencite{bitkom2025health}. The apps combine
+what users enter with sensor readings and usage records, and the combination
+reveals more than any single entry. A survey of 236 studies on wearable activity
+trackers reports that their data can be used to infer health conditions,
+activities such as drinking or smoking, locations and even personality
+traits~\parencite[\S4]{niksirat2024wearable}. This study covers health trackers
+on the German market, including the companion apps of wearables
+(Section~\ref{sec:rq-scope}).
 
-Data concerning health are a special category of personal data under
-Article~9(1) GDPR, and activity, sleep or cycle records can fall within it when
-they reveal information about a person's health status (Article~4(15),
-Recital~35). The GDPR also requires that information be given in a concise,
-transparent and intelligible form and lists what a controller must tell data
-subjects, among them the purposes, the recipients and the data subjects' rights
-(Articles~12 to~14)~\parencite{gdpr2016}. Guidance of the Article~29 Working
+\paragraph{What providers must tell users.} The General Data Protection
+Regulation (GDPR) places data concerning health among the special categories of
+personal data (Article~9(1)) and defines them as personal data that reveal
+information about a person's health status (Article~4(15),
+Recital~35)~\parencite{gdpr2016}. The Court of Justice of the European Union
+reads the special categories widely: data from which sensitive information can
+be deduced fall within them as
+well~\parencite[paras.~120, 127--128]{cjeu2022ot}. Activity, sleep or cycle
+records can therefore be health data when they allow conclusions about a
+person's health.
+
+The GDPR also regulates how providers inform users. The information must be concise, transparent, intelligible and written in clear and
+plain language (Article~12), and it must name, among other things, the purposes
+of the processing, the recipients of the data and the users' rights
+(Articles~13 and~14)~\parencite{gdpr2016}. Guidance of the Article~29 Working
 Party allows this information to be layered across a privacy statement and
-notices in the interface~\parencite{wp292018transparency}, so the policy and the
-interface are both places where a provider informs users.
+notices in the interface~\parencite[paras.~35, 39]{wp292018transparency}. The
+privacy policy and the interface are therefore both places where a provider
+informs users. The same guidance recommends that, for complex or unexpected
+processing, providers also spell out the most important consequences that the
+processing will have for the people
+concerned~\parencite[para.~10]{wp292018transparency}.
 \highlight[orange!25]{The study does not assume that all communication about
 harms is voluntary. It asks what providers say about possible consequences
 alongside their data-practice disclosures.}
 
-A privacy violation and a privacy harm are related but distinct: the violation
-is the breach of an expectation about information, the harm is its consequence
-for a person, such as economic, reputational or psychological damage. Knabenhans et al.\ use \emph{harm trees} to link system components,
-such as information disclosed to another party, to capabilities, such as
-tracking or inference, and then to possible harms. They distinguish pathways
-that are inherent to the core functionality from pathways that
-privacy-enhancing technologies can prevent~\parencite{knabenhans2026harms}. This
-study adapts the method to health trackers (Section~\ref{sec:framework}) and
-distinguishes an app's intended prediction for its user from an adversary's
-ability to obtain or use that prediction.
+\paragraph{From violation to harm.} Telling users what happens to their data is
+not the same as telling them what can happen to them. Citron and Solove treat
+privacy harms as the negative consequences that privacy violations have for
+people and sort them into seven types: physical, economic, reputational,
+psychological, autonomy, discrimination and relationship
+harms~\parencite{citron2021harms}. Harm trees, introduced by De and Le
+M\'etayer~\parencite{de2016privacy}, trace how a system leads to such harms.
+Knabenhans et al.\ use them to analyse the European Digital Identity Framework.
+In their trees, system components, such as information disclosed to another
+party, enable capabilities, such as tracking or inference, and capabilities
+result in harms. Each chain from components to a harm is a \emph{pathway to
+harm}, and a harm tree combines the pathways to one
+harm~\parencite[\S4.1]{knabenhans2026harms}. This study adapts the method to
+health trackers (Section~\ref{sec:framework}). It keeps one distinction
+throughout. The prediction that an app makes for its user, such as the next
+period, is part of its function. A harm arises when another actor obtains that
+prediction or uses it against the user.
 
-Providers describe measures that protect users' data, such as encryption,
-pseudonymisation, aggregation and processing on the device. Martin et al.\ argue
-that such techniques fall short when they do not address the privacy-violating
-behaviour~\parencite{martin2025cookies}. A measure can thus do what it promises
-and still leave a harm possible. The relevant question is which protection a
-provider claims, against which actor and under which conditions, and which
-pathways to harm the measure interrupts.
+\paragraph{Protection claims.} Providers also describe measures that protect
+users' data, such as encryption, pseudonymisation, aggregation and processing
+on the device. Whether such a measure prevents a harm is a separate question.
+Martin et al.\ examine three principles behind the privacy-enhancing
+technologies of large technology companies: limiting third parties' access to
+personal data, using inferences instead of raw data, and keeping data on the
+user's device. They argue that these principles fall short when the technique
+does not address the privacy-violating
+behaviour~\parencite{martin2025cookies}. Knabenhans et al.\ reach a matching
+result for digital identity: privacy-enhancing technologies reduce information
+flows, but the pathways to harm that are inherent to the core functionality
+remain~\parencite{knabenhans2026harms}. A measure can thus do what it promises
+and still leave a harm possible. For each protection claim, the study therefore
+asks which protection the provider claims, against which actor and under which
+conditions, and which pathways to harm the measure interrupts.

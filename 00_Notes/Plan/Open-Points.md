@@ -8,5 +8,5 @@ Only what is still open. Details: [meeting checklist 2026-11-06](../Meetings/202
 - [ ] Ethics: whether any request is sent to a provider during walkthrough tasks T3, T6 or T7 (Methodology 4.8.1)
 
 ## To do
-- [ ] Read the Related Work draft of 12 Nov (gap → RQ)
+- [ ] Read the Background and Related Work rewrite of 15 Nov (literature → gap → RQ)
 - [ ] Discussion: compare findings with earlier literature
