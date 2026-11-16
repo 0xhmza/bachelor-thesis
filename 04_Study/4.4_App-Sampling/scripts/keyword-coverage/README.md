@@ -16,4 +16,11 @@ Which keyword categories of `keywords.csv` the 47 ranked apps of the sample cove
   Writes `v002/output/categories.csv` (not in Git) and `03_Thesis/tables/sample-categories.tex`
   (Table 5.3). Replaces v001's two tables.
 
-Run: `python 04_Study/4.4_App-Sampling/scripts/keyword-coverage/v002/coverage.py`
+- `v003/coverage.py` (16 November 2026) adds the reach of each of the 49 queries in the final
+  sample of 50 apps (preinstalled apps through their store listings): apps within the first 30
+  positions in either store, share of 50, and apps that no other query found. Writes
+  `v003/output/keywords.csv` (not in Git), `03_Thesis/tables/keyword-reach-top.tex` (Table 5.4,
+  ten widest) and `03_Thesis/tables/keyword-reach.tex` (appendix, all queries), and still writes
+  `sample-categories.tex`.
+
+Run: `python 04_Study/4.4_App-Sampling/scripts/keyword-coverage/v003/coverage.py`

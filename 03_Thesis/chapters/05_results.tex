@@ -219,6 +219,33 @@ counts only under activity unless a heart-rate query found it. Of the preinstall
 apps, Apple Fitness has activity and Apple Health and Samsung Health multipurpose
 tracking as their main function.
 
+\paragraph{Keyword reach.} Table~\ref{tab:keyword-reach} gives the ten queries that found the
+most of the 50 apps within their first 30 positions, in either store;
+Table~\ref{tab:keyword-reach-all} in Appendix~\ref{app:sampling-details} lists all 49. The
+widest-reaching query, \emph{Laufen}, found 12 apps (24\,\%). Each reproductive-health query found
+three to six apps, and \emph{Glück} found none. No query is decisive: the median app was found by
+four queries, and only two apps by a single one (Naviki by \emph{Radfahren}, BetterMe by
+\emph{exercise}). Leaving out any one query therefore removes at most one app from the search
+frame, which matches the sensitivity check below.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\caption[The ten queries with the widest reach]{The ten queries with the widest reach in the
+sample. \emph{Apps}: apps of the 50 (preinstalled apps through their store listings) within the
+first 30 positions of the query, in either store. \emph{Only here}: apps that no other query
+found. An app found by several queries counts in each.}
+\label{tab:keyword-reach}
+\small
+\begin{tabular}{@{}lllrrr@{}}
+\toprule
+\textbf{Query} & \textbf{Language} & \textbf{Category} & \textbf{Apps} & \textbf{Share of 50} & \textbf{Only here} \\
+\midrule
+\input{tables/keyword-reach-top}% the generated rows end with \bottomrule
+\end{tabular}
+\end{singlespace}
+\end{table}
+
 \paragraph{Sensitivity.} Table~\ref{tab:sensitivity} shows how many of the 47
 selected providers, and how many of their store listings, change when one rule
 is changed at a time. Without the developer rule, the provider of Leap
