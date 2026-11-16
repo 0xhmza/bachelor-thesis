@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T10:42:08.568689+00:00",
+  "built_at_utc": "2026-11-16T11:06:33.790922+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -415,7 +415,7 @@
     "00_Notes/Meetings/2026-11-06_Supervisor-Meeting_Organized.md": "4f4e3ae64f59d94d9ba2036ba1f2f962053369f7fce0ad46c64ee6434d2ae4db",
     "00_Notes/Meetings/2026-11-06_Supervisor-Meeting_Raw.md": "5a8af7c3f0851f8246dab124bd36a7a3126541f6ad2ccb1e2f1b8b73edd0678a",
     "00_Notes/Meetings/TEMPLATE.md": "b4f1433263dddb664dd9836aa16a4d533a0839d9e49878a4bdc51a5a9a6160b6",
-    "00_Notes/Plan/Open-Points.md": "e7cd6b91fda8936a0ee9742ca765ed0d05a0572c0597208523c57836a707e35a",
+    "00_Notes/Plan/Open-Points.md": "e8937af09f54a0e3173315991628fb2017baf90417005c8fe135b599e8b5bf39",
     "00_Notes/Plan/Risk-Register.md": "765d27b7a711ed3bf18119006390a996cd3cce1d22b1fd7b41710ce1e28977f3",
     "00_Notes/Plan/Timeline.md": "cee10957a141fcf6105ab43c91f455b200340dc780f082ea11da0f1708a31a17",
     "00_Notes/Plan/Weekly-Log.md": "7c6d197b2e984d89f4abadf1c840b1fe32cda4486ea8cd4d3b1412201701e8d7",
@@ -563,8 +563,8 @@
     "scripts/zotero-library/README.md": "8070ef4daf8cbf21be2840d1401ac2f4d1b00d1a2b1caffb530ad9ccab20555f"
   },
   "literature_corpus": null,
-  "nodes": 2941,
-  "edges": 4249,
+  "nodes": 2942,
+  "edges": 4250,
   "communities": 436,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
