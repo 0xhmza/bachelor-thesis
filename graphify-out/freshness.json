@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T11:43:12.876598+00:00",
+  "built_at_utc": "2026-11-16T11:50:42.346025+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -405,7 +405,7 @@
     "00_Notes/Archive/Plan_2026-11-15/Timeline.md": "4288d2a6b09c83f3b0e0b88e89811162d2c70732f714c1817a477734edb764b5",
     "00_Notes/Archive/Plan_2026-11-15/Weekly-Log.md": "2844c3960e0083eb62439ae27b786a2cb9f5d795fbf74a08d8d85a3ca95f993d",
     "00_Notes/Archive/Project-Handoff_2026-10-25.md": "ed4ed8bf07635fed5d0a023017549d52410186fd80353e4c54fd7bc71cee5c66",
-    "00_Notes/Decisions.md": "bb76ee44c3c6036284f30ee9774803e898242046cf4e7fc3c6d4a79117fae856",
+    "00_Notes/Decisions.md": "e5f0bc50f10514faadc7abb7da64abe4dc65d09f63a281190f37c65a653baa92",
     "00_Notes/Documents/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Notes/Documents/Correspondence/2026-10-19_Registration-Email.md": "2e6b71a2c3a923565c21a8276b8a5bfb9a0cdec675d1bee179e6932f379ee19f",
     "00_Notes/Documents/Supervisor-Input/2026-09-05_Supervisor-Input.md": "79f410d690062fecf990fc4f253b373339b3e10cb472ab012714a04634891cd3",
@@ -509,8 +509,8 @@
     "03_Thesis/chapters/01_introduction.tex": "9318b82437715fee28a7a55a832cda97d4e6995406de50ee844a5aeb57465df2",
     "03_Thesis/chapters/02_background.tex": "9e8f0bc9105dc8957ee3e50698930233630873ad43e9b85a6898eaa46c16bde3",
     "03_Thesis/chapters/03_related_work.tex": "1323449773f99e3152bd89a960c8d199affc6e82e7ca7e37c4dd4557822099c6",
-    "03_Thesis/chapters/04_methodology.tex": "74bede0781b6ed98a7452b1a721a74960fecff67f211802710ace1ed3ff2f7f3",
-    "03_Thesis/chapters/05_results.tex": "37924dc59e6a2bd43771ad8c0cd249273117d18300e0192620416bc3d444fc62",
+    "03_Thesis/chapters/04_methodology.tex": "becedd0d82d674814bb442657c2f9ef1aa29d5bee1fdaa6f007f55d38cf70f15",
+    "03_Thesis/chapters/05_results.tex": "81488929f7df96d41aacdb76a769aaeccb3bfd348d1973d840d2503de2570765",
     "03_Thesis/chapters/06_discussion.tex": "aa8c654de0ff7c83d68659d12b0c5d707fc369014e46de3a55dca65bbc9f1f67",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
     "03_Thesis/config/declaration.tex": "504f700f952c018cbf14d0d331352426616c3ad7a83ecbbe077b9df3da42f9b5",
@@ -566,7 +566,7 @@
   },
   "literature_corpus": null,
   "nodes": 2955,
-  "edges": 4259,
+  "edges": 4261,
   "communities": 440,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false

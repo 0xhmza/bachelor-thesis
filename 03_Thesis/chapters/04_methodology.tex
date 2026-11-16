@@ -536,21 +536,23 @@ E5 & Not a DiGA, Germany's reimbursable digital health applications
 \subsection{Cross-Store Matching and Popularity Ranking}
 \label{sec:ranking}
 \paragraph{Same app in both stores.} An app listed in both stores is one
-candidate, so its two listings must be paired. Names are not enough: one developer can offer
-similar products, and one product can carry different titles in the two
-stores~\parencite[\S3.2]{steinboeck2024comparing}. Following Steinböck et al., two listings are
-the same app if they offer the same branded product for the same
-use~\parencite[\S3.2, p.~352]{steinboeck2024comparing}. As in their
-matcher~\parencite[\S3.2.2, p.~353]{steinboeck2024comparing}, pairs are proposed when two
-listings share the developer, the app identifier, the title, or at least 20 four-word passages
-of description text that occur in at most ten listings. Each proposal is then decided on
-product-specific evidence, recorded with the decision: an official page linking both listings,
-the same identifier or product name, shared description text, or one listing naming the other's
-product. A shared developer, domain or policy, or a generic title such as
-\enquote{Schrittzähler}, is not enough, and a different target group or main function makes a
-different app (Nike Run Club and Nike Training Club). The two listings of one app count as one
-provider. An undecided pair is not merged; the sample is final only if merging every such pair
-would change none of the selected listings, in the main selection or in any sensitivity check.
+candidate, so its two listings must be paired; separate apps of one provider stay separate.
+Candidate pairs are formed by provider and decided by hand. The provider of a listing is the
+controller that its privacy policy must name~\parencite[Art.~13(1)(a)]{gdpr2016}, a legally
+required statement that identifies the responsible entity even when the developer names in the
+two stores differ; for a listing without a policy, the seller shown by the App Store stands in.
+Every pair of a Google Play and an App Store listing of the same provider is a candidate. Names
+alone are not enough, because one provider offers similar products and one product can carry
+different titles in the two stores~\parencite[\S3.2, p.~352]{steinboeck2024comparing}; studies
+of popular apps therefore match them by hand~\parencite[\S3.1]{hu2018studying}. Following
+Steinböck et al., two listings are the same app if they serve the same use with the same core
+functions~\parencite[\S3.2, p.~352]{steinboeck2024comparing}. Each decision is recorded with
+product-specific evidence: an official page linking both listings, the same app identifier or
+product name, shared description text, or one listing naming the other's product. A shared
+provider or a generic title such as \enquote{Schrittzähler} is not enough, and a different
+target group or main function makes a different app (Nike Run Club and Nike Training Club). An
+undecided pair is not merged; the sample is final only if merging every such pair would change
+none of the selected listings, in the main selection or in any sensitivity check.
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
