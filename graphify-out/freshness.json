@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T12:02:18.450729+00:00",
+  "built_at_utc": "2026-11-16T14:12:15.561645+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -109,6 +109,7 @@
     "03_Thesis/tables/reference-capabilities.tex",
     "03_Thesis/tables/reference-components.tex",
     "03_Thesis/tables/reference-pathways.tex",
+    "03_Thesis/tables/sample-categories.tex",
     "03_Thesis/tables/sensitivity.tex",
     "03_Thesis/tables/usecase-cards.tex",
     "03_Thesis/tables/usecase-common.tex",
@@ -254,6 +255,7 @@
     "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/input.json": "100e93412e99f758a9dd42556ff6a862bd3bbff37e02c066f5a97594ab9ff0a7",
     "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/scraper.py": "a384e6a02b97cc5679d403d9badd4ac69770f90e8edda3aa729f89b3b3fe6e13",
     "04_Study/4.4_App-Sampling/scripts/keyword-coverage/v001/coverage.py": "9aa5d19586b9b22fb1746433a3afa89784727a4659e7ca97467768f1373ecdfb",
+    "04_Study/4.4_App-Sampling/scripts/keyword-coverage/v002/coverage.py": "aabb72815568d067b2a264692248cca942b82e2b93ea2243d9f01007858cefb8",
     "04_Study/4.4_App-Sampling/scripts/sampling-audit/v001/audit.py": "892ed118a65dc49dc0855de983b2ce535c6b8671dc4ef72598c4c246984710c5",
     "04_Study/4.4_App-Sampling/scripts/sampling-checks/v001/check_pool.py": "41b9bcf9fb4557533f6f188050198b33e1d8b1bb51b3c7600a43f56ea944ad61",
     "04_Study/4.4_App-Sampling/scripts/sampling-checks/v002/pilot_table.py": "b56abaa3d11fe68da861a6fb59ccea714bcb96c8481c93108e429935d438a2bd",
@@ -448,7 +450,7 @@
     "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v004/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
     "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
     "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393",
-    "04_Study/4.4_App-Sampling/scripts/keyword-coverage/README.md": "33af0dc1ec7fa5e9d9312a0e3b15b6e8a21c02363f5db41f2465a2c954dd0fe8",
+    "04_Study/4.4_App-Sampling/scripts/keyword-coverage/README.md": "6421f79bf1680a2b69817fdf0dce18fb4c996163efdaa56a3c77acbd59435801",
     "04_Study/4.4_App-Sampling/scripts/sampling-audit/v001/README.md": "891bca0b35b834bb709e3ab70424951f96fe7b8a4acae5d209c9a9bc4fd42521",
     "04_Study/4.5_Data-Collection/walkthrough_protocol.md": "835dc3ec41aaa6364d13c759088b65eba328b74fe90886bc3f5b473f6b9b5e55",
     "04_Study/4.6_Coding/Codebook/codebook_v1.md": "30374613bdc73ec58187a470e84db8789b40ca3755c7a432f6e6127236bf93f6",
@@ -509,8 +511,8 @@
     "03_Thesis/chapters/01_introduction.tex": "9318b82437715fee28a7a55a832cda97d4e6995406de50ee844a5aeb57465df2",
     "03_Thesis/chapters/02_background.tex": "9e8f0bc9105dc8957ee3e50698930233630873ad43e9b85a6898eaa46c16bde3",
     "03_Thesis/chapters/03_related_work.tex": "1323449773f99e3152bd89a960c8d199affc6e82e7ca7e37c4dd4557822099c6",
-    "03_Thesis/chapters/04_methodology.tex": "3a81cb37f013b7802b90cf988cb4b022ef950840725f4aeb7e7d00662c0a753f",
-    "03_Thesis/chapters/05_results.tex": "37924dc59e6a2bd43771ad8c0cd249273117d18300e0192620416bc3d444fc62",
+    "03_Thesis/chapters/04_methodology.tex": "a7ffe00cd3abff176fc0d06adf307f857a7361440e2aae852babd010a5e306b7",
+    "03_Thesis/chapters/05_results.tex": "5d27c26633e3fcc730076a601a148af1ac6c4b8a449793dcf9ddd09e5e6118b1",
     "03_Thesis/chapters/06_discussion.tex": "aa8c654de0ff7c83d68659d12b0c5d707fc369014e46de3a55dca65bbc9f1f67",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",
     "03_Thesis/config/declaration.tex": "504f700f952c018cbf14d0d331352426616c3ad7a83ecbbe077b9df3da42f9b5",
@@ -542,6 +544,7 @@
     "03_Thesis/tables/reference-capabilities.tex": "f68dcabf3bbd7d565db5119b12d1a79b0b1d367a7b732125d698b4a0549808a4",
     "03_Thesis/tables/reference-components.tex": "512486e6e81564e9e41ba463509a30edc4c606082aa6694d4c15bdd22f819006",
     "03_Thesis/tables/reference-pathways.tex": "48a0c4ed56975ebc35275ea990ab8febd2a8e599fb3bd2f4d9de55cbd3a5cab8",
+    "03_Thesis/tables/sample-categories.tex": "3b60c25ad0154db9b8ca5e3c43d134cbae14e88a663e941e0564ca09198a6acc",
     "03_Thesis/tables/sensitivity.tex": "882bf1d3ec732ee28841af5da10d1f733013323f85caa14b00d8586e7bf420e7",
     "03_Thesis/tables/usecase-cards.tex": "abf515ce1388d742a0a676efa5db649141a0998c72eb22941003cdb19be7ed05",
     "03_Thesis/tables/usecase-common.tex": "ba44d4e8fdd5168f5429b6e9828dfa62d94f09e262c10b0fe327b9e0ce36208d",
@@ -565,9 +568,9 @@
     "scripts/zotero-library/README.md": "8070ef4daf8cbf21be2840d1401ac2f4d1b00d1a2b1caffb530ad9ccab20555f"
   },
   "literature_corpus": null,
-  "nodes": 2955,
-  "edges": 4261,
-  "communities": 440,
+  "nodes": 2964,
+  "edges": 4271,
+  "communities": 442,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

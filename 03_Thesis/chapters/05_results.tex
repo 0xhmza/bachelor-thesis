@@ -179,72 +179,45 @@ had 471 to 447{,}096 German App Store ratings (42 listings) and 1{,}486 to
 all 41 Google Play listings link to a privacy policy. Of the 47, 42 appeared
 within the first ten positions of a query and 5 between positions 11 and 20.
 
-\paragraph{Primary categories.} Table~\ref{tab:sample-categories} gives the
-number and share of the 50 apps in each primary category
-(Section~\ref{sec:app-search}). Activity and diet and weight together hold 35
-apps (70\,\%). The preinstalled apps are Apple Fitness (activity) and Apple
-Health and Samsung Health (multipurpose).
+\paragraph{Health categories.} Table~\ref{tab:sample-categories} describes the
+sample by the health categories of Section~\ref{sec:app-search} in two ways. The
+\emph{main function} gives each of the 50 apps one category, so its shares add up to
+100\,\%. The \emph{keyword} columns count the 47 ranked apps found by at least one
+query of a category; the ten keyword categories of Table~\ref{tab:keywords} are
+grouped into these six, and an app found by several counts in each.
 
 \begin{table}[H]
 \centering
 \begin{singlespace}
-\caption[Primary categories of the 50 apps]{Primary categories of the 50 apps,
-including the three preinstalled apps. Each app counts once, in the category of
-Table~\ref{tab:app-sample}.}
+\caption[Health categories of the sample]{Health categories of the sample. Main
+function: one category per app, of all 50 apps (the three preinstalled apps
+included). Found by keywords: ranked apps within the first 30 positions of a query
+of the category, in either store, as a share of the 47 ranked apps; an app can count
+in several categories.}
 \label{tab:sample-categories}
 \small
-\begin{tabular}{@{}lrr@{}}
+\begin{tabular}{@{}lrrrr@{}}
 \toprule
-\textbf{Category} & \textbf{Apps} & \textbf{Share} \\
+ & \multicolumn{2}{c}{\textbf{Main function}} & \multicolumn{2}{c}{\textbf{Found by keywords}} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+\textbf{Category} & \textbf{Apps} & \textbf{Share} & \textbf{Apps} & \textbf{Share} \\
 \midrule
-Activity & 22 & 44\,\% \\
-Diet and weight & 13 & 26\,\% \\
-Reproductive health & 6 & 12\,\% \\
-\quad of which cycle tracking & 4 & 8\,\% \\
-\quad of which pregnancy & 2 & 4\,\% \\
-Multipurpose tracking & 3 & 6\,\% \\
-Sleep & 3 & 6\,\% \\
-Mood & 2 & 4\,\% \\
-Heart rate & 1 & 2\,\% \\
-\midrule
-\textbf{Total} & \textbf{50} & \textbf{100\,\%} \\
-\bottomrule
+\input{tables/sample-categories}% the generated rows end with \bottomrule
 \end{tabular}
 \end{singlespace}
 \end{table}
 
-\paragraph{Keyword categories.} Table~\ref{tab:sample-keywords} gives, for each
-keyword category of Table~\ref{tab:keywords}, how many of the 47 ranked apps
-appeared within the first 30 positions of one of its queries, in either store.
-Every category found at least one app. Sleep, heart rate and mood are thin. No
-ranked app has contraception or fertility as its main function.
-
-\begin{table}[H]
-\centering
-\begin{singlespace}
-\caption[Ranked apps found per keyword category]{Ranked apps found per keyword
-category. The share is of the 47 ranked apps; an app can be found by several
-categories, so the shares do not add up to 100\,\%.}
-\label{tab:sample-keywords}
-\small
-\begin{tabular}{@{}lrr@{}}
-\toprule
-\textbf{Keyword category} & \textbf{Apps found} & \textbf{Share of 47} \\
-\midrule
-Running & 15 & 32\,\% \\
-Weight & 12 & 26\,\% \\
-Diet & 11 & 23\,\% \\
-Steps & 9 & 19\,\% \\
-Reproductive health & 8 & 17\,\% \\
-Cycling & 7 & 15\,\% \\
-Exercise & 6 & 13\,\% \\
-Sleep & 4 & 9\,\% \\
-Heart rate & 2 & 4\,\% \\
-Mood & 1 & 2\,\% \\
-\bottomrule
-\end{tabular}
-\end{singlespace}
-\end{table}
+The two views agree closely. Of the 47 ranked apps, 43 were found by the queries of a
+single category, three by two and one by three. The keyword lists overlap mainly within
+a category: running, step, cycling and exercise queries found the same activity apps,
+and diet and weight queries the same diet apps. Activity and diet and weight hold 35 of the 50 apps
+(70\,\%) by main function. Reproductive health holds six (four cycle trackers, two
+pregnancy apps); no ranked app has contraception or fertility as its main function.
+Sleep, mood and heart rate are thin in both views. The keyword columns show how an
+app was found, not every function it has: a running app that also records heart rate
+counts only under activity unless a heart-rate query found it. Of the preinstalled
+apps, Apple Fitness has activity and Apple Health and Samsung Health multipurpose
+tracking as their main function.
 
 \paragraph{Sensitivity.} Table~\ref{tab:sensitivity} shows how many of the 47
 selected providers, and how many of their store listings, change when one rule

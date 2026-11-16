@@ -8,4 +8,12 @@ Which keyword categories of `keywords.csv` the 47 ranked apps of the sample cove
   category when it appears within the first 30 positions of at least one query of that
   category, in either store. Writes `v001/output/coverage.csv` (not in Git).
 
-Run: `python 04_Study/4.4_App-Sampling/scripts/keyword-coverage/v001/coverage.py`
+- `v002/coverage.py` (16 November 2026) groups the ten keyword categories into the six
+  health categories of the domain (activity: cycling, exercise, running, step count; diet and
+  weight: diet, weight) and writes one table with both views of the sample: the main function
+  (primary category of all 50 apps, each app once) and the ranked apps found by each group's
+  queries (an app can count in several). It also prints how many groups found each ranked app.
+  Writes `v002/output/categories.csv` (not in Git) and `03_Thesis/tables/sample-categories.tex`
+  (Table 5.3). Replaces v001's two tables.
+
+Run: `python 04_Study/4.4_App-Sampling/scripts/keyword-coverage/v002/coverage.py`
