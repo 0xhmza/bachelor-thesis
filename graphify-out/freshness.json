@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T21:20:00.804236+00:00",
+  "built_at_utc": "2026-11-16T22:55:52.156117+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -514,7 +514,7 @@
     "03_Thesis/chapters/01_introduction.tex": "9318b82437715fee28a7a55a832cda97d4e6995406de50ee844a5aeb57465df2",
     "03_Thesis/chapters/02_background.tex": "9e8f0bc9105dc8957ee3e50698930233630873ad43e9b85a6898eaa46c16bde3",
     "03_Thesis/chapters/03_related_work.tex": "1323449773f99e3152bd89a960c8d199affc6e82e7ca7e37c4dd4557822099c6",
-    "03_Thesis/chapters/04_methodology.tex": "1c84aada6254485b43266e748e00127829ca257706e17b2f635a7a7f6edcb42a",
+    "03_Thesis/chapters/04_methodology.tex": "229c96246e5570475098623e0db50d659fee2035bf912490318ee4bbcbb9ec4e",
     "03_Thesis/chapters/05_results.tex": "9df5381a0e1e036a80dd930b02ac23d0a3c301463431c5dfa282b054d974cbf9",
     "03_Thesis/chapters/06_discussion.tex": "aa8c654de0ff7c83d68659d12b0c5d707fc369014e46de3a55dca65bbc9f1f67",
     "03_Thesis/chapters/07_conclusion.tex": "80f5a31259aa3773851a9089e50f290a2153b4525beb563c94ec6526074cba58",

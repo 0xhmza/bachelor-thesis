@@ -54,15 +54,15 @@ describes them afterwards.
   arr/.style={-{Stealth[length=1.6mm]},semithick,draw=muted},
   lab/.style={font=\scriptsize\bfseries,text=muted,anchor=west}]
   \node[lab] at (-7.75,2.45) {Once, for all apps};
-  \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\ground of the harm trees};
-  \node[bx] (gen) at (-2,1.45) {\textbf{Use cases}\\one card and subtree each};
+  \node[bx] (lit) at (-6,1.45) {\textbf{Literature review}\\capabilities, harms, precedents};
+  \node[bx] (gen) at (-2,1.45) {\textbf{Generic app}\\documented tracker functions};
   \node[bx] (tree) at (2,1.45) {\textbf{Harm trees}\\pathways from components to harms};
   \node[bx=accent] (freeze) at (6,1.45) {\textbf{Instrument freeze}\\tree check, then one versioned bundle};
   \node[lab] at (-7.75,0.1) {For each app};
   \node[bx=linkblue,minimum height=10mm] (pol) at (-6,-0.7) {\textbf{Privacy policy}\\and store listing};
   \node[bx=linkblue,minimum height=10mm] (wt) at (-6,-2.1) {\textbf{Walkthrough}\\attempted for every app};
   \node[bx=originimp] (app) at (-2,-1.4) {\textbf{Applicability}\\which parts and harms does this app have?};
-  \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\two models code, the author checks and validates};
+  \node[bx=originimp] (code) at (2,-1.4) {\textbf{Coding}\\two models code, people check and validate};
   \node[bx=originimp] (gap) at (6,-1.4) {\textbf{Comparison}\\RQ1--RQ4, with source evidence};
   \draw[arr] (lit)--(gen); \draw[arr] (gen)--(tree); \draw[arr] (tree)--(freeze);
   \draw[arr] (pol.east)--(app.west); \draw[arr] (wt.east)--(app.west);
@@ -175,7 +175,7 @@ with the trees (Section~\ref{sec:harm-trees}).
 \paragraph{Capabilities.} System components combine to give someone a capability, or
 to take one away. In a health tracker,
 an analytics partner may be able to profile users across apps, and a partner
-with access to the phone may be able to infer a pregnancy from the logged
+with access to the device may be able to infer a pregnancy from the logged
 cycles. An incapability counts as well: a user who cannot use the cycle
 predictions without agreeing to data sharing has lost a choice. Each
 capability names the actor who holds it, because the same data leads to
@@ -226,13 +226,13 @@ harm trees for a concrete system~\parencite[\S\S3, 4.6, 5.4]{de2017refinement}.
 
 \paragraph{Use cases.} A use case is a function or a condition of use that a paper of the
 literature review (Section~\ref{sec:lit-review}) or another cited source documents for health
-trackers, such as logging cycle days on the phone or sharing records with a partner. For each
+trackers, such as logging cycle days on the device or sharing records with a partner. For each
 use case, the analyst fills a card that answers six fixed questions:
 \begin{enumerate}[itemsep=1pt,topsep=3pt]
   \item \textbf{Record.} What does the app record about the person, from the user or from sensors?
   \item \textbf{Derive.} What does the app compute from the records?
-  \item \textbf{Phone.} Who else can reach the records on the phone itself?
-  \item \textbf{Leaves.} What leaves the phone, to whom, and under which condition?
+  \item \textbf{Device.} Who else can reach the records on the device itself?
+  \item \textbf{Leaves.} What leaves the device, to whom, and under which condition?
   \item \textbf{Asks.} What does the app ask of the user, or deny the user?
   \item \textbf{Outside.} Which event outside the app does a pathway through this use case assume?
 \end{enumerate}
@@ -244,7 +244,7 @@ makes the model applicable. Connected devices are outside the scope of the study
 stops at the app and its data.
 
 \paragraph{Order and stopping rule.} The use cases are taken in a fixed order: first those in
-which nothing leaves the phone, then those that bring in the provider, third parties and other
+which nothing leaves the device, then those that bring in the provider, third parties and other
 people, and last the conditions that the app imposes on the user. The order decides only at
 which step an element first appears, not what the finished model contains
 (Section~\ref{sec:harm-trees}). Construction stops when two further use cases in a row, the
@@ -272,7 +272,7 @@ entities~\parencite[\S4.1]{knabenhans2026harms}. For an app, these are three
 things: the data the app collects, derives or sends, such as logged cycle
 dates or a device identifier passed to an analytics partner; what the user and
 others do with the app, such as switching on a cloud backup or opening an
-unlocked phone; and what the app requires, such as an account, or consent to
+unlocked device; and what the app requires, such as an account, or consent to
 data sharing before a feature can be used. In the study, components are taken
 from prior research and confirmed for each app from its store listing, its
 policy or the walkthrough.
@@ -289,7 +289,7 @@ combinations, each an AND of components, as in the set semantics of attack
 trees~\parencite{mauw2005foundations}. Each combination names the actor who gains the
 capability and the component that gives that actor the data. A combination the sources do not
 establish is left out, and the capability stays uncertain. For example, a prediction computed
-on the phone gives no partner a capability unless a component shows that the partner receives
+on the device gives no partner a capability unless a component shows that the partner receives
 it.
 Because every required condition is explicit, a tree also shows how a pathway can be cut: a
 measure blocks it only if it removes one of its necessary conditions. Unlike De and Le
@@ -313,9 +313,9 @@ cause of the pathways it belongs
 to~\parencite[\S4.1]{knabenhans2026harms}. A component belongs to the
 \emph{core functionality} when the app cannot do its job without it, such as
 the logged cycle dates of a period tracker. It comes from the \emph{digital
-context} when it follows from running on a phone and a network or from the
+context} when it follows from running on a device and a network or from the
 setting of use, such as a device identifier or another person with access to
-the phone. It is an \emph{implementation choice} when the provider decided it
+the device. It is an \emph{implementation choice} when the provider decided it
 and could decide otherwise, such as a cloud backup, an analytics library, or
 predictions offered only in exchange for data sharing. Events outside the app, such as an
 attacker gaining access, are marked as a fourth kind of leaf. The origin shows who
@@ -531,7 +531,7 @@ App Store ratings. Then adjust that ratio using the German platform shares:
 \]
 
 Here, $s_{\mathrm{iOS}}$ and $s_{\mathrm{Android}}$ are the platforms' shares of
-German mobile web page views in the month preceding collection, taken from
+German web page views from devices in the month preceding collection, taken from
 StatCounter~\parencite{statcounter2026os}. These shares approximate the
 platform distribution of users. The ratio $m$ reflects both the platform sizes
 and the rates at which users leave ratings or reviews. The share ratio removes
@@ -562,20 +562,20 @@ as seller or developer website, privacy policy or a link in the description.
 P3 matches are made by hand and recorded with their evidence; a similar name alone is no
 evidence.
 
-\paragraph{Preinstalled apps.} Health apps that ship with the phone reach
+\paragraph{Preinstalled apps.} Health apps that ship with the device reach
 users without a download, so their rating counts understate their reach and
 they cannot be ranked like the store apps. They form a separate group, and
 its members follow from a rule with two steps.
 
 \emph{Vendors:} on each platform, the vendor with the largest share of the
-platform's mobile page views in Germany is included. The shares come from the
+page views from the platform's devices in Germany is included. The shares come from the
 vendor statistics of StatCounter~\parencite{statcounter2026vendor}, read at the
 time of the collection, recorded with their date and compared within each platform
 (the calculation is in Appendix~\ref{app:sampling-details}).
 
 \emph{Apps:} for each leading vendor, the preinstalled apps are identified from
 its documentation and the store listings. An app qualifies if the vendor itself
-provides it, if it is installed on the vendor's current phones without a
+provides it, if it is installed on the vendor's current devices without a
 download, and if it meets the inclusion rules I1 to I7 and triggers none of the exclusion rules
 X1 to X8 (Table~\ref{tab:eligibility}). The provider rule applies to the
 ranked store selection only, so every qualifying app of a leading vendor enters.
@@ -637,34 +637,29 @@ applicable English version exists.
 
 \subsection{Cognitive Walkthrough}
 \label{sec:walkthroughs}
-A cognitive walkthrough assesses whether a first-time user can find privacy information and use
-controls in the app~\parencite{wharton1994cognitive}. The analyst performs the walkthrough
-manually before reviewing the models' codes for the app's policy. The assumed user can navigate
-the platform but has no technical training or prior knowledge of the app or policy. Each task
-gives the user a privacy goal in everyday language. The judgements describe likely obstacles for
-this persona~\parencite{mahatody2010state,malki2024exploring,wharton1994cognitive}.
+A cognitive walkthrough is an expert inspection: the analyst steps through a task and judges at
+each action whether a new user would succeed~\parencite{mahatody2010state,wharton1994cognitive}.
+Following Malki et al., who inspected the interfaces of female health
+apps~\parencite{malki2024exploring}, it tests whether a first-time user can find privacy
+information and use privacy controls. The assumed user can use a device but knows neither the
+app nor its policy. The analyst walks through each app before seeing the models' codes for its
+policy.
 
-\paragraph{Preparation.} Inspection is attempted for every sampled app on one platform, using
-Android where available and iOS for apps available only on iOS. Android apps run on a Pixel
-emulator with Google Play and the latest stable Android release on the first collection day.
-The same system image is used throughout, and a clean snapshot is restored for each app. Apps
-that reject the emulator are inspected on a factory-reset Android phone, with the deviation
-logged. iOS apps run on a physical iPhone with the OS version fixed on the first collection day.
-Each session starts without a restored backup or existing account. Any preinstalled app that
-cannot be reset is logged with its starting state. The region is set to Germany, with English preferred and German used as a fallback
-(Section~\ref{sec:material}). Where both versions are available, the corresponding screens are
-captured separately in the same account, consent and settings state. Language differences are logged and results reported separately. Payment, identity
-verification, unavailable paired devices and technical failures are logged at the point of
-blockage. Accessible screens are retained, and affected apps remain in the document sample.
+\paragraph{Preparation.} Each app is inspected once, on Android where available and otherwise
+on iOS. Android apps run on a Pixel emulator restored to a clean snapshot for each app, or on a
+factory-reset Android device if an app rejects the emulator; iOS apps run on a physical iOS
+device. The OS versions are fixed on the first collection day, and every session starts without
+a backup or an existing account, with the region set to Germany and English preferred over
+German (Section~\ref{sec:material}). If payment, identity verification, a paired device or a
+technical failure blocks a task, the blockage is logged, the screens reached are kept, and the
+app stays in the sample.
 
-\paragraph{Tasks.} The seven tasks are fixed before collection and performed in the order shown
-in Table~\ref{tab:wt-tasks}. For T5--T7, the analyst records separate subgoals where
-recipients, purposes or scopes differ, including device, account and server copies. Each
-subgoal records the action offered, the endpoint the interface confirms and any part left
-undone. Account deletion is marked inapplicable for apps without accounts. T3 also checks
-whether users can report a problem to the provider, contact its data protection officer and
-find information about complaints to a supervisory
-authority~\parencite[Art.~13(1)(b), 13(2)(d), 77]{gdpr2016}.
+\paragraph{Tasks.} The analyst performs the seven tasks of Table~\ref{tab:wt-tasks} in a fixed
+order. Each task states a privacy goal in everyday language. T3 includes contacting the provider
+and its data protection officer and finding how to complain to a supervisory
+authority~\parencite[Art.~13(1)(b), 13(2)(d), 77]{gdpr2016}. Where T5--T7 differ by scope, such
+as copies on the device, in the account and on the server, each part is recorded separately.
+Account deletion is inapplicable for apps without accounts.
 
 \begin{table}[H]
 \centering
@@ -688,59 +683,40 @@ T7 & Delete the account and data. \\
 \end{singlespace}
 \end{table}
 
-\paragraph{Procedure.} The analyst records the entire session and logs the app identifier and
-version, capture date, device, OS, region, language and account state. The current listing is
-archived separately from the frozen sampling record. At first launch, the analyst captures
-onboarding screens, consent requests, permissions and preselected options. Where an account is
-required, the analyst uses the synthetic profile fixed in the walkthrough protocol and logs
-mandatory and optional fields, consent and permission choices. The initial privacy settings and
-the route to them are captured before changes. Onboarding before consent and the initial
-privacy-settings screen are the fixed comparison points for RQ4 (Section~\ref{sec:comparison}).
-App text, OS prompts, linked documents and third-party advertisements are recorded separately.
-
-For each task or subgoal, the analyst records the starting state and searches for a route for
-up to five minutes. The shortest route found is then evaluated without a time limit. The
-analyst counts taps on that route~\parencite[Table~1, p.~4]{habib2020scavenger} and logs
-exploration, backtracking, scrolling, text entry and external steps separately. State changes
-during T5 and T6 are logged, and T7 is performed after all other evidence has been captured.
+\paragraph{Procedure.} The whole session is screen-recorded, and the app version, date, device,
+OS, language and account state are logged. Where an account is needed, a synthetic profile is
+used. Onboarding, consent requests and the initial privacy settings are captured before any
+change, because they are the fixed comparison points for RQ4
+(Section~\ref{sec:comparison}). For each task, the analyst searches for a route for up to five
+minutes, then evaluates the shortest route found and counts its taps, as Habib et al.\
+did~\parencite[Table~1, p.~4]{habib2020scavenger}. Deletion (T7) comes last, after all other
+evidence is captured.
 
 At each action, the analyst answers Wharton et al.'s four
-questions~\parencite[Table~5.1, p.~106]{wharton1994cognitive}:
-\begin{enumerate}[label=\textbf{Q\arabic*},leftmargin=2.4em,itemsep=0pt,topsep=3pt]
-  \item Will the user try to achieve the right effect?
-  \item Will the user notice that the correct action is available?
-  \item Will the user associate the correct action with the effect they want?
-  \item After the action, will the user see that progress is being made?
-\end{enumerate}
-Each answer is recorded as \emph{yes}, \emph{no} or \emph{uncertain}, with a reason tied to the
-screen and persona. Negative judgements are retained even if the analyst completes the task.
-Each task or subgoal receives one outcome:
-\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,labelindent=0pt,font=\normalfont\bfseries]
-  \item[Completed.] The information is reached or the interface confirms the action.
-  \item[Information not found.] The search ends without locating the information or control.
-  \item[Task unsupported.] Explicit evidence establishes that the function is unavailable
-    through the app or an alternative route, such as a provider request.
-  \item[Access barrier.] An access requirement or technical failure prevents inspection.
-\end{description}
-The record includes the endpoint, evidence, elapsed search time and problematic questions.
-Findings are limited to the recorded route and search conditions. Interface confirmations
-establish only what the app reports about deletion, export or sharing, not that it took place.
-The protocol fixes starting states, search boundaries and completion criteria before collection
-(Section~\ref{sec:freeze}).
+questions~\parencite[Table~5.1, p.~106]{wharton1994cognitive}: will the user try to achieve the
+right effect (Q1), notice that the correct action is available (Q2), associate it with that
+effect (Q3), and see afterwards that progress is being made (Q4)? Each answer is \emph{yes},
+\emph{no} or \emph{uncertain}, with a reason tied to the screen, and a \emph{no} is kept even if
+the analyst completes the task.
 
-\paragraph{Re-rating.} After at least two weeks, the author rates the
-recordings of ten apps again, drawn with a recorded seed, without seeing the first ratings,
-answering Q1--Q4 for each action and assigning each task outcome. This checks how stably the recorded routes are interpreted, not
-whether another rater would agree. The analyst's background and prior familiarity with each app
-are documented.
+Each task ends with one outcome: \emph{completed} (the information is reached or the interface
+confirms the action), \emph{information not found} (the search ends without it), \emph{task
+unsupported} (explicit evidence shows the function is unavailable, including by request to the
+provider) or \emph{access barrier} (an access requirement or technical failure stops
+inspection). Findings hold only for the recorded route, and an interface confirmation shows only
+what the app reports about deletion, export or sharing, not that it took place. The protocol is
+fixed before collection (Section~\ref{sec:freeze}).
 
-\paragraph{Outputs and use.} The walkthrough produces three separate outputs
-(Table~\ref{tab:wt-outputs}). Transcripts are checked against the recording and linked to the
-app version, capture date, language, screen and timestamp. An in-app policy link is recorded with its route and
-document version, and the linked document is coded as policy text. For applicability,
-observable states and actions inform Step~1. For protection claims, Step~3 distinguishes
-whether a control was encountered from whether it would cut a pathway if it worked as claimed.
-Unobserved conditions remain uncertain (Sections~\ref{sec:apply}--\ref{sec:assessment}).
+\paragraph{Re-rating.} After at least two weeks, the author re-rates the recordings of ten
+randomly drawn apps without seeing the first ratings. This checks how stably the routes are
+interpreted, not whether another rater would agree; the analyst's prior familiarity with each app
+is documented.
+
+\paragraph{Outputs and use.} The walkthrough yields three outputs
+(Table~\ref{tab:wt-outputs}). Interface text is transcribed, checked against the recording and
+coded; a policy opened from inside the app is coded as policy text. Observed states and controls
+feed the applicability and protection steps, and what was not observed stays uncertain
+(Sections~\ref{sec:apply}--\ref{sec:assessment}).
 
 \begin{table}[H]
 \centering
