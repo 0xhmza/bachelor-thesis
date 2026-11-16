@@ -8,7 +8,7 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 | ID | Topic | Rule | Status | Record |
 |---|---|---|---|---|
 | D1 | Sample size | 47 ranked + 3 preinstalled apps, no quotas | proposed; justification by comparison with prior studies added 11-15 | [D01](Archive/Decisions/D01_sample-size.md) |
-| D2 | Ranking | One ranking of both stores by German-market popularity, no rating floor, one app per provider; sensitivity threshold 5 of 47 providers | proposed | [D02](Archive/Decisions/D02_ranking-and-rating-floor.md) |
+| D2 | Ranking | One ranking of both stores by German-market popularity, no rating floor; several apps of one provider are separate apps, each studied on its own (provider rule dropped 11-16); two listings are merged only when they are the same app in both stores; sensitivity threshold 5 of 47 providers (to restate for apps) | proposed; provider rule dropped, decided 11-16 | [D02](Archive/Decisions/D02_ranking-and-rating-floor.md) |
 | D3 | Scope and keywords | Keywords of Hutton 2018 and Malki 2024, EN + DE; eligibility E1a–E1d to E5 checked on the store listing | proposed; keyword reverse engineering, store-API test and must-include apps dropped 11-15 | [D03](Archive/Decisions/D03_scope-keywords-function.md) |
 | D4 | Payment | Free to install; payment is recorded and only limits walkthroughs | proposed | [D04](Archive/Decisions/D04_payment-access.md) |
 | D5 | No privacy policy | App included, absence reported | confirmed 10-13 | [D05](Archive/Decisions/D05_apps-without-policy.md) |

@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T11:06:33.790922+00:00",
+  "built_at_utc": "2026-11-16T11:30:34.369705+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -404,7 +404,7 @@
     "00_Notes/Archive/Plan_2026-11-15/Timeline.md": "4288d2a6b09c83f3b0e0b88e89811162d2c70732f714c1817a477734edb764b5",
     "00_Notes/Archive/Plan_2026-11-15/Weekly-Log.md": "2844c3960e0083eb62439ae27b786a2cb9f5d795fbf74a08d8d85a3ca95f993d",
     "00_Notes/Archive/Project-Handoff_2026-10-25.md": "ed4ed8bf07635fed5d0a023017549d52410186fd80353e4c54fd7bc71cee5c66",
-    "00_Notes/Decisions.md": "c07a038a0830b65d6dff63bf1085c31402860511ba7aef8b20200a7137f8acec",
+    "00_Notes/Decisions.md": "bb76ee44c3c6036284f30ee9774803e898242046cf4e7fc3c6d4a79117fae856",
     "00_Notes/Documents/Correspondence/2026-10-05_Proposal-Email.md": "5916440f3babddd9cb5e7b00cfee3adcb97e887267b2a6baade3bd9277d0fd6c",
     "00_Notes/Documents/Correspondence/2026-10-19_Registration-Email.md": "2e6b71a2c3a923565c21a8276b8a5bfb9a0cdec675d1bee179e6932f379ee19f",
     "00_Notes/Documents/Supervisor-Input/2026-09-05_Supervisor-Input.md": "79f410d690062fecf990fc4f253b373339b3e10cb472ab012714a04634891cd3",
@@ -415,7 +415,7 @@
     "00_Notes/Meetings/2026-11-06_Supervisor-Meeting_Organized.md": "4f4e3ae64f59d94d9ba2036ba1f2f962053369f7fce0ad46c64ee6434d2ae4db",
     "00_Notes/Meetings/2026-11-06_Supervisor-Meeting_Raw.md": "5a8af7c3f0851f8246dab124bd36a7a3126541f6ad2ccb1e2f1b8b73edd0678a",
     "00_Notes/Meetings/TEMPLATE.md": "b4f1433263dddb664dd9836aa16a4d533a0839d9e49878a4bdc51a5a9a6160b6",
-    "00_Notes/Plan/Open-Points.md": "e8937af09f54a0e3173315991628fb2017baf90417005c8fe135b599e8b5bf39",
+    "00_Notes/Plan/Open-Points.md": "824b5099d1c1e534d3a4d56341a538eb8d99c92188f3053c95fdcbd5ccb3ce82",
     "00_Notes/Plan/Risk-Register.md": "765d27b7a711ed3bf18119006390a996cd3cce1d22b1fd7b41710ce1e28977f3",
     "00_Notes/Plan/Timeline.md": "cee10957a141fcf6105ab43c91f455b200340dc780f082ea11da0f1708a31a17",
     "00_Notes/Plan/Weekly-Log.md": "7c6d197b2e984d89f4abadf1c840b1fe32cda4486ea8cd4d3b1412201701e8d7",
@@ -563,8 +563,8 @@
     "scripts/zotero-library/README.md": "8070ef4daf8cbf21be2840d1401ac2f4d1b00d1a2b1caffb530ad9ccab20555f"
   },
   "literature_corpus": null,
-  "nodes": 2942,
-  "edges": 4250,
+  "nodes": 2941,
+  "edges": 4249,
   "communities": 436,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
