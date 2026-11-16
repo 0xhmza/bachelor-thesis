@@ -7,8 +7,9 @@ repository root:
 
 ```powershell
 python -m venv 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv
-04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv/Scripts/python.exe -m pip install -r 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/requirements.txt
-04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv/Scripts/python.exe 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/scraper.py 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/input.json > 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v005/output/run.json
+04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv/Scripts/python.exe -m pip install -r 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/requirements.txt
+New-Item -ItemType Directory -Force 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/output | Out-Null
+04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv/Scripts/python.exe 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/scraper.py 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/input.json > 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/output/run.json
 ```
 
 | Version | What it is |
@@ -16,13 +17,16 @@ python -m venv 04_Study/4.4_App-Sampling/scripts/googleplay-scraper/.venv
 | `v001/` | Command-line collector (`fitness --region de --limit 20`; defaults region `de`, language `en`, limit 200); writes `googleplay-scraper-<region>-<keywords>-<UTC timestamp>.json` |
 | `v002/` | Shortest version: JSON input with `keywords` and/or `ids` (product-page lookup without a search), `region`, `language`, `limit`; JSON on stdout, failures under `errors`. ID mode tested 22 October 2026; keyword mode ran the 19-keyword pilot of 22 October (D2) at the author's direction, although `robots.txt` disallows `/store/search` |
 | `v003/` | Sampling collector of 23 October 2026 (D2, D3): adds developer ID, genre ID, minimum installs, histogram, in-app purchase and content-rating fields, summary and full description; keeps the whole first search page. Its `hits_without_id` were the highlighted top results, whose ID the parser misses (for `running`: adidas Running), so it dropped each query's top result. Its run of 23 October took about 5 s per product page and was stopped after 2 h 50 min without output |
-| `v005/` | **Shortened collector, shown in Appendix E** (26 October 2026; 88 lines instead of 145). Opens the product page of every app within `depth` (no install-band order, `pages` limit, `search_from` or cutoff fields) and prints no progress. Gives the same `results` as v004's sample run: replaying v004's search hits and page cache through v005 without network calls reproduced all 1,139 result rows of `run-2026-10-25-all.json` |
+| `v005/` | **Shortened collector** (26 October 2026; 88 lines instead of 145). Opens the product page of every app within `depth` (no install-band order, `pages` limit, `search_from` or cutoff fields) and prints no progress. Gives the same `results` as v004's sample run: replaying v004's search hits and page cache through v005 without network calls reproduced all 1,139 result rows of `run-2026-10-25-all.json` |
 | `v004/` | **Sampling collector of 24–25 October 2026** (D2); its output is frozen in `05_Data/raw/app-sample_2026-10-25/`. Reads the search page for every keyword and records each hit's position, title, developer and install band, taking a top result's ID from its details URL; ranks the distinct apps by band (ties: best position, package ID); opens the first `pages` product pages, appending each to the `cache` file so an interrupted run resumes; `search_from` reuses an earlier search. Adds `search`, `distinct_apps`, `page_band_cutoff` and `apps_at_cutoff_without_page`. The run of 24 October opened 100 pages; the run completed on 25 October (`pages` 1000, search of 24 October) opened all 645, used by `app-ranking/v003` |
+| `v006/` | **Current collector, shown in Appendix E.** Parses product pages directly with the pinned library, keeps the v005 fields and resumable cache, and verifies the storefront on the response URL. |
 
 All versions restore the TLS certificate verification the library disables on
 import, use 30-second timeouts and one-second pacing, and reject requests or
 redirects that drop the storefront parameter, so no result silently comes from
 another country.
+
+Use a separate cache for each storefront and interface language.
 
 ## Recorded data
 

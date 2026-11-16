@@ -1486,51 +1486,6 @@
       "_origin": "semantic"
     },
     {
-      "id": "03_thesis_appendix_e_scraping_scripts_document",
-      "label": "Scraping scripts appendix",
-      "file_type": "document",
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "document",
-      "summary": "Collector sources and JSON inputs are read from versioned script files at compile time; shown scripts collected the sample, without eligibility/ranking or behavioral observation.",
-      "_origin": "semantic"
-    },
-    {
-      "id": "03_thesis_appendix_e_scraping_scripts_collector_inputs",
-      "label": "Collector JSON input fields",
-      "file_type": "concept",
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Input Format",
-      "summary": "keywords, ids, region, language, limit, pages and cache control keyword/API or package-ID lookup collection; inputs hold49queries.",
-      "_origin": "semantic"
-    },
-    {
-      "id": "03_thesis_appendix_e_scraping_scripts_appstore_collector",
-      "label": "App Store v007 iTunes Search API collector",
-      "file_type": "concept",
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "App Store Collector",
-      "summary": "One request per keyword/storefront; preserves API order and prefilter positions, keeps iPhone-compatible results, logs URL/time/count/hash and pauses; ratings describe requested storefront.",
-      "_origin": "semantic"
-    },
-    {
-      "id": "03_thesis_appendix_e_scraping_scripts_play_collector",
-      "label": "Shortened Google Play v005 collector, same results as the v004 sample run",
-      "file_type": "concept",
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Google Play Collector",
-      "summary": "Uses google-play-scraper1.2.7 embedded search data; repairs highlighted-app ID; orders product-page reads by installs and rank; append cache permits resume; restores TLS verification and rejects loss of storefront parameter.",
-      "_origin": "semantic"
-    },
-    {
-      "id": "03_thesis_appendix_e_scraping_scripts_geographic_counts",
-      "label": "Collector output geography and limits",
-      "file_type": "concept",
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Google Play Collector",
-      "summary": "Play ratings and installs are worldwide; country breakdown scaled to worldwide count; German written-review count follows country; search ordering is not verified native-store ranking.",
-      "_origin": "semantic"
-    },
-    {
       "id": "scripts_googleplay_scraper_readme_v005",
       "label": "v005: 88-line collector; replaying v004 hits and cache reproduces all 1139 result rows",
       "file_type": "concept",
@@ -20204,6 +20159,110 @@
       "author": null,
       "contributor": null,
       "_origin": "semantic"
+    },
+    {
+      "id": "03_thesis_appendix_e_scraping_scripts_historical_sampling_collectors",
+      "label": "Historical sampling collectors",
+      "file_type": "document",
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L9",
+      "_origin": "semantic"
+    },
+    {
+      "id": "03_thesis_appendix_e_scraping_scripts_app_store_request_pacing_and_provenance",
+      "label": "App Store request pacing and provenance",
+      "file_type": "concept",
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L40",
+      "_origin": "semantic"
+    },
+    {
+      "id": "03_thesis_appendix_e_scraping_scripts_google_play_search_and_detail_collection",
+      "label": "Google Play search and detail collection",
+      "file_type": "concept",
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L49",
+      "_origin": "semantic"
+    },
+    {
+      "id": "03_thesis_appendix_e_scraping_scripts_resumable_google_play_cache",
+      "label": "Resumable Google Play cache",
+      "file_type": "concept",
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L55",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_sampling_collector",
+      "label": "Google Play sampling collector",
+      "file_type": "document",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L1",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_v006_collector",
+      "label": "Google Play v006 collector",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L22",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_per_storefront_and_language_cache",
+      "label": "Per-storefront and language cache",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L29",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_storefront_specific_review_count",
+      "label": "Google Play storefront-specific review count",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L47",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_scraper",
+      "label": "App Store scraper",
+      "file_type": "document",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L1",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_v008_collector",
+      "label": "App Store v008 collector",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L14",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_frozen_app_store_collection_of_23_october_2026",
+      "label": "Frozen App Store collection of 23 October 2026",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L13",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_storefront_specific_rating_count",
+      "label": "App Store storefront-specific rating count",
+      "file_type": "concept",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L21",
+      "_origin": "semantic"
+    },
+    {
+      "id": "04_study_4_4_app_sampling_scripts_googleplay_scraper_v006_requirements_pinned_google_play_parser_dependency",
+      "label": "Pinned Google Play parser dependency",
+      "file_type": "document",
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/requirements.txt",
+      "source_location": "L1",
+      "_origin": "semantic"
     }
   ],
   "edges": [
@@ -21487,50 +21546,6 @@
       "_origin": "semantic"
     },
     {
-      "source": "03_thesis_appendix_e_scraping_scripts_document",
-      "target": "03_thesis_appendix_e_scraping_scripts_collector_inputs",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Input Format",
-      "weight": 1.0,
-      "_origin": "semantic"
-    },
-    {
-      "source": "03_thesis_appendix_e_scraping_scripts_document",
-      "target": "03_thesis_appendix_e_scraping_scripts_appstore_collector",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "App Store Collector",
-      "weight": 1.0,
-      "_origin": "semantic"
-    },
-    {
-      "source": "03_thesis_appendix_e_scraping_scripts_document",
-      "target": "03_thesis_appendix_e_scraping_scripts_play_collector",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Google Play Collector",
-      "weight": 1.0,
-      "_origin": "semantic"
-    },
-    {
-      "source": "03_thesis_appendix_e_scraping_scripts_document",
-      "target": "03_thesis_appendix_e_scraping_scripts_geographic_counts",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Google Play Collector",
-      "weight": 1.0,
-      "_origin": "semantic"
-    },
-    {
       "source": "scripts_googleplay_scraper_readme_document",
       "target": "scripts_googleplay_scraper_readme_v005",
       "relation": "references",
@@ -21538,17 +21553,6 @@
       "confidence_score": 1.0,
       "source_file": "scripts/googleplay-scraper/README.md",
       "source_location": "document",
-      "weight": 1.0,
-      "_origin": "semantic"
-    },
-    {
-      "source": "03_thesis_appendix_e_scraping_scripts_play_collector",
-      "target": "scripts_googleplay_scraper_readme_v005",
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
-      "source_location": "Google Play Collector",
       "weight": 1.0,
       "_origin": "semantic"
     },
@@ -42693,6 +42697,105 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "semantic"
+    },
+    {
+      "source": "03_thesis_appendix_e_scraping_scripts_historical_sampling_collectors",
+      "target": "03_thesis_appendix_e_scraping_scripts_app_store_request_pacing_and_provenance",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "03_thesis_appendix_e_scraping_scripts_historical_sampling_collectors",
+      "target": "03_thesis_appendix_e_scraping_scripts_google_play_search_and_detail_collection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "03_thesis_appendix_e_scraping_scripts_historical_sampling_collectors",
+      "target": "03_thesis_appendix_e_scraping_scripts_resumable_google_play_cache",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "03_Thesis/appendix/E_scraping_scripts.tex",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_sampling_collector",
+      "target": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_v006_collector",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_sampling_collector",
+      "target": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_per_storefront_and_language_cache",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_sampling_collector",
+      "target": "04_study_4_4_app_sampling_scripts_googleplay_scraper_readme_google_play_storefront_specific_review_count",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_scraper",
+      "target": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_v008_collector",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_scraper",
+      "target": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_frozen_app_store_collection_of_23_october_2026",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "semantic"
+    },
+    {
+      "source": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_scraper",
+      "target": "04_study_4_4_app_sampling_scripts_appstore_scraper_readme_app_store_storefront_specific_rating_count",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "semantic"
     }
   ],
   "hyperedges": [
@@ -43156,7 +43259,7 @@
     "05_Data/README.md": "d4c6e982753390047b5e217ff54d3ecb9683396fb9e4bfd0a3ead3cdf29cf47f",
     "scripts/app-ranking/README.md": "75bcab4a592001068c56615f41cf4619ca00c2175eb89d0a2b6cd9cc74ce339c",
     "00_Admin/Decisions/D05_apps-without-policy.md": "f19e9c1fd55b700a45c85a12313b43da3b45c945a1204d112f983c14bf4ff54c",
-    "03_Thesis/appendix/E_scraping_scripts.tex": "a578b8fc6f47e47a0f2dc2f2db242eb662149364fece228db261c903d841692e",
+    "03_Thesis/appendix/E_scraping_scripts.tex": "d2e6d525089c9c3062c8ada79cc546433316b2349f4820dfbd80f9902fc65a7c",
     "03_Thesis/tables/identity-providers.tex": "d774288d4f16b298b13f646660affbe5bf7ad8194538f7b91ff4f605fd2a0e97",
     "00_Admin/Reviews/Methodology-Deep-Research_2026-11-04/Methodology-Comparison_ad8e02d-vs-final_2026-11-04.html": "5dc6604a5a998f769d2753c77b07183a9f5703a22a859be0e22c843c69143ec4",
     "01_Literature/digest/HANDOFF.md": "46035bc0c86fc5b71a043750a273d65a4a93dae21665fe41602cb0208a4c9686",
@@ -43278,7 +43381,10 @@
     "03_Thesis/tables/reference-capabilities.tex": "c4f98dfaac6865c46e3b0b2ea1e8cafffbf7daaf803249c949f9f467b75785b9",
     "00_Admin/Decisions/D18_reporting-unit.md": "6e2ca350ae515da02adaed84446f1ab867d789b7d8425339b3c4b21e0dc65075",
     "03_Thesis/chapters/06_discussion.tex": "aa8c654de0ff7c83d68659d12b0c5d707fc369014e46de3a55dca65bbc9f1f67",
-    "Claude outputs/Validation-Coverage-Check_2026-11-04.md": "5a67eb6b324816d5908aadd99b06ec3587f03fe5eca364beae26151cd7044b25"
+    "Claude outputs/Validation-Coverage-Check_2026-11-04.md": "5a67eb6b324816d5908aadd99b06ec3587f03fe5eca364beae26151cd7044b25",
+    "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/README.md": "4c6d8ca04f5353facb7e078eb6624aa1a86ef35953cae7f8f1a3fed7c3568853",
+    "04_Study/4.4_App-Sampling/scripts/appstore-scraper/README.md": "c22bd48b1c96702e4ba48e28daad3b6e78bd6f9e1460a35a2b74ff8d31b4b3e1",
+    "04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v006/requirements.txt": "61e7e7409dcff0175ab74f50ddb6ad3339176b454d4114e6ba663abd1612b393"
   },
   "token_usage": null,
   "token_usage_note": "Host-agent usage is unavailable; placeholder zeros are not measured costs."
