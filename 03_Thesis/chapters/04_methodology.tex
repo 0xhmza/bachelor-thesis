@@ -99,9 +99,7 @@ The study addresses four main research questions:
 \end{description}
 
 Section~\ref{sec:scope} defines the terms health tracker, harm, pathway to
-harm, surface and applicability.
-
-The study uses directed content analysis. Prior research provides the
+harm, surface and applicability. The study uses directed content analysis. Prior research provides the
 initial codes, which are extended with additional codes identified in the
 material~\parencite{hsieh2005three,krippendorff2019content}.
 The comparison across communication surfaces follows Malki et al., who
@@ -147,12 +145,11 @@ with health tracking apps and on how app providers communicate privacy informati
 (Chapter~\ref{ch:related-work}). It also identifies harms, capabilities, actors and data flows
 for constructing the reference harm trees (Section~\ref{sec:framework}), following
 Knabenhans et al.~\parencite{knabenhans2026harms} and exploring used methodologies in
-coding and analysing privacy policies using Large Laguage Models (Section~\ref{sec:analysis}).
+coding and analysing privacy policies using Large Language Models (Section~\ref{sec:analysis}).
 
-\paragraph{Selection.} Papers are selected through targeted reading without a database
-search.
-
-\todo[inline]{For all literature cited in this paper, the exploration methods should be noted and later summarized here.}
+\paragraph{Selection.} \highlight[orange!25]{Papers are selected through targeted reading
+without a database search.}\todo{For all literature cited in this paper, the exploration methods
+should be noted and later summarized here.}
 
 \paragraph{Extraction.}
 
@@ -209,9 +206,7 @@ category.
 
 \subsection{Generic Health-Tracker Model Construction}
 \label{sec:generic-model}
-\highlight[orange!25]{The model is assembled use case by use case, with one subtree after each
-use case.}\todo{Procedure of D23 (proposed, 7 November 2026). Applied in Section~5.3 and
-Appendix~G; confirm or reject D23 before the freeze.}
+The model is assembled use case by use case, with one subtree after each use case.
 The study builds the harm trees on a \emph{generic health tracker}: a model that holds
 the functions that the papers of the literature review document for health trackers, assembled
 from their use cases. It is not a
@@ -392,143 +387,94 @@ Baseline & Current practice in the EU
 
 \section{App Sampling}
 \label{sec:app-sampling}
-The target sample consists of 50 apps. Its size follows the studies that, like this one,
-examine the apps themselves and not only their documents. They used 20 to 64 apps:
-Malki et al.\ inspected 20~\parencite[p.~4]{malki2024exploring}, Shipp and Blasco
-30~\parencite[p.~3]{shipp2020period}, Huckvale et al.\ 36~\parencite{huckvale2019assessment} and
-Hutton et al.\ 64~\parencite[p.~5]{hutton2018assessing}. Reviews of policies alone reach 116 and
-600 apps~\parencite{oloughlin2019reviewing,sunyaev2015availability}, but read no interface. Because every app here is both coded and walked through, 50 lies in the range of the
-in-depth designs. The 50 apps are not a random sample of all health trackers but the most popular
-eligible ones in Germany, where use concentrates (Section~\ref{sec:ranking}).
+The study targets a sample of 50 apps. Each app undergoes systematic coding and a structured
+walkthrough. The target falls within the range of prior studies that directly examined app
+interfaces or behavior. Malki et al.\ assessed 20 apps~\parencite[p.~4]{malki2024exploring},
+Shipp and Blasco assessed 30~\parencite[p.~3]{shipp2020period}, Huckvale et al.\ assessed
+36~\parencite{huckvale2019assessment}, and Hutton et al.\ assessed
+64~\parencite[p.~5]{hutton2018assessing}. Studies limited to privacy policy analysis examined
+larger samples of 116 and 600 apps~\parencite{oloughlin2019reviewing,sunyaev2015availability}.
 
-The sample comprises three groups: \textcolor{accent}{(i)} apps preinstalled
-by the leading device vendor of each platform; \textcolor{accent}{(ii)} apps listed on
-Google Play; and \textcolor{accent}{(iii)} apps listed on the Apple App Store, where an app
-listed in both stores is one candidate (Section~\ref{sec:ranking}).
-No quotas are set for the three groups
-\textcolor{accent}{(i)}--\textcolor{accent}{(iii)}: the places that the preinstalled group does
-not fill go to the highest-ranked eligible store apps, one per provider
-(Section~\ref{sec:selection}). The search frame and eligibility rules
-were recorded before collection, and the resulting composition is reported with the results
-(Section~5.2).
+The sampling frame includes health-tracking apps available through the Apple App Store and
+Google Play, as well as major health-tracking apps preinstalled by device or platform providers.
+Eligible apps are ranked by popularity in Germany, and the 50 highest-ranked apps are selected
+(Section~\ref{sec:ranking}).
 
 \subsection{App Search and Eligibility}
 \label{sec:app-search}
-\paragraph{Domain.} The study concerns health trackers overall. Its operational
-scope and search vocabulary draw on two published app studies. Hutton et
-al.~\parencite{hutton2018assessing} derived their search categories from the
-data types most often reported by 105 members of a Quantified Self group;
-their health categories are cycling, diet, exercise, heart, mood, running,
-sleep, step count and weight. Malki et
-al.~\parencite{malki2024exploring} supply the reproductive-health scope,
-including pregnancy tracking, absent from that list. Together these sources
-inform the definition and keyword collection for activity, diet and weight,
-heart rate, sleep, mood and reproductive health within one health-tracker
-domain. The categories are not subcategories of health trackers. They group the
-search keywords (Table~\ref{tab:keywords} in Appendix~\ref{app:app-sample}), and the results use
-them only to describe the sample; no sampling, validation or analysis group is formed from them.
-The categories overlap (an exercise app often records heart rate). This does no harm, because an
-app is eligible once it meets the criteria of Table~\ref{tab:eligibility}, whichever keyword
-found it. To describe the sample, each app also gets one \emph{primary category}, the function
-that its store listing names first: activity (cycling, exercise, running, steps), diet and weight,
-heart rate, sleep, mood or reproductive health (cycle tracking, pregnancy), or multipurpose
-tracking if no single function leads. The results report, for each of these categories, the
-number and share of apps with it as their primary category and of ranked apps found by its
-keywords (the keyword categories grouped as above).
+\paragraph{Domain.} The study adapts the health-tracking categories used by Hutton et
+al.~\parencite{hutton2018assessing}, grouping cycling, exercise, running, and step counting
+under physical activity and combining diet and weight into a single category. It extends this
+scope to reproductive health, drawing on Malki et al.~\parencite{malki2024exploring}, who
+examined the privacy practices of apps for menstrual cycle, fertility, and pregnancy tracking.
+The resulting six categories define the study's health-tracking domain and guide the selection
+of app-store search terms for physical activity, diet and weight, heart rate, sleep, mood, and
+reproductive health.
 
 \paragraph{Keywords.} The 15 health keywords of Hutton et al.\ and the 12
 terms of Malki et al.\ are searched in the original English and in one German
-translation each (Table~\ref{tab:keywords} in Appendix~\ref{app:app-sample}). A translation names the tracked
-data type rather than the word (\emph{eating} becomes \emph{Ernährung}).
-Identical spellings and repeated translations are searched once.
+translation each (Table~\ref{tab:keywords} in Appendix~\ref{app:app-sample}).
 
 \paragraph{Search.} Each store is searched in a single session, logged out, in
 its German storefront: the App Store through Apple's Search
 API~\parencite{apple2022itunessearch} and the Google Play store through its
 search page, with collection scripts of this project. For each query,
-the first 30 results are kept in both stores. A Google Play search page shows
-a single page of results, and deeper results need an interface that the store's
-\texttt{robots.txt} disallows. Using the same depth for the App Store follows
+the first 30 results are kept in both stores. Using the same depth for the App Store follows
 O'Loughlin et al., who capped both stores at the number of results Google Play
-shows so that neither store is favoured~\parencite{oloughlin2019reviewing}. The
-App Store is also searched to 200 results, which serves only to check whether
-a deeper search would change the sample. On Google Play, the German count used
-for the ranking appears only on an app's product page, so the product page of
-every Google Play candidate is opened.
+shows so that neither store is favoured~\parencite{oloughlin2019reviewing}.
 
-\paragraph{Eligibility.} A listing is eligible if it meets the five criteria
-of Table~\ref{tab:eligibility}; criterion E1 has four sub-items (E1a to E1d), and all four
-must hold. Each criterion is checked on the store listing
-in the German storefront: title, developer, genre, price and description. An
-app listed in both stores is decided on one screened listing. If both of its
-listings are screened, the app is excluded when either listing fails a
-criterion. In-app purchases
-and subscriptions are recorded but do not exclude an app. Screening follows the
-rank order, and each decision is logged with its reason.
+\paragraph{Eligibility.} A listing is eligible if it meets every inclusion rule (I1 to I7) of
+Table~\ref{tab:eligibility} and triggers none of the exclusion rules (X1 to X8). Rules I1 to I4
+together define health tracking, and all four must hold. Each rule is checked on the store
+listing in the German storefront: title, developer, genre, price and description.
 
 \begin{table}[!t]
 \centering
 \begin{singlespace}
 \small
-\caption{Eligibility criteria and how each is checked on the store listing in
-the German storefront.}
+\caption[Inclusion and exclusion rules for the app listings]{Inclusion and exclusion rules for
+the app listings and how each is checked on the store listing in the German storefront.}
 \label{tab:eligibility}
-\setlength{\aboverulesep}{0.4ex}\setlength{\belowrulesep}{0.65ex}
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
 \toprule
- & \textbf{Criterion} & \textbf{Check on the listing} \\
+\textbf{Rule} & \textbf{Statement} \\
 \midrule
-E1 & Health tracking: meets E1a to E1d
-  & All four sub-items are checked on the description. They follow Hutton et
-  al.~\parencite{hutton2018assessing}, Malki et al.~\parencite{malki2024exploring} and Robillard
-  et al.~\parencite{robillard2019availability}. \\
-\addlinespace[1pt]
-E1a & Records data
-  & The description states that the user can enter, log or store data in the app, or that a sensor
-  or a paired device records it. Excluded: instructional and content apps that show exercises or
-  articles but record nothing, which Hutton et al.\ left out because they \enquote{do not capture
-  data that can permit self-tracking}~\parencite[p.~5]{hutton2018assessing}; games, shops and
-  general-purpose apps. A wearable's companion app is eligible when the app records or displays
-  the data; the device itself is not analysed. \\
-\addlinespace[1pt]
-E1b & The user's own health or body data
-  & The recorded data describe the user's own body, activity or state of health, such as weight,
-  pulse, sleep, mood, cycle days or steps. Excluded: apps that track a child or another person,
-  and apps that record other self-tracking data such as spending or time keeping, which Hutton et
-  al.\ list apart from health~\parencite[Table~2]{hutton2018assessing}. \\
-\addlinespace[1pt]
-E1c & Over time
-  & The description states that entries are saved and can be viewed again across days or weeks, as
-  a history, log, diary, chart, trend or calendar. Excluded: one-off calculators and tests whose
-  result is not kept, that is, apps that ask for input at one time point only, as in Robillard et
-  al.~\parencite[\S2.1]{robillard2019availability}; apps with no tracking or predictive feature, as
-  in Malki et al.~\parencite[\S3.1]{malki2024exploring}. \\
-\addlinespace[1pt]
-E1d & In a category of the domain
-  & The tracked data belong to at least one health category of Hutton et al.\ (cycling, diet,
-  exercise, heart, mood, running, sleep, step count, weight; Table~2) or to the reproductive health
-  of Malki et al.\ (menstruation, ovulation, fertility, contraception, pregnancy; \S3.1).
-  Mental-health trackers qualify through mood and sleep trackers through sleep. The categories are
-  search keywords, not subcategories: they overlap (exercise and heart rate), and an app has to fit
-  at least one, whichever keyword found it. \\
-\addlinespace
-E2 & Consumer app for the general public
-  & The listing offers the app to anyone. Excluded: apps whose listing limits use
-  to the members, patients, employees or professional users of an organisation,
-  such as a health insurer's service app for its members. \\
-\addlinespace
-E3 & Free to install
-  & App Store: price 0~EUR in the German storefront (Search API field
-  \texttt{price}). Google Play: price 0 and marked as free on the product page
-  (fields \texttt{price} and \texttt{free}). \\
-\addlinespace
-E4 & Listing in German or English
-  & The listing text in the German storefront is in German or English. \\
-\addlinespace
-E5 & Not a DiGA, Germany's reimbursable digital health applications
-  & A listing that describes prescription by a doctor or reimbursement by
-  statutory health insurance is checked against the DiGA directory of the
-  Federal Institute for Drugs and Medical Devices (BfArM). \\
+\multicolumn{2}{c}{\textit{Inclusion rules}} \\
+\midrule
+I1 & Is a health tracking app \\
+\quad I1.1 & Include if the app lets the user enter, log or store data, or a sensor or a paired
+  device records it. \\
+\quad I1.2 & Include if the recorded data describe the user's own health or body. \\
+\quad I1.3 & Include if entries are kept and can be viewed again over time. \\
+\quad I1.4 & Include if the tracked data belong to at least one category of the domain. \\
+\cmidrule[0.3pt]{1-2}
+I5 & Include if the app is offered to the general public. \\
+\cmidrule[0.3pt]{1-2}
+I6 & Include if the app is free to install. \\
+\cmidrule[0.3pt]{1-2}
+I7 & Include if the app is in German or English. \\
+\midrule
+\multicolumn{2}{c}{\textit{Exclusion rules}} \\
+\midrule
+X1 & Exclude if the app shows exercises or articles but records nothing (instructional or
+  content-only app). \\
+\cmidrule[0.3pt]{1-2}
+X2 & Exclude if the app is a game, a shop or a general-purpose app. \\
+\cmidrule[0.3pt]{1-2}
+X3 & Exclude if the app tracks a child or another person instead of the user. \\
+\cmidrule[0.3pt]{1-2}
+X4 & Exclude if the app records only other self-tracking data, such as spending or time
+  keeping. \\
+\cmidrule[0.3pt]{1-2}
+X5 & Exclude if the app asks for input at one time point only and keeps no result (one-off
+  calculator or test). \\
+\cmidrule[0.3pt]{1-2}
+X6 & Exclude if the app has no tracking or predictive feature. \\
+\cmidrule[0.3pt]{1-2}
+X7 & Exclude if the app limits use to the members, patients, employees or professional users of
+  an organisation. \\
+\cmidrule[0.3pt]{1-2}
+X8 & Exclude if the app is a DiGA, one of Germany's reimbursable digital health applications. \\
 \bottomrule
 \end{tabularx}
 \end{singlespace}
@@ -536,21 +482,14 @@ E5 & Not a DiGA, Germany's reimbursable digital health applications
 
 \subsection{Cross-Store Matching and Popularity Ranking}
 \label{sec:ranking}
-\paragraph{Same app in both stores.} An app listed in both stores is one
-candidate, so its two listings are paired by hand; separate apps of one provider stay separate.
-Candidates for a pair are the Google Play and App Store listings of the same provider. The
-provider is the controller that every privacy policy must name~\parencite[Art.~13(1)(a)]{gdpr2016}:
-unlike the developer name, which can differ between the stores, this legally required statement
-identifies the same entity in both; for a listing without a policy, the seller or developer it
-names stands in. Within one provider, two listings are the same app if they serve the same use
-with the same core functions~\parencite[\S3.2, p.~352]{steinboeck2024comparing}. Names do not
-decide this, because one provider offers similar products and one product can carry different
-titles in the two stores~\parencite[\S3.2, p.~352]{steinboeck2024comparing}; studies of popular
-apps therefore match them by hand~\parencite[\S3.1]{hu2018studying}. Each decision is recorded
-with product-specific evidence (an official page linking both listings, the same app identifier
-or product name, or shared description text); a different main function makes a different app
-(Nike Run Club and Nike Training Club). An undecided pair is not merged, and the sample is final
-only if merging it would change no selected listing.
+\paragraph{Same app in both stores.} Cross-store listings from the same provider are manually
+compared to identify identical apps. The provider is determined from the privacy policy, as the
+GDPR requires it to name the legally responsible entity~\parencite[Art.~13(1)(a)]{gdpr2016},
+whereas store developer names may vary. Two listings represent the same app if they serve the
+same purpose with identical core functions~\parencite[\S3.2, p.~352]{steinboeck2024comparing}.
+These matches are verified manually and documented with app-level evidence, such as an official
+webpage linking both listings, shared app identifiers, product names, or overlapping
+descriptions.
 
 \paragraph{Ranking by German-market popularity.} Candidates are ordered by a
 \emph{German-market popularity score}, $P_i$, calculated from the feedback
@@ -598,17 +537,15 @@ platform distribution of users. The ratio $m$ reflects both the platform sizes
 and the rates at which users leave ratings or reviews. The share ratio removes
 the platform-size part, so that $c$ converts App Store ratings into Play review
 units. This assumes that the users of matched apps follow the platform shares
-and that feedback rates are similar across apps.
-
-All candidates are ranked by descending $P_i$, with ties broken by the stable
+and that feedback rates are similar across apps. All candidates are ranked by descending $P_i$, with ties broken by the stable
 \emph{candidate key} used by the ranking script.
 
 \subsection{Provider Rule and Preinstalled Apps}
 \label{sec:selection}
 \paragraph{Selection.} The unit of selection is the provider: a listing is skipped when its
 developer is already in the sample, through either store or the preinstalled group. In a
-trial collection on 22 October 2026\footnote{A Google Play search in the German storefront
-with 19 keywords and the first 20 results each, ranked by the worldwide rating count.}, one
+trial collection on 22 October 2026 (a Google Play search in the German storefront
+with 19 keywords and the first 20 results each, ranked by the worldwide rating count), one
 developer held 10 of the 47 most-rated Google Play apps under a single privacy policy;
 RQ1--RQ3 concern what providers communicate, so further apps of one provider add little new
 communication and reduce the number of independent providers. The rule also means that each app
@@ -639,7 +576,8 @@ time of the collection, recorded with their date and compared within each platfo
 \emph{Apps:} for each leading vendor, the preinstalled apps are identified from
 its documentation and the store listings. An app qualifies if the vendor itself
 provides it, if it is installed on the vendor's current phones without a
-download, and if it meets the eligibility criteria E1 to E5. The provider rule applies to the
+download, and if it meets the inclusion rules I1 to I7 and triggers none of the exclusion rules
+X1 to X8 (Table~\ref{tab:eligibility}). The provider rule applies to the
 ranked store selection only, so every qualifying app of a leading vendor enters.
 
 \section{Data Collection}
@@ -713,9 +651,7 @@ The same system image is used throughout, and a clean snapshot is restored for e
 that reject the emulator are inspected on a factory-reset Android phone, with the deviation
 logged. iOS apps run on a physical iPhone with the OS version fixed on the first collection day.
 Each session starts without a restored backup or existing account. Any preinstalled app that
-cannot be reset is logged with its starting state.
-
-The region is set to Germany, with English preferred and German used as a fallback
+cannot be reset is logged with its starting state. The region is set to Germany, with English preferred and German used as a fallback
 (Section~\ref{sec:material}). Where both versions are available, the corresponding screens are
 captured separately in the same account, consent and settings state. Language differences are logged and results reported separately. Payment, identity
 verification, unavailable paired devices and technical failures are logged at the point of
@@ -792,10 +728,9 @@ establish only what the app reports about deletion, export or sharing, not that 
 The protocol fixes starting states, search boundaries and completion criteria before collection
 (Section~\ref{sec:freeze}).
 
-\paragraph{Re-rating.} \highlight[orange!25]{After at least two weeks, the author rates the
+\paragraph{Re-rating.} After at least two weeks, the author rates the
 recordings of ten apps again, drawn with a recorded seed, without seeing the first ratings,
-answering Q1--Q4 for each action and assigning each task outcome.}\todo{Follows from D8: no second
-coder. Confirm the re-rating.} This checks how stably the recorded routes are interpreted, not
+answering Q1--Q4 for each action and assigning each task outcome. This checks how stably the recorded routes are interpreted, not
 whether another rater would agree. The analyst's background and prior familiarity with each app
 are documented.
 
@@ -993,10 +928,8 @@ A script evaluates the trees. AND is present when all inputs are present and abs
 absent. OR is present when any input is present and absent when all are absent. Other cases are
 uncertain. OR+ is evaluated in its rewritten form (Section~\ref{sec:harm-trees}). A harm
 category applies if at least one pathway applies. Uncertain pathways are reported separately.
-\highlight[orange!25]{For five apps, the harm tree of the app is drawn in full, with the evidence
-for each component; for the others, the script's result is reported.}\todo{Decision D23: worked
-trees for five apps. The number may change depending on feasibility; the five apps are not yet
-chosen.}
+For five apps, the harm tree of the app is drawn in full, with the evidence
+for each component; for the others, the script's result is reported.
 
 \subsection{Coverage and Protection Assessment (Steps~2 and~3)}
 \label{sec:assessment}
@@ -1064,9 +997,8 @@ captured material and is worded as Section~\ref{sec:validation} sets out.
 
 \subsection{Pathway Review and Instrument Freeze}
 \label{sec:freeze}
-\highlight[orange!25]{Before the freeze, each of the two models checks every card and every
-constructed pathway against its source, and the author decides each objection}\todo{Follows from
-D8: no second coder. Confirm the model check.}, so that the yardstick is not judged only by its
+Before the freeze, each of the two models checks every card and every
+constructed pathway against its source, and the author decides each objection, so that the yardstick is not judged only by its
 builder. The check asks whether each
 pathway's source supports the link, whether each combination of components suffices for the named actor in
 the health-tracker context, and whether the actor has access to the data. Each objection and its
@@ -1134,10 +1066,9 @@ variation. The sample is enriched with difficult units, so these values describe
 not the corpus. A code is taken as reliable with $\alpha\geq0.800$ and as tentative with
 $0.667\leq\alpha<0.800$~\parencite[pp.~356--357]{krippendorff2019content}\parencite{mcdonald2019reliability}.
 Below 0.667, a code is reported only qualitatively, or the instrument is revised, the affected
-units are recoded and the evaluation is labelled exploratory. \highlight[orange!25]{In the same way,
+units are recoded and the evaluation is labelled exploratory. In the same way,
 the author decides a random sample of applicability, minimisation and mismatch decisions,
-including negative ones, again after at least two weeks.}\todo{Follows from D8: no second coder.
-Confirm the recheck.}
+including negative ones, again after at least two weeks.
 
 \section{Ethics, Availability, and Limitations}
 \label{sec:closing}
@@ -1151,8 +1082,6 @@ only. No real name, address, health data or payment details are entered, so paid
 identity verification and paired devices are not obtained (Section~\ref{sec:walkthroughs}).
 Because no person takes part and only public material and the analyst's own app use are
 analysed, no review by an ethics committee is required.
-\highlight[orange!25]{\textbf{[?]}}\todo{Missing: whether any request is sent to a provider during
-T3, T6 or T7.}
 
 \subsection{Data and Artifact Availability}
 \label{sec:availability}
@@ -1163,8 +1092,6 @@ not republished. The release identifies each text by address, capture date and S
 The research copies are made available only to the examiners, to check the
 research~\parencite[\S~60d(4)]{urhg1965}. Screen recordings and screenshots stay private,
 because they show advertisements, operating-system content and study accounts.
-\highlight[orange!25]{\textbf{[?]}}\todo{Confirm the release before submission (this is not
-legal advice) and add its location.}
 
 \subsection{Methodological Limitations}
 \label{sec:limitations}
