@@ -15,7 +15,23 @@ Selects the ranked apps of the sample as set out in
   Replaced by v005, kept for the record: its title rule paired different
   products of one publisher (peer review F01).
 - `v005/rank.py`: the selection of 28 October 2026; the same app in both stores
-  only where the identity register says so (D2, rules I1–I5).
+  only where the identity register says so (D2, rules I1–I5). Replaced by v006, kept for the record.
+- `v006/rank.py`: the same selection as v005; counts exclusions by the rule of
+  Methodology Table 4.2 (column `rule` of `screening.csv`) and also writes
+  `03_Thesis/tables/sample-flow.tex`, `screening-rules.tex` and `sample-list.tex`.
+
+## v006
+
+```powershell
+python 04_Study/4.4_App-Sampling/scripts/app-ranking/v006/rank.py 04_Study/4.4_App-Sampling/scripts/app-ranking/v006/config.json
+python -I -m unittest discover -s 04_Study/4.4_App-Sampling/scripts/app-ranking/v006/tests
+```
+
+Changes from v005: input paths moved to `04_Study/4.4_App-Sampling/`; exclusions are
+reported by rule (I1–I7, X1–X8) instead of E1–E5, which needs the `rule` column written by
+`screening-rules/v001/recode.py`; `rule_text` and `category_text` in `config.json` label the
+new tables. The selected apps, scores and all v005 tables are unchanged (only their header
+line names v006).
 
 ## v005
 

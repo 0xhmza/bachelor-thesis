@@ -1,277 +1,277 @@
-store,id,name,developer,decision,criterion,category,reason
-apple,946099227,Yazio: Kalorien Zähler & Diät,YAZIO,eligible,,diet-weight,food and calorie diary with weight tracking
-apple,447374873,komoot - Wandern und Radfahren,komoot GmbH,eligible,,activity,records rides and hikes with GPS in a personal log
-apple,336599882,adidas Running: GPS Tracker,adidas,eligible,,activity,records runs walks and workouts
-apple,1108185179,Kalender,Apple,excluded,E1,,calendar; no health tracking
-apple,478618165,Chefkoch – Rezepte & Kochen,Chefkoch GmbH,excluded,E1,,recipe collection; no recording of the user's data
-apple,1038369065,Flo Perioden- & Zyklus-Tracker,FLO HEALTH UK LIMITED,eligible,,cycle,period ovulation and pregnancy tracking
-apple,1459260306,Fastic AI Abnehmen & Fasten,HealthVida GmbH & Co. KG.,eligible,,diet-weight,fasting food and weight tracking
-apple,1037595083,StepsApp Schrittzähler,StepsApp GmbH,eligible,,activity,step counter with daily history
-apple,331308914,WeightWatchers Programm,"WW International, Inc.",eligible,,diet-weight,food and weight tracking (subscription; free to install)
-apple,657189652,Clue Perioden Kalender,BioWink GmbH,eligible,,cycle,menstrual cycle and fertility tracking
-apple,1389111413,Hole.io,Voodoo,excluded,E1,,game
-apple,388123359,Stepstone Jobs: Deine Jobbörse,StepStone GmbH,excluded,E1,,job portal
-apple,493145008,Headspace: Schlaf & Meditation,Headspace Inc.,eligible,,mood,listing: track your mental health with progress tracking and reflections
-apple,286906691,Lifesum: Kalorienzähler AI,Lifesum AB,eligible,,diet-weight,food and calorie tracking
-apple,341232718,MyFitnessPal: Kalorien Tracker,"MyFitnessPal, Inc.",eligible,,diet-weight,food calorie and fitness tracking
-apple,1359069906,STADTRADELN,Klima-Bündnis Climate Alliance Alianza del Clima,eligible,,activity,records cycling kilometres over a campaign; export to health app
-apple,571800810,Calm: Meditation und Schlaf,Calm.com,excluded,E1,,meditation and sleep content; listing records only meditation minutes and no mood or sleep data
-apple,1011796416,"Gymondo Fitness, Pilates, Yoga",Gymondo,excluded,E1,,workout video courses; listing states no recording of the user's data
-apple,650276551,Seven - 7 Minuten Training,Perigee,eligible,,activity,records completed workouts and calories
-apple,549217094,Kalorien Zähler Abnehmen Arise,A.R.I.S.E. Apps resulting in self enhancement Ltd.,eligible,,diet-weight,calorie and food tracking
-apple,654810212,Freeletics: HIIT Fitness Coach,Freeletics GmbH,eligible,,activity,tracks workouts and progress
-apple,462638897,Google Health (Fitbit),Google,eligible,,multiple,Fitbit companion: activity sleep and health data
-apple,1027151285,Schrittzähler & Pedometer,"ITO Technologies, Inc.",eligible,,activity,step counter with history
-apple,505864483,Schwangerschaft + Tracker-App,Philips Digital UK Limited,eligible,,pregnancy,pregnancy tracking by week with bump diary (predictive feature as in Malki et al.)
-apple,1264546236,BetterMe Well-Being Coach,BetterMe Limited,eligible,,activity,workouts meal logging and progress tracking
-apple,1189568780,BodyFast: Intervallfasten KI,BodyFast GmbH,eligible,,diet-weight,fasting and weight tracking
-apple,712286167,Schrittzähler++,"Cross Forward Consulting, LLC",eligible,,activity,step counter with daily and weekly history
-apple,600446812,Pacer Pedometer Schrittzähler,"Pacer Health, Inc",eligible,,activity,step and activity tracking
-apple,301521403,Nike Training Club,"Nike, Inc",eligible,,activity,logs workouts and progress in an activity tab
-apple,529815782,Oje ich wachse! Baby Sprünge,Domus Technica,excluded,E1,,baby development; tracks a child not the user's own data
-apple,665791537,urbia Eisprungkalender,FUNKE National Brands Digital GmbH,eligible,,cycle,cycle and fertile days calendar
-apple,387771637,Nike Run Club: Laufcoach,"Nike, Inc",eligible,,activity,records runs
-apple,971023427,Sweatcoin - Fitness & Lauf App,Sweatco Ltd,eligible,,activity,step tracking with rewards
-apple,1633296501,"Macadam: Schrittzähler, Geld","MACADAM TECHNOLOGIES, S.L.",eligible,,activity,step tracking with rewards
-apple,896501514,Perioden Kalender - Zyklus App,ABISHKKING LIMITED.,eligible,,cycle,period ovulation and fertility tracking
-apple,426826309,Strava: Laufen & Radfahren,"Strava, Inc.",eligible,,activity,records runs and rides
-apple,300235330,ASICS Runkeeper Lauf-Tracker,"ASICS Runner App, Inc.",eligible,,activity,records runs and progress
-apple,1032267351,Mein Periodenkalender - Zyklus,SimpleInnovation LLC,eligible,,cycle,menstrual cycle and ovulation tracking
-apple,1556652646,Oviva Direkt: Gesund Abnehmen,Oviva AG,excluded,E5,,listing describes full reimbursement by statutory health insurance after a medical diagnosis (DiGA); confirm in the BfArM directory
-apple,324021126,Eurosport: News & Ergebnisse,Eurosport,excluded,E1,,sports news
-apple,1459096552,Perioden Kalender +,Aleksei Neiman,eligible,,cycle,cycle and period tracking
-apple,1136617388,Joggen Laufen Walken Goals GPS,AK Apptuitive GmbH,eligible,,activity,records runs and walks
-apple,1364846172,"Outdooractive Wandern, Fahrrad",Outdooractive AG,eligible,,activity,records own tracks with duration distance and elevation
-apple,625759466,Bikemap: Fahrrad Navi & Karten,Bikemap GmbH,eligible,,activity,records rides
-apple,1279716547,Timer Plus – Trainings-Timer,ArGames,excluded,E1,,interval timer only
-apple,337472899,Insight Timer - Meditation,Insight Network Inc,excluded,E1,,meditation content; no recording of mood or other health data stated
-apple,1491340863,Napper: Schlafplan & Geräusche,Napper AB,excluded,E1,,baby sleep schedule; tracks a child not the user's own data
-apple,1114387800,"Fitness App—Gym Workout, Sport",FITNESS ONLINE MChJ,eligible,,activity,fitness diary tracking progress
-apple,839671656,Stepz: Schrittzähler Pedometer,Mosaic S.r.l.,eligible,,activity,step counter
-apple,542891434,Cardiio: Pulsmesser,"Cardiio, Inc.",eligible,,heart,heart rate measurement with history
-apple,1164801111,AutoSleep - Schlaftracker,Tantsissa,excluded,E3,,price 9.99 EUR
-apple,1313192037,Workouts Zuhause - Fitness App,Leap Health,eligible,,activity,records training data and weight automatically
-apple,1105332761,Fddb: KI Kalorienzähler & Diät,Food Database GmbH,eligible,,diet-weight,calorie counter and food diary
-apple,892366151,Tacx Training™,Garmin,eligible,,activity,records indoor rides (companion of a smart trainer; device not analysed)
-apple,1201703657,Relive: 3D-Videos erstellen,Relive B.V.,eligible,,activity,records activities with the phone and shows statistics
-apple,409625068,Instant Herzfrequenz,"Bodymatter, Inc.",eligible,,heart,heart rate measurement with history
-apple,703547387,Life - Menstruations Kalender,Life Fertility Tracker IVS,eligible,,cycle,period and fertile days tracking with diary
-apple,1490078804,ShutEye - Schlaftracker,Enerjoy Pte. Ltd.,eligible,,sleep,sleep tracking
-apple,662170995,MyTherapy Tabletten Erinnerung,smartpatient GmbH,eligible,,multiple,medication diary with blood pressure and weight measurements over time
-apple,1423628793,Clover － Perioden Kalender App,Wachanga LTD,eligible,,cycle,menstrual cycle tracking
-apple,1163786766,Alarmy – Wecker und Schlaf,"Delight Room Co., Ltd.",eligible,,sleep,alarm clock with sleep and snoring tracker
-apple,992795726,Pulse für Booking.com-Partner,Booking.com,excluded,E1,,hotel partner management
-apple,1454213029,WeWard - die Walking-App,WEWARD,eligible,,activity,step tracking with rewards
-apple,821549680,NeuroNation - Brain Training,Synaptikon GmbH,excluded,E1,,brain training; not a health self-tracking category
-apple,1529565125,Femometer Eisprungkalender,Femometer,eligible,,cycle,period ovulation and fertility tracking
-apple,1043837948,Oura,Oura Health Oy,eligible,,multiple,smart ring companion: sleep activity and heart data
-apple,1438388363,Habit Tracker - Tagesplaner,InnerGrow,excluded,E1,,habit and routine planner; not a health self-tracking category
-apple,1458862350,Hevy - Gym & Trainingstagebuch,Hevy Studios S.L.,eligible,,activity,workout log
-apple,547644785,HIT App,Dohle Handelsgruppe Service GmbH & Co.KG,excluded,E1,,supermarket app
-apple,943347681,7Mind: Meditation und Schlaf,7Mind,excluded,E1,,meditation content; no recording of mood or sleep data stated
-apple,1052216403,MindDoc: Dein Begleiter,MindDoc Health GmbH,eligible,,mood,mood and symptom monitoring over time (class I medical device; not reimbursed)
-apple,413313086,Monitor Your Weight,Husain Al-Bustan,eligible,,diet-weight,weight log
-apple,390427747,Preglife|Schwangerschaftsapp,Preglife,excluded,E1,,pregnancy content; listing states no recording of the user's data
-apple,1462277793,Alpha Progression Muskelaufbau,Alpha Progression GmbH,eligible,,activity,strength training log
-apple,1596403446,Me+ Tagesroutineplaner,Enerjoy Pte. Ltd.,eligible,,mood,mood and self-care tracking
-apple,529443604,SnoreLab: Schnarchen aufnehmen,Reviva Softworks Ltd,eligible,,sleep,records and tracks snoring at night
-apple,555252645,Polar Beat: Laufen & Fitness,Polar Electro,eligible,,activity,records runs and training with GPS
-apple,1514546586,The Walking Dead: Survivors,Galaxy Play Technology Limited,excluded,E1,,game
-apple,792750948,Peloton: Fitness & Workouts,"Peloton Interactive, Inc.",eligible,,activity,records outdoor training and heart rate
-apple,1446447749,Muscle Booster - Trainingsplan,WELLTECH APPS LIMITED,eligible,,activity,tracks workout progress and results
-apple,6480417616,Cal AI - Calorie Tracker,Viral Development LLC,eligible,,diet-weight,calorie tracking from meal photos
-apple,464254577,Strong Workout Tracker Gym Log,Strong Fitness PTE Limited,eligible,,activity,workout log
-apple,808207399,Virtuagym: Fitness & Workouts,Virtuagym B.V.,eligible,,activity,progress tracker and workout log
-apple,1467720176,Simple: KI-Abnehmcoach,AM APPS,eligible,,diet-weight,meal and progress tracking
-apple,1482510249,Entscheidungs-Glücksrad,Aesthetic Apps & Widgets srl,excluded,E1,,decision wheel
-apple,1579693904,Zoo - Happy Animals,SayGames LTD,excluded,E1,,game
-apple,979101825,StepUp Schrittzähler/Pedometer,Pratik Stephen,eligible,,activity,step tracking
-apple,1536131108,Giant Rush!,TapNation,excluded,E1,,game
-apple,1144871267,Schwangerschafts-App für Mama,Wachanga LTD,eligible,,pregnancy,pregnancy diary and weight monitor
-apple,425632209,myPill® Pillen Erinnerung,Bouqt.com Ltd,eligible,,cycle,pill intake reminder with log of bleeding and period signs
-apple,1134655040,Zwift: Indoor-Cycling zu Hause,"Zwift, Inc",eligible,,activity,indoor rides with tracked statistics
-apple,469068059,Tägliche Workouts: Heimfitness,"Daily Workout Apps, LLC",eligible,,activity,tracks workout progress via health integration
-apple,878691772,Pillow Schlaftracker,Neybox Digital Ltd.,eligible,,sleep,sleep tracking
-apple,347184248,Kalorienzähler von fatsecret,fatsecret,eligible,,diet-weight,food activity and weight tracking
-apple,1093774002,Baby + | Dein Baby-Tracker,Philips Digital UK Limited,excluded,E1,,baby tracker; tracks a child not the user's own data
-apple,666822519,BMI Rechner Gewichtskontrolle,Steffen Mayer,eligible,,diet-weight,calculates and tracks BMI over time
-apple,927372140,Virtuafood: KI Kalorienzähler,Virtuagym B.V.,eligible,,diet-weight,calorie tracking
-apple,1252208166,Tagebuch Ohne Werbung,帆 杨,excluded,E1,,general-purpose diary; no mood or health tracking feature stated
-apple,314498713,BetterSleep: Einschlafhilfe,Ipnos Software Inc.,excluded,E1,,sleep sounds and stories; listing states no sleep recording
-apple,405075943,AllTrails: Wandern & Radfahren,"AllTrails, Inc.",eligible,,activity,records activities and statistics
-apple,1194023242,Daylio Tagebuch & Gewohnheiten,Relaxio s.r.o.,eligible,,mood,mood diary and happiness tracker
-apple,933944389,WHOOP,WHOOP,eligible,,multiple,wearable companion: sleep strain and heart data
-apple,1167377348,Fitness & Workout: 30 Tage Fit,Leap Health,eligible,,activity,daily workout progress tracker
-apple,577187307,Cycles: Zyklus-Tracker,Perigee,eligible,,cycle,menstrual cycle tracking
-apple,6741707862,Welmi - Kalorien Zähler & Diät,T-SHAPED APPS LTD,eligible,,diet-weight,calorie tracking
-apple,1489944782,"InPulse: Pulsmesser, Blutdruck",AIBY,eligible,,heart,heart rate blood pressure and oxygen log
-apple,1338655056,Sixpack in 30 Tagen,Leap Health,eligible,,activity,workouts synchronised as data to the health app
-apple,386022579,BabyCenter Pregnancy Tracker,"Everyday Health, Inc.",eligible,,pregnancy,tracks pregnancy week by week
-apple,611177969,Kinomap: Radfahren & Laufen,Kinomap SAS,excluded,E1,,interactive training videos; listing states no recording of the user's data
-apple,1574460221,JustFit:lazyfit & entraînement,Enerjoy Pte. Ltd.,eligible,,activity,daily progress tracker
-apple,1540604002,Pam,PLR UG,excluded,E1,,recipes
-apple,1438092960,Fitness Coach von FitCoach,WELLTECH APPS LIMITED,eligible,,activity,step counter and workout history
-apple,1512367809,Aumio: Gute Nacht Geschichten,Aumio GmbH,excluded,E1,,bedtime stories for children
-apple,1062745479,HeartWatch: Herzfrequenz,Tantsissa,excluded,E3,,price 9.99 EUR
-apple,634598719,Noom: Gesund Abnehmen,"Noom, Inc.",eligible,,diet-weight,weight food activity tracking
-apple,1064020872,Foodvisor : KI Kalorien Zähler,Foodvisor,eligible,,diet-weight,calorie tracking
-apple,291890420,Map My Run: Running Tracker,Outside Television Inc,eligible,,activity,run tracking
-apple,839285684,Workout für Frauen: Abnehmen,Fast Builder Limited,eligible,,activity,progress tracking of workouts
-apple,1056239355,ELTERN Schwangerschaft & Baby,FUNKE National Brands Digital GmbH,eligible,,pregnancy,stores weight and belly size during pregnancy
-apple,950624032,حاسبة الحمل,Hayah Site,excluded,E4,,listing in Arabic only
-apple,320606217,Sleep Cycle - Schlaftracker,Sleep Cycle AB,eligible,,sleep,sleep tracking alarm
-apple,1138066420,SleepWatch - Top Sleep Tracker,"Bodymatter, Inc.",eligible,,sleep,sleep tracking
-apple,993667592,ActivityTracker Schrittzähler,Bits&Coffee,eligible,,activity,daily activity tracking
-apple,1312926037,stoic. tagebuch schreiben,Stoic app inc.,eligible,,mood,journal with mood tracking and analysis
-apple,1097028383,Glückwünsche Videos & Bilder,Pixeltrend GmbH & Co KG,excluded,E1,,greeting cards
-apple,1484612659,MyFitCoach - Trainingsplan,MyFitCoach GmbH,eligible,,activity,training log with progress analysis
-apple,1414838326,vetevo: Gesundheit & Ernährung,vetevo GmbH,excluded,E1,,pet health
-apple,1080933863,COBI.Bike,Robert Bosch GmbH,eligible,,activity,eBike companion displaying fitness data (device not analysed)
-apple,6456176249,Bevel: KI-Gesundheitscoach,"Finerpoint, Inc",eligible,,multiple,health coach on sleep recovery and strain data
-apple,977958854,Siedlungsglück,MTAG PUBLISHING LTD,excluded,E1,,game
-apple,310633997,WhatsApp Messenger,WhatsApp Inc.,excluded,E1,,messaging
-apple,389801252,Instagram,"Instagram, Inc.",excluded,E1,,social network
-apple,6448311069,ChatGPT,"OpenAI OpCo, LLC",excluded,E1,,general-purpose assistant
-apple,284815942,Google,Google,excluded,E1,,search app
-apple,535886823,Google Chrome,Google,excluded,E1,,browser
-apple,897446215,Canva: KI-Foto- & Video-Editor,Canva,excluded,E1,,design tool
-apple,1193508329,Sudoku.com - Zahlenspiel,Easybrain Ltd,excluded,E1,,game
-apple,541164041,Microsoft Copilot,Microsoft Corporation,excluded,E1,,general-purpose assistant
-apple,1266591536,adidas: Kleidung & Sneakers,adidas,excluded,E1,,shop
-apple,930441707,Bumble: Dating & Partnersuche,Bumble Holding Limited,excluded,E1,,dating
-apple,542701020,Withings,Withings,eligible,,multiple,device companion tracking weight body composition blood pressure sleep and food
-apple,586449534,Microsoft PowerPoint,Microsoft Corporation,excluded,E1,,office software
-apple,546473125,Quizlet: Karteikarten mit KI,Quizlet Inc,excluded,E1,,learning cards
-apple,422689480,Gmail – E-Mail von Google,Google,excluded,E1,,e-mail
-apple,1406830270,Meine AOK,AOK Bundesverband,excluded,E2,,service app of a statutory health insurer for its members
-apple,805603214,Asphalt Legends - Racing Game,Gameloft,excluded,E1,,game
-apple,675033630,Bolt: Fahrten anfordern,BOLT TECHNOLOGY OU,excluded,E1,,ride hailing
-apple,842842640,Google Docs,Google,excluded,E1,,office software
-apple,842849113,Google Sheets,Google,excluded,E1,,office software
-apple,1523682319,Widgetsmith,"Cross Forward Consulting, LLC",excluded,E1,,home-screen widgets
-apple,1337578317,Mein Talking Tom 2,Outfit7 Limited,excluded,E1,,game
-apple,1369521645,Words of Wonders: Wort Kreuz,FUGO BILISIM TEKNOLOJILERI VE YAZILIM TICARET ANONIM SIRKETI,excluded,E1,,game
-apple,1435154541,Führerschein ClickClickDrive,ClickClickDrive GmbH,excluded,E1,,driving-test training
-apple,306310789,Wattpad,Wattpad Corp,excluded,E1,,reading platform
-apple,970107419,HelloFresh: Kochbox & Rezepte,HelloFresh,excluded,E1,,meal kits and recipes
-apple,1462556579,Fun Race – Laufen und Parkour,AI Games FZ,excluded,E1,,game
-apple,309735670,Indeed Jobs,Indeed Inc.,excluded,E1,,job portal
-apple,1568245971,Count Masters: Lauf-Spiele 3D,Freeplay LLC,excluded,E1,,game
-apple,795495986,KptnCook: Rezepte & Kochen,KptnCook GmbH,excluded,E1,,recipes
-apple,1424241203,Rituals Home & Body Cosmetics,Rituals Cosmetics B.V.,excluded,E1,,shop
-apple,1451295827,Gehirnjogging mit Impulse,GMRD Apps Limited,excluded,E1,,brain training; not a health self-tracking category
-apple,388614277,PULL&BEAR,"Industria de Diseno Textil, S.A.",excluded,E1,,shop
-apple,1146465836,Hill Climb Racing 2,Fingersoft,excluded,E1,,game
-apple,1275945156,Chooser - Spin the Wheel,Bon App & T,excluded,E1,,party tool
-apple,595287172,Hinge Dating App: Date & Meet,"Hinge, Inc.",excluded,E1,,dating
-apple,1208561922,CATS: Crash Arena Turbo Stars,Nazara Publishing,excluded,E1,,game
-apple,1390423469,Peachy - Body Editor,SHANTANU PTE. LTD.,excluded,E1,,photo editor
-apple,1067860796,Asana Rebel: Yoga und Fitness,Asana Rebel GmbH,eligible,,activity,tracks progress and records workouts weight and calories
-apple,610391947,Asphalt 8: Airborne,Gameloft,excluded,E1,,game
-apple,814443140,Treatwell: Beauty-Termine,Treatwell Limited,excluded,E1,,beauty bookings
-apple,806223188,Peak - Gehirntraining,Synaptic Labs,excluded,E1,,brain training; not a health self-tracking category
-apple,1502447854,Match 3D,Lion Studios Plus,excluded,E1,,game
-apple,409838725,Splice - Video Editor & Maker,Bending Spoons Apps ApS,excluded,E1,,video editor
-apple,1381370971,Luna - Babyphone App 3G & WLAN,Happy Parents Software GmbH,excluded,E1,,baby monitor
-apple,572395608,Temple Run 2,"Imangi Studios, LLC",excluded,E1,,game
-apple,791211390,Jurassic World™: Das Spiel,Ludia Games inc.,excluded,E1,,game
-apple,359351047,CodeCheck: Produkt Scanner,Producto Check GmbH,excluded,E1,,product ingredient scanner; no recording of the user's data
-apple,336901296,Windfinder Pro: Wind & Wetter,Windfinder,excluded,E1,,weather (also not free)
-apple,1172171196,Pampers Club - Treueprogramm,"Pampers by P&G - Nappies, Baby Products, & Rewards",excluded,E1,,loyalty programme
-apple,686449807,Telegram Messenger,Telegram FZ-LLC,excluded,E1,,messaging
-apple,480951901,Okey Plus,Zynga Inc.,excluded,E1,,game
-apple,420009108,Temple Run,"Imangi Studios, LLC",excluded,E1,,game
-apple,6689516283,Perfect Tidy: Perfekte Ordnung,ABI GLOBAL LTD.,excluded,E1,,game
-apple,1465614785,GoTo,"GoTo Group, Inc.",excluded,E1,,business communication
-apple,424850908,TheFork - Restaurantguide,La Fourchette,excluded,E1,,restaurant bookings
-apple,935672069,FamilyAlbum: Fotos & Videos,"MIXI, Inc.",excluded,E1,,photo sharing
-apple,649260774,101 YüzBir Okey Plus,Zynga Inc.,excluded,E1,,game
-apple,1576156210,RiZZ F+Treffen & Lockere Dates,Fun Chat Apps,excluded,E1,,dating
-apple,1499812410,Join Clash,Freeplay LLC,excluded,E1,,game
-apple,1247758515,Auto Fahren Spiele Car Parking,Better Games Studio Pty Ltd.,excluded,E1,,game
-apple,1547762178,BlockPuz - Klötzchen Rätsel,LI SAIHUA,excluded,E1,,game
-apple,1572661625,Triple Tile: 3-Gewinnt-Spiel,Tripledot Studios,excluded,E1,,game
-apple,874656917,I am - Sprüche für Selbstliebe,Monkey Taps,excluded,E1,,affirmation content; no recording of mood stated
-apple,1049469683,Wahoo ELEMNT Companion,Wahoo Fitness,eligible,,activity,bike computer companion showing ride data (device not analysed)
-apple,490142440,Mahjong∘,dogMelon Pty Ltd,excluded,E1,,game
-apple,897062509,Memorado: Gehirntraining,"Kodeon, Inc.",excluded,E1,,brain training; not a health self-tracking category
-apple,1222515036,Photo Tune - Bilder Bearbeiten,"Face & Body Tune Photo Editor, Societatea cu Raspundere Limitata",excluded,E1,,photo editor
-apple,1191435163,Solitär - Offline-Kartenspiel,Tripledot Studios,excluded,E1,,game
-apple,1230394683,Photo Retouch-Bildbearbeitung,"Shenzhen Tushi Technology Co.,Ltd",excluded,E1,,photo editor
-apple,1141020680,Zenjob: Studentenjobs,Zenjob GmbH,excluded,E1,,job portal
-apple,583446403,Garmin Connect™,Garmin,eligible,,multiple,wearable companion for health and fitness data
-apple,1607122287,Triple Match 3D,Boombox Games LTD,excluded,E1,,game
-apple,1251361645,SportScheck - dein Sport Shop,SportScheck GmbH,excluded,E1,,shop
-apple,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,excluded,E1,,shop
-apple,704237014,Thermometer++,Viachaslau Tysianchuk,excluded,E1,,weather thermometer
-apple,1606386511,Twerk Race 3D－Laufen & Tanzen,Freeplay LLC,excluded,E1,,game
-apple,1117998129,Atlas der Humananatomie 2027,Visible Body Apps,excluded,E1,,anatomy reference (also not free)
-apple,1534126062,"Themify: Themes, Icons, Widget",AIBY,excluded,E1,,home-screen themes
-apple,877303791,Wehen - Wehenzähler 9m,Aleksei Neiman,eligible,,pregnancy,records contractions over time
-apple,1564657118,ArtWorkout - Zeichnen Lernen,Aleksandr Ulitin,excluded,E1,,drawing lessons
-apple,6769314786,Food Hunt: Pixel Puzzle,FUNFINITY PTE. LTD,excluded,E1,,game
-play,com.roblox.client,Roblox,Roblox Corporation,excluded,E1,,game
-play,com.gameloft.android.ANMP.GloftDMHM,Minion Rush: Totaler Renn-Spaß,Gameloft SE,excluded,E1,,game
-play,com.imangi.templerun2,Temple Run 2,Imangi Studios,excluded,E1,,game
-play,org.iggymedia.periodtracker,Flo Zyklus- & Periodenkalender,Flo Health Inc.,eligible,,cycle,period ovulation and pregnancy tracking
-play,com.popularapp.periodcalendar,"Periodenkalender, Zyklus",Simple Design Ltd.,eligible,,cycle,period ovulation and pregnancy tracking
-play,homeworkout.homeworkouts.noequipment,Workouts zuhause - ohne Geräte,Leap Fitness Group,eligible,,activity,records training progress automatically and tracks body weight
-play,com.hp.pregnancy.lite,Schwangerschaft + Tracker-App,Philips Electronics UK Limited,eligible,,pregnancy,pregnancy tracking with contraction recorder
-play,in.sweatco.app,Sweatcoin Schrittzähler,Sweatco Ltd,eligible,,activity,step tracking with rewards
-play,com.myfitnesspal.android,MyFitnessPal: Kalorien Tracker,"MyFitnessPal, Inc.",eligible,,diet-weight,food calorie and fitness tracking
-play,sixpack.sixpackabs.absworkout,Sixpack in 30 Tagen,Leap Fitness Group,eligible,,activity,records training progress automatically
-play,menloseweight.loseweightappformen.weightlossformen,Abnehmen für Männer-30 Tagen,Leap Fitness Group,eligible,,activity,tracks calories burned and weight loss over time
-play,droom.sleepIfUCan,Alarmy – Wecker und Schlaf,Sleep Tracker & Alarm Clock by Delightroom,eligible,,sleep,alarm clock with sleep and snoring tracker
-play,com.runtastic.android,adidas Running: Lauftracker,adidas,eligible,,activity,records runs walks and workouts
-play,pedometer.steptracker.calorieburner.stepcounter,Schrittzähler - Pedometer,Leap Fitness Group,eligible,,activity,step counter
-play,com.babycenter.pregnancytracker,Pregnancy App & Baby Tracker,BabyCenter,eligible,,pregnancy,due-date pregnancy tracker with kick counter
-play,com.clue.android,Clue Perioden Kalender,Clue Period Tracker by BioWink,eligible,,cycle,cycle and fertility tracking
-play,com.fitbit.FitbitMobile,Google Health (Fitbit),Google LLC,eligible,,multiple,Fitbit companion: activity sleep and health data
-play,loseweight.weightloss.workout.fitness,Abnehmen in 30 Tagen - Fitness,Simple Design Ltd.,eligible,,activity,workouts with weight-loss tracking
-play,loseweightapp.loseweightappforwomen.womenworkoutathome,Abnehm-App für Frauen,Leap Fitness Group,eligible,,activity,tracks calories burned and weight loss over time
-play,com.strava,Strava: Laufen & Radfahren,Strava Inc.,eligible,,activity,records activities
-play,com.nike.plusgps,Nike Run Club: Laufen & Cardio,"Nike, Inc.",eligible,,activity,records runs
-play,com.tayu.tau.pedometer,Schrittzähler & Pedometer,"ITO Technologies, Inc.",eligible,,activity,step counter
-play,bodyfast.zero.fastingtracker.weightloss,Intervallfasten - Fasten-App,Leap Fitness Group,eligible,,diet-weight,fasting tracker
-play,cc.pacer.androidapp,Pacer Pedometer: Schrittzähler,Pacer Health,eligible,,activity,step and calorie tracking
-play,pedometer.stepcounter.calorieburner.pedometerforwalking,Schrittzähler - Pedometer,Simple Design Ltd.,eligible,,activity,step counter
-play,com.yazio.android,Yazio: KI Kalorienzähler,Yazio,eligible,,diet-weight,calorie counter and food diary
-play,com.whoyaho.tanghulu,Tanghulu Master - Mukbang ASMR,Whoyaho Corp.,excluded,E1,,game
-play,stepcounter.pedometer.stepstracker,Schrittzähler - Pedometer,Hitchhike Tech,eligible,,activity,records daily steps automatically
-play,com.doubleugames.DoubleUCasino,DoubleU Casino™ - Vegas-Spiele,DoubleUGames,excluded,E1,,casino game
-play,com.fitnesskeeper.runkeeper.pro,ASICS Runkeeper: Running App,ASICS Runner App Inc.,eligible,,activity,records runs
-play,com.calm.android,Calm: Meditation und Schlaf,"Calm.com, Inc.",excluded,E1,,meditation and sleep content; records only meditation streaks and no mood or sleep data (as on the App Store)
-play,com.fitifyworkouts.bodyweight.workoutapp,Fitify: Trainingsplan App,Fitify Workouts s.r.o.,eligible,,activity,workout history and progress
-play,com.lbrc.PeriodCalendar,Periodenkalender - Zyklus,SimpleInnovation,eligible,,cycle,cycle ovulation and symptom tracking
-play,com.fatsecret.android,Kalorienzähler von fatsecret,fatsecret,eligible,,diet-weight,food and weight tracking
-play,com.easymobs.pregnancy,Schwangerschafts-App,Amila,eligible,,pregnancy,documents the course of pregnancy
-play,weightloss.weightlossforwomen.workoutforwomen.womenworkout,Abnehmen für Frauen: Zuhause,EZ Health,eligible,,activity,tracks weight-loss progress and calories
-play,net.daylio,Daylio Tagebuch & Gewohnheiten,Habitics,eligible,,mood,mood diary
-play,com.mapmyrun.android2,Map My Run: Running Tracker,"MapMyFitness, Inc.",eligible,,activity,run tracking
-play,ru.mobiledimension.kbr,amma: Schwangerschafts-App,PERIOD TRACKER & PREGNANCY AND BABY CALENDAR,eligible,,pregnancy,tracks weight contractions and kicks
-play,heartratemonitor.heartrate.pulse.pulseapp,Herzfrequenzmesser - Puls,QR Code Scanner.,eligible,,heart,heart rate measurement with health log
-play,com.tickledmedia.ParentTown,Asianparent: Pregnancy & Baby,theAsianparent - largest pregnancy & parenting app,eligible,,pregnancy,pregnancy tracker
-play,com.meetyou.intl,MeetYou - Perioden - Tracker,MEETYOU PTE.LTD.,eligible,,cycle,menstruation recorder
-play,com.fc.p.cp.jelly.mukbang.asmr.live.diy,Gelee-Meister: Essen ASMR,FALCON GAME,excluded,E1,,game
-play,steptracker.healthandfitness.walkingtracker.pedometer,"Schrittzähler - Health , iStep",Leap Fitness Group,eligible,,activity,records daily steps automatically
-play,ipnossoft.rma.free,BetterSleep: Einschlafhilfe,BetterSleep Health,excluded,E1,,sleep sounds and stories; listing states no sleep recording (as on the App Store)
-play,com.period.tracker.lite,Period Tracker,GP International LLC,eligible,,cycle,period tracking
-play,jp.pokemon.pokemonsleep,Pokémon Sleep,The Pokémon Company,eligible,,sleep,game that records the user's sleep with the phone or a smartwatch
-play,stepcounter.steptracker.pedometer.calorie,Pedometer-App - Schrittzähler,AceTools Team,eligible,,activity,step tracking
-play,com.urbandroid.sleep,Sleep as Android: Schlafzyklen,Petr Nálevka (Urbandroid),eligible,,sleep,sleep cycle tracking alarm
-play,com.google.android.apps.fitness,Google Fit: Aktivitätstracker,Google LLC,eligible,,activity,records activity steps and cardio points
-play,com.alltrails.alltrails,AllTrails: Wandern & Radfahren,"AllTrails, LLC",eligible,,activity,records activities and statistics
-play,com.weightwatchers.mobile,Weight Watchers Programm,"WW INTERNATIONAL, INC",eligible,,diet-weight,food activity and sleep tracking (subscription; free to install)
-play,com.fddb,Fddb: KI Kalorienzähler & Diät,Fddb,eligible,,diet-weight,calorie counter and food diary
-play,monitoryourweight.bustan.net,Überwache dein Gewicht,Husain Al-Bustan,eligible,,diet-weight,weight log
-play,com.sportractive,GPS Laufen Joggen & Radfahren,sportractive.com,eligible,,activity,records runs rides and other activities with GPS
-play,com.baviux.pillreminder,Lady Pill Reminder,Baviux,excluded,E1,,pill reminder; listing states no recording of the user's data
-play,com.stt.android,Sports Tracker,Suunto,eligible,,activity,records activities with GPS and keeps a sports diary
-play,com.getsomeheadspace.android,Headspace Schlaf & Meditation,"Headspace for Meditation, Mindfulness and Sleep",eligible,,mood,tracks mental health with goals and progress (as on the App Store)
-play,org.naviki,Naviki – das Fahrrad-Navi,beemo,eligible,,activity,bicycle route planner that records the user's rides
-play,com.sleepmonitor.aio,Sleep Monitor - Schlaftracker,Fasting APP Group,eligible,,sleep,records and analyses sleep
-play,de.aktiwir.aktibmi,BMI Rechner & Gewichtstagebuch,aktiWir GmbH,eligible,,diet-weight,BMI calculator with weight diary
-play,com.ovyapp.android,Ovy App Verhütung Kinderwunsch,Ovy GmbH,eligible,,cycle,symptothermal cycle tracking for contraception and conception
-play,com.pookies.food.ai,BitePal: KI-Kalorienzähler,RefaceLithuania,eligible,,diet-weight,food diary and calorie tracking
-play,homeworkout.fitness.app,Trainingsplan & Gym・FitAI,Social Tech.,eligible,,activity,training diary and workout tracker
-play,de.twopeaches.babelli,Babelli Schwangerschafts App,babelli: Schwangerschaft & Baby,eligible,,pregnancy,pregnancy diary and week-by-week tracking from the due date
+store,id,name,developer,decision,criterion,rule,category,reason
+apple,946099227,Yazio: Kalorien Zähler & Diät,YAZIO,eligible,,,diet-weight,food and calorie diary with weight tracking
+apple,447374873,komoot - Wandern und Radfahren,komoot GmbH,eligible,,,activity,records rides and hikes with GPS in a personal log
+apple,336599882,adidas Running: GPS Tracker,adidas,eligible,,,activity,records runs walks and workouts
+apple,1108185179,Kalender,Apple,excluded,E1,X2,,calendar; no health tracking
+apple,478618165,Chefkoch – Rezepte & Kochen,Chefkoch GmbH,excluded,E1,X1,,recipe collection; no recording of the user's data
+apple,1038369065,Flo Perioden- & Zyklus-Tracker,FLO HEALTH UK LIMITED,eligible,,,cycle,period ovulation and pregnancy tracking
+apple,1459260306,Fastic AI Abnehmen & Fasten,HealthVida GmbH & Co. KG.,eligible,,,diet-weight,fasting food and weight tracking
+apple,1037595083,StepsApp Schrittzähler,StepsApp GmbH,eligible,,,activity,step counter with daily history
+apple,331308914,WeightWatchers Programm,"WW International, Inc.",eligible,,,diet-weight,food and weight tracking (subscription; free to install)
+apple,657189652,Clue Perioden Kalender,BioWink GmbH,eligible,,,cycle,menstrual cycle and fertility tracking
+apple,1389111413,Hole.io,Voodoo,excluded,E1,X2,,game
+apple,388123359,Stepstone Jobs: Deine Jobbörse,StepStone GmbH,excluded,E1,I1.2,,job portal
+apple,493145008,Headspace: Schlaf & Meditation,Headspace Inc.,eligible,,,mood,listing: track your mental health with progress tracking and reflections
+apple,286906691,Lifesum: Kalorienzähler AI,Lifesum AB,eligible,,,diet-weight,food and calorie tracking
+apple,341232718,MyFitnessPal: Kalorien Tracker,"MyFitnessPal, Inc.",eligible,,,diet-weight,food calorie and fitness tracking
+apple,1359069906,STADTRADELN,Klima-Bündnis Climate Alliance Alianza del Clima,eligible,,,activity,records cycling kilometres over a campaign; export to health app
+apple,571800810,Calm: Meditation und Schlaf,Calm.com,excluded,E1,X4,,meditation and sleep content; listing records only meditation minutes and no mood or sleep data
+apple,1011796416,"Gymondo Fitness, Pilates, Yoga",Gymondo,excluded,E1,X1,,workout video courses; listing states no recording of the user's data
+apple,650276551,Seven - 7 Minuten Training,Perigee,eligible,,,activity,records completed workouts and calories
+apple,549217094,Kalorien Zähler Abnehmen Arise,A.R.I.S.E. Apps resulting in self enhancement Ltd.,eligible,,,diet-weight,calorie and food tracking
+apple,654810212,Freeletics: HIIT Fitness Coach,Freeletics GmbH,eligible,,,activity,tracks workouts and progress
+apple,462638897,Google Health (Fitbit),Google,eligible,,,multiple,Fitbit companion: activity sleep and health data
+apple,1027151285,Schrittzähler & Pedometer,"ITO Technologies, Inc.",eligible,,,activity,step counter with history
+apple,505864483,Schwangerschaft + Tracker-App,Philips Digital UK Limited,eligible,,,pregnancy,pregnancy tracking by week with bump diary (predictive feature as in Malki et al.)
+apple,1264546236,BetterMe Well-Being Coach,BetterMe Limited,eligible,,,activity,workouts meal logging and progress tracking
+apple,1189568780,BodyFast: Intervallfasten KI,BodyFast GmbH,eligible,,,diet-weight,fasting and weight tracking
+apple,712286167,Schrittzähler++,"Cross Forward Consulting, LLC",eligible,,,activity,step counter with daily and weekly history
+apple,600446812,Pacer Pedometer Schrittzähler,"Pacer Health, Inc",eligible,,,activity,step and activity tracking
+apple,301521403,Nike Training Club,"Nike, Inc",eligible,,,activity,logs workouts and progress in an activity tab
+apple,529815782,Oje ich wachse! Baby Sprünge,Domus Technica,excluded,E1,X3,,baby development; tracks a child not the user's own data
+apple,665791537,urbia Eisprungkalender,FUNKE National Brands Digital GmbH,eligible,,,cycle,cycle and fertile days calendar
+apple,387771637,Nike Run Club: Laufcoach,"Nike, Inc",eligible,,,activity,records runs
+apple,971023427,Sweatcoin - Fitness & Lauf App,Sweatco Ltd,eligible,,,activity,step tracking with rewards
+apple,1633296501,"Macadam: Schrittzähler, Geld","MACADAM TECHNOLOGIES, S.L.",eligible,,,activity,step tracking with rewards
+apple,896501514,Perioden Kalender - Zyklus App,ABISHKKING LIMITED.,eligible,,,cycle,period ovulation and fertility tracking
+apple,426826309,Strava: Laufen & Radfahren,"Strava, Inc.",eligible,,,activity,records runs and rides
+apple,300235330,ASICS Runkeeper Lauf-Tracker,"ASICS Runner App, Inc.",eligible,,,activity,records runs and progress
+apple,1032267351,Mein Periodenkalender - Zyklus,SimpleInnovation LLC,eligible,,,cycle,menstrual cycle and ovulation tracking
+apple,1556652646,Oviva Direkt: Gesund Abnehmen,Oviva AG,excluded,E5,X8,,listing describes full reimbursement by statutory health insurance after a medical diagnosis (DiGA); confirm in the BfArM directory
+apple,324021126,Eurosport: News & Ergebnisse,Eurosport,excluded,E1,X1,,sports news
+apple,1459096552,Perioden Kalender +,Aleksei Neiman,eligible,,,cycle,cycle and period tracking
+apple,1136617388,Joggen Laufen Walken Goals GPS,AK Apptuitive GmbH,eligible,,,activity,records runs and walks
+apple,1364846172,"Outdooractive Wandern, Fahrrad",Outdooractive AG,eligible,,,activity,records own tracks with duration distance and elevation
+apple,625759466,Bikemap: Fahrrad Navi & Karten,Bikemap GmbH,eligible,,,activity,records rides
+apple,1279716547,Timer Plus – Trainings-Timer,ArGames,excluded,E1,X6,,interval timer only
+apple,337472899,Insight Timer - Meditation,Insight Network Inc,excluded,E1,X1,,meditation content; no recording of mood or other health data stated
+apple,1491340863,Napper: Schlafplan & Geräusche,Napper AB,excluded,E1,X3,,baby sleep schedule; tracks a child not the user's own data
+apple,1114387800,"Fitness App—Gym Workout, Sport",FITNESS ONLINE MChJ,eligible,,,activity,fitness diary tracking progress
+apple,839671656,Stepz: Schrittzähler Pedometer,Mosaic S.r.l.,eligible,,,activity,step counter
+apple,542891434,Cardiio: Pulsmesser,"Cardiio, Inc.",eligible,,,heart,heart rate measurement with history
+apple,1164801111,AutoSleep - Schlaftracker,Tantsissa,excluded,E3,I6,,price 9.99 EUR
+apple,1313192037,Workouts Zuhause - Fitness App,Leap Health,eligible,,,activity,records training data and weight automatically
+apple,1105332761,Fddb: KI Kalorienzähler & Diät,Food Database GmbH,eligible,,,diet-weight,calorie counter and food diary
+apple,892366151,Tacx Training™,Garmin,eligible,,,activity,records indoor rides (companion of a smart trainer; device not analysed)
+apple,1201703657,Relive: 3D-Videos erstellen,Relive B.V.,eligible,,,activity,records activities with the phone and shows statistics
+apple,409625068,Instant Herzfrequenz,"Bodymatter, Inc.",eligible,,,heart,heart rate measurement with history
+apple,703547387,Life - Menstruations Kalender,Life Fertility Tracker IVS,eligible,,,cycle,period and fertile days tracking with diary
+apple,1490078804,ShutEye - Schlaftracker,Enerjoy Pte. Ltd.,eligible,,,sleep,sleep tracking
+apple,662170995,MyTherapy Tabletten Erinnerung,smartpatient GmbH,eligible,,,multiple,medication diary with blood pressure and weight measurements over time
+apple,1423628793,Clover － Perioden Kalender App,Wachanga LTD,eligible,,,cycle,menstrual cycle tracking
+apple,1163786766,Alarmy – Wecker und Schlaf,"Delight Room Co., Ltd.",eligible,,,sleep,alarm clock with sleep and snoring tracker
+apple,992795726,Pulse für Booking.com-Partner,Booking.com,excluded,E1,I1.2,,hotel partner management
+apple,1454213029,WeWard - die Walking-App,WEWARD,eligible,,,activity,step tracking with rewards
+apple,821549680,NeuroNation - Brain Training,Synaptikon GmbH,excluded,E1,X4,,brain training; not a health self-tracking category
+apple,1529565125,Femometer Eisprungkalender,Femometer,eligible,,,cycle,period ovulation and fertility tracking
+apple,1043837948,Oura,Oura Health Oy,eligible,,,multiple,smart ring companion: sleep activity and heart data
+apple,1438388363,Habit Tracker - Tagesplaner,InnerGrow,excluded,E1,X4,,habit and routine planner; not a health self-tracking category
+apple,1458862350,Hevy - Gym & Trainingstagebuch,Hevy Studios S.L.,eligible,,,activity,workout log
+apple,547644785,HIT App,Dohle Handelsgruppe Service GmbH & Co.KG,excluded,E1,X2,,supermarket app
+apple,943347681,7Mind: Meditation und Schlaf,7Mind,excluded,E1,X1,,meditation content; no recording of mood or sleep data stated
+apple,1052216403,MindDoc: Dein Begleiter,MindDoc Health GmbH,eligible,,,mood,mood and symptom monitoring over time (class I medical device; not reimbursed)
+apple,413313086,Monitor Your Weight,Husain Al-Bustan,eligible,,,diet-weight,weight log
+apple,390427747,Preglife|Schwangerschaftsapp,Preglife,excluded,E1,X1,,pregnancy content; listing states no recording of the user's data
+apple,1462277793,Alpha Progression Muskelaufbau,Alpha Progression GmbH,eligible,,,activity,strength training log
+apple,1596403446,Me+ Tagesroutineplaner,Enerjoy Pte. Ltd.,eligible,,,mood,mood and self-care tracking
+apple,529443604,SnoreLab: Schnarchen aufnehmen,Reviva Softworks Ltd,eligible,,,sleep,records and tracks snoring at night
+apple,555252645,Polar Beat: Laufen & Fitness,Polar Electro,eligible,,,activity,records runs and training with GPS
+apple,1514546586,The Walking Dead: Survivors,Galaxy Play Technology Limited,excluded,E1,X2,,game
+apple,792750948,Peloton: Fitness & Workouts,"Peloton Interactive, Inc.",eligible,,,activity,records outdoor training and heart rate
+apple,1446447749,Muscle Booster - Trainingsplan,WELLTECH APPS LIMITED,eligible,,,activity,tracks workout progress and results
+apple,6480417616,Cal AI - Calorie Tracker,Viral Development LLC,eligible,,,diet-weight,calorie tracking from meal photos
+apple,464254577,Strong Workout Tracker Gym Log,Strong Fitness PTE Limited,eligible,,,activity,workout log
+apple,808207399,Virtuagym: Fitness & Workouts,Virtuagym B.V.,eligible,,,activity,progress tracker and workout log
+apple,1467720176,Simple: KI-Abnehmcoach,AM APPS,eligible,,,diet-weight,meal and progress tracking
+apple,1482510249,Entscheidungs-Glücksrad,Aesthetic Apps & Widgets srl,excluded,E1,X2,,decision wheel
+apple,1579693904,Zoo - Happy Animals,SayGames LTD,excluded,E1,X2,,game
+apple,979101825,StepUp Schrittzähler/Pedometer,Pratik Stephen,eligible,,,activity,step tracking
+apple,1536131108,Giant Rush!,TapNation,excluded,E1,X2,,game
+apple,1144871267,Schwangerschafts-App für Mama,Wachanga LTD,eligible,,,pregnancy,pregnancy diary and weight monitor
+apple,425632209,myPill® Pillen Erinnerung,Bouqt.com Ltd,eligible,,,cycle,pill intake reminder with log of bleeding and period signs
+apple,1134655040,Zwift: Indoor-Cycling zu Hause,"Zwift, Inc",eligible,,,activity,indoor rides with tracked statistics
+apple,469068059,Tägliche Workouts: Heimfitness,"Daily Workout Apps, LLC",eligible,,,activity,tracks workout progress via health integration
+apple,878691772,Pillow Schlaftracker,Neybox Digital Ltd.,eligible,,,sleep,sleep tracking
+apple,347184248,Kalorienzähler von fatsecret,fatsecret,eligible,,,diet-weight,food activity and weight tracking
+apple,1093774002,Baby + | Dein Baby-Tracker,Philips Digital UK Limited,excluded,E1,X3,,baby tracker; tracks a child not the user's own data
+apple,666822519,BMI Rechner Gewichtskontrolle,Steffen Mayer,eligible,,,diet-weight,calculates and tracks BMI over time
+apple,927372140,Virtuafood: KI Kalorienzähler,Virtuagym B.V.,eligible,,,diet-weight,calorie tracking
+apple,1252208166,Tagebuch Ohne Werbung,帆 杨,excluded,E1,X2,,general-purpose diary; no mood or health tracking feature stated
+apple,314498713,BetterSleep: Einschlafhilfe,Ipnos Software Inc.,excluded,E1,X1,,sleep sounds and stories; listing states no sleep recording
+apple,405075943,AllTrails: Wandern & Radfahren,"AllTrails, Inc.",eligible,,,activity,records activities and statistics
+apple,1194023242,Daylio Tagebuch & Gewohnheiten,Relaxio s.r.o.,eligible,,,mood,mood diary and happiness tracker
+apple,933944389,WHOOP,WHOOP,eligible,,,multiple,wearable companion: sleep strain and heart data
+apple,1167377348,Fitness & Workout: 30 Tage Fit,Leap Health,eligible,,,activity,daily workout progress tracker
+apple,577187307,Cycles: Zyklus-Tracker,Perigee,eligible,,,cycle,menstrual cycle tracking
+apple,6741707862,Welmi - Kalorien Zähler & Diät,T-SHAPED APPS LTD,eligible,,,diet-weight,calorie tracking
+apple,1489944782,"InPulse: Pulsmesser, Blutdruck",AIBY,eligible,,,heart,heart rate blood pressure and oxygen log
+apple,1338655056,Sixpack in 30 Tagen,Leap Health,eligible,,,activity,workouts synchronised as data to the health app
+apple,386022579,BabyCenter Pregnancy Tracker,"Everyday Health, Inc.",eligible,,,pregnancy,tracks pregnancy week by week
+apple,611177969,Kinomap: Radfahren & Laufen,Kinomap SAS,excluded,E1,X1,,interactive training videos; listing states no recording of the user's data
+apple,1574460221,JustFit:lazyfit & entraînement,Enerjoy Pte. Ltd.,eligible,,,activity,daily progress tracker
+apple,1540604002,Pam,PLR UG,excluded,E1,X1,,recipes
+apple,1438092960,Fitness Coach von FitCoach,WELLTECH APPS LIMITED,eligible,,,activity,step counter and workout history
+apple,1512367809,Aumio: Gute Nacht Geschichten,Aumio GmbH,excluded,E1,X1,,bedtime stories for children
+apple,1062745479,HeartWatch: Herzfrequenz,Tantsissa,excluded,E3,I6,,price 9.99 EUR
+apple,634598719,Noom: Gesund Abnehmen,"Noom, Inc.",eligible,,,diet-weight,weight food activity tracking
+apple,1064020872,Foodvisor : KI Kalorien Zähler,Foodvisor,eligible,,,diet-weight,calorie tracking
+apple,291890420,Map My Run: Running Tracker,Outside Television Inc,eligible,,,activity,run tracking
+apple,839285684,Workout für Frauen: Abnehmen,Fast Builder Limited,eligible,,,activity,progress tracking of workouts
+apple,1056239355,ELTERN Schwangerschaft & Baby,FUNKE National Brands Digital GmbH,eligible,,,pregnancy,stores weight and belly size during pregnancy
+apple,950624032,حاسبة الحمل,Hayah Site,excluded,E4,I7,,listing in Arabic only
+apple,320606217,Sleep Cycle - Schlaftracker,Sleep Cycle AB,eligible,,,sleep,sleep tracking alarm
+apple,1138066420,SleepWatch - Top Sleep Tracker,"Bodymatter, Inc.",eligible,,,sleep,sleep tracking
+apple,993667592,ActivityTracker Schrittzähler,Bits&Coffee,eligible,,,activity,daily activity tracking
+apple,1312926037,stoic. tagebuch schreiben,Stoic app inc.,eligible,,,mood,journal with mood tracking and analysis
+apple,1097028383,Glückwünsche Videos & Bilder,Pixeltrend GmbH & Co KG,excluded,E1,X1,,greeting cards
+apple,1484612659,MyFitCoach - Trainingsplan,MyFitCoach GmbH,eligible,,,activity,training log with progress analysis
+apple,1414838326,vetevo: Gesundheit & Ernährung,vetevo GmbH,excluded,E1,I1.2,,pet health
+apple,1080933863,COBI.Bike,Robert Bosch GmbH,eligible,,,activity,eBike companion displaying fitness data (device not analysed)
+apple,6456176249,Bevel: KI-Gesundheitscoach,"Finerpoint, Inc",eligible,,,multiple,health coach on sleep recovery and strain data
+apple,977958854,Siedlungsglück,MTAG PUBLISHING LTD,excluded,E1,X2,,game
+apple,310633997,WhatsApp Messenger,WhatsApp Inc.,excluded,E1,X2,,messaging
+apple,389801252,Instagram,"Instagram, Inc.",excluded,E1,X2,,social network
+apple,6448311069,ChatGPT,"OpenAI OpCo, LLC",excluded,E1,X2,,general-purpose assistant
+apple,284815942,Google,Google,excluded,E1,X2,,search app
+apple,535886823,Google Chrome,Google,excluded,E1,X2,,browser
+apple,897446215,Canva: KI-Foto- & Video-Editor,Canva,excluded,E1,X2,,design tool
+apple,1193508329,Sudoku.com - Zahlenspiel,Easybrain Ltd,excluded,E1,X2,,game
+apple,541164041,Microsoft Copilot,Microsoft Corporation,excluded,E1,X2,,general-purpose assistant
+apple,1266591536,adidas: Kleidung & Sneakers,adidas,excluded,E1,X2,,shop
+apple,930441707,Bumble: Dating & Partnersuche,Bumble Holding Limited,excluded,E1,I1.2,,dating
+apple,542701020,Withings,Withings,eligible,,,multiple,device companion tracking weight body composition blood pressure sleep and food
+apple,586449534,Microsoft PowerPoint,Microsoft Corporation,excluded,E1,X2,,office software
+apple,546473125,Quizlet: Karteikarten mit KI,Quizlet Inc,excluded,E1,X1,,learning cards
+apple,422689480,Gmail – E-Mail von Google,Google,excluded,E1,X2,,e-mail
+apple,1406830270,Meine AOK,AOK Bundesverband,excluded,E2,X7,,service app of a statutory health insurer for its members
+apple,805603214,Asphalt Legends - Racing Game,Gameloft,excluded,E1,X2,,game
+apple,675033630,Bolt: Fahrten anfordern,BOLT TECHNOLOGY OU,excluded,E1,I1.2,,ride hailing
+apple,842842640,Google Docs,Google,excluded,E1,X2,,office software
+apple,842849113,Google Sheets,Google,excluded,E1,X2,,office software
+apple,1523682319,Widgetsmith,"Cross Forward Consulting, LLC",excluded,E1,X2,,home-screen widgets
+apple,1337578317,Mein Talking Tom 2,Outfit7 Limited,excluded,E1,X2,,game
+apple,1369521645,Words of Wonders: Wort Kreuz,FUGO BILISIM TEKNOLOJILERI VE YAZILIM TICARET ANONIM SIRKETI,excluded,E1,X2,,game
+apple,1435154541,Führerschein ClickClickDrive,ClickClickDrive GmbH,excluded,E1,X1,,driving-test training
+apple,306310789,Wattpad,Wattpad Corp,excluded,E1,X1,,reading platform
+apple,970107419,HelloFresh: Kochbox & Rezepte,HelloFresh,excluded,E1,X2,,meal kits and recipes
+apple,1462556579,Fun Race – Laufen und Parkour,AI Games FZ,excluded,E1,X2,,game
+apple,309735670,Indeed Jobs,Indeed Inc.,excluded,E1,I1.2,,job portal
+apple,1568245971,Count Masters: Lauf-Spiele 3D,Freeplay LLC,excluded,E1,X2,,game
+apple,795495986,KptnCook: Rezepte & Kochen,KptnCook GmbH,excluded,E1,X1,,recipes
+apple,1424241203,Rituals Home & Body Cosmetics,Rituals Cosmetics B.V.,excluded,E1,X2,,shop
+apple,1451295827,Gehirnjogging mit Impulse,GMRD Apps Limited,excluded,E1,X4,,brain training; not a health self-tracking category
+apple,388614277,PULL&BEAR,"Industria de Diseno Textil, S.A.",excluded,E1,X2,,shop
+apple,1146465836,Hill Climb Racing 2,Fingersoft,excluded,E1,X2,,game
+apple,1275945156,Chooser - Spin the Wheel,Bon App & T,excluded,E1,X2,,party tool
+apple,595287172,Hinge Dating App: Date & Meet,"Hinge, Inc.",excluded,E1,I1.2,,dating
+apple,1208561922,CATS: Crash Arena Turbo Stars,Nazara Publishing,excluded,E1,X2,,game
+apple,1390423469,Peachy - Body Editor,SHANTANU PTE. LTD.,excluded,E1,X2,,photo editor
+apple,1067860796,Asana Rebel: Yoga und Fitness,Asana Rebel GmbH,eligible,,,activity,tracks progress and records workouts weight and calories
+apple,610391947,Asphalt 8: Airborne,Gameloft,excluded,E1,X2,,game
+apple,814443140,Treatwell: Beauty-Termine,Treatwell Limited,excluded,E1,I1.2,,beauty bookings
+apple,806223188,Peak - Gehirntraining,Synaptic Labs,excluded,E1,X4,,brain training; not a health self-tracking category
+apple,1502447854,Match 3D,Lion Studios Plus,excluded,E1,X2,,game
+apple,409838725,Splice - Video Editor & Maker,Bending Spoons Apps ApS,excluded,E1,X2,,video editor
+apple,1381370971,Luna - Babyphone App 3G & WLAN,Happy Parents Software GmbH,excluded,E1,X3,,baby monitor
+apple,572395608,Temple Run 2,"Imangi Studios, LLC",excluded,E1,X2,,game
+apple,791211390,Jurassic World™: Das Spiel,Ludia Games inc.,excluded,E1,X2,,game
+apple,359351047,CodeCheck: Produkt Scanner,Producto Check GmbH,excluded,E1,X6,,product ingredient scanner; no recording of the user's data
+apple,336901296,Windfinder Pro: Wind & Wetter,Windfinder,excluded,E1,X2,,weather (also not free)
+apple,1172171196,Pampers Club - Treueprogramm,"Pampers by P&G - Nappies, Baby Products, & Rewards",excluded,E1,X2,,loyalty programme
+apple,686449807,Telegram Messenger,Telegram FZ-LLC,excluded,E1,X2,,messaging
+apple,480951901,Okey Plus,Zynga Inc.,excluded,E1,X2,,game
+apple,420009108,Temple Run,"Imangi Studios, LLC",excluded,E1,X2,,game
+apple,6689516283,Perfect Tidy: Perfekte Ordnung,ABI GLOBAL LTD.,excluded,E1,X2,,game
+apple,1465614785,GoTo,"GoTo Group, Inc.",excluded,E1,X2,,business communication
+apple,424850908,TheFork - Restaurantguide,La Fourchette,excluded,E1,I1.2,,restaurant bookings
+apple,935672069,FamilyAlbum: Fotos & Videos,"MIXI, Inc.",excluded,E1,X2,,photo sharing
+apple,649260774,101 YüzBir Okey Plus,Zynga Inc.,excluded,E1,X2,,game
+apple,1576156210,RiZZ F+Treffen & Lockere Dates,Fun Chat Apps,excluded,E1,I1.2,,dating
+apple,1499812410,Join Clash,Freeplay LLC,excluded,E1,X2,,game
+apple,1247758515,Auto Fahren Spiele Car Parking,Better Games Studio Pty Ltd.,excluded,E1,X2,,game
+apple,1547762178,BlockPuz - Klötzchen Rätsel,LI SAIHUA,excluded,E1,X2,,game
+apple,1572661625,Triple Tile: 3-Gewinnt-Spiel,Tripledot Studios,excluded,E1,X2,,game
+apple,874656917,I am - Sprüche für Selbstliebe,Monkey Taps,excluded,E1,X1,,affirmation content; no recording of mood stated
+apple,1049469683,Wahoo ELEMNT Companion,Wahoo Fitness,eligible,,,activity,bike computer companion showing ride data (device not analysed)
+apple,490142440,Mahjong∘,dogMelon Pty Ltd,excluded,E1,X2,,game
+apple,897062509,Memorado: Gehirntraining,"Kodeon, Inc.",excluded,E1,X4,,brain training; not a health self-tracking category
+apple,1222515036,Photo Tune - Bilder Bearbeiten,"Face & Body Tune Photo Editor, Societatea cu Raspundere Limitata",excluded,E1,X2,,photo editor
+apple,1191435163,Solitär - Offline-Kartenspiel,Tripledot Studios,excluded,E1,X2,,game
+apple,1230394683,Photo Retouch-Bildbearbeitung,"Shenzhen Tushi Technology Co.,Ltd",excluded,E1,X2,,photo editor
+apple,1141020680,Zenjob: Studentenjobs,Zenjob GmbH,excluded,E1,I1.2,,job portal
+apple,583446403,Garmin Connect™,Garmin,eligible,,,multiple,wearable companion for health and fitness data
+apple,1607122287,Triple Match 3D,Boombox Games LTD,excluded,E1,X2,,game
+apple,1251361645,SportScheck - dein Sport Shop,SportScheck GmbH,excluded,E1,X2,,shop
+apple,6740224837,"Joybuy-Don't just buy, Joybuy!",Joybuy,excluded,E1,X2,,shop
+apple,704237014,Thermometer++,Viachaslau Tysianchuk,excluded,E1,X2,,weather thermometer
+apple,1606386511,Twerk Race 3D－Laufen & Tanzen,Freeplay LLC,excluded,E1,X2,,game
+apple,1117998129,Atlas der Humananatomie 2027,Visible Body Apps,excluded,E1,X1,,anatomy reference (also not free)
+apple,1534126062,"Themify: Themes, Icons, Widget",AIBY,excluded,E1,X2,,home-screen themes
+apple,877303791,Wehen - Wehenzähler 9m,Aleksei Neiman,eligible,,,pregnancy,records contractions over time
+apple,1564657118,ArtWorkout - Zeichnen Lernen,Aleksandr Ulitin,excluded,E1,X1,,drawing lessons
+apple,6769314786,Food Hunt: Pixel Puzzle,FUNFINITY PTE. LTD,excluded,E1,X2,,game
+play,com.roblox.client,Roblox,Roblox Corporation,excluded,E1,X2,,game
+play,com.gameloft.android.ANMP.GloftDMHM,Minion Rush: Totaler Renn-Spaß,Gameloft SE,excluded,E1,X2,,game
+play,com.imangi.templerun2,Temple Run 2,Imangi Studios,excluded,E1,X2,,game
+play,org.iggymedia.periodtracker,Flo Zyklus- & Periodenkalender,Flo Health Inc.,eligible,,,cycle,period ovulation and pregnancy tracking
+play,com.popularapp.periodcalendar,"Periodenkalender, Zyklus",Simple Design Ltd.,eligible,,,cycle,period ovulation and pregnancy tracking
+play,homeworkout.homeworkouts.noequipment,Workouts zuhause - ohne Geräte,Leap Fitness Group,eligible,,,activity,records training progress automatically and tracks body weight
+play,com.hp.pregnancy.lite,Schwangerschaft + Tracker-App,Philips Electronics UK Limited,eligible,,,pregnancy,pregnancy tracking with contraction recorder
+play,in.sweatco.app,Sweatcoin Schrittzähler,Sweatco Ltd,eligible,,,activity,step tracking with rewards
+play,com.myfitnesspal.android,MyFitnessPal: Kalorien Tracker,"MyFitnessPal, Inc.",eligible,,,diet-weight,food calorie and fitness tracking
+play,sixpack.sixpackabs.absworkout,Sixpack in 30 Tagen,Leap Fitness Group,eligible,,,activity,records training progress automatically
+play,menloseweight.loseweightappformen.weightlossformen,Abnehmen für Männer-30 Tagen,Leap Fitness Group,eligible,,,activity,tracks calories burned and weight loss over time
+play,droom.sleepIfUCan,Alarmy – Wecker und Schlaf,Sleep Tracker & Alarm Clock by Delightroom,eligible,,,sleep,alarm clock with sleep and snoring tracker
+play,com.runtastic.android,adidas Running: Lauftracker,adidas,eligible,,,activity,records runs walks and workouts
+play,pedometer.steptracker.calorieburner.stepcounter,Schrittzähler - Pedometer,Leap Fitness Group,eligible,,,activity,step counter
+play,com.babycenter.pregnancytracker,Pregnancy App & Baby Tracker,BabyCenter,eligible,,,pregnancy,due-date pregnancy tracker with kick counter
+play,com.clue.android,Clue Perioden Kalender,Clue Period Tracker by BioWink,eligible,,,cycle,cycle and fertility tracking
+play,com.fitbit.FitbitMobile,Google Health (Fitbit),Google LLC,eligible,,,multiple,Fitbit companion: activity sleep and health data
+play,loseweight.weightloss.workout.fitness,Abnehmen in 30 Tagen - Fitness,Simple Design Ltd.,eligible,,,activity,workouts with weight-loss tracking
+play,loseweightapp.loseweightappforwomen.womenworkoutathome,Abnehm-App für Frauen,Leap Fitness Group,eligible,,,activity,tracks calories burned and weight loss over time
+play,com.strava,Strava: Laufen & Radfahren,Strava Inc.,eligible,,,activity,records activities
+play,com.nike.plusgps,Nike Run Club: Laufen & Cardio,"Nike, Inc.",eligible,,,activity,records runs
+play,com.tayu.tau.pedometer,Schrittzähler & Pedometer,"ITO Technologies, Inc.",eligible,,,activity,step counter
+play,bodyfast.zero.fastingtracker.weightloss,Intervallfasten - Fasten-App,Leap Fitness Group,eligible,,,diet-weight,fasting tracker
+play,cc.pacer.androidapp,Pacer Pedometer: Schrittzähler,Pacer Health,eligible,,,activity,step and calorie tracking
+play,pedometer.stepcounter.calorieburner.pedometerforwalking,Schrittzähler - Pedometer,Simple Design Ltd.,eligible,,,activity,step counter
+play,com.yazio.android,Yazio: KI Kalorienzähler,Yazio,eligible,,,diet-weight,calorie counter and food diary
+play,com.whoyaho.tanghulu,Tanghulu Master - Mukbang ASMR,Whoyaho Corp.,excluded,E1,X2,,game
+play,stepcounter.pedometer.stepstracker,Schrittzähler - Pedometer,Hitchhike Tech,eligible,,,activity,records daily steps automatically
+play,com.doubleugames.DoubleUCasino,DoubleU Casino™ - Vegas-Spiele,DoubleUGames,excluded,E1,X2,,casino game
+play,com.fitnesskeeper.runkeeper.pro,ASICS Runkeeper: Running App,ASICS Runner App Inc.,eligible,,,activity,records runs
+play,com.calm.android,Calm: Meditation und Schlaf,"Calm.com, Inc.",excluded,E1,X4,,meditation and sleep content; records only meditation streaks and no mood or sleep data (as on the App Store)
+play,com.fitifyworkouts.bodyweight.workoutapp,Fitify: Trainingsplan App,Fitify Workouts s.r.o.,eligible,,,activity,workout history and progress
+play,com.lbrc.PeriodCalendar,Periodenkalender - Zyklus,SimpleInnovation,eligible,,,cycle,cycle ovulation and symptom tracking
+play,com.fatsecret.android,Kalorienzähler von fatsecret,fatsecret,eligible,,,diet-weight,food and weight tracking
+play,com.easymobs.pregnancy,Schwangerschafts-App,Amila,eligible,,,pregnancy,documents the course of pregnancy
+play,weightloss.weightlossforwomen.workoutforwomen.womenworkout,Abnehmen für Frauen: Zuhause,EZ Health,eligible,,,activity,tracks weight-loss progress and calories
+play,net.daylio,Daylio Tagebuch & Gewohnheiten,Habitics,eligible,,,mood,mood diary
+play,com.mapmyrun.android2,Map My Run: Running Tracker,"MapMyFitness, Inc.",eligible,,,activity,run tracking
+play,ru.mobiledimension.kbr,amma: Schwangerschafts-App,PERIOD TRACKER & PREGNANCY AND BABY CALENDAR,eligible,,,pregnancy,tracks weight contractions and kicks
+play,heartratemonitor.heartrate.pulse.pulseapp,Herzfrequenzmesser - Puls,QR Code Scanner.,eligible,,,heart,heart rate measurement with health log
+play,com.tickledmedia.ParentTown,Asianparent: Pregnancy & Baby,theAsianparent - largest pregnancy & parenting app,eligible,,,pregnancy,pregnancy tracker
+play,com.meetyou.intl,MeetYou - Perioden - Tracker,MEETYOU PTE.LTD.,eligible,,,cycle,menstruation recorder
+play,com.fc.p.cp.jelly.mukbang.asmr.live.diy,Gelee-Meister: Essen ASMR,FALCON GAME,excluded,E1,X2,,game
+play,steptracker.healthandfitness.walkingtracker.pedometer,"Schrittzähler - Health , iStep",Leap Fitness Group,eligible,,,activity,records daily steps automatically
+play,ipnossoft.rma.free,BetterSleep: Einschlafhilfe,BetterSleep Health,excluded,E1,X1,,sleep sounds and stories; listing states no sleep recording (as on the App Store)
+play,com.period.tracker.lite,Period Tracker,GP International LLC,eligible,,,cycle,period tracking
+play,jp.pokemon.pokemonsleep,Pokémon Sleep,The Pokémon Company,eligible,,,sleep,game that records the user's sleep with the phone or a smartwatch
+play,stepcounter.steptracker.pedometer.calorie,Pedometer-App - Schrittzähler,AceTools Team,eligible,,,activity,step tracking
+play,com.urbandroid.sleep,Sleep as Android: Schlafzyklen,Petr Nálevka (Urbandroid),eligible,,,sleep,sleep cycle tracking alarm
+play,com.google.android.apps.fitness,Google Fit: Aktivitätstracker,Google LLC,eligible,,,activity,records activity steps and cardio points
+play,com.alltrails.alltrails,AllTrails: Wandern & Radfahren,"AllTrails, LLC",eligible,,,activity,records activities and statistics
+play,com.weightwatchers.mobile,Weight Watchers Programm,"WW INTERNATIONAL, INC",eligible,,,diet-weight,food activity and sleep tracking (subscription; free to install)
+play,com.fddb,Fddb: KI Kalorienzähler & Diät,Fddb,eligible,,,diet-weight,calorie counter and food diary
+play,monitoryourweight.bustan.net,Überwache dein Gewicht,Husain Al-Bustan,eligible,,,diet-weight,weight log
+play,com.sportractive,GPS Laufen Joggen & Radfahren,sportractive.com,eligible,,,activity,records runs rides and other activities with GPS
+play,com.baviux.pillreminder,Lady Pill Reminder,Baviux,excluded,E1,X6,,pill reminder; listing states no recording of the user's data
+play,com.stt.android,Sports Tracker,Suunto,eligible,,,activity,records activities with GPS and keeps a sports diary
+play,com.getsomeheadspace.android,Headspace Schlaf & Meditation,"Headspace for Meditation, Mindfulness and Sleep",eligible,,,mood,tracks mental health with goals and progress (as on the App Store)
+play,org.naviki,Naviki – das Fahrrad-Navi,beemo,eligible,,,activity,bicycle route planner that records the user's rides
+play,com.sleepmonitor.aio,Sleep Monitor - Schlaftracker,Fasting APP Group,eligible,,,sleep,records and analyses sleep
+play,de.aktiwir.aktibmi,BMI Rechner & Gewichtstagebuch,aktiWir GmbH,eligible,,,diet-weight,BMI calculator with weight diary
+play,com.ovyapp.android,Ovy App Verhütung Kinderwunsch,Ovy GmbH,eligible,,,cycle,symptothermal cycle tracking for contraception and conception
+play,com.pookies.food.ai,BitePal: KI-Kalorienzähler,RefaceLithuania,eligible,,,diet-weight,food diary and calorie tracking
+play,homeworkout.fitness.app,Trainingsplan & Gym・FitAI,Social Tech.,eligible,,,activity,training diary and workout tracker
+play,de.twopeaches.babelli,Babelli Schwangerschafts App,babelli: Schwangerschaft & Baby,eligible,,,pregnancy,pregnancy diary and week-by-week tracking from the due date

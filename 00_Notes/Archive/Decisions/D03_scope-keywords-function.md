@@ -38,3 +38,9 @@
 
 - **Dropped (author, 2026-11-15):** reverse engineering of the keyword set, a manageable result count per keyword, a test of the keywords and of the store API, and three must-include apps. The 49 queries and the first-30 depth of 23 October stand.
 - **Reported (Results 5.2):** which keyword categories the ranked sample misses, computed by `04_Study/4.4_App-Sampling/scripts/keyword-coverage/v001/coverage.py` from the frozen collections. No category is missed: every one of the ten categories found at least one of the 47 ranked apps within the first 30 positions (mood 1, heart rate 2, sleep 4, exercise 6, cycling 7, reproductive health 8, step count 9, diet 11, weight 12, running 15).
+
+## Update 2026-11-17 — rules renamed I1–I7 and X1–X8, register coded by rule
+
+- **Renamed (author's methodology, Table 4.2):** E1a–E1d are I1.1–I1.4, E2 is I5 and X7, E3 is I6, E4 is I7, E5 is X8; the exclusions that E1 carried (Hutton et al., Robillard et al., Malki et al.) are X1–X6. The rules restate E1–E5; no screening decision changes.
+- **Coding (applied):** `04_Study/4.4_App-Sampling/scripts/screening-rules/v001/recode.py` adds the column `rule` to `screening.csv`. Each exclusion takes the exclusion rule its logged reason names, otherwise the inclusion rule that fails (I1.2 for services outside health: job portals, dating, bookings, pet health). Result for the 276 screened listings: X2 70, X1 19, I1.2 11, X4 7, X3 4, X6 3, I6 2, I7 1, X7 1, X8 1; 157 eligible.
+- **Selection unchanged:** `app-ranking/v006` reproduces the v005 selection exactly and also writes the sample flow, the exclusions by rule and the short app list for Results 5.2.
