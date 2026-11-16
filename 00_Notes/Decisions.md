@@ -21,7 +21,7 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 | D12 | Harm-tree basis | One generic health tracker; reference model v2 | decided 11-04; refined by D23 | [D12](Archive/Decisions/D12_reference-model.md) |
 | D13 | Literature search v1 | Staged search with citation filter | superseded by D21 | [D13](Archive/Decisions/D13_literature-review.md) |
 | D14 | Literature search v2 | Venue listing, strands, screening rules | superseded by D21 | [D14](Archive/Decisions/D14_literature-review-v2.md) |
-| D15 | Domain | One domain: health trackers; categories are search keywords only | confirmed 10-28 | [D15](Archive/Decisions/D15_health-tracker-domain.md) |
+| D15 | Domain | One domain: health trackers; categories are search keywords only; each app gets one primary category (first function on its listing, or multipurpose) that only describes the sample, reported with count and share | confirmed 10-28; primary category added 11-16 (proposed) | [D15](Archive/Decisions/D15_health-tracker-domain.md) |
 | D16 | Instrument test | One-app test (Clue) | superseded by D20 | [D16](Archive/Decisions/D16_instrument-test.md) |
 | D17 | RQ4 surfaces | Privacy policy and inspected interface only | confirmed 11-04 | [D17](Archive/Decisions/D17_rq4-surfaces.md) |
 | D18 | Reporting unit | Equal weight per app | decided 11-04 | [D18](Archive/Decisions/D18_reporting-unit.md) |
