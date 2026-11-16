@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T11:30:34.369705+00:00",
+  "built_at_utc": "2026-11-16T11:43:12.876598+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/E_scraping_scripts.tex",
@@ -89,6 +89,7 @@
     "01_Literature/digest/HANDOFF.md",
     "01_Literature/digest/candidates.md",
     "01_Literature/digest/handout.md",
+    "01_Literature/review/Cross-Store-Matching_2026-11-16.md",
     "03_Thesis/appendix/A_codebook.tex",
     "03_Thesis/appendix/B_prompts.tex",
     "03_Thesis/appendix/C_app_sample.tex",
@@ -428,6 +429,7 @@
     "01_Literature/digest/HANDOFF.md": "a183b6f3ea7046eca1ea69c99b42d9d1a65cc04ca1505680330a456f2f46ada6",
     "01_Literature/digest/candidates.md": "b77909f5a698fc50d95b211a7c29f4535ba2ec93ee32c3ede00fae1056ee21c1",
     "01_Literature/digest/handout.md": "415850774d22407676ebe906d607e5dd2a709a8221086db5b325eb579d5cb76c",
+    "01_Literature/review/Cross-Store-Matching_2026-11-16.md": "317100d4c2923e10aa9c1010cf119d72fe444a1cf15c5eba4cf102747f64dc8b",
     "04_Study/4.1_Study-Design/methodology-overview-simple.html": "10ee8febbd74019de57273c3ec44c1a419bae9fb4ce8e719475db6fcb5cfe2f9",
     "04_Study/4.1_Study-Design/methodology-overview.html": "c7f6f45cbb3a88f57fa6f899f5ede9824fc94cec5433266bdab4bca90001d4d8",
     "04_Study/4.3_Analytical-Framework/reference_model_v1.yaml": "e8447e4f51e87b5999cc81f502674d6fa86c37c95240fc978f879a1ccdb78097",
@@ -563,9 +565,9 @@
     "scripts/zotero-library/README.md": "8070ef4daf8cbf21be2840d1401ac2f4d1b00d1a2b1caffb530ad9ccab20555f"
   },
   "literature_corpus": null,
-  "nodes": 2941,
-  "edges": 4249,
-  "communities": 436,
+  "nodes": 2955,
+  "edges": 4259,
+  "communities": 440,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }
