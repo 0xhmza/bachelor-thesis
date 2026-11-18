@@ -1,0 +1,200 @@
+% Study design as an ISO 5807 data flowchart. Hand-drawn source of the figure
+% (redrawn from "Bachelor Thesis - Study Design.drawio"); edit this file directly.
+% Needs the thesis colours (config/preamble.tex) and, in the preamble,
+%   \usetikzlibrary{arrows.meta,calc,backgrounds,shapes.geometric,shapes.symbols,shapes.misc,shadows}
+% (loading libraries in the body adds stray spaces). Use inside a figure environment:
+%   \resizebox{\textwidth}{!}{\input{figures/study-design}}
+\begin{tikzpicture}[
+  x=1cm, y=1cm, font=\footnotesize,
+  nohyph/.style={execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  sym/.style={draw=primary, line width=0.6pt, fill=white, align=center, inner sep=2.5pt, nohyph},
+  % ISO 5807 symbols
+  term/.style={sym, rounded rectangle, rounded rectangle arc length=180,
+               minimum height=8mm, inner xsep=4mm, fill=primary!10},
+  doc/.style={sym, tape, tape bend top=none, tape bend height=1.8mm,
+              draw=linkblue, fill=linkblue!8, inner ysep=4pt, minimum height=11mm},
+  mdoc/.style={doc, double copy shadow={shadow xshift=1mm, shadow yshift=1mm,
+               draw=linkblue, fill=linkblue!8}},
+  pre/.style={sym, rectangle, minimum height=13mm, inner xsep=3.6mm, fill=primary!5,
+              path picture={
+                \draw[primary, line width=0.6pt]
+                  ([xshift=1.7mm]path picture bounding box.north west) --
+                  ([xshift=1.7mm]path picture bounding box.south west)
+                  ([xshift=-1.7mm]path picture bounding box.north east) --
+                  ([xshift=-1.7mm]path picture bounding box.south east);}},
+  proc/.style={sym, rectangle, minimum height=9mm, fill=primary!5},
+  data/.style={sym, trapezium, trapezium left angle=78, trapezium right angle=102,
+               trapezium stretches body, draw=accent, fill=accent!7},
+  bare/.style={align=center, inner sep=2.5pt, nohyph},
+  flow/.style={-{Stealth[length=1.8mm,width=1.4mm]}, line width=0.6pt, draw=muted},
+  line/.style={line width=0.6pt, draw=muted},
+  lbl/.style={font=\scriptsize, text=muted, fill=white, inner sep=1pt},
+  dot/.style={circle, fill=muted, inner sep=0pt, minimum size=3pt},
+]
+
+% Outlines drawn by hand: display, stored data, annotation.
+\newcommand{\displayshape}[1]{%
+  \begin{scope}[on background layer]
+    \path[draw=linkblue, line width=0.6pt, fill=linkblue!8]
+      ($(#1.west)+(-4mm,0)$) to[out=50,in=180] (#1.north west) --
+      ($(#1.north east)+(-1mm,0)$) .. controls +(7mm,0) and +(7mm,0) ..
+      ($(#1.south east)+(-1mm,0)$) -- (#1.south west) to[out=180,in=-50]
+      ($(#1.west)+(-4mm,0)$) -- cycle;
+  \end{scope}}%
+\newcommand{\storedshape}[1]{%
+  \begin{scope}[on background layer]
+    \path[draw=muted, line width=0.6pt, fill=muted!8]
+      (#1.north west) -- (#1.north east) to[bend right=40] (#1.south east) --
+      (#1.south west) to[bend left=40] (#1.north west) -- cycle;
+  \end{scope}}%
+\newcommand{\annot}[2]{% #1 annotation node, #2 point annotated
+  \draw[muted, line width=0.5pt]
+    ($(#1.north west)+(1.6mm,0)$) -- (#1.north west) -- (#1.south west) --
+    ($(#1.south west)+(1.6mm,0)$);
+  \draw[muted, line width=0.5pt, dash pattern=on 2pt off 1.5pt] (#1.west) -- (#2);}%
+
+% ---------------------------------------------------------------- per app
+\node[term] (start) at (7.2,0) {\textbf{Sampled app} $a$};
+\node[bare, anchor=west, text width=3.9cm, align=left, font=\scriptsize]
+  (loop) at (10.0,0) {P1--P4 are repeated for every app in the sample.};
+\annot{loop}{start.east}
+
+% Inputs
+\node[doc,  text width=2.2cm] (pol) at (1.45,-1.9) {\textbf{Privacy policy}\\(PP)};
+\node[mdoc, text width=2.4cm] (sec) at (4.30,-1.9)
+  {\textbf{Secondary communications} (SC)};
+\node[bare, text width=3.4cm] (ui) at (11.5,-1.9) {\textbf{App interface}\\installed app};
+\displayshape{ui}
+
+\draw[line] (start.south) -- (7.2,-0.75) coordinate (bus);
+\draw[flow] (bus) -| (pol.north);
+\draw[flow] (bus) -| (sec.north);
+\draw[flow] (bus) -| (ui.north);
+\node[dot] at (bus) {};
+
+% Processes
+\node[pre, text width=5.0cm] (p1) at (2.9,-3.95)
+  {\textbf{P1\enspace Content analysis}\\LLM-assisted, run separately on PP and SC:
+   extract components and (harm, stance) and (protection, stance) pairs};
+\node[pre, text width=5.0cm] (p2) at (11.5,-3.95)
+  {\textbf{P2\enspace Cognitive walkthrough}\\identify components beyond those
+   disclosed; rate the accessibility of each claimed protection};
+\draw[flow] (pol.south) -- (pol.south |- p1.north);
+\draw[flow] (sec.south) -- (sec.south |- p1.north);
+\draw[flow] (ui.south)  -- (p2.north);
+\draw[flow] (p1.east) -- node[lbl, above=1pt] {$\mathcal{C}_D$, $\mathcal{P}_C$}
+  node[lbl, below=1pt, align=center] {reference sets} (p2.west);
+
+% Data produced per app
+\node[data, text width=4.75cm, align=left] (o1) at (2.9,-6.35)
+  {\textbf{Communicated properties}\\[1pt]
+   \begin{tabular}{@{}l@{\enspace}l@{}}
+     $\mathcal{C}_D$ & disclosed system components\\
+     $\mathcal{H}_C$ & (harm, stance) pairs\\
+     $\mathcal{P}_C$ & (protection, stance) pairs\\
+                     & each set per source, PP and SC
+   \end{tabular}};
+\node[data, text width=4.75cm, align=left] (o2) at (11.5,-6.35)
+  {\textbf{Walkthrough findings}\\[1pt]
+   \begin{tabular}{@{}l@{\enspace}l@{}}
+     $\mathcal{C}_O$ & observed components not in $\mathcal{C}_D$,\\
+                     & checked against PP and PP\,+\,SC\\
+     $\mathcal{A}$   & accessibility of each $p \in \mathcal{P}_C$,\\
+                     & from easily accessible to missing
+   \end{tabular}};
+\draw[flow] (p1.south) -- (o1.north);
+\draw[flow] (p2.south) -- (o2.north);
+
+% Instrument built once
+\node[bare, text width=2.4cm] (trees) at (7.2,-6.35)
+  {\textbf{Reference harm trees}\\components of all apps, built once};
+\storedshape{trees}
+
+% Harm-tree analysis
+\node[pre, text width=4.3cm] (p3) at (7.2,-8.85)
+  {\textbf{P3\enspace Harm-tree analysis}\\find the harms reachable on
+   $\mathcal{C}_D \cup \mathcal{C}_O$; flag those not mentioned or minimised;
+   test whether each protection prevents the harms it cites};
+\draw[flow] (trees.south) -- (p3.north);
+\draw[line] (o1.south) -- (2.9,-8.85) coordinate (j1);
+\draw[flow] (j1) -- node[lbl, above=1pt] {$\mathcal{C}_D$, $\mathcal{H}_C$, $\mathcal{P}_C$} (p3.west);
+\draw[line] (o2.south) -- (11.5,-8.85) coordinate (j2);
+\draw[flow] (j2) -- node[lbl, above=1pt] {$\mathcal{C}_O$} (p3.east);
+
+\node[data, text width=5.0cm, align=left] (o3) at (7.2,-10.95)
+  {\textbf{Harm-tree results}\\[1pt]
+   \begin{tabular}{@{}l@{\enspace}l@{}}
+     $\mathcal{H}_R$ & reachable harms\\
+     $\mathcal{H}_U$ & unmentioned, $\mathcal{H}_R \setminus \mathcal{H}_C$\\
+     $\mathcal{E}$   & effectiveness of each $p \in \mathcal{P}_C$
+   \end{tabular}};
+\draw[flow] (p3.south) -- (o3.north);
+
+% Reporting
+\node[proc, text width=10.4cm] (p4) at (7.2,-12.85)
+  {\textbf{P4\enspace Comparison and reporting by research question}\\
+   for two scopes, PP alone and PP\,+\,SC, and for the coherence between PP and SC};
+\draw[flow] (j1) -- node[lbl, pos=0.45] {$\mathcal{C}_D$, $\mathcal{H}_C$, $\mathcal{P}_C$}
+  (j1 |- p4.north);
+\draw[flow] (j2) -- node[lbl, pos=0.45] {$\mathcal{C}_O$, $\mathcal{A}$} (j2 |- p4.north);
+\draw[flow] (o3.south) -- (p4.north);
+\node[dot] at (j1) {};
+\node[dot] at (j2) {};
+
+% Research questions
+\foreach \q/\name/\ev/\x in {
+    1/Coverage/{$\mathcal{C}_D$, $\mathcal{C}_O$, $\mathcal{H}_R$, $\mathcal{H}_U$}/1.6,
+    2/Stance/{$\mathcal{H}_C$ with stance}/5.47,
+    3/Protection/{$\mathcal{P}_C$, $\mathcal{A}$, $\mathcal{E}$}/9.33,
+    4/Surfaces/{PP--SC coherence}/13.2} {
+  \node[term, text width=2.6cm, inner xsep=2mm] (rq\q) at (\x,-14.65)
+    {\textbf{RQ\q\enspace\name}\\[-1pt]{\scriptsize \ev}};
+}
+\draw[line] (p4.south) -- (7.2,-13.7) coordinate (bus2);
+\foreach \q in {1,...,4} \draw[flow] (bus2) -| (rq\q.north);
+\node[dot] at (bus2) {};
+
+% Abbreviations
+\node[bare, anchor=north west, text width=14.6cm, align=left, font=\scriptsize]
+  (note) at (0,-15.55)
+  {PP: privacy policy. SC: secondary communications, i.e.\ the store listing
+   (app description and feature list) and the provider's website, including blog posts.};
+
+% ---------------------------------------------------------------- legend
+\begin{scope}[shift={(0,-16.75)}, font=\scriptsize]
+  \draw[muted!50, line width=0.4pt] (0,0.3) -- (14.6,0.3);
+  \node[anchor=west, font=\scriptsize\bfseries, text=muted] at (0,0)
+    {Symbols (ISO 5807)};
+  \def\lw{0.95}\def\lh{0.5}
+  % four columns: symbol centred at 0.55, 4.45, 8.15, 11.75; label 0.65 to its right
+  \node[term, minimum width=\lw cm, minimum height=\lh cm, inner sep=0pt] at (0.55,-0.6) {};
+  \node[anchor=west] at (1.2,-0.6) {Terminator};
+  \node[doc, minimum width=\lw cm, minimum height=\lh cm, inner sep=0pt,
+        tape bend height=1mm] at (4.45,-0.6) {};
+  \node[anchor=west] at (5.1,-0.6) {Document};
+  \node[mdoc, minimum width=\lw cm, minimum height=\lh cm, inner sep=0pt,
+        tape bend height=1mm] at (8.1,-0.62) {};
+  \node[anchor=west] at (8.8,-0.6) {Multiple documents};
+  \node[bare, minimum width=0.6cm, minimum height=\lh cm, inner sep=0pt] (l4) at (12.15,-0.6) {};
+  \displayshape{l4}
+  \node[anchor=west] at (13.0,-0.6) {Display};
+  \node[pre, minimum width=\lw cm, minimum height=\lh cm, inner sep=0pt] at (0.55,-1.3) {};
+  \node[anchor=west] at (1.2,-1.3) {Predefined process};
+  \node[proc, minimum width=\lw cm, minimum height=\lh cm, inner sep=0pt] at (4.45,-1.3) {};
+  \node[anchor=west] at (5.1,-1.3) {Process};
+  \node[data, trapezium left angle=65, trapezium right angle=115,
+        minimum width=0.7cm, minimum height=\lh cm, inner sep=0pt] at (8.15,-1.3) {};
+  \node[anchor=west] at (8.8,-1.3) {Data};
+  \node[bare, minimum width=0.8cm, minimum height=\lh cm, inner sep=0pt] (l8) at (12.1,-1.3) {};
+  \storedshape{l8}
+  \node[anchor=west] at (13.0,-1.3) {Stored data};
+  \draw[flow] (0.1,-2.0) -- (1.0,-2.0);
+  \node[anchor=west] at (1.2,-2.0) {Flow line};
+  \draw[line] (4.0,-2.0) -- (4.9,-2.0);
+  \node[dot] at (4.45,-2.0) {};
+  \node[anchor=west] at (5.1,-2.0) {Junction};
+  \node[bare, minimum width=0.3cm, minimum height=0.4cm, inner sep=0pt] (l9) at (8.45,-2.0) {};
+  \annot{l9}{7.7,-2.0}
+  \node[anchor=west] at (8.8,-2.0) {Annotation};
+\end{scope}
+\end{tikzpicture}%
