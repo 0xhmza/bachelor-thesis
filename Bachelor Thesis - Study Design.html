@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Study design · Bachelor thesis</title>
+  <style>
+    :root {
+      --ink: #192e28;
+      --secondary: #4d6158;
+      --paper: #f8f6ef;
+      --white: #fffdf8;
+      --line: #c9d2c6;
+      --wire: #82968a;
+      --green: #235e4b;
+      --green-tint: #e8f1e9;
+      --blue: #374f80;
+      --blue-tint: #edf0f8;
+      --rust: #90471f;
+      --amber: #a45020;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: 'Segoe UI', system-ui, sans-serif;
+      --mono: 'Cascadia Mono', Consolas, monospace;
+      --lane-gap: 116px;
+      --question-gap: 9px;
+      --radius: 17px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 15px/1.5 var(--sans);
+    }
+    a { color: inherit; text-underline-offset: .24em; }
+    a:hover { color: var(--rust); }
+    :focus-visible { outline: 2px solid var(--amber); outline-offset: 5px; }
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    sub { font-size: .72em; line-height: 0; }
+    .shell { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
+    .eyebrow, .code, .label { font: 650 .72rem/1.35 var(--mono); letter-spacing: .11em; text-transform: uppercase; }
+    .masthead { padding-top: 31px; }
+    .mastline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+    }
+    .mastline .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--green); }
+    .mastline .eyebrow::before { content: ''; width: 9px; height: 9px; background: var(--green); transform: rotate(45deg); }
+    .mastline a { font-size: .82rem; font-weight: 650; }
+    .hero { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 48px; padding: 33px 0 37px; }
+    h1 { font: 400 clamp(3.5rem, 8.8vw, 8rem)/.95 var(--serif); letter-spacing: -.067em; }
+    .subtitle { color: var(--secondary); margin-top: 18px; max-width: 52ch; font-size: 1rem; }
+    .sample { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 18px; padding-left: 25px; border-left: 1px solid var(--line); }
+    .sample strong { font: 400 3.7rem/.9 var(--serif); letter-spacing: -.09em; }
+    .sample p { grid-column: 1 / -1; font-size: .8rem; margin-top: -10px; color: var(--secondary); }
+    .sample p b { color: var(--ink); }
+    .sample-grid {
+      width: 110px;
+      height: 55px;
+      background: radial-gradient(circle, #91a99a 2px, transparent 2.5px) 0 0 / 11px 11px;
+      position: relative;
+    }
+    .sample-grid::before { content: ''; position: absolute; inset: 2px auto auto 2px; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); }
+    .map {
+      position: relative;
+      padding: 23px 34px 32px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: radial-gradient(circle, #b9c7b979 1px, transparent 1.2px) 0 0 / 16px 16px, #f2f4eb;
+    }
+    .root {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: fit-content;
+      margin: auto;
+      padding: 8px 20px 8px 10px;
+      border: 1px solid #a4b5a7;
+      border-radius: 999px;
+      background: var(--white);
+      font-weight: 650;
+      scroll-margin-top: 18px;
+    }
+    .app-mark { display: grid; place-items: center; background: var(--ink); color: #fffdf7; border-radius: 50%; width: 29px; height: 29px; font: italic 1.15rem/1 var(--serif); }
+    .split { position: relative; height: 28px; }
+    .split::before, .split::after { content: ''; position: absolute; }
+    .split::before { top: 0; height: 50%; left: 50%; border-left: 1px solid var(--wire); }
+    .split::after { inset: 50% var(--lane-center) 0 var(--first-source); border: 1px solid var(--wire); border-bottom: 0; border-radius: 6px 6px 0 0; }
+    .split i { position: absolute; inset: 50% auto 0 var(--second-source); border-left: 1px solid var(--wire); }
+    .workflow {
+      --lane-center: calc((100% - var(--lane-gap)) / 4);
+      --first-source: calc(var(--lane-center) / 2 - 2px);
+      --second-source: calc(var(--lane-center) * 1.5 + 2px);
+    }
+    .lanes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--lane-gap); }
+    .lane { display: grid; grid-template-rows: subgrid; grid-row: span 5; min-width: 0; --stream: var(--green); --tint: var(--green-tint); }
+    .observed { --stream: var(--blue); --tint: var(--blue-tint); }
+    .sources { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .observed .sources { grid-template-columns: 1fr; }
+    .source {
+      display: grid;
+      align-content: center;
+      gap: 4px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 9px 12px;
+      min-height: 64px;
+    }
+    .code { color: var(--stream, var(--green)); }
+    .source strong { line-height: 1.25; font-size: .88rem; }
+    .source small { color: var(--secondary); font-size: .75rem; line-height: 1.35; }
+    .stem { position: relative; height: 19px; color: var(--wire); }
+    .stem::before { content: ''; position: absolute; inset: 0 auto 1px 50%; border-left: 1px solid currentColor; }
+    .stem::after, .arrowhead::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    .stem::after { bottom: 2px; left: 50%; transform: translateX(-50%) rotate(45deg); }
+    .source-merge::before { top: 50%; }
+    .source-merge i { position: absolute; inset: 0 calc(25% - 2px) 50%; border: 1px solid currentColor; border-top: 0; border-radius: 0 0 4px 4px; }
+    .phase { position: relative; padding: 15px 17px 17px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+    .lane .phase { border-top: 3px solid var(--stream); }
+    .phase .code { display: inline-block; margin-bottom: 5px; }
+    .phase h2 { font: 400 clamp(1.5rem, 3vw, 2.1rem)/1.08 var(--serif); letter-spacing: -.04em; }
+    .phase p { color: var(--secondary); font-size: .87rem; margin-top: 8px; }
+    .handoff {
+      position: absolute;
+      display: grid;
+      place-content: end center;
+      text-align: center;
+      color: #496358;
+      left: calc(100% + 1px);
+      bottom: 50%;
+      width: var(--lane-gap);
+      background: #f2f4eb;
+      border-bottom: 1px solid currentColor;
+      padding: 3px 4px 6px;
+      font-size: .75rem;
+      line-height: 1.25;
+      border-radius: 0;
+    }
+    .handoff::after { bottom: -3.5px; right: 2px; transform: rotate(-45deg); }
+    .symbol { white-space: nowrap; font: italic 1.02em var(--serif); }
+    .outputs { padding: 10px 14px 12px; background: var(--tint); border: 1px solid var(--line); border-radius: 13px; }
+    .outputs h3 { color: var(--stream); margin: 0 3px 4px; }
+    .outputs dl { display: grid; gap: 1px; }
+    .datum { display: grid; grid-template-columns: 2rem 1fr; align-items: baseline; gap: 7px; padding: 2px 4px; border-radius: 5px; }
+    .datum dt { font-size: 1.03rem; font-weight: 650; }
+    .datum dd { font-size: .8rem; line-height: 1.35; }
+    .datum small { font: inherit; color: var(--secondary); }
+    .convergence { position: relative; display: grid; grid-template-columns: var(--lane-center) minmax(0, 1fr) var(--lane-center); }
+    .core { grid-column: 2; position: relative; margin-inline: 28px; padding-top: 17px; }
+    .reference {
+      width: fit-content;
+      max-width: 100%;
+      margin-inline: auto;
+      text-align: center;
+      padding: 7px 14px 8px;
+      border: 1px dashed #a29a82;
+      border-radius: 10px;
+      background: #fbf7eb;
+    }
+    .reference .label { color: var(--rust); }
+    .reference p { font-size: .74rem; color: #665b4a; }
+    .core .phase { background: var(--ink); color: #fffdf8; border-color: var(--ink); }
+    .core .phase p { color: #e0eade; }
+    .core .code { color: #b0d4bf; }
+    .core .outputs { --tint: #f8ecdc; --stream: #80401e; }
+    .trunk { position: absolute; top: 0; bottom: 0; width: 1px; background: currentColor; color: var(--wire); }
+    .trunk.left { left: var(--lane-center); }
+    .trunk.right { right: var(--lane-center); }
+    .trunk b {
+      position: absolute;
+      bottom: 25px;
+      width: max-content;
+      text-align: center;
+      padding: 5px 8px;
+      border-radius: 6px;
+      background: #f2f4eb;
+      color: var(--secondary);
+      font: 600 .67rem/1.4 var(--mono);
+    }
+    .trunk.left b { right: 8px; }
+    .trunk.right b { left: 8px; }
+    .trunk b .symbol { font-size: .9rem; }
+    .trunk::after { bottom: 2px; left: -2.5px; transform: rotate(45deg); }
+    .inlet { position: absolute; width: 28px; top: 54%; border-top: 1px solid currentColor; color: var(--wire); }
+    .inlet.left { right: 100%; }
+    .inlet.right { left: 100%; }
+    .inlet.left::after { right: 1px; top: -3.5px; transform: rotate(-45deg); }
+    .inlet.right::after { left: 1px; top: -3.5px; transform: rotate(135deg); }
+    .inlet::before { content: ''; position: absolute; top: -3px; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+    .inlet.left::before { left: -2px; }
+    .inlet.right::before { right: -2px; }
+    .inlet .symbol { position: absolute; top: -.9em; padding: 0 5px; background: #f2f4eb; color: #496358; font-size: .83rem; }
+    .inlet.left .symbol { right: calc(100% + 8px); }
+    .inlet.right .symbol { left: calc(100% + 8px); }
+    .core-inputs, .mobile-handoff { display: none; }
+    .report { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 18px; padding-inline: 20px; }
+    .scopes { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .scope { background: var(--green-tint); color: var(--green); border-radius: 6px; padding: 5px 8px; font-size: .73rem; font-weight: 650; }
+    .scope:last-child { background: var(--blue-tint); color: var(--blue); }
+    .fan {
+      height: 22px;
+      margin-inline: calc((100% - 3 * var(--question-gap)) / 8);
+      border: 1px solid var(--wire);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom: 0;
+      position: relative;
+    }
+    .middle-stem { height: 12px; }
+    .middle-stem::after { display: none; }
+    .fan i { position: absolute; height: 100%; border-left: 1px solid var(--wire); }
+    .fan i:first-child { left: 33.3333%; }
+    .fan i:last-child { left: 66.6667%; }
+    .questions {
+      scroll-margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--question-gap);
+    }
+    .question {
+      display: grid;
+      gap: 7px;
+      align-content: start;
+      text-align: left;
+      padding: 11px 12px 12px;
+      color: var(--ink);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .question:hover { border-color: var(--green); transform: translateY(-2px); }
+    .question .code { color: var(--green); display: flex; justify-content: space-between; align-items: center; }
+    .question .code::after { content: '↗'; font: 1rem/1 var(--sans); }
+    .question[aria-pressed="true"] .code::after { content: '✓'; }
+    .question strong { font: 400 1.37rem/1.1 var(--serif); letter-spacing: -.035em; }
+    .question span:last-child { font-size: .79rem; color: var(--secondary); }
+    .question[aria-pressed="true"], .traced:not(.datum, .trunk, .inlet, .handoff) { outline: 2px solid var(--amber); outline-offset: -2px; }
+    .question[aria-pressed="true"] { background: #fff3de; }
+    .question:focus-visible { outline: 2px solid var(--amber); outline-offset: 4px; }
+    .datum.traced { background: #ffe8bf; }
+    .trunk.traced, .inlet.traced, .handoff.traced { color: var(--amber); }
+    .trace-status { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 20px; margin-top: 14px; color: var(--secondary); font-size: .79rem; }
+    .trace-status a { color: var(--green); font-weight: 650; }
+    footer { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 25px; padding: 17px 0 26px; font-size: .78rem; color: var(--secondary); }
+    footer p { max-width: 79ch; }
+    footer a { white-space: nowrap; }
+    @media screen and (max-width: 1000px) {
+      :root { --lane-gap: 86px; }
+      .shell { width: calc(100% - 56px); }
+      .map { padding-inline: 22px; }
+      .core { margin-inline: 18px; }
+      .inlet { width: 18px; }
+      .report { grid-template-columns: 1fr; gap: 10px; }
+    }
+    @media screen and (max-width: 740px) {
+      .shell { width: calc(100% - 32px); }
+      .masthead { padding-top: 19px; }
+      .hero { grid-template-columns: 1fr; gap: 18px; padding: 24px 0; }
+      .subtitle { margin-top: 12px; }
+      .sample { grid-template-columns: auto auto 1fr; gap: 12px; width: fit-content; padding-left: 12px; }
+      .sample strong { font-size: 2.6rem; }
+      .sample-grid { width: 80px; height: 40px; background-size: 8px 8px; background-image: radial-gradient(circle, #91a99a 1.4px, transparent 1.8px); }
+      .sample-grid::before { inset: 1.5px auto auto 1.5px; width: 5px; height: 5px; }
+      .sample p { grid-column: auto; margin: 0; }
+      .map { padding: 16px 13px 18px; border-radius: 17px; }
+      .split { height: 18px; }
+      .workflow { --first-source: calc(25% - 2px); --second-source: calc(75% + 2px); }
+      .split::after { right: calc(100% - var(--second-source)); }
+      .split i, .trunk, .inlet, .handoff, .fan { display: none; }
+      .lanes { grid-template-columns: 1fr; gap: 18px; }
+      .lane { grid-template-rows: auto; grid-row: auto; }
+      .source { padding-inline: 8px; }
+      .mobile-handoff, .core-inputs { display: block; text-align: center; color: var(--secondary); font-size: .73rem; }
+      .mobile-handoff { margin: -8px 0; }
+      .convergence { display: block; }
+      .core { margin-inline: 0; padding-top: 0; }
+      .core-inputs { margin: 10px 0 6px; }
+      .reference { padding-inline: 8px; }
+      .report { padding-inline: 13px; }
+      .middle-stem { height: 19px; }
+      .middle-stem::after { display: block; }
+      .questions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      footer { flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .question:hover { transform: none; }
+    }
+    @page { size: A4 portrait; margin: 9mm; }
+    @media print {
+      :root { font-size: 12px; --lane-gap: 85px; }
+      body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .shell { width: 100%; }
+      .masthead { padding-top: 0; }
+      .mastline { padding-bottom: 7px; }
+      .mastline a, .trace-status { display: none; }
+      .hero { padding: 8px 0 11px; gap: 18px; }
+      h1 { font-size: 4.3rem; }
+      .subtitle { margin-top: 8px; }
+      .sample { padding-left: 12px; }
+      .map { padding: 12px 17px 16px; }
+      .phase { padding: 7px 10px 8px; }
+      .phase .code { margin-bottom: 2px; }
+      .phase p { margin-top: 5px; }
+      .source { min-height: 46px; padding: 6px 8px; gap: 2px; }
+      .split { height: 22px; }
+      .stem { height: 13px; }
+      .fan { height: 17px; }
+      .middle-stem { height: 8px; }
+      .core { padding-top: 11px; }
+      .core .phase h2 { font-size: 1.8rem; }
+      .reference { padding-block: 4px; }
+      .outputs { padding: 4px 8px; }
+      .outputs h3 { margin-bottom: 2px; }
+      .datum { padding-block: 1px; }
+      .question { padding: 7px; break-inside: avoid; }
+      .question .code::after { content: ''; }
+      .question[aria-pressed="true"], .traced:not(.datum, .trunk, .inlet, .handoff) { outline: none; }
+      .question[aria-pressed="true"] { background: var(--white); }
+      .datum.traced { background: transparent; }
+      .trunk.traced, .inlet.traced { color: var(--wire); }
+      .handoff.traced { color: #496358; }
+      footer { padding: 10px 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell masthead">
+    <div class="mastline">
+      <span class="eyebrow">Bachelor thesis</span>
+      <a href="#research-questions">Research questions ↓</a>
+    </div>
+    <div class="hero">
+      <div>
+        <h1>Study design</h1>
+        <p class="subtitle">From what health-tracking apps disclose to what the walkthrough finds and which privacy harms remain reachable.</p>
+      </div>
+      <div class="sample">
+        <strong>50</strong><span class="sample-grid" aria-hidden="true"></span>
+        <p><b>Apps in the sample.</b> P1–P4 run for each app.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell map" aria-label="Study design flowchart">
+    <div class="workflow">
+      <div class="root" id="sampled-app" data-rqs="1 2 3 4"><span class="app-mark" aria-hidden="true">a</span> Sampled app <var>a</var></div>
+      <div class="split" aria-hidden="true"><i></i></div>
+      <div class="lanes">
+        <section class="lane disclosed" aria-labelledby="p1">
+          <div class="sources">
+            <div class="source" data-rqs="1 2 3 4"><span class="code">PP</span><strong>Privacy policy</strong></div>
+            <div class="source" data-rqs="1 2 3 4"><span class="code">SC</span><strong>Secondary communications</strong><small>Store listing and provider website</small></div>
+          </div>
+          <div class="stem source-merge" aria-hidden="true"><i></i></div>
+          <div class="phase" data-rqs="1 2 3 4">
+            <span class="code">P1</span>
+            <h2 id="p1">Content analysis</h2>
+            <p>Use LLM-assisted extraction on PP and SC separately. Code disclosed components, harm stances, and protection stances.</p>
+            <div class="handoff arrowhead" data-rqs="1 3" aria-hidden="true">
+              <span class="symbol">C<sub>D</sub> · P<sub>C</sub></span> Reference sets
+            </div>
+          </div>
+          <div class="stem" aria-hidden="true"></div>
+          <div class="outputs">
+            <h3 class="label">Communicated properties</h3>
+            <dl>
+              <div class="datum" data-rqs="1 3"><dt class="symbol">C<sub>D</sub></dt><dd>Disclosed system components</dd></div>
+              <div class="datum" data-rqs="1 2"><dt class="symbol">H<sub>C</sub></dt><dd>Harm and stance pairs</dd></div>
+              <div class="datum" data-rqs="3"><dt class="symbol">P<sub>C</sub></dt><dd>Protection and stance pairs</dd></div>
+            </dl>
+          </div>
+        </section>
+        <p class="mobile-handoff">↓ <span class="symbol">C<sub>D</sub> · P<sub>C</sub></span> pass from content analysis to the walkthrough</p>
+        <section class="lane observed" aria-labelledby="p2">
+          <div class="sources">
+            <div class="source" data-rqs="1 3"><span class="code">Installed app</span><strong>App interface</strong></div>
+          </div>
+          <div class="stem" aria-hidden="true"></div>
+          <div class="phase" data-rqs="1 3">
+            <span class="code">P2</span>
+            <h2 id="p2">Cognitive walkthrough</h2>
+            <p>Use <span class="symbol">C<sub>D</sub></span> and <span class="symbol">P<sub>C</sub></span> as reference sets. Identify additional components and rate the accessibility of each claimed protection.</p>
+          </div>
+          <div class="stem" aria-hidden="true"></div>
+          <div class="outputs">
+            <h3 class="label">Walkthrough findings</h3>
+            <dl>
+              <div class="datum" data-rqs="1 3"><dt class="symbol">C<sub>O</sub></dt><dd>Observed components beyond disclosure <small>(checked against PP and PP + SC)</small></dd></div>
+              <div class="datum" data-rqs="3"><dt class="symbol">A</dt><dd>Accessibility of each claimed protection, from easily accessible to missing</dd></div>
+            </dl>
+          </div>
+        </section>
+      </div>
+
+      <div class="convergence">
+        <div class="trunk left arrowhead" data-rqs="1 2 3 4" aria-hidden="true"><b><span class="symbol">C<sub>D</sub> · H<sub>C</sub> · P<sub>C</sub></span><br>to P4</b></div>
+        <div class="trunk right arrowhead" data-rqs="1 3" aria-hidden="true"><b><span class="symbol">C<sub>O</sub> · A</span><br>to P4</b></div>
+        <section class="core" aria-labelledby="p3">
+          <p class="core-inputs"><span class="symbol">C<sub>D</sub> · H<sub>C</sub> · P<sub>C</sub> · C<sub>O</sub></span> from P1 and P2 feed P3 ↓</p>
+          <aside class="reference" data-rqs="1 3">
+            <h3 class="label">Reference harm trees</h3>
+            <p>Built once from the components across all apps</p>
+          </aside>
+          <div class="stem" aria-hidden="true"></div>
+          <div class="phase" data-rqs="1 3">
+            <span class="inlet left arrowhead" data-rqs="1 3" aria-hidden="true"><span class="symbol">C<sub>D</sub> · H<sub>C</sub> · P<sub>C</sub></span></span>
+            <span class="inlet right arrowhead" data-rqs="1 3" aria-hidden="true"><span class="symbol">C<sub>O</sub></span></span>
+            <span class="code">P3</span>
+            <h2 id="p3">Harm-tree analysis</h2>
+            <p>Find harms reachable from <span class="symbol">C<sub>D</sub> ∪ C<sub>O</sub></span>. Flag unmentioned or minimised harms using <span class="symbol">H<sub>C</sub></span> and test whether each protection in <span class="symbol">P<sub>C</sub></span> prevents the harms it cites.</p>
+          </div>
+          <div class="stem" aria-hidden="true"></div>
+          <div class="outputs">
+            <h3 class="label">Harm-tree results</h3>
+            <dl>
+              <div class="datum" data-rqs="1 3"><dt class="symbol">H<sub>R</sub></dt><dd>Reachable harms</dd></div>
+              <div class="datum" data-rqs="1"><dt class="symbol">H<sub>U</sub></dt><dd>Unmentioned reachable harms <small>(<span class="symbol">H<sub>R</sub> ∖ H<sub>C</sub></span>)</small></dd></div>
+              <div class="datum" data-rqs="3"><dt class="symbol">E</dt><dd>Effectiveness of each claimed protection</dd></div>
+            </dl>
+          </div>
+          <div class="stem" aria-hidden="true"></div>
+        </section>
+      </div>
+
+      <section class="phase report" aria-labelledby="p4" data-rqs="1 2 3 4">
+        <div>
+          <span class="code">P4</span>
+          <h2 id="p4">Comparison &amp; reporting</h2>
+          <p>Compare communicated properties, walkthrough findings, and harm-tree results by research question.</p>
+        </div>
+        <div class="scopes" aria-label="Reporting scopes and cross-surface comparison">
+          <span class="scope">PP alone</span><span class="scope">PP + SC</span><span class="scope">PP–SC coherence</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="stem middle-stem" aria-hidden="true"></div>
+    <div class="fan" aria-hidden="true"><i></i><i></i></div>
+    <section class="questions" id="research-questions" aria-label="Research questions">
+      <button class="question" type="button" data-question="1" aria-pressed="false">
+        <span class="code">RQ1</span><strong>Coverage</strong><span class="symbol">C<sub>D</sub> · C<sub>O</sub> · H<sub>R</sub> · H<sub>U</sub></span>
+      </button>
+      <button class="question" type="button" data-question="2" aria-pressed="false">
+        <span class="code">RQ2</span><strong>Stance</strong><span>Harm stances (<span class="symbol">H<sub>C</sub></span>)</span>
+      </button>
+      <button class="question" type="button" data-question="3" aria-pressed="false">
+        <span class="code">RQ3</span><strong>Protection</strong><span class="symbol">P<sub>C</sub> · A · E</span>
+      </button>
+      <button class="question" type="button" data-question="4" aria-pressed="false">
+        <span class="code">RQ4</span><strong>Surfaces</strong><span>PP–SC coherence</span>
+      </button>
+    </section>
+    <div class="trace-status">
+      <span id="trace-message" aria-live="polite">Select a research question to trace its evidence.</span>
+      <a id="trace-link" href="#sampled-app" hidden>View highlighted evidence ↑</a>
+    </div>
+  </main>
+
+  <footer class="shell">
+    <p><b>PP</b> Privacy policy. <b>SC</b> Secondary communications, including the store description and feature list, and the provider website and blog posts.</p>
+    <a href="Bachelor%20Thesis%20-%20Study%20Design.pdf">Source PDF ↗</a>
+  </footer>
+
+  <script>
+    const questions = document.querySelectorAll('[data-question]');
+    const evidence = document.querySelectorAll('[data-rqs]');
+    const traceMessage = document.getElementById('trace-message');
+    const traceLink = document.getElementById('trace-link');
+    const descriptions = {
+      1: 'Coverage relates disclosed and observed components to reachable and unmentioned harms.',
+      2: 'Stance follows how PP and SC describe the harms they mention.',
+      3: 'Protection connects claims to their accessibility in the app and effectiveness in the harm trees.',
+      4: 'Surfaces compares the privacy policy with secondary communications for coherence.'
+    };
+    let selected = null;
+
+    for (const question of questions) {
+      question.addEventListener('click', () => {
+        const id = question.dataset.question;
+        selected = selected === id ? null : id;
+        for (const button of questions) {
+          button.setAttribute('aria-pressed', button.dataset.question === selected);
+        }
+        for (const node of evidence) {
+          node.classList.toggle('traced', node.dataset.rqs.split(' ').includes(selected));
+        }
+        traceMessage.textContent = descriptions[selected] ?? 'Select a research question to trace its evidence.';
+        traceLink.hidden = selected === null;
+      });
+    }
+  </script>
+</body>
+</html>
