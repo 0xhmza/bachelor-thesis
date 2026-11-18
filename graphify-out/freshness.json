@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-16T23:20:57.932933+00:00",
+  "built_at_utc": "2026-11-18T19:55:52.559736+00:00",
   "fresh_semantic_files": [
     "03_Thesis/appendix/D_proposal_example.tex",
     "03_Thesis/appendix/ai_appendix.tex",
@@ -101,6 +101,7 @@
     "03_Thesis/chapters/04_methodology.tex",
     "03_Thesis/chapters/05_results.tex",
     "03_Thesis/config/preamble.tex",
+    "03_Thesis/figures/study-design.tex",
     "03_Thesis/tables/app-sample.tex",
     "03_Thesis/tables/developer-aliases.tex",
     "03_Thesis/tables/developer-pilot.tex",
@@ -189,7 +190,8 @@
     "README.md",
     "requirements-graphify.txt",
     "scripts/literature-search/README.md",
-    "scripts/project-check/README.md"
+    "scripts/project-check/README.md",
+    "textual design.txt"
   ],
   "source_hashes": {
     ".vscode/settings.json": "44bec166ef052f34a76fa1a617803ec506a6adbf56c691e47138feca14028c0d",
@@ -511,6 +513,7 @@
     "scripts/literature-reorg/v001/README.md": "6f4f0adb0ac8c6c77c87894c3d4261448730158593f0692f695f446aecf25a3e",
     "scripts/literature-search/README.md": "6dd1b50c341e81dc4c53f2ebfdc5c439ee10051c33bfbefa2f4f481c5810bf3b",
     "scripts/project-check/README.md": "ae7fe6b15cd68637c6b3ce924230f3cba5a0f64c123c17137a45cd13ced98c5b",
+    "textual design.txt": "ec4091e7f05a1d716a5f12e564c22c98d1186e5f9113d8261413950d019a97ee",
     "03_Thesis/appendix/A_codebook.tex": "68a4a372a8a434c4a476ff1d6ed0fa43dabf29cbac32e35987b542b13186fc03",
     "03_Thesis/appendix/ai_appendix.tex": "37bc1a738e76faf9a244ac0be8233cb95ed0a65d4c09e3ad429ba051ff3a65eb",
     "03_Thesis/appendix/B_prompts.tex": "7b56e996ff3d15a8990444f6bf39839097dc1721d27482dc0903f492085eaf9c",
@@ -538,6 +541,7 @@
     "03_Thesis/figures/literature-sources.tex": "990d6738c533bfa7dab8575a1a2998b76554f2bbe48f52908665a38ef653cd5b",
     "03_Thesis/figures/literature-venues.tex": "59ae6742932a7294191ff3a30a6b910ccfed29394a9a98cff83fa6fac700d5b6",
     "03_Thesis/figures/literature-years.tex": "8d37d21a68fbcdc81282dfc1cb4e16fa2f1a307976a1c7bc967d115dab59677e",
+    "03_Thesis/figures/study-design.tex": "ecc072390de58954705a604f194efe8a40d1fca8976e451dd92acef382cef3e8",
     "03_Thesis/tables/app-sample.tex": "5c8c7b8c0d697c99e1ee7c5c30e595fb88842a96c7c7262bc858ddfbd765fb8b",
     "03_Thesis/tables/developer-aliases.tex": "2b23c3c70ad6f49630fb5e2e6d444847079dec023f7e5ba26d6fd3fa679feb96",
     "03_Thesis/tables/developer-pilot.tex": "072a8c557fadf15d964845f0dc82b43924541c140bf6d68dfaa6fbf89ddd8a9d",
@@ -585,9 +589,9 @@
     "scripts/zotero-library/README.md": "8070ef4daf8cbf21be2840d1401ac2f4d1b00d1a2b1caffb530ad9ccab20555f"
   },
   "literature_corpus": null,
-  "nodes": 3057,
+  "nodes": 3059,
   "edges": 4405,
-  "communities": 454,
+  "communities": 456,
   "semantic_token_usage": null,
   "actual_token_savings_measured": false
 }

@@ -1,0 +1,26 @@
+First Step: all apps analysis: all possible components of apps (harm tree building step 1), this step is done for all apps 
+Second step: for each apps: 
+	1. Analyze retrieved Privacy Policy analysis using LLM 
+		-> Export components (per knabenhans et al. definition)
+		-> Export Pairs (Harm, Stance)
+		-> Export Pairs (Protection, Stance)
+	2. Analyze retrieved App Store Page Text / Description / Website (blogs) / App features from play store
+		-> Export components 
+		-> Export pairs (harm, stance)
+		-> export pairs (protection, stance)
+		Note: in the results, the coherence between exported data from 1. and 2. will be analyzed. are they identical? are 		      they not? these are all a good communication critereas 
+	3. App Walkthrough
+		-> Are there more data collected by the provider/entered beyond what is stated in 1.?
+		-> Are there more data collected by the provider/entered beyond what is stated in 1. and 2.?  
+		-> How usable/accessible are the offered protections? Scale: from easily accessible to missing
+		-> [Note: how to exploit the walkthrough more for the RQs]
+	4. Analysis using harm trees
+		-> Test if some harm is reachable but is either: not mentioned, minimized, ..
+		-> Test if protections do really prPevent the cited harms
+		-> [Note: how to exploit the harm trees more for the RQs]
+Third step: results/conclusion
+	> Results for the communication limited to the privacy policy (1.) (the only legal requirement [I am not sure])
+	> Results for the communication including the privacy policy and 2.
+
+	> Analysis of how often capabilities are missing in PP and is present somewhere else. and in the opposite direction. coherence analysis.
+

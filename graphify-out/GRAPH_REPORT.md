@@ -1,10 +1,10 @@
-# Graph Report - bachelor-thesis  (2026-11-17)
+# Graph Report - bachelor-thesis  (2026-11-18)
 
 ## Corpus Check
-- Large corpus: 325 files · ~4,136,750 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 326 files · ~4,137,018 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 3057 nodes · 4405 edges · 454 communities (166 shown, 288 thin omitted)
+- 3059 nodes · 4405 edges · 456 communities (166 shown, 290 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 256 edges (avg confidence: 0.85)
 - Token cost: host semantic extraction unmeasured; local refresh makes no model calls
 
@@ -243,7 +243,6 @@
 - Project Navigation 246
 - Graphify Integration 247
 - Graphify Integration 250
-- Literature and Evidence 362
 - Literature and Evidence 363
 - Literature and Evidence 364
 - Literature and Evidence 365
@@ -326,6 +325,7 @@
 - Literature and Evidence 442
 - Literature and Evidence 443
 - Literature and Evidence 444
+- Literature and Evidence 445
 
 ## God Nodes (most connected - your core abstractions)
 1. `Shared bibliography` - 132 edges
@@ -354,7 +354,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (454 total, 288 thin omitted)
+## Communities (456 total, 290 thin omitted)
 
 ### Community 0 - "Study Instruments 0"
 Cohesion: 0.07
@@ -1022,8 +1022,8 @@ Nodes (3): lamonica2021privacy: Privacy Practices of Health Information Technolo
 
 ## Knowledge Gaps
 - **841 isolated node(s):** `Conclusion chapter placeholder`, `Bar chart of exclusions per rule R1-R8 with denominators`, `PRISMA-style flow diagram of the literature review`, `Heatmap of review studies by sub-question and thesis RQ`, `Heatmap of records by domain and data surface` (+836 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1480 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **288 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1482 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **290 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1048,7 +1048,7 @@ AST and structure refreshes are local and make no model calls. Semantic extracti
 
 LaTeX sections, inputs, citations and bibliography entries are indexed by the project adapter. PDF nodes describe file inventory only; full paper text, archives and raw/processed data are excluded.
 
-Fresh semantic sources: 33. Sources needing semantic extraction: 154. Local structure remains available for changed files.
+Fresh semantic sources: 33. Sources needing semantic extraction: 156. Local structure remains available for changed files.
 
 Graph health warning: 222 parallel relation variants are simplified by Graphify's simple graph during clustering/traversal. All original relation links and their source evidence are preserved in graph.json via original_links; consult health.json for details. No dangling or missing endpoints are permitted.
 
@@ -1117,6 +1117,7 @@ Graph health warning: 222 parallel relation variants are simplified by Graphify'
 - `03_Thesis/chapters/04_methodology.tex`
 - `03_Thesis/chapters/05_results.tex`
 - `03_Thesis/config/preamble.tex`
+- `03_Thesis/figures/study-design.tex`
 - `03_Thesis/tables/app-sample.tex`
 - `03_Thesis/tables/developer-aliases.tex`
 - `03_Thesis/tables/developer-pilot.tex`
@@ -1206,3 +1207,4 @@ Graph health warning: 222 parallel relation variants are simplified by Graphify'
 - `requirements-graphify.txt`
 - `scripts/literature-search/README.md`
 - `scripts/project-check/README.md`
+- `textual design.txt`
