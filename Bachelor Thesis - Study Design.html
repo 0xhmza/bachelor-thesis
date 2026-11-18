@@ -1,0 +1,346 @@
+<title>Thesis Study Design</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: one reading column; the flowchart is the page, glossary and symbol key follow in two columns. */
+:root {
+  --bg: #f5f7f9;
+  --surface: #ffffff;
+  --fg: #1b2733;
+  --muted: #535b63;
+  --rule: #d7dde3;
+  --primary: #233f5b;      /* processes, terminators */
+  --primary-fill: #e9eef3;
+  --term-fill: #dfe6ee;
+  --input: #496d91;        /* documents, display */
+  --input-fill: #edf2f7;
+  --data: #37665d;         /* data symbols */
+  --data-fill: #ebf3f0;
+  --store-fill: #eceeef;
+  --hl: #b8742a;           /* highlight when a set is selected */
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-text: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-math: "Cambria Math", "STIX Two Math", "Latin Modern Math", "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --surface: #182029; --fg: #e3e8ee; --muted: #9aa5b0; --rule: #2c3743;
+    --primary: #9dbbd9; --primary-fill: #1c2835; --term-fill: #243344;
+    --input: #8eaccb; --input-fill: #1a2531; --data: #84bfb1; --data-fill: #172726;
+    --store-fill: #1f262e; --hl: #e3a75e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --surface: #182029; --fg: #e3e8ee; --muted: #9aa5b0; --rule: #2c3743;
+  --primary: #9dbbd9; --primary-fill: #1c2835; --term-fill: #243344;
+  --input: #8eaccb; --input-fill: #1a2531; --data: #84bfb1; --data-fill: #172726;
+  --store-fill: #1f262e; --hl: #e3a75e; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-text);
+  font-size: 15px; line-height: 1.55;
+}
+.wrap {
+  max-width: 1040px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 56px;
+  display: grid; gap: 32px;
+}
+header { display: grid; gap: 8px; max-width: 68ch; }
+.eyebrow {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+  font-weight: 500; margin: 0;
+}
+h1 {
+  font-family: var(--font-display); font-weight: 600; font-size: 34px; line-height: 1.15;
+  margin: 0; text-wrap: balance; color: var(--primary);
+}
+h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: 18px; margin: 0 0 12px;
+  text-wrap: balance;
+}
+.lede { margin: 0; color: var(--muted); }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; }
+.scroll { overflow-x: auto; padding: 20px 16px 8px; }
+.chart { display: block; width: 100%; min-width: 760px; height: auto; }
+figcaption {
+  border-top: 1px solid var(--rule); padding: 12px 16px; font-size: 13px; color: var(--muted);
+}
+.cols { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; }
+@media (max-width: 760px) { .cols { grid-template-columns: minmax(0, 1fr); } h1 { font-size: 28px; } }
+
+/* SVG text */
+.chart text { font-family: var(--font-text); font-size: 13px; fill: var(--fg); }
+.chart .t-b { font-weight: 600; }
+.chart .t-mut { fill: var(--muted); }
+.chart .t-sm { font-size: 12px; fill: var(--muted); }
+.chart .m { font-family: var(--font-math); font-size: 15px; }
+.chart .mi { font-family: var(--font-math); font-style: italic; font-size: 15px; }
+.chart .sb { font-size: 9.5px; font-family: var(--font-math); font-style: italic; }
+.chart .lbl { font-size: 12px; fill: var(--muted); }
+.chart .lbl.halo { paint-order: stroke; stroke: var(--surface); stroke-width: 6px; stroke-linejoin: round; }
+/* SVG symbols */
+.s-term { fill: var(--term-fill); stroke: var(--primary); stroke-width: 1.2; }
+.s-proc { fill: var(--primary-fill); stroke: var(--primary); stroke-width: 1.2; }
+.s-bar { fill: none; stroke: var(--primary); stroke-width: 1.2; }
+.s-in { fill: var(--input-fill); stroke: var(--input); stroke-width: 1.2; }
+.s-data { fill: var(--data-fill); stroke: var(--data); stroke-width: 1.2; }
+.s-store { fill: var(--store-fill); stroke: var(--muted); stroke-width: 1.2; }
+.flow, .line { fill: none; stroke: var(--muted); stroke-width: 1.2; }
+.ahead { fill: var(--muted); }
+.dot { fill: var(--muted); }
+.ann { fill: none; stroke: var(--muted); stroke-width: 1; }
+.ann-dash { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 2.5; }
+.node { transition: opacity 0.15s ease; }
+.chart.focus .node { opacity: 0.28; }
+.chart.focus .flows { opacity: 0.35; }
+.chart.focus .node.on { opacity: 1; }
+.chart.focus .node.on rect, .chart.focus .node.on path:not(.s-bar), .chart.focus .node.on polygon {
+  stroke: var(--hl); stroke-width: 2.2;
+}
+
+/* Glossary */
+.sets { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.sets li {
+  display: grid; grid-template-columns: 3.2em minmax(0, 1fr); gap: 12px; align-items: baseline;
+  padding: 7px 10px; border-radius: 4px; cursor: default; outline: none;
+}
+.sets li:hover, .sets li:focus-visible, .sets li.on { background: var(--primary-fill); }
+.sets li:focus-visible { box-shadow: 0 0 0 2px var(--hl); }
+.sym { font-family: var(--font-math); font-size: 19px; line-height: 1; }
+.sym sub { font-size: 11px; font-style: italic; }
+.sets .src { color: var(--muted); font-size: 13px; }
+.hint { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+
+/* Symbol key */
+.key { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
+.key li { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+.key svg { width: 46px; height: 26px; flex: none; overflow: visible; }
+.abbr { margin: 18px 0 0; font-size: 14px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; }
+.abbr dt { font-weight: 600; }
+.abbr dd { margin: 0; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+code { font-size: 12.5px; }
+@media (prefers-reduced-motion: reduce) { .node { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Methodology · procedure per sampled app</p>
+    <h1>Thesis Study Design</h1>
+    <p class="lede">How each health-tracker app is analysed: the provider's own communications are coded,
+      the app is walked through, and harm trees show which reachable harms the provider leaves
+      unmentioned. Every step feeds the four research questions.</p>
+  </header>
+
+  <figure>
+    <div class="scroll">
+<svg class="chart" viewBox="0 0 950 1005" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-title">
+<title id="fig-title">Study design flowchart</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,1 L10,5 L0,9 Z"/></marker></defs>
+<g class="flows">
+<path class="line" d="M470,54 V80"/>
+<path class="flow" d="M470,80 H110 V116" marker-end="url(#ah)"/>
+<path class="flow" d="M470,80 H290 V116" marker-end="url(#ah)"/>
+<path class="flow" d="M470,80 H740 V121" marker-end="url(#ah)"/>
+<path class="flow" d="M110,183 V234" marker-end="url(#ah)"/>
+<path class="flow" d="M290,183 V234" marker-end="url(#ah)"/>
+<path class="flow" d="M740,179 V234" marker-end="url(#ah)"/>
+<path class="flow" d="M370,282 H570" marker-end="url(#ah)"/>
+<text x="470" y="272" text-anchor="middle" class="lbl"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<text x="470" y="298" text-anchor="middle" class="lbl"><tspan>reference sets</tspan></text>
+<path class="flow" d="M200,330 V379" marker-end="url(#ah)"/>
+<path class="flow" d="M740,330 V379" marker-end="url(#ah)"/>
+<path class="flow" d="M470,476 V538" marker-end="url(#ah)"/>
+<path class="line" d="M200,485 V594"/>
+<path class="flow" d="M200,594 H325" marker-end="url(#ah)"/>
+<text x="262" y="586" text-anchor="middle" class="lbl"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<path class="line" d="M740,485 V594"/>
+<path class="flow" d="M740,594 H615" marker-end="url(#ah)"/>
+<text x="678" y="586" text-anchor="middle" class="lbl"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">O</tspan></text>
+<path class="flow" d="M470,650 V696" marker-end="url(#ah)"/>
+<path class="flow" d="M200,594 V832" marker-end="url(#ah)"/>
+<text x="192" y="716" text-anchor="end" class="lbl"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<path class="flow" d="M740,594 V832" marker-end="url(#ah)"/>
+<text x="748" y="716" text-anchor="start" class="lbl"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">O</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒜</tspan></text>
+<path class="flow" d="M470,784 V832" marker-end="url(#ah)"/>
+<path class="line" d="M470,892 V918"/>
+<path class="flow" d="M470,918 H118 V944" marker-end="url(#ah)"/>
+<path class="flow" d="M470,918 H356 V944" marker-end="url(#ah)"/>
+<path class="flow" d="M470,918 H594 V944" marker-end="url(#ah)"/>
+<path class="flow" d="M470,918 H832 V944" marker-end="url(#ah)"/>
+<circle class="dot" cx="470" cy="80" r="3.2"/>
+<circle class="dot" cx="200" cy="594" r="3.2"/>
+<circle class="dot" cx="740" cy="594" r="3.2"/>
+<circle class="dot" cx="470" cy="918" r="3.2"/>
+<path class="ann-dash" d="M562,32 H604"/>
+<path class="ann" d="M612,14 H604 V50 H612"/>
+<text x="614" y="28" class="t-sm">P1–P4 are repeated for every</text>
+<text x="614" y="44" class="t-sm">app in the sample.</text>
+</g>
+<g class="node" id="start" data-sets="" role="img" aria-label="Sampled app">
+<rect class="s-term" x="378.0" y="10.0" width="184" height="44" rx="22.0"/><text x="470" y="36.0" text-anchor="middle" class="t-b"><tspan>Sampled app </tspan><tspan class="mi">a</tspan></text>
+</g>
+<g class="node" id="pol" data-sets="" role="img" aria-label="Privacy policy">
+<path class="s-in" d="M35.0,116.0 H185.0 V181.0 C128.0,164.2 92.0,197.8 35.0,181.0 Z"/><text x="110" y="144.0" text-anchor="middle" class="t-b"><tspan>Privacy policy</tspan></text>
+<text x="110" y="160.0" text-anchor="middle" class="t"><tspan>(PP)</tspan></text>
+</g>
+<g class="node" id="sec" data-sets="" role="img" aria-label="Secondary">
+<path class="s-in" d="M222.0,104.0 H382.0 V169.0 C321.2,152.2 282.8,185.8 222.0,169.0 Z"/><path class="s-in" d="M216.0,110.0 H376.0 V175.0 C315.2,158.2 276.8,191.8 216.0,175.0 Z"/><path class="s-in" d="M210.0,116.0 H370.0 V181.0 C309.2,164.2 270.8,197.8 210.0,181.0 Z"/><text x="290" y="144.0" text-anchor="middle" class="t-b"><tspan>Secondary</tspan></text>
+<text x="290" y="160.0" text-anchor="middle" class="t-b"><tspan>communications (SC)</tspan></text>
+</g>
+<g class="node" id="ui" data-sets="" role="img" aria-label="App interface">
+<path class="s-in" d="M617.0,150 C625.0,126.0 631.0,121.0 647.0,121.0 H823.0 C853.0,121.0 853.0,179.0 823.0,179.0 H647.0 C631.0,179.0 625.0,174.0 617.0,150 Z"/><text x="740" y="146.0" text-anchor="middle" class="t-b"><tspan>App interface</tspan></text>
+<text x="740" y="162.0" text-anchor="middle" class="t"><tspan>installed app</tspan></text>
+</g>
+<g class="node" id="p1" data-sets="C_D H_C P_C" role="img" aria-label="P1 Content analysis">
+<rect class="s-proc" x="30.0" y="234.0" width="340" height="96"/><path class="s-bar" d="M39.0,234.0 V330.0 M361.0,234.0 V330.0"/><text x="200" y="262.0" text-anchor="middle" class="t-b"><tspan>P1 Content analysis</tspan></text>
+<text x="200" y="278.0" text-anchor="middle" class="t"><tspan>LLM-assisted, run separately on PP and SC:</tspan></text>
+<text x="200" y="294.0" text-anchor="middle" class="t"><tspan>extract components and (harm, stance)</tspan></text>
+<text x="200" y="310.0" text-anchor="middle" class="t"><tspan>and (protection, stance) pairs</tspan></text>
+</g>
+<g class="node" id="p2" data-sets="C_D P_C C_O A" role="img" aria-label="P2 Cognitive walkthrough">
+<rect class="s-proc" x="570.0" y="234.0" width="340" height="96"/><path class="s-bar" d="M579.0,234.0 V330.0 M901.0,234.0 V330.0"/><text x="740" y="262.0" text-anchor="middle" class="t-b"><tspan>P2 Cognitive walkthrough</tspan></text>
+<text x="740" y="278.0" text-anchor="middle" class="t"><tspan>identify components beyond those disclosed;</tspan></text>
+<text x="740" y="294.0" text-anchor="middle" class="t"><tspan>rate the accessibility of each</tspan></text>
+<text x="740" y="310.0" text-anchor="middle" class="t"><tspan>claimed protection</tspan></text>
+</g>
+<g class="node" id="o1" data-sets="C_D H_C P_C" role="img" aria-label="Communicated properties">
+<polygon class="s-data" points="48.0,379.0 378.0,379.0 352.0,485.0 22.0,485.0"/><text x="58.0" y="404.0" text-anchor="start" class="t-b"><tspan>Communicated properties</tspan></text>
+<text x="58.0" y="420.0" class="t"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan></text>
+<text x="92.0" y="420.0" class="t"><tspan>disclosed system components</tspan></text>
+<text x="58.0" y="436.0" class="t"><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<text x="92.0" y="436.0" class="t"><tspan>(harm, stance) pairs</tspan></text>
+<text x="58.0" y="452.0" class="t"><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<text x="92.0" y="452.0" class="t"><tspan>(protection, stance) pairs</tspan></text>
+<text x="92.0" y="468.0" class="t-mut"><tspan>each set per source, PP and SC</tspan></text>
+</g>
+<g class="node" id="trees" data-sets="" role="img" aria-label="Reference harm trees">
+<path class="s-store" d="M395.0,388.0 H545.0 Q527.0,432 545.0,476.0 H395.0 Q377.0,432 395.0,388.0 Z"/><text x="466" y="412.0" text-anchor="middle" class="t-b"><tspan>Reference</tspan></text>
+<text x="466" y="428.0" text-anchor="middle" class="t-b"><tspan>harm trees</tspan></text>
+<text x="466" y="444.0" text-anchor="middle" class="t"><tspan>components of all</tspan></text>
+<text x="466" y="460.0" text-anchor="middle" class="t"><tspan>apps, built once</tspan></text>
+</g>
+<g class="node" id="o2" data-sets="C_O A" role="img" aria-label="Walkthrough findings">
+<polygon class="s-data" points="588.0,379.0 918.0,379.0 892.0,485.0 562.0,485.0"/><text x="598.0" y="404.0" text-anchor="start" class="t-b"><tspan>Walkthrough findings</tspan></text>
+<text x="598.0" y="420.0" class="t"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">O</tspan></text>
+<text x="632.0" y="420.0" class="t"><tspan>observed components not in </tspan><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5">,</tspan></text>
+<text x="632.0" y="436.0" class="t-mut"><tspan>checked against PP and PP + SC</tspan></text>
+<text x="598.0" y="452.0" class="t"><tspan class="m">𝒜</tspan></text>
+<text x="632.0" y="452.0" class="t"><tspan>accessibility of each </tspan><tspan class="mi">p</tspan><tspan> ∈ </tspan><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan><tspan dy="-3.5" dx="1.5">,</tspan></text>
+<text x="632.0" y="468.0" class="t-mut"><tspan>from easily accessible to missing</tspan></text>
+</g>
+<g class="node" id="p3" data-sets="C_D C_O H_C P_C H_R H_U E" role="img" aria-label="P3 Harm-tree analysis">
+<rect class="s-proc" x="325.0" y="538.0" width="290" height="112"/><path class="s-bar" d="M334.0,538.0 V650.0 M606.0,538.0 V650.0"/><text x="470" y="566.0" text-anchor="middle" class="t-b"><tspan>P3 Harm-tree analysis</tspan></text>
+<text x="470" y="582.0" text-anchor="middle" class="t"><tspan>find the harms reachable on </tspan><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5"> ∪ </tspan><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">O</tspan><tspan dy="-3.5" dx="1.5">;</tspan></text>
+<text x="470" y="598.0" text-anchor="middle" class="t"><tspan>flag those not mentioned or minimised;</tspan></text>
+<text x="470" y="614.0" text-anchor="middle" class="t"><tspan>test whether each protection</tspan></text>
+<text x="470" y="630.0" text-anchor="middle" class="t"><tspan>prevents the harms it cites</tspan></text>
+</g>
+<g class="node" id="o3" data-sets="H_R H_U E" role="img" aria-label="Harm-tree results">
+<polygon class="s-data" points="328.0,696.0 638.0,696.0 612.0,784.0 302.0,784.0"/><text x="338.0" y="720.0" text-anchor="start" class="t-b"><tspan>Harm-tree results</tspan></text>
+<text x="338.0" y="736.0" class="t"><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">R</tspan></text>
+<text x="372.0" y="736.0" class="t"><tspan>reachable harms</tspan></text>
+<text x="338.0" y="752.0" class="t"><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">U</tspan></text>
+<text x="372.0" y="752.0" class="t"><tspan>unmentioned, </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">R</tspan><tspan dy="-3.5" dx="1.5"> ∖ </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+<text x="338.0" y="768.0" class="t"><tspan class="m">ℰ</tspan></text>
+<text x="372.0" y="768.0" class="t"><tspan>effectiveness of each </tspan><tspan class="mi">p</tspan><tspan> ∈ </tspan><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan></text>
+</g>
+<g class="node" id="p4" data-sets="C_D H_C P_C C_O A H_R H_U E" role="img" aria-label="P4 Comparison and reporting by research question">
+<rect class="s-proc" x="140.0" y="832.0" width="660" height="60"/><text x="470" y="858.0" text-anchor="middle" class="t-b"><tspan>P4 Comparison and reporting by research question</tspan></text>
+<text x="470" y="874.0" text-anchor="middle" class="t"><tspan>for two scopes, PP alone and PP + SC, and for the coherence between PP and SC</tspan></text>
+</g>
+<g class="node" id="rq1" data-sets="C_D C_O H_R H_U" role="img" aria-label="RQ1 Coverage">
+<rect class="s-term" x="12.0" y="944.0" width="212" height="52" rx="26.0"/><text x="118" y="966.0" text-anchor="middle" class="t-b"><tspan>RQ1 Coverage</tspan></text>
+<text x="118" y="982.0" text-anchor="middle" class="t-sm"><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">D</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒞</tspan><tspan class="sb" dy="3.5" dx="0.6">O</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">R</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">U</tspan></text>
+</g>
+<g class="node" id="rq2" data-sets="H_C" role="img" aria-label="RQ2 Stance">
+<rect class="s-term" x="250.0" y="944.0" width="212" height="52" rx="26.0"/><text x="356" y="966.0" text-anchor="middle" class="t-b"><tspan>RQ2 Stance</tspan></text>
+<text x="356" y="982.0" text-anchor="middle" class="t-sm"><tspan class="m">ℋ</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan><tspan dy="-3.5" dx="1.5"> with stance</tspan></text>
+</g>
+<g class="node" id="rq3" data-sets="P_C A E" role="img" aria-label="RQ3 Protection">
+<rect class="s-term" x="488.0" y="944.0" width="212" height="52" rx="26.0"/><text x="594" y="966.0" text-anchor="middle" class="t-b"><tspan>RQ3 Protection</tspan></text>
+<text x="594" y="982.0" text-anchor="middle" class="t-sm"><tspan class="m">𝒫</tspan><tspan class="sb" dy="3.5" dx="0.6">C</tspan><tspan dy="-3.5" dx="1.5">, </tspan><tspan class="m">𝒜</tspan><tspan>, </tspan><tspan class="m">ℰ</tspan></text>
+</g>
+<g class="node" id="rq4" data-sets="C_D H_C P_C" role="img" aria-label="RQ4 Surfaces">
+<rect class="s-term" x="726.0" y="944.0" width="212" height="52" rx="26.0"/><text x="832" y="966.0" text-anchor="middle" class="t-b"><tspan>RQ4 Surfaces</tspan></text>
+<text x="832" y="982.0" text-anchor="middle" class="t-sm"><tspan>PP–SC coherence</tspan></text>
+</g>
+</svg>
+    </div>
+    <figcaption>Data flowchart with ISO 5807 symbols. P1–P4 run once per app; the reference harm
+      trees are built once, from the components of all apps.</figcaption>
+  </figure>
+
+  <div class="cols">
+    <section aria-labelledby="h-sets">
+      <h2 id="h-sets">Sets</h2>
+      <ul class="sets" id="sets">
+        <li tabindex="0" data-set="C_D"><span class="sym">𝒞<sub>D</sub></span><span>Disclosed system components <span class="src">· P1</span></span></li>
+        <li tabindex="0" data-set="H_C"><span class="sym">ℋ<sub>C</sub></span><span>Communicated harms, each with its stance <span class="src">· P1</span></span></li>
+        <li tabindex="0" data-set="P_C"><span class="sym">𝒫<sub>C</sub></span><span>Claimed protections, each with its stance <span class="src">· P1</span></span></li>
+        <li tabindex="0" data-set="C_O"><span class="sym">𝒞<sub>O</sub></span><span>Components observed in the walkthrough but not in 𝒞<sub>D</sub> <span class="src">· P2</span></span></li>
+        <li tabindex="0" data-set="A"><span class="sym">𝒜</span><span>Accessibility of each claimed protection, from easily accessible to missing <span class="src">· P2</span></span></li>
+        <li tabindex="0" data-set="H_R"><span class="sym">ℋ<sub>R</sub></span><span>Harms reachable from 𝒞<sub>D</sub> ∪ 𝒞<sub>O</sub> in the harm trees <span class="src">· P3</span></span></li>
+        <li tabindex="0" data-set="H_U"><span class="sym">ℋ<sub>U</sub></span><span>Reachable harms the provider does not mention, ℋ<sub>R</sub> ∖ ℋ<sub>C</sub> <span class="src">· P3</span></span></li>
+        <li tabindex="0" data-set="E"><span class="sym">ℰ</span><span>Whether each claimed protection prevents the harms it cites <span class="src">· P3</span></span></li>
+      </ul>
+      <p class="hint">Point at or tab to a set to see where it is produced and used.</p>
+    </section>
+
+    <section aria-labelledby="h-key">
+      <h2 id="h-key">Symbols (ISO 5807)</h2>
+      <ul class="key">
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><rect class="s-term" x="1" y="3" width="44" height="20" rx="10"/></svg>Terminator</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><rect class="s-proc" x="1" y="3" width="44" height="20"/><path class="s-bar" d="M6,3 V23 M40,3 V23"/></svg>Predefined process</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="s-in" d="M1,2 H45 V19 C30,14 16,26 1,19 Z"/></svg>Document</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><rect class="s-proc" x="1" y="3" width="44" height="20"/></svg>Process</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="s-in" d="M9,-2 H49 V14 C36,10 22,20 9,14 Z"/><path class="s-in" d="M5,2 H45 V18 C32,14 18,24 5,18 Z"/><path class="s-in" d="M1,6 H41 V22 C28,18 14,28 1,22 Z"/></svg>Multiple documents</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><polygon class="s-data" points="8,3 45,3 38,23 1,23"/></svg>Data</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="s-in" d="M1,13 C4,5 7,3 12,3 H34 C46,3 46,23 34,23 H12 C7,23 4,21 1,13 Z"/></svg>Display</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="s-store" d="M7,3 H45 Q38,13 45,23 H7 Q0,13 7,3 Z"/></svg>Stored data</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="flow" d="M2,13 H40"/><path class="ahead" d="M38,9 L45,13 L38,17 Z"/></svg>Flow line</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="line" d="M2,13 H44"/><circle class="dot" cx="23" cy="13" r="3.2"/></svg>Junction</li>
+        <li><svg viewBox="0 0 46 26" aria-hidden="true"><path class="ann-dash" d="M2,13 H30"/><path class="ann" d="M42,4 H34 V22 H42"/></svg>Annotation</li>
+      </ul>
+      <dl class="abbr">
+        <dt>PP</dt><dd>Privacy policy</dd>
+        <dt>SC</dt><dd>Secondary communications: the store listing (app description and feature list) and the provider's website, including blog posts</dd>
+        <dt>RQ1–4</dt><dd>Coverage, Stance, Protection, Surfaces, as defined in the methodology</dd>
+      </dl>
+    </section>
+  </div>
+
+  <footer>Figure source for the thesis: <code>03_Thesis/figures/study-design.tex</code>. This page shows the planned design, which the methodology chapter does not describe yet.</footer>
+</div>
+
+<script>
+(function () {
+  var chart = document.querySelector(".chart");
+  var nodes = chart.querySelectorAll(".node");
+  var items = document.querySelectorAll("#sets li");
+  function show(set, li) {
+    chart.classList.add("focus");
+    nodes.forEach(function (n) {
+      var sets = (n.getAttribute("data-sets") || "").split(" ");
+      n.classList.toggle("on", sets.indexOf(set) !== -1);
+    });
+    items.forEach(function (i) { i.classList.toggle("on", i === li); });
+  }
+  function clear() {
+    chart.classList.remove("focus");
+    nodes.forEach(function (n) { n.classList.remove("on"); });
+    items.forEach(function (i) { i.classList.remove("on"); });
+  }
+  items.forEach(function (li) {
+    var set = li.getAttribute("data-set");
+    li.addEventListener("mouseenter", function () { show(set, li); });
+    li.addEventListener("focus", function () { show(set, li); });
+    li.addEventListener("mouseleave", clear);
+    li.addEventListener("blur", clear);
+  });
+})();
+</script>
