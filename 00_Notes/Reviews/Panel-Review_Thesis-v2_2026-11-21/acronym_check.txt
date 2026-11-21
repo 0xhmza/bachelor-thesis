@@ -1,0 +1,34 @@
+### Acronym check (advisory; no reply needed)
+Coverage: body (partial)
+Not in this input: English abstract, Chinese abstract.
+Not checked:
+- Body, line 52: PET (the initials before its parentheses do not spell it)
+- Body, line 337: DE (the initials before its parentheses do not spell it)
+
+| Scope | Line | Rule | Acronym | Uses |
+|---|---|---|---|---|
+| Body | 6 | Not defined | FILE | 7 |
+| Body | 106 | Not defined | RQ1 | 3 |
+| Body | 119 | Not defined | FAQ | 1 |
+| Body | 127 | Not defined | RQ4 | 2 |
+| Body | 140 | Not defined | RQ2 | 2 |
+| Body | 142 | Not defined | RQ3 | 2 |
+| Body | 246 | Not defined | DiGA | 1 |
+| Body | 285 | Not defined | UTC | 1 |
+| Body | 340 | Not defined | GmbH | 1 |
+| Body | 341 | Not defined | INC | 1 |
+| Body | 341 | Not defined | WW | 1 |
+| Body | 342 | Not defined | KI | 2 |
+| Body | 343 | Not defined | LLC | 2 |
+| Body | 350 | Not defined | AI | 1 |
+| Body | 354 | Not defined | ITO | 1 |
+| Body | 372 | Not defined | GPS | 1 |
+| Body | 378 | Not defined | MO | 1 |
+| Body | 378 | Not defined | YOUNG | 1 |
+| Body | 383 | Not defined | ASICS | 2 |
+| Body | 384 | Not defined | QR | 1 |
+| Body | 446 | Not defined | JSON | 2 |
+| Body | 462 | Not defined | IN | 2 |
+| Body | 462 | Not defined | LISTED | 2 |
+| Body | 547 | Not defined | TLS | 1 |
+| Body | 552 | Not defined | ID | 1 |

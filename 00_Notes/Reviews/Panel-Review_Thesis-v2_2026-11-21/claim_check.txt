@@ -1,0 +1,9 @@
+## Attachment: Reviewer Claim Check (advisory, #1002)
+
+The judge answered 41 of 41 findings from 5 reviewers: it marked 1 as contradicted, and 3 cannot be checked from the manuscript alone.
+
+The judge marked these findings as contradicted by the manuscript. The script checked only the words of each quote: that they occur in the manuscript, or, for words the finding quotes, that they do not. The judge gave the locations, and the script did not check them. Read each quote to decide:
+- Reviewer 1 · W8: Where the frozen snapshot and screening file are archived is not stated
+  > “"screening": "04\_Study/4.4\_App-Sampling/screening-android.csv", "output": "04\_Study/4.4\_App-Sampling/scripts/googleplay-scraper/v007/output"” (Appendix B, Listing B.1 (config.json lines 65-66, inside the printed range 57-67); the prose says search.json and pages.jsonl are written to this output folder)
+
+The author decides what to do with each row. This check does not change the decision, the consensus counts, or the Revision Roadmap. The judge is the session model; as this judge, the #1002 contrast test passed Claude Opus 5.5 and Claude Fable 5.1 (gpt-6-astra and Gemini 4 Argon passed it in part one, through other transports); other models are untested.
