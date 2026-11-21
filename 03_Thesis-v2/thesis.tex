@@ -1,0 +1,65 @@
+%======================================================================
+%  BACHELOR'S THESIS, second version (Android sample)
+%  Ruhr-Universität Bochum, IT-Sicherheit; carried out at MPI-SP
+%  Layout: RUB thesis template (bossthesis.cls, bosscoverpage.sty, boss/).
+%
+%  One-sided, so that no chapter is preceded by an empty page.
+%  Bibliography: ../03_Thesis/references.bib (the only bibliography).
+%  Appendix B reads the sampling script from ../04_Study/.
+%  Build: latexmk (pdflatex, bibtex, pdflatex, pdflatex).
+%======================================================================
+\documentclass[its]{bossthesis}
+
+\input{config/metadata}
+\input{config/preamble}
+
+\author{\authorname}
+\title{\thesistitle}
+\thesistype{\thesiskind}
+\thesiscite{\thesiscitetype}
+\birthday{\birthdate}
+\birthplace{\birthplacename}
+\thesisstart{\startdate}
+\thesisend{\submissiondate}
+\institute{\thechair}
+\instituteaddress{\thechairaddress}
+\advisors{& \textbf{\advisorname}\\}
+\examiners{First examiner: & \textbf{\examinerone}\\
+           Second examiner: & \textbf{\examinertwo}\\}
+\aitools{\aitoollist}
+
+%======================================================================
+\begin{document}
+
+\pagestyle{fancy}
+\pagenumbering{roman}
+\maketitle
+
+\clearpage
+\tableofcontents
+
+%---------------------------- Main matter -----------------------------
+\clearpage
+\pagenumbering{arabic}
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_related_work}
+\input{chapters/04_methodology}
+\input{chapters/05_results}
+
+%---------------------------- Back matter -----------------------------
+\clearpage
+\pagestyle{fancy-lists}
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}%
+\chaptermark{\bibname}
+\printbibliography[title={\bibname}]
+
+\clearpage
+\pagestyle{fancy}
+\appendix
+\input{appendix/A_app_sample}
+\input{appendix/B_scraping_script}
+
+\end{document}

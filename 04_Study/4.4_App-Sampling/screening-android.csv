@@ -1,0 +1,141 @@
+id,name,decision,rule,category,reason,source
+de.komoot.android,komoot - Wandern und Radfahren,eligible,,activity,records rides and hikes with GPS in a personal log,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.weightwatchers.mobile,Weight Watchers Programm,eligible,,diet-weight,food activity and sleep tracking (subscription; free to install),"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.imangi.templerun2,Temple Run 2,excluded,X2,,game,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.yazio.android,Yazio: KI Kalorienzähler,eligible,,diet-weight,calorie counter and food diary,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.fitbit.FitbitMobile,Google Health (Fitbit),eligible,,multiple,Fitbit companion: activity sleep and health data,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.runtastic.android,adidas Running: Lauftracker,eligible,,activity,records runs walks and workouts,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.garmin.android.apps.connectmobile,Garmin Connect™,eligible,,multiple,companion app of Garmin wearables; shows recorded activities and health data over time,screened 21 Nov 2026 from the German store page
+com.sec.android.app.shealth,Samsung Health,eligible,,multiple,"preinstalled app of the leading Android vendor; records fitness, weight, nutrition and sleep, many activities automatically",screened 21 Nov 2026 from the German store page
+com.popularapp.periodcalendar,"Periodenkalender, Zyklus",eligible,,cycle,period ovulation and pregnancy tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.myfitnesspal.android,MyFitnessPal: Kalorien Tracker,eligible,,diet-weight,food calorie and fitness tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.huami.watch.hmwatchmanager,Zepp,eligible,,multiple,"companion app of Amazfit wearables; records training, health, recovery and nutrition data",screened 21 Nov 2026 from the German store page
+com.xiaomi.hm.health,Zepp Life,eligible,,multiple,"companion app of Mi Band and Mi scales; records activity, sleep and workouts",screened 21 Nov 2026 from the German store page
+com.sillens.shapeupclub,Lifesum: Kalorienzähler AI,eligible,,diet-weight,food and calorie tracking,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+homeworkout.homeworkouts.noequipment,Workouts zuhause - ohne Geräte,eligible,,activity,records training progress automatically and tracks body weight,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.xiaomi.wearable,Mi Fitness (Xiaomi Wear),eligible,,multiple,companion app of Xiaomi wearables; training and fitness tracker,screened 21 Nov 2026 from the German store page
+sixpack.sixpackabs.absworkout,Sixpack in 30 Tagen,eligible,,activity,records training progress automatically,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.tayu.tau.pedometer,Schrittzähler & Pedometer,eligible,,activity,step counter,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.hp.pregnancy.lite,Schwangerschaft + Tracker-App,eligible,,pregnancy,pregnancy tracking with contraction recorder,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+pedometer.steptracker.calorieburner.stepcounter,Schrittzähler - Pedometer,eligible,,activity,step counter,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+menloseweight.loseweightappformen.weightlossformen,Abnehmen für Männer-30 Tagen,eligible,,activity,tracks calories burned and weight loss over time,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.fddb,Fddb: KI Kalorienzähler & Diät,eligible,,diet-weight,calorie counter and food diary,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.babycenter.pregnancytracker,Pregnancy App & Baby Tracker,eligible,,pregnancy,due-date pregnancy tracker with kick counter,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.ovelin.guitartuna,GuitarTuna: Gitarre Stimmgerät,excluded,X2,,"guitar tuner (found by ""Stimmung"", which also means tuning)",screened 21 Nov 2026 from the German store page
+org.iggymedia.periodtracker,Flo Zyklus- & Periodenkalender,eligible,,cycle,period ovulation and pregnancy tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.fatsecret.android,Kalorienzähler von fatsecret,eligible,,diet-weight,food and weight tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+cc.pacer.androidapp,Pacer Pedometer: Schrittzähler,eligible,,activity,step and calorie tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+steptracker.healthandfitness.walkingtracker.pedometer,"Schrittzähler - Health , iStep",eligible,,activity,records daily steps automatically,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.google.android.apps.fitness,Google Fit: Aktivitätstracker,eligible,,activity,records activity steps and cardio points,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+in.sweatco.app,Sweatcoin Schrittzähler,eligible,,activity,step tracking with rewards,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.freeletics.lite,Freeletics: Fitness Workouts,eligible,,activity,tracks workouts and progress,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.clue.android,Clue Perioden Kalender,eligible,,cycle,cycle and fertility tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+pedometer.stepcounter.calorieburner.pedometerforwalking,Schrittzähler - Pedometer,eligible,,activity,step counter,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+monitoryourweight.bustan.net,Überwache dein Gewicht,eligible,,diet-weight,weight log,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.withings.wiscale2,Withings,eligible,,multiple,"companion app of Withings scales, watches and blood pressure monitors; collects weight, activity, blood pressure and sleep data",screened 21 Nov 2026 from the German store page
+com.strava,Strava: Laufen & Radfahren,eligible,,activity,records activities,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.sportractive,GPS Laufen Joggen & Radfahren,eligible,,activity,records runs rides and other activities with GPS,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.doubleugames.DoubleUCasino,DoubleU Casino™ - Vegas-Spiele,excluded,X2,,casino game,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+net.daylio,Daylio Tagebuch & Gewohnheiten,eligible,,mood,mood diary,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+droom.sleepIfUCan,Alarmy – Wecker und Schlaf,eligible,,sleep,alarm clock with sleep and snoring tracker,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.urbandroid.sleep,Sleep as Android: Schlafzyklen,eligible,,sleep,sleep cycle tracking alarm,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+loseweight.weightloss.workout.fitness,Abnehmen in 30 Tagen - Fitness,eligible,,activity,workouts with weight-loss tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.nike.plusgps,Nike Run Club: Laufen & Cardio,eligible,,activity,records runs,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.crrepa.band.dafit,Da Fit,eligible,,multiple,companion app of a smart band; records sleep and health data day and night,screened 21 Nov 2026 from the German store page
+loseweightapp.loseweightappforwomen.womenworkoutathome,Abnehm-App für Frauen,eligible,,activity,tracks calories burned and weight loss over time,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.yc.gloryfit,GloryFit,eligible,,multiple,"companion app of a smartwatch; records steps, sleep and heart rate",screened 21 Nov 2026 from the German store page
+com.lbrc.PeriodCalendar,Periodenkalender - Zyklus,eligible,,cycle,cycle ovulation and symptom tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+bodyfast.zero.fastingtracker.weightloss,Intervallfasten - Fasten-App,eligible,,diet-weight,fasting tracker,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.fitnesskeeper.runkeeper.pro,ASICS Runkeeper: Running App,eligible,,activity,records runs,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+heartratemonitor.heartrate.pulse.pulseapp,Herzfrequenzmesser - Puls,eligible,,heart,heart rate measurement with health log,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.calm.android,Calm: Meditation und Schlaf,excluded,X4,,meditation and sleep content; records only meditation streaks and no mood or sleep data (as on the App Store),"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.stt.android,Sports Tracker,eligible,,activity,records activities with GPS and keeps a sports diary,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+stepcounter.pedometer.stepstracker,Schrittzähler - Pedometer,eligible,,activity,records daily steps automatically,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+losebellyfat.flatstomach.absworkout.fatburning,Bauchfett Verlieren,eligible,,activity,belly-fat workouts; tracks weight-loss progress and calories burned,screened 21 Nov 2026 from the German store page
+com.getsomeheadspace.android,Headspace Schlaf & Meditation,eligible,,mood,tracks mental health with goals and progress (as on the App Store),"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.sleepmonitor.aio,Sleep Monitor - Schlaftracker,eligible,,sleep,records and analyses sleep,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+io.foodvisor.foodvisor,Foodvisor - KI Kalorien Zähler,eligible,,diet-weight,calorie tracking,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.popularapp.thirtydayfitnesschallenge,30 Tage Fitness Challenge,eligible,,activity,30-day workout challenges; records training automatically,screened 21 Nov 2026 from the German store page
+com.topstep.fitcloudpro,FitCloudPro,eligible,,multiple,"companion app of smartwatches; records steps, sleep, heart rate and blood oxygen",screened 21 Nov 2026 from the German store page
+com.macadamapp,"Macadam, Der Schrittzähler.",eligible,,activity,step tracking with rewards,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+ipnossoft.rma.free,BetterSleep: Einschlafhilfe,excluded,X1,,sleep sounds and stories; listing states no sleep recording (as on the App Store),"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+de.aktiwir.aktibmi,BMI Rechner & Gewichtstagebuch,eligible,,diet-weight,BMI calculator with weight diary,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+weightloss.weightlossforwomen.workoutforwomen.womenworkout,Abnehmen für Frauen: Zuhause,eligible,,activity,tracks weight-loss progress and calories,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.watch.life,VeryFit,eligible,,multiple,"companion app of smartwatches and fitness bands; records activities, workouts and recovery",screened 21 Nov 2026 from the German store page
+de.twopeaches.babelli,Babelli Schwangerschafts App,eligible,,pregnancy,pregnancy diary and week-by-week tracking from the due date,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.ovyapp.android,Ovy App Verhütung Kinderwunsch,eligible,,cycle,symptothermal cycle tracking for contraception and conception,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+armworkout.armworkoutformen.armexercises,Armtraining,eligible,,activity,arm workouts; records training progress automatically,screened 21 Nov 2026 from the German store page
+com.hp.babyapp,Baby + | Dein Baby-Tracker,excluded,X3,,baby tracker; tracks a child not the user's own data,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+digifit.virtuagym.foodtracker,Virtuafood: KI-Kalorienzähler,eligible,,diet-weight,calorie tracking,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+periodtracker.pregnancy.ovulationtracker,"Menstruationskalender, Zyklus",eligible,,cycle,period and ovulation calendar with predictions,screened 21 Nov 2026 from the German store page
+cn.xiaofengkj.fitpro,fitpro,eligible,,multiple,"companion app of fitness bands; records steps, activity and sleep",screened 21 Nov 2026 from the German store page
+com.nike.ntc,Nike Training Club,eligible,,activity,logs workouts and progress in an activity tab,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.mapmyrun.android2,Map My Run: Running Tracker,eligible,,activity,run tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+de.urbia.eisprungkalender,Eisprungkalender von urbia.de,eligible,,cycle,cycle and ovulation calendar with predictions of period and fertile days,screened 21 Nov 2026 from the German store page
+com.preventicus.heartbeats,Preventicus Heartbeats,eligible,,heart,certified medical device (not a DiGA on the listing); regular heart-rhythm measurements with the camera and recommendations from them,screened 21 Nov 2026 from the German store page
+com.zeopoxa.fitness.cycling.bike,Radfahren — Fahrrad Tracker,eligible,,activity,GPS cycling computer that records rides with reports,screened 21 Nov 2026 from the German store page
+pilatesworkout.yogaworkout.loseweight.workoutapps,Pilates zu Hause - Fitness,eligible,,activity,pilates workouts; records progress automatically,screened 21 Nov 2026 from the German store page
+com.toursprung.bikemap,Bikemap: Fahrrad Navi & GPS,eligible,,activity,records rides,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+se.perigee.android.seven,Seven: 7 Minuten Workout,eligible,,activity,records completed workouts and calories,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+musclebooster.workout.home.gym.abs.loseweight,Muscle Booster Trainingsplan,eligible,,activity,tracks workout progress and results,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.northcube.sleepcycle,Sleep Cycle: Sleep Tracker,eligible,,sleep,sleep tracking alarm,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+si.modula.android.instantheartrate,Sofortige Herzfrequenz,eligible,,heart,heart rate measurement with history,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+fitnesscoach.workoutplanner.weightloss,Fitness App: Workout zuhause,eligible,,activity,"home workout plans; tracks steps, water, weight, workouts and calories over time",screened 21 Nov 2026 from the German store page
+com.weward,WeWard – die Walking-App,eligible,,activity,step tracking with rewards,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.nianticlabs.pikmin,Pikmin Bloom,excluded,X2,,game that rewards walking,screened 21 Nov 2026 from the German store page
+com.etekcity.vesyncplatform,VeSync,eligible,,diet-weight,"companion app of smart scales and home devices; tracks weight, meals and health data over time",screened 21 Nov 2026 from the German store page
+com.snorelab.app,SnoreLab : Schnarchanalyse,eligible,,sleep,records and tracks snoring at night,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.gravid.gravid,Preglife - Schwangerschaftsapp,excluded,X1,,pregnancy content; listing states no recording of the user's data,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.hevy,Hevy - Gym & Trainingstagebuch,eligible,,activity,workout log,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.aumio.app,Aumio: Schlaf & Einschlafhilfe,excluded,X1,,bedtime stories for children,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.winwalk.android,Winwalk - Steps-App mit Geld,eligible,,activity,step counter that rewards steps with vouchers,screened 21 Nov 2026 from the German store page
+com.stepsappgmbh.stepsapp,StepsApp Schrittzähler,eligible,,activity,step counter with daily history,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.google.android.apps.healthdata,Health Connect,excluded,X6,,system service that stores and shares data recorded by other apps; no tracking feature of its own on the listing,screened 21 Nov 2026 from the German store page
+com.smsrobot.period,Menstruations-Kalender Lilly,eligible,,cycle,"period, ovulation and fertility calendar with predictions",screened 21 Nov 2026 from the German store page
+in.plackal.lovecyclesfree,Maya - Periode & Gesundheit,eligible,,cycle,"period tracker with symptoms, reminders and pregnancy tracking",screened 21 Nov 2026 from the German store page
+com.period.tracker.lite,Period Tracker,eligible,,cycle,period tracking,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+jp.pokemon.pokemonsleep,Pokémon Sleep,eligible,,sleep,game that records the user's sleep with the phone or a smartwatch,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+org.bikecityguide,Bike Citizens Fahrrad-App Navi,eligible,,activity,cycling navigation that records rides in a ride overview,screened 21 Nov 2026 from the German store page
+de.aok.bv.kopra.schwanger,AOK Schwanger - Gesund Leben,eligible,,pregnancy,"pregnancy app open to everyone (some extras for AOK members); diaries of belly size, weight and mood",screened 21 Nov 2026 from the German store page
+com.wachanga.womancalendar,Clover - Periodenkalender,eligible,,cycle,menstrual cycle tracking,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+de.choosy.app,Choosy: Essensplaner & Rezepte,excluded,X1,,meal planner and recipes; records no data about the user's eating or body,screened 21 Nov 2026 from the German store page
+com.macropinch.hydra.android,Kardiograph - Cardiograph,eligible,,heart,measures heart rate with the camera; results are saved and can be viewed later,screened 21 Nov 2026 from the German store page
+com.gmail.bulupe.Scale,Scale,excluded,X2,,arcade game,screened 21 Nov 2026 from the German store page
+homeworkoutapp.homeworkout.fitness.workout.loseweight,Workout Zuhause: Fitness,eligible,,activity,home workouts with a progress tracker that records training automatically,screened 21 Nov 2026 from the German store page
+com.urbandroid.babysleep,Baby Sleep:Schnell einschlafen,excluded,X1,,plays sounds to help a baby fall asleep; records nothing,screened 21 Nov 2026 from the German store page
+com.fitness22.running,Running Distance Tracker +,eligible,,activity,GPS running tracker with a log of all runs,screened 21 Nov 2026 from the German store page
+com.tjd.tjdmainS2,Lefun Health,eligible,,multiple,"companion app of a fitness band; records steps, sleep and exercise automatically",screened 21 Nov 2026 from the German store page
+com.fitifyworkouts.bodyweight.workoutapp,Fitify: Trainingsplan App,eligible,,activity,workout history and progress,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.bm.android.thermometer,Femometer - Zyklus kalender,eligible,,cycle,period ovulation and fertility tracking,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.axiommobile.running,Anfangen zu laufen. Lauf-Coach,eligible,,activity,running plan; records statistics and the GPS route of every run,screened 21 Nov 2026 from the German store page
+com.umotional.bikeapp,Cyclers: Fahrrad Navi & Karte,eligible,,activity,cycling navigation that records the user's rides,screened 21 Nov 2026 from the German store page
+com.alltrails.alltrails,AllTrails: Wandern & Radfahren,eligible,,activity,records activities and statistics,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.walkfit.weightloss.steptracker.pedometer,Schritte Zähler: WalkFit,eligible,,activity,step counter with walking workouts for weight loss,screened 21 Nov 2026 from the German store page
+dumbbellworkout.dumbbellapp.homeworkout,Hantel-Workout zu Hause,eligible,,activity,"dumbbell workouts; tracks daily training, calories and weight-loss progress",screened 21 Nov 2026 from the German store page
+com.brc.PeriodTrackerDiary,Perioden Kalender: Mein Zyklus,eligible,,cycle,"period, ovulation and fertility calendar",screened 21 Nov 2026 from the German store page
+com.zeopoxa.fitness.running,Laufen & Joggen,eligible,,activity,"GPS running tracker that records distance, pace and calories",screened 21 Nov 2026 from the German store page
+app.weightfit.android,WeightFit: Gewichtstagebuch,eligible,,diet-weight,daily weight diary with charts of progress,screened 21 Nov 2026 from the German store page
+fitness.workouts.home.workoutspro,Homeworkout Pro,eligible,,activity,home workouts; records training progress automatically and charts weight,screened 21 Nov 2026 from the German store page
+com.mapmyride.android2,Map My Ride: Radfahren Tracker,eligible,,activity,GPS cycling tracker that records every ride and tracks progress,screened 21 Nov 2026 from the German store page
+androidgecko.com.himommy,HiMommy: Schwangerschafts-App,eligible,,pregnancy,pregnancy diary with kick and contraction counter and cycle calendar,screened 21 Nov 2026 from the German store page
+de.soehnle.connect,Soehnle Connect,eligible,,multiple,"companion app of Soehnle scales, fitness trackers and blood pressure monitors; shows measured body values and trends",screened 21 Nov 2026 from the German store page
+com.whoyaho.tanghulu,Tanghulu Master - Mukbang ASMR,excluded,X2,,game,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+io.strongapp.strong,Strong Workout Tracker Gym Log,eligible,,activity,gym workout log that records workouts over time,screened 21 Nov 2026 from the German store page
+com.urbandroid.sleep.full.key,Sleep as Android Unlock,excluded,I6,,paid unlock key for Sleep as Android; not free to install,screened 21 Nov 2026 from the German store page
+com.fitapp,Lauf App & KM Zähler – FITAPP,eligible,,activity,GPS tracker for running and other sports with weekly and monthly statistics,screened 21 Nov 2026 from the German store page
+com.mapmywalk.android2,Map My Walk: Walking Tracker,eligible,,activity,"GPS walking tracker that records steps, pace and distance over time",screened 21 Nov 2026 from the German store page
+com.zwift.zwiftgame,Zwift: Indoor-Cycling zu Hause,eligible,,activity,indoor rides with tracked statistics,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"
+com.dungelin.heartrate,Herzfrequenz Plus: Puls Messen,eligible,,heart,measures heart rate with the camera; saves results and shows the history,screened 21 Nov 2026 from the German store page
+app.meditasyon,Meditopia: Schlaf & Meditation,excluded,X4,,"meditation content; records only mindfulness statistics and notes, no mood or sleep data",screened 21 Nov 2026 from the German store page
+com.hihonor.health,Honor Health,eligible,,multiple,companion app of Honor wearables; records and analyses movement and health data,screened 21 Nov 2026 from the German store page
+com.chipsea.btcontrol.en,OKOK·International,eligible,,diet-weight,"companion app of a smart scale; records weight, body fat and other body measures",screened 21 Nov 2026 from the German store page
+betis.glucksradde,Glücklich Rad (Deutsch),excluded,X2,,word game,screened 21 Nov 2026 from the German store page
+com.limatech.dayschallenge.dayschallenge,21 Days Challenge,excluded,X4,,"habit challenges; records habits, not health or body data",screened 21 Nov 2026 from the German store page
+com.easymobs.pregnancy,Schwangerschafts-App,eligible,,pregnancy,documents the course of pregnancy,"26 Oct screening, Google Play listing; checked on the Google Play page of 21 Nov 2026"
+com.fitnow.loseit,Lose It! - Kalorienzähler,eligible,,diet-weight,calorie counter and weight-loss diary,screened 21 Nov 2026 from the German store page
+com.funstage.gta.ma.luckylady,Lucky Lady's Charm Deluxe Slot,excluded,X2,,casino game,screened 21 Nov 2026 from the German store page
+cn.fitdays.fitdays,Fitdays,eligible,,diet-weight,companion app of body-fat scales; keeps the body data of the user and family members,screened 21 Nov 2026 from the German store page
+com.calea.echo,Mood SMS - Nachrichten & MMS,excluded,X2,,messaging app,screened 21 Nov 2026 from the German store page
+com.clearskyapps.fitnessfamily.Run5K,Von 0 auf 5 km,eligible,,activity,5 km running plan; logs history and progress of each workout,screened 21 Nov 2026 from the German store page
+com.fitshow,FitShow: Tretmühle  Radfahren,excluded,X6,,controls home fitness equipment and shows route videos; the listing names no record of the user's workouts,screened 21 Nov 2026 from the German store page
+com.appovo.bmicalculator,BMI Rechner,eligible,,diet-weight,calculates and tracks BMI over time,"26 Oct screening, App Store listing of the same app; checked on the Google Play page of 21 Nov 2026"

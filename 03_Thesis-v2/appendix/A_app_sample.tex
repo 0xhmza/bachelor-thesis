@@ -1,0 +1,22 @@
+\chapter{App Sample}
+\label{app:sample}
+
+% Not a float: the table fills the rest of this page, and a float's
+% spacing after it would open an empty page.
+\begin{singlespace}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.9}
+\noindent\begin{minipage}{\textwidth}
+\captionof{table}[The 50 apps of the sample]{The 50 apps, collected on
+21 November 2026: 1--49 by German review count, 50 preinstalled. Rank:
+position among all 704 apps found; Category: main function.}
+\label{tab:sample}
+\begin{tabularx}{\textwidth}{@{}r>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.6cm}lrr@{}}
+\toprule
+\textbf{No.} & \textbf{App} & \textbf{Developer} & \textbf{Category} & \textbf{Reviews (DE)} & \textbf{Rank} \\
+\midrule
+\input{tables/sample}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{minipage}
+\end{singlespace}

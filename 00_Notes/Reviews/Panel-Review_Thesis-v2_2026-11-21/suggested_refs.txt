@@ -1,0 +1,15 @@
+Suggested-reference check (script output, not a reviewer finding; #1001)
+Seats read: R2, R3 (complete).
+
+| Seat | # | Reference | Result |
+|---|---|---|---|
+| R2 | 1 | De, S. J. et al. (2016) "Privacy Harm Analysis: A Case Study on Smart Grids" doi:10.1109/SPW.2016.21 | Found in an index |
+| R2 | 2 | Pollach, I. (2005) "A Typology of Communicative Strategies in Online Privacy Policies: Ethics, Power and Informed Consent" doi:10.1007/s10551-005-7898-3 | Found in an index |
+| R3 | 1 | Ben-Shahar, O. et al. (2014) "More Than You Wanted to Know: The Failure of Mandated Disclosure" | Found in an index |
+| R3 | 2 | Morgan, M. G. et al. (2002) "Risk Communication: A Mental Models Approach" | Found in an index |
+| R3 | 3 | Fiesler, C. et al. (2020) "No Robots, Spiders, or Scrapers: Legal and Ethical Regulation of Data Collection Methods in Social Media Terms of Service" | Found in an index |
+| R3 | 4 | European Data Protection Board (2023) "Guidelines 03/2022 on deceptive design patterns in social media platform interfaces: how to recognise and avoid them" | Title not matched; no DOI or arXiv ID to check |
+| R3 | 5 | European Parliament and Council of the European Union (2019) "Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market" | Title not matched; no DOI or arXiv ID to check |
+| R3 | 6 | Court of Justice of the European Union (2022) "Meta Platforms Ireland Ltd v Bundesverband der Verbraucherzentralen und Verbraucherverbände (C-319/20)" | Title not matched; no DOI or arXiv ID to check |
+
+"Found" means an index holds a record with this DOI or arXiv ID and title, or with this title. It does not show that the work supports the recommendation, or that the authors and year are right.
