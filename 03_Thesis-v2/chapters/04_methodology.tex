@@ -1,0 +1,108 @@
+\chapter{Methodology}
+\label{ch:methodology}
+
+The study analyses what the providers of health tracking apps tell their users
+about privacy harms and protection. This chapter describes how the apps were
+chosen. The later steps of the study, from data collection to coding, build on
+this sample.
+
+\section{Sampling Frame}
+\label{sec:frame}
+The study covers Android apps offered in Germany. Android is the larger mobile
+platform there, with 72.3\,\% of German mobile page views in September
+2026~\parencite{statcounter2026os}. The target is 50 apps. This lies between
+the 20 and 64 apps of earlier studies that inspected apps in
+detail~\parencite[p.~4]{malki2024exploring}\parencite[p.~5]{hutton2018assessing},
+and it is few enough to code every policy and to inspect every app by hand.
+The apps come from two groups: 49 Google Play apps selected by popularity and
+the preinstalled health tracker of the leading Android phone vendor
+(Section~\ref{sec:ranking}).
+
+\section{Search}
+\label{sec:search}
+\paragraph{Keywords.} The health tracking domain follows the health categories
+of Hutton et al.\ (cycling, diet, exercise, heart rate, mood, running, sleep,
+step count and weight)~\parencite{hutton2018assessing} and the reproductive
+health apps studied by Malki et al.\ (menstrual cycle, fertility and
+pregnancy)~\parencite{malki2024exploring}. The 15 terms of Hutton et al.\ and
+the 12 terms of Malki et al.\ are searched in English and in one German
+translation each. A German word is searched only once when it is the same as
+the English term or translates two English terms. This gives 49 queries. The
+check with well-known apps below may add further queries; the final list is in
+Table~\ref{tab:keywords}.
+
+\paragraph{Search.} Google Play is searched in its German storefront, logged
+out, with German as the interface language. For each query, the script keeps
+up to the first 30 apps of the result page, in the order shown; some queries
+return fewer. It then reads the store page of every app found, which gives the
+developer, the category, the price, the description and the number of written
+reviews. The script is listed in Appendix~\ref{app:script}.
+
+\paragraph{Check with well-known apps.} A sample of popular health trackers
+should contain the apps that most people know. Before the search, a list of
+25 well-known health trackers was fixed, covering running and cycling,
+nutrition, sleep, mood, the menstrual cycle and the companion apps of
+wearables and scales; apps that Google Play does not offer in Germany were
+left out. Each listed app should appear among the results of at least one
+query. For a missing app, a generic term for its function or device was added
+in English and German and the search was repeated. Only terms that found a
+missing app were kept, with their translation. Brand names were never used,
+because they would favour single providers. The check stops when no further
+generic term finds a missing app. It tests whether the queries reach the
+market; it does not force any app into the sample.
+
+\section{Eligibility}
+\label{sec:eligibility}
+An app is eligible if it meets all inclusion rules and none of the exclusion
+rules in Table~\ref{tab:eligibility}. Rules I1.1 to I1.4 together define a
+health tracker, and all four must hold. The rules are checked on the German
+Google Play page of the app: its title, developer, category, price and
+description.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\footnotesize
+\caption[Eligibility rules]{Eligibility rules, checked on the German Google Play page.}
+\label{tab:eligibility}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{\hspace{12pt}}l>{\raggedright\arraybackslash}X@{}}
+\toprule
+\multicolumn{2}{@{}l}{\textbf{Include if \dots}} & \multicolumn{2}{l@{}}{\textbf{Exclude if the app \dots}} \\
+\midrule
+I1.1 & the user enters data, or a sensor or paired device records them & X1 & shows exercises or articles but records nothing \\
+I1.2 & the data describe the user's own health or body & X2 & is a game, a shop or a general-purpose app \\
+I1.3 & entries are kept and can be viewed again over time & X3 & tracks a child or another person instead of the user \\
+I1.4 & the data fall into one of the searched categories & X4 & records only other data, such as spending or time \\
+I5 & the app is offered to the general public & X5 & asks for input once and keeps no result \\
+I6 & the app is free to install (in-app purchases are allowed) & X6 & has no tracking or predictive feature \\
+I7 & the app is available in German or English & X7 & is limited to members, patients or employees of an organisation \\
+ & & X8 & is a DiGA, a digital health application reimbursed in Germany \\
+\bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+\section{Ranking and Selection}
+\label{sec:ranking}
+\paragraph{Popularity.} The apps are ranked by their popularity in Germany,
+measured as the number of written reviews that Google Play returns for the
+German storefront. Download counts are only shown as worldwide ranges, so they
+cannot rank apps in the German market. Malki et al.\ also ranked Google Play
+apps by their number of reviews~\parencite[p.~4]{malki2024exploring}. The
+review count is a proxy for popularity, not a count of users.
+
+\paragraph{Selection.} All apps found by the search are sorted by their review
+count, from the highest to the lowest; ties are broken by the package name.
+Apps whose store page cannot be read are left out. The apps are then screened
+in this order, and every eligible app enters the sample until 49 apps are
+selected. Apps from the same developer count as separate apps, because each
+has its own store page and interface.
+
+\paragraph{Preinstalled app.} Some health apps come with the phone. They reach users without a download, so
+their review counts understate how many people have them. The sample therefore
+adds the preinstalled health tracker of the vendor with the largest share of
+German mobile page views from Android
+devices~\parencite{statcounter2026vendor}. The app must be made by the vendor
+itself, be installed on the vendor's current phones without a download and
+meet the eligibility rules. It is screened on its own and skipped in the
+ranking, so that it is not counted twice.

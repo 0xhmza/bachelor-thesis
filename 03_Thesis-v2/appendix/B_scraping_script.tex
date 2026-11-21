@@ -1,0 +1,49 @@
+% The listings are read from the repository at compile time, not copied:
+%   04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v007/  sample.py, config.json, requirements.txt
+\chapter{Sampling Script}
+\label{app:script}
+The script in Listing~\ref{lst:sample} drew the sample of
+Section~\ref{sec:results-sample}. It needs Python~3 and the open-source
+parser \texttt{google-play-scraper} (version 1.2.7), and it runs in three
+steps. First, it searches Google Play for every query of
+Table~\ref{tab:keywords} and keeps up to the first 30 apps of each result page.
+Second, it reads the store page of each app it found and of the preinstalled
+app, and stores each page in a cache file, so that an interrupted run can
+resume. Third, it ranks the apps by their German review count and walks down
+the ranking. It takes every app that the screening file marks as eligible and
+stops when the sample is full. When it reaches an app that has not been
+screened yet, it stops and names that app, so the screening is done by hand in
+rank order. The search results and the store pages are saved, and a second run
+reuses them, so the screening does not change the candidates.
+
+\begin{table}[H]
+\centering
+\begin{singlespace}
+\footnotesize
+\caption[Search queries]{Search queries. An asterisk marks a word that is the
+same in English and German and was searched once. The last row holds the
+queries added by the check with well-known apps.}
+\label{tab:keywords}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+\textbf{Category} & \textbf{English} & \textbf{German} & \textbf{Source} \\
+\midrule
+\input{tables/keywords}% the generated rows end with \bottomrule
+\end{tabularx}
+\end{singlespace}
+\end{table}
+
+The script reads its settings from a JSON file (Listing~\ref{lst:config}):
+the queries, the storefront (\texttt{region}), the interface language, the
+number of results kept per query (\texttt{depth}), the sample size, the
+package name of the preinstalled app, the screening file and the output
+folder. The paths are relative to the root of the project repository, from
+which the script is run:
+\texttt{python 04\_Study/4.4\_App-Sampling/scripts/googleplay-scraper/v007/sample.py}
+\texttt{04\_Study/4.4\_App-Sampling/scripts/googleplay-scraper/v007/config.json}.
+It writes \texttt{search.json}, \texttt{pages.jsonl}, \texttt{candidates.csv}
+and \texttt{sample.csv} to the output folder.
+
+\lstinputlisting[style=jsoncode, caption={Settings of the run of 21 November 2026; the queries after the second are left out.}, label={lst:config}, linerange={1-4,57-67}]{../04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v007/config.json}
+
+\lstinputlisting[style=pythoncode, caption={Sampling script (\texttt{sample.py}).}, label={lst:sample}]{../04_Study/4.4_App-Sampling/scripts/googleplay-scraper/v007/sample.py}

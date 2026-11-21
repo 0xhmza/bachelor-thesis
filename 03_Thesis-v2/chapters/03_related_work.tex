@@ -1,0 +1,78 @@
+\chapter{Related Work}
+\label{ch:related-work}
+
+Three lines of research lead to the questions of this thesis: the privacy
+harms of health tracking, the privacy communication of health apps, and the
+way privacy texts word risk and protection. Each section ends with the
+question that its line of research leaves open.
+
+\section{Harms of Health Tracking}
+\label{sec:rw-harms}
+What others can learn from tracker data is well documented. Salehzadeh Niksirat
+et al.\ survey the research on wearable activity trackers and collect the
+inferences and threats that their data
+allow~\parencite{niksirat2024wearable}. Health apps also pass data on: 33 of 36
+depression and smoking-cessation apps sent data to third
+parties~\parencite{huckvale2019assessment}.
+
+This evidence comes from measurements and attacks. It has not been collected
+into a list of the harms that apply to a health tracker, and it has not been
+compared with what providers tell their users. This leads to RQ1.
+
+\section{Privacy Communication of Health Apps}
+\label{sec:rw-communication}
+Most studies of what health apps communicate look at the privacy policy and
+compare it with what the app does. Of 28 apps that sent data to Google, only
+12 disclosed this in their policy~\parencite{huckvale2019assessment}. Malki et
+al.\ combined the policies and Data Safety sections of 20 female health apps
+with an inspection of the apps. They found inconsistencies between policies
+and app features, flawed consent and deletion mechanisms and hidden collection
+of sensitive data~\parencite{malki2024exploring}. Statements about
+consequences appear only in passing: 13 of 19 policies said that law
+enforcement or other authorities might access user data, but explained little
+about when. In one app, the policy allowed such access while the privacy FAQ
+inside the app said that data would never be shared with the government or law
+enforcement~\parencite[\S4.2.5]{malki2024exploring}.
+
+In these studies, harms are part of the researchers' threat model, not
+something the provider's text is examined for. The contradiction found by
+Malki et al.\ also shows that the policy and the interface of the same app can
+tell different stories, but the studies reviewed here do not compare the two
+surfaces for what they say about harms. This leads to RQ1 and RQ4.
+
+\section{Wording of Risk and Protection}
+\label{sec:rw-wording}
+A text can disclose a practice and still blur what follows from it. Zou et
+al.\ analysed 161 data breach notifications: 112 used hedge words such as
+\emph{maybe} or \emph{likely}, and only 9 linked the exposed data to concrete
+misuse~\parencite[\S5]{zou2019might}. Protection claims raise a similar
+problem, because a PET can work as described and still leave the harms of the
+core function possible (Section~\ref{sec:practices-harms}).
+
+For health trackers, the wording of harms has not been studied, and no study
+relates a claimed protection to the pathways to harm that it would have to
+cut. Hedging as found by Zou et al.\ leads to RQ2, which asks how providers
+qualify or downplay the harms they name. Harm trees make it possible to check
+which pathways a claimed protection interrupts, which is RQ3.
+
+\section{Research Questions}
+\label{sec:rqs}
+Together, the three lines leave one question open: \emph{What types of
+downstream privacy harms do health tracker providers acknowledge or downplay
+when they describe their privacy practices or PETs, and how do they frame the
+protection these technologies offer?} Four sub-questions break it down.
+
+\begin{description}[leftmargin=1.5em,itemsep=1pt,topsep=3pt,
+                    labelindent=0pt,font=\normalfont\bfseries]
+  \item[RQ1] \textit{Coverage.} Which data flows, capabilities and harms do the
+    privacy policy and the interface of an app mention? Which of the harms
+    identified for the app remain unmentioned?
+  \item[RQ2] \textit{Stance.} When the policy or the interface names a harm, how
+    do they word it: do they acknowledge, qualify, minimise or deny it, or
+    present it as the user's responsibility?
+  \item[RQ3] \textit{Protection.} Which protective measures and benefits do the
+    policy and the interface claim, and how do the scope and strength of each
+    claim relate to the pathways to harm that the measure would have to cut?
+  \item[RQ4] \textit{Surfaces.} How do coverage, stance and protection claims
+    differ between the privacy policy and the interface of the same app?
+\end{description}

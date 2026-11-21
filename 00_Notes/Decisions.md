@@ -7,12 +7,12 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 
 | ID | Topic | Rule | Status | Record |
 |---|---|---|---|---|
-| D1 | Sample size | 47 ranked + 3 preinstalled apps, no quotas | proposed; justification by comparison with prior studies added 11-15 | [D01](Archive/Decisions/D01_sample-size.md) |
+| D1 | Sample size | 47 ranked + 3 preinstalled apps, no quotas; Android only since 11-21: 49 ranked + 1 preinstalled (D26) | proposed; justification by comparison with prior studies added 11-15 | [D01](Archive/Decisions/D01_sample-size.md) |
 | D2 | Ranking | One ranking of both stores by German-market popularity, no rating floor; several apps of one provider are separate apps, each studied on its own (provider rule dropped 11-16); two listings are merged only when they are the same app in both stores, decided by hand; candidate pairs are the listings of the same provider, identified as the controller named in the privacy policy (GDPR Art. 13(1)(a); App Store seller if no policy) (decided 11-16); sensitivity threshold 5 of 47 providers (to restate for apps) | proposed; provider rule dropped, decided 11-16 | [D02](Archive/Decisions/D02_ranking-and-rating-floor.md) |
 | D3 | Scope and keywords | Keywords of Hutton 2018 and Malki 2024, EN + DE; eligibility I1–I7 and X1–X8 (restating E1a–E1d to E5) checked on the store listing | proposed; keyword reverse engineering, store-API test and must-include apps dropped 11-15 | [D03](Archive/Decisions/D03_scope-keywords-function.md) |
 | D4 | Payment | Free to install; payment is recorded and only limits walkthroughs | proposed | [D04](Archive/Decisions/D04_payment-access.md) |
 | D5 | No privacy policy | App included, absence reported | confirmed 10-13 | [D05](Archive/Decisions/D05_apps-without-policy.md) |
-| D6 | Preinstalled apps | Leading vendor per platform: Apple Health, Apple Fitness, Samsung Health | proposed | [D06](Archive/Decisions/D06_preinstalled-apps.md) |
+| D6 | Preinstalled apps | Leading vendor per platform: Apple Health, Apple Fitness, Samsung Health; Android only since 11-21: Samsung Health (D26) | proposed | [D06](Archive/Decisions/D06_preinstalled-apps.md) |
 | D7 | Language | English first, German fallback | confirmed 10-13 | [D07](Archive/Decisions/D07_language.md) |
 | D8 | Coders | No second coder: two models code, the author is the only human (checks, validation reference); author recodes a tenth after two weeks; Krippendorff's α | decided 11-15 (replaces the 11-04 rule) | [D08](Archive/Decisions/D08_two-coder.md) |
 | D9 | LLM role | Two models code all units; people check high-stakes labels blind; 500-unit stratified validation sample | decided 11-04 | [D09](Archive/Decisions/D09_llm-role.md) |
@@ -32,6 +32,8 @@ Status: **open** · **proposed** (written, not yet confirmed) · **confirmed** /
 | D23 | Harm trees | Built use case by use case; stop after two cases that add nothing; app-specific trees drawn in full for five apps (number may change with feasibility) | proposed 11-07; five apps decided 11-15 | [D23](Archive/Decisions/D23_use-case-subtrees.md) |
 | D24 | Study type | Document and interface analysis; no user study or survey | confirmed 11-15 | — |
 | D25 | Ethics | No ethics review: no human participants, only public documents and the analyst's own use of the apps | decided 11-15 | — |
+| D26 | Platform | Android only: the App Store and Apple's preinstalled apps are dropped. 49 Google Play apps (German storefront) + Samsung Health, the preinstalled tracker of the leading Android vendor (D6 rule). Keywords, depth 30, rules I1–I7/X1–X8, German-market popularity (Google-Play-only case of D2: German review count) and no provider rule stay as before. New collection of 21 November 2026 with `googleplay-scraper/v007`; thesis draft in `03_Thesis-v2/` | decided 11-21 (author); replaces the iOS parts of D1, D2, D6 | — |
+| D27 | Known-app check | 25 well-known trackers, listed before the check, must be among the search hits; a missing one leads to new generic EN/DE query pairs, never brand names; result reported in Results | decided 11-21 (author) | [check](../04_Study/4.4_App-Sampling/known-apps-check.md) |
 
 New decision: add a row; write a record only if the reasoning does not fit the row.
 The earlier long register is kept as [Archive/Decisions/Decision-Log.md](Archive/Decisions/Decision-Log.md).

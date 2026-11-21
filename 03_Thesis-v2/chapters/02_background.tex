@@ -1,0 +1,71 @@
+\chapter{Background}
+\label{ch:background}
+
+This chapter defines the terms used in the thesis and gives the legal and
+conceptual background of the study.
+
+\section{Key Terms}
+\label{sec:terms}
+\begin{description}[leftmargin=1.2em,labelindent=0pt,itemsep=2pt,
+                    font=\normalfont\bfseries]
+  \item[Health tracking app.] An app that lets people record data about their
+    own health or body over time, for example steps and workouts, meals and
+    weight, sleep, heart rate, mood or the menstrual cycle. The data come from
+    the user's own entries, from the phone's sensors or from a paired device
+    such as a fitness band. The thesis also calls such an app a
+    \emph{health tracker}.
+  \item[Health data.] The General Data Protection Regulation (GDPR) defines
+    data concerning health as personal data about a person's physical or
+    mental health that reveal information about their health status
+    (Art.~4(15)) and places them among the special categories of personal data
+    (Art.~9(1))~\parencite{gdpr2016}. Tracker data often reveal more than a
+    single entry suggests: activity, sleep and heart-rate records can be used
+    to infer health conditions, habits, locations and even personality
+    traits~\parencite[\S4]{niksirat2024wearable}.
+  \item[Surface.] A place where a provider tells users how it handles their
+    data. This thesis looks at two surfaces: the privacy policy and the
+    interface of the app, such as consent screens, settings and short notices.
+  \item[Privacy harm.] A negative consequence that a privacy violation has for
+    a person. Citron and Solove sort privacy harms into seven types: physical,
+    economic, reputational, psychological, autonomy, discrimination and
+    relationship harms~\parencite{citron2021harms}.
+  \item[Pathway to harm.] A chain that starts with parts of a system, such as
+    data disclosed to another party, continues with a capability that these
+    parts give someone, such as tracking or inference, and ends in a harm. A
+    \emph{harm tree} combines the pathways that lead to one
+    harm~\parencite[\S4.1]{knabenhans2026harms}.
+  \item[Protection claim.] A statement by a provider that a measure protects
+    users' data, for example encryption, pseudonymisation or processing on the
+    device. Such measures are often called privacy-enhancing technologies
+    (PETs).
+\end{description}
+
+\section{What Providers Must Tell Users}
+\label{sec:transparency}
+The GDPR requires that information about the processing of personal data is
+concise, transparent, intelligible and written in clear and plain language
+(Art.~12). It must name, among other things, the purposes of the processing,
+the recipients of the data and the rights of the user (Art.~13 and~14).
+Consequences must be explained only for automated decisions with legal or
+similarly significant effects (Art.~13(2)(f) and~22)~\parencite{gdpr2016}.
+Guidance of the Article~29 Working Party goes further. It allows providers to
+spread the information over layers, such as a privacy statement and short
+notices inside the app, and it recommends that for complex or unexpected
+processing providers also explain the most important consequences for the
+people concerned~\parencite[paras.~10, 35, 39]{wp292018transparency}. Outside
+automated decisions, the law therefore asks for a description of data
+practices, and an explanation of what could follow from them is a
+recommendation.
+
+\section{From Data Practices to Harms}
+\label{sec:practices-harms}
+Knowing what happens to their data does not tell users what can happen to
+them. A policy may say that data are shared with advertising partners without
+saying who could then learn about a pregnancy or an illness. Harm trees make
+this link visible. Knabenhans et al.\ use them to analyse the European Digital
+Identity Framework and find that PETs reduce information flows, but that the
+pathways to harm that come from the core function of the system
+remain~\parencite{knabenhans2026harms}. A protection claim can therefore be
+true and still leave a harm possible. The thesis builds on this idea and compares
+what health tracker providers say about harms and protection with the harms
+that their apps make possible.
